@@ -1,0 +1,56 @@
+import MoveUpRightArrowIcon from "@/assets/icons/MoveUpRightArrowIcon";
+import { globalBlogs } from "@/blogs/listofblogs";
+import BlogCard from "@/components/nivaran/common/BlogCard";
+import RenderList from "@/components/nivaran/common/renderList/RenderList";
+import { AppButton } from "@/components/ui/app-button";
+import * as SheetPrimitive from "@radix-ui/react-dialog";
+import Link from "next/link";
+
+export const SmallNewsAndStoriesMegaMenu = () => {
+  const featuredData = globalBlogs
+    .filter((blogs) => blogs.featured)
+    .slice(0, 2);
+
+  return (
+    <div className="pl-3">
+      <h3 className="text-sm font-light text-gray-600 mb-1">Trending blogs</h3>
+      <div className="flex gap-2">
+        <RenderList
+          data={featuredData}
+          render={(story) => (
+            <BlogCard
+              data={story}
+              key={story.slug}
+              className="w-[200px] rounded-xl hover:shadow-sm "
+              // onClick={() => openActiveMegaMenu(null)}
+            >
+              <SheetPrimitive.Close key={story.slug}>
+                <BlogCard.Image
+                  className="h-[100px]"
+                  showAuthor={false}
+                  showButton={false}
+                  overlayStyle
+                  showTags={false}
+                />
+                <BlogCard.TitleAndDescription
+                  showDescription={false}
+                  className="text-sm font-medium p-2 "
+                />
+              </SheetPrimitive.Close>
+            </BlogCard>
+          )}
+        />
+      </div>
+      <SheetPrimitive.Close>
+        <AppButton variant="ghost" className="px-0 relative mt-3" asChild>
+          <Link href="/blogs">
+            <SheetPrimitive.Close className="flex items-center gap-1">
+              <span className="font-normal text-sm">View all blogs</span>
+              <MoveUpRightArrowIcon className="w-4 h-4 fill-primary-500" />
+            </SheetPrimitive.Close>
+          </Link>
+        </AppButton>
+      </SheetPrimitive.Close>
+    </div>
+  );
+};
