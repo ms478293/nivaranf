@@ -1,9 +1,11 @@
+import { supabase } from "@/lib/supabase";
 import { TouchIcon } from "@/assets/icons/TouchIcon";
 import { CareersDescriptionList } from "@/components/new/Careers/CareersDescriptionList";
 import { JobSharemodal } from "@/components/new/JobShareModal/JobSharemodal";
 import { AppButton } from "@/components/ui/app-button";
 import Link from "next/link";
 import { CareerType } from "../page";
+import { notFound } from "next/navigation";
 
 export default async function page({
   params,
@@ -12,11 +14,29 @@ export default async function page({
 }) {
   const { id } = await params;
 
-  const careerRes = await fetch(
-    `https://api.nivaranfoundation.org/api/carrer/job-openings/${id}`
-  );
+  const { data: job, error } = await supabase
+    .from('jobs')
+    .select('*')
+    .eq('id', id)
+    .single();
 
-  const career: CareerType = await careerRes.json();
+  if (error || !job) {
+    console.error("Error fetching job:", error);
+    return notFound();
+  }
+
+  const career: CareerType = {
+    id: job.id,
+    jobName: job.title,
+    jobType: job.type,
+    applyBefore: job.apply_before,
+    positionsOpen: job.positions_open,
+    introduction: job.introduction,
+    responsibilities: job.responsibilities || [],
+    requirements: job.requirements || [],
+    benefits: job.benefits || {},
+    additionalInfo: job.additional_info || {},
+  };
 
   return (
     <div className="font-Poppins w-full  px-4 pb-6">

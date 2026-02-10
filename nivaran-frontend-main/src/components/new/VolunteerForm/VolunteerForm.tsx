@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { createVolunteerApplication } from "@/lib/api/volunteerApi/api";
+import { submitVolunteer } from "@/app/actions/submit-volunteer";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
@@ -44,13 +44,16 @@ export const VolunteerForm = ({
       phone: "",
       email: "",
       address: "",
-      programId: 0,
+      programId: camp.id,
     },
   });
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data: VolunteerSchemaType) => {
-      await createVolunteerApplication(data, camp.id);
+      const result = await submitVolunteer(data);
+      if (!result.success) {
+        throw new Error(result.error);
+      }
     },
     onSuccess: () => {
       toast.success("Volunteer created Succesfully");

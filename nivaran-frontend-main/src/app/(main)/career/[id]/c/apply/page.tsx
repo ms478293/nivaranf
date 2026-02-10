@@ -1,5 +1,7 @@
+import { supabase } from "@/lib/supabase";
 import { CareerForm } from "@/components/new/CareerForm/PersonalForm";
 import { CareerType } from "../../../page";
+import { notFound } from "next/navigation";
 
 export default async function page({
   params,
@@ -8,11 +10,28 @@ export default async function page({
 }) {
   const { id } = await params;
 
-  const careerRes = await fetch(
-    `https://api.nivaranfoundation.org/api/carrer/job-openings/${id}`
-  );
+  const { data: job, error } = await supabase
+    .from('jobs')
+    .select('*')
+    .eq('id', id)
+    .single();
 
-  const career: CareerType = await careerRes.json();
+  if (error || !job) {
+    return notFound();
+  }
+
+  const career: CareerType = {
+    id: job.id,
+    jobName: job.title,
+    jobType: job.type,
+    applyBefore: job.apply_before,
+    positionsOpen: job.positions_open,
+    introduction: job.introduction,
+    responsibilities: job.responsibilities || [],
+    requirements: job.requirements || [],
+    benefits: job.benefits || {},
+    additionalInfo: job.additional_info || {},
+  };
 
   return (
     <div className="font-Poppins w-full px-4">

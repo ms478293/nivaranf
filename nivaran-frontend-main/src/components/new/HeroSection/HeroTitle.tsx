@@ -7,10 +7,10 @@ import { useImageTransition } from "@/hooks/useImageTransition";
 import Link from "next/link";
 
 const WORDS = [
-  "Sustainability",
-  "Education",
-  "Boosting Health",
-  "Child Welfare",
+  "Saving Lives",
+  "Better Healthcare",
+  "Quality Education",
+  "Healthier Futures",
 ];
 
 const HeroTitle = ({

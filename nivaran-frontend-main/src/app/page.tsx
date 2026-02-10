@@ -1,15 +1,16 @@
 import AboutNivaran from "@/components/new/AboutNivaran/AboutNivaran";
 import DonationBanner from "@/components/new/DonationBanner/DonationBanner";
 import DonationBlock from "@/components/new/DonationBlock/DonationBlock";
+import WhereMoneyGoes from "@/components/new/DonorTrust/WhereMoneyGoes";
 import HeroSection from "@/components/new/HeroSection/HeroSection";
 import InsightsAndInspiraton from "@/components/new/InsightsAndInspiration/InsightsAndInspiraton";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
+import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
 import NivaranHappiness from "@/components/new/NivaranHappiness/NivaranHappiness";
 import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
 import ProjectSanjeevani from "@/components/new/ProjectSanjeevani/ProjectSanjeevani";
 import UpcomingProjects from "@/components/new/UpcomingProjects/UpcomingProjects";
-import { Supporters } from "@/components/nivaran/main/Supporters";
 import { SetCookie } from "@/components/nivaran/main/utils/SetCookie";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
 import { Metadata } from "next";
@@ -17,23 +18,23 @@ import { Suspense } from "react";
 import ogImage from "../../public/logo.png";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Global Care, Local Impact",
+  title: "Nivaran Foundation | Healthcare & Education for Nepal",
   description:
-    "Nivaran Foundation drives positive change by empowering communities. Learn about our mission, projects, and how you can help create a brighter future",
+    "Nivaran Foundation is a 501(c)(3) non-profit delivering healthcare and education to Nepal's underserved communities. 304 health camps, 61,200+ patients targeted. Donate today.",
   metadataBase: new URL("https://nivaranfoundation.org"),
   keywords: [
     "Nivaran foundation",
-    "Global Care, Local Impact",
+    "Nepal healthcare",
     "Sanjeevani",
-    "Terra",
-    "Unity",
-    "Nurture",
-    "Vidya",
+    "health camps Nepal",
+    "donate healthcare Nepal",
+    "non-profit Nepal",
+    "education Nepal",
   ],
 
   openGraph: {
     siteName: "Nivaran Foundation",
-    title: "Nivaran Foundation | Global Care, Local Impact",
+    title: "Nivaran Foundation | Healthcare & Education for Nepal",
     url: "https://nivaranfoundation.org",
     type: "website",
     images: [
@@ -138,13 +139,6 @@ const page = () => {
           <HeroSection />
         </section>
 
-        {/* Supporters */}
-        <section aria-labelledby="supporters-title">
-          <h2 id="supporters-title" className="sr-only">
-            Our Supporters
-          </h2>
-          <Supporters />
-        </section>
 
         {/* About Nivaran */}
         <section aria-labelledby="about-nivaran-title">
@@ -159,11 +153,10 @@ const page = () => {
                 id="about-nivaran-title"
                 className="text-gray-800 w-full md:w-[65%] leading-6 font-normal mt-4"
               >
-                The Nivaran Foundation is committed to reaching the unreachable
-                and creating a brighter future by empowering communities through
-                sustainable solutions. At Nivaran Foundation, we are committed
-                to creating a meaningful and lasting impact in the lives of
-                individuals and communities.
+                Nivaran Foundation is a 501(c)(3) non-profit delivering
+                healthcare to Nepal&apos;s most underserved communities. With
+                304 health camps operated and 61,200+ patients targeted through
+                Project Sanjeevani, every dollar you give saves lives.
               </p>
             </div>
           </AboutNivaran>
@@ -185,6 +178,14 @@ const page = () => {
           <DonationBanner />
         </section>
 
+        {/* Where Your Money Goes + Impact */}
+        <section aria-labelledby="transparency-title">
+          <h2 id="transparency-title" className="sr-only">
+            Transparency and Impact
+          </h2>
+          <WhereMoneyGoes />
+        </section>
+
         {/* Project Sanjeevani */}
         <section aria-labelledby="project-sanjeevani-title">
           <h2 id="project-sanjeevani-title" className="sr-only">
@@ -199,9 +200,9 @@ const page = () => {
           className="bg-gray-50 py-8 px-4"
         >
           <div className="max-w-[1320px] mx-auto ">
-            <MainTitle suffix="Upcoming" prefix="Projects" className="-mb-4" />
+            <MainTitle suffix="Our" prefix="Projects" className="-mb-4" />
           </div>
-          <UpcomingProjects data={UPCOMING_PROJECTS_DATA.slice(0, 4)} />
+          <UpcomingProjects data={UPCOMING_PROJECTS_DATA} />
         </section>
 
         {/* Insights and Inspiration */}
@@ -210,6 +211,14 @@ const page = () => {
             Insights and Inspiration
           </h2>
           <InsightsAndInspiraton />
+        </section>
+
+        {/* Newsletter Subscribe */}
+        <section aria-labelledby="newsletter-title" className="py-8">
+          <h2 id="newsletter-title" className="sr-only">
+            Subscribe to Newsletter
+          </h2>
+          <NewsletterSubscribe variant="banner" />
         </section>
 
         {/* Donation Block with Suspense */}

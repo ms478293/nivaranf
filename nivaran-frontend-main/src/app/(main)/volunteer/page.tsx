@@ -1,7 +1,9 @@
+import { supabase } from "@/lib/supabase";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import VolunteerInfoCardSection from "@/components/new/VolunteerInfoCardSection";
 import { VolunteerList } from "@/components/new/VolunteerList/VolunteerList";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -15,28 +17,46 @@ export const metadata: Metadata = {
 
 export const dynamicParams = true;
 
+type ProgramType = {
+  id: string | number;
+  endDate: string;
+  startDate: string;
+  name: string;
+  location: string;
+};
+
+async function getOpenPrograms(): Promise<ProgramType[]> {
+  try {
+    const { data, error } = await supabase
+      .from('volunteer_programs')
+      .select('*')
+      .eq('status', 'active');
+
+    if (error) {
+      console.error("Error fetching programs:", error);
+      return [];
+    }
+
+    if (!data) return [];
+
+    return data.map((program: any) => ({
+      id: program.id,
+      endDate: program.end_date,
+      startDate: program.start_date,
+      name: program.name,
+      location: program.location,
+    }));
+  } catch (err) {
+    console.error("Unexpected error:", err);
+    return [];
+  }
+}
+
 export default async function Page() {
-  const programRes = await fetch(
-    "https://api.nivaranfoundation.org/api/programs/all-open/1",
-    { cache: "no-store" }
-  );
-
-  const programsList = await programRes.json();
-
-  console.log("PROGRAM", programsList);
-
-  const programs = programsList?.programs.map((program) => ({
-    id: program.id,
-    endDate: program.endDate,
-    startDate: program.startDate,
-    name: program.name,
-    location: program.location,
-  }));
-
-  console.log("PROGRAMS", programs);
+  const programs = await getOpenPrograms();
 
   return (
-    <main className="font-Poppins w-full px-4  pb-10">
+    <main className="font-Poppins w-full px-4 pb-10">
       <div
         className="max-w-[1320px] mx-auto bg-[url('/nivaran_word.png')] bg-no-repeat flex flex-col md:gap-12"
         style={{
@@ -52,8 +72,33 @@ export default async function Page() {
           </p>
         </section>
         <VolunteerInfoCardSection />
-        {/* <p>No Active Camps for now</p> */}
-        <VolunteerList programs={programs} />
+        {programs.length > 0 ? (
+          <VolunteerList programs={programs} />
+        ) : (
+          <div className="flex flex-col items-center justify-center py-16 gap-4">
+            <p className="text-gray-800 text-lg font-medium">
+              No Active Volunteer Programs Right Now
+            </p>
+            <p className="text-gray-500 text-sm max-w-md text-center">
+              We&apos;re preparing new volunteer opportunities. Contact us to be
+              notified when new programs launch.
+            </p>
+            <div className="flex gap-3 mt-2">
+              <Link
+                href="/contact"
+                className="px-6 py-2.5 bg-primary-main text-white rounded-lg text-sm font-medium hover:bg-primary-main/90 transition-colors"
+              >
+                Contact Us
+              </Link>
+              <Link
+                href="/donate"
+                className="px-6 py-2.5 border border-primary-main text-primary-main rounded-lg text-sm font-medium hover:bg-primary-main/5 transition-colors"
+              >
+                Donate Instead
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </main>
   );

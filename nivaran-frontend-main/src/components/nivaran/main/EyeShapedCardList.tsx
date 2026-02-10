@@ -35,30 +35,19 @@ const EyeShapeCardList = () => {
   const cards = [
     {
       imageSrc: "/images/healthGroup.jpg",
-      title: "Improving Health for Families",
+      title: "Community Health Camps",
       description:
-        "Good health is the foundation of a prosperous and equitable world.",
+        "304 health camps operated — bringing eye care, dental care, and screenings to remote communities.",
+    },
+    {
+      imageSrc: "/images/healthcare.JPG",
+      title: "Maternal & Child Health",
+      description: "Ensuring every mother and child has access to essential medical care and nutrition.",
     },
     {
       imageSrc: "/images/childrenStudy.JPG",
-      title: "Empowering Future Through Education",
-      description: "Education is the key to breaking the cycle of poverty.",
-    },
-    {
-      imageSrc: "/images/babyHome.jpg",
-      title: "A Safe Home for Every Child",
-      description:
-        "Every child deserves a safe, nurturing environment to grow.",
-    },
-    {
-      imageSrc: "/images/childPlant.JPG",
-      title: "Nurturing Environment for Future Generations",
-      description: "Safeguarding the planet ensures sustainable livelihoods.",
-    },
-    {
-      imageSrc: "/images/girlTree.JPG",
-      title: "Building Stronger, Resilient Communities",
-      description: "Strong communities are the foundation of lasting change.",
+      title: "Quality Education Access",
+      description: "Teacher training, scholarships, and school infrastructure for underserved children.",
     },
   ];
 

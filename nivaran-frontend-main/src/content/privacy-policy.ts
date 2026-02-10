@@ -237,7 +237,7 @@ export const privacyPolicySections = [
     details: [
       {
         description:
-          "If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you would like to exercise any of your rights, please contact us at: profile@nivaranfoundation.org  We are committed to working with you to obtain a fair resolution of any complaint or concern about your privacy. ",
+          "If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you would like to exercise any of your rights, please contact us at: partnerships@nivaranfoundation.org  We are committed to working with you to obtain a fair resolution of any complaint or concern about your privacy. ",
       },
     ],
   },

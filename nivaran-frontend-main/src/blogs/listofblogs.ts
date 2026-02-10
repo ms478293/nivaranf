@@ -18,6 +18,116 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rural-healthcare-crisis-nepal-by-the-numbers",
+    title: "Rural Healthcare Crisis: Nepal by the Numbers",
+    summary:
+      "A data-driven look at the healthcare disparities between Nepal's urban centers and rural communities, and how Project Sanjeevani is closing the gap across 52 districts.",
+    thumbnailImage: "/images/generalHealthService.jpg",
+    date: "2025-02-10",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "Article",
+  },
+  {
+    slug: "inside-a-nivaran-health-camp",
+    title: "6 AM to Sundown: Inside a Nivaran Foundation Health Camp in Rural Nepal",
+    summary:
+      "From setting up tents before dawn to the last patient at dusk, here is what a day of healthcare delivery looks like in a village that has never seen a doctor.",
+    thumbnailImage: "/images/doctorWorking.JPG",
+    date: "2025-02-08",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "Story",
+  },
+  {
+    slug: "preventable-blindness-nepal-eye-care",
+    title: "Preventable Blindness in Nepal: The Eye Care Crisis Nobody Talks About",
+    summary:
+      "Over 600,000 Nepalis are blind, and 80% of those cases are preventable or treatable. Here is why rural communities are losing their sight and what Nivaran is doing about it.",
+    thumbnailImage: "/images/maternalHealth.jpg",
+    date: "2025-02-05",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Article",
+  },
+  {
+    slug: "why-rural-schools-are-failing-nepal",
+    title: "Why Rural Schools Are Failing Nepal's Children — And How to Fix It",
+    summary:
+      "With a 25-point gap in learning outcomes between urban and rural students, Nepal's education system is leaving millions behind. Project Vidya aims to change that.",
+    thumbnailImage: "/blogs/thumbnail/nepaleseChildren.jpg",
+    date: "2025-02-03",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Article",
+  },
+  {
+    slug: "the-cost-of-doing-nothing",
+    title: "The Cost of Doing Nothing: Why Preventive Healthcare Saves Nepal Millions",
+    summary:
+      "Every dollar spent on preventive care in rural Nepal saves seven in emergency treatment. The economic case for health camps is overwhelming.",
+    thumbnailImage: "/blogs/images/ngozumpaGlacier.jpg",
+    date: "2025-01-31",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Analysis",
+  },
+  {
+    slug: "womens-health-nepal-mountains",
+    title: "Behind the Mountains: The Women's Health Crisis Nepal Cannot Ignore",
+    summary:
+      "From chhaupadi to maternal mortality, women in rural Nepal face health barriers that the rest of the world has largely solved. Here is why change is so difficult and so necessary.",
+    thumbnailImage: "/blogs/thumbnail/healthcareReform.jpg",
+    date: "2025-01-28",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "Story",
+  },
+  {
+    slug: "building-healthcare-from-zero",
+    title: "Building Healthcare from Zero: Nivaran's 4-Phase Blueprint for Nepal",
+    summary:
+      "From mobile health camps to a 700-bed central hospital, here is the decade-long infrastructure plan to bring permanent healthcare to every district in Nepal.",
+    thumbnailImage: "/blogs/thumbnail/healthcareTransformation.jpg",
+    date: "2025-01-26",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Project",
+  },
+  {
+    slug: "digital-classrooms-without-electricity",
+    title: "Digital Classrooms Without Electricity: How Nivaran Is Rethinking Rural Education",
+    summary:
+      "When 40% of rural schools have no electricity, bringing digital learning requires creative solutions. Solar-powered learning centers are changing what is possible.",
+    thumbnailImage: "/blogs/thumbnail/childrenInGroup.jpg",
+    date: "2025-01-23",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Project",
+  },
+  {
+    slug: "dental-health-crisis-rural-nepal",
+    title: "The Dental Health Emergency in Rural Nepal: 85% Without Care",
+    summary:
+      "In districts where no dentist has ever practiced, 85% of the population has untreated dental disease. Health camps are providing first-ever dental care to thousands.",
+    thumbnailImage: "/blogs/thumbnail/ruralSetting.jpg",
+    date: "2025-01-20",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Article",
+  },
+  {
+    slug: "from-boston-to-kathmandu",
+    title: "From Boston to Kathmandu: How a Nonprofit Operates Across 7,500 Miles",
+    summary:
+      "Running healthcare and education programs in Nepal from a Boston headquarters requires systems, trust, and relentless coordination. Here is how Nivaran makes it work.",
+    thumbnailImage: "/blogs/images/group-pressc.jpg",
+    date: "2025-01-18",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "Story",
+  },
+  {
     slug: "the-heart-of-giving",
     title: "The Heart of Giving: Volunteer Activities That Make a Difference",
     summary:

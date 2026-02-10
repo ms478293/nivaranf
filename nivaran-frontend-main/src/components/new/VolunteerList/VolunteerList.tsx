@@ -11,7 +11,7 @@ import MainTitle from "../MainTitle/MainTitle";
 import InputSearch from "../SearchInput/SearchInput";
 
 export interface ProgramsType {
-  id: number;
+  id: string | number;
   endDate: string;
   startDate: string;
   location: string;

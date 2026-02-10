@@ -1,5 +1,6 @@
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
 import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
+import { Banner } from "@/components/Banner";
 
 // export const metadata: Metadata = {
 //   robots: {
@@ -64,6 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
+      <Banner />
       {/* <Header></Header> */}
       <NivaranHeader />
 

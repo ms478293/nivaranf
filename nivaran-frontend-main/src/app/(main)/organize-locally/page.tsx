@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Organize Locally",
   description:
-    "Collaborate with Nivaran Foundation to organize healthcamp locally, contact partnerships@nivaranfoundation.org for more details.",
+    "Collaborate with Nivaran Foundation to organize healthcamp locally, contact support@nivaranfoundation.org for more details.",
 };
 export default function Page() {
   return (

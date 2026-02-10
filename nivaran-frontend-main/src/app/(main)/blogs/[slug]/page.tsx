@@ -1,10 +1,14 @@
 import MdxRenderer from "@/components/blogs/MDXRenderer";
+import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
+import DonationBlock from "@/components/new/DonationBlock/DonationBlock";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import path from "path";
+import { Suspense } from "react";
 
 // Generate static parameters for dynamic routes
 export async function generateStaticParams() {
@@ -134,7 +138,45 @@ export default async function BlogPage({
             <section className="mdx-content">
               <MdxRenderer source={mdxSource} />
             </section>
+
+            {/* CTA Section after article */}
+            <div className="mt-12 mb-8 p-6 md:p-8 bg-gradient-to-r from-primary-main/5 to-[#3777BC]/5 rounded-2xl border border-primary-main/10">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Support Our Mission
+                  </h3>
+                  <p className="text-sm text-gray-600 mt-1">
+                    Help us deliver healthcare and education to Nepal&apos;s most underserved communities.
+                  </p>
+                </div>
+                <div className="flex gap-3 flex-shrink-0">
+                  <Link
+                    href="/donate"
+                    className="px-6 py-2.5 bg-primary-main text-white rounded-lg text-sm font-medium hover:bg-primary-main/90 transition-colors whitespace-nowrap"
+                  >
+                    Donate Now
+                  </Link>
+                  <Link
+                    href="/volunteer"
+                    className="px-6 py-2.5 border border-primary-main text-primary-main rounded-lg text-sm font-medium hover:bg-primary-main/5 transition-colors whitespace-nowrap"
+                  >
+                    Volunteer
+                  </Link>
+                </div>
+              </div>
+            </div>
           </article>
+
+          {/* Newsletter Subscribe */}
+          <div className="max-w-[1140px] mx-auto mb-8">
+            <NewsletterSubscribe variant="banner" />
+          </div>
+
+          {/* Donation Block */}
+          <Suspense>
+            <DonationBlock />
+          </Suspense>
         </div>
       </>
     );

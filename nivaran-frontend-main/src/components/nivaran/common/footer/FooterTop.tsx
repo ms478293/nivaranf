@@ -98,10 +98,10 @@ const FooterMiddle = () => {
       <p className="leading-relaxed">
         If you need assistance with your donation, please email us at&nbsp;
         <a
-          href="mailto:profile@nivaranfoundation.org"
+          href="mailto:partnerships@nivaranfoundation.org"
           className="text-primary-main font-semibold hover:underline"
         >
-          profile@nivaranfoundation.org
+          partnerships@nivaranfoundation.org
         </a>
         , or contact us through our supporter services online form.
       </p>

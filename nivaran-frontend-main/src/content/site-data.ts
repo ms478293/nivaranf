@@ -4,14 +4,14 @@ export const siteData = {
   foundationName: "Nivaran Foundation",
   tagline: "Empowering Future",
   description: [
-    "The Nivaran Foundation empowers communities through transformative and sustainable development initiatives. By addressing critical needs in healthcare, education, and environmental conservation, we aim to create lasting, positive change for those who need it most.",
+    "The Nivaran Foundation empowers communities through transformative healthcare and education initiatives. By addressing critical needs in medical access and quality learning, we create lasting, positive change for those who need it most.",
     "Be a part of the change! Your time, skills, and generosity have the power to transform lives. Whether you volunteer to share your expertise or donate to support our mission, every contribution matters. Together, we can shape a brighter, more equitable future.",
   ],
   stats: [
-    { label: "Budget Allocated For 2025", value: "90 Crore NPR" },
-    { label: "Project Sanjeevani Impact", value: "61200 Patients Target" },
-    { label: "Camps Operated", value: "304" },
-    { label: "Communities Affected", value: "All Over Nepal" },
+    { label: "Health Camps Operated", value: "304" },
+    { label: "Patients Targeted (Phase-I)", value: "61,200+" },
+    { label: "Phase-I Budget", value: "$18M" },
+    { label: "Fund Utilization Rate", value: "85%" },
   ],
   buttons: {
     volunteer: "Volunteer",
@@ -57,12 +57,11 @@ export const footerData = {
       link: "https://www.gaurssa.com",
       isExternalLink: true,
     },
-    { name: "Partnerships", link: "/partnerships" },
     {
       name: "Accountability & Transparency",
       link: "/blogs/accountability-and-transparency",
     },
-    // { name: "Annual Reports", link: "/docs" },
+    { name: "Financial Reports", link: "/docs" },
     {
       name: "Financial Responsibility",
       link: "/blogs/financial-responsibility",
@@ -84,43 +83,22 @@ export const ProgramData: CardType[] = [
     title: "Healthcare",
     imgSrc: "/images/healthcare.JPG",
     description:
-      "The Nivaran Foundation Priorities healthcare, allocating 30% of our funds to ensure underserved communities have access to essential medical services. We establish community clinics and organize medical camps offering services such as eye care, dental care and general health screenings.",
+      "Healthcare is our primary focus, with 70% of our funds dedicated to ensuring underserved communities have access to essential medical services. Through Project Sanjeevani, we've operated 304 health camps and are targeting 61,200+ patients across Nepal with services including eye care, dental care, maternal health, and disease prevention.",
     link: "/programs/health",
   },
   {
     title: "Education",
     imgSrc: "/images/education.JPG",
     description:
-      "With 25% of our funds dedicated to education, the foundation seeks to empower the next generation by ensuring access to quality learning opportunities worldwide. Our focus includes improving teacher training and development, enhancing education standards, and providing scholarships to deserving students, regardless of their location.",
+      "With 30% of our funds dedicated to education, we empower the next generation by ensuring access to quality learning opportunities. Our focus includes improving teacher training and development, enhancing education standards, and providing scholarships to deserving students in underserved communities.",
     link: "/programs/education",
-  },
-  {
-    title: "Child Welfare",
-    imgSrc: "/images/childWelfare.JPG",
-    description:
-      "Child welfare programs are allocated 20% of the foundation’s resources, addressing malnutrition, child protection, and family support. The programs include providing nutritious meals and supplements, safeguarding children from abuse and exploitation, and supporting vulnerable families with essential resources.",
-    link: "/programs/childwelfare",
-  },
-  {
-    title: "Environment Stewardship",
-    imgSrc: "/images/environment.JPG",
-    description:
-      "Recognizing environmental challenges like deforestation, pollution, and climate change, 15% of our funds are dedicated to conservation, sustainable agriculture practices, and raising awareness about environmental issues. These efforts aim to restore fragile ecosystems globally while promoting community-driven solutions that balance development and environmental preservation.",
-    link: "/programs/environment",
-  },
-  {
-    title: "Community Development",
-    imgSrc: "/images/community.JPG",
-    description:
-      "Community engagement is the cornerstone of Nivaran Foundation’s approach, emphasizing empowerment and self-reliance. Strategies include organizing community meetings to encourage participation, building capacity through leadership and skills training, and offering microfinance opportunities for sustainable livelihoods.",
-    link: "/programs/community",
   },
 ];
 
 export const VisionData: ServiceDataType = {
   title: "Our Vision",
   description:
-    "To create a society where every individual, regardless of location, has access to quality healthcare, education, and a sustainable environment, while ensuring the welfare and protection of children worldwide.",
+    "To create a society where every individual, regardless of location, has access to quality healthcare and education — the two pillars that transform lives and break the cycle of poverty.",
   imgUrl: "/images/childWelfare.jpg",
   altImage: "",
 };
@@ -146,9 +124,9 @@ export const InformationAboutusData: InformationDisplayType = {
   imgAlt: "Image",
 
   paragraphs: [
-    "Nivaran Foundation is passionate about unlocking the potential of communities worldwide to drive meaningful change through collaboration. By working together, we can transform lives and address critical challenges such as limited access to healthcare and education, inadequate child protection, environmental decline, and low community engagement. At the heart of our mission is a vision to tackle the root causes of these global issues and build a brighter future for all.",
-    "Our approach is holistic, focusing on five key areas: healthcare, education, child welfare, environmental sustainability, and community development. We aim to make a tangible difference by setting up community clinics, organizing medical camps, supporting education programs, fostering child welfare initiatives, and empowering families in need.",
-    "Thanks to these efforts, we’ve witnessed remarkable progress across communities: improved literacy rates, better maternal and child health outcomes, environmental restoration, and greater empowerment for marginalized groups. The Nivaran Foundation invites individuals, organizations, and partners from across the globe to join us in our mission to create positive, lasting change. Together, we can make a global impact!",
+    "Nivaran Foundation is passionate about unlocking the potential of communities worldwide to drive meaningful change through healthcare and education. By working together, we can transform lives and address critical challenges such as limited access to medical services and quality education. At the heart of our mission is a vision to tackle the root causes of these issues and build a brighter future for all.",
+    "Our approach focuses on two key areas: healthcare and education. We aim to make a tangible difference by setting up community clinics, organizing medical camps, supporting education programs, and empowering families in need. Through Project Sanjeevani alone, we've operated 304 health camps targeting over 61,200 patients.",
+    "Thanks to these efforts, we've witnessed remarkable progress across communities: better maternal and child health outcomes, improved literacy rates, and greater empowerment for marginalized groups. The Nivaran Foundation invites individuals and organizations from across the globe to join us in our mission to create positive, lasting change. Together, we can make a global impact!",
   ],
   title: "",
 };
@@ -169,34 +147,22 @@ export const navBarData: {
   description: string;
 }[] = [
   {
-    title: "Healthcare ",
+    title: "Healthcare",
     href: "/programs/health",
     description:
       "Providing essential healthcare services to underserved communities worldwide.",
+  },
+  {
+    title: "Project Sanjeevani",
+    href: "/sanjeevani",
+    description:
+      "Our flagship healthcare initiative — 304 camps, 61,200+ patients targeted across Nepal.",
   },
   {
     title: "Education",
     href: "/programs/education",
     description:
       "Improving access to quality education for children in underprivileged areas.",
-  },
-  {
-    title: "Child Welfare",
-    href: "/programs/childwelfare",
-    description:
-      "Ensuring the safety, protection, and well-being of vulnerable children.",
-  },
-  {
-    title: "Environment",
-    href: "/programs/environment",
-    description:
-      "Promoting sustainable practices and environmental protection initiatives.",
-  },
-  {
-    title: "Community Development",
-    href: "/programs/community",
-    description:
-      "Empowering communities through development and support programs.",
   },
 ];
 
@@ -212,10 +178,8 @@ export const howToHelpData: {
 
 export const aboutUsData: { title: string; href: string }[] = [
   { title: "Mission and Vision", href: "/about" },
-  // { title: "Leadership", href: "/leadership" },
-  // { title: "Global Advisory Board", href: "/advisory-board" },
-  { title: "Key Partneship", href: "/partnership" },
-  // { title: "Our Journey", href: "/journey" },
+  { title: "Our Journey", href: "/journey" },
+  { title: "Financial Reports", href: "/docs" },
   { title: "Diversity and Inclusion", href: "/dei" },
   { title: "FAQ's", href: "/frequently-asked-questions" },
   { title: "Get in Touch", href: "/contact" },
@@ -284,42 +248,6 @@ export const siteContentData: siteContent = [
       "By investing in education, we are not just shaping individual lives—we are building stronger, more resilient communities and paving the way for a prosperous global future.",
     ],
     title: "Empowering Future Through Education",
-  },
-  {
-    imgUrl: "/images/childHome.JPG",
-    imageAlignment: "left",
-    imgAlt: "Image",
-
-    paragraphs: [
-      "Child welfare is at the heart of everything we do at the Nivaran Foundation. Every child deserves a safe, nurturing environment where they can grow, learn, and thrive—free from harm, neglect, or exploitation.",
-      "We provide vulnerable children around the world with essential support, including safe housing, access to nutritious food, education, and emotional well-being programs. Our child protection initiatives focus on preventing child labor, abuse, and exploitation while fostering positive development and empowerment.",
-      "Communities are integral to safeguarding children, and we invite you to join us in creating a brighter future. Together, we can ensure that every child, regardless of where they are, has the opportunity to realize their full potential and lead a life filled with hope and opportunity.",
-    ],
-    title: "A Safe Home for Every Child",
-  },
-  {
-    imgUrl: "/images/childPlant.JPG",
-    imageAlignment: "right",
-    imgAlt: "Image",
-
-    paragraphs: [
-      "The world faces significant environmental challenges, from deforestation and pollution to the escalating threats of climate change. At the Nivaran Foundation, we are dedicated to safeguarding the planet’s natural beauty and securing sustainable livelihoods for communities worldwide.",
-      "Our initiatives include large-scale tree-planting drives, innovative waste management programs, and environmental education campaigns. By engaging local communities, we promote sustainable practices and empower people to protect and restore their invaluable natural resources.",
-      "These efforts not only revitalize ecosystems but also provide long-term solutions for communities that depend on the environment for agriculture, water, and economic stability. Together, we can build a greener, healthier future for generations across the globe.",
-    ],
-    title: "Nurturing Environment for Future Generations",
-  },
-  {
-    imgUrl: "/images/girlTree.JPG",
-    imageAlignment: "left",
-    imgAlt: "Image",
-
-    paragraphs: [
-      "Strong communities are the foundation of meaningful, lasting change. The Nivaran Foundation is dedicated to empowering communities worldwide to thrive by supporting livelihoods, strengthening local economies, and fostering engagement and resilience.",
-      "Through vocational training, microloans, and leadership programs, we equip individuals to become catalysts for positive change within their communities. By empowering local leaders and encouraging collaboration, we create pathways for sustainable growth and development that benefit generations to come.",
-      "When communities succeed, the ripple effects are felt across the globe. Together, we can build a brighter, more equitable future for everyone, everywhere.",
-    ],
-    title: "Building Stronger, Resillient Communities",
   },
 ];
 
@@ -555,82 +483,6 @@ export type ProgramEventDataType = {
     status: string;
   }[];
 };
-
-export const partners = [
-  {
-    name: "Service & Academic Partners",
-    description: [
-      "Harvard Medical School",
-      "JSI Research and Training Institute, Inc.",
-      "Pathfinder International",
-      "University Research Co., LLC",
-    ],
-  },
-  {
-    name: "Foundation Partners",
-    description: [
-      "The Conrad N. Hilton Foundation",
-      "Vitol Foundation",
-      "Wagner Foundation",
-      "Cummings Foundation, Inc.",
-      "The Crown Family",
-    ],
-  },
-  {
-    name: "Corporate Partners",
-    description: [
-      "Gaurssa Corporate Group",
-      "Anthropic PBC",
-      "GDS Services International Ltd.",
-      "Merck & Company, Inc.",
-      "Medtronic Philanthropy",
-      "WellDyneRx, LLC",
-    ],
-  },
-  {
-    name: "Matching Gift Supporters",
-    description: [
-      "PricewaterhouseCoopers, LLP",
-      "Thermo Fisher Scientific",
-      "GlaxoSmithKline plc",
-      "Merck & Company, Inc.",
-    ],
-  },
-  {
-    name: "In-Kind & Expertise Partners",
-    description: [
-      "The Boston Foundation",
-      "Dana-Farber Cancer Institute",
-      "Direct Relief International",
-      "eResearch Technology, Inc.",
-      "Faber Daeufer & Itrato PC",
-      "ERT Human Diagnostics",
-    ],
-  },
-];
-
-export const whyPartner: { title: string; description: string }[] = [
-  {
-    title: "Amplified Impact",
-    description:
-      "By collaborating, we pool resources and expertise to create larger, more impactful solutions.",
-  },
-  {
-    title: "Shared Vision",
-    description:
-      "We align with organizations that share our values of compassion, equity, and sustainability.",
-  },
-  {
-    title: "Sustainable Growth",
-    description:
-      "Together, we ensure long-term, sustainable outcomes that benefit communities and ecosystems.",
-  },
-  {
-    title: "Transparency",
-    description:
-      "We relelase all our donation and expense record on the public domain.",
-  },
-];
 
 export const BOTTOM_FOOTER = [
   {

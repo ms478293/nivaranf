@@ -1,7 +1,6 @@
 "use client";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
 import { BlogListComponent } from "@/components/nivaran/common/BlogListComponent";
-import { Donor } from "@/components/nivaran/main/Donor";
 import HeroSection from "@/components/nivaran/main/Hero";
 import Stats from "@/components/nivaran/main/Stats";
 import { DialogOpener } from "@/components/nivaran/main/utils/DialogOpener";
@@ -97,9 +96,6 @@ export const MainPage = () => {
 
         <div className="w-full px-4">
           <UpcomingProjects />
-        </div>
-        <div className="w-full px-4">
-          <Donor />
         </div>
         <NivaranFooter />
       </main>

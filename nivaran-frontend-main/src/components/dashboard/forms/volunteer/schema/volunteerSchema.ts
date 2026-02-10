@@ -11,7 +11,7 @@ export const volunteerSchema = z.object({
   phone: z.string().min(8, "Contact no is required"),
   email: z.string().min(5, "Email is required"),
   address: z.string().min(2, "Address is required"),
-  programId: z.coerce.number(),
+  programId: z.union([z.string(), z.number()]),
   // cv: z.string().optional(),
   // foundationName: z.string().optional(),
 });

@@ -36,7 +36,7 @@ export const Introduction = () => {
           communities: improved literacy rates, better maternal and child health
           outcomes, environmental restoration, and greater empowerment for
           marginalized groups. The Nivaran Foundation invites individuals,
-          organizations, and partners from across the globe to join us in our
+          organizations, and supporters from across the globe to join us in our
           mission to create positive, lasting change. Together, we can make a
           global impact!
         </p>

@@ -24,8 +24,8 @@ export default function page() {
             className="flex-row items-center gap-4"
           />
           <p className="text-sm text-gray-600">
-            For inquiries regarding partnerships, media, or programs, please
-            contact us
+            Every contribution — whether your time, skills, or donation — helps
+            us deliver healthcare and education to those who need it most.
           </p>
         </div>
 

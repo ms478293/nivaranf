@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const jobApplicationSchema = z.object({
-  jobOpeningId: z.number().int(),
+  jobOpeningId: z.union([z.string(), z.number()]),
   status: z.enum(["pending", "accepted", "rejected"]), // Adjust based on your status options
   fName: z.string().min(1, "First name is required"),
   lName: z.string().min(1, "Last name is required"),

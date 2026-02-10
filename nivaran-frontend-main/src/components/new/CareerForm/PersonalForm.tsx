@@ -21,7 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { jobApplication } from "@/lib/api/jobApi/api";
+import { submitApplication } from "@/app/actions/submit-application";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
@@ -34,6 +34,7 @@ import {
   jobApplicationSchema,
   jobApplicationSchemaType,
   legalSchema,
+  LegalSchemaType,
 } from "./jobApplicationSchema";
 
 // const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
@@ -83,11 +84,14 @@ export const CareerForm = ({ career }: { career: CareerType }) => {
   });
 
   const { mutate, isPending } = useMutation({
-    mutationFn: async (data: jobApplicationSchemaType) => {
-      await jobApplication({
+    mutationFn: async (data: z.infer<typeof careerJobSchema>) => {
+      const result = await submitApplication({
         ...data,
         jobOpeningId: career.id,
       });
+      if (!result.success) {
+        throw new Error(result.error);
+      }
     },
     onSuccess: () => {
       toast.success("Application submitted successfully");

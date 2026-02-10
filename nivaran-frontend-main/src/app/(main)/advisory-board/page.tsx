@@ -1,102 +1,57 @@
-import { CustomHeading } from "@/components/nivaran/common/CustomHeading";
 import { Metadata } from "next";
-import Image from "next/image";
+import Link from "next/link";
+
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Advisory Board",
   description:
-    "The Experts Aligned with Nivaran Foundation have used their expertise and advise in core issues relating to health, education, welfare, environment and community.",
+    "Nivaran Foundation is building a global advisory board of healthcare and education experts to guide our mission in Nepal.",
 };
-const advisoryBoardMembers = [
-  {
-    name: "Prof. Michael Carter",
-    role: "Global Health Expert",
-    image: "/images/advisory-board/michael-carter.jpg", // Replace with actual image paths
-    bio: "Prof. Michael has over 25 years of experience in global health policy and has been instrumental in advising organizations on effective healthcare delivery models.",
-    linkedin: "https://www.linkedin.com/in/michael-carter",
-  },
-  {
-    name: "Dr. Priya Kapoor",
-    role: "Sustainability Advocate",
-    image: "/images/advisory-board/priya-kapoor.jpg",
-    bio: "Dr. Kapoor specializes in sustainable development initiatives, focusing on environmental conservation and community-led solutions worldwide.",
-    linkedin: "https://www.linkedin.com/in/priya-kapoor",
-  },
-  {
-    name: "Mr. James Wilson",
-    role: "Education Strategist",
-    image: "/images/advisory-board/james-wilson.jpg",
-    bio: "James has advised several NGOs and international organizations on innovative education programs, particularly in underserved regions.",
-    linkedin: "https://www.linkedin.com/in/james-wilson",
-  },
-  {
-    name: "Ms. Amara Singh",
-    role: "Child Welfare Advocate",
-    image: "/images/advisory-board/amara-singh.jpg",
-    bio: "Amara has dedicated her career to protecting children's rights and ensuring access to education and healthcare in conflict zones.",
-    linkedin: "https://www.linkedin.com/in/amara-singh",
-  },
-];
 
 export default function AdvisoryBoardPage() {
   return (
-    <div className="w-full px-4 bg-white">
-      <div className="py-888  min-h-screen max-w-[1140px] mx-auto">
-        <header className="text-center mb-12">
-          <CustomHeading className="lg:ml-0">Our Advisory Board</CustomHeading>
-          <p className="text-gray-600 text-lg text-left">
-            Meet the esteemed experts and advisors who provide strategic
-            guidance to the Nivaran Foundation, helping us achieve our global
-            mission.
-          </p>
-        </header>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {advisoryBoardMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center transition hover:shadow-lg"
+    <div className="w-full px-4 bg-white font-Poppins">
+      <div className="py-16 min-h-[60vh] max-w-[800px] mx-auto text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          Advisory Board
+        </h1>
+        <div className="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100">
+          <div className="w-16 h-16 mx-auto mb-6 bg-primary-100 rounded-full flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-primary-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-primary-main mb-2">
-                {member.name}
-              </h3>
-              <p className="text-sm font-semibold text-gray-500 mb-4">
-                {member.role}
-              </p>
-              <p className="text-gray-600 text-center mb-4">{member.bio}</p>
-              {member.linkedin && (
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-main font-semibold hover:underline"
-                >
-                  View on LinkedIn
-                </a>
-              )}
-            </div>
-          ))}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            Coming Soon
+          </h2>
+          <p className="text-gray-600 leading-7 mb-6">
+            We are currently assembling a distinguished advisory board of
+            healthcare professionals, education experts, and nonprofit leaders
+            who share our vision of transforming lives in Nepal. Our advisory
+            board members will provide strategic guidance on program design,
+            impact measurement, and organizational growth.
+          </p>
+          <p className="text-gray-500 text-sm mb-8">
+            Interested in joining our advisory board? We welcome experts in
+            public health, education policy, nonprofit management, and
+            international development.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-6 py-3 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition-colors"
+          >
+            Express Interest
+          </Link>
         </div>
-
-        <footer className="mt-16 text-center">
-          <p className="text-gray-600">
-            Interested in partnering with us or learning more?{" "}
-            <a
-              href="/contact"
-              className="text-primary-main font-semibold hover:underline"
-            >
-              Contact Us
-            </a>
-            .
-          </p>
-        </footer>
       </div>
     </div>
   );

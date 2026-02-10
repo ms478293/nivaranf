@@ -18,11 +18,6 @@ const ABOUT_US = [
     link: "/contact",
   },
   {
-    id: 4,
-    label: "Partnerships",
-    link: "/partnerships",
-  },
-  {
     id: 5,
     label: "FAQs",
     link: "/frequently-asked-questions",

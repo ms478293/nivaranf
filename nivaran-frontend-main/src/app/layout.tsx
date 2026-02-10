@@ -84,7 +84,7 @@ export default async function RootLayout({
                 "@type": "ContactPoint",
                 telephone: "+977 1-5312555",
                 contactType: "customer service",
-                email:"profile@nivaranfoundation.org",
+                email:"partnerships@nivaranfoundation.org",
                 areaServed: "NP",
               },
               sameAs: [

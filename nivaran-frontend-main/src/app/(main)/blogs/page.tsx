@@ -1,4 +1,5 @@
 import { BlogList } from "@/components/new/Blogs/BlogList";
+import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
 
@@ -12,8 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function BlogsPage() {
-  // const [categories, setCategories] = useState("");
-
   return (
     <div className="w-full mb-10 font-Poppins ">
       <div className="max-w-[1320px] mx-auto flex flex-col gap-4  ">
@@ -27,6 +26,11 @@ export default function BlogsPage() {
         </p>
         <div className="w-full h-[1.5px] gradient-border "></div>
         <BlogList />
+
+        {/* Newsletter Subscribe */}
+        <div className="mt-8">
+          <NewsletterSubscribe variant="banner" />
+        </div>
       </div>
     </div>
   );

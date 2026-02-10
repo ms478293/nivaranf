@@ -11,15 +11,20 @@ import {
   ListPopulate,
   LogoAndDescription,
 } from "../../nivaran/common/footer/FooterTop";
+import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 
 const NivaranFooter = () => {
   const numberRef = useRef<HTMLDivElement | null>(null);
-  // const { count } = useNumberCountAnimation({ end: 99, ref: numberRef });
 
   const { logo, others, ourWork } = footerData;
 
   return (
     <footer className="w-full px-4 bg-[linear-gradient(to_bottom,_rgba(235,89,52,0.1)_0%,__rgba(235,89,52,0.1)_5%,_#fff_50%)] md:rounded-t-[2.5rem] rounded-t-3xl font-Poppins">
+      {/* Newsletter Subscribe */}
+      <div className="max-w-[1320px] mx-auto pt-10 pb-2">
+        <NewsletterSubscribe variant="inline" />
+      </div>
+
       <div
         className="  max-w-[1320px] mx-auto py-10 text-gray-600 flex flex-col font-poppins  gap-8 "
         ref={numberRef}
@@ -31,10 +36,10 @@ const NivaranFooter = () => {
               <p className="flex items-center gap-1 border-b-2 border-gray-600/50 w-fit">
                 <MailIcon stroke="#4b5563" className="w-5 h-5" />
                 <Link
-                  href="mailto:profile@nivaranfoundation.org"
+                  href="mailto:partnerships@nivaranfoundation.org"
                   className=" text-gray-600 text-sm md:text-md"
                 >
-                  profile@nivaranfoundation.org
+                  partnerships@nivaranfoundation.org
                 </Link>
               </p>
             </div>
@@ -62,6 +67,12 @@ const NivaranFooter = () => {
           </div>
         </div>
 
+        {/* EIN & Address */}
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs text-gray-500">
+          <p>501(c)(3) Nonprofit | EIN: 99-3919025</p>
+          <p>Nivaran Foundation, Boston, Massachusetts, United States</p>
+        </div>
+
         <div className="w-full h-0.5 gradient-border "></div>
         <div className="flex flex-col gap-5">
           <div className=" visible opacity-100  items-center sm:hidden sm:invisible sm:opacity-0">
@@ -69,7 +80,7 @@ const NivaranFooter = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between  gap-4   relative text-xsm sm:text-sm  ">
-            <p>&copy; 2025 NIVARAN. All rights reserved</p>
+            <p>&copy; {new Date().getFullYear()} NIVARAN. All rights reserved</p>
             <div className="flex items-center  ">
               {BOTTOM_FOOTER.map((list) => (
                 <Link
@@ -103,38 +114,5 @@ const FooterTitle = ({
     </h2>
   );
 };
-
-// const FooterListPartner = ({
-//   lists,
-// }: {
-//   lists: { name: string; description: string[] };
-// }) => {
-//   return (
-//     <>
-// <div className="lg:hidden lg:opacity-0 lg:invisible">
-//   <Accordion type="multiple">
-//     <AccordionItem value={lists.name}>
-//       <AccordionTrigger className="hover:no-underline [&>svg]:stroke-primary-main">
-//         <FooterTitle title={lists.name} />
-//       </AccordionTrigger>
-//       {lists.description.map((list) => (
-//         <AccordionContent key={list}>{list}</AccordionContent>
-//       ))}
-//     </AccordionItem>
-//   </Accordion>
-// </div>
-//       <div className="hidden opacity-0 invisible lg:block lg:opacity-100 lg:visible ">
-//         <FooterTitle title={lists.name} className="mb-5 text-base uppercase" />
-//         <ul className="flex flex-col gap-3 lg:mt-2">
-//           {lists.description.map((list) => (
-//             <li key={list} className=" xl:text-nowrap">
-//               {list}
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//     </>
-//   );
-// };
 
 export default NivaranFooter;

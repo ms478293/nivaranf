@@ -27,12 +27,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How does Nivaran Foundation ensure the sustainability of its projects?",
         answer:
-          "We work closely with local communities, governments, and partners to build local capacity, promote ownership, and ensure long-term sustainability.",
-      },
-      {
-        question: "Does Nivaran Foundation work with local partners?",
-        answer:
-          "Yes, we believe in the power of collaboration and work with local partners who have expertise and understanding of the communities we serve.",
+          "We work closely with local communities and governments to build local capacity, promote ownership, and ensure long-term sustainability.",
       },
     ],
   },
@@ -86,7 +81,7 @@ export const FAQdata: FAQType[] = [
       {
         question: "How does Nivaran Foundation address mental health issues?",
         answer:
-          "We recognize the importance of mental health and may integrate mental health services into our programs, provide training for healthcare workers, raise awareness to reduce stigma, or partner with mental health specialists.",
+          "We recognize the importance of mental health and may integrate mental health services into our programs, provide training for healthcare workers, and raise awareness to reduce stigma.",
       },
       {
         question:
@@ -97,7 +92,7 @@ export const FAQdata: FAQType[] = [
       {
         question: "How can I access Nivaran Foundation's healthcare services?",
         answer:
-          "Information about accessing our healthcare services is typically shared through local community channels, partner organizations, and our website, when applicable to a particular region.",
+          "Information about accessing our healthcare services is typically shared through local community channels and our website, when applicable to a particular region.",
       },
     ],
   },
@@ -138,65 +133,6 @@ export const FAQdata: FAQType[] = [
     ],
   },
   {
-    title: "Environmental Conservation Programs",
-    item: [
-      {
-        question:
-          "What kind of environmental projects does Nivaran Foundation undertake?",
-        answer:
-          "Our environmental projects may include reforestation, clean water initiatives, waste management programs, renewable energy projects, sustainable agriculture support, and environmental education.",
-      },
-      {
-        question: "How does Nivaran Foundation address climate change?",
-        answer:
-          "We recognize the impact of climate change and may incorporate climate change mitigation and adaptation strategies into our programs, such as promoting sustainable practices, supporting climate-resilient agriculture, and raising awareness about climate change.",
-      },
-      {
-        question: "Does Nivaran Foundation work to protect endangered species?",
-        answer:
-          "Depending on the region and local needs, we may support initiatives that contribute to biodiversity conservation and the protection of endangered species, such as habitat restoration or anti-poaching efforts.",
-      },
-      {
-        question:
-          "How does Nivaran Foundation promote sustainable agriculture?",
-        answer:
-          "We may provide training on sustainable farming techniques, promote water conservation, support the use of organic fertilizers and pesticides, and help farmers access markets for sustainable products.",
-      },
-      {
-        question:
-          "How can individuals contribute to Nivaran Foundation's environmental efforts?",
-        answer:
-          "Individuals can contribute by donating to our environmental programs, volunteering their time and expertise, advocating for environmental protection, and adopting sustainable practices in their own lives.",
-      },
-    ],
-  },
-  {
-    title: "Partnerships and Collaboration",
-    item: [
-      {
-        question:
-          "What types of organizations does Nivaran Foundation partner with?",
-        answer:
-          "We partner with a variety of organizations, including local and international NGOs, community-based organizations, government agencies, academic institutions, corporations, and other stakeholders.",
-      },
-      {
-        question: "How does Nivaran Foundation select its partners?",
-        answer:
-          "We select partners based on shared values, alignment with our mission, expertise in relevant areas, commitment to ethical practices, and a proven track record of success.",
-      },
-      {
-        question: "How can my organization partner with Nivaran Foundation?",
-        answer:
-          "If your organization is interested in partnering with us, please contact us at partnerships@nivaranfoundation.org to discuss potential collaboration opportunities.",
-      },
-      {
-        question: "Does Nivaran Foundation engage in advocacy?",
-        answer:
-          "We may engage in advocacy efforts related to our core focus areas to raise awareness, influence policy, and promote systemic change at local, national, or international levels.",
-      },
-    ],
-  },
-  {
     title: "Ethical Considerations",
     item: [
       {
@@ -214,7 +150,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How does Nivaran Foundation handle complaints or grievances?",
         answer:
-          "We have a complaints mechanism to receive and address any complaints or grievances from beneficiaries, community members, staff, or partners. You can submit your concerns via email at support@nivaranfoundation.org.",
+          "We have a complaints mechanism to receive and address any complaints or grievances from beneficiaries, community members, or staff. You can submit your concerns via email at support@nivaranfoundation.org.",
       },
     ],
   },
@@ -257,13 +193,13 @@ export const FAQdata: FAQType[] = [
       {
         question: "Does Nivaran Foundation accept corporate donations?",
         answer:
-          "Yes, we welcome corporate donations and partnerships that align with our mission and values. We carefully evaluate potential corporate partnerships to ensure they are consistent with our ethical principles.",
+          "Yes, we welcome corporate donations that align with our mission and values. We carefully evaluate potential corporate collaborations to ensure they are consistent with our ethical principles.",
       },
       {
         question:
           "How can I organize a fundraising event for Nivaran Foundation?",
         answer:
-          "We appreciate your support! Please contact us at partnerships@nivaranfoundation.org to discuss your fundraising ideas and receive guidance on organizing an event that complies with our policies.",
+          "We appreciate your support! Please contact us at support@nivaranfoundation.org to discuss your fundraising ideas and receive guidance on organizing an event that complies with our policies.",
       },
       {
         question: "Does Nivaran Foundation have a gift acceptance policy?",
@@ -283,7 +219,7 @@ export const FAQdata: FAQType[] = [
       {
         question: "Does Nivaran Foundation engage in cause-related marketing?",
         answer:
-          "We may engage in cause-related marketing partnerships with businesses that align with our mission and values. We carefully vet these partnerships to ensure they are ethical and beneficial to our work.",
+          "We may engage in cause-related marketing collaborations with businesses that align with our mission and values. We carefully vet these collaborations to ensure they are ethical and beneficial to our work.",
       },
       {
         question:
@@ -405,7 +341,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How does Nivaran Foundation handle language barriers in its work?",
         answer:
-          "We work with local staff and partners who are fluent in the local languages. We also translate materials into relevant languages to ensure effective communication with the communities we serve.",
+          "We work with local staff who are fluent in the local languages. We also translate materials into relevant languages to ensure effective communication with the communities we serve.",
       },
     ],
   },
@@ -558,12 +494,6 @@ export const FAQdata: FAQType[] = [
       },
       {
         question:
-          "Does Nivaran Foundation partner with other organizations on advocacy initiatives?",
-        answer:
-          "Yes, we often collaborate with other organizations on advocacy to amplify our impact and build broader coalitions for change. We believe in the power of collective action to achieve policy goals.",
-      },
-      {
-        question:
           "How does Nivaran Foundation ensure its advocacy efforts are non-partisan?",
         answer:
           "As a 501(c)(3) organization, we are prohibited from engaging in partisan political activity. Our advocacy efforts focus on policy issues, not on supporting or opposing specific candidates or political parties. We adhere to all applicable laws and regulations regarding non-profit advocacy.",
@@ -596,12 +526,6 @@ export const FAQdata: FAQType[] = [
           "How does Nivaran Foundation ensure that its programs are culturally appropriate and do not impose external values on the communities it serves?",
         answer:
           "We conduct thorough cultural assessments, engage with local communities to understand their values and traditions, and adapt our programs accordingly. We prioritize local knowledge and leadership in program design and implementation.",
-      },
-      {
-        question:
-          "What is Nivaran Foundation's position on partnering with organizations that may have controversial practices or viewpoints?",
-        answer:
-          "We carefully evaluate all potential partnerships to ensure alignment with our mission, values, and ethical principles. We will not partner with organizations whose practices or viewpoints are fundamentally incompatible with our commitment to human rights, social justice, and sustainable development.",
       },
       {
         question:

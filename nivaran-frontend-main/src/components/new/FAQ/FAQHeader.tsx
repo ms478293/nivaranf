@@ -24,7 +24,7 @@ export const FAQHeader = ({
         <PageTitle suffix="Empower Your Future" prefix="Join Us and" />
 
         <p className="text-sm text-gray-600">
-          For inquiries regarding partnerships, media, or programs, please
+          For inquiries regarding media or programs, please
           contact us
         </p>
         <div className="flex gap-2 items-center ">

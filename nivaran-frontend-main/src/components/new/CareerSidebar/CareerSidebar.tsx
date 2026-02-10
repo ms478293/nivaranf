@@ -1,7 +1,6 @@
 "use client";
 
 import ContactIcon from "@/assets/icons/ContactIcon";
-import { HandShakeIcon } from "@/assets/icons/HandShakeIcon";
 import LocationIcon from "@/assets/icons/LocationIcon";
 import MailIcon from "@/assets/icons/MailIcon";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
@@ -20,7 +19,7 @@ export const CareerSidebar = () => {
     {
       id: 2,
       title: "Email",
-      label: "profile@nivaranfoundation.org",
+      label: "partnerships@nivaranfoundation.org",
       icon: <MailIcon className="w-6 h-6 stroke-secondary-800" />,
     },
     {
@@ -31,12 +30,6 @@ export const CareerSidebar = () => {
           ? "Newroad, Kathmandu"
           : "USA Office: Boston MA, US",
       icon: <LocationIcon className="w-6 h-6 stroke-secondary-800" />,
-    },
-    {
-      id: 4,
-      title: "Partnership with us",
-      label: "partnerships@nivaranfoundation.org",
-      icon: <HandShakeIcon className="w-6 h-6 stroke-secondary-800" />,
     },
   ];
 

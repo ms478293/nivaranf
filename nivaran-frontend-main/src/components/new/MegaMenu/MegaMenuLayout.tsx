@@ -24,7 +24,7 @@ const MegaMenuFooter = () => {
     <footer>
       <div className="w-full h-[1.5px] gradient-border  "></div>
       <div className="w-full flex justify-between items-center text-xsm text-gray-800 py-6">
-        <p>profile@nivaranfoundation.org</p>
+        <p>partnerships@nivaranfoundation.org</p>
         <div className="flex gap-16">
           <p>+1 8577017471, +977 1-5312555</p>
           <p className="flex gap-6 items-center">
