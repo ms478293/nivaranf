@@ -32,7 +32,9 @@ import countries from "world-countries";
 import { z } from "zod";
 import {
   jobApplicationSchema,
+  jobApplicationSchemaType,
   legalSchema,
+  LegalSchemaType,
 } from "./jobApplicationSchema";
 
 // const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
