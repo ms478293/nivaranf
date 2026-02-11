@@ -36,14 +36,15 @@ export const CreateJobForm = ({
   id,
   refetch,
 }: {
-  id?: number;
+  id?: number | string;
   refetch?: (
     options?: RefetchOptions
   ) => Promise<QueryObserverResult<any, Error>>;
 }) => {
   const { data: jobData } = useQuery({
     queryKey: ["jobById"],
-    queryFn: () => getJobById(id),
+    queryFn: () => getJobById(id!),
+    enabled: !!id
   });
 
   const form = useForm<CreateJobSchemaType>({

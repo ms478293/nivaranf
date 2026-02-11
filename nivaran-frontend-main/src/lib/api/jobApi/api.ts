@@ -152,7 +152,7 @@ export const deleteApplicant = async (id: number) => {
   }
 };
 
-export const getJobById = async (id: number) => {
+export const getJobById = async (id: number | string) => {
   console.log("ID", id);
   try {
     const token = getAccessToken();
@@ -176,7 +176,7 @@ export const getJobById = async (id: number) => {
 
 export const updateJobOpening = async (
   data: CreateJobSchemaType,
-  id: number
+  id: number | string
 ) => {
   console.log("DATA JOB", data);
   console.log("ID", id);
@@ -223,7 +223,7 @@ export const getAllJobs = async () => {
   }
 };
 
-export const deletejob = async (id: number) => {
+export const deletejob = async (id: number | string) => {
   try {
     const token = getAccessToken();
     const response = await api.delete(`/api/carrer/job-openings/${id}`, {
