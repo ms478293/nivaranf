@@ -5,9 +5,8 @@ import { Resend } from 'resend';
 import { VolunteerSchemaType } from "@/components/dashboard/forms/volunteer/schema/volunteerSchema";
 import { getVolunteerApplicationTemplate } from "@/lib/email-templates";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function submitVolunteer(data: VolunteerSchemaType) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     // 1. Insert into Supabase
     const { error: dbError } = await supabaseAdmin

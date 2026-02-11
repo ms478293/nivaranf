@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
@@ -12,6 +10,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: 'Email parameter is required' }, { status: 400 });
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: 'Nivaran Foundation <onboarding@resend.dev>',
       to: [email],

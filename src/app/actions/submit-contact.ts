@@ -4,8 +4,6 @@ import { supabaseAdmin } from "@/lib/supabase/server";
 import { Resend } from 'resend';
 import { getContactTemplate } from "@/lib/email-templates";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 type ContactFormData = {
   name: string;
   email: string;
@@ -14,6 +12,7 @@ type ContactFormData = {
 };
 
 export async function submitContact(data: ContactFormData) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     // 1. Insert into Supabase
     const { error: dbError } = await supabaseAdmin

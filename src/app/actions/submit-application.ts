@@ -5,9 +5,8 @@ import { Resend } from 'resend';
 import { jobApplicationSchemaType, LegalSchemaType } from "@/components/new/CareerForm/jobApplicationSchema";
 import { getJobApplicationTemplate } from "@/lib/email-templates";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function submitApplication(data: jobApplicationSchemaType & LegalSchemaType) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     // 1. Insert into Supabase
     const { error: dbError } = await supabaseAdmin

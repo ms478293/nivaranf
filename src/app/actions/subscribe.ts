@@ -4,9 +4,8 @@ import { supabaseAdmin } from "@/lib/supabase/server";
 import { Resend } from 'resend';
 import { getSubscriptionTemplate } from "@/lib/email-templates";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function subscribe(email: string) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     // 1. Insert into Supabase
     const { error: dbError } = await supabaseAdmin
