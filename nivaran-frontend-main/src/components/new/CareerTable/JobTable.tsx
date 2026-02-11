@@ -72,7 +72,7 @@ export const JobTable = () => {
 
   const { mutate: deleteAction } = useMutation({
     mutationFn: async () => {
-      await deletejob(applicantData.id);
+      await deletejob(Number(applicantData.id));
     },
     onSuccess: () => {
       toast.success("job deleted succesfully");
@@ -180,7 +180,7 @@ export const JobTable = () => {
               </AppButton>
             }
           >
-            <CreateJobForm id={applicantData?.id} />
+            <CreateJobForm id={Number(applicantData?.id)} />
           </Modal>
 
           {/* <AppButton
@@ -195,7 +195,7 @@ export const JobTable = () => {
         </AppTable>
       </div>
       <Modal onClose={editModal.close} isOpen={editModal.state}>
-        <CreateJobForm id={applicantData?.id} refetch={refetch} />
+        <CreateJobForm id={Number(applicantData?.id)} refetch={refetch} />
       </Modal>
       <Modal
         isOpen={deleteModal.state}

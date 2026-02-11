@@ -15,15 +15,22 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
   const host = req.headers.get("host") || "";
-  const allowedDomains = ["localhost:3000", "nivaranfoundation.org"];
+  const allowedDomains = ["localhost", "nivaranfoundation.org", "vercel.app"];
 
   const isAllowedDomain = allowedDomains.some((domain) =>
     host.includes(domain)
   );
   const subdomain = host.split(".")[0];
 
-  // Check if the subdomain is valid
-  if (isAllowedDomain && subdomains.some((d) => d.subdomain === subdomain)) {
+  // Check if the subdomain is valid and not the main domain
+  // Skip subdomain rewrite for main domain, localhost, and vercel preview URLs
+  if (
+    isAllowedDomain &&
+    subdomains.some((d) => d.subdomain === subdomain) &&
+    !host.includes("vercel.app") &&
+    !host.startsWith("localhost") &&
+    !host.startsWith("nivaranfoundation.org")
+  ) {
     const url = req.nextUrl.clone();
     // Rewrite based on subdomain and path
     url.pathname = `/${subdomain}${url.pathname}`;
