@@ -9,6 +9,8 @@ const BlogList = ({
   type = "unordered",
   customStyle = "",
 }: ListProps) => {
+  if (!items || !Array.isArray(items)) return null;
+
   return type === "ordered" ? (
     <ol className={`list-decimal pl-6 ${customStyle}`} role="list">
       {items.map((item, index) => (

@@ -1,7 +1,7 @@
-import MdxRenderer from "@/components/blogs/MDXRenderer";
+import { mdxComponents } from "@/components/blogs/mdxComponents";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
-import { serialize } from "next-mdx-remote/serialize";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import Head from "next/head";
 import Image from "next/image";
 import path from "path";
@@ -55,8 +55,6 @@ export default async function BlogPage({
     const blogPath = path.join(process.cwd(), "src/blogs/usa", `${slug}.mdx`);
     const fileContents = await fs.readFile(blogPath, "utf8");
     const { content, data } = matter(fileContents);
-
-    const mdxSource = await serialize(content);
 
     return (
       <>
@@ -123,8 +121,10 @@ export default async function BlogPage({
               />
             </div>
           )}
-          <section className="mdx-content">
-            <MdxRenderer source={mdxSource} />
+          <section className="mdx-content prose flex justify-center flex-col bg-white rounded-none mt-8">
+            <article>
+              <MDXRemote source={content} components={mdxComponents} />
+            </article>
           </section>
         </article>
       </>
