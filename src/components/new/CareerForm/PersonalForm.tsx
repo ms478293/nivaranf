@@ -72,7 +72,6 @@ export const CareerForm = ({ career }: { career: CareerType }) => {
       optionalContactNo: "",
       emailAddress: "",
       country: "",
-      resumeLink: "",
       portfolioLink: "",
       availability: "",
       previousEmployee: true,
