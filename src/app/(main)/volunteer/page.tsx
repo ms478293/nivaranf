@@ -1,4 +1,3 @@
-import { supabase } from "@/lib/supabase";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import VolunteerInfoCardSection from "@/components/new/VolunteerInfoCardSection";
 import { VolunteerList } from "@/components/new/VolunteerList/VolunteerList";
@@ -6,6 +5,7 @@ import { VolunteerHeroGraphic } from "@/components/new/VolunteerHeroGraphic";
 import { VOLUNTEER_PROGRAMS } from "@/content/volunteer-programs";
 import { Metadata } from "next";
 import Link from "next/link";
+import { createClient } from "@supabase/supabase-js";
 
 export const metadata: Metadata = {
   title:
@@ -29,22 +29,34 @@ type ProgramType = {
 
 async function getOpenPrograms(): Promise<ProgramType[]> {
   try {
-    const { data, error } = await supabase
-      .from('volunteer_programs')
-      .select('*')
-      .eq('status', 'active');
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-    if (error) {
-      console.error("Error fetching programs:", error);
+    const dbPrograms = [];
+
+    if (supabaseUrl && supabaseAnonKey) {
+      const supabase = createClient(supabaseUrl, supabaseAnonKey);
+      const { data, error } = await supabase
+        .from('volunteer_programs')
+        .select('*')
+        .eq('status', 'active');
+
+      if (error) {
+        console.error("Error fetching programs:", error);
+      }
+
+      if (data?.length) {
+        dbPrograms.push(
+          ...data.map((program: any) => ({
+            id: program.id,
+            endDate: program.end_date,
+            startDate: program.start_date,
+            name: program.name,
+            location: program.location,
+          }))
+        );
+      }
     }
-
-    const dbPrograms = (data || []).map((program: any) => ({
-      id: program.id,
-      endDate: program.end_date,
-      startDate: program.start_date,
-      name: program.name,
-      location: program.location,
-    }));
 
     const staticPrograms = VOLUNTEER_PROGRAMS.filter(
       (program) => program.status === "active"
