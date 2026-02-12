@@ -1,3 +1,4 @@
+import { subscribe } from "@/app/actions/subscribe";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -12,16 +13,14 @@ export async function POST(request: Request) {
       );
     }
 
-    // TODO: Connect to your email service (Mailchimp, SendGrid, etc.)
-    // For now, log the subscription and return success
-    console.log("Newsletter subscription:", email);
+    const result = await subscribe(email);
 
-    // Example: Forward to backend API
-    // const res = await fetch("https://api.nivaranfoundation.org/api/newsletter/subscribe", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ email }),
-    // });
+    if (!result.success) {
+      return NextResponse.json(
+        { error: result.error || "Failed to subscribe" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       { message: "Subscribed successfully" },

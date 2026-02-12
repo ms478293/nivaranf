@@ -58,8 +58,40 @@ export async function submitApplication(data: JobApplicationData) {
 
     if (emailError) {
       console.error('Resend Error:', emailError);
-      return { success: false, error: `Email failed: ${emailError.message}` };
+      // Don't fail the application if email fails, just log it
     }
+
+    // 3. Send Notification Email to Admin/HR
+    const adminEmailContent = `
+      <div style="font-family: Arial, sans-serif;">
+        <h2 style="color: #2B7A0B;">New Job Application Received</h2>
+        <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0;">
+          <p style="margin: 5px 0;"><strong>Applicant:</strong> ${data.fName} ${data.lName}</p>
+          <p style="margin: 5px 0;"><strong>Email:</strong> ${data.emailAddress}</p>
+          <p style="margin: 5px 0;"><strong>Phone:</strong> ${data.contactNo}</p>
+          <p style="margin: 5px 0;"><strong>Country:</strong> ${data.country}</p>
+          <p style="margin: 5px 0;"><strong>Availability:</strong> ${data.availability}</p>
+          <p style="margin: 5px 0;"><strong>Job Opening ID:</strong> ${data.jobOpeningId}</p>
+        </div>
+        <div style="margin: 20px 0;">
+          ${data.resumeLink ? `<p><strong>Resume:</strong> <a href="${data.resumeLink}" style="color: #2B7A0B;">View Resume</a></p>` : ''}
+          ${data.portfolioLink ? `<p><strong>Portfolio:</strong> <a href="${data.portfolioLink}" style="color: #2B7A0B;">${data.portfolioLink}</a></p>` : ''}
+        </div>
+        <p style="margin-top: 20px;">
+          <a href="${process.env.NEXT_PUBLIC_SITE_URL || 'https://nivaranfoundation.org'}/dashboard"
+             style="display: inline-block; padding: 12px 24px; background-color: #2B7A0B; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            Review Application in Dashboard
+          </a>
+        </p>
+      </div>
+    `;
+
+    await resend.emails.send({
+      from: 'Nivaran Applications <noreply@updates.nivaranfoundation.org>',
+      to: ['support@nivaranfoundation.org'],
+      subject: `New Job Application: ${data.fName} ${data.lName}`,
+      html: adminEmailContent
+    });
 
     return { success: true };
   } catch (error: any) {

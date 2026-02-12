@@ -1,3 +1,4 @@
+import { submitContact } from "@/app/actions/submit-contact";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
@@ -19,19 +20,14 @@ export async function POST(request: Request) {
       );
     }
 
-    // TODO: Connect to your email service or backend
-    // Options:
-    // 1. Send email via SendGrid/Resend/Nodemailer
-    // 2. Forward to backend API
-    // 3. Store in database
-    console.log("Contact form submission:", { name, email, subject, message });
+    const result = await submitContact({ name, email, subject, message });
 
-    // Example: Send to backend API
-    // const res = await fetch("https://api.nivaranfoundation.org/api/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ name, email, subject, message }),
-    // });
+    if (!result.success) {
+      return NextResponse.json(
+        { error: result.error || "Failed to send message" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       { message: "Message sent successfully" },

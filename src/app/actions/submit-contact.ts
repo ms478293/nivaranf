@@ -54,6 +54,37 @@ export async function submitContact(data: ContactFormData) {
       return { success: false, error: `Email failed: ${emailError.message}` };
     }
 
+    // 3. Send Notification Email to Admin
+    const adminEmailContent = `
+      <div style="font-family: Arial, sans-serif;">
+        <h2 style="color: #2B7A0B;">New Contact Form Submission</h2>
+        <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0;">
+          <p style="margin: 5px 0;"><strong>Name:</strong> ${data.name}</p>
+          <p style="margin: 5px 0;"><strong>Email:</strong> ${data.email}</p>
+          <p style="margin: 5px 0;"><strong>Subject:</strong> ${data.subject || 'No subject'}</p>
+          <p style="margin: 5px 0;"><strong>Date:</strong> ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</p>
+        </div>
+        <div style="margin: 20px 0;">
+          <p><strong>Message:</strong></p>
+          <div style="background-color: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 5px;">
+            <p style="white-space: pre-wrap; color: #555;">${data.message}</p>
+          </div>
+        </div>
+        <p style="margin-top: 20px;">
+          <a href="mailto:${data.email}" style="display: inline-block; padding: 12px 24px; background-color: #2B7A0B; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+            Reply to ${data.name}
+          </a>
+        </p>
+      </div>
+    `;
+
+    await resend.emails.send({
+      from: 'Nivaran Foundation <noreply@updates.nivaranfoundation.org>',
+      to: ['support@nivaranfoundation.org'],
+      subject: `New Contact: ${data.subject || 'Inquiry'} - ${data.name}`,
+      html: adminEmailContent
+    });
+
     return { success: true };
   } catch (error: any) {
     console.error('Contact Submission Error:', error);
