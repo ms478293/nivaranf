@@ -25,6 +25,8 @@ export async function submitApplicationWithFiles(formData: FormData) {
     const availability = formData.get('availability') as string;
     const yearsOfExperience = formData.get('yearsOfExperience') as string;
     const highestEducation = formData.get('highestEducation') as string;
+    const motivation = formData.get('motivation') as string;
+    const experienceSummary = formData.get('experienceSummary') as string;
     const previousEmployee = formData.get('previousEmployee') === 'true';
     const universityStudent = formData.get('universityStudent') === 'true';
     const canRelocate = formData.get('canRelocate') === 'true';
@@ -100,6 +102,8 @@ export async function submitApplicationWithFiles(formData: FormData) {
       availability,
       yearsOfExperience,
       highestEducation,
+      motivation,
+      experienceSummary,
       previousEmployee,
       universityStudent,
       canRelocate,
@@ -209,6 +213,11 @@ export async function submitApplicationWithFiles(formData: FormData) {
           <p style="margin: 5px 0;"><strong>Education:</strong> ${highestEducation}</p>
           <p style="margin: 5px 0;"><strong>Availability:</strong> ${availability}</p>
           <p style="margin: 5px 0;"><strong>Application ID:</strong> #${applicationData.id}</p>
+        </div>
+
+        <div style="margin: 20px 0;">
+          <p><strong>Motivation:</strong> ${motivation}</p>
+          <p><strong>Experience Summary:</strong> ${experienceSummary}</p>
         </div>
 
         <div style="margin: 20px 0;">

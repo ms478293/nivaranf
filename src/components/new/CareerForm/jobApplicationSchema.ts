@@ -9,7 +9,17 @@ const ALLOWED_FILE_TYPES = [
 ];
 
 export const jobApplicationSchema = z.object({
-  jobOpeningId: z.union([z.string(), z.number()]),
+  jobOpeningId: z
+    .union([z.string(), z.number()])
+    .refine(
+      (value) =>
+        value !== 0 &&
+        value !== "0" &&
+        value !== "" &&
+        value !== undefined &&
+        value !== null,
+      "Job opening is required"
+    ),
   jobTitle: z.string().min(1, "Job title is required"),
   jobLocation: z.string().min(1, "Job location is required"),
   status: z.enum(["pending", "accepted", "rejected"]),
@@ -42,6 +52,12 @@ export const jobApplicationSchema = z.object({
     .optional(),
   portfolioLink: z.string().url("Invalid URL").optional().or(z.literal("")),
   linkedinUrl: z.string().url("Invalid LinkedIn URL").optional().or(z.literal("")),
+  motivation: z
+    .string()
+    .min(30, "Please provide at least 30 characters"),
+  experienceSummary: z
+    .string()
+    .min(30, "Please provide at least 30 characters"),
 });
 
 export const legalSchema = z.object({

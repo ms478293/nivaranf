@@ -5,6 +5,7 @@ import { CareerSidebar } from "@/components/new/CareerSidebar/CareerSidebar";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
+import { JOB_OPENINGS } from "@/content/job-openings";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -21,6 +22,7 @@ export type CareerType = {
   id: string | number;
   jobName: string;
   jobType: string;
+  jobLocation?: string;
   applyBefore: string;
   positionsOpen: number;
   introduction: string;
@@ -34,22 +36,27 @@ export const dynamicParams = true;
 
 async function getCareerOpenings(): Promise<CareerType[]> {
   try {
-    const { data, error } = await supabase
+    const { data: activeJobs, error: activeError } = await supabase
       .from('jobs')
       .select('*')
-      .eq('status', 'active');
-      
-    if (error) {
-      console.error("Error fetching careers:", error);
-      return [];
+      .in('status', ['active', 'Active', 'ACTIVE']);
+
+    if (activeError) {
+      console.error("Error fetching careers:", activeError);
     }
 
-    if (!data) return [];
+    const jobs =
+      activeJobs && activeJobs.length > 0
+        ? activeJobs
+        : (await supabase.from('jobs').select('*')).data || [];
 
-    return data.map((job: any) => ({
-      id: job.id,
+    const staticOpenings: CareerType[] = JOB_OPENINGS.filter(
+      (job) => job.status === "active"
+    ).map((job) => ({
+      id: `static-${job.id}`,
       jobName: job.title,
       jobType: job.type,
+      jobLocation: job.location,
       applyBefore: job.apply_before,
       positionsOpen: job.positions_open,
       introduction: job.introduction,
@@ -58,6 +65,35 @@ async function getCareerOpenings(): Promise<CareerType[]> {
       benefits: job.benefits || {},
       additionalInfo: job.additional_info || {},
     }));
+
+    const dbOpenings: CareerType[] = (jobs || []).map((job: any) => ({
+      id: job.id,
+      jobName: job.title,
+      jobType: job.type,
+      jobLocation: job.location ?? job.jobLocation ?? job.type,
+      applyBefore: job.apply_before,
+      positionsOpen: job.positions_open,
+      introduction: job.introduction,
+      responsibilities: job.responsibilities || [],
+      requirements: job.requirements || [],
+      benefits: job.benefits || {},
+      additionalInfo: job.additional_info || {},
+    }));
+
+    if (dbOpenings.length === 0 && staticOpenings.length === 0) return [];
+
+    const merged = new Map<string, CareerType>();
+    dbOpenings.forEach((job) => {
+      merged.set(job.jobName.toLowerCase(), job);
+    });
+    staticOpenings.forEach((job) => {
+      const key = job.jobName.toLowerCase();
+      if (!merged.has(key)) {
+        merged.set(key, job);
+      }
+    });
+
+    return Array.from(merged.values());
   } catch (err) {
     console.error("Unexpected error:", err);
     return [];

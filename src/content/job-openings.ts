@@ -23,7 +23,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     location: 'Kathmandu, Nepal',
     type: 'Full-time',
     department: 'Programs',
-    apply_before: '2025-03-15',
+    apply_before: '2026-03-15',
     positions_open: 2,
     status: 'active',
     introduction: 'Nivaran Foundation is seeking an experienced Program Manager to lead our healthcare initiatives across Nepal. This role will oversee Project Sanjeevani and coordinate health camp operations, working directly with local communities to deliver life-changing healthcare services.',
@@ -68,10 +68,10 @@ export const JOB_OPENINGS: JobOpening[] = [
   {
     id: 2,
     title: 'Fundraising and Development Officer',
-    location: 'Arlington, MA, USA (Remote options available)',
+    location: 'Boston, MA, USA (Remote options available)',
     type: 'Full-time',
     department: 'Development',
-    apply_before: '2025-03-01',
+    apply_before: '2026-03-01',
     positions_open: 1,
     status: 'active',
     introduction: 'Join our dynamic team as a Fundraising and Development Officer. You will play a crucial role in securing funding to expand our healthcare and education programs in Nepal. This position requires a passionate individual with proven fundraising experience and strong communication skills.',
@@ -108,7 +108,7 @@ export const JOB_OPENINGS: JobOpening[] = [
       'Meaningful Work': 'Direct impact on life-saving healthcare programs in Nepal'
     },
     additional_info: {
-      'Work Location': 'Arlington, MA office with remote work flexibility',
+      'Work Location': 'Boston, MA office with remote work flexibility',
       'Reporting To': 'Executive Director',
       'Team Collaboration': 'Work closely with programs, communications, and finance teams',
       'Travel': 'Potential annual visit to Nepal project sites (all expenses paid)'
@@ -120,7 +120,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     location: 'Kathmandu, Nepal',
     type: 'Full-time',
     department: 'Programs',
-    apply_before: '2025-02-28',
+    apply_before: '2026-03-31',
     positions_open: 1,
     status: 'active',
     introduction: 'We are looking for an organized and compassionate Medical Volunteer Coordinator to manage our growing volunteer program. This role involves recruiting, training, and coordinating medical professionals and volunteers for health camps and community programs across Nepal.',
@@ -168,7 +168,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     location: 'Remote (Nepal/USA)',
     type: 'Full-time',
     department: 'Communications',
-    apply_before: '2025-03-10',
+    apply_before: '2026-04-10',
     positions_open: 1,
     status: 'active',
     introduction: 'Nivaran Foundation seeks a creative Communications and Social Media Specialist to tell our story and engage supporters worldwide. You will create compelling content that showcases our impact, builds our brand, and inspires action.',
@@ -218,7 +218,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     location: 'Kathmandu, Nepal',
     type: 'Full-time',
     department: 'Finance & Operations',
-    apply_before: '2025-02-25',
+    apply_before: '2026-04-25',
     positions_open: 1,
     status: 'active',
     introduction: 'We are hiring a detail-oriented Finance and Operations Associate to support our financial management and operational efficiency. This role is critical to ensuring transparency, accountability, and compliance with donor requirements.',
@@ -266,7 +266,7 @@ export const JOB_OPENINGS: JobOpening[] = [
 
 export const JOB_LOCATIONS = [
   'Kathmandu, Nepal',
-  'Arlington, MA, USA',
+  'Boston, MA, USA',
   'Remote',
   'Remote (Nepal/USA)'
 ];

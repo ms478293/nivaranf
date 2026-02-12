@@ -21,7 +21,6 @@ import {
   RefetchOptions,
   useMutation,
 } from "@tanstack/react-query";
-import Link from "next/link";
 import { toast } from "sonner";
 import { Modal } from "../Modal/Modal";
 import { JobApplication } from "./ApplicantTable";
@@ -241,21 +240,35 @@ export const CareerViewModal = ({
         <div className="flex justify-between g items-center gap-8 mt-6">
           <div className="flex gap-2 items-center justify-between w-1/2">
             <h3 className="font-medium  mb-2 text-gray-950">Resume</h3>
-            <a href="#" className="text-red-500 underline flex gap-2 text-xsm">
-              <span>View Resume</span>
-              <SquareArrowIcon className="stroke-2 w-4 h-4 stroke-primary-500" />
-            </a>
+            {data?.resumeLink ? (
+              <a
+                href={data.resumeLink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary-500 underline flex gap-2 text-xsm"
+              >
+                <span>View Resume</span>
+                <SquareArrowIcon className="stroke-2 w-4 h-4 stroke-primary-500" />
+              </a>
+            ) : (
+              <span className="text-neutral-400 text-xsm">No Resume</span>
+            )}
           </div>
           <div className="flex gap-2 items-center justify-between w-1/2">
             <h3 className="font-medium  mb-2 text-gray-950">Portfolio</h3>
-            <Link
-              href={`/${data?.portfolioLink}`}
-              target="_blank"
-              className="text-xsm font-light underline text-primary-500 flex gap-2"
-            >
-              <span> View Portfolio</span>
-              <SquareArrowIcon className="stroke-2 w-4 h-4 stroke-primary-500" />
-            </Link>
+            {data?.portfolioLink ? (
+              <a
+                href={data.portfolioLink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-xsm font-light underline text-primary-500 flex gap-2"
+              >
+                <span> View Portfolio</span>
+                <SquareArrowIcon className="stroke-2 w-4 h-4 stroke-primary-500" />
+              </a>
+            ) : (
+              <span className="text-neutral-400 text-xsm">No Portfolio</span>
+            )}
           </div>
         </div>
 

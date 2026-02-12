@@ -3,6 +3,7 @@ import { TouchIcon } from "@/assets/icons/TouchIcon";
 import { CareersDescriptionList } from "@/components/new/Careers/CareersDescriptionList";
 import { JobSharemodal } from "@/components/new/JobShareModal/JobSharemodal";
 import { AppButton } from "@/components/ui/app-button";
+import { JOB_OPENINGS } from "@/content/job-openings";
 import Link from "next/link";
 import { CareerType } from "../page";
 import { notFound } from "next/navigation";
@@ -15,28 +16,50 @@ export default async function page({
   const { id } = await params;
 
   const { data: job, error } = await supabase
-    .from('jobs')
-    .select('*')
-    .eq('id', id)
+    .from("jobs")
+    .select("*")
+    .eq("id", id)
     .single();
 
-  if (error || !job) {
+  const staticJob =
+    JOB_OPENINGS.find((opening) => `static-${opening.id}` === id) ||
+    JOB_OPENINGS.find((opening) => String(opening.id) === id);
+
+  if (error && !staticJob) {
     console.error("Error fetching job:", error);
+  }
+
+  if (!job && !staticJob) {
     return notFound();
   }
 
-  const career: CareerType = {
-    id: job.id,
-    jobName: job.title,
-    jobType: job.type,
-    applyBefore: job.apply_before,
-    positionsOpen: job.positions_open,
-    introduction: job.introduction,
-    responsibilities: job.responsibilities || [],
-    requirements: job.requirements || [],
-    benefits: job.benefits || {},
-    additionalInfo: job.additional_info || {},
-  };
+  const career: CareerType = job
+    ? {
+        id: job.id,
+        jobName: job.title,
+        jobType: job.type,
+        jobLocation: job.location ?? job.jobLocation ?? job.type,
+        applyBefore: job.apply_before,
+        positionsOpen: job.positions_open,
+        introduction: job.introduction,
+        responsibilities: job.responsibilities || [],
+        requirements: job.requirements || [],
+        benefits: job.benefits || {},
+        additionalInfo: job.additional_info || {},
+      }
+    : {
+        id: `static-${staticJob!.id}`,
+        jobName: staticJob!.title,
+        jobType: staticJob!.type,
+        jobLocation: staticJob!.location,
+        applyBefore: staticJob!.apply_before,
+        positionsOpen: staticJob!.positions_open,
+        introduction: staticJob!.introduction,
+        responsibilities: staticJob!.responsibilities || [],
+        requirements: staticJob!.requirements || [],
+        benefits: staticJob!.benefits || {},
+        additionalInfo: staticJob!.additional_info || {},
+      };
 
   return (
     <div className="font-Poppins w-full  px-4 pb-6">
@@ -50,7 +73,8 @@ export default async function page({
 
           <div className="flex flex-col gap-4 md:flex-row md:justify-between">
             <div className="flex items-center gap-4 text-gray-600 text-sm ">
-              <p>Location: {career.jobType}</p> |{" "}
+              <p>Location: {career.jobLocation ?? career.jobType}</p> |{" "}
+              <p>Type: {career.jobType}</p> |{" "}
               <p>Number of position: {career.positionsOpen}</p> |{" "}
               <p>Deadline: {career.applyBefore.substring(0, 10)}</p>
             </div>

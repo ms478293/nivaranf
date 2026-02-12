@@ -14,8 +14,19 @@ export const CareersList = ({ career }: { career: CareerType }) => {
       <div className="">
         <h3 className="text-gray-800 font-medium">{career.jobName}</h3>
         <div className="flex items-center gap-2  text-gray-600 text-xsm  md:text-sm ">
-          <p>{career.jobType}</p>
-          <div className="w-[1px] h-4 bg-gray-200"></div>
+          {career.jobLocation ? (
+            <>
+              <p>{career.jobLocation}</p>
+              <div className="w-[1px] h-4 bg-gray-200"></div>
+              <p>{career.jobType}</p>
+              <div className="w-[1px] h-4 bg-gray-200"></div>
+            </>
+          ) : (
+            <>
+              <p>{career.jobType}</p>
+              <div className="w-[1px] h-4 bg-gray-200"></div>
+            </>
+          )}
           <p>Apply before: {deadline.toDateString()}</p>
         </div>
       </div>

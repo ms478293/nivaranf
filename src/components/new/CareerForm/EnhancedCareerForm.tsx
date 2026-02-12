@@ -20,12 +20,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { submitApplicationWithFiles } from "@/app/actions/submit-application-with-files";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-import { useRef, useState } from "react";
-import { Controller, useForm } from "react-hook-form";
+import { useMemo, useRef, useState } from "react";
+import { Controller, useForm, useWatch } from "react-hook-form";
 import { toast } from "sonner";
 import countries from "world-countries";
 import { z } from "zod";
@@ -81,9 +82,9 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
   const form = useForm<z.infer<typeof careerJobSchema>>({
     resolver: zodResolver(careerJobSchema),
     defaultValues: {
-      jobOpeningId: career?.id || 0,
-      jobTitle: "",
-      jobLocation: "",
+      jobOpeningId: career?.id ?? "",
+      jobTitle: career?.jobName ?? "",
+      jobLocation: career?.jobLocation ?? "",
       status: "pending",
       fName: "",
       lName: "",
@@ -103,8 +104,58 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
       yearsOfExperience: "",
       highestEducation: "",
       canRelocate: false,
+      motivation: "",
+      experienceSummary: "",
     },
   });
+
+  const locationOptions = useMemo(() => {
+    const options = new Set(JOB_LOCATIONS);
+    if (career?.jobLocation) {
+      options.add(career.jobLocation);
+    }
+    return Array.from(options);
+  }, [career?.jobLocation]);
+
+  const jobOptions = useMemo(() => {
+    const baseJobs = JOB_OPENINGS.filter((job) => job.status === "active").map(
+      (job) => ({
+        id: `static-${job.id}`,
+        title: job.title,
+        location: job.location,
+      })
+    );
+
+    const extraJob = career?.jobName
+      ? [
+          {
+            id: String(career.id),
+            title: career.jobName,
+            location: career.jobLocation ?? "",
+          },
+        ]
+      : [];
+
+    const seen = new Set<string>();
+    return [...extraJob, ...baseJobs].filter((job) => {
+      const key = job.title.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, [career?.id, career?.jobName, career?.jobLocation]);
+
+  const selectedLocation = useWatch({
+    control: form.control,
+    name: "jobLocation",
+  });
+
+  const filteredJobOptions = useMemo(() => {
+    if (!selectedLocation) return jobOptions;
+    return jobOptions.filter(
+      (job) => !job.location || job.location === selectedLocation
+    );
+  }, [jobOptions, selectedLocation]);
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (data: z.infer<typeof careerJobSchema>) => {
@@ -248,19 +299,78 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <FormLabel className="text-sm font-medium text-gray-700">
+                      Preferred Location <span className="text-red-500">*</span>
+                    </FormLabel>
+                    <Controller
+                      control={form.control}
+                      name="jobLocation"
+                      render={({ field }) => (
+                        <Select
+                          value={field.value}
+                          onValueChange={(value) => {
+                            field.onChange(value);
+                            const currentTitle = form.getValues("jobTitle");
+                            const matchingJob = jobOptions.find(
+                              (job) => job.title === currentTitle
+                            );
+                            if (
+                              currentTitle &&
+                              (!matchingJob ||
+                                (matchingJob.location &&
+                                  matchingJob.location !== value))
+                            ) {
+                              form.setValue("jobTitle", "");
+                              form.setValue("jobOpeningId", "");
+                            }
+                          }}
+                        >
+                          <SelectTrigger className="bg-gray-50 border-gray-300">
+                            <SelectValue placeholder="Choose a location" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectGroup>
+                              {locationOptions.map((location) => (
+                                <SelectItem value={location} key={location}>
+                                  {location}
+                                </SelectItem>
+                              ))}
+                            </SelectGroup>
+                          </SelectContent>
+                        </Select>
+                      )}
+                    />
+                    {form.formState.errors.jobLocation && (
+                      <p className="text-sm text-red-500">{form.formState.errors.jobLocation.message}</p>
+                    )}
+                  </div>
+
+                  <div className="space-y-2">
+                    <FormLabel className="text-sm font-medium text-gray-700">
                       Select Position <span className="text-red-500">*</span>
                     </FormLabel>
                     <Controller
                       control={form.control}
                       name="jobTitle"
                       render={({ field }) => (
-                        <Select value={field.value} onValueChange={field.onChange}>
+                        <Select
+                          value={field.value}
+                          onValueChange={(value) => {
+                            field.onChange(value);
+                            const selectedJob = jobOptions.find(
+                              (job) => job.title === value
+                            );
+                            form.setValue(
+                              "jobOpeningId",
+                              selectedJob?.id ?? ""
+                            );
+                          }}
+                        >
                           <SelectTrigger className="bg-gray-50 border-gray-300">
                             <SelectValue placeholder="Choose a position" />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectGroup>
-                              {JOB_OPENINGS.filter(job => job.status === 'active').map((job) => (
+                              {filteredJobOptions.map((job) => (
                                 <SelectItem value={job.title} key={job.id}>
                                   {job.title}
                                 </SelectItem>
@@ -272,35 +382,6 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                     />
                     {form.formState.errors.jobTitle && (
                       <p className="text-sm text-red-500">{form.formState.errors.jobTitle.message}</p>
-                    )}
-                  </div>
-
-                  <div className="space-y-2">
-                    <FormLabel className="text-sm font-medium text-gray-700">
-                      Preferred Location <span className="text-red-500">*</span>
-                    </FormLabel>
-                    <Controller
-                      control={form.control}
-                      name="jobLocation"
-                      render={({ field }) => (
-                        <Select value={field.value} onValueChange={field.onChange}>
-                          <SelectTrigger className="bg-gray-50 border-gray-300">
-                            <SelectValue placeholder="Choose a location" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectGroup>
-                              {JOB_LOCATIONS.map((location, idx) => (
-                                <SelectItem value={location} key={idx}>
-                                  {location}
-                                </SelectItem>
-                              ))}
-                            </SelectGroup>
-                          </SelectContent>
-                        </Select>
-                      )}
-                    />
-                    {form.formState.errors.jobLocation && (
-                      <p className="text-sm text-red-500">{form.formState.errors.jobLocation.message}</p>
                     )}
                   </div>
                 </div>
@@ -496,7 +577,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                   type="button"
                   className="px-8"
                   onClick={async () => {
-                    const fields = ["jobTitle", "jobLocation", "fName", "lName", "emailAddress", "contactNo", "country", "city"];
+                    const fields = ["jobOpeningId", "jobTitle", "jobLocation", "fName", "lName", "emailAddress", "contactNo", "country", "city"];
                     const isValid = await form.trigger(fields as any);
                     if (isValid) setStep(2);
                   }}
@@ -681,6 +762,55 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
 
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-3 border-b">
+                  Motivation & Experience
+                </h3>
+                <div className="grid grid-cols-1 gap-6">
+                  <FormField
+                    control={form.control}
+                    name="motivation"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-gray-700">
+                          Why do you want to work with Nivaran Foundation? <span className="text-red-500">*</span>
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea
+                            className="bg-gray-50 border-gray-300"
+                            placeholder="Share your motivation and alignment with our mission..."
+                            rows={4}
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="experienceSummary"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-sm font-medium text-gray-700">
+                          Relevant experience summary <span className="text-red-500">*</span>
+                        </FormLabel>
+                        <FormControl>
+                          <Textarea
+                            className="bg-gray-50 border-gray-300"
+                            placeholder="Summarize your most relevant experience and impact..."
+                            rows={4}
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-6 pb-3 border-b">
                   Professional Links
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -739,7 +869,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                 <AppButton
                   type="button"
                   onClick={async () => {
-                    const fields = ["yearsOfExperience", "highestEducation", "resumeFile"];
+                    const fields = ["yearsOfExperience", "highestEducation", "resumeFile", "motivation", "experienceSummary"];
                     const isValid = await form.trigger(fields as any);
                     if (isValid) setStep(3);
                   }}

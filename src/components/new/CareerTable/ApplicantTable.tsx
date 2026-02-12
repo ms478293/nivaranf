@@ -220,11 +220,23 @@ export const ApplicantTable = () => {
         {
           accessorKey: "resumeLink",
           header: "Resume",
-          cell: () => (
-            <button className="text-neutral-500 text-xsm px-2 py-1 bg-gray-100 rounded-sm text-nowrap">
-              View Resume
-            </button>
-          ),
+          cell: ({ getValue }) => {
+            const resumeLink = getValue() as string;
+            return resumeLink ? (
+              <a
+                href={resumeLink}
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary-500 text-xsm px-2 py-1 bg-primary-100 rounded-sm text-nowrap"
+              >
+                View Resume
+              </a>
+            ) : (
+              <span className="text-neutral-400 text-xsm px-2 py-1 bg-gray-100 rounded-sm text-nowrap">
+                No Resume
+              </span>
+            );
+          },
         },
         {
           accessorKey: "acceptsOtherOppurtunity",

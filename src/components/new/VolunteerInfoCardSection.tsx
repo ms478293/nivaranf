@@ -24,7 +24,7 @@ export const VOLUNTEER_INFO: InfoCardType[] = [
     icon: <MiniPlantIcon className="w-10 h-10 stroke-primary-500" />,
     title: "Volunteer Benefits",
     description:
-      "Network with like-minded individuals, build your resume, and recognition for your contributions.",
+      "Earn certificates, recommendation letters for college/university, professional references, skill training, and public recognition.",
   },
 ];
 

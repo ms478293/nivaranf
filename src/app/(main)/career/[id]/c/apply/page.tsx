@@ -3,6 +3,7 @@ import { EnhancedCareerForm } from "@/components/new/CareerForm/EnhancedCareerFo
 import { CareerType } from "../../../page";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { JOB_OPENINGS } from "@/content/job-openings";
 
 export async function generateMetadata({
   params,
@@ -15,10 +16,13 @@ export async function generateMetadata({
     .select('title')
     .eq('id', id)
     .single();
+  const staticJob =
+    JOB_OPENINGS.find((opening) => `static-${opening.id}` === id) ||
+    JOB_OPENINGS.find((opening) => String(opening.id) === id);
 
   return {
-    title: `Apply for ${job?.title || 'Position'} | Nivaran Foundation`,
-    description: `Submit your application for ${job?.title || 'this position'} at Nivaran Foundation. Join our team in delivering healthcare and education to Nepal's underserved communities.`,
+    title: `Apply for ${job?.title || staticJob?.title || 'Position'} | Nivaran Foundation`,
+    description: `Submit your application for ${job?.title || staticJob?.title || 'this position'} at Nivaran Foundation. Join our team in delivering healthcare and education to Nepal's underserved communities.`,
   };
 }
 
@@ -35,22 +39,45 @@ export default async function page({
     .eq('id', id)
     .single();
 
-  if (error || !job) {
+  const staticJob =
+    JOB_OPENINGS.find((opening) => `static-${opening.id}` === id) ||
+    JOB_OPENINGS.find((opening) => String(opening.id) === id);
+
+  if (error && !staticJob) {
     return notFound();
   }
 
-  const career: CareerType = {
-    id: job.id,
-    jobName: job.title,
-    jobType: job.type,
-    applyBefore: job.apply_before,
-    positionsOpen: job.positions_open,
-    introduction: job.introduction,
-    responsibilities: job.responsibilities || [],
-    requirements: job.requirements || [],
-    benefits: job.benefits || {},
-    additionalInfo: job.additional_info || {},
-  };
+  if (!job && !staticJob) {
+    return notFound();
+  }
+
+  const career: CareerType = job
+    ? {
+        id: job.id,
+        jobName: job.title,
+        jobType: job.type,
+        jobLocation: job.location ?? job.jobLocation ?? job.type,
+        applyBefore: job.apply_before,
+        positionsOpen: job.positions_open,
+        introduction: job.introduction,
+        responsibilities: job.responsibilities || [],
+        requirements: job.requirements || [],
+        benefits: job.benefits || {},
+        additionalInfo: job.additional_info || {},
+      }
+    : {
+        id: `static-${staticJob!.id}`,
+        jobName: staticJob!.title,
+        jobType: staticJob!.type,
+        jobLocation: staticJob!.location,
+        applyBefore: staticJob!.apply_before,
+        positionsOpen: staticJob!.positions_open,
+        introduction: staticJob!.introduction,
+        responsibilities: staticJob!.responsibilities || [],
+        requirements: staticJob!.requirements || [],
+        benefits: staticJob!.benefits || {},
+        additionalInfo: staticJob!.additional_info || {},
+      };
 
   return (
     <div className="font-Poppins w-full px-4 py-10 bg-gray-50 min-h-screen">
