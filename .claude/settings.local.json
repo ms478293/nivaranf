@@ -60,7 +60,8 @@
       "Bash(git rm:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
-      "Bash(git stash pop:*)"
+      "Bash(git stash pop:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd comprehensive high-class NGO job application system\n\nFeatures:\n- Multi-step application form \\(3 steps\\) with progress tracking\n- Position and location selection dropdowns\n- Professional file upload for resume/CV \\(required\\) and cover letter \\(optional\\)\n- File validation \\(PDF, DOC, DOCX, max 10MB\\)\n- Supabase Storage integration for secure file storage\n- Enhanced form fields: experience, education, LinkedIn, portfolio\n- Legal acknowledgments and terms acceptance\n- Automated confirmation emails to applicants with application details\n- Admin notification emails with direct links to resumes and applicant info\n- Database integration with proper indexing\n\nJob Openings:\n- Created 5 high-quality job positions matching top NGO standards\n- Program Manager - Healthcare Initiatives \\(Kathmandu\\)\n- Fundraising and Development Officer \\(Arlington, MA\\)\n- Medical Volunteer Coordinator \\(Kathmandu\\)\n- Communications and Social Media Specialist \\(Remote\\)\n- Finance and Operations Associate \\(Kathmandu\\)\n\nUI Improvements:\n- Removed Project Sanjeevani from upcoming projects\n- Updated to \"Our Projects\" section with only Vidya\n- Removed \"Vision\" label from project cards\n- Updated mega menu population treated to 20,000+\n- Made Sanjeevani an ongoing/current project\n\nSetup Documentation:\n- Complete setup guide \\(JOB-APPLICATION-SETUP.md\\)\n- SQL scripts for Supabase storage setup\n- SQL scripts for seeding job openings\n- Troubleshooting guide and testing checklist\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
