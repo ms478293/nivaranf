@@ -15,10 +15,8 @@ const ContactCard = ({
   return (
     <div
       className={cn(
-        `border border-gray-100 rounded-lg flex-col flex gap-2 md:flex-row overflow-hidden   h-[200px] md:h-auto relative min-h-[220px] ${
-          userLocation === contact.country ? "bg-secondary-100 " : ""
-        }
-        `
+        "border border-gray-100 rounded-lg flex-col flex gap-2 md:flex-row overflow-hidden h-auto relative p-2",
+        userLocation === contact.country ? "bg-secondary-100" : ""
       )}
     >
       <div className="flex flex-col justify-between gap-2 p-2 px-4  md:gap-3 h-full relative z-10 ">
@@ -45,9 +43,9 @@ const ContactCard = ({
             <ContactIcon className="w-5 h-5 stroke-secondary-800 stroke-1" />
             <span>{contact.contact}</span>
           </p>
-          <p className="text-secondary-800 flex gap-2 items-center">
-            <MailIcon className="w-5 h-5 stroke-secondary-800 stroke-1" />
-            <span>{contact.email}</span>
+          <p className="text-secondary-800 flex gap-2 items-center min-w-0">
+            <MailIcon className="w-5 h-5 stroke-secondary-800 stroke-1 flex-shrink-0" />
+            <span className="truncate">{contact.email}</span>
           </p>
         </div>
       </div>
