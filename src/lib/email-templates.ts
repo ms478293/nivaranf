@@ -35,8 +35,8 @@ const baseTemplate = (title: string, content: string, showHero: boolean = false)
     </div>
     <div class="footer">
       <p>&copy; ${new Date().getFullYear()} Nivaran Foundation. All rights reserved.</p>
-      <p>501(c)(3) Nonprofit Organization | EIN: 99-3919025</p>
-      <p>Boston, MA, United States</p>
+      <p>501(c)(3) Nonprofit Organization | EIN: 41-2656587</p>
+      <p>1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA</p>
       <div class="social-links">
         <a href="https://nivaranfoundation.org" class="social-link">Website</a> |
         <a href="https://nivaranfoundation.org/contact" class="social-link">Contact Us</a>

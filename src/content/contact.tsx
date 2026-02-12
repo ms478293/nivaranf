@@ -6,7 +6,7 @@ export const CONTACT_DATA = [
   {
     id: 1,
     title: "Phone",
-    label1: "+1 8577017471",
+    label1: "(339) 707-2895",
     label2: "+977 1-5312555",
     icon: <ContactIcon className="w-6 h-6 stroke-secondary-800 " />,
   },
@@ -20,8 +20,8 @@ export const CONTACT_DATA = [
   {
     id: 3,
     title: "Headquarters",
-    label1: "Newroad, Kathmandu",
-    label2: "USA Office: Boston MA, US",
+    label1: "1025 Massachusetts Ave, Suite 303",
+    label2: "Arlington, MA 02476, USA",
     icon: <LocationIcon className="w-6 h-6 stroke-secondary-800" />,
   },
 ];

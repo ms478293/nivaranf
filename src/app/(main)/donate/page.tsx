@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
   description:
-    "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 85% of funds go directly to programs. EIN: 99-3919025.",
+    "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 85% of funds go directly to programs. EIN: 41-2656587.",
   alternates: {
     canonical: "https://nivaranfoundation.org/donate",
   },
@@ -39,7 +39,7 @@ export default function DonationPage() {
 
               <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-2">
                 <p className="text-xs text-green-800 font-medium">
-                  501(c)(3) Tax-Exempt Organization | EIN: 99-3919025
+                  501(c)(3) Tax-Exempt Organization | EIN: 41-2656587
                 </p>
                 <p className="text-xs text-green-700 mt-1">
                   Your donation is 100% tax-deductible. You will receive a tax

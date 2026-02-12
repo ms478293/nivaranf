@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Financial Reports & Transparency",
   description:
-    "View Nivaran Foundation's financial reports, IRS filings, and transparency documents. 501(c)(3) EIN: 99-3919025.",
+    "View Nivaran Foundation's financial reports, IRS filings, and transparency documents. 501(c)(3) EIN: 41-2656587.",
 };
 
 export default function Page() {
@@ -36,11 +36,11 @@ export default function Page() {
             </div>
             <div>
               <p className="text-green-700 font-medium">EIN</p>
-              <p className="text-green-900 font-bold">99-3919025</p>
+              <p className="text-green-900 font-bold">41-2656587</p>
             </div>
             <div>
               <p className="text-green-700 font-medium">Location</p>
-              <p className="text-green-900">Boston, Massachusetts, United States</p>
+              <p className="text-green-900">1025 Massachusetts Ave, Suite 303, Arlington, MA 02476</p>
             </div>
           </div>
           <div className="mt-4 pt-4 border-t border-green-200">

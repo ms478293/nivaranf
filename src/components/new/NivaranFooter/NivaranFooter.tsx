@@ -69,8 +69,8 @@ const NivaranFooter = () => {
 
         {/* EIN & Address */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs text-gray-500">
-          <p>501(c)(3) Nonprofit | EIN: 99-3919025</p>
-          <p>Nivaran Foundation, Boston, Massachusetts, United States</p>
+          <p>501(c)(3) Nonprofit | EIN: 41-2656587</p>
+          <p>1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA</p>
         </div>
 
         <div className="w-full h-0.5 gradient-border "></div>

@@ -161,7 +161,7 @@ export default function page() {
               <p className="text-sm text-gray-600 mb-2">
                 501(c)(3) Tax-Exempt Organization
               </p>
-              <p className="text-sm font-bold text-gray-800">EIN: 99-3919025</p>
+              <p className="text-sm font-bold text-gray-800">EIN: 41-2656587</p>
               <a
                 href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search"
                 target="_blank"
