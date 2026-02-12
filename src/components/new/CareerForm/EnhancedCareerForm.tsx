@@ -599,7 +599,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                       <AppButton
                         type="button"
                         onClick={() => resumeInputRef.current?.click()}
-                        variant="outline"
+                        variant="primary-outline"
                         className="flex items-center gap-2"
                       >
                         <Upload className="w-4 h-4" />
@@ -649,7 +649,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                       <AppButton
                         type="button"
                         onClick={() => coverLetterInputRef.current?.click()}
-                        variant="outline"
+                        variant="primary-outline"
                         className="flex items-center gap-2"
                       >
                         <Upload className="w-4 h-4" />
@@ -731,7 +731,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
               <div className="flex justify-between pt-4">
                 <AppButton
                   type="button"
-                  variant="outline"
+                  variant="primary-outline"
                   onClick={() => setStep(1)}
                 >
                   ← Back to Step 1
@@ -957,7 +957,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
               <div className="flex justify-between pt-4">
                 <AppButton
                   type="button"
-                  variant="outline"
+                  variant="primary-outline"
                   onClick={() => setStep(2)}
                 >
                   ← Back to Step 2
