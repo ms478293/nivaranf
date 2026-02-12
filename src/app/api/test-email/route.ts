@@ -12,7 +12,7 @@ export async function GET(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: 'Nivaran Foundation <onboarding@resend.dev>',
+      from: 'Nivaran Foundation <noreply@updates.nivaranfoundation.org>',
       to: [email],
       subject: 'Resend Test Email',
       html: '<strong>It works!</strong>',

@@ -37,7 +37,7 @@ export async function subscribe(email: string) {
     `;
 
     const { error: emailError } = await resend.emails.send({
-      from: 'Nivaran Foundation <onboarding@resend.dev>',
+      from: 'Nivaran Foundation <noreply@updates.nivaranfoundation.org>',
       to: [email],
       subject: 'Welcome to Nivaran Foundation Newsletter',
       html: getSubscriptionTemplate(userEmailContent)

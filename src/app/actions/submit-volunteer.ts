@@ -42,7 +42,7 @@ export async function submitVolunteer(data: VolunteerSchemaType) {
     `;
 
     const { error: emailError } = await resend.emails.send({
-      from: 'Nivaran Foundation <onboarding@resend.dev>', // Update with verified domain if available
+      from: 'Nivaran Foundation <noreply@updates.nivaranfoundation.org>',
       to: [data.email],
       subject: 'Volunteer Application Received - Nivaran Foundation',
       html: getVolunteerApplicationTemplate(userEmailContent)

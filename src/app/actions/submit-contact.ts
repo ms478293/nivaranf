@@ -43,7 +43,7 @@ export async function submitContact(data: ContactFormData) {
     `;
 
     const { error: emailError } = await resend.emails.send({
-      from: 'Nivaran Foundation <onboarding@resend.dev>',
+      from: 'Nivaran Foundation <noreply@updates.nivaranfoundation.org>',
       to: [data.email],
       subject: 'We received your message - Nivaran Foundation',
       html: getContactTemplate(userEmailContent)
