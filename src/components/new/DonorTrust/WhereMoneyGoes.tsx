@@ -115,7 +115,7 @@ const WhereMoneyGoes = () => {
               organization.
             </p>
             <p className="text-sm font-semibold text-gray-700 mt-1">
-              EIN: 99-3919025
+              EIN: 41-2656587
             </p>
             <p className="text-xs text-gray-400 mt-1">
               Your donation is 100% tax-deductible to the extent allowed by law.
