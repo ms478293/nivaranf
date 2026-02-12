@@ -19,7 +19,7 @@ const PROJECT_PLAN = [
   {
     id: 2,
     label: "Population Treated",
-    stats: "2 Million",
+    stats: "20,000+",
   },
 ];
 

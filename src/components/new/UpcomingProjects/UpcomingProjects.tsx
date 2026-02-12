@@ -107,9 +107,6 @@ export const UpcomingProjectsCard = ({
             </span>
           </h2>
           <p className="flex flex-col justify-center gap-1.5 -translate-y-2 min-[880px]:translate-y-0 ">
-            <span className="text-gray-800 text-xsm/[12px] min-[880px]:text-sm/[20px] font-medium">
-              Vision
-            </span>
             <span className="text-gray-700 text-xsm/[15px] min-[880px]:text-sm/[20px]   font-normal ">
               {data.description}
             </span>

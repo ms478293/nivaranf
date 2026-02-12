@@ -40,14 +40,7 @@ export const SetUserLocationCookie = () => {
             setUserLocation(countryCode);
           },
           (error) => {
-            console.warn("Geolocation error or permission denied:", error);
-            // Fallback to US if geolocation fails
-            const countryCode = "US";
-            Cookies.set("user_location", countryCode, {
-              expires: 7,
-              path: "/",
-            });
-            setUserLocation(countryCode);
+            console.error("Geolocation error:", error);
           }
         );
       }
