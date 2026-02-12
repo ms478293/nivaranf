@@ -68,7 +68,7 @@ const ProjectsMegaMenu = () => {
       <div className="flex flex-col gap-2 w-[40%] ">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-semibold text-gray-700">
-            Project Sanjeevani
+            Current Project
           </h2>
           <Link href={"/sanjeevani"} onClick={() => openActiveMegaMenu(null)}>
             <AppButton variant="ghost">View details</AppButton>
