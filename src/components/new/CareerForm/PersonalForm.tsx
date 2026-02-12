@@ -85,6 +85,7 @@ export const CareerForm = ({ career }: { career: CareerType }) => {
       const result = await submitApplication({
         ...data,
         jobOpeningId: career.id,
+        resumeLink: "",
       });
       if (!result.success) {
         throw new Error(result.error);
