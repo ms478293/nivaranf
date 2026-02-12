@@ -14,4 +14,11 @@ export const UPCOMING_PROJECTS_DATA: UpcomingProjectsDataType[] = [
     title: "Vidya",
     description: "",
   },
+  {
+    id: 3,
+    link: "/sanjeevani",
+    images: "/sanjeevani/sanjeevani-1.png",
+    title: "Sanjeevani",
+    description: "",
+  },
 ];
