@@ -5,7 +5,11 @@ import { Resend } from 'resend';
 import { jobApplicationSchemaType, LegalSchemaType } from "@/components/new/CareerForm/jobApplicationSchema";
 import { getJobApplicationTemplate } from "@/lib/email-templates";
 
-export async function submitApplication(data: jobApplicationSchemaType & LegalSchemaType) {
+type JobApplicationData = Omit<jobApplicationSchemaType, 'resumeFile' | 'coverLetterFile'> & {
+  resumeLink: string;
+} & LegalSchemaType;
+
+export async function submitApplication(data: JobApplicationData) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     // 1. Insert into Supabase

@@ -23,10 +23,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     img: (props) => (
       <Image
         sizes="100vw"
-        {...(props as ImageProps)}
         width={1000}
         height={1000}
         className="w-full h-[600px] object-cover"
+        {...(props as ImageProps)}
+        alt={(props as ImageProps).alt || "Blog Image"}
       />
     ),
     // Customize <p> tags
