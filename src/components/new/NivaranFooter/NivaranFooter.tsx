@@ -80,7 +80,7 @@ const NivaranFooter = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between  gap-4   relative text-xsm sm:text-sm  ">
-            <p>&copy; {new Date().getFullYear()} NIVARAN. All rights reserved</p>
+            <p>&copy; {new Date().getFullYear()} NIVARAN FOUNDATION, INC. All rights reserved</p>
             <div className="flex items-center  ">
               {BOTTOM_FOOTER.map((list) => (
                 <Link

@@ -237,7 +237,35 @@ export const privacyPolicySections = [
     details: [
       {
         description:
-          "If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you would like to exercise any of your rights, please contact us at: partnerships@nivaranfoundation.org  We are committed to working with you to obtain a fair resolution of any complaint or concern about your privacy. ",
+          "If you have any questions or concerns about this Privacy Policy or our privacy practices, or if you would like to exercise any of your rights, please contact us at:",
+      },
+      {
+        description:
+          "NIVARAN FOUNDATION, INC.",
+      },
+      {
+        description:
+          "1025 Massachusetts Ave, Suite 303",
+      },
+      {
+        description:
+          "Arlington, MA 02476, USA",
+      },
+      {
+        description:
+          "Email: privacy@nivaranfoundation.org",
+      },
+      {
+        description:
+          "Phone: (339) 707-2895",
+      },
+      {
+        description:
+          "EIN: 41-2656587",
+      },
+      {
+        description:
+          "We are committed to working with you to obtain a fair resolution of any complaint or concern about your privacy.",
       },
     ],
   },

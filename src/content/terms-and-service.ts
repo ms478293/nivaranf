@@ -243,7 +243,27 @@ export const TermsAndService = [
     details: [
       {
         description:
-          "If you have any questions about these Terms, please contact us at: privacy@nivaranfoundation.org",
+          "If you have any questions about these Terms, please contact us at:",
+      },
+      {
+        description:
+          "NIVARAN FOUNDATION, INC.",
+      },
+      {
+        description:
+          "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA",
+      },
+      {
+        description:
+          "Email: privacy@nivaranfoundation.org",
+      },
+      {
+        description:
+          "Phone: (339) 707-2895",
+      },
+      {
+        description:
+          "EIN: 41-2656587",
       },
     ],
   },
