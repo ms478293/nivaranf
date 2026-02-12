@@ -1,7 +1,6 @@
 "use client";
 
 import { CareerType } from "@/app/(main)/career/page";
-import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
 import {
   Form,
@@ -21,7 +20,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
 import { submitApplicationWithFiles } from "@/app/actions/submit-application-with-files";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
@@ -934,7 +932,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
                       I understand that Nivaran Foundation may conduct background checks and verify the information provided in this application.
                     </li>
                     <li>
-                      I have read and understand Nivaran Foundation's Equal Employment Opportunity policy and commitment to diversity, equity, and inclusion.
+                      I have read and understand Nivaran Foundation&apos;s Equal Employment Opportunity policy and commitment to diversity, equity, and inclusion.
                     </li>
                     <li>
                       I understand that no supervisor or manager may alter or amend these conditions except in writing, signed by an authorized company officer.

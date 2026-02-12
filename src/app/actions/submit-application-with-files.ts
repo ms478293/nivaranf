@@ -46,7 +46,7 @@ export async function submitApplicationWithFiles(formData: FormData) {
 
     // Upload resume to Supabase Storage
     const resumeBuffer = await resumeFile.arrayBuffer();
-    const { data: resumeData, error: resumeUploadError } = await supabaseAdmin
+    const { error: resumeUploadError } = await supabaseAdmin
       .storage
       .from('job-applications')
       .upload(resumeFileName, resumeBuffer, {
@@ -72,7 +72,7 @@ export async function submitApplicationWithFiles(formData: FormData) {
       const coverLetterFileName = `cover-letters/${sanitizedName}_${timestamp}.${coverLetterExtension}`;
 
       const coverLetterBuffer = await coverLetterFile.arrayBuffer();
-      const { data: coverLetterData, error: coverLetterUploadError } = await supabaseAdmin
+      const { error: coverLetterUploadError } = await supabaseAdmin
         .storage
         .from('job-applications')
         .upload(coverLetterFileName, coverLetterBuffer, {
