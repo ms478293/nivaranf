@@ -114,25 +114,25 @@ export const SHARE_LINK = [
   {
     id: 1,
     title: "LinkedIn",
-    link: `https://www.facebook.com/sharer/sharer.php?u=${"http://nivaranfoundation.org/career/1"}`,
+    link: "https://www.linkedin.com/company/nivaran-foundation",
     icon: <LinkedInIcon className="w-5 h-5 stroke-gray-950" />,
   },
   {
     id: 2,
     title: "Facebook",
-    link: `https://www.facebook.com/sharer/sharer.php?u=${"http://nivaranfoundation.org/career/1"}`,
+    link: "https://www.facebook.com/profile.php?id=61584248211038",
     icon: <FacebookIcon className="w-5 h-5 stroke-secondary-500 " />,
   },
   {
     id: 3,
-    title: "Twitter",
+    title: "X",
     icon: <TwitterIcon className="w-5 h-5 stroke-gray-950" />,
-    link: `https://www.facebook.com/sharer/sharer.php?u=${"http://nivaranfoundation.org/career/1"}`,
+    link: "https://x.com/NivaranOrg",
   },
   {
     id: 4,
     title: "Instagram",
     icon: <InstagramIcon className="w-5 h-5 stroke-red-600" />,
-    link: `https://www.facebook.com/sharer/sharer.php?u=${"http://nivaranfoundation.org/career/1"}`,
+    link: "https://www.instagram.com/nivaran.foundation/",
   },
 ];

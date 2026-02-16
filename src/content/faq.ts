@@ -42,7 +42,7 @@ export const FAQdata: FAQType[] = [
       {
         question: "How can I follow Nivaran Foundation on social media?",
         answer:
-          "You can follow us on social media platforms:<a href='https://www.facebook.com/profile.php?id=61570848672862/'> Facebook </a>, <a href='https://www.instagram.com/nivaranorg/'> Instagram </a>, and <a href='https://x.com/NivaranOrg'> Twitter </a>",
+          "You can follow us on social media platforms: <a href='https://www.facebook.com/profile.php?id=61584248211038'>Facebook</a>, <a href='https://www.instagram.com/nivaran.foundation/'>Instagram</a>, <a href='https://x.com/NivaranOrg'>X</a>, and <a href='https://www.linkedin.com/company/nivaran-foundation'>LinkedIn</a>.",
       },
       {
         question:

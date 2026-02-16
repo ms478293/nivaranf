@@ -77,7 +77,8 @@ export default async function RootLayout({
                   "@type": "Person",
                   name: "Mukesh Thakur",
                   jobTitle: "Founder & Director",
-                  sameAs: "https://www.linkedin.com/in/mktsharma/",
+                  sameAs:
+                    "https://www.linkedin.com/company/nivaran-foundation",
                 },
               ],
               contactPoint: {
@@ -88,9 +89,10 @@ export default async function RootLayout({
                 areaServed: "NP",
               },
               sameAs: [
-                "https://www.facebook.com/NivaranFoundation",
-                "https://twitter.com/NivaranOrg",
-                "https://www.instagram.com/nivaranorg/",
+                "https://www.facebook.com/profile.php?id=61584248211038",
+                "https://www.instagram.com/nivaran.foundation/",
+                "https://x.com/NivaranOrg",
+                "https://www.linkedin.com/company/nivaran-foundation",
               ],
               address: {
                 "@type": "PostalAddress",
