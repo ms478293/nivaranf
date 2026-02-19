@@ -1,5 +1,6 @@
 "use client";
 import { globalBlogs as blogs } from "@/blogs/listofblogs";
+import { getBlogPath } from "@/lib/blog-routes";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -117,7 +118,7 @@ const BlogCard = ({ blog }: { blog: any }) => {
       key={blog.slug}
       className="group relative h-full w-full border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl"
     >
-      <Link href={`/blogs/${blog.slug}`} className="h-full flex flex-col">
+      <Link href={getBlogPath(blog)} className="h-full flex flex-col">
         {/* Image */}
         <div className="relative w-full h-52 overflow-hidden">
           <Image

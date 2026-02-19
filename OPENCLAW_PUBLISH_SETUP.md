@@ -7,6 +7,12 @@ This project now includes a VPS-safe article publisher:
 - `scripts/article.template.json` (metadata template)
 - `scripts/article.middle.template.mdx` (body structure template)
 
+Published URL is type-based:
+
+- `Story` -> `/stories/[slug]`
+- `News` -> `/news/[slug]`
+- all other types -> `/articles/[slug]`
+
 ## 1) Prepare article input files
 
 Create a body markdown file, for example:

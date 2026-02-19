@@ -4,6 +4,7 @@ import EditIcon from "@/assets/icons/EditIcon";
 import MoveUpRightArrowIcon from "@/assets/icons/MoveUpRightArrowIcon";
 import { blogListType } from "@/blogs/listofblogs";
 import { AppButton } from "@/components/ui/app-button";
+import { getBlogPath } from "@/lib/blog-routes";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -97,7 +98,7 @@ const BlogCard = ({
   return (
     <BlogCardContext.Provider value={{ data, children }}>
       <Link
-        href={`/blogs/${data.slug}`}
+        href={getBlogPath(data)}
         className={cn(
           "group block rounded-2xl overflow-hidden  bg-white border border-neutral-200 hover:shadow-xl transition-all duration-300 ",
           className

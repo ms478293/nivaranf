@@ -1,4 +1,6 @@
 // site-data.ts
+import { getBlogPathBySlug } from "@/lib/blog-routes";
+
 export const siteData = {
   logo: "/NivaranLogo.svg",
   foundationName: "Nivaran Foundation",
@@ -32,7 +34,7 @@ export const footerData = {
     },
     {
       name: "Ways to Give",
-      link: "/blogs/how-to-contribute",
+      link: getBlogPathBySlug("how-to-contribute"),
     },
     {
       name: "News and Stories",
@@ -59,14 +61,17 @@ export const footerData = {
     },
     {
       name: "Accountability & Transparency",
-      link: "/blogs/accountability-and-transparency",
+      link: getBlogPathBySlug("accountability-and-transparency"),
     },
     { name: "Financial Reports", link: "/docs" },
     {
       name: "Financial Responsibility",
-      link: "/blogs/financial-responsibility",
+      link: getBlogPathBySlug("financial-responsibility"),
     },
-    { name: "Belonging and Inclusion", link: "/blogs/belonging-and-inclusion" },
+    {
+      name: "Belonging and Inclusion",
+      link: getBlogPathBySlug("belonging-and-inclusion"),
+    },
     { name: "Contact Us", link: "/contact" },
   ],
 };
@@ -193,19 +198,22 @@ export const newsAndStroiesData: {
   { title: "View All", href: "/blogs" },
   {
     title: "Recent Stories",
-    href: "/blogs/",
+    href: "/stories",
     children: [
-      { title: "Climate Action", href: "/blogs/climate-action" },
-      { title: "Crisis Management", href: "/blogs/crisis-management" },
+      { title: "Climate Action", href: getBlogPathBySlug("climate-action") },
+      {
+        title: "Crisis Management",
+        href: getBlogPathBySlug("crisis-management"),
+      },
       {
         title: "Education and Employement",
-        href: "/blogs/education-and-empowerement",
+        href: getBlogPathBySlug("education-and-empowerement"),
       },
-      { title: "Food and Wellness", href: "/blogs/food-and-welfare" },
-      { title: "Healthcare", href: "/blogs/healthcare" },
+      { title: "Food and Wellness", href: getBlogPathBySlug("food-and-welfare") },
+      { title: "Healthcare", href: getBlogPathBySlug("healthcare") },
       {
         title: "Insights and Leadership",
-        href: "/blogs/insights-and-leadership",
+        href: getBlogPathBySlug("insights-and-leadership"),
       },
     ],
   },

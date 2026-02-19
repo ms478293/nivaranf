@@ -15,6 +15,16 @@ const ALLOWED_TYPES = new Set([
   "Article",
 ]);
 
+const PUBLIC_SEGMENT_BY_TYPE = {
+  Story: "stories",
+  News: "news",
+  Collaboration: "articles",
+  Opinion: "articles",
+  Analysis: "articles",
+  Project: "articles",
+  Article: "articles",
+};
+
 function fail(message) {
   console.error(`ERROR: ${message}`);
   process.exit(1);
@@ -114,6 +124,11 @@ function ensureUniqueSlug(baseSlug, existingSlugs) {
     counter += 1;
   }
   return `${baseSlug}-${counter}`;
+}
+
+function getPublicPath(articleType, slug) {
+  const segment = PUBLIC_SEGMENT_BY_TYPE[articleType] || "articles";
+  return `/${segment}/${slug}`;
 }
 
 function main() {
@@ -289,7 +304,10 @@ function main() {
     status: args["dry-run"] ? "dry-run" : "published",
     slug,
     mdxPath: relMdxPath,
-    blogUrl: `https://www.nivaranfoundation.org/blogs/${slug}`,
+    blogUrl: `https://www.nivaranfoundation.org${getPublicPath(
+      articleType,
+      slug
+    )}`,
     listFile: relListPath,
     committed: !!args.commit || !!args.push,
     pushed: !!args.push,

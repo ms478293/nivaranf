@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CustomHeading } from "../common/CustomHeading";
+import { getBlogPathBySlug } from "@/lib/blog-routes";
 
 const projectsData: {
   name: string;
@@ -13,28 +14,28 @@ const projectsData: {
     imgUrl: "/projects/images/projectUnityHero.jpg",
     description:
       "A project focused on bringing communities together through impactful initiatives.",
-    link: "/blogs/unity",
+    link: getBlogPathBySlug("unity"),
   },
   {
     name: "Nurture",
     imgUrl: "/projects/images/projectNurtureHero.jpg",
     description:
       "Empowering education and personal growth for the next generation.",
-    link: "/blogs/nurture",
+    link: getBlogPathBySlug("nurture"),
   },
   {
     name: "Vidya",
     imgUrl: "/projects/images/projectVidyaHero.jpg",
     description:
       "Driving innovation in education technology for a brighter future.",
-    link: "/blogs/vidya",
+    link: getBlogPathBySlug("vidya"),
   },
   {
     name: "Terra",
     imgUrl: "/projects/images/projectTerraHero.jpg",
     description:
       "Promoting environmental sustainability through cutting-edge solutions.",
-    link: "/blogs/terra",
+    link: getBlogPathBySlug("terra"),
   },
 ];
 
