@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "publish:article": "node scripts/publish-article.mjs --repo ."
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.30.7",
