@@ -142,6 +142,13 @@ function main() {
     type: args.type ?? config.type,
     author: args.author ?? config.author,
     featured: args.featured ?? config.featured,
+    location: args.location ?? config.location,
+    coverImageAlt: args["cover-image-alt"] ?? config.coverImageAlt,
+    coverImageCaption:
+      args["cover-image-caption"] ?? config.coverImageCaption,
+    shareMessage: args["share-message"] ?? config.shareMessage,
+    donateLine: args["donate-line"] ?? config.donateLine,
+    authorBio: args["author-bio"] ?? config.authorBio,
     slug: args.slug ?? config.slug,
     date: args.date ?? config.date,
     keywords: args.keywords ?? config.keywords,
@@ -210,6 +217,22 @@ function main() {
   const slug = ensureUniqueSlug(requestedSlug, existingSlugs);
 
   const mdxPath = path.join(blogDir, `${slug}.mdx`);
+  const optionalFrontmatter = [];
+  const optionalFields = [
+    ["location", merged.location],
+    ["coverImageAlt", merged.coverImageAlt],
+    ["coverImageCaption", merged.coverImageCaption],
+    ["shareMessage", merged.shareMessage],
+    ["donateLine", merged.donateLine],
+    ["authorBio", merged.authorBio],
+  ];
+
+  for (const [key, value] of optionalFields) {
+    if (typeof value === "string" && value.trim().length > 0) {
+      optionalFrontmatter.push(`${key}: "${yamlEscape(value.trim())}"`);
+    }
+  }
+
   const mdxContent = `---\n` +
     `title: "${yamlEscape(merged.title)}"\n` +
     `subtitle: "${yamlEscape(merged.subtitle)}"\n` +
@@ -217,6 +240,7 @@ function main() {
     `author: "${yamlEscape(author)}"\n` +
     `mainImage: "${yamlEscape(merged.mainImage)}"\n` +
     `keywords: "${yamlEscape(keywords)}"\n` +
+    `${optionalFrontmatter.length > 0 ? `${optionalFrontmatter.join("\n")}\n` : ""}` +
     `---\n\n` +
     `${body}\n`;
 

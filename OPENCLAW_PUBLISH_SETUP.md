@@ -5,6 +5,7 @@ This project now includes a VPS-safe article publisher:
 - `scripts/publish-article.mjs` (main publisher)
 - `scripts/publish_article.sh` (wrapper for OpenClaw/cron)
 - `scripts/article.template.json` (metadata template)
+- `scripts/article.middle.template.mdx` (body structure template)
 
 ## 1) Prepare article input files
 
@@ -27,11 +28,17 @@ cat > /tmp/article.json <<'EOF'
   "subtitle": "How mobile camps reduce emergency risk in rural districts",
   "summary": "A field report on measurable impact from community-based screening and treatment.",
   "mainImage": "/images/generalHealthService.jpg",
+  "coverImageAlt": "Nivaran team serving patients in a rural health camp",
+  "coverImageCaption": "Field session in Karnali, Nepal",
   "type": "Article",
   "author": "Nivaran Foundation News Desk",
   "featured": false,
   "date": "2026-02-19",
+  "location": "Karnali, Nepal",
   "keywords": "healthcare, rural nepal, prevention",
+  "shareMessage": "Distance is the disease. We are closing the gap. Read: {URL}",
+  "donateLine": "A single outreach day can connect remote families to care that was out of reach for years.",
+  "authorBio": "Nivaran Foundation runs mobile health and education programs in Nepal's rural regions.",
   "bodyFile": "/tmp/article.body.md",
   "commitMessage": "Publish article: Healthcare Access in Remote Nepal"
 }

@@ -7,7 +7,13 @@
   "author": "Nivaran Foundation News Desk",
   "featured": false,
   "date": "2026-02-19",
+  "location": "Nepal",
+  "coverImageAlt": "Community health team serving patients in Nepal",
+  "coverImageCaption": "Field camp session in rural Nepal",
   "keywords": "healthcare, nepal, community, nivaran",
+  "shareMessage": "Distance is the disease. We are closing the gap. Read and share: {URL}",
+  "donateLine": "Distance is the disease. Your support helps us bring care where access is hardest.",
+  "authorBio": "Nivaran Foundation runs mobile health and education programs in Nepal's rural regions.",
   "bodyFile": "./scripts/article.body.md",
   "commitMessage": "Publish article: Sample Article Title"
 }
