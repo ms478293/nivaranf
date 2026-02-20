@@ -1,9 +1,7 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
-import { useState } from "react";
-
-export const dynamic = "force-dynamic";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 function resolveNextPath(raw: string | null) {
   if (!raw || !raw.startsWith("/")) return "/dashboard/content";
@@ -15,9 +13,13 @@ export default function ContentLoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [nextPath, setNextPath] = useState("/dashboard/content");
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const nextPath = resolveNextPath(searchParams.get("next"));
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setNextPath(resolveNextPath(params.get("next")));
+  }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
