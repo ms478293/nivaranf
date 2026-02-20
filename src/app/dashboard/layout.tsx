@@ -1,5 +1,7 @@
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { CONTENT_PORTAL_SESSION_COOKIE } from "@/lib/content/constants";
+import { verifyContentPortalSession } from "@/lib/content/portal-session";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -10,10 +12,13 @@ type LayoutProps = {
 export default async function Layout({ children }: LayoutProps) {
   const cookieStore = await cookies();
   const authToken = cookieStore.get("authToken")?.value || "";
+  const contentPortalSession =
+    cookieStore.get(CONTENT_PORTAL_SESSION_COOKIE)?.value || "";
+  const hasPortalSession = verifyContentPortalSession(contentPortalSession);
 
   // Enforce auth on the server so dashboard pages are never public.
-  if (!authToken) {
-    redirect("/auth/login");
+  if (!authToken && !hasPortalSession) {
+    redirect("/content-login?next=/dashboard/content");
   }
 
   return (

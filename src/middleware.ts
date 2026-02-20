@@ -1,11 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
+import { CONTENT_PORTAL_SESSION_COOKIE } from "@/lib/content/constants";
 import subdomains from "../subdomains.json";
 
 export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const pathname = url.pathname;
-  const isDashboardPath = pathname === "/dashboard" || pathname.startsWith("/dashboard/");
-  const isContentApiPath = pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
+  const isDashboardPath =
+    pathname === "/dashboard" || pathname.startsWith("/dashboard/");
+  const isDashboardContentPath =
+    pathname === "/dashboard/content" ||
+    pathname.startsWith("/dashboard/content/");
+  const isContentPostsApiPath =
+    pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
 
   if (
     pathname.startsWith("/_next") || // Next.js static files
@@ -17,15 +23,30 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  if (isDashboardPath || isContentApiPath) {
+  if (isDashboardPath || isContentPostsApiPath) {
     const authToken = req.cookies.get("authToken")?.value || "";
+    const contentPortalSession =
+      req.cookies.get(CONTENT_PORTAL_SESSION_COOKIE)?.value || "";
+
+    const hasDashboardAuth = Boolean(authToken);
+    const hasContentPortalAuth = Boolean(contentPortalSession);
+    const canAccessContentPortal = hasDashboardAuth || hasContentPortalAuth;
+
+    if (isDashboardContentPath || isContentPostsApiPath) {
+      if (canAccessContentPortal) {
+        return NextResponse.next();
+      }
+    } else if (hasDashboardAuth) {
+      return NextResponse.next();
+    }
+
     if (!authToken) {
-      if (isContentApiPath) {
+      if (isContentPostsApiPath) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
       }
 
       const loginUrl = req.nextUrl.clone();
-      loginUrl.pathname = "/auth/login";
+      loginUrl.pathname = isDashboardContentPath ? "/content-login" : "/auth/login";
       loginUrl.searchParams.set("next", pathname);
       return NextResponse.redirect(loginUrl);
     }

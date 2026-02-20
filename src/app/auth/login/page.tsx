@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { loginUser } from "@/lib/api/api";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -26,6 +26,7 @@ export default function Login() {
   const [serverError, setServerError] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
@@ -40,7 +41,12 @@ export default function Login() {
 
       setServerError("");
       setIsSubmitting(false);
-      router.push("/dashboard");
+      const nextPath = searchParams.get("next");
+      if (nextPath && nextPath.startsWith("/")) {
+        router.push(nextPath);
+      } else {
+        router.push("/dashboard");
+      }
     } catch (error) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       console.error("Login failed:", error.response?.data?.message || error);

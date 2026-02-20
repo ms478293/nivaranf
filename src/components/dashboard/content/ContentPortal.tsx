@@ -245,6 +245,14 @@ export default function ContentPortal() {
     }
   }
 
+  async function logoutPortalSession() {
+    await fetch("/api/content/auth/logout", {
+      method: "POST",
+      credentials: "include",
+    });
+    window.location.href = "/content-login";
+  }
+
   return (
     <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
       <section className="bg-white border border-gray-200 rounded-xl p-4 h-fit">
@@ -338,12 +346,21 @@ export default function ContentPortal() {
       </section>
 
       <section className="bg-white border border-gray-200 rounded-xl p-5 space-y-4">
-        <div>
-          <h1 className="text-xl font-semibold">Publishing Portal</h1>
-          <p className="text-sm text-gray-600">
-            Create and publish stories, articles, news, and blogs with automatic
-            slug, SEO description, canonical URL, share text, and read time.
-          </p>
+        <div className="flex flex-wrap items-start justify-between gap-2">
+          <div>
+            <h1 className="text-xl font-semibold">Publishing Portal</h1>
+            <p className="text-sm text-gray-600">
+              Create and publish stories, articles, news, and blogs with automatic
+              slug, SEO description, canonical URL, share text, and read time.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={logoutPortalSession}
+            className="text-xs px-3 py-2 border border-gray-300 rounded-md"
+          >
+            Portal logout
+          </button>
         </div>
 
         {error ? (

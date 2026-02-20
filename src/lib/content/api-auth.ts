@@ -1,4 +1,6 @@
 import type { NextRequest } from "next/server";
+import { verifyContentPortalSession } from "./portal-session";
+import { CONTENT_PORTAL_SESSION_COOKIE } from "./constants";
 
 function isLikelyJwt(token: string) {
   const parts = token.split(".");
@@ -6,11 +8,20 @@ function isLikelyJwt(token: string) {
 }
 
 export async function requireDashboardAuth(request: NextRequest) {
-  // Only trust the first-party auth cookie.
-  const token = request.cookies.get("authToken")?.value || "";
-  if (!token || !isLikelyJwt(token)) {
+  const authToken = request.cookies.get("authToken")?.value || "";
+  if (authToken && isLikelyJwt(authToken)) {
+    return authToken;
+  }
+
+  const portalSession =
+    request.cookies.get(CONTENT_PORTAL_SESSION_COOKIE)?.value || "";
+  if (verifyContentPortalSession(portalSession)) {
+    return portalSession;
+  }
+
+  if (!authToken) {
     throw new Error("Unauthorized");
   }
 
-  return token;
+  throw new Error("Unauthorized");
 }

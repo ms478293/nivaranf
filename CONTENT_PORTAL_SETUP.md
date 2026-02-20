@@ -6,7 +6,8 @@ This adds a working publishing portal for:
 - News
 - Blogs (published under `/articles`)
 
-Portal URL:
+Portal URLs:
+- `/content-login`
 - `/dashboard/content`
 
 ## 1) One-time Supabase setup
@@ -20,6 +21,11 @@ These are already used by your project and must exist in Vercel:
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `SUPABASE_SERVICE_ROLE_KEY`
+
+Add these for portal login:
+- `CONTENT_PORTAL_USERNAME`
+- `CONTENT_PORTAL_PASSWORD`
+- `CONTENT_PORTAL_SESSION_SECRET`
 
 ## 3) How the portal works
 
