@@ -7,8 +7,8 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-export default function Layout({ children }: LayoutProps) {
-  const cookieStore = cookies();
+export default async function Layout({ children }: LayoutProps) {
+  const cookieStore = await cookies();
   const authToken = cookieStore.get("authToken")?.value || "";
 
   // Enforce auth on the server so dashboard pages are never public.
