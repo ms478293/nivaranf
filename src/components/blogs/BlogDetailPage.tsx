@@ -5,6 +5,14 @@ import {
   getBlogTypeBySlug,
   type BlogRouteSegment,
 } from "@/lib/blog-routes";
+import {
+  buildCanonicalPath,
+  getRouteSegmentForContentType,
+} from "@/lib/content/automation";
+import {
+  getPublishedBlogItemsBySegment,
+  getPublishedContentPostBySlug,
+} from "@/lib/content/posts";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import type { Metadata } from "next";
@@ -119,6 +127,12 @@ function getDefaultAuthorBio() {
   return "Nivaran Foundation runs mobile health and education programs in Nepal's rural regions, where the nearest doctor or classroom can be hours away.";
 }
 
+function getDisplayTypeFromContentType(contentType: string): blogListType["type"] {
+  if (contentType === "Story") return "Story";
+  if (contentType === "News") return "News";
+  return "Article";
+}
+
 async function getBlogFile(slug: string) {
   const blogPath = path.join(process.cwd(), "src/blogs/global", `${slug}.mdx`);
   const fileContents = await fs.readFile(blogPath, "utf8");
@@ -148,9 +162,17 @@ function getSegmentForSlug(slug: string): BlogRouteSegment {
 export async function getStaticParamsForSegment(segment: BlogRouteSegment) {
   try {
     const allSlugs = await getAllGlobalBlogSlugs();
-    return allSlugs
+    const staticParams = allSlugs
       .filter((slug) => getSegmentForSlug(slug) === segment)
       .map((slug) => ({ slug }));
+    const portalParams = (await getPublishedBlogItemsBySegment(segment)).map(
+      (blog) => ({ slug: blog.slug })
+    );
+
+    const uniqueSlugs = Array.from(
+      new Set([...staticParams, ...portalParams].map((entry) => entry.slug))
+    );
+    return uniqueSlugs.map((slug) => ({ slug }));
   } catch (error) {
     console.error("Error in getStaticParamsForSegment:", error);
     return [];
@@ -159,8 +181,60 @@ export async function getStaticParamsForSegment(segment: BlogRouteSegment) {
 
 export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
   try {
-    const { data } = await getBlogFile(slug);
     const listEntry = globalBlogs.find((blog) => blog.slug === slug);
+    const dynamicPost = listEntry
+      ? null
+      : await getPublishedContentPostBySlug(slug);
+    if (dynamicPost) {
+      const title = dynamicPost.seo_title || dynamicPost.title;
+      const description =
+        dynamicPost.seo_description ||
+        dynamicPost.excerpt ||
+        "Read the latest stories and updates from Nivaran Foundation.";
+      const canonical =
+        dynamicPost.canonical_url ||
+        `https://www.nivaranfoundation.org${buildCanonicalPath(
+          dynamicPost.content_type,
+          dynamicPost.slug
+        )}`;
+      const imageUrl = toAbsoluteWebsiteUrl(dynamicPost.cover_image_url || "");
+
+      return {
+        title,
+        description,
+        keywords: dynamicPost.keywords,
+        authors: [{ name: dynamicPost.author || "Nivaran Foundation" }],
+        alternates: {
+          canonical,
+        },
+        openGraph: {
+          title,
+          description,
+          url: canonical,
+          type: "article",
+          images: imageUrl
+            ? [
+                {
+                  url: imageUrl,
+                  width: 1200,
+                  height: 630,
+                  alt: dynamicPost.title,
+                },
+              ]
+            : undefined,
+        },
+        twitter: {
+          card: "summary_large_image",
+          title,
+          description,
+          creator: "@NivaranOrg",
+          site: "@NivaranOrg",
+          images: imageUrl ? [imageUrl] : undefined,
+        },
+      };
+    }
+
+    const { data } = await getBlogFile(slug);
 
     const title = data.title || listEntry?.title || "Untitled Blog";
     const description =
@@ -222,21 +296,48 @@ export async function renderBlogDetailPage({
   slug: string;
   segment: BlogRouteSegment;
 }) {
-  let blogFile: Awaited<ReturnType<typeof getBlogFile>>;
-  try {
-    blogFile = await getBlogFile(slug);
-  } catch (error) {
-    console.error("Error reading blog file:", error);
-    notFound();
-  }
-
-  const { content, data } = blogFile;
   const listEntry = globalBlogs.find((blog) => blog.slug === slug);
-  const resolvedType = listEntry?.type || "Article";
-  const resolvedSegment = getSegmentForSlug(slug);
-  const resolvedPath = listEntry
-    ? getBlogPath(listEntry)
-    : `/articles/${slug}`;
+  const dynamicPost = listEntry
+    ? null
+    : await getPublishedContentPostBySlug(slug);
+  let content = "";
+  let data: BlogFrontmatter = {};
+  let resolvedType: blogListType["type"] = listEntry?.type || "Article";
+  let resolvedSegment: BlogRouteSegment = getSegmentForSlug(slug);
+  let resolvedPath = listEntry ? getBlogPath(listEntry) : `/articles/${slug}`;
+  let readTimeMinutes = 1;
+
+  if (dynamicPost) {
+    content = dynamicPost.body;
+    data = {
+      title: dynamicPost.title,
+      subtitle: dynamicPost.excerpt,
+      date: dynamicPost.published_at || dynamicPost.updated_at,
+      author: dynamicPost.author,
+      mainImage: dynamicPost.cover_image_url || undefined,
+      keywords: dynamicPost.keywords.join(", "),
+      location: dynamicPost.location,
+      coverImageAlt: dynamicPost.cover_image_alt || undefined,
+      coverImageCaption: dynamicPost.cover_image_caption || undefined,
+      shareMessage: dynamicPost.share_message || undefined,
+      donateLine: dynamicPost.donate_line || undefined,
+      authorBio: dynamicPost.author_bio || undefined,
+    };
+    resolvedType = getDisplayTypeFromContentType(dynamicPost.content_type);
+    resolvedSegment = getRouteSegmentForContentType(dynamicPost.content_type);
+    resolvedPath = buildCanonicalPath(dynamicPost.content_type, dynamicPost.slug);
+    readTimeMinutes = dynamicPost.reading_time_minutes;
+  } else {
+    try {
+      const blogFile = await getBlogFile(slug);
+      content = blogFile.content;
+      data = blogFile.data;
+      readTimeMinutes = calculateReadTimeMinutes(content);
+    } catch (error) {
+      console.error("Error reading blog file:", error);
+      notFound();
+    }
+  }
 
   if (resolvedSegment !== segment) {
     permanentRedirect(resolvedPath);
@@ -246,16 +347,30 @@ export async function renderBlogDetailPage({
   const subtitle = data.subtitle || listEntry?.summary || "";
   const author = data.author || "Nivaran Foundation News Desk";
   const dateLabel = formatDate(data.date || listEntry?.date);
-  const readTimeLabel = `${calculateReadTimeMinutes(content)} min read`;
+  const readTimeLabel = `${readTimeMinutes} min read`;
   const location = data.location || "Nepal";
   const articleUrl = `https://www.nivaranfoundation.org${resolvedPath}`;
 
-  const relatedBlogs = [...globalBlogs]
+  const staticRelatedBlogs = [...globalBlogs]
     .filter((blog) => blog.slug !== slug)
     .sort((a, b) => {
       const aSameType = a.type === resolvedType ? 1 : 0;
       const bSameType = b.type === resolvedType ? 1 : 0;
       return bSameType - aSameType;
+    });
+  const dynamicRelatedBlogs = await getPublishedBlogItemsBySegment(resolvedSegment);
+
+  const relatedBySlug = new Map<string, blogListType>();
+  staticRelatedBlogs.forEach((blog) => relatedBySlug.set(blog.slug, blog));
+  dynamicRelatedBlogs.forEach((blog) => relatedBySlug.set(blog.slug, blog));
+
+  const relatedBlogs = Array.from(relatedBySlug.values())
+    .filter((blog) => blog.slug !== slug)
+    .sort((a, b) => {
+      const aSameType = a.type === resolvedType ? 1 : 0;
+      const bSameType = b.type === resolvedType ? 1 : 0;
+      if (aSameType !== bSameType) return bSameType - aSameType;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
     })
     .slice(0, 3);
 

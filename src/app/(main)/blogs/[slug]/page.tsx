@@ -1,5 +1,7 @@
 import { globalBlogs } from "@/blogs/listofblogs";
 import { getBlogPathBySlug } from "@/lib/blog-routes";
+import { buildCanonicalPath } from "@/lib/content/automation";
+import { getPublishedContentPostBySlug } from "@/lib/content/posts";
 import { permanentRedirect } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -14,5 +16,12 @@ export default async function LegacyBlogRedirectPage({
   params: Promise<{ slug: string }>;
 }) {
   const slug = (await params).slug;
+  if (globalBlogs.some((blog) => blog.slug === slug)) {
+    permanentRedirect(getBlogPathBySlug(slug));
+  }
+  const dynamicPost = await getPublishedContentPostBySlug(slug);
+  if (dynamicPost) {
+    permanentRedirect(buildCanonicalPath(dynamicPost.content_type, dynamicPost.slug));
+  }
   permanentRedirect(getBlogPathBySlug(slug));
 }

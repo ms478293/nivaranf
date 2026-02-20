@@ -2,6 +2,7 @@ import { NavItem } from "@/app/types/navItem";
 import {
   BookUserIcon,
   BriefcaseIcon,
+  FilePenLine,
   Handshake,
   PlusIcon,
   UserRoundSearchIcon,
@@ -46,6 +47,17 @@ const navItems: NavItem[] = [
         label: "Programs ",
         href: "/dashboard/programs/view-programs",
         icon: PlusIcon,
+      },
+    ],
+  },
+  {
+    label: "Content Management",
+    icon: BookUserIcon,
+    children: [
+      {
+        label: "Publishing Portal",
+        href: "/dashboard/content",
+        icon: FilePenLine,
       },
     ],
   },

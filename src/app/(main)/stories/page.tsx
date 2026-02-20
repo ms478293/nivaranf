@@ -1,5 +1,6 @@
 import { globalBlogs } from "@/blogs/listofblogs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
+import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -12,10 +13,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function StoriesPage() {
-  const blogs = globalBlogs
+export default async function StoriesPage() {
+  const staticBlogs = globalBlogs
     .filter((blog) => getBlogRouteSegmentByType(blog.type) === "stories")
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const dynamicBlogs = await getPublishedBlogItemsBySegment("stories");
+
+  const mergedBySlug = new Map<string, (typeof staticBlogs)[number]>();
+  staticBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
+  dynamicBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
+
+  const blogs = Array.from(mergedBySlug.values()).sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   return (
     <main className="w-full mb-10 px-4 font-Poppins">
