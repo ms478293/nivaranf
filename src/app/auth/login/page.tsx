@@ -3,8 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { loginUser } from "@/lib/api/api";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -14,6 +14,11 @@ const schema = z.object({
 });
 
 type FormData = z.infer<typeof schema>;
+
+function resolveNextPath(raw: string | null) {
+  if (!raw || !raw.startsWith("/")) return "/dashboard";
+  return raw;
+}
 
 export default function Login() {
   const {
@@ -25,8 +30,13 @@ export default function Login() {
   });
   const [serverError, setServerError] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [nextPath, setNextPath] = useState("/dashboard");
   const router = useRouter();
-  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setNextPath(resolveNextPath(params.get("next")));
+  }, []);
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
@@ -41,12 +51,7 @@ export default function Login() {
 
       setServerError("");
       setIsSubmitting(false);
-      const nextPath = searchParams.get("next");
-      if (nextPath && nextPath.startsWith("/")) {
-        router.push(nextPath);
-      } else {
-        router.push("/dashboard");
-      }
+      router.push(nextPath);
     } catch (error) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       console.error("Login failed:", error.response?.data?.message || error);
