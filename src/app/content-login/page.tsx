@@ -3,6 +3,8 @@
 import { useSearchParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
+export const dynamic = "force-dynamic";
+
 function resolveNextPath(raw: string | null) {
   if (!raw || !raw.startsWith("/")) return "/dashboard/content";
   return raw;
