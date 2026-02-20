@@ -1,12 +1,14 @@
 import type { NextRequest } from "next/server";
 
-export async function requireDashboardAuth(request: NextRequest) {
-  const bearerToken = request.headers.get("authorization")?.startsWith("Bearer ")
-    ? request.headers.get("authorization")?.replace("Bearer ", "")
-    : null;
+function isLikelyJwt(token: string) {
+  const parts = token.split(".");
+  return parts.length === 3 && token.length > 24;
+}
 
-  const token = bearerToken || request.cookies.get("authToken")?.value || "";
-  if (!token) {
+export async function requireDashboardAuth(request: NextRequest) {
+  // Only trust the first-party auth cookie.
+  const token = request.cookies.get("authToken")?.value || "";
+  if (!token || !isLikelyJwt(token)) {
     throw new Error("Unauthorized");
   }
 

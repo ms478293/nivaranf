@@ -1,47 +1,33 @@
-"use client";
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import useAuth from "@/lib/auth/useAuth";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 export default function Layout({ children }: LayoutProps) {
-  const router = useRouter();
-  const { isAuthenticated } = useAuth();
+  const cookieStore = cookies();
+  const authToken = cookieStore.get("authToken")?.value || "";
 
-  useEffect(() => {
-    if (isAuthenticated === false) {
-      router.push("/auth/login");
-    }
-  }, [isAuthenticated, router]);
-
-  // Handle loading or redirecting state
-  if (isAuthenticated === null) {
-    return <div>Loading...</div>; // Optionally add a spinner or skeleton loader
+  // Enforce auth on the server so dashboard pages are never public.
+  if (!authToken) {
+    redirect("/auth/login");
   }
 
-  // Render dashboard if authenticated
-  if (isAuthenticated) {
-    return (
-      <SidebarProvider>
-        <AppSidebar />
-        <main className="flex-1 p-6 bg-[#fafafa] mt-20 font-Poppins">
-          {/* Sidebar trigger for mobile view */}
-          <SidebarTrigger className="sm:hidden">
-            <button className="text-gray-800" aria-label="Toggle Sidebar">
-              <span className="font-bold">Toggle Sidebar</span>
-            </button>
-          </SidebarTrigger>
+  return (
+    <SidebarProvider>
+      <AppSidebar />
+      <main className="flex-1 p-6 bg-[#fafafa] mt-20 font-Poppins">
+        <SidebarTrigger className="sm:hidden">
+          <button className="text-gray-800" aria-label="Toggle Sidebar">
+            <span className="font-bold">Toggle Sidebar</span>
+          </button>
+        </SidebarTrigger>
 
-          <div>{children}</div>
-        </main>
-      </SidebarProvider>
-    );
-  }
-
-  return null; // Prevent rendering if not authenticated and redirecting
+        <div>{children}</div>
+      </main>
+    </SidebarProvider>
+  );
 }

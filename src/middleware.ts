@@ -4,6 +4,8 @@ import subdomains from "../subdomains.json";
 export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const pathname = url.pathname;
+  const isDashboardPath = pathname === "/dashboard" || pathname.startsWith("/dashboard/");
+  const isContentApiPath = pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
 
   if (
     pathname.startsWith("/_next") || // Next.js static files
@@ -14,6 +16,21 @@ export function middleware(req: NextRequest) {
   ) {
     return NextResponse.next();
   }
+
+  if (isDashboardPath || isContentApiPath) {
+    const authToken = req.cookies.get("authToken")?.value || "";
+    if (!authToken) {
+      if (isContentApiPath) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+      }
+
+      const loginUrl = req.nextUrl.clone();
+      loginUrl.pathname = "/auth/login";
+      loginUrl.searchParams.set("next", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
   const host = req.headers.get("host") || "";
   const allowedDomains = ["localhost", "nivaranfoundation.org", "vercel.app"];
 
