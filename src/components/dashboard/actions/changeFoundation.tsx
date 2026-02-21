@@ -26,13 +26,21 @@ const FoundationComponent = () => {
     queryClient.invalidateQueries({ queryKey: ["volunteer"] });
   };
 
-  const { data: Foundations }: { data: ApiResponseItem[] | undefined } =
-    useQuery({
-      queryKey: ["foundations"],
-      queryFn: getAllFoundations,
-    });
+  const {
+    data: foundations = [],
+    isLoading,
+    isError,
+  }: {
+    data: ApiResponseItem[] | undefined;
+    isLoading: boolean;
+    isError: boolean;
+  } = useQuery({
+    queryKey: ["foundations"],
+    queryFn: getAllFoundations,
+    retry: 1,
+  });
 
-  if (Foundations) {
+  if (foundations.length > 0) {
     return (
       <div>
         <select
@@ -43,7 +51,7 @@ const FoundationComponent = () => {
           <option value="" disabled>
             Choose a foundation
           </option>
-          {Foundations.map((item: { id: number; name: string }) => (
+          {foundations.map((item: { id: number; name: string }) => (
             <option key={item.id} value={item.name}>
               {item.name}
             </option>
@@ -53,7 +61,15 @@ const FoundationComponent = () => {
     );
   }
 
-  return <div>Loading...</div>;
+  if (isLoading) {
+    return <div className="text-sm text-gray-500">Loading...</div>;
+  }
+
+  if (isError) {
+    return <div className="text-sm text-gray-500">Nivaran Foundation</div>;
+  }
+
+  return <div className="text-sm text-gray-500">Nivaran Foundation</div>;
 };
 
 export default FoundationComponent;
