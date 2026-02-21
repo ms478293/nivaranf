@@ -110,6 +110,15 @@ type UploadPrepareResponse = {
   signedUrl?: string;
 };
 
+function sanitizePublicEnvValue(raw?: string) {
+  if (!raw) return "";
+  return raw
+    .trim()
+    .replace(/\\r\\n$/i, "")
+    .replace(/\\n$/i, "")
+    .replace(/\\r$/i, "");
+}
+
 export default function ContentPortal() {
   const [posts, setPosts] = useState<ContentPost[]>([]);
   const [form, setForm] = useState<ContentFormState>(EMPTY_FORM);
@@ -251,8 +260,12 @@ export default function ContentPortal() {
         throw new Error("Upload token response is incomplete.");
       }
 
-      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-      const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      const supabaseUrl = sanitizePublicEnvValue(
+        process.env.NEXT_PUBLIC_SUPABASE_URL
+      );
+      const supabaseAnonKey = sanitizePublicEnvValue(
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+      );
       if (!supabaseUrl || !supabaseAnonKey) {
         throw new Error("Supabase public environment variables are missing.");
       }
