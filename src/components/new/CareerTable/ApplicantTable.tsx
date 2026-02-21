@@ -68,11 +68,14 @@ export const ApplicantTable = () => {
 
   const {
     refetch,
-    data: jobData,
+    data: jobData = [],
     isLoading,
+    isError,
+    error,
   } = useQuery({
     queryKey: ["application"],
     queryFn: () => getAlljobApplication(),
+    retry: 1,
   });
 
   const [, setIsRowSelected] = useState(false);
@@ -323,6 +326,15 @@ export const ApplicantTable = () => {
     [columnHelper]
   );
   if (isLoading) return <p>Loading...</p>;
+
+  if (isError) {
+    return (
+      <p className="text-sm text-red-600">
+        Failed to load applicants. Please sign in again and retry.
+        {error instanceof Error ? ` ${error.message}` : ""}
+      </p>
+    );
+  }
 
   return (
     <div>

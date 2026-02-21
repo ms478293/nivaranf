@@ -30,7 +30,7 @@ import { ChevronDown } from "lucide-react";
 import React, { useState } from "react";
 
 interface AppTableProps<TData = unknown> {
-  data: TData[];
+  data: TData[] | null | undefined;
   columns: ColumnDef<TData, any>[];
   searchString?: string;
   children?: React.ReactNode;
@@ -43,6 +43,7 @@ export const AppTable = <TData = unknown,>({
   searchString,
   children,
 }: AppTableProps<TData>) => {
+  const safeData = Array.isArray(data) ? data : [];
   const [pagination, setPagination] = useState<PaginationState>({
     pageIndex: 0,
     pageSize: 10,
@@ -57,7 +58,7 @@ export const AppTable = <TData = unknown,>({
   const [rowSelection, setRowSelection] = React.useState({});
 
   const table = useReactTable({
-    data,
+    data: safeData,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),

@@ -44,11 +44,14 @@ export const JobTable = () => {
 
   const {
     refetch,
-    data: jobData,
+    data: jobData = [],
     isLoading,
+    isError,
+    error,
   } = useQuery({
     queryKey: ["joblist"],
     queryFn: () => getAllJobs(),
+    retry: 1,
   });
 
   // const [isRowSelected, setIsRowSelected] = useState(false);
@@ -159,6 +162,15 @@ export const JobTable = () => {
   );
 
   if (isLoading) return <p>Loading...</p>;
+
+  if (isError) {
+    return (
+      <p className="text-sm text-red-600">
+        Failed to load job listings. Please sign in again and retry.
+        {error instanceof Error ? ` ${error.message}` : ""}
+      </p>
+    );
+  }
 
   return (
     <div>
