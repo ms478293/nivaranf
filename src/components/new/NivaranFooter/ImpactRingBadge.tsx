@@ -12,8 +12,8 @@ export function ImpactRingBadge({ target = 96, className = "" }: ImpactRingBadge
   const gradientId = useId().replace(/:/g, "");
   const [displayValue, setDisplayValue] = useState(1);
   const clampedTarget = Math.max(1, Math.min(99, target));
-  const GAP_PERCENT = 6;
-  const END_CLEARANCE_PERCENT = 1.2;
+  const GAP_PERCENT = 12;
+  const END_CLEARANCE_PERCENT = 2;
   const MAX_ARC_PERCENT = Math.max(1, 100 - GAP_PERCENT - END_CLEARANCE_PERCENT);
   const strokeWidth = 18;
   const radius = 50 - strokeWidth / 2;
