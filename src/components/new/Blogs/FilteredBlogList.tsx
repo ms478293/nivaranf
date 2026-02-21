@@ -1,8 +1,8 @@
-import { globalBlogs } from "@/blogs/listofblogs";
+import type { blogListType } from "@/blogs/listofblogs";
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 
-export const FilteredBlogsList = ({ blogs }: { blogs: typeof globalBlogs }) => {
+export const FilteredBlogsList = ({ blogs }: { blogs: blogListType[] }) => {
   return (
     <div className="grid-cols-1 sm:grid  flex flex-col sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
       <RenderList

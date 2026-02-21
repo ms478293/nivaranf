@@ -352,16 +352,15 @@ export default function ContentPortal() {
     }
   }
 
-  async function removePost() {
-    if (!form.id) return;
-    if (!window.confirm("Delete this post permanently?")) return;
+  async function removePostById(id: string, title?: string) {
+    if (!window.confirm(`Delete "${title || "this post"}" permanently?`)) return;
 
     setSaving(true);
     setError("");
     setSuccess("");
 
     try {
-      const response = await fetch(`/api/content/posts/${form.id}`, {
+      const response = await fetch(`/api/content/posts/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
@@ -370,7 +369,9 @@ export default function ContentPortal() {
         throw new Error(payload.error || "Failed to delete post");
       }
 
-      resetToNew();
+      if (form.id === id) {
+        resetToNew();
+      }
       await fetchPosts();
       setSuccess("Post deleted successfully.");
     } catch (err) {
@@ -378,6 +379,11 @@ export default function ContentPortal() {
     } finally {
       setSaving(false);
     }
+  }
+
+  async function removePost() {
+    if (!form.id) return;
+    await removePostById(form.id, form.title);
   }
 
   async function logoutPortalSession() {
@@ -450,32 +456,46 @@ export default function ContentPortal() {
             <p className="text-sm text-gray-500">No posts found.</p>
           ) : null}
           {posts.map((post) => (
-            <button
+            <div
               key={post.id}
-              type="button"
-              className={`w-full text-left border rounded-lg p-3 transition ${
+              className={`border rounded-lg p-3 transition ${
                 form.id === post.id
                   ? "border-black bg-gray-50"
                   : "border-gray-200 hover:border-gray-400"
               }`}
-              onClick={() => {
-                setForm(toFormState(post));
-                setSlugEdited(true);
-                setSuccess("");
-                setError("");
-              }}
             >
-              <p className="text-[11px] uppercase tracking-wide text-gray-500">
-                {post.content_type} · {post.status}
-              </p>
-              <p className="text-sm font-semibold line-clamp-2">{post.title}</p>
-              <p className="text-xs text-gray-500 mt-1">
-                {buildCanonicalPath(post.content_type, post.slug)}
-              </p>
-              <p className="text-xs text-gray-500 mt-1">
-                Updated: {formatDate(post.updated_at)}
-              </p>
-            </button>
+              <button
+                type="button"
+                className="w-full text-left"
+                onClick={() => {
+                  setForm(toFormState(post));
+                  setSlugEdited(true);
+                  setSuccess("");
+                  setError("");
+                }}
+              >
+                <p className="text-[11px] uppercase tracking-wide text-gray-500">
+                  {post.content_type} · {post.status}
+                </p>
+                <p className="text-sm font-semibold line-clamp-2">{post.title}</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  {buildCanonicalPath(post.content_type, post.slug)}
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Updated: {formatDate(post.updated_at)}
+                </p>
+              </button>
+              <div className="mt-2 flex justify-end">
+                <button
+                  type="button"
+                  disabled={saving}
+                  onClick={() => removePostById(post.id, post.title)}
+                  className="text-xs px-2 py-1 rounded border border-red-300 text-red-700"
+                >
+                  Delete
+                </button>
+              </div>
+            </div>
           ))}
         </div>
       </section>

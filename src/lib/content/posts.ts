@@ -178,6 +178,16 @@ function dedupeBlogItems(items: blogListType[], limit: number) {
   return unique;
 }
 
+function sortBlogItemsByDateDesc(items: blogListType[]) {
+  return [...items].sort((a, b) => {
+    const aTime = new Date(a.date).getTime();
+    const bTime = new Date(b.date).getTime();
+    const safeA = Number.isFinite(aTime) ? aTime : 0;
+    const safeB = Number.isFinite(bTime) ? bTime : 0;
+    return safeB - safeA;
+  });
+}
+
 type DashboardPostFilters = {
   status?: ContentStatus | "all";
   type?: ContentType | "all";
@@ -423,6 +433,32 @@ export async function getTrendingBlogFeed(limit = 4) {
     );
   } catch {
     return staticFeatured.slice(0, safeLimit);
+  }
+}
+
+export async function getBlogFeed(limit = 200) {
+  const safeLimit = Math.max(1, Math.min(limit, 500));
+  const staticBlogs = sortBlogItemsByDateDesc(globalBlogs);
+
+  try {
+    const { data, error } = await supabaseAdmin
+      .from(CONTENT_POSTS_TABLE)
+      .select("*")
+      .eq("status", "published")
+      .order("published_at", { ascending: false, nullsFirst: false })
+      .order("updated_at", { ascending: false })
+      .limit(safeLimit * 2);
+
+    throwSupabaseError(error, true);
+
+    const dynamicBlogs = (data || [])
+      .map((row) => mapRowToContentPost(row as Record<string, unknown>))
+      .map((post) => mapContentPostToBlogListItem(post));
+
+    const merged = dedupeBlogItems([...dynamicBlogs, ...staticBlogs], safeLimit * 3);
+    return sortBlogItemsByDateDesc(merged).slice(0, safeLimit);
+  } catch {
+    return staticBlogs.slice(0, safeLimit);
   }
 }
 

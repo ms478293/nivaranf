@@ -1,17 +1,22 @@
 "use client";
 
-import { globalBlogs } from "@/blogs/listofblogs";
+import type { blogListType } from "@/blogs/listofblogs";
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { useScreenSize } from "@/lib/helpers/useScreenSize";
 import { IconButton } from "./IconButton";
 
-export const LatestBlogs = () => {
+export const LatestBlogs = ({ blogs }: { blogs: blogListType[] }) => {
   const screenSize = useScreenSize();
 
-  const latestBlogs = globalBlogs
+  const latestBlogs = [...blogs]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 3);
+
+  if (latestBlogs.length === 0) {
+    return <p className="text-sm text-gray-500">No posts available yet.</p>;
+  }
+
   return (
     <div className="grid grid-cols-2 md:grid-rows-2 gap-4 ">
       <div

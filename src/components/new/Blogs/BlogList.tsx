@@ -1,8 +1,8 @@
 "use client";
 
-import { globalBlogs } from "@/blogs/listofblogs";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { blogTypes } from "@/content/blogTypes";
+import { useBlogFeed } from "@/lib/content/useBlogFeed";
 import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import { useState } from "react";
 import MainTitle from "../MainTitle/MainTitle";
@@ -16,6 +16,7 @@ export const BlogList = () => {
   const [activeCategoryTag, setActiveCategoryTag] = useState<
     (typeof blogTypes)[number] | "All"
   >("All");
+  const allBlogs = useBlogFeed(500);
   const trendingBlogs = useTrendingBlogs(4);
 
   // const filteredBlogType = globalBlogs.filter(
@@ -23,7 +24,7 @@ export const BlogList = () => {
   // );
 
   // **Filtering blogs based on search & category**
-  const filteredBlogs = globalBlogs.filter((blog) => {
+  const filteredBlogs = allBlogs.filter((blog) => {
     const matchesCategory =
       activeCategoryTag === "All" || blog.type === activeCategoryTag;
     // const matchesFeatured = onlyFeatured ? blog.featured : true;
@@ -99,7 +100,7 @@ export const BlogList = () => {
             <>
               <section className="">
                 <MainTitle prefix="Blogs" suffix="Latest" className="mb-6" />
-                <LatestBlogs />
+                <LatestBlogs blogs={allBlogs} />
               </section>
 
               <section className="mt-10">
