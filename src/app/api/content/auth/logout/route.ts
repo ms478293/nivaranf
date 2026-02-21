@@ -10,5 +10,17 @@ export async function POST() {
     value: "",
     maxAge: 0,
   });
+  response.cookies.set({
+    name: "authToken",
+    value: "",
+    path: "/",
+    maxAge: 0,
+  });
+  response.cookies.set({
+    name: "refreshToken",
+    value: "",
+    path: "/",
+    maxAge: 0,
+  });
   return response;
 }

@@ -7,9 +7,6 @@ export function middleware(req: NextRequest) {
   const pathname = url.pathname;
   const isDashboardPath =
     pathname === "/dashboard" || pathname.startsWith("/dashboard/");
-  const isDashboardContentPath =
-    pathname === "/dashboard/content" ||
-    pathname.startsWith("/dashboard/content/");
   const isContentPostsApiPath =
     pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
   const isContentUploadApiPath = pathname === "/api/content/upload-image";
@@ -33,26 +30,20 @@ export function middleware(req: NextRequest) {
 
     const hasDashboardAuth = Boolean(authToken);
     const hasContentPortalAuth = Boolean(contentPortalSession);
-    const canAccessContentPortal = hasDashboardAuth || hasContentPortalAuth;
+    const hasAnyDashboardAuth = hasDashboardAuth || hasContentPortalAuth;
 
-    if (isDashboardContentPath || isContentProtectedApiPath) {
-      if (canAccessContentPortal) {
-        return NextResponse.next();
-      }
-    } else if (hasDashboardAuth) {
+    if (hasAnyDashboardAuth) {
       return NextResponse.next();
     }
 
-    if (!authToken) {
-      if (isContentProtectedApiPath) {
-        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-      }
-
-      const loginUrl = req.nextUrl.clone();
-      loginUrl.pathname = isDashboardContentPath ? "/content-login" : "/auth/login";
-      loginUrl.searchParams.set("next", pathname);
-      return NextResponse.redirect(loginUrl);
+    if (isContentProtectedApiPath) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
+
+    const loginUrl = req.nextUrl.clone();
+    loginUrl.pathname = "/content-login";
+    loginUrl.searchParams.set("next", `${pathname}${req.nextUrl.search}`);
+    return NextResponse.redirect(loginUrl);
   }
 
   const host = req.headers.get("host") || "";

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 function resolveNextPath(raw: string | null) {
-  if (!raw || !raw.startsWith("/")) return "/dashboard/content";
+  if (!raw || !raw.startsWith("/")) return "/dashboard";
   return raw;
 }
 
@@ -13,7 +13,7 @@ export default function ContentLoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [nextPath, setNextPath] = useState("/dashboard/content");
+  const [nextPath, setNextPath] = useState("/dashboard");
   const router = useRouter();
 
   useEffect(() => {
@@ -51,9 +51,9 @@ export default function ContentLoginPage() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
       <section className="w-full max-w-md bg-white rounded-xl border border-gray-200 shadow-sm p-6">
-        <h1 className="text-2xl font-semibold mb-2">Content Portal Login</h1>
+        <h1 className="text-2xl font-semibold mb-2">Dashboard Login</h1>
         <p className="text-sm text-gray-600 mb-5">
-          Sign in to access the Nivaran content publishing portal.
+          Sign in to access the Nivaran admin dashboard and content portal.
         </p>
 
         {error ? (

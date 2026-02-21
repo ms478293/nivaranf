@@ -18,7 +18,7 @@ export default async function Layout({ children }: LayoutProps) {
 
   // Enforce auth on the server so dashboard pages are never public.
   if (!authToken && !hasPortalSession) {
-    redirect("/content-login?next=/dashboard/content");
+    redirect("/content-login?next=/dashboard");
   }
 
   return (
