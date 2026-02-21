@@ -19,10 +19,10 @@ export type blogListType = {
 export const globalBlogs: blogListType[] = [
   {
     slug: "when-the-road-ends-aviation-safety-and-rural-health",
-    title: "When the Road Ends: Aviation Safety and Rural Health",
+    title: "When the Road Ends, Care Can End Too",
     summary:
-      "The January 2 runway overshoot in Bhadrapur was more than a transport incident. In remote Nepal, disrupted aviation can break the only referral path for critical patients.",
-    thumbnailImage: "/images/archive/2026/2026-01-02-when-the-road-ends-aviation-safety-rural-health.svg",
+      "The Jan 2 Bhadrapur runway overshoot exposed a hard truth: in remote Nepal, one transport failure can break the medical referral chain for critical patients.",
+    thumbnailImage: "/images/archive/2026/2026-01-02-bhadrapur-airport.jpg",
     date: "2026-01-02",
     author: "Nivaran Foundation News Desk",
     featured: true,
