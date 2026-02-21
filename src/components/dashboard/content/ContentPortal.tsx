@@ -134,6 +134,9 @@ export default function ContentPortal() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
+  const isEditing = Boolean(form.id);
+  const isEditingPublished = isEditing && form.status === "published";
+
   async function fetchPosts() {
     setLoading(true);
     setError("");
@@ -185,6 +188,13 @@ export default function ContentPortal() {
   function resetToNew() {
     setForm(EMPTY_FORM);
     setSlugEdited(false);
+    setSuccess("");
+    setError("");
+  }
+
+  function selectPostForEditing(post: ContentPost) {
+    setForm(toFormState(post));
+    setSlugEdited(true);
     setSuccess("");
     setError("");
   }
@@ -467,12 +477,7 @@ export default function ContentPortal() {
               <button
                 type="button"
                 className="w-full text-left"
-                onClick={() => {
-                  setForm(toFormState(post));
-                  setSlugEdited(true);
-                  setSuccess("");
-                  setError("");
-                }}
+                onClick={() => selectPostForEditing(post)}
               >
                 <p className="text-[11px] uppercase tracking-wide text-gray-500">
                   {post.content_type} · {post.status}
@@ -485,7 +490,14 @@ export default function ContentPortal() {
                   Updated: {formatDate(post.updated_at)}
                 </p>
               </button>
-              <div className="mt-2 flex justify-end">
+              <div className="mt-2 flex justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => selectPostForEditing(post)}
+                  className="text-xs px-2 py-1 rounded border border-gray-300 text-gray-700"
+                >
+                  Edit
+                </button>
                 <button
                   type="button"
                   disabled={saving}
@@ -508,6 +520,13 @@ export default function ContentPortal() {
               Create and publish stories, articles, news, and blogs with automatic
               slug, SEO description, canonical URL, share text, and read time.
             </p>
+            {isEditing ? (
+              <p className="text-xs text-gray-500 mt-1">
+                Editing: <span className="font-medium">{form.title || "Untitled"}</span>
+                {" · "}
+                {form.status === "published" ? "Published" : "Draft"}
+              </p>
+            ) : null}
           </div>
           <button
             type="button"
@@ -787,7 +806,7 @@ export default function ContentPortal() {
             disabled={saving}
             className="px-4 py-2 rounded-md border border-gray-300 text-sm"
           >
-            {saving ? "Saving..." : "Save Draft"}
+            {saving ? "Saving..." : isEditing ? "Update Draft" : "Save Draft"}
           </button>
           <button
             type="button"
@@ -795,7 +814,13 @@ export default function ContentPortal() {
             disabled={saving}
             className="px-4 py-2 rounded-md bg-black text-white text-sm"
           >
-            {saving ? "Publishing..." : "Publish"}
+            {saving
+              ? isEditingPublished
+                ? "Updating..."
+                : "Publishing..."
+              : isEditingPublished
+              ? "Update Published"
+              : "Publish"}
           </button>
           {form.id ? (
             <button
