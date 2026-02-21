@@ -27,6 +27,8 @@ import ArticleShareButtons from "./ArticleShareButtons";
 import styles from "./article-template.module.css";
 import { mdxComponents } from "./mdxComponents";
 
+const SITE_URL = "https://www.nivaranfoundation.org";
+
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["700", "900"],
@@ -84,7 +86,33 @@ function toAbsoluteWebsiteUrl(value?: string) {
   if (!value) return "";
   if (value.startsWith("http://") || value.startsWith("https://")) return value;
   const normalized = value.startsWith("/") ? value : `/${value}`;
-  return `https://www.nivaranfoundation.org${normalized}`;
+  return `${SITE_URL}${normalized}`;
+}
+
+function ensureBrandInTitle(rawTitle?: string) {
+  const baseTitle = (rawTitle || "").trim();
+  if (!baseTitle) return "Nivaran Foundation | Rural Healthcare in Nepal";
+  if (baseTitle.toLowerCase().includes("nivaran foundation")) return baseTitle;
+  return `${baseTitle} | Nivaran Foundation`;
+}
+
+function cleanDescription(rawDescription?: string) {
+  const value = (rawDescription || "").replace(/\s+/g, " ").trim();
+  if (!value) return "";
+  if (value.length <= 160) return value;
+  return `${value.slice(0, 157).trimEnd()}...`;
+}
+
+function buildExcerptFromContent(content?: string) {
+  if (!content) return "";
+  const plainText = content
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/[#>*_`~-]/g, " ")
+    .replace(/\[[^\]]*\]\([^)]+\)/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return cleanDescription(plainText);
 }
 
 function formatDate(dateValue?: string) {
@@ -186,39 +214,49 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
       ? null
       : await getPublishedContentPostBySlug(slug);
     if (dynamicPost) {
-      const title = dynamicPost.seo_title || dynamicPost.title;
-      const description =
+      const title = ensureBrandInTitle(dynamicPost.seo_title || dynamicPost.title);
+      const description = cleanDescription(
         dynamicPost.seo_description ||
-        dynamicPost.excerpt ||
-        "Read the latest stories and updates from Nivaran Foundation.";
+          dynamicPost.excerpt ||
+          buildExcerptFromContent(dynamicPost.body) ||
+          "Read the latest stories and updates from Nivaran Foundation."
+      );
       const canonical =
         dynamicPost.canonical_url ||
-        `https://www.nivaranfoundation.org${buildCanonicalPath(
+        `${SITE_URL}${buildCanonicalPath(
           dynamicPost.content_type,
           dynamicPost.slug
         )}`;
       const imageUrl = toAbsoluteWebsiteUrl(dynamicPost.cover_image_url || "");
+      const publishedTime = dynamicPost.published_at || undefined;
+      const modifiedTime = dynamicPost.updated_at || undefined;
+      const authorName = dynamicPost.author || "Nivaran Foundation";
 
       return {
         title,
         description,
         keywords: dynamicPost.keywords,
-        authors: [{ name: dynamicPost.author || "Nivaran Foundation" }],
+        authors: [{ name: authorName }],
         alternates: {
           canonical,
         },
         openGraph: {
+          siteName: "Nivaran Foundation",
           title,
           description,
           url: canonical,
           type: "article",
+          publishedTime,
+          modifiedTime,
+          authors: [authorName],
+          section: dynamicPost.content_type,
           images: imageUrl
             ? [
                 {
                   url: imageUrl,
                   width: 1200,
                   height: 630,
-                  alt: dynamicPost.title,
+                  alt: dynamicPost.title || "Nivaran Foundation article cover image",
                 },
               ]
             : undefined,
@@ -234,39 +272,46 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
       };
     }
 
-    const { data } = await getBlogFile(slug);
+    const { data, content } = await getBlogFile(slug);
 
-    const title = data.title || listEntry?.title || "Untitled Blog";
-    const description =
+    const title = ensureBrandInTitle(data.title || listEntry?.title || "Untitled Blog");
+    const description = cleanDescription(
       data.subtitle ||
-      listEntry?.summary ||
-      "Read the latest stories and updates from Nivaran Foundation.";
+        listEntry?.summary ||
+        buildExcerptFromContent(content) ||
+        "Read the latest stories and updates from Nivaran Foundation."
+    );
     const canonicalPath = listEntry
       ? getBlogPath(listEntry)
       : `/articles/${slug}`;
-    const canonical = `https://www.nivaranfoundation.org${canonicalPath}`;
+    const canonical = `${SITE_URL}${canonicalPath}`;
     const imageUrl = toAbsoluteWebsiteUrl(data.mainImage);
+    const publishedTime = data.date || listEntry?.date;
+    const authorName = data.author || "Nivaran Foundation";
 
     return {
       title,
       description,
       keywords: data.keywords?.split(",").map((keyword) => keyword.trim()),
-      authors: [{ name: data.author || "Nivaran Foundation" }],
+      authors: [{ name: authorName }],
       alternates: {
         canonical,
       },
       openGraph: {
+        siteName: "Nivaran Foundation",
         title,
         description,
         url: canonical,
         type: "article",
+        publishedTime,
+        authors: [authorName],
         images: imageUrl
           ? [
               {
                 url: imageUrl,
                 width: 1200,
                 height: 630,
-                alt: title,
+                alt: data.coverImageAlt || title,
               },
             ]
           : undefined,
@@ -283,7 +328,7 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
   } catch (error) {
     console.error("Error in getMetadataForBlogSlug:", error);
     return {
-      title: "Untitled Blog",
+      title: "Untitled Blog | Nivaran Foundation",
       description: "Read the latest stories and updates from Nivaran Foundation.",
     };
   }
@@ -349,7 +394,7 @@ export async function renderBlogDetailPage({
   const dateLabel = formatDate(data.date || listEntry?.date);
   const readTimeLabel = `${readTimeMinutes} min read`;
   const location = data.location || "Nepal";
-  const articleUrl = `https://www.nivaranfoundation.org${resolvedPath}`;
+  const articleUrl = `${SITE_URL}${resolvedPath}`;
 
   const staticRelatedBlogs = [...globalBlogs]
     .filter((blog) => blog.slug !== slug)

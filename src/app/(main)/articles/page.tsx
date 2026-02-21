@@ -5,11 +5,33 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Articles",
+  title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
   description:
-    "In-depth articles and analysis from Nivaran Foundation on healthcare, education, and social impact.",
+    "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/articles",
+  },
+  keywords: [
+    "rural healthcare Nepal articles",
+    "maternal health Nepal",
+    "public health Nepal analysis",
+    "Nivaran Foundation articles",
+  ],
+  openGraph: {
+    title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
+    description:
+      "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
+    url: "https://www.nivaranfoundation.org/articles",
+    type: "website",
+    siteName: "Nivaran Foundation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
+    description:
+      "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

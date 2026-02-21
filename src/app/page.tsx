@@ -18,51 +18,54 @@ import { Suspense } from "react";
 import ogImage from "../../public/logo.png";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Healthcare & Education for Nepal",
+  title: "Mobile Health Camps in Nepal | Nivaran Foundation",
   description:
-    "Nivaran Foundation is a 501(c)(3) non-profit delivering healthcare and education to Nepal's underserved communities. 304 health camps, 61,200+ patients targeted. Donate today.",
-  metadataBase: new URL("https://nivaranfoundation.org"),
+    "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal. Support healthcare access where distance blocks treatment.",
+  metadataBase: new URL("https://www.nivaranfoundation.org"),
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org",
+  },
   keywords: [
-    "Nivaran foundation",
-    "Nepal healthcare",
-    "Sanjeevani",
+    "mobile health camps Nepal",
+    "rural healthcare Nepal",
+    "maternal health Nepal",
+    "child health Nepal",
     "health camps Nepal",
-    "donate healthcare Nepal",
-    "non-profit Nepal",
-    "education Nepal",
+    "Nivaran Foundation",
+    "donate Nepal healthcare",
   ],
 
   openGraph: {
     siteName: "Nivaran Foundation",
-    title: "Nivaran Foundation | Healthcare & Education for Nepal",
-    url: "https://nivaranfoundation.org",
+    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+    url: "https://www.nivaranfoundation.org",
     type: "website",
     images: [
       {
         url: ogImage.src,
-        alt: "Nivaran Foundation",
+        alt: "Nivaran Foundation healthcare programs in Nepal",
         width: 1200,
         height: 630,
       },
     ],
     description:
-      "Nivaran Foundation drives positive change by empowering communities. Learn about our mission, projects, and how you can help create a brighter future",
+      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Nivaran Foundation | Global Care, Local Impact",
+    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
     site: "@NivaranOrg",
     images: [
       {
         url: "https://www.nivaranfoundation.org/logo.png",
-        alt: "Nivaran Foundation",
+        alt: "Nivaran Foundation healthcare programs in Nepal",
         width: 1200,
         height: 675,
       },
     ],
     description:
-      "Nivaran Foundation drives positive change by empowering communities. Learn about our mission, projects, and how you can help create a brighter future",
+      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
     creator: "@NivaranOrg",
   },
 

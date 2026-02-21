@@ -4,11 +4,34 @@ import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Blog - Inspiring Stories of Impact",
+  title: "Nepal Health Blog: News, Stories & Analysis | Nivaran Foundation",
   description:
-    "Explore the latest stories, news, and projects from Nivaran Foundation, driving change globally through education, healthcare, and community initiatives",
+    "Explore Nivaran Foundation's Nepal health blog featuring field stories, public health news, and analysis from frontline rural healthcare programs.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/blogs",
+    canonical: "https://www.nivaranfoundation.org/blogs",
+  },
+  keywords: [
+    "Nepal health blog",
+    "rural healthcare Nepal",
+    "Nivaran Foundation blog",
+    "health camp stories",
+    "Nepal public health updates",
+  ],
+  openGraph: {
+    title: "Nepal Health Blog: News, Stories & Analysis | Nivaran Foundation",
+    description:
+      "Explore Nivaran Foundation's Nepal health blog featuring field stories, public health news, and analysis from frontline rural healthcare programs.",
+    url: "https://www.nivaranfoundation.org/blogs",
+    type: "website",
+    siteName: "Nivaran Foundation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nepal Health Blog: News, Stories & Analysis | Nivaran Foundation",
+    description:
+      "Explore Nivaran Foundation's Nepal health blog featuring field stories, public health news, and analysis from frontline rural healthcare programs.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

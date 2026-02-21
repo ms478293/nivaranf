@@ -5,11 +5,33 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Stories",
+  title: "Field Stories from Rural Nepal | Nivaran Foundation",
   description:
-    "Field stories from communities and frontline teams working with Nivaran Foundation.",
+    "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/stories",
+  },
+  keywords: [
+    "rural Nepal stories",
+    "mobile health camp stories",
+    "healthcare access Nepal",
+    "Nivaran Foundation field stories",
+  ],
+  openGraph: {
+    title: "Field Stories from Rural Nepal | Nivaran Foundation",
+    description:
+      "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
+    url: "https://www.nivaranfoundation.org/stories",
+    type: "website",
+    siteName: "Nivaran Foundation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Field Stories from Rural Nepal | Nivaran Foundation",
+    description:
+      "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

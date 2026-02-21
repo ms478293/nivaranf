@@ -5,11 +5,33 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | News",
+  title: "Nepal Health News & Program Updates | Nivaran Foundation",
   description:
-    "Latest news, updates, and announcements from Nivaran Foundation programs.",
+    "Read the latest Nepal health news, field updates, and program announcements from Nivaran Foundation's rural healthcare teams.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/news",
+  },
+  keywords: [
+    "Nepal health news",
+    "rural health Nepal updates",
+    "Nivaran Foundation news",
+    "mobile health camps Nepal",
+  ],
+  openGraph: {
+    title: "Nepal Health News & Program Updates | Nivaran Foundation",
+    description:
+      "Read the latest Nepal health news, field updates, and program announcements from Nivaran Foundation's rural healthcare teams.",
+    url: "https://www.nivaranfoundation.org/news",
+    type: "website",
+    siteName: "Nivaran Foundation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nepal Health News & Program Updates | Nivaran Foundation",
+    description:
+      "Read the latest Nepal health news, field updates, and program announcements from Nivaran Foundation's rural healthcare teams.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 
