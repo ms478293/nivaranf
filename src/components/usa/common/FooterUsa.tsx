@@ -48,7 +48,7 @@ const FooterUsa = () => {
                 className="w-32 h-32 max-h-32 max-w-32 object-cover overflow-visible"
               />
               <div className="absolute inset-0 flex justify-center items-center  font-bold z-50">
-                <span>99%</span>
+                <span>96%</span>
               </div>
             </div>
             <div>
