@@ -22,7 +22,7 @@ export const globalBlogs: blogListType[] = [
     title: "Justice Is a Hospital Bed",
     summary:
       "The meaning of social justice becomes clear at the bedside. Equity is proven only when care reaches the people furthest from power.",
-    thumbnailImage: "/images/healthcare.jpg",
+    thumbnailImage: "/articles/images/nepalese-children.jpg",
     date: "2026-02-20",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -33,7 +33,7 @@ export const globalBlogs: blogListType[] = [
     title: "Democracy Is Pulse",
     summary:
       "Democracy is more than ballots. It is the measurable promise that no citizen is left outside the reach of timely care.",
-    thumbnailImage: "/images/healthcare.jpg",
+    thumbnailImage: "/blogs/images/foodInsecurity.jpg",
     date: "2026-02-19",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -44,7 +44,7 @@ export const globalBlogs: blogListType[] = [
     title: "Eyes on the Horizon",
     summary:
       "Border vigilance is a daily discipline. Communities are safest when local teams can detect, report, and act without delay.",
-    thumbnailImage: "/images/teamWorking.JPG",
+    thumbnailImage: "/blogs/images/mapFoodInsecurity.png",
     date: "2026-02-18",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -55,7 +55,7 @@ export const globalBlogs: blogListType[] = [
     title: "It's Not a Rumor Anymore",
     summary:
       "Once confirmation lands, time becomes the primary resource. Fast coordination at the border can prevent wider crisis.",
-    thumbnailImage: "/blogs/images/epidemic.jpg",
+    thumbnailImage: "/blogs/images/trendsFoodInsecurity.png",
     date: "2026-02-17",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -66,7 +66,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Crowd Is a Risk",
     summary:
       "A crowd can carry hope and danger at once. Smart public health planning protects both freedom and lives.",
-    thumbnailImage: "/images/healthGroup.jpg",
+    thumbnailImage: "/blogs/images/childrenCrisisMap.png",
     date: "2026-02-16",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -77,7 +77,7 @@ export const globalBlogs: blogListType[] = [
     title: "Too Small to Fight Alone",
     summary:
       "Children do not need perfect systems. They need fast systems. Early detection and referral can convert fear into survival.",
-    thumbnailImage: "/images/babyHome.jpg",
+    thumbnailImage: "/blogs/thumbnail/childrenInGroup.jpg",
     date: "2026-02-15",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -99,7 +99,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Voice in the Box",
     summary:
       "In difficult terrain, radio is not old technology. It is resilient health infrastructure that keeps families informed and connected.",
-    thumbnailImage: "/blogs/images/templeInTheHills.jpg",
+    thumbnailImage: "/articles/images/insights-and-leadership.jpg",
     date: "2026-02-13",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -110,7 +110,7 @@ export const globalBlogs: blogListType[] = [
     title: "Running for Peace, Walking for Health",
     summary:
       "Distance can inspire when chosen. It becomes injustice when imposed on people seeking basic care.",
-    thumbnailImage: "/images/healthGroup.jpg",
+    thumbnailImage: "/blogs/images/childrenInSwing.jpeg",
     date: "2026-02-12",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -121,7 +121,7 @@ export const globalBlogs: blogListType[] = [
     title: "Lab Coats in the Field",
     summary:
       "Women in rural health are not assistants to science. They are science in action under pressure and without applause.",
-    thumbnailImage: "/images/teamWorking.JPG",
+    thumbnailImage: "/blogs/images/seniorCitizens.jpeg",
     date: "2026-02-11",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -132,7 +132,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Ten-Cent Miracle",
     summary:
       "Low-cost preventive medicine can unlock growth and learning at scale when systems deliver it reliably.",
-    thumbnailImage: "/images/generalHealthService.jpg",
+    thumbnailImage: "/blogs/images/mothersWithBabies.jpg",
     date: "2026-02-10",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -143,7 +143,7 @@ export const globalBlogs: blogListType[] = [
     title: "Short for Their Age, Short on Hope",
     summary:
       "A stunted childhood is a national loss, not a private family issue. Nutrition equity is one of Nepal's highest-return investments.",
-    thumbnailImage: "/images/childWelfare.jpg",
+    thumbnailImage: "/images/babyHome.jpg",
     date: "2026-02-09",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -154,7 +154,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Grass Is Hiding a Killer",
     summary:
       "Snakebite is treatable when response is fast and supply is ready. Preparation before season is what saves lives.",
-    thumbnailImage: "/blogs/images/nepaliVillageInHills.jpg",
+    thumbnailImage: "/images/environment.jpg",
     date: "2026-02-08",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -165,7 +165,7 @@ export const globalBlogs: blogListType[] = [
     title: "A Pad Keeps a Girl in School",
     summary:
       "A low-cost menstrual kit can protect attendance, confidence, and long-term economic potential for girls across rural Nepal.",
-    thumbnailImage: "/images/qualityEducation.jpg",
+    thumbnailImage: "/articles/images/education-and-empowerement.jpg",
     date: "2026-02-07",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -176,7 +176,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Shed Is a Violence",
     summary:
       "Menstrual dignity is basic safety. Ending harmful exclusion is a public health duty, not a cultural debate.",
-    thumbnailImage: "/images/childProtection.jpg",
+    thumbnailImage: "/images/childWelfare.jpg",
     date: "2026-02-06",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -187,7 +187,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Strength of Her Fast",
     summary:
       "A society that honors women's sacrifice must also protect women's blood health, nutrition, and clinical access.",
-    thumbnailImage: "/images/maternalHealth.jpg",
+    thumbnailImage: "/images/oldWomen.jpg",
     date: "2026-02-05",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -198,7 +198,7 @@ export const globalBlogs: blogListType[] = [
     title: "I Can't Afford to Live",
     summary:
       "No patient should have to choose between survival and family ruin. Cancer policy must confront cost as aggressively as disease.",
-    thumbnailImage: "/blogs/images/healthInsurance.jpg",
+    thumbnailImage: "/articles/images/healthcare.jpg",
     date: "2026-02-04",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -209,7 +209,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Longest Journey",
     summary:
       "In rural Nepal, the longest part of cancer care is often the road between home and treatment. That road is a clinical variable.",
-    thumbnailImage: "/images/healthcare.jpg",
+    thumbnailImage: "/articles/images/community-clinic.jpg",
     date: "2026-02-03",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -220,7 +220,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Swamp Is Alive",
     summary:
       "When wetlands are neglected, public health pays the bill. Protecting ecosystems is part of protecting households.",
-    thumbnailImage: "/images/environment.jpg",
+    thumbnailImage: "/articles/images/climate-action.webp",
     date: "2026-02-02",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -242,7 +242,7 @@ export const globalBlogs: blogListType[] = [
     title: "Where the Road Ends, We Begin",
     summary:
       "When formal systems stall, community-rooted health operations become the only bridge between diagnosis and survival.",
-    thumbnailImage: "/blogs/images/medicalTeam.jpeg",
+    thumbnailImage: "/blogs/thumbnail/ruralSetting.jpg",
     date: "2026-01-31",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -253,7 +253,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Ultimate Right",
     summary:
       "The strongest tribute to democratic sacrifice is not ceremony. It is a health system where geography no longer decides who lives.",
-    thumbnailImage: "/images/teamWorking.JPG",
+    thumbnailImage: "/blogs/images/group-pressc.jpg",
     date: "2026-01-30",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -264,7 +264,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Bite That Kills",
     summary:
       "When a rabies bite happens, the clock starts instantly. Stock reliability and rapid referral are the difference between panic and survival.",
-    thumbnailImage: "/blogs/images/epidemic.jpg",
+    thumbnailImage: "/articles/images/crisis-management.jpg",
     date: "2026-01-29",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -275,7 +275,7 @@ export const globalBlogs: blogListType[] = [
     title: "Your Secret Is Safe With Us",
     summary:
       "A secure record protects more than data. It protects the human willingness to ask for care before a condition becomes severe.",
-    thumbnailImage: "/blogs/thumbnail/doctorUsingLaptop.jpeg",
+    thumbnailImage: "/blogs/images/mentalHealthAtlasInfo.png",
     date: "2026-01-28",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -286,7 +286,7 @@ export const globalBlogs: blogListType[] = [
     title: "Screening the Sky, Ignoring the Ground",
     summary:
       "Public confidence rises when screening systems are fair. It falls when prevention looks selective.",
-    thumbnailImage: "/blogs/images/healthcareReformFiles.jpg",
+    thumbnailImage: "/blogs/thumbnail/doctorUsingLaptop.jpeg",
     date: "2026-01-27",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -308,7 +308,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Disease of Isolation",
     summary:
       "Ending leprosy requires two treatments at once: medicine for the body and social courage against exclusion.",
-    thumbnailImage: "/images/generalHealthService.jpg",
+    thumbnailImage: "/blogs/images/breakingTheStigma.png",
     date: "2026-01-25",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -319,7 +319,7 @@ export const globalBlogs: blogListType[] = [
     title: "A Girl With a Book Is a Doctor for Her Village",
     summary:
       "When girls stay in school, communities gain health workers, informed mothers, and stronger prevention behavior for an entire generation.",
-    thumbnailImage: "/images/childrenStudy.JPG",
+    thumbnailImage: "/blogs/thumbnail/nepaleseChildren.jpg",
     date: "2026-01-24",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -330,7 +330,7 @@ export const globalBlogs: blogListType[] = [
     title: "Waiting to Live",
     summary:
       "Dialysis is not elective. It is time-bound survival. A fair system must treat queue stability as a life-protection metric.",
-    thumbnailImage: "/blogs/images/medicalTeam.jpeg",
+    thumbnailImage: "/blogs/images/telemedicineConsultation.jpg",
     date: "2026-01-23",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -407,7 +407,7 @@ export const globalBlogs: blogListType[] = [
     title: "Blindness in a Capsule",
     summary:
       "A child does not go blind because medicine is expensive. A child goes blind when logistics are weak and timing is lost.",
-    thumbnailImage: "/images/childWelfare.jpg",
+    thumbnailImage: "/blogs/images/aTuberculosisPatient.png",
     date: "2026-01-16",
     author: "Nivaran Foundation News Desk",
     featured: false,
