@@ -22,7 +22,7 @@ export const globalBlogs: blogListType[] = [
     title: "Justice Is a Hospital Bed",
     summary:
       "The meaning of social justice becomes clear at the bedside. Equity is proven only when care reaches the people furthest from power.",
-    thumbnailImage: "/articles/images/nepalese-children.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-20-justice-is-a-hospital-bed.png",
     date: "2026-02-20",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -33,7 +33,7 @@ export const globalBlogs: blogListType[] = [
     title: "Democracy Is Pulse",
     summary:
       "Democracy is more than ballots. It is the measurable promise that no citizen is left outside the reach of timely care.",
-    thumbnailImage: "/blogs/images/foodInsecurity.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-19-democracy-is-pulse.jpg",
     date: "2026-02-19",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -44,7 +44,7 @@ export const globalBlogs: blogListType[] = [
     title: "Eyes on the Horizon",
     summary:
       "Border vigilance is a daily discipline. Communities are safest when local teams can detect, report, and act without delay.",
-    thumbnailImage: "/blogs/images/mapFoodInsecurity.png",
+    thumbnailImage: "/images/archive/2026/2026-02-18-eyes-on-the-horizon.jpg",
     date: "2026-02-18",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -55,7 +55,7 @@ export const globalBlogs: blogListType[] = [
     title: "It's Not a Rumor Anymore",
     summary:
       "Once confirmation lands, time becomes the primary resource. Fast coordination at the border can prevent wider crisis.",
-    thumbnailImage: "/blogs/images/trendsFoodInsecurity.png",
+    thumbnailImage: "/images/archive/2026/2026-02-17-its-not-a-rumor-anymore.jpg",
     date: "2026-02-17",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -66,7 +66,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Crowd Is a Risk",
     summary:
       "A crowd can carry hope and danger at once. Smart public health planning protects both freedom and lives.",
-    thumbnailImage: "/blogs/images/childrenCrisisMap.png",
+    thumbnailImage: "/images/archive/2026/2026-02-16-the-crowd-is-a-risk.jpg",
     date: "2026-02-16",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -77,7 +77,7 @@ export const globalBlogs: blogListType[] = [
     title: "Too Small to Fight Alone",
     summary:
       "Children do not need perfect systems. They need fast systems. Early detection and referral can convert fear into survival.",
-    thumbnailImage: "/blogs/thumbnail/childrenInGroup.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-15-too-small-to-fight-alone.jpg",
     date: "2026-02-15",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -88,7 +88,7 @@ export const globalBlogs: blogListType[] = [
     title: "Love Is Protecting Her",
     summary:
       "Romance is easy language. Responsibility is harder and far more meaningful. Protecting health is one of love's most concrete forms.",
-    thumbnailImage: "/images/familySupport.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-14-love-is-protecting-her.jpg",
     date: "2026-02-14",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -99,7 +99,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Voice in the Box",
     summary:
       "In difficult terrain, radio is not old technology. It is resilient health infrastructure that keeps families informed and connected.",
-    thumbnailImage: "/articles/images/insights-and-leadership.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-13-the-voice-in-the-box.jpg",
     date: "2026-02-13",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -110,7 +110,7 @@ export const globalBlogs: blogListType[] = [
     title: "Running for Peace, Walking for Health",
     summary:
       "Distance can inspire when chosen. It becomes injustice when imposed on people seeking basic care.",
-    thumbnailImage: "/blogs/images/childrenInSwing.jpeg",
+    thumbnailImage: "/images/archive/2026/2026-02-12-running-for-peace-walking-for-health.jpg",
     date: "2026-02-12",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -121,7 +121,7 @@ export const globalBlogs: blogListType[] = [
     title: "Lab Coats in the Field",
     summary:
       "Women in rural health are not assistants to science. They are science in action under pressure and without applause.",
-    thumbnailImage: "/blogs/images/seniorCitizens.jpeg",
+    thumbnailImage: "/images/archive/2026/2026-02-11-lab-coats-in-the-field.jpg",
     date: "2026-02-11",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -132,7 +132,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Ten-Cent Miracle",
     summary:
       "Low-cost preventive medicine can unlock growth and learning at scale when systems deliver it reliably.",
-    thumbnailImage: "/blogs/images/mothersWithBabies.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-10-the-ten-cent-miracle.jpg",
     date: "2026-02-10",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -143,7 +143,7 @@ export const globalBlogs: blogListType[] = [
     title: "Short for Their Age, Short on Hope",
     summary:
       "A stunted childhood is a national loss, not a private family issue. Nutrition equity is one of Nepal's highest-return investments.",
-    thumbnailImage: "/images/babyHome.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-09-short-for-their-age-short-on-hope.jpg",
     date: "2026-02-09",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -154,7 +154,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Grass Is Hiding a Killer",
     summary:
       "Snakebite is treatable when response is fast and supply is ready. Preparation before season is what saves lives.",
-    thumbnailImage: "/images/environment.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-08-the-grass-is-hiding-a-killer.jpg",
     date: "2026-02-08",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -165,7 +165,7 @@ export const globalBlogs: blogListType[] = [
     title: "A Pad Keeps a Girl in School",
     summary:
       "A low-cost menstrual kit can protect attendance, confidence, and long-term economic potential for girls across rural Nepal.",
-    thumbnailImage: "/articles/images/education-and-empowerement.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-07-a-pad-keeps-a-girl-in-school.jpg",
     date: "2026-02-07",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -176,7 +176,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Shed Is a Violence",
     summary:
       "Menstrual dignity is basic safety. Ending harmful exclusion is a public health duty, not a cultural debate.",
-    thumbnailImage: "/images/childWelfare.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-06-the-shed-is-a-violence.jpg",
     date: "2026-02-06",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -187,7 +187,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Strength of Her Fast",
     summary:
       "A society that honors women's sacrifice must also protect women's blood health, nutrition, and clinical access.",
-    thumbnailImage: "/images/oldWomen.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-05-the-strength-of-her-fast.jpg",
     date: "2026-02-05",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -198,7 +198,7 @@ export const globalBlogs: blogListType[] = [
     title: "I Can't Afford to Live",
     summary:
       "No patient should have to choose between survival and family ruin. Cancer policy must confront cost as aggressively as disease.",
-    thumbnailImage: "/articles/images/healthcare.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-04-i-cant-afford-to-live.jpg",
     date: "2026-02-04",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -209,7 +209,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Longest Journey",
     summary:
       "In rural Nepal, the longest part of cancer care is often the road between home and treatment. That road is a clinical variable.",
-    thumbnailImage: "/articles/images/community-clinic.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-03-the-longest-journey.jpg",
     date: "2026-02-03",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -220,7 +220,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Swamp Is Alive",
     summary:
       "When wetlands are neglected, public health pays the bill. Protecting ecosystems is part of protecting households.",
-    thumbnailImage: "/articles/images/climate-action.webp",
+    thumbnailImage: "/images/archive/2026/2026-02-02-the-swamp-is-alive.jpg",
     date: "2026-02-02",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -231,7 +231,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Two Nepals: Super-Specialty vs Basic Survival",
     summary:
       "A modern health system is not measured by its best hospital alone. It is measured by the poorest patient's chance to arrive there in time.",
-    thumbnailImage: "/blogs/thumbnail/healthcareReform.jpg",
+    thumbnailImage: "/images/archive/2026/2026-02-01-the-two-nepals-super-specialty-vs-basic-survival.jpg",
     date: "2026-02-01",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -242,7 +242,7 @@ export const globalBlogs: blogListType[] = [
     title: "Where the Road Ends, We Begin",
     summary:
       "When formal systems stall, community-rooted health operations become the only bridge between diagnosis and survival.",
-    thumbnailImage: "/blogs/thumbnail/ruralSetting.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-31-where-the-road-ends-we-begin.jpg",
     date: "2026-01-31",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -253,7 +253,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Ultimate Right",
     summary:
       "The strongest tribute to democratic sacrifice is not ceremony. It is a health system where geography no longer decides who lives.",
-    thumbnailImage: "/blogs/images/group-pressc.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-30-the-ultimate-right.jpg",
     date: "2026-01-30",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -264,7 +264,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Bite That Kills",
     summary:
       "When a rabies bite happens, the clock starts instantly. Stock reliability and rapid referral are the difference between panic and survival.",
-    thumbnailImage: "/articles/images/crisis-management.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-29-the-bite-that-kills.jpg",
     date: "2026-01-29",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -275,7 +275,7 @@ export const globalBlogs: blogListType[] = [
     title: "Your Secret Is Safe With Us",
     summary:
       "A secure record protects more than data. It protects the human willingness to ask for care before a condition becomes severe.",
-    thumbnailImage: "/blogs/images/mentalHealthAtlasInfo.png",
+    thumbnailImage: "/images/archive/2026/2026-01-28-your-secret-is-safe-with-us.jpg",
     date: "2026-01-28",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -286,7 +286,7 @@ export const globalBlogs: blogListType[] = [
     title: "Screening the Sky, Ignoring the Ground",
     summary:
       "Public confidence rises when screening systems are fair. It falls when prevention looks selective.",
-    thumbnailImage: "/blogs/thumbnail/doctorUsingLaptop.jpeg",
+    thumbnailImage: "/images/archive/2026/2026-01-27-screening-the-sky-ignoring-the-ground.jpg",
     date: "2026-01-27",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -297,7 +297,7 @@ export const globalBlogs: blogListType[] = [
     title: "Two Nations, One Biology",
     summary:
       "National celebrations and open movement can coexist with safety, but only when surveillance cooperation is treated as shared infrastructure.",
-    thumbnailImage: "/blogs/images/nepaliVillageInHills.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-26-two-nations-one-biology.jpg",
     date: "2026-01-26",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -308,7 +308,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Disease of Isolation",
     summary:
       "Ending leprosy requires two treatments at once: medicine for the body and social courage against exclusion.",
-    thumbnailImage: "/blogs/images/breakingTheStigma.png",
+    thumbnailImage: "/images/archive/2026/2026-01-25-disease-of-isolation.jpg",
     date: "2026-01-25",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -319,7 +319,7 @@ export const globalBlogs: blogListType[] = [
     title: "A Girl With a Book Is a Doctor for Her Village",
     summary:
       "When girls stay in school, communities gain health workers, informed mothers, and stronger prevention behavior for an entire generation.",
-    thumbnailImage: "/blogs/thumbnail/nepaleseChildren.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-24-girl-with-book-village-doctor.jpg",
     date: "2026-01-24",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -330,7 +330,7 @@ export const globalBlogs: blogListType[] = [
     title: "Waiting to Live",
     summary:
       "Dialysis is not elective. It is time-bound survival. A fair system must treat queue stability as a life-protection metric.",
-    thumbnailImage: "/blogs/images/telemedicineConsultation.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-23-waiting-to-live.jpg",
     date: "2026-01-23",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -341,7 +341,7 @@ export const globalBlogs: blogListType[] = [
     title: "Health Is Heritage",
     summary:
       "Festivals sustain identity. Health services sustain the people who keep that identity alive. The two should never be separated.",
-    thumbnailImage: "/blogs/images/templeInTheHills.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-22-health-is-heritage.jpg",
     date: "2026-01-22",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -352,7 +352,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Whispers Across the Border",
     summary:
       "Rumors are not proof, but they are data. Border health systems must listen early, verify fast, and act before fear outruns facts.",
-    thumbnailImage: "/blogs/images/epidemic.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-21-whispers-across-the-border.jpg",
     date: "2026-01-21",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -363,7 +363,7 @@ export const globalBlogs: blogListType[] = [
     title: "Water Is the First Medicine",
     summary:
       "A medicine can cure. Dirty water can undo that cure in hours. Health and water governance must move together.",
-    thumbnailImage: "/images/boat.jpeg",
+    thumbnailImage: "/images/archive/2026/2026-01-20-water-is-the-first-medicine.jpg",
     date: "2026-01-20",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -374,7 +374,7 @@ export const globalBlogs: blogListType[] = [
     title: "Breathing Poison in the Valley",
     summary:
       "Every high-pollution day removes safety from an ordinary breath. Air governance belongs at the center of health protection in Nepal.",
-    thumbnailImage: "/blogs/images/childrenAndAirPollution.png",
+    thumbnailImage: "/images/archive/2026/2026-01-19-breathing-poison-in-the-valley.jpg",
     date: "2026-01-19",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -385,7 +385,7 @@ export const globalBlogs: blogListType[] = [
     title: "Do No Harm. Receive No Harm.",
     summary:
       "When a doctor fears violence, every patient becomes less safe. Provider protection and patient rights are the same public mission.",
-    thumbnailImage: "/blogs/images/aNepaliDoctor.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-18-do-no-harm-receive-no-harm.jpg",
     date: "2026-01-18",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -396,7 +396,7 @@ export const globalBlogs: blogListType[] = [
     title: "Why She Still Chooses Home",
     summary:
       "Women do not avoid facilities because they reject medicine. They avoid systems that feel distant, costly, and undignified in their most vulnerable moment.",
-    thumbnailImage: "/images/maternalHealth.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-17-why-she-still-chooses-home.jpg",
     date: "2026-01-17",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -407,7 +407,7 @@ export const globalBlogs: blogListType[] = [
     title: "Blindness in a Capsule",
     summary:
       "A child does not go blind because medicine is expensive. A child goes blind when logistics are weak and timing is lost.",
-    thumbnailImage: "/blogs/images/aTuberculosisPatient.png",
+    thumbnailImage: "/images/archive/2026/2026-01-16-blindness-in-a-capsule.jpg",
     date: "2026-01-16",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -418,7 +418,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Trauma Doesn't End When the Camera Stops",
     summary:
       "This anniversary is not about replaying tragedy. It is about building mental health care into Nepal's disaster response as a non-negotiable standard.",
-    thumbnailImage: "/blogs/thumbnail/mentalCrisis.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-15-trauma-doesnt-end-when-camera-stops.jpg",
     date: "2026-01-15",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -429,7 +429,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Wisdom in the Bowl",
     summary:
       "Maghe Sankranti is more than celebration. It is a lesson in practical winter nutrition and a roadmap for stronger rural health outcomes.",
-    thumbnailImage: "/images/nutritionProgram.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-14-wisdom-in-the-bowl.jpg",
     date: "2026-01-14",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -440,7 +440,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Law of Land, The Law of Survival",
     summary:
       "When legal and infrastructure delays drag on, rural patients face delayed diagnosis and delayed treatment. Continuity planning must protect care while processes run.",
-    thumbnailImage: "/blogs/images/medicalTeam.jpeg",
+    thumbnailImage: "/images/archive/2026/2026-01-13-law-of-land-survival.jpg",
     date: "2026-01-13",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -451,7 +451,7 @@ export const globalBlogs: blogListType[] = [
     title: "Four Percent: The Price on Our Future",
     summary:
       "When children receive too little practical support, the long-term national cost rises in health, learning, and household resilience.",
-    thumbnailImage: "/images/childrenStudy.JPG",
+    thumbnailImage: "/images/archive/2026/2026-01-12-four-percent-price-future.jpg",
     date: "2026-01-12",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -462,7 +462,7 @@ export const globalBlogs: blogListType[] = [
     title: "True Unity Is Connectedness",
     summary:
       "A country is truly unified when survival odds are not decided by geography. Health access equity is nation-building in practice.",
-    thumbnailImage: "/images/healthcare.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-11-true-unity-connectedness.jpg",
     date: "2026-01-11",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -473,7 +473,7 @@ export const globalBlogs: blogListType[] = [
     title: "Two Children, One Bed",
     summary:
       "Overcrowded winter pediatric wards show the visible crisis. The bigger risk is the rural child who cannot reach those wards in time.",
-    thumbnailImage: "/images/doctorWorking.JPG",
+    thumbnailImage: "/images/archive/2026/2026-01-10-two-children-one-bed.jpg",
     date: "2026-01-10",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -484,7 +484,7 @@ export const globalBlogs: blogListType[] = [
     title: "Departure Gate: Nepal's Health Drain",
     summary:
       "As migration resumes after holidays, rural households lose working-age caregivers and referral support capacity, deepening hidden health delays.",
-    thumbnailImage: "/images/healthGroup.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-09-departure-gate-health-drain.jpg",
     date: "2026-01-09",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -495,7 +495,7 @@ export const globalBlogs: blogListType[] = [
     title: "When Ambulances Can't Move",
     summary:
       "Curfew and unrest can turn routine health needs into emergencies. Protected health corridors are essential during civic disruption.",
-    thumbnailImage: "/blogs/images/conflictMapChildren.png",
+    thumbnailImage: "/images/archive/2026/2026-01-08-when-ambulances-cant-move.jpg",
     date: "2026-01-08",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -506,7 +506,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Earth Shook Again Today",
     summary:
       "Every tremor is a systems audit: can care continue when roads, communication, and community trust are under stress at once?",
-    thumbnailImage: "/images/teamWorking.JPG",
+    thumbnailImage: "/images/archive/2026/2026-01-07-earth-shook-again-today.jpg",
     date: "2026-01-07",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -517,7 +517,7 @@ export const globalBlogs: blogListType[] = [
     title: "Blindness Defeated: A Victory for the Village",
     summary:
       "Nepal's trachoma milestone proves low-cost, repeated village-level public health action can defeat preventable blindness at national scale.",
-    thumbnailImage: "/images/generalHealthService.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-06-blindness-defeated-village-victory.png",
     date: "2026-01-06",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -528,7 +528,7 @@ export const globalBlogs: blogListType[] = [
     title: "Closed Doors, Empty Stomachs",
     summary:
       "When winter closes schools, learning pauses and child nutrition support often pauses too. Closure plans must include meal continuity.",
-    thumbnailImage: "/images/qualityEducation.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-05-closed-doors-empty-stomachs.jpg",
     date: "2026-01-05",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -539,7 +539,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Second Winter in Jajarkot",
     summary:
       "The earthquake ended quickly, but winter exposure did not. Temporary shelter conditions are now driving respiratory health risk.",
-    thumbnailImage: "/images/childProtection.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-04-second-winter-jajarkot.jpg",
     date: "2026-01-04",
     author: "Nivaran Foundation News Desk",
     featured: false,
@@ -550,7 +550,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Grey Blanket: Why Fog Is a Medical Emergency",
     summary:
       "Dense winter fog in Nepal's Terai does more than delay flights. It disrupts referrals, vaccines, and emergency timelines for families already far from care.",
-    thumbnailImage: "/blogs/images/healthcareReformFiles.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-03-the-grey-blanket-why-fog-is-a-medical-emergency.jpg",
     date: "2026-01-03",
     author: "Nivaran Foundation News Desk",
     featured: true,
@@ -561,7 +561,7 @@ export const globalBlogs: blogListType[] = [
     title: "When the Road Ends, Care Can End Too",
     summary:
       "The Jan 2 Bhadrapur runway overshoot exposed a hard truth: in remote Nepal, one transport failure can break the medical referral chain for critical patients.",
-    thumbnailImage: "/images/archive/2026/2026-01-02-bhadrapur-airport.jpg",
+    thumbnailImage: "/images/archive/2026/2026-01-02-when-the-road-ends-aviation-safety-and-rural-health.jpg",
     date: "2026-01-02",
     author: "Nivaran Foundation News Desk",
     featured: true,
