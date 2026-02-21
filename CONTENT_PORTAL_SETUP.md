@@ -49,7 +49,7 @@ Image upload behavior:
 - Endpoint: `/api/content/upload-image` (requires dashboard/content portal auth)
 - Bucket: `content-images` (auto-created on first upload)
 - Allowed types: JPG, PNG, WEBP, GIF, AVIF
-- Max size: 4MB per file
+- Max size: 50MB per file (direct browser-to-Supabase upload)
 
 ## 4) Public behavior
 

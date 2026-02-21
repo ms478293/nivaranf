@@ -6,6 +6,7 @@ import {
   slugify,
 } from "@/lib/content/automation";
 import type { ContentPost } from "@/lib/content/types";
+import { createClient } from "@supabase/supabase-js";
 import { useEffect, useMemo, useState } from "react";
 
 type PostType = "Article" | "Story" | "News" | "Blog";
@@ -92,7 +93,7 @@ function splitKeywords(value: string) {
     .filter(Boolean);
 }
 
-const MAX_COVER_IMAGE_BYTES = 4 * 1024 * 1024;
+const MAX_COVER_IMAGE_BYTES = 50 * 1024 * 1024;
 const ALLOWED_COVER_IMAGE_TYPES = new Set([
   "image/jpeg",
   "image/png",
@@ -100,6 +101,14 @@ const ALLOWED_COVER_IMAGE_TYPES = new Set([
   "image/gif",
   "image/avif",
 ]);
+
+type UploadPrepareResponse = {
+  bucket: string;
+  path: string;
+  token: string;
+  publicUrl: string;
+  signedUrl?: string;
+};
 
 export default function ContentPortal() {
   const [posts, setPosts] = useState<ContentPost[]>([]);
@@ -197,44 +206,79 @@ export default function ContentPortal() {
       }
 
       if (file.size > MAX_COVER_IMAGE_BYTES) {
-        throw new Error("Image is too large. Please upload a file under 4MB.");
+        throw new Error("Image is too large. Please upload a file under 50MB.");
       }
 
-      const body = new FormData();
-      body.set("file", file);
-      body.set("slug", form.slug || form.title || "cover-image");
-
-      const response = await fetch("/api/content/upload-image", {
+      // Request a signed upload token, then upload file directly to Supabase.
+      const prepareResponse = await fetch("/api/content/upload-image", {
         method: "POST",
+        headers: { "Content-Type": "application/json" },
         credentials: "include",
-        body,
+        body: JSON.stringify({
+          fileName: file.name,
+          fileType: file.type,
+          fileSize: file.size,
+          slug: form.slug || form.title || "cover-image",
+        }),
       });
-      const raw = await response.text();
-      let payload: { error?: string; url?: string } = {};
+
+      const raw = await prepareResponse.text();
+      let payload: { error?: string } & Partial<UploadPrepareResponse> = {};
       if (raw) {
         try {
-          payload = JSON.parse(raw) as { error?: string; url?: string };
+          payload = JSON.parse(raw) as { error?: string } & Partial<UploadPrepareResponse>;
         } catch {
           payload = {};
         }
       }
-      if (!response.ok) {
+      if (!prepareResponse.ok) {
         const lowered = raw.toLowerCase();
         if (
-          response.status === 413 ||
+          prepareResponse.status === 413 ||
           lowered.includes("request entity too large") ||
           lowered.includes("function_payload_too_large")
         ) {
-          throw new Error("Image is too large. Please upload a file under 4MB.");
+          throw new Error("Image is too large. Please upload a file under 50MB.");
         }
         throw new Error(
-          payload.error || raw || `Image upload failed (HTTP ${response.status}).`
+          payload.error ||
+            raw ||
+            `Image upload failed (HTTP ${prepareResponse.status}).`
         );
+      }
+
+      if (!payload.bucket || !payload.path || !payload.token || !payload.publicUrl) {
+        throw new Error("Upload token response is incomplete.");
+      }
+
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      if (!supabaseUrl || !supabaseAnonKey) {
+        throw new Error("Supabase public environment variables are missing.");
+      }
+
+      const supabaseClient = createClient(supabaseUrl, supabaseAnonKey, {
+        auth: {
+          persistSession: false,
+          autoRefreshToken: false,
+        },
+      });
+
+      const { error: uploadError } = await supabaseClient.storage
+        .from(payload.bucket)
+        .uploadToSignedUrl(payload.path, payload.token, file, {
+          cacheControl: "31536000",
+          contentType: file.type,
+          upsert: false,
+        });
+
+      if (uploadError) {
+        throw new Error(uploadError.message || "Direct upload failed.");
       }
 
       setForm((prev) => ({
         ...prev,
-        cover_image_url: String(payload.url || ""),
+        cover_image_url: String(payload.publicUrl),
         cover_image_alt:
           prev.cover_image_alt ||
           file.name
@@ -559,7 +603,7 @@ export default function ContentPortal() {
           </label>
 
           <label className="text-sm md:col-span-2">
-            Upload cover image (max 4MB)
+            Upload cover image (max 50MB)
             <input
               type="file"
               accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
