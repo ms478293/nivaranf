@@ -372,14 +372,7 @@
 }
 
 .mdxContent :global(.progress-indicator) {
-  background: var(--teal-light);
-  border: 1px solid var(--teal);
-  border-radius: 2px;
-  padding: 20px 24px;
-  margin: 40px 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  display: none !important;
 }
 
 .mdxContent :global(.progress-indicator-bar) {
