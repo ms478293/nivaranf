@@ -18,6 +18,116 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "law-of-land-survival",
+    title: "The Law of Land, The Law of Survival",
+    summary:
+      "When legal and infrastructure delays drag on, rural patients face delayed diagnosis and delayed treatment. Continuity planning must protect care while processes run.",
+    thumbnailImage: "/blogs/images/medicalTeam.jpeg",
+    date: "2026-01-13",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "four-percent-price-future",
+    title: "Four Percent: The Price on Our Future",
+    summary:
+      "When children receive too little practical support, the long-term national cost rises in health, learning, and household resilience.",
+    thumbnailImage: "/images/childrenStudy.JPG",
+    date: "2026-01-12",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "true-unity-connectedness",
+    title: "True Unity Is Connectedness",
+    summary:
+      "A country is truly unified when survival odds are not decided by geography. Health access equity is nation-building in practice.",
+    thumbnailImage: "/images/healthcare.jpg",
+    date: "2026-01-11",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "two-children-one-bed",
+    title: "Two Children, One Bed",
+    summary:
+      "Overcrowded winter pediatric wards show the visible crisis. The bigger risk is the rural child who cannot reach those wards in time.",
+    thumbnailImage: "/images/doctorWorking.JPG",
+    date: "2026-01-10",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "departure-gate-health-drain",
+    title: "Departure Gate: Nepal's Health Drain",
+    summary:
+      "As migration resumes after holidays, rural households lose working-age caregivers and referral support capacity, deepening hidden health delays.",
+    thumbnailImage: "/images/healthGroup.jpg",
+    date: "2026-01-09",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
+    slug: "when-ambulances-cant-move",
+    title: "When Ambulances Can't Move",
+    summary:
+      "Curfew and unrest can turn routine health needs into emergencies. Protected health corridors are essential during civic disruption.",
+    thumbnailImage: "/blogs/images/conflictMapChildren.png",
+    date: "2026-01-08",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
+    slug: "earth-shook-again-today",
+    title: "The Earth Shook Again Today",
+    summary:
+      "Every tremor is a systems audit: can care continue when roads, communication, and community trust are under stress at once?",
+    thumbnailImage: "/images/teamWorking.JPG",
+    date: "2026-01-07",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
+    slug: "blindness-defeated-village-victory",
+    title: "Blindness Defeated: A Victory for the Village",
+    summary:
+      "Nepal's trachoma milestone proves low-cost, repeated village-level public health action can defeat preventable blindness at national scale.",
+    thumbnailImage: "/images/generalHealthService.jpg",
+    date: "2026-01-06",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
+    slug: "closed-doors-empty-stomachs",
+    title: "Closed Doors, Empty Stomachs",
+    summary:
+      "When winter closes schools, learning pauses and child nutrition support often pauses too. Closure plans must include meal continuity.",
+    thumbnailImage: "/images/qualityEducation.jpg",
+    date: "2026-01-05",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
+    slug: "second-winter-jajarkot",
+    title: "The Second Winter in Jajarkot",
+    summary:
+      "The earthquake ended quickly, but winter exposure did not. Temporary shelter conditions are now driving respiratory health risk.",
+    thumbnailImage: "/images/childProtection.jpg",
+    date: "2026-01-04",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-grey-blanket-why-fog-is-a-medical-emergency",
     title: "The Grey Blanket: Why Fog Is a Medical Emergency",
     summary:
