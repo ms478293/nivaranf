@@ -1,3 +1,4 @@
+import { ImpactRingBadge } from "@/components/new/NivaranFooter/ImpactRingBadge";
 import { SocialLinks } from "@/components/nivaran/common/footer/SocialLinks";
 import { footerData } from "@/content/site-data";
 import Image from "next/image";
@@ -40,16 +41,7 @@ const FooterUsa = () => {
           </div>
           <div className="flex w-full justify-start px-4">
             <div className="flex w-full justify-center h-fit relative">
-              <Image
-                src="/utils/hollowCircle.svg"
-                width={300}
-                height={300}
-                alt="HollowCircle"
-                className="w-32 h-32 max-h-32 max-w-32 object-cover overflow-visible"
-              />
-              <div className="absolute inset-0 flex justify-center items-center  font-bold z-50">
-                <span>96%</span>
-              </div>
+              <ImpactRingBadge value="96%" />
             </div>
             <div>
               <span>96% of all our expenses go to program services.</span>
