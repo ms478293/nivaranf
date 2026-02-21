@@ -4,6 +4,7 @@ import "./globals.css";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 import { Oswald, Outfit, Poppins } from "next/font/google";
 import Script from "next/script";
 
@@ -120,6 +121,7 @@ export default async function RootLayout({
           <Toaster closeButton richColors theme="light" />
 
           {children}
+          <Analytics />
         </body>
       </Providers>
     </html>
