@@ -29,7 +29,7 @@ export const FooterHollow = () => {
         </div>
         <div className="flex flex-col justify-between sm:justify-center gap-6 h-full min-[465px]:w-[50%]  lg:w-">
           <span className="items-center text-start text-sm">
-            of our expenses go to program services.
+            96% of our expenses go to program services.
           </span>
           <div className="self-start">
             <Link href="/donate" className="  text-sm text-nowrap">
