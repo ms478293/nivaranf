@@ -41,7 +41,7 @@ const FooterUsa = () => {
           </div>
           <div className="flex w-full justify-start px-4">
             <div className="flex w-full justify-center h-fit relative">
-              <ImpactRingBadge value="96%" />
+              <ImpactRingBadge target={96} />
             </div>
             <div>
               <span>96% of all our expenses go to program services.</span>

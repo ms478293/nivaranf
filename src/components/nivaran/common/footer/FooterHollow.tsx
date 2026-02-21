@@ -10,7 +10,7 @@ export const FooterHollow = () => {
     <div className="flex flex-col justify-between gap-6 h-full">
       <div className="flex items-center justify-start  my-4 gap-2 ">
         <div className="flex h-fit relative overflow-visible -ml-3">
-          <ImpactRingBadge value="96%" />
+          <ImpactRingBadge target={96} />
         </div>
         <div className="flex flex-col justify-between sm:justify-center gap-6 h-full min-[465px]:w-[50%]  lg:w-">
           <span className="items-center text-start text-sm">
