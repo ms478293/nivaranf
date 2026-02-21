@@ -1,6 +1,24 @@
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 
+function getSupabaseStoragePattern() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  if (!supabaseUrl) return [];
+
+  try {
+    const hostname = new URL(supabaseUrl).hostname;
+    return [
+      {
+        protocol: "https" as const,
+        hostname,
+        pathname: "/storage/v1/object/public/**",
+      },
+    ];
+  } catch {
+    return [];
+  }
+}
+
 const nextConfig: NextConfig = {
   // Existing config options
   experimental: {
@@ -17,6 +35,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    remotePatterns: getSupabaseStoragePattern(),
   },
 };
 

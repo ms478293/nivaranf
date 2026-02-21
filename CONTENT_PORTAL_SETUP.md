@@ -34,6 +34,7 @@ Employees can:
 - Edit posts
 - Publish posts
 - Delete posts
+- Upload cover images directly from the portal
 
 Auto-generated on save:
 - Clean slug
@@ -43,6 +44,12 @@ Auto-generated on save:
 - Reading time
 - Keyword normalization
 - Share message fallback
+
+Image upload behavior:
+- Endpoint: `/api/content/upload-image` (requires dashboard/content portal auth)
+- Bucket: `content-images` (auto-created on first upload)
+- Allowed types: JPG, PNG, WEBP, GIF, AVIF
+- Max size: 4MB per file
 
 ## 4) Public behavior
 

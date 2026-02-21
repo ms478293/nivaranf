@@ -101,6 +101,9 @@ export default function ContentPortal() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [uploadingImage, setUploadingImage] = useState(false);
+  const [uploadError, setUploadError] = useState("");
+  const [uploadSuccess, setUploadSuccess] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -170,6 +173,46 @@ export default function ContentPortal() {
   function onSlugChange(value: string) {
     setSlugEdited(true);
     setForm((prev) => ({ ...prev, slug: slugify(value) }));
+  }
+
+  async function uploadCoverImage(file?: File) {
+    if (!file) return;
+
+    setUploadError("");
+    setUploadSuccess("");
+    setUploadingImage(true);
+
+    try {
+      const body = new FormData();
+      body.set("file", file);
+      body.set("slug", form.slug || form.title || "cover-image");
+
+      const response = await fetch("/api/content/upload-image", {
+        method: "POST",
+        credentials: "include",
+        body,
+      });
+      const payload = await response.json();
+      if (!response.ok) {
+        throw new Error(payload.error || "Image upload failed.");
+      }
+
+      setForm((prev) => ({
+        ...prev,
+        cover_image_url: String(payload.url || ""),
+        cover_image_alt:
+          prev.cover_image_alt ||
+          file.name
+            .replace(/\.[^.]+$/, "")
+            .replace(/[-_]+/g, " ")
+            .trim(),
+      }));
+      setUploadSuccess("Cover image uploaded and URL filled automatically.");
+    } catch (err) {
+      setUploadError(err instanceof Error ? err.message : "Image upload failed.");
+    } finally {
+      setUploadingImage(false);
+    }
   }
 
   async function savePost(nextStatus: PostStatus) {
@@ -373,6 +416,16 @@ export default function ContentPortal() {
             {success}
           </div>
         ) : null}
+        {uploadError ? (
+          <div className="text-sm border border-red-200 bg-red-50 text-red-700 rounded-md px-3 py-2">
+            {uploadError}
+          </div>
+        ) : null}
+        {uploadSuccess ? (
+          <div className="text-sm border border-green-200 bg-green-50 text-green-700 rounded-md px-3 py-2">
+            {uploadSuccess}
+          </div>
+        ) : null}
 
         <div className="grid md:grid-cols-2 gap-4">
           <label className="text-sm">
@@ -471,6 +524,26 @@ export default function ContentPortal() {
           </label>
 
           <label className="text-sm md:col-span-2">
+            Upload cover image (max 4MB)
+            <input
+              type="file"
+              accept="image/jpeg,image/png,image/webp,image/gif,image/avif"
+              className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 bg-white"
+              onChange={(event) => {
+                const file = event.target.files?.[0];
+                uploadCoverImage(file);
+                event.target.value = "";
+              }}
+              disabled={uploadingImage}
+            />
+            <p className="mt-1 text-xs text-gray-500">
+              {uploadingImage
+                ? "Uploading image..."
+                : "Upload from your computer and we will fill the URL automatically."}
+            </p>
+          </label>
+
+          <label className="text-sm md:col-span-2">
             Cover image URL
             <input
               className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2"
@@ -484,6 +557,17 @@ export default function ContentPortal() {
               placeholder="/images/your-image.jpg"
             />
           </label>
+
+          {form.cover_image_url ? (
+            <div className="md:col-span-2">
+              <p className="text-xs text-gray-500 mb-2">Cover preview</p>
+              <img
+                src={form.cover_image_url}
+                alt={form.cover_image_alt || form.title || "Cover preview"}
+                className="w-full max-w-xl rounded-md border border-gray-200 object-cover aspect-[16/9]"
+              />
+            </div>
+          ) : null}
 
           <label className="text-sm">
             Cover image alt

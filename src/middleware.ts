@@ -12,6 +12,9 @@ export function middleware(req: NextRequest) {
     pathname.startsWith("/dashboard/content/");
   const isContentPostsApiPath =
     pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
+  const isContentUploadApiPath = pathname === "/api/content/upload-image";
+  const isContentProtectedApiPath =
+    isContentPostsApiPath || isContentUploadApiPath;
 
   if (
     pathname.startsWith("/_next") || // Next.js static files
@@ -23,7 +26,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  if (isDashboardPath || isContentPostsApiPath) {
+  if (isDashboardPath || isContentProtectedApiPath) {
     const authToken = req.cookies.get("authToken")?.value || "";
     const contentPortalSession =
       req.cookies.get(CONTENT_PORTAL_SESSION_COOKIE)?.value || "";
@@ -32,7 +35,7 @@ export function middleware(req: NextRequest) {
     const hasContentPortalAuth = Boolean(contentPortalSession);
     const canAccessContentPortal = hasDashboardAuth || hasContentPortalAuth;
 
-    if (isDashboardContentPath || isContentPostsApiPath) {
+    if (isDashboardContentPath || isContentProtectedApiPath) {
       if (canAccessContentPortal) {
         return NextResponse.next();
       }
@@ -41,7 +44,7 @@ export function middleware(req: NextRequest) {
     }
 
     if (!authToken) {
-      if (isContentPostsApiPath) {
+      if (isContentProtectedApiPath) {
         return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
       }
 
