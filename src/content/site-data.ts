@@ -56,23 +56,22 @@ export const footerData = {
     // },
     {
       name: "Corporate",
-      link: "https://www.gaurssa.com",
-      isExternalLink: true,
+      link: "/corporate",
     },
     {
       name: "Accountability & Transparency",
-      link: getBlogPathBySlug("accountability-and-transparency"),
+      link: "/accountability-and-transparency",
     },
-    { name: "Financial Reports", link: "/docs" },
+    { name: "Financial Reports", link: "/financial-reports" },
     {
       name: "Financial Responsibility",
-      link: getBlogPathBySlug("financial-responsibility"),
+      link: "/financial-responsibility",
     },
     {
       name: "Belonging and Inclusion",
-      link: getBlogPathBySlug("belonging-and-inclusion"),
+      link: "/belonging-and-inclusion",
     },
-    { name: "Contact Us", link: "/contact" },
+    { name: "Contact Us", link: "/contact-us" },
   ],
 };
 
@@ -496,7 +495,7 @@ export const BOTTOM_FOOTER = [
   {
     id: 1,
     name: "Contact Us",
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 1,

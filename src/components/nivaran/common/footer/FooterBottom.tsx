@@ -4,7 +4,7 @@ export const FooterBottom = () => {
   const footerBottomLinks: { name: string; link: string }[] = [
     {
       name: "Contact Us",
-      link: "/contact",
+      link: "/contact-us",
     },
     { name: "Privacy Policy", link: "/privacy-policy" },
     { name: "Terms & Conditions", link: "/terms-of-service" },

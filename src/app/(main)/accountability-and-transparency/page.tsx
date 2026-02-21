@@ -1,102 +1,87 @@
-import { DeiEmpoweringCard } from "@/components/new/DeiInfo/DeiEmpoweringCard";
-import { DeiInfoCard } from "@/components/new/DeiInfo/DeiInfoCard";
-import MainTitle from "@/components/new/MainTitle/MainTitle";
-import { PageTitle } from "@/components/new/PageTitle/PageTitle";
-import RenderList from "@/components/nivaran/common/renderList/RenderList";
-import { AppButton } from "@/components/ui/app-button";
-import { DEI_EMPOWERING_VOICES, DEI_INFO_CARD } from "@/content/dei";
-import { Metadata } from "next";
-import Image from "next/image";
+import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Building Trust with Nivaran Foundation",
+  title: "Accountability & Transparency | Nivaran Foundation",
   description:
-    "Learn how Nivaran Foundation builds trust with accountability and transparency, ensuring a positive impact with responsibility and openness worldwide.",
+    "How Nivaran Foundation approaches accountability and transparency through governance, reporting, and disclosure commitments.",
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org/accountability-and-transparency",
+  },
 };
 
-export default function page() {
+const accountabilityCards = [
+  {
+    title: "Program Verification",
+    text: "Program execution is documented through district records, field logs, partner coordination notes, and internal review cycles tied to mission outcomes.",
+  },
+  {
+    title: "Financial Disclosure",
+    text: "Financial records are maintained for traceability, with disclosure pathways for donors, partners, and compliance-oriented review requests.",
+  },
+  {
+    title: "Operational Integrity",
+    text: "Decision making is expected to align with beneficiary needs, legal obligations, and responsible use of funds without mission drift.",
+  },
+];
+
+export default function AccountabilityAndTransparencyPage() {
   return (
-    <div className="font-Poppins">
-      <section className="w-full pl-4  overflow-hidden relative">
-        <div className="flex flex-col sm:flex-row-reverse  justify-between sm:items-start n  max-w-[1320px] overflow-hidden mx-auto ">
-          <div className=" sm:absolute w-[45rem] top-16 -right-32 rotate-45 grayscale overflow-x-hidden">
-            <Image
-              src="/AandT/handshake.png"
-              alt="Sanjeevani Image"
-              width={1200}
-              height={1200}
-              className="w-full h-full block object-center object-cover"
-            />{" "}
-          </div>
+    <main className="w-full px-4 py-12 font-Poppins">
+      <section className="max-w-[1000px] mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+          Accountability &amp; Transparency
+        </h1>
+        <p className="text-gray-600 mt-4 leading-7">
+          Accountability is an operating requirement at Nivaran Foundation.
+          This page outlines how transparency is built into governance,
+          reporting, and day-to-day program execution.
+        </p>
 
-          <div className="flex flex-col  py-2  sm:mr-auto ">
-            <PageTitle
-              suffix="Transparency Builds Trust"
-              prefix="Accountability fuels Ownership,"
-              className="text-center sm:text-start max-[830px]:text-xl"
-            />
-            <p className="text-sm text-gray-600 text-center sm:text-start md:max-w-[400px] max-w-[200px] mx-auto sm:mx-0 mt-4">
-              We firmly believe that lasting change happens only when trust is
-              at the core.
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          {accountabilityCards.map((card) => (
+            <article
+              key={card.title}
+              className="rounded-xl border border-gray-200 bg-white p-5"
+            >
+              <h2 className="text-lg font-semibold text-gray-900">{card.title}</h2>
+              <p className="text-sm text-gray-600 mt-2 leading-6">{card.text}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="rounded-xl border border-gray-200 bg-white p-6 mt-8">
+          <h2 className="text-xl font-semibold text-gray-900">
+            Disclosure Commitment
+          </h2>
+          <p className="text-sm text-gray-600 mt-3 leading-6">
+            We maintain direct access routes for governance and financial
+            information through dedicated pages. If you need documentation
+            beyond published materials, use the contact channel for a formal
+            request.
+          </p>
+          <div className="flex flex-wrap gap-3 mt-5">
+            <Link
+              href="/financial-reports"
+              className="px-4 py-2 rounded-full bg-primary-500 text-white text-sm"
+            >
+              Open Financial Reports
+            </Link>
+            <Link
+              href="/contact-us"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Request Information
+            </Link>
+            <Link
+              href="/financial-responsibility"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Financial Responsibility
+            </Link>
           </div>
         </div>
       </section>
-
-      <div className="w-full mt-4 bg-[#f3f3f3] py-12 px-4 sm:mt-36">
-        <section className="max-w-[1320px] mx-auto ">
-          <MainTitle
-            prefix=""
-            suffix="Accountability Encourages Duty"
-            className="mb-10"
-          />
-          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6  gap-x-8 gap-y-8">
-            {DEI_INFO_CARD.map((dei) => (
-              <DeiInfoCard key={dei.id} dei={dei} />
-            ))}
-          </div>
-        </section>
-
-        <section className="py-12 flex flex-col gap-4 max-w-[1320px] mx-auto px-4">
-          <MainTitle prefix="in Our Project" suffix="Empowering Voices" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  lg:gap-4 gap-y-2  gap-x-8 md:gap-y-8">
-            <RenderList
-              data={DEI_EMPOWERING_VOICES}
-              render={(dei) => <DeiEmpoweringCard key={dei.id} dei={dei} />}
-            />
-          </div>
-        </section>
-      </div>
-
-      <section className="py-10 max-w-[1320px] mx-auto ">
-        <div className="w-full h-full px-4 ">
-          <Image
-            src={"/dei/dei-nepal.png"}
-            alt="Diversity in Inclusion"
-            width={1500}
-            height={1500}
-            className=""
-          />
-        </div>
-      </section>
-
-      <section className="flex flex-col gap-8 items-center py-12">
-        <h3 className="text-gray-950 font-medium text-2xl md:text-5xl text-center flex flex-col ">
-          <span className="md:leading-[4rem]">Let&apos;s Build a More</span>
-          <span className="md:leading-[4rem]">Inclusive World Together</span>
-        </h3>
-
-        <Link
-          href="/volunteer"
-          className="md:mt-8"
-          aria-label="Join Us & Be the Change"
-        >
-          <AppButton variant="primary-outline">
-            Join Us & Be the Change
-          </AppButton>
-        </Link>
-      </section>
-    </div>
+    </main>
   );
 }
