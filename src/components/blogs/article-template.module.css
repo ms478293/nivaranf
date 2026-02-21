@@ -486,6 +486,11 @@
   color: #25d366;
 }
 
+.shareButtonInstagram:hover {
+  border-color: #e1306c;
+  color: #e1306c;
+}
+
 .donateSection {
   background: var(--ink);
   border-radius: 2px;

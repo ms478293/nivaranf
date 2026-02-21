@@ -7,6 +7,7 @@ import {
 
 const WEBSITE_BASE_URL = "https://www.nivaranfoundation.org";
 const DEFAULT_AUTHOR = "Nivaran Foundation News Desk";
+export const MIN_PUBLISH_WORDS = 1000;
 
 function normalizeWhitespace(value: string) {
   return value.replace(/\s+/g, " ").trim();
@@ -23,6 +24,12 @@ function stripMarkdown(markdown: string) {
       .replace(/[*_~>-]/g, " ")
       .replace(/<[^>]+>/g, " ")
   );
+}
+
+export function countWords(markdown: string) {
+  const plain = stripMarkdown(markdown);
+  if (!plain) return 0;
+  return plain.split(" ").filter(Boolean).length;
 }
 
 export function slugify(value: string) {
@@ -52,10 +59,8 @@ export function buildCanonicalUrl(contentType: ContentType, slug: string) {
 }
 
 export function estimateReadingTimeMinutes(content: string) {
-  const plain = stripMarkdown(content);
-  if (!plain) return 1;
-
-  const words = plain.split(" ").filter(Boolean).length;
+  const words = countWords(content);
+  if (!words) return 1;
   return Math.max(1, Math.ceil(words / 220));
 }
 
@@ -142,6 +147,12 @@ export function applyContentAutomation(
 
   const contentType = (input.content_type || "Article") as ContentType;
   const status = input.status || "draft";
+  const words = countWords(body);
+  if (status === "published" && words < MIN_PUBLISH_WORDS) {
+    throw new Error(
+      `Published posts must be at least ${MIN_PUBLISH_WORDS} words. Current: ${words}.`
+    );
+  }
   const slug = slugify(input.slug || title);
   const location = normalizeWhitespace(input.location || "") || "Nepal";
   const excerpt = buildExcerpt(input.excerpt, body);

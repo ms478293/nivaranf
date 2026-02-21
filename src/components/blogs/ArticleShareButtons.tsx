@@ -15,6 +15,7 @@ const ArticleShareButtons = ({
   shareMessage,
 }: ArticleShareButtonsProps) => {
   const [copied, setCopied] = useState(false);
+  const [instagramCopied, setInstagramCopied] = useState(false);
 
   const resolvedShareMessage = useMemo(() => {
     if (!shareMessage) {
@@ -31,14 +32,31 @@ const ArticleShareButtons = ({
   const encodedUrl = encodeURIComponent(url);
   const encodedShareMessage = encodeURIComponent(resolvedShareMessage);
 
-  const copyLink = async () => {
+  const copyToClipboard = async (value: string) => {
     try {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(value);
+      return true;
+    } catch (error) {
+      console.error("Failed to copy text:", error);
+      return false;
+    }
+  };
+
+  const copyLink = async () => {
+    const success = await copyToClipboard(url);
+    if (success) {
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
-    } catch (error) {
-      console.error("Failed to copy URL:", error);
     }
+  };
+
+  const shareToInstagram = async () => {
+    const success = await copyToClipboard(resolvedShareMessage);
+    if (success) {
+      setInstagramCopied(true);
+      setTimeout(() => setInstagramCopied(false), 2200);
+    }
+    window.open("https://www.instagram.com/", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -79,6 +97,14 @@ const ArticleShareButtons = ({
       >
         WhatsApp
       </a>
+      <button
+        className={`${styles.shareButton} ${styles.shareButtonInstagram}`}
+        onClick={shareToInstagram}
+        type="button"
+        aria-label="Share on Instagram (copies caption and link)"
+      >
+        {instagramCopied ? "Instagram copied" : "Instagram"}
+      </button>
       <button className={styles.shareButton} onClick={copyLink} type="button">
         {copied ? "Copied" : "Copy link"}
       </button>

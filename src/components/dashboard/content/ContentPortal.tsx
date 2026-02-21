@@ -3,6 +3,8 @@
 import {
   applyContentAutomation,
   buildCanonicalPath,
+  countWords,
+  MIN_PUBLISH_WORDS,
   slugify,
 } from "@/lib/content/automation";
 import type { ContentPost } from "@/lib/content/types";
@@ -185,6 +187,8 @@ export default function ContentPortal() {
     );
   }, [automationPreview]);
 
+  const bodyWordCount = useMemo(() => countWords(form.body), [form.body]);
+
   function resetToNew() {
     setForm(EMPTY_FORM);
     setSlugEdited(false);
@@ -323,6 +327,12 @@ export default function ContentPortal() {
     setSuccess("");
 
     try {
+      if (nextStatus === "published" && bodyWordCount < MIN_PUBLISH_WORDS) {
+        throw new Error(
+          `Published posts must be at least ${MIN_PUBLISH_WORDS} words. Current: ${bodyWordCount}.`
+        );
+      }
+
       const payload = {
         ...form,
         status: nextStatus,
@@ -780,6 +790,11 @@ export default function ContentPortal() {
           <p>
             <span className="font-semibold">Route:</span>{" "}
             {routePreview || "-"}
+          </p>
+          <p>
+            <span className="font-semibold">Word count:</span> {bodyWordCount} words
+            {" · "}
+            Minimum to publish: {MIN_PUBLISH_WORDS}
           </p>
           <p>
             <span className="font-semibold">Reading time:</span>{" "}
