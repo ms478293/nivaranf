@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-grey-blanket-why-fog-is-a-medical-emergency",
+    title: "The Grey Blanket: Why Fog Is a Medical Emergency",
+    summary:
+      "Dense winter fog in Nepal's Terai does more than delay flights. It disrupts referrals, vaccines, and emergency timelines for families already far from care.",
+    thumbnailImage: "/blogs/images/healthcareReformFiles.jpg",
+    date: "2026-01-03",
+    author: "Nivaran Foundation News Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "when-the-road-ends-aviation-safety-and-rural-health",
     title: "When the Road Ends, Care Can End Too",
     summary:
