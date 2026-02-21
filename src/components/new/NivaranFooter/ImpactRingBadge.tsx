@@ -85,7 +85,8 @@ export function ImpactRingBadge({ target = 96, className = "" }: ImpactRingBadge
   const rotateDeg = useMemo(() => {
     const hiddenPercent = 100 - MAX_ARC_PERCENT;
     const halfHiddenDeg = (hiddenPercent * 360) / 200;
-    return 180 + halfHiddenDeg;
+    // Center the fixed gap at the top (12 o'clock) instead of the left side.
+    return 270 + halfHiddenDeg;
   }, [MAX_ARC_PERCENT]);
 
   return (
