@@ -1,16 +1,32 @@
 "use client";
 import MoveUpRightArrowIcon from "@/assets/icons/MoveUpRightArrowIcon";
 import { AppButton } from "@/components/ui/app-button";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { SocialLinks } from "./SocialLinks";
 
 export const FooterHollow = () => {
+  const [gifSrc, setGifSrc] = useState("/infographic/hollowCircle.gif");
+
+  useEffect(() => {
+    setGifSrc(`/infographic/hollowCircle.gif?timestamp=${Date.now()}`);
+  }, []);
+
   return (
     <div className="flex flex-col justify-between gap-6 h-full">
       <div className="flex items-center justify-start  my-4 gap-2 ">
-        <div className="flex h-fit relative overflow-visible -ml-1">
-          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-[8px] border-primary-main/80 bg-white flex items-center justify-center shadow-sm">
-            <span className="text-primary-main font-semibold text-xl sm:text-2xl">
+        <div className="flex h-fit relative overflow-visible -ml-3">
+          <Image
+            src={gifSrc}
+            width={300}
+            height={300}
+            alt="HollowCircle"
+            className="w-32 h-32 max-h-32 max-w-32 object-cover overflow-visible"
+            unoptimized
+          />
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <span className="text-primary-main font-semibold text-[28px] leading-none bg-white/90 rounded-full px-1">
               96%
             </span>
           </div>
