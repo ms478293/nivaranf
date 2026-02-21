@@ -450,7 +450,13 @@ export async function renderBlogDetailPage({
 
           <section className={styles.authorSection}>
             <div className={styles.authorAvatar}>
-              {(author.charAt(0) || "N").toUpperCase()}
+              <Image
+                src="/small_logo.png"
+                alt="Nivaran logo"
+                width={40}
+                height={40}
+                className={styles.authorLogo}
+              />
             </div>
             <div>
               <div className={styles.authorName}>{author}</div>
