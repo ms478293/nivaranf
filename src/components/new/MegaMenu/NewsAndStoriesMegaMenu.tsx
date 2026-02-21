@@ -1,17 +1,15 @@
 "use client";
 
-import { globalBlogs } from "@/blogs/listofblogs";
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
+import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import { useMegaMenuStore } from "@/store/useMegamenuStore";
 import Link from "next/link";
 
 const NewsAndStoriesMegaMenu = () => {
   const { openActiveMegaMenu } = useMegaMenuStore();
-  const featuredData = globalBlogs
-    .filter((blogs) => blogs.featured)
-    .slice(0, 4);
+  const featuredData = useTrendingBlogs(4);
   return (
     <div className="w-fit">
       <div className="flex justify-between items-center">

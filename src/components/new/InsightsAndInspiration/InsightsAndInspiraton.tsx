@@ -1,17 +1,15 @@
 "use client";
 
 import RightArrowIcon from "@/assets/icons/RightArrowIcon";
-import { globalBlogs } from "@/blogs/listofblogs";
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
+import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import Link from "next/link";
 import MainTitle from "../MainTitle/MainTitle";
 
 const InsightsAndInspiraton = () => {
-  const featuredData = globalBlogs
-    .filter((blogs) => blogs.featured)
-    .slice(0, 4);
+  const featuredData = useTrendingBlogs(4);
   return (
     <section className="w-full  bg-white font-light font-Poppins">
       <div className="max-w-[1320px] mx-auto flex flex-col py-4 md:py-12 ">

@@ -92,6 +92,15 @@ function splitKeywords(value: string) {
     .filter(Boolean);
 }
 
+const MAX_COVER_IMAGE_BYTES = 4 * 1024 * 1024;
+const ALLOWED_COVER_IMAGE_TYPES = new Set([
+  "image/jpeg",
+  "image/png",
+  "image/webp",
+  "image/gif",
+  "image/avif",
+]);
+
 export default function ContentPortal() {
   const [posts, setPosts] = useState<ContentPost[]>([]);
   const [form, setForm] = useState<ContentFormState>(EMPTY_FORM);
@@ -183,6 +192,14 @@ export default function ContentPortal() {
     setUploadingImage(true);
 
     try {
+      if (!ALLOWED_COVER_IMAGE_TYPES.has(file.type)) {
+        throw new Error("Only JPG, PNG, WEBP, GIF, and AVIF files are allowed.");
+      }
+
+      if (file.size > MAX_COVER_IMAGE_BYTES) {
+        throw new Error("Image is too large. Please upload a file under 4MB.");
+      }
+
       const body = new FormData();
       body.set("file", file);
       body.set("slug", form.slug || form.title || "cover-image");
@@ -192,9 +209,27 @@ export default function ContentPortal() {
         credentials: "include",
         body,
       });
-      const payload = await response.json();
+      const raw = await response.text();
+      let payload: { error?: string; url?: string } = {};
+      if (raw) {
+        try {
+          payload = JSON.parse(raw) as { error?: string; url?: string };
+        } catch {
+          payload = {};
+        }
+      }
       if (!response.ok) {
-        throw new Error(payload.error || "Image upload failed.");
+        const lowered = raw.toLowerCase();
+        if (
+          response.status === 413 ||
+          lowered.includes("request entity too large") ||
+          lowered.includes("function_payload_too_large")
+        ) {
+          throw new Error("Image is too large. Please upload a file under 4MB.");
+        }
+        throw new Error(
+          payload.error || raw || `Image upload failed (HTTP ${response.status}).`
+        );
       }
 
       setForm((prev) => ({

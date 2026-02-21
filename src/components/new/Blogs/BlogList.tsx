@@ -3,6 +3,7 @@
 import { globalBlogs } from "@/blogs/listofblogs";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { blogTypes } from "@/content/blogTypes";
+import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import { useState } from "react";
 import MainTitle from "../MainTitle/MainTitle";
 import InputSearch from "../SearchInput/SearchInput";
@@ -10,13 +11,12 @@ import { CategoryFilterTag } from "./CategoryFilterTag";
 import { FilteredBlogsList } from "./FilteredBlogList";
 import { LatestBlogs } from "./LatestBlogs";
 
-const trendingBlogs = globalBlogs.slice(0, 4);
-
 export const BlogList = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryTag, setActiveCategoryTag] = useState<
     (typeof blogTypes)[number] | "All"
   >("All");
+  const trendingBlogs = useTrendingBlogs(4);
 
   // const filteredBlogType = globalBlogs.filter(
   //   (blog) => blog.type === activeCategoryTag

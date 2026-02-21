@@ -1,15 +1,15 @@
+"use client";
+
 import MoveUpRightArrowIcon from "@/assets/icons/MoveUpRightArrowIcon";
-import { globalBlogs } from "@/blogs/listofblogs";
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
+import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import Link from "next/link";
 
 export const SmallNewsAndStoriesMegaMenu = () => {
-  const featuredData = globalBlogs
-    .filter((blogs) => blogs.featured)
-    .slice(0, 2);
+  const featuredData = useTrendingBlogs(2);
 
   return (
     <div className="pl-3">

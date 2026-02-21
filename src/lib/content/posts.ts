@@ -164,6 +164,20 @@ function mapContentPostToBlogListItem(post: ContentPost): blogListType {
   };
 }
 
+function dedupeBlogItems(items: blogListType[], limit: number) {
+  const unique: blogListType[] = [];
+  const seen = new Set<string>();
+
+  for (const item of items) {
+    if (!item?.slug || seen.has(item.slug)) continue;
+    seen.add(item.slug);
+    unique.push(item);
+    if (unique.length >= limit) break;
+  }
+
+  return unique;
+}
+
 type DashboardPostFilters = {
   status?: ContentStatus | "all";
   type?: ContentType | "all";
@@ -367,6 +381,49 @@ export async function getPublishedRelatedBlogItems({
 }) {
   const posts = await getPublishedBlogItemsBySegment(segment);
   return posts.filter((post) => post.slug !== excludeSlug).slice(0, limit);
+}
+
+export async function getTrendingBlogFeed(limit = 4) {
+  const safeLimit = Math.max(1, Math.min(limit, 24));
+  const staticFeatured = globalBlogs.filter((blog) => blog.featured);
+
+  try {
+    const [featuredDynamicResult, latestDynamicResult] = await Promise.all([
+      supabaseAdmin
+        .from(CONTENT_POSTS_TABLE)
+        .select("*")
+        .eq("status", "published")
+        .eq("featured", true)
+        .order("published_at", { ascending: false, nullsFirst: false })
+        .order("updated_at", { ascending: false })
+        .limit(safeLimit * 2),
+      supabaseAdmin
+        .from(CONTENT_POSTS_TABLE)
+        .select("*")
+        .eq("status", "published")
+        .order("published_at", { ascending: false, nullsFirst: false })
+        .order("updated_at", { ascending: false })
+        .limit(safeLimit * 3),
+    ]);
+
+    throwSupabaseError(featuredDynamicResult.error, true);
+    throwSupabaseError(latestDynamicResult.error, true);
+
+    const featuredDynamic = (featuredDynamicResult.data || [])
+      .map((row) => mapRowToContentPost(row as Record<string, unknown>))
+      .map((post) => mapContentPostToBlogListItem(post));
+
+    const latestDynamic = (latestDynamicResult.data || [])
+      .map((row) => mapRowToContentPost(row as Record<string, unknown>))
+      .map((post) => mapContentPostToBlogListItem(post));
+
+    return dedupeBlogItems(
+      [...featuredDynamic, ...latestDynamic, ...staticFeatured],
+      safeLimit
+    );
+  } catch {
+    return staticFeatured.slice(0, safeLimit);
+  }
 }
 
 export function getSegmentForContentPost(post: ContentPost): ContentRouteSegment {
