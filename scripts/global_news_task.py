@@ -1113,11 +1113,29 @@ def verify_live(url: str, expected_title: str, attempts: int = 12, delay_seconds
 
 def ensure_git_ready(repo_root: Path) -> None:
     run_cmd(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_root)
+    # Worktree-safe sync: never force checkout local `main` (may be active in another worktree).
+    run_cmd(["git", "fetch", "--prune", "origin", "main"], cwd=repo_root)
     current_ref = run_cmd(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_root)
-    if current_ref != "main":
-        # Ensure automated publish commits land on main instead of detached HEAD.
-        run_cmd(["git", "checkout", "main"], cwd=repo_root)
-    run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
+    if current_ref == "main":
+        run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
+        return
+
+    try:
+        run_cmd(["git", "checkout", "--detach", "origin/main"], cwd=repo_root)
+    except Exception as exc:
+        # Fallback: allow continuing on current HEAD only if it already contains origin/main.
+        ancestor = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", "origin/main", "HEAD"],
+            cwd=str(repo_root),
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+        if ancestor.returncode != 0:
+            raise RuntimeError(
+                "Could not align worktree with origin/main without checking out local main. "
+                f"Original error: {exc}"
+            ) from exc
 
 
 def choose_threshold(base: int, target_min: int, published_count: int, hours_left: int) -> int:

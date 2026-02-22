@@ -132,9 +132,9 @@ function isOfflineError(error) {
   );
 }
 
-function tryGitPush(repoRoot) {
+function tryGitPush(repoRoot, remote = "origin", refSpec = "HEAD:main") {
   try {
-    execFileSync("git", ["push", "origin", "main"], {
+    execFileSync("git", ["push", remote, refSpec], {
       cwd: repoRoot,
       encoding: "utf8",
       stdio: ["ignore", "pipe", "pipe"],
@@ -145,7 +145,13 @@ function tryGitPush(repoRoot) {
   }
 }
 
-function queuePush(repoRoot, scriptsDir, commitMessage) {
+function queuePush(
+  repoRoot,
+  scriptsDir,
+  commitMessage,
+  remote = "origin",
+  refSpec = "HEAD:main"
+) {
   const queuePath = path.join(scriptsDir, QUEUE_FILE_NAME);
   let queue = [];
   if (fs.existsSync(queuePath)) {
@@ -157,7 +163,8 @@ function queuePush(repoRoot, scriptsDir, commitMessage) {
   }
   queue.push({
     branch: "main",
-    remote: "origin",
+    remote,
+    refSpec,
     repoRoot,
     commitMessage: commitMessage || "(unknown)",
     queuedAt: new Date().toISOString(),
@@ -370,12 +377,20 @@ function main() {
   let queuedAt = null;
 
   if (args.push) {
-    const result = tryGitPush(repoRoot);
+    const pushRemote = "origin";
+    const pushRefSpec = "HEAD:main";
+    const result = tryGitPush(repoRoot, pushRemote, pushRefSpec);
     if (result.success) {
       pushed = true;
     } else if (result.offline) {
       const scriptsDir = path.dirname(new URL(import.meta.url).pathname);
-      const queuePath = queuePush(repoRoot, scriptsDir, commitMessage);
+      const queuePath = queuePush(
+        repoRoot,
+        scriptsDir,
+        commitMessage,
+        pushRemote,
+        pushRefSpec
+      );
       queued = true;
       queuedAt = new Date().toISOString();
       console.error(
