@@ -5,7 +5,7 @@ Flow:
 1) Pull global health/education stories from trusted RSS feeds.
 2) Keep only trusted/verified, non-Nepal candidates related to health or education.
 3) Remove duplicates against prior runs + existing global posts, then pick top ranked #1.
-4) Apply adaptive quality threshold to keep hourly output steady; fallback only when needed.
+4) Apply adaptive quality threshold and cached-candidate backfill for hourly continuity.
 5) Generate long-form paraphrased article + image prompt via Gemini.
 6) Prefer source image with attribution; fallback to Gemini image model.
 7) Publish using scripts/publish-article.mjs (same site template pipeline).
@@ -54,6 +54,8 @@ PARAPHRASE_SHINGLE_SIZE = 10
 PARAPHRASE_MAX_SHINGLE_OVERLAP = 0.04
 PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
 DUPLICATE_FALLBACK_MIN_SCORE = 52
+CANDIDATE_CACHE_MAX_ITEMS = 240
+CANDIDATE_CACHE_MAX_AGE_HOURS = 96
 
 HEALTH_TERMS = {
     "health",
@@ -276,7 +278,13 @@ def parse_datetime(raw: str) -> Optional[dt.datetime]:
     except Exception:
         pass
 
-    for fmt in ("%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
+    for fmt in (
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+        "%Y-%m-%dT%H:%M:%S.%f%z",
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%Y-%m-%d",
+    ):
         try:
             parsed = dt.datetime.strptime(raw, fmt)
             if parsed.tzinfo is None:
@@ -380,6 +388,161 @@ def extract_existing_content_fingerprints(repo_root: Path) -> Tuple[set[str], se
                 source_links.add(normalized)
 
     return source_links, title_keys
+
+
+def candidate_to_cache_record(candidate: Candidate, cached_at: dt.datetime) -> Dict:
+    published = ""
+    if candidate.published_at:
+        published = candidate.published_at.isoformat().replace("+00:00", "Z")
+    return {
+        "title": candidate.title,
+        "link": candidate.link,
+        "summary": candidate.summary,
+        "publishedAtUtc": published,
+        "domain": candidate.domain,
+        "score": float(candidate.score),
+        "healthHits": int(candidate.health_hits),
+        "educationHits": int(candidate.education_hits),
+        "reason": candidate.reason,
+        "cachedAtUtc": cached_at.isoformat().replace("+00:00", "Z"),
+    }
+
+
+def candidate_from_cache_record(record: Dict) -> Optional[Candidate]:
+    if not isinstance(record, dict):
+        return None
+    title = normalize_ws(str(record.get("title", "")))
+    link = normalize_ws(str(record.get("link", "")))
+    if not title or not link:
+        return None
+    summary = normalize_ws(str(record.get("summary", "")))
+    domain = normalize_ws(str(record.get("domain", ""))) or domain_of(link)
+    try:
+        score = float(record.get("score", 0.0))
+    except Exception:
+        score = 0.0
+    try:
+        health_hits = int(record.get("healthHits", 0))
+    except Exception:
+        health_hits = 0
+    try:
+        education_hits = int(record.get("educationHits", 0))
+    except Exception:
+        education_hits = 0
+    published_at = parse_datetime(str(record.get("publishedAtUtc", "")))
+    reason = normalize_ws(str(record.get("reason", "")))
+    return Candidate(
+        title=title,
+        link=link,
+        summary=summary,
+        published_at=published_at,
+        domain=domain,
+        score=score,
+        health_hits=health_hits,
+        education_hits=education_hits,
+        reason=reason,
+    )
+
+
+def cache_key_for_candidate(candidate: Candidate) -> str:
+    normalized_link = canonicalize_url(candidate.link)
+    if normalized_link:
+        return normalized_link
+    return f"title:{slugify(candidate.title)}"
+
+
+def merge_candidate_cache(
+    previous_records: List[Dict], fresh_candidates: List[Candidate], now: dt.datetime
+) -> List[Dict]:
+    min_cached_at = now - dt.timedelta(hours=CANDIDATE_CACHE_MAX_AGE_HOURS)
+    merged: List[Dict] = []
+    seen_keys: set[str] = set()
+
+    for candidate in fresh_candidates:
+        key = cache_key_for_candidate(candidate)
+        if not key or key in seen_keys:
+            continue
+        seen_keys.add(key)
+        merged.append(candidate_to_cache_record(candidate, cached_at=now))
+
+    for record in previous_records:
+        candidate = candidate_from_cache_record(record)
+        if candidate is None:
+            continue
+        cached_at = parse_datetime(str(record.get("cachedAtUtc", "")))
+        if cached_at is None or cached_at < min_cached_at:
+            continue
+        key = cache_key_for_candidate(candidate)
+        if not key or key in seen_keys:
+            continue
+        seen_keys.add(key)
+        record["cachedAtUtc"] = cached_at.isoformat().replace("+00:00", "Z")
+        merged.append(record)
+        if len(merged) >= CANDIDATE_CACHE_MAX_ITEMS:
+            break
+
+    return merged[:CANDIDATE_CACHE_MAX_ITEMS]
+
+
+def bootstrap_cache_records_from_runs(runs: List[Dict], now: dt.datetime) -> List[Dict]:
+    provisional: List[Candidate] = []
+    if not isinstance(runs, list):
+        return []
+
+    for run in reversed(runs[-72:]):
+        if not isinstance(run, dict):
+            continue
+        shortlist = run.get("shortlist") or []
+        if isinstance(shortlist, list):
+            for item in shortlist:
+                if not isinstance(item, dict):
+                    continue
+                title = normalize_ws(str(item.get("title", "")))
+                link = normalize_ws(str(item.get("link", "")))
+                if not title or not link:
+                    continue
+                try:
+                    score = float(item.get("score", 0.0))
+                except Exception:
+                    score = 0.0
+                provisional.append(
+                    Candidate(
+                        title=title,
+                        link=link,
+                        summary="",
+                        published_at=None,
+                        domain=domain_of(link),
+                        score=score,
+                        health_hits=0,
+                        education_hits=0,
+                        reason=normalize_ws(str(item.get("reason", ""))),
+                    )
+                )
+
+        selected = run.get("selectedCandidate")
+        if isinstance(selected, dict):
+            title = normalize_ws(str(selected.get("title", "")))
+            link = normalize_ws(str(selected.get("link", "")))
+            if title and link:
+                try:
+                    score = float(selected.get("score", 0.0))
+                except Exception:
+                    score = 0.0
+                provisional.append(
+                    Candidate(
+                        title=title,
+                        link=link,
+                        summary="",
+                        published_at=None,
+                        domain=domain_of(link),
+                        score=score,
+                        health_hits=0,
+                        education_hits=0,
+                        reason=normalize_ws(str(selected.get("reason", ""))),
+                    )
+                )
+
+    return merge_candidate_cache(previous_records=[], fresh_candidates=provisional, now=now)
 
 
 def is_trusted_domain(domain: str, trusted_domains: List[str]) -> bool:
@@ -968,6 +1131,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         {
             "windowStartUtc": "",
             "publishedInWindow": 0,
+            "candidateCache": [],
             "history": [],
             "runs": [],
         },
@@ -1011,6 +1175,26 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     )
 
     candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    previous_cache_records = state.get("candidateCache") or []
+    if not isinstance(previous_cache_records, list):
+        previous_cache_records = []
+    if not previous_cache_records:
+        previous_cache_records = bootstrap_cache_records_from_runs(
+            runs=state.get("runs") or [],
+            now=now,
+        )
+    merged_cache_records = merge_candidate_cache(
+        previous_records=previous_cache_records,
+        fresh_candidates=candidates,
+        now=now,
+    )
+    state["candidateCache"] = merged_cache_records
+    cached_candidates: List[Candidate] = []
+    for record in merged_cache_records:
+        candidate = candidate_from_cache_record(record)
+        if candidate is not None:
+            cached_candidates.append(candidate)
+
     source_unique_candidates: List[Candidate] = []
     filtered_candidates: List[Candidate] = []
     duplicate_skip_stats = {"historyHash": 0, "historySource": 0, "existingSource": 0, "title": 0}
@@ -1052,6 +1236,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "forcePublishEveryRun": force_publish_every_run,
         "thresholdUsed": threshold_used,
         "candidatesFetched": len(candidates),
+        "candidateCacheCount": len(cached_candidates),
         "candidatesAfterSourceDedupe": len(source_unique_candidates),
         "candidatesAfterDedupe": len(filtered_candidates),
         "duplicateSkips": duplicate_skip_stats,
@@ -1087,6 +1272,24 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             selected = fallback_pool[0]
             fallback_used = True
             fallback_reason = "below_threshold"
+    cache_fallback_candidates: List[Candidate] = []
+    if selected is None and force_publish_every_run and cached_candidates:
+        for cache_candidate in sorted(cached_candidates, key=lambda c: c.score, reverse=True):
+            source_link = canonicalize_url(cache_candidate.link)
+            if source_link and (
+                source_link in history_source_links or source_link in existing_source_links
+            ):
+                continue
+            title_key = slugify(normalize_ws(cache_candidate.title))
+            if title_key and (
+                title_key in history_title_keys or title_key in existing_title_keys
+            ):
+                continue
+            cache_fallback_candidates.append(cache_candidate)
+        if cache_fallback_candidates:
+            selected = cache_fallback_candidates[0]
+            fallback_used = True
+            fallback_reason = "cache_backfill"
     if selected is None and force_publish_every_run and source_unique_candidates:
         # Mandatory hourly publish fallback: relax title-duplicate filter but never source-link duplicates.
         selected = source_unique_candidates[0]
@@ -1302,6 +1505,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "fallbackUsed": fallback_used,
             "fallbackMinScore": fallback_min_score if fallback_used else None,
             "fallbackReason": fallback_reason if fallback_used else "",
+            "cacheFallbackCandidates": len(cache_fallback_candidates),
             "generatedTitle": title,
             "generatedWordCount": words_count(body_markdown),
             "mainImage": main_image,
