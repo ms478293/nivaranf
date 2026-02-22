@@ -2,6 +2,10 @@
 
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { blogTypes } from "@/content/blogTypes";
+import {
+  filterNepalExclusiveNewest,
+  isGlobalNewsCandidate,
+} from "@/lib/content/blogFilters";
 import { useBlogFeed } from "@/lib/content/useBlogFeed";
 import { useState } from "react";
 import MainTitle from "../MainTitle/MainTitle";
@@ -10,103 +14,13 @@ import { CategoryFilterTag } from "./CategoryFilterTag";
 import { FilteredBlogsList } from "./FilteredBlogList";
 import { LatestBlogs } from "./LatestBlogs";
 
-const NEPAL_TERMS = [
-  "nepal",
-  "kathmandu",
-  "pokhara",
-  "lumbini",
-  "karnali",
-  "terai",
-  "jajarkot",
-  "dolpa",
-  "jumla",
-  "bajura",
-  "mugu",
-  "birgunj",
-];
-
-const GLOBAL_TERMS = [
-  "global",
-  "world",
-  "international",
-  "cross-border",
-  "cross border",
-  "who",
-  "unicef",
-  "unesco",
-  "unhcr",
-  "united nations",
-  "africa",
-  "asia",
-  "europe",
-  "latin america",
-  "middle east",
-  "sudan",
-  "gaza",
-  "ukraine",
-  "bangladesh",
-  "india",
-  "pakistan",
-  "sri lanka",
-];
-
-function includesAny(text: string, terms: string[]) {
-  return terms.some((term) => text.includes(term));
-}
-
-function isGlobalNewsCandidate(blog: {
-  title: string;
-  summary: string;
-  slug: string;
-  author?: string;
-}) {
-  const haystack = `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""}`.toLowerCase();
-  if (includesAny(haystack, NEPAL_TERMS)) return false;
-  return includesAny(haystack, GLOBAL_TERMS);
-}
-
-function isNepalExclusiveCandidate(blog: {
-  title: string;
-  summary: string;
-  slug: string;
-  author?: string;
-}) {
-  const haystack = `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""}`.toLowerCase();
-  if (haystack.includes("global desk")) return false;
-  return !isGlobalNewsCandidate(blog);
-}
-
-function sortByFeaturedThenDate(
-  a: {
-    featured?: boolean;
-    date: string;
-  },
-  b: {
-    featured?: boolean;
-    date: string;
-  }
-) {
-  if (Boolean(b.featured) !== Boolean(a.featured)) {
-    return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
-  }
-
-  const aTime = new Date(a.date).getTime();
-  const bTime = new Date(b.date).getTime();
-  const safeA = Number.isFinite(aTime) ? aTime : 0;
-  const safeB = Number.isFinite(bTime) ? bTime : 0;
-  return safeB - safeA;
-}
-
 export const BlogList = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryTag, setActiveCategoryTag] = useState<
     (typeof blogTypes)[number] | "All"
   >("All");
   const allBlogs = useBlogFeed(500);
-  const trendingNepalOnly = [...allBlogs]
-    .filter(isNepalExclusiveCandidate)
-    .sort(sortByFeaturedThenDate)
-    .slice(0, 4);
+  const trendingNepalOnly = filterNepalExclusiveNewest(allBlogs, 4);
 
   // const filteredBlogType = globalBlogs.filter(
   //   (blog) => blog.type === activeCategoryTag

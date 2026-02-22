@@ -6,6 +6,7 @@ import {
   getRouteSegmentForContentType,
   slugify,
 } from "./automation";
+import { filterNepalExclusiveNewest } from "./blogFilters";
 import {
   type ContentPost,
   type ContentPostInput,
@@ -395,44 +396,33 @@ export async function getPublishedRelatedBlogItems({
 
 export async function getTrendingBlogFeed(limit = 4) {
   const safeLimit = Math.max(1, Math.min(limit, 24));
-  const staticFeatured = globalBlogs.filter((blog) => blog.featured);
+  const staticTrending = filterNepalExclusiveNewest(globalBlogs, safeLimit * 8);
 
   try {
-    const [featuredDynamicResult, latestDynamicResult] = await Promise.all([
-      supabaseAdmin
-        .from(CONTENT_POSTS_TABLE)
-        .select("*")
-        .eq("status", "published")
-        .eq("featured", true)
-        .order("published_at", { ascending: false, nullsFirst: false })
-        .order("updated_at", { ascending: false })
-        .limit(safeLimit * 2),
-      supabaseAdmin
-        .from(CONTENT_POSTS_TABLE)
-        .select("*")
-        .eq("status", "published")
-        .order("published_at", { ascending: false, nullsFirst: false })
-        .order("updated_at", { ascending: false })
-        .limit(safeLimit * 3),
-    ]);
+    const latestDynamicResult = await supabaseAdmin
+      .from(CONTENT_POSTS_TABLE)
+      .select("*")
+      .eq("status", "published")
+      .order("published_at", { ascending: false, nullsFirst: false })
+      .order("updated_at", { ascending: false })
+      .limit(safeLimit * 8);
 
-    throwSupabaseError(featuredDynamicResult.error, true);
     throwSupabaseError(latestDynamicResult.error, true);
-
-    const featuredDynamic = (featuredDynamicResult.data || [])
-      .map((row) => mapRowToContentPost(row as Record<string, unknown>))
-      .map((post) => mapContentPostToBlogListItem(post));
 
     const latestDynamic = (latestDynamicResult.data || [])
       .map((row) => mapRowToContentPost(row as Record<string, unknown>))
       .map((post) => mapContentPostToBlogListItem(post));
 
-    return dedupeBlogItems(
-      [...featuredDynamic, ...latestDynamic, ...staticFeatured],
-      safeLimit
-    );
+    const merged = dedupeBlogItems([...latestDynamic, ...staticTrending], safeLimit * 8);
+    const nepalOnlyNewest = filterNepalExclusiveNewest(merged, safeLimit);
+
+    if (nepalOnlyNewest.length > 0) {
+      return nepalOnlyNewest;
+    }
+
+    return staticTrending.slice(0, safeLimit);
   } catch {
-    return staticFeatured.slice(0, safeLimit);
+    return staticTrending.slice(0, safeLimit);
   }
 }
 
