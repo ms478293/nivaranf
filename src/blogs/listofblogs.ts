@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-unveils-global-framework-to-transform-school-food-environments-for-future-generations",
+    title: "WHO Unveils Global Framework to Transform School Food Environments for Future Generations",
+    summary:
+      "The World Health Organization has unveiled a new set of global guidelines designed to overhaul food environments within educational institutions. By prioritizing evidence-based nutritional policies, the initiative aims to foster lifelong healthy eating habits and curb the rise of noncommunicable diseases among children.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-who-unveils-global-framework-to-transform-school-food-environments-for-future-ge.jpg",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "when-the-medicine-runs-out-how-nivaran-foundation-beats-the-mountain-winter",
     title: "When the Medicine Runs Out: How Nivaran Foundation Beats the Mountain Winter",
     summary:
