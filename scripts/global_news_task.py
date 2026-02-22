@@ -1138,12 +1138,16 @@ def notify_discord(report: Dict, error_message: str = "") -> Tuple[bool, str]:
 
     if status == "published":
         emoji = "✅"
+        status_color = 0x2ECC71
     elif status in {"skipped", "dry-run"}:
         emoji = "⏭️"
+        status_color = 0x3498DB
     elif status == "failed":
         emoji = "❌"
+        status_color = 0xE74C3C
     else:
         emoji = "ℹ️"
+        status_color = 0x95A5A6
 
     title = normalize_ws(
         str(
@@ -1170,6 +1174,72 @@ def notify_discord(report: Dict, error_message: str = "") -> Tuple[bool, str]:
     reason = normalize_ws(
         error_message or str(report.get("reason") or report.get("gitSyncError") or "")
     )
+    score = str((report.get("selectedCandidate") or {}).get("score") or "n/a")
+    word_count = str(report.get("generatedWordCount") or "n/a")
+    provider = normalize_ws(
+        str(
+            report.get("articleProviderUsed")
+            or report.get("imageProviderUsed")
+            or "n/a"
+        )
+    )
+    live_verified = str(report.get("liveVerified"))
+    git_sync_status = normalize_ws(str(report.get("gitSyncStatus") or "n/a"))
+    ran_at = normalize_ws(str(report.get("ranAtUtc") or ""))
+
+    def trunc(text: str, limit: int) -> str:
+        normalized = normalize_ws(text or "")
+        if len(normalized) <= limit:
+            return normalized
+        return normalized[: max(0, limit - 3)] + "..."
+
+    embed_fields = [
+        {"name": "Status", "value": status.upper(), "inline": True},
+        {"name": "Score", "value": score, "inline": True},
+        {"name": "Words", "value": word_count, "inline": True},
+        {"name": "Provider", "value": trunc(provider or "n/a", 100), "inline": True},
+        {"name": "Live Verified", "value": trunc(live_verified, 100), "inline": True},
+        {"name": "Git Sync", "value": trunc(git_sync_status, 100), "inline": True},
+    ]
+    if reason:
+        embed_fields.append({"name": "Reason", "value": trunc(reason, 1000), "inline": False})
+    if source_url:
+        embed_fields.append({"name": "Source", "value": trunc(source_url, 1000), "inline": False})
+
+    embed = {
+        "title": trunc(title or "Global_News update", 250),
+        "description": f"{emoji} Global_News {status.upper()}",
+        "color": status_color,
+        "fields": embed_fields[:25],
+        "footer": {"text": "Nivaran Global_News Automation"},
+    }
+    if ran_at:
+        embed["timestamp"] = ran_at
+    if image_url:
+        embed["image"] = {"url": image_url}
+    if blog_url:
+        embed["url"] = blog_url
+
+    buttons = []
+    if blog_url:
+        buttons.append(
+            {"type": 2, "style": 5, "label": "Open Article", "url": blog_url}
+        )
+    if image_url:
+        buttons.append({"type": 2, "style": 5, "label": "Open Image", "url": image_url})
+    if source_url:
+        buttons.append({"type": 2, "style": 5, "label": "Source", "url": source_url})
+    components = [{"type": 1, "components": buttons[:3]}] if buttons else []
+
+    common = {
+        "username": "Nivaran Global_News",
+        "allowed_mentions": {"parse": []},
+        "content": f"{emoji} Global_News {status.upper()}",
+    }
+
+    payload_candidates: List[Dict] = []
+    payload_candidates.append({**common, "embeds": [embed], "components": components})
+    payload_candidates.append({**common, "embeds": [embed]})
 
     lines = [
         f"{emoji} **Global_News {status.upper()}**",
@@ -1183,25 +1253,27 @@ def notify_discord(report: Dict, error_message: str = "") -> Tuple[bool, str]:
         lines.append(f"**Source:** {source_url}")
     if reason:
         lines.append(f"**Reason:** {reason}")
+    payload_candidates.append({"content": "\n".join(lines)[:1900]})
 
-    raw_content = "\n".join(lines)
-    content = raw_content[:1900]
-    payload = {"content": content}
+    last_error = ""
+    for payload in payload_candidates:
+        req = urllib.request.Request(
+            webhook,
+            data=json.dumps(payload).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20):
+                return True, ""
+        except Exception as exc:
+            last_error = str(exc)
+            continue
 
-    req = urllib.request.Request(
-        webhook,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Content-Type": "application/json",
-            "User-Agent": USER_AGENT,
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=20):
-            return True, ""
-    except Exception as exc:
-        return False, str(exc)
+    return False, last_error or "discord-post-failed"
 
 
 def ensure_git_ready(repo_root: Path) -> Tuple[str, str]:
