@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-public-health-and-education-accountability-update-2",
+    title: "Global Health and Education Watch: Public health and education accountability update",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-global-health-and-education-watch-public-health-and-education-accountability-upd.jpg",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-public-health-and-education-accountability-update",
     title: "Global Health and Education Watch: Public health and education accountability update",
     summary:
