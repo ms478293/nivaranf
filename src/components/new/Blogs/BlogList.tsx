@@ -59,10 +59,22 @@ function isGlobalNewsCandidate(blog: {
   title: string;
   summary: string;
   slug: string;
+  author?: string;
 }) {
-  const haystack = `${blog.title} ${blog.summary} ${blog.slug}`.toLowerCase();
+  const haystack = `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""}`.toLowerCase();
   if (includesAny(haystack, NEPAL_TERMS)) return false;
   return includesAny(haystack, GLOBAL_TERMS);
+}
+
+function isNepalExclusiveCandidate(blog: {
+  title: string;
+  summary: string;
+  slug: string;
+  author?: string;
+}) {
+  const haystack = `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""}`.toLowerCase();
+  if (haystack.includes("global desk")) return false;
+  return !isGlobalNewsCandidate(blog);
 }
 
 export const BlogList = () => {
@@ -72,6 +84,14 @@ export const BlogList = () => {
   >("All");
   const allBlogs = useBlogFeed(500);
   const trendingBlogs = useTrendingBlogs(4);
+  const trendingNepalOnly = Array.from(
+    new Map(
+      [...trendingBlogs, ...allBlogs.filter(isNepalExclusiveCandidate)].map((blog) => [
+        blog.slug,
+        blog,
+      ])
+    ).values()
+  ).slice(0, 4);
 
   // const filteredBlogType = globalBlogs.filter(
   //   (blog) => blog.type === activeCategoryTag
@@ -157,13 +177,13 @@ export const BlogList = () => {
           {activeCategoryTag === "All" ? (
             <>
               <section className="">
-                <MainTitle prefix="Blogs" suffix="Latest" className="mb-6" />
-                <LatestBlogs blogs={allBlogs} />
+                <MainTitle prefix="Blogs" suffix="Trending" className="mb-6" />
+                <FilteredBlogsList blogs={trendingNepalOnly} />
               </section>
 
               <section className="mt-10">
-                <MainTitle prefix="Blogs" suffix="Trending" className="mb-6" />
-                <FilteredBlogsList blogs={trendingBlogs} />
+                <MainTitle prefix="Blogs" suffix="Latest" className="mb-6" />
+                <LatestBlogs blogs={allBlogs} />
               </section>
             </>
           ) : (
