@@ -32,16 +32,21 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 try:
-    from PIL import Image, ImageFilter
+    from PIL import Image, ImageFilter, ImageStat
 except Exception:
     Image = None
     ImageFilter = None
+    ImageStat = None
 
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 DEFAULT_TIMEOUT_SECONDS = 60
 TARGET_IMAGE_LONG_EDGE = 7680
+IMAGE_QUALITY_SUFFIX = (
+    "Documentary realism, sharp focus, high local contrast, crisp texture detail, "
+    "natural color science, no blur, no haze, no fog, no watercolor, no CGI."
+)
 
 HEALTH_TERMS = {
     "health",
@@ -418,6 +423,39 @@ def gemini_generate_image(
     raise RuntimeError("Gemini image model did not return inline image data")
 
 
+def image_sharpness_score(image_bytes: bytes) -> float:
+    if Image is None or ImageStat is None:
+        return 0.0
+    with Image.open(io.BytesIO(image_bytes)) as img:
+        gray = img.convert("L")
+        edges = gray.filter(ImageFilter.FIND_EDGES) if ImageFilter is not None else gray
+        return float(ImageStat.Stat(edges).var[0])
+
+
+def generate_best_gemini_image(
+    api_key: str, model: str, image_prompt: str, attempts: int
+) -> Tuple[bytes, str, float]:
+    attempts = max(1, attempts)
+    best_bytes: Optional[bytes] = None
+    best_mime = "image/png"
+    best_score = -1.0
+    final_prompt = f"{normalize_ws(image_prompt)} {IMAGE_QUALITY_SUFFIX}".strip()
+
+    for _ in range(attempts):
+        image_bytes, image_mime = gemini_generate_image(
+            api_key=api_key, model=model, image_prompt=final_prompt
+        )
+        sharpness = image_sharpness_score(image_bytes)
+        if sharpness > best_score:
+            best_score = sharpness
+            best_bytes = image_bytes
+            best_mime = image_mime
+
+    if best_bytes is None:
+        raise RuntimeError("Could not generate any image candidate")
+    return best_bytes, best_mime, best_score
+
+
 def words_count(text: str) -> int:
     stripped = re.sub(r"<[^>]+>", " ", text)
     stripped = re.sub(r"\s+", " ", stripped).strip()
@@ -749,6 +787,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
 
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
     image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
+    image_candidates = int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
 
     article_prompt = generate_article_prompt(selected)
     generated = gemini_text_json(api_key=api_key, model=text_model, prompt=article_prompt)
@@ -768,8 +807,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     article_slug = slugify(title)
     date_str = now.date().isoformat()
 
-    image_bytes, image_mime = gemini_generate_image(
-        api_key=api_key, model=image_model, image_prompt=image_prompt
+    image_bytes, image_mime, image_sharpness = generate_best_gemini_image(
+        api_key=api_key,
+        model=image_model,
+        image_prompt=image_prompt,
+        attempts=image_candidates,
     )
     image_bytes, image_mime, image_size = upscale_image_to_8k_long_edge(
         image_bytes=image_bytes, mime_type=image_mime
@@ -865,6 +907,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
                 "width": image_size[0],
                 "height": image_size[1],
             },
+            "generatedImageSharpness": image_sharpness,
+            "generatedImageCandidates": image_candidates,
             "publishResult": publish_result,
             "liveVerified": live_verified,
             "publishedInWindowAfter": state.get("publishedInWindow", 0),
