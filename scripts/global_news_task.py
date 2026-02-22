@@ -951,6 +951,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "targetMinIn12Hours": 10,
             "hardMaxIn12Hours": 16,
             "baseQualityScore": 70,
+            "forcePublishEveryRun": True,
         },
     )
 
@@ -960,6 +961,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     target_min: int = int(cfg.get("targetMinIn12Hours", 10))
     hard_max: int = int(cfg.get("hardMaxIn12Hours", 16))
     min_quality_score: int = max(70, int(cfg.get("baseQualityScore", 70)))
+    force_publish_every_run: bool = bool(cfg.get("forcePublishEveryRun", True))
 
     state = load_json(
         state_path,
@@ -1009,6 +1011,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     )
 
     candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    source_unique_candidates: List[Candidate] = []
     filtered_candidates: List[Candidate] = []
     duplicate_skip_stats = {"historyHash": 0, "historySource": 0, "existingSource": 0, "title": 0}
     for c in candidates:
@@ -1023,6 +1026,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         if source_link and source_link in existing_source_links:
             duplicate_skip_stats["existingSource"] += 1
             continue
+        source_unique_candidates.append(c)
         title_key = slugify(normalize_ws(c.title))
         if title_key and (title_key in history_title_keys or title_key in existing_title_keys):
             duplicate_skip_stats["title"] += 1
@@ -1045,8 +1049,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "hoursLeftInWindow": hours_left,
         "targetMinIn12Hours": target_min,
         "hardMaxIn12Hours": hard_max,
+        "forcePublishEveryRun": force_publish_every_run,
         "thresholdUsed": threshold_used,
         "candidatesFetched": len(candidates),
+        "candidatesAfterSourceDedupe": len(source_unique_candidates),
         "candidatesAfterDedupe": len(filtered_candidates),
         "duplicateSkips": duplicate_skip_stats,
         "shortlist": [
@@ -1062,7 +1068,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "reason": "",
     }
 
-    if published_in_window >= hard_max:
+    if (not force_publish_every_run) and published_in_window >= hard_max:
         run_report["reason"] = (
             f"hard max reached in current 12-hour window ({published_in_window}/{hard_max})"
         )
@@ -1073,12 +1079,19 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     # User rule: pick top ranked #1 candidate after filters.
     selected = eligible_candidates[0] if eligible_candidates else None
     fallback_used = False
+    fallback_reason = ""
     fallback_min_score = max(DUPLICATE_FALLBACK_MIN_SCORE, threshold_used - 12)
     if selected is None and filtered_candidates:
         fallback_pool = [c for c in filtered_candidates if c.score >= fallback_min_score]
         if fallback_pool:
             selected = fallback_pool[0]
             fallback_used = True
+            fallback_reason = "below_threshold"
+    if selected is None and force_publish_every_run and source_unique_candidates:
+        # Mandatory hourly publish fallback: relax title-duplicate filter but never source-link duplicates.
+        selected = source_unique_candidates[0]
+        fallback_used = True
+        fallback_reason = "title_dedupe_relaxed"
     if selected is None:
         run_report["reason"] = (
             "no non-duplicate trusted global health/education candidate available this hour"
@@ -1288,6 +1301,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             },
             "fallbackUsed": fallback_used,
             "fallbackMinScore": fallback_min_score if fallback_used else None,
+            "fallbackReason": fallback_reason if fallback_used else "",
             "generatedTitle": title,
             "generatedWordCount": words_count(body_markdown),
             "mainImage": main_image,
