@@ -22,7 +22,7 @@ export const globalBlogs: blogListType[] = [
     title: "Global Health Coverage Expands, Yet Billions Remain Vulnerable to Financial Ruin, Report Finds",
     summary:
       "A new joint report reveals that while global health service coverage has improved significantly since 2000, progress has slowed, leaving billions without essential care. Financial hardship remains a critical barrier, pushing 1.6 billion people deeper into poverty due to out-of-pocket medical expenses.",
-    thumbnailImage: "/images/global-news/2026/2026-02-22-global-health-coverage-expands-yet-billions-remain-vulnerable-to-financial-ruin-.png",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-global-health-coverage-expands-yet-billions-remain-vulnerable-to-financial-ruin-report-finds-v2.jpg",
     date: "2026-02-22",
     author: "Nivaran Foundation Global Desk",
     featured: false,
