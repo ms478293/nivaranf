@@ -5,8 +5,8 @@ Flow:
 1) Pull global health/education stories from trusted RSS feeds.
 2) Keep only trusted/verified, non-Nepal candidates related to health or education.
 3) Keep only score >= 70 and select top ranked #1 candidate.
-4) Generate long-form article + image prompt via Gemini.
-5) Generate image via Gemini image model.
+4) Generate long-form paraphrased article + image prompt via Gemini.
+5) Prefer source image with attribution; fallback to Gemini image model.
 6) Publish using scripts/publish-article.mjs (same site template pipeline).
 """
 
@@ -49,6 +49,9 @@ IMAGE_QUALITY_SUFFIX = (
     "natural color science, no blur, no haze, no fog, no watercolor, no CGI."
 )
 SOURCE_IMAGE_MIN_LONG_EDGE = 1400
+PARAPHRASE_SHINGLE_SIZE = 10
+PARAPHRASE_MAX_SHINGLE_OVERLAP = 0.04
+PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
 
 HEALTH_TERMS = {
     "health",
@@ -142,6 +145,48 @@ def normalize_ws(value: str) -> str:
 def strip_html(value: str) -> str:
     value = re.sub(r"<[^>]+>", " ", value or "")
     return normalize_ws(value)
+
+
+def strip_html_to_text(value: str) -> str:
+    text = value or ""
+    text = re.sub(r"(?is)<script[^>]*>.*?</script>", " ", text)
+    text = re.sub(r"(?is)<style[^>]*>.*?</style>", " ", text)
+    text = re.sub(r"(?is)<noscript[^>]*>.*?</noscript>", " ", text)
+    text = re.sub(r"(?is)<[^>]+>", " ", text)
+    text = html.unescape(text)
+    return normalize_ws(text)
+
+
+def normalize_for_similarity(value: str) -> str:
+    low = value.lower()
+    low = re.sub(r"[^a-z0-9\s]", " ", low)
+    return normalize_ws(low)
+
+
+def shingle_set(words: List[str], size: int) -> set[str]:
+    if len(words) < size:
+        return set()
+    return {" ".join(words[i : i + size]) for i in range(len(words) - size + 1)}
+
+
+def longest_exact_run_words(a_words: List[str], b_words: List[str]) -> int:
+    index: Dict[str, List[int]] = {}
+    for i, token in enumerate(b_words):
+        index.setdefault(token, []).append(i)
+
+    best = 0
+    for i, token in enumerate(a_words):
+        for j in index.get(token, []):
+            run = 0
+            while (
+                i + run < len(a_words)
+                and j + run < len(b_words)
+                and a_words[i + run] == b_words[j + run]
+            ):
+                run += 1
+            if run > best:
+                best = run
+    return best
 
 
 def slugify(value: str) -> str:
@@ -459,6 +504,77 @@ def try_fetch_source_image(article_url: str) -> Optional[Tuple[bytes, str, str]]
     return None
 
 
+def fetch_source_article_text(article_url: str) -> str:
+    try:
+        page_html = req_text(article_url, timeout=40, retries=1)
+    except Exception:
+        return ""
+    text = strip_html_to_text(page_html)
+    # Keep a bounded buffer for comparison to avoid giant pages.
+    words = text.split()
+    if len(words) > 8000:
+        words = words[:8000]
+    return " ".join(words)
+
+
+def check_paraphrase_quality(source_text: str, generated_markdown: str) -> Tuple[bool, Dict[str, float]]:
+    source_norm = normalize_for_similarity(source_text)
+    generated_norm = normalize_for_similarity(generated_markdown)
+
+    source_words = source_norm.split()
+    generated_words = generated_norm.split()
+    if len(source_words) < 80 or len(generated_words) < 120:
+        return True, {
+            "shingleOverlapRatio": 0.0,
+            "longestExactRunWords": 0.0,
+            "sourceWords": float(len(source_words)),
+            "generatedWords": float(len(generated_words)),
+        }
+
+    source_shingles = shingle_set(source_words, PARAPHRASE_SHINGLE_SIZE)
+    generated_shingles = shingle_set(generated_words, PARAPHRASE_SHINGLE_SIZE)
+    shared = source_shingles.intersection(generated_shingles)
+    overlap_ratio = len(shared) / max(len(generated_shingles), 1)
+    longest_run = longest_exact_run_words(generated_words, source_words)
+
+    is_ok = (
+        overlap_ratio <= PARAPHRASE_MAX_SHINGLE_OVERLAP
+        and longest_run <= PARAPHRASE_MAX_EXACT_RUN_WORDS
+    )
+    return is_ok, {
+        "shingleOverlapRatio": overlap_ratio,
+        "longestExactRunWords": float(longest_run),
+        "sourceWords": float(len(source_words)),
+        "generatedWords": float(len(generated_words)),
+    }
+
+
+def append_source_attribution(
+    body_markdown: str,
+    candidate: Candidate,
+    source_image_url: str,
+    image_provider_used: str,
+) -> str:
+    body = body_markdown.rstrip()
+    accessed_on = now_utc().strftime("%Y-%m-%d")
+    lines = [
+        "### Sources and Attribution",
+        (
+            f"- Primary source: [{candidate.title}]({candidate.link}) "
+            f"({candidate.domain}, accessed {accessed_on} UTC)."
+        ),
+    ]
+    if image_provider_used == "source" and source_image_url:
+        lines.append(
+            f"- Image source: [{candidate.domain}]({source_image_url}) "
+            "(used with editorial attribution)."
+        )
+    else:
+        lines.append("- Image source: Editorial illustration generated for this report.")
+
+    return body + "\n\n" + "\n".join(lines) + "\n"
+
+
 def extract_json_object(raw_text: str) -> Dict:
     raw_text = raw_text.strip()
     if raw_text.startswith("```"):
@@ -678,6 +794,8 @@ Hard rules:
 5) Do not write bullet-list style article sections.
 6) Do not include placeholders like Opening Hook, Closing, [brackets], template labels.
 7) Keep it journalistic, clear, and high-class.
+8) Fully paraphrase source material in your own wording; do not copy long source phrases.
+9) Include no direct quote unless clearly attributed and very short.
 
 Return JSON with exact keys:
 {{
@@ -889,13 +1007,53 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
     image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
     image_candidates = int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
+    article_attempts = max(1, int(os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS", "3")))
+    require_paraphrase = os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1").strip().lower() not in {
+        "0",
+        "false",
+        "no",
+    }
     image_provider = os.getenv("GLOBAL_NEWS_IMAGE_PROVIDER", "source_first").strip().lower()
     if image_provider not in {"source_first", "gemini_first", "gemini"}:
         image_provider = "source_first"
 
     article_prompt = generate_article_prompt(selected)
-    generated = gemini_text_json(api_key=api_key, model=text_model, prompt=article_prompt)
-    validate_generated_article(generated)
+    source_article_text = fetch_source_article_text(selected.link)
+
+    generated: Dict = {}
+    paraphrase_metrics: Dict[str, float] = {}
+    paraphrase_ok = True
+    paraphrase_failure_detail = ""
+    generation_prompt = article_prompt
+    for attempt in range(1, article_attempts + 1):
+        generated = gemini_text_json(api_key=api_key, model=text_model, prompt=generation_prompt)
+        validate_generated_article(generated)
+        candidate_body = str(generated.get("bodyMarkdown", "")).strip()
+        paraphrase_ok = True
+        if require_paraphrase and source_article_text:
+            paraphrase_ok, paraphrase_metrics = check_paraphrase_quality(
+                source_text=source_article_text,
+                generated_markdown=candidate_body,
+            )
+        if paraphrase_ok:
+            break
+        paraphrase_failure_detail = (
+            f"attempt {attempt}: overlap={paraphrase_metrics.get('shingleOverlapRatio', 0):.3f}, "
+            f"longest_run={int(paraphrase_metrics.get('longestExactRunWords', 0))}"
+        )
+        generation_prompt = (
+            article_prompt
+            + "\n\nRevision required: previous draft was too close to source phrasing. "
+            "Rewrite with distinctly different sentence structure and word choice while preserving facts."
+        )
+
+    if not generated:
+        raise RuntimeError("Gemini did not return article JSON")
+    if require_paraphrase and source_article_text and not paraphrase_ok:
+        raise RuntimeError(
+            "Generated article failed paraphrase quality checks; "
+            + (paraphrase_failure_detail or "overlap too high")
+        )
 
     title = normalize_ws(generated["title"])
     subtitle = normalize_ws(generated["subtitle"])
@@ -952,6 +1110,13 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         mime_type=image_mime,
         slug=article_slug or "global-news",
         date_str=date_str,
+    )
+
+    body_markdown = append_source_attribution(
+        body_markdown=body_markdown,
+        candidate=selected,
+        source_image_url=source_image_url,
+        image_provider_used=image_provider_used,
     )
 
     timestamp = now.strftime("%Y%m%dT%H%M%SZ")
@@ -1043,6 +1208,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             },
             "generatedImageSharpness": image_sharpness,
             "generatedImageCandidates": image_candidates,
+            "articleAttempts": article_attempts,
+            "paraphraseRequired": require_paraphrase,
+            "paraphrasePassed": paraphrase_ok,
+            "paraphraseMetrics": paraphrase_metrics,
             "imageProviderRequested": image_provider,
             "imageProviderUsed": image_provider_used,
             "sourceImageUrl": source_image_url,
