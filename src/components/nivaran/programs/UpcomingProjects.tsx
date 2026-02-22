@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CustomHeading } from "../common/CustomHeading";
-import { getBlogPathBySlug } from "@/lib/blog-routes";
 
 const projectsData: {
   name: string;
@@ -10,32 +9,18 @@ const projectsData: {
   link: string;
 }[] = [
   {
-    name: "Unity",
-    imgUrl: "/projects/images/projectUnityHero.jpg",
+    name: "Sanjeevani",
+    imgUrl: "/sanjeevani/sanjeevani-1.png",
     description:
-      "A project focused on bringing communities together through impactful initiatives.",
-    link: getBlogPathBySlug("unity"),
-  },
-  {
-    name: "Nurture",
-    imgUrl: "/projects/images/projectNurtureHero.jpg",
-    description:
-      "Empowering education and personal growth for the next generation.",
-    link: getBlogPathBySlug("nurture"),
+      "Expanding essential healthcare access for underserved communities across Nepal.",
+    link: "/sanjeevani",
   },
   {
     name: "Vidya",
     imgUrl: "/projects/images/projectVidyaHero.jpg",
     description:
-      "Driving innovation in education technology for a brighter future.",
-    link: getBlogPathBySlug("vidya"),
-  },
-  {
-    name: "Terra",
-    imgUrl: "/projects/images/projectTerraHero.jpg",
-    description:
-      "Promoting environmental sustainability through cutting-edge solutions.",
-    link: getBlogPathBySlug("terra"),
+      "Driving quality education, teacher support, and long-term learning outcomes.",
+    link: "/vidya",
   },
 ];
 

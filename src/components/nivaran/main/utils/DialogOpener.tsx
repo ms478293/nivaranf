@@ -7,7 +7,6 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { getBlogPathBySlug } from "@/lib/blog-routes";
 import { useScreenSize } from "@/lib/helpers/useScreenSize";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -71,38 +70,17 @@ export const DialogOpener = ({ isToolkitOpen, setIsToolkitOpen }) => {
         <div className="absolute top-4 left-4 flex  justify-end bg-black/40">
           <Button
             variant="link"
-            onClick={() => router.push(getBlogPathBySlug("sanjeevani"))}
+            onClick={() => router.push("/sanjeevani")}
             className="text-white text-xl bg-primary-main rounded-none "
           >
-            Project Sanjeevni
+            Project Sanjeevani
           </Button>
           <Button
             variant="link"
-            onClick={() => router.push(getBlogPathBySlug("unity"))}
-            className="text-white text-lg hover:bg-primary-main/50 rounded-none "
-          >
-            Project Unity
-          </Button>
-          <Button
-            variant="link"
-            onClick={() => router.push(getBlogPathBySlug("vidya"))}
+            onClick={() => router.push("/vidya")}
             className="text-white text-lg hover:bg-primary-main/50 rounded-none "
           >
             Project Vidya
-          </Button>
-          <Button
-            variant="link"
-            onClick={() => router.push(getBlogPathBySlug("terra"))}
-            className="text-white text-lg hover:bg-primary-main/50 rounded-none "
-          >
-            Project Terra
-          </Button>
-          <Button
-            variant="link"
-            onClick={() => router.push(getBlogPathBySlug("nurture"))}
-            className="text-white text-lg hover:bg-primary-main/50 rounded-none "
-          >
-            Project Nurture
           </Button>
         </div>
 

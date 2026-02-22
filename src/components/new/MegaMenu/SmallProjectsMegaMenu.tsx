@@ -11,24 +11,6 @@ export const PROJECT_DATA = [
     link: "/vidya",
     imgUrl: "/projects/images/projectVidyaHero.jpg",
   },
-  {
-    id: 2,
-    label: "Nurture",
-    link: "/nurture",
-    imgUrl: "/projects/images/projectNurtureHero.jpg",
-  },
-  {
-    id: 3,
-    label: "Terra",
-    link: "/terra",
-    imgUrl: "/projects/images/projectTerraHero.jpg",
-  },
-  {
-    id: 4,
-    label: "Unity",
-    link: "/unity",
-    imgUrl: "/projects/images/projectUnityHero.jpg",
-  },
 ];
 
 export const SmallProjectsMegaMenu = () => {
@@ -84,7 +66,7 @@ export const SmallProjectsMegaMenu = () => {
 
       <div className=" hidden sm:flex sm:flex-col gap-1">
         <h3 className="test-sm text-gray-600 font-medium text-nowrap">
-          Other Projects
+          Education Project
         </h3>
         <ul className="flex gap-2">
           {PROJECT_DATA.map((image) => (
@@ -97,7 +79,7 @@ export const SmallProjectsMegaMenu = () => {
                       width={500}
                       height={500}
                       className="w-full h-full object-cover object-center"
-                      alt="Project Sanjeevani"
+                      alt={`Project ${image.label}`}
                     />
                     <div className="hidden sm:block h-[35px] w-full bg-[linear-gradient(to_bottom,_transparent_0%_,transparent_0%_,black_50%)] absolute z-[10] bottom-0">
                       <p className="uppercase text-neutral-50 font-medium p-2">
@@ -114,7 +96,7 @@ export const SmallProjectsMegaMenu = () => {
 
       <ul className="flex flex-col gap-2 sm:hidden">
         <h3 className="test-sm text-gray-600 font-medium text-nowrap">
-          Other Projects
+          Education Project
         </h3>
         <RenderList
           data={PROJECT_DATA}
