@@ -41,6 +41,30 @@ export const SmallNewsAndStoriesMegaMenu = () => {
           )}
         />
       </div>
+      <div className="mt-3 flex flex-col gap-2 pr-3">
+        <SheetPrimitive.Close asChild>
+          <Link
+            href="/global-news"
+            className="rounded-lg border border-primary-200 bg-primary-100 px-3 py-2"
+          >
+            <p className="text-sm font-medium text-primary-700">Global News</p>
+            <p className="mt-0.5 text-xs text-primary-600">
+              Worldwide health and education headlines.
+            </p>
+          </Link>
+        </SheetPrimitive.Close>
+        <SheetPrimitive.Close asChild>
+          <Link
+            href="/news"
+            className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-2"
+          >
+            <p className="text-sm font-medium text-gray-800">Nepal News</p>
+            <p className="mt-0.5 text-xs text-gray-600">
+              Program updates and field alerts from Nepal.
+            </p>
+          </Link>
+        </SheetPrimitive.Close>
+      </div>
       <SheetPrimitive.Close>
         <AppButton variant="ghost" className="px-0 relative mt-3" asChild>
           <Link href="/blogs">

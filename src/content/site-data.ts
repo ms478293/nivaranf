@@ -195,6 +195,10 @@ export const newsAndStroiesData: {
   children?: { title: string; href: string }[];
 }[] = [
   { title: "View All", href: "/blogs" },
+  { title: "Global News", href: "/global-news" },
+  { title: "Nepal News", href: "/news" },
+  { title: "Articles", href: "/articles" },
+  { title: "Stories", href: "/stories" },
   {
     title: "Recent Stories",
     href: "/stories",
