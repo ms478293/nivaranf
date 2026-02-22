@@ -334,6 +334,18 @@ def slugify(value: str) -> str:
     return value[:80] if len(value) > 80 else value
 
 
+def to_absolute_url(base_url: str, value: str) -> str:
+    raw = normalize_ws(value or "")
+    if not raw:
+        return ""
+    if raw.startswith(("http://", "https://")):
+        return raw
+    if raw.startswith("//"):
+        return f"https:{raw}"
+    path = raw if raw.startswith("/") else f"/{raw}"
+    return f"{base_url}{path}"
+
+
 def req_json(
     url: str, payload: Dict, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2
 ) -> Dict:
@@ -1111,6 +1123,87 @@ def verify_live(url: str, expected_title: str, attempts: int = 12, delay_seconds
     return False
 
 
+def notify_discord(report: Dict, error_message: str = "") -> Tuple[bool, str]:
+    webhook = normalize_ws(
+        os.getenv("GLOBAL_NEWS_DISCORD_WEBHOOK_URL", "")
+        or os.getenv("DISCORD_WEBHOOK_URL", "")
+    )
+    if not webhook:
+        return False, "webhook-not-configured"
+
+    status = normalize_ws(str(report.get("status", ""))).lower() or "unknown"
+    is_error = bool(error_message)
+    if is_error:
+        status = "failed"
+
+    if status == "published":
+        emoji = "✅"
+    elif status in {"skipped", "dry-run"}:
+        emoji = "⏭️"
+    elif status == "failed":
+        emoji = "❌"
+    else:
+        emoji = "ℹ️"
+
+    title = normalize_ws(
+        str(
+            report.get("generatedTitle")
+            or (report.get("selectedCandidate") or {}).get("title")
+            or "Global_News update"
+        )
+    )
+    blog_url = normalize_ws(
+        str(report.get("blogUrl") or (report.get("publishResult") or {}).get("blogUrl") or "")
+    )
+    image_url = normalize_ws(
+        str(
+            report.get("imageUrl")
+            or report.get("mainImageUrl")
+            or (report.get("publishResult") or {}).get("imageUrl")
+            or (report.get("publishResult") or {}).get("mainImageUrl")
+            or ""
+        )
+    )
+    source_url = normalize_ws(
+        str((report.get("selectedCandidate") or {}).get("link") or "")
+    )
+    reason = normalize_ws(
+        error_message or str(report.get("reason") or report.get("gitSyncError") or "")
+    )
+
+    lines = [
+        f"{emoji} **Global_News {status.upper()}**",
+        f"**Title:** {title or 'n/a'}",
+    ]
+    if blog_url:
+        lines.append(f"**Published URL:** {blog_url}")
+    if image_url:
+        lines.append(f"**Image URL:** {image_url}")
+    if source_url:
+        lines.append(f"**Source:** {source_url}")
+    if reason:
+        lines.append(f"**Reason:** {reason}")
+
+    raw_content = "\n".join(lines)
+    content = raw_content[:1900]
+    payload = {"content": content}
+
+    req = urllib.request.Request(
+        webhook,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20):
+            return True, ""
+    except Exception as exc:
+        return False, str(exc)
+
+
 def ensure_git_ready(repo_root: Path) -> Tuple[str, str]:
     run_cmd(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_root)
     # Worktree-safe sync: never force checkout local `main` (may be active in another worktree).
@@ -1787,6 +1880,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     exclude_terms: List[str] = cfg.get("excludeTerms") or []
     target_min: int = int(cfg.get("targetMinIn12Hours", 10))
     hard_max: int = int(cfg.get("hardMaxIn12Hours", 16))
+    website_base_url = (
+        normalize_ws(os.getenv("NIVARAN_WEBSITE_URL", "https://www.nivaranfoundation.org"))
+        or "https://www.nivaranfoundation.org"
+    ).rstrip("/")
     min_quality_score: int = max(70, int(cfg.get("baseQualityScore", 70)))
     force_publish_every_run: bool = bool(cfg.get("forcePublishEveryRun", True))
     domain_diversity_window_runs: int = max(0, int(cfg.get("domainDiversityWindowRuns", 4)))
@@ -2317,6 +2414,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         slug=article_slug or "global-news",
         date_str=date_str,
     )
+    main_image_url = to_absolute_url(website_base_url, main_image)
 
     body_markdown = append_source_attribution(
         body_markdown=body_markdown,
@@ -2372,7 +2470,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     publish_stdout = run_cmd(publish_cmd, cwd=repo_root)
     publish_result = parse_publish_output(publish_stdout)
 
-    blog_url = publish_result.get("blogUrl", "")
+    blog_url = to_absolute_url(website_base_url, str(publish_result.get("blogUrl", "")))
+    publish_result["blogUrl"] = blog_url
+    publish_result["mainImage"] = main_image
+    publish_result["mainImageUrl"] = main_image_url
+    publish_result["imageUrl"] = main_image_url
     live_verified = True
     if blog_url and not args.dry_run:
         live_verified = verify_live(blog_url, title)
@@ -2387,6 +2489,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "publishedAtUtc": now.isoformat().replace("+00:00", "Z"),
             "slug": publish_result.get("slug"),
             "blogUrl": blog_url,
+            "mainImage": main_image,
+            "mainImageUrl": main_image_url,
         }
     )
     history = history[-400:]
@@ -2412,6 +2516,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "generatedTitle": title,
             "generatedWordCount": words_count(body_markdown),
             "mainImage": main_image,
+            "mainImageUrl": main_image_url,
+            "imageUrl": main_image_url,
+            "blogUrl": blog_url,
             "generatedImageSize": {
                 "width": image_size[0],
                 "height": image_size[1],
@@ -2468,9 +2575,31 @@ def main() -> int:
     args = parse_args()
     try:
         report = run_pipeline(args)
+        sent, notification_error = notify_discord(report)
+        report["discordNotification"] = {
+            "attempted": normalize_ws(
+                os.getenv("GLOBAL_NEWS_DISCORD_WEBHOOK_URL", "")
+                or os.getenv("DISCORD_WEBHOOK_URL", "")
+            )
+            != "",
+            "sent": sent,
+            "error": notification_error,
+        }
         print(json.dumps(report, indent=2, ensure_ascii=False))
         return 0
     except Exception as exc:
+        error_text = str(exc)
+        sent, notification_error = notify_discord(
+            {"status": "failed", "reason": error_text},
+            error_message=error_text,
+        )
+        if sent:
+            print("Discord notification sent for failed run.", file=sys.stderr)
+        elif notification_error and notification_error != "webhook-not-configured":
+            print(
+                f"Discord notification failed: {notification_error}",
+                file=sys.stderr,
+            )
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 

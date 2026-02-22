@@ -20,11 +20,38 @@ if [[ -z "${GEMINI_API_KEY:-}" ]]; then
   fi
 fi
 
+if [[ -z "${GLOBAL_NEWS_DISCORD_WEBHOOK_URL:-}" && -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
+  CODEX_HOME_DIR="${CODEX_HOME:-$HOME/.codex}"
+  MEMORY_FILE="${CODEX_HOME_DIR}/automations/global-news/memory.md"
+  if [[ -f "${MEMORY_FILE}" ]]; then
+    DISCORD_WEBHOOK_FROM_MEMORY="$(
+      LC_ALL=C grep -Eo 'https://(discord\\.com|discordapp\\.com)/api/webhooks/[0-9]+/[A-Za-z0-9._-]+' "${MEMORY_FILE}" | tail -n 1 || true
+    )"
+    if [[ -n "${DISCORD_WEBHOOK_FROM_MEMORY}" ]]; then
+      export GLOBAL_NEWS_DISCORD_WEBHOOK_URL="${DISCORD_WEBHOOK_FROM_MEMORY}"
+    fi
+  fi
+fi
+
 run_once() {
   python3 "${SCRIPT_DIR}/global_news_task.py" \
     --repo-root "${REPO_ROOT}" \
     --sources-file "${SCRIPT_DIR}/global-news.sources.json" \
     "$@"
+}
+
+flush_push_queue() {
+  local sync_script="${SCRIPT_DIR}/sync-queue.mjs"
+  if [[ ! -f "${sync_script}" ]]; then
+    return 0
+  fi
+
+  # Never block publishing because of queue sync failures; this is best-effort.
+  if node "${sync_script}" >/dev/null 2>&1; then
+    echo "Global_News queue sync completed." >&2
+  else
+    echo "Global_News queue sync skipped (offline or pending failures)." >&2
+  fi
 }
 
 kill_descendants() {
@@ -65,10 +92,12 @@ run_with_watchdog() {
   wait "${run_pid}"
 }
 
+flush_push_queue
 if run_with_watchdog "$@"; then
   exit 0
 fi
 
 echo "Global_News run failed once; retrying after short backoff..." >&2
 sleep 10
+flush_push_queue
 run_with_watchdog "$@"
