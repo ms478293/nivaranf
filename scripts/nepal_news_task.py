@@ -789,17 +789,8 @@ def append_source_attribution(
     source_image_url: str,
     image_provider_used: str,
 ) -> str:
-    body = body_markdown.rstrip()
-    accessed_on = now_utc().strftime("%Y-%m-%d")
-    lines = [
-        "### Sources and Attribution",
-        (
-            f"- Primary source: [{candidate.title}]({candidate.link}) "
-            f"(accessed {accessed_on} UTC)."
-        ),
-        "- Image: Editorial image generated with Gemini Pro for Nivaran Foundation.",
-    ]
-    return body + "\n\n" + "\n".join(lines) + "\n"
+    _ = (candidate, source_image_url, image_provider_used)
+    return body_markdown.rstrip() + "\n"
 
 
 def extract_json_object(raw_text: str) -> Dict:
@@ -1486,7 +1477,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "summary": summary,
         "mainImage": main_image,
         "coverImageAlt": title,
-        "coverImageCaption": "Editorial image generated with Gemini Pro for Nivaran Foundation.",
+        "coverImageCaption": "",
         "type": "News",
         "author": "Nivaran Foundation Nepal Desk",
         "featured": True,
