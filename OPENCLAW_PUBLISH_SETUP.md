@@ -89,3 +89,56 @@ Minimal OpenClaw flow:
 3. Save metadata JSON that points `bodyFile` to that markdown file.
 4. Run `publish_article.sh` with `--commit --push`.
 5. Read JSON output and store `blogUrl` for reporting.
+
+## 6) Global_News hourly task (auto research + write + image + publish)
+
+New files:
+
+- `scripts/global_news_task.py`
+- `scripts/global-news.sources.json`
+- `scripts/run_global_news.sh`
+
+This task does all steps automatically:
+
+1. Checks global health/education RSS sources hourly.
+2. Excludes Nepal-focused items.
+3. Scores stories and keeps top 3 each run.
+4. Selects best candidate (quality threshold + 12-hour quota logic).
+5. Uses Gemini text model to generate a 1000+ word article + metadata JSON.
+6. Uses Gemini image model to generate a cover image.
+7. Publishes through `publish-article.mjs` (same article template pipeline).
+8. Pushes to GitHub and verifies live URL title.
+
+### Required environment variables
+
+```bash
+export GEMINI_API_KEY="your_key_here"
+# Optional model overrides:
+export GEMINI_TEXT_MODEL="gemini-1.5-pro-latest"
+export GEMINI_IMAGE_MODEL="gemini-2.0-flash-preview-image-generation"
+```
+
+### Dry run
+
+```bash
+cd /Users/mst/Desktop/Nivaran/nivaranf-git
+./scripts/run_global_news.sh --dry-run
+```
+
+### Production run
+
+```bash
+cd /Users/mst/Desktop/Nivaran/nivaranf-git
+./scripts/run_global_news.sh
+```
+
+### Cron (hourly)
+
+```bash
+0 * * * * cd /Users/mst/Desktop/Nivaran/nivaranf-git && ./scripts/run_global_news.sh >> /var/log/nivaran-global-news.log 2>&1
+```
+
+State is stored at:
+
+- `.global_news/state.json`
+- `.global_news/tmp/`

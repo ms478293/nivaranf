@@ -1,0 +1,837 @@
+#!/usr/bin/env python3
+"""Global_News hourly pipeline for OpenClaw.
+
+Flow:
+1) Pull global health/education stories from trusted RSS feeds.
+2) Rank and shortlist top 3.
+3) Select one best candidate (dynamic threshold with 12-hour quota policy).
+4) Generate long-form article + image prompt via Gemini.
+5) Generate image via Gemini image model.
+6) Publish using scripts/publish-article.mjs (same site template pipeline).
+"""
+
+from __future__ import annotations
+
+import argparse
+import base64
+import datetime as dt
+import email.utils
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple
+
+USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
+GEMINI_TEXT_MODEL_DEFAULT = "gemini-1.5-pro-latest"
+GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-preview-image-generation"
+DEFAULT_TIMEOUT_SECONDS = 25
+
+HEALTH_TERMS = {
+    "health",
+    "public health",
+    "vaccine",
+    "vaccination",
+    "hospital",
+    "clinic",
+    "outbreak",
+    "disease",
+    "mortality",
+    "maternal",
+    "child health",
+    "nutrition",
+    "mental health",
+    "epidemic",
+}
+
+EDUCATION_TERMS = {
+    "education",
+    "school",
+    "teacher",
+    "students",
+    "learning",
+    "literacy",
+    "curriculum",
+    "classroom",
+    "university",
+}
+
+IMPACT_TERMS = {
+    "crisis",
+    "emergency",
+    "alert",
+    "reform",
+    "policy",
+    "funding",
+    "shortage",
+    "warning",
+    "report",
+    "study",
+    "who",
+    "unicef",
+    "unesco",
+}
+
+GLOBAL_TERMS = {
+    "global",
+    "world",
+    "international",
+    "across countries",
+    "multinational",
+    "cross-border",
+}
+
+BLOCK_TERMS = {
+    "advertorial",
+    "sponsored",
+    "opinion",
+    "op-ed",
+    "podcast",
+    "video",
+}
+
+
+@dataclass
+class Candidate:
+    title: str
+    link: str
+    summary: str
+    published_at: Optional[dt.datetime]
+    domain: str
+    score: float
+    health_hits: int
+    education_hits: int
+    reason: str
+
+
+def now_utc() -> dt.datetime:
+    return dt.datetime.now(dt.timezone.utc)
+
+
+def floor_hour(ts: dt.datetime) -> dt.datetime:
+    return ts.replace(minute=0, second=0, microsecond=0)
+
+
+def normalize_ws(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def strip_html(value: str) -> str:
+    value = re.sub(r"<[^>]+>", " ", value or "")
+    return normalize_ws(value)
+
+
+def slugify(value: str) -> str:
+    value = value.lower()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = re.sub(r"-{2,}", "-", value).strip("-")
+    return value[:80] if len(value) > 80 else value
+
+
+def req_json(url: str, payload: Dict, timeout: int = DEFAULT_TIMEOUT_SECONDS) -> Dict:
+    body = json.dumps(payload).encode("utf-8")
+    request = urllib.request.Request(
+        url,
+        data=body,
+        method="POST",
+        headers={
+            "Content-Type": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        data = response.read().decode("utf-8", errors="ignore")
+        return json.loads(data)
+
+
+def req_text(url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read().decode("utf-8", errors="ignore")
+
+
+def parse_datetime(raw: str) -> Optional[dt.datetime]:
+    if not raw:
+        return None
+    try:
+        parsed = email.utils.parsedate_to_datetime(raw)
+        if parsed.tzinfo is None:
+            return parsed.replace(tzinfo=dt.timezone.utc)
+        return parsed.astimezone(dt.timezone.utc)
+    except Exception:
+        pass
+
+    for fmt in ("%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
+        try:
+            parsed = dt.datetime.strptime(raw, fmt)
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=dt.timezone.utc)
+            return parsed.astimezone(dt.timezone.utc)
+        except Exception:
+            continue
+    return None
+
+
+def parse_feed_items(xml_text: str) -> List[Tuple[str, str, str, str]]:
+    items: List[Tuple[str, str, str, str]] = []
+    root = ET.fromstring(xml_text)
+
+    for item in root.findall(".//item"):
+        title = normalize_ws("".join(item.findtext("title", default="") or ""))
+        link = normalize_ws(item.findtext("link", default="") or "")
+        description = strip_html(item.findtext("description", default="") or "")
+        pub = normalize_ws(item.findtext("pubDate", default="") or "")
+        if title and link:
+            items.append((title, link, description, pub))
+
+    atom_ns = "{http://www.w3.org/2005/Atom}"
+    for entry in root.findall(f".//{atom_ns}entry"):
+        title = normalize_ws(entry.findtext(f"{atom_ns}title", default="") or "")
+        link = ""
+        for link_node in entry.findall(f"{atom_ns}link"):
+            href = (link_node.attrib.get("href") or "").strip()
+            rel = (link_node.attrib.get("rel") or "").strip()
+            if href and (not rel or rel == "alternate"):
+                link = href
+                break
+        summary = strip_html(entry.findtext(f"{atom_ns}summary", default="") or "")
+        if not summary:
+            summary = strip_html(entry.findtext(f"{atom_ns}content", default="") or "")
+        pub = normalize_ws(entry.findtext(f"{atom_ns}updated", default="") or "")
+        if title and link:
+            items.append((title, link, summary, pub))
+
+    return items
+
+
+def load_json(path: Path, fallback: Dict) -> Dict:
+    if not path.exists():
+        return fallback
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return fallback
+
+
+def save_json(path: Path, value: Dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def domain_of(url: str) -> str:
+    host = urllib.parse.urlparse(url).netloc.lower().strip()
+    return host[4:] if host.startswith("www.") else host
+
+
+def trusted_domain_score(domain: str, trusted_domains: List[str]) -> int:
+    for trusted in trusted_domains:
+        trusted = trusted.lower().strip()
+        if not trusted:
+            continue
+        if domain == trusted or domain.endswith("." + trusted):
+            return 35
+    if domain.endswith(".gov") or domain.endswith(".edu"):
+        return 26
+    if domain.endswith(".org"):
+        return 15
+    return 8
+
+
+def contains_blocked_term(text: str) -> bool:
+    low = text.lower()
+    return any(term in low for term in BLOCK_TERMS)
+
+
+def text_hits(text: str, terms: set[str]) -> int:
+    low = text.lower()
+    return sum(1 for t in terms if t in low)
+
+
+def build_candidate(
+    title: str,
+    link: str,
+    summary: str,
+    pub_raw: str,
+    trusted_domains: List[str],
+    exclude_terms: List[str],
+) -> Optional[Candidate]:
+    merged_text = f"{title} {summary}".lower()
+    if any(term.lower() in merged_text for term in exclude_terms):
+        return None
+    if contains_blocked_term(merged_text):
+        return None
+
+    domain = domain_of(link)
+    health_hits = text_hits(merged_text, HEALTH_TERMS)
+    education_hits = text_hits(merged_text, EDUCATION_TERMS)
+    if health_hits == 0 and education_hits == 0:
+        return None
+
+    impact_hits = text_hits(merged_text, IMPACT_TERMS)
+    global_hits = text_hits(merged_text, GLOBAL_TERMS)
+    credibility = trusted_domain_score(domain, trusted_domains)
+    published_at = parse_datetime(pub_raw)
+
+    freshness = 0
+    if published_at:
+        age_hours = (now_utc() - published_at).total_seconds() / 3600
+        if age_hours <= 24:
+            freshness = 18
+        elif age_hours <= 72:
+            freshness = 10
+        elif age_hours <= 168:
+            freshness = 4
+
+    relevance = 12 + (health_hits * 5) + (education_hits * 5)
+    if health_hits > 0 and education_hits > 0:
+        relevance += 6
+    relevance += impact_hits * 2
+    relevance += min(global_hits * 2, 6)
+
+    score = relevance + credibility + freshness
+    reason = (
+        f"relevance={relevance}, credibility={credibility}, freshness={freshness}, "
+        f"health_hits={health_hits}, education_hits={education_hits}"
+    )
+
+    return Candidate(
+        title=title,
+        link=link,
+        summary=summary,
+        published_at=published_at,
+        domain=domain,
+        score=score,
+        health_hits=health_hits,
+        education_hits=education_hits,
+        reason=reason,
+    )
+
+
+def extract_json_object(raw_text: str) -> Dict:
+    raw_text = raw_text.strip()
+    if raw_text.startswith("```"):
+        raw_text = re.sub(r"^```[a-zA-Z0-9_-]*\n?", "", raw_text)
+        raw_text = re.sub(r"\n?```$", "", raw_text)
+    if raw_text.startswith("{"):
+        return json.loads(raw_text)
+
+    match = re.search(r"\{[\s\S]*\}", raw_text)
+    if not match:
+        raise RuntimeError("Gemini response did not contain JSON object")
+    return json.loads(match.group(0))
+
+
+def gemini_text_json(api_key: str, model: str, prompt: str) -> Dict:
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}"
+        f":generateContent?key={urllib.parse.quote(api_key)}"
+    )
+    payload = {
+        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0.45,
+            "topP": 0.9,
+            "responseMimeType": "application/json",
+        },
+    }
+    response = req_json(url, payload)
+    candidates = response.get("candidates") or []
+    if not candidates:
+        raise RuntimeError("Gemini returned no candidates")
+    parts = candidates[0].get("content", {}).get("parts", [])
+    text_parts = [p.get("text", "") for p in parts if isinstance(p, dict) and p.get("text")]
+    if not text_parts:
+        raise RuntimeError("Gemini response missing text payload")
+    return extract_json_object("\n".join(text_parts))
+
+
+def gemini_generate_image(
+    api_key: str, model: str, image_prompt: str
+) -> Tuple[bytes, str]:
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/models/{model}"
+        f":generateContent?key={urllib.parse.quote(api_key)}"
+    )
+    payload = {
+        "contents": [{"role": "user", "parts": [{"text": image_prompt}]}],
+        "generationConfig": {
+            "responseModalities": ["TEXT", "IMAGE"],
+            "temperature": 0.3,
+        },
+    }
+    response = req_json(url, payload)
+    for candidate in response.get("candidates", []):
+        for part in candidate.get("content", {}).get("parts", []):
+            inline = part.get("inlineData")
+            if not inline:
+                continue
+            data = inline.get("data")
+            mime = inline.get("mimeType", "image/png")
+            if data:
+                return base64.b64decode(data), mime
+    raise RuntimeError("Gemini image model did not return inline image data")
+
+
+def words_count(text: str) -> int:
+    stripped = re.sub(r"<[^>]+>", " ", text)
+    stripped = re.sub(r"\s+", " ", stripped).strip()
+    return 0 if not stripped else len(stripped.split(" "))
+
+
+def validate_generated_article(payload: Dict) -> None:
+    required_fields = [
+        "title",
+        "subtitle",
+        "summary",
+        "keywords",
+        "shareMessage",
+        "donateLine",
+        "authorBio",
+        "imagePrompt",
+        "bodyMarkdown",
+    ]
+    missing = [key for key in required_fields if not normalize_ws(str(payload.get(key, "")))]
+    if missing:
+        raise RuntimeError(f"Gemini article JSON missing required fields: {', '.join(missing)}")
+
+    wc = words_count(str(payload["bodyMarkdown"]))
+    if wc < 1000:
+        raise RuntimeError(f"Generated article too short ({wc} words); need >= 1000")
+
+    body_low = str(payload["bodyMarkdown"]).lower()
+    banned_markers = ["opening hook", "[article title", "[subtitle", "all 20 must pass"]
+    for marker in banned_markers:
+        if marker in body_low:
+            raise RuntimeError(f"Generated article contains invalid template marker: {marker}")
+
+
+def run_cmd(cmd: List[str], cwd: Path, env: Optional[Dict[str, str]] = None) -> str:
+    completed = subprocess.run(
+        cmd,
+        cwd=str(cwd),
+        env=env,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(
+            f"Command failed ({' '.join(cmd)}):\nSTDOUT:\n{completed.stdout}\nSTDERR:\n{completed.stderr}"
+        )
+    return completed.stdout.strip()
+
+
+def parse_publish_output(stdout: str) -> Dict:
+    stdout = stdout.strip()
+    if not stdout:
+        raise RuntimeError("Publish script produced empty output")
+    try:
+        return json.loads(stdout)
+    except Exception:
+        match = re.search(r"\{[\s\S]*\}\s*$", stdout)
+        if not match:
+            raise RuntimeError(f"Could not parse publish output JSON:\n{stdout}")
+        return json.loads(match.group(0))
+
+
+def verify_live(url: str, expected_title: str, attempts: int = 12, delay_seconds: int = 10) -> bool:
+    for _ in range(attempts):
+        try:
+            html = req_text(url, timeout=20).lower()
+            if expected_title.lower() in html:
+                return True
+        except Exception:
+            pass
+        time.sleep(delay_seconds)
+    return False
+
+
+def ensure_git_ready(repo_root: Path) -> None:
+    run_cmd(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_root)
+    run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
+
+
+def choose_threshold(base: int, target_min: int, published_count: int, hours_left: int) -> int:
+    needed = max(0, target_min - published_count)
+    urgency = needed / max(hours_left, 1)
+    threshold = base
+    if urgency >= 2.0:
+        threshold = base - 16
+    elif urgency >= 1.5:
+        threshold = base - 10
+    elif urgency >= 1.0:
+        threshold = base - 6
+    return max(52, threshold)
+
+
+def generate_article_prompt(candidate: Candidate) -> str:
+    published_label = (
+        candidate.published_at.strftime("%Y-%m-%d %H:%M UTC")
+        if candidate.published_at
+        else "unknown"
+    )
+    return f"""
+You are writing for Nivaran Foundation's GLOBAL news desk.
+Return ONLY JSON. No markdown fences.
+
+Context:
+- Source title: {candidate.title}
+- Source link: {candidate.link}
+- Source summary: {candidate.summary}
+- Source domain: {candidate.domain}
+- Source published: {published_label}
+
+Hard rules:
+1) Topic must be global and related to health or education.
+2) Exclude Nepal-specific framing completely.
+3) Article quality must be publication-ready, factual, and non-rubbish.
+4) Body must be 1000-1300 words in strong paragraph form.
+5) Do not write bullet-list style article sections.
+6) Do not include placeholders like Opening Hook, Closing, [brackets], template labels.
+7) Keep it journalistic, clear, and high-class.
+
+Return JSON with exact keys:
+{{
+  "title": "compelling headline, max 14 words",
+  "subtitle": "one-line subtitle, max 24 words",
+  "summary": "2 concise sentences for listing card",
+  "keywords": "comma-separated SEO keywords",
+  "location": "Global",
+  "shareMessage": "under 280 chars, include {{URL}} placeholder",
+  "donateLine": "specific one-line support statement tied to this article",
+  "authorBio": "Nivaran Foundation global desk bio line",
+  "imagePrompt": "photorealistic editorial image prompt for Gemini image model, no text/watermark/logo",
+  "bodyMarkdown": "full article markdown with paragraph style and optional subheadings"
+}}
+""".strip()
+
+
+def fetch_candidates(source_urls: List[str], trusted_domains: List[str], exclude_terms: List[str]) -> List[Candidate]:
+    seen_ids: set[str] = set()
+    candidates: List[Candidate] = []
+
+    for feed_url in source_urls:
+        try:
+            xml_text = req_text(feed_url)
+            items = parse_feed_items(xml_text)
+        except Exception:
+            continue
+
+        for title, link, description, pub in items:
+            key = hashlib.sha1((title + "|" + link).encode("utf-8")).hexdigest()
+            if key in seen_ids:
+                continue
+            seen_ids.add(key)
+            candidate = build_candidate(
+                title=title,
+                link=link,
+                summary=description,
+                pub_raw=pub,
+                trusted_domains=trusted_domains,
+                exclude_terms=exclude_terms,
+            )
+            if candidate is None:
+                continue
+            candidates.append(candidate)
+
+    candidates.sort(key=lambda c: c.score, reverse=True)
+    return candidates
+
+
+def write_image(repo_root: Path, image_bytes: bytes, mime_type: str, slug: str, date_str: str) -> str:
+    ext = ".png"
+    if mime_type == "image/jpeg":
+        ext = ".jpg"
+    elif mime_type == "image/webp":
+        ext = ".webp"
+
+    year = date_str[:4]
+    rel_path = Path("images") / "global-news" / year / f"{date_str}-{slug}{ext}"
+    abs_path = repo_root / "public" / rel_path
+    abs_path.parent.mkdir(parents=True, exist_ok=True)
+    abs_path.write_bytes(image_bytes)
+    return "/" + str(rel_path).replace("\\", "/")
+
+
+def run_pipeline(args: argparse.Namespace) -> Dict:
+    repo_root = Path(args.repo_root).resolve()
+    state_path = Path(args.state_file).resolve()
+    source_cfg_path = Path(args.sources_file).resolve()
+    tmp_dir = Path(args.tmp_dir).resolve()
+    tmp_dir.mkdir(parents=True, exist_ok=True)
+
+    cfg = load_json(
+        source_cfg_path,
+        {
+            "sourceUrls": [],
+            "trustedDomains": [],
+            "excludeTerms": ["nepal", "kathmandu", "pokhara", "lalitpur", "karnali"],
+            "targetMinIn12Hours": 10,
+            "hardMaxIn12Hours": 16,
+            "baseQualityScore": 70,
+        },
+    )
+
+    source_urls: List[str] = cfg.get("sourceUrls") or []
+    trusted_domains: List[str] = cfg.get("trustedDomains") or []
+    exclude_terms: List[str] = cfg.get("excludeTerms") or []
+    target_min: int = int(cfg.get("targetMinIn12Hours", 10))
+    hard_max: int = int(cfg.get("hardMaxIn12Hours", 16))
+    base_score: int = int(cfg.get("baseQualityScore", 70))
+
+    state = load_json(
+        state_path,
+        {
+            "windowStartUtc": "",
+            "publishedInWindow": 0,
+            "history": [],
+            "runs": [],
+        },
+    )
+
+    now = now_utc()
+    window_start_raw = state.get("windowStartUtc")
+    window_start = parse_datetime(window_start_raw) if window_start_raw else None
+    if window_start is None:
+        window_start = floor_hour(now)
+        state["windowStartUtc"] = window_start.isoformat().replace("+00:00", "Z")
+        state["publishedInWindow"] = 0
+
+    if (now - window_start) >= dt.timedelta(hours=12):
+        window_start = floor_hour(now)
+        state["windowStartUtc"] = window_start.isoformat().replace("+00:00", "Z")
+        state["publishedInWindow"] = 0
+
+    published_in_window = int(state.get("publishedInWindow", 0))
+    hours_elapsed = int((now - window_start).total_seconds() // 3600)
+    hours_left = max(1, 12 - hours_elapsed)
+
+    history: List[Dict] = state.get("history") or []
+    history_ids = {
+        item.get("contentHash")
+        for item in history
+        if isinstance(item, dict) and item.get("contentHash")
+    }
+
+    candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    filtered_candidates: List[Candidate] = []
+    for c in candidates:
+        content_hash = hashlib.sha1((c.title + "|" + c.link).encode("utf-8")).hexdigest()
+        if content_hash in history_ids:
+            continue
+        filtered_candidates.append(c)
+
+    shortlist = filtered_candidates[:3]
+    threshold = choose_threshold(
+        base=base_score,
+        target_min=target_min,
+        published_count=published_in_window,
+        hours_left=hours_left,
+    )
+
+    run_report: Dict = {
+        "ranAtUtc": now.isoformat().replace("+00:00", "Z"),
+        "windowStartUtc": state["windowStartUtc"],
+        "publishedInWindowBefore": published_in_window,
+        "hoursLeftInWindow": hours_left,
+        "targetMinIn12Hours": target_min,
+        "hardMaxIn12Hours": hard_max,
+        "thresholdUsed": threshold,
+        "shortlist": [
+            {
+                "title": c.title,
+                "link": c.link,
+                "score": c.score,
+                "reason": c.reason,
+            }
+            for c in shortlist
+        ],
+        "status": "skipped",
+        "reason": "",
+    }
+
+    if published_in_window >= hard_max:
+        run_report["reason"] = (
+            f"hard max reached in current 12-hour window ({published_in_window}/{hard_max})"
+        )
+        state.setdefault("runs", []).append(run_report)
+        save_json(state_path, state)
+        return run_report
+
+    selected = next((c for c in shortlist if c.score >= threshold), None)
+    if selected is None:
+        run_report["reason"] = "no candidate passed quality threshold this hour"
+        state.setdefault("runs", []).append(run_report)
+        save_json(state_path, state)
+        return run_report
+
+    api_key = os.getenv("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY is required")
+
+    text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
+    image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
+
+    article_prompt = generate_article_prompt(selected)
+    generated = gemini_text_json(api_key=api_key, model=text_model, prompt=article_prompt)
+    validate_generated_article(generated)
+
+    title = normalize_ws(generated["title"])
+    subtitle = normalize_ws(generated["subtitle"])
+    summary = normalize_ws(generated["summary"])
+    keywords = normalize_ws(generated["keywords"])
+    location = normalize_ws(generated.get("location", "Global") or "Global")
+    share_message = normalize_ws(generated["shareMessage"])
+    donate_line = normalize_ws(generated["donateLine"])
+    author_bio = normalize_ws(generated["authorBio"])
+    image_prompt = normalize_ws(generated["imagePrompt"])
+    body_markdown = str(generated["bodyMarkdown"]).strip() + "\n"
+
+    article_slug = slugify(title)
+    date_str = now.date().isoformat()
+
+    image_bytes, image_mime = gemini_generate_image(
+        api_key=api_key, model=image_model, image_prompt=image_prompt
+    )
+    main_image = write_image(
+        repo_root=repo_root,
+        image_bytes=image_bytes,
+        mime_type=image_mime,
+        slug=article_slug or "global-news",
+        date_str=date_str,
+    )
+
+    timestamp = now.strftime("%Y%m%dT%H%M%SZ")
+    body_file = tmp_dir / f"{timestamp}-{article_slug}.body.md"
+    config_file = tmp_dir / f"{timestamp}-{article_slug}.json"
+    body_file.write_text(body_markdown, encoding="utf-8")
+
+    article_config = {
+        "title": title,
+        "subtitle": subtitle,
+        "summary": summary,
+        "mainImage": main_image,
+        "coverImageAlt": title,
+        "coverImageCaption": f"Source context: {selected.domain}. Visual generated with Gemini for editorial use.",
+        "type": "News",
+        "author": "Nivaran Foundation Global Desk",
+        "featured": False,
+        "date": date_str,
+        "location": location,
+        "keywords": keywords,
+        "shareMessage": share_message,
+        "donateLine": donate_line,
+        "authorBio": author_bio,
+        "bodyFile": str(body_file),
+        "commitMessage": f"Auto publish global news: {title}",
+    }
+    config_file.write_text(json.dumps(article_config, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    if not args.dry_run:
+        ensure_git_ready(repo_root)
+
+    publish_cmd = [
+        "node",
+        str(repo_root / "scripts" / "publish-article.mjs"),
+        "--repo",
+        str(repo_root),
+        "--config",
+        str(config_file),
+    ]
+    if args.dry_run:
+        publish_cmd.append("--dry-run")
+    else:
+        publish_cmd.extend(["--commit", "--push"])
+
+    publish_stdout = run_cmd(publish_cmd, cwd=repo_root)
+    publish_result = parse_publish_output(publish_stdout)
+
+    blog_url = publish_result.get("blogUrl", "")
+    live_verified = True
+    if blog_url and not args.dry_run:
+        live_verified = verify_live(blog_url, title)
+
+    content_hash = hashlib.sha1((selected.title + "|" + selected.link).encode("utf-8")).hexdigest()
+    history.append(
+        {
+            "contentHash": content_hash,
+            "sourceTitle": selected.title,
+            "sourceUrl": selected.link,
+            "publishedAtUtc": now.isoformat().replace("+00:00", "Z"),
+            "slug": publish_result.get("slug"),
+            "blogUrl": blog_url,
+        }
+    )
+    history = history[-400:]
+    state["history"] = history
+    if not args.dry_run:
+        state["publishedInWindow"] = int(state.get("publishedInWindow", 0)) + 1
+
+    run_report.update(
+        {
+            "status": "published" if not args.dry_run else "dry-run",
+            "reason": "",
+            "selectedCandidate": {
+                "title": selected.title,
+                "link": selected.link,
+                "score": selected.score,
+                "reason": selected.reason,
+            },
+            "generatedTitle": title,
+            "generatedWordCount": words_count(body_markdown),
+            "mainImage": main_image,
+            "publishResult": publish_result,
+            "liveVerified": live_verified,
+            "publishedInWindowAfter": state.get("publishedInWindow", 0),
+        }
+    )
+    state.setdefault("runs", []).append(run_report)
+    state["runs"] = state["runs"][-240:]
+    save_json(state_path, state)
+    return run_report
+
+
+def parse_args() -> argparse.Namespace:
+    root_default = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description="Global_News hourly pipeline")
+    parser.add_argument("--repo-root", default=str(root_default), help="Repo root path")
+    parser.add_argument(
+        "--sources-file",
+        default=str(Path(__file__).with_name("global-news.sources.json")),
+        help="Source/trust configuration JSON",
+    )
+    parser.add_argument(
+        "--state-file",
+        default=str(root_default / ".global_news" / "state.json"),
+        help="State file for dedupe and quota window",
+    )
+    parser.add_argument(
+        "--tmp-dir",
+        default=str(root_default / ".global_news" / "tmp"),
+        help="Temp directory for generated config/body files",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="Do not commit/push")
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    try:
+        report = run_pipeline(args)
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 0
+    except Exception as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,43 @@
+{
+  "sourceUrls": [
+    "https://news.google.com/rss/search?q=(global+health+OR+public+health)+when:1d+-Nepal&hl=en-US&gl=US&ceid=US:en",
+    "https://news.google.com/rss/search?q=(global+education+OR+school+policy)+when:1d+-Nepal&hl=en-US&gl=US&ceid=US:en",
+    "https://www.who.int/rss-feeds/news-english.xml",
+    "https://www.unesco.org/en/articles/rss.xml"
+  ],
+  "trustedDomains": [
+    "who.int",
+    "unesco.org",
+    "un.org",
+    "worldbank.org",
+    "oecd.org",
+    "ourworldindata.org",
+    "reuters.com",
+    "apnews.com",
+    "bbc.com",
+    "ft.com",
+    "economist.com",
+    "nature.com",
+    "thelancet.com",
+    "bmj.com",
+    "statnews.com",
+    "nytimes.com",
+    "washingtonpost.com",
+    "theguardian.com",
+    "aljazeera.com",
+    "cdc.gov",
+    "nih.gov"
+  ],
+  "excludeTerms": [
+    "nepal",
+    "kathmandu",
+    "pokhara",
+    "lalitpur",
+    "karnali",
+    "bagmati",
+    "janakpur"
+  ],
+  "targetMinIn12Hours": 10,
+  "hardMaxIn12Hours": 16,
+  "baseQualityScore": 70
+}
