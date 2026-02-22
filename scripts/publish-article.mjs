@@ -131,6 +131,21 @@ function getPublicPath(articleType, slug) {
   return `/${segment}/${slug}`;
 }
 
+function resolveLocalPublicAsset(repoRoot, maybePublicPath) {
+  if (typeof maybePublicPath !== "string" || maybePublicPath.trim().length === 0) {
+    return null;
+  }
+  if (!maybePublicPath.startsWith("/")) {
+    return null;
+  }
+  const relFromPublic = maybePublicPath.replace(/^\/+/, "");
+  const absPath = path.join(repoRoot, "public", relFromPublic);
+  if (!fs.existsSync(absPath)) {
+    return null;
+  }
+  return path.relative(repoRoot, absPath);
+}
+
 function main() {
   const args = parseArgs(process.argv);
   const repoRoot = path.resolve(args.repo || process.cwd());
@@ -292,7 +307,12 @@ function main() {
 
   if (args.commit || args.push) {
     git(repoRoot, ["rev-parse", "--is-inside-work-tree"]);
-    git(repoRoot, ["add", relMdxPath, relListPath]);
+    const filesToAdd = [relMdxPath, relListPath];
+    const localMainImagePath = resolveLocalPublicAsset(repoRoot, merged.mainImage);
+    if (localMainImagePath) {
+      filesToAdd.push(localMainImagePath);
+    }
+    git(repoRoot, ["add", ...filesToAdd]);
     const commitMessage = merged.commitMessage || `Publish article: ${merged.title}`;
     git(repoRoot, ["commit", "-m", commitMessage]);
   }

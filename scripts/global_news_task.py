@@ -3,8 +3,8 @@
 
 Flow:
 1) Pull global health/education stories from trusted RSS feeds.
-2) Rank and shortlist top 3.
-3) Select one best candidate (dynamic threshold with 12-hour quota policy).
+2) Keep only trusted/verified, non-Nepal candidates related to health or education.
+3) Keep only score >= 70 and select top ranked #1 candidate.
 4) Generate long-form article + image prompt via Gemini.
 5) Generate image via Gemini image model.
 6) Publish using scripts/publish-article.mjs (same site template pipeline).
@@ -251,13 +251,19 @@ def domain_of(url: str) -> str:
     return host[4:] if host.startswith("www.") else host
 
 
-def trusted_domain_score(domain: str, trusted_domains: List[str]) -> int:
+def is_trusted_domain(domain: str, trusted_domains: List[str]) -> bool:
     for trusted in trusted_domains:
         trusted = trusted.lower().strip()
         if not trusted:
             continue
         if domain == trusted or domain.endswith("." + trusted):
-            return 35
+            return True
+    return False
+
+
+def trusted_domain_score(domain: str, trusted_domains: List[str]) -> int:
+    if is_trusted_domain(domain, trusted_domains):
+        return 35
     if domain.endswith(".gov") or domain.endswith(".edu"):
         return 26
     if domain.endswith(".org"):
@@ -290,6 +296,10 @@ def build_candidate(
         return None
 
     domain = domain_of(link)
+    # Enforce user rule: only trusted and verified sources.
+    if not is_trusted_domain(domain, trusted_domains):
+        return None
+
     health_hits = text_hits(merged_text, HEALTH_TERMS)
     education_hits = text_hits(merged_text, EDUCATION_TERMS)
     if health_hits == 0 and education_hits == 0:
@@ -319,7 +329,7 @@ def build_candidate(
     score = relevance + credibility + freshness
     reason = (
         f"relevance={relevance}, credibility={credibility}, freshness={freshness}, "
-        f"health_hits={health_hits}, education_hits={education_hits}"
+        f"health_hits={health_hits}, education_hits={education_hits}, global_hits={global_hits}"
     )
 
     return Candidate(
@@ -476,6 +486,10 @@ def verify_live(url: str, expected_title: str, attempts: int = 12, delay_seconds
 
 def ensure_git_ready(repo_root: Path) -> None:
     run_cmd(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_root)
+    current_ref = run_cmd(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_root)
+    if current_ref != "main":
+        # Ensure automated publish commits land on main instead of detached HEAD.
+        run_cmd(["git", "checkout", "main"], cwd=repo_root)
     run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
 
 
@@ -605,7 +619,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     exclude_terms: List[str] = cfg.get("excludeTerms") or []
     target_min: int = int(cfg.get("targetMinIn12Hours", 10))
     hard_max: int = int(cfg.get("hardMaxIn12Hours", 16))
-    base_score: int = int(cfg.get("baseQualityScore", 70))
+    min_quality_score: int = max(70, int(cfg.get("baseQualityScore", 70)))
 
     state = load_json(
         state_path,
@@ -649,13 +663,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             continue
         filtered_candidates.append(c)
 
-    shortlist = filtered_candidates[:3]
-    threshold = choose_threshold(
-        base=base_score,
-        target_min=target_min,
-        published_count=published_in_window,
-        hours_left=hours_left,
-    )
+    # Enforce user rule: only candidates with score >= 70 are eligible.
+    eligible_candidates = [c for c in filtered_candidates if c.score >= min_quality_score]
+    shortlist = eligible_candidates[:3]
 
     run_report: Dict = {
         "ranAtUtc": now.isoformat().replace("+00:00", "Z"),
@@ -664,7 +674,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "hoursLeftInWindow": hours_left,
         "targetMinIn12Hours": target_min,
         "hardMaxIn12Hours": hard_max,
-        "thresholdUsed": threshold,
+        "thresholdUsed": min_quality_score,
         "shortlist": [
             {
                 "title": c.title,
@@ -686,9 +696,12 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         save_json(state_path, state)
         return run_report
 
-    selected = next((c for c in shortlist if c.score >= threshold), None)
+    # User rule: pick top ranked #1 candidate after filters.
+    selected = eligible_candidates[0] if eligible_candidates else None
     if selected is None:
-        run_report["reason"] = "no candidate passed quality threshold this hour"
+        run_report["reason"] = (
+            "no trusted global health/education candidate scored >= 70 this hour"
+        )
         state.setdefault("runs", []).append(run_report)
         save_json(state_path, state)
         return run_report
