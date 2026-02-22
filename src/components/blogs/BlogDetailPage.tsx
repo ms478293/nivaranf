@@ -458,6 +458,8 @@ export async function renderBlogDetailPage({
                 alt={data.coverImageAlt || title}
                 width={1200}
                 height={675}
+                quality={100}
+                sizes="(max-width: 768px) 100vw, 1200px"
                 priority
                 className={styles.coverImage}
               />
