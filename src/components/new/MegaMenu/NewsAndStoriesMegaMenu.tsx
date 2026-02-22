@@ -3,18 +3,85 @@
 import BlogCard from "@/components/nivaran/common/BlogCard";
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
+import { useBlogFeed } from "@/lib/content/useBlogFeed";
 import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import { useMegaMenuStore } from "@/store/useMegamenuStore";
 import Link from "next/link";
+import { useMemo } from "react";
+
+const NEPAL_TERMS = [
+  "nepal",
+  "kathmandu",
+  "pokhara",
+  "lumbini",
+  "karnali",
+  "terai",
+  "jajarkot",
+  "dolpa",
+  "jumla",
+  "bajura",
+  "mugu",
+  "birgunj",
+];
+
+const GLOBAL_TERMS = [
+  "global",
+  "world",
+  "international",
+  "cross-border",
+  "cross border",
+  "who",
+  "unicef",
+  "unesco",
+  "unhcr",
+  "united nations",
+  "africa",
+  "asia",
+  "europe",
+  "latin america",
+  "middle east",
+  "sudan",
+  "gaza",
+  "ukraine",
+  "bangladesh",
+  "india",
+  "pakistan",
+  "sri lanka",
+];
+
+function includesAny(text: string, terms: string[]) {
+  return terms.some((term) => text.includes(term));
+}
+
+function isGlobalNewsCandidate(blog: {
+  title: string;
+  summary: string;
+  slug: string;
+}) {
+  const haystack = `${blog.title} ${blog.summary} ${blog.slug}`.toLowerCase();
+  if (includesAny(haystack, NEPAL_TERMS)) return false;
+  return includesAny(haystack, GLOBAL_TERMS);
+}
 
 const NewsAndStoriesMegaMenu = () => {
   const { openActiveMegaMenu } = useMegaMenuStore();
   const featuredData = useTrendingBlogs(4);
+  const allBlogs = useBlogFeed(250);
+  const globalCard = useMemo(() => {
+    const newsBlogs = allBlogs.filter((blog) => blog.type === "News");
+    const globalNews = newsBlogs.find(isGlobalNewsCandidate);
+    return (
+      globalNews ||
+      newsBlogs[0] ||
+      featuredData.find((blog) => blog.type === "News") ||
+      featuredData[0]
+    );
+  }, [allBlogs, featuredData]);
 
   return (
     <div className="w-full">
-      <div className="flex items-start justify-between gap-6">
-        <section className="flex-1 min-w-0">
+      <div className="grid grid-cols-[1fr_240px] gap-4 items-start">
+        <section className="rounded-xl border border-gray-200 bg-white p-3">
           <div className="flex justify-between items-center">
             <h3 className="font-medium text-gray-600 mb-2">Trending Blogs</h3>
             <Link href="/blogs">
@@ -51,29 +118,34 @@ const NewsAndStoriesMegaMenu = () => {
           </div>
         </section>
 
-        <aside className="w-[320px] min-w-[320px] rounded-xl border border-primary-200 bg-[linear-gradient(135deg,_#fff6f2_0%,_#edf7ff_100%)] p-4">
-          <p className="text-[11px] uppercase tracking-[0.12em] text-primary-600">
-            New Section
-          </p>
-          <h3 className="mt-2 text-xl font-semibold text-gray-900">Global News</h3>
-          <p className="mt-2 text-sm leading-6 text-gray-700">
-            Separate global feed for high-credibility health and education
-            developments outside Nepal.
-          </p>
-          <div className="mt-4 rounded-lg border border-primary-100 bg-white/90 p-3">
-            <p className="text-xs text-gray-600">Covers</p>
-            <p className="mt-1 text-sm text-gray-800">
-              Global outbreaks, education disruptions, and international policy
-              shifts that matter for impact teams.
-            </p>
+        <aside className="rounded-xl border border-gray-200 bg-white p-3 self-start">
+          <div className="flex justify-between items-center">
+            <h3 className="font-medium text-gray-600 mb-2">Global News</h3>
+            <Link href="/global-news">
+              <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
+                View
+              </AppButton>
+            </Link>
           </div>
-          <Link
-            href="/global-news"
-            className="mt-4 inline-flex items-center rounded-lg border border-primary-500 bg-primary-500 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-primary-600"
-            onClick={() => openActiveMegaMenu(null)}
-          >
-            Open Global News
-          </Link>
+          {globalCard ? (
+            <BlogCard
+              data={globalCard}
+              className="w-[200px] rounded-xl hover:shadow-sm"
+              onClick={() => openActiveMegaMenu(null)}
+            >
+              <BlogCard.Image
+                className="h-[150px]"
+                showAuthor={false}
+                showButton={false}
+                overlayStyle
+                showDate={false}
+              />
+              <BlogCard.TitleAndDescription
+                showDescription={false}
+                className="[&>h3]:text-sm font-medium p-2"
+              />
+            </BlogCard>
+          ) : null}
         </aside>
       </div>
     </div>
