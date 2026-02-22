@@ -1111,17 +1111,29 @@ def verify_live(url: str, expected_title: str, attempts: int = 12, delay_seconds
     return False
 
 
-def ensure_git_ready(repo_root: Path) -> None:
+def ensure_git_ready(repo_root: Path) -> Tuple[str, str]:
     run_cmd(["git", "rev-parse", "--is-inside-work-tree"], cwd=repo_root)
     # Worktree-safe sync: never force checkout local `main` (may be active in another worktree).
-    run_cmd(["git", "fetch", "--prune", "origin", "main"], cwd=repo_root)
+    try:
+        run_cmd(["git", "fetch", "--prune", "origin", "main"], cwd=repo_root)
+    except Exception as exc:
+        if is_network_error(exc):
+            return "offline-fetch-skip", str(exc)
+        raise
+
     current_ref = run_cmd(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_root)
     if current_ref == "main":
-        run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
-        return
+        try:
+            run_cmd(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
+            return "main-synced", ""
+        except Exception as exc:
+            if is_network_error(exc):
+                return "offline-pull-skip", str(exc)
+            raise
 
     try:
         run_cmd(["git", "checkout", "--detach", "origin/main"], cwd=repo_root)
+        return "detached-origin-main", ""
     except Exception as exc:
         # Fallback: allow continuing on current HEAD only if it already contains origin/main.
         ancestor = subprocess.run(
@@ -1136,6 +1148,7 @@ def ensure_git_ready(repo_root: Path) -> None:
                 "Could not align worktree with origin/main without checking out local main. "
                 f"Original error: {exc}"
             ) from exc
+        return "head-contains-origin-main", str(exc)
 
 
 def choose_threshold(base: int, target_min: int, published_count: int, hours_left: int) -> int:
@@ -2338,8 +2351,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     }
     config_file.write_text(json.dumps(article_config, indent=2, ensure_ascii=False), encoding="utf-8")
 
+    git_sync_status = "dry-run"
+    git_sync_error = ""
     if not args.dry_run:
-        ensure_git_ready(repo_root)
+        git_sync_status, git_sync_error = ensure_git_ready(repo_root)
 
     publish_cmd = [
         "node",
@@ -2415,6 +2430,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "sourceImageUrl": source_image_url,
             "publishResult": publish_result,
             "liveVerified": live_verified,
+            "gitSyncStatus": git_sync_status,
+            "gitSyncError": git_sync_error,
             "publishedInWindowAfter": state.get("publishedInWindow", 0),
         }
     )
