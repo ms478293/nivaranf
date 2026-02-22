@@ -5,6 +5,8 @@ import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
 
+const QUEUE_FILE_NAME = ".push-queue.json";
+
 const ALLOWED_TYPES = new Set([
   "Story",
   "Collaboration",
@@ -117,6 +119,53 @@ function git(repoRoot, gitArgs) {
   }
 }
 
+function isOfflineError(error) {
+  const msg = (error?.stderr || error?.message || "").toLowerCase();
+  return (
+    msg.includes("could not resolve host") ||
+    msg.includes("unable to connect") ||
+    msg.includes("network") ||
+    msg.includes("timeout") ||
+    msg.includes("connection refused") ||
+    msg.includes("no route to host") ||
+    msg.includes("failed to connect")
+  );
+}
+
+function tryGitPush(repoRoot) {
+  try {
+    execFileSync("git", ["push", "origin", "main"], {
+      cwd: repoRoot,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    return { success: true };
+  } catch (error) {
+    return { success: false, offline: isOfflineError(error), error };
+  }
+}
+
+function queuePush(repoRoot, scriptsDir, commitMessage) {
+  const queuePath = path.join(scriptsDir, QUEUE_FILE_NAME);
+  let queue = [];
+  if (fs.existsSync(queuePath)) {
+    try {
+      queue = JSON.parse(fs.readFileSync(queuePath, "utf8"));
+    } catch {
+      queue = [];
+    }
+  }
+  queue.push({
+    branch: "main",
+    remote: "origin",
+    repoRoot,
+    commitMessage: commitMessage || "(unknown)",
+    queuedAt: new Date().toISOString(),
+  });
+  fs.writeFileSync(queuePath, JSON.stringify(queue, null, 2), "utf8");
+  return queuePath;
+}
+
 function ensureUniqueSlug(baseSlug, existingSlugs) {
   if (!existingSlugs.has(baseSlug)) return baseSlug;
   let counter = 2;
@@ -131,19 +180,19 @@ function getPublicPath(articleType, slug) {
   return `/${segment}/${slug}`;
 }
 
-function resolveLocalPublicAsset(repoRoot, maybePublicPath) {
-  if (typeof maybePublicPath !== "string" || maybePublicPath.trim().length === 0) {
-    return null;
-  }
-  if (!maybePublicPath.startsWith("/")) {
-    return null;
-  }
-  const relFromPublic = maybePublicPath.replace(/^\/+/, "");
-  const absPath = path.join(repoRoot, "public", relFromPublic);
-  if (!fs.existsSync(absPath)) {
-    return null;
-  }
-  return path.relative(repoRoot, absPath);
+function isHttpUrl(value) {
+  return /^https?:\/\//i.test(value);
+}
+
+function resolveLocalImagePath(repoRoot, imagePath) {
+  if (typeof imagePath !== "string") return null;
+  const normalized = imagePath.trim();
+  if (!normalized || isHttpUrl(normalized)) return null;
+  if (!normalized.startsWith("/")) return null;
+
+  const absolute = path.join(repoRoot, "public", normalized.replace(/^\/+/, ""));
+  if (!fs.existsSync(absolute)) return null;
+  return path.relative(repoRoot, absolute);
 }
 
 function main() {
@@ -304,20 +353,40 @@ function main() {
 
   const relMdxPath = path.relative(repoRoot, mdxPath);
   const relListPath = path.relative(repoRoot, listFilePath);
+  const relImagePath = resolveLocalImagePath(repoRoot, merged.mainImage);
+
+  const commitMessage = merged.commitMessage || `Publish article: ${merged.title}`;
 
   if (args.commit || args.push) {
     git(repoRoot, ["rev-parse", "--is-inside-work-tree"]);
     const filesToAdd = [relMdxPath, relListPath];
-    const localMainImagePath = resolveLocalPublicAsset(repoRoot, merged.mainImage);
-    if (localMainImagePath) {
-      filesToAdd.push(localMainImagePath);
-    }
+    if (relImagePath) filesToAdd.push(relImagePath);
     git(repoRoot, ["add", ...filesToAdd]);
-    const commitMessage = merged.commitMessage || `Publish article: ${merged.title}`;
     git(repoRoot, ["commit", "-m", commitMessage]);
   }
+
+  let pushed = false;
+  let queued = false;
+  let queuedAt = null;
+
   if (args.push) {
-    git(repoRoot, ["push", "origin", "main"]);
+    const result = tryGitPush(repoRoot);
+    if (result.success) {
+      pushed = true;
+    } else if (result.offline) {
+      const scriptsDir = path.dirname(new URL(import.meta.url).pathname);
+      const queuePath = queuePush(repoRoot, scriptsDir, commitMessage);
+      queued = true;
+      queuedAt = new Date().toISOString();
+      console.error(
+        `\n📦 No internet connection detected. Push queued.\n` +
+        `   Run \`node scripts/sync-queue.mjs\` when back online.\n` +
+        `   Queue file: ${path.relative(repoRoot, queuePath)}\n`
+      );
+    } else {
+      const stderr = result.error?.stderr ? String(result.error.stderr).trim() : "";
+      fail(`git push failed${stderr ? ": " + stderr : ""}`);
+    }
   }
 
   const response = {
@@ -329,8 +398,11 @@ function main() {
       slug
     )}`,
     listFile: relListPath,
-    committed: !!args.commit || !!args.push,
-    pushed: !!args.push,
+    ...(relImagePath ? { imageFile: relImagePath } : {}),
+    committed: !args["dry-run"] && (!!args.commit || !!args.push),
+    pushed,
+    queued,
+    ...(queuedAt ? { queuedAt } : {}),
   };
 
   console.log(JSON.stringify(response, null, 2));

@@ -3,7 +3,6 @@
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { blogTypes } from "@/content/blogTypes";
 import { useBlogFeed } from "@/lib/content/useBlogFeed";
-import { useTrendingBlogs } from "@/lib/content/useTrendingBlogs";
 import { useState } from "react";
 import MainTitle from "../MainTitle/MainTitle";
 import InputSearch from "../SearchInput/SearchInput";
@@ -77,21 +76,37 @@ function isNepalExclusiveCandidate(blog: {
   return !isGlobalNewsCandidate(blog);
 }
 
+function sortByFeaturedThenDate(
+  a: {
+    featured?: boolean;
+    date: string;
+  },
+  b: {
+    featured?: boolean;
+    date: string;
+  }
+) {
+  if (Boolean(b.featured) !== Boolean(a.featured)) {
+    return Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+  }
+
+  const aTime = new Date(a.date).getTime();
+  const bTime = new Date(b.date).getTime();
+  const safeA = Number.isFinite(aTime) ? aTime : 0;
+  const safeB = Number.isFinite(bTime) ? bTime : 0;
+  return safeB - safeA;
+}
+
 export const BlogList = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryTag, setActiveCategoryTag] = useState<
     (typeof blogTypes)[number] | "All"
   >("All");
   const allBlogs = useBlogFeed(500);
-  const trendingBlogs = useTrendingBlogs(4);
-  const trendingNepalOnly = Array.from(
-    new Map(
-      [...trendingBlogs, ...allBlogs.filter(isNepalExclusiveCandidate)].map((blog) => [
-        blog.slug,
-        blog,
-      ])
-    ).values()
-  ).slice(0, 4);
+  const trendingNepalOnly = [...allBlogs]
+    .filter(isNepalExclusiveCandidate)
+    .sort(sortByFeaturedThenDate)
+    .slice(0, 4);
 
   // const filteredBlogType = globalBlogs.filter(
   //   (blog) => blog.type === activeCategoryTag
