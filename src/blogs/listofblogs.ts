@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "1-000-days-of-war-sudan-endures-the-world-s-worst-humanitarian-catastrophe",
+    title: "1,000 Days of War: Sudan Endures the World’s Worst Humanitarian Catastrophe",
+    summary:
+      "Sudan’s conflict has reached its 1,000th day, leaving over 33 million people in desperate need of aid. With the health system shattered and disease rampant, the crisis stands as the largest displacement emergency globally.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-1-000-days-of-war-sudan-endures-the-world-s-worst-humanitarian-catastrophe.png",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "justice-is-a-hospital-bed",
     title: "Justice Is a Hospital Bed",
     summary:
