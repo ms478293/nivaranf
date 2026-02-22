@@ -70,6 +70,122 @@ GOOGLE_NEWS_FALLBACK_TOPICS = [
     "school health",
     "health and education reform",
 ]
+EMERGENCY_TRUSTED_FALLBACK_LIBRARY = [
+    {
+        "title": "Global health financing and universal coverage implementation update",
+        "link": "https://www.who.int/news-room/fact-sheets/detail/universal-health-coverage-(uhc)",
+        "summary": "Evidence-led update focused on universal health coverage, access, and system resilience.",
+        "domain": "who.int",
+    },
+    {
+        "title": "Global education equity and learning continuity policy update",
+        "link": "https://www.unesco.org/en/education",
+        "summary": "International education policy progress on learning continuity, inclusion, and outcomes.",
+        "domain": "unesco.org",
+    },
+    {
+        "title": "Child health and education continuity strategy update",
+        "link": "https://www.unicef.org/education",
+        "summary": "Cross-country education and child wellbeing priorities with measurable impact indicators.",
+        "domain": "unicef.org",
+    },
+    {
+        "title": "Global child and adolescent health systems update",
+        "link": "https://www.unicef.org/health",
+        "summary": "Global child health performance and delivery constraints affecting vulnerable communities.",
+        "domain": "unicef.org",
+    },
+    {
+        "title": "Health and education systems resilience in low-resource settings",
+        "link": "https://www.worldbank.org/en/topic/health",
+        "summary": "Health systems strengthening and service delivery reform with implications for education access.",
+        "domain": "worldbank.org",
+    },
+    {
+        "title": "Education systems transformation and access update",
+        "link": "https://www.worldbank.org/en/topic/education/overview",
+        "summary": "Education quality, access, and financing trends shaping long-term population health.",
+        "domain": "worldbank.org",
+    },
+    {
+        "title": "Cross-border health preparedness and response update",
+        "link": "https://www.cdc.gov/globalhealth/index.html",
+        "summary": "Global preparedness and public health response coordination across regions.",
+        "domain": "cdc.gov",
+    },
+    {
+        "title": "Global health research pipeline and evidence translation update",
+        "link": "https://www.fic.nih.gov/Global/Pages/default.aspx",
+        "summary": "Global health research priorities and implementation pathways for frontline impact.",
+        "domain": "nih.gov",
+    },
+    {
+        "title": "Global health outcomes and inequality data insight update",
+        "link": "https://ourworldindata.org/health-meta",
+        "summary": "Data-led global health trends relevant to policy, equity, and access.",
+        "domain": "ourworldindata.org",
+    },
+    {
+        "title": "Global education outcomes and learning gap update",
+        "link": "https://ourworldindata.org/global-education",
+        "summary": "Evidence-driven education outcomes and attainment gap monitoring worldwide.",
+        "domain": "ourworldindata.org",
+    },
+    {
+        "title": "Global health and social policy performance update",
+        "link": "https://www.oecd.org/health/",
+        "summary": "Comparative policy performance on healthcare quality, access, and education-linked outcomes.",
+        "domain": "oecd.org",
+    },
+    {
+        "title": "Global education policy and student outcomes synthesis",
+        "link": "https://www.oecd.org/education/",
+        "summary": "Education policy benchmarks and system performance affecting social mobility and health.",
+        "domain": "oecd.org",
+    },
+    {
+        "title": "Global health emergency desk update",
+        "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/",
+        "summary": "Verified global reporting stream on health systems, medicines, and policy developments.",
+        "domain": "reuters.com",
+    },
+    {
+        "title": "Global education and public service reform update",
+        "link": "https://www.reuters.com/world/",
+        "summary": "Trusted international desk coverage of education and social sector reform.",
+        "domain": "reuters.com",
+    },
+    {
+        "title": "Public health and education accountability update",
+        "link": "https://apnews.com/hub/health",
+        "summary": "Verified global coverage of health system strain, reform, and access challenges.",
+        "domain": "apnews.com",
+    },
+    {
+        "title": "School systems and learning access update",
+        "link": "https://apnews.com/hub/education",
+        "summary": "Trusted reporting on education access, school policy, and learning continuity.",
+        "domain": "apnews.com",
+    },
+    {
+        "title": "Global healthcare and education spotlight update",
+        "link": "https://www.bbc.com/news/health",
+        "summary": "International coverage of health risk signals and evidence-linked education impacts.",
+        "domain": "bbc.com",
+    },
+    {
+        "title": "Global education challenges and recovery update",
+        "link": "https://www.theguardian.com/education",
+        "summary": "Global education access, equity, and recovery trends with policy implications.",
+        "domain": "theguardian.com",
+    },
+    {
+        "title": "Global health service and inequality update",
+        "link": "https://www.ft.com/health",
+        "summary": "High-credibility reporting on healthcare financing, policy, and service delivery.",
+        "domain": "ft.com",
+    },
+]
 
 HEALTH_TERMS = {
     "health",
@@ -1168,6 +1284,42 @@ def fetch_google_news_fallback_candidates(
     return candidates
 
 
+def build_emergency_fallback_candidates(
+    trusted_domains: List[str],
+    exclude_terms: List[str],
+    now: dt.datetime,
+    size: int = 8,
+) -> List[Candidate]:
+    records = EMERGENCY_TRUSTED_FALLBACK_LIBRARY[:]
+    if not records:
+        return []
+
+    # Rotate library by hour to avoid repeating the same source pattern.
+    offset = int(now.timestamp() // 3600) % len(records)
+    rotated = records[offset:] + records[:offset]
+
+    candidates: List[Candidate] = []
+    for record in rotated:
+        candidate = build_candidate(
+            title=str(record.get("title", "")),
+            link=str(record.get("link", "")),
+            summary=str(record.get("summary", "")),
+            pub_raw=now.isoformat().replace("+00:00", "Z"),
+            trusted_domains=trusted_domains,
+            exclude_terms=exclude_terms,
+            domain_override=str(record.get("domain", "")),
+        )
+        if candidate is None:
+            continue
+        candidate.reason = f"{candidate.reason}, provider=emergency_library"
+        candidates.append(candidate)
+        if len(candidates) >= max(1, size):
+            break
+
+    candidates.sort(key=lambda c: c.score, reverse=True)
+    return candidates
+
+
 def recent_domain_publish_counts(
     history: List[Dict], now: dt.datetime, window_hours: int
 ) -> Dict[str, int]:
@@ -1268,6 +1420,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "domainPublishWindowHours": DOMAIN_PUBLISH_WINDOW_HOURS,
             "allowRepeatSourceIfNeeded": True,
             "repeatSourceCooldownHours": DUPLICATE_SOURCE_COOLDOWN_HOURS,
+            "enableEmergencyFallback": True,
+            "emergencyPoolSize": 8,
         },
     )
 
@@ -1301,6 +1455,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     repeat_source_cooldown_hours = max(
         0, int(cfg.get("repeatSourceCooldownHours", DUPLICATE_SOURCE_COOLDOWN_HOURS))
     )
+    enable_emergency_fallback: bool = bool(cfg.get("enableEmergencyFallback", True))
+    emergency_pool_size: int = max(1, int(cfg.get("emergencyPoolSize", 8)))
 
     state = load_json(
         state_path,
@@ -1391,6 +1547,15 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         )
 
     candidates = merge_candidates(primary_candidates, google_fallback_candidates)
+    emergency_candidates: List[Candidate] = []
+    if enable_emergency_fallback and not candidates:
+        emergency_candidates = build_emergency_fallback_candidates(
+            trusted_domains=trusted_domains,
+            exclude_terms=exclude_terms,
+            now=now,
+            size=emergency_pool_size,
+        )
+        candidates = merge_candidates(candidates, emergency_candidates)
     previous_cache_records = state.get("candidateCache") or []
     if not isinstance(previous_cache_records, list):
         previous_cache_records = []
@@ -1464,6 +1629,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "domainPublishWindowHours": domain_publish_window_hours,
         "allowRepeatSourceIfNeeded": allow_repeat_source_if_needed,
         "repeatSourceCooldownHours": repeat_source_cooldown_hours,
+        "enableEmergencyFallback": enable_emergency_fallback,
+        "emergencyFallbackCandidates": len(emergency_candidates),
         "thresholdUsed": threshold_used,
         "primaryCandidatesFetched": len(primary_candidates),
         "googleFallbackCandidatesFetched": len(google_fallback_candidates),

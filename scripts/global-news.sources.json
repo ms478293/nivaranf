@@ -73,5 +73,7 @@
   "maxDomainPublishes24Hours": 2,
   "domainPublishWindowHours": 24,
   "allowRepeatSourceIfNeeded": true,
-  "repeatSourceCooldownHours": 6
+  "repeatSourceCooldownHours": 6,
+  "enableEmergencyFallback": true,
+  "emergencyPoolSize": 8
 }
