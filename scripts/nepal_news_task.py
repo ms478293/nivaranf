@@ -795,17 +795,10 @@ def append_source_attribution(
         "### Sources and Attribution",
         (
             f"- Primary source: [{candidate.title}]({candidate.link}) "
-            f"({candidate.domain}, accessed {accessed_on} UTC)."
+            f"(accessed {accessed_on} UTC)."
         ),
+        "- Image: Editorial image generated with Gemini Pro for Nivaran Foundation.",
     ]
-    if image_provider_used == "source" and source_image_url:
-        lines.append(
-            f"- Image source: [{candidate.domain}]({source_image_url}) "
-            "(used with editorial attribution)."
-        )
-    else:
-        lines.append("- Image source: Editorial illustration generated for this report.")
-
     return body + "\n\n" + "\n".join(lines) + "\n"
 
 
@@ -1368,11 +1361,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "false",
         "no",
     }
-    image_provider = os.getenv(
-        "NEPAL_NEWS_IMAGE_PROVIDER", os.getenv("GLOBAL_NEWS_IMAGE_PROVIDER", "source_first")
-    ).strip().lower()
-    if image_provider not in {"source_first", "gemini_first", "gemini"}:
-        image_provider = "source_first"
+    image_provider = "gemini"
 
     article_prompt = generate_article_prompt(selected)
     source_article_text = fetch_source_article_text(selected.link)
@@ -1384,7 +1373,17 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     generation_prompt = article_prompt
     for attempt in range(1, article_attempts + 1):
         generated = gemini_text_json(api_key=api_key, model=text_model, prompt=generation_prompt)
-        validate_generated_article(generated)
+        try:
+            validate_generated_article(generated)
+        except Exception as exc:
+            if attempt >= article_attempts:
+                raise
+            generation_prompt = (
+                article_prompt
+                + "\n\nRevision required: the previous draft did not satisfy validation. "
+                f"Fix this exactly: {str(exc)}. Return valid JSON only."
+            )
+            continue
         candidate_body = str(generated.get("bodyMarkdown", "")).strip()
         paraphrase_ok = True
         if require_paraphrase and source_article_text:
@@ -1487,11 +1486,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "summary": summary,
         "mainImage": main_image,
         "coverImageAlt": title,
-        "coverImageCaption": (
-            f"Source image: {selected.domain}."
-            if image_provider_used == "source"
-            else f"Source context: {selected.domain}."
-        ),
+        "coverImageCaption": "Editorial image generated with Gemini Pro for Nivaran Foundation.",
         "type": "News",
         "author": "Nivaran Foundation Nepal Desk",
         "featured": True,
