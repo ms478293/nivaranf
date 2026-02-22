@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "massive-civic-education-drive-reaches-6-743-wards-ahead-of-hor-elections",
+    title: "Massive Civic Education Drive Reaches 6,743 Wards Ahead of HoR Elections",
+    summary:
+      "With just eleven days remaining until the House of Representatives elections, Nepal witnesses one of its largest civic education campaigns. Volunteers are active in every ward to minimize invalid ballots and empower rural voters.",
+    thumbnailImage: "/images/nepal-news/2026/2026-02-22-massive-civic-education-drive-reaches-6-743-wards-ahead-of-hor-elections.jpg",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "england-unveils-ambitious-strategy-to-halve-educational-attainment-gap-through-funding-reform",
     title: "England Unveils Ambitious Strategy to Halve Educational Attainment Gap Through Funding Reform",
     summary:
