@@ -11,6 +11,60 @@ import { CategoryFilterTag } from "./CategoryFilterTag";
 import { FilteredBlogsList } from "./FilteredBlogList";
 import { LatestBlogs } from "./LatestBlogs";
 
+const NEPAL_TERMS = [
+  "nepal",
+  "kathmandu",
+  "pokhara",
+  "lumbini",
+  "karnali",
+  "terai",
+  "jajarkot",
+  "dolpa",
+  "jumla",
+  "bajura",
+  "mugu",
+  "birgunj",
+];
+
+const GLOBAL_TERMS = [
+  "global",
+  "world",
+  "international",
+  "cross-border",
+  "cross border",
+  "who",
+  "unicef",
+  "unesco",
+  "unhcr",
+  "united nations",
+  "africa",
+  "asia",
+  "europe",
+  "latin america",
+  "middle east",
+  "sudan",
+  "gaza",
+  "ukraine",
+  "bangladesh",
+  "india",
+  "pakistan",
+  "sri lanka",
+];
+
+function includesAny(text: string, terms: string[]) {
+  return terms.some((term) => text.includes(term));
+}
+
+function isGlobalNewsCandidate(blog: {
+  title: string;
+  summary: string;
+  slug: string;
+}) {
+  const haystack = `${blog.title} ${blog.summary} ${blog.slug}`.toLowerCase();
+  if (includesAny(haystack, NEPAL_TERMS)) return false;
+  return includesAny(haystack, GLOBAL_TERMS);
+}
+
 export const BlogList = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategoryTag, setActiveCategoryTag] = useState<
@@ -26,7 +80,11 @@ export const BlogList = () => {
   // **Filtering blogs based on search & category**
   const filteredBlogs = allBlogs.filter((blog) => {
     const matchesCategory =
-      activeCategoryTag === "All" || blog.type === activeCategoryTag;
+      activeCategoryTag === "All"
+        ? true
+        : activeCategoryTag === "Global"
+        ? isGlobalNewsCandidate(blog)
+        : blog.type === activeCategoryTag;
     // const matchesFeatured = onlyFeatured ? blog.featured : true;
     const matchesSearch =
       searchQuery === "" ||
