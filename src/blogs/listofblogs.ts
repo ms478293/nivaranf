@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-unveils-ambitious-strategy-to-halve-educational-attainment-gap-through-funding-reform",
+    title: "England Unveils Ambitious Strategy to Halve Educational Attainment Gap Through Funding Reform",
+    summary:
+      "Ministers in England are set to launch a comprehensive strategy aimed at halving the academic achievement gap between wealthy and poor students. The plan focuses on revising school funding allocations to better support the most vulnerable demographics.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-england-unveils-ambitious-strategy-to-halve-educational-attainment-gap-through-f.jpg",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-unveils-global-framework-to-transform-school-food-environments-for-future-generations",
     title: "WHO Unveils Global Framework to Transform School Food Environments for Future Generations",
     summary:
