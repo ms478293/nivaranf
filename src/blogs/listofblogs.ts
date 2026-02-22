@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "when-the-medicine-runs-out-how-nivaran-foundation-beats-the-mountain-winter",
+    title: "When the Medicine Runs Out: How Nivaran Foundation Beats the Mountain Winter",
+    summary:
+      "Every winter, Nepal's most remote mountain communities are cut off from medicine resupply for months. Nivaran Foundation's Winter Prepositioning Program delivers extended medicine reserves before the passes close — and the data shows it is working.",
+    thumbnailImage: "/images/generalHealthService.jpg",
+    date: "2026-02-21",
+    author: "Nivaran Foundation News Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-coverage-expands-yet-billions-remain-vulnerable-to-financial-ruin-report-finds",
     title: "Global Health Coverage Expands, Yet Billions Remain Vulnerable to Financial Ruin, Report Finds",
     summary:
