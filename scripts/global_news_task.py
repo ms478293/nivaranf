@@ -17,6 +17,7 @@ import base64
 import datetime as dt
 import email.utils
 import hashlib
+import io
 import json
 import os
 import re
@@ -30,10 +31,17 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+try:
+    from PIL import Image, ImageFilter
+except Exception:
+    Image = None
+    ImageFilter = None
+
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 DEFAULT_TIMEOUT_SECONDS = 60
+TARGET_IMAGE_LONG_EDGE = 7680
 
 HEALTH_TERMS = {
     "health",
@@ -580,6 +588,35 @@ def fetch_candidates(source_urls: List[str], trusted_domains: List[str], exclude
     return candidates
 
 
+def upscale_image_to_8k_long_edge(
+    image_bytes: bytes, mime_type: str
+) -> Tuple[bytes, str, Tuple[int, int]]:
+    if Image is None:
+        return image_bytes, mime_type, (0, 0)
+
+    with Image.open(io.BytesIO(image_bytes)) as img:
+        src_w, src_h = img.size
+        long_edge = max(src_w, src_h)
+        if long_edge >= TARGET_IMAGE_LONG_EDGE:
+            return image_bytes, mime_type, (src_w, src_h)
+
+        scale = TARGET_IMAGE_LONG_EDGE / float(long_edge)
+        dst_w = max(1, int(round(src_w * scale)))
+        dst_h = max(1, int(round(src_h * scale)))
+        resampling = getattr(Image, "Resampling", Image).LANCZOS
+        upscaled = img.resize((dst_w, dst_h), resampling)
+
+        if ImageFilter is not None:
+            upscaled = upscaled.filter(ImageFilter.UnsharpMask(radius=1.5, percent=180, threshold=2))
+
+        # Use high-quality JPEG encoding for faster delivery than very large PNGs.
+        if upscaled.mode not in ("RGB", "L"):
+            upscaled = upscaled.convert("RGB")
+        output = io.BytesIO()
+        upscaled.save(output, format="JPEG", quality=96, subsampling=0, optimize=True)
+        return output.getvalue(), "image/jpeg", (dst_w, dst_h)
+
+
 def write_image(repo_root: Path, image_bytes: bytes, mime_type: str, slug: str, date_str: str) -> str:
     ext = ".png"
     if mime_type == "image/jpeg":
@@ -734,6 +771,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     image_bytes, image_mime = gemini_generate_image(
         api_key=api_key, model=image_model, image_prompt=image_prompt
     )
+    image_bytes, image_mime, image_size = upscale_image_to_8k_long_edge(
+        image_bytes=image_bytes, mime_type=image_mime
+    )
     main_image = write_image(
         repo_root=repo_root,
         image_bytes=image_bytes,
@@ -753,7 +793,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "summary": summary,
         "mainImage": main_image,
         "coverImageAlt": title,
-        "coverImageCaption": f"Source context: {selected.domain}. Visual generated with Gemini for editorial use.",
+        "coverImageCaption": f"Source context: {selected.domain}.",
         "type": "News",
         "author": "Nivaran Foundation Global Desk",
         "featured": False,
@@ -821,6 +861,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "generatedTitle": title,
             "generatedWordCount": words_count(body_markdown),
             "mainImage": main_image,
+            "generatedImageSize": {
+                "width": image_size[0],
+                "height": image_size[1],
+            },
             "publishResult": publish_result,
             "liveVerified": live_verified,
             "publishedInWindowAfter": state.get("publishedInWindow", 0),
