@@ -67,21 +67,33 @@ const NewsAndStoriesMegaMenu = () => {
   const { openActiveMegaMenu } = useMegaMenuStore();
   const featuredData = useTrendingBlogs(4);
   const allBlogs = useBlogFeed(250);
-  const globalCard = useMemo(() => {
+  const globalCards = useMemo(() => {
     const newsBlogs = allBlogs.filter((blog) => blog.type === "News");
-    const globalNews = newsBlogs.find(isGlobalNewsCandidate);
-    return (
-      globalNews ||
-      newsBlogs[0] ||
-      featuredData.find((blog) => blog.type === "News") ||
-      featuredData[0]
-    );
+
+    const candidates = [
+      ...newsBlogs.filter(isGlobalNewsCandidate),
+      ...newsBlogs,
+      ...featuredData.filter((blog) => blog.type === "News"),
+      ...featuredData,
+    ];
+
+    const unique: typeof candidates = [];
+    const seen = new Set<string>();
+
+    for (const blog of candidates) {
+      if (!blog?.slug || seen.has(blog.slug)) continue;
+      seen.add(blog.slug);
+      unique.push(blog);
+      if (unique.length === 2) break;
+    }
+
+    return unique;
   }, [allBlogs, featuredData]);
 
   return (
     <div className="w-full">
-      <div className="grid grid-cols-[1fr_240px] gap-4 items-start">
-        <section className="rounded-xl border border-gray-200 bg-white p-3">
+      <div className="grid grid-cols-[max-content_max-content] gap-4 items-start">
+        <section className="rounded-xl border border-gray-200 bg-white p-3 w-fit">
           <div className="flex justify-between items-center">
             <h3 className="font-medium text-gray-600 mb-2">Trending Blogs</h3>
             <Link href="/blogs">
@@ -118,34 +130,40 @@ const NewsAndStoriesMegaMenu = () => {
           </div>
         </section>
 
-        <aside className="rounded-xl border border-gray-200 bg-white p-3 self-start">
+        <aside className="rounded-xl border border-gray-200 bg-white p-3 w-fit self-start">
           <div className="flex justify-between items-center">
-            <h3 className="font-medium text-gray-600 mb-2">Global News</h3>
+            <h3 className="font-medium text-gray-600 mb-2">Global Featured</h3>
             <Link href="/global-news">
               <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
-                View
+                View more
               </AppButton>
             </Link>
           </div>
-          {globalCard ? (
-            <BlogCard
-              data={globalCard}
-              className="w-[200px] rounded-xl hover:shadow-sm"
-              onClick={() => openActiveMegaMenu(null)}
-            >
-              <BlogCard.Image
-                className="h-[150px]"
-                showAuthor={false}
-                showButton={false}
-                overlayStyle
-                showDate={false}
-              />
-              <BlogCard.TitleAndDescription
-                showDescription={false}
-                className="[&>h3]:text-sm font-medium p-2"
-              />
-            </BlogCard>
-          ) : null}
+          <div className="flex gap-3">
+            <RenderList
+              data={globalCards}
+              render={(story) => (
+                <BlogCard
+                  data={story}
+                  key={story.slug}
+                  className="w-[200px] rounded-xl hover:shadow-sm "
+                  onClick={() => openActiveMegaMenu(null)}
+                >
+                  <BlogCard.Image
+                    className="h-[150px]"
+                    showAuthor={false}
+                    showButton={false}
+                    overlayStyle
+                    showDate={false}
+                  />
+                  <BlogCard.TitleAndDescription
+                    showDescription={false}
+                    className="[&>h3]:text-sm font-medium p-2"
+                  />
+                </BlogCard>
+              )}
+            />
+          </div>
         </aside>
       </div>
     </div>
