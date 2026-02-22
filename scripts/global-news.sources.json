@@ -37,7 +37,7 @@
     "bagmati",
     "janakpur"
   ],
-  "targetMinIn12Hours": 10,
+  "targetMinIn12Hours": 12,
   "hardMaxIn12Hours": 16,
   "baseQualityScore": 70
 }

@@ -4,10 +4,11 @@
 Flow:
 1) Pull global health/education stories from trusted RSS feeds.
 2) Keep only trusted/verified, non-Nepal candidates related to health or education.
-3) Keep only score >= 70 and select top ranked #1 candidate.
-4) Generate long-form paraphrased article + image prompt via Gemini.
-5) Prefer source image with attribution; fallback to Gemini image model.
-6) Publish using scripts/publish-article.mjs (same site template pipeline).
+3) Remove duplicates against prior runs + existing global posts, then pick top ranked #1.
+4) Apply adaptive quality threshold to keep hourly output steady; fallback only when needed.
+5) Generate long-form paraphrased article + image prompt via Gemini.
+6) Prefer source image with attribution; fallback to Gemini image model.
+7) Publish using scripts/publish-article.mjs (same site template pipeline).
 """
 
 from __future__ import annotations
@@ -52,6 +53,7 @@ SOURCE_IMAGE_MIN_LONG_EDGE = 1400
 PARAPHRASE_SHINGLE_SIZE = 10
 PARAPHRASE_MAX_SHINGLE_OVERLAP = 0.04
 PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
+DUPLICATE_FALLBACK_MIN_SCORE = 52
 
 HEALTH_TERMS = {
     "health",
@@ -334,6 +336,50 @@ def save_json(path: Path, value: Dict) -> None:
 def domain_of(url: str) -> str:
     host = urllib.parse.urlparse(url).netloc.lower().strip()
     return host[4:] if host.startswith("www.") else host
+
+
+def canonicalize_url(url: str) -> str:
+    raw = (url or "").strip()
+    if not raw:
+        return ""
+    parsed = urllib.parse.urlparse(raw)
+    if not parsed.scheme or not parsed.netloc:
+        return raw
+    path = re.sub(r"/{2,}", "/", parsed.path or "/").rstrip("/") or "/"
+    return urllib.parse.urlunparse(
+        (parsed.scheme.lower(), parsed.netloc.lower(), path, "", "", "")
+    )
+
+
+def extract_existing_content_fingerprints(repo_root: Path) -> Tuple[set[str], set[str]]:
+    source_links: set[str] = set()
+    title_keys: set[str] = set()
+    global_dir = repo_root / "src" / "blogs" / "global"
+    if not global_dir.exists():
+        return source_links, title_keys
+
+    for mdx_file in global_dir.glob("*.mdx"):
+        try:
+            text = mdx_file.read_text(encoding="utf-8")
+        except Exception:
+            continue
+
+        frontmatter_match = re.match(r"(?s)^---\n(.*?)\n---\n", text)
+        frontmatter = frontmatter_match.group(1) if frontmatter_match else ""
+        title_match = re.search(
+            r"(?m)^title:\s*[\"']?(.+?)[\"']?\s*$", frontmatter
+        )
+        if title_match:
+            title_key = slugify(normalize_ws(title_match.group(1)))
+            if title_key:
+                title_keys.add(title_key)
+
+        for raw_url in re.findall(r"https?://[^\s)\"'>]+", text):
+            normalized = canonicalize_url(raw_url)
+            if normalized:
+                source_links.add(normalized)
+
+    return source_links, title_keys
 
 
 def is_trusted_domain(domain: str, trusted_domains: List[str]) -> bool:
@@ -948,17 +994,48 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         for item in history
         if isinstance(item, dict) and item.get("contentHash")
     }
+    history_source_links = {
+        canonicalize_url(str(item.get("sourceUrl", "")))
+        for item in history
+        if isinstance(item, dict) and item.get("sourceUrl")
+    }
+    history_title_keys = {
+        slugify(normalize_ws(str(item.get("sourceTitle", ""))))
+        for item in history
+        if isinstance(item, dict) and item.get("sourceTitle")
+    }
+    existing_source_links, existing_title_keys = extract_existing_content_fingerprints(
+        repo_root
+    )
 
     candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
     filtered_candidates: List[Candidate] = []
+    duplicate_skip_stats = {"historyHash": 0, "historySource": 0, "existingSource": 0, "title": 0}
     for c in candidates:
         content_hash = hashlib.sha1((c.title + "|" + c.link).encode("utf-8")).hexdigest()
         if content_hash in history_ids:
+            duplicate_skip_stats["historyHash"] += 1
+            continue
+        source_link = canonicalize_url(c.link)
+        if source_link and source_link in history_source_links:
+            duplicate_skip_stats["historySource"] += 1
+            continue
+        if source_link and source_link in existing_source_links:
+            duplicate_skip_stats["existingSource"] += 1
+            continue
+        title_key = slugify(normalize_ws(c.title))
+        if title_key and (title_key in history_title_keys or title_key in existing_title_keys):
+            duplicate_skip_stats["title"] += 1
             continue
         filtered_candidates.append(c)
 
-    # Enforce user rule: only candidates with score >= 70 are eligible.
-    eligible_candidates = [c for c in filtered_candidates if c.score >= min_quality_score]
+    threshold_used = choose_threshold(
+        base=min_quality_score,
+        target_min=target_min,
+        published_count=published_in_window,
+        hours_left=hours_left,
+    )
+    eligible_candidates = [c for c in filtered_candidates if c.score >= threshold_used]
     shortlist = eligible_candidates[:3]
 
     run_report: Dict = {
@@ -968,7 +1045,10 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "hoursLeftInWindow": hours_left,
         "targetMinIn12Hours": target_min,
         "hardMaxIn12Hours": hard_max,
-        "thresholdUsed": min_quality_score,
+        "thresholdUsed": threshold_used,
+        "candidatesFetched": len(candidates),
+        "candidatesAfterDedupe": len(filtered_candidates),
+        "duplicateSkips": duplicate_skip_stats,
         "shortlist": [
             {
                 "title": c.title,
@@ -992,9 +1072,16 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
 
     # User rule: pick top ranked #1 candidate after filters.
     selected = eligible_candidates[0] if eligible_candidates else None
+    fallback_used = False
+    fallback_min_score = max(DUPLICATE_FALLBACK_MIN_SCORE, threshold_used - 12)
+    if selected is None and filtered_candidates:
+        fallback_pool = [c for c in filtered_candidates if c.score >= fallback_min_score]
+        if fallback_pool:
+            selected = fallback_pool[0]
+            fallback_used = True
     if selected is None:
         run_report["reason"] = (
-            "no trusted global health/education candidate scored >= 70 this hour"
+            "no non-duplicate trusted global health/education candidate available this hour"
         )
         state.setdefault("runs", []).append(run_report)
         save_json(state_path, state)
@@ -1199,6 +1286,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
                 "score": selected.score,
                 "reason": selected.reason,
             },
+            "fallbackUsed": fallback_used,
+            "fallbackMinScore": fallback_min_score if fallback_used else None,
             "generatedTitle": title,
             "generatedWordCount": words_count(body_markdown),
             "mainImage": main_image,
