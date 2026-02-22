@@ -17,6 +17,7 @@ import argparse
 import base64
 import datetime as dt
 import email.utils
+import gzip
 import html
 import hashlib
 import io
@@ -29,6 +30,7 @@ import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import zlib
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -56,6 +58,18 @@ PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
 DUPLICATE_FALLBACK_MIN_SCORE = 52
 CANDIDATE_CACHE_MAX_ITEMS = 240
 CANDIDATE_CACHE_MAX_AGE_HOURS = 96
+DUPLICATE_SOURCE_COOLDOWN_HOURS = 6
+DOMAIN_PUBLISH_WINDOW_HOURS = 24
+MAX_DOMAIN_PUBLISHES_24H = 2
+MIN_PRIMARY_CANDIDATES_BEFORE_FALLBACK = 5
+GOOGLE_NEWS_FALLBACK_TOPICS = [
+    "global health",
+    "public health policy",
+    "global education",
+    "education policy",
+    "school health",
+    "health and education reform",
+]
 
 HEALTH_TERMS = {
     "health",
@@ -233,7 +247,19 @@ def req_text(url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2)
     for attempt in range(retries + 1):
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
-                return response.read().decode("utf-8", errors="ignore")
+                raw = response.read()
+                content_encoding = (response.headers.get("Content-Encoding") or "").lower()
+                if "gzip" in content_encoding or raw[:2] == b"\x1f\x8b":
+                    try:
+                        raw = gzip.decompress(raw)
+                    except Exception:
+                        pass
+                elif "deflate" in content_encoding:
+                    try:
+                        raw = zlib.decompress(raw)
+                    except Exception:
+                        pass
+                return raw.decode("utf-8", errors="ignore")
         except Exception as exc:
             last_error = exc
             if attempt >= retries:
@@ -297,6 +323,12 @@ def parse_datetime(raw: str) -> Optional[dt.datetime]:
 
 def parse_feed_items(xml_text: str) -> List[Tuple[str, str, str, str]]:
     items: List[Tuple[str, str, str, str]] = []
+    xml_text = (xml_text or "").strip()
+    if not xml_text:
+        return items
+    first_tag = xml_text.find("<")
+    if first_tag > 0:
+        xml_text = xml_text[first_tag:]
     root = ET.fromstring(xml_text)
 
     for item in root.findall(".//item"):
@@ -582,6 +614,7 @@ def build_candidate(
     pub_raw: str,
     trusted_domains: List[str],
     exclude_terms: List[str],
+    domain_override: Optional[str] = None,
 ) -> Optional[Candidate]:
     merged_text = f"{title} {summary}".lower()
     if any(term.lower() in merged_text for term in exclude_terms):
@@ -589,7 +622,7 @@ def build_candidate(
     if contains_blocked_term(merged_text):
         return None
 
-    domain = domain_of(link)
+    domain = normalize_ws(domain_override or "") or domain_of(link)
     # Enforce user rule: only trusted and verified sources.
     if not is_trusted_domain(domain, trusted_domains):
         return None
@@ -1049,6 +1082,120 @@ def fetch_candidates(source_urls: List[str], trusted_domains: List[str], exclude
     return candidates
 
 
+def merge_candidates(primary: List[Candidate], fallback: List[Candidate]) -> List[Candidate]:
+    merged: List[Candidate] = []
+    seen: set[str] = set()
+    for candidate in [*primary, *fallback]:
+        key = canonicalize_url(candidate.link) or f"title:{slugify(candidate.title)}:{candidate.domain}"
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        merged.append(candidate)
+    merged.sort(key=lambda c: c.score, reverse=True)
+    return merged
+
+
+def fetch_google_news_fallback_candidates(
+    trusted_domains: List[str],
+    exclude_terms: List[str],
+    topics: List[str],
+    language: str = "en-US",
+    region: str = "US",
+    edition: str = "US:en",
+) -> List[Candidate]:
+    if not topics:
+        topics = GOOGLE_NEWS_FALLBACK_TOPICS
+
+    candidates: List[Candidate] = []
+    seen: set[str] = set()
+    for topic in topics:
+        query = urllib.parse.quote(topic.strip())
+        if not query:
+            continue
+        feed_url = (
+            "https://news.google.com/rss/search?"
+            f"q={query}&hl={urllib.parse.quote(language)}&gl={urllib.parse.quote(region)}&ceid={urllib.parse.quote(edition)}"
+        )
+        try:
+            xml_text = req_text(feed_url, timeout=25, retries=1)
+            items = parse_feed_items(xml_text)
+        except Exception:
+            continue
+
+        # Parse again to capture <source url="..."> metadata specific to Google News RSS.
+        source_meta: Dict[str, str] = {}
+        try:
+            xml_text = (xml_text or "").strip()
+            first_tag = xml_text.find("<")
+            if first_tag > 0:
+                xml_text = xml_text[first_tag:]
+            root = ET.fromstring(xml_text)
+            for item in root.findall(".//item"):
+                link = normalize_ws(item.findtext("link", default="") or "")
+                source_node = item.find("source")
+                source_url = ""
+                if source_node is not None:
+                    source_url = normalize_ws(source_node.attrib.get("url", "") or "")
+                if link and source_url:
+                    source_meta[canonicalize_url(link)] = source_url
+        except Exception:
+            pass
+
+        for title, link, description, pub in items:
+            link_key = canonicalize_url(link) or link
+            if link_key in seen:
+                continue
+            seen.add(link_key)
+            source_url = source_meta.get(link_key, "")
+            source_domain = domain_of(source_url)
+            if not source_domain:
+                continue
+            candidate = build_candidate(
+                title=title,
+                link=link,
+                summary=description,
+                pub_raw=pub,
+                trusted_domains=trusted_domains,
+                exclude_terms=exclude_terms,
+                domain_override=source_domain,
+            )
+            if candidate is None:
+                continue
+            candidate.reason = f"{candidate.reason}, provider=google_news_fallback"
+            candidates.append(candidate)
+
+    candidates.sort(key=lambda c: c.score, reverse=True)
+    return candidates
+
+
+def recent_domain_publish_counts(
+    history: List[Dict], now: dt.datetime, window_hours: int
+) -> Dict[str, int]:
+    counts: Dict[str, int] = {}
+    cutoff = now - dt.timedelta(hours=max(1, window_hours))
+    for item in history:
+        if not isinstance(item, dict):
+            continue
+        published = parse_datetime(str(item.get("publishedAtUtc", "")))
+        if published is None or published < cutoff:
+            continue
+        domain = normalize_ws(str(item.get("sourceDomain", ""))) or domain_of(
+            str(item.get("sourceUrl", ""))
+        )
+        if not domain:
+            continue
+        counts[domain] = counts.get(domain, 0) + 1
+    return counts
+
+
+def apply_domain_publish_cap(
+    pool: List[Candidate], domain_counts: Dict[str, int], max_per_window: int
+) -> List[Candidate]:
+    cap = max(1, max_per_window)
+    restricted = [c for c in pool if domain_counts.get(c.domain, 0) < cap]
+    return restricted if restricted else pool
+
+
 def upscale_image_to_8k_long_edge(
     image_bytes: bytes, mime_type: str
 ) -> Tuple[bytes, str, Tuple[int, int]]:
@@ -1111,6 +1258,16 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "baseQualityScore": 70,
             "forcePublishEveryRun": True,
             "domainDiversityWindowRuns": 4,
+            "enableGoogleNewsFallback": True,
+            "googleNewsTopics": GOOGLE_NEWS_FALLBACK_TOPICS,
+            "googleNewsLanguage": "en-US",
+            "googleNewsRegion": "US",
+            "googleNewsEdition": "US:en",
+            "minPrimaryCandidatesBeforeFallback": MIN_PRIMARY_CANDIDATES_BEFORE_FALLBACK,
+            "maxDomainPublishes24Hours": MAX_DOMAIN_PUBLISHES_24H,
+            "domainPublishWindowHours": DOMAIN_PUBLISH_WINDOW_HOURS,
+            "allowRepeatSourceIfNeeded": True,
+            "repeatSourceCooldownHours": DUPLICATE_SOURCE_COOLDOWN_HOURS,
         },
     )
 
@@ -1122,6 +1279,28 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     min_quality_score: int = max(70, int(cfg.get("baseQualityScore", 70)))
     force_publish_every_run: bool = bool(cfg.get("forcePublishEveryRun", True))
     domain_diversity_window_runs: int = max(0, int(cfg.get("domainDiversityWindowRuns", 4)))
+    enable_google_news_fallback: bool = bool(cfg.get("enableGoogleNewsFallback", True))
+    google_news_topics: List[str] = [
+        normalize_ws(str(topic))
+        for topic in (cfg.get("googleNewsTopics") or GOOGLE_NEWS_FALLBACK_TOPICS)
+        if normalize_ws(str(topic))
+    ]
+    google_news_language = normalize_ws(str(cfg.get("googleNewsLanguage", "en-US"))) or "en-US"
+    google_news_region = normalize_ws(str(cfg.get("googleNewsRegion", "US"))) or "US"
+    google_news_edition = normalize_ws(str(cfg.get("googleNewsEdition", "US:en"))) or "US:en"
+    min_primary_before_fallback = max(
+        1, int(cfg.get("minPrimaryCandidatesBeforeFallback", MIN_PRIMARY_CANDIDATES_BEFORE_FALLBACK))
+    )
+    max_domain_publishes_24h = max(
+        1, int(cfg.get("maxDomainPublishes24Hours", MAX_DOMAIN_PUBLISHES_24H))
+    )
+    domain_publish_window_hours = max(
+        1, int(cfg.get("domainPublishWindowHours", DOMAIN_PUBLISH_WINDOW_HOURS))
+    )
+    allow_repeat_source_if_needed: bool = bool(cfg.get("allowRepeatSourceIfNeeded", True))
+    repeat_source_cooldown_hours = max(
+        0, int(cfg.get("repeatSourceCooldownHours", DUPLICATE_SOURCE_COOLDOWN_HOURS))
+    )
 
     state = load_json(
         state_path,
@@ -1167,19 +1346,51 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         for item in history
         if isinstance(item, dict) and item.get("sourceTitle")
     }
+    history_source_last_seen: Dict[str, dt.datetime] = {}
+    for item in history:
+        if not isinstance(item, dict):
+            continue
+        link_key = canonicalize_url(str(item.get("sourceUrl", "")))
+        published = parse_datetime(str(item.get("publishedAtUtc", "")))
+        if not link_key or published is None:
+            continue
+        previous = history_source_last_seen.get(link_key)
+        if previous is None or published > previous:
+            history_source_last_seen[link_key] = published
     recent_history_domains: set[str] = set()
     if domain_diversity_window_runs > 0:
         for item in history[-domain_diversity_window_runs:]:
             if not isinstance(item, dict):
                 continue
-            domain = domain_of(str(item.get("sourceUrl", "")))
+            domain = normalize_ws(str(item.get("sourceDomain", ""))) or domain_of(
+                str(item.get("sourceUrl", ""))
+            )
             if domain:
                 recent_history_domains.add(domain)
+    recent_domain_counts = recent_domain_publish_counts(
+        history=history,
+        now=now,
+        window_hours=domain_publish_window_hours,
+    )
     existing_source_links, existing_title_keys = extract_existing_content_fingerprints(
         repo_root
     )
 
-    candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    primary_candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    google_fallback_candidates: List[Candidate] = []
+    if enable_google_news_fallback and (
+        len(primary_candidates) < min_primary_before_fallback
+    ):
+        google_fallback_candidates = fetch_google_news_fallback_candidates(
+            trusted_domains=trusted_domains,
+            exclude_terms=exclude_terms,
+            topics=google_news_topics,
+            language=google_news_language,
+            region=google_news_region,
+            edition=google_news_edition,
+        )
+
+    candidates = merge_candidates(primary_candidates, google_fallback_candidates)
     previous_cache_records = state.get("candidateCache") or []
     if not isinstance(previous_cache_records, list):
         previous_cache_records = []
@@ -1202,6 +1413,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
 
     source_unique_candidates: List[Candidate] = []
     filtered_candidates: List[Candidate] = []
+    history_source_duplicate_candidates: List[Candidate] = []
     duplicate_skip_stats = {"historyHash": 0, "historySource": 0, "existingSource": 0, "title": 0}
     for c in candidates:
         content_hash = hashlib.sha1((c.title + "|" + c.link).encode("utf-8")).hexdigest()
@@ -1211,6 +1423,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         source_link = canonicalize_url(c.link)
         if source_link and source_link in history_source_links:
             duplicate_skip_stats["historySource"] += 1
+            history_source_duplicate_candidates.append(c)
             continue
         if source_link and source_link in existing_source_links:
             duplicate_skip_stats["existingSource"] += 1
@@ -1229,6 +1442,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         hours_left=hours_left,
     )
     eligible_candidates = [c for c in filtered_candidates if c.score >= threshold_used]
+    eligible_candidates = apply_domain_publish_cap(
+        eligible_candidates,
+        domain_counts=recent_domain_counts,
+        max_per_window=max_domain_publishes_24h,
+    )
     shortlist = eligible_candidates[:3]
 
     run_report: Dict = {
@@ -1241,7 +1459,14 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "forcePublishEveryRun": force_publish_every_run,
         "domainDiversityWindowRuns": domain_diversity_window_runs,
         "recentHistoryDomains": sorted(recent_history_domains),
+        "recentDomainCounts": recent_domain_counts,
+        "maxDomainPublishes24Hours": max_domain_publishes_24h,
+        "domainPublishWindowHours": domain_publish_window_hours,
+        "allowRepeatSourceIfNeeded": allow_repeat_source_if_needed,
+        "repeatSourceCooldownHours": repeat_source_cooldown_hours,
         "thresholdUsed": threshold_used,
+        "primaryCandidatesFetched": len(primary_candidates),
+        "googleFallbackCandidatesFetched": len(google_fallback_candidates),
         "candidatesFetched": len(candidates),
         "candidateCacheCount": len(cached_candidates),
         "candidatesAfterSourceDedupe": len(source_unique_candidates),
@@ -1278,6 +1503,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     fallback_min_score = max(DUPLICATE_FALLBACK_MIN_SCORE, threshold_used - 12)
     if selected is None and filtered_candidates:
         fallback_pool = [c for c in filtered_candidates if c.score >= fallback_min_score]
+        fallback_pool = apply_domain_publish_cap(
+            fallback_pool,
+            domain_counts=recent_domain_counts,
+            max_per_window=max_domain_publishes_24h,
+        )
         selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
             fallback_pool,
             recent_history_domains,
@@ -1299,6 +1529,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             ):
                 continue
             cache_fallback_candidates.append(cache_candidate)
+        cache_fallback_candidates = apply_domain_publish_cap(
+            cache_fallback_candidates,
+            domain_counts=recent_domain_counts,
+            max_per_window=max_domain_publishes_24h,
+        )
         selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
             cache_fallback_candidates,
             recent_history_domains,
@@ -1308,6 +1543,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             fallback_reason = "cache_backfill"
     if selected is None and force_publish_every_run and source_unique_candidates:
         # Mandatory hourly publish fallback: relax title-duplicate filter but never source-link duplicates.
+        source_unique_candidates = apply_domain_publish_cap(
+            source_unique_candidates,
+            domain_counts=recent_domain_counts,
+            max_per_window=max_domain_publishes_24h,
+        )
         selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
             source_unique_candidates,
             recent_history_domains,
@@ -1315,6 +1555,33 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         if selected is not None:
             fallback_used = True
             fallback_reason = "title_dedupe_relaxed"
+    if (
+        selected is None
+        and force_publish_every_run
+        and allow_repeat_source_if_needed
+        and history_source_duplicate_candidates
+    ):
+        cooldown_cutoff = now - dt.timedelta(hours=repeat_source_cooldown_hours)
+        reusable_source_candidates: List[Candidate] = []
+        for candidate in history_source_duplicate_candidates:
+            link_key = canonicalize_url(candidate.link)
+            if not link_key:
+                continue
+            last_seen = history_source_last_seen.get(link_key)
+            if last_seen is None or last_seen <= cooldown_cutoff:
+                reusable_source_candidates.append(candidate)
+        reusable_source_candidates = apply_domain_publish_cap(
+            reusable_source_candidates,
+            domain_counts=recent_domain_counts,
+            max_per_window=max_domain_publishes_24h,
+        )
+        selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
+            reusable_source_candidates,
+            recent_history_domains,
+        )
+        if selected is not None:
+            fallback_used = True
+            fallback_reason = "source_reuse_after_cooldown"
     if selected is None:
         run_report["reason"] = (
             "no non-duplicate trusted global health/education candidate available this hour"
@@ -1506,6 +1773,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "contentHash": content_hash,
             "sourceTitle": selected.title,
             "sourceUrl": selected.link,
+            "sourceDomain": selected.domain,
             "publishedAtUtc": now.isoformat().replace("+00:00", "Z"),
             "slug": publish_result.get("slug"),
             "blogUrl": blog_url,

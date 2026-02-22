@@ -2,15 +2,22 @@
   "sourceUrls": [
     "https://www.who.int/rss-feeds/news-english.xml",
     "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "https://www.unicef.org/media-feeds",
     "https://feeds.bbci.co.uk/news/health/rss.xml",
     "https://feeds.bbci.co.uk/news/education/rss.xml",
     "https://www.nature.com/subjects/public-health.rss",
     "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
     "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
     "https://www.theguardian.com/education/rss",
+    "https://www.theguardian.com/society/health/rss",
     "https://www.theguardian.com/world/rss",
     "https://www.ft.com/health?format=rss",
-    "https://www.aljazeera.com/xml/rss/all.xml"
+    "https://www.aljazeera.com/xml/rss/all.xml",
+    "https://www.reutersagency.com/feed/?best-topics=health&post_type=best",
+    "https://feeds.npr.org/1128/rss.xml",
+    "https://www.sciencedaily.com/rss/health_medicine.xml",
+    "https://www.sciencedaily.com/rss/mind_brain/education_learning.xml"
   ],
   "trustedDomains": [
     "who.int",
@@ -49,5 +56,22 @@
   "hardMaxIn12Hours": 16,
   "baseQualityScore": 70,
   "forcePublishEveryRun": true,
-  "domainDiversityWindowRuns": 4
+  "domainDiversityWindowRuns": 6,
+  "enableGoogleNewsFallback": true,
+  "googleNewsTopics": [
+    "global health",
+    "public health policy",
+    "global education",
+    "education policy",
+    "school health",
+    "health and education reform"
+  ],
+  "googleNewsLanguage": "en-US",
+  "googleNewsRegion": "US",
+  "googleNewsEdition": "US:en",
+  "minPrimaryCandidatesBeforeFallback": 8,
+  "maxDomainPublishes24Hours": 2,
+  "domainPublishWindowHours": 24,
+  "allowRepeatSourceIfNeeded": true,
+  "repeatSourceCooldownHours": 6
 }
