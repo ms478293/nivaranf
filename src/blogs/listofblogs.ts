@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-coverage-expands-yet-billions-remain-vulnerable-to-financial-ruin-report-finds",
+    title: "Global Health Coverage Expands, Yet Billions Remain Vulnerable to Financial Ruin, Report Finds",
+    summary:
+      "A new joint report reveals that while global health service coverage has improved significantly since 2000, progress has slowed, leaving billions without essential care. Financial hardship remains a critical barrier, pushing 1.6 billion people deeper into poverty due to out-of-pocket medical expenses.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-global-health-coverage-expands-yet-billions-remain-vulnerable-to-financial-ruin-.png",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "1-000-days-of-war-sudan-endures-the-world-s-worst-humanitarian-catastrophe",
     title: "1,000 Days of War: Sudan Endures the World’s Worst Humanitarian Catastrophe",
     summary:
