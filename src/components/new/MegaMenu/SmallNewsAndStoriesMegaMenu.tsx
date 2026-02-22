@@ -53,17 +53,6 @@ export const SmallNewsAndStoriesMegaMenu = () => {
             </p>
           </Link>
         </SheetPrimitive.Close>
-        <SheetPrimitive.Close asChild>
-          <Link
-            href="/news"
-            className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-2"
-          >
-            <p className="text-sm font-medium text-gray-800">Nepal News</p>
-            <p className="mt-0.5 text-xs text-gray-600">
-              Program updates and field alerts from Nepal.
-            </p>
-          </Link>
-        </SheetPrimitive.Close>
       </div>
       <SheetPrimitive.Close>
         <AppButton variant="ghost" className="px-0 relative mt-3" asChild>
