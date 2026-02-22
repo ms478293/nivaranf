@@ -1,9 +1,16 @@
 {
   "sourceUrls": [
-    "https://news.google.com/rss/search?q=(global+health+OR+public+health)+when:1d+-Nepal&hl=en-US&gl=US&ceid=US:en",
-    "https://news.google.com/rss/search?q=(global+education+OR+school+policy)+when:1d+-Nepal&hl=en-US&gl=US&ceid=US:en",
     "https://www.who.int/rss-feeds/news-english.xml",
-    "https://www.unesco.org/en/articles/rss.xml"
+    "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+    "https://feeds.bbci.co.uk/news/health/rss.xml",
+    "https://feeds.bbci.co.uk/news/education/rss.xml",
+    "https://www.nature.com/subjects/public-health.rss",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+    "https://www.theguardian.com/education/rss",
+    "https://www.theguardian.com/world/rss",
+    "https://www.ft.com/health?format=rss",
+    "https://www.aljazeera.com/xml/rss/all.xml"
   ],
   "trustedDomains": [
     "who.int",
@@ -15,6 +22,7 @@
     "reuters.com",
     "apnews.com",
     "bbc.com",
+    "bbci.co.uk",
     "ft.com",
     "economist.com",
     "nature.com",
@@ -40,5 +48,6 @@
   "targetMinIn12Hours": 12,
   "hardMaxIn12Hours": 16,
   "baseQualityScore": 70,
-  "forcePublishEveryRun": true
+  "forcePublishEveryRun": true,
+  "domainDiversityWindowRuns": 4
 }

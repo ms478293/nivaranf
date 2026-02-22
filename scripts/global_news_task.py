@@ -978,6 +978,17 @@ def choose_threshold(base: int, target_min: int, published_count: int, hours_lef
     return max(52, threshold)
 
 
+def pick_candidate_with_domain_diversity(
+    pool: List[Candidate], recent_domains: set[str]
+) -> Tuple[Optional[Candidate], bool]:
+    if not pool:
+        return None, False
+    for candidate in pool:
+        if candidate.domain not in recent_domains:
+            return candidate, True
+    return pool[0], False
+
+
 def generate_article_prompt(candidate: Candidate) -> str:
     published_label = (
         candidate.published_at.strftime("%Y-%m-%d %H:%M UTC")
@@ -1115,6 +1126,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "hardMaxIn12Hours": 16,
             "baseQualityScore": 70,
             "forcePublishEveryRun": True,
+            "domainDiversityWindowRuns": 4,
         },
     )
 
@@ -1125,6 +1137,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     hard_max: int = int(cfg.get("hardMaxIn12Hours", 16))
     min_quality_score: int = max(70, int(cfg.get("baseQualityScore", 70)))
     force_publish_every_run: bool = bool(cfg.get("forcePublishEveryRun", True))
+    domain_diversity_window_runs: int = max(0, int(cfg.get("domainDiversityWindowRuns", 4)))
 
     state = load_json(
         state_path,
@@ -1170,6 +1183,14 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         for item in history
         if isinstance(item, dict) and item.get("sourceTitle")
     }
+    recent_history_domains: set[str] = set()
+    if domain_diversity_window_runs > 0:
+        for item in history[-domain_diversity_window_runs:]:
+            if not isinstance(item, dict):
+                continue
+            domain = domain_of(str(item.get("sourceUrl", "")))
+            if domain:
+                recent_history_domains.add(domain)
     existing_source_links, existing_title_keys = extract_existing_content_fingerprints(
         repo_root
     )
@@ -1234,6 +1255,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "targetMinIn12Hours": target_min,
         "hardMaxIn12Hours": hard_max,
         "forcePublishEveryRun": force_publish_every_run,
+        "domainDiversityWindowRuns": domain_diversity_window_runs,
+        "recentHistoryDomains": sorted(recent_history_domains),
         "thresholdUsed": threshold_used,
         "candidatesFetched": len(candidates),
         "candidateCacheCount": len(cached_candidates),
@@ -1262,14 +1285,20 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         return run_report
 
     # User rule: pick top ranked #1 candidate after filters.
-    selected = eligible_candidates[0] if eligible_candidates else None
+    selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
+        eligible_candidates,
+        recent_history_domains,
+    )
     fallback_used = False
     fallback_reason = ""
     fallback_min_score = max(DUPLICATE_FALLBACK_MIN_SCORE, threshold_used - 12)
     if selected is None and filtered_candidates:
         fallback_pool = [c for c in filtered_candidates if c.score >= fallback_min_score]
-        if fallback_pool:
-            selected = fallback_pool[0]
+        selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
+            fallback_pool,
+            recent_history_domains,
+        )
+        if selected is not None:
             fallback_used = True
             fallback_reason = "below_threshold"
     cache_fallback_candidates: List[Candidate] = []
@@ -1286,15 +1315,22 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             ):
                 continue
             cache_fallback_candidates.append(cache_candidate)
-        if cache_fallback_candidates:
-            selected = cache_fallback_candidates[0]
+        selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
+            cache_fallback_candidates,
+            recent_history_domains,
+        )
+        if selected is not None:
             fallback_used = True
             fallback_reason = "cache_backfill"
     if selected is None and force_publish_every_run and source_unique_candidates:
         # Mandatory hourly publish fallback: relax title-duplicate filter but never source-link duplicates.
-        selected = source_unique_candidates[0]
-        fallback_used = True
-        fallback_reason = "title_dedupe_relaxed"
+        selected, selected_from_diverse_domain = pick_candidate_with_domain_diversity(
+            source_unique_candidates,
+            recent_history_domains,
+        )
+        if selected is not None:
+            fallback_used = True
+            fallback_reason = "title_dedupe_relaxed"
     if selected is None:
         run_report["reason"] = (
             "no non-duplicate trusted global health/education candidate available this hour"
@@ -1502,6 +1538,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
                 "score": selected.score,
                 "reason": selected.reason,
             },
+            "selectedFromDiverseDomain": selected_from_diverse_domain,
             "fallbackUsed": fallback_used,
             "fallbackMinScore": fallback_min_score if fallback_used else None,
             "fallbackReason": fallback_reason if fallback_used else "",
