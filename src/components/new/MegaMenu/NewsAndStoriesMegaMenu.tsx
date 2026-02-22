@@ -68,7 +68,7 @@ const NewsAndStoriesMegaMenu = () => {
   const featuredData = useTrendingBlogs(4);
   const allBlogs = useBlogFeed(250);
   const headingGradientClass =
-    "mb-2 font-semibold bg-[linear-gradient(110deg,#eb6a4f_0%,#2f7fb7_52%,#2aa89a_100%)] bg-clip-text text-transparent";
+    "mb-2 text-2xl leading-tight font-semibold tracking-tight bg-[linear-gradient(110deg,#eb6a4f_0%,#2f7fb7_52%,#2aa89a_100%)] bg-clip-text text-transparent";
   const globalCards = useMemo(() => {
     const newsBlogs = allBlogs.filter((blog) => blog.type === "News");
 
