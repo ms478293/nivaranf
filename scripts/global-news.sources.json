@@ -75,5 +75,7 @@
   "allowRepeatSourceIfNeeded": true,
   "repeatSourceCooldownHours": 6,
   "enableEmergencyFallback": true,
-  "emergencyPoolSize": 8
+  "emergencyPoolSize": 8,
+  "feedTimeoutSeconds": 12,
+  "feedRetries": 1
 }

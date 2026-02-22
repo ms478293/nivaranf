@@ -46,6 +46,8 @@ USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 DEFAULT_TIMEOUT_SECONDS = 60
+DEFAULT_FEED_TIMEOUT_SECONDS = 12
+DEFAULT_FEED_RETRIES = 1
 TARGET_IMAGE_LONG_EDGE = 7680
 IMAGE_QUALITY_SUFFIX = (
     "Documentary realism, sharp focus, high local contrast, crisp texture detail, "
@@ -1166,15 +1168,27 @@ Return JSON with exact keys:
 """.strip()
 
 
-def fetch_candidates(source_urls: List[str], trusted_domains: List[str], exclude_terms: List[str]) -> List[Candidate]:
+def fetch_candidates(
+    source_urls: List[str],
+    trusted_domains: List[str],
+    exclude_terms: List[str],
+    feed_timeout_seconds: int = DEFAULT_FEED_TIMEOUT_SECONDS,
+    feed_retries: int = DEFAULT_FEED_RETRIES,
+) -> Tuple[List[Candidate], int]:
     seen_ids: set[str] = set()
     candidates: List[Candidate] = []
+    fetch_network_errors = 0
 
     for feed_url in source_urls:
         try:
-            xml_text = req_text(feed_url)
+            xml_text = req_text(
+                feed_url,
+                timeout=feed_timeout_seconds,
+                retries=feed_retries,
+            )
             items = parse_feed_items(xml_text)
         except Exception:
+            fetch_network_errors += 1
             continue
 
         for title, link, description, pub in items:
@@ -1195,7 +1209,7 @@ def fetch_candidates(source_urls: List[str], trusted_domains: List[str], exclude
             candidates.append(candidate)
 
     candidates.sort(key=lambda c: c.score, reverse=True)
-    return candidates
+    return candidates, fetch_network_errors
 
 
 def merge_candidates(primary: List[Candidate], fallback: List[Candidate]) -> List[Candidate]:
@@ -1218,12 +1232,15 @@ def fetch_google_news_fallback_candidates(
     language: str = "en-US",
     region: str = "US",
     edition: str = "US:en",
-) -> List[Candidate]:
+    feed_timeout_seconds: int = DEFAULT_FEED_TIMEOUT_SECONDS,
+    feed_retries: int = DEFAULT_FEED_RETRIES,
+) -> Tuple[List[Candidate], int]:
     if not topics:
         topics = GOOGLE_NEWS_FALLBACK_TOPICS
 
     candidates: List[Candidate] = []
     seen: set[str] = set()
+    fetch_network_errors = 0
     for topic in topics:
         query = urllib.parse.quote(topic.strip())
         if not query:
@@ -1233,9 +1250,14 @@ def fetch_google_news_fallback_candidates(
             f"q={query}&hl={urllib.parse.quote(language)}&gl={urllib.parse.quote(region)}&ceid={urllib.parse.quote(edition)}"
         )
         try:
-            xml_text = req_text(feed_url, timeout=25, retries=1)
+            xml_text = req_text(
+                feed_url,
+                timeout=feed_timeout_seconds,
+                retries=feed_retries,
+            )
             items = parse_feed_items(xml_text)
         except Exception:
+            fetch_network_errors += 1
             continue
 
         # Parse again to capture <source url="..."> metadata specific to Google News RSS.
@@ -1281,7 +1303,7 @@ def fetch_google_news_fallback_candidates(
             candidates.append(candidate)
 
     candidates.sort(key=lambda c: c.score, reverse=True)
-    return candidates
+    return candidates, fetch_network_errors
 
 
 def build_emergency_fallback_candidates(
@@ -1422,6 +1444,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             "repeatSourceCooldownHours": DUPLICATE_SOURCE_COOLDOWN_HOURS,
             "enableEmergencyFallback": True,
             "emergencyPoolSize": 8,
+            "feedTimeoutSeconds": DEFAULT_FEED_TIMEOUT_SECONDS,
+            "feedRetries": DEFAULT_FEED_RETRIES,
         },
     )
 
@@ -1457,6 +1481,24 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     )
     enable_emergency_fallback: bool = bool(cfg.get("enableEmergencyFallback", True))
     emergency_pool_size: int = max(1, int(cfg.get("emergencyPoolSize", 8)))
+    feed_timeout_seconds: int = max(
+        4,
+        int(
+            cfg.get(
+                "feedTimeoutSeconds",
+                os.getenv("GLOBAL_NEWS_FEED_TIMEOUT_SECONDS", DEFAULT_FEED_TIMEOUT_SECONDS),
+            )
+        ),
+    )
+    feed_retries: int = max(
+        0,
+        int(
+            cfg.get(
+                "feedRetries",
+                os.getenv("GLOBAL_NEWS_FEED_RETRIES", DEFAULT_FEED_RETRIES),
+            )
+        ),
+    )
 
     state = load_json(
         state_path,
@@ -1532,19 +1574,41 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         repo_root
     )
 
-    primary_candidates = fetch_candidates(source_urls, trusted_domains, exclude_terms)
+    primary_fetch_errors = 0
+    google_fetch_errors = 0
+    try:
+        primary_candidates, primary_fetch_errors = fetch_candidates(
+            source_urls=source_urls,
+            trusted_domains=trusted_domains,
+            exclude_terms=exclude_terms,
+            feed_timeout_seconds=feed_timeout_seconds,
+            feed_retries=feed_retries,
+        )
+    except Exception:
+        primary_candidates = []
+        primary_fetch_errors = len(source_urls)
+
     google_fallback_candidates: List[Candidate] = []
     if enable_google_news_fallback and (
         len(primary_candidates) < min_primary_before_fallback
     ):
-        google_fallback_candidates = fetch_google_news_fallback_candidates(
-            trusted_domains=trusted_domains,
-            exclude_terms=exclude_terms,
-            topics=google_news_topics,
-            language=google_news_language,
-            region=google_news_region,
-            edition=google_news_edition,
-        )
+        try:
+            (
+                google_fallback_candidates,
+                google_fetch_errors,
+            ) = fetch_google_news_fallback_candidates(
+                trusted_domains=trusted_domains,
+                exclude_terms=exclude_terms,
+                topics=google_news_topics,
+                language=google_news_language,
+                region=google_news_region,
+                edition=google_news_edition,
+                feed_timeout_seconds=feed_timeout_seconds,
+                feed_retries=feed_retries,
+            )
+        except Exception:
+            google_fallback_candidates = []
+            google_fetch_errors = len(google_news_topics)
 
     candidates = merge_candidates(primary_candidates, google_fallback_candidates)
     emergency_candidates: List[Candidate] = []
@@ -1631,6 +1695,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "repeatSourceCooldownHours": repeat_source_cooldown_hours,
         "enableEmergencyFallback": enable_emergency_fallback,
         "emergencyFallbackCandidates": len(emergency_candidates),
+        "feedTimeoutSeconds": feed_timeout_seconds,
+        "feedRetries": feed_retries,
+        "networkFetchErrors": int(primary_fetch_errors + google_fetch_errors),
         "thresholdUsed": threshold_used,
         "primaryCandidatesFetched": len(primary_candidates),
         "googleFallbackCandidatesFetched": len(google_fallback_candidates),
