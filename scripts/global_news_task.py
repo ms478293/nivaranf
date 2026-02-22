@@ -16,6 +16,7 @@ import argparse
 import base64
 import datetime as dt
 import email.utils
+import html
 import hashlib
 import io
 import json
@@ -47,6 +48,7 @@ IMAGE_QUALITY_SUFFIX = (
     "Documentary realism, sharp focus, high local contrast, crisp texture detail, "
     "natural color science, no blur, no haze, no fog, no watercolor, no CGI."
 )
+SOURCE_IMAGE_MIN_LONG_EDGE = 1400
 
 HEALTH_TERMS = {
     "health",
@@ -189,6 +191,31 @@ def req_text(url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2)
                 break
             time.sleep(1.2 * (attempt + 1))
     raise RuntimeError(f"Text request failed: {last_error}")
+
+
+def req_bytes(
+    url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2
+) -> Tuple[bytes, str]:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+        },
+    )
+    last_error: Optional[Exception] = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                content_type = (response.headers.get("Content-Type") or "").lower()
+                mime = content_type.split(";")[0].strip() if content_type else ""
+                return response.read(), mime
+        except Exception as exc:
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(1.2 * (attempt + 1))
+    raise RuntimeError(f"Binary request failed: {last_error}")
 
 
 def parse_datetime(raw: str) -> Optional[dt.datetime]:
@@ -356,6 +383,80 @@ def build_candidate(
         education_hits=education_hits,
         reason=reason,
     )
+
+
+def extract_source_image_urls(page_html: str, page_url: str) -> List[str]:
+    candidates: List[str] = []
+
+    meta_patterns = [
+        r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']twitter:image(?::src)?["\'][^>]+content=["\']([^"\']+)["\']',
+        r'data-image=["\']([^"\']+)["\']',
+    ]
+    for pattern in meta_patterns:
+        for match in re.findall(pattern, page_html, flags=re.IGNORECASE):
+            raw = html.unescape(match).strip()
+            if raw:
+                candidates.append(urllib.parse.urljoin(page_url, raw))
+
+    script_match = re.search(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>([\s\S]*?)</script>',
+        page_html,
+        flags=re.IGNORECASE,
+    )
+    if script_match:
+        script_text = html.unescape(script_match.group(1))
+        json_image_patterns = [
+            r'"image"\s*:\s*"([^"]+)"',
+            r'"image"\s*:\s*\{[^}]*"url"\s*:\s*"([^"]+)"',
+        ]
+        for pattern in json_image_patterns:
+            for match in re.findall(pattern, script_text, flags=re.IGNORECASE):
+                raw = match.replace("\\/", "/").strip()
+                if raw:
+                    candidates.append(urllib.parse.urljoin(page_url, raw))
+
+    unique_urls: List[str] = []
+    seen: set[str] = set()
+    for raw_url in candidates:
+        parsed = urllib.parse.urlparse(raw_url)
+        if parsed.scheme not in ("http", "https"):
+            continue
+        normalized = parsed._replace(fragment="").geturl()
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        unique_urls.append(normalized)
+    return unique_urls
+
+
+def try_fetch_source_image(article_url: str) -> Optional[Tuple[bytes, str, str]]:
+    try:
+        page_html = req_text(article_url, timeout=30, retries=1)
+    except Exception:
+        return None
+
+    image_urls = extract_source_image_urls(page_html, article_url)
+    if not image_urls:
+        return None
+
+    for image_url in image_urls:
+        try:
+            data, mime = req_bytes(image_url, timeout=40, retries=1)
+        except Exception:
+            continue
+        if not data:
+            continue
+
+        if Image is not None:
+            try:
+                with Image.open(io.BytesIO(data)) as img:
+                    if max(img.size) < SOURCE_IMAGE_MIN_LONG_EDGE:
+                        continue
+            except Exception:
+                continue
+        return data, (mime or "image/jpeg"), image_url
+    return None
 
 
 def extract_json_object(raw_text: str) -> Dict:
@@ -788,6 +889,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
     image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
     image_candidates = int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
+    image_provider = os.getenv("GLOBAL_NEWS_IMAGE_PROVIDER", "source_first").strip().lower()
+    if image_provider not in {"source_first", "gemini_first", "gemini"}:
+        image_provider = "source_first"
 
     article_prompt = generate_article_prompt(selected)
     generated = gemini_text_json(api_key=api_key, model=text_model, prompt=article_prompt)
@@ -807,12 +911,38 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     article_slug = slugify(title)
     date_str = now.date().isoformat()
 
-    image_bytes, image_mime, image_sharpness = generate_best_gemini_image(
-        api_key=api_key,
-        model=image_model,
-        image_prompt=image_prompt,
-        attempts=image_candidates,
-    )
+    image_bytes: Optional[bytes] = None
+    image_mime = "image/jpeg"
+    image_sharpness = 0.0
+    source_image_url = ""
+    image_provider_used = ""
+
+    if image_provider in {"source_first"}:
+        source_fetch = try_fetch_source_image(selected.link)
+        if source_fetch is not None:
+            image_bytes, image_mime, source_image_url = source_fetch
+            image_provider_used = "source"
+            image_sharpness = image_sharpness_score(image_bytes)
+
+    if image_bytes is None and image_provider in {"source_first", "gemini_first", "gemini"}:
+        image_bytes, image_mime, image_sharpness = generate_best_gemini_image(
+            api_key=api_key,
+            model=image_model,
+            image_prompt=image_prompt,
+            attempts=image_candidates,
+        )
+        image_provider_used = "gemini"
+
+    if image_bytes is None and image_provider == "gemini_first":
+        source_fetch = try_fetch_source_image(selected.link)
+        if source_fetch is not None:
+            image_bytes, image_mime, source_image_url = source_fetch
+            image_provider_used = "source"
+            image_sharpness = image_sharpness_score(image_bytes)
+
+    if image_bytes is None:
+        raise RuntimeError("No usable image source found (Gemini + source fallback failed)")
+
     image_bytes, image_mime, image_size = upscale_image_to_8k_long_edge(
         image_bytes=image_bytes, mime_type=image_mime
     )
@@ -835,7 +965,11 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "summary": summary,
         "mainImage": main_image,
         "coverImageAlt": title,
-        "coverImageCaption": f"Source context: {selected.domain}.",
+        "coverImageCaption": (
+            f"Source image: {selected.domain}."
+            if image_provider_used == "source"
+            else f"Source context: {selected.domain}."
+        ),
         "type": "News",
         "author": "Nivaran Foundation Global Desk",
         "featured": False,
@@ -909,6 +1043,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             },
             "generatedImageSharpness": image_sharpness,
             "generatedImageCandidates": image_candidates,
+            "imageProviderRequested": image_provider,
+            "imageProviderUsed": image_provider_used,
+            "sourceImageUrl": source_image_url,
             "publishResult": publish_result,
             "liveVerified": live_verified,
             "publishedInWindowAfter": state.get("publishedInWindow", 0),

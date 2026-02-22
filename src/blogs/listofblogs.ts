@@ -22,7 +22,7 @@ export const globalBlogs: blogListType[] = [
     title: "1,000 Days of War: Sudan Endures the World’s Worst Humanitarian Catastrophe",
     summary:
       "Sudan’s conflict has reached its 1,000th day, leaving over 33 million people in desperate need of aid. With the health system shattered and disease rampant, the crisis stands as the largest displacement emergency globally.",
-    thumbnailImage: "/images/global-news/2026/2026-02-22-1-000-days-of-war-sudan-endures-the-world-s-worst-humanitarian-catastrophe-v2.jpg",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-1-000-days-of-war-sudan-endures-the-world-s-worst-humanitarian-catastrophe-v3.jpg",
     date: "2026-02-22",
     author: "Nivaran Foundation Global Desk",
     featured: false,
