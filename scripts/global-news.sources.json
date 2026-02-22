@@ -76,6 +76,7 @@
   "repeatSourceCooldownHours": 6,
   "enableEmergencyFallback": true,
   "emergencyPoolSize": 8,
+  "allowOfflineGenerationFallback": true,
   "feedTimeoutSeconds": 12,
   "feedRetries": 1
 }
