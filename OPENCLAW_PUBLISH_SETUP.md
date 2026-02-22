@@ -114,8 +114,8 @@ This task does all steps automatically:
 ```bash
 export GEMINI_API_KEY="your_key_here"
 # Optional model overrides:
-export GEMINI_TEXT_MODEL="gemini-1.5-pro-latest"
-export GEMINI_IMAGE_MODEL="gemini-2.0-flash-preview-image-generation"
+export GEMINI_TEXT_MODEL="gemini-pro-latest"
+export GEMINI_IMAGE_MODEL="gemini-2.0-flash-exp-image-generation"
 ```
 
 ### Dry run

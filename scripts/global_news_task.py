@@ -31,9 +31,9 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
-GEMINI_TEXT_MODEL_DEFAULT = "gemini-1.5-pro-latest"
-GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-preview-image-generation"
-DEFAULT_TIMEOUT_SECONDS = 25
+GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
+GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
+DEFAULT_TIMEOUT_SECONDS = 60
 
 HEALTH_TERMS = {
     "health",
@@ -136,7 +136,9 @@ def slugify(value: str) -> str:
     return value[:80] if len(value) > 80 else value
 
 
-def req_json(url: str, payload: Dict, timeout: int = DEFAULT_TIMEOUT_SECONDS) -> Dict:
+def req_json(
+    url: str, payload: Dict, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2
+) -> Dict:
     body = json.dumps(payload).encode("utf-8")
     request = urllib.request.Request(
         url,
@@ -147,15 +149,33 @@ def req_json(url: str, payload: Dict, timeout: int = DEFAULT_TIMEOUT_SECONDS) ->
             "User-Agent": USER_AGENT,
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        data = response.read().decode("utf-8", errors="ignore")
-        return json.loads(data)
+    last_error: Optional[Exception] = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                data = response.read().decode("utf-8", errors="ignore")
+                return json.loads(data)
+        except Exception as exc:
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(f"JSON request failed: {last_error}")
 
 
-def req_text(url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS) -> str:
+def req_text(url: str, timeout: int = DEFAULT_TIMEOUT_SECONDS, retries: int = 2) -> str:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read().decode("utf-8", errors="ignore")
+    last_error: Optional[Exception] = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read().decode("utf-8", errors="ignore")
+        except Exception as exc:
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(1.2 * (attempt + 1))
+    raise RuntimeError(f"Text request failed: {last_error}")
 
 
 def parse_datetime(raw: str) -> Optional[dt.datetime]:
@@ -342,7 +362,7 @@ def gemini_text_json(api_key: str, model: str, prompt: str) -> Dict:
             "responseMimeType": "application/json",
         },
     }
-    response = req_json(url, payload)
+    response = req_json(url, payload, timeout=90, retries=2)
     candidates = response.get("candidates") or []
     if not candidates:
         raise RuntimeError("Gemini returned no candidates")
@@ -367,7 +387,7 @@ def gemini_generate_image(
             "temperature": 0.3,
         },
     }
-    response = req_json(url, payload)
+    response = req_json(url, payload, timeout=140, retries=2)
     for candidate in response.get("candidates", []):
         for part in candidate.get("content", {}).get("parts", []):
             inline = part.get("inlineData")
