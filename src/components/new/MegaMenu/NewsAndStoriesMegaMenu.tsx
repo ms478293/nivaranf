@@ -67,6 +67,8 @@ const NewsAndStoriesMegaMenu = () => {
   const { openActiveMegaMenu } = useMegaMenuStore();
   const featuredData = useTrendingBlogs(4);
   const allBlogs = useBlogFeed(250);
+  const headingGradientClass =
+    "mb-2 font-semibold bg-[linear-gradient(110deg,#eb6a4f_0%,#2f7fb7_52%,#2aa89a_100%)] bg-clip-text text-transparent";
   const globalCards = useMemo(() => {
     const newsBlogs = allBlogs.filter((blog) => blog.type === "News");
 
@@ -95,7 +97,7 @@ const NewsAndStoriesMegaMenu = () => {
       <div className="grid grid-cols-[max-content_max-content] gap-4 items-start">
         <section className="rounded-xl border border-gray-200 bg-white p-3 w-fit">
           <div className="flex justify-between items-center">
-            <h3 className="font-medium text-gray-600 mb-2">Trending Blogs</h3>
+            <h3 className={headingGradientClass}>Trending Blogs</h3>
             <Link href="/blogs">
               <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
                 View more Blogs
@@ -132,7 +134,7 @@ const NewsAndStoriesMegaMenu = () => {
 
         <aside className="rounded-xl border border-gray-200 bg-white p-3 w-fit self-start">
           <div className="flex justify-between items-center">
-            <h3 className="font-medium text-gray-600 mb-2">Global Featured</h3>
+            <h3 className={headingGradientClass}>Global Featured</h3>
             <Link href="/global-news">
               <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
                 View more
