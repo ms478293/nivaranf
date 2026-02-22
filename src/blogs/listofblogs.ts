@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-empty-desk-dilemma-rethinking-state-intervention-in-chronic-absenteeism",
+    title: "The Empty Desk Dilemma: Rethinking State Intervention in Chronic Absenteeism",
+    summary:
+      "Mandatory reporting laws often force teachers to involve child protective services when students miss school, sparking a global debate on the criminalization of poverty. New policy proposals suggest decoupling attendance issues from child welfare to focus on root causes like health and housing.",
+    thumbnailImage: "/images/global-news/2026/2026-02-22-the-empty-desk-dilemma-rethinking-state-intervention-in-chronic-absenteeism.jpg",
+    date: "2026-02-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "massive-civic-education-drive-reaches-6-743-wards-ahead-of-hor-elections",
     title: "Massive Civic Education Drive Reaches 6,743 Wards Ahead of HoR Elections",
     summary:
