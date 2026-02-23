@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-inequities-the-unseen-barriers-to-well-being",
+    title: "Global Health Inequities: The Unseen Barriers to Well-being",
+    summary:
+      "This article explores the World Health Organization's insights into the multifaceted nature of global health inequities, highlighting how data gaps, power imbalances, and neo-colonial practices perpetuate disparities. It delves into the critical role of community-led initiatives, self-care interventions, and ethical governance in bridging the gap between health knowledge and those most in need. We analyze the implications for policy, international cooperation, and Nivaran's unwavering commitment to dismantling the \"distance is the disease\" paradigm for a more just and healthy world.",
+    thumbnailImage: "/images/global-health-inequities-unseen-barriers.jpg",
+    date: "2026-02-23",
+    author: "Nivaran",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "the-promise-and-peril-of-ai-at-scale-bridging-the-inclusion-gap-in-global-development",
     title: "The Promise and Peril of AI at Scale: Bridging the Inclusion Gap in Global Development",
     summary:
