@@ -22,7 +22,7 @@ export const globalBlogs: blogListType[] = [
     title: "Sarlahi's Early Warning: How Nepal Contained a Measles Flare-Up",
     summary:
       "A measles flare-up in Sarlahi was contained through early detection and a swift immunization response. The episode highlights how readiness, community trust, and reliable vaccine supply determine whether outbreaks spread or stop.",
-    thumbnailImage: "/images/nepal-news/2026/2026-02-23-sarlahi-measles-response.jpg",
+    thumbnailImage: "/images/nepal-news/2026/2026-02-23-sarlahi-measles-response-gemini-25.jpg",
     date: "2026-02-23",
     author: "Nivaran Foundation Nepal Desk",
     featured: false,
