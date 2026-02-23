@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-end-of-an-ancient-scourge-libya-s-triumph-over-trachoma-and-the-unfolding-narrative-of-global-health-equity",
+    title: "The End of an Ancient Scourge: Libya's Triumph Over Trachoma and the Unfolding Narrative of Global Health Equity",
+    summary:
+      "Despite years of political instability and humanitarian crises, Libya has achieved a landmark victory, eliminating trachoma as a public health problem. This success, driven by dedicated health workers and international partnerships, offers crucial lessons for overcoming neglected tropical diseases and advancing health equity globally, proving that 'Distance is the Disease' can be defeated.",
+    thumbnailImage: "Editorial illustration: A poignant, abstract depiction of resilience and hope against adversity. In the foreground, stylized elements suggesting clean water, sanitation, and medical care converge, forming a protective barrier. In the background, a subtle, evocative outline of a diverse community emerges from a challenging, somewhat desolate landscape, with a single, clear eye motif prominent and hopeful. Use a color palette that is both subdued to acknowledge struggle, yet vibrant in key areas to signify progress and life-saving interventions. The style should be empathetic and inspiring, focusing on the triumph of public health and collective human effort. Image Credit: No original image found on source article (WHO news release).",
+    date: "2026-02-23",
+    author: "Nivaran Global Desk",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "sarlahi-s-early-warning-how-nepal-contained-a-measles-flare-up",
     title: "Sarlahi's Early Warning: How Nepal Contained a Measles Flare-Up",
     summary:
