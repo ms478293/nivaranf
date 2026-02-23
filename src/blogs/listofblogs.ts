@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "vision-in-crisis-ocular-health-emergency-among-displaced-populations-in-nigeria",
+    title: "Vision in Crisis: Ocular Health Emergency Among Displaced Populations in Nigeria",
+    summary:
+      "Over 60% of internally displaced persons (IDPs) in Nigeria's Benue State suffer from preventable or treatable eye conditions like cataracts and refractive errors, yet only a fraction can access care. A recent study highlights extreme poverty, lack of clinics, and low awareness as primary barriers, pushing vulnerable communities further into preventable blindness and dependency.",
+    thumbnailImage: "Editorial illustration: A poignant, abstract depiction of vulnerability and hope. In the foreground, a silhouetted figure with clouded eyes, representing an internally displaced person, stands amidst a desolate landscape of scattered makeshift shelters. Their hand reaches out, possibly towards a blurred horizon or a distant, faint light. The background features subtle, almost ethereal imagery of basic medical instruments or a gentle, guiding hand, symbolizing the potential for intervention and care. Use a muted color palette with soft contrasts, emphasizing the challenges while hinting at resilience and the possibility of restored vision. The style should be empathetic and evocative, not overtly graphic.",
+    date: "2026-02-23",
+    author: "Nivaran Global Desk",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "greenland-rejects-us-hospital-ship-offer-defending-arctic-health-sovereignty-against-political-critique",
     title: "Greenland Rejects US Hospital Ship Offer, Defending Arctic Health Sovereignty Against Political Critique",
     summary:
