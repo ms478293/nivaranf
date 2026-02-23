@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-cloud-as-a-catalyst-for-health-equity-aws-s-transformative-initiative",
+    title: "The Cloud as a Catalyst for Health Equity: AWS's Transformative Initiative",
+    summary:
+      "This article delves into the AWS Health Equity Initiative, highlighting its $60 million pledge to advance global health equity through cloud solutions. We explore how AWS has supported over 400 customers, reaching 109 million people globally, by increasing access to health services, social support, and mitigating climate change impacts for underserved populations. The piece analyzes the strategic deployment of technology to dismantle barriers, emphasizing the role of 'small AI' and culturally responsive solutions in the fight against 'distance as the disease' and advocating for sustained, ethical innovation in digital health.",
+    thumbnailImage: "/images/the-cloud-as-a-catalyst-for-health-equity-aws-initiative.jpg",
+    date: "2026-02-23",
+    author: "Nivaran",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "global-health-inequities-the-unseen-barriers-to-well-being",
     title: "Global Health Inequities: The Unseen Barriers to Well-being",
     summary:
