@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-promise-and-peril-of-ai-at-scale-bridging-the-inclusion-gap-in-global-development",
+    title: "The Promise and Peril of AI at Scale: Bridging the Inclusion Gap in Global Development",
+    summary:
+      "This article explores the World Bank's insights from India's AI Impact Summit 2026, highlighting the transformative potential of 'small AI' solutions in health, education, and agriculture for vulnerable communities. While India showcases AI's capacity for scalable impact, the piece critically analyzes the persistent challenges of inclusion, algorithmic bias, and cybersecurity. It argues that for AI to genuinely serve as a tool for inclusive growth, robust governance, local relevance, and a \"glass box\" approach are paramount, reflecting Nivaran's commitment to ensuring technology bridges, rather than deepens, global disparities.",
+    thumbnailImage: "/images/ai-at-scale-inclusion-gap-global-development.jpg",
+    date: "2026-02-23",
+    author: "Nivaran",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "bridging-the-diabetes-divide-wechat-s-transformative-role-in-global-health-education",
     title: "Bridging the Diabetes Divide: WeChat's Transformative Role in Global Health Education",
     summary:
