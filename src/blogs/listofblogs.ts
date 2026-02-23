@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uniting-for-africa-s-future-first-ladies-championing-health-education-and-economic-empowerment",
+    title: "Uniting for Africa's Future: First Ladies Championing Health, Education, and Economic Empowerment",
+    summary:
+      "African First Ladies are uniting to tackle health, education, and economic disparities for women and vulnerable communities, inspired by Ghana's First Lady Lordina Mahama. This collaborative effort, epitomized by the Lordina Foundation's impactful work, aims to bridge critical gaps across the continent, proving that collective action can overcome the systemic 'distances' that impede progress.",
+    thumbnailImage: "Editorial illustration: A visual representation of solidarity and empowerment across Africa. A diverse group of stylized female figures, subtly evoking leadership and unity, stand together, with some figures holding symbols of health (e.g., a caduceus, a clinic outline), education (e.g., an open book, a graduation cap), and economic growth (e.g., a growing plant, interconnected gears). The background features a map of Africa, with lines or lights connecting various regions, symbolizing collaboration and the flow of knowledge/resources. The overall aesthetic should be modern, optimistic, and emphasize collective strength and progress. Use a vibrant yet authoritative color palette. Image Credit: No original image found on source article (SKB Journal).",
+    date: "2026-02-23",
+    author: "Nivaran Global Desk",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "the-end-of-an-ancient-scourge-libya-s-triumph-over-trachoma-and-the-unfolding-narrative-of-global-health-equity",
     title: "The End of an Ancient Scourge: Libya's Triumph Over Trachoma and the Unfolding Narrative of Global Health Equity",
     summary:
