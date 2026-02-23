@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "greenland-rejects-us-hospital-ship-offer-defending-arctic-health-sovereignty-against-political-critique",
+    title: "Greenland Rejects US Hospital Ship Offer, Defending Arctic Health Sovereignty Against Political Critique",
+    summary:
+      "Greenland’s government has firmly declined a US offer to send a hospital ship to the Arctic territory, following comments from President Donald Trump mocking the island's healthcare infrastructure. Officials in Nuuk defended their public health system, framing the rejection as a matter of national pride and autonomy.",
+    thumbnailImage: "/images/global-news/2026/2026-02-23-greenland-rejects-us-hospital-ship-offer-defending-arctic-health-sovereignty-aga.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "greenland-rejects-us-hospital-ship-offer-amid-diplomatic-row-over-healthcare-sovereignty",
     title: "Greenland Rejects US Hospital Ship Offer Amid Diplomatic Row Over Healthcare Sovereignty",
     summary:
