@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "greenland-rejects-us-hospital-ship-offer-amid-diplomatic-row-over-healthcare-sovereignty",
+    title: "Greenland Rejects US Hospital Ship Offer Amid Diplomatic Row Over Healthcare Sovereignty",
+    summary:
+      "Greenland has firmly declined a United States offer to deploy a hospital ship to its waters, viewing the proposal as a diplomatic slight rather than genuine aid. The incident highlights growing tensions between American geopolitical ambitions in the Arctic and the autonomy of the Nordic healthcare model.",
+    thumbnailImage: "/images/global-news/2026/2026-02-23-greenland-rejects-us-hospital-ship-offer-amid-diplomatic-row-over-healthcare-sov.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "greenland-rebuffs-us-hospital-ship-offer-defending-arctic-healthcare-sovereignty",
     title: "Greenland Rebuffs US Hospital Ship Offer, Defending Arctic Healthcare Sovereignty",
     summary:
