@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-2026-threat-matrix-six-health-crises-defining-the-year",
+    title: "The 2026 Threat Matrix: Six Health Crises Defining the Year",
+    summary:
+      "As violence hits post-WWII highs, conflict has become a primary driver of infectious disease. Cholera deaths rose 50% last year, largely in war zones. This is the new epidemiology of instability.",
+    thumbnailImage: "/images/global-news/2026/2026-02-23-the-2026-threat-matrix-six-health-crises-defining-the-year.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "the-lethal-gap-why-conflict-zones-are-now-the-world-s-deadliest-maternity-wards",
     title: "The Lethal Gap: Why Conflict Zones Are Now the World's Deadliest Maternity Wards",
     summary:
