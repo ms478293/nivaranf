@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sarlahi-s-early-warning-how-nepal-contained-a-measles-flare-up",
+    title: "Sarlahi's Early Warning: How Nepal Contained a Measles Flare-Up",
+    summary:
+      "A measles flare-up in Sarlahi was contained through early detection and a swift immunization response. The episode highlights how readiness, community trust, and reliable vaccine supply determine whether outbreaks spread or stop.",
+    thumbnailImage: "/images/nepal-news/2026/2026-02-23-sarlahi-measles-response.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-3-2-billion-betrayal-education-aid-collapse-threatens-6-million-children",
     title: "The $3.2 Billion Betrayal: Education Aid Collapse Threatens 6 Million Children",
     summary:
