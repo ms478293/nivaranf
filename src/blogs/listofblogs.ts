@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "bridging-the-diabetes-divide-wechat-s-transformative-role-in-global-health-education",
+    title: "Bridging the Diabetes Divide: WeChat's Transformative Role in Global Health Education",
+    summary:
+      "This article delves into a pivotal randomized controlled trial conducted in China, demonstrating the profound efficacy of a WeChat-based health education intervention in improving glycemic control among community-dwelling patients with Type 2 Diabetes. Beyond conventional healthcare models, this digital approach leverages familiar social media to transcend barriers of distance, income, and education, showcasing a scalable and emotionally resonant solution to a critical global health challenge. We explore the nuanced impact on underserved populations, the innovative methodology, and the broader implications for public health strategies striving for equitable access and sustainable outcomes.",
+    thumbnailImage: "/images/bridging-diabetes-divide-wechat-health-education.png",
+    date: "2026-02-23",
+    author: "Nivaran",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "uniting-for-africa-s-future-first-ladies-championing-health-education-and-economic-empowerment",
     title: "Uniting for Africa's Future: First Ladies Championing Health, Education, and Economic Empowerment",
     summary:
