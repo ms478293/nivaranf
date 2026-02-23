@@ -1,0 +1,525 @@
+<!DOCTYPE html><!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Webpage" class="no-js ie ie6 lte6 lte7 lte8 lte9" lang="en"><![endif]--><!--[if IE 7 ]><html itemscope itemtype="http://schema.org/Webpage" class="no-js ie ie7 lte7 lte8 lte9" lang="en"><![endif]--><!--[if IE 8 ]><html itemscope itemtype="http://schema.org/Webpage" class="no-js ie ie8 lte8 lte9" lang="en"><![endif]--><!--[if IE 9 ]><html itemscope itemtype="http://schema.org/Webpage" class="no-js ie ie9 lte9" lang="en"><![endif]--><!--[if gt IE 9 ]><html itemscope itemtype="http://schema.org/Webpage" class="no-js" lang="en"><![endif]--><!--[if !IE]><!--><html itemscope itemtype="http://schema.org/Webpage" class="no-js" lang="en"><!--<![endif]--><head><meta charset="UTF-8"><meta itemprop="image" content="https://cdn.allafrica.com/static/images/structure/aa-logo-rgba-no-text-square.png"><meta name="robots" content="noarchive, noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+.carousel-container.uninitialized,.carousel-container.initializing{visibility:hidden;height:0;overflow: hidden;}
+.carousel-container.initialized{visibility:visible;}
+.operamini .carousel-single .carousel-container.uninitialized{visibility:visible;height:auto;}
+.operamini .owl-carousel-wrapper .owl-carousel-container .owl-carousel{display: block;}
+.operamini .owl-carousel-wrapper .owl-carousel-container .owl-carousel .item + .item{display:none;}
+</style><style>
+.container.content-area-top {
+background-color: #fff;
+}
+</style><script>
+const ___reqID="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(c){var r=16*Math.random()|0,v;return("x"==c?r:3&r|8).toString(16)});
+var JDEV={logging:{logToServer:function(){var logEventObject=Object.assign({_class:"info",_tag:"none",_location:location.href,_browser:navigator.userAgent,___reqID:___reqID,__time:(new Date()).toISOString()},arguments[0]);var arr=["_class","_tag"];for(var i=0;i<arr.length;i++){var key=arr[i];logEventObject[key]="["+logEventObject[key].toUpperCase()+"]"}var keys=Object.keys(logEventObject);keys.sort();var postData=keys.map(function(key){return encodeURIComponent(key)+"="+encodeURIComponent(logEventObject[key])}).join("&");try{var xhr=new XMLHttpRequest;xhr.open("POST","/functions/jdev-logger.json",true);xhr.setRequestHeader("X-Requested-With","XMLHttpRequest");xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");xhr.send(postData)}catch(e){console.log(e)}}}};;
+window.onerror = function (message, source, line, col, error) { try{ JDEV.logging.logToServer( { _tag: 'window.onerror', message: message, source: source, line: line, col: col, error: error } ); console.error( error ); } catch (e) {} return true; }
+</script><script>
+window._ready = window._ready || { 'push': function (el) { (_ready.q = _ready.q || []).push(el); } };
+var __aaVerbose = new RegExp("(^|\\s)is-dev(\\s|$)").test( document.getElementsByTagName("html")[0].getAttribute("class") );
+function logError(e){JDEV.logging.logToServer({_tag:"logError",message:e.message,stack:e.stack});if(__aaVerbose&&window["console"]&&console.error)console.error(e)}
+function ready(fn){function eventCallback(){try{fn()}catch(error){try{JDEV.logging.logToServer({_tag:"ready",error:error});console.error(error)}catch(e){}}}if("interactive"===document.readyState||"complete"===document.readyState)window.setTimeout(eventCallback);else if(document.addEventListener)document.addEventListener("DOMContentLoaded",eventCallback,false);else if(document.attachEvent)document.attachEvent("onreadystatechange",function(){if("interactive"===document.readyState)eventCallback()});else try{JDEV.logging.logToServer({_tag:"ready",message:"unhandled ready condition"});console.error(error)}catch(e){}}
+var eventToolsQueue = [];
+</script><script>
+var doLoadAds = false;
+var doLoadTracking = false;
+var doLoadSocial = false;
+var requestNonPersonalizedAds = true;
+</script><script>
+!function(){"use strict";var t;(function(t){t.t=function(){for(var t,e,n="__tcfapiLocator",r=[],i=window;i;){try{if(i.frames[n]){t=i;break}}catch(t){}if(i===window.top)break;i=i.parent}t||(function t(){var e=i.document,r=!!i.frames[n];if(!r)if(e.body){var a=e.createElement("iframe");a.style.cssText="display:none",a.name=n,e.body.appendChild(a)}else setTimeout(t,5);return!r}(),i.__tcfapi=function(){for(var t=arguments.length,n=new Array(t),i=0;i<t;i++)n[i]=arguments[i];if(!n.length)return r;if("setGdprApplies"===n[0])n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0));else if("ping"===n[0]){var a={gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"};"function"==typeof n[2]&&n[2](a)}else r.push(n)},i.addEventListener("message",(function(t){var e="string"==typeof t.data,n={};try{n=e?JSON.parse(t.data):t.data}catch(t){}var r=n.i;r&&window.__tcfapi(r.command,r.version,(function(n,i){var a={o:{returnValue:n,s:i,u:r.u}};e&&(a=JSON.stringify(a)),t&&t.source&&t.source.postMessage&&t.source.postMessage(a,"*")}),r.p)}),!1))}}(t={t:{}}),t.t)()}();
+</script><script>
+var clickioConsentCallback = {
+fired: false,
+consentState: 'UNSET',
+};
+(window.__lxG__consent__= window.__lxG__consent__||{}).consentCallback = function(consentState) {
+// EEA user, consent interface shown, cmp loaded, user has not decided yet
+if ( consentState === -1 ) return;
+if ( clickioConsentCallback.fired ) return;
+clickioConsentCallback.fired = true;
+clickioConsentCallback.consentState = consentState;
+};
+</script><script async src="//clickiocmp.com/t/consent_215885.js"></script><script>
+loadjs=function(){var h=function(){},c={},u={},f={};function o(e,n){if(e){var r=f[e];if(u[e]=n,r)for(;r.length;)r[0](e,n),r.splice(0,1)}}function l(e,n){e.call&&(e={success:e}),n.length?(e.error||h)(n):(e.success||h)(e)}function d(r,t,s,i){var c,o,e=document,n=s.async,u=(s.numRetries||0)+1,f=s.before||h,l=r.replace(/[\?|#].*$/,""),a=r.replace(/^(css|img)!/,"");i=i||0,/(^css!|\.css$)/.test(l)?((o=e.createElement("link")).rel="stylesheet",o.href=a,(c="hideFocus"in o)&&o.relList&&(c=0,o.rel="preload",o.as="style")):/(^img!|\.(png|gif|jpg|svg)$)/.test(l)?(o=e.createElement("img")).src=a:((o=e.createElement("script")).src=r,o.async=void 0===n||n),!(o.onload=o.onerror=o.onbeforeload=function(e){var n=e.type[0];if(c)try{o.sheet.cssText.length||(n="e")}catch(e){18!=e.code&&(n="e")}if("e"==n){if((i+=1)<u)return d(r,t,s,i)}else if("preload"==o.rel&&"style"==o.as)return o.rel="stylesheet";t(r,n,e.defaultPrevented)})!==f(r,o)&&e.head.appendChild(o)}function r(e,n,r){var t,s;if(n&&n.trim&&(t=n),s=(t?r:n)||{},t){if(t in c)throw"LoadJS";c[t]=!0}function i(n,r){!function(e,t,n){var r,s,i=(e=e.push?e:[e]).length,c=i,o=[];for(r=function(e,n,r){if("e"==n&&o.push(e),"b"==n){if(!r)return;o.push(e)}--i||t(o)},s=0;s<c;s++)d(e[s],r,n)}(e,function(e){l(s,e),n&&l({success:n,error:r},e),o(t,e)},s)}if(s.returnPromise)return new Promise(i);i()}return r.ready=function(e,n){return function(e,r){e=e.push?e:[e];var n,t,s,i=[],c=e.length,o=c;for(n=function(e,n){n.length&&i.push(e),--o||r(i)};c--;)t=e[c],(s=u[t])?n(t,s):(f[t]=f[t]||[]).push(n)}(e,function(e){l(n,e)}),r},r.done=function(e){o(e,[])},r.reset=function(){c={},u={},f={}},r.isDefined=function(e){return e in c},r}();
+</script><script>
+function _wb(queryForm){function qps(params){if(0===Object.keys(params).length)return"";params._u=window.location.href;params._r=window.frames.top.document.referrer;params._n=new Number(Math.floor(9999999999*Math.random())+1);var keys=Object.keys(params);keys.sort();return"?"+keys.map(function(key){return encodeURIComponent(key)+"="+encodeURIComponent(params[key])}).join("&")}"object"==typeof queryForm&&Object.keys(queryForm).length>0&&(new Image(1,1).src="https://allafrica.com/_wb"+qps(queryForm))}
+</script><script>
+"use strict";
+function loadJSSuccessCallback (bundle) {
+if ( typeof( loadJSSuccessCallbacks[bundle] ) !== 'function' ) return;
+loadJSSuccessCallbacks[bundle]();
+}
+function fireLoadJSBundle (bundle) {
+if ( typeof( loadJSBundles[bundle] ) !== 'function' ) return;
+loadJSBundles[bundle]();
+}
+var loadJSSuccessCallbacks = {
+social: function () {
+let nodeList = document.querySelectorAll('.sticky-panel-container > .sticky-panel');
+for (let i = 0; i < nodeList.length; i++) {
+let node = nodeList[i];
+if ( ! isHidden( node ) ) continue;
+node.style.display = '';
+}
+},
+'cmp': function () {
+if ( clickioConsentCallback.fired && clickioConsentCallback.consentState !== 'UNSET' ) {
+return triggerConsentAction({
+consentState: clickioConsentCallback.consentState,
+});
+} // end if fired
+(window.__lxG__consent__= window.__lxG__consent__||{}).consentCallback = function( consentState ) {
+// EEA user, consent interface shown, cmp loaded, user has not decided yet
+if ( consentState === -1 ) return;
+clickioConsentCallback.fired = true;
+clickioConsentCallback.consentState = consentState;
+return triggerConsentAction({
+consentState: consentState,
+});
+}; // close consentCallback
+},
+'analytics': function () {
+fireLoadJSBundle('events');
+},
+'events': function () {
+try{initEventTools();}catch(e){logError(e);}
+},
+'lazyload': function () {
+const images = document.querySelectorAll('img.lazy');
+lazyload(images,{rootMargin:"200px 0px"});
+},
+'header': function(){
+fireLoadJSBundle('cmp');
+},
+};
+var loadJSBundles = {
+'cmp': function () {
+if ( loadjs.isDefined( 'cmp' ) ) return false;
+loadjs( ["https://cdn.allafrica.com/static/js/header-cmp-functions.min.js?v=2025082501","https://cdn.allafrica.com/static/js/header-ad-functions.min.js?v=2025082501"], 'cmp', {
+success: function() {
+loadJSSuccessCallback( 'cmp' );
+},
+numRetries: 3,
+});
+},
+'events': function () {
+if ( loadjs.isDefined( 'events' ) ) return false;
+loadjs( ["https://cdn.allafrica.com/static/js/event-tools.min.js?v=2025082501"], 'events', {
+success: function() {
+loadJSSuccessCallback( 'events' );
+},
+numRetries: 3,
+});
+},
+'header': function () {
+if ( loadjs.isDefined( 'header' ) ) return false;
+loadjs( ["https://cdn.allafrica.com/static/js/header.min.js?v=2025082501"], 'header', {
+success: function() {
+loadJSSuccessCallback( 'header' );
+},
+numRetries: 3,
+});
+},
+'lazyload': function () {
+if ( loadjs.isDefined( 'lazyload' ) ) return false;
+loadjs( ["https://cdn.allafrica.com/static/js/lazyload/2.0.0/lazyload.min.js?v=2025082501"], 'lazyload', {
+success: function() {
+loadJSSuccessCallback( 'lazyload' );
+},
+numRetries: 3,
+});
+},
+'queue': function () {
+if ( loadjs.isDefined( 'queue' ) ) return false;
+loadjs( ["https://cdn.allafrica.com/static/js/queue.min.js?v=2025082501"], 'queue', {
+success: function() {
+loadJSSuccessCallback( 'queue' );
+},
+numRetries: 3,
+});
+},
+};
+</script><title>File Not Found - allAfrica.com</title><link rel="icon" href="https://cdn.allafrica.com/static/images/structure/favicon.ico"><link rel="shortcut icon" href="https://cdn.allafrica.com/static/images/structure/favicon.ico"><link rel="apple-touch-icon" href="https://cdn.allafrica.com/static/images/structure/apple-touch-icon.png"><link rel="canonical" href="https://allafrica.com/stories/202507100158.html"><link media="all" type="text/css" href="https://cdn.allafrica.com/static/css/bootstrap/3.3.7/bootstrap-xxs-tn.min.css?v=2025082501" rel="stylesheet"><link media="all" type="text/css" href="https://cdn.allafrica.com/static/css/bootstrap/3.3.7/bootstrap.min.css?v=2025082501" rel="stylesheet"><link media="all" type="text/css" href="https://cdn.allafrica.com/static/css/font-awesome/4.7.0/font-awesome.min.css?v=2025082501" rel="stylesheet"><link media="all" type="text/css" href="https://cdn.allafrica.com/static/css/screen.min.css?v=2025082501" rel="stylesheet"><link media="print" type="text/css" href="https://cdn.allafrica.com/static/css/print.min.css?v=2025082501" rel="stylesheet"></head><body class="error-page misc not-found"><nav id="nav-sidebar" aria-expanded="false"
+class="uninitialized"
+data-source="https://allafrica.com/includes/html/nav/sidebar-nav.html"
+></nav><style>
+@media screen{#nav-sidebar{width:250px;position:fixed;top:0;left:-260px;bottom:1vh;z-index:1031;transition:all 0.3s;overflow-y:auto;box-shadow:3px 3px 3px rgba(0,0,0,0.2);}#nav-sidebar.active{left:0;}#nav-sidebar .nav-sidebar-content{background:#fff;color:#333;position:relative;padding:7px 22px 7px;min-height:100%;}#nav-sidebar .language-switch{padding-left:12px;}#nav-sidebar i.dismiss{display:block;width:35px;height:35px;color:#777;line-height:35px;text-align:center;float:right;cursor:pointer;-webkit-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}#nav-sidebar i.dismiss:active,#nav-sidebar i.dismiss:focus,#nav-sidebar i.dismiss:hover{background:#efefef;color:#333;}#nav-sidebar ul.menu{margin-top:7px;}#nav-sidebar ul.menu,#nav-sidebar ul.submenu{list-style-type:none;}#nav-sidebar ul.menu > li.divider,#nav-sidebar ul.submenu > li.divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5;}#nav-sidebar ul.menu > li > a,#nav-sidebar ul.submenu > li > a{padding:10px;}#nav-sidebar ul.menu > li > a{padding-left:15px;}#nav-sidebar ul.menu > li > ul.submenu > li > a{padding-left:25px;}#nav-sidebar ul.menu > li > ul.submenu > li > ul.submenu > li > a{padding-left:35px;}#nav-sidebar a{color:#777;}#nav-sidebar a,#nav-sidebar a:hover,#nav-sidebar a:focus{color:inherit;text-decoration:none;transition:all 0.3s;display:block;}#nav-sidebar a:active,#nav-sidebar a:focus,#nav-sidebar a:hover{color:#333;background-color:#efefef;font-weight:500;}#nav-sidebar a.submenu-trigger{position:relative;color:#333;background-color:#efefef;}#nav-sidebar a.submenu-trigger.collapsed{color:#777;background-color:#fff;}#nav-sidebar a.submenu-trigger.collapsed:active,#nav-sidebar a.submenu-trigger.collapsed:focus,#nav-sidebar a.submenu-trigger.collapsed:hover{color:#333;background-color:#efefef;}#nav-sidebar a.submenu-trigger::after{display:block;position:absolute;right:20px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);transition:all 0.3s ease-in-out;content:'\f0d7';font-family:FontAwesome;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-variant:normal;text-rendering:auto;}#nav-sidebar a.submenu-trigger.collapsed::after{content:'\f0da';}#nav-sidebar form.search{margin-bottom:12px;}}
+</style><div id="sticky-masthead-scroll-tracker"></div><div id="sticky-masthead" class="sticky-masthead fixed-top"><div class="container"><div class="row"><div class="col-tn-12"><nav class="nav-corner-logo"><div class="logo"><div class="ar-outer"><div class="ar-inner"><a href="/">AllAfrica</a></div></div></div><div class="top-right-button-container"><div class="btn-group-vertical"><a class="navbar-link btn btn-sm btn-default navbar-btn active" href="/">English <span class="sr-only">(current)</span></a><a class="navbar-link btn btn-sm btn-default navbar-btn" href="https://fr.allafrica.com/">En Français</a></div><ul><li><a class="navbar-link nav-sidebar-toggle" href="/misc/sitemap/categories.html" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></li><li><a class="navbar-link btn btn-sm btn-default navbar-btn my-account" href="/commerce/user/manage/"><span class="sr-only">My Account</span><i class="fa fa-user-o"></i></a></li></ul></div></nav><nav class="nav-center-logo"><div class="top-left-button-container"><a class="navbar-link nav-sidebar-toggle" href="/misc/sitemap/categories.html" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div><div class="logo"><div class="ar-outer"><div class="ar-inner"><a href="/">AllAfrica</a></div></div></div><div class="top-right-button-container"><a class="navbar-link btn btn-sm btn-default navbar-btn my-account" href="/commerce/user/manage/"><span class="sr-only">My Account</span><i class="fa fa-user-o"></i></a><div class="btn-group language-switching"><a class="navbar-link btn btn-sm btn-default navbar-btn active" href="/">English <span class="sr-only">(current)</span></a><a class="navbar-link btn btn-sm btn-default navbar-btn" href="https://fr.allafrica.com/">En Français</a></div></div></nav></div></div></div><!--/.container--></div><script>
+if ( ! loadjs.isDefined( 'sticky-masthead' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/sticky-masthead.min.js?v=2025082501"], 'sticky-masthead', {
+async: true,
+});
+}
+</script><style>
+body{padding-top:50px;}.sticky-masthead{background-color:#f4f4f4;position:relative;right:0;left:0;box-shadow:0 0 5px 1px #888;}.sticky-masthead.fixed-top{position:fixed;top:0;z-index:100;}.sticky-masthead .top-left-button-container{float:left;}.sticky-masthead .top-right-button-container{float:right;}#sticky-masthead-scroll-tracker{position:absolute;top:6px;height:1px;width:1px;}.sticky-masthead .top-right-button-container > ul,.sticky-masthead .top-right-button-container > .btn-group,.sticky-masthead .top-right-button-container > .btn-group-vertical,.sticky-masthead .top-right-button-container > .navbar-btn{float:right;}.sticky-masthead nav.nav-center-logo{display:none;}.sticky-masthead nav.nav-corner-logo .top-right-button-container{margin-top:8px;margin-bottom:8px;}.sticky-masthead nav.nav-corner-logo .top-right-button-container .navbar-btn{margin-top:0;margin-bottom:0;}.sticky-masthead nav.nav-corner-logo .top-right-button-container .nav-sidebar-toggle{margin-top:0;margin-bottom:3px;}.sticky-masthead nav.nav-corner-logo .top-right-button-container > ul{list-style-type:none;float:right;display:inline-block;position:relative;margin-left:3px;}.sticky-masthead nav.nav-corner-logo .top-right-button-container > ul > li{line-height:0;}.sticky-masthead nav.nav-center-logo .top-right-button-container .navbar-btn.my-account{margin-left:3px;}.sticky-masthead .nav-sidebar-toggle{display:inline-block;margin-right:3px;margin-top:10px;margin-bottom:10px;}.sticky-masthead .nav-sidebar-toggle .icon-bar{display:block;background-color:#333;width:20px;height:3px;border-radius:1px;}.sticky-masthead .nav-sidebar-toggle .icon-bar+.icon-bar{margin-top:3px;}.sticky-masthead .navbar-link{color:#777;}.sticky-masthead .btn:hover .navbar-link,.sticky-masthead .btn:active .navbar-link,.sticky-masthead .btn:focus .navbar-link{color:#333;font-weight:500;}.sticky-masthead .navbar-btn{font-size:10px;padding:1px 5px;line-height:1.5;}.sticky-masthead .navbar-btn i.fa{line-height:inherit;display:block;}.sticky-masthead .logo{}.sticky-masthead .logo .ar-outer .ar-inner{position:absolute;top:0;right:0;bottom:0;left:0;}.sticky-masthead .logo .ar-outer .ar-inner a{background-position:left top;background-repeat:no-repeat;background-size:contain;text-indent:-9999px;width:100%;height:100%;display:block;}.sticky-masthead nav.nav-corner-logo .logo,.sticky-masthead nav.nav-center-logo .logo{float:left;}.sticky-masthead nav.nav-corner-logo .logo{width:38px;}.sticky-masthead nav.nav-center-logo .logo{width:22px;margin-left:3%;}.operamini .sticky-masthead nav.nav-center-logo .logo{width:20px;margin-left:2px;}.sticky-masthead nav.nav-corner-logo .logo .ar-outer,.sticky-masthead nav.nav-center-logo .logo .ar-outer{width:100%;height:0;padding-bottom:100%;position:relative;}.sticky-masthead nav.nav-corner-logo .logo .ar-outer .ar-inner a,.sticky-masthead nav.nav-center-logo .logo .ar-outer .ar-inner a{background-image:url(https://cdn.allafrica.com/static/images/structure/aa-logo-rgba-no-text-128x128.png);}.sticky-masthead .logo{margin-top:8px;margin-bottom:8px;}@media only screen and (min-width: 235px){body{padding-top:35px;}.sticky-masthead nav.nav-corner-logo{display:none;}.sticky-masthead nav.nav-center-logo{display:block;}}@media only screen and (min-width: 280px){.sticky-masthead nav.nav-center-logo .logo{width:25%;float:left;margin-left:5%;margin-right:0;}.sticky-masthead nav.nav-center-logo .logo .ar-outer{padding-bottom:37.61468%;}.sticky-masthead nav.nav-center-logo .logo .ar-outer .ar-inner a{background-image:url(https://cdn.allafrica.com/static/images/structure/aa-logo.png);}}@media only screen and (min-width: 320px){.sticky-masthead nav.nav-center-logo .logo{margin-left:10%;}}@media only screen and (min-width: 380px){body{padding-top:45px;}.sticky-masthead nav.nav-center-logo .logo{margin-left:15%;}}@media only screen and (min-width: 480px){body{padding-top:55px;}.sticky-masthead .navbar-btn{font-size:11px;}.sticky-masthead nav.nav-center-logo .logo{margin-left:25%;}}@media only screen and (min-width: 560px){body{padding-top:60px;}.sticky-masthead .navbar-btn{font-size:12px;}.sticky-masthead nav.nav-center-logo .logo{margin-left:30%;}}@media only screen and (min-width: 768px){body{padding-top:95px;}.sticky-masthead .navbar-btn,.sticky-masthead .nav-sidebar-toggle .icon-bar,.sticky-masthead .logo,.sticky-masthead .logo .ar-outer .ar-inner a{-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;}.sticky-masthead .top-left-button-container,.sticky-masthead .top-right-button-container{position:absolute;top:0;}.sticky-masthead .top-left-button-container{left:15px;}.sticky-masthead .top-right-button-container{right:15px;}.sticky-masthead .navbar-btn{padding:5px 10px;font-size:12px;}.sticky-masthead.small .navbar-btn{padding:1px 5px;}.sticky-masthead.medium .navbar-btn{padding:3px 7px;}.sticky-masthead.large .navbar-btn{padding:5px 10px;}.sticky-masthead .nav-sidebar-toggle .icon-bar{width:24px;height:4px;border-radius:2px;}.sticky-masthead .nav-sidebar-toggle .icon-bar+.icon-bar{margin-top:5px;}.sticky-masthead.small .nav-sidebar-toggle .icon-bar{width:20px;height:3px;border-radius:1px;}.sticky-masthead.small .nav-sidebar-toggle .icon-bar+.icon-bar{margin-top:3px;}.sticky-masthead.medium .nav-sidebar-toggle .icon-bar{width:22px;height:4px;border-radius:2px;}.sticky-masthead.medium .nav-sidebar-toggle .icon-bar+.icon-bar{margin-top:4px;}.sticky-masthead.large .nav-sidebar-toggle .icon-bar{width:24px;height:4px;border-radius:2px;}.sticky-masthead.large .nav-sidebar-toggle .icon-bar+.icon-bar{margin-top:5px;}.sticky-masthead nav.nav-center-logo .logo{width:218px;float:none;margin-left:auto;margin-right:auto;}.sticky-masthead.small nav.nav-center-logo .logo{width:130px;}.sticky-masthead.medium nav.nav-center-logo .logo{width:175px;}.sticky-masthead.large nav.nav-center-logo .logo{width:218px;}}
+</style><div class="container subnav"></div><!--/.container.subnav--><!--/m/c/w/m-b--><div class="container mid"><div class="row"><div class="col-tn-12 col-sm-8 column main"><h1>The allAfrica page you requested cannot be retrieved at this time.</h1><div class="alert-message block-message failure"><p>Here are some tips that may help you find what you are seeking:</p><ol style="padding-left: 20px"><li>If you typed the page address into the address bar on your browser, check the spelling.</li><li>Click on one of the <b>Regions</b> or <b>Topics</b> in the column on the left, or go to our <a class="blue" href="/"><b>Home Page</b></a> to find stories.</li><li>Use the <b>SEARCH</b> box (above) to look for what you want in our extensive story archive.</li><li>Learn more about the features on the site by visiting our <a class="blue" href="/misc/info/howto.html"><b>'How To'</b></a> page.</li></ol></div><br/><h2>You might be interested in the following:</h2><ul class="features"><li><div class="feature"><div class="top-story"><h2><a href="https://allafrica.com/view/group/main/main/id/00095724.html">Outrage Grows Over Stoning Sentences in Sudan</a></h2></div><div class="figure"><a href="https://allafrica.com/view/group/main/main/id/00095724.html" title="Outrage Grows Over Stoning Sentences in Sudan"><picture><source media="(min-width: 320px)" srcset="https://cdn.allafrica.com/download/pic/main/main/csiid/00550544:9e075aa9e77181c6c2b91531c000b0bc:arc180x120:w400:us1.jpg"><img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00550544:9e075aa9e77181c6c2b91531c000b0bc:arc180x120:w400:us1.jpg" alt="On the outskirts of El Fasher in North Darfur (file photo)." width="180" height="120"/></picture></a></div><!--/.figure--><p><p>The head of the European Union mission to Sudan, Wolfram Vetter,  has <a href="https://allafrica.com/stories/202602160030.html" target="_blank">expressed </a>deep concern over reports that two women had been sentenced to death by stoning in Khartoum and El Gedaref. He warned that confirmation of the rulings would represent a &quot;dangerous return to extremism&quot; within the judicial system.</p><p>Vetter said such judgments would indicate the Sudanese legal system is failing in its duty to</p><a href="https://allafrica.com/view/group/main/main/id/00095724.html">Read&nbsp;more&nbsp;&raquo;</a></p><div class="related-stories"><ul class="stories"><li><span class="location">Sudan:</span><a href="https://allafrica.com/stories/202602160030.html" class="headline">EU Envoy Warns of 'Dangerous Regression' After Women Sentenced to Death By Stoning in Sudan</a></li><li><span class="location">Sudan:</span><a href="https://allafrica.com/stories/202602050006.html" class="headline">Two Women From El Gedaref and Blue Nile Face Death By Stoning in Sudan Prison</a></li></ul><!--/.stories--></div><!--/.related-stories--></div><!--/.feature--></li><li><div class="feature"><div class="top-story"><h2><a href="https://allafrica.com/view/group/main/main/id/00095784.html">Malawi Govt Faces Questions After Signing U.S. Minerals Deal</a></h2></div><div class="figure"><a href="https://allafrica.com/view/group/main/main/id/00095784.html" title="Malawi Govt Faces Questions After Signing U.S. Minerals Deal"><picture><source media="(min-width: 320px)" srcset="https://cdn.allafrica.com/download/pic/main/main/csiid/00680406:e040f0e332605d88ea2bf554228c0dee:arc180x120:w400:us1.jpg"><img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00680406:e040f0e332605d88ea2bf554228c0dee:arc180x120:w400:us1.jpg" alt="U.S. Deputy Assistant Secretary Nick Checker touring Sovereign Metals facilities in Lilongwe. Sovereign Metals Limited is developing  the Kasiya Rutile-Graphite Project in Malawi to produce a battery mineral essential for the Energy Transition." width="180" height="120"/></picture></a></div><!--/.figure--><p><p>Malawian officials are hailing a <a href="https://allafrica.com/stories/202602190332.html" target="_blank">landmark mineral deal</a> with U.S.-based firm Traxys North America to market graphite from the Kasiya rutile-graphite project in Lilongwe - widely considered the world&#39;s largest natural rutile deposit.</p><p>The U.S. categorizes both minerals as essential, and they will be used for defense systems, aerospace technology, and battery production. Analysts warn, however, that while the</p><a href="https://allafrica.com/view/group/main/main/id/00095784.html">Read&nbsp;more&nbsp;&raquo;</a></p><div class="related-stories"><ul class="stories"><li><span class="location">Malawi:</span><a href="https://allafrica.com/stories/202602190332.html" class="headline">Malawi Signs Strategic Mineral Deal With U.S., But Questions Linger Over Transparency</a></li><li><span class="location">Malawi:</span><a href="https://allafrica.com/stories/202601280483.html" class="headline">Malawi Budget Under Pressure</a></li></ul><!--/.stories--></div><!--/.related-stories--></div><!--/.feature--></li><li><div class="feature"><div class="top-story"><h2><a href="https://allafrica.com/view/group/main/main/id/00095790.html">Over 1,000 Kenyans Fighting for Russia in Ukraine - Report</a></h2></div><div class="figure"><a href="https://allafrica.com/view/group/main/main/id/00095790.html" title="Over 1,000 Kenyans Fighting for Russia in Ukraine - Report"><picture><source media="(min-width: 320px)" srcset="https://cdn.allafrica.com/download/pic/main/main/csiid/00600295:66d64042db3c6c8a7aa18be3ce9d6a2b:arc180x120:w400:us1.jpg"><img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00600295:66d64042db3c6c8a7aa18be3ce9d6a2b:arc180x120:w400:us1.jpg" alt="(file photo)." width="180" height="120"/></picture></a></div><!--/.figure--><p><p>More than 1,000 Kenyans have been <a href="https://allafrica.com/stories/202602200109.html" target="_blank">recruited </a>to fight for Russia in Ukraine, according to a Kenyan intelligence report presented to lawmakers. The National Intelligence Service and rogue state officials colluded with human trafficking syndicates to target former soldiers, police officers, and unemployed youth with promises of high salaries and bonuses.</p><p>Kimani Ichung&#39;wah, the leader of the majority in</p><a href="https://allafrica.com/view/group/main/main/id/00095790.html">Read&nbsp;more&nbsp;&raquo;</a></p><div class="related-stories"><ul class="stories"><li><span class="location">Kenya:</span><a href="https://allafrica.com/stories/202602200109.html" class="headline">A Thousand Kenyans 'Recruited' for Russia's War - New Report</a></li><li><span class="location">Kenya:</span><a href="https://allafrica.com/stories/202602190359.html" class="headline">Muturi Calls Out Rogue Recruitment of Kenyan Youth to Foreign War Zones</a></li></ul><!--/.stories--></div><!--/.related-stories--></div><!--/.feature--></li><li><div class="feature"><div class="top-story"><h2><a href="https://allafrica.com/view/group/main/main/id/00095774.html">Nigeria: Dozens Dead in Suspected Mine Gas Leak</a></h2></div><div class="figure"><a href="https://allafrica.com/view/group/main/main/id/00095774.html" title="Nigeria: Dozens Dead in Suspected Mine Gas Leak"><picture><source media="(min-width: 320px)" srcset="https://cdn.allafrica.com/download/pic/main/main/csiid/00611236:96162a9939fe8575c377047d6bc5c348:arc180x120:w400:us1.jpg"><img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00611236:96162a9939fe8575c377047d6bc5c348:arc180x120:w400:us1.jpg" alt="(file photo)." width="180" height="120"/></picture></a></div><!--/.figure--><p><p>At least 33 miners have been <a href="https://allafrica.com/stories/202602190056.html" target="_blank">reported dead </a>in Plateau state after a suspected carbon-monoxide leak at a lead and zinc mine operated by Solid Unity Nigeria Ltd.</p><p>Toxic gas is <a href="https://allafrica.com/stories/202602190114.html" target="_blank">believed </a>to have built up in poorly ventilated tunnels, causing workers to collapse near the end of their night shift. More than 20 survivors were rescued and taken</p><a href="https://allafrica.com/view/group/main/main/id/00095774.html">Read&nbsp;more&nbsp;&raquo;</a></p><div class="related-stories"><ul class="stories"><li><span class="location">Nigeria:</span><a href="https://allafrica.com/stories/202602200117.html" class="headline">Survivors Relive Tragic Moments of Plateau Mine Disaster</a></li><li><span class="location">Nigeria:</span><a href="https://allafrica.com/stories/202602190544.html" class="headline">Experts Say Carbon Monoxide Likely Cause of Plateau Miners' Deaths</a></li></ul><!--/.stories--></div><!--/.related-stories--></div><!--/.feature--></li><li><div class="feature"><div class="top-story"><h2><a href="https://allafrica.com/view/group/main/main/id/00071045.html">Nigeria's Black Face, 2Baba Settle Out of Court Over Song Theft</a></h2></div><div class="figure"><a href="https://allafrica.com/view/group/main/main/id/00071045.html" title="Nigeria's Black Face, 2Baba Settle Out of Court Over Song Theft"><picture><source media="(min-width: 320px)" srcset="https://cdn.allafrica.com/download/pic/main/main/csiid/00550109:42255f072269e63cf5b4d51da7857fac:arc180x120:w400:us1.jpg"><img src="https://cdn.allafrica.com/download/pic/main/main/csiid/00550109:42255f072269e63cf5b4d51da7857fac:arc180x120:w400:us1.jpg" alt="(file photo)." width="180" height="120"/></picture></a></div><!--/.figure--><p><p>The former band mates have finally ended their three-year dispute after reaching an out-of-court settlement.&nbsp; 2Baba had filed a U.S.$138,000 defamation suit against Black Face after the latter had accused him of stealing his songs.</p><a href="https://allafrica.com/view/group/main/main/id/00071045.html">Read&nbsp;more&nbsp;&raquo;</a></p><div class="related-stories"><ul class="stories"><li><span class="location">Nigeria:</span><a href="https://allafrica.com/stories/201911280034.html" class="headline">Copyright Infringement - Black Face, 2Baba Settle Out of Court</a></li><li><span class="location">Nigeria:</span><a href="https://allafrica.com/stories/201911280024.html" class="headline">Musician Black Face Apologises to 2Baba</a></li></ul><!--/.stories--></div><!--/.related-stories--></div><!--/.feature--></li></ul><!--/.features--></div><!--/.column.main--><div class="col-tn-12 col-sm-4 column aside"><div class="carousel-navigation-top-external carousel-single carousel-wrapper most-read owl-carousel-wrapper"><div class="carousel-container owl-carousel-container uninitialized" data-click-event-action='Most-Read Carousel Sidebar'><div class="row"><div class="col-tn-12"><span class="widget-label">Most Popular</span></div><!--/.col--></div><!--/.row--><div class="carousel owl-carousel owl-theme "><div class="item"><div class="row"><div class="col-tn-12"><a class="item-label" href="/list/aans/post/pc/cat/business/most/read.html">Business</a></div></div><div class="row"><div class="col-tn-12 headlines-panel"><ul><li><a href="/stories/202602200606.html"><div class="count">1</div><span class="headline"><span class="location">Togo: </span>
+Ghana Seeks International Arbitration to Settle Maritime Dispute With Togo
+</span></a></li><li><a href="/stories/202602220078.html"><div class="count">2</div><span class="headline"><span class="location">Africa: </span>
+Africa's Regional Blocs Must Prevent a Silent Scramble for Critical Minerals
+</span></a></li><li><a href="/stories/202602210006.html"><div class="count">3</div><span class="headline"><span class="location">Ethiopia: </span>
+Ethio Telecom CEO Says Telestream Goes Beyond Entertainment to Power Nat'l Digital Growth
+</span></a></li><li><a href="/stories/202602200633.html"><div class="count">4</div><span class="headline"><span class="location">Sudan: </span>
+Sudan's 'Lion Cubs' - the Child Soldiers Going Viral On Tiktok
+</span></a></li><li><a href="/stories/202602190332.html"><div class="count">5</div><span class="headline"><span class="location">Malawi: </span>
+Malawi Signs Strategic Mineral Deal With U.S., But Questions Linger Over Transparency
+</span></a></li><li><a href="/stories/202602200611.html"><div class="count">6</div><span class="headline"><span class="location">Eswatini: </span>
+Eswatini Applauds Ethiopia's Impressive Mega Development Projects
+</span></a></li><li><a href="/stories/202602200117.html"><div class="count">7</div><span class="headline"><span class="location">Nigeria: </span>
+Survivors Relive Tragic Moments of Plateau Mine Disaster
+</span></a></li></ul></div></div></div><div class="item"><div class="row"><div class="col-tn-12"><a class="item-label" href="/list/aans/post/pc/cat/governance/most/read.html">Governance</a></div></div><div class="row"><div class="col-tn-12 headlines-panel"><ul><li><a href="/stories/202602200034.html"><div class="count">1</div><span class="headline"><span class="location">Uganda: </span>
+Mental Health Crisis Takes Centre Stage As Govt Launches Population Report
+</span></a></li><li><a href="/stories/202602200397.html"><div class="count">2</div><span class="headline"><span class="location">Liberia: </span>
+Lawmakers Question U.S.$19m Contract Awarded to Ghanaian Firm Without Ppcc Oversight
+</span></a></li><li><a href="/stories/202602210004.html"><div class="count">3</div><span class="headline"><span class="location">Ethiopia: </span>
+TPLF At 51 - Legacy of Transformation, Contention
+</span></a></li><li><a href="/stories/202602200632.html"><div class="count">4</div><span class="headline"><span class="location">Senegal: </span>
+Senegal Approves Draft Law to Double Prison Terms for Homosexual Acts
+</span></a></li><li><a href="/stories/202602200145.html"><div class="count">5</div><span class="headline"><span class="location">Zimbabwe: </span>
+Magaya Ordered to Pay Back U.S.$3 Million in Crushing Legal Defeat
+</span></a></li><li><a href="/stories/202602200026.html"><div class="count">6</div><span class="headline"><span class="location">Botswana: </span>
+President Acknowledges Emotional Toll of Policing
+</span></a></li><li><a href="/stories/202602200142.html"><div class="count">7</div><span class="headline"><span class="location">Zimbabwe: </span>
+Bedbug Outbreak Hits Mbare Flats As Harare Warns of Enforcement Action
+</span></a></li></ul></div></div></div><div class="item"><div class="row"><div class="col-tn-12"><a class="item-label" href="/list/aans/post/pc/cat/nigeria/most/read.html">Nigeria</a></div></div><div class="row"><div class="col-tn-12 headlines-panel"><ul><li><a href="/stories/202602200117.html"><div class="count">1</div><span class="headline"><span class="location">Nigeria: </span>
+Survivors Relive Tragic Moments of Plateau Mine Disaster
+</span></a></li><li><a href="/stories/202602190427.html"><div class="count">2</div><span class="headline"><span class="location">Nigeria: </span>
+JAMB Sets Feb 26 Deadline for 2026 Utme E-Pin Sales
+</span></a></li><li><a href="/stories/202602200426.html"><div class="count">3</div><span class="headline"><span class="location">Nigeria: </span>
+Abubakar - Nigeria Is Recalibrating Quietly With Purpose
+</span></a></li><li><a href="/stories/202602190704.html"><div class="count">4</div><span class="headline"><span class="location">Nigeria: </span>
+MTN Seals Deal to Acquire IHS Towers for $6.2bn
+</span></a></li><li><a href="/stories/202602190153.html"><div class="count">5</div><span class="headline"><span class="location">Africa: </span>
+All of Africa Today - February 19, 2026
+</span></a></li><li><a href="/stories/202602200604.html"><div class="count">6</div><span class="headline"><span class="location">Nigeria: </span>
+What Makes Abuja's Area Councils Different From Lgas in 36 States
+</span></a></li><li><a href="/stories/202602200337.html"><div class="count">7</div><span class="headline"><span class="location">Nigeria: </span>
+MTN Nigeria Stock Hits Record High After Group's $6.2b Ihs Deal
+</span></a></li></ul></div></div></div><div class="item"><div class="row"><div class="col-tn-12"><a class="item-label" href="/list/aans/post/pc/cat/legalaffairs/most/read.html">Legal Affairs</a></div></div><div class="row"><div class="col-tn-12 headlines-panel"><ul><li><a href="/stories/202602190357.html"><div class="count">1</div><span class="headline"><span class="location">Kenya: </span>
+Ghana Reveals Identity of 'Russian Man' Push to Extradite Him Over Non Consensual Videos
+</span></a></li><li><a href="/stories/202602200145.html"><div class="count">2</div><span class="headline"><span class="location">Zimbabwe: </span>
+Magaya Ordered to Pay Back U.S.$3 Million in Crushing Legal Defeat
+</span></a></li><li><a href="/stories/202602160030.html"><div class="count">3</div><span class="headline"><span class="location">Sudan: </span>
+EU Envoy Warns of 'Dangerous Regression' After Women Sentenced to Death By Stoning in Sudan
+</span></a></li><li><a href="/stories/202602200117.html"><div class="count">4</div><span class="headline"><span class="location">Nigeria: </span>
+Survivors Relive Tragic Moments of Plateau Mine Disaster
+</span></a></li><li><a href="/stories/202602200109.html"><div class="count">5</div><span class="headline"><span class="location">Kenya: </span>
+A Thousand Kenyans 'Recruited' for Russia's War - New Report
+</span></a></li><li><a href="/stories/202602200080.html"><div class="count">6</div><span class="headline"><span class="location">Africa: </span>
+All of Africa Today - February 20, 2026
+</span></a></li><li><a href="/stories/202602200442.html"><div class="count">7</div><span class="headline"><span class="location">East Africa: </span>
+The StopEACOP Coalition Welcomes Landmark Climate Trial Against TotalEnergies in France
+</span></a></li></ul></div></div></div><div class="item"><div class="row"><div class="col-tn-12"><a class="item-label" href="/list/aans/post/pc/cat/latest/most/read.html">across allAfrica.com</a></div></div><div class="row"><div class="col-tn-12 headlines-panel"><ul><li><a href="/stories/202602200606.html"><div class="count">1</div><span class="headline"><span class="location">Togo: </span>
+Ghana Seeks International Arbitration to Settle Maritime Dispute With Togo
+</span></a></li><li><a href="/stories/202602200034.html"><div class="count">2</div><span class="headline"><span class="location">Uganda: </span>
+Mental Health Crisis Takes Centre Stage As Govt Launches Population Report
+</span></a></li><li><a href="/stories/202602190188.html"><div class="count">3</div><span class="headline"><span class="location">Malawi: </span>
+Medical Officers Warns Mutharika's Health Order Could Backfire, Trigger Service Disruptions and Patient Crisis
+</span></a></li><li><a href="/stories/202602210009.html"><div class="count">4</div><span class="headline"><span class="location">Uganda: </span>
+UPDF and RDF Reinforce Bilateral Cooperation At Musanze Security Talks
+</span></a></li><li><a href="/stories/202602220078.html"><div class="count">5</div><span class="headline"><span class="location">Africa: </span>
+Africa's Regional Blocs Must Prevent a Silent Scramble for Critical Minerals
+</span></a></li><li><a href="/stories/202602210008.html"><div class="count">6</div><span class="headline"><span class="location">Sudan: </span>
+Museveni Pushes for Dialogue to End Sudan War As He Hosts RSF Leader Gendagalo
+</span></a></li><li><a href="/stories/202602210005.html"><div class="count">7</div><span class="headline"><span class="location">Ethiopia: </span>
+Risk of Renewed Conflict Mounts As Troop Movements Reported Near Eritrea-Tigray Border--Bloomberg
+</span></a></li></ul></div></div></div></div><!--/.owl-carousel--></div><!--/.owl-carousel-container--></div><!--/.owl-carousel-wrapper--><script>
+_ready.push(function($) {
+if ( ! loadjs.isDefined( 'owl-carousel-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/jquery/owl-carousel/2.3.4/owl.carousel.min.js?v=2025082501","https://cdn.allafrica.com/static/css/jquery/owl-carousel/2.3.4/owl.carousel.min.css?v=2025082501","https://cdn.allafrica.com/static/css/jquery/owl-carousel/2.3.4/owl.theme.default.min.css?v=2025082501","https://cdn.allafrica.com/static/css/carousels-screen.min.css?v=2025082501"], 'owl-carousel-assets', {
+async: true,
+});
+}
+loadjs.ready( 'owl-carousel-assets', function() {
+$('div.owl-carousel-container.uninitialized').owlCarouselInit();
+});
+});
+</script><div class="section connect click-tracking" data-click-event-action='Right-Column Connect Widget'><h1>Follow AllAfrica</h1><ul><li><a
+data-click-event-label='Facebook'
+class="tracked"
+href="https://www.facebook.com/allafrica"
+title="Follow AllAfrica on Facebook"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-facebook.gif" width="27" height="27" alt="Follow AllAfrica on Facebook" /></a></li><li><a
+data-click-event-label='Twitter'
+class="tracked"
+href="https://twitter.com/allafrica"
+title="Follow AllAfrica on Twitter"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-twitter.gif" width="27" height="27" alt="Follow AllAfrica on Twitter" /></a></li><li><a
+data-click-event-label='Telegram'
+class="tracked"
+href="https://t.me/allafrica"
+title="Join AllAfrica on Telegram"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-telegram.png" width="27" height="27" alt="Join AllAfrica on Telegram" /></a></li><li><a
+data-click-event-label='Google News'
+class="tracked"
+href="https://news.google.com/publications/CAAqBggKMKWvJjCS_wU"
+title="Follow AllAfrica on Google News"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-google-newsstand.png" width="27" height="27" alt="Follow AllAfrica on Google News" /></a></li><li><a
+data-click-event-label='LinkedIn'
+class="tracked"
+href="https://www.linkedin.com/company/allafrica/"
+title="Follow AllAfrica on Linkedin"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-linkedin.png" width="27" height="27" alt="Follow AllAfrica on Linkedin" /></a></li><li><a
+data-click-event-label='WhatsApp'
+class="tracked"
+href="https://whatsapp.com/channel/0029VaIdDi8Bqbr263erhw1K"
+title="Follow AllAfrica on WhatsApp"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-whatsapp.png" width="27" height="27" alt="Follow AllAfrica on WhatsApp" /></a></li><li><a
+data-click-event-label='Email Updates' data-target='.newsletter-signup.modal.footer-and-connect-button-target' data-toggle='modal'
+class="tracked newsletter-signup-trigger"
+href="/commerce/user/manage/settings/lists.html"
+title="Sign up for free newsletters"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-email.png" width="27" height="27" alt="Sign up for free newsletters" /></a></li><li><a
+data-click-event-label='RSS'
+class="tracked"
+href="/misc/tools/rss.html"
+title="Subscribe to RSS feeds"
+target="_blank"
+><img src="https://cdn.allafrica.com/static/images/connect/icon-rss.gif" width="27" height="27" alt="Subscribe to RSS feeds" /></a></li></ul></div><!--/.section.connect--></div><!--/.column.aside--></div><!--/.row--></div><!--/.container.mid--><div class="container bottom"><div class="row uninitialized" id="footer-most-read"></div><!--/#footer-most-read--><script>
+"use strict";
+_ready.push(function($) {
+if ( ! ( 'IntersectionObserver' in window ) ) return;
+let mostReadObserver = new IntersectionObserver( function ( entries, self ) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+if ( ! loadjs.isDefined( 'owl-carousel-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/jquery/owl-carousel/2.3.4/owl.carousel.min.js?v=2025082501","https://cdn.allafrica.com/static/css/jquery/owl-carousel/2.3.4/owl.carousel.min.css?v=2025082501","https://cdn.allafrica.com/static/css/jquery/owl-carousel/2.3.4/owl.theme.default.min.css?v=2025082501","https://cdn.allafrica.com/static/css/carousels-screen.min.css?v=2025082501"], 'owl-carousel-assets', {
+async: true,
+});
+}
+if ( ! loadjs.isDefined( 'footer-most-read-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/includes/footer/most-read.min.js?v=2025082501"], 'footer-most-read-assets', {
+async: true,
+});
+}
+loadjs.ready( 'footer-most-read-assets', function() {
+$( entry.target ).footerMostRead( {"url":"https://allafrica.com/includes/html/footer/most-read.html"} );
+});
+self.unobserve( entry.target );
+});
+}, { rootMargin: "200px 0px" } );
+const element = document.getElementById('footer-most-read');
+mostReadObserver.observe(element)
+});
+</script><div class="uninitialized" id="footer-trending-tf"></div><!--/#footer-trending-tf--><script>
+"use strict";
+_ready.push(function($) {
+if ( ! ( 'IntersectionObserver' in window ) ) return;
+let trendingTFObserver = new IntersectionObserver( function ( entries, self ) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+if ( ! loadjs.isDefined( 'footer-trending-tf-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/includes/footer/trending-tf.min.js?v=2025082501"], 'footer-trending-tf-assets', {
+async: true,
+});
+}
+loadjs.ready( 'footer-trending-tf-assets', function() {
+$( entry.target ).footerTrendingTF( {"url":"https://allafrica.com/includes/html/footer/trending-tf.html"} );
+});
+self.unobserve( entry.target );
+});
+}, { rootMargin: "200px 0px" } );
+const element = document.getElementById('footer-trending-tf');
+trendingTFObserver.observe(element)
+});
+</script><div class="row no-gutter spotlight-grid uninitialized" id="footer-spotlight-grid"></div><script>
+"use strict";
+_ready.push(function($) {
+if ( ! ( 'IntersectionObserver' in window ) ) return;
+let spotlightGridObserver = new IntersectionObserver( function ( entries, self ) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+if ( ! loadjs.isDefined( 'spotlight-grid-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/includes/spotlight-grid.min.js?v=2025082501"], 'spotlight-grid-assets', {
+async: true,
+});
+}
+loadjs.ready( 'spotlight-grid-assets', function() {
+$( entry.target ).spotlightGrid( {"supplement":["middleeastandafrica","migration","banking","io","europeandafrica","health","gameparks","ebola","corruption","currencies","trade","usafrica","oceans","malaria","travel","humanrights","pregnancy","privatization","aid","wildlife","arts","agriculture","construction","environment","media","terrorism","ict","nutrition","water","climate","sport","manufacturing","land","aids","capitalflows","latinamericaandafrica","agribusiness","worldcup","company","refugees","conflict","stockmarkets","women","education","innovation","labour","coronavirus","ngo","armsandarmies","commodities","children","energy","nepad","athletics","legalaffairs","debt","urbanissues","books","polio","externalrelations","olympics","ecotourism","transport","soccer","religion","asiaaustraliaandafrica","mining","sustainable","petroleum","music","science","governance","peacekeeping","infrastructure","tuberculosis","ncds","agoa","investment","business"],"sent":[],"url":"https://allafrica.com/includes/html/partials/spotlight-grid-cell.html"} );
+});
+self.unobserve( entry.target );
+});
+}, { rootMargin: "200px 0px" } );
+const element = document.getElementById('footer-spotlight-grid');
+spotlightGridObserver.observe(element)
+});
+</script><div class="row"><div class="col-tn-12"><div class="notes"><p class="note aggregation">AllAfrica publishes around 500 reports a day from more than <a href="/list/publisher/editorial/editorial/type/pub.html">90 news organizations</a> and over <a href="/list/publisher/editorial/editorial/type/reg.html">500 other institutions and individuals</a>, representing a diversity of positions on every topic. We publish news and views ranging from vigorous opponents of governments to government publications and spokespersons. Publishers named above each report are responsible for their own content, which AllAfrica does not have the legal right to edit or correct.</p><p class="note original">Articles and commentaries that identify allAfrica.com as the publisher are <a href="/inhouse/">produced or commissioned by AllAfrica</a>. To address comments or complaints, please <a href="/misc/forms/general.html">Contact us</a>.</p></div><!--/.notes--></div></div></div><!--/.container.bottom--><div class="container footer" id="standard-footer"><div class="row"><div class="col-tn-12 col-xs-6 col-sm-7 colophon"><p>
+AllAfrica is a voice of, by and about Africa - aggregating, producing and distributing 500 news and information items daily from over 90 African news organizations and our own reporters to an African and global public. We operate from Cape Town, Dakar, Abuja, Johannesburg, Nairobi and Washington DC.
+</p></div><!--/.colophon--><div class="col-tn-12 col-xs-6 col-sm-5"><div class="rss-and-site-links"><ul
+class="site-links click-tracking"
+data-click-event-action="Footer Site Links"
+><li><a
+href="/commerce/contribute/"
+class="donate tracked"
+data-click-event-label="Donate"
+>Support our work</a></li><li><a
+class="newsletter-signup-trigger tracked"
+style="display:none;"
+data-toggle="modal"
+data-target=".newsletter-signup.modal.footer-and-connect-button-target"
+data-click-event-label="Newsletter Signup"
+><i class="fa fa-envelope-o" aria-hidden="true"></i>
+Sign up for our newsletter
+</a></li><li><a
+href="https://partners.allafrica.com/"
+class="external for-advertisers tracked"
+data-click-event-label="For Advertisers"
+>For Advertisers</a></li><li><a
+class="subscribe tracked"
+href="/misc/info/subscribe/"
+data-click-event-label="Subscribe"
+>Subscribe</a></li></ul><div
+class="click-tracking connect"
+data-click-event-action="Footer Connect Widget"
+><a
+data-click-event-label="Facebook"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://www.facebook.com/allafrica" title="Follow us on Facebook"
+class="tracked"
+><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a
+data-click-event-label="Twitter"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://twitter.com/allafrica" title="Follow us on Twitter"
+class="tracked"
+><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a
+data-click-event-label="Telegram"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://t.me/allafrica" title="Join us on Telegram"
+class="tracked"
+><i class="fa fa-telegram" aria-hidden="true"></i></a><a
+data-click-event-label="LinkedIn"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://www.linkedin.com/company/allafrica/" title="Follow us on Linkedin"
+class="tracked"
+><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a
+data-click-event-label="WhatsApp"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://whatsapp.com/channel/0029VaIdDi8Bqbr263erhw1K" title="Follow us on WhatsApp"
+class="tracked"
+><i class="fa fa-whatsapp" aria-hidden="true"></i></a><a
+data-click-event-label="RSS"
+style="display: inline-block; text-align: center; width: calc( 100% / 6 );"
+href="https://allafrica.com/misc/tools/rss.html" title="Subscribe to AllAfrica via RSS"
+class="tracked"
+><i class="fa fa-rss-square" aria-hidden="true"></i></a></div><div class="app-download row no-gutter"><div class="google-play-download col-tn-6 col-xs-12 col-sm-6"><a class="external" href="https://play.google.com/store/apps/details?id=com.allafrica.app"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" /></a></div><!--/.google-play-download--><div class="app-store-download col-tn-6 col-xs-12 col-sm-6"><a class="external" href="https://apps.apple.com/us/app/allafrica/id1571102510?itsct=apps_box_badge&amp;itscg=30200"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1624233600&h=f04eb423ff27f558a97f439f3a3cd400" alt="Download on the App Store"></a></div><!--/.app-store-download--></div></div><!--/.rss-and-site-links--></div></div><div class="row"><div class="col-tn-12 legal"><ul><li class="copy"><a href="/misc/info/copyright.html">&copy; 2026 AllAfrica</a></li><li class="privacy"><a href="/misc/info/privacy.html">Privacy Policy</a></li><li class="contact"><a href="/misc/forms/general.html">Contact Us</a></li><li class="contact"><a href="/misc/info/about/">About Us</a></li></ul></div></div><div class="row"><div class="col-tn-12 trademark">
+AllAfrica - All the Time
+</div><!--/.trademark--></div></div><!--/.container.footer--><div class="newsletter-signup modal fade footer-and-connect-button-target"
+role="dialog"
+aria-expanded="false"
+data-campaign="Newsletter Signup Footer Button English v1"
+data-trigger=".container.footer .rss-and-site-links .newsletter-signup-trigger, .column.aside .section.connect .newsletter-signup-trigger"
+><div class="modal-dialog"><!-- Modal content--><div class="modal-content"><div class="modal-body"><div class="row header"><div class="col-tn-12"><button type="button" class="close tracked"
+data-dismiss="modal"
+data-event-label="Clicked X"
+aria-label="Close"
+><i class="fa fa-times" aria-hidden="true"></i><span class="sr-only">Close</span></button></div></div><div class="row body"><div class="col-tn-12"><img class="logo img-responsive" src="https://cdn.allafrica.com/static/images/structure/aa-logo-rgba-no-text-128x128.png" /><div class="cta"><h4 class="cta-title">Sign up for free AllAfrica Newsletters</h4><p class="cta-text">Get the latest in African news delivered straight to your inbox</p></div></div></div><div class="row newsletter-signup-form-container"><div class="col-tn-12"><form role="form" method="post" action="#" class="newsletter-signup-form"><div class="mailings-selector"><div class="mailings"><input type="hidden" name="mailings[type]" value="hidden"><input type="hidden" name="mailings[values][]" value="latest:en"></div></div><div class="subscriber-info input-group input-group-sm" for="email"><input type="email" class="form-control" name="email" placeholder="someone@example.com" required maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-success btn-sign-up tracked"
+data-event-label="Submitted Form"
+data-enabled-text="Submit"
+data-disabled-text="Sending..."
+>
+Submit
+</button></span></div><input type="hidden" name="campaign" value="Newsletter Signup Footer Button English v1"><input type="hidden" name="_type" value="newsletter-signup"><input type="hidden" name="_time" value="1771810384" /><input type="hidden" name="_uuid" value="AAAAFVNhbHRlZF9fNc+a0vH9Xgn2HK/x1bvug1vQoBB/IwfSSJePSDUQNeZi2qf2/qpTA+sQlWGbRfqPlzjBxDY56M0=" /></form><p class="privacy-notice">By submitting above, you agree to <a href="/misc/info/privacy.html" class="tracked" data-event-label="Clicked Privacy" target="_blank">our privacy policy</a>.</p></div></div><div class="row messages"><div class="col-tn-12"><div class="message success alert alert-success" style="display:none;"><h4><i class="fa fa-check-circle" aria-hidden="true"></i>
+Success!
+</h4><p>Almost finished...</p><p>We need to confirm your email address.</p><p>To complete the process, please follow the instructions in the email we just sent you.</p></div><div class="message error returned-error alert alert-danger" style="display:none;"><h4><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+Error!
+</h4><div class="returned-errors"></div></div><div class="message error generic-error alert alert-danger" role="alert" style="display:none;"><h4><i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+Error!
+</h4><p>There was a problem processing your submission. Please try again later.</p></div></div></div><!--/.row--></div></div></div></div><script>
+_ready.push(function($) {
+if ( ! loadjs.isDefined( 'newsletter-signup-assets' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/jquery/jquery.serialize-object.min.js?v=2025082501","https://cdn.allafrica.com/static/js/newsletter-signup.min.js?v=2025082501","https://cdn.allafrica.com/static/css/newsletter-signup.min.css?v=2025082501"], 'newsletter-signup-assets', {
+async: true,
+});
+}
+// the newsletter widget calls storageAllowed(), which is imported with
+// the cmp bundle. passing an array of bundle names to loadjs triggers
+// the callback only after all of the listed bundles have fired.
+loadjs.ready( [ 'cmp', 'js-cookie', 'events', 'newsletter-signup-assets' ], function() {
+$('.newsletter-signup.modal.fade.footer-and-connect-button-target').newsletterModal({
+maxShowCount: 10,
+maxCloseCount: 3,
+maxSuccessCount: 1,
+});
+});
+});
+</script><script>
+_ready.push( function($) {
+prepareExternalLinks();
+});
+</script><style>
+.section.headlines.spotlight-box ul.stories > li .source,
+.section.box.headlines ul.stories > li .source,
+.column.main .section.date-browse ul.stories > li .source {
+margin-left: .5em;
+white-space: nowrap;
+}
+ul.stories > li > a .more {
+font-weight: bold;
+margin-left: 7px;
+font-size: 110%;
+line-height: 150%;
+}
+.section.top-news ul.stories > li .summary {
+margin: 8px 0;
+}
+</style><style>
+ul.stories > li > a.premium-post-item {
+background-color: #F3F3F3;
+}
+ul.stories > li > a.premium-post-item:hover {
+background-color: #F0F0F0;
+}
+ul.stories > li a.premium-post-flag {
+padding: 0 !important;
+}
+ul.stories > li .premium-post-flag {
+width: 22px;
+height: 22px;
+}
+.section.box.headlines ul.stories > li span.premium-post-flag {
+width: 20px;
+height: 20px;
+}
+ul.stories > li .premium-post-flag {
+float: right;
+margin-left: 4px;
+margin-bottom: 4px;
+overflow: hidden;
+padding: 0;
+background-color: transparent;
+}
+ul.stories > li .premium-post-flag .sprite {
+background-image: url('https://cdn.allafrica.com/static/images/structure/sponsored-sprites.png');
+background-position: 0 0;
+background-repeat: no-repeat;
+background-color: transparent;
+display: inline-block;
+width: 100%;
+height: 100%;
+line-height: 0 !important;
+background-size: cover;
+}
+ul.stories > li a.premium-post-flag {
+margin-top: 4px;
+margin-right: 4px;
+}
+.section.box.headlines ul.stories > li span.premium-post-flag {
+margin-top: 2px;
+margin-right: -5px;
+}
+</style><div id="pixel-container"></div><!--/#pixel-container--><script>
+ready(function(){
+fireLoadJSBundle('header');
+});
+ready(function(){
+if ( ! loadjs.isDefined( 'js-cookie' ) ) {
+loadjs( ["https://cdn.allafrica.com/static/js/js-cookie/3.0.1/js.cookie.min.js?v=2025082501"], 'js-cookie', {
+async: true,
+});
+}
+});
+</script><script src="https://cdn.allafrica.com/static/js/jquery/jquery-1.9.1.min.js?v=2025082501"></script><script src="https://cdn.allafrica.com/static/js/bootstrap/3.3.7/bootstrap.min.js?v=2025082501"></script><script src="https://cdn.allafrica.com/static/js/application.min.js?v=2025082501"></script></body></html>

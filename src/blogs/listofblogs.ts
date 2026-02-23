@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-3-2-billion-betrayal-education-aid-collapse-threatens-6-million-children",
+    title: "The $3.2 Billion Betrayal: Education Aid Collapse Threatens 6 Million Children",
+    summary:
+      "International aid for education is projected to drop by 24% by 2026. For children in fragile states, this isn't just a budget cut—it's a foreclosure on the future.",
+    thumbnailImage: "/images/global-news/2026/2026-02-23-the-3-2-billion-betrayal-education-aid-collapse-threatens-6-million-children.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "the-2026-threat-matrix-six-health-crises-defining-the-year",
     title: "The 2026 Threat Matrix: Six Health Crises Defining the Year",
     summary:
