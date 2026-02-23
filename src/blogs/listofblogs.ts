@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-lethal-gap-why-conflict-zones-are-now-the-world-s-deadliest-maternity-wards",
+    title: "The Lethal Gap: Why Conflict Zones Are Now the World's Deadliest Maternity Wards",
+    summary:
+      "A 15-year-old girl in a conflict zone faces a 1 in 51 lifetime risk of dying during pregnancy. This is the geography of failure.",
+    thumbnailImage: "/images/global-news/2026/2026-02-23-the-lethal-gap-why-conflict-zones-are-now-the-world-s-deadliest-maternity-wards.jpg",
+    date: "2026-02-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "vision-in-crisis-ocular-health-emergency-among-displaced-populations-in-nigeria-3",
     title: "Vision in Crisis: Ocular Health Emergency Among Displaced Populations in Nigeria",
     summary:
