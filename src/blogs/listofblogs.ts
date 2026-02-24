@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-unseen-crisis-ocular-disorders-among-internally-displaced-persons-in-benue-state-3",
+    title: "The Unseen Crisis: Ocular Disorders Among Internally Displaced Persons in Benue State",
+    summary:
+      "A new study reveals a staggering 62.5% prevalence of ocular disorders among internally displaced persons in Benue State, Nigeria, highlighting critical gaps in health access and the profound impact of displacement on vision and quality of life. This analysis, in the Nivaran/Founder tone, delves into the systemic failures and urgent humanitarian imperatives, underscoring how economic, educational, and geographical distances transform treatable conditions into debilitating impairments.",
+    thumbnailImage: "/images/placeholder-image-for-nivaran.webp",
+    date: "2026-02-24",
+    author: "Nivaran/Founder",
+    featured: true,
+    type: "Analysis",
+  },
+  {
     slug: "the-unseen-crisis-ocular-disorders-among-internally-displaced-persons-in-benue-state-2",
     title: "The Unseen Crisis: Ocular Disorders Among Internally Displaced Persons in Benue State",
     summary:
