@@ -27,7 +27,7 @@ export default function NewsAutomationAdmin() {
   const [autoRefresh, setAutoRefresh] = useState(true);
 
   const authHeader = username && password 
-    ? `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`
+    ? `Basic ${btoa(`${username}:${password}`)}`
     : '';
 
   const fetchStatus = useCallback(async () => {
