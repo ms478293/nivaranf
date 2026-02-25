@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sudan-1000-days-of-war-deepen-the-world-s-worst",
+    title: "Global Health and Education Watch: Sudan: 1000 days of war deepen the world’s worst",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-02-25-global-health-and-education-watch-sudan-1000-days-of-war-deepen-the-world-s-wors.jpg",
+    date: "2026-02-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nphl-and-who-nepal-decentralize-measles-rubella-testing-to-strengthen-provincial-health-security",
     title: "NPHL and WHO Nepal Decentralize Measles-Rubella Testing to Strengthen Provincial Health Security",
     summary:
