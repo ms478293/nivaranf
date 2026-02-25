@@ -2643,35 +2643,143 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def notify_telegram(report: Dict, error_message: str = "") -> Tuple[bool, str]:
+    """Send Telegram notification for automation status."""
+    bot_token = normalize_ws(os.getenv("TELEGRAM_BOT_TOKEN", ""))
+    chat_id = normalize_ws(os.getenv("TELEGRAM_CHAT_ID", ""))
+    
+    if not bot_token or not chat_id:
+        return False, "telegram-not-configured"
+    
+    status = normalize_ws(str(report.get("status", ""))).lower() or "unknown"
+    is_error = bool(error_message)
+    if is_error:
+        status = "failed"
+    
+    # Published notification
+    if status == "published":
+        title = normalize_ws(str(report.get("generatedTitle") or (report.get("selectedCandidate") or {}).get("title") or "Global News Article"))
+        blog_url = normalize_ws(str(report.get("blogUrl") or (report.get("publishResult") or {}).get("blogUrl") or ""))
+        source_url = normalize_ws(str((report.get("selectedCandidate") or {}).get("link") or ""))
+        score = str((report.get("selectedCandidate") or {}).get("score") or "N/A")
+        word_count = str(report.get("generatedWordCount") or "N/A")
+        
+        message = f"""✅ <b>Global News Published!</b>
+
+📰 <b>{title}</b>
+
+📊 Quality Score: {score}
+📝 Word Count: {word_count}
+
+🔗 <a href="{blog_url}">Read Article</a>
+📎 <a href="{source_url}">Source</a>
+
+🤖 <i>Automated by Nivaran News System</i>"""
+    
+    # Skipped notification
+    elif status == "skipped":
+        reason = normalize_ws(str(report.get("reason") or "No suitable candidates"))
+        message = f"""⏭️ <b>News Automation Skipped</b>
+
+ℹ️ {reason}
+
+Will retry in the next cycle."""
+    
+    # Error notification
+    elif is_error:
+        message = f"""❌ <b>News Automation Failed</b>
+
+⚠️ Error: {error_message}
+
+🔧 Check logs for details."""
+    
+    else:
+        message = f"""ℹ️ <b>News Automation Status</b>
+
+Status: {status.upper()}
+{normalize_ws(str(report.get("reason") or ""))}"""
+    
+    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": message[:4096],
+        "parse_mode": "HTML",
+        "disable_web_page_preview": False,
+    }
+    
+    try:
+        req = urllib.request.Request(
+            url,
+            data=urllib.parse.urlencode(payload).encode("utf-8"),
+            headers={
+                "Content-Type": "application/x-www-form-urlencoded",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=10) as response:
+            result = json.loads(response.read().decode("utf-8"))
+            return result.get("ok", False), ""
+    except Exception as exc:
+        return False, str(exc)
+
+
 def main() -> int:
     args = parse_args()
     try:
         report = run_pipeline(args)
-        sent, notification_error = notify_discord(report)
+        
+        # Send Discord notification (existing)
+        discord_sent, discord_error = notify_discord(report)
         report["discordNotification"] = {
             "attempted": normalize_ws(
                 os.getenv("GLOBAL_NEWS_DISCORD_WEBHOOK_URL", "")
                 or os.getenv("DISCORD_WEBHOOK_URL", "")
             )
             != "",
-            "sent": sent,
-            "error": notification_error,
+            "sent": discord_sent,
+            "error": discord_error,
         }
+        
+        # Send Telegram notification (new)
+        telegram_sent, telegram_error = notify_telegram(report)
+        report["telegramNotification"] = {
+            "attempted": bool(os.getenv("TELEGRAM_BOT_TOKEN") and os.getenv("TELEGRAM_CHAT_ID")),
+            "sent": telegram_sent,
+            "error": telegram_error,
+        }
+        
         print(json.dumps(report, indent=2, ensure_ascii=False))
         return 0
     except Exception as exc:
         error_text = str(exc)
-        sent, notification_error = notify_discord(
+        
+        # Send Discord notification for error (existing)
+        discord_sent, discord_error = notify_discord(
             {"status": "failed", "reason": error_text},
             error_message=error_text,
         )
-        if sent:
+        if discord_sent:
             print("Discord notification sent for failed run.", file=sys.stderr)
-        elif notification_error and notification_error != "webhook-not-configured":
+        elif discord_error and discord_error != "webhook-not-configured":
             print(
-                f"Discord notification failed: {notification_error}",
+                f"Discord notification failed: {discord_error}",
                 file=sys.stderr,
             )
+        
+        # Send Telegram notification for error (new)
+        telegram_sent, telegram_error = notify_telegram(
+            {"status": "failed", "reason": error_text},
+            error_message=error_text,
+        )
+        if telegram_sent:
+            print("Telegram notification sent for failed run.", file=sys.stderr)
+        elif telegram_error and telegram_error != "telegram-not-configured":
+            print(
+                f"Telegram notification failed: {telegram_error}",
+                file=sys.stderr,
+            )
+        
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
