@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: DEFAULT_TITLE,
-    template: "%s | Nivaran Foundation",
+    template: "%s",
   },
   description: DEFAULT_DESCRIPTION,
   keywords: [
