@@ -16,11 +16,11 @@ const DEFAULT_DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: DEFAULT_TITLE,
-  description: DEFAULT_DESCRIPTION,
-  alternates: {
-    canonical: SITE_URL,
+  title: {
+    default: DEFAULT_TITLE,
+    template: "%s | Nivaran Foundation",
   },
+  description: DEFAULT_DESCRIPTION,
   keywords: [
     "Nivaran Foundation",
     "Nepal healthcare NGO",
@@ -31,11 +31,9 @@ export const metadata: Metadata = {
     "501(c)(3)",
   ],
   openGraph: {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
-    url: SITE_URL,
     siteName: "Nivaran Foundation",
     type: "website",
+    locale: "en_US",
     images: [
       {
         url: `${SITE_URL}/logo.png`,
@@ -47,8 +45,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
     images: [`${SITE_URL}/logo.png`],
