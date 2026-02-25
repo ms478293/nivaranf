@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nphl-and-who-nepal-decentralize-measles-rubella-testing-to-strengthen-provincial-health-security",
+    title: "NPHL and WHO Nepal Decentralize Measles-Rubella Testing to Strengthen Provincial Health Security",
+    summary:
+      "The National Public Health Laboratory and WHO Nepal have launched a critical initiative to expand Measles-Rubella testing capabilities to provincial laboratories. This decentralization aims to drastically reduce diagnostic delays and bolster Nepal's federal health infrastructure.",
+    thumbnailImage: "/images/nepal-news/2026/2026-02-25-nphl-and-who-nepal-decentralize-measles-rubella-testing-to-strengthen-provincial.jpg",
+    date: "2026-02-25",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "sudan-s-agony-one-thousand-days-of-war-yield-world-s-worst-humanitarian-catastrophe",
     title: "Sudan’s Agony: One Thousand Days of War Yield World’s Worst Humanitarian Catastrophe",
     summary:
