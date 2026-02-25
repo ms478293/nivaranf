@@ -212,7 +212,7 @@ export async function POST(request: NextRequest) {
             message: 'Cron job removed successfully',
             output: stdout + stderr 
           });
-        } catch (error) {
+        } catch {
           return NextResponse.json(
             { error: 'Failed to remove cron job' },
             { status: 500 }
