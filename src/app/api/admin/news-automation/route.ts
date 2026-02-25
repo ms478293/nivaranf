@@ -72,7 +72,7 @@ export async function GET(request: NextRequest) {
     try {
       const { stdout } = await execAsync('crontab -l 2>/dev/null || echo ""');
       cronInstalled = stdout.includes('run_automation.sh');
-    } catch (error) {
+    } catch {
       // Cron not available
     }
     
