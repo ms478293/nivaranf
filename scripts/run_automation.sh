@@ -8,6 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 LOG_DIR="${REPO_ROOT}/logs/automation"
 ENV_FILE="${REPO_ROOT}/.env.automation"
+AUTOMATION_TIMEOUT_SECONDS="${AUTOMATION_TIMEOUT_SECONDS:-900}"
 
 # Create log directory
 mkdir -p "${LOG_DIR}"
@@ -65,19 +66,30 @@ log "━━━━━━━━━━━━━━━━━━━━━━━━━
 
 update_status "running" "Automation started"
 
-# Send start notification
-export TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID
-python3 - <<'PYEOF'
+# Create symlink to latest log early so notifiers can always inspect it
+ln -sf "${LOG_FILE}" "${LATEST_LOG}"
+
+# Send start notification (best effort)
+if [[ -n "${TELEGRAM_BOT_TOKEN:-}" ]] && [[ -n "${TELEGRAM_CHAT_ID:-}" ]]; then
+  export TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID
+  export AUTOMATION_SCRIPT_DIR="${SCRIPT_DIR}"
+  python3 - <<'PYEOF' || true
+import os
 import sys
-sys.path.insert(0, '/app/scripts')
+
+script_dir = os.environ.get("AUTOMATION_SCRIPT_DIR", "")
+if script_dir:
+    sys.path.insert(0, script_dir)
 from telegram_notifier import notify_automation_started
+
 notify_automation_started()
 PYEOF
+fi
 
 # Run the automation with timeout and error handling
-if timeout 900 bash "${SCRIPT_DIR}/run_global_news.sh" --repo-root "${REPO_ROOT}" \
-  --sources-file "${SCRIPT_DIR}/global-news.sources.json" \
-  --push 2>&1 | tee -a "${LOG_FILE}"; then
+if timeout "${AUTOMATION_TIMEOUT_SECONDS}" bash "${SCRIPT_DIR}/run_global_news.sh" \
+  --repo-root "${REPO_ROOT}" \
+  --sources-file "${SCRIPT_DIR}/global-news.sources.json" 2>&1 | tee -a "${LOG_FILE}"; then
   
   log "✅ Automation completed successfully"
   update_status "success" "Automation completed successfully"
@@ -113,22 +125,27 @@ else
   update_status "failed" "Automation failed with exit code ${EXIT_CODE}"
   
   # Send error notification
+  export AUTOMATION_SCRIPT_DIR="${SCRIPT_DIR}"
+  export AUTOMATION_LOG_FILE="${LOG_FILE}"
+  export AUTOMATION_EXIT_CODE="${EXIT_CODE}"
   python3 - <<PYEOF
+import os
 import sys
-sys.path.insert(0, '/app/scripts')
+
+script_dir = os.environ.get("AUTOMATION_SCRIPT_DIR", "")
+if script_dir:
+    sys.path.insert(0, script_dir)
 from telegram_notifier import notify_automation_error
+
 notify_automation_error({
-    "error": "Exit code ${EXIT_CODE}",
+    "error": f"Exit code {os.environ.get('AUTOMATION_EXIT_CODE', '1')}",
     "stage": "main_execution",
-    "logFile": "${LOG_FILE}"
+    "logFile": os.environ.get("AUTOMATION_LOG_FILE", "")
 })
 PYEOF
   
   exit ${EXIT_CODE}
 fi
-
-# Create symlink to latest log
-ln -sf "${LOG_FILE}" "${LATEST_LOG}"
 
 # Cleanup old logs (keep last 72 hours)
 find "${LOG_DIR}" -name "global_news_*.log" -type f -mtime +3 -delete

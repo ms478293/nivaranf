@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Nivaran Nepal_News daily at 05:30 (server local time)
+
+[Timer]
+OnCalendar=*-*-* 05:30:00
+RandomizedDelaySec=120
+Persistent=true
+Unit=nivaran-nepal-news.service
+
+[Install]
+WantedBy=timers.target

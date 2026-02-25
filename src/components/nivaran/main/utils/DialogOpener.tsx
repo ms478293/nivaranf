@@ -75,13 +75,6 @@ export const DialogOpener = ({ isToolkitOpen, setIsToolkitOpen }) => {
           >
             Project Sanjeevani
           </Button>
-          <Button
-            variant="link"
-            onClick={() => router.push("/vidya")}
-            className="text-white text-lg hover:bg-primary-main/50 rounded-none "
-          >
-            Project Vidya
-          </Button>
         </div>
 
         <div

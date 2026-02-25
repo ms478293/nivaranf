@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Nivaran Global_News every hour
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=120
+Persistent=true
+Unit=nivaran-global-news.service
+
+[Install]
+WantedBy=timers.target

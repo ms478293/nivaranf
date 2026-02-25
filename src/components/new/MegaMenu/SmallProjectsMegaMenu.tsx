@@ -7,9 +7,9 @@ import * as SheetPrimitive from "@radix-ui/react-dialog";
 export const PROJECT_DATA = [
   {
     id: 1,
-    label: "Vidya",
-    link: "/vidya",
-    imgUrl: "/projects/images/projectVidyaHero.jpg",
+    label: "Sanjeevani",
+    link: "/sanjeevani",
+    imgUrl: "/sanjeevani/sanjeevani-1.png",
   },
 ];
 
@@ -64,39 +64,9 @@ export const SmallProjectsMegaMenu = () => {
       </Link>
       {/* </SheetPrimitive.Close> */}
 
-      <div className=" hidden sm:flex sm:flex-col gap-1">
-        <h3 className="test-sm text-gray-600 font-medium text-nowrap">
-          Education Project
-        </h3>
-        <ul className="flex gap-2">
-          {PROJECT_DATA.map((image) => (
-            <li className="" key={image.id}>
-              <Link href={image.link}>
-                <div>
-                  <SheetPrimitive.Close className="rounded-md overflow-hidden h-[116px] w-full relative block">
-                    <Image
-                      src={image.imgUrl}
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-cover object-center"
-                      alt={`Project ${image.label}`}
-                    />
-                    <div className="hidden sm:block h-[35px] w-full bg-[linear-gradient(to_bottom,_transparent_0%_,transparent_0%_,black_50%)] absolute z-[10] bottom-0">
-                      <p className="uppercase text-neutral-50 font-medium p-2">
-                        {image.label}
-                      </p>
-                    </div>
-                  </SheetPrimitive.Close>
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
       <ul className="flex flex-col gap-2 sm:hidden">
         <h3 className="test-sm text-gray-600 font-medium text-nowrap">
-          Education Project
+          Current Project
         </h3>
         <RenderList
           data={PROJECT_DATA}

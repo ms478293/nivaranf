@@ -15,13 +15,6 @@ const projectsData: {
       "Expanding essential healthcare access for underserved communities across Nepal.",
     link: "/sanjeevani",
   },
-  {
-    name: "Vidya",
-    imgUrl: "/projects/images/projectVidyaHero.jpg",
-    description:
-      "Driving quality education, teacher support, and long-term learning outcomes.",
-    link: "/vidya",
-  },
 ];
 
 export const UpcomingProjects = () => {

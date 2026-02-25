@@ -8,14 +8,7 @@ export interface UpcomingProjectsDataType {
 
 export const UPCOMING_PROJECTS_DATA: UpcomingProjectsDataType[] = [
   {
-    id: 2,
-    link: "/vidya",
-    images: "/articles/images/community-clinic.jpg",
-    title: "Vidya",
-    description: "",
-  },
-  {
-    id: 3,
+    id: 1,
     link: "/sanjeevani",
     images: "/sanjeevani/sanjeevani-1.png",
     title: "Sanjeevani",

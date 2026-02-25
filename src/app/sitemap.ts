@@ -18,7 +18,6 @@ const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: Me
   { path: "/news", priority: 0.9, changeFrequency: "daily" },
   { path: "/global-news", priority: 0.8, changeFrequency: "hourly" },
   { path: "/sanjeevani", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/vidya", priority: 0.8, changeFrequency: "weekly" },
   { path: "/volunteer", priority: 0.7, changeFrequency: "weekly" },
   { path: "/programs", priority: 0.7, changeFrequency: "monthly" },
   { path: "/programs/health", priority: 0.8, changeFrequency: "monthly" },
