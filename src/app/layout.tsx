@@ -1,7 +1,6 @@
 import Providers from "@/providers";
 import "./globals.css";
 
-import NivaranFlightIntro from "@/components/new/intro/NivaranFlightIntro";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
@@ -155,8 +154,6 @@ export default async function RootLayout({
         <Providers>
           <SetUserLocationCookie />
           <Toaster closeButton richColors theme="light" />
-          <NivaranFlightIntro />
-
           {children}
           <Analytics />
         </Providers>
