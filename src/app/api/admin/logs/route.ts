@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
         totalLines: lines.length,
         file: path.basename(logFile),
       });
-    } catch (error) {
+    } catch {
       return NextResponse.json({
         success: true,
         content: 'No logs available yet.',
