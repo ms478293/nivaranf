@@ -47,6 +47,11 @@ except Exception:
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
+GEMINI_IMAGE_MODEL_FALLBACKS = [
+    "gemini-2.0-flash-exp-image-generation",
+    "gemini-2.0-flash-preview-image-generation",
+    "gemini-2.5-flash-image-preview",
+]
 DEFAULT_TIMEOUT_SECONDS = 60
 DEFAULT_FEED_TIMEOUT_SECONDS = 12
 DEFAULT_FEED_RETRIES = 1
@@ -334,6 +339,80 @@ def slugify(value: str) -> str:
     return value[:80] if len(value) > 80 else value
 
 
+def unique_nonempty(values: List[str]) -> List[str]:
+    out: List[str] = []
+    seen = set()
+    for raw in values:
+        value = normalize_ws(raw)
+        if not value:
+            continue
+        if value in seen:
+            continue
+        seen.add(value)
+        out.append(value)
+    return out
+
+
+def parse_model_list(raw: str) -> List[str]:
+    if not raw:
+        return []
+    return unique_nonempty([part.strip() for part in raw.split(",")])
+
+
+def is_model_not_found_error(message: str) -> bool:
+    low = (message or "").lower()
+    return (
+        "404" in low
+        or "not found" in low
+        or "not exist" in low
+        or "unknown model" in low
+        or "unsupported model" in low
+    )
+
+
+def discover_gemini_image_models(api_key: str) -> List[str]:
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models"
+        f"?key={urllib.parse.quote(api_key)}"
+    )
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            payload = json.loads(response.read().decode("utf-8", errors="ignore"))
+    except Exception:
+        return []
+
+    discovered: List[str] = []
+    for model in payload.get("models") or []:
+        methods = model.get("supportedGenerationMethods") or []
+        if "generateContent" not in methods:
+            continue
+        name = normalize_ws(str(model.get("name", "")))
+        if not name:
+            continue
+        short_name = name.split("/")[-1]
+        haystack = " ".join(
+            [
+                name.lower(),
+                normalize_ws(str(model.get("displayName", ""))).lower(),
+                normalize_ws(str(model.get("description", ""))).lower(),
+            ]
+        )
+        if "image" in haystack:
+            discovered.append(short_name)
+    return unique_nonempty(discovered)
+
+
+def resolve_gemini_image_models(api_key: str, requested_model: str) -> List[str]:
+    configured = parse_model_list(os.getenv("GEMINI_IMAGE_MODELS", ""))
+    defaults = [requested_model, *GEMINI_IMAGE_MODEL_FALLBACKS]
+    auto_discover = os.getenv("GEMINI_IMAGE_MODEL_AUTO_DISCOVER", "1").strip().lower() not in {
+        "0",
+        "false",
+        "no",
+    }
+    discovered = discover_gemini_image_models(api_key) if (auto_discover and api_key) else []
+    return unique_nonempty([*configured, *defaults, *discovered])
 def to_absolute_url(base_url: str, value: str) -> str:
     raw = normalize_ws(value or "")
     if not raw:
@@ -1026,27 +1105,47 @@ def image_sharpness_score(image_bytes: bytes) -> float:
 
 
 def generate_best_gemini_image(
-    api_key: str, model: str, image_prompt: str, attempts: int
-) -> Tuple[bytes, str, float]:
+    api_key: str, models: List[str], image_prompt: str, attempts: int
+) -> Tuple[bytes, str, float, str]:
     attempts = max(1, attempts)
-    best_bytes: Optional[bytes] = None
-    best_mime = "image/png"
-    best_score = -1.0
+    model_candidates = unique_nonempty(models)
+    if not model_candidates:
+        raise RuntimeError("No Gemini image model candidates configured")
+
     final_prompt = f"{normalize_ws(image_prompt)} {IMAGE_QUALITY_SUFFIX}".strip()
+    model_errors: List[str] = []
 
-    for _ in range(attempts):
-        image_bytes, image_mime = gemini_generate_image(
-            api_key=api_key, model=model, image_prompt=final_prompt
-        )
-        sharpness = image_sharpness_score(image_bytes)
-        if sharpness > best_score:
-            best_score = sharpness
-            best_bytes = image_bytes
-            best_mime = image_mime
+    for model in model_candidates:
+        best_bytes: Optional[bytes] = None
+        best_mime = "image/png"
+        best_score = -1.0
+        model_error = ""
 
-    if best_bytes is None:
-        raise RuntimeError("Could not generate any image candidate")
-    return best_bytes, best_mime, best_score
+        for _ in range(attempts):
+            try:
+                image_bytes, image_mime = gemini_generate_image(
+                    api_key=api_key, model=model, image_prompt=final_prompt
+                )
+            except Exception as exc:
+                model_error = str(exc)
+                if is_model_not_found_error(model_error):
+                    break
+                continue
+
+            sharpness = image_sharpness_score(image_bytes)
+            if sharpness > best_score:
+                best_score = sharpness
+                best_bytes = image_bytes
+                best_mime = image_mime
+
+        if best_bytes is not None:
+            return best_bytes, best_mime, best_score, model
+
+        if model_error:
+            model_errors.append(f"{model}: {model_error}")
+
+    joined_errors = " | ".join(model_errors[:4]) if model_errors else "unknown error"
+    raise RuntimeError(f"Could not generate image from Gemini models ({joined_errors})")
 
 
 def words_count(text: str) -> int:
@@ -2335,7 +2434,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         raise RuntimeError("GEMINI_API_KEY is required")
 
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
-    image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
+    image_model = normalize_ws(os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT))
+    image_models = resolve_gemini_image_models(api_key, image_model) if api_key else []
     image_candidates = int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
     article_attempts = max(1, int(os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS", "3")))
     require_paraphrase = os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1").strip().lower() not in {
@@ -2433,6 +2533,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     image_sharpness = 0.0
     source_image_url = ""
     image_provider_used = ""
+    gemini_image_model_used = ""
     gemini_image_error = ""
 
     if image_provider in {"source_first"}:
@@ -2445,9 +2546,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     if image_bytes is None and image_provider in {"source_first", "gemini_first", "gemini"}:
         if api_key:
             try:
-                image_bytes, image_mime, image_sharpness = generate_best_gemini_image(
+                image_bytes, image_mime, image_sharpness, gemini_image_model_used = generate_best_gemini_image(
                     api_key=api_key,
-                    model=image_model,
+                    models=image_models,
                     image_prompt=image_prompt,
                     attempts=image_candidates,
                 )
@@ -2597,6 +2698,9 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             },
             "generatedImageSharpness": image_sharpness,
             "generatedImageCandidates": image_candidates,
+            "geminiImageModelRequested": image_model,
+            "geminiImageModelsTried": image_models[:10],
+            "geminiImageModelUsed": gemini_image_model_used,
             "articleProviderUsed": article_provider_used,
             "geminiTextError": gemini_text_error,
             "geminiImageError": gemini_image_error,
@@ -2728,7 +2832,7 @@ def main() -> int:
     args = parse_args()
     try:
         report = run_pipeline(args)
-        
+
         # Send Discord notification (existing)
         discord_sent, discord_error = notify_discord(report)
         report["discordNotification"] = {
@@ -2740,7 +2844,7 @@ def main() -> int:
             "sent": discord_sent,
             "error": discord_error,
         }
-        
+
         # Send Telegram notification (new)
         telegram_sent, telegram_error = notify_telegram(report)
         report["telegramNotification"] = {
@@ -2748,25 +2852,24 @@ def main() -> int:
             "sent": telegram_sent,
             "error": telegram_error,
         }
-        
         print(json.dumps(report, indent=2, ensure_ascii=False))
         return 0
     except Exception as exc:
         error_text = str(exc)
-        
+
         # Send Discord notification for error (existing)
-        discord_sent, discord_error = notify_discord(
+        sent, notification_error = notify_discord(
             {"status": "failed", "reason": error_text},
             error_message=error_text,
         )
-        if discord_sent:
+        if sent:
             print("Discord notification sent for failed run.", file=sys.stderr)
-        elif discord_error and discord_error != "webhook-not-configured":
+        elif notification_error and notification_error != "webhook-not-configured":
             print(
-                f"Discord notification failed: {discord_error}",
+                f"Discord notification failed: {notification_error}",
                 file=sys.stderr,
             )
-        
+
         # Send Telegram notification for error (new)
         telegram_sent, telegram_error = notify_telegram(
             {"status": "failed", "reason": error_text},
@@ -2779,7 +2882,6 @@ def main() -> int:
                 f"Telegram notification failed: {telegram_error}",
                 file=sys.stderr,
             )
-        
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
