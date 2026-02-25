@@ -53,7 +53,7 @@ export async function GET(request: NextRequest) {
     try {
       const statusContent = await fs.readFile(statusFile, 'utf-8');
       status = JSON.parse(statusContent);
-    } catch (error) {
+    } catch {
       // Status file doesn't exist yet
     }
     
@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
       const envContent = await fs.readFile(envFile, 'utf-8');
       const match = envContent.match(/NEWS_AUTOMATION_ENABLED=(\w+)/);
       enabled = match ? match[1] === 'true' : true;
-    } catch (error) {
+    } catch {
       // Env file doesn't exist
     }
     
