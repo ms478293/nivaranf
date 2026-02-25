@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-s-agony-one-thousand-days-of-war-yield-world-s-worst-humanitarian-catastrophe",
+    title: "Sudan’s Agony: One Thousand Days of War Yield World’s Worst Humanitarian Catastrophe",
+    summary:
+      "The conflict in Sudan has reached a grim 1,000-day milestone, leaving the health system in ruins and millions displaced. With famine looming and disease outbreaks spreading, the World Health Organization warns of a total collapse without immediate intervention.",
+    thumbnailImage: "/images/global-news/2026/2026-02-25-sudan-s-agony-one-thousand-days-of-war-yield-world-s-worst-humanitarian-catastro.jpg",
+    date: "2026-02-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "compassion-in-the-metropolis-singapore-s-charities-bridging-the-distance-for-vulnerable-populations-2",
     title: "Compassion in the Metropolis: Singapore's Charities Bridging the Distance for Vulnerable Populations",
     summary:
