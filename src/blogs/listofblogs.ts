@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "compassion-in-the-metropolis-singapore-s-charities-bridging-the-distance-for-vulnerable-populations",
+    title: "Compassion in the Metropolis: Singapore's Charities Bridging the Distance for Vulnerable Populations",
+    summary:
+      "Despite Singapore's economic prowess, significant vulnerabilities persist among its populations. This in-depth analysis, in the Nivaran/Founder tone, explores the vital role of five key charities—Willing Hearts, Food From the Heart, HealthServe, TWC2, and SPD—in bridging the socio-economic, cultural, and systemic 'distances' that create disparities in healthcare, education, and basic needs, offering a model for inclusive societal development.",
+    thumbnailImage: "/images/placeholder-image-for-nivaran.webp",
+    date: "2026-02-25",
+    author: "Nivaran/Founder",
+    featured: true,
+    type: "Analysis",
+  },
+  {
     slug: "the-unseen-crisis-ocular-disorders-among-internally-displaced-persons-in-benue-state-5",
     title: "The Unseen Crisis: Ocular Disorders Among Internally Displaced Persons in Benue State",
     summary:
