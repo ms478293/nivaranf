@@ -12,11 +12,36 @@ import { Suspense } from "react";
 import { SubscribeButton } from "@/components/SubscribeButton";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | About Us",
+  title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
   description:
-    "Learn more about Nivaran Foundation’s mission, values, and commitment to making a positive impact. Discover how we’re working towards a better future",
+    "Nivaran Foundation is a 501(c)(3) nonprofit founded in 2020, delivering healthcare and education support to underserved communities across Nepal.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/about",
+    canonical: "https://www.nivaranfoundation.org/about",
+  },
+  openGraph: {
+    title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
+    description:
+      "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
+    url: "https://www.nivaranfoundation.org/about",
+    type: "website",
+    siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/logo.png",
+        width: 1200,
+        height: 665,
+        alt: "Nivaran Foundation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
+    description:
+      "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/logo.png"],
   },
 };
 
@@ -99,9 +124,9 @@ export default function page() {
       </section>
 
       <div className="flex flex-col items-center gap-6 mt-20 ">
-        <h1
+        <h2
           className={
-            "flex flex-wrap gap-x-3 items-center font-Oswald text-xl/10 sm:text-2xl/10 md:text-[40px]/10   border-l-4   border-primary-500 px-2 max-[362px]:h-16 sm:h-10 mb-2 justify-center w-fit"
+            "flex flex-wrap gap-x-3 items-center font-Poppins text-xl/10 sm:text-2xl/10 md:text-[40px]/10 border-l-4 border-primary-500 px-2 max-[362px]:h-16 sm:h-10 mb-2 justify-center w-fit"
           }
         >
           <span className="  font-thin  text-gray-800 block  leading-8">
@@ -113,7 +138,7 @@ export default function page() {
           <span className="  font-thin  text-gray-800 block  leading-8">
             born ?
           </span>
-        </h1>
+        </h2>
         <p className="text-gray-800 font-normal text-center text-sm max-w-[650px] mx-auto px-4">
           Nivaran Foundation was born from a personal encounter with the dire
           need for sustainable solutions in underprivileged communities.

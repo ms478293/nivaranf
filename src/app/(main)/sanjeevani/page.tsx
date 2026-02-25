@@ -161,7 +161,7 @@ const SanjeevaniHeader = () => {
       <span className="text-gray-800 text-xl md:text-2xl/8 font-medium">
         Project
       </span>
-      <span className="text-primary-500 text-3xl md:text-5xl font-medium font-Outfit">
+      <span className="text-primary-500 text-3xl md:text-5xl font-medium font-Poppins">
         SANJEEVANI
       </span>
     </h1>

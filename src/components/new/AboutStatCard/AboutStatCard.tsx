@@ -58,7 +58,7 @@ const Stats = ({
       {stats}
     </span>
     // {/* </p> */}
-    // <p className="absolute bottom-0 p-4 flex flex-col font-Outfit">
+    // <p className="absolute bottom-0 p-4 flex flex-col font-Poppins">
   );
 };
 

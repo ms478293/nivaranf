@@ -13,13 +13,76 @@ export const metadata: Metadata = {
   description:
     "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 85% of funds go directly to programs. EIN: 41-2656587.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/donate",
+    canonical: "https://www.nivaranfoundation.org/donate",
   },
+  openGraph: {
+    title:
+      "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
+    description:
+      "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities.",
+    url: "https://www.nivaranfoundation.org/donate",
+    type: "website",
+    siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/logo.png",
+        width: 1200,
+        height: 665,
+        alt: "Donate to Nivaran Foundation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
+    description:
+      "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/logo.png"],
+  },
+};
+
+const donationFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is my donation to Nivaran Foundation tax-deductible?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Nivaran Foundation is a registered 501(c)(3) nonprofit and eligible donations are tax-deductible in the United States.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is Nivaran Foundation's EIN?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nivaran Foundation EIN is 41-2656587.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much of my donation goes to programs?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nivaran Foundation reports that 85% of donated funds go directly to program services.",
+      },
+    },
+  ],
 };
 
 export default function DonationPage() {
   return (
     <main className="font-Poppins w-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(donationFaqSchema) }}
+      />
+
       {/* Hero + Donation Card */}
       <section className="w-full px-4">
         <div

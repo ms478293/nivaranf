@@ -66,7 +66,7 @@ const NivaranHappiness = () => {
                 />
 
                 <div className=" w-full h-full bg-[linear-gradient(to_bottom,_transparent_0%_,transparent_60%_,white_80%)] absolute z-[10] bottom-0">
-                  <p className="absolute bottom-0 p-4 flex flex-col font-Outfit">
+                  <p className="absolute bottom-0 p-4 flex flex-col font-Poppins">
                     <span className="text-primary-400 text-[36px]/[36px] font-bold ">
                       {data.count}
                     </span>

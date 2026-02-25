@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase";
+import { hasSupabasePublicEnv, supabase } from "@/lib/supabase";
 import { CareersInfoList } from "@/components/new/Careers/CareersInfoList";
 import { CareersList } from "@/components/new/Careers/CareersList";
 import { CareerSidebar } from "@/components/new/CareerSidebar/CareerSidebar";
@@ -10,11 +10,36 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Nivaran Foundation | Career at Nivaran Foundation",
+  title: "Careers in Healthcare & Education | Nivaran Foundation",
   description:
-    " Explore career opportunities at Nivaran Foundation. Discover how you can contribute to our mission and make a difference",
+    "Explore open roles at Nivaran Foundation and help deliver healthcare and education to underserved communities across Nepal.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/career",
+    canonical: "https://www.nivaranfoundation.org/career",
+  },
+  openGraph: {
+    title: "Careers in Healthcare & Education | Nivaran Foundation",
+    description:
+      "Join Nivaran Foundation and contribute to healthcare and education programs that serve underserved communities in Nepal.",
+    url: "https://www.nivaranfoundation.org/career",
+    type: "website",
+    siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/logo.png",
+        width: 1200,
+        height: 665,
+        alt: "Nivaran Foundation Careers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers in Healthcare & Education | Nivaran Foundation",
+    description:
+      "Join Nivaran Foundation and contribute to healthcare and education programs in Nepal.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/logo.png"],
   },
 };
 
@@ -36,6 +61,22 @@ export const dynamicParams = true;
 
 async function getCareerOpenings(): Promise<CareerType[]> {
   try {
+    if (!hasSupabasePublicEnv) {
+      return JOB_OPENINGS.filter((job) => job.status === "active").map((job) => ({
+        id: `static-${job.id}`,
+        jobName: job.title,
+        jobType: job.type,
+        jobLocation: job.location,
+        applyBefore: job.apply_before,
+        positionsOpen: job.positions_open,
+        introduction: job.introduction,
+        responsibilities: job.responsibilities || [],
+        requirements: job.requirements || [],
+        benefits: job.benefits || {},
+        additionalInfo: job.additional_info || {},
+      }));
+    }
+
     const { data: activeJobs, error: activeError } = await supabase
       .from('jobs')
       .select('*')

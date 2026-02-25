@@ -1,4 +1,4 @@
-import { supabase } from "@/lib/supabase";
+import { hasSupabasePublicEnv, supabase } from "@/lib/supabase";
 import { EnhancedCareerForm } from "@/components/new/CareerForm/EnhancedCareerForm";
 import { CareerType } from "../../../page";
 import { notFound } from "next/navigation";
@@ -11,11 +11,9 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const { data: job } = await supabase
-    .from('jobs')
-    .select('title')
-    .eq('id', id)
-    .single();
+  const { data: job } = hasSupabasePublicEnv
+    ? await supabase.from("jobs").select("title").eq("id", id).single()
+    : { data: null };
   const staticJob =
     JOB_OPENINGS.find((opening) => `static-${opening.id}` === id) ||
     JOB_OPENINGS.find((opening) => String(opening.id) === id);
@@ -33,11 +31,9 @@ export default async function page({
 }) {
   const { id } = await params;
 
-  const { data: job, error } = await supabase
-    .from('jobs')
-    .select('*')
-    .eq('id', id)
-    .single();
+  const { data: job, error } = hasSupabasePublicEnv
+    ? await supabase.from("jobs").select("*").eq("id", id).single()
+    : { data: null, error: null };
 
   const staticJob =
     JOB_OPENINGS.find((opening) => `static-${opening.id}` === id) ||

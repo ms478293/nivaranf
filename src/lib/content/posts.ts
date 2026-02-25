@@ -1,5 +1,5 @@
 import { globalBlogs, type blogListType } from "@/blogs/listofblogs";
-import { supabaseAdmin } from "@/lib/supabase/server";
+import { hasSupabaseServerEnv, supabaseAdmin } from "@/lib/supabase/server";
 import {
   applyContentAutomation,
   buildCanonicalUrl,
@@ -21,6 +21,14 @@ const DEFAULT_THUMBNAIL = "/images/generalHealthService.jpg";
 const CONTENT_TYPE_SET = new Set(["Article", "Story", "News", "Blog"]);
 const CONTENT_STATUS_SET = new Set(["draft", "published"]);
 const STATIC_BLOG_SLUGS = new Set(globalBlogs.map((blog) => blog.slug));
+
+function assertSupabaseServerEnv() {
+  if (!hasSupabaseServerEnv) {
+    throw new Error(
+      "Supabase server env vars are missing. Configure NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY."
+    );
+  }
+}
 
 export class ContentTableMissingError extends Error {
   constructor() {
@@ -116,6 +124,7 @@ async function resolveUniqueSlug({
   excludeId?: string;
   currentSlug?: string;
 }) {
+  assertSupabaseServerEnv();
   const baseSlug = slugify(slug);
 
   for (let idx = 0; idx < 100; idx += 1) {
@@ -198,6 +207,7 @@ type DashboardPostFilters = {
 export async function getDashboardContentPosts(
   filters: DashboardPostFilters = {}
 ) {
+  assertSupabaseServerEnv();
   let query = supabaseAdmin
     .from(CONTENT_POSTS_TABLE)
     .select("*")
@@ -222,6 +232,7 @@ export async function getDashboardContentPosts(
 }
 
 export async function getContentPostById(id: string) {
+  assertSupabaseServerEnv();
   const { data, error } = await supabaseAdmin
     .from(CONTENT_POSTS_TABLE)
     .select("*")
@@ -236,6 +247,7 @@ export async function createContentPost(
   input: ContentPostInput,
   createdBy?: string | null
 ) {
+  assertSupabaseServerEnv();
   const automated = applyContentAutomation(input);
   const uniqueSlug = await resolveUniqueSlug({ slug: automated.slug });
   const now = new Date().toISOString();
@@ -259,6 +271,7 @@ export async function createContentPost(
 }
 
 export async function updateContentPost(id: string, input: ContentPostInput) {
+  assertSupabaseServerEnv();
   const existing = await getContentPostById(id);
 
   const mergedInput: ContentPostInput = {
@@ -320,6 +333,7 @@ export async function updateContentPost(id: string, input: ContentPostInput) {
 }
 
 export async function deleteContentPost(id: string) {
+  assertSupabaseServerEnv();
   const { error } = await supabaseAdmin
     .from(CONTENT_POSTS_TABLE)
     .delete()
@@ -329,6 +343,7 @@ export async function deleteContentPost(id: string) {
 }
 
 export async function getPublishedContentPostBySlug(slug: string) {
+  if (!hasSupabaseServerEnv) return null;
   try {
     const { data, error } = await supabaseAdmin
       .from(CONTENT_POSTS_TABLE)
@@ -352,6 +367,7 @@ export async function getPublishedContentPostBySlug(slug: string) {
 export async function getPublishedBlogItemsBySegment(
   segment: ContentRouteSegment
 ) {
+  if (!hasSupabaseServerEnv) return [];
   try {
     const targetTypes: ContentType[] =
       segment === "stories"
@@ -397,6 +413,9 @@ export async function getPublishedRelatedBlogItems({
 export async function getTrendingBlogFeed(limit = 4) {
   const safeLimit = Math.max(1, Math.min(limit, 24));
   const staticTrending = filterNepalExclusiveNewest(globalBlogs, safeLimit * 8);
+  if (!hasSupabaseServerEnv) {
+    return staticTrending.slice(0, safeLimit);
+  }
 
   try {
     const latestDynamicResult = await supabaseAdmin
@@ -429,6 +448,9 @@ export async function getTrendingBlogFeed(limit = 4) {
 export async function getBlogFeed(limit = 200) {
   const safeLimit = Math.max(1, Math.min(limit, 500));
   const staticBlogs = sortBlogItemsByDateDesc(globalBlogs);
+  if (!hasSupabaseServerEnv) {
+    return staticBlogs.slice(0, safeLimit);
+  }
 
   try {
     const { data, error } = await supabaseAdmin

@@ -2,6 +2,48 @@ import { TitleGifDisplayCard } from "@/components/nivaran/common/TitleGifDisplay
 import { Contents } from "@/components/nivaran/programs/Contents";
 import { Events } from "@/components/nivaran/programs/Events";
 import { HealthContent } from "@/content/site-data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
+  description:
+    "Explore Nivaran Foundation mobile health programs in Nepal delivering maternal care, child health, and essential treatment in remote communities.",
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org/programs/health",
+  },
+  keywords: [
+    "free healthcare Nepal",
+    "rural health programs Nepal",
+    "mobile health camps Nepal",
+    "maternal health Nepal",
+    "Nivaran Foundation healthcare",
+  ],
+  openGraph: {
+    title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
+    description:
+      "Nivaran Foundation mobile health programs provide essential care in underserved communities across Nepal.",
+    url: "https://www.nivaranfoundation.org/programs/health",
+    type: "website",
+    siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/logo.png",
+        width: 1200,
+        height: 665,
+        alt: "Nivaran Foundation healthcare programs",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
+    description:
+      "Nivaran Foundation mobile health programs provide essential care in underserved communities across Nepal.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/logo.png"],
+  },
+};
 
 export default function Healthcare() {
   return (

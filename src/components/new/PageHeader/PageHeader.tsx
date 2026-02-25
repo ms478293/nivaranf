@@ -10,7 +10,7 @@ export const PageHeader = ({
       <span className="text-gray-800 text-xl md:text-2xl/8 font-medium">
         {prefix}
       </span>
-      <span className="text-primary-500 text-3xl md:text-5xl font-medium font-Outfit uppercase">
+      <span className="text-primary-500 text-3xl md:text-5xl font-medium font-Poppins uppercase">
         {suffix}
       </span>
     </h1>

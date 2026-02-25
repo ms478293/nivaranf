@@ -32,7 +32,7 @@ export const WhyNIvaran = () => {
         render={(data, i) => (
           <AboutStatsCard data={data} key={i}>
             <AboutStatsCard.Overlay className="bg-[linear-gradient(to_bottom,_transparent_0%_,transparent_60%_,black_80%)]">
-              <p className="absolute bottom-0 p-4 flex flex-col justify-center font-Outfit">
+              <p className="absolute bottom-0 p-4 flex flex-col justify-center font-Poppins">
                 <AboutStatsCard.Stats
                   stats={data.stats}
                   className="text-neutral-50 flex items-center text-[24px]/[36px] font-bold  "

@@ -35,7 +35,7 @@ export const PopupDaysCovered = ({ popover }: { popover: PopoverType }) => {
       >
         Days Covered
       </p>
-      <span className="text-secondary-800 pr-2.5 font-semibold font-Outfit text-[18px]">
+      <span className="text-secondary-800 pr-2.5 font-semibold font-Poppins text-[18px]">
         {popover.districtInfo?.days_covered ?? "0"}
       </span>
     </div>

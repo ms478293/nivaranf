@@ -2,6 +2,48 @@ import { TitleGifDisplayCard } from "@/components/nivaran/common/TitleGifDisplay
 import { Contents } from "@/components/nivaran/programs/Contents";
 import { Events } from "@/components/nivaran/programs/Events";
 import { EducationContent } from "@/content/site-data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Education Programs in Nepal | Nivaran Foundation",
+  description:
+    "Nivaran Foundation education programs support underserved children in Nepal through school access, learning support, and community-based education initiatives.",
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org/programs/education",
+  },
+  keywords: [
+    "education programs Nepal",
+    "rural education Nepal",
+    "child education Nepal",
+    "Nivaran Foundation education",
+    "community education initiatives",
+  ],
+  openGraph: {
+    title: "Education Programs in Nepal | Nivaran Foundation",
+    description:
+      "Discover how Nivaran Foundation supports quality education access for underserved communities in Nepal.",
+    url: "https://www.nivaranfoundation.org/programs/education",
+    type: "website",
+    siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/logo.png",
+        width: 1200,
+        height: 665,
+        alt: "Nivaran Foundation education programs",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Education Programs in Nepal | Nivaran Foundation",
+    description:
+      "Discover how Nivaran Foundation supports quality education access for underserved communities in Nepal.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/logo.png"],
+  },
+};
 
 export default function Education() {
   return (
