@@ -180,7 +180,7 @@ export async function POST(request: NextRequest) {
             success: true, 
             message: 'Automation triggered manually. Check logs for progress.' 
           });
-        } catch (error) {
+        } catch {
           return NextResponse.json(
             { error: 'Failed to trigger automation' },
             { status: 500 }
@@ -196,7 +196,7 @@ export async function POST(request: NextRequest) {
             message: 'Cron job installed successfully',
             output: stdout + stderr 
           });
-        } catch (error) {
+        } catch {
           return NextResponse.json(
             { error: 'Failed to install cron job' },
             { status: 500 }
