@@ -94,7 +94,7 @@ export async function GET(request: NextRequest) {
           recentArticles++;
         }
       }
-    } catch (error) {
+    } catch {
       // Directory might not exist
     }
     
