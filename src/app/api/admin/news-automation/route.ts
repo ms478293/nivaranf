@@ -147,7 +147,7 @@ export async function POST(request: NextRequest) {
           );
           await fs.writeFile(envFile, envContent);
           return NextResponse.json({ success: true, message: 'Automation enabled' });
-        } catch (error) {
+        } catch {
           return NextResponse.json(
             { error: 'Failed to enable automation' },
             { status: 500 }
@@ -164,7 +164,7 @@ export async function POST(request: NextRequest) {
           );
           await fs.writeFile(envFile, envContent);
           return NextResponse.json({ success: true, message: 'Automation disabled' });
-        } catch (error) {
+        } catch {
           return NextResponse.json(
             { error: 'Failed to disable automation' },
             { status: 500 }
