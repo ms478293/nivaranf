@@ -59,8 +59,9 @@ GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 GEMINI_IMAGE_MODEL_FALLBACKS = [
     "gemini-2.0-flash-exp-image-generation",
-    "gemini-2.0-flash-preview-image-generation",
-    "gemini-2.5-flash-image-preview",
+    "gemini-2.5-flash-image",
+    "gemini-3.1-flash-image-preview",
+    "gemini-3-pro-image-preview",
 ]
 DEFAULT_TIMEOUT_SECONDS = 60
 DEFAULT_FEED_TIMEOUT_SECONDS = 12
@@ -2445,12 +2446,12 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     if not api_key and not allow_offline_generation_fallback:
         raise RuntimeError("GEMINI_API_KEY is required")
 
-    text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
-    image_model = normalize_ws(os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT))
+    text_model = os.getenv("GEMINI_TEXT_MODEL") or GEMINI_TEXT_MODEL_DEFAULT
+    image_model = normalize_ws(os.getenv("GEMINI_IMAGE_MODEL") or GEMINI_IMAGE_MODEL_DEFAULT)
     image_models = resolve_gemini_image_models(api_key, image_model) if api_key else []
     image_candidates = _safe_int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES"), 4)
     article_attempts = max(1, _safe_int(os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS"), 3))
-    require_paraphrase = os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1").strip().lower() not in {
+    require_paraphrase = (os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE") or "1").strip().lower() not in {
         "0",
         "false",
         "no",

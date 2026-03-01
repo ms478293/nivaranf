@@ -1347,8 +1347,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY is required")
 
-    text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
-    image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
+    text_model = os.getenv("GEMINI_TEXT_MODEL") or GEMINI_TEXT_MODEL_DEFAULT
+    image_model = os.getenv("GEMINI_IMAGE_MODEL") or GEMINI_IMAGE_MODEL_DEFAULT
     image_candidates = _safe_int(
         os.getenv("NEPAL_NEWS_IMAGE_CANDIDATES") or os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES"),
         4,
@@ -1359,8 +1359,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
             3,
         )
     )
-    require_paraphrase = os.getenv(
-        "NEPAL_NEWS_REQUIRE_PARAPHRASE", os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1")
+    require_paraphrase = (
+        os.getenv("NEPAL_NEWS_REQUIRE_PARAPHRASE") or os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE") or "1"
     ).strip().lower() not in {
         "0",
         "false",
