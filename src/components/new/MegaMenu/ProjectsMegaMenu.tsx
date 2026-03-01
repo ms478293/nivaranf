@@ -1,130 +1,144 @@
-import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { AppButton } from "@/components/ui/app-button";
 import {
   UPCOMING_PROJECTS_DATA,
   UpcomingProjectsDataType,
 } from "@/content/upcoming-projects";
-import { useScreenSize } from "@/lib/helpers/useScreenSize";
-import { cn } from "@/lib/utils";
 import { useMegaMenuStore } from "@/store/useMegamenuStore";
 import Image from "next/image";
 import Link from "next/link";
 
-const PROJECT_PLAN = [
-  {
-    id: 1,
-    label: "Total phase-I Budget",
-    stats: "$ 18 Million",
-  },
-  {
-    id: 2,
-    label: "Population Treated",
-    stats: "20,000+",
-  },
+const HIGHLIGHTS = [
+  { value: "$18M", label: "Phase-I Budget" },
+  { value: "83", label: "Villages" },
+  { value: "20K+", label: "Lives Impacted" },
 ];
 
 const ProjectsMegaMenu = () => {
-  const projectsData = UPCOMING_PROJECTS_DATA;
-  const screenSize = useScreenSize();
   const { openActiveMegaMenu } = useMegaMenuStore();
 
   return (
-    <div className="flex justify-between">
-      <div className="flex flex-col justify-between gap-3 ">
+    <div className="flex gap-8">
+      {/* Left — Project Cards */}
+      <div className="flex flex-col gap-4 w-[55%]">
         <div className="flex justify-between items-center">
-          <h3 className="font-medium text-gray-600 mb-2">Our Projects</h3>
+          <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+            Our Projects
+          </h3>
           <Link
             href="/projects"
             className="hidden md:block"
             onClick={() => openActiveMegaMenu(null)}
           >
-            <AppButton variant="ghost">View all Projects</AppButton>
+            <AppButton variant="ghost" className="text-sm">
+              View all →
+            </AppButton>
           </Link>
         </div>
 
-        <div
-          className={cn(
-            "",
-            screenSize === "md" || "lg"
-              ? "flex flex-col gap-2"
-              : screenSize === "xl"
-              ? "grid grid-cols-2 "
-              : "grid grid-cols-2  "
-          )}
-        >
-          <RenderList
-            data={
-              screenSize === "md" || "lg"
-                ? projectsData.slice(0, 2)
-                : projectsData
-            }
-            render={(project) => (
-              <ProjectCard project={project} key={project.id} />
-            )}
-          />
+        <div className="flex flex-col gap-3">
+          {UPCOMING_PROJECTS_DATA.map((project) => (
+            <ProjectCard
+              project={project}
+              key={project.id}
+              onNavigate={() => openActiveMegaMenu(null)}
+            />
+          ))}
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 w-[40%] ">
+      {/* Right — Spotlight */}
+      <div className="flex flex-col gap-3 w-[45%] bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl p-5 border border-neutral-200">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-gray-700">
-            Current Project
-          </h2>
-          <Link href={"/sanjeevani"} onClick={() => openActiveMegaMenu(null)}>
-            <AppButton variant="ghost">View details</AppButton>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="text-xs font-semibold text-green-700 uppercase tracking-wider">
+              Active Now
+            </span>
+          </div>
+          <Link
+            href="/sanjeevani"
+            onClick={() => openActiveMegaMenu(null)}
+          >
+            <AppButton variant="ghost" className="text-sm">
+              Details →
+            </AppButton>
           </Link>
         </div>
-        <p className="text-sm text-gray-600">
-          Empowering lives by bridging gaps in healthcare access and education
-          through community-driven solutions.
-        </p>
 
-        <div className="flex flex-col gap-1">
-          <h3 className="text-gray-800">Vision for 2030 AD</h3>
-          <div className="flex gap-4">
-            <RenderList
-              data={PROJECT_PLAN}
-              render={(project) => (
-                <div
-                  key={project.id}
-                  className="flex flex-col p-2 bg-gray-100 w-[310px] gap-3"
-                >
-                  <h4 className="text-gray-800 text-sm font-medium">
-                    {" "}
-                    {project.label}
-                  </h4>
-                  <p className="text-xl text-gray-600 font-[600]">
-                    {project.stats}
-                  </p>
-                </div>
-              )}
-            />
-          </div>
+        <div>
+          <h2 className="text-lg font-bold text-gray-900">
+            Project Sanjeevani
+          </h2>
+          <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+            Bridging healthcare gaps across Nepal — from hygiene education to a
+            nationwide hospital network.
+          </p>
+        </div>
+
+        <div className="flex gap-3 mt-auto">
+          {HIGHLIGHTS.map((h) => (
+            <div
+              key={h.label}
+              className="flex-1 bg-white rounded-lg p-2.5 border border-neutral-200 text-center"
+            >
+              <p className="text-base font-bold text-primary-500">{h.value}</p>
+              <p className="text-[11px] text-gray-500 leading-tight mt-0.5">
+                {h.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
 };
 
-const ProjectCard = ({ project }: { project: UpcomingProjectsDataType }) => {
+const ProjectCard = ({
+  project,
+  onNavigate,
+}: {
+  project: UpcomingProjectsDataType;
+  onNavigate: () => void;
+}) => {
   return (
-    <div className=" p-1.5 bg-neutral-100 rounded-md h-[76px] flex gap-4">
-      <div className=" w-[90px] overflow-hidden rounded-md">
+    <Link
+      href={project.link}
+      onClick={onNavigate}
+      className="group flex gap-4 p-2 rounded-xl bg-neutral-50 border border-transparent hover:border-primary-200 hover:bg-primary-50/40 transition-all duration-200"
+    >
+      <div className="w-[100px] h-[72px] flex-shrink-0 overflow-hidden rounded-lg">
         <Image
           src={project.images}
-          alt="Project"
-          width={250}
-          height={250}
-          className="w-full h-full block object-cover object-center "
+          alt={`Project ${project.title}`}
+          width={200}
+          height={144}
+          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <h3 className="flex  justify-between items-center  w-[140px] leading-none">
-        <span className="text-xsm text-gray-800">Project</span>
-        <span className="text-lg font-semibold text-gray-950 ">
-          {project.title}
-        </span>
-      </h3>
-    </div>
+      <div className="flex flex-col justify-center gap-1 min-w-0">
+        <div className="flex items-center gap-2">
+          <h4 className="text-base font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
+            {project.title}
+          </h4>
+          <svg
+            className="w-3.5 h-3.5 text-gray-400 group-hover:text-primary-500 group-hover:translate-x-0.5 transition-all flex-shrink-0"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+        <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+          {project.description}
+        </p>
+      </div>
+    </Link>
   );
 };
 
