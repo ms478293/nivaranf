@@ -44,6 +44,16 @@ except Exception:
     ImageFilter = None
     ImageStat = None
 
+def _safe_int(value, default: int) -> int:
+    """Convert *value* to int, treating None and empty/whitespace strings as *default*."""
+    if value is None:
+        return default
+    s = str(value).strip()
+    if not s:
+        return default
+    return int(s)
+
+
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
@@ -2087,20 +2097,22 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     )
     feed_timeout_seconds: int = max(
         4,
-        int(
+        _safe_int(
             cfg.get(
                 "feedTimeoutSeconds",
-                os.getenv("GLOBAL_NEWS_FEED_TIMEOUT_SECONDS", DEFAULT_FEED_TIMEOUT_SECONDS),
-            )
+                os.getenv("GLOBAL_NEWS_FEED_TIMEOUT_SECONDS") or DEFAULT_FEED_TIMEOUT_SECONDS,
+            ),
+            DEFAULT_FEED_TIMEOUT_SECONDS,
         ),
     )
     feed_retries: int = max(
         0,
-        int(
+        _safe_int(
             cfg.get(
                 "feedRetries",
-                os.getenv("GLOBAL_NEWS_FEED_RETRIES", DEFAULT_FEED_RETRIES),
-            )
+                os.getenv("GLOBAL_NEWS_FEED_RETRIES") or DEFAULT_FEED_RETRIES,
+            ),
+            DEFAULT_FEED_RETRIES,
         ),
     )
 
@@ -2436,8 +2448,8 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
     image_model = normalize_ws(os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT))
     image_models = resolve_gemini_image_models(api_key, image_model) if api_key else []
-    image_candidates = int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
-    article_attempts = max(1, int(os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS", "3")))
+    image_candidates = _safe_int(os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES"), 4)
+    article_attempts = max(1, _safe_int(os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS"), 3))
     require_paraphrase = os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1").strip().lower() not in {
         "0",
         "false",

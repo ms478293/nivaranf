@@ -40,6 +40,16 @@ except Exception:
     ImageFilter = None
     ImageStat = None
 
+def _safe_int(value, default: int) -> int:
+    """Convert *value* to int, treating None and empty/whitespace strings as *default*."""
+    if value is None:
+        return default
+    s = str(value).strip()
+    if not s:
+        return default
+    return int(s)
+
+
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranNepalNewsBot/1.0)"
 GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
@@ -1339,11 +1349,15 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
 
     text_model = os.getenv("GEMINI_TEXT_MODEL", GEMINI_TEXT_MODEL_DEFAULT)
     image_model = os.getenv("GEMINI_IMAGE_MODEL", GEMINI_IMAGE_MODEL_DEFAULT)
-    image_candidates = int(
-        os.getenv("NEPAL_NEWS_IMAGE_CANDIDATES", os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES", "4"))
+    image_candidates = _safe_int(
+        os.getenv("NEPAL_NEWS_IMAGE_CANDIDATES") or os.getenv("GLOBAL_NEWS_IMAGE_CANDIDATES"),
+        4,
     )
     article_attempts = max(
-        1, int(os.getenv("NEPAL_NEWS_ARTICLE_ATTEMPTS", os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS", "3")))
+        1, _safe_int(
+            os.getenv("NEPAL_NEWS_ARTICLE_ATTEMPTS") or os.getenv("GLOBAL_NEWS_ARTICLE_ATTEMPTS"),
+            3,
+        )
     )
     require_paraphrase = os.getenv(
         "NEPAL_NEWS_REQUIRE_PARAPHRASE", os.getenv("GLOBAL_NEWS_REQUIRE_PARAPHRASE", "1")
