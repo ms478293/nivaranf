@@ -5,6 +5,23 @@ export const metadata: Metadata = {
   title: "Nivaran Foundation | Our Journey",
   description:
     "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients. Discover Nivaran Foundation's journey of impact.",
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org/journey",
+  },
+  openGraph: {
+    title: "Our Journey | Nivaran Foundation",
+    description: "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients.",
+    url: "https://www.nivaranfoundation.org/journey",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Journey | Nivaran Foundation",
+    description: "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+  },
 };
 
 export default function OurJourneyPage() {

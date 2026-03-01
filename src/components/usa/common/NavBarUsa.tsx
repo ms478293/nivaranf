@@ -94,12 +94,12 @@ export function NavBarUsa() {
               </ListItem>
               <ListItem
                 className={cn(
-                  pathname === "https://www.nivaranfoundation.org/contact"
+                  pathname === "https://www.nivaranfoundation.org/contact-us"
                     ? "bg-accent"
                     : "",
                   "hover:text-primary-main"
                 )}
-                href="/contact"
+                href="/contact-us"
                 title="Get in Touch"
               >
                 Need Assistance? Let&apos;s Connect.

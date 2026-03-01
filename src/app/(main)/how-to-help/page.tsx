@@ -1,4 +1,6 @@
 import DonationBlock from "@/components/new/DonationBlock/DonationBlock";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { HowTohelpInfoCard } from "@/components/new/HowToHelp/HowTohelpInfoCard";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
@@ -7,9 +9,23 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Make a Difference with Nivaran Foundation",
   description:
-    "Learn how you can support Nivaran Foundation’s mission. Explore ways to contribute, volunteer, and help create lasting positive change in the community",
+    "Learn how you can support Nivaran Foundation's mission. Explore ways to contribute, volunteer, and help create lasting positive change in the community.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/how-to-help",
+    canonical: "https://www.nivaranfoundation.org/how-to-help",
+  },
+  openGraph: {
+    title: "How to Help | Nivaran Foundation",
+    description: "Learn how you can support Nivaran Foundation's mission. Explore ways to contribute, volunteer, and create lasting change.",
+    url: "https://www.nivaranfoundation.org/how-to-help",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Help | Nivaran Foundation",
+    description: "Explore ways to contribute and create lasting positive change.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 
@@ -17,6 +33,7 @@ export default function page() {
   return (
     <div className="font-Poppins w-full px-4">
       <div className="max-w-[1320px] mx-auto ">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "How to Help" }]} className="mb-2" />
         <div className="py-6">
           <PageTitle
             prefix="Your Contribution"
@@ -38,6 +55,17 @@ export default function page() {
             <DonationBlock />
           </Suspense>
         </section>
+
+        <RelatedContent
+          heading="Ways to Get Involved"
+          links={[
+            { title: "Donate", href: "/donate", description: "Make a tax-deductible donation to fund healthcare and education programs." },
+            { title: "Volunteer", href: "/volunteer", description: "Join our field teams and contribute your time and skills." },
+            { title: "Careers", href: "/career", description: "Explore open positions and grow your career with Nivaran Foundation." },
+            { title: "Organize Locally", href: "/organize-locally", description: "Start a health camp or awareness drive in your own community." },
+            { title: "Our Healthcare Programs", href: "/programs/health", description: "See how your support translates into real medical impact." },
+          ]}
+        />
       </div>
     </div>
   );

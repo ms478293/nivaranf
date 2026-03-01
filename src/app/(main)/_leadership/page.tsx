@@ -5,7 +5,21 @@ export const metadata: Metadata = {
   description:
     "The Leadership of Nivaran Foundation have resolve to solve core issues relating to health, education, welfare, environment and community.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/leadership",
+    canonical: "https://www.nivaranfoundation.org/leadership",
+  },
+  openGraph: {
+    title: "Leadership | Nivaran Foundation",
+    description: "Meet the leaders driving Nivaran Foundation's mission in health, education, welfare, and community.",
+    url: "https://www.nivaranfoundation.org/leadership",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leadership | Nivaran Foundation",
+    description: "Meet the leadership team of Nivaran Foundation.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

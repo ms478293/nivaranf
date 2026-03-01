@@ -37,9 +37,10 @@ const NavGrid = () => {
 
 function Dashboard() {
   return (
-    <h1>
-      <NavGrid></NavGrid>
-    </h1>
+    <div>
+      <h1 className="text-2xl font-bold p-4">Dashboard</h1>
+      <NavGrid />
+    </div>
   );
 }
 

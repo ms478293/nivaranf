@@ -1,3 +1,5 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { TitleGifDisplayCard } from "@/components/nivaran/common/TitleGifDisplayCard";
 import { Contents } from "@/components/nivaran/programs/Contents";
 import { Events } from "@/components/nivaran/programs/Events";
@@ -48,6 +50,9 @@ export const metadata: Metadata = {
 export default function Healthcare() {
   return (
     <div>
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Programs" }, { label: "Healthcare" }]} />
+      </div>
       <TitleGifDisplayCard
         title={"Healthcare"}
         imgUrl="/gifs/healthcare.gif"
@@ -88,6 +93,18 @@ export default function Healthcare() {
 
         {/* Optional: Add a semi-transparent overlay for better contrast */}
         <div className="absolute inset-0 bg-gray-200/20"></div>
+      </div>
+      <div className="max-w-[1320px] mx-auto px-4">
+        <RelatedContent
+          heading="Explore Our Programs"
+          links={[
+            { title: "Project Sanjeevani", href: "/sanjeevani", description: "Our flagship healthcare initiative delivering multi-specialty medical camps." },
+            { title: "Education Programs", href: "/programs/education", description: "Supporting underserved children through school access and learning resources." },
+            { title: "About Nivaran Foundation", href: "/about", description: "Learn about our mission, team, and the impact we've made since 2020." },
+            { title: "Donate to Healthcare", href: "/donate", description: "Fund mobile health camps — $500 serves an entire village for a day." },
+            { title: "Volunteer with Us", href: "/volunteer", description: "Join our medical teams and make a direct impact in rural communities." },
+          ]}
+        />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import TargetedResults from "@/components/new/AboutStatCard/TargetedResults";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
 import SanjeevaniPhase from "@/components/new/SanjeevaniPhase/SanjeevaniPhase";
@@ -12,7 +13,21 @@ export const metadata: Metadata = {
   description:
     "Project Sanjeevani brings healthcare to communities in Nepal, improving lives and making a lasting impact on thousands. Join us today.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/sanjeevani",
+    canonical: "https://www.nivaranfoundation.org/sanjeevani",
+  },
+  openGraph: {
+    title: "Project Sanjeevani | Nivaran Foundation",
+    description: "Bringing healthcare to communities in Nepal, improving lives and making a lasting impact on thousands.",
+    url: "https://www.nivaranfoundation.org/sanjeevani",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Sanjeevani | Nivaran Foundation",
+    description: "Empowering communities across Nepal with healthcare access.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 
@@ -21,6 +36,7 @@ const page = () => {
     <main className=" pt-20 font-Poppins flex flex-col gap-10">
       <section className=" w-full px-4">
         <div className="max-w-[1320px] mx-auto flex flex-col gap-8 items-center">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Programs", href: "/programs/health" }, { label: "Sanjeevani" }]} className="self-start" />
           <div className="flex items-center flex-col">
             <SanjeevaniHeader />
 

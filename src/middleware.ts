@@ -7,6 +7,8 @@ export function middleware(req: NextRequest) {
   const pathname = url.pathname;
   const isDashboardPath =
     pathname === "/dashboard" || pathname.startsWith("/dashboard/");
+  const isBlogsEditorPath =
+    pathname === "/blogs/editor" || pathname.startsWith("/blogs/editor/");
   const isContentPostsApiPath =
     pathname === "/api/content/posts" || pathname.startsWith("/api/content/posts/");
   const isContentUploadApiPath = pathname === "/api/content/upload-image";
@@ -23,7 +25,7 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  if (isDashboardPath || isContentProtectedApiPath) {
+  if (isDashboardPath || isBlogsEditorPath || isContentProtectedApiPath) {
     const authToken = req.cookies.get("authToken")?.value || "";
     const contentPortalSession =
       req.cookies.get(CONTENT_PORTAL_SESSION_COOKIE)?.value || "";

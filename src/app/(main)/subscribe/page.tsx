@@ -7,7 +7,21 @@ export const metadata: Metadata = {
   description:
     "Stay updated with Nivaran Foundation's latest news, impact stories, and opportunities to get involved. Join our community today.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/subscribe",
+    canonical: "https://www.nivaranfoundation.org/subscribe",
+  },
+  openGraph: {
+    title: "Subscribe to Newsletter | Nivaran Foundation",
+    description: "Stay updated with Nivaran Foundation's latest news, impact stories, and opportunities to get involved.",
+    url: "https://www.nivaranfoundation.org/subscribe",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Subscribe to Newsletter | Nivaran Foundation",
+    description: "Stay updated with Nivaran Foundation's latest news and impact stories.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

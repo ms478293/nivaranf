@@ -31,6 +31,7 @@ export default function ImageDisplayPage() {
           fill
           src={url}
           alt={`Image for ${slug}`}
+          sizes="100vw"
           className="object-contain"
         />
       ) : (

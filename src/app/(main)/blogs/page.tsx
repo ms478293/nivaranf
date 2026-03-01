@@ -1,4 +1,5 @@
 import { BlogList } from "@/components/new/Blogs/BlogList";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
@@ -39,6 +40,7 @@ export default function BlogsPage() {
   return (
     <div className="w-full mb-10 font-Poppins ">
       <div className="max-w-[1320px] mx-auto flex flex-col gap-4  ">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
         <PageTitle
           prefix="Your Window into"
           suffix="Our Work Around the World"

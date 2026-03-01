@@ -137,7 +137,7 @@ export default function Page() {
             Have questions about our finances or operations?
           </p>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="inline-flex items-center px-6 py-3 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition-colors"
           >
             Contact Us

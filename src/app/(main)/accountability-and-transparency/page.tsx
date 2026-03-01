@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/accountability-and-transparency",
   },
+  openGraph: {
+    title: "Accountability & Transparency | Nivaran Foundation",
+    description: "Governance, reporting, and disclosure commitments at Nivaran Foundation.",
+    url: "https://www.nivaranfoundation.org/accountability-and-transparency",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Accountability & Transparency | Nivaran Foundation",
+    description: "Nivaran Foundation's approach to accountability and transparency.",
+    site: "@NivaranOrg",
+  },
 };
 
 const accountabilityCards = [

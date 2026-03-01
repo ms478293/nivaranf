@@ -10,6 +10,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { Suspense } from "react";
 import { SubscribeButton } from "@/components/SubscribeButton";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 
 export const metadata: Metadata = {
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
@@ -48,6 +50,9 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div className="w-full  font-Poppins ">
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About" }]} />
+      </div>
       <section className="relative w-full">
         <div className="h-[160%] w-full   sm:-top-[24.5rem] md:-top-52 -top-72 absolute -z-10">
           <Image
@@ -55,8 +60,9 @@ export default function page() {
             alt="Nivaran Foundation Healthcare Camp"
             width={2000}
             height={2000}
+            sizes="100vw"
             className="w-full h-full block  object-[40%] md:object-center object-cover grayscale"
-          />{" "}
+          />
           <div className="absolute w-full h-full top-0 bg-[linear-gradient(#ffffff_30%,#ffffffab,#fff)]"></div>
         </div>
 
@@ -292,6 +298,19 @@ export default function page() {
           <DonationBlock className="px-0" />
         </Suspense>
       </section>
+      <div className="max-w-[1320px] mx-auto px-4">
+        <RelatedContent
+          heading="Learn More About Our Work"
+          links={[
+            { title: "Our Healthcare Programs", href: "/programs/health", description: "Free mobile health camps delivering maternal, child, and essential care across rural Nepal." },
+            { title: "Project Sanjeevani", href: "/sanjeevani", description: "Our flagship healthcare initiative delivering multi-specialty care to remote communities." },
+            { title: "Education Initiatives", href: "/programs/education", description: "School access, learning support, and community-based education for underserved children." },
+            { title: "Volunteer with Us", href: "/volunteer", description: "Join our teams in the field and make a direct impact on communities in need." },
+            { title: "How to Help", href: "/how-to-help", description: "Every contribution matters — donate, volunteer, or spread the word." },
+            { title: "Donate", href: "/donate", description: "Your tax-deductible donation funds health camps, education programs, and community development." },
+          ]}
+        />
+      </div>
     </div>
   );
 }

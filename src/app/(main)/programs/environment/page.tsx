@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Nivaran Foundation environmental health initiatives are currently integrated into the healthcare program page.",
   alternates: {
-    canonical: "https://www.nivaranfoundation.org/programs/health",
+    canonical: "https://www.nivaranfoundation.org/programs/environment",
   },
 };
 

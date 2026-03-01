@@ -6,6 +6,7 @@ import { AppButton } from "@/components/ui/app-button";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 
 export const metadata: Metadata = {
   title:
@@ -82,6 +83,10 @@ export default function DonationPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(donationFaqSchema) }}
       />
+
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Donate" }]} />
+      </div>
 
       {/* Hero + Donation Card */}
       <section className="w-full px-4">

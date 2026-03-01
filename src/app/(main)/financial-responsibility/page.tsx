@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/financial-responsibility",
   },
+  openGraph: {
+    title: "Financial Responsibility | Nivaran Foundation",
+    description: "Financial responsibility across planning, allocation, controls, and reporting.",
+    url: "https://www.nivaranfoundation.org/financial-responsibility",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Financial Responsibility | Nivaran Foundation",
+    description: "Nivaran Foundation's approach to financial responsibility.",
+    site: "@NivaranOrg",
+  },
 };
 
 const responsibilityAreas = [

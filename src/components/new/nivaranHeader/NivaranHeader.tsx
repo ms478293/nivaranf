@@ -11,13 +11,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { Sidebar } from "../../nivaran/common/header/SidebarComponent";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { SidebarProvider } from "../../ui/sidebar";
-import AboutUsMegaMenu from "../MegaMenu/AboutUsMegaMenu";
 import MegaMenuLayout from "../MegaMenu/MegaMenuLayout";
-import NewsAndStoriesMegaMenu from "../MegaMenu/NewsAndStoriesMegaMenu";
-import ProjectsMegaMenu from "../MegaMenu/ProjectsMegaMenu";
+
+const ProjectsMegaMenu = dynamic(() => import("../MegaMenu/ProjectsMegaMenu"), { ssr: false });
+const NewsAndStoriesMegaMenu = dynamic(() => import("../MegaMenu/NewsAndStoriesMegaMenu"), { ssr: false });
+const AboutUsMegaMenu = dynamic(() => import("../MegaMenu/AboutUsMegaMenu"), { ssr: false });
 
 const NAVBAR_LIST = [
   {

@@ -1,3 +1,5 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { TitleGifDisplayCard } from "@/components/nivaran/common/TitleGifDisplayCard";
 import { Contents } from "@/components/nivaran/programs/Contents";
 import { Events } from "@/components/nivaran/programs/Events";
@@ -48,6 +50,9 @@ export const metadata: Metadata = {
 export default function Education() {
   return (
     <div>
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Programs" }, { label: "Education" }]} />
+      </div>
       <TitleGifDisplayCard
         title={"Education"}
         imgUrl="/gifs/childPath.gif"
@@ -85,6 +90,18 @@ export default function Education() {
           ></Events>
         </div>
         <div className="absolute inset-0 bg-gray-200/20"></div>
+      </div>
+      <div className="max-w-[1320px] mx-auto px-4">
+        <RelatedContent
+          heading="Explore Our Programs"
+          links={[
+            { title: "Healthcare Programs", href: "/programs/health", description: "Free mobile health camps delivering essential medical services across rural Nepal." },
+            { title: "Project Sanjeevani", href: "/sanjeevani", description: "Multi-specialty health camps providing dental, eye, maternal, and general care." },
+            { title: "About Nivaran Foundation", href: "/about", description: "Learn about our 501(c)(3) mission, team, and the communities we serve." },
+            { title: "Donate to Education", href: "/donate", description: "Your contribution helps build classrooms, train teachers, and keep children in school." },
+            { title: "Volunteer", href: "/volunteer", description: "Share your skills and time with children and educators in Nepal." },
+          ]}
+        />
       </div>
     </div>
   );

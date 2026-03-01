@@ -23,17 +23,19 @@ export const TitleGifDisplayCard = ({
               <Image
                 src={imgUrl}
                 alt={title}
-                fill // Automatically covers the parent container
-                className="object-cover" // Ensures the image fills the width and height
-                priority // Optimizes loading for above-the-fold images
+                fill
+                sizes="(max-width: 1024px) 100vw, 58vw"
+                className="object-cover"
+                priority
               />
             ) : (
               <Image
                 src={altImage}
                 alt={title}
                 fill
-                className="object-scale-down h-fit " // Ensures the image fills the width and height
-                priority // Optimizes loading for above-the-fold images
+                sizes="100vw"
+                className="object-scale-down h-fit"
+                priority
               />
             )}
           </div>

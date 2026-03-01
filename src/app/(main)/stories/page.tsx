@@ -1,4 +1,5 @@
 import { globalBlogs } from "@/blogs/listofblogs";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
 import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
@@ -52,6 +53,7 @@ export default async function StoriesPage() {
   return (
     <main className="w-full mb-10 px-4 font-Poppins">
       <div className="max-w-[1320px] mx-auto flex flex-col gap-4">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Stories" }]} />
         <h1 className="text-3xl font-semibold text-gray-900">Stories</h1>
         <p className="text-sm text-gray-600">
           Human-centered stories from communities and field teams.

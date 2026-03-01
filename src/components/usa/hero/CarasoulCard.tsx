@@ -45,7 +45,7 @@ const ImageCard = ({
       className="relative h-[300px] lg:h-full w-full cursor-pointer rounded-lg border border-gray-300 shadow-lg p-2 hover:shadow-xl overflow-hidden"
       onClick={onClick}
     >
-      <Image src={src} alt={alt} fill className="rounded-md object-cover" />
+      <Image src={src} alt={alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="rounded-md object-cover" />
       <div className="absolute bottom-2 left-2 bg-gray-900 bg-opacity-50 text-white text-sm px-2 py-1 rounded">
         {name}
       </div>
@@ -155,6 +155,7 @@ const CarouselCard = () => {
                 fill
                 src={selectedBox.src}
                 alt={selectedBox.alt}
+                sizes="(max-width: 1024px) 100vw, 600px"
                 className="rounded-md object-cover"
               />
             )}

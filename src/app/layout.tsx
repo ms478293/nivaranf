@@ -1,6 +1,7 @@
 import Providers from "@/providers";
 import "./globals.css";
 
+import { CookieConsent } from "@/components/new/CookieConsent/CookieConsent";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
@@ -67,31 +68,33 @@ const websiteSchema = {
   alternateName: "Nivaran",
   name: "Nivaran Foundation",
   url: SITE_URL,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
   logo: `${SITE_URL}/logo_img.jpg`,
   description: DEFAULT_DESCRIPTION,
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["NonprofitOrganization", "NGO"],
+  name: "Nivaran Foundation",
+  alternateName: "Nivaran",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo_img.jpg`,
+  image: `${SITE_URL}/logo.png`,
+  description: DEFAULT_DESCRIPTION,
   foundingDate: "2020-01-01",
-  founders: [
-    {
-      "@type": "Person",
-      name: "Mukesh Thakur",
-      jobTitle: "Founder & Director",
-      sameAs: "https://www.linkedin.com/company/nivaran-foundation",
-    },
-  ],
+  founder: {
+    "@type": "Person",
+    name: "Mukesh Thakur",
+    jobTitle: "Founder & Director",
+    sameAs: "https://www.linkedin.com/company/nivaran-foundation",
+  },
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+977 1-5312555",
     contactType: "customer service",
     email: "partnerships@nivaranfoundation.org",
-    areaServed: "NP",
+    areaServed: ["NP", "US"],
+    availableLanguage: ["English", "Nepali"],
   },
   sameAs: [
     "https://www.facebook.com/profile.php?id=61584248211038",
@@ -105,12 +108,29 @@ const websiteSchema = {
     addressLocality: "Kathmandu",
     addressCountry: "NP",
   },
+  nonprofit: {
+    "@type": "NonprofitType",
+    name: "501(c)(3)",
+  },
+  taxID: "41-2656587",
+  areaServed: [
+    { "@type": "Country", name: "Nepal" },
+    { "@type": "Country", name: "United States" },
+  ],
+  knowsAbout: [
+    "Rural Healthcare",
+    "Mobile Health Camps",
+    "Maternal Health",
+    "Child Health",
+    "Education in Nepal",
+    "Community Development",
+  ],
 };
 
-// If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "400", "200", "300", "500", "600", "700", "900", "800"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export default async function RootLayout({
@@ -118,27 +138,13 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const cookieStore = await cookies();
 
-  // let userLocation = cookieStore.get("user_location")?.value;
-
-  // if (!userLocation || userLocation === "undefined") {
-  // const geoLocationRes = await fetch(
-  //   `https://ipinfo.io/json?token=${process.env.IPINFO_API_KEY}`
-  // );
-  // userLocation = await geoLocationRes.json();
-
-  //   // Set the cookie
-  //   cookieStore.set("user_location", JSON.stringify(userLocation), {
-  //     httpOnly: false,
-  //     maxAge: 60 * 60 * 24 * 7, // 7 days
-  //     path: "/",
-  //   });
-  //   console.log("LOCATION", userLocation);
-  // }
   return (
     <html lang="en">
       <head>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <meta name="theme-color" content="#000000" />
         <script
           id="Website-schema"
           type="application/ld+json"
@@ -146,15 +152,29 @@ export default async function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
+        <script
+          id="Organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
       </head>
       <body
         className={cn("antialiased", poppins.className)}
         aria-hidden={false}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[9999] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-black focus:text-white focus:rounded-md focus:text-sm"
+        >
+          Skip to main content
+        </a>
         <Providers>
           <SetUserLocationCookie />
           <Toaster closeButton richColors theme="light" />
           {children}
+          <CookieConsent />
           <Analytics />
         </Providers>
       </body>

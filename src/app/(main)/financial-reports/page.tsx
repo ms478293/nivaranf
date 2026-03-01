@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/financial-reports",
   },
+  openGraph: {
+    title: "Financial Reports | Nivaran Foundation",
+    description: "Access financial reporting details, organization information, and report request pathways.",
+    url: "https://www.nivaranfoundation.org/financial-reports",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Financial Reports | Nivaran Foundation",
+    description: "Nivaran Foundation financial reporting and transparency.",
+    site: "@NivaranOrg",
+  },
 };
 
 const reportTimeline = [

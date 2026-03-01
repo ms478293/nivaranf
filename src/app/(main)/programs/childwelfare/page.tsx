@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Nivaran Foundation child welfare efforts are currently published within the primary healthcare program page.",
   alternates: {
-    canonical: "https://www.nivaranfoundation.org/programs/health",
+    canonical: "https://www.nivaranfoundation.org/programs/childwelfare",
   },
 };
 

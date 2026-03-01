@@ -10,7 +10,21 @@ export const metadata: Metadata = {
   description:
     "Reach out to Nivaran Foundation for inquiries or support. Connect with us to learn more about how we're making a global impact through our initiatives",
   alternates: {
-    canonical: "https://nivaranfoundation.org/contact",
+    canonical: "https://www.nivaranfoundation.org/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Nivaran Foundation",
+    description: "Reach out to Nivaran Foundation for inquiries or support. Connect with us to learn more about our global impact.",
+    url: "https://www.nivaranfoundation.org/contact",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Nivaran Foundation",
+    description: "Reach out to Nivaran Foundation for inquiries or support.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

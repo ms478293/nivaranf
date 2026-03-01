@@ -8,9 +8,23 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Project Nurture - Ensuring Every Child's Right to Thrive",
   description:
-    "Project Nurture promotes health, wellness, and nutrition to improve lives through essential healthcare and ensure a healthier global future",
+    "Project Nurture promotes health, wellness, and nutrition to improve lives through essential healthcare and ensure a healthier global future.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/nurture",
+    canonical: "https://www.nivaranfoundation.org/nurture",
+  },
+  openGraph: {
+    title: "Project Nurture | Nivaran Foundation",
+    description: "Promoting health, wellness, and nutrition to improve lives through essential healthcare.",
+    url: "https://www.nivaranfoundation.org/nurture",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Nurture | Nivaran Foundation",
+    description: "Ensuring every child's right to thrive through health and nutrition.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

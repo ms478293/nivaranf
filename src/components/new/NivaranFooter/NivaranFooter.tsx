@@ -1,12 +1,9 @@
-"use client";
-
 import { FooterHollow } from "@/components/nivaran/common/footer/FooterHollow";
 import { SocialLinks } from "@/components/nivaran/common/footer/SocialLinks";
 import { BOTTOM_FOOTER, footerData } from "@/content/site-data";
 import { cn } from "@/lib/utils";
 import { MailIcon } from "lucide-react";
 import Link from "next/link";
-import { useRef } from "react";
 import {
   ListPopulate,
   LogoAndDescription,
@@ -14,7 +11,7 @@ import {
 import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 
 const NivaranFooter = () => {
-  const numberRef = useRef<HTMLDivElement | null>(null);
+  const { logo, others, ourWork } = footerData;
 
   const { logo, others, ourWork } = footerData;
 
@@ -27,7 +24,6 @@ const NivaranFooter = () => {
 
       <div
         className="  max-w-[1320px] mx-auto py-10 text-gray-600 flex flex-col font-poppins  gap-8 "
-        ref={numberRef}
       >
         <div className="lg:flex-row  flex flex-col w-full  lg:w-full gap-8 lg:gap-16  lg:justify-evenly ">
           <div className="flex flex-col gap-4 md:gap-2 sm:flex-row sm:justify-between ">

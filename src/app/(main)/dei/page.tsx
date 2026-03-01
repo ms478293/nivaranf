@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { DeiEmpoweringCard } from "@/components/new/DeiInfo/DeiEmpoweringCard";
 import { DeiInfoCard } from "@/components/new/DeiInfo/DeiInfoCard";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
@@ -15,13 +16,30 @@ export const metadata: Metadata = {
   description:
     "Discover Nivaran Foundation's dedication to inclusion in Nepal through healthcare, education, and community initiatives, ensuring success for all backgrounds.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/dei",
+    canonical: "https://www.nivaranfoundation.org/dei",
+  },
+  openGraph: {
+    title: "Diversity & Inclusion | Nivaran Foundation",
+    description: "Discover Nivaran Foundation's dedication to inclusion in Nepal through healthcare, education, and community initiatives.",
+    url: "https://www.nivaranfoundation.org/dei",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Diversity & Inclusion | Nivaran Foundation",
+    description: "Nivaran Foundation's commitment to equality and inclusion in Nepal.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 
 export default function DiversityAndInclusionPage() {
   return (
     <div className="font-Poppins">
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Diversity & Inclusion" }]} />
+      </div>
       <section className="w-full pl-4">
         <div className="flex flex-col sm:flex-row-reverse  justify-between sm:items-start   max-w-[1320px]  mx-auto ">
           <div className="sm:w-[25rem] sm:absolute right-2 ">

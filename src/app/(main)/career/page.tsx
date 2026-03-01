@@ -1,4 +1,5 @@
 import { hasSupabasePublicEnv, supabase } from "@/lib/supabase";
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { CareersInfoList } from "@/components/new/Careers/CareersInfoList";
 import { CareersList } from "@/components/new/Careers/CareersList";
 import { CareerSidebar } from "@/components/new/CareerSidebar/CareerSidebar";
@@ -147,6 +148,7 @@ export default async function page() {
   return (
     <main className="w-full px-4 font-Poppins pb-10">
       <div className="max-w-[1320px] mx-auto">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Careers" }]} className="mb-2" />
         <section className="mb-4 md:mb-20 flex flex-col gap-2">
           <PageTitle prefix="Join us and" suffix="empower your future" />
           <p className="text-sm text-gray-600 mt-4">
@@ -172,7 +174,7 @@ export default async function page() {
                   We don&apos;t have any open positions at the moment, but we&apos;re always looking for passionate individuals. Check back soon or reach out to us directly.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contact-us"
                   className="mt-2 px-6 py-2.5 bg-primary-main text-white rounded-lg text-sm font-medium hover:bg-primary-main/90 transition-colors"
                 >
                   Contact Us

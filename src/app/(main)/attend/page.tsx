@@ -4,9 +4,26 @@ import { initiatives } from "@/content/event-info";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nivara Foundation | Attend an Event",
+  title: "Nivaran Foundation | Attend an Event",
   description:
-    "See latest on what events are ongioing, planned or catalogued at Nivaran Foundation.org",
+    "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+  alternates: {
+    canonical: "https://www.nivaranfoundation.org/attend",
+  },
+  openGraph: {
+    title: "Attend an Event | Nivaran Foundation",
+    description: "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+    url: "https://www.nivaranfoundation.org/attend",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Attend an Event | Nivaran Foundation",
+    description: "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
+  },
 };
 export default function Page() {
   return (

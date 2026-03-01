@@ -158,6 +158,7 @@ export default async function GlobalNewsPage() {
                   src={leadStory.thumbnailImage}
                   alt={leadStory.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(to_top,_#000000c2_15%,_transparent_55%)]" />
@@ -193,6 +194,7 @@ export default async function GlobalNewsPage() {
                     src={story.thumbnailImage}
                     alt={story.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(to_top,_#0000009c_8%,_transparent_55%)]" />

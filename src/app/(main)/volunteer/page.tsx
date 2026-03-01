@@ -1,3 +1,5 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import VolunteerInfoCardSection from "@/components/new/VolunteerInfoCardSection";
 import { VolunteerList } from "@/components/new/VolunteerList/VolunteerList";
@@ -5,15 +7,29 @@ import { VolunteerHeroGraphic } from "@/components/new/VolunteerHeroGraphic";
 import { VOLUNTEER_PROGRAMS } from "@/content/volunteer-programs";
 import { Metadata } from "next";
 import Link from "next/link";
-import { createClient } from "@supabase/supabase-js";
+import { supabase, hasSupabasePublicEnv } from "@/lib/supabase";
 
 export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Volunteer with Nivaran Foundation - Create Change",
   description:
-    " Make a difference by volunteering with Nivaran Foundation. Discover how your contribution can create lasting change in communities worldwide",
+    "Make a difference by volunteering with Nivaran Foundation. Discover how your contribution can create lasting change in communities worldwide.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/volunteer",
+    canonical: "https://www.nivaranfoundation.org/volunteer",
+  },
+  openGraph: {
+    title: "Volunteer with Us | Nivaran Foundation",
+    description: "Make a difference by volunteering with Nivaran Foundation. Create lasting change in communities worldwide.",
+    url: "https://www.nivaranfoundation.org/volunteer",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Volunteer with Us | Nivaran Foundation",
+    description: "Make a difference by volunteering with Nivaran Foundation.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 
@@ -29,13 +45,9 @@ type ProgramType = {
 
 async function getOpenPrograms(): Promise<ProgramType[]> {
   try {
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
     const dbPrograms = [];
 
-    if (supabaseUrl && supabaseAnonKey) {
-      const supabase = createClient(supabaseUrl, supabaseAnonKey);
+    if (hasSupabasePublicEnv) {
       const { data, error } = await supabase
         .from('volunteer_programs')
         .select('*')
@@ -100,6 +112,7 @@ export default async function Page() {
         }}
       >
         <VolunteerHeroGraphic />
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Volunteer" }]} className="mb-2" />
         <section className="mb-4 md:mb-8 flex flex-col gap-4 md:w-1/2">
           <PageTitle prefix="Join Us in" suffix="Making a Difference" />
 
@@ -122,7 +135,7 @@ export default async function Page() {
             </p>
             <div className="flex gap-3 mt-2">
               <Link
-                href="/contact"
+                href="/contact-us"
                 className="px-6 py-2.5 bg-primary-main text-white rounded-lg text-sm font-medium hover:bg-primary-main/90 transition-colors"
               >
                 Contact Us
@@ -136,6 +149,18 @@ export default async function Page() {
             </div>
           </div>
         )}
+
+        <div className="max-w-[1320px] mx-auto">
+          <RelatedContent
+            heading="More Ways to Get Involved"
+            links={[
+              { title: "Donate", href: "/donate", description: "Your tax-deductible donation directly funds healthcare and education in Nepal." },
+              { title: "Careers at Nivaran", href: "/career", description: "Join our full-time team and build a career in global nonprofit work." },
+              { title: "Organize Locally", href: "/organize-locally", description: "Lead a health awareness drive or fundraiser in your community." },
+              { title: "Our Healthcare Programs", href: "/programs/health", description: "See the mobile health camps your involvement makes possible." },
+            ]}
+          />
+        </div>
       </div>
     </main>
   );

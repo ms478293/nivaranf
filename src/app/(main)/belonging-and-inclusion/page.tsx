@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/belonging-and-inclusion",
   },
+  openGraph: {
+    title: "Belonging & Inclusion | Nivaran Foundation",
+    description: "Our approach to belonging and inclusion across communities, partnerships, and internal culture.",
+    url: "https://www.nivaranfoundation.org/belonging-and-inclusion",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Belonging & Inclusion | Nivaran Foundation",
+    description: "Nivaran Foundation's commitment to belonging and inclusion.",
+    site: "@NivaranOrg",
+  },
 };
 
 const inclusionCommitments = [

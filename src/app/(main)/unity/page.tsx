@@ -8,9 +8,23 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Project Unity - Empowering Communities for Sustainable Growth",
   description:
-    "Project Unity empowers communities with economic growth, leadership, and innovation. Learn how we’re creating lasting social change",
+    "Project Unity empowers communities with economic growth, leadership, and innovation. Learn how we're creating lasting social change.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/unity",
+    canonical: "https://www.nivaranfoundation.org/unity",
+  },
+  openGraph: {
+    title: "Project Unity | Nivaran Foundation",
+    description: "Empowering communities with economic growth, leadership, and innovation for lasting social change.",
+    url: "https://www.nivaranfoundation.org/unity",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Unity | Nivaran Foundation",
+    description: "Empowering communities for sustainable growth.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

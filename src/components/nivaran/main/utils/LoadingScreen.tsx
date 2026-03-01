@@ -8,6 +8,7 @@ export const LoadingScreen = () => {
           src="/loading/render.gif"
           className=" flex w-fit h-full object-cover "
           fill
+          sizes="100vw"
           alt="Nivaran Loading Image"
         ></Image>
       </div>

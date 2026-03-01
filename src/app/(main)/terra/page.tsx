@@ -8,9 +8,23 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Project Terra - Environmental Harmony for Future Generations",
   description:
-    "Project Terra focuses on environmental sustainability with innovative solutions to protect the planet. Learn more about our efforts for a greener future",
+    "Project Terra focuses on environmental sustainability with innovative solutions to protect the planet. Learn more about our efforts for a greener future.",
   alternates: {
-    canonical: "https://nivaranfoundation.org/terra",
+    canonical: "https://www.nivaranfoundation.org/terra",
+  },
+  openGraph: {
+    title: "Project Terra | Nivaran Foundation",
+    description: "Environmental sustainability with innovative solutions to protect the planet.",
+    url: "https://www.nivaranfoundation.org/terra",
+    siteName: "Nivaran Foundation",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Terra | Nivaran Foundation",
+    description: "Environmental harmony for future generations.",
+    site: "@NivaranOrg",
+    creator: "@NivaranOrg",
   },
 };
 

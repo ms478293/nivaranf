@@ -21,6 +21,7 @@ export default function BlogsPage() {
                   alt={blog.title}
                   className="object-cover"
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
               <div className="p-4 flex flex-col justify-between h-fit bg-white">

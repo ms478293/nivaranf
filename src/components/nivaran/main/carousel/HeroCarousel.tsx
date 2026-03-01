@@ -26,11 +26,10 @@ const CarouselComponent = () => {
               <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
-                // sizes="100vw"
+                sizes="100vw"
                 style={{
                   objectFit: "cover",
                 }}
-                // fill
                 height={1000}
                 width={1000}
                 className="w-full h-full "

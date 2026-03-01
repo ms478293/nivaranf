@@ -82,7 +82,7 @@ export const OrganizeLocallyCompoenent = () => {
         <p className="text-gray-600">
           Want to organize a health camp in your local area?{" "}
           <a
-            href="/contact"
+            href="/contact-us"
             className="text-secondary-main font-semibold hover:underline"
           >
             Get in touch with us
