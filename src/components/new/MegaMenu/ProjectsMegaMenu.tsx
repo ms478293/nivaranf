@@ -32,9 +32,9 @@ const ProjectsMegaMenu = () => {
     <div className="flex justify-between">
       <div className="flex flex-col justify-between gap-3 ">
         <div className="flex justify-between items-center">
-          <h3 className="font-medium text-gray-600 mb-2">Project Sanjeevani</h3>
+          <h3 className="font-medium text-gray-600 mb-2">Our Projects</h3>
           <Link
-            href="/sanjeevani"
+            href="/projects"
             className="hidden md:block"
             onClick={() => openActiveMegaMenu(null)}
           >

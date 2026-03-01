@@ -12,6 +12,13 @@ export const UPCOMING_PROJECTS_DATA: UpcomingProjectsDataType[] = [
     link: "/sanjeevani",
     images: "/sanjeevani/sanjeevani-1.png",
     title: "Sanjeevani",
-    description: "",
+    description: "Bridging gaps in healthcare access across Nepal.",
+  },
+  {
+    id: 2,
+    link: "/vidya",
+    images: "/projects/images/projectVidyaHero.jpg",
+    title: "Vidya",
+    description: "Transforming global education through innovation.",
   },
 ];

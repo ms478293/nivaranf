@@ -11,11 +11,6 @@
       "permanent": true
     },
     {
-      "source": "/projects",
-      "destination": "/sanjeevani",
-      "permanent": true
-    },
-    {
       "source": "/:path(.*)",
       "has": [
         {

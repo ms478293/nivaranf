@@ -5,6 +5,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title:
     "Nivaran Foundation | Project Terra - Environmental Harmony for Future Generations",
   description:

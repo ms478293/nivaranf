@@ -11,6 +11,12 @@ export const PROJECT_DATA = [
     link: "/sanjeevani",
     imgUrl: "/sanjeevani/sanjeevani-1.png",
   },
+  {
+    id: 2,
+    label: "Vidya",
+    link: "/vidya",
+    imgUrl: "/projects/images/projectVidyaHero.jpg",
+  },
 ];
 
 export const SmallProjectsMegaMenu = () => {
