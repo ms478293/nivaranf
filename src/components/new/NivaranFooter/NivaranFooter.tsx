@@ -13,8 +13,6 @@ import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/Newsletter
 const NivaranFooter = () => {
   const { logo, others, ourWork } = footerData;
 
-  const { logo, others, ourWork } = footerData;
-
   return (
     <footer className="w-full px-4 bg-[linear-gradient(to_bottom,_rgba(235,89,52,0.1)_0%,__rgba(235,89,52,0.1)_5%,_#fff_50%)] md:rounded-t-[2.5rem] rounded-t-3xl font-Poppins">
       {/* Newsletter Subscribe */}
