@@ -43,13 +43,13 @@ const NivaranFooter = () => {
           </div>
 
           <div className="flex flex-col  gap-4 min-[435px]:flex-row min-[380px]:justify-between  sm:gap-10  ">
-            <ul className="text-nowrap min-[380px]:w-1/2">
+            <ul className="min-[380px]:text-nowrap min-[380px]:w-1/2">
               <FooterTitle title="Our Works" className="mb-3" />
               {ourWork.map((resource, index) => (
                 <ListPopulate {...resource} key={index}></ListPopulate>
               ))}
             </ul>
-            <ul className="min-[380px]:w-1/2 text-nowrap">
+            <ul className="min-[380px]:w-1/2 min-[380px]:text-nowrap">
               <FooterTitle title="Useful Links" className="mb-3" />
               {others.map((resource, index) => (
                 <ListPopulate {...resource} key={index}></ListPopulate>
@@ -80,7 +80,7 @@ const NivaranFooter = () => {
                 <Link
                   key={list.link}
                   href={list.link}
-                  className="[&:not(:last-child)]:border-r-2 [&:not(:last-child)]:border-primary-main/50 py-0.5 px-3 md:px-6 [&:last-child]:pr-0  [&:first-child]:!pl-0 text-nowrap "
+                  className="[&:not(:last-child)]:border-r-2 [&:not(:last-child)]:border-primary-main/50 py-2 px-3 md:px-6 [&:last-child]:pr-0  [&:first-child]:!pl-0 text-nowrap min-h-[44px] inline-flex items-center"
                 >
                   {list.name}
                 </Link>

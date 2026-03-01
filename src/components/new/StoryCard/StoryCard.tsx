@@ -16,7 +16,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
   date,
 }) => {
   return (
-    <div className="relative max-w-[345px] min-w-[345px]  snap-center  ">
+    <div className="relative max-w-[min(345px,calc(100vw-2rem))] min-w-[min(345px,calc(100vw-2rem))]  snap-center  ">
       {/* Fixed width */}
       <div className="flex  absolute justify-start  ">
         <StoryCardTag type="primary" date={date} />

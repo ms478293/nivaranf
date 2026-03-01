@@ -11,7 +11,7 @@ export const JobDetailsModal = ({ data }: { data: CareerType }) => {
       </h2>
 
       <div className=" overflow-y-auto p-4">
-        <div className="flex gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           <JobDetailItem
             label={"Name of Job"}
             value={data.jobName}
@@ -123,7 +123,7 @@ const JobDetailItem: React.FC<JobDetailItemProps> = ({
   value,
   icon,
 }) => (
-  <div className="flex flex-col justify-between h-[120px] w-[145px] bg-secondary-50 p-2">
+  <div className="flex flex-col justify-between h-[120px] w-full bg-secondary-50 p-2">
     <div className=" p-1 bg-secondary-200 w-fit rounded-sm">{icon}</div>
     <div>
       <h4 className="text-secondary-400 font-light text-sm ">{label}</h4>

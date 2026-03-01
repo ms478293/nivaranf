@@ -49,7 +49,7 @@ const DonationBlock = ({ className }: { className?: string }) => {
             />
 
             <div className="flex absolute bottom-0 z-10 flex-col gap-3 items-start p-5 w-full">
-              <h3 className="text-neutral-50 font-medium text-lg sm:text-xl/[28px] md:text-2xl/[40px] w-[300px] leading-10 ">
+              <h3 className="text-neutral-50 font-medium text-lg sm:text-xl/[28px] md:text-2xl/[40px] max-w-[300px] w-full leading-10 ">
                 {image.title.split(" ").slice(0, -1).join(" ")}{" "}
                 <span className="text-primary-500">
                   {image.title.split(" ").slice(-1)}

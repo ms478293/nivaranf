@@ -32,7 +32,7 @@ const LargeVolunteerCard = ({ camp }: { camp: ProgramsType }) => {
   // } else status = "Planned";
 
   return (
-    <div className="flex justify-between p-4 border-b border-gray-200 shadow-sm bg-white h-fit">
+    <div className="flex flex-col sm:flex-row sm:justify-between p-4 border-b border-gray-200 shadow-sm bg-white h-fit gap-4">
       {/* Left Section: Camp Details */}
       <div className="flex  gap-4 w-full">
         <div className="p-2 bg-blue-100 rounded-lg h-fit">

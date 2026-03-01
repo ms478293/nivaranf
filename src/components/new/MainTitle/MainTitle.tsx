@@ -16,7 +16,7 @@ const MainTitle = ({
   return (
     <Tag
       className={cn(
-        "flex flex-wrap gap-x-3 items-center font-Poppins text-xl/10 sm:text-2xl/10 md:text-[40px]/10 border-l-4 border-primary-500 px-2 sm:h-10 mb-2",
+        "flex flex-wrap gap-x-3 items-center font-Poppins text-xl/10 sm:text-2xl/10 md:text-[40px]/10 border-l-4 border-primary-500 px-2 sm:min-h-10 mb-2",
         className
       )}
     >

@@ -70,7 +70,7 @@ const page = () => {
               <span className="text-lg font-medium text-gray-800  ">
                 Total Phase-I Budget?
               </span>
-              <span className=" text-5xl md:text-10xl text-gray-950 -mt-2 ">
+              <span className=" text-3xl sm:text-5xl md:text-10xl text-gray-950 -mt-2 ">
                 $18 M
               </span>
             </h2>
@@ -81,7 +81,7 @@ const page = () => {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between  gap-8 -mt-8 md:-mt-0">
-              <div className="flex   flex-col items-start md:w-[600px] gap-4">
+              <div className="flex   flex-col items-start md:max-w-[600px] md:w-full gap-4">
                 <MainTitle
                   suffix="About"
                   prefix="SANJEEVANI"

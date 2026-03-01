@@ -203,10 +203,10 @@ export const AppTable = <TData = unknown,>({
         </Table>
       </div>
 
-      <div className="flex items-center justify-between gap-2 text-[10px] md:text-[11px]">
+      <div className="flex items-center justify-between gap-2 text-xs">
         <p>showing {table.getState().pagination.pageSize} items at a time</p>
 
-        <div className="flex items-center justify-between gap-2 text-[10px]">
+        <div className="flex items-center justify-between gap-2 text-xs">
           <button
             className="rounded-md bg-primary-color-800 px-3 py-[0.3rem] text-secondary-color-200 hover:bg-primary-color-500"
             onClick={() => table.firstPage()}

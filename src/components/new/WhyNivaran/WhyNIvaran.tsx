@@ -26,7 +26,7 @@ const WHY_NIVARAN = [
 
 export const WhyNIvaran = () => {
   return (
-    <ul className="flex flex-col gap-4 sm:flex-row lg:px-[150px] ">
+    <ul className="flex flex-col gap-4 sm:flex-row lg:px-12 xl:px-[100px] 2xl:px-[150px] ">
       <RenderList
         data={WHY_NIVARAN}
         render={(data, i) => (

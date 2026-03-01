@@ -46,7 +46,7 @@ const NivaranHappiness = () => {
         </div>
 
         <ul
-          className="flex flex-col gap-4 sm:flex-row lg:px-[150px] "
+          className="flex flex-col gap-4 sm:flex-row lg:px-12 xl:px-[100px] 2xl:px-[150px] "
           role="list"
         >
           <RenderList
@@ -55,7 +55,7 @@ const NivaranHappiness = () => {
               <li
                 role="listitem"
                 key={data.id}
-                className="w-full h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
               >
                 <Image
                   width={500}

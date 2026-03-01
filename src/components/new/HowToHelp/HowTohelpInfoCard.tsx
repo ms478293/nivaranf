@@ -91,7 +91,7 @@ export const HowTohelpInfoCard = () => {
       {HOW_TO_HELP.map((help) => (
         <div
           key={help.id}
-          className="p-4 flex flex-col gap-4 justify-between bg-primary-50 rounded-xl border border-primary-200 flex-1  min-w-[315px]  "
+          className="p-4 flex flex-col gap-4 justify-between bg-primary-50 rounded-xl border border-primary-200 flex-1  min-w-0 sm:min-w-[315px]  "
         >
           {help.icon}
           <h3 className="font-medium text-[18px] text-gray-800">

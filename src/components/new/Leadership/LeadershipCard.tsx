@@ -7,7 +7,7 @@ export const LeadershipCard = ({
 }) => {
   return (
     <div className="">
-      <div className="h-[200px] w-[200px]">
+      <div className="w-full max-w-[200px] aspect-square">
         {/* {leadershipData.image === "" ? null : (
           <Image
             src={leadershipData.image}

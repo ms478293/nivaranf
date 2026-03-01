@@ -23,7 +23,7 @@ const AboutStatsCard = ({
     <AboutStatCardContext.Provider value={{ data }}>
       <li
         className={cn(
-          "w-full h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02] list-none",
+          "w-full h-[300px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02] list-none",
           className
         )}
       >
