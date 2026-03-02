@@ -1,4 +1,4 @@
-import SquarePaymentForm from "@/components/new/SquarePaymentForm/SquarePaymentForm";
+import DonationCard from "@/components/new/DonationCard/DonationCard";
 import { DonationFAQ } from "@/components/new/DonationFAQ/DonationFAQ";
 import DonationProgress from "@/components/new/DonationProgress/DonationProgress";
 import WhereMoneyGoes from "@/components/new/DonorTrust/WhereMoneyGoes";
@@ -127,7 +127,7 @@ export default function DonationPage() {
               </Link>
             </div>
             <Suspense>
-              <SquarePaymentForm />
+              <DonationCard />
             </Suspense>
           </div>
         </div>
