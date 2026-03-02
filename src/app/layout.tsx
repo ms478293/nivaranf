@@ -147,6 +147,11 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#000000" />
+        {/* Preconnect to third-party origins to reduce render-blocking latency */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://ipapi.co" />
+        <link rel="dns-prefetch" href="https://api.nivaranfoundation.org" />
         <script
           id="Website-schema"
           type="application/ld+json"

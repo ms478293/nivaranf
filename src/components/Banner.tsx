@@ -37,9 +37,9 @@ export const Banner = () => {
   if (!visible || banners.length === 0) return null;
 
   return (
-    <div className="flex flex-col w-full z-50 relative">
+    <div className="fixed top-0 left-0 right-0 z-[200] flex flex-col" role="alert" aria-live="polite">
       {banners.map((banner) => (
-        <div 
+        <div
           key={banner.id}
           className={`w-full px-4 py-2 flex items-center justify-between gap-4 ${
             banner.type === 'warning' ? 'bg-yellow-100 text-yellow-900' :
@@ -55,11 +55,12 @@ export const Banner = () => {
               </Link>
             )}
           </div>
-          <button 
+          <button
             onClick={() => setVisible(false)}
             className="p-1 hover:bg-black/10 rounded-full transition-colors"
+            aria-label="Close announcement banner"
           >
-            <X size={16} />
+            <X size={16} aria-hidden="true" />
           </button>
         </div>
       ))}

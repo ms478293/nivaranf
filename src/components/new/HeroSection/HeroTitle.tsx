@@ -77,29 +77,31 @@ const HeroTitle = ({
         <div className="flex flex-col gap-4">
           <SocialLinks variant="secondary" />
           <div className=" flex sm:justify-end ">
-            <ul
+            <div
               className="relative flex gap-2 justify-start sm:justify-end items-center z-30 group"
-              role="tablist"
+              role="group"
+              aria-label="Slide navigation"
             >
               {Array.from({ length: imagesLength }).map((_, item) => (
-                <li
-                  role="tab"
-                  aria-label={`Slide ${item + 1}`}
+                <div
                   key={item}
+                  aria-label={`Slide ${item + 1}${item === currentImageIndex ? ", current" : ""}`}
+                  aria-current={item === currentImageIndex ? "true" : "false"}
                   className={`w-3 h-3 bg-gray-200 rounded-full transition-all duration-300 ${
                     item === currentImageIndex ? "scale-50" : ""
                   }`}
-                ></li>
+                />
               ))}
 
-              {/* Moving Dot */}
-              <li
+              {/* Moving Dot - decorative, hidden from screen readers */}
+              <div
+                aria-hidden="true"
                 className="absolute w-3 h-3 left-0 bg-primary-500 rounded-full transition-transform duration-500"
                 style={{
-                  transform: `translateX(${currentImageIndex * 20}px)`, // Adjust 20px based on gap size
+                  transform: `translateX(${currentImageIndex * 20}px)`,
                 }}
-              ></li>
-            </ul>{" "}
+              />
+            </div>
           </div>
         </div>
       </div>

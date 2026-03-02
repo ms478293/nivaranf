@@ -23,6 +23,11 @@ const nextConfig: NextConfig = {
   // Existing config options
   experimental: {
     middlewarePrefetch: "strict",
+    optimizePackageImports: [  // Tree-shake heavy icon/component libraries
+      "lucide-react",
+      "@radix-ui/react-icons",
+      "framer-motion",
+    ],
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   transpilePackages: ["next-mdx-remote"],

@@ -9,46 +9,30 @@ export const SetUserLocationCookie = () => {
   );
 
   useEffect(() => {
-    const getLocation = () => {
-      if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            const { latitude, longitude } = position.coords;
-            console.log(latitude, "---", longitude);
-            let countryCode = "US"; // Default to US
+    // Skip if we already have a location cookie
+    if (userLocation) return;
 
-            if (
-              latitude >= 26 &&
-              latitude <= 30 &&
-              longitude >= 80 &&
-              longitude <= 88
-            ) {
-              countryCode = "NP"; // Nepal
-            } else if (
-              latitude >= 24 &&
-              latitude <= 49 &&
-              longitude >= -125 &&
-              longitude <= -66
-            ) {
-              countryCode = "US"; // USA
-            }
+    const getLocationByIP = async () => {
+      try {
+        // Use IP-based geolocation — no browser permission popup required
+        const response = await fetch("https://ipapi.co/json/", {
+          signal: AbortSignal.timeout(3000),
+        });
+        if (!response.ok) return;
+        const data = await response.json();
+        const countryCode = data?.country_code === "NP" ? "NP" : "US";
 
-            Cookies.set("user_location", countryCode, {
-              expires: 7,
-              path: "/",
-            });
-            setUserLocation(countryCode);
-          },
-          (error) => {
-            console.error("Geolocation error:", error);
-          }
-        );
+        Cookies.set("user_location", countryCode, {
+          expires: 7,
+          path: "/",
+        });
+        setUserLocation(countryCode);
+      } catch {
+        // Silently fail — non-critical feature
       }
     };
 
-    if (!userLocation) {
-      getLocation();
-    }
+    getLocationByIP();
   }, [userLocation]);
 
   return null;
