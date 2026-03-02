@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title:
     "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
   description:
-    "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 85% of funds go directly to programs. EIN: 41-2656587.",
+    "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 96% of funds go directly to programs. EIN: 41-2656587.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/donate",
   },
@@ -72,7 +72,7 @@ const donationFaqSchema = {
       name: "How much of my donation goes to programs?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nivaran Foundation reports that 85% of donated funds go directly to program services.",
+        text: "Nivaran Foundation reports that 96% of donated funds go directly to program services.",
       },
     },
   ],
@@ -103,7 +103,7 @@ export default function DonationPage() {
               <PageTitle prefix="Be the Change" suffix="You Want to See" />
 
               <p className="text-sm text-gray-600">
-                Every dollar you give saves lives. 85% of your donation goes
+                Every dollar you give saves lives. 96% of your donation goes
                 directly to healthcare and education programs in Nepal.
               </p>
 
@@ -165,7 +165,7 @@ export default function DonationPage() {
               </div>
               <p className="text-gray-600 text-sm italic mb-4">
                 &quot;I appreciate how transparent Nivaran is about where the
-                money goes. Knowing 85% goes directly to programs gives me
+                money goes. Knowing 96% goes directly to programs gives me
                 confidence my donation makes a real difference.&quot;
               </p>
               <p className="text-gray-800 font-medium text-sm">

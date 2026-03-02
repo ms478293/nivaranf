@@ -142,7 +142,7 @@ export default function OurJourneyPage() {
         <section className="text-center py-12 bg-primary-main text-white rounded-lg shadow-lg px-10 md:px-20">
           <h2 className="text-3xl font-bold mb-4">The Road Ahead</h2>
           <p className="text-lg mb-6">
-            With 85% of every dollar going directly to programs, we are
+            With 96% of every dollar going directly to programs, we are
             committed to scaling our impact. Our Phase-I goal: $18M to serve
             61,200+ patients and transform education for thousands of children
             across Nepal.

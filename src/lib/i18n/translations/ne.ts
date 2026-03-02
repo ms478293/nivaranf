@@ -29,7 +29,7 @@ const ne: Record<TranslationKey, string> = {
   // Donation
   "donate.title": "तपाईं देख्न चाहनुभएको परिवर्तन बन्नुहोस्",
   "donate.subtitle":
-    "तपाईंको हरेक डलरले जीवन बचाउँछ। तपाईंको दानको ८५% सिधै नेपालका स्वास्थ्य र शिक्षा कार्यक्रमहरूमा जान्छ।",
+    "तपाईंको हरेक डलरले जीवन बचाउँछ। तपाईंको दानको ९६% सिधै नेपालका स्वास्थ्य र शिक्षा कार्यक्रमहरूमा जान्छ।",
   "donate.taxInfo": "501(c)(3) कर-छुट संस्था | EIN: 41-2656587",
   "donate.taxDeductible":
     "तपाईंको दान १००% कर-कटौती योग्य छ। तपाईंले इमेल मार्फत कर रसिद प्राप्त गर्नुहुनेछ।",
@@ -60,7 +60,7 @@ const ne: Record<TranslationKey, string> = {
   "impact.quickSelect": "छिटो चयन",
   "impact.donateThis": "यो रकम दान गर्नुहोस्",
   "impact.taxDeductible": "१००% कर-कटौती योग्य",
-  "impact.directToPrograms": "८५% सिधै कार्यक्रमहरूमा जान्छ",
+  "impact.directToPrograms": "९६% सिधै कार्यक्रमहरूमा जान्छ",
 
   // Projects
   "projects.prefix": "हाम्रा",

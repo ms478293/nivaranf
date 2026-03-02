@@ -27,7 +27,7 @@ const en = {
   // Donation
   "donate.title": "Be the Change You Want to See",
   "donate.subtitle":
-    "Every dollar you give saves lives. 85% of your donation goes directly to healthcare and education programs in Nepal.",
+    "Every dollar you give saves lives. 96% of your donation goes directly to healthcare and education programs in Nepal.",
   "donate.taxInfo": "501(c)(3) Tax-Exempt Organization | EIN: 41-2656587",
   "donate.taxDeductible":
     "Your donation is 100% tax-deductible. You will receive a tax receipt via email.",
@@ -58,7 +58,7 @@ const en = {
   "impact.quickSelect": "Quick Select",
   "impact.donateThis": "Donate This Amount",
   "impact.taxDeductible": "100% tax-deductible",
-  "impact.directToPrograms": "85% goes directly to programs",
+  "impact.directToPrograms": "96% goes directly to programs",
 
   // Projects
   "projects.prefix": "Our",

@@ -201,7 +201,7 @@ const ImpactCalculator = () => {
                     ✓ 100% tax-deductible
                   </p>
                   <p className="text-xs text-green-700 mt-1">
-                    85% goes directly to programs
+                    96% goes directly to programs
                   </p>
                 </div>
               </div>

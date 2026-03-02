@@ -45,7 +45,7 @@ const WhereMoneyGoes = () => {
               Where Your Money Goes
             </h2>
             <p className="text-gray-600 mb-6 text-sm">
-              We believe in full transparency. 85% of every dollar goes directly
+              We believe in full transparency. 96% of every dollar goes directly
               to programs that save lives and educate children.
             </p>
 
@@ -176,7 +176,7 @@ const WhereMoneyGoes = () => {
                 />
               </svg>
               <span className="text-sm font-medium">
-                85% to Programs
+                96% to Programs
               </span>
             </div>
             <div className="flex items-center gap-2 text-gray-600">
