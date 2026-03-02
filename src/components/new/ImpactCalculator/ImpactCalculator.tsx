@@ -74,25 +74,12 @@ const ImpactCalculator = () => {
     setSelectedAmount(amount);
   };
 
-  // Map selected amount to the closest Square checkout link
-  const getSquareLink = (amount: number): string => {
-    const SQUARE_LINKS: { max: number; url: string }[] = [
-      { max: 5, url: "https://square.link/u/VI6zrzYy" },      // $5
-      { max: 10, url: "https://square.link/u/ItTRVhZD" },     // $10
-      { max: 20, url: "https://square.link/u/HEgCo7xf" },     // $20
-      { max: 50, url: "https://square.link/u/Bzu8hfgd" },     // $50
-      { max: 100, url: "https://square.link/u/wDK0I87N" },    // $100
-    ];
-    for (const tier of SQUARE_LINKS) {
-      if (amount <= tier.max) return tier.url;
-    }
-    // For amounts > $100, open the custom donation link
-    return "https://square.link/u/Ch7Es46t";
-  };
-
   const handleDonateThis = () => {
-    // Open Square checkout directly
-    window.open(getSquareLink(selectedAmount), "_blank", "noopener,noreferrer");
+    // Scroll to the embedded donation form
+    const donationForm = document.querySelector('[data-donation-form]');
+    if (donationForm) {
+      donationForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const formatAmount = (amount: number) => {

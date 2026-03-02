@@ -33,8 +33,11 @@ const DonationProgress = () => {
   };
 
   const handleDonateNow = () => {
-    // Open Square custom donation link directly
-    window.open("https://square.link/u/Ch7Es46t", "_blank", "noopener,noreferrer");
+    // Scroll to the embedded donation form
+    const donationForm = document.querySelector('[data-donation-form]');
+    if (donationForm) {
+      donationForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
