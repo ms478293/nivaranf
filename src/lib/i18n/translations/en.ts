@@ -52,9 +52,9 @@ const en = {
   // Impact Calculator
   "impact.title": "See Your Impact",
   "impact.subtitle":
-    "Every rupee you donate directly helps save lives and transform communities in Nepal. Select any amount to see the real-world impact your generosity creates.",
+    "Every dollar you donate directly helps save lives and transform communities in Nepal. Select any amount to see the real-world impact your generosity creates.",
   "impact.chooseAmount": "Choose Your Donation",
-  "impact.amount": "Amount (NPR)",
+  "impact.amount": "Amount (USD)",
   "impact.quickSelect": "Quick Select",
   "impact.donateThis": "Donate This Amount",
   "impact.taxDeductible": "100% tax-deductible",

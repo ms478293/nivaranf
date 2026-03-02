@@ -59,8 +59,8 @@ const ImpactCalculator = () => {
 
   const currentImpact = IMPACT_MAPPING[selectedAmount] || {
     amount: selectedAmount,
-    title: `Your custom donation of NPR ${selectedAmount.toLocaleString(
-      "en-IN"
+    title: `Your custom donation of $${selectedAmount.toLocaleString(
+      "en-US"
     )} will make a real difference`,
     icon: "✨",
   };
@@ -83,7 +83,7 @@ const ImpactCalculator = () => {
   };
 
   const formatAmount = (amount: number) => {
-    return amount.toLocaleString("en-IN");
+    return amount.toLocaleString("en-US");
   };
 
   return (
@@ -95,7 +95,7 @@ const ImpactCalculator = () => {
             See Your Impact
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Every rupee you donate directly helps save lives and transform communities in Nepal. Select any amount to see the real-world impact your generosity creates.
+            Every dollar you donate directly helps save lives and transform communities in Nepal. Select any amount to see the real-world impact your generosity creates.
           </p>
         </div>
 
@@ -115,10 +115,10 @@ const ImpactCalculator = () => {
                     htmlFor="amount-slider"
                     className="text-sm font-medium text-gray-700"
                   >
-                    Amount (NPR)
+                    Amount (USD)
                   </label>
                   <span className="text-3xl font-bold text-primary-500">
-                    NPR {formatAmount(selectedAmount)}
+                    ${formatAmount(selectedAmount)}
                   </span>
                 </div>
 
@@ -140,8 +140,8 @@ const ImpactCalculator = () => {
                 />
 
                 <div className="flex justify-between text-xs text-gray-500">
-                  <span>NPR 100</span>
-                  <span>NPR 50,000</span>
+                  <span>$100</span>
+                  <span>$50,000</span>
                 </div>
               </div>
 
@@ -161,7 +161,7 @@ const ImpactCalculator = () => {
                           : "bg-white border border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-500"
                       }`}
                     >
-                      NPR {formatAmount(amount)}
+                      ${formatAmount(amount)}
                     </button>
                   ))}
                 </div>
@@ -184,7 +184,7 @@ const ImpactCalculator = () => {
 
                 {/* Impact Text */}
                 <h4 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                  Your {currentImpact.amount === selectedAmount ? "donation" : "gift"} of NPR{" "}
+                  Your {currentImpact.amount === selectedAmount ? "donation" : "gift"} of ${" "}
                   <span className="text-primary-500">
                     {formatAmount(currentImpact.amount)}
                   </span>
@@ -216,7 +216,7 @@ const ImpactCalculator = () => {
               Direct Impact
             </h4>
             <p className="text-sm text-blue-700">
-              Every rupee goes to healthcare and education
+              Every dollar goes to healthcare and education
             </p>
           </div>
           <div className="text-center p-6 bg-green-50 rounded-lg">

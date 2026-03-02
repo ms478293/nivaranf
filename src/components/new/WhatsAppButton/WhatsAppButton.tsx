@@ -11,7 +11,7 @@ export function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  const phoneNumber = "9779801234567"; // Nivaran Foundation WhatsApp number
+  const phoneNumber = "8577017471"; // Nivaran Foundation WhatsApp number
   const message = "Hello! I'm interested in learning more about Nivaran Foundation and how I can help.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

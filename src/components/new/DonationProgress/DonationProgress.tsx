@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 const DonationProgress = () => {
   const [progressPercentage, setProgressPercentage] = useState(0);
 
-  const raisedAmount = 850000; // NPR 8,50,000
-  const goalAmount = 1500000; // NPR 15,00,000
+  const raisedAmount = 850000; // USD 850,000
+  const goalAmount = 1500000; // USD 1,500,000
   const numDonors = 1247;
   const daysLeft = 29;
   const campaignTitle = "2025 Annual Campaign";
@@ -29,7 +29,7 @@ const DonationProgress = () => {
 
   // Format amount with commas
   const formatAmount = (amount: number) => {
-    return amount.toLocaleString("en-IN");
+    return amount.toLocaleString("en-US");
   };
 
   const handleDonateNow = () => {
@@ -63,7 +63,7 @@ const DonationProgress = () => {
                   Amount Raised
                 </p>
                 <p className="text-3xl font-bold text-primary-500">
-                  NPR {formatAmount(raisedAmount)}
+                  ${formatAmount(raisedAmount)}
                 </p>
               </div>
 
@@ -72,7 +72,7 @@ const DonationProgress = () => {
                   Our Goal
                 </p>
                 <p className="text-3xl font-bold text-gray-800">
-                  NPR {formatAmount(goalAmount)}
+                  ${formatAmount(goalAmount)}
                 </p>
               </div>
 
@@ -110,8 +110,8 @@ const DonationProgress = () => {
               </div>
 
               <div className="flex justify-between text-xs text-gray-500">
-                <span>NPR 0</span>
-                <span>NPR {formatAmount(goalAmount)}</span>
+                <span>$0</span>
+                <span>${formatAmount(goalAmount)}</span>
               </div>
             </div>
 
@@ -133,7 +133,7 @@ const DonationProgress = () => {
 
               <div className="text-center col-span-2 md:col-span-1">
                 <p className="text-2xl font-bold text-green-600">
-                  NPR {formatAmount(goalAmount - raisedAmount)}
+                  ${formatAmount(goalAmount - raisedAmount)}
                 </p>
                 <p className="text-xs text-gray-600 mt-1">To Goal</p>
               </div>
