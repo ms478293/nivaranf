@@ -59,6 +59,10 @@ export const footerData = {
       link: "/corporate",
     },
     {
+      name: "Local Partner",
+      link: "/local-partner",
+    },
+    {
       name: "Accountability & Transparency",
       link: "/accountability-and-transparency",
     },
@@ -178,6 +182,7 @@ export const howToHelpData: {
   // { title: "Attend an Event", href: "/attend" },
   { title: "Join Us", href: "/volunteer" },
   { title: "Support Us", href: "/donate" },
+  { title: "Become a Local Partner", href: "/local-partner" },
 ];
 
 export const aboutUsData: { title: string; href: string }[] = [

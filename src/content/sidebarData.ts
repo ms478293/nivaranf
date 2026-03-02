@@ -4,6 +4,7 @@ import {
   BriefcaseIcon,
   FilePenLine,
   Handshake,
+  InboxIcon,
   PlusIcon,
   UserRoundSearchIcon,
 } from "lucide-react";
@@ -13,6 +14,18 @@ const navItems: NavItem[] = [
   //   label: "Dashboard",
   //   icon: LayoutDashboard,
   // },
+
+  {
+    label: "Messages & Submissions",
+    icon: InboxIcon,
+    children: [
+      {
+        label: "All Messages",
+        href: "/dashboard/messages",
+        icon: InboxIcon,
+      },
+    ],
+  },
 
   {
     label: "Application Management",
