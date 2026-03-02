@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Poppins } from "next/font/google";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
@@ -60,6 +61,10 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  verification: {
+    // TODO: Add your Bing verification code from bing.com/webmasters
+    bing: "your-bing-verification-code",
+  },
 };
 
 const websiteSchema = {
@@ -74,14 +79,14 @@ const websiteSchema = {
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": ["NonprofitOrganization", "NGO"],
+  "@type": ["Organization", "NGO"],
   name: "Nivaran Foundation",
   alternateName: "Nivaran",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo_img.jpg`,
+  logo: `${SITE_URL}/NivaranLogo.svg`,
   image: `${SITE_URL}/logo.png`,
   description: DEFAULT_DESCRIPTION,
-  foundingDate: "2020-01-01",
+  foundingDate: "2019",
   founder: {
     "@type": "Person",
     name: "Mukesh Thakur",
@@ -90,8 +95,8 @@ const organizationSchema = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+977 1-5312555",
-    contactType: "customer service",
+    telephone: "+977-01-5354693",
+    contactType: "customer support",
     email: "partnerships@nivaranfoundation.org",
     areaServed: ["NP", "US"],
     availableLanguage: ["English", "Nepali"],
@@ -108,10 +113,6 @@ const organizationSchema = {
     addressLocality: "Kathmandu",
     addressCountry: "NP",
   },
-  nonprofit: {
-    "@type": "NonprofitType",
-    name: "501(c)(3)",
-  },
   taxID: "41-2656587",
   areaServed: [
     { "@type": "Country", name: "Nepal" },
@@ -125,6 +126,7 @@ const organizationSchema = {
     "Education in Nepal",
     "Community Development",
   ],
+  nonprofitStatus: "501c3",
 };
 
 const poppins = Poppins({
@@ -159,6 +161,32 @@ export default async function RootLayout({
             __html: JSON.stringify(organizationSchema),
           }}
         />
+
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QF370FRN47"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QF370FRN47');
+          `}
+        </Script>
+
+        {/* Microsoft Clarity */}
+        {/* TODO: Replace XXXXXXXXXX with your real Clarity Project ID from clarity.microsoft.com */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "XXXXXXXXXX");
+          `}
+        </Script>
       </head>
       <body
         className={cn("antialiased", poppins.className)}
