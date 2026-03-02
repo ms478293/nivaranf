@@ -75,13 +75,28 @@ const ImpactCalculator = () => {
   };
 
   // Map amount to unique Square one-time payment link
+  const squareLinkMap: Record<number, string> = {
+    5: "https://square.link/u/VI6zrzYy",
+    10: "https://square.link/u/ItTRVhZD",
+    20: "https://square.link/u/HEgCo7xf",
+    50: "https://square.link/u/Bzu8hfgd",
+    100: "https://square.link/u/wDK0I87N",
+    500: "https://square.link/u/IVKyzeLZ",
+    1000: "https://square.link/u/eFGcVPfi",
+    2500: "https://square.link/u/kMpnBrd8",
+    5000: "https://square.link/u/M4VY1E2n",
+    10000: "https://square.link/u/Z5yGpaMV",
+    25000: "https://square.link/u/sdqeXlmi",
+    50000: "https://square.link/u/KpxfkNzH",
+  };
+
   const getSquareLink = (amount: number): string => {
-    if (amount <= 5) return "https://square.link/u/VI6zrzYy";       // $5
-    if (amount <= 10) return "https://square.link/u/ItTRVhZD";      // $10
-    if (amount <= 20) return "https://square.link/u/HEgCo7xf";      // $20
-    if (amount <= 50) return "https://square.link/u/Bzu8hfgd";      // $50
-    if (amount <= 100) return "https://square.link/u/wDK0I87N";     // $100
-    return "https://square.link/u/Ch7Es46t";                         // Custom
+    // Exact match first
+    if (squareLinkMap[amount]) return squareLinkMap[amount];
+    // Find closest amount that is >= selected amount
+    const amounts = Object.keys(squareLinkMap).map(Number).sort((a, b) => a - b);
+    const closest = amounts.find((a) => a >= amount) || amounts[amounts.length - 1];
+    return squareLinkMap[closest];
   };
 
   const handleDonateThis = () => {
