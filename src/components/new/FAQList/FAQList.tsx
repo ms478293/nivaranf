@@ -34,7 +34,7 @@ export const FAQList = ({ filteredFAQS }: { filteredFAQS: typeof FAQdata }) => {
                       <span className="text-base"> {faq.question}</span>{" "}
                     </p>
                   </AccordionTrigger>
-                  <AccordionContent className="pl-[3.2rem] pr-4 text-gray-400 bg-gray-50">
+                  <AccordionContent className="pl-[3.2rem] pr-4 text-gray-600 bg-gray-50">
                     <div
                       dangerouslySetInnerHTML={{ __html: faq.answer }}
                       className="[&>a]:text-primary-main "

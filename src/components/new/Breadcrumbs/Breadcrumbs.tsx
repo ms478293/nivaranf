@@ -32,7 +32,7 @@ export function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
       />
       <nav
         aria-label="Breadcrumb"
-        className={`text-sm text-gray-500 ${className}`}
+        className={`text-sm text-gray-600 ${className}`}
       >
         <ol className="flex flex-wrap items-center gap-1">
           {items.map((item, index) => (

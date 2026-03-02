@@ -63,7 +63,7 @@ const AccordianComponent = ({
                 </AccordionTrigger>
 
                 <AccordionContent>
-                  <div className="flex text-center items-center gap-1 absolute top-2 right-6 transition-all">
+                  <div className="flex text-center items-center gap-1 absolute top-2 right-6 transition-opacity">
                     {/* <button className="text-xsm bg-red-500 h-fit py-1 px-2 text-neutral-50 rounded-sm flex items-center justify-between gap-1.5">
                       <LocateIcon className="w-4 h-4 stroke-neutral-50" />
                       <span className="text-xsm">Show on map</span>
@@ -97,13 +97,14 @@ const AccordianComponent = ({
                       <RenderList
                         data={filteredDistricts}
                         render={(district) => (
-                          <button
-                            aria-label={`Filtered Districts Button of ${district.name_of_district}`}
-                            key={district.name_of_district}
-                            className="text-secondary-600 border-b-2 border-transparent hover:border-secondary-600 transition-all duration-300"
-                          >
-                            {district.name_of_district}
-                          </button>
+                          <li key={district.name_of_district}>
+                            <button
+                              aria-label={`View ${district.name_of_district} district`}
+                              className="text-secondary-600 border-b-2 border-transparent hover:border-secondary-600 transition-colors duration-300 min-h-[44px] inline-flex items-center"
+                            >
+                              {district.name_of_district}
+                            </button>
+                          </li>
                         )}
                       />
                     </ul>

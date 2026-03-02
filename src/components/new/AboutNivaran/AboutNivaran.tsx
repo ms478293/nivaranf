@@ -38,7 +38,7 @@ const AboutNivaran = ({
                 alt="Doctor offering healthcare advice to a patient"
                 fill
                 sizes="150px"
-                className="w-full h-full block object-cover object-left transition-all duration-300 md:grayscale group-hover:grayscale-0"
+                className="w-full h-full block object-cover object-left transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
               />
               <div className="hidden lg:block absolute w-full h-[40px] bg-[linear-gradient(to_left,_transparent_50%_,white)] left-0 bottom-0"></div>
             </div>
@@ -64,7 +64,7 @@ const AboutNivaran = ({
                 alt="Children receiving quality education for a better future"
                 fill
                 sizes="320px"
-                className="w-full h-full block object-center object-cover transition-all duration-300 md:grayscale group-hover:grayscale-0"
+                className="w-full h-full block object-center object-cover transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
               />
               <div className="absolute w-full h-[35%] bg-[linear-gradient(to_left,_transparent_50%_,white)] left-0 bottom-0"></div>
             </div>

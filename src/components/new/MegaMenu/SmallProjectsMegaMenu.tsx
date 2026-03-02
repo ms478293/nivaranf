@@ -27,8 +27,8 @@ export const SmallProjectsMegaMenu = () => {
           <div className="rounded-md sm:h-[115px] overflow-hidden relative">
             <Image
               src="/why-nivaran/about-cover.jpeg"
-              width={500}
-              height={500}
+              fill
+              sizes="(max-width: 640px) 180px, 100%"
               className="w-full h-full  object-cover "
               alt="Project Sanjeevani"
               style={{
@@ -49,14 +49,14 @@ export const SmallProjectsMegaMenu = () => {
 
             <div className="hidden sm:flex sm:gap-8">
               <div className=" sm:flex flex-col gap-0">
-                <p className="text-neutral-300 text-xsm font-light">
+                <p className="text-neutral-200 text-xsm font-light">
                   Phase-I Budget
                 </p>
                 <p className="text-neutral-50 text-sm font-medium ">$18M</p>
               </div>
 
               <div className="hidden sm:flex flex-col gap-0">
-                <p className="text-neutral-300 text-xsm font-light">
+                <p className="text-neutral-200 text-xsm font-light">
                   Population treated
                 </p>
                 <p className="text-neutral-50 text-sm font-medium uppercase ">
@@ -70,23 +70,25 @@ export const SmallProjectsMegaMenu = () => {
       </Link>
       {/* </SheetPrimitive.Close> */}
 
-      <ul className="flex flex-col gap-2 sm:hidden">
+      <div className="flex flex-col gap-2 sm:hidden">
         <h3 className="test-sm text-gray-600 font-medium text-nowrap">
           Current Project
         </h3>
+        <ul>
         <RenderList
           data={PROJECT_DATA}
           render={(project) => (
             <li key={project.id}>
               <Link href={project.link}>
-                <SheetPrimitive.Close className="text-gray-400 uppercase text-sm font-light">
+                <SheetPrimitive.Close className="text-gray-600 uppercase text-sm font-light">
                   {project.label}
                 </SheetPrimitive.Close>
               </Link>
             </li>
           )}
         />
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 };

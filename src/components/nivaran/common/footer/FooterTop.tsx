@@ -12,6 +12,7 @@ export const LogoAndDescription = ({
     <div className="md:w-full sm:w-[80%]   lg:w-[350px]">
       <Link
         href="/"
+        aria-label="Nivaran Foundation home"
         className="flex flex-col w-fit  justify-center lg:items-start lg:justify-start mb-2"
       >
         <Image

@@ -158,12 +158,11 @@ const NivaranHeader = () => {
                 role="navigation"
                 aria-label="Main"
               >
-                <ul className="px-3 flex items-center gap-4" role="list">
+                <ul className="px-3 flex items-center gap-4">
                   <RenderList
                     data={NAVBAR_LIST}
                     render={(list) => (
                       <li
-                        role="listitem"
                         key={list.id}
                         className={`text-sm flex items-center gap-2 cursor-pointer transition-colors duration-700 text-nowrap ${
                           isWhite || activeMegaMenu
@@ -186,7 +185,7 @@ const NivaranHeader = () => {
                         >
                           {list.label}
                           <DropDownIcon
-                            className={`w-5 h-5 transition-all duration-700 ${
+                            className={`w-5 h-5 transition-transform duration-700 ${
                               isWhite || activeMegaMenu
                                 ? "stroke-gray-600"
                                 : "stroke-white"

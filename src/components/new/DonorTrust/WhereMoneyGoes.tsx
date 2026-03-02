@@ -88,7 +88,7 @@ const WhereMoneyGoes = () => {
               {IMPACT_ITEMS.map((item) => (
                 <div
                   key={item.amount}
-                  className="border border-gray-200 rounded-xl p-5 hover:border-primary-500 hover:shadow-md transition-all duration-300 group"
+                  className="border border-gray-200 rounded-xl p-5 hover:border-primary-500 hover:shadow-md transition-[border-color,box-shadow] duration-300 group"
                 >
                   <p className="text-3xl font-bold text-primary-500 group-hover:scale-110 transition-transform duration-300">
                     {item.amount}

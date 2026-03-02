@@ -70,7 +70,7 @@ const SheetContent = React.forwardRef<
         className={cn(sheetVariants({ side }), className)}
         {...props}
       >
-        <SheetPrimitive.DialogTitle></SheetPrimitive.DialogTitle>
+        <SheetPrimitive.DialogTitle className="sr-only">Navigation</SheetPrimitive.DialogTitle>
         <SheetPrimitive.Close className="absolute right-4 top-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
           {showCrossIcon ? <X className="h-5 w-5" /> : null}
           <span className="sr-only">Close</span>

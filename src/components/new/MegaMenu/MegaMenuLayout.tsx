@@ -9,7 +9,7 @@ const MegaMenuLayout = ({ children }: { children: React.ReactNode }) => {
         backgroundRepeat: "no-repeat", // Prevents repeating the image
         height: "auto", // Adjust height based on content or you can set a fixed height here
       }}
-      role="menuitem"
+      role="presentation"
     >
       <div className="max-w-[1320px] mx-auto">
         <main className="pb-6">{children}</main>

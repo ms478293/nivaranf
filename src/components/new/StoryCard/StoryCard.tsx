@@ -33,9 +33,8 @@ const StoryCard: React.FC<StoryCardProps> = ({
             <Image
               src={imageSrc}
               alt={title}
-              width={800}
-              height={800}
-              objectFit="cover"
+              fill
+              sizes="345px"
               className="w-full h-full object-cover object-top"
             />
           </div>

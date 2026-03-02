@@ -217,6 +217,8 @@ body.no-scroll {
 /* Text animation */
 .dropping-texts {
   animation: roll 4s linear;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 @keyframes roll {

@@ -11,15 +11,32 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import ogImage from "../../public/logo.png";
 
-// Below-the-fold components: lazy-loaded to reduce initial JS bundle
-const DonationBanner = dynamic(() => import("@/components/new/DonationBanner/DonationBanner"));
-const DonationBlock = dynamic(() => import("@/components/new/DonationBlock/DonationBlock"));
-const WhereMoneyGoes = dynamic(() => import("@/components/new/DonorTrust/WhereMoneyGoes"));
-const InsightsAndInspiraton = dynamic(() => import("@/components/new/InsightsAndInspiration/InsightsAndInspiraton"));
-const NivaranHappiness = dynamic(() => import("@/components/new/NivaranHappiness/NivaranHappiness"));
-const ProjectSanjeevani = dynamic(() => import("@/components/new/ProjectSanjeevani/ProjectSanjeevani"), { ssr: false });
-const UpcomingProjects = dynamic(() => import("@/components/new/UpcomingProjects/UpcomingProjects"));
-const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSubscribe/NewsletterSubscribe"));
+// Below-the-fold components: lazy-loaded with height-reserving skeletons to prevent CLS
+const DonationBanner = dynamic(() => import("@/components/new/DonationBanner/DonationBanner"), {
+  loading: () => <div style={{ minHeight: '320px' }} />,
+});
+const DonationBlock = dynamic(() => import("@/components/new/DonationBlock/DonationBlock"), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+});
+const WhereMoneyGoes = dynamic(() => import("@/components/new/DonorTrust/WhereMoneyGoes"), {
+  loading: () => <div style={{ minHeight: '600px' }} />,
+});
+const InsightsAndInspiraton = dynamic(() => import("@/components/new/InsightsAndInspiration/InsightsAndInspiraton"), {
+  loading: () => <div style={{ minHeight: '500px' }} />,
+});
+const NivaranHappiness = dynamic(() => import("@/components/new/NivaranHappiness/NivaranHappiness"), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+});
+const ProjectSanjeevani = dynamic(() => import("@/components/new/ProjectSanjeevani/ProjectSanjeevani"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: '500px' }} />,
+});
+const UpcomingProjects = dynamic(() => import("@/components/new/UpcomingProjects/UpcomingProjects"), {
+  loading: () => <div style={{ minHeight: '400px' }} />,
+});
+const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSubscribe/NewsletterSubscribe"), {
+  loading: () => <div style={{ minHeight: '300px' }} />,
+});
 const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })), { ssr: false });
 
 export const metadata: Metadata = {

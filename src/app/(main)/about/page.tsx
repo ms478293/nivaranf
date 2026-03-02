@@ -59,8 +59,7 @@ export default function page() {
           <Image
             src="/why-nivaran/about-cover.jpeg"
             alt="Nivaran Foundation Healthcare Camp"
-            width={2000}
-            height={2000}
+            fill
             sizes="100vw"
             className="w-full h-full block  object-[40%] md:object-center object-cover grayscale"
           />
@@ -73,8 +72,8 @@ export default function page() {
               <Image
                 src={"/NivaranLogo.svg"}
                 alt="Nivaran Logo"
-                width={500}
-                height={500}
+                width={215}
+                height={86}
               />
             </div>
             <h1 className="font-[300] ">Global Care, Local Impact</h1>

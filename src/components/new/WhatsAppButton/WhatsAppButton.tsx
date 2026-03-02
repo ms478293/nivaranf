@@ -17,7 +17,7 @@ export function WhatsAppButton() {
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 transition-all duration-500 ${
+      className={`fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 transition-[opacity,transform] duration-500 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"
       }`}
     >
@@ -32,7 +32,7 @@ export function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Nivaran Foundation on WhatsApp"
-        className="group flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20BA5A] rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
+        className="group flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20BA5A] rounded-full shadow-2xl transition-transform duration-300 hover:scale-110 active:scale-95"
       >
         {/* WhatsApp SVG Icon */}
         <svg

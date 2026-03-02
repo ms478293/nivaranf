@@ -36,12 +36,12 @@ export function Sidebar() {
   return (
     <div className="w-full  rounded-lg  h-full overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 font-Poppins p-4 flex flex-col justify-between">
       <div className="w-full flex items-center justify-start mb-1 ">
-        <Link className="w-24 cursor-pointer" href="/">
+        <Link className="w-24 cursor-pointer" href="/" aria-label="Nivaran Foundation home">
           <Image
             src={"/NivaranLogo.svg"}
             alt="Nivaran Logo"
-            width={1000}
-            height={1000}
+            width={96}
+            height={38}
           />
         </Link>
       </div>
@@ -55,7 +55,7 @@ export function Sidebar() {
             <AccordionTrigger className="text-gray-800  text-lg  py-1 no-underline data-[state=open]:no-underline data-[state=open]:text-primary-500 data-[state=open]:[&>svg]:!stroke-primary-500   bg-neutral-50 font-medium ">
               <p className="text-base"> {navbar.label}</p>{" "}
             </AccordionTrigger>
-            <AccordionContent className=" text-gray-400 mt-2">
+            <AccordionContent className=" text-gray-600 mt-2">
               {navbar.component}
             </AccordionContent>
           </AccordionItem>
@@ -66,9 +66,9 @@ export function Sidebar() {
         <div className="w-full h-[300px] sm:h-[325px] relative rounded-xl overflow-hidden">
           <Image
             src="/why-nivaran/why-nivaran-4.png"
-            alt="Image"
-            width={500}
-            height={500}
+            alt="Volunteers bringing joy to communities in need"
+            fill
+            sizes="(max-width: 640px) 100vw, 300px"
             className="w-full h-full object-cover "
             style={{
               objectPosition: "left 25% top 40%",
@@ -79,10 +79,10 @@ export function Sidebar() {
           <p className="absolute bottom-0 p-4 text-neutral-50 text-[18px] font-[300] flex flex-col ">
             <Image
               className="w-[3rem] "
-              width={500}
-              height={500}
+              width={48}
+              height={48}
               src={"/heart.png"}
-              alt="Heart Image"
+              alt="Heart icon"
             />
             <span>Be a source</span>
             <span>of Joy for Someone in Need</span>

@@ -89,7 +89,7 @@ const HeroTitle = ({
                   aria-label={`Slide ${item + 1}`}
                   aria-selected={item === currentImageIndex}
                   tabIndex={item === currentImageIndex ? 0 : -1}
-                  className={`w-3 h-3 bg-gray-200 rounded-full transition-all duration-300 p-0 border-0 cursor-default ${
+                  className={`w-3 h-3 bg-gray-200 rounded-full transition-all duration-300 p-0 border-0 cursor-default relative before:absolute before:inset-[-14px] before:content-[''] ${
                     item === currentImageIndex ? "scale-50" : ""
                   }`}
                 />

@@ -28,8 +28,8 @@ const AboutStatsCard = ({
         )}
       >
         <Image
-          width={500}
-          height={500}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           alt={data.description || data?.alt || ""}
           src={data.image}
           className="h-full w-full block object-cover object-center"

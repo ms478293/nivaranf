@@ -20,7 +20,7 @@ export const SmartImage = ({ images, ...props }: SmartImageProps) => {
       ))}
       <Image
         src={images[0].name}
-        alt={images[0].name}
+        alt="Hero slide image"
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
         // fill

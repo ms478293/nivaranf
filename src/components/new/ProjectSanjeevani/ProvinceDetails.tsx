@@ -60,17 +60,19 @@ const FilterTag = ({
 }: {
   label: string;
   isActive?: boolean;
-  onClick?: (e: React.MouseEvent<HTMLLIElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }) => {
   return (
-    <li
-      aria-label={`Click to Filter by ${label}`}
-      className={`pointer text-gray-600 px-3 text-sm py-0.5 hover:bg-secondary-200  hover:text-secondary-800  bg-gray-100 rounded-full ${
-        isActive ? "bg-secondary-200  text-secondary-800 " : ""
-      }`}
-      onClick={onClick}
-    >
-      {label}
+    <li>
+      <button
+        aria-label={`Filter by ${label}`}
+        className={`pointer text-gray-600 px-3 text-sm py-1.5 min-h-[44px] inline-flex items-center hover:bg-secondary-200 hover:text-secondary-800 bg-gray-100 rounded-full cursor-pointer ${
+          isActive ? "bg-secondary-200 text-secondary-800" : ""
+        }`}
+        onClick={onClick}
+      >
+        {label}
+      </button>
     </li>
   );
 };
@@ -91,8 +93,8 @@ const FilterTagList = ({
             <FilterTag
               label={status}
               key={status}
-              onClick={(e: React.MouseEvent<HTMLLIElement>) => {
-                setActiveFilterTag((e.target as HTMLElement).textContent);
+              onClick={() => {
+                setActiveFilterTag(status);
               }}
               isActive={status === activeFilterTag}
             />
@@ -229,7 +231,7 @@ const AccordionProvince = ({ svgRef, setPopover }: ProvinceDetailsProps) => {
               <AccordionContent className="">
                 <div
                   className={`
-              flex text-center items-center   gap-1 absolute top-2 right-6 transition-all duration-300 ${
+              flex text-center items-center   gap-1 absolute top-2 right-6 transition-opacity duration-300 ${
                 activeProvince === data.name_of_province
                   ? "absolute top-2 right-6 "
                   : "opacity-0 invisible"
@@ -271,16 +273,17 @@ const AccordionProvince = ({ svgRef, setPopover }: ProvinceDetailsProps) => {
                       <RenderList
                         data={data.districts_covered}
                         render={(district) => (
-                          <button
-                            aria-label={`Click on District ${district.name_of_district}`}
-                            key={district.name_of_district}
-                            className="text-secondary-600 border-b-2 border-transparent hover:border-b-2 transition-all duration-300 hover:border-secondary-600 text-sm "
-                            onMouseEnter={() => highlightDistrict(district)}
-                            onClick={() => highlightDistrict(district)}
-                            onMouseLeave={() => unhighlightDistrict()}
-                          >
-                            {district.name_of_district}
-                          </button>
+                          <li key={district.name_of_district}>
+                            <button
+                              aria-label={`View ${district.name_of_district} district`}
+                              className="text-secondary-600 border-b-2 border-transparent hover:border-b-2 transition-colors duration-300 hover:border-secondary-600 text-sm min-h-[44px] inline-flex items-center"
+                              onMouseEnter={() => highlightDistrict(district)}
+                              onClick={() => highlightDistrict(district)}
+                              onMouseLeave={() => unhighlightDistrict()}
+                            >
+                              {district.name_of_district}
+                            </button>
+                          </li>
                         )}
                       />
                     }

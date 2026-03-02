@@ -19,7 +19,7 @@ export const LeadershipCard = ({
         )} */}
         <h3 className="flex flex-col mt-2 ">
           <span className="text-gray-600 text-sm">{leadershipData.name}</span>
-          <span className="text-xsm text-gray-400">
+          <span className="text-xsm text-gray-600">
             {leadershipData.position}
           </span>
         </h3>
