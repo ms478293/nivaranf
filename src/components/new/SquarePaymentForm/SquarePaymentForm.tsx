@@ -40,6 +40,7 @@ export default function SquarePaymentForm() {
   const cardInstanceRef = useRef<SquareCard | null>(null);
 
   const [sdkReady, setSdkReady] = useState(false);
+  const [sdkError, setSdkError] = useState(false);
   const [cardReady, setCardReady] = useState(false);
   const [selectedAmount, setSelectedAmount] = useState<number>(20);
   const [customAmount, setCustomAmount] = useState("");
@@ -54,22 +55,67 @@ export default function SquarePaymentForm() {
 
   /* ---- Load Square SDK script ---- */
   useEffect(() => {
+    // If Square is already on window, we're good
     if (window.Square) {
       setSdkReady(true);
       return;
     }
-    const existing = document.querySelector(`script[src="${SQUARE_SDK_URL}"]`);
+
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const checkSquare = () => {
+      if (window.Square) {
+        setSdkReady(true);
+        return true;
+      }
+      return false;
+    };
+
+    const existing = document.querySelector(`script[src="${SQUARE_SDK_URL}"]`) as HTMLScriptElement | null;
     if (existing) {
-      existing.addEventListener("load", () => setSdkReady(true));
-      return;
+      // Script tag exists — it may already be loaded or still loading
+      if (checkSquare()) return;
+      // Poll for window.Square (handles already-loaded + race conditions)
+      let attempts = 0;
+      const poll = setInterval(() => {
+        attempts++;
+        if (checkSquare()) {
+          clearInterval(poll);
+        } else if (attempts > 50) {
+          // 5 seconds max wait
+          clearInterval(poll);
+          setSdkError(true);
+        }
+      }, 100);
+      return () => clearInterval(poll);
     }
+
     const script = document.createElement("script");
     script.src = SQUARE_SDK_URL;
     script.async = true;
-    script.onload = () => setSdkReady(true);
-    script.onerror = () =>
+    script.onload = () => {
+      // Square may take a moment to populate window.Square after script load
+      const waitForSquare = setInterval(() => {
+        if (window.Square) {
+          clearInterval(waitForSquare);
+          setSdkReady(true);
+        }
+      }, 50);
+      // Timeout after 5s
+      timeoutId = setTimeout(() => {
+        clearInterval(waitForSquare);
+        if (!window.Square) setSdkError(true);
+      }, 5000);
+    };
+    script.onerror = () => {
       console.error("Failed to load Square Web Payments SDK");
+      setSdkError(true);
+    };
     document.head.appendChild(script);
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   /* ---- Initialize card element when SDK ready ---- */
@@ -103,6 +149,7 @@ export default function SquarePaymentForm() {
         setCardReady(true);
       } catch (err) {
         console.error("Square card init error:", err);
+        if (!cancelled) setSdkError(true);
       }
     })();
 
@@ -303,17 +350,37 @@ export default function SquarePaymentForm() {
         <label className="text-xs font-medium text-gray-600 mb-2 block">
           Card Details
         </label>
-        <div
-          id="square-card-container"
-          ref={cardContainerRef}
-          className="min-h-[90px] bg-white rounded-lg border border-gray-300 overflow-hidden"
-        >
-          {!cardReady && (
-            <div className="flex items-center justify-center h-[90px] text-sm text-gray-400">
-              Loading secure payment form…
-            </div>
-          )}
-        </div>
+        {sdkError ? (
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-center">
+            <p className="text-sm text-amber-800 mb-3">
+              Secure payment form could not load. You can donate directly via Square:
+            </p>
+            <a
+              href="https://square.link/u/Ch7Es46t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary-500 text-white px-6 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary-600 transition-colors"
+            >
+              Donate via Square →
+            </a>
+          </div>
+        ) : (
+          <div
+            id="square-card-container"
+            ref={cardContainerRef}
+            className="min-h-[90px] bg-white rounded-lg border border-gray-300 overflow-hidden"
+          >
+            {!cardReady && (
+              <div className="flex flex-col items-center justify-center h-[90px] text-sm text-gray-400 gap-2">
+                <svg className="animate-spin h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                </svg>
+                Loading secure payment form…
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Error message */}
