@@ -7,9 +7,9 @@ const DonationProgress = () => {
   const [progressPercentage, setProgressPercentage] = useState(0);
 
   const raisedAmount = 850000; // USD 850,000
-  const goalAmount = 1500000; // USD 1,500,000
+  const goalAmount = 7500000; // USD 7,500,000
   const numDonors = 1247;
-  const daysLeft = 29;
+  const daysLeft = 189;
   const campaignTitle = "2025 Annual Campaign";
 
   // Calculate actual percentage
@@ -33,11 +33,8 @@ const DonationProgress = () => {
   };
 
   const handleDonateNow = () => {
-    // Scroll to donation form
-    const donationCard = document.querySelector('[data-donation-form]');
-    if (donationCard) {
-      donationCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    // Open Square custom donation link directly
+    window.open("https://square.link/u/Ch7Es46t", "_blank", "noopener,noreferrer");
   };
 
   return (

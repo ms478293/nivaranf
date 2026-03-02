@@ -17,8 +17,8 @@ const IMPACT_MAPPING: Record<number, ImpactItem> = {
   },
   500: {
     amount: 500,
-    title: "Feeds a family of 4 for 1 week",
-    icon: "🍽️",
+    title: "Funds basic school supplies for 5 students",
+    icon: "📚",
   },
   1000: {
     amount: 1000,
@@ -27,8 +27,8 @@ const IMPACT_MAPPING: Record<number, ImpactItem> = {
   },
   2500: {
     amount: 2500,
-    title: "Sponsors 1 student's school supplies for a year",
-    icon: "📚",
+    title: "Sponsors 1 student's full school year",
+    icon: "🎓",
   },
   5000: {
     amount: 5000,
@@ -47,7 +47,7 @@ const IMPACT_MAPPING: Record<number, ImpactItem> = {
   },
   50000: {
     amount: 50000,
-    title: "Funds a full community health program for 1 month",
+    title: "Funds a full community health & education program for 1 month",
     icon: "🌍",
   },
 };
@@ -74,12 +74,25 @@ const ImpactCalculator = () => {
     setSelectedAmount(amount);
   };
 
-  const handleDonateThis = () => {
-    // Scroll to donation form
-    const donationCard = document.querySelector('[data-donation-form]');
-    if (donationCard) {
-      donationCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Map selected amount to the closest Square checkout link
+  const getSquareLink = (amount: number): string => {
+    const SQUARE_LINKS: { max: number; url: string }[] = [
+      { max: 5, url: "https://square.link/u/VI6zrzYy" },      // $5
+      { max: 10, url: "https://square.link/u/ItTRVhZD" },     // $10
+      { max: 20, url: "https://square.link/u/HEgCo7xf" },     // $20
+      { max: 50, url: "https://square.link/u/Bzu8hfgd" },     // $50
+      { max: 100, url: "https://square.link/u/wDK0I87N" },    // $100
+    ];
+    for (const tier of SQUARE_LINKS) {
+      if (amount <= tier.max) return tier.url;
     }
+    // For amounts > $100, open the custom donation link
+    return "https://square.link/u/Ch7Es46t";
+  };
+
+  const handleDonateThis = () => {
+    // Open Square checkout directly
+    window.open(getSquareLink(selectedAmount), "_blank", "noopener,noreferrer");
   };
 
   const formatAmount = (amount: number) => {
