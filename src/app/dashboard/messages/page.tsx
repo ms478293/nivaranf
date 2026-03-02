@@ -378,7 +378,7 @@ export default function MessagesPage() {
 
                     {/* Message body */}
                     <div className="mt-3 p-4 rounded-lg bg-slate-50 border border-slate-200 text-sm text-slate-800 whitespace-pre-wrap leading-relaxed max-h-[400px] overflow-y-auto">
-                      {msg.message}
+                      <MessageBody text={msg.message} />
                     </div>
 
                     {/* Actions */}
@@ -481,5 +481,52 @@ function ActionBtn({
       {loading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : icon}
       {label}
     </button>
+  );
+}
+
+/** Renders message text, extracting team member photo URLs as inline images */
+function MessageBody({ text }: { text: string }) {
+  // Match lines like "  1. Name (Role) — Photo: https://..."
+  const photoUrlRegex = /Photo:\s*(https?:\/\/\S+)/g;
+  const urls: string[] = [];
+  let match;
+  while ((match = photoUrlRegex.exec(text)) !== null) {
+    urls.push(match[1]);
+  }
+
+  // Clean the text by removing the long URLs for cleaner display
+  const cleanText = text.replace(/\s*—\s*Photo:\s*https?:\/\/\S+/g, " (photo below)");
+
+  if (urls.length === 0) {
+    return <>{text}</>;
+  }
+
+  return (
+    <>
+      {cleanText}
+      <div className="mt-4 pt-4 border-t border-slate-200">
+        <p className="text-xs font-semibold text-slate-600 uppercase tracking-wide mb-3">
+          Team Member Photos ({urls.length})
+        </p>
+        <div className="flex flex-wrap gap-3">
+          {urls.map((url, i) => (
+            <a
+              key={i}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-20 h-20 rounded-lg overflow-hidden border-2 border-slate-200 hover:border-[#eb5834] transition-colors"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={url}
+                alt={`Team member ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }

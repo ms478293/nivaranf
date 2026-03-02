@@ -1,8 +1,9 @@
 "use client";
 
 import { submitLocalPartner, type LocalPartnerData, type TeamMember } from "@/app/actions/submit-local-partner";
+import { uploadTeamPhoto } from "@/app/actions/upload-team-photo";
 import { AppButton } from "@/components/ui/app-button";
-import { Camera, Loader2, Plus, Send, Trash2, Users } from "lucide-react";
+import { Camera, Loader2, Plus, Send, Trash2, Upload, Users } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import Image from "next/image";
 
@@ -94,6 +95,7 @@ export function LocalPartnerForm() {
   const [message, setMessage] = useState("");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [pendingMember, setPendingMember] = useState<{ name: string; role: string }>({ name: "", role: "" });
+  const [uploading, setUploading] = useState(false);
 
   const completion = useMemo(() => {
     const required = [
@@ -140,7 +142,7 @@ export function LocalPartnerForm() {
     }
   };
 
-  const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePhotoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
@@ -156,14 +158,29 @@ export function LocalPartnerForm() {
       return;
     }
 
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      const base64 = reader.result as string;
-      if (pendingMember.name.trim()) {
-        addTeamMember(base64);
+    if (!pendingMember.name.trim()) {
+      setStatus("error");
+      setMessage("Please enter the member name before uploading a photo.");
+      return;
+    }
+
+    setUploading(true);
+    try {
+      const fd = new FormData();
+      fd.append("file", file);
+      const res = await uploadTeamPhoto(fd);
+      if (res.error) {
+        setStatus("error");
+        setMessage(res.error);
+      } else if (res.url) {
+        addTeamMember(res.url);
       }
-    };
-    reader.readAsDataURL(file);
+    } catch {
+      setStatus("error");
+      setMessage("Failed to upload photo. Please try again.");
+    } finally {
+      setUploading(false);
+    }
   };
 
   const addTeamMember = (photoUrl: string = "") => {
@@ -198,16 +215,8 @@ export function LocalPartnerForm() {
     setMessage("");
 
     try {
-      // Strip base64 photos for server action (too large for email)
-      const submitData: LocalPartnerData = {
-        ...formData,
-        teamMembers: formData.teamMembers.map((m) => ({
-          ...m,
-          photoUrl: m.photoUrl ? "(photo uploaded)" : "",
-        })),
-      };
-
-      const res = await submitLocalPartner(submitData);
+      // Photos are already uploaded to Supabase Storage — URLs are real
+      const res = await submitLocalPartner(formData);
       if (res.success) {
         setStatus("success");
         setMessage(
@@ -573,27 +582,32 @@ export function LocalPartnerForm() {
               </FieldLabel>
               <div className="flex gap-2">
                 <label
-                  className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl border border-slate-200 bg-white text-sm text-slate-600 cursor-pointer hover:border-slate-300 transition-colors"
-                  title="Upload photo"
+                  className={`flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl border border-slate-200 bg-white text-sm text-slate-600 cursor-pointer hover:border-slate-300 transition-colors ${uploading ? "opacity-50 pointer-events-none" : ""}`}
+                  title="Upload photo & add member"
                 >
-                  <Camera className="w-4 h-4" />
-                  <span className="hidden sm:inline">Photo</span>
+                  {uploading ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Upload className="w-4 h-4" />
+                  )}
+                  <span className="hidden sm:inline">{uploading ? "Uploading..." : "Photo & Add"}</span>
                   <input
                     ref={fileInputRef}
                     type="file"
                     accept="image/*"
                     onChange={handlePhotoUpload}
+                    disabled={uploading}
                     className="hidden"
                   />
                 </label>
                 <button
                   type="button"
                   onClick={() => addTeamMember()}
-                  disabled={!pendingMember.name.trim()}
+                  disabled={!pendingMember.name.trim() || uploading}
                   className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-[#eb5834] text-white text-sm font-medium disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#d44e2d] transition-colors"
                 >
                   <Plus className="w-4 h-4" />
-                  <span className="hidden sm:inline">Add</span>
+                  <span className="hidden sm:inline">Add (no photo)</span>
                 </button>
               </div>
             </div>
