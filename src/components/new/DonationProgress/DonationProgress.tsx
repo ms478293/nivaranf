@@ -101,8 +101,8 @@ const DonationProgress = () => {
 
               <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden shadow-inner">
                 <div
-                  className="h-4 bg-gradient-to-r from-primary-500 to-orange-500 rounded-full transition-all duration-1000 ease-out"
-                  style={{ width: `${progressPercentage}%` }}
+                  className="h-4 bg-gradient-to-r from-primary-500 to-orange-500 rounded-full transition-transform duration-1000 ease-out origin-left"
+                  style={{ transform: `scaleX(${progressPercentage / 100})` }}
                   role="progressbar"
                   aria-valuenow={progressPercentage}
                   aria-valuemin={0}

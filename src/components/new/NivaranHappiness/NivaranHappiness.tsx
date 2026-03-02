@@ -38,7 +38,7 @@ const NivaranHappiness = () => {
               className="items-center justify-start md:justify-center  "
             />
           </header>
-          <p className="text-gray-400 w-full md:w-1/2  leading-6 md:my-4 my-1.5">
+          <p className="text-gray-600 w-full md:w-1/2  leading-6 md:my-4 my-1.5">
             At the Nivaran Foundation, we are committed to improving lives and
             creating lasting change in communities in need. But we can not do it
             alone—we need people like you to help make the world a better place.
@@ -55,11 +55,11 @@ const NivaranHappiness = () => {
               <li
                 role="listitem"
                 key={data.id}
-                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:scale-[1.02]"
               >
                 <Image
-                  width={500}
-                  height={500}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
                   alt={data.alt}
                   src={data.image}
                   className="h-full w-full block object-cover object-center"

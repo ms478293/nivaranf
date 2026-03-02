@@ -60,13 +60,13 @@ const WhereMoneyGoes = () => {
                       {item.percentage}%
                     </span>
                   </div>
-                  <div className="w-full bg-gray-100 rounded-full h-3">
+                    <div className="w-full bg-gray-100 rounded-full h-3 overflow-hidden">
                     <div
-                      className={`${item.color} h-3 rounded-full transition-all duration-1000`}
-                      style={{ width: `${item.percentage}%` }}
+                      className={`${item.color} h-3 rounded-full transition-transform duration-1000 origin-left`}
+                      style={{ transform: `scaleX(${item.percentage / 100})` }}
                     ></div>
                   </div>
-                  <p className="text-xs text-gray-500 mt-1">
+                  <p className="text-xs text-gray-600 mt-1">
                     {item.description}
                   </p>
                 </div>
@@ -110,14 +110,14 @@ const WhereMoneyGoes = () => {
         {/* EIN & Verification */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="text-center mb-6">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-600">
               Nivaran Foundation is a registered 501(c)(3) nonprofit
               organization.
             </p>
             <p className="text-sm font-semibold text-gray-700 mt-1">
               EIN: 41-2656587
             </p>
-            <p className="text-xs text-gray-400 mt-1">
+            <p className="text-xs text-gray-600 mt-1">
               Your donation is 100% tax-deductible to the extent allowed by law.
               Verify our status on{" "}
               <a

@@ -26,7 +26,7 @@ const nextConfig: NextConfig = {
     optimizePackageImports: [  // Tree-shake heavy icon/component libraries
       "lucide-react",
       "@radix-ui/react-icons",
-      "framer-motion",
+      "class-variance-authority",
     ],
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],

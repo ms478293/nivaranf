@@ -7,10 +7,10 @@ export const useScreenSize = (): string => {
     const updateScreenSize = () => {
       if (window.innerWidth >= 1024) {
         setScreenSize("lg");
-      } else if (window.innerWidth >= 768) {
-        setScreenSize("md");
       } else if (window.innerWidth >= 864) {
         setScreenSize("864px");
+      } else if (window.innerWidth >= 768) {
+        setScreenSize("md");
       } else {
         setScreenSize("sm");
       }

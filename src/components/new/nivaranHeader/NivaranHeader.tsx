@@ -12,13 +12,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import { Sidebar } from "../../nivaran/common/header/SidebarComponent";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { SidebarProvider } from "../../ui/sidebar";
 import MegaMenuLayout from "../MegaMenu/MegaMenuLayout";
-import SearchModal from "../SearchModal/SearchModal";
 import { Search } from "lucide-react";
 import { LanguageToggle } from "../LanguageToggle/LanguageToggle";
+
+const SearchModal = dynamic(() => import("../SearchModal/SearchModal"), { ssr: false });
+const Sidebar = dynamic(() => import("../../nivaran/common/header/SidebarComponent").then(m => ({ default: m.Sidebar })), { ssr: false });
 
 const ProjectsMegaMenu = dynamic(() => import("../MegaMenu/ProjectsMegaMenu"), { ssr: false });
 const NewsAndStoriesMegaMenu = dynamic(() => import("../MegaMenu/NewsAndStoriesMegaMenu"), { ssr: false });
@@ -115,7 +116,7 @@ const NivaranHeader = () => {
               />
             </Link>
             {screenSize !== "864px" ? (
-              <div className="min-[864px]:hidden flex items-center justify-center gap-2 relative z-[200]">
+              <div className="flex min-[864px]:hidden items-center justify-center gap-2 relative z-[200]">
                 <LanguageToggle
                   className={`${
                     isWhite || activeMegaMenu
@@ -137,7 +138,7 @@ const NivaranHeader = () => {
                 </button>
                 <SidebarProvider>
                   <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger aria-label="Open navigation menu">
                       <HamBurgerMenuIcon
                         className={`w-6 h-6 ${
                           isWhite ? "stroke-black " : "stroke-white"
@@ -153,7 +154,7 @@ const NivaranHeader = () => {
             ) : null}
             {screenSize !== "sm" ? (
               <nav
-                className=" gap-2 items-center hidden min-[864px]:flex"
+                className="gap-2 items-center hidden min-[864px]:flex"
                 role="navigation"
                 aria-label="Main"
               >
@@ -164,7 +165,7 @@ const NivaranHeader = () => {
                       <li
                         role="listitem"
                         key={list.id}
-                        className={`text-sm flex items-center gap-2 cursor-pointer transition-all duration-700 text-nowrap ${
+                        className={`text-sm flex items-center gap-2 cursor-pointer transition-colors duration-700 text-nowrap ${
                           isWhite || activeMegaMenu
                             ? "text-gray-800 "
                             : "text-neutral-50"
@@ -256,10 +257,10 @@ const NivaranHeader = () => {
               <div
                 role="menu"
                 aria-labelledby={`menu-${list.id}`}
-                className={`fixed  w-full duration-1000 transition-all z-[40]  ${
+                className={`fixed w-full duration-1000 transition-transform z-[40] top-16 ${
                   activeMegaMenu === list.id
-                    ? "top-16  visible  "
-                    : "-top-[500px]   invisible"
+                    ? "translate-y-0 visible"
+                    : "-translate-y-[564px] invisible"
                 } `}
                 key={list.id}
               >
@@ -270,7 +271,7 @@ const NivaranHeader = () => {
         ) : null}
       </div>
       <div
-        className={`z-[35] fixed hidden min-[864px]:block transition-all duration-1000  w-full h-screen bg-[linear-gradient(to_top,_#000000a0_80%,transparent)] top-0 ${
+        className={`z-[35] fixed hidden min-[864px]:block transition-opacity duration-1000  w-full h-screen bg-[linear-gradient(to_top,_#000000a0_80%,transparent)] top-0 ${
           activeMegaMenu !== null
             ? "opacity-100 visible"
             : "opacity-0 invisible pointer-events-none"

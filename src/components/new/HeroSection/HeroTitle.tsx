@@ -32,7 +32,7 @@ const HeroTitle = ({
         <div className="text-white md:text-4xl/[58px] text-xl min-[430px]:text-3xl  max-w-[700px] sm:max-w-[620px] font-[600] relative font-Poppins min-[430px]:leading-[3.5rem] sm:leading-normal  ">
           Building a Better World{"  "}
           <span className="font-extralight ">Together by </span>
-          <p className="text-primary-500 [&>span]:block absolute md:-right-[20rem] left-0 sm:left-auto sm:-right-[16rem] top-[4.5rem]  min-[430px]:top-[6.8rem] sm:top-16 md:top-16 max-[430px]:-right-32  h-[4.5rem] w-full overflow-hidden">
+          <span className="text-primary-500 [&>span]:block absolute md:-right-[20rem] left-0 sm:left-auto sm:-right-[16rem] top-[4.5rem]  min-[430px]:top-[6.8rem] sm:top-16 md:top-16 max-[430px]:-right-32  h-[4.5rem] w-full overflow-hidden">
             <RenderList
               data={WORDS}
               render={(word, index) => (
@@ -46,9 +46,9 @@ const HeroTitle = ({
                 </span>
               )}
             />
-          </p>
+          </span>
         </div>
-        <p className="text-neutral-200 text-md md:text-lg/8 max-w-3xl leading-6 font-normal mt-10 min-[430px]:mt-12 min-[430px]:mb-2 sm:mt-2">
+        <p className="text-white text-md md:text-lg/8 max-w-3xl leading-6 font-normal mt-10 min-[430px]:mt-12 min-[430px]:mb-2 sm:mt-2">
           Rewrite the story of tomorrow, one community at a time. Together, we
           are building a brighter future for all.
         </p>
@@ -79,15 +79,17 @@ const HeroTitle = ({
           <div className=" flex sm:justify-end ">
             <div
               className="relative flex gap-2 justify-start sm:justify-end items-center z-30 group"
-              role="group"
+              role="tablist"
               aria-label="Slide navigation"
             >
               {Array.from({ length: imagesLength }).map((_, item) => (
-                <div
+                <button
                   key={item}
-                  aria-label={`Slide ${item + 1}${item === currentImageIndex ? ", current" : ""}`}
-                  aria-current={item === currentImageIndex ? "true" : "false"}
-                  className={`w-3 h-3 bg-gray-200 rounded-full transition-all duration-300 ${
+                  role="tab"
+                  aria-label={`Slide ${item + 1}`}
+                  aria-selected={item === currentImageIndex}
+                  tabIndex={item === currentImageIndex ? 0 : -1}
+                  className={`w-3 h-3 bg-gray-200 rounded-full transition-all duration-300 p-0 border-0 cursor-default ${
                     item === currentImageIndex ? "scale-50" : ""
                   }`}
                 />

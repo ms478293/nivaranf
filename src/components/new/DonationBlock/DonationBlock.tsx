@@ -37,12 +37,12 @@ const DonationBlock = ({ className }: { className?: string }) => {
       <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-start gap-4 md:py-0 py-8">
         {DONATION_BLOCK_DATA.map((image) => (
           <div
-            className="w-full h-full overflow-hidden relative rounded-2xl"
+            className="w-full min-h-[300px] md:min-h-[350px] overflow-hidden relative rounded-2xl"
             key={image.id}
           >
             <Image
-              width={1000}
-              height={1000}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               alt={image.alt}
               src={image.image}
               className="block w-full h-full object-cover object-center"

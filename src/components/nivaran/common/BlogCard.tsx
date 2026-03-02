@@ -141,8 +141,8 @@ const Thumbnail = ({
         className="w-full h-full object-cover object-center"
         src={data.thumbnailImage}
         alt={data.title}
-        width={1000}
-        height={1000}
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
       />
 
       <div className="absolute w-full h-full  bg-[linear-gradient(to_bottom,_#000000d0_0%,_transparent_40%,_#000000bf_100%)] left-0 bottom-0"></div>
@@ -208,7 +208,7 @@ const TitleAndDescription = ({
         </div>
       ) : null}
       {showDescription ? (
-        <p className="text-gray-400 text-sm/[20px] line-clamp-2 ">
+        <p className="text-gray-600 text-sm/[20px] line-clamp-2 ">
           {data.summary.substring(0, 100)}...
         </p>
       ) : null}

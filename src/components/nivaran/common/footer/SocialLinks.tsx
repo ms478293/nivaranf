@@ -5,7 +5,7 @@ import Link from "next/link";
 import { AnchorHTMLAttributes } from "react";
 
 const socialVariants = cva(
-  "rounded-full [&>svg]:duration-300 transition-colors [&>svg]:transition-colors duration-300 p-3 border-[1.5px]",
+  "rounded-full [&>svg]:duration-300 transition-colors [&>svg]:transition-colors duration-300 p-3 border-[1.5px] min-w-[44px] min-h-[44px] flex items-center justify-center",
   {
     variants: {
       variant: {
@@ -34,6 +34,9 @@ export const SocialLinks = ({ variant }: SocialLinksProps) => {
           href={social.link}
           className={cn(socialVariants({ variant }))}
           key={social.link}
+          aria-label={`Visit Nivaran Foundation on ${social.name}`}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {social.icon}
         </Link>

@@ -43,18 +43,22 @@ const NivaranFooter = () => {
           </div>
 
           <div className="flex flex-col  gap-4 min-[435px]:flex-row min-[380px]:justify-between  sm:gap-10  ">
-            <ul className="min-[380px]:text-nowrap min-[380px]:w-1/2">
+            <div className="min-[380px]:text-nowrap min-[380px]:w-1/2">
               <FooterTitle title="Our Works" className="mb-3" />
+              <ul>
               {ourWork.map((resource, index) => (
                 <ListPopulate {...resource} key={index}></ListPopulate>
               ))}
-            </ul>
-            <ul className="min-[380px]:w-1/2 min-[380px]:text-nowrap">
+              </ul>
+            </div>
+            <div className="min-[380px]:w-1/2 min-[380px]:text-nowrap">
               <FooterTitle title="Useful Links" className="mb-3" />
+              <ul>
               {others.map((resource, index) => (
                 <ListPopulate {...resource} key={index}></ListPopulate>
               ))}
-            </ul>
+              </ul>
+            </div>
             <div className="hidden lg:block">
               <FooterHollow />
             </div>
@@ -62,7 +66,7 @@ const NivaranFooter = () => {
         </div>
 
         {/* EIN & Address */}
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs text-gray-500">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs text-gray-600">
           <p>501(c)(3) Nonprofit | EIN: 41-2656587</p>
           <p>Boston, MA USA</p>
         </div>

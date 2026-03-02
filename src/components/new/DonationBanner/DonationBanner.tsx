@@ -44,6 +44,8 @@ const DonationBanner = () => {
                 variant="secondary"
                 size="lg"
                 className="h-fit p-2 group-hover:border-white [&>svg]:group-hover:fill-white"
+                aria-hidden="true"
+                tabIndex={-1}
               >
                 <MoveUpRightArrowIcon className="fill-primary-500 w-6 h-6 " />
               </AppButton>
@@ -53,8 +55,8 @@ const DonationBanner = () => {
 
         <div className="absolute top-2 left-4 sm:left-8 h-full sm:h-[310px]  w-1/2 min-[445px]:w-1/4  sm:w-1/5 rotate-[10deg] sm:rotate-[15deg]">
           <Image
-            width={500}
-            height={500}
+            width={200}
+            height={310}
             alt="Donation banner"
             src="/donation-banner-image.png"
             className="h-full w-full  object-left  "

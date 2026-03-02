@@ -40,7 +40,7 @@ const UpcomingProjects = ({
                 <FolderIcon
                   width={"700"}
                   height={"700"}
-                  className=" absolute w-full h-full -top-3 -left-2 group-hover:skew-x-6 group-hover:-translate-x-3 group-hover:scale-y-[0.95] group-hover:-top-2 group-hover:-left-2 transition-all duration-300"
+                  className=" absolute w-full h-full -top-3 -left-2 group-hover:skew-x-6 group-hover:-translate-x-3 group-hover:scale-y-[0.95] transition-transform duration-300"
                 />
               </UpcomingProjectsCard>
             )}
@@ -77,8 +77,8 @@ export const UpcomingProjectsCard = ({
             <Image
               src={data.images}
               alt={data.title}
-              width={500}
-              height={500}
+              width={112}
+              height={80}
               className="w-full h-full object-cover object-center"
             />
           </div>

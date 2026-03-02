@@ -1,23 +1,26 @@
 import AboutNivaran from "@/components/new/AboutNivaran/AboutNivaran";
-import DonationBanner from "@/components/new/DonationBanner/DonationBanner";
-import DonationBlock from "@/components/new/DonationBlock/DonationBlock";
-import WhereMoneyGoes from "@/components/new/DonorTrust/WhereMoneyGoes";
 import HeroSection from "@/components/new/HeroSection/HeroSection";
-import InsightsAndInspiraton from "@/components/new/InsightsAndInspiration/InsightsAndInspiraton";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
-import NewsletterSubscribe from "@/components/new/NewsletterSubscribe/NewsletterSubscribe";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
-import NivaranHappiness from "@/components/new/NivaranHappiness/NivaranHappiness";
 import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
-import ProjectSanjeevani from "@/components/new/ProjectSanjeevani/ProjectSanjeevani";
-import UpcomingProjects from "@/components/new/UpcomingProjects/UpcomingProjects";
 import { SetCookie } from "@/components/nivaran/main/utils/SetCookie";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
 import { AnimatedCounter } from "@/components/new/AnimatedCounter/AnimatedCounter";
-import { WhatsAppButton } from "@/components/new/WhatsAppButton/WhatsAppButton";
 import { Metadata } from "next";
 import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import ogImage from "../../public/logo.png";
+
+// Below-the-fold components: lazy-loaded to reduce initial JS bundle
+const DonationBanner = dynamic(() => import("@/components/new/DonationBanner/DonationBanner"));
+const DonationBlock = dynamic(() => import("@/components/new/DonationBlock/DonationBlock"));
+const WhereMoneyGoes = dynamic(() => import("@/components/new/DonorTrust/WhereMoneyGoes"));
+const InsightsAndInspiraton = dynamic(() => import("@/components/new/InsightsAndInspiration/InsightsAndInspiraton"));
+const NivaranHappiness = dynamic(() => import("@/components/new/NivaranHappiness/NivaranHappiness"));
+const ProjectSanjeevani = dynamic(() => import("@/components/new/ProjectSanjeevani/ProjectSanjeevani"), { ssr: false });
+const UpcomingProjects = dynamic(() => import("@/components/new/UpcomingProjects/UpcomingProjects"));
+const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSubscribe/NewsletterSubscribe"));
+const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Mobile Health Camps in Nepal | Nivaran Foundation",

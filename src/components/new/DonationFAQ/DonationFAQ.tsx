@@ -45,7 +45,7 @@ export const DonationFAQ = () => {
                 <span className="text-base"> {faqHead.question}</span>{" "}
               </p>
             </AccordionTrigger>
-            <AccordionContent className="pl-10 text-gray-400 bg-gray-50">
+            <AccordionContent className="pl-10 text-gray-600 bg-gray-50">
               <div
                 dangerouslySetInnerHTML={{ __html: faqHead.answer }}
                 className="[&>a]:text-primary-main "
