@@ -138,7 +138,7 @@ export default function LocalPartnerPage() {
                 Matters
               </h1>
               <p className="mt-5 text-slate-600 text-sm md:text-base leading-7 max-w-3xl">
-                Whether you're a high school club, a college organization, a youth
+                Whether you&apos;re a high school club, a college organization, a youth
                 group, or a community team — you can partner with Nivaran
                 Foundation to organize fundraising events in your area. Your group
                 keeps 10–20% for event expenses, and the rest directly supports
@@ -202,7 +202,7 @@ export default function LocalPartnerPage() {
             Why Partner with Nivaran?
           </h2>
           <p className="text-sm text-slate-600 text-center max-w-2xl mx-auto mb-8">
-            Whether you're looking for a school project, community service hours,
+            Whether you&apos;re looking for a school project, community service hours,
             or a way to make a real difference — we make it easy.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">

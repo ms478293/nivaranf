@@ -28,7 +28,6 @@ const NivaranHappiness = dynamic(() => import("@/components/new/NivaranHappiness
   loading: () => <div style={{ minHeight: '400px' }} />,
 });
 const ProjectSanjeevani = dynamic(() => import("@/components/new/ProjectSanjeevani/ProjectSanjeevani"), {
-  ssr: false,
   loading: () => <div style={{ minHeight: '500px' }} />,
 });
 const UpcomingProjects = dynamic(() => import("@/components/new/UpcomingProjects/UpcomingProjects"), {
@@ -37,7 +36,7 @@ const UpcomingProjects = dynamic(() => import("@/components/new/UpcomingProjects
 const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSubscribe/NewsletterSubscribe"), {
   loading: () => <div style={{ minHeight: '300px' }} />,
 });
-const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })), { ssr: false });
+const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })));
 
 export const metadata: Metadata = {
   title: "Mobile Health Camps in Nepal | Nivaran Foundation",
