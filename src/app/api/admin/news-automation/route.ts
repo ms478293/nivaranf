@@ -20,8 +20,8 @@ function authenticate(request: NextRequest): boolean {
   const credentials = Buffer.from(base64Credentials, 'base64').toString('utf-8');
   const [username, password] = credentials.split(':');
   
-  const validUsername = process.env.ADMIN_USERNAME || 'admin';
-  const validPassword = process.env.ADMIN_PASSWORD || 'Nivaran2024!Secure';
+  const validUsername = process.env.ADMIN_USERNAME || '';
+  const validPassword = process.env.ADMIN_PASSWORD || '';
   
   return username === validUsername && password === validPassword;
 }

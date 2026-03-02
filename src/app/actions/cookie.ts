@@ -20,7 +20,7 @@ export async function getUserLocation() {
     console.log("USER LOCATION", userLocation);
 
     // Set the cookie with the location
-    await setCookie("user_location", userLocation, {
+    await setCookie("user_location", userLocation ?? "", {
       maxAge: 60 * 60 * 24 * 7, // 7 days
       path: "/",
     });

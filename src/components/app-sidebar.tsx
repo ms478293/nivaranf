@@ -56,7 +56,7 @@ export function AppSidebar() {
                     <Link
                       href={childItem.href ?? ""}
                       className={`flex w-full h-fit  ${
-                        isActive(childItem.href)
+                        isActive(childItem.href ?? "")
                           ? "bg-primary-100 text-primary-500 "
                           : ""
                       }`}
@@ -66,12 +66,12 @@ export function AppSidebar() {
                       >
                         <childItem.icon
                           className={`w-12 h-12 size-16  ${
-                            isActive(childItem.href) ? "stroke-primary-500" : ""
+                            isActive(childItem.href ?? "") ? "stroke-primary-500" : ""
                           }`}
                         />
                         <span
                           className={`text-gray-600  ${
-                            isActive(childItem.href) ? "text-primary-500" : ""
+                            isActive(childItem.href ?? "") ? "text-primary-500" : ""
                           } `}
                         >
                           {childItem.label}

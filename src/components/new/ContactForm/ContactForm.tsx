@@ -92,6 +92,7 @@ const ContactForm = ({ className }: { className?: string }) => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your full name"
+                aria-required="true"
                 className="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-main/20 focus:border-primary-main focus:bg-white transition-colors"
               />
             </div>
@@ -109,6 +110,7 @@ const ContactForm = ({ className }: { className?: string }) => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="your@email.com"
+                aria-required="true"
                 className="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-main/20 focus:border-primary-main focus:bg-white transition-colors"
               />
             </div>
@@ -152,6 +154,7 @@ const ContactForm = ({ className }: { className?: string }) => {
               onChange={handleChange}
               placeholder="How can we help you?"
               rows={5}
+              aria-required="true"
               className="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-main/20 focus:border-primary-main focus:bg-white transition-colors resize-none"
             />
           </div>

@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // TODO: Add your Bing verification code from bing.com/webmasters
-    bing: "your-bing-verification-code",
+    // bing: "your-bing-verification-code",
   },
 };
 
@@ -177,14 +177,13 @@ export default async function RootLayout({
         </Script>
 
         {/* Microsoft Clarity */}
-        {/* TODO: Replace XXXXXXXXXX with your real Clarity Project ID from clarity.microsoft.com */}
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "XXXXXXXXXX");
+            })(window, document, "clarity", "script", "vp9x38avgq");
           `}
         </Script>
       </head>

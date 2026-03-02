@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     url: "https://www.nivaranfoundation.org/volunteer",
     siteName: "Nivaran Foundation",
     type: "website",
+    images: [{ url: '/NivaranLogo.svg', width: 1200, height: 630, alt: 'Nivaran Foundation' }],
   },
   twitter: {
     card: "summary_large_image",
@@ -45,7 +46,7 @@ type ProgramType = {
 
 async function getOpenPrograms(): Promise<ProgramType[]> {
   try {
-    const dbPrograms = [];
+    const dbPrograms: ProgramType[] = [];
 
     if (hasSupabasePublicEnv) {
       const { data, error } = await supabase

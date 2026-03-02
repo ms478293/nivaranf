@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     url: "https://www.nivaranfoundation.org/projects",
     siteName: "Nivaran Foundation",
     type: "website",
+    images: [{ url: '/NivaranLogo.svg', width: 1200, height: 630, alt: 'Nivaran Foundation' }],
   },
   twitter: {
     card: "summary_large_image",

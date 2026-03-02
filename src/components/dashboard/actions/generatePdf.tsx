@@ -1,101 +1,44 @@
 "use client";
 import { impactReportSchema } from "@/validations/validations";
-import {
-  Document,
-  Image,
-  Page,
-  StyleSheet,
-  Text,
-  View,
-  pdf,
-} from "@react-pdf/renderer";
-import { saveAs } from "file-saver";
 import Cookies from "js-cookie";
 import { z } from "zod";
 
-// Define styles for the PDF
-const styles = StyleSheet.create({
-  page: {
-    flexDirection: "column",
-    padding: 20,
-  },
-  coverPage: {
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 40,
-    backgroundColor: "#f4f4f4", // Light gray background for cover page
-  },
-  coverTitle: {
-    fontSize: 28,
-    fontWeight: "bold",
-    marginBottom: 10,
-    textAlign: "center",
-  },
-  coverInfo: {
-    fontSize: 14,
-    textAlign: "center",
-    marginBottom: 5,
-  },
-  section: {
-    marginBottom: 20,
-  },
-  header: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  text: {
-    fontSize: 12,
-    marginBottom: 5,
-  },
-  list: {
-    marginLeft: 10,
-  },
-  imageContainer: {
-    display: "flex",
-    flexDirection: "column",
-    width: "100%",
-    alignItems: "center",
-  },
-  image: {
-    width: "100%", // Full width
-    aspectRatio: 1, // Height matches the width for a square image
-    marginBottom: 10,
-  },
-
-  table: {
-    width: "100%",
-  },
-  row: {
-    display: "flex",
-    flexDirection: "row",
-    borderTop: "1px solid #EEE",
-    paddingTop: 8,
-    paddingBottom: 8,
-  },
-  tableHeader: {
-    borderTop: "none",
-  },
-  bold: {
-    fontWeight: "bold",
-  },
-  // So Declarative and unDRY 👌
-  col1: {
-    width: "27%",
-  },
-  col2: {
-    width: "15%",
-  },
-  col3: {
-    width: "42%",
-  },
-  col4: {
-    width: "20%",
-  },
-});
-
 export const generatePDF = async (data: z.infer<typeof impactReportSchema>) => {
+  // Dynamically import heavy libraries only when PDF generation is triggered
+  const [{ Document, Image, Page, StyleSheet, Text, View, pdf }, { saveAs }] =
+    await Promise.all([
+      import("@react-pdf/renderer"),
+      import("file-saver"),
+    ]);
+
+  // Define styles for the PDF (inside function to support dynamic import)
+  const styles = StyleSheet.create({
+    page: { flexDirection: "column", padding: 20 },
+    coverPage: {
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: 40,
+      backgroundColor: "#f4f4f4",
+    },
+    coverTitle: { fontSize: 28, fontWeight: "bold", marginBottom: 10, textAlign: "center" },
+    coverInfo: { fontSize: 14, textAlign: "center", marginBottom: 5 },
+    section: { marginBottom: 20 },
+    header: { fontSize: 18, fontWeight: "bold", marginBottom: 10 },
+    text: { fontSize: 12, marginBottom: 5 },
+    list: { marginLeft: 10 },
+    imageContainer: { display: "flex", flexDirection: "column", width: "100%", alignItems: "center" },
+    image: { width: "100%", aspectRatio: 1, marginBottom: 10 },
+    table: { width: "100%" },
+    row: { display: "flex", flexDirection: "row", borderTop: "1px solid #EEE", paddingTop: 8, paddingBottom: 8 },
+    tableHeader: { borderTop: "none" },
+    bold: { fontWeight: "bold" },
+    col1: { width: "27%" },
+    col2: { width: "15%" },
+    col3: { width: "42%" },
+    col4: { width: "20%" },
+  });
+
   const {
     yearOfPublish,
     author,

@@ -19,7 +19,7 @@ export const BlogImageWithCaptionConfig = ({
         label="Image Url"
         options={[{ value: "/usa/1.png", label: "Placeholder" }]}
         value={config.orientation}
-        onChange={(value: BlogImageWithCaptionConfigType["imageUrl"]) =>
+        onChange={(value: string) =>
           updateComponent(index, { ...config, imageUrl: value })
         }
       />
@@ -53,8 +53,8 @@ export const BlogImageWithCaptionConfig = ({
           { value: "right", label: "right" },
         ]}
         value={config.orientation}
-        onChange={(value: BlogImageWithCaptionConfigType["orientation"]) =>
-          updateComponent(index, { ...config, orientation: value })
+        onChange={(value: string) =>
+          updateComponent(index, { ...config, orientation: value as BlogImageWithCaptionConfigType["orientation"] })
         }
       />
     </div>

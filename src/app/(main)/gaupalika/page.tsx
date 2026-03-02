@@ -1,5 +1,5 @@
-import { GaupalikaComponent } from "@/components/new/gaupalika/GaupalikaComponent";
 import type { Metadata } from "next";
+import GaupalikaClientWrapper from "@/components/new/gaupalika/GaupalikaClientWrapper";
 
 export const metadata: Metadata = {
   title: "Gaupalika Coverage Map | Nivaran Foundation",
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: "https://www.nivaranfoundation.org/gaupalika",
     type: "website",
     siteName: "Nivaran Foundation",
+    images: [{ url: '/NivaranLogo.svg', width: 1200, height: 630, alt: 'Nivaran Foundation' }],
   },
   twitter: {
     card: "summary_large_image",
@@ -27,5 +28,5 @@ export const metadata: Metadata = {
 };
 
 export default function MapPage() {
-  return <GaupalikaComponent></GaupalikaComponent>;
+  return <GaupalikaClientWrapper />;
 }

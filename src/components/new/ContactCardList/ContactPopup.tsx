@@ -26,7 +26,7 @@ export const RegionPopup = ({ region }: { region: string }) => {
   if (!regionInfo) return null;
 
   return (
-    <div className="absolute top-0 bg-white shadow-lg p-4 rounded-lg z-10 min-w-[min(250px,calc(100vw-2rem))]">
+    <div className="absolute top-0 bg-white shadow-lg p-4 rounded-lg z-10 min-w-[250px]">
       <h3 className="font-bold text-lg mb-2 text-secondary-800">
         {regionInfo.name}
       </h3>

@@ -17,7 +17,7 @@ export const BlogListConfig = ({
     keyOrValue: "key" | "value",
     value: string
   ) => {
-    const updatedItems = [...config.items];
+    const updatedItems = [...(config.items ?? [])];
     if (!updatedItems[itemIndex]) {
       updatedItems[itemIndex] = { key: "", value: "" };
     }
@@ -33,7 +33,7 @@ export const BlogListConfig = ({
   };
 
   const handleRemoveItem = (itemIndex: number) => {
-    const updatedItems = [...config.items];
+    const updatedItems = [...(config.items ?? [])];
     updatedItems.splice(itemIndex, 1);
     updateComponent(index, { ...config, items: updatedItems });
   };
@@ -48,8 +48,8 @@ export const BlogListConfig = ({
           { value: "ordered", label: "Ordered" },
         ]}
         value={config.type}
-        onChange={(value: BlogListConfigType["type"]) =>
-          updateComponent(index, { ...config, type: value })
+        onChange={(value: string) =>
+          updateComponent(index, { ...config, type: value as BlogListConfigType["type"] })
         }
       />
       <div>

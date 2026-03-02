@@ -126,6 +126,13 @@ function formatDate(dateValue?: string) {
   });
 }
 
+function formatDateISO(dateValue?: string): string | undefined {
+  if (!dateValue) return undefined;
+  const parsedDate = new Date(dateValue);
+  if (Number.isNaN(parsedDate.getTime())) return undefined;
+  return parsedDate.toISOString();
+}
+
 function calculateReadTimeMinutes(content: string) {
   const text = content
     .replace(/```[\s\S]*?```/g, " ")
@@ -396,6 +403,34 @@ export async function renderBlogDetailPage({
   const location = data.location || "Nepal";
   const articleUrl = `${SITE_URL}${resolvedPath}`;
 
+  // Generate Article JSON-LD schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: subtitle,
+    image: data.mainImage ? toAbsoluteWebsiteUrl(data.mainImage) : undefined,
+    author: {
+      "@type": "Organization",
+      name: author || "Nivaran Foundation",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Nivaran Foundation",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/NivaranLogo.svg`,
+      },
+    },
+    datePublished: formatDateISO(data.date || listEntry?.date),
+    dateModified: formatDateISO(data.date || listEntry?.date),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
+  };
+
   const staticRelatedBlogs = [...globalBlogs]
     .filter((blog) => blog.slug !== slug)
     .sort((a, b) => {
@@ -423,6 +458,10 @@ export async function renderBlogDetailPage({
     <div
       className={`${styles.template} ${playfairDisplay.variable} ${sourceSerif.variable} ${dmMono.variable}`}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <ArticleReadingProgress />
 
       <article>

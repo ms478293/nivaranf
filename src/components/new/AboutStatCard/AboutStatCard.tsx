@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { createContext } from "react";
 
-const AboutStatCardContext = createContext(null);
+const AboutStatCardContext = createContext<any>(null);
 
 const AboutStatsCard = ({
   children,
@@ -30,7 +30,7 @@ const AboutStatsCard = ({
         <Image
           width={500}
           height={500}
-          alt={data.description || data?.alt}
+          alt={data.description || data?.alt || ""}
           src={data.image}
           className="h-full w-full block object-cover object-center"
         />

@@ -97,7 +97,7 @@ function buildJobMetadata(career: CareerType, id: string): Metadata {
       "NGO jobs Nepal",
       career.jobName,
       career.jobType,
-      career.jobLocation,
+      career.jobLocation ?? "",
     ],
     openGraph: {
       title,

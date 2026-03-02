@@ -16,6 +16,9 @@ import { Sidebar } from "../../nivaran/common/header/SidebarComponent";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
 import { SidebarProvider } from "../../ui/sidebar";
 import MegaMenuLayout from "../MegaMenu/MegaMenuLayout";
+import SearchModal from "../SearchModal/SearchModal";
+import { Search } from "lucide-react";
+import { LanguageToggle } from "../LanguageToggle/LanguageToggle";
 
 const ProjectsMegaMenu = dynamic(() => import("../MegaMenu/ProjectsMegaMenu"), { ssr: false });
 const NewsAndStoriesMegaMenu = dynamic(() => import("../MegaMenu/NewsAndStoriesMegaMenu"), { ssr: false });
@@ -41,6 +44,7 @@ const NAVBAR_LIST = [
 
 const NivaranHeader = () => {
   const [isWhite, setIsWhite] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { openActiveMegaMenu, activeMegaMenu } = useMegaMenuStore();
   const navRef = useOutsideEventListener(() => openActiveMegaMenu(null));
 
@@ -68,6 +72,19 @@ const NivaranHeader = () => {
       document.body.style.overflow = "";
     };
   }, [activeMegaMenu]);
+
+  // Handle Cmd+K / Ctrl+K keyboard shortcut for search
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setIsSearchOpen(true);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <>
@@ -98,7 +115,26 @@ const NivaranHeader = () => {
               />
             </Link>
             {screenSize !== "864px" ? (
-              <div className="min-[864px]:hidden flex items-center justify-center relative z-[200]">
+              <div className="min-[864px]:hidden flex items-center justify-center gap-2 relative z-[200]">
+                <LanguageToggle
+                  className={`${
+                    isWhite || activeMegaMenu
+                      ? "text-gray-800"
+                      : "text-white border-white/30"
+                  }`}
+                  variant="pill"
+                />
+                <button
+                  onClick={() => setIsSearchOpen(true)}
+                  className={`p-2 rounded-lg transition-colors ${
+                    isWhite || activeMegaMenu
+                      ? "hover:bg-gray-100 text-gray-800"
+                      : "hover:bg-white/10 text-white"
+                  }`}
+                  aria-label="Open search"
+                >
+                  <Search className="w-5 h-5" />
+                </button>
                 <SidebarProvider>
                   <Sheet>
                     <SheetTrigger>
@@ -163,6 +199,28 @@ const NivaranHeader = () => {
 
                 <div className="h-[20px] w-[1px] bg-gray-200"></div>
                 <div className="flex items-center gap-4 ">
+                  {/* Language Toggle */}
+                  <LanguageToggle
+                    className={`${
+                      isWhite || activeMegaMenu
+                        ? ""
+                        : "border-white/30 text-white bg-white/10"
+                    }`}
+                    variant="pill"
+                  />
+                  {/* Search Button */}
+                  <button
+                    onClick={() => setIsSearchOpen(true)}
+                    className={`p-2 rounded-lg transition-colors ${
+                      isWhite || activeMegaMenu
+                        ? "hover:bg-gray-100 text-gray-800"
+                        : "hover:bg-white/10 text-white"
+                    }`}
+                    aria-label="Open search"
+                    title="Search (Cmd+K)"
+                  >
+                    <Search className="w-5 h-5" />
+                  </button>
                   <Link
                     href="/volunteer"
                     onClick={() => openActiveMegaMenu(null)}
@@ -218,6 +276,9 @@ const NivaranHeader = () => {
             : "opacity-0 invisible pointer-events-none"
         }`}
       ></div>
+
+      {/* Search Modal */}
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </>
   );
 };

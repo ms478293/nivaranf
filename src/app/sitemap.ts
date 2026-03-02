@@ -5,23 +5,23 @@ import type { MetadataRoute } from "next";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
 
-const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }> = [
-  { path: "/", priority: 1, changeFrequency: "daily" },
-  { path: "/about", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/donate", priority: 1, changeFrequency: "weekly" },
+const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; isKeyPage?: boolean }> = [
+  { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
+  { path: "/about", priority: 0.9, changeFrequency: "monthly", isKeyPage: true },
+  { path: "/donate", priority: 1.0, changeFrequency: "weekly", isKeyPage: true },
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
   { path: "/contact-us", priority: 0.8, changeFrequency: "monthly" },
   { path: "/career", priority: 0.7, changeFrequency: "weekly" },
-  { path: "/blogs", priority: 0.9, changeFrequency: "daily" },
-  { path: "/articles", priority: 0.9, changeFrequency: "daily" },
-  { path: "/stories", priority: 0.9, changeFrequency: "daily" },
-  { path: "/news", priority: 0.9, changeFrequency: "daily" },
+  { path: "/blogs", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
+  { path: "/articles", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
+  { path: "/stories", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
+  { path: "/news", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
   { path: "/global-news", priority: 0.8, changeFrequency: "hourly" },
-  { path: "/projects", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/projects", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
   { path: "/sanjeevani", priority: 0.8, changeFrequency: "weekly" },
   { path: "/vidya", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/volunteer", priority: 0.7, changeFrequency: "weekly" },
-  { path: "/programs", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/volunteer", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/programs", priority: 0.9, changeFrequency: "monthly", isKeyPage: true },
   { path: "/programs/health", priority: 0.8, changeFrequency: "monthly" },
   { path: "/programs/education", priority: 0.8, changeFrequency: "monthly" },
   { path: "/gaupalika", priority: 0.6, changeFrequency: "monthly" },
@@ -47,10 +47,11 @@ function toAbsoluteUrl(path: string) {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
+  const keyPageLastModified = new Date().toISOString();
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
     url: toAbsoluteUrl(route.path),
-    lastModified: now,
+    lastModified: route.isKeyPage ? keyPageLastModified : now,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));

@@ -19,7 +19,7 @@ const FormEditor = ({
     if (!editorRef.current) {
       const editor = new EditorJS({
         holder: holder,
-        tools: EDITOR_CONFIG,
+        tools: EDITOR_CONFIG as any,
         placeholder: "Add Content Here",
         data: { blocks: [{ type: "paragraph", data: { text: value } }] },
         async onChange(api) {

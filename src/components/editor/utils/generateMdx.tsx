@@ -58,7 +58,7 @@ ${layout.components
         return `<BlogImageWithCaption imageUrl="${comp.config.imageUrl}" altText="${comp.config.altText}" caption="${comp.config.caption}" orientation="${comp.config.orientation}" />`;
       case "BlogList": {
         return `<BlogList
-    items={[${comp.config.items
+    items={[${(comp.config.items ?? [])
       .map((item: { key?: string; value: string }) => {
         const itemString = item.key
           ? `{ key: "${item.key}", value: "${item.value}" }`

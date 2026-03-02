@@ -67,7 +67,7 @@ export const BlogParagraphConfig = ({
               label="Image Url"
               options={[{ value: "/usa/1.png", label: "Placeholder" }]}
               value={config.orientation}
-              onChange={(value: BlogParagraphConfigType["imageUrl"]) =>
+              onChange={(value: string) =>
                 updateComponent(index, { ...config, imageUrl: value })
               }
             />
@@ -91,8 +91,8 @@ export const BlogParagraphConfig = ({
                 { value: "right", label: "Right" },
               ]}
               value={config.orientation}
-              onChange={(value: BlogParagraphConfigType["orientation"]) =>
-                updateComponent(index, { ...config, orientation: value })
+              onChange={(value: string) =>
+                updateComponent(index, { ...config, orientation: value as BlogParagraphConfigType["orientation"] })
               }
             />
 
@@ -104,8 +104,8 @@ export const BlogParagraphConfig = ({
                 { value: "half", label: "Half" },
               ]}
               value={config.width}
-              onChange={(value: BlogParagraphConfigType["width"]) =>
-                updateComponent(index, { ...config, width: value })
+              onChange={(value: string) =>
+                updateComponent(index, { ...config, width: value as BlogParagraphConfigType["width"] })
               }
             />
 
@@ -117,8 +117,8 @@ export const BlogParagraphConfig = ({
                 { value: "long", label: "Long" },
               ]}
               value={config.height}
-              onChange={(value: BlogParagraphConfigType["height"]) =>
-                updateComponent(index, { ...config, height: value })
+              onChange={(value: string) =>
+                updateComponent(index, { ...config, height: value as BlogParagraphConfigType["height"] })
               }
             />
           </div>

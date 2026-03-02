@@ -43,7 +43,7 @@ export const CreateJobForm = ({
 }) => {
   const { data: jobData } = useQuery({
     queryKey: ["jobById"],
-    queryFn: () => getJobById(id),
+    queryFn: () => getJobById(id!),
   });
 
   const form = useForm<CreateJobSchemaType>({

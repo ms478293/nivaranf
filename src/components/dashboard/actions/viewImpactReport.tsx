@@ -147,9 +147,9 @@ const ImpactCard: FC<{ impact: ImpactReport }> = ({ impact }) => {
         ...impact,
         yearOfPublish: new Date(impact.yearOfPublish), // Ensure yearOfPublish is a Date object
         financialReportData: financialReportData,
-        // programData: impact.programs,
+        programData: impact.programs as any,
         programIds: impact.programs.map((program) => program.id),
-      });
+      } as any);
     }
   };
 

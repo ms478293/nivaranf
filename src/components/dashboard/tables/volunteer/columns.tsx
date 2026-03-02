@@ -153,7 +153,7 @@ export const volunteerColumns: ColumnDef<z.infer<typeof volunteerSchema>>[] = [
     header: ({ table }) => (
       <Checkbox
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        //@ts-expect-error
+        //@ts-ignore
         checked={
           table.getIsAllPageRowsSelected() ||
           (table.getIsSomePageRowsSelected() && "indeterminate")

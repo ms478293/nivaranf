@@ -40,8 +40,8 @@ export const BlogQuoteConfig = ({
           { value: "fit", label: "Fit" },
         ]}
         value={config.width}
-        onChange={(value: BlogQuoteConfigType["width"]) =>
-          updateComponent(index, { ...config, width: value })
+        onChange={(value: string) =>
+          updateComponent(index, { ...config, width: value as BlogQuoteConfigType["width"] })
         }
       />
     </div>

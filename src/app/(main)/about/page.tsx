@@ -12,6 +12,7 @@ import { Suspense } from "react";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
+import { AnimatedStatCard } from "@/components/new/AnimatedStatCard/AnimatedStatCard";
 
 export const metadata: Metadata = {
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
@@ -210,7 +211,13 @@ export default function page() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Financial Transparency</h3>
               <p className="text-sm text-gray-600 mb-2">
-                85% of every dollar goes directly to healthcare and education programs
+                <AnimatedStatCard
+                  value={85}
+                  suffix="%"
+                  label="of every dollar goes to programs"
+                  className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100 !text-primary-500"
+                  numberClassName="text-2xl sm:text-3xl"
+                />
               </p>
               <p className="text-xs text-gray-500">
                 Only 10% operations, 5% fundraising
@@ -224,11 +231,25 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">On-Ground Impact</h3>
-              <p className="text-sm text-gray-600 mb-2">
-                304 health camps across Nepal with direct medical care delivery
-              </p>
-              <p className="text-xs text-gray-500">
-                61,200+ patients targeted in Phase-I
+              <p className="text-sm text-gray-600 mb-2 flex flex-col gap-3">
+                <span>
+                  <AnimatedStatCard
+                    value={304}
+                    suffix=" health camps"
+                    label="across Nepal"
+                    className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100"
+                    numberClassName="text-2xl sm:text-3xl"
+                  />
+                </span>
+                <span className="text-xs text-gray-500">
+                  <AnimatedStatCard
+                    value={61200}
+                    suffix="+ patients"
+                    label="targeted in Phase-I"
+                    className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100"
+                    numberClassName="text-xl sm:text-2xl"
+                  />
+                </span>
               </p>
             </div>
           </div>

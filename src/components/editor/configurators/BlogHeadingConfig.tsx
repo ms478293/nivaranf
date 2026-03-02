@@ -62,10 +62,10 @@ export const BlogHeadingConfig = ({
           { value: "3xl", label: "h1" },
         ]}
         value={config.fontSize as BlogHeadingConfigType["fontSize"]}
-        onChange={(value: BlogHeadingConfigType["fontSize"]) =>
+        onChange={(value: string) =>
           updateComponent(index, {
             ...config,
-            fontSize: value,
+            fontSize: value as BlogHeadingConfigType["fontSize"],
           })
         }
       />

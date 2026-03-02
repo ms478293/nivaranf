@@ -3,7 +3,15 @@ import {
   FormSelectProps,
   FormTextareaProps,
 } from "../types/form-element-types";
-import FormEditor from "./FormEditor";
+import dynamic from "next/dynamic";
+
+// Dynamically import FormEditor (EditorJS is very heavy) — only loads when the editor is rendered
+const FormEditor = dynamic(() => import("./FormEditor"), {
+  ssr: false,
+  loading: () => (
+    <div className="p-2 border rounded-md h-32 bg-gray-50 animate-pulse" aria-label="Loading editor..." />
+  ),
+});
 
 const FormInput = ({
   id,

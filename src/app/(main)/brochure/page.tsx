@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-function download(pdfURL: string, newTab: Window) {
+function download(pdfURL: string, newTab: Window | null) {
   const link = document.createElement("a");
   link.href = pdfURL;
   link.download = "nivaran-brochure.pdf";

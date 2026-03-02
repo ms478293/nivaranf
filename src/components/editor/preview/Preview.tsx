@@ -82,7 +82,7 @@ export const Preview = ({
                       <BlogParagraph {...comp.config} key={index}>
                         <div
                           dangerouslySetInnerHTML={{
-                            __html: DOMPurify.sanitize(comp.config.text),
+                            __html: DOMPurify.sanitize(comp.config.text ?? ""),
                           }}
                         ></div>
                       </BlogParagraph>
@@ -91,15 +91,15 @@ export const Preview = ({
                     return (
                       <BlogImageWithCaption
                         {...comp.config}
-                        imageUrl={comp.config.imageUrl}
-                        altText={comp.config.altText}
+                        imageUrl={comp.config.imageUrl ?? ""}
+                        altText={comp.config.altText ?? ""}
                         key={index}
                       />
                     );
                   case "BlogList":
                     return (
                       <BlogList
-                        items={comp.config.items}
+                        items={comp.config.items ?? []}
                         type={comp.config.type}
                         key={index}
                       />
@@ -108,7 +108,7 @@ export const Preview = ({
                     return (
                       <BlogQuote
                         {...comp.config}
-                        text={comp.config.text}
+                        text={comp.config.text ?? ""}
                         key={index}
                       />
                     );
