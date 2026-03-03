@@ -43,7 +43,7 @@ next-env.d.ts
 .vercel
 
 # automation runtime artifacts
-/.global_news/
+/.global_news/tmp/
 /logs/automation/
 .env.automation
 scripts/.push-queue.json
