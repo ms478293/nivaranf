@@ -5,6 +5,7 @@ import {
   FilePenLine,
   Handshake,
   InboxIcon,
+  NewspaperIcon,
   PlusIcon,
   UserRoundSearchIcon,
 } from "lucide-react";
@@ -71,6 +72,11 @@ const navItems: NavItem[] = [
         label: "Publishing Portal",
         href: "/dashboard/content",
         icon: FilePenLine,
+      },
+      {
+        label: "News Automation",
+        href: "/admin/news-automation",
+        icon: NewspaperIcon,
       },
     ],
   },
