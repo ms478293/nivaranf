@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-renews-commitment-to-a-leprosy-free-world-spotlighting-partnership",
+    title: "Global Health and Education Watch: WHO renews commitment to a leprosy-free world, spotlighting partnership",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-03-global-health-and-education-watch-who-renews-commitment-to-a-leprosy-free-world-.jpg",
+    date: "2026-03-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-in-south-carolina-measles-outbreak-vaccine-skepticism-led-to",
     title: "Global Health and Education Watch: In South Carolina Measles Outbreak, Vaccine Skepticism Led to",
     summary:
