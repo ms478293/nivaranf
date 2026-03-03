@@ -55,7 +55,7 @@ def _safe_int(value, default: int) -> int:
 
 
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranGlobalNewsBot/1.0)"
-GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
+GEMINI_TEXT_MODEL_DEFAULT = "gemini-2.5-flash"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 GEMINI_IMAGE_MODEL_FALLBACKS = [
     "gemini-2.0-flash-exp-image-generation",
