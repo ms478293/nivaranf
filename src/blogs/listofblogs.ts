@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "south-carolina-battles-largest-measles-outbreak-in-decades-amid-plunging-vaccination-rates",
+    title: "South Carolina Battles Largest Measles Outbreak in Decades Amid Plunging Vaccination Rates",
+    summary:
+      "A historic measles outbreak in South Carolina has exposed the severe consequences of declining immunization rates. With one local school reporting only 21 percent vaccine coverage, health officials are scrambling to contain the highly contagious virus.",
+    thumbnailImage: "/images/global-news/2026/2026-03-03-south-carolina-battles-largest-measles-outbreak-in-decades-amid-plunging-vaccina.jpg",
+    date: "2026-03-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
 
     slug: "denmark-s-national-initiative-transforms-mental-health-stigma-through-the-power-of-personal-storytelling",
     title: "Denmark’s National Initiative Transforms Mental Health Stigma Through the Power of Personal Storytelling",
