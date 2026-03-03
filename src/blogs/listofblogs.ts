@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iran-crisis-schoolgirls-killed-thousands-displaced-and-aid-compromised",
+    title: "Global Health and Education Watch: Iran crisis: Schoolgirls killed, thousands displaced and aid compromised",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-03-global-health-and-education-watch-iran-crisis-schoolgirls-killed-thousands-displ.jpg",
+    date: "2026-03-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "south-carolina-battles-largest-measles-outbreak-in-decades-amid-plunging-vaccination-rates",
     title: "South Carolina Battles Largest Measles Outbreak in Decades Amid Plunging Vaccination Rates",
     summary:
