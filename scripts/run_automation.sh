@@ -86,8 +86,14 @@ notify_automation_started()
 PYEOF
 fi
 
+# Use gtimeout on macOS, timeout on Linux
+TIMEOUT_CMD="timeout"
+if command -v gtimeout >/dev/null 2>&1; then
+  TIMEOUT_CMD="gtimeout"
+fi
+
 # Run the automation with timeout and error handling
-if timeout "${AUTOMATION_TIMEOUT_SECONDS}" bash "${SCRIPT_DIR}/run_global_news.sh" \
+if "${TIMEOUT_CMD}" "${AUTOMATION_TIMEOUT_SECONDS}" bash "${SCRIPT_DIR}/run_global_news.sh" \
   --repo-root "${REPO_ROOT}" \
   --sources-file "${SCRIPT_DIR}/global-news.sources.json" 2>&1 | tee -a "${LOG_FILE}"; then
   
@@ -99,12 +105,12 @@ if timeout "${AUTOMATION_TIMEOUT_SECONDS}" bash "${SCRIPT_DIR}/run_global_news.s
     log "📰 Article published successfully"
     
     # Extract article details and send Telegram notification
-    python3 - <<'PYEOF'
-import sys, json, re
-sys.path.insert(0, '/app/scripts')
+    PYEOF_SCRIPT_DIR="${SCRIPT_DIR}" PYEOF_LOG="${LATEST_LOG}" python3 - <<'PYEOF'
+import os, sys, json, re
+sys.path.insert(0, os.environ.get('PYEOF_SCRIPT_DIR', '.'))
 from telegram_notifier import notify_article_published
 
-log_file = '/app/logs/automation/latest.log'
+log_file = os.environ.get('PYEOF_LOG', 'latest.log')
 try:
     with open(log_file, 'r') as f:
         content = f.read()
