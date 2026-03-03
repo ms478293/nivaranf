@@ -178,7 +178,7 @@ export async function submitLocalPartner(data: LocalPartnerData) {
     // Admin notification email
     const teamMembersHtml = data.teamMembers
       .map(
-        (m, i) =>
+        (m) =>
           `<div style="display: inline-block; text-align: center; margin: 8px; vertical-align: top; width: 120px;">
             ${m.photoUrl && m.photoUrl !== '(photo uploaded)' ? `<img src="${escapeHtml(m.photoUrl)}" alt="${escapeHtml(m.name)}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #e5e7eb;" />` : '<div style="width: 80px; height: 80px; border-radius: 50%; background: #e5e7eb; margin: 0 auto;"></div>'}
             <p style="margin: 4px 0 0 0; font-weight: 600; font-size: 13px;">${escapeHtml(m.name)}</p>

@@ -3,7 +3,7 @@
 import { submitLocalPartner, type LocalPartnerData, type TeamMember } from "@/app/actions/submit-local-partner";
 import { uploadTeamPhoto } from "@/app/actions/upload-team-photo";
 import { AppButton } from "@/components/ui/app-button";
-import { Camera, Loader2, Plus, Send, Trash2, Upload, Users } from "lucide-react";
+import { Loader2, Plus, Send, Trash2, Upload, Users } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import Image from "next/image";
 
