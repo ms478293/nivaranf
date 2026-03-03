@@ -117,28 +117,6 @@ export const globalBlogs: blogListType[] = [
     type: "Analysis",
   },
   {
-    slug: "uniting-for-africa-s-future-first-ladies-championing-health-education-and-economic-empowerment",
-    title: "Uniting for Africa's Future: First Ladies Championing Health, Education, and Economic Empowerment",
-    summary:
-      "African First Ladies are uniting to tackle health, education, and economic disparities for women and vulnerable communities, inspired by Ghana's First Lady Lordina Mahama. This collaborative effort, epitomized by the Lordina Foundation's impactful work, aims to bridge critical gaps across the continent, proving that collective action can overcome the systemic 'distances' that impede progress.",
-    thumbnailImage: "", // Will be fetched/updated
-    date: "2026-02-23",
-    author: "Nivaran Global Desk",
-    featured: true,
-    type: "Article",
-  },
-  {
-    slug: "the-end-of-an-ancient-scourge-libya-s-triumph-over-trachoma-and-the-unfolding-narrative-of-global-health-equity",
-    title: "The End of an Ancient Scourge: Libya's Triumph Over Trachoma and the Unfolding Narrative of Global Health Equity",
-    summary:
-      "Despite years of political instability and humanitarian crises, Libya has achieved a landmark victory, eliminating trachoma as a public health problem. This success, driven by dedicated health workers and international partnerships, offers crucial lessons for overcoming neglected tropical diseases and advancing health equity globally, proving that 'Distance is the Disease' can be defeated.",
-    thumbnailImage: "", // Will be fetched/updated
-    date: "2026-02-23",
-    author: "Nivaran Global Desk",
-    featured: true,
-    type: "Article",
-  },
-  {
     slug: "the-3-2-billion-betrayal-education-aid-collapse-threatens-6-million-children",
     title: "The $3.2 Billion Betrayal: Education Aid Collapse Threatens 6 Million Children",
     summary:
@@ -170,17 +148,6 @@ export const globalBlogs: blogListType[] = [
     author: "Nivaran Foundation Global Desk",
     featured: true,
     type: "News",
-  },
-  {
-    slug: "vision-in-crisis-ocular-health-emergency-among-displaced-populations-in-nigeria",
-    title: "Vision in Crisis: Ocular Health Emergency Among Displaced Populations in Nigeria",
-    summary:
-      "Over 60% of internally displaced persons (IDPs) in Nigeria's Benue State suffer from preventable or treatable eye conditions like cataracts and refractive errors, yet only a fraction can access care. A recent study highlights extreme poverty, lack of clinics, and low awareness as primary barriers, pushing vulnerable communities further into preventable blindness and dependency.",
-    thumbnailImage: "", // Will be fetched/updated
-    date: "2026-02-23",
-    author: "Nivaran Global Desk",
-    featured: true,
-    type: "Article",
   },
   {
     slug: "greenland-rejects-us-hospital-ship-offer-defending-arctic-health-sovereignty-against-political-critique",
@@ -282,24 +249,4 @@ export const globalBlogs: blogListType[] = [
 ];
 
 export const usaBlogs: blogListType[] = [
-  {
-    slug: "food-insecurity-america",
-    title: "Tackling Food Insecurity in the USA",
-    summary:
-      "Exploring the causes, impacts, and community-driven solutions to end hunger and foster resilience across the United States.",
-    thumbnailImage: "/blogs/thumbnail/foodInsecurityThumbnail.png",
-    date: "2025-01-16",
-    type: "Story",
-    author: "Nivaran Foundation",
-  },
-  {
-    slug: "california-wildfire",
-    title: "2025 California Wildfires: A Growing Crisis",
-    summary:
-      "Unprecedented winds, soaring temperatures, and climate change fuel a disaster reshaping lives in Southern California.",
-    thumbnailImage: "/blogs/thumbnail/wildfireThumbnail.jpg",
-    date: "2025-01-15",
-    author: "Nivaran Foundation",
-    type: "Story",
-  },
 ];
