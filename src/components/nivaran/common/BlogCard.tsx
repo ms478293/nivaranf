@@ -139,7 +139,7 @@ const Thumbnail = ({
       ></div>
       <Image
         className="w-full h-full object-cover object-center"
-        src={data.thumbnailImage}
+        src={data.thumbnailImage || "/images/placeholder-image-for-nivaran.webp"}
         alt={data.title}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

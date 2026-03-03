@@ -5,7 +5,7 @@ import MainTitle from "../MainTitle/MainTitle";
 const COUNTING_HAPPINESS_DATA = [
   {
     id: 1,
-    count: "330 Cr.",
+    count: "$3.3M",
     description: "Budget Allocated",
     image: "/counting_happiness/count_happiness_3.jpg",
     alt: "Children working in difficult conditions to support their daily needs",

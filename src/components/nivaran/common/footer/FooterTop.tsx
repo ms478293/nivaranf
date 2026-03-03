@@ -24,9 +24,9 @@ export const LogoAndDescription = ({
         ></Image>
       </Link>
       <div className="  lg:text-justify text-gray-600 pr-3 text-sm md:text-md">
-        NIVARAN FOUNDATION is a global force in the fight against poverty and
-        inequality. We are recognized for our unwavering dedication to
-        empowering.
+        NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile health
+        camps and education programs across rural Nepal since 2020. Every dollar
+        directly funds healthcare and learning for underserved communities.
       </div>
     </div>
   );

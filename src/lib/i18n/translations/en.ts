@@ -35,7 +35,7 @@ const en = {
   "donate.whyTrust": "Why Donors Trust Nivaran",
 
   // Donation Progress
-  "donationProgress.title": "2025 Annual Campaign",
+  "donationProgress.title": "2026 Annual Campaign",
   "donationProgress.subtitle":
     "Help us reach our goal and expand life-saving healthcare and education programs",
   "donationProgress.amountRaised": "Amount Raised",

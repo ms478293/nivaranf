@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(true);
 
   useEffect(() => {
     // Show button after 2 seconds
@@ -11,20 +12,32 @@ export function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Auto-collapse tooltip on mobile after 5 seconds
+  useEffect(() => {
+    if (!visible) return;
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      const tooltipTimer = setTimeout(() => setShowTooltip(false), 5000);
+      return () => clearTimeout(tooltipTimer);
+    }
+  }, [visible]);
+
   const phoneNumber = "18577017471"; // Nivaran Foundation WhatsApp number
   const message = "Hello! I'm interested in learning more about Nivaran Foundation and how I can help.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 transition-[opacity,transform] duration-500 ${
+      className={`fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 transition-[opacity,transform] duration-500 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"
       }`}
     >
       {/* Tooltip */}
+      {showTooltip && (
       <div className="bg-white text-gray-800 text-sm font-medium px-3 py-2 rounded-lg shadow-lg border border-gray-100 animate-bounce-slow whitespace-nowrap">
         💬 Chat with us on WhatsApp
       </div>
+      )}
 
       {/* WhatsApp Button */}
       <Link

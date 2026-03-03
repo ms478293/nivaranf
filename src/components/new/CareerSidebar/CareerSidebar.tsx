@@ -13,7 +13,7 @@ export const CareerSidebar = () => {
     {
       id: 1,
       title: "Phone",
-      label: userLocation === "NP" ? "+977 1-5312555" : "+1 8577017471",
+      label: userLocation === "NP" ? "+977 1-5312555" : "+1 (857) 701-7471",
       icon: <ContactIcon className="w-6 h-6 stroke-secondary-800 " />,
     },
     {

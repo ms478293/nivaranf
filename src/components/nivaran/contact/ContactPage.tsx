@@ -113,7 +113,7 @@ export const ContactPage = () => {
               Mon-Fri, 8am - 5pm
             </p>
             <p className="mt-2 text-blue-500 dark:text-blue-400">
-              +1 8577017471, +977 1-5354693
+              +1 (857) 701-7471, +977 1-5354693
             </p>
           </div>
         </div>

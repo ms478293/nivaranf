@@ -211,7 +211,7 @@ export default function page() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Financial Transparency</h3>
               <p className="text-sm text-gray-600 mb-2">
                 <AnimatedStatCard
-                  value={85}
+                  value={96}
                   suffix="%"
                   label="of every dollar goes to programs"
                   className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100 !text-primary-500"
@@ -219,7 +219,7 @@ export default function page() {
                 />
               </p>
               <p className="text-xs text-gray-500">
-                Only 10% operations, 5% fundraising
+                Only 2% operations, 2% fundraising
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">

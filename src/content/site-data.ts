@@ -13,7 +13,7 @@ export const siteData = {
     { label: "Health Camps Operated", value: "304" },
     { label: "Patients Targeted (Phase-I)", value: "61,200+" },
     { label: "Phase-I Budget", value: "$18M" },
-    { label: "Fund Utilization Rate", value: "85%" },
+    { label: "Fund Utilization Rate", value: "96%" },
   ],
   buttons: {
     volunteer: "Volunteer",

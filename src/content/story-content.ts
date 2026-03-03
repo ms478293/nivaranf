@@ -35,7 +35,7 @@ export const STORY_CONTENT = [
     id: 5,
     description:
       "Nivaran’s approach focuses on five key areas: healthcare, education, child welfare, community development, and environmental stewardship. These initiatives aim to help communities prosper sustainably.",
-    title: "Nivaran's Inlusive Approach",
+    title: "Nivaran's Inclusive Approach",
     image: "/about-timeline/story-5.jpeg",
     date: "2024 Dec",
   },

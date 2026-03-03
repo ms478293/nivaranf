@@ -10,7 +10,7 @@ const DonationProgress = () => {
   const goalAmount = 7500000; // USD 7,500,000
   const numDonors = 1247;
   const daysLeft = 189;
-  const campaignTitle = "2025 Annual Campaign";
+  const campaignTitle = "2026 Annual Campaign";
 
   // Calculate actual percentage
   const actualPercentage = Math.min(

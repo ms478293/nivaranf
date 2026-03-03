@@ -67,9 +67,9 @@ const AboutDescription = () => {
   return (
     <div className="max-w-[315px] self-end gap-6 flex flex-col justify-between text-sm">
       <p className="text-gray-600 ">
-        NIVARAN FOUNDATION is a 501(c)(3) not-for-profit organization fight
-        against poverty and inequality. We are recognized for our unwavering
-        dedication to empowering.
+        NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile health
+        camps and education programs across rural Nepal since 2020. Every dollar
+        directly funds healthcare and learning for underserved communities.
       </p>
       {/*NOTE: Provide a link */}
       <Link

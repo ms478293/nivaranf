@@ -33,10 +33,10 @@ const FooterUsa = () => {
               ></Image>
             </Link>
             <div className="w-80">
-              Nivaran is a global force in the fight against poverty and
-              inequality. We are recognized for our unwavering dedication to
-              empowering communities and upholding the dignity and rights of
-              every individual.
+              NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile
+              health camps and education programs across rural Nepal since 2020.
+              Every dollar directly funds healthcare and learning for underserved
+              communities.
             </div>
           </div>
           <div className="flex w-full justify-start px-4">

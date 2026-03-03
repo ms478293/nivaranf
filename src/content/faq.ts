@@ -271,13 +271,13 @@ export const FAQdata: FAQType[] = [
         question:
           "What should I do if I have concerns about Nivaran Foundation's activities?",
         answer:
-          "We take all concerns seriously. Please contact us directly at support@nivaranfoundation.org or +1 8577017471 to report any concerns.",
+          "We take all concerns seriously. Please contact us directly at support@nivaranfoundation.org or +1 (857) 701-7471 to report any concerns.",
       },
       {
         question:
           "What if I witness or suspect misconduct by a Nivaran Foundation staff member or volunteer?",
         answer:
-          "Please report any suspected misconduct immediately to support@nivaranfoundation.org or +1 8577017471. We have procedures in place to investigate such reports thoroughly and take appropriate action.",
+          "Please report any suspected misconduct immediately to support@nivaranfoundation.org or +1 (857) 701-7471. We have procedures in place to investigate such reports thoroughly and take appropriate action.",
       },
       {
         question:
@@ -306,7 +306,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How can I request accommodations for a disability when participating in Nivaran Foundation's programs or events?",
         answer:
-          "Please contact us at support@nivaranfoundation.org or +1 8577017471 to discuss your needs and request reasonable accommodations. We are committed to making our programs and events as inclusive as possible.",
+          "Please contact us at support@nivaranfoundation.org or +1 (857) 701-7471 to discuss your needs and request reasonable accommodations. We are committed to making our programs and events as inclusive as possible.",
       },
       {
         question:

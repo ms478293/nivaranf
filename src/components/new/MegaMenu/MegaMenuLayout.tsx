@@ -26,7 +26,7 @@ const MegaMenuFooter = () => {
       <div className="w-full flex justify-between items-center text-xsm text-gray-800 py-6">
         <p>partnerships@nivaranfoundation.org</p>
         <div className="flex gap-16">
-          <p>+1 8577017471, +977 1-5312555</p>
+          <p>+1 (857) 701-7471, +977 1-5312555</p>
           <p className="flex gap-6 items-center">
             <span>Newroad, Kathmandu</span>
             <span>USA Office: Boston MA, US</span>

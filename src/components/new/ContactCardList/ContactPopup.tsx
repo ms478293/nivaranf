@@ -16,7 +16,7 @@ export const RegionPopup = ({ region }: { region: string }) => {
       name: "USA Office",
       details: {
         address: "Boston, MA",
-        contact: "+1 8577017471",
+        contact: "+1 (857) 701-7471",
       },
     },
   };

@@ -17,7 +17,7 @@ const CONTACT_DATA = [
   {
     id: 2,
     address: "Boston, Massachusetts, United States",
-    contact: "+1 8577017471",
+    contact: "+1 (857) 701-7471",
     email: "partnerships@nivaranfoundation.org",
     image: "/usa-flag.png",
     country: "US",

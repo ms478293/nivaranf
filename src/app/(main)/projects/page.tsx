@@ -128,8 +128,8 @@ export default function ProjectsPage() {
               {[
                 { value: "2", label: "Active Projects" },
                 { value: "83+", label: "Villages Reached" },
-                { value: "$18M+", label: "Committed Funds" },
-                { value: "5M+", label: "Lives Targeted" },
+                { value: "$18M+", label: "Committed Funds (Goal)" },
+                { value: "5M+", label: "Lives Targeted (Goal)" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -264,7 +264,7 @@ function ProjectShowcase({
       <div className="w-full lg:w-1/2 flex flex-col gap-5">
         <div>
           <p className="text-sm text-primary-500 font-medium uppercase tracking-wider mb-1">
-            Since {project.startYear}
+            {project.status === "Upcoming" ? "Planned" : "Since"} {project.startYear}
           </p>
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
             Project {project.name}

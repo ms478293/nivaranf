@@ -92,7 +92,7 @@ export const UpcomingProjectsCard = ({
               size="md"
               className="px-4 py-2 md:px-4  min-[880px]:text-md flex items-center justify-center leading-6    text-white bg-primary-500  hover:text-primary-500 hover:bg-transparent border border-transparent hover:border-primary-500 "
             >
-              Open Folder
+              Learn More
             </AppButton>
           </Link>
         </div>
