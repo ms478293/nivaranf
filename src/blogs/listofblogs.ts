@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "denmark-s-national-initiative-transforms-mental-health-stigma-through-the-power-of-personal-storytelling",
+    title: "Denmark’s National Initiative Transforms Mental Health Stigma Through the Power of Personal Storytelling",
+    summary:
+      "Denmark’s 'One of Us' campaign is redefining how society views mental illness by facilitating direct dialogue between patients and the public. This nationwide effort utilizes personal narratives to dismantle stereotypes in critical sectors like law enforcement and healthcare.",
+    thumbnailImage: "/images/global-news/2026/2026-03-03-denmark-s-national-initiative-transforms-mental-health-stigma-through-the-power-.png",
+    date: "2026-03-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-digital-confidant-are-ai-counselors-the-future-of-student-mental-health",
     title: "The Digital Confidant: Are AI Counselors the Future of Student Mental Health?",
     summary:
