@@ -4,8 +4,10 @@ import MainTitle from "@/components/new/MainTitle/MainTitle";
 import SanjeevaniPhase from "@/components/new/SanjeevaniPhase/SanjeevaniPhase";
 import UpcomingProjects from "@/components/new/UpcomingProjects/UpcomingProjects";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
+import { EXECUTIVE_DASHBOARD, CAMP_MASTER_LOG, PROVINCE_SUMMARY } from "@/content/sanjeevani-tracking-data";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -49,6 +51,134 @@ const page = () => {
             &quot; Empowering lives by bridging gaps in healthcare access and
             education through community-driven solutions. &quot;
           </p>
+
+          <Link
+            href="/sanjeevani/tracking"
+            className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-medium text-sm transition-colors shadow-md hover:shadow-lg"
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400" />
+            </span>
+            Live Project Tracking Dashboard
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
+      {/* ── Tracking Overview Section ── */}
+      <section className="w-full px-4">
+        <div className="max-w-[1320px] mx-auto">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-[1px]">
+            {/* Gradient border shimmer */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 via-secondary-500/30 to-emerald-500/30 rounded-3xl blur-sm" />
+
+            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-6 md:p-10">
+              {/* Decorative dots */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary-500/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+
+              {/* Header row */}
+              <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400" />
+                    </span>
+                    <span className="text-green-400 text-xs font-bold uppercase tracking-widest">Live Tracking</span>
+                  </div>
+                  <h2 className="text-white text-2xl md:text-3xl font-bold">
+                    Project Progress <span className="text-primary-400">Overview</span>
+                  </h2>
+                  <p className="text-gray-400 text-sm mt-1 max-w-md">
+                    Real-time metrics from our rural health camps across Nepal — building a healthier future, one village at a time.
+                  </p>
+                </div>
+                <Link
+                  href="/sanjeevani/tracking"
+                  className="group inline-flex items-center gap-2 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white pl-6 pr-5 py-3 rounded-full font-semibold text-sm transition-all shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:scale-[1.02] shrink-0"
+                >
+                  View Full Dashboard
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </Link>
+              </div>
+
+              {/* Stats grid */}
+              <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4">
+                {[
+                  {
+                    icon: "🏥",
+                    value: EXECUTIVE_DASHBOARD.totalPatientsServed.toLocaleString(),
+                    label: "Patients Served",
+                    color: "from-primary-500/20 to-primary-500/5",
+                    textColor: "text-primary-400",
+                    borderColor: "border-primary-500/20",
+                  },
+                  {
+                    icon: "⛺",
+                    value: EXECUTIVE_DASHBOARD.totalCampsConducted.toString(),
+                    label: "Health Camps",
+                    color: "from-secondary-500/20 to-secondary-500/5",
+                    textColor: "text-secondary-400",
+                    borderColor: "border-secondary-500/20",
+                  },
+                  {
+                    icon: "🗺️",
+                    value: `${PROVINCE_SUMMARY.length}/7`,
+                    label: "Provinces Covered",
+                    color: "from-emerald-500/20 to-emerald-500/5",
+                    textColor: "text-emerald-400",
+                    borderColor: "border-emerald-500/20",
+                  },
+                  {
+                    icon: "💰",
+                    value: `$${Math.round(EXECUTIVE_DASHBOARD.totalSpendingSoFar / 1000)}K`,
+                    label: "Total Investment",
+                    color: "from-amber-500/20 to-amber-500/5",
+                    textColor: "text-amber-400",
+                    borderColor: "border-amber-500/20",
+                  },
+                ].map((stat) => (
+                  <div
+                    key={stat.label}
+                    className={`bg-gradient-to-b ${stat.color} border ${stat.borderColor} rounded-2xl p-4 md:p-5 text-center backdrop-blur-sm`}
+                  >
+                    <span className="text-2xl md:text-3xl">{stat.icon}</span>
+                    <p className={`text-2xl md:text-3xl font-extrabold ${stat.textColor} mt-2`}>{stat.value}</p>
+                    <p className="text-gray-400 text-[11px] md:text-xs uppercase tracking-wider font-medium mt-1">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Recent camps mini-list */}
+              <div className="relative mt-6 pt-6 border-t border-white/10">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-gray-300 text-sm font-semibold">Recent Camps</h3>
+                  <Link href="/sanjeevani/tracking" className="text-primary-400 text-xs hover:text-primary-300 transition-colors">
+                    See all {CAMP_MASTER_LOG.length} camps →
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {CAMP_MASTER_LOG.slice(-3).reverse().map((camp) => (
+                    <div key={camp.campId} className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/5 hover:border-white/10 transition-colors">
+                      <div className="shrink-0 w-9 h-9 rounded-lg bg-primary-500/15 flex items-center justify-center text-primary-400 text-xs font-bold">
+                        {camp.campId.replace("SC-", "#")}
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-white text-sm font-medium truncate">{camp.district}</p>
+                        <p className="text-gray-500 text-xs truncate">{camp.totalPatients.toLocaleString()} patients · {camp.effectiveDays} days</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
