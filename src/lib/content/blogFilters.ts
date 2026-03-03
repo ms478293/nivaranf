@@ -52,10 +52,27 @@ function toHaystack(blog: BlogCandidate) {
 
 export function isGlobalNewsCandidate(blog: BlogCandidate) {
   const haystack = toHaystack(blog);
+  // A blog that mentions Nepal terms is classified as Nepal, not Global
   if (includesAny(haystack, NEPAL_TERMS)) return false;
   return includesAny(haystack, GLOBAL_TERMS);
 }
 
+/**
+ * Strict Nepal check: must contain at least one Nepal-specific term.
+ */
+export function isNepalCandidate(blog: BlogCandidate) {
+  const haystack = toHaystack(blog);
+  return includesAny(haystack, NEPAL_TERMS);
+}
+
+/**
+ * Everything that is NOT Nepal (Global + general articles).
+ */
+export function isNonNepalCandidate(blog: BlogCandidate) {
+  return !isNepalCandidate(blog);
+}
+
+/** @deprecated Use isNepalCandidate for strict Nepal filtering */
 export function isNepalExclusiveCandidate(blog: BlogCandidate) {
   const haystack = toHaystack(blog);
   if (haystack.includes("global desk")) return false;
@@ -74,8 +91,19 @@ export function sortBlogsByDateDesc(items: blogListType[]) {
 
 export function filterNepalExclusiveNewest(items: blogListType[], limit: number) {
   const safeLimit = Math.max(1, Math.min(limit, 500));
-  return sortBlogsByDateDesc(items.filter(isNepalExclusiveCandidate)).slice(
+  return sortBlogsByDateDesc(items.filter(isNepalCandidate)).slice(
     0,
-    safeLimit
+    safeLimit,
+  );
+}
+
+/**
+ * Return non-Nepal blogs (Global + general), sorted newest-first.
+ */
+export function filterGlobalOnlyNewest(items: blogListType[], limit: number) {
+  const safeLimit = Math.max(1, Math.min(limit, 500));
+  return sortBlogsByDateDesc(items.filter(isNonNepalCandidate)).slice(
+    0,
+    safeLimit,
   );
 }

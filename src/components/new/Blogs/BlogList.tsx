@@ -3,6 +3,7 @@
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { blogTypes } from "@/content/blogTypes";
 import {
+  filterGlobalOnlyNewest,
   filterNepalExclusiveNewest,
   isGlobalNewsCandidate,
 } from "@/lib/content/blogFilters";
@@ -21,6 +22,7 @@ export const BlogList = () => {
   >("All");
   const allBlogs = useBlogFeed(500);
   const trendingNepalOnly = filterNepalExclusiveNewest(allBlogs, 4);
+  const latestGlobalOnly = filterGlobalOnlyNewest(allBlogs, 20);
 
   // const filteredBlogType = globalBlogs.filter(
   //   (blog) => blog.type === activeCategoryTag
@@ -112,7 +114,7 @@ export const BlogList = () => {
 
               <section className="mt-10">
                 <MainTitle prefix="Blogs" suffix="Latest" className="mb-6" />
-                <LatestBlogs blogs={allBlogs} />
+                <LatestBlogs blogs={latestGlobalOnly} />
               </section>
             </>
           ) : (
