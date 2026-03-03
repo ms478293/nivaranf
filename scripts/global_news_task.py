@@ -68,10 +68,12 @@ DEFAULT_FEED_TIMEOUT_SECONDS = 12
 DEFAULT_FEED_RETRIES = 1
 TARGET_IMAGE_LONG_EDGE = 7680
 IMAGE_QUALITY_SUFFIX = (
-    "Documentary realism, sharp focus, high local contrast, crisp texture detail, "
-    "natural color science, no blur, no haze, no fog, no watercolor, no CGI."
+    "Photojournalistic realism like a Reuters or AP news photograph. Sharp focus, "
+    "high local contrast, crisp texture detail, natural color science, real people and places. "
+    "Absolutely no abstract art, no illustrations, no digital art, no watercolor, no CGI, "
+    "no blur, no haze, no fog, no geometric shapes, no gradients."
 )
-SOURCE_IMAGE_MIN_LONG_EDGE = 1400
+SOURCE_IMAGE_MIN_LONG_EDGE = 600
 PARAPHRASE_SHINGLE_SIZE = 10
 PARAPHRASE_MAX_SHINGLE_OVERLAP = 0.04
 PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
@@ -1488,7 +1490,7 @@ Return JSON with exact keys:
   "shareMessage": "under 280 chars, include {{URL}} placeholder",
   "donateLine": "specific one-line support statement tied to this article",
   "authorBio": "Nivaran Foundation global desk bio line",
-  "imagePrompt": "photorealistic editorial image prompt for Gemini image model, no text/watermark/logo",
+  "imagePrompt": "detailed photojournalistic image prompt depicting the specific scene, people, or location from this article. Must look like a real Reuters/AP news photograph. Include specific visual details from the article (e.g. location, people affected, relevant infrastructure). No abstract art, no illustrations, no text overlays, no watermarks, no logos.",
   "bodyMarkdown": "full article markdown with paragraph style and optional subheadings"
 }}
 """.strip()
@@ -1537,8 +1539,9 @@ def build_offline_article_payload(candidate: Candidate, now: dt.datetime) -> Dic
         "translates them into practical public-interest reporting."
     )
     image_prompt = (
-        "Cinematic, photorealistic editorial scene representing global public health and education systems "
-        "under pressure, with real people, institutions, and infrastructure in natural light, no text, no logo."
+        f"Photojournalistic editorial photograph directly illustrating: {compact_headline}. "
+        f"Real people, real locations, natural lighting, documentary style. "
+        f"News photography aesthetic like Reuters or AP Photo. No text, no logo, no abstract art, no illustrations."
     )
 
     opening_context = (
@@ -2456,7 +2459,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "false",
         "no",
     }
-    image_provider = "gemini"
+    image_provider = os.getenv("GLOBAL_NEWS_IMAGE_PROVIDER", "source_first").strip().lower()
 
     article_prompt = generate_article_prompt(selected)
     source_article_text = fetch_source_article_text(selected.link)
