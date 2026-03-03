@@ -45,10 +45,10 @@ export default function DiversityAndInclusionPage() {
           <div className="sm:w-[25rem] sm:absolute right-2 ">
             <Image
               src="/dei/dei.png"
-              alt="Sanjeevani Image"
-              width={1200}
-              height={1200}
-              className="w-full h-full block object-center object-cover rotate-90 -mt-14 "
+              alt="Diversity and Inclusion at Nivaran Foundation"
+              width={1920}
+              height={960}
+              className="w-full h-full block object-center object-cover"
             />{" "}
             <div className="absolute hidden sm:block  bg-[linear-gradient(to_top_left,_transparent_50%,_#ffffff9b_70%,#ffffffef_90%)] inset-0 -left-4 -top-[50px]"></div>
           </div>

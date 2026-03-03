@@ -32,15 +32,15 @@ const AboutNivaran = ({
               <p className="text-primary-500 font-bold text-2xl mt-3">70%</p>
               <p className="text-gray-600 text-xs">of our funds</p>
             </div>
-            <div className="absolute right-0 bottom-0 w-[150px] h-full overflow-hidden relative">
+            <div className="absolute right-0 bottom-0 w-[40%] sm:w-[200px] h-full overflow-hidden">
               <Image
                 src="/about/about_img_10.png"
                 alt="Doctor offering healthcare advice to a patient"
                 fill
-                sizes="150px"
-                className="w-full h-full block object-cover object-left transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
+                sizes="(max-width: 640px) 40vw, 200px"
+                className="w-full h-full block object-cover object-top transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
               />
-              <div className="hidden lg:block absolute w-full h-[40px] bg-[linear-gradient(to_left,_transparent_50%_,white)] left-0 bottom-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent"></div>
             </div>
           </div>
 
@@ -58,15 +58,15 @@ const AboutNivaran = ({
               <p className="text-[#FCAC2B] font-bold text-2xl mt-3">30%</p>
               <p className="text-gray-600 text-xs">of our funds</p>
             </div>
-            <div className="absolute right-0 w-[20rem] -bottom-0 overflow-hidden relative">
+            <div className="absolute right-0 bottom-0 w-[40%] sm:w-[200px] h-full overflow-hidden">
               <Image
                 src="/about/about_img_7.png"
                 alt="Children receiving quality education for a better future"
                 fill
-                sizes="320px"
-                className="w-full h-full block object-center object-cover transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
+                sizes="(max-width: 640px) 40vw, 200px"
+                className="w-full h-full block object-cover object-top transition-[filter] duration-300 md:grayscale group-hover:grayscale-0"
               />
-              <div className="absolute w-full h-[35%] bg-[linear-gradient(to_left,_transparent_50%_,white)] left-0 bottom-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent"></div>
             </div>
           </div>
         </div>
