@@ -230,26 +230,17 @@ export default function page() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">On-Ground Impact</h3>
-              <p className="text-sm text-gray-600 mb-2 flex flex-col gap-3">
-                <span>
-                  <AnimatedStatCard
-                    value={304}
-                    suffix=" health camps"
-                    label="across Nepal"
-                    className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100"
-                    numberClassName="text-2xl sm:text-3xl"
-                  />
-                </span>
-                <span className="text-xs text-gray-500">
-                  <AnimatedStatCard
-                    value={61200}
-                    suffix="+ patients"
-                    label="targeted in Phase-I"
-                    className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100"
-                    numberClassName="text-xl sm:text-2xl"
-                  />
-                </span>
-              </p>
+              <div className="flex flex-col items-center gap-4 mt-2">
+                <div className="text-center">
+                  <p className="text-3xl font-bold text-primary-500">304</p>
+                  <p className="text-sm text-gray-600">health camps across Nepal</p>
+                </div>
+                <div className="w-12 h-px bg-gray-200" />
+                <div className="text-center">
+                  <p className="text-2xl font-bold text-orange-500">61,200+</p>
+                  <p className="text-xs text-gray-500">patients targeted in Phase-I</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

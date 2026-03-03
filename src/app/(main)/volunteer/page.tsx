@@ -114,8 +114,8 @@ export default async function Page() {
       >
         <div className="relative overflow-hidden">
           <VolunteerHeroGraphic />
-          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Volunteer" }]} className="mb-2" />
-          <section className="mb-4 md:mb-8 flex flex-col gap-4 md:w-1/2">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Volunteer" }]} className="relative z-10 mb-2" />
+          <section className="relative z-10 mb-4 md:mb-8 flex flex-col gap-4 md:w-1/2">
             <PageTitle prefix="Join Us in" suffix="Making a Difference" />
 
             <p className="text-sm text-gray-600">

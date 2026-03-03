@@ -5,6 +5,7 @@ import Link from "next/link";
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(true);
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     // Show button after 2 seconds
@@ -12,14 +13,11 @@ export function WhatsAppButton() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Auto-collapse tooltip on mobile after 5 seconds
+  // Auto-collapse tooltip after 5 seconds on all devices
   useEffect(() => {
     if (!visible) return;
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) {
-      const tooltipTimer = setTimeout(() => setShowTooltip(false), 5000);
-      return () => clearTimeout(tooltipTimer);
-    }
+    const tooltipTimer = setTimeout(() => setShowTooltip(false), 5000);
+    return () => clearTimeout(tooltipTimer);
   }, [visible]);
 
   const phoneNumber = "18577017471"; // Nivaran Foundation WhatsApp number
@@ -31,9 +29,11 @@ export function WhatsAppButton() {
       className={`fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 transition-[opacity,transform] duration-500 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"
       }`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
-      {/* Tooltip */}
-      {showTooltip && (
+      {/* Tooltip — auto-hides after 5s, reappears on hover */}
+      {(showTooltip || isHovering) && (
       <div className="bg-white text-gray-800 text-sm font-medium px-3 py-2 rounded-lg shadow-lg border border-gray-100 animate-bounce-slow whitespace-nowrap">
         💬 Chat with us on WhatsApp
       </div>
