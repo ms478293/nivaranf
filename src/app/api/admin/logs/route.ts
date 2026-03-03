@@ -27,10 +27,7 @@ export async function GET(request: NextRequest) {
   if (!authenticate(request)) {
     return NextResponse.json(
       { error: 'Unauthorized' },
-      { 
-        status: 401,
-        headers: { 'WWW-Authenticate': 'Basic realm="Admin Portal"' }
-      }
+      { status: 401 }
     );
   }
   
