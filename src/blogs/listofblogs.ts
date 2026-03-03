@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-digital-confidant-are-ai-counselors-the-future-of-student-mental-health",
+    title: "The Digital Confidant: Are AI Counselors the Future of Student Mental Health?",
+    summary:
+      "Schools globally are adopting AI-driven chat platforms to monitor student mental health outside classroom hours. While proponents argue these tools save lives, privacy advocates question the long-term implications of algorithmic surveillance.",
+    thumbnailImage: "/images/global-news/2026/2026-03-03-the-digital-confidant-are-ai-counselors-the-future-of-student-mental-health.png",
+    date: "2026-03-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sudan-1000-days-of-war-deepen-the-world-s-worst-36",
     title: "Global Health and Education Watch: Sudan: 1000 days of war deepen the world’s worst",
     summary:
