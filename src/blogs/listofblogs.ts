@@ -66,7 +66,7 @@ export const globalBlogs: blogListType[] = [
     title: "Compassion in the Metropolis: Singapore's Charities Bridging the Distance for Vulnerable Populations",
     summary:
       "Despite Singapore's economic prowess, significant vulnerabilities persist among its populations. This in-depth analysis, in the Nivaran/Founder tone, explores the vital role of five key charities—Willing Hearts, Food From the Heart, HealthServe, TWC2, and SPD—in bridging the socio-economic, cultural, and systemic 'distances' that create disparities in healthcare, education, and basic needs, offering a model for inclusive societal development.",
-    thumbnailImage: "/images/placeholder-image-for-nivaran.webp",
+    thumbnailImage: "/blogs/thumbnail/healthcareTransformation.jpg",
     date: "2026-02-25",
     author: "Nivaran/Founder",
     featured: true,
@@ -77,7 +77,7 @@ export const globalBlogs: blogListType[] = [
     title: "The Unseen Crisis: Ocular Disorders Among Internally Displaced Persons in Benue State",
     summary:
       "A new study reveals a staggering 62.5% prevalence of ocular disorders among internally displaced persons in Benue State, Nigeria, highlighting critical gaps in health access and the profound impact of displacement on vision and quality of life. This analysis, in the Nivaran/Founder tone, delves into the systemic failures and urgent humanitarian imperatives, underscoring how economic, educational, and geographical distances transform treatable conditions into debilitating impairments.",
-    thumbnailImage: "/images/placeholder-image-for-nivaran.webp",
+    thumbnailImage: "/blogs/thumbnail/doctorUsingLaptop.jpeg",
     date: "2026-02-24",
     author: "Nivaran/Founder",
     featured: true,

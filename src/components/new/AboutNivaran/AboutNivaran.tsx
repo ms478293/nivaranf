@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { AnimatedCounter } from "@/components/new/AnimatedCounter/AnimatedCounter";
 
 const AboutNivaran = ({
   children,
@@ -25,7 +24,7 @@ const AboutNivaran = ({
                 Healthcare
               </h2>
               <p className="text-gray-600 text-sm">
-                <AnimatedCounter end={304} duration={2000} suffix=" health camps" /> across Nepal delivering essential medical
+                304 health camps across Nepal delivering essential medical
                 services — eye care, dental care, maternal health, and disease
                 prevention to communities that need it most.
               </p>
