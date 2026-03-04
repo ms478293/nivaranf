@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-as-measles-spreads-in-south-carolina-rfk-jr-s-allies",
+    title: "Global Health and Education Watch: As measles spreads in South Carolina, RFK Jr’s allies",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-as-measles-spreads-in-south-carolina-rfk-jr-s-.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-we-were-just-praying-pakistani-students-recount-escape-from",
     title: "Global Health and Education Watch: ‘We were just praying’: Pakistani students recount escape from",
     summary:
