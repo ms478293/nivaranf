@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-validates-brazil-for-eliminating-mother-to-child-transmission-of-hiv",
+    title: "Global Health and Education Watch: WHO validates Brazil for eliminating mother-to-child transmission of HIV",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-who-validates-brazil-for-eliminating-mother-to.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nepal-s-public-health-future-dr-dhimal-s-global-insights",
     title: "Nepal's Public Health Future: Dr. Dhimal's Global Insights",
     summary:
