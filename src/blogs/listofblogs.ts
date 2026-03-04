@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-deadly-bombing-of-iran-primary-school-a-grave-violation",
+    title: "Global Health and Education Watch: Deadly bombing of Iran primary school ‘a grave violation",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-deadly-bombing-of-iran-primary-school-a-grave-.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-schools-in-england-sidelining-dressing-up-for-world-book-day",
     title: "Global Health and Education Watch: Schools in England sidelining dressing-up for World Book Day",
     summary:
