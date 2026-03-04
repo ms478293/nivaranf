@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-randomised-controlled-trial-of-a-lived-experience-and",
+    title: "Global Health and Education Watch: A randomised controlled trial of a lived experience and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-a-randomised-controlled-trial-of-a-lived-exper.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iran-crisis-schoolgirls-killed-thousands-displaced-and-aid-compromised",
     title: "Global Health and Education Watch: Iran crisis: Schoolgirls killed, thousands displaced and aid compromised",
     summary:
