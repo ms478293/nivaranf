@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-03-04T17:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
     {
       "title": "Meghnath Dhimal_02.25.26 - Yale School of Public Health",
@@ -12,7 +12,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=36, credibility=35, freshness=18, health_hits=2, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
@@ -24,7 +24,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Context - March 8, International Women’s Day: Women’s Access to Eye Health in Nepal - The Rising Nepal",
@@ -36,7 +36,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Educating Nepalese women to provide improved care for their childbearing daughters-in-law - World Health Organization (WHO)",
@@ -48,7 +48,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Bir Hospital forms rapid response team to handle possible polling day emergencies - kathmandupost.com",
@@ -60,7 +60,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "US says it wouldn’t deliberately target a school after Iran said over 160 killed in strike - kathmandupost.com",
@@ -72,7 +72,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Engaging fathers for healthier families: Equity means sharing responsibility of raising children - The Himalayan Times",
@@ -84,7 +84,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     },
     {
       "title": "Bir Hospital forms rapid taskforce - The Himalayan Times",
@@ -96,7 +96,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-04T17:41:20.282630Z"
+      "cachedAtUtc": "2026-03-04T19:08:13.076007Z"
     }
   ],
   "publishedHashes": [],
@@ -108,6 +108,14 @@
       "publishedAtUtc": "2026-03-04T17:41:20.282630Z",
       "slug": "nepal-s-public-health-future-dr-dhimal-s-global-insights",
       "blogUrl": "https://www.nivaranfoundation.org/news/nepal-s-public-health-future-dr-dhimal-s-global-insights"
+    },
+    {
+      "contentHash": "953af947b8850755cedbf51daaf8584655b17362",
+      "sourceTitle": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbEwtOVJOd3d4YXFNX1V3Y2R6b0I0OGE5NDBSTlhzSXVlNm85LWgzWk8wbDlMekxHZzF1YjlYUjdIa2xTMDFPOElFMk5jZERVZGNHcHNvMHotVVdFYl95Z2dRcG5EZmdDMHFBUVY3QnZ3YTFIbWRvWE9QUUgwb2RPZUtSMFAtUjlGTFlteHlxeThtZE5WR3BoUk1VRW5GZjZuN1A4YWh3?oc=5",
+      "publishedAtUtc": "2026-03-04T19:08:13.076007Z",
+      "slug": "nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination",
+      "blogUrl": "https://www.nivaranfoundation.org/news/nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination"
     }
   ],
   "runs": [
@@ -201,6 +209,91 @@
       },
       "liveVerified": true,
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-03-04T19:08:13.076007Z",
+      "windowStartUtc": "2026-03-04T17:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 22,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": false,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": false,
+      "thresholdUsed": 72,
+      "candidatesFetched": 8,
+      "candidateCacheCount": 8,
+      "candidatesAfterSourceDedupe": 7,
+      "candidatesAfterDedupe": 7,
+      "duplicateSkips": {
+        "historyHash": 1,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbEwtOVJOd3d4YXFNX1V3Y2R6b0I0OGE5NDBSTlhzSXVlNm85LWgzWk8wbDlMekxHZzF1YjlYUjdIa2xTMDFPOElFMk5jZERVZGNHcHNvMHotVVdFYl95Z2dRcG5EZmdDMHFBUVY3QnZ3YTFIbWRvWE9QUUgwb2RPZUtSMFAtUjlGTFlteHlxeThtZE5WR3BoUk1VRW5GZjZuN1A4YWh3?oc=5",
+          "score": 77,
+          "reason": "relevance=24, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1"
+        },
+        {
+          "title": "Context - March 8, International Women’s Day: Women’s Access to Eye Health in Nepal - The Rising Nepal",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNZVA4aUp6cGdFejN4OXliRkVINUhVRmdmREJrdERBQUtFR2l3Y3JQUWZSN3lEMG1nOEV0YnB4OU5uZFN0NjdGMHVPWWp0U0pBeEJpMG53?oc=5",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbEwtOVJOd3d4YXFNX1V3Y2R6b0I0OGE5NDBSTlhzSXVlNm85LWgzWk8wbDlMekxHZzF1YjlYUjdIa2xTMDFPOElFMk5jZERVZGNHcHNvMHotVVdFYl95Z2dRcG5EZmdDMHFBUVY3QnZ3YTFIbWRvWE9QUUgwb2RPZUtSMFAtUjlGTFlteHlxeThtZE5WR3BoUk1VRW5GZjZuN1A4YWh3?oc=5",
+        "score": 77,
+        "reason": "relevance=24, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1"
+      },
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Nepal Intensifies Fight Against Lymphatic Filariasis, Aims for 2030 Elimination",
+      "generatedWordCount": 1350,
+      "mainImage": "/images/nepal-news/2026/2026-03-04-nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination.jpg",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5100
+      },
+      "generatedImageSharpness": 1789.6280878386096,
+      "generatedImageCandidates": 4,
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2.0,
+        "generatedWords": 1391.0
+      },
+      "imageProviderRequested": "gemini",
+      "imageProviderUsed": "gemini",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination",
+        "mdxPath": "src/blogs/global/nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination",
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/nepal-news/2026/2026-03-04-nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false
+      },
+      "liveVerified": false,
+      "publishedInWindowAfter": 2
     }
   ]
 }
