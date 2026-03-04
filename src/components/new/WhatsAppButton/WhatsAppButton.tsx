@@ -6,11 +6,16 @@ export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Detect mobile/touch device
+    const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches || "ontouchstart" in window);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
     // Show button after 2 seconds
     const timer = setTimeout(() => setVisible(true), 2000);
-    return () => clearTimeout(timer);
+    return () => { clearTimeout(timer); window.removeEventListener("resize", checkMobile); };
   }, []);
 
   // Auto-collapse tooltip after 5 seconds on all devices
@@ -29,12 +34,12 @@ export function WhatsAppButton() {
       className={`fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 transition-[opacity,transform] duration-500 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8 pointer-events-none"
       }`}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
+      onMouseEnter={() => { if (!isMobile) setIsHovering(true); }}
+      onMouseLeave={() => { if (!isMobile) setIsHovering(false); }}
     >
-      {/* Tooltip — auto-hides after 5s, reappears on hover */}
-      {(showTooltip || isHovering) && (
-      <div className="bg-white text-gray-800 text-sm font-medium px-3 py-2 rounded-lg shadow-lg border border-gray-100 animate-bounce-slow whitespace-nowrap">
+      {/* Tooltip — auto-hides after 5s, reappears on hover (desktop only) */}
+      {(showTooltip || (!isMobile && isHovering)) && (
+      <div className="bg-white text-gray-800 text-sm font-medium px-3 py-2 rounded-lg shadow-lg border border-gray-100 animate-bounce-slow whitespace-nowrap hidden md:block">
         💬 Chat with us on WhatsApp
       </div>
       )}

@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Our Projects | Nivaran Foundation - Transforming Lives Through Innovation",
+    "Our Healthcare & Education Projects in Nepal | Nivaran Foundation",
   description:
-    "Explore Nivaran Foundation's flagship projects: Project Sanjeevani transforms healthcare across Nepal, and Project Vidya revolutionizes education through technology. See how we're making a difference.",
+    "Explore Nivaran Foundation's flagship projects: Sanjeevani transforms healthcare and Vidya revolutionizes education across rural Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/projects",
   },
@@ -112,8 +112,8 @@ export default function ProjectsPage() {
 
           <div className="text-center flex flex-col items-center gap-4 max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-              <span className="text-gray-800">Our </span>
-              <span className="text-primary-500">Projects</span>
+              <span className="text-gray-800">Our Healthcare &amp; Education </span>
+              <span className="text-primary-500">Projects in Nepal</span>
             </h1>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl">
               We believe lasting change comes from the ground up. Our projects

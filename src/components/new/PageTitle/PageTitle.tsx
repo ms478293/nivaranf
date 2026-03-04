@@ -17,7 +17,7 @@ export const PageTitle = ({
       )}
     >
       <span className="text-gray-950 leading-5 md:leading-[3rem] lg:leading-[4.6rem]">
-        {prefix}
+        {prefix}{" "}
       </span>
 
       <span className="text-primary-500 font-[600] leading-[2.5rem]">

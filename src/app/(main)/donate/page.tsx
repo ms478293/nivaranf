@@ -12,7 +12,7 @@ import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 
 export const metadata: Metadata = {
   title:
-    "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
+    "Donate to Nivaran | Save Lives in Nepal | 501(c)(3)",
   description:
     "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 96% of funds go directly to programs. EIN: 41-2656587.",
   alternates: {
@@ -135,6 +135,58 @@ export default function DonationPage() {
 
       {/* Donation Progress / Fundraising Goal */}
       <DonationProgress />
+
+      {/* What Your Gift Does — Impact Breakdown */}
+      <section className="w-full px-4 py-12 bg-white">
+        <div className="max-w-[1320px] mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 text-center">
+            What Your Gift Does
+          </h2>
+          <p className="text-gray-500 text-center mb-8 max-w-xl mx-auto text-sm">
+            Every dollar has a direct, measurable impact on lives in rural Nepal.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-emerald-600">$10</p>
+              <p className="text-sm text-gray-700 mt-2">Provides medicine for <strong>1 child</strong> at a health camp</p>
+            </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-blue-600">$25</p>
+              <p className="text-sm text-gray-700 mt-2">Funds a <strong>maternal health screening</strong> for one mother</p>
+            </div>
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-purple-600">$50</p>
+              <p className="text-sm text-gray-700 mt-2">Supplies a full <strong>health camp visit</strong> for a family</p>
+            </div>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-amber-600">$100</p>
+              <p className="text-sm text-gray-700 mt-2">Covers <strong>complete consultation &amp; treatment</strong> for a family</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Employer Matching */}
+      <section className="w-full px-4 py-8 bg-gradient-to-r from-primary-50 to-blue-50">
+        <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
+          <div className="flex-1">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
+              🏢 Double Your Impact — Employer Matching
+            </h2>
+            <p className="text-sm text-gray-600">
+              Many employers match charitable donations, effectively <strong>doubling your gift</strong> at no extra cost to you. Check if your company participates in a matching gift program.
+            </p>
+          </div>
+          <a
+            href="https://doublethedonation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors whitespace-nowrap"
+          >
+            Check Employer Match
+          </a>
+        </div>
+      </section>
 
       {/* Impact Calculator */}
       <ImpactCalculator />

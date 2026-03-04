@@ -75,6 +75,15 @@ const websiteSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo_img.jpg`,
   description: DEFAULT_DESCRIPTION,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE_URL}/blogs?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+  inLanguage: ["en", "ne"],
 };
 
 const organizationSchema = {
@@ -86,12 +95,12 @@ const organizationSchema = {
   logo: `${SITE_URL}/NivaranLogo.svg`,
   image: `${SITE_URL}/logo.png`,
   description: DEFAULT_DESCRIPTION,
-  foundingDate: "2019",
+  foundingDate: "2020",
   founder: {
     "@type": "Person",
     name: "Mukesh Thakur",
     jobTitle: "Founder & Director",
-    sameAs: "https://www.linkedin.com/company/nivaran-foundation",
+    sameAs: "https://www.linkedin.com/in/mukeshthakur",
   },
   contactPoint: {
     "@type": "ContactPoint",
@@ -129,6 +138,23 @@ const organizationSchema = {
   nonprofitStatus: "501c3",
 };
 
+const donateActionSchema = {
+  "@context": "https://schema.org",
+  "@type": "DonateAction",
+  name: "Donate to Nivaran Foundation",
+  description: "Your tax-deductible donation funds healthcare and education in Nepal. 96% goes directly to programs.",
+  recipient: {
+    "@type": "Organization",
+    name: "Nivaran Foundation",
+    url: SITE_URL,
+  },
+  target: {
+    "@type": "EntryPoint",
+    urlTemplate: `${SITE_URL}/donate`,
+    actionPlatform: "http://schema.org/DesktopWebPlatform",
+  },
+};
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -148,6 +174,10 @@ export default async function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#000000" />
+        {/* hreflang tags for bilingual support (English + Nepali) */}
+        <link rel="alternate" hrefLang="en" href={SITE_URL} />
+        <link rel="alternate" hrefLang="ne" href={SITE_URL} />
+        <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
         {/* Preconnect to third-party origins to reduce render-blocking latency */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.clarity.ms" />
@@ -165,6 +195,13 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          id="DonateAction-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(donateActionSchema),
           }}
         />
 
@@ -192,6 +229,37 @@ export default async function RootLayout({
             })(window, document, "clarity", "script", "vp9x38avgq");
           `}
         </Script>
+
+        {/* Google Tag Manager — TODO: Replace GTM-XXXXXXX with your GTM container ID */}
+        {/* 
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-XXXXXXX');
+          `}
+        </Script>
+        */}
+
+        {/* Facebook Pixel — TODO: Replace PIXEL_ID with your actual Facebook Pixel ID */}
+        {/*
+        <Script id="facebook-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', 'PIXEL_ID');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        */}
       </head>
       <body
         className={cn("antialiased", poppins.className)}

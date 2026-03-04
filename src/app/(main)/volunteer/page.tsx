@@ -11,9 +11,9 @@ import { supabase, hasSupabasePublicEnv } from "@/lib/supabase";
 
 export const metadata: Metadata = {
   title:
-    "Nivaran Foundation | Volunteer with Nivaran Foundation - Create Change",
+    "Volunteer with Nivaran Foundation | Create Change in Nepal",
   description:
-    "Make a difference by volunteering with Nivaran Foundation. Discover how your contribution can create lasting change in communities worldwide.",
+    "Volunteer with Nivaran Foundation in Nepal. Join health camps, education drives, and community projects. Earn certificates, references, and real-world experience while serving rural communities.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/volunteer",
   },
@@ -104,8 +104,41 @@ async function getOpenPrograms(): Promise<ProgramType[]> {
 export default async function Page() {
   const programs = await getOpenPrograms();
 
+  // Generate Event schema for volunteer programs
+  const eventSchemas = programs.map((program) => ({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: program.name,
+    startDate: program.startDate,
+    endDate: program.endDate,
+    location: {
+      "@type": "Place",
+      name: program.location,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: program.location,
+        addressCountry: "NP",
+      },
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Nivaran Foundation",
+      url: "https://www.nivaranfoundation.org",
+    },
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    eventStatus: "https://schema.org/EventScheduled",
+    description: `Volunteer opportunity with Nivaran Foundation: ${program.name} in ${program.location}, Nepal.`,
+    url: "https://www.nivaranfoundation.org/volunteer",
+  }));
+
   return (
     <main className="font-Poppins w-full px-4 pb-10">
+      {eventSchemas.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchemas) }}
+        />
+      )}
       <div
         className="relative max-w-[1320px] mx-auto bg-[url('/nivaran_word.png')] bg-no-repeat flex flex-col md:gap-12 overflow-hidden"
         style={{
@@ -164,6 +197,49 @@ export default async function Page() {
             ]}
           />
         </div>
+
+        {/* Volunteer FAQ Section */}
+        <section className="mt-12 max-w-[1320px] mx-auto">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Volunteer FAQs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">Do I need medical experience to volunteer?</h3>
+              <p className="text-sm text-gray-600">
+                No. While healthcare professionals are especially welcome, we have roles for everyone — from logistics and community outreach to data entry and photography. Every skill helps.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">How long are volunteer commitments?</h3>
+              <p className="text-sm text-gray-600">
+                Programs range from 1-week health camp intensives to 3-month placements. Remote volunteers can contribute as little as 5 hours per week on their own schedule.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">What do volunteers receive?</h3>
+              <p className="text-sm text-gray-600">
+                All volunteers receive a certificate of participation, professional references, and skill-building opportunities. Field volunteers also receive accommodation, meals, and local transportation support during their placement.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">Can I volunteer remotely?</h3>
+              <p className="text-sm text-gray-600">
+                Yes! We welcome remote volunteers for content writing, social media management, graphic design, web development, translation (English/Nepali), and donor communication support.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">Where are volunteer programs located?</h3>
+              <p className="text-sm text-gray-600">
+                Our field programs primarily operate in rural districts of Nepal including Kapilvastu, Rupandehi, Nawalparasi, and other underserved areas. New locations are added with each health camp cycle.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+              <h3 className="font-semibold text-gray-800 mb-2">How do I apply to volunteer?</h3>
+              <p className="text-sm text-gray-600">
+                Sign up through an active program above, or <a href="/contact-us" className="text-primary-500 underline">contact us</a> to express interest. We&apos;ll match you with the right opportunity based on your skills and availability.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );

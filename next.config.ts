@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
       "lucide-react",
       "@radix-ui/react-icons",
       "class-variance-authority",
+      "date-fns",
+      "@heroicons/react",
+      "framer-motion",
+      "recharts",
+      "react-icons",
     ],
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
@@ -126,6 +131,21 @@ const nextConfig: NextConfig = {
       {
         source: '/contact',
         destination: '/contact-us',
+        permanent: true,
+      },
+      {
+        source: '/news-stories',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/news-stories/:slug*',
+        destination: '/blogs/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/faq',
+        destination: '/frequently-asked-questions',
         permanent: true,
       },
     ];

@@ -76,7 +76,7 @@ export default function page() {
                 height={86}
               />
             </div>
-            <h1 className="font-[300] ">Global Care, Local Impact</h1>
+            <h1 className="font-[300] text-center text-xl md:text-3xl">About Nivaran Foundation — Healthcare NGO in Nepal</h1>
           </div>
 
           <p className="text-gray-800 font-normal text-center">

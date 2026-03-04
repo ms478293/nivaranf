@@ -30,7 +30,7 @@ export const VOLUNTEER_INFO: InfoCardType[] = [
 
 const VolunteerInfoCardSection = () => {
   return (
-    <section className="flex  gap-4 flex-wrap my-16">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-4 my-16">
       <RenderList
         data={VOLUNTEER_INFO}
         render={(list) => <InfoCard list={list} key={list.id} />}

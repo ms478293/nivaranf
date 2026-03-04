@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     url: "https://www.nivaranfoundation.org/blogs",
     type: "website",
     siteName: "Nivaran Foundation",
+    images: [
+      {
+        url: "https://www.nivaranfoundation.org/hero_img/hero_img_1.avif",
+        width: 1200,
+        height: 630,
+        alt: "Nivaran Foundation Nepal Health Blog",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -33,6 +41,7 @@ export const metadata: Metadata = {
       "Explore Nivaran Foundation's Nepal health blog featuring field stories, public health news, and analysis from frontline rural healthcare programs.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
+    images: ["https://www.nivaranfoundation.org/hero_img/hero_img_1.avif"],
   },
 };
 
@@ -42,8 +51,8 @@ export default function BlogsPage() {
       <div className="max-w-[1320px] mx-auto flex flex-col gap-4  ">
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
         <PageTitle
-          prefix="Your Window into"
-          suffix="Our Work Around the World"
+          prefix="Nepal Health Blog:"
+          suffix="Stories & Insights from Rural Healthcare"
         />
         <p className="text-sm text-gray-600">
           Stay updated with the latest stories that drive impact and inspire
