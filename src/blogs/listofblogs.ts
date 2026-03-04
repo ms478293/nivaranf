@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "parkinson-s-disease-a-global-surge-explained-by-epidemiological-principles",
+    title: "Parkinson's Disease: A Global Surge Explained by Epidemiological Principles",
+    summary:
+      "Parkinson's disease is experiencing a significant global rise, driven by complex epidemiological factors. A 'bathtub analogy' helps elucidate how incidence, mortality, and diagnostic advancements contribute to this increasing worldwide prevalence.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-parkinson-s-disease-a-global-surge-explained-by-epidemiological-principles.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination",
     title: "Nepal Intensifies Fight Against Lymphatic Filariasis, Aims for 2030 Elimination",
     summary:
