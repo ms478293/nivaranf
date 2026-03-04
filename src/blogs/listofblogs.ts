@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-we-were-just-praying-pakistani-students-recount-escape-from",
+    title: "Global Health and Education Watch: ‘We were just praying’: Pakistani students recount escape from",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-we-were-just-praying-pakistani-students-recoun.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-advancing-a-new-generation-of-heat-health-warning-system-in",
     title: "Global Health and Education Watch: Advancing a new generation of heat-health warning system in",
     summary:
