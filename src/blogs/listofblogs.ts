@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sisters-drown-in-welsh-national-park-after-paddling-fully",
+    title: "Global Health and Education Watch: Sisters drown in Welsh national park after paddling fully",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-sisters-drown-in-welsh-national-park-after-pad.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-crisis-tackling-the-neet-challenge",
     title: "Global Youth Crisis: Tackling the NEET Challenge",
     summary:
