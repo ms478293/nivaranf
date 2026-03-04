@@ -1380,7 +1380,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "false",
         "no",
     }
-    image_provider = os.getenv("NEPAL_NEWS_IMAGE_PROVIDER", "source_first").strip().lower()
+    image_provider = os.getenv("NEPAL_NEWS_IMAGE_PROVIDER", "gemini").strip().lower()
 
     article_prompt = generate_article_prompt(selected)
     source_article_text = fetch_source_article_text(selected.link)
