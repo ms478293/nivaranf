@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-s-public-health-future-dr-dhimal-s-global-insights",
+    title: "Nepal's Public Health Future: Dr. Dhimal's Global Insights",
+    summary:
+      "Dr. Meghnath Dhimal, a leading Nepali public health expert, is engaging with global institutions like Yale to address Nepal's pressing health concerns. His work focuses on climate change impacts, disease prevention, and strengthening healthcare systems across the nation.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-04-nepal-s-public-health-future-dr-dhimal-s-global-insights.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-deadly-bombing-of-iran-primary-school-a-grave-violation",
     title: "Global Health and Education Watch: Deadly bombing of Iran primary school ‘a grave violation",
     summary:
