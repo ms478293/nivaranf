@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-on-lead-britain-is-the-laggard-of-the-developed",
+    title: "Global Health and Education Watch: On lead, Britain is the laggard of the developed",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-health-and-education-watch-on-lead-britain-is-the-laggard-of-the-develope.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-to-end-study-visas-for-myanmar-afghanistan-cameroon",
     title: "Global Health and Education Watch: UK to end study visas for Myanmar, Afghanistan, Cameroon",
     summary:
