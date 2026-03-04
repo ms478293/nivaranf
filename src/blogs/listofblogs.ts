@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination",
+    title: "Nepal Intensifies Fight Against Lymphatic Filariasis, Aims for 2030 Elimination",
+    summary:
+      "Nepal is accelerating its national program to eliminate lymphatic filariasis by the World Health Organization's 2030 target. This ambitious public health initiative focuses on mass drug administration and improved surveillance in affected districts.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-04-nepal-intensifies-fight-against-lymphatic-filariasis-aims-for-2030-elimination.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "ai-s-global-classroom-new-york-s-pivotal-moment-in-educational-transformation",
     title: "AI's Global Classroom: New York's Pivotal Moment in Educational Transformation",
     summary:
