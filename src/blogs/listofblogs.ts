@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sierra-leone-s-new-maternal-hospital-a-global-blueprint-for-hope",
+    title: "Sierra Leone's New Maternal Hospital: A Global Blueprint for Hope",
+    summary:
+      "Sierra Leone grapples with an alarming maternal mortality crisis, prompting a groundbreaking effort to establish a new hospital. This facility, championed by a committed nurse and midwife, aims to set a global standard for comprehensive maternal care.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-sierra-leone-s-new-maternal-hospital-a-global-blueprint-for-hope.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sisters-drown-in-welsh-national-park-after-paddling-fully",
     title: "Global Health and Education Watch: Sisters drown in Welsh national park after paddling fully",
     summary:
