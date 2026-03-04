@@ -26,6 +26,7 @@ import re
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -250,6 +251,17 @@ def req_json(
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 data = response.read().decode("utf-8", errors="ignore")
                 return json.loads(data)
+        except urllib.error.HTTPError as exc:
+            error_body = ""
+            try:
+                error_body = exc.read().decode("utf-8", errors="ignore")[:500]
+            except Exception:
+                pass
+            print(f"HTTP {exc.code} on attempt {attempt + 1}: {error_body}", file=sys.stderr)
+            last_error = exc
+            if attempt >= retries:
+                break
+            time.sleep(1.5 * (attempt + 1))
         except Exception as exc:
             last_error = exc
             if attempt >= retries:
