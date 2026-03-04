@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-s-global-classroom-new-york-s-pivotal-moment-in-educational-transformation",
+    title: "AI's Global Classroom: New York's Pivotal Moment in Educational Transformation",
+    summary:
+      "New York City schools, notably absent from the nationwide trend of AI integration, are poised for a potential transformation. This shift could redefine learning experiences and administrative efficiency, aligning the city with global educational advancements.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-ai-s-global-classroom-new-york-s-pivotal-moment-in-educational-transformation.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-validates-brazil-for-eliminating-mother-to-child-transmission-of-hiv",
     title: "Global Health and Education Watch: WHO validates Brazil for eliminating mother-to-child transmission of HIV",
     summary:
