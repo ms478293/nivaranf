@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-crisis-tackling-the-neet-challenge",
+    title: "Global Youth Crisis: Tackling the NEET Challenge",
+    summary:
+      "The global phenomenon of young people not in education, employment, or training (NEET) represents a critical challenge for sustainable development. Addressing this issue requires comprehensive, collaborative strategies to foster youth integration and economic stability worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-04-global-youth-crisis-tackling-the-neet-challenge.jpg",
+    date: "2026-03-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-maternity-services-need-investment-in-people-and-training-not",
     title: "Global Health and Education Watch: Maternity services need investment in people and training, not",
     summary:
