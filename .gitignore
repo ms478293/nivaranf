@@ -44,6 +44,7 @@ next-env.d.ts
 
 # automation runtime artifacts
 /.global_news/tmp/
+/.nepal_news/tmp/
 /logs/automation/
 .env.automation
 scripts/.push-queue.json

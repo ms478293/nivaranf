@@ -51,15 +51,17 @@ def _safe_int(value, default: int) -> int:
 
 
 USER_AGENT = "Mozilla/5.0 (compatible; NivaranNepalNewsBot/1.0)"
-GEMINI_TEXT_MODEL_DEFAULT = "gemini-pro-latest"
+GEMINI_TEXT_MODEL_DEFAULT = "gemini-2.5-flash"
 GEMINI_IMAGE_MODEL_DEFAULT = "gemini-2.0-flash-exp-image-generation"
 DEFAULT_TIMEOUT_SECONDS = 60
 TARGET_IMAGE_LONG_EDGE = 7680
 IMAGE_QUALITY_SUFFIX = (
-    "Documentary realism, sharp focus, high local contrast, crisp texture detail, "
-    "natural color science, no blur, no haze, no fog, no watercolor, no CGI."
+    "Photojournalistic realism like a Reuters or AP news photograph. Sharp focus, "
+    "high local contrast, crisp texture detail, natural color science, real people and places. "
+    "Absolutely no abstract art, no illustrations, no digital art, no watercolor, no CGI, "
+    "no blur, no haze, no fog, no geometric shapes, no gradients."
 )
-SOURCE_IMAGE_MIN_LONG_EDGE = 1400
+SOURCE_IMAGE_MIN_LONG_EDGE = 600
 PARAPHRASE_SHINGLE_SIZE = 10
 PARAPHRASE_MAX_SHINGLE_OVERLAP = 0.04
 PARAPHRASE_MAX_EXACT_RUN_WORDS = 14
@@ -1035,7 +1037,7 @@ Return JSON with exact keys:
   "shareMessage": "under 280 chars, include {{URL}} placeholder",
   "donateLine": "specific one-line support statement tied to this article",
   "authorBio": "Nivaran Foundation Nepal desk bio line",
-  "imagePrompt": "photorealistic editorial image prompt for Gemini image model, no text/watermark/logo",
+  "imagePrompt": "detailed photojournalistic image prompt depicting the specific scene, people, or location from this Nepal article. Must look like a real Reuters/AP news photograph taken in Nepal. Include specific visual details from the article (e.g. Nepali location, people affected, relevant infrastructure, hospitals, schools). No abstract art, no illustrations, no text overlays, no watermarks, no logos.",
   "bodyMarkdown": "full article markdown with paragraph style and optional subheadings"
 }}
 """.strip()
@@ -1366,7 +1368,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "false",
         "no",
     }
-    image_provider = "gemini"
+    image_provider = os.getenv("NEPAL_NEWS_IMAGE_PROVIDER", "source_first").strip().lower()
 
     article_prompt = generate_article_prompt(selected)
     source_article_text = fetch_source_article_text(selected.link)

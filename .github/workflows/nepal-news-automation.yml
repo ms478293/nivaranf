@@ -3,7 +3,7 @@ name: Nepal News Automation
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 2 * * *"
+    - cron: "20 2,10,18 * * *"
 
 permissions:
   contents: write
@@ -73,3 +73,15 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           NIVARAN_WEBSITE_URL: ${{ vars.NIVARAN_WEBSITE_URL }}
         run: bash scripts/run_nepal_news.sh
+
+      - name: Persist automation state (dedup history)
+        if: always()
+        run: |
+          if [ -f .nepal_news/state.json ]; then
+            git add -f .nepal_news/state.json
+            if ! git diff --cached --quiet .nepal_news/state.json; then
+              git commit -m "chore: update nepal automation state [skip ci]" .nepal_news/state.json || true
+              git pull --rebase origin main || true
+              git push origin main || true
+            fi
+          fi
