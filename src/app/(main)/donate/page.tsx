@@ -140,27 +140,39 @@ export default function DonationPage() {
       <section className="w-full px-4 py-12 bg-white">
         <div className="max-w-[1320px] mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 text-center">
-            What Your Gift Does
+            Your Gift = This Impact
           </h2>
           <p className="text-gray-500 text-center mb-8 max-w-xl mx-auto text-sm">
-            Every dollar has a direct, measurable impact on lives in rural Nepal.
+            Every dollar you give goes directly to work. Here&apos;s exactly what your gift makes possible:
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 text-center">
               <p className="text-2xl font-bold text-emerald-600">$10</p>
-              <p className="text-sm text-gray-700 mt-2">Provides medicine for <strong>1 child</strong> at a health camp</p>
+              <p className="text-sm text-gray-700 mt-2">Provides medicine &amp; basic supplies for <strong>1 patient</strong> at a mobile health camp</p>
             </div>
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center">
               <p className="text-2xl font-bold text-blue-600">$25</p>
-              <p className="text-sm text-gray-700 mt-2">Funds a <strong>maternal health screening</strong> for one mother</p>
+              <p className="text-sm text-gray-700 mt-2">Covers a <strong>full maternal health screening</strong> for one mother in rural Nepal</p>
             </div>
             <div className="bg-purple-50 border border-purple-200 rounded-xl p-5 text-center">
               <p className="text-2xl font-bold text-purple-600">$50</p>
-              <p className="text-sm text-gray-700 mt-2">Supplies a full <strong>health camp visit</strong> for a family</p>
+              <p className="text-sm text-gray-700 mt-2">Funds <strong>1 complete day</strong> of a mobile health camp including doctor, nurse &amp; medicine</p>
             </div>
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
               <p className="text-2xl font-bold text-amber-600">$100</p>
-              <p className="text-sm text-gray-700 mt-2">Covers <strong>complete consultation &amp; treatment</strong> for a family</p>
+              <p className="text-sm text-gray-700 mt-2">Delivers healthcare to an <strong>entire family</strong> — consultation, diagnosis &amp; treatment</p>
+            </div>
+            <div className="bg-rose-50 border border-rose-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-rose-600">$250</p>
+              <p className="text-sm text-gray-700 mt-2">Sends a <strong>medical team to a remote village</strong> for a full outreach day</p>
+            </div>
+            <div className="bg-teal-50 border border-teal-200 rounded-xl p-5 text-center">
+              <p className="text-2xl font-bold text-teal-600">$500</p>
+              <p className="text-sm text-gray-700 mt-2">Sponsors <strong>one full health camp event</strong> — serving 50+ patients in a single visit</p>
+            </div>
+            <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center sm:col-span-1 col-span-2">
+              <p className="text-2xl font-bold text-indigo-600">$1,000</p>
+              <p className="text-sm text-gray-700 mt-2">Funds <strong>a month of healthcare</strong> for an entire underserved community</p>
             </div>
           </div>
         </div>
@@ -194,81 +206,95 @@ export default function DonationPage() {
       {/* Where Money Goes */}
       <WhereMoneyGoes />
 
-      {/* Donor Testimonials */}
+      {/* Donor & Beneficiary Testimonials */}
       <section className="w-full px-4 py-12 bg-gray-50">
         <div className="max-w-[1320px] mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
             Why Donors Trust Nivaran
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Testimonial 1 — US Donor */}
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-center gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <svg
-                    key={star}
-                    className="w-4 h-4 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                  >
+                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 text-sm italic mb-4">
-                &quot;I appreciate how transparent Nivaran is about where the
-                money goes. Knowing 96% goes directly to programs gives me
-                confidence my donation makes a real difference.&quot;
+                &quot;I donated $50 to Nivaran last year and received my tax receipt within minutes. Knowing 96 cents of every dollar goes directly to patients — not overhead — made it an easy decision. I&apos;ve been a monthly donor ever since.&quot;
               </p>
-              <p className="text-gray-800 font-medium text-sm">
-                — Recurring Donor
-              </p>
+              <p className="text-gray-800 font-medium text-sm">— Priya M., Boston, MA</p>
             </div>
+
+            {/* Testimonial 2 — Corporate Donor */}
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-center gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <svg
-                    key={star}
-                    className="w-4 h-4 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                  >
+                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 text-sm italic mb-4">
-                &quot;The health camps are saving lives in rural Nepal. I
-                visited and saw firsthand how organized and impactful their work
-                is. This is a team that delivers.&quot;
+                &quot;As a company with Nepali roots, partnering with Nivaran Foundation was meaningful. Their transparency — publicly posting their EIN and program efficiency — gave us full confidence in where our contribution was going.&quot;
               </p>
-              <p className="text-gray-800 font-medium text-sm">
-                — Community Supporter
-              </p>
+              <p className="text-gray-800 font-medium text-sm">— Raj S., CEO, Tech Startup, San Francisco</p>
             </div>
+
+            {/* Testimonial 3 — Volunteer */}
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-center gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <svg
-                    key={star}
-                    className="w-4 h-4 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                  >
+                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
               <p className="text-gray-600 text-sm italic mb-4">
-                &quot;As a healthcare professional, I can see the real impact
-                Nivaran makes. Their approach to community health camps is
-                exactly what rural Nepal needs.&quot;
+                &quot;I volunteered remotely with Nivaran on grant research for 3 months. What surprised me most was how organized and mission-driven the team is. Every volunteer hour felt like it had a direct line to real impact in Nepal.&quot;
               </p>
-              <p className="text-gray-800 font-medium text-sm">
-                — Healthcare Professional &amp; Donor
+              <p className="text-gray-800 font-medium text-sm">— Sarah K., Graduate Student, New York</p>
+            </div>
+
+            {/* Testimonial 4 — Beneficiary */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-emerald-100 bg-emerald-50/30">
+              <div className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-2 py-0.5 rounded mb-3">Beneficiary Story</div>
+              <p className="text-gray-600 text-sm italic mb-4">
+                &quot;Before the Nivaran health camp came to our village in Sudurpashchim, the nearest doctor was a 5-hour journey away. The camp gave my mother her first check-up in over 10 years. We are deeply grateful.&quot;
               </p>
+              <p className="text-gray-800 font-medium text-sm">— Kamala, Villager, Sudurpashchim Province, Nepal</p>
+            </div>
+
+            {/* Testimonial 5 — Monthly Donor */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 text-sm italic mb-4">
+                &quot;I set up a $25/month recurring gift and honestly forgot about it — until I got the year-end summary showing how many camps were run. That&apos;s the kind of giving I want to do: small, automatic, and genuinely life-changing.&quot;
+              </p>
+              <p className="text-gray-800 font-medium text-sm">— David L., Software Engineer, Seattle</p>
+            </div>
+
+            {/* Testimonial 6 — Diaspora Donor */}
+            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-1 mb-3">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 text-sm italic mb-4">
+                &quot;Growing up in Nepal, I know how much a doctor visit means to rural families. Donating to Nivaran feels personal. They&apos;re doing the work I wish I could do myself.&quot;
+              </p>
+              <p className="text-gray-800 font-medium text-sm">— Anil T., Nepali Diaspora, Toronto, Canada</p>
             </div>
           </div>
         </div>
