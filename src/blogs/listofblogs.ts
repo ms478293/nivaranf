@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-mandates-allergy-training-in-schools-setting-global-precedent",
+    title: "England Mandates Allergy Training in Schools, Setting Global Precedent",
+    summary:
+      "England is set to implement mandatory allergy training for all school staff starting in September, a move driven by a campaign for improved student safety. This initiative highlights a growing global focus on comprehensive health protocols within educational environments.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-england-mandates-allergy-training-in-schools-setting-global-precedent.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-data-centric-approach-to-detecting-and-mitigating-demographic-bias",
     title: "Global Health and Education Watch: A data-centric approach to detecting and mitigating demographic bias",
     summary:
