@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "missile-strikes-devastate-schools-near-tehran-escalating-regional-tensions",
+    title: "Missile Strikes Devastate Schools Near Tehran, Escalating Regional Tensions",
+    summary:
+      "Two schools in Parand, near Tehran, were struck by missiles reportedly launched by US and Israeli forces, marking a severe escalation in regional hostilities. This attack, following a recent deadly incident, underscores the devastating impact of conflict on civilian infrastructure and children's education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-missile-strikes-devastate-schools-near-tehran-escalating-regional-tensions.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-urges-global-schools-to-prioritize-healthy-eating-for-children-s-future",
     title: "WHO Urges Global Schools to Prioritize Healthy Eating for Children's Future",
     summary:
