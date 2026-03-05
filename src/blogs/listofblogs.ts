@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-urges-global-schools-to-prioritize-healthy-eating-for-children-s-future",
+    title: "WHO Urges Global Schools to Prioritize Healthy Eating for Children's Future",
+    summary:
+      "The World Health Organization has released new global guidelines urging schools to promote healthy eating, emphasizing its crucial role in shaping lifelong dietary habits. These evidence-based policies aim to create supportive school food environments, addressing the urgent global challenge of childhood malnutrition and obesity.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-who-urges-global-schools-to-prioritize-healthy-eating-for-children-s-future.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-global-burden-questioning-higher-education-s-promise",
     title: "The Global Burden: Questioning Higher Education's Promise",
     summary:
