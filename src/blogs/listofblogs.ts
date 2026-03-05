@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalating-strikes-devastate-iran-s-health-education-infrastructure",
+    title: "Escalating Strikes Devastate Iran's Health, Education Infrastructure",
+    summary:
+      "Intensified aerial assaults across Iran have severely impacted critical health and education facilities, particularly in Tehran. This escalation threatens the well-being and future of countless civilians, disrupting daily life and essential services.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-escalating-strikes-devastate-iran-s-health-education-infrastructure.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "chitwan-s-vote-a-mandate-for-health-and-education-reform-in-nepal",
     title: "Chitwan's Vote: A Mandate for Health and Education Reform in Nepal",
     summary:
