@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "himalaya-eye-hospital-s-landmark-year-a-vision-of-hope-for-nepal",
+    title: "Himalaya Eye Hospital's Landmark Year: A Vision of Hope for Nepal",
+    summary:
+      "Himalaya Eye Hospital has provided essential eye care to 247,585 patients in a single year, marking a significant achievement in Nepal's public health sector. This remarkable service delivery underscores the ongoing efforts to expand access to specialized medical facilities and reduce the burden of visual impairment across the nation.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-05-himalaya-eye-hospital-s-landmark-year-a-vision-of-hope-for-nepal.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-chile-becomes-the-first-country-in-the-americas-to",
     title: "Global Health and Education Watch: Chile becomes the first country in the Americas to",
     summary:
