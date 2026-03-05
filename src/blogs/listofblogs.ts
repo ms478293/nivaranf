@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "chitwan-s-vote-a-mandate-for-health-and-education-reform-in-nepal",
+    title: "Chitwan's Vote: A Mandate for Health and Education Reform in Nepal",
+    summary:
+      "The recent election in Chitwan, marked by Coordinator Dahal's participation, underscores the critical public demand for improved health and education services across Nepal. This electoral moment serves as a powerful reminder of the deep connection between political leadership and the well-being of communities.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-05-chitwan-s-vote-a-mandate-for-health-and-education-reform-in-nepal.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-nationwide-social-contact-survey-dataset-for-public-health",
     title: "Global Health and Education Watch: A Nationwide Social Contact Survey Dataset for Public Health",
     summary:
