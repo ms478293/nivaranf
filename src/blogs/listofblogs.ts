@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-education-shifts-medical-schools-embrace-nutrition",
+    title: "Global Health Education Shifts: Medical Schools Embrace Nutrition",
+    summary:
+      "A notable number of medical schools have pledged to enhance nutrition education, reflecting a growing global recognition of its critical role in health. This development could inspire similar curriculum reforms worldwide to address prevalent diet-related diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-global-health-education-shifts-medical-schools-embrace-nutrition.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalating-strikes-devastate-iran-s-health-education-infrastructure",
     title: "Escalating Strikes Devastate Iran's Health, Education Infrastructure",
     summary:
