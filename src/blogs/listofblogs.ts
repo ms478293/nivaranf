@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-global-burden-questioning-higher-education-s-promise",
+    title: "The Global Burden: Questioning Higher Education's Promise",
+    summary:
+      "A generation of students worldwide faces unprecedented financial burdens from higher education, leading to widespread questioning of the long-term value of their degrees. Rising debts, frozen repayment thresholds, and spiraling interest rates are reshaping economic futures for millions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-the-global-burden-questioning-higher-education-s-promise.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "england-mandates-allergy-training-in-schools-setting-global-precedent",
     title: "England Mandates Allergy Training in Schools, Setting Global Precedent",
     summary:
