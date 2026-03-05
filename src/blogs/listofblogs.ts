@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-chile-becomes-the-first-country-in-the-americas-to",
+    title: "Global Health and Education Watch: Chile becomes the first country in the Americas to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-global-health-and-education-watch-chile-becomes-the-first-country-in-the-america.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sierra-leone-s-new-maternal-hospital-a-global-blueprint-for-hope",
     title: "Sierra Leone's New Maternal Hospital: A Global Blueprint for Hope",
     summary:
