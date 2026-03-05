@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-push-to-integrate-nutrition-into-medical-training",
+    title: "Global Push to Integrate Nutrition into Medical Training",
+    summary:
+      "A global conversation is intensifying about the critical role of nutrition in medical school curricula, driven by figures advocating for reform. This movement seeks to equip future doctors with essential dietary knowledge, addressing the rising tide of chronic diseases globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-global-push-to-integrate-nutrition-into-medical-training.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "himalaya-eye-hospital-s-landmark-year-a-vision-of-hope-for-nepal",
     title: "Himalaya Eye Hospital's Landmark Year: A Vision of Hope for Nepal",
     summary:
