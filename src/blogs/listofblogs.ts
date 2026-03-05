@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-new-normal-inquiry-s-key-findings-on-how-covid",
+    title: "Global Health and Education Watch: ‘A new normal’: inquiry’s key findings on how Covid",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-05-global-health-and-education-watch-a-new-normal-inquiry-s-key-findings-on-how-cov.jpg",
+    date: "2026-03-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-push-to-integrate-nutrition-into-medical-training",
     title: "Global Push to Integrate Nutrition into Medical Training",
     summary:
