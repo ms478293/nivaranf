@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "women-s-pain-a-global-silent-epidemic-shaped-by-life-experiences",
+    title: "Women's Pain: A Global Silent Epidemic Shaped by Life Experiences",
+    summary:
+      "For countless women globally, pain is normalized from childhood, profoundly shaping their health perceptions and interactions with medical systems. This ingrained acceptance often leads to significant delays in diagnosis and inadequate treatment for chronic conditions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-women-s-pain-a-global-silent-epidemic-shaped-by-life-experiences.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-vexing-problem-for-college-students-course-availability",
     title: "Global Health and Education Watch: A Vexing Problem for College Students: Course Availability",
     summary:
