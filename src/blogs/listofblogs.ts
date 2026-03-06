@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "balendra-shah-s-rise-a-new-era-for-nepal-s-public-health",
+    title: "Balendra Shah's Rise: A New Era for Nepal's Public Health?",
+    summary:
+      "Balendra Shah's political ascent brings renewed attention to public health, particularly given his wife's professional background. This potential shift in leadership focus could significantly impact Nepal's healthcare landscape, emphasizing preventative care and equitable access.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-06-balendra-shah-s-rise-a-new-era-for-nepal-s-public-health.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "academic-freedom-under-siege-students-fight-for-education-s-future-in-florida",
     title: "Academic Freedom Under Siege: Students Fight for Education's Future in Florida",
     summary:
