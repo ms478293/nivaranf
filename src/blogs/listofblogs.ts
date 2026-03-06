@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-breakthrough-boosts-trust-in-arabic-online-health-information",
+    title: "AI Breakthrough Boosts Trust in Arabic Online Health Information",
+    summary:
+      "Researchers have developed an enhanced AI model to improve the trustworthiness evaluation of Arabic online health information. This innovation aims to combat misinformation and provide more reliable health resources to Arabic-speaking populations worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-ai-breakthrough-boosts-trust-in-arabic-online-health-information.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-calls-grow-for-independent-probe-into-deadly-iranian-girls",
     title: "Global Health and Education Watch: Calls grow for independent probe into deadly Iranian girls’",
     summary:
