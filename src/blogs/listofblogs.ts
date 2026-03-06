@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-recommendations-for-influenza-vaccine-composition-for-the-2026-2027-northern",
+    title: "Global Health and Education Watch: Recommendations for influenza vaccine composition for the 2026-2027 northern",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-global-health-and-education-watch-recommendations-for-influenza-vaccine-composit.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalating-crises-undermine-global-health-gains-amidst-new-hope",
     title: "Escalating Crises Undermine Global Health Gains Amidst New Hope",
     summary:
