@@ -330,9 +330,13 @@ export default function SanjeevaniTrackingDashboard() {
                   <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                   Live Field Intelligence
                 </p>
-                <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.02] text-slate-900 md:text-5xl">
-                  Project Sanjeevani
-                  <span className="block text-primary-500">Tracking Portal</span>
+                <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.02] md:text-5xl">
+                  <span className="bg-[linear-gradient(110deg,#73c7d0_0%,#84a9b8_52%,#bc88b1_100%)] bg-clip-text text-transparent">
+                    Project Sanjeevani
+                  </span>
+                  <span className="block bg-[linear-gradient(110deg,#ef876f_0%,#f2a286_38%,#d07393_100%)] bg-clip-text text-transparent">
+                    Tracking Portal
+                  </span>
                 </h1>
                 <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
                   A single operational view for Project Sanjeevani: patient volume,
@@ -353,40 +357,40 @@ export default function SanjeevaniTrackingDashboard() {
               </div>
 
               <div className="relative grid gap-4">
-                <div className="rounded-[26px] border border-slate-200 bg-[linear-gradient(140deg,#1f2937_0%,#0f172a_100%)] p-6 text-white shadow-[0_18px_40px_rgba(15,23,42,0.18)]">
+                <div className="rounded-[26px] border border-[#d8e7e8] bg-[radial-gradient(circle_at_top_left,rgba(242,139,114,0.28),transparent_32%),radial-gradient(circle_at_82%_14%,rgba(144,213,219,0.42),transparent_34%),linear-gradient(140deg,#fff8f6_0%,#f6fcfd_38%,#edf7f9_70%,#f8f1f7_100%)] p-6 text-slate-900 shadow-[0_18px_40px_rgba(132,169,184,0.18)]">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-300">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600">
                         Mission Status
                       </p>
                       <h2 className="mt-2 text-2xl font-semibold">Phase I active</h2>
                     </div>
-                    <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-100">
+                    <div className="inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur-sm">
                       <span className="h-2 w-2 rounded-full bg-emerald-400" />
                       Live reporting
                     </div>
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 gap-4">
-                    <div className="rounded-2xl bg-white/8 p-4">
-                      <p className="text-xs uppercase tracking-[0.16em] text-slate-300">
+                    <div className="rounded-2xl border border-white/50 bg-white/50 p-4 backdrop-blur-sm">
+                      <p className="text-xs uppercase tracking-[0.16em] text-slate-500">
                         Coverage
                       </p>
                       <p className="mt-2 text-3xl font-semibold">
                         {RURAL_COVERAGE.coveragePercent.toFixed(1)}%
                       </p>
-                      <p className="mt-2 text-xs text-slate-300">
+                      <p className="mt-2 text-xs text-slate-600">
                         {RURAL_COVERAGE.coveredSoFar} of {RURAL_COVERAGE.totalRuralMunicipalities} rural municipalities
                       </p>
                     </div>
-                    <div className="rounded-2xl bg-white/8 p-4">
-                      <p className="text-xs uppercase tracking-[0.16em] text-slate-300">
+                    <div className="rounded-2xl border border-white/50 bg-white/50 p-4 backdrop-blur-sm">
+                      <p className="text-xs uppercase tracking-[0.16em] text-slate-500">
                         Latest month
                       </p>
                       <p className="mt-2 text-3xl font-semibold">
                         {latestMonth.patientsThisMonth.toLocaleString("en-US")}
                       </p>
-                      <p className="mt-2 text-xs text-slate-300">
+                      <p className="mt-2 text-xs text-slate-600">
                         patients served in {latestMonth.month}
                       </p>
                     </div>
@@ -473,7 +477,7 @@ export default function SanjeevaniTrackingDashboard() {
                 onClick={() => setActiveTab(tab.key)}
                 className={`rounded-full px-4 py-2.5 text-sm font-medium transition-colors ${
                   activeTab === tab.key
-                    ? "bg-slate-900 text-white"
+                    ? "bg-[linear-gradient(135deg,#f7c5b3_0%,#e6f4f6_50%,#c9dfe3_100%)] text-slate-900 shadow-[0_10px_24px_rgba(132,169,184,0.18)]"
                     : "bg-transparent text-slate-500 hover:bg-slate-100 hover:text-slate-900"
                 }`}
               >
@@ -1433,7 +1437,7 @@ export default function SanjeevaniTrackingDashboard() {
 
       {selectedCamp ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/55 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[linear-gradient(180deg,rgba(132,169,184,0.38),rgba(196,109,158,0.28))] p-4 backdrop-blur-sm"
           onClick={() => setSelectedCamp(null)}
         >
           <div
