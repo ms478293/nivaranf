@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "early-childhood-upf-intake-a-global-health-challenge",
+    title: "Early Childhood UPF Intake: A Global Health Challenge",
+    summary:
+      "A recent study reveals complex individual, family, and societal factors influencing ultra-processed food intake in preschoolers. These findings underscore an urgent global need for comprehensive strategies to protect children's health from pervasive unhealthy food environments.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-early-childhood-upf-intake-a-global-health-challenge.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-communities-unite-to-address-stigma-and-discrimination-affecting-people",
     title: "Global Health and Education Watch: Communities unite to address stigma and discrimination affecting people",
     summary:
