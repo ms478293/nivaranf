@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-outcry-as-iranian-girls-school-strike-under-investigation",
+    title: "Global Outcry as Iranian Girls' School Strike Under Investigation",
+    summary:
+      "An ongoing investigation is examining an apparent strike on an Iranian girls' school that tragically killed scores of children, with initial assessments suggesting potential US military involvement. This devastating incident underscores the urgent global challenge of protecting educational institutions and safeguarding children's right to learn in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-global-outcry-as-iranian-girls-school-strike-under-investigation.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-breakthrough-boosts-trust-in-arabic-online-health-information",
     title: "AI Breakthrough Boosts Trust in Arabic Online Health Information",
     summary:
