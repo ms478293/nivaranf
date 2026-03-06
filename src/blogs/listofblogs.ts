@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalating-crises-undermine-global-health-gains-amidst-new-hope",
+    title: "Escalating Crises Undermine Global Health Gains Amidst New Hope",
+    summary:
+      "Violent conflict in Sudan's Kordofan region is causing widespread destruction of civilian infrastructure, severely impacting health and education access. This humanitarian crisis unfolds against a backdrop of deepening global inequality, contrasting with significant advancements in HIV treatment and prevention worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-escalating-crises-undermine-global-health-gains-amidst-new-hope.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nepal-s-health-tapestry-weaving-traditional-wisdom-with-modern-care",
     title: "Nepal's Health Tapestry: Weaving Traditional Wisdom with Modern Care",
     summary:
