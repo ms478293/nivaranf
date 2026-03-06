@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "fewer-glp-1-shots-sustain-weight-loss-global-study-suggests",
+    title: "Fewer GLP-1 Shots Sustain Weight Loss, Global Study Suggests",
+    summary:
+      "A recent global review suggests that patients can maintain substantial weight loss and associated health benefits with less frequent GLP-1 agonist injections. This finding holds promise for improving long-term adherence and accessibility of these transformative therapies across the globe.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-fewer-glp-1-shots-sustain-weight-loss-global-study-suggests.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-vice-chancellor-calls-for-review-into-student-loans-for-those",
     title: "Global Health and Education Watch: Vice-chancellor calls for review into student loans for those",
     summary:
