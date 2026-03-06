@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "qatar-study-illuminates-global-healthcare-disaster-preparedness-gaps",
+    title: "Qatar Study Illuminates Global Healthcare Disaster Preparedness Gaps",
+    summary:
+      "A recent study in Qatar explored healthcare practitioners' perceptions of disaster management, highlighting both strengths and significant areas for improvement. The findings provide valuable insights for enhancing global healthcare preparedness and response strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-qatar-study-illuminates-global-healthcare-disaster-preparedness-gaps.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-recommendations-for-influenza-vaccine-composition-for-the-2026-2027-northern",
     title: "Global Health and Education Watch: Recommendations for influenza vaccine composition for the 2026-2027 northern",
     summary:
