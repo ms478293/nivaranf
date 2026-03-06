@@ -1,19 +1,23 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
+import {
+  SANJEEVANI_PUBLIC_COPY,
+  SANJEEVANI_PUBLIC_STATS,
+} from "@/content/sanjeevani-public-stats";
 import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Our Impact & Annual Report | Nivaran Foundation",
   description:
-    "See the measurable impact of Nivaran Foundation: 20,000+ patients served, 83 villages reached, mobile health camps across rural Nepal. View our annual report and fund allocation.",
+    `See the measurable impact of Nivaran Foundation: ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served and ${SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText} rural municipalities reached through Project Sanjeevani.`,
   alternates: {
     canonical: "https://www.nivaranfoundation.org/impact",
   },
   openGraph: {
     title: "Our Impact & Annual Report | Nivaran Foundation",
     description:
-      "See the measurable impact of Nivaran Foundation across rural Nepal. 20,000+ patients served, 83 villages reached.",
+      `See the measurable impact of Nivaran Foundation across rural Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
     url: "https://www.nivaranfoundation.org/impact",
     type: "website",
     siteName: "Nivaran Foundation",
@@ -37,10 +41,10 @@ export const metadata: Metadata = {
 };
 
 const IMPACT_STATS = [
-  { value: "20,000+", label: "Patients Served", icon: "🏥" },
-  { value: "83", label: "Villages Reached", icon: "🏘️" },
+  { value: SANJEEVANI_PUBLIC_STATS.patientsServedText, label: "Patients Served", icon: "🏥" },
+  { value: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText, label: "Rural Municipalities Reached", icon: "🏘️" },
   { value: "96%", label: "Funds to Programs", icon: "💰" },
-  { value: "$18M", label: "Phase-I Investment", icon: "📊" },
+  { value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText, label: "Tracked Investment", icon: "📊" },
   { value: "4", label: "Program Phases", icon: "🗓️" },
   { value: "2020", label: "Year Founded", icon: "🌱" },
 ];
@@ -54,11 +58,10 @@ const FUND_ALLOCATION = [
 
 const MILESTONES = [
   { year: "2020", event: "Nivaran Foundation established as a 501(c)(3) nonprofit organization in the United States." },
-  { year: "2021", event: "First mobile health camp conducted in Kapilvastu district, Nepal — screening over 500 patients." },
-  { year: "2022", event: "Expanded to 3 districts, launched Project Sanjeevani Phase I, and partnered with local health post networks." },
-  { year: "2023", event: "Reached 10,000 patients milestone. Launched Project Vidya education initiative for rural schools." },
-  { year: "2024", event: "Expanded to 83 villages. Began Phase II planning for permanent community health clinics." },
-  { year: "2025", event: "Surpassed 20,000 patients served. Deployed digital health records pilot. Began Phase III infrastructure." },
+  { year: "2025", event: "Project Sanjeevani Phase I launched with the first tracked rural health camps in Nepal." },
+  { year: "2025", event: `Expanded to two field teams and reached all ${SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces during the first operating cycle.` },
+  { year: "2026", event: `Current live tracking records show ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served across ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText} rural municipalities.` },
+  { year: "2030", event: "National rural coverage remains the long-term scaling target as capacity and field teams expand." },
 ];
 
 export default function ImpactPage() {

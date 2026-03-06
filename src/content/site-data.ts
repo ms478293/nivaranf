@@ -1,5 +1,9 @@
 // site-data.ts
 import { getBlogPathBySlug } from "@/lib/blog-routes";
+import {
+  SANJEEVANI_PUBLIC_COPY,
+  SANJEEVANI_PUBLIC_STATS,
+} from "@/content/sanjeevani-public-stats";
 
 export const siteData = {
   logo: "/NivaranLogo.svg",
@@ -10,9 +14,9 @@ export const siteData = {
     "Be a part of the change! Your time, skills, and generosity have the power to transform lives. Whether you volunteer to share your expertise or donate to support our mission, every contribution matters. Together, we can shape a brighter, more equitable future.",
   ],
   stats: [
-    { label: "Health Camps Operated", value: "304" },
-    { label: "Patients Targeted (Phase-I)", value: "61,200+" },
-    { label: "Phase-I Budget", value: "$18M" },
+    { label: "Health Camps Completed", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText },
+    { label: "Patients Served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText },
+    { label: "Investment Logged", value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText },
     { label: "Fund Utilization Rate", value: "96%" },
   ],
   buttons: {
@@ -91,7 +95,7 @@ export const ProgramData: CardType[] = [
     title: "Healthcare",
     imgSrc: "/images/healthcare.JPG",
     description:
-      "Healthcare is our primary focus, with 70% of our funds dedicated to ensuring underserved communities have access to essential medical services. Through Project Sanjeevani, we've operated 304 health camps and are targeting 61,200+ patients across Nepal with services including eye care, dental care, maternal health, and disease prevention.",
+      `Healthcare is our primary focus, with 70% of our funds dedicated to ensuring underserved communities have access to essential medical services. Through Project Sanjeevani, ${SANJEEVANI_PUBLIC_COPY.summary.toLowerCase()} Services include eye care, dental care, maternal health, and disease prevention.`,
     link: "/programs/health",
   },
   {
@@ -133,7 +137,7 @@ export const InformationAboutusData: InformationDisplayType = {
 
   paragraphs: [
     "Nivaran Foundation is passionate about unlocking the potential of communities worldwide to drive meaningful change through healthcare and education. By working together, we can transform lives and address critical challenges such as limited access to medical services and quality education. At the heart of our mission is a vision to tackle the root causes of these issues and build a brighter future for all.",
-    "Our approach focuses on two key areas: healthcare and education. We aim to make a tangible difference by setting up community clinics, organizing medical camps, supporting education programs, and empowering families in need. Through Project Sanjeevani alone, we've operated 304 health camps targeting over 61,200 patients.",
+    `Our approach focuses on two key areas: healthcare and education. We aim to make a tangible difference by setting up community clinics, organizing medical camps, supporting education programs, and empowering families in need. Through Project Sanjeevani alone, ${SANJEEVANI_PUBLIC_COPY.summary.toLowerCase()}`,
     "Thanks to these efforts, we've witnessed remarkable progress across communities: better maternal and child health outcomes, improved literacy rates, and greater empowerment for marginalized groups. The Nivaran Foundation invites individuals and organizations from across the globe to join us in our mission to create positive, lasting change. Together, we can make a global impact!",
   ],
   title: "",
@@ -164,7 +168,7 @@ export const navBarData: {
     title: "Project Sanjeevani",
     href: "/sanjeevani",
     description:
-      "Our flagship healthcare initiative — 304 camps, 61,200+ patients targeted across Nepal.",
+      `Our flagship healthcare initiative — ${SANJEEVANI_PUBLIC_COPY.summary.toLowerCase()}`,
   },
   {
     title: "Education",

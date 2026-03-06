@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import SanjeevaniTrackingDashboard from "@/components/sanjeevani/SanjeevaniTrackingDashboard";
+import { SANJEEVANI_PUBLIC_COPY } from "@/content/sanjeevani-public-stats";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Project Sanjeevani – Live Tracking Dashboard",
     description:
-      "Real-time progress tracking for Nepal's National Rural Health Mission. 21,000+ patients served across 7 provinces.",
+      SANJEEVANI_PUBLIC_COPY.trackingMetadata,
     url: "https://www.nivaranfoundation.org/sanjeevani/tracking",
     siteName: "Nivaran Foundation",
     type: "website",

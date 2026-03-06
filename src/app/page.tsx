@@ -5,6 +5,7 @@ import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
 import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
 import { SetCookie } from "@/components/nivaran/main/utils/SetCookie";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { AnimatedCounter } from "@/components/new/AnimatedCounter/AnimatedCounter";
 import { Metadata } from "next";
 import { Suspense } from "react";
@@ -129,8 +130,15 @@ const page = () => {
               >
                 Nivaran Foundation is a 501(c)(3) non-profit delivering
                 healthcare to Nepal&apos;s most underserved communities. With
-                304 health camps operated and <AnimatedCounter end={61200} duration={2500} suffix="+ patients" /> targeted through
-                Project Sanjeevani, every dollar you give saves lives.
+                {` ${SANJEEVANI_PUBLIC_STATS.campsCompletedText}`} completed
+                health camps and{" "}
+                <AnimatedCounter
+                  end={SANJEEVANI_PUBLIC_STATS.patientsServed}
+                  duration={2500}
+                  suffix=" patients"
+                />{" "}
+                served through Project Sanjeevani, every dollar you give saves
+                lives.
               </p>
             </div>
           </AboutNivaran>

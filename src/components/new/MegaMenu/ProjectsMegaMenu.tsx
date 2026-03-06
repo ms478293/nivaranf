@@ -3,14 +3,15 @@ import {
   UPCOMING_PROJECTS_DATA,
   UpcomingProjectsDataType,
 } from "@/content/upcoming-projects";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { useMegaMenuStore } from "@/store/useMegamenuStore";
 import Image from "next/image";
 import Link from "next/link";
 
 const HIGHLIGHTS = [
-  { value: "$18M", label: "Phase-I Budget" },
-  { value: "83", label: "Villages" },
-  { value: "20K+", label: "Lives Impacted" },
+  { value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, label: "Camps" },
+  { value: SANJEEVANI_PUBLIC_STATS.patientsServedText, label: "Patients" },
+  { value: SANJEEVANI_PUBLIC_STATS.provincesCoveredText, label: "Provinces" },
 ];
 
 const ProjectsMegaMenu = () => {

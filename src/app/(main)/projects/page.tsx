@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,10 +44,10 @@ const PROJECTS = [
       "Project Sanjeevani is Nivaran Foundation's most ambitious initiative — a phased, multi-year effort to transform healthcare across Nepal. From hygiene education and early disease detection to building a nationwide hospital network, Sanjeevani bridges the gap between advanced medical care and underserved communities.",
     image: "/sanjeevani/sanjeevani-1.png",
     stats: [
-      { value: "$18M", label: "Phase-I Budget" },
-      { value: "20,000+", label: "Population Treated" },
-      { value: "83", label: "Villages Covered" },
-      { value: "4", label: "Phased Rollout" },
+      { value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, label: "Camps Completed" },
+      { value: SANJEEVANI_PUBLIC_STATS.patientsServedText, label: "Patients Served" },
+      { value: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`, label: "Provinces Covered" },
+      { value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText, label: "Investment To Date" },
     ],
     status: "Active",
     statusColor: "bg-green-500",
@@ -127,9 +128,9 @@ export default function ProjectsPage() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
               {[
                 { value: "2", label: "Active Projects" },
-                { value: "83+", label: "Villages Reached" },
-                { value: "$18M+", label: "Committed Funds (Goal)" },
-                { value: "5M+", label: "Lives Targeted (Goal)" },
+                { value: SANJEEVANI_PUBLIC_STATS.provincesCoveredText, label: "Sanjeevani Provinces" },
+                { value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, label: "Tracked Camps" },
+                { value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText, label: "Sanjeevani Investment" },
               ].map((stat) => (
                 <div
                   key={stat.label}

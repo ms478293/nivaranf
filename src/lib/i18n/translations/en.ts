@@ -1,3 +1,5 @@
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
+
 const en = {
   // Navigation
   "nav.projects": "Projects",
@@ -16,11 +18,11 @@ const en = {
   "about.prefix": "About",
   "about.suffix": "Nivaran",
   "about.description":
-    "Nivaran Foundation is a 501(c)(3) non-profit delivering healthcare to Nepal's most underserved communities. With 304 health camps operated and 61,200+ patients targeted through Project Sanjeevani, every dollar you give saves lives.",
+    `Nivaran Foundation is a 501(c)(3) non-profit delivering healthcare to Nepal's most underserved communities. With ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served through Project Sanjeevani, every dollar you give saves lives.`,
 
   // Stats / Happiness
-  "stats.healthCamps": "Health Camps Operated",
-  "stats.patients": "Patients Targeted (Phase-I)",
+  "stats.healthCamps": "Health Camps Completed",
+  "stats.patients": "Patients Served",
   "stats.volunteers": "Volunteers Worldwide",
   "stats.programs": "Active Programs",
 

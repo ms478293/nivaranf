@@ -1,5 +1,6 @@
 "use client";
 
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import {
   PhaseSection,
   PhaseSectionDescription,
@@ -22,16 +23,20 @@ const SanjeevaniPhase = () => {
         </div>
 
         <div className="w-full">
-          <PhaseSectionTitle title="Target Coverage" />
+          <PhaseSectionTitle title="Current Rollout" />
           <div className=" gap-2 w-full flex flex-wrap  ">
             <PhaseSectionStatsBox stats="2.5 years" description="Time Period" />
             <PhaseSectionStatsBox
-              stats="83 Villages"
-              description="Targeted Villages"
+              stats={SANJEEVANI_PUBLIC_STATS.campsCompletedText}
+              description="Completed Camps"
             />
             <PhaseSectionStatsBox
-              stats="170"
-              description="Daily Health Checkups"
+              stats={SANJEEVANI_PUBLIC_STATS.patientsServedText}
+              description="Patients Served"
+            />
+            <PhaseSectionStatsBox
+              stats={`${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`}
+              description="Provinces Covered"
             />
           </div>
         </div>

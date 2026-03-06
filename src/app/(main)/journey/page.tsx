@@ -1,16 +1,17 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Our Journey",
   description:
-    "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients. Discover Nivaran Foundation's journey of impact.",
+    `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients. Discover Nivaran Foundation's journey of impact.`,
   alternates: {
     canonical: "https://www.nivaranfoundation.org/journey",
   },
   openGraph: {
     title: "Our Journey | Nivaran Foundation",
-    description: "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients.",
+    description: `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients.`,
     url: "https://www.nivaranfoundation.org/journey",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Our Journey | Nivaran Foundation",
-    description: "From a personal encounter with healthcare gaps in Nepal to 304 health camps serving 61,200+ patients.",
+    description: `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients.`,
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },
@@ -100,15 +101,16 @@ export default function OurJourneyPage() {
                     </h3>
                     <p className="text-gray-700 text-lg mt-4">
                       Our flagship healthcare initiative was born. Project
-                      Sanjeevani set an ambitious target: 304 health camps across
-                      Nepal, reaching 61,200+ patients with comprehensive
-                      medical care including maternal health, disease prevention,
-                      and specialist consultations.
+                      Sanjeevani has now served {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients
+                      through {` ${SANJEEVANI_PUBLIC_STATS.campsCompletedText}`} completed health camps
+                      across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces of Nepal,
+                      delivering maternal care, disease prevention, and specialist
+                      consultations to rural communities.
                     </p>
                   </div>
                   <div className="w-1/2 pl-6">
                     <div className="h-32 w-full bg-primary-main rounded-lg flex items-center justify-center text-white text-sm font-medium">
-                      304 Camps Planned
+                      {SANJEEVANI_PUBLIC_STATS.campsCompletedText} Camps Completed
                     </div>
                   </div>
                 </div>
@@ -143,9 +145,11 @@ export default function OurJourneyPage() {
           <h2 className="text-3xl font-bold mb-4">The Road Ahead</h2>
           <p className="text-lg mb-6">
             With 96% of every dollar going directly to programs, we are
-            committed to scaling our impact. Our Phase-I goal: $18M to serve
-            61,200+ patients and transform education for thousands of children
-            across Nepal.
+            committed to scaling our impact beyond the current
+            {` ${SANJEEVANI_PUBLIC_STATS.campsCompletedText}`} completed camps,
+            {` ${SANJEEVANI_PUBLIC_STATS.patientsServedText}`} patients served, and
+            {` ${SANJEEVANI_PUBLIC_STATS.investmentSoFarText}`} invested in the
+            field so far.
           </p>
           <Link
             href="/donate"

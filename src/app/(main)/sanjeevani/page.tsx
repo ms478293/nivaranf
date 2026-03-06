@@ -3,6 +3,10 @@ import TargetedResults from "@/components/new/AboutStatCard/TargetedResults";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
 import SanjeevaniPhase from "@/components/new/SanjeevaniPhase/SanjeevaniPhase";
 import UpcomingProjects from "@/components/new/UpcomingProjects/UpcomingProjects";
+import {
+  SANJEEVANI_PUBLIC_COPY,
+  SANJEEVANI_PUBLIC_STATS,
+} from "@/content/sanjeevani-public-stats";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
 import { EXECUTIVE_DASHBOARD, CAMP_MASTER_LOG, PROVINCE_SUMMARY } from "@/content/sanjeevani-tracking-data";
 import { Metadata } from "next";
@@ -14,13 +18,13 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Project Sanjeevani - Empowering Communities Across Nepal",
   description:
-    "Project Sanjeevani brings healthcare to communities in Nepal, improving lives and making a lasting impact on thousands. Join us today.",
+    `Project Sanjeevani brings healthcare to rural Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
   alternates: {
     canonical: "https://www.nivaranfoundation.org/sanjeevani",
   },
   openGraph: {
     title: "Project Sanjeevani | Nivaran Foundation",
-    description: "Bringing healthcare to communities in Nepal, improving lives and making a lasting impact on thousands.",
+    description: `Bringing healthcare to communities in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
     url: "https://www.nivaranfoundation.org/sanjeevani",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -28,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Project Sanjeevani | Nivaran Foundation",
-    description: "Empowering communities across Nepal with healthcare access.",
+    description: `Empowering communities across Nepal with healthcare access. ${SANJEEVANI_PUBLIC_COPY.summary}`,
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },
@@ -230,10 +234,10 @@ const page = () => {
           <div className="max-w-[1320px] mx-auto flex flex-col gap-20">
             <h2 className="flex flex-col  text-center -mb-4">
               <span className="text-lg font-medium text-gray-800  ">
-                Total Phase-I Budget?
+                Tracked Investment So Far
               </span>
               <span className=" text-3xl sm:text-5xl md:text-10xl text-gray-950 -mt-2 ">
-                $18 M
+                {SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText}
               </span>
             </h2>
 

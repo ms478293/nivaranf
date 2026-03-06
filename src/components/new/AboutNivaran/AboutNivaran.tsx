@@ -1,4 +1,5 @@
 "use client";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -24,9 +25,10 @@ const AboutNivaran = ({
                 Healthcare
               </h2>
               <p className="text-gray-600 text-sm">
-                304 health camps across Nepal delivering essential medical
-                services — eye care, dental care, maternal health, and disease
-                prevention to communities that need it most.
+                {SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health
+                camps across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}
+                provinces delivering essential medical services and reaching{" "}
+                {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients so far.
               </p>
               <p className="text-primary-500 font-bold text-2xl mt-3">70%</p>
               <p className="text-gray-600 text-xs">of our funds</p>

@@ -11,6 +11,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { AnimatedStatCard } from "@/components/new/AnimatedStatCard/AnimatedStatCard";
 
@@ -232,13 +233,17 @@ export default function page() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">On-Ground Impact</h3>
               <div className="flex flex-col items-center gap-4 mt-2">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary-500">304</p>
-                  <p className="text-sm text-gray-600">health camps across Nepal</p>
+                  <p className="text-3xl font-bold text-primary-500">
+                    {SANJEEVANI_PUBLIC_STATS.campsCompletedText}
+                  </p>
+                  <p className="text-sm text-gray-600">completed health camps</p>
                 </div>
                 <div className="w-12 h-px bg-gray-200" />
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-orange-500">61,200+</p>
-                  <p className="text-xs text-gray-500">patients targeted in Phase-I</p>
+                  <p className="text-2xl font-bold text-orange-500">
+                    {SANJEEVANI_PUBLIC_STATS.patientsServedText}
+                  </p>
+                  <p className="text-xs text-gray-500">patients served in current tracking</p>
                 </div>
               </div>
             </div>

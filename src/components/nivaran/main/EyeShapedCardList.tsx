@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 
 const EyeShapeCard = ({ imageSrc, title, description }) => {
   return (
@@ -37,7 +38,7 @@ const EyeShapeCardList = () => {
       imageSrc: "/images/healthGroup.jpg",
       title: "Community Health Camps",
       description:
-        "304 health camps operated — bringing eye care, dental care, and screenings to remote communities.",
+        `${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients across all ${SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces.`,
     },
     {
       imageSrc: "/images/healthcare.JPG",

@@ -1,5 +1,9 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
+import {
+  SANJEEVANI_PUBLIC_COPY,
+  SANJEEVANI_PUBLIC_STATS,
+} from "@/content/sanjeevani-public-stats";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -43,8 +47,9 @@ const QUICK_FACTS = [
   { label: "Headquarters", value: "Kathmandu, Nepal" },
   { label: "US Coordination", value: "United States" },
   { label: "Focus Areas", value: "Healthcare, Education" },
-  { label: "Patients Served", value: "20,000+" },
-  { label: "Villages Reached", value: "83" },
+  { label: "Patients Served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText },
+  { label: "Health Camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText },
+  { label: "Rural Municipalities", value: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText },
   { label: "Fund Utilization", value: "96% to Programs" },
   { label: "Founder", value: "Mukesh Thakur" },
 ];
@@ -144,13 +149,13 @@ export default function PressPage() {
               Nivaran Foundation is a 501(c)(3) tax-exempt nonprofit organization founded in 2020. Our mission is to transform healthcare and education access for underserved communities in rural Nepal — where the nearest hospital can be a multi-day walk away.
             </p>
             <p>
-              Through <strong>Project Sanjeevani</strong>, our flagship healthcare initiative, we operate mobile health camps that deliver free medical screenings, maternal care, and disease prevention services directly to villages with no permanent healthcare facilities. To date, we have served over 20,000 patients across 83 villages.
-            </p>
-            <p>
-              Through <strong>Project Vidya</strong>, we deliver education support including digital learning tools, teacher training, and school infrastructure improvements to rural Nepali schools.
+              Through <strong>Project Sanjeevani</strong>, our flagship healthcare initiative, we operate mobile health camps that deliver free medical screenings, maternal care, and disease prevention services directly to communities with limited permanent healthcare access. {SANJEEVANI_PUBLIC_COPY.pressSummary}
             </p>
             <p>
               <strong>96% of all funds raised go directly to program services.</strong> The remaining 4% covers essential administrative and fundraising costs — one of the highest program-to-overhead ratios in the sector.
+            </p>
+            <p>
+              Through <strong>Project Vidya</strong>, we deliver education support including digital learning tools, teacher training, and school infrastructure improvements to rural Nepali schools.
             </p>
           </div>
         </div>

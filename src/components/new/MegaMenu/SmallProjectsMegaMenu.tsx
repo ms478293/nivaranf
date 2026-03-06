@@ -1,4 +1,5 @@
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,23 +45,25 @@ export const SmallProjectsMegaMenu = () => {
               Sanjeevani
             </h2>
             <p className="text-gray-600 text-[10px] sm:hidden">
-              2 million people being treated
+              {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served
             </p>
 
             <div className="hidden sm:flex sm:gap-8">
               <div className=" sm:flex flex-col gap-0">
                 <p className="text-neutral-200 text-xsm font-light">
-                  Phase-I Budget
+                  Camps Completed
                 </p>
-                <p className="text-neutral-50 text-sm font-medium ">$18M</p>
+                <p className="text-neutral-50 text-sm font-medium ">
+                  {SANJEEVANI_PUBLIC_STATS.campsCompletedText}
+                </p>
               </div>
 
               <div className="hidden sm:flex flex-col gap-0">
                 <p className="text-neutral-200 text-xsm font-light">
-                  Population treated
+                  Provinces Covered
                 </p>
                 <p className="text-neutral-50 text-sm font-medium uppercase ">
-                  2 Million
+                  {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}
                 </p>
               </div>
             </div>
