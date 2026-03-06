@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-debate-world-book-day-s-evolving-role-in-fostering-reading",
+    title: "Global Debate: World Book Day's Evolving Role in Fostering Reading",
+    summary:
+      "Discussions around World Book Day highlight a global pedagogical debate on the most effective methods to cultivate reading for pleasure among children. While celebrated for its engagement, some educators question if elaborate costume events inadvertently overshadow the fundamental goal of literacy promotion.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-global-debate-world-book-day-s-evolving-role-in-fostering-reading.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "balendra-shah-s-rise-a-new-era-for-nepal-s-public-health",
     title: "Balendra Shah's Rise: A New Era for Nepal's Public Health?",
     summary:
