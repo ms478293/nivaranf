@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-hubs-foster-community-well-being-redefining-care-models",
+    title: "Global Health Hubs Foster Community Well-being, Redefining Care Models",
+    summary:
+      "Across the globe, organizations are innovating by establishing integrated community hubs designed to foster social connection and holistic well-being. These multi-functional centers aim to move beyond conventional healthcare, providing spaces for comprehensive support and community engagement.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-global-health-hubs-foster-community-well-being-redefining-care-models.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "fewer-glp-1-shots-sustain-weight-loss-global-study-suggests",
     title: "Fewer GLP-1 Shots Sustain Weight Loss, Global Study Suggests",
     summary:
