@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-vice-chancellor-calls-for-review-into-student-loans-for-those",
+    title: "Global Health and Education Watch: Vice-chancellor calls for review into student loans for those",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-global-health-and-education-watch-vice-chancellor-calls-for-review-into-student-.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "qatar-study-illuminates-global-healthcare-disaster-preparedness-gaps",
     title: "Qatar Study Illuminates Global Healthcare Disaster Preparedness Gaps",
     summary:
