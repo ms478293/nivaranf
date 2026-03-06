@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "academic-freedom-under-siege-students-fight-for-education-s-future-in-florida",
+    title: "Academic Freedom Under Siege: Students Fight for Education's Future in Florida",
+    summary:
+      "A recent documentary exposes the swift dismantling of academic freedom at Florida's New College, once a beacon of independent thought. Students and faculty are shown resisting a state-orchestrated conservative overhaul that targeted curricula, libraries, and campus culture.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-academic-freedom-under-siege-students-fight-for-education-s-future-in-florida.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-hubs-foster-community-well-being-redefining-care-models",
     title: "Global Health Hubs Foster Community Well-being, Redefining Care Models",
     summary:
