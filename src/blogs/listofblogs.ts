@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tehran-school-strike-highlights-global-education-vulnerability-in-conflict",
+    title: "Tehran School Strike Highlights Global Education Vulnerability in Conflict",
+    summary:
+      "An elementary school in Tehran was reportedly hit, drawing global attention to the pervasive threat against educational institutions in conflict zones. The incident highlights the critical need for international adherence to laws protecting children and schools from attack.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-tehran-school-strike-highlights-global-education-vulnerability-in-conflict.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "early-childhood-upf-intake-a-global-health-challenge",
     title: "Early Childhood UPF Intake: A Global Health Challenge",
     summary:
