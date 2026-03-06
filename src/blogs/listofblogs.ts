@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-s-health-tapestry-weaving-traditional-wisdom-with-modern-care",
+    title: "Nepal's Health Tapestry: Weaving Traditional Wisdom with Modern Care",
+    summary:
+      "In Nepal, health and illness narratives are deeply rooted in cultural beliefs and traditional practices, significantly influencing how communities perceive well-being and seek care. Effective public health initiatives must respectfully integrate scientific knowledge with these indigenous understandings to achieve sustainable impact.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-06-nepal-s-health-tapestry-weaving-traditional-wisdom-with-modern-care.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rfk-jr-urges-medical-schools-to-increase-nutrition-education",
     title: "Global Health and Education Watch: RFK Jr urges medical schools to increase nutrition education",
     summary:
