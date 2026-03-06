@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "fda-vaccine-chief-s-second-departure-raises-global-health-governance-questions",
+    title: "FDA Vaccine Chief's Second Departure Raises Global Health Governance Questions",
+    summary:
+      "Dr. Vinay Prasad, the FDA's vaccine and specialty drug chief, is departing the agency for the second time in less than a year. His exit prompts global discussion on regulatory stability, public trust, and the challenges facing health governance.",
+    thumbnailImage: "/images/global-news/2026/2026-03-06-fda-vaccine-chief-s-second-departure-raises-global-health-governance-questions.jpg",
+    date: "2026-03-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-outcry-as-iranian-girls-school-strike-under-investigation",
     title: "Global Outcry as Iranian Girls' School Strike Under Investigation",
     summary:
