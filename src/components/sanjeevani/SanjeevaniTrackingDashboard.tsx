@@ -1,20 +1,75 @@
 "use client";
 
-import { useEffect, useRef, useState, ReactNode } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import {
-  EXECUTIVE_DASHBOARD,
+  Activity,
+  ArrowRight,
+  BadgeDollarSign,
+  CalendarRange,
+  Clock3,
+  Gauge,
+  HeartPulse,
+  MapPinned,
+  ShieldCheck,
+  Stethoscope,
+  Target,
+  TrendingUp,
+  Users,
+  Wallet,
+  X,
+  type LucideIcon,
+} from "lucide-react";
+import {
   CAMP_MASTER_LOG,
-  MONTHLY_TRACKER,
-  FIVE_YEAR_ROLLOUT,
-  SCALING_SCENARIOS,
-  IMPACT_METRICS,
+  EXECUTIVE_DASHBOARD,
   FINANCIAL_SUMMARY,
-  RURAL_COVERAGE,
+  FIVE_YEAR_ROLLOUT,
+  IMPACT_METRICS,
+  MONTHLY_TRACKER,
   PROVINCE_SUMMARY,
+  RURAL_COVERAGE,
+  SCALING_SCENARIOS,
   type CampRecord,
 } from "@/content/sanjeevani-tracking-data";
 
-/* ─── Animated Counter ────────────────────────────────────── */
+type TabKey = "overview" | "camps" | "finance";
+type Tone = "primary" | "secondary" | "forest" | "amber" | "slate";
+
+const toneStyles: Record<Tone, string> = {
+  primary:
+    "bg-[linear-gradient(135deg,#fff6f1_0%,#ffffff_65%)] border-primary-100 text-primary-600",
+  secondary:
+    "bg-[linear-gradient(135deg,#f3f8ff_0%,#ffffff_65%)] border-secondary-100 text-secondary-600",
+  forest:
+    "bg-[linear-gradient(135deg,#f5fbf5_0%,#ffffff_65%)] border-forest-100 text-forest-600",
+  amber:
+    "bg-[linear-gradient(135deg,#fff9ef_0%,#ffffff_65%)] border-amber-100 text-amber-600",
+  slate:
+    "bg-[linear-gradient(135deg,#f8fafc_0%,#ffffff_65%)] border-slate-200 text-slate-700",
+};
+
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+
+function formatDate(date: string) {
+  return dateFormatter.format(new Date(date));
+}
+
+function formatUSD(amount: number) {
+  if (amount >= 1_000_000_000) return `$${(amount / 1_000_000_000).toFixed(1)}B`;
+  if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
+  if (amount >= 1_000) return `$${(amount / 1_000).toFixed(0)}K`;
+  return `$${amount.toLocaleString("en-US")}`;
+}
+
+function formatMonthLabel(month: string) {
+  return month.replace(" 20", " '");
+}
+
 function AnimatedCounter({
   target,
   duration = 2000,
@@ -33,8 +88,9 @@ function AnimatedCounter({
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated.current) {
@@ -52,14 +108,15 @@ function AnimatedCounter({
       },
       { threshold: 0.3 }
     );
-    observer.observe(el);
+
+    observer.observe(element);
     return () => observer.disconnect();
-  }, [target, duration]);
+  }, [duration, target]);
 
   const formatted =
     decimals > 0
       ? count.toFixed(decimals)
-      : Math.round(count).toLocaleString("en-NP");
+      : Math.round(count).toLocaleString("en-US");
 
   return (
     <span ref={ref}>
@@ -70,7 +127,6 @@ function AnimatedCounter({
   );
 }
 
-/* ─── Section Wrapper (matches site max-w-[1320px] px-4) ── */
 function Section({
   id,
   children,
@@ -81,29 +137,64 @@ function Section({
   className?: string;
 }) {
   return (
-    <section id={id} className={`w-full px-4 py-10 md:py-12 ${className}`}>
+    <section id={id} className={`w-full px-4 py-8 md:py-10 ${className}`}>
       <div className="max-w-[1320px] mx-auto">{children}</div>
     </section>
   );
 }
 
-/* ─── Section Title (matches MainTitle border-l-4 pattern) ─ */
-function SectionTitle({ light, bold }: { light: string; bold: string }) {
+function SurfaceCard({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   return (
-    <h2 className="flex flex-wrap gap-x-3 items-center font-Poppins text-xl/10 sm:text-2xl/10 md:text-[40px]/10 border-l-4 border-primary-500 px-2 sm:min-h-10 mb-6">
-      <span className="font-thin text-gray-800 leading-8">{light}</span>
-      <span className="font-medium text-primary-500 leading-8">{bold}</span>
-    </h2>
+    <div
+      className={`rounded-[28px] border border-slate-200 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.06)] ${className}`}
+    >
+      {children}
+    </div>
   );
 }
 
-/* ─── Progress Bar ────────────────────────────────────────── */
+function SectionHeader({
+  eyebrow,
+  title,
+  description,
+  action,
+}: {
+  eyebrow: string;
+  title: string;
+  description?: string;
+  action?: ReactNode;
+}) {
+  return (
+    <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div className="max-w-3xl">
+        <p className="inline-flex items-center gap-2 rounded-full bg-[#eaf3ff] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-secondary-700">
+          <span className="h-2 w-2 rounded-full bg-secondary-500" />
+          {eyebrow}
+        </p>
+        <h2 className="mt-3 text-2xl md:text-[34px] font-semibold leading-tight text-slate-900">
+          {title}
+        </h2>
+        {description ? (
+          <p className="mt-2 text-sm leading-7 text-slate-600">{description}</p>
+        ) : null}
+      </div>
+      {action ? <div className="shrink-0">{action}</div> : null}
+    </div>
+  );
+}
+
 function ProgressBar({
   value,
   max,
   color = "bg-primary-500",
   height = "h-3",
-  showLabel = true,
+  showLabel = false,
 }: {
   value: number;
   max: number;
@@ -111,542 +202,1410 @@ function ProgressBar({
   height?: string;
   showLabel?: boolean;
 }) {
-  const pct = Math.min((value / max) * 100, 100);
+  const pct = max === 0 ? 0 : Math.min((value / max) * 100, 100);
+
   return (
     <div className="w-full">
-      <div className={`w-full bg-gray-100 rounded-full ${height} overflow-hidden`}>
+      <div className={`overflow-hidden rounded-full bg-slate-100 ${height}`}>
         <div
           className={`${color} ${height} rounded-full transition-all duration-1000 ease-out`}
           style={{ width: `${pct}%` }}
         />
       </div>
-      {showLabel && (
-        <p className="text-xs text-gray-500 mt-1 text-right">{pct.toFixed(1)}%</p>
-      )}
+      {showLabel ? (
+        <p className="mt-1 text-right text-xs text-slate-500">{pct.toFixed(1)}%</p>
+      ) : null}
     </div>
   );
 }
 
-/* ─── Format USD ──────────────────────────────────────────── */
-function formatUSD(amount: number) {
-  if (amount >= 1_000_000_000) return `$${(amount / 1_000_000_000).toFixed(1)}B`;
-  if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
-  if (amount >= 1_000) return `$${(amount / 1_000).toFixed(0)}K`;
-  return `$${amount.toLocaleString()}`;
+function MetricCard({
+  icon: Icon,
+  label,
+  value,
+  detail,
+  tone = "slate",
+}: {
+  icon: LucideIcon;
+  label: string;
+  value: ReactNode;
+  detail: string;
+  tone?: Tone;
+}) {
+  return (
+    <SurfaceCard className={`border p-5 ${toneStyles[tone]}`}>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+            {label}
+          </p>
+          <div className="mt-3 text-3xl font-semibold leading-none text-slate-900">
+            {value}
+          </div>
+        </div>
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/80 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.14)]">
+          <Icon className="h-5 w-5" />
+        </div>
+      </div>
+      <p className="mt-3 text-sm leading-6 text-slate-600">{detail}</p>
+    </SurfaceCard>
+  );
 }
 
-/* ═══════════════════════════════════════════════════════════ */
-/*  MAIN COMPONENT                                            */
-/* ═══════════════════════════════════════════════════════════ */
+function DetailRow({
+  label,
+  value,
+}: {
+  label: string;
+  value: ReactNode;
+}) {
+  return (
+    <div className="flex items-center justify-between gap-4 border-b border-slate-100 py-3 last:border-b-0">
+      <span className="text-sm text-slate-500">{label}</span>
+      <span className="text-sm font-semibold text-slate-900">{value}</span>
+    </div>
+  );
+}
+
 export default function SanjeevaniTrackingDashboard() {
   const [selectedCamp, setSelectedCamp] = useState<CampRecord | null>(null);
-  const [activeTab, setActiveTab] = useState<"overview" | "camps" | "finance">("overview");
+  const [activeTab, setActiveTab] = useState<TabKey>("overview");
+
   const d = EXECUTIVE_DASHBOARD;
+  const latestMonth = MONTHLY_TRACKER[MONTHLY_TRACKER.length - 1];
+  const currentYear = FIVE_YEAR_ROLLOUT.find((year) => year.year === 2026);
+  const currentScenario = SCALING_SCENARIOS.find((scenario) => scenario.teams === d.activeMedicalTeams);
+  const maxProvincePatients = Math.max(...PROVINCE_SUMMARY.map((province) => province.totalPatients));
+  const maxMonthlyPatients = Math.max(...MONTHLY_TRACKER.map((month) => month.patientsThisMonth));
+  const maxYearlyBudget = Math.max(...FIVE_YEAR_ROLLOUT.map((year) => year.estimatedBudget));
+  const latestCamps = CAMP_MASTER_LOG.slice(-4).reverse();
+  const totalReferrals = CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.referrals, 0);
+  const totalMedicines = CAMP_MASTER_LOG.reduce(
+    (sum, camp) => sum + camp.medicinesDistributed,
+    0
+  );
+  const averageCampCost =
+    CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.totalCost, 0) /
+    CAMP_MASTER_LOG.length;
+  const averageCampDuration =
+    CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.effectiveDays, 0) /
+    CAMP_MASTER_LOG.length;
+  const teamSummaries = ["Team A", "Team B"].map((team) => {
+    const camps = CAMP_MASTER_LOG.filter((camp) => camp.teamAssigned === team);
+    const patients = camps.reduce((sum, camp) => sum + camp.totalPatients, 0);
+    const spend = camps.reduce((sum, camp) => sum + camp.totalCost, 0);
+
+    return {
+      team,
+      camps: camps.length,
+      patients,
+      spend,
+      averagePatients: Math.round(patients / camps.length),
+    };
+  });
 
   return (
-    <div className="min-h-screen bg-white font-Poppins">
-      {/* ═══════ PAGE HEADER ═══════ */}
-      <section className="w-full px-4 pt-6 pb-10">
-        <div className="max-w-[1320px] mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-            <div>
-              <p className="text-sm text-gray-500 mb-1">Project Sanjeevani</p>
-              <h1 className="flex flex-wrap gap-x-3 items-center font-Poppins text-2xl sm:text-3xl md:text-[40px] border-l-4 border-primary-500 px-3">
-                <span className="font-thin text-gray-800 leading-tight">Live Tracking</span>
-                <span className="font-medium text-primary-500 leading-tight">Dashboard</span>
-              </h1>
-              <p className="text-sm text-gray-500 mt-2 max-w-xl">
-                National Rural Health Mission — Real-time progress across all 7
-                provinces of Nepal, targeting 460 rural municipalities by 2030.
-              </p>
-            </div>
-            <div className="flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 text-sm font-medium px-4 py-2 rounded-full shrink-0">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-              </span>
-              Active — On Track
-            </div>
-          </div>
+    <div className="bg-[linear-gradient(180deg,#ffffff_0%,#fbfcfe_35%,#f8fafc_100%)] font-Poppins">
+      <section className="relative w-full overflow-hidden px-4 pb-8 pt-2 md:pb-10">
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top_left,rgba(44,119,187,0.14),transparent_32%),radial-gradient(circle_at_85%_20%,rgba(235,88,52,0.16),transparent_28%),linear-gradient(180deg,#ffffff_0%,#f7fbff_100%)]" />
+        <div className="absolute inset-0 -z-10 opacity-[0.12]">
+          <Image
+            src="/sanjeevani/sanjeevani-1.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center grayscale"
+          />
+        </div>
 
-          {/* Summary KPI row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { label: "Patients Served", value: d.totalPatientsServed.toLocaleString(), sub: "Since May 2025", accent: "border-primary-500", color: "text-primary-600" },
-              { label: "Health Camps", value: d.totalCampsConducted.toString(), sub: `Avg ${d.avgPatientsPerCamp.toLocaleString()} patients/camp`, accent: "border-secondary-500", color: "text-secondary-600" },
-              { label: "Total Investment", value: `$${Math.round(d.totalSpendingSoFar / 1000)}K`, sub: `~$${d.costPerPatient} per patient`, accent: "border-forest-500", color: "text-forest-600" },
-              { label: "Target Year", value: "2030", sub: "5-year national rollout", accent: "border-gray-400", color: "text-gray-900" },
-            ].map((s) => (
-              <div key={s.label} className={`bg-white rounded-xl border border-gray-200 border-l-4 ${s.accent} p-4 md:p-5`}>
-                <p className="text-xs text-gray-500 uppercase tracking-wide font-medium">{s.label}</p>
-                <p className={`text-2xl md:text-3xl font-bold ${s.color} mt-1`}>{s.value}</p>
-                <p className="text-xs text-gray-400 mt-1">{s.sub}</p>
+        <div className="max-w-[1320px] mx-auto">
+          <SurfaceCard className="overflow-hidden bg-white/88 backdrop-blur-sm">
+            <div className="relative grid gap-6 p-6 md:p-8 lg:grid-cols-[1.08fr_0.92fr] lg:p-10">
+              <div className="absolute -right-16 -top-20 h-56 w-56 rounded-full bg-primary-200/40 blur-3xl" />
+              <div className="absolute bottom-0 left-0 h-48 w-48 rounded-full bg-secondary-200/40 blur-3xl" />
+
+              <div className="relative">
+                <p className="inline-flex items-center gap-2 rounded-full bg-[#fff1eb] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-primary-600">
+                  <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                  Live Field Intelligence
+                </p>
+                <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1.02] text-slate-900 md:text-5xl">
+                  Project Sanjeevani
+                  <span className="block text-primary-500">Tracking Portal</span>
+                </h1>
+                <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+                  A single operational view for Project Sanjeevani: patient volume,
+                  province coverage, camp execution, cost discipline, and rollout
+                  readiness across Nepal.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700">
+                    <CalendarRange className="h-4 w-4 text-secondary-500" />
+                    Reporting window: May 2025 to Feb 2026
+                  </div>
+                  <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700">
+                    <ShieldCheck className="h-4 w-4 text-forest-500" />
+                    16 verified camps logged
+                  </div>
+                </div>
               </div>
-            ))}
+
+              <div className="relative grid gap-4">
+                <div className="rounded-[26px] border border-slate-200 bg-[linear-gradient(140deg,#1f2937_0%,#0f172a_100%)] p-6 text-white shadow-[0_18px_40px_rgba(15,23,42,0.18)]">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-300">
+                        Mission Status
+                      </p>
+                      <h2 className="mt-2 text-2xl font-semibold">Phase I active</h2>
+                    </div>
+                    <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-slate-100">
+                      <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                      Live reporting
+                    </div>
+                  </div>
+
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    <div className="rounded-2xl bg-white/8 p-4">
+                      <p className="text-xs uppercase tracking-[0.16em] text-slate-300">
+                        Coverage
+                      </p>
+                      <p className="mt-2 text-3xl font-semibold">
+                        {RURAL_COVERAGE.coveragePercent.toFixed(1)}%
+                      </p>
+                      <p className="mt-2 text-xs text-slate-300">
+                        {RURAL_COVERAGE.coveredSoFar} of {RURAL_COVERAGE.totalRuralMunicipalities} rural municipalities
+                      </p>
+                    </div>
+                    <div className="rounded-2xl bg-white/8 p-4">
+                      <p className="text-xs uppercase tracking-[0.16em] text-slate-300">
+                        Latest month
+                      </p>
+                      <p className="mt-2 text-3xl font-semibold">
+                        {latestMonth.patientsThisMonth.toLocaleString("en-US")}
+                      </p>
+                      <p className="mt-2 text-xs text-slate-300">
+                        patients served in {latestMonth.month}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid gap-4 sm:grid-cols-3">
+                  <SurfaceCard className="p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Capacity
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      <AnimatedCounter target={d.estimatedWeeklyCapacity} />
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">patients per week at current setup</p>
+                  </SurfaceCard>
+                  <SurfaceCard className="p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Unit cost
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      <AnimatedCounter target={d.costPerPatient} prefix="$" decimals={1} />
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">cost per patient served</p>
+                  </SurfaceCard>
+                  <SurfaceCard className="p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Rollout reality
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {currentScenario?.yearsToComplete.toFixed(1)} yrs
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">to cover all rural municipalities with 2 teams</p>
+                  </SurfaceCard>
+                </div>
+              </div>
+            </div>
+          </SurfaceCard>
+
+          <div className="mt-5 grid grid-cols-2 gap-4 xl:grid-cols-4">
+            <MetricCard
+              icon={Users}
+              label="Patients Served"
+              value={<AnimatedCounter target={d.totalPatientsServed} />}
+              detail="Live cumulative total from all completed camps."
+              tone="primary"
+            />
+            <MetricCard
+              icon={Activity}
+              label="Health Camps"
+              value={<AnimatedCounter target={d.totalCampsConducted} />}
+              detail={`Average ${d.avgPatientsPerCamp.toLocaleString("en-US")} patients per camp.`}
+              tone="secondary"
+            />
+            <MetricCard
+              icon={MapPinned}
+              label="Province Coverage"
+              value={`${PROVINCE_SUMMARY.length}/7`}
+              detail="Field footprint now spans every province in Nepal."
+              tone="forest"
+            />
+            <MetricCard
+              icon={Wallet}
+              label="Total Investment"
+              value={<AnimatedCounter target={d.totalSpendingSoFar / 1000} prefix="$" suffix="K" />}
+              detail="Actual spend logged against patient and camp delivery."
+              tone="amber"
+            />
           </div>
         </div>
       </section>
 
-      {/* ═══════ TAB NAV ═══════ */}
-      <div className="sticky top-28 z-30 bg-white border-b border-gray-200">
-        <div className="max-w-[1320px] mx-auto px-4 flex gap-1 overflow-x-auto">
-          {([
-            { key: "overview", label: "Overview" },
-            { key: "camps", label: "Camp Details" },
-            { key: "finance", label: "Finance & Scale" },
-          ] as const).map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => setActiveTab(tab.key)}
-              className={`px-5 py-3.5 text-sm font-medium whitespace-nowrap border-b-[3px] transition-colors ${
-                activeTab === tab.key
-                  ? "border-primary-500 text-primary-600"
-                  : "border-transparent text-gray-400 hover:text-gray-700"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+      <div className="sticky top-28 z-30 border-y border-slate-200 bg-white/90 backdrop-blur-md shadow-[0_6px_18px_rgba(15,23,42,0.05)]">
+        <div className="max-w-[1320px] mx-auto px-4">
+          <div className="flex gap-2 overflow-x-auto py-2">
+            {([
+              { key: "overview", label: "Overview" },
+              { key: "camps", label: "Camp Operations" },
+              { key: "finance", label: "Finance & Scale" },
+            ] as const).map((tab) => (
+              <button
+                key={tab.key}
+                type="button"
+                onClick={() => setActiveTab(tab.key)}
+                className={`rounded-full px-4 py-2.5 text-sm font-medium transition-colors ${
+                  activeTab === tab.key
+                    ? "bg-slate-900 text-white"
+                    : "bg-transparent text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* ═══════ OVERVIEW TAB ═══════ */}
-      {activeTab === "overview" && (
+      {activeTab === "overview" ? (
         <>
-          {/* ── Executive KPIs ── */}
-          <Section id="kpis">
-            <SectionTitle light="Executive" bold="Dashboard" />
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { label: "Total Patients", value: <AnimatedCounter target={d.totalPatientsServed} />, sub: "Since May 2025", border: "border-t-primary-500" },
-                { label: "Camps Conducted", value: <AnimatedCounter target={d.totalCampsConducted} />, sub: `Avg ${d.avgPatientsPerCamp.toLocaleString()} patients/camp`, border: "border-t-secondary-500" },
-                { label: "Active Teams", value: <AnimatedCounter target={d.activeMedicalTeams} />, sub: `${d.estimatedWeeklyCapacity.toLocaleString()} patients/week`, border: "border-t-forest-500" },
-                { label: "Total Spent (USD)", value: <AnimatedCounter target={d.totalSpendingSoFar / 1_000} prefix="$" suffix="K" decimals={0} />, sub: `~$${d.costPerPatient} per patient`, border: "border-t-primary-500" },
-                { label: "Annual Capacity", value: <AnimatedCounter target={d.estimatedAnnualCapacity} />, sub: "With current 2 teams", border: "border-t-secondary-500" },
-                { label: "Rural Coverage", value: <><AnimatedCounter target={RURAL_COVERAGE.coveredSoFar} /><span className="text-gray-400 text-lg font-normal">/{RURAL_COVERAGE.totalRuralMunicipalities}</span></>, sub: `${RURAL_COVERAGE.coveragePercent.toFixed(1)}% covered`, border: "border-t-forest-500" },
-                { label: "Medicines Given", value: <AnimatedCounter target={IMPACT_METRICS.medicinesDistributed} />, sub: "90% of patients received", border: "border-t-primary-500" },
-                { label: "Target Year", value: "2030", sub: "5-year national rollout", border: "border-t-secondary-500" },
-              ].map((kpi) => (
-                <div key={kpi.label} className={`bg-white rounded-xl border border-gray-200 border-t-4 ${kpi.border} p-5 hover:shadow-md transition-shadow`}>
-                  <p className="text-xs text-gray-500 uppercase tracking-wide font-medium mb-2">{kpi.label}</p>
-                  <p className="text-2xl font-bold text-gray-900">{kpi.value}</p>
-                  <p className="text-xs text-gray-400 mt-1">{kpi.sub}</p>
-                </div>
-              ))}
-            </div>
-          </Section>
+          <Section id="mission-control">
+            <SectionHeader
+              eyebrow="Mission Control"
+              title="Operational performance at a glance"
+              description="The overview focuses on coverage, patient throughput, province distribution, and month-over-month execution using the current Sanjeevani field logs."
+            />
 
-          {/* ── Rural Coverage Progress ── */}
-          <Section id="coverage" className="bg-gray-50">
-            <SectionTitle light="Rural Coverage" bold="Progress" />
-            <div className="bg-white rounded-xl border border-gray-200 p-6 md:p-8">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-                <div>
-                  <p className="text-3xl font-bold text-gray-900">
-                    <AnimatedCounter target={RURAL_COVERAGE.coveredSoFar} />{" "}
-                    <span className="text-lg font-normal text-gray-500">of {RURAL_COVERAGE.totalRuralMunicipalities} Rural Municipalities</span>
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1">
-                    {RURAL_COVERAGE.coveragePercent.toFixed(1)}% coverage achieved — {RURAL_COVERAGE.totalRuralMunicipalities - RURAL_COVERAGE.coveredSoFar} remaining
-                  </p>
-                </div>
-              </div>
-              <ProgressBar value={RURAL_COVERAGE.coveredSoFar} max={RURAL_COVERAGE.totalRuralMunicipalities} color="bg-primary-500" height="h-4" />
-            </div>
-          </Section>
-
-          {/* ── Province Distribution ── */}
-          <Section id="provinces">
-            <SectionTitle light="Province-wise" bold="Distribution" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {PROVINCE_SUMMARY.map((p) => {
-                const maxPatients = Math.max(...PROVINCE_SUMMARY.map((x) => x.totalPatients));
-                return (
-                  <div key={p.province} className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-md transition-shadow">
-                    <div className="flex justify-between items-start mb-3">
-                      <h3 className="font-semibold text-gray-900">{p.province}</h3>
-                      <span className="text-xs bg-primary-50 text-primary-600 border border-primary-200 px-2 py-0.5 rounded-full font-medium">
-                        {p.campsCompleted} {p.campsCompleted === 1 ? "camp" : "camps"}
-                      </span>
-                    </div>
-                    <p className="text-2xl font-bold text-gray-900 mb-0.5">{p.totalPatients.toLocaleString()}</p>
-                    <p className="text-xs text-gray-400 mb-3">patients served</p>
-                    <ProgressBar value={p.totalPatients} max={maxPatients} color="bg-primary-500" height="h-2" showLabel={false} />
-                    <div className="mt-3 flex flex-wrap gap-1.5">
-                      {p.districts.map((dist) => (
-                        <span key={dist} className="text-[11px] bg-gray-50 text-gray-600 px-2 py-0.5 rounded border border-gray-100">{dist}</span>
-                      ))}
-                    </div>
+            <div className="grid gap-5 xl:grid-cols-[1.12fr_0.88fr]">
+              <SurfaceCard className="overflow-hidden p-6 md:p-8">
+                <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      National rollout progress
+                    </p>
+                    <h3 className="mt-2 text-3xl font-semibold text-slate-900 md:text-[38px]">
+                      {RURAL_COVERAGE.coveredSoFar} municipalities reached
+                    </h3>
+                    <p className="mt-2 max-w-xl text-sm leading-7 text-slate-600">
+                      Sanjeevani has operationally touched {RURAL_COVERAGE.coveredSoFar} rural municipalities.
+                      {` ${RURAL_COVERAGE.totalRuralMunicipalities - RURAL_COVERAGE.coveredSoFar}`} remain for full rural coverage.
+                    </p>
                   </div>
-                );
-              })}
-            </div>
-          </Section>
-
-          {/* ── Impact Metrics ── */}
-          <Section id="impact" className="bg-gray-50">
-            <SectionTitle light="Impact" bold="Metrics" />
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {[
-                { label: "Total Patients", value: IMPACT_METRICS.totalPatientsServed, color: "text-primary-600", border: "border-t-primary-500" },
-                { label: "Women (42%)", value: IMPACT_METRICS.womenBeneficiaries, color: "text-pink-600", border: "border-t-pink-500" },
-                { label: "Children (10%)", value: IMPACT_METRICS.childrenBeneficiaries, color: "text-amber-600", border: "border-t-amber-500" },
-                { label: "Referrals (5%)", value: IMPACT_METRICS.estimatedReferrals, color: "text-secondary-600", border: "border-t-secondary-500" },
-                { label: "Medicines (90%)", value: IMPACT_METRICS.medicinesDistributed, color: "text-forest-600", border: "border-t-forest-500" },
-              ].map((m) => (
-                <div key={m.label} className={`bg-white rounded-xl border border-gray-200 border-t-4 ${m.border} p-5 text-center hover:shadow-md transition-shadow`}>
-                  <p className={`text-2xl font-bold ${m.color}`}><AnimatedCounter target={m.value} /></p>
-                  <p className="text-xs text-gray-500 mt-1">{m.label}</p>
+                  <div className="rounded-2xl bg-slate-50 px-5 py-4 text-center">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Coverage achieved
+                    </p>
+                    <p className="mt-2 text-4xl font-semibold text-primary-600">
+                      {RURAL_COVERAGE.coveragePercent.toFixed(1)}%
+                    </p>
+                  </div>
                 </div>
-              ))}
+
+                <div className="mt-6">
+                  <ProgressBar
+                    value={RURAL_COVERAGE.coveredSoFar}
+                    max={RURAL_COVERAGE.totalRuralMunicipalities}
+                    color="bg-[linear-gradient(90deg,#eb5834_0%,#2c77bb_100%)]"
+                    height="h-4"
+                    showLabel
+                  />
+                </div>
+
+                <div className="mt-6 grid gap-4 sm:grid-cols-3">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Weekly capacity
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      <AnimatedCounter target={d.estimatedWeeklyCapacity} />
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">patients per week</p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Medicines delivered
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      <AnimatedCounter target={totalMedicines} />
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">90% of patients received medication</p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Referral pipeline
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      <AnimatedCounter target={totalReferrals} />
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">patients escalated for follow-up care</p>
+                  </div>
+                </div>
+              </SurfaceCard>
+
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Delivery health
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  Current operating posture
+                </h3>
+                <div className="mt-6 space-y-4">
+                  {[
+                    {
+                      label: "Active medical teams",
+                      value: `${d.activeMedicalTeams}`,
+                      detail: "Two field teams currently deployed.",
+                      icon: Stethoscope,
+                      tone: "primary" as Tone,
+                    },
+                    {
+                      label: "Average duration",
+                      value: `${Math.round(averageCampDuration)} days`,
+                      detail: "Typical camp length under current logistics.",
+                      icon: Clock3,
+                      tone: "secondary" as Tone,
+                    },
+                    {
+                      label: "Annual capacity",
+                      value: d.estimatedAnnualCapacity.toLocaleString("en-US"),
+                      detail: "Projected with current team count.",
+                      icon: Gauge,
+                      tone: "forest" as Tone,
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.label}
+                      className={`rounded-2xl border p-4 ${toneStyles[item.tone]}`}
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <p className="text-sm font-semibold text-slate-900">{item.label}</p>
+                          <p className="mt-1 text-2xl font-semibold text-slate-900">
+                            {item.value}
+                          </p>
+                          <p className="mt-1 text-xs text-slate-500">{item.detail}</p>
+                        </div>
+                        <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/85">
+                          <item.icon className="h-4 w-4" />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                    <Target className="h-4 w-4 text-primary-500" />
+                    2030 planning note
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    The current two-team model supports execution stability, but
+                    national rural coverage requires planned scale-up beyond the
+                    present operating footprint.
+                  </p>
+                </div>
+              </SurfaceCard>
             </div>
           </Section>
 
-          {/* ── Monthly Progress ── */}
-          <Section id="monthly">
-            <SectionTitle light="Monthly" bold="Progress" />
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <div className="flex items-end gap-2 h-56 mb-4 px-2">
-                {MONTHLY_TRACKER.map((m) => {
-                  const maxP = Math.max(...MONTHLY_TRACKER.map((x) => x.patientsThisMonth));
-                  const heightPct = (m.patientsThisMonth / maxP) * 100;
-                  return (
-                    <div key={m.month} className="flex-1 min-w-[50px] flex flex-col items-center gap-1">
-                      <span className="text-[11px] font-semibold text-gray-700">{m.patientsThisMonth.toLocaleString()}</span>
-                      <div className="w-full bg-primary-500 rounded-t-md transition-all duration-700" style={{ height: `${heightPct}%` }} />
-                      <span className="text-[10px] text-gray-500 text-center leading-tight">{m.month.replace(" 20", " '")}</span>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 mt-2">
-                <p className="text-sm font-medium text-gray-600 mb-3">Cumulative Patient Growth</p>
-                <div className="flex items-end gap-1 h-16">
-                  {MONTHLY_TRACKER.map((m, i) => {
-                    const maxC = MONTHLY_TRACKER[MONTHLY_TRACKER.length - 1].cumulativePatients;
-                    const pct = (m.cumulativePatients / maxC) * 100;
+          <Section id="field-pulse" className="pt-0">
+            <div className="grid gap-5 xl:grid-cols-[1.05fr_0.95fr]">
+              <SurfaceCard className="p-6 md:p-8">
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Monthly pulse
+                    </p>
+                    <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                      Patient throughput over time
+                    </h3>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-right">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Latest month
+                    </p>
+                    <p className="mt-1 text-xl font-semibold text-slate-900">
+                      {latestMonth.patientsThisMonth.toLocaleString("en-US")}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex h-64 items-end gap-2">
+                  {MONTHLY_TRACKER.map((month) => {
+                    const heightPercent = (month.patientsThisMonth / maxMonthlyPatients) * 100;
+                    const isLatest = month.month === latestMonth.month;
                     return (
-                      <div key={m.month} className="flex-1 flex flex-col items-center gap-0.5">
-                        <div className="w-full bg-secondary-400 rounded-t-sm" style={{ height: `${pct}%` }} />
-                        {(i === 0 || i === MONTHLY_TRACKER.length - 1 || i === Math.floor(MONTHLY_TRACKER.length / 2)) && (
-                          <span className="text-[9px] text-gray-400">{(m.cumulativePatients / 1000).toFixed(1)}K</span>
-                        )}
+                      <div
+                        key={month.month}
+                        className="flex min-w-0 flex-1 flex-col items-center gap-2"
+                      >
+                        <span className="text-[10px] font-semibold text-slate-600">
+                          {(month.patientsThisMonth / 1000).toFixed(1)}K
+                        </span>
+                        <div className="flex h-52 w-full items-end rounded-t-[22px] bg-slate-50 px-1.5 pt-2">
+                          <div
+                            className={`w-full rounded-t-[18px] transition-all duration-700 ${
+                              isLatest
+                                ? "bg-[linear-gradient(180deg,#eb5834_0%,#c93f20_100%)]"
+                                : "bg-[linear-gradient(180deg,#2c77bb_0%,#1e4f7e_100%)]"
+                            }`}
+                            style={{ height: `${heightPercent}%` }}
+                          />
+                        </div>
+                        <span className="text-center text-[10px] leading-tight text-slate-500">
+                          {formatMonthLabel(month.month)}
+                        </span>
                       </div>
                     );
                   })}
                 </div>
-              </div>
+
+                <div className="mt-6 grid gap-4 sm:grid-cols-3">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Camps in period
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {MONTHLY_TRACKER.reduce((sum, month) => sum + month.campsConducted, 0)}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Avg monthly patients
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {d.avgPatientsPerMonth.toLocaleString("en-US")}
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Cumulative total
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {latestMonth.cumulativePatients.toLocaleString("en-US")}
+                    </p>
+                  </div>
+                </div>
+              </SurfaceCard>
+
+              <SurfaceCard className="p-6 md:p-8">
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Latest field activity
+                    </p>
+                    <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                      Recent camps and handoff points
+                    </h3>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab("camps")}
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:bg-slate-50"
+                  >
+                    Open camp log
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </div>
+
+                <div className="mt-6 space-y-3">
+                  {latestCamps.map((camp) => (
+                    <button
+                      key={camp.campId}
+                      type="button"
+                      onClick={() => setSelectedCamp(camp)}
+                      className="w-full rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left transition-colors hover:border-primary-200 hover:bg-white"
+                    >
+                      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className="rounded-full bg-[#fff1eb] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary-600">
+                              {camp.campId}
+                            </span>
+                            <span className="rounded-full bg-[#eaf3ff] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-secondary-700">
+                              {camp.teamAssigned}
+                            </span>
+                          </div>
+                          <h4 className="mt-3 text-lg font-semibold text-slate-900">
+                            {camp.district}, {camp.province}
+                          </h4>
+                          <p className="mt-1 text-sm text-slate-500">
+                            {camp.ruralMunicipality} • {formatDate(camp.startDate)} to {formatDate(camp.endDate)}
+                          </p>
+                        </div>
+
+                        <div className="grid grid-cols-3 gap-3 sm:min-w-[280px]">
+                          <div className="rounded-2xl bg-white px-3 py-3 text-center">
+                            <p className="text-lg font-semibold text-slate-900">
+                              {camp.totalPatients.toLocaleString("en-US")}
+                            </p>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Patients
+                            </p>
+                          </div>
+                          <div className="rounded-2xl bg-white px-3 py-3 text-center">
+                            <p className="text-lg font-semibold text-slate-900">
+                              {camp.referrals}
+                            </p>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Referrals
+                            </p>
+                          </div>
+                          <div className="rounded-2xl bg-white px-3 py-3 text-center">
+                            <p className="text-lg font-semibold text-slate-900">
+                              {camp.effectiveDays}
+                            </p>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Days
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </SurfaceCard>
             </div>
           </Section>
 
-          {/* ── 5-Year Rollout ── */}
-          <Section id="rollout" className="bg-gray-50">
-            <SectionTitle light="5-Year" bold="Rollout Plan (2025–2030)" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {FIVE_YEAR_ROLLOUT.map((yr) => {
-                const maxCum = FIVE_YEAR_ROLLOUT[FIVE_YEAR_ROLLOUT.length - 1].cumulativePatients;
-                const isCurrent = yr.year === 2026;
-                return (
-                  <div key={yr.year} className={`rounded-xl border p-5 transition-shadow hover:shadow-md ${isCurrent ? "bg-primary-50 border-primary-300" : "bg-white border-gray-200"}`}>
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className={`text-2xl font-bold ${isCurrent ? "text-primary-600" : "text-gray-900"}`}>{yr.year}</h3>
-                      {isCurrent && <span className="text-xs bg-primary-500 text-white px-2.5 py-1 rounded-full font-medium">Current</span>}
-                      {yr.year < 2026 && <span className="text-xs bg-green-50 text-green-700 border border-green-200 px-2 py-0.5 rounded-full">Completed</span>}
-                      {yr.year > 2026 && <span className="text-xs bg-gray-50 text-gray-500 border border-gray-200 px-2 py-0.5 rounded-full">Planned</span>}
+          <Section id="geographic-footprint" className="pt-0">
+            <SectionHeader
+              eyebrow="Geographic Footprint"
+              title="Province-by-province delivery"
+              description="Coverage is spread across all seven provinces, with the heaviest concentration in Karnali and Sudurpashchim based on current camp execution."
+            />
+
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              {PROVINCE_SUMMARY.map((province) => (
+                <SurfaceCard key={province.province} className="p-5">
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <h3 className="text-lg font-semibold text-slate-900">
+                        {province.province}
+                      </h3>
+                      <p className="mt-1 text-sm text-slate-500">
+                        {province.campsCompleted} camp{province.campsCompleted === 1 ? "" : "s"}
+                      </p>
                     </div>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between"><span className="text-gray-500">Patients</span><span className="font-semibold text-gray-900">{yr.projectedPatients.toLocaleString()}</span></div>
-                      <div className="flex justify-between"><span className="text-gray-500">Camps</span><span className="font-semibold text-gray-900">{yr.projectedCamps}</span></div>
-                      <div className="flex justify-between"><span className="text-gray-500">Budget</span><span className="font-semibold text-gray-900">{formatUSD(yr.estimatedBudget)}</span></div>
-                    </div>
-                    <div className="mt-4">
-                      <div className="flex justify-between text-xs text-gray-400 mb-1">
-                        <span>Cumulative</span>
-                        <span>{yr.cumulativePatients.toLocaleString()} / {maxCum.toLocaleString()}</span>
-                      </div>
-                      <ProgressBar value={yr.cumulativePatients} max={maxCum} color={isCurrent ? "bg-primary-500" : "bg-secondary-400"} height="h-2" showLabel={false} />
+                    <div className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-600">
+                      {province.totalPatients.toLocaleString("en-US")}
                     </div>
                   </div>
-                );
-              })}
+
+                  <div className="mt-5">
+                    <ProgressBar
+                      value={province.totalPatients}
+                      max={maxProvincePatients}
+                      color="bg-[linear-gradient(90deg,#2c77bb_0%,#eb5834_100%)]"
+                      height="h-2.5"
+                    />
+                  </div>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {province.districts.map((district) => (
+                      <span
+                        key={district}
+                        className="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] text-slate-600"
+                      >
+                        {district}
+                      </span>
+                    ))}
+                  </div>
+                </SurfaceCard>
+              ))}
+            </div>
+          </Section>
+
+          <Section id="impact-and-roadmap" className="pt-0">
+            <div className="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Impact mix
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  Beneficiary and care composition
+                </h3>
+
+                <div className="mt-6 space-y-4">
+                  {[
+                    {
+                      label: "Women beneficiaries",
+                      value: IMPACT_METRICS.womenBeneficiaries,
+                      total: IMPACT_METRICS.totalPatientsServed,
+                      color: "bg-pink-500",
+                      tone: "Women (42%)",
+                    },
+                    {
+                      label: "Children beneficiaries",
+                      value: IMPACT_METRICS.childrenBeneficiaries,
+                      total: IMPACT_METRICS.totalPatientsServed,
+                      color: "bg-amber-500",
+                      tone: "Children (10%)",
+                    },
+                    {
+                      label: "Referral cases",
+                      value: IMPACT_METRICS.estimatedReferrals,
+                      total: IMPACT_METRICS.totalPatientsServed,
+                      color: "bg-secondary-500",
+                      tone: "Referrals (5%)",
+                    },
+                    {
+                      label: "Medicines distributed",
+                      value: IMPACT_METRICS.medicinesDistributed,
+                      total: IMPACT_METRICS.totalPatientsServed,
+                      color: "bg-forest-500",
+                      tone: "Medicines (90%)",
+                    },
+                  ].map((metric) => (
+                    <div key={metric.label}>
+                      <div className="mb-2 flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-sm font-semibold text-slate-900">
+                            {metric.tone}
+                          </p>
+                          <p className="text-xs text-slate-500">{metric.label}</p>
+                        </div>
+                        <p className="text-sm font-semibold text-slate-900">
+                          {metric.value.toLocaleString("en-US")}
+                        </p>
+                      </div>
+                      <ProgressBar
+                        value={metric.value}
+                        max={metric.total}
+                        color={metric.color}
+                        height="h-3"
+                        showLabel
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                    <HeartPulse className="h-4 w-4 text-primary-500" />
+                    Care quality note
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    Medication distribution remains high relative to total patient
+                    volume, which suggests camps are addressing immediate treatment
+                    needs alongside screening and referral.
+                  </p>
+                </div>
+              </SurfaceCard>
+
+              <SurfaceCard className="p-6 md:p-8">
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Rollout roadmap
+                    </p>
+                    <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                      Planned scaling path through 2030
+                    </h3>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-right">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Current year
+                    </p>
+                    <p className="mt-1 text-xl font-semibold text-primary-600">2026</p>
+                  </div>
+                </div>
+
+                <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {FIVE_YEAR_ROLLOUT.map((year) => {
+                    const stateLabel =
+                      year.year < 2026
+                        ? "Completed"
+                        : year.year === 2026
+                          ? "Current"
+                          : "Planned";
+
+                    return (
+                      <div
+                        key={year.year}
+                        className={`rounded-2xl border p-5 ${
+                          year.year === 2026
+                            ? "border-primary-200 bg-[linear-gradient(140deg,#fff5f1_0%,#ffffff_100%)]"
+                            : "border-slate-200 bg-slate-50"
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <p className="text-2xl font-semibold text-slate-900">{year.year}</p>
+                            <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">
+                              {stateLabel}
+                            </p>
+                          </div>
+                          <span
+                            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                              year.year === 2026
+                                ? "bg-primary-500 text-white"
+                                : "bg-white text-slate-600"
+                            }`}
+                          >
+                            {year.teams} team{year.teams === 1 ? "" : "s"}
+                          </span>
+                        </div>
+
+                        <div className="mt-5 space-y-3">
+                          <DetailRow
+                            label="Projected patients"
+                            value={year.projectedPatients.toLocaleString("en-US")}
+                          />
+                          <DetailRow label="Projected camps" value={year.projectedCamps} />
+                          <DetailRow label="Estimated budget" value={formatUSD(year.estimatedBudget)} />
+                        </div>
+
+                        <div className="mt-4">
+                          <p className="mb-2 text-xs uppercase tracking-[0.14em] text-slate-500">
+                            Cumulative patient growth
+                          </p>
+                          <ProgressBar
+                            value={year.cumulativePatients}
+                            max={FIVE_YEAR_ROLLOUT[FIVE_YEAR_ROLLOUT.length - 1].cumulativePatients}
+                            color={year.year === 2026 ? "bg-primary-500" : "bg-secondary-500"}
+                            height="h-2.5"
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </SurfaceCard>
             </div>
           </Section>
         </>
-      )}
+      ) : null}
 
-      {/* ═══════ CAMPS TAB ═══════ */}
-      {activeTab === "camps" && (
+      {activeTab === "camps" ? (
         <>
-          <Section id="camps-table">
-            <SectionTitle light="Camp Master" bold="Log" />
-            <p className="text-gray-500 text-sm mb-6">
-              Comprehensive record of all {CAMP_MASTER_LOG.length} health camps conducted across Nepal. Click any row for details.
-            </p>
-            <div className="overflow-x-auto rounded-xl border border-gray-200">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-gray-50 text-left">
-                    <th className="px-4 py-3 font-semibold text-gray-600">Camp</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600">Location</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600">Date</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600">Team</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Patients</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Referrals</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Cost (USD)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {CAMP_MASTER_LOG.map((camp) => (
-                    <tr key={camp.campId} onClick={() => setSelectedCamp(camp)} className="border-t border-gray-100 hover:bg-gray-50 cursor-pointer transition-colors">
-                      <td className="px-4 py-3 font-medium text-primary-600">{camp.campId}</td>
-                      <td className="px-4 py-3">
-                        <span className="font-medium text-gray-900">{camp.district}</span><br />
-                        <span className="text-xs text-gray-500">{camp.ruralMunicipality}, {camp.province}</span>
-                      </td>
-                      <td className="px-4 py-3 text-gray-600 whitespace-nowrap">
-                        {new Date(camp.startDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
-                      </td>
-                      <td className="px-4 py-3">
-                        <span className={`px-2 py-0.5 rounded text-xs font-medium ${camp.teamAssigned === "Team A" ? "bg-blue-50 text-blue-700 border border-blue-200" : "bg-purple-50 text-purple-700 border border-purple-200"}`}>
-                          {camp.teamAssigned}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 text-right font-semibold text-gray-900">{camp.totalPatients.toLocaleString()}</td>
-                      <td className="px-4 py-3 text-right text-gray-600">{camp.referrals}</td>
-                      <td className="px-4 py-3 text-right text-gray-600">{camp.totalCost.toLocaleString()}</td>
-                    </tr>
-                  ))}
-                </tbody>
-                <tfoot>
-                  <tr className="bg-gray-50 border-t-2 border-gray-200 font-bold">
-                    <td className="px-4 py-3" colSpan={4}>TOTAL</td>
-                    <td className="px-4 py-3 text-right text-primary-600">{CAMP_MASTER_LOG.reduce((s, c) => s + c.totalPatients, 0).toLocaleString()}</td>
-                    <td className="px-4 py-3 text-right">{CAMP_MASTER_LOG.reduce((s, c) => s + c.referrals, 0).toLocaleString()}</td>
-                    <td className="px-4 py-3 text-right">{CAMP_MASTER_LOG.reduce((s, c) => s + c.totalCost, 0).toLocaleString()}</td>
-                  </tr>
-                </tfoot>
-              </table>
+          <Section id="camp-operations">
+            <SectionHeader
+              eyebrow="Camp Operations"
+              title="Detailed execution log"
+              description="This view focuses on the camp-by-camp record: where teams went, how long they operated, how many patients they served, and what the intervention cost."
+            />
+
+            <div className="grid grid-cols-2 gap-4 xl:grid-cols-4">
+              <MetricCard
+                icon={Users}
+                label="Average Patients"
+                value={d.avgPatientsPerCamp.toLocaleString("en-US")}
+                detail="Average patient load per camp across current records."
+                tone="primary"
+              />
+              <MetricCard
+                icon={Clock3}
+                label="Average Duration"
+                value={`${Math.round(averageCampDuration)} days`}
+                detail="Typical operating window per camp."
+                tone="secondary"
+              />
+              <MetricCard
+                icon={BadgeDollarSign}
+                label="Average Cost"
+                value={formatUSD(averageCampCost)}
+                detail="Average direct spend per camp delivered."
+                tone="amber"
+              />
+              <MetricCard
+                icon={ShieldCheck}
+                label="Total Referrals"
+                value={totalReferrals.toLocaleString("en-US")}
+                detail="Patients identified for additional follow-up care."
+                tone="forest"
+              />
             </div>
           </Section>
 
-          {/* ── Camp Detail Modal ── */}
-          {selectedCamp && (
-            <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4" onClick={() => setSelectedCamp(null)}>
-              <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-                <div className="border-b border-gray-200 p-6 flex justify-between items-start">
-                  <div>
-                    <p className="text-xs text-primary-600 font-medium mb-1">{selectedCamp.campId}</p>
-                    <h3 className="text-xl font-bold text-gray-900">{selectedCamp.district}</h3>
-                    <p className="text-sm text-gray-500">{selectedCamp.ruralMunicipality}, {selectedCamp.province}</p>
-                  </div>
-                  <button onClick={() => setSelectedCamp(null)} className="text-gray-400 hover:text-gray-600 text-2xl leading-none p-1">&times;</button>
+          <Section id="camp-log-table" className="pt-0">
+            <SurfaceCard className="overflow-hidden">
+              <div className="border-b border-slate-200 px-6 py-5">
+                <h3 className="text-xl font-semibold text-slate-900">
+                  Camp master log
+                </h3>
+                <p className="mt-1 text-sm leading-7 text-slate-600">
+                  Click any row to open a field summary. Totals are calculated from the same underlying records used elsewhere in this portal.
+                </p>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[920px] text-sm">
+                  <thead>
+                    <tr className="bg-slate-50 text-left">
+                      <th className="px-6 py-4 font-semibold text-slate-600">Camp</th>
+                      <th className="px-6 py-4 font-semibold text-slate-600">Location</th>
+                      <th className="px-6 py-4 font-semibold text-slate-600">Date Range</th>
+                      <th className="px-6 py-4 font-semibold text-slate-600">Team</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Patients</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Referrals</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {CAMP_MASTER_LOG.map((camp) => (
+                      <tr
+                        key={camp.campId}
+                        onClick={() => setSelectedCamp(camp)}
+                        className="cursor-pointer border-t border-slate-100 transition-colors hover:bg-slate-50"
+                      >
+                        <td className="px-6 py-4">
+                          <span className="rounded-full bg-[#fff1eb] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary-600">
+                            {camp.campId}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <p className="font-semibold text-slate-900">{camp.district}</p>
+                          <p className="mt-1 text-xs text-slate-500">
+                            {camp.ruralMunicipality}, {camp.province}
+                          </p>
+                        </td>
+                        <td className="px-6 py-4 text-slate-600">
+                          {formatDate(camp.startDate)} to {formatDate(camp.endDate)}
+                        </td>
+                        <td className="px-6 py-4">
+                          <span
+                            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                              camp.teamAssigned === "Team A"
+                                ? "bg-[#eaf3ff] text-secondary-700"
+                                : "bg-[#f4f0ff] text-violet-700"
+                            }`}
+                          >
+                            {camp.teamAssigned}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 text-right font-semibold text-slate-900">
+                          {camp.totalPatients.toLocaleString("en-US")}
+                        </td>
+                        <td className="px-6 py-4 text-right text-slate-600">
+                          {camp.referrals}
+                        </td>
+                        <td className="px-6 py-4 text-right text-slate-600">
+                          {formatUSD(camp.totalCost)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tfoot>
+                    <tr className="border-t border-slate-200 bg-slate-50 font-semibold">
+                      <td className="px-6 py-4 text-slate-900" colSpan={4}>
+                        Total
+                      </td>
+                      <td className="px-6 py-4 text-right text-primary-600">
+                        {CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.totalPatients, 0).toLocaleString("en-US")}
+                      </td>
+                      <td className="px-6 py-4 text-right text-slate-900">
+                        {totalReferrals.toLocaleString("en-US")}
+                      </td>
+                      <td className="px-6 py-4 text-right text-slate-900">
+                        {formatUSD(CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.totalCost, 0))}
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </SurfaceCard>
+          </Section>
+
+          <Section id="monthly-tracker-table" className="pt-0">
+            <SurfaceCard className="overflow-hidden">
+              <div className="border-b border-slate-200 px-6 py-5">
+                <h3 className="text-xl font-semibold text-slate-900">
+                  Monthly tracker
+                </h3>
+                <p className="mt-1 text-sm leading-7 text-slate-600">
+                  Month-level aggregation for camps, patients, cumulative delivery, and budget spend.
+                </p>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[860px] text-sm">
+                  <thead>
+                    <tr className="bg-slate-50 text-left">
+                      <th className="px-6 py-4 font-semibold text-slate-600">Month</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Teams</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Camps</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Patients</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Cumulative</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Budget</th>
+                      <th className="px-6 py-4 text-right font-semibold text-slate-600">Avg/Camp</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {MONTHLY_TRACKER.map((month) => (
+                      <tr
+                        key={month.month}
+                        className="border-t border-slate-100 transition-colors hover:bg-slate-50"
+                      >
+                        <td className="px-6 py-4 font-semibold text-slate-900">
+                          {month.month}
+                        </td>
+                        <td className="px-6 py-4 text-right text-slate-600">{month.teams}</td>
+                        <td className="px-6 py-4 text-right text-slate-600">
+                          {month.campsConducted}
+                        </td>
+                        <td className="px-6 py-4 text-right font-semibold text-slate-900">
+                          {month.patientsThisMonth.toLocaleString("en-US")}
+                        </td>
+                        <td className="px-6 py-4 text-right text-secondary-700">
+                          {month.cumulativePatients.toLocaleString("en-US")}
+                        </td>
+                        <td className="px-6 py-4 text-right text-slate-600">
+                          {formatUSD(month.budgetSpent)}
+                        </td>
+                        <td className="px-6 py-4 text-right text-slate-600">
+                          {month.avgPatientsPerCamp.toLocaleString("en-US")}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </SurfaceCard>
+          </Section>
+        </>
+      ) : null}
+
+      {activeTab === "finance" ? (
+        <>
+          <Section id="finance-summary">
+            <SectionHeader
+              eyebrow="Finance And Scale"
+              title="Cost discipline and rollout readiness"
+              description="This view connects actual spend with the 2026-2030 scale model, so you can see what current execution costs and what future national expansion requires."
+            />
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              <MetricCard
+                icon={Wallet}
+                label="Spent To Date"
+                value={<AnimatedCounter target={FINANCIAL_SUMMARY.totalSpentSoFar / 1000} prefix="$" suffix="K" />}
+                detail="Real spend logged from the current operating period."
+                tone="primary"
+              />
+              <MetricCard
+                icon={TrendingUp}
+                label="Projected Annual Budget"
+                value={<AnimatedCounter target={FINANCIAL_SUMMARY.projectedAnnualBudget / 1000} prefix="$" suffix="K" />}
+                detail="Required budget to sustain the current two-team setup for a full year."
+                tone="secondary"
+              />
+              <MetricCard
+                icon={Target}
+                label="5-Year Budget"
+                value={<AnimatedCounter target={FINANCIAL_SUMMARY.projected5YearBudget / 1_000_000} prefix="$" suffix="M" decimals={1} />}
+                detail="Projected funding need for the full 2026-2030 rollout path."
+                tone="forest"
+              />
+            </div>
+          </Section>
+
+          <Section id="budget-ladder" className="pt-0">
+            <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Budget ladder
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  Year-by-year funding path
+                </h3>
+                <div className="mt-6 space-y-4">
+                  {FIVE_YEAR_ROLLOUT.map((year) => (
+                    <div key={year.year}>
+                      <div className="mb-2 flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-sm font-semibold text-slate-900">{year.year}</p>
+                          <p className="text-xs text-slate-500">
+                            {year.projectedCamps} camps • {year.teams} team{year.teams === 1 ? "" : "s"}
+                          </p>
+                        </div>
+                        <p className="text-sm font-semibold text-slate-900">
+                          {formatUSD(year.estimatedBudget)}
+                        </p>
+                      </div>
+                      <ProgressBar
+                        value={year.estimatedBudget}
+                        max={maxYearlyBudget}
+                        color={year.year <= 2026 ? "bg-primary-500" : "bg-secondary-500"}
+                        height="h-3"
+                      />
+                    </div>
+                  ))}
                 </div>
-                <div className="p-6">
-                  <div className="grid grid-cols-3 gap-3 mb-6">
-                    <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
-                      <p className="text-xl font-bold text-primary-600">{selectedCamp.totalPatients.toLocaleString()}</p>
-                      <p className="text-[10px] text-gray-500 uppercase tracking-wide mt-0.5">Patients</p>
+
+                <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                    <CalendarRange className="h-4 w-4 text-secondary-500" />
+                    2026 reference point
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    The current rollout model projects {currentYear?.projectedPatients.toLocaleString("en-US")} patients and{" "}
+                    {currentYear?.projectedCamps} camps in 2026 with an estimated budget of{" "}
+                    {currentYear ? formatUSD(currentYear.estimatedBudget) : "-"}.
+                  </p>
+                </div>
+              </SurfaceCard>
+
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Scaling scenarios
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  What team expansion changes
+                </h3>
+
+                <div className="mt-6 grid gap-4 md:grid-cols-2">
+                  {SCALING_SCENARIOS.map((scenario) => {
+                    const isCurrent = scenario.teams === d.activeMedicalTeams;
+
+                    return (
+                      <div
+                        key={scenario.teams}
+                        className={`rounded-2xl border p-5 ${
+                          isCurrent
+                            ? "border-primary-200 bg-[linear-gradient(140deg,#fff5f1_0%,#ffffff_100%)]"
+                            : "border-slate-200 bg-slate-50"
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div>
+                            <p className="text-2xl font-semibold text-slate-900">
+                              {scenario.teams} teams
+                            </p>
+                            <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-500">
+                              {isCurrent ? "Current setup" : "Scenario"}
+                            </p>
+                          </div>
+                          <span
+                            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                              isCurrent
+                                ? "bg-primary-500 text-white"
+                                : "bg-white text-slate-600"
+                            }`}
+                          >
+                            {scenario.municipalitiesPerYear}/yr
+                          </span>
+                        </div>
+
+                        <div className="mt-5 space-y-3">
+                          <DetailRow
+                            label="Annual capacity"
+                            value={scenario.annualCapacity.toLocaleString("en-US")}
+                          />
+                          <DetailRow label="Annual budget" value={formatUSD(scenario.annualBudget)} />
+                          <DetailRow
+                            label="Years to full rural coverage"
+                            value={scenario.yearsToComplete.toFixed(1)}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </SurfaceCard>
+            </div>
+          </Section>
+
+          <Section id="cost-efficiency" className="pt-0">
+            <div className="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Unit economics
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  Per-camp efficiency benchmarks
+                </h3>
+                <div className="mt-6">
+                  <DetailRow
+                    label="Average patients per camp"
+                    value={d.avgPatientsPerCamp.toLocaleString("en-US")}
+                  />
+                  <DetailRow
+                    label="Cost per patient"
+                    value={`$${d.costPerPatient.toFixed(1)}`}
+                  />
+                  <DetailRow
+                    label="Average cost per camp"
+                    value={formatUSD(averageCampCost)}
+                  />
+                  <DetailRow
+                    label="Average camp duration"
+                    value={`${Math.round(averageCampDuration)} days`}
+                  />
+                  <DetailRow label="Doctors per camp" value="3" />
+                </div>
+
+                <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                    <Gauge className="h-4 w-4 text-primary-500" />
+                    Scale gap
+                  </div>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    At the current two-team configuration, full rural coverage would take about{" "}
+                    {currentScenario?.yearsToComplete.toFixed(1)} years. Reaching the 2030 vision depends on planned team expansion rather than steady-state capacity alone.
+                  </p>
+                </div>
+              </SurfaceCard>
+
+              <SurfaceCard className="p-6 md:p-8">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Team performance
+                </p>
+                <h3 className="mt-2 text-2xl font-semibold text-slate-900">
+                  Contribution by field team
+                </h3>
+
+                <div className="mt-6 space-y-6">
+                  {teamSummaries.map((team) => (
+                    <div key={team.team}>
+                      <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                        <div>
+                          <span
+                            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                              team.team === "Team A"
+                                ? "bg-[#eaf3ff] text-secondary-700"
+                                : "bg-[#f4f0ff] text-violet-700"
+                            }`}
+                          >
+                            {team.team}
+                          </span>
+                          <p className="mt-2 text-lg font-semibold text-slate-900">
+                            {team.patients.toLocaleString("en-US")} patients
+                          </p>
+                        </div>
+                        <div className="grid grid-cols-3 gap-3 text-right">
+                          <div>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Camps
+                            </p>
+                            <p className="mt-1 text-sm font-semibold text-slate-900">{team.camps}</p>
+                          </div>
+                          <div>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Avg/camp
+                            </p>
+                            <p className="mt-1 text-sm font-semibold text-slate-900">
+                              {team.averagePatients.toLocaleString("en-US")}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
+                              Spend
+                            </p>
+                            <p className="mt-1 text-sm font-semibold text-slate-900">
+                              {formatUSD(team.spend)}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <ProgressBar
+                        value={team.patients}
+                        max={d.totalPatientsServed}
+                        color={team.team === "Team A" ? "bg-secondary-500" : "bg-violet-500"}
+                        height="h-3"
+                        showLabel
+                      />
                     </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
-                      <p className="text-xl font-bold text-secondary-600">{selectedCamp.referrals}</p>
-                      <p className="text-[10px] text-gray-500 uppercase tracking-wide mt-0.5">Referrals</p>
-                    </div>
-                    <div className="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
-                      <p className="text-xl font-bold text-forest-600">${selectedCamp.totalCost.toLocaleString()}</p>
-                      <p className="text-[10px] text-gray-500 uppercase tracking-wide mt-0.5">Cost</p>
+                  ))}
+                </div>
+              </SurfaceCard>
+            </div>
+          </Section>
+        </>
+      ) : null}
+
+      {selectedCamp ? (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/55 p-4 backdrop-blur-sm"
+          onClick={() => setSelectedCamp(null)}
+        >
+          <div
+            className="max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-[32px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.28)]"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="relative overflow-hidden rounded-t-[32px] border-b border-slate-200 bg-[radial-gradient(circle_at_top_left,rgba(44,119,187,0.16),transparent_35%),radial-gradient(circle_at_90%_10%,rgba(235,88,52,0.18),transparent_35%),linear-gradient(140deg,#f8fbff_0%,#ffffff_60%,#fff8f4_100%)] p-6 md:p-8">
+              <button
+                type="button"
+                onClick={() => setSelectedCamp(null)}
+                aria-label="Close camp details"
+                className="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-colors hover:text-slate-900"
+              >
+                <X className="h-4 w-4" />
+              </button>
+
+              <div className="pr-12">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-[#fff1eb] px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary-600">
+                    {selectedCamp.campId}
+                  </span>
+                  <span
+                    className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
+                      selectedCamp.teamAssigned === "Team A"
+                        ? "bg-[#eaf3ff] text-secondary-700"
+                        : "bg-[#f4f0ff] text-violet-700"
+                    }`}
+                  >
+                    {selectedCamp.teamAssigned}
+                  </span>
+                </div>
+                <h3 className="mt-4 text-3xl font-semibold text-slate-900">
+                  {selectedCamp.district}, {selectedCamp.province}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600">
+                  {selectedCamp.ruralMunicipality} • {formatDate(selectedCamp.startDate)} to{" "}
+                  {formatDate(selectedCamp.endDate)}
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 md:p-8">
+              <div className="grid gap-4 md:grid-cols-4">
+                {[
+                  {
+                    label: "Patients",
+                    value: selectedCamp.totalPatients.toLocaleString("en-US"),
+                    tone: "primary" as Tone,
+                  },
+                  {
+                    label: "Referrals",
+                    value: selectedCamp.referrals.toLocaleString("en-US"),
+                    tone: "secondary" as Tone,
+                  },
+                  {
+                    label: "Medicines",
+                    value: selectedCamp.medicinesDistributed.toLocaleString("en-US"),
+                    tone: "forest" as Tone,
+                  },
+                  {
+                    label: "Cost",
+                    value: formatUSD(selectedCamp.totalCost),
+                    tone: "amber" as Tone,
+                  },
+                ].map((item) => (
+                  <div key={item.label} className={`rounded-2xl border p-4 ${toneStyles[item.tone]}`}>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      {item.label}
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-6 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+                <SurfaceCard className="p-5">
+                  <h4 className="text-lg font-semibold text-slate-900">
+                    Operations detail
+                  </h4>
+                  <div className="mt-4">
+                    <DetailRow
+                      label="Team size"
+                      value={`${selectedCamp.teamSize} members`}
+                    />
+                    <DetailRow label="Doctors" value={selectedCamp.doctors} />
+                    <DetailRow
+                      label="Effective days"
+                      value={`${selectedCamp.effectiveDays} days`}
+                    />
+                    <DetailRow
+                      label="Cost per patient"
+                      value={`$${selectedCamp.costPerPatient.toFixed(1)}`}
+                    />
+                    <DetailRow label="Major cases" value={selectedCamp.majorCases} />
+                  </div>
+                </SurfaceCard>
+
+                <SurfaceCard className="p-5">
+                  <h4 className="text-lg font-semibold text-slate-900">
+                    Demographic breakdown
+                  </h4>
+                  <div className="mt-5 overflow-hidden rounded-full">
+                    <div className="flex h-4">
+                      <div
+                        className="bg-secondary-500"
+                        style={{
+                          width: `${(selectedCamp.male / selectedCamp.totalPatients) * 100}%`,
+                        }}
+                      />
+                      <div
+                        className="bg-pink-500"
+                        style={{
+                          width: `${(selectedCamp.female / selectedCamp.totalPatients) * 100}%`,
+                        }}
+                      />
+                      <div
+                        className="bg-amber-500"
+                        style={{
+                          width: `${(selectedCamp.children / selectedCamp.totalPatients) * 100}%`,
+                        }}
+                      />
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mb-6">
+
+                  <div className="mt-5 grid gap-3 sm:grid-cols-3">
                     {[
-                      { label: "Team", value: `${selectedCamp.teamAssigned} (${selectedCamp.teamSize} members)` },
-                      { label: "Duration", value: `${selectedCamp.effectiveDays} days` },
-                      { label: "Start Date", value: new Date(selectedCamp.startDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) },
-                      { label: "End Date", value: new Date(selectedCamp.endDate).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) },
-                      { label: "Doctors", value: selectedCamp.doctors },
-                      { label: "Medicines", value: selectedCamp.medicinesDistributed.toLocaleString() },
-                      { label: "Cost/Patient", value: `$${selectedCamp.costPerPatient}` },
-                      { label: "Major Cases", value: selectedCamp.majorCases },
+                      {
+                        label: "Male",
+                        value: selectedCamp.male,
+                        color: "bg-secondary-500",
+                      },
+                      {
+                        label: "Female",
+                        value: selectedCamp.female,
+                        color: "bg-pink-500",
+                      },
+                      {
+                        label: "Children",
+                        value: selectedCamp.children,
+                        color: "bg-amber-500",
+                      },
                     ].map((item) => (
-                      <div key={item.label} className="py-2 border-b border-gray-100">
-                        <p className="text-gray-400 text-xs">{item.label}</p>
-                        <p className="font-medium text-gray-900">{item.value}</p>
+                      <div key={item.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                        <div className="flex items-center gap-2">
+                          <span className={`h-2.5 w-2.5 rounded-full ${item.color}`} />
+                          <p className="text-sm font-semibold text-slate-900">{item.label}</p>
+                        </div>
+                        <p className="mt-3 text-2xl font-semibold text-slate-900">
+                          {item.value.toLocaleString("en-US")}
+                        </p>
+                        <p className="mt-1 text-xs text-slate-500">
+                          {((item.value / selectedCamp.totalPatients) * 100).toFixed(0)}% of total patients
+                        </p>
                       </div>
                     ))}
                   </div>
-                  <div>
-                    <p className="text-xs text-gray-500 mb-2 font-medium">Gender &amp; Age Breakdown</p>
-                    <div className="flex h-3 rounded-full overflow-hidden">
-                      <div className="bg-blue-400" style={{ width: `${(selectedCamp.male / selectedCamp.totalPatients) * 100}%` }} />
-                      <div className="bg-pink-400" style={{ width: `${(selectedCamp.female / selectedCamp.totalPatients) * 100}%` }} />
-                      <div className="bg-amber-400" style={{ width: `${(selectedCamp.children / selectedCamp.totalPatients) * 100}%` }} />
-                    </div>
-                    <div className="flex gap-4 mt-2 text-xs text-gray-600">
-                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-blue-400" />Male ({((selectedCamp.male / selectedCamp.totalPatients) * 100).toFixed(0)}%)</span>
-                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-pink-400" />Female ({((selectedCamp.female / selectedCamp.totalPatients) * 100).toFixed(0)}%)</span>
-                      <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" />Children ({((selectedCamp.children / selectedCamp.totalPatients) * 100).toFixed(0)}%)</span>
-                    </div>
-                  </div>
-                </div>
+                </SurfaceCard>
               </div>
             </div>
-          )}
-
-          {/* ── Monthly Tracker Table ── */}
-          <Section id="monthly-table" className="bg-gray-50">
-            <SectionTitle light="Monthly" bold="Tracker" />
-            <div className="overflow-x-auto rounded-xl border border-gray-200">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-gray-50 text-left">
-                    <th className="px-4 py-3 font-semibold text-gray-600">Month</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Camps</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Patients</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Cumulative</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Budget (USD)</th>
-                    <th className="px-4 py-3 font-semibold text-gray-600 text-right">Avg/Camp</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {MONTHLY_TRACKER.map((m) => (
-                    <tr key={m.month} className="border-t border-gray-100 hover:bg-gray-50 transition-colors bg-white">
-                      <td className="px-4 py-3 font-medium text-gray-900">{m.month}</td>
-                      <td className="px-4 py-3 text-right">{m.campsConducted}</td>
-                      <td className="px-4 py-3 text-right font-semibold">{m.patientsThisMonth.toLocaleString()}</td>
-                      <td className="px-4 py-3 text-right"><span className="text-secondary-600 font-medium">{m.cumulativePatients.toLocaleString()}</span></td>
-                      <td className="px-4 py-3 text-right">{m.budgetSpent.toLocaleString()}</td>
-                      <td className="px-4 py-3 text-right text-gray-500">{m.avgPatientsPerCamp.toLocaleString()}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Section>
-        </>
-      )}
-
-      {/* ═══════ FINANCE TAB ═══════ */}
-      {activeTab === "finance" && (
-        <>
-          <Section id="finance">
-            <SectionTitle light="Financial" bold="Summary" />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {[
-                { label: "Total Spent So Far", value: <><AnimatedCounter target={FINANCIAL_SUMMARY.totalSpentSoFar / 1_000} prefix="$" decimals={0} suffix="K" /></>, sub: "Since May 2025", accent: "border-t-primary-500" },
-                { label: "Projected Annual Budget", value: <><AnimatedCounter target={FINANCIAL_SUMMARY.projectedAnnualBudget / 1_000} prefix="$" decimals={0} suffix="K" /></>, sub: "With 2 active teams", accent: "border-t-secondary-500" },
-                { label: "5-Year Budget (2026–2030)", value: <><AnimatedCounter target={FINANCIAL_SUMMARY.projected5YearBudget / 1_000_000} prefix="$" decimals={1} suffix="M" /></>, sub: "Full national rollout", accent: "border-t-forest-500" },
-              ].map((card) => (
-                <div key={card.label} className={`bg-white rounded-xl border border-gray-200 border-t-4 ${card.accent} p-6 hover:shadow-md transition-shadow`}>
-                  <p className="text-sm text-gray-500 mb-1">{card.label}</p>
-                  <p className="text-3xl font-bold text-gray-900">{card.value}</p>
-                  <p className="text-xs text-gray-400 mt-2">{card.sub}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 bg-gray-50 rounded-xl border border-gray-200 p-6">
-              <p className="text-sm font-medium text-gray-600 mb-4">Yearly Budget Allocation</p>
-              <div className="space-y-3">
-                {FIVE_YEAR_ROLLOUT.map((yr) => {
-                  const maxBudget = Math.max(...FIVE_YEAR_ROLLOUT.map((y) => y.estimatedBudget));
-                  return (
-                    <div key={yr.year} className="flex items-center gap-3">
-                      <span className="text-sm font-medium text-gray-700 w-10">{yr.year}</span>
-                      <div className="flex-1 bg-gray-200 rounded-full h-6 overflow-hidden">
-                        <div
-                          className={`h-full rounded-full flex items-center px-3 text-xs text-white font-medium transition-all duration-700 ${yr.year <= 2026 ? "bg-primary-500" : "bg-secondary-400"}`}
-                          style={{ width: `${(yr.estimatedBudget / maxBudget) * 100}%` }}
-                        >
-                          {formatUSD(yr.estimatedBudget)}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </Section>
-
-          <Section id="scaling" className="bg-gray-50">
-            <SectionTitle light="Scaling" bold="Scenarios" />
-            <p className="text-gray-500 text-sm mb-6">How fast can we cover all 460 rural municipalities with different team sizes?</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {SCALING_SCENARIOS.map((s) => {
-                const isCurrent = s.teams === 2;
-                return (
-                  <div key={s.teams} className={`rounded-xl border p-6 transition-shadow hover:shadow-md ${isCurrent ? "bg-primary-50 border-primary-300" : "bg-white border-gray-200"}`}>
-                    <div className="text-center mb-4">
-                      <div className={`inline-flex items-center justify-center w-12 h-12 rounded-full text-lg font-bold ${isCurrent ? "bg-primary-500 text-white" : "bg-gray-100 text-gray-700"}`}>{s.teams}</div>
-                      <p className="text-sm text-gray-500 mt-2">Medical Teams</p>
-                    </div>
-                    {isCurrent && <div className="text-center mb-3"><span className="text-xs bg-primary-500 text-white px-2.5 py-0.5 rounded-full">Current Setup</span></div>}
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between"><span className="text-gray-500">Annual Capacity</span><span className="font-semibold">{s.annualCapacity.toLocaleString()}</span></div>
-                      <div className="flex justify-between"><span className="text-gray-500">Annual Budget</span><span className="font-semibold">{formatUSD(s.annualBudget)}</span></div>
-                      <div className="flex justify-between"><span className="text-gray-500">Years to Complete</span><span className={`font-bold text-lg ${isCurrent ? "text-primary-600" : "text-gray-900"}`}>{s.yearsToComplete}</span></div>
-                    </div>
-                    <div className="mt-4 pt-4 border-t border-gray-100">
-                      <ProgressBar value={1} max={s.yearsToComplete} color={isCurrent ? "bg-primary-500" : "bg-secondary-400"} height="h-1.5" showLabel={false} />
-                      <p className="text-[10px] text-gray-400 mt-1 text-center">~{Math.ceil(460 / s.yearsToComplete)} municipalities/year</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Section>
-
-          <Section id="efficiency">
-            <SectionTitle light="Cost" bold="Efficiency" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 className="font-semibold text-gray-800 mb-4">Per-Camp Economics</h3>
-                <div className="space-y-3">
-                  {[
-                    { label: "Avg Patients per Camp", value: EXECUTIVE_DASHBOARD.avgPatientsPerCamp.toLocaleString() },
-                    { label: "Cost per Patient", value: `$${EXECUTIVE_DASHBOARD.costPerPatient.toLocaleString()}` },
-                    { label: "Avg Cost per Camp", value: formatUSD(CAMP_MASTER_LOG.reduce((s, c) => s + c.totalCost, 0) / CAMP_MASTER_LOG.length) },
-                    { label: "Avg Camp Duration", value: `${Math.round(CAMP_MASTER_LOG.reduce((s, c) => s + c.effectiveDays, 0) / CAMP_MASTER_LOG.length)} days` },
-                    { label: "Doctors per Camp", value: "3" },
-                  ].map((item) => (
-                    <div key={item.label} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
-                      <span className="text-gray-600 text-sm">{item.label}</span>
-                      <span className="font-semibold text-gray-900">{item.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <h3 className="font-semibold text-gray-800 mb-4">Team Performance</h3>
-                <div className="space-y-6">
-                  {["Team A", "Team B"].map((team) => {
-                    const camps = CAMP_MASTER_LOG.filter((c) => c.teamAssigned === team);
-                    const totalP = camps.reduce((s, c) => s + c.totalPatients, 0);
-                    const avgP = Math.round(totalP / camps.length);
-                    return (
-                      <div key={team}>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className={`px-2.5 py-0.5 rounded text-xs font-medium ${team === "Team A" ? "bg-blue-50 text-blue-700 border border-blue-200" : "bg-purple-50 text-purple-700 border border-purple-200"}`}>{team}</span>
-                          <span className="text-sm text-gray-500">{camps.length} camps · {totalP.toLocaleString()} patients</span>
-                        </div>
-                        <ProgressBar value={totalP} max={EXECUTIVE_DASHBOARD.totalPatientsServed} color={team === "Team A" ? "bg-blue-500" : "bg-purple-500"} height="h-3" />
-                        <p className="text-xs text-gray-400 mt-1">Avg: {avgP.toLocaleString()} patients/camp</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </Section>
-        </>
-      )}
-
-      {/* ═══════ FOOTER ═══════ */}
-      <Section id="footer-note" className="pb-8">
-        <div className="bg-gray-50 rounded-xl border border-gray-200 p-6 text-center">
-          <p className="text-gray-500 text-sm">
-            Data consolidated from Project Sanjeevani National Strategy, Master All-In-One, and Full System with 753 Palikas tracking workbooks.
-          </p>
-          <p className="text-gray-400 text-xs mt-2">Last updated: March 2026 · Nivaran Foundation</p>
+          </div>
         </div>
+      ) : null}
+
+      <Section id="footer-note" className="pb-10 pt-2">
+        <SurfaceCard className="p-6 text-center">
+          <p className="text-sm leading-7 text-slate-600">
+            Data consolidated from Project Sanjeevani planning and tracking workbooks used for field execution reporting.
+          </p>
+          <p className="mt-2 text-xs text-slate-400">
+            Last updated: March 2026 • Nivaran Foundation
+          </p>
+        </SurfaceCard>
       </Section>
     </div>
   );

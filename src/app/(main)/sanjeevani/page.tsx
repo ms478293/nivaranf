@@ -8,6 +8,7 @@ import { EXECUTIVE_DASHBOARD, CAMP_MASTER_LOG, PROVINCE_SUMMARY } from "@/conten
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Activity, CircleDollarSign, MapPinned, Users } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
@@ -69,110 +70,141 @@ const page = () => {
       </section>
 
       {/* ── Tracking Overview Section ── */}
-      <section className="w-full px-4">
-        <div className="max-w-[1320px] mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-[1px]">
-            {/* Gradient border shimmer */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 via-secondary-500/30 to-emerald-500/30 rounded-3xl blur-sm" />
+      <section className="w-full px-4 py-6">
+        <div className="max-w-[1320px] mx-auto rounded-[32px] overflow-hidden border border-slate-200 bg-white shadow-[0_16px_45px_rgba(15,23,42,0.09)]">
+          <div className="relative px-6 py-8 md:px-10 md:py-10 bg-[radial-gradient(circle_at_0%_0%,rgba(44,119,187,0.2),transparent_38%),radial-gradient(circle_at_90%_25%,rgba(235,88,52,0.2),transparent_42%),linear-gradient(125deg,#f8fbff_0%,#ffffff_45%,#f8fdfb_100%)]">
+            <div className="absolute -top-20 -right-16 w-60 h-60 bg-primary-300/20 blur-3xl rounded-full" />
+            <div className="absolute -bottom-24 -left-10 w-64 h-64 bg-secondary-300/25 blur-3xl rounded-full" />
 
-            <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-6 md:p-10">
-              {/* Decorative dots */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/5 rounded-full -translate-y-1/2 translate-x-1/2" />
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary-500/5 rounded-full translate-y-1/2 -translate-x-1/2" />
-
-              {/* Header row */}
-              <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-7">
                 <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400" />
-                    </span>
-                    <span className="text-green-400 text-xs font-bold uppercase tracking-widest">Live Tracking</span>
-                  </div>
-                  <h2 className="text-white text-2xl md:text-3xl font-bold">
-                    Project Progress <span className="text-primary-400">Overview</span>
+                  <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#2c77bb] bg-[#eaf3ff] px-3 py-1 rounded-full">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    Live Tracking
+                  </p>
+                  <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-[1.05] text-slate-900">
+                    Project Progress <span className="text-primary-500">Overview</span>
                   </h2>
-                  <p className="text-gray-400 text-sm mt-1 max-w-md">
-                    Real-time metrics from our rural health camps across Nepal — building a healthier future, one village at a time.
+                  <p className="mt-3 max-w-2xl text-sm md:text-base leading-7 text-slate-600">
+                    Live mission intelligence from Project Sanjeevani across Nepal.
+                    Track coverage, care delivery, and investment quality in one
+                    unified portal.
                   </p>
                 </div>
                 <Link
                   href="/sanjeevani/tracking"
-                  className="group inline-flex items-center gap-2 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white pl-6 pr-5 py-3 rounded-full font-semibold text-sm transition-all shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:scale-[1.02] shrink-0"
+                  className="group inline-flex items-center gap-2 rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-primary-600 hover:shadow-[0_14px_30px_rgba(235,88,52,0.32)]"
                 >
-                  View Full Dashboard
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  Open Tracking Portal
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
               </div>
 
-              {/* Stats grid */}
-              <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                 {[
                   {
-                    icon: "🏥",
+                    icon: Users,
                     value: EXECUTIVE_DASHBOARD.totalPatientsServed.toLocaleString(),
                     label: "Patients Served",
-                    color: "from-primary-500/20 to-primary-500/5",
-                    textColor: "text-primary-400",
-                    borderColor: "border-primary-500/20",
+                    sub: "Across all camps",
+                    valueColor: "text-primary-600",
                   },
                   {
-                    icon: "⛺",
+                    icon: Activity,
                     value: EXECUTIVE_DASHBOARD.totalCampsConducted.toString(),
                     label: "Health Camps",
-                    color: "from-secondary-500/20 to-secondary-500/5",
-                    textColor: "text-secondary-400",
-                    borderColor: "border-secondary-500/20",
+                    sub: `Avg ${EXECUTIVE_DASHBOARD.avgPatientsPerCamp.toLocaleString()} patients/camp`,
+                    valueColor: "text-secondary-600",
                   },
                   {
-                    icon: "🗺️",
+                    icon: MapPinned,
                     value: `${PROVINCE_SUMMARY.length}/7`,
                     label: "Provinces Covered",
-                    color: "from-emerald-500/20 to-emerald-500/5",
-                    textColor: "text-emerald-400",
-                    borderColor: "border-emerald-500/20",
+                    sub: "Nationwide operational footprint",
+                    valueColor: "text-forest-600",
                   },
                   {
-                    icon: "💰",
+                    icon: CircleDollarSign,
                     value: `$${Math.round(EXECUTIVE_DASHBOARD.totalSpendingSoFar / 1000)}K`,
                     label: "Total Investment",
-                    color: "from-amber-500/20 to-amber-500/5",
-                    textColor: "text-amber-400",
-                    borderColor: "border-amber-500/20",
+                    sub: `~$${EXECUTIVE_DASHBOARD.costPerPatient} per patient`,
+                    valueColor: "text-primary-600",
                   },
                 ].map((stat) => (
-                  <div
+                  <article
                     key={stat.label}
-                    className={`bg-gradient-to-b ${stat.color} border ${stat.borderColor} rounded-2xl p-4 md:p-5 text-center backdrop-blur-sm`}
+                    className="rounded-2xl border border-slate-200 bg-white/95 backdrop-blur-sm p-5 shadow-[0_8px_20px_rgba(15,23,42,0.06)]"
                   >
-                    <span className="text-2xl md:text-3xl">{stat.icon}</span>
-                    <p className={`text-2xl md:text-3xl font-extrabold ${stat.textColor} mt-2`}>{stat.value}</p>
-                    <p className="text-gray-400 text-[11px] md:text-xs uppercase tracking-wider font-medium mt-1">{stat.label}</p>
-                  </div>
+                    <div className="flex items-start justify-between gap-3">
+                      <div>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                          {stat.label}
+                        </p>
+                        <p className={`mt-2 text-3xl font-semibold ${stat.valueColor}`}>
+                          {stat.value}
+                        </p>
+                      </div>
+                      <div className="h-9 w-9 shrink-0 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center">
+                        <stat.icon className="h-4 w-4" />
+                      </div>
+                    </div>
+                    <p className="mt-2 text-xs text-slate-500">{stat.sub}</p>
+                  </article>
                 ))}
               </div>
 
-              {/* Recent camps mini-list */}
-              <div className="relative mt-6 pt-6 border-t border-white/10">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-gray-300 text-sm font-semibold">Recent Camps</h3>
-                  <Link href="/sanjeevani/tracking" className="text-primary-400 text-xs hover:text-primary-300 transition-colors">
+              <div className="mt-6 border-t border-slate-200 pt-5">
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <h3 className="text-sm font-semibold text-slate-800">
+                    Most Recent Camps
+                  </h3>
+                  <Link
+                    href="/sanjeevani/tracking"
+                    className="text-xs font-semibold text-primary-500 hover:text-primary-600 transition-colors"
+                  >
                     See all {CAMP_MASTER_LOG.length} camps →
                   </Link>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   {CAMP_MASTER_LOG.slice(-3).reverse().map((camp) => (
-                    <div key={camp.campId} className="flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3 border border-white/5 hover:border-white/10 transition-colors">
-                      <div className="shrink-0 w-9 h-9 rounded-lg bg-primary-500/15 flex items-center justify-center text-primary-400 text-xs font-bold">
-                        {camp.campId.replace("SC-", "#")}
+                    <div
+                      key={camp.campId}
+                      className="rounded-xl border border-slate-200 bg-white px-4 py-3"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <p className="text-sm font-semibold text-slate-900">
+                          {camp.district}
+                        </p>
+                        <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-[#fff1eb] text-primary-600">
+                          {camp.campId}
+                        </span>
                       </div>
-                      <div className="min-w-0">
-                        <p className="text-white text-sm font-medium truncate">{camp.district}</p>
-                        <p className="text-gray-500 text-xs truncate">{camp.totalPatients.toLocaleString()} patients · {camp.effectiveDays} days</p>
-                      </div>
+                      <p className="mt-1 text-xs text-slate-500">
+                        {camp.totalPatients.toLocaleString()} patients • {camp.effectiveDays} days
+                      </p>
+                      <p className="mt-1 text-[11px] text-slate-400">
+                        {new Date(camp.startDate).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}{" "}
+                        to{" "}
+                        {new Date(camp.endDate).toLocaleDateString("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}
+                      </p>
                     </div>
                   ))}
                 </div>
