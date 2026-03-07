@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "deaf-child-deported-without-aid-a-global-disability-rights-crisis",
+    title: "Deaf Child Deported Without Aid: A Global Disability Rights Crisis",
+    summary:
+      "A six-year-old deaf boy, his mother, and sibling were deported from the United States to Colombia by immigration authorities, reportedly without the child's essential assistive devices. This incident has ignited a global debate on the humanitarian treatment of vulnerable individuals within immigration systems and the universal right to health and education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-deaf-child-deported-without-aid-a-global-disability-rights-crisis.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-global-summit-charts-a-bold-future-for-traditional",
     title: "Global Health and Education Watch: WHO Global Summit charts a bold future for traditional",
     summary:
