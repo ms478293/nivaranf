@@ -8,11 +8,23 @@
       "summary": "Former education minister Mahabir Pun leads in Myagdi &nbsp;&nbsp; kathmandupost.com",
       "publishedAtUtc": "2026-03-06T14:09:19Z",
       "domain": "news.google.com",
-      "score": 73.0,
+      "score": 65.0,
       "healthHits": 0,
       "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-07T10:43:39.013006Z"
+      "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-07T18:52:51.729037Z"
+    },
+    {
+      "title": "School Times - The Himalayan Times",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iYmhSYWhjRUNoRml5bzhMV2tzaUF5c1hXbjBmcVk5UEhzSUZ1ak9lNnRFZFMwb3lubVNFcEVWQTVMaURUTFNKVWhRTDJEdjF0dzQxaQ?oc=5",
+      "summary": "School Times &nbsp;&nbsp; The Himalayan Times",
+      "publishedAtUtc": "2025-08-06T04:52:12Z",
+      "domain": "news.google.com",
+      "score": 55.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=20, credibility=35, freshness=0, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-07T18:52:51.729037Z"
     },
     {
       "title": "Balendra Shah could be Nepal’s next PM at 35? Married to public health professional, has a baby girl - India.Com",
@@ -108,18 +120,6 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-05T19:36:43.735351Z"
-    },
-    {
-      "title": "School Times - The Himalayan Times",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iYmhSYWhjRUNoRml5bzhMV2tzaUF5c1hXbjBmcVk5UEhzSUZ1ak9lNnRFZFMwb3lubVNFcEVWQTVMaURUTFNKVWhRTDJEdjF0dzQxaQ?oc=5",
-      "summary": "School Times &nbsp;&nbsp; The Himalayan Times",
-      "publishedAtUtc": "2025-08-06T04:52:12Z",
-      "domain": "news.google.com",
-      "score": 55.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=0, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
       "cachedAtUtc": "2026-03-05T19:36:43.735351Z"
     },
     {
@@ -921,6 +921,34 @@
       "candidateCacheCount": 16,
       "candidatesAfterSourceDedupe": 0,
       "candidatesAfterDedupe": 0,
+      "duplicateSkips": {
+        "historyHash": 1,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [],
+      "status": "skipped",
+      "reason": "no non-duplicate trusted Nepal health/education candidate available this run"
+    },
+    {
+      "ranAtUtc": "2026-03-07T18:52:51.729037Z",
+      "windowStartUtc": "2026-03-07T04:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 10,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": false,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": false,
+      "thresholdUsed": 72,
+      "candidatesFetched": 2,
+      "candidateCacheCount": 16,
+      "candidatesAfterSourceDedupe": 1,
+      "candidatesAfterDedupe": 1,
       "duplicateSkips": {
         "historyHash": 1,
         "historySource": 0,
