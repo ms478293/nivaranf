@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-integrity-under-scrutiny-peer-resigns-amid-ppe-scandal",
+    title: "Global Health Integrity Under Scrutiny: Peer Resigns Amid PPE Scandal",
+    summary:
+      "A prominent UK peer is stepping down from the House of Lords following an investigation into multiple breaches of conduct related to COVID-19 PPE procurement. The case underscores critical global challenges in maintaining ethical standards and transparency during public health emergencies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-integrity-under-scrutiny-peer-resigns-amid-ppe-scandal.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-six-years-after-covid-19-s-global-alarm-is-the-world",
     title: "Global Health and Education Watch: Six years after COVID-19’s global alarm: Is the world",
     summary:
