@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi",
+    title: "Mahabir Pun's Enduring Vision for Education and Innovation Resonates in Myagdi",
+    summary:
+      "Mahabir Pun, a celebrated proponent of innovation and rural development, is demonstrating significant electoral support in Myagdi. His decades-long efforts in education and technology are widely recognized as pivotal factors in his current political standing.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-07-mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "devastating-strike-on-iranian-school-unraveling-the-evidence",
     title: "Devastating Strike on Iranian School: Unraveling the Evidence",
     summary:
