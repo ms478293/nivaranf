@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-deadly-clashes-in-lebanon-as-israel-renews-search-for",
+    title: "Global Health and Education Watch: Deadly Clashes in Lebanon as Israel Renews Search for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-and-education-watch-deadly-clashes-in-lebanon-as-israel-renews-sea.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-for-xi-trump-s-embrace-of-war-proves-china-needs",
     title: "Global Health and Education Watch: For Xi, Trump’s Embrace of War Proves China Needs",
     summary:
