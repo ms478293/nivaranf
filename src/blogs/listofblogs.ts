@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-alberto-carvalho-became-l-a-u-s-d-superintendent-despite-scandals",
+    title: "Global Health and Education Watch: How Alberto Carvalho Became L.A.U.S.D. Superintendent Despite Scandals",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-and-education-watch-how-alberto-carvalho-became-l-a-u-s-d-superint.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "zimbabwean-descendants-urge-uk-repatriate-looted-skulls-of-resistance-heroes",
     title: "Zimbabwean Descendants Urge UK: Repatriate Looted Skulls of Resistance Heroes",
     summary:
