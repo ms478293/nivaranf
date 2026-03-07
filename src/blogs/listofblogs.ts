@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalation-in-lebanon-underscores-urgent-humanitarian-crisis",
+    title: "Escalation in Lebanon Underscores Urgent Humanitarian Crisis",
+    summary:
+      "Recent military actions in eastern Lebanon have resulted in significant casualties, exposing the severe vulnerabilities of local health and education infrastructures. This escalating crisis underscores an urgent need for global humanitarian support for affected communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-escalation-in-lebanon-underscores-urgent-humanitarian-crisis.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "deaf-child-deported-without-aid-a-global-disability-rights-crisis",
     title: "Deaf Child Deported Without Aid: A Global Disability Rights Crisis",
     summary:
