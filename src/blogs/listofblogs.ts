@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-child-safety-imperative-lessons-from-a-tragedy-s-enduring-shadow",
+    title: "Global Child Safety Imperative: Lessons from a Tragedy's Enduring Shadow",
+    summary:
+      "The recent demise of Ian Huntley, convicted for the shocking 2002 murders of two schoolgirls in Britain, brings renewed focus to the critical global imperative of child protection. This tragic case profoundly influenced child safeguarding policies and educational approaches, underscoring the continuous need for vigilance and robust support systems.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-child-safety-imperative-lessons-from-a-tragedy-s-enduring-shadow.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-divisive-f-d-a-vaccine-regulator-is-resigning",
     title: "Global Health and Education Watch: Divisive F.D.A. Vaccine Regulator Is Resigning",
     summary:
