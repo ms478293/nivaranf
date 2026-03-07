@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hezbollah-israeli-troops-clash-on-the-ground-in-eastern",
+    title: "Global Health and Education Watch: Hezbollah, Israeli troops clash on the ground in eastern",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-and-education-watch-hezbollah-israeli-troops-clash-on-the-ground-i.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-integrity-under-scrutiny-peer-resigns-amid-ppe-scandal",
     title: "Global Health Integrity Under Scrutiny: Peer Resigns Amid PPE Scandal",
     summary:
