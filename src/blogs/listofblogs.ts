@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-as-unreviewed-food-ingredients-enter-supply-chains",
+    title: "Global Alarm as Unreviewed Food Ingredients Enter Supply Chains",
+    summary:
+      "A recent analysis by the Environmental Working Group uncovered that more than 100 food ingredients in common US products have not undergone health and safety reviews by the FDA. This regulatory gap allows numerous unvetted chemicals into the food system, prompting global concerns about consumer health and food safety standards.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-alarm-as-unreviewed-food-ingredients-enter-supply-chains.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-deadly-clashes-in-lebanon-as-israel-renews-search-for",
     title: "Global Health and Education Watch: Deadly Clashes in Lebanon as Israel Renews Search for",
     summary:
