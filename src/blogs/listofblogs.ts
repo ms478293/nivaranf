@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-divisive-f-d-a-vaccine-regulator-is-resigning",
+    title: "Global Health and Education Watch: Divisive F.D.A. Vaccine Regulator Is Resigning",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-and-education-watch-divisive-f-d-a-vaccine-regulator-is-resigning.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalation-in-lebanon-underscores-urgent-humanitarian-crisis",
     title: "Escalation in Lebanon Underscores Urgent Humanitarian Crisis",
     summary:
