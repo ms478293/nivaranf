@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "libya-achieves-landmark-trachoma-elimination-inspiring-global-health-efforts",
+    title: "Libya Achieves Landmark Trachoma Elimination, Inspiring Global Health Efforts",
+    summary:
+      "Libya has achieved a significant public health milestone with the World Health Organization's validation of trachoma elimination. This success safeguards future generations from preventable blindness and underscores global efforts against neglected tropical diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-libya-achieves-landmark-trachoma-elimination-inspiring-global-health-efforts.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-alberto-carvalho-became-l-a-u-s-d-superintendent-despite-scandals",
     title: "Global Health and Education Watch: How Alberto Carvalho Became L.A.U.S.D. Superintendent Despite Scandals",
     summary:
