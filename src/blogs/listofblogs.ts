@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-weight-loss-drugs-alone-will-not-solve-uk-s-obesity-crisis",
+    title: "Global Health and Education Watch: Weight-loss drugs alone will not solve UK’s obesity crisis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-health-and-education-watch-weight-loss-drugs-alone-will-not-solve-uk-s-ob.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-child-safety-imperative-a-call-for-vigilance-and-protection",
     title: "Global Child Safety Imperative: A Call for Vigilance and Protection",
     summary:
