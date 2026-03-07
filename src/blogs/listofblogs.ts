@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-debate-school-vouchers-and-public-education-s-future",
+    title: "Global Debate: School Vouchers and Public Education's Future",
+    summary:
+      "A recent debate on school vouchers has sparked global discussion about their potential to improve public education versus concerns over equity and resource diversion. This article explores the multifaceted arguments, highlighting the complex interplay of parental choice, public responsibility, and the future of educational systems worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-debate-school-vouchers-and-public-education-s-future.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-weight-loss-drugs-alone-will-not-solve-uk-s-obesity-crisis",
     title: "Global Health and Education Watch: Weight-loss drugs alone will not solve UK’s obesity crisis",
     summary:
