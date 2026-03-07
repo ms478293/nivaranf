@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-child-safety-imperative-a-call-for-vigilance-and-protection",
+    title: "Global Child Safety Imperative: A Call for Vigilance and Protection",
+    summary:
+      "The passing of Ian Huntley, convicted of the 2002 Soham murders, underscores the critical global need for enhanced child protection measures. This event prompts a renewed focus on community vigilance, educational initiatives, and robust support systems for families affected by such tragedies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-global-child-safety-imperative-a-call-for-vigilance-and-protection.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-prevalence-of-excessive-screen-time-and-its-associated-factors",
     title: "Global Health and Education Watch: Prevalence of excessive screen time and its associated factors",
     summary:
