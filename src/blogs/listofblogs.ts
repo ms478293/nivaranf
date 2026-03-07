@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "devastating-strike-on-iranian-school-unraveling-the-evidence",
+    title: "Devastating Strike on Iranian School: Unraveling the Evidence",
+    summary:
+      "A horrific airstrike on an elementary school in southern Iran claimed at least 175 lives, prompting an in-depth visual investigation. Analysts used satellite imagery and other evidence to meticulously examine the incident and identify potential perpetrators.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-devastating-strike-on-iranian-school-unraveling-the-evidence.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "fda-vaccine-chief-s-second-departure-raises-global-health-governance-questions",
     title: "FDA Vaccine Chief's Second Departure Raises Global Health Governance Questions",
     summary:
