@@ -1,6 +1,6 @@
 {
-  "windowStartUtc": "2026-03-05T19:00:00Z",
-  "publishedInWindow": 3,
+  "windowStartUtc": "2026-03-07T04:00:00Z",
+  "publishedInWindow": 1,
   "candidateCache": [
     {
       "title": "Balendra Shah could be Nepal’s next PM at 35? Married to public health professional, has a baby girl - India.Com",
@@ -12,19 +12,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
+      "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
     },
     {
-      "title": "Shaping Health And Illness Narratives - The Rising Nepal",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mMjg3XzFiMldaZEtZQ0UwcGtfY1hJUXdUOTNvMzZqa2N4Y1AtVTByY3dPWEdMZFplS0djMjZ1ZnNNU0tJZzVCSWl3ZGQ3TGJY?oc=5",
-      "summary": "Shaping Health And Illness Narratives &nbsp;&nbsp; The Rising Nepal",
-      "publishedAtUtc": "2026-03-06T02:17:39Z",
+      "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
+      "summary": "Former education minister Mahabir Pun leads in Myagdi &nbsp;&nbsp; kathmandupost.com",
+      "publishedAtUtc": "2026-03-06T14:09:19Z",
       "domain": "news.google.com",
       "score": 73.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
     },
     {
       "title": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
@@ -36,6 +36,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
+    },
+    {
+      "title": "Shaping Health And Illness Narratives - The Rising Nepal",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mMjg3XzFiMldaZEtZQ0UwcGtfY1hJUXdUOTNvMzZqa2N4Y1AtVTByY3dPWEdMZFplS0djMjZ1ZnNNU0tJZzVCSWl3ZGQ3TGJY?oc=5",
+      "summary": "Shaping Health And Illness Narratives &nbsp;&nbsp; The Rising Nepal",
+      "publishedAtUtc": "2026-03-06T02:17:39Z",
+      "domain": "news.google.com",
+      "score": 73.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
       "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
     },
     {
@@ -232,6 +244,14 @@
       "publishedAtUtc": "2026-03-06T10:56:43.970111Z",
       "slug": "balendra-shah-s-rise-a-new-era-for-nepal-s-public-health",
       "blogUrl": "https://www.nivaranfoundation.org/news/balendra-shah-s-rise-a-new-era-for-nepal-s-public-health"
+    },
+    {
+      "contentHash": "a5c9f90114ea8ac7e59873d6ee68f5241c5fe495",
+      "sourceTitle": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
+      "publishedAtUtc": "2026-03-07T04:09:00.163395Z",
+      "slug": "mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi",
+      "blogUrl": "https://www.nivaranfoundation.org/news/mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi"
     }
   ],
   "runs": [
@@ -803,6 +823,85 @@
       },
       "liveVerified": true,
       "publishedInWindowAfter": 3
+    },
+    {
+      "ranAtUtc": "2026-03-07T04:09:00.163395Z",
+      "windowStartUtc": "2026-03-07T04:00:00Z",
+      "publishedInWindowBefore": 0,
+      "hoursLeftInWindow": 24,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": true,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": true,
+      "thresholdUsed": 72,
+      "candidatesFetched": 3,
+      "candidateCacheCount": 16,
+      "candidatesAfterSourceDedupe": 1,
+      "candidatesAfterDedupe": 1,
+      "duplicateSkips": {
+        "historyHash": 2,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
+          "score": 73,
+          "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
+        "score": 73,
+        "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0"
+      },
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Mahabir Pun's Enduring Vision for Education and Innovation Resonates in Myagdi",
+      "generatedWordCount": 1469,
+      "mainImage": "/images/nepal-news/2026/2026-03-07-mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi.jpg",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4305
+      },
+      "generatedImageSharpness": 1077.0990167506602,
+      "generatedImageCandidates": 4,
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2.0,
+        "generatedWords": 1502.0
+      },
+      "imageProviderRequested": "gemini",
+      "imageProviderUsed": "gemini",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi",
+        "mdxPath": "src/blogs/global/mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi",
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/nepal-news/2026/2026-03-07-mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false
+      },
+      "liveVerified": false,
+      "publishedInWindowAfter": 1
     }
   ]
 }
