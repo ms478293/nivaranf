@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "zimbabwean-descendants-urge-uk-repatriate-looted-skulls-of-resistance-heroes",
+    title: "Zimbabwean Descendants Urge UK: Repatriate Looted Skulls of Resistance Heroes",
+    summary:
+      "Descendants of Zimbabwe's First Chimurenga heroes are pressing UK institutions to locate and return the skulls of their ancestors, taken during colonial suppression in the 1890s. This plea highlights the ongoing global movement for historical justice and the ethical responsibilities of museums regarding looted human remains.",
+    thumbnailImage: "/images/global-news/2026/2026-03-07-zimbabwean-descendants-urge-uk-repatriate-looted-skulls-of-resistance-heroes.jpg",
+    date: "2026-03-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-child-safety-imperative-lessons-from-a-tragedy-s-enduring-shadow",
     title: "Global Child Safety Imperative: Lessons from a Tragedy's Enduring Shadow",
     summary:
