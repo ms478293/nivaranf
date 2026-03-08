@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "remote-robotic-surgery-bridges-continents-redefining-global-healthcare-access",
+    title: "Remote Robotic Surgery Bridges Continents, Redefining Global Healthcare Access",
+    summary:
+      "A pioneering remote robotic surgery saw a London-based surgeon successfully operate on a prostate cancer patient in Gibraltar, bridging a 1,500-mile distance. This landmark procedure highlights the transformative potential of advanced technology in delivering specialized medical care across geographical barriers.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-remote-robotic-surgery-bridges-continents-redefining-global-healthcare-access.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-f-d-a-faces-upset-over-denials-of-new-drugs",
     title: "Global Health and Education Watch: F.D.A. Faces Upset Over Denials of New Drugs",
     summary:
