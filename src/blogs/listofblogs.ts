@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-global-mental-health-crisis-navigating-political-turmoil-and-societal-stress",
+    title: "The Global Mental Health Crisis: Navigating Political Turmoil and Societal Stress",
+    summary:
+      "A pervasive sense of psychological distress, often termed 'political depression,' is increasingly linked to global political instability and societal polarization. Mental health professionals are observing a surge in related conditions, emphasizing community engagement as a vital coping mechanism.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-the-global-mental-health-crisis-navigating-political-turmoil-and-societal-stress.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-children-wounded-in-the-us-israeli-strikes-receive-treatment-in",
     title: "Global Health and Education Watch: Children wounded in the US-Israeli strikes receive treatment in",
     summary:
