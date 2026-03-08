@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unmasking-health-disparities-across-latin-america-gender-ethnicity-and-chronic-disease",
+    title: "Unmasking Health Disparities Across Latin America: Gender, Ethnicity, and Chronic Disease",
+    summary:
+      "A recent study reveals profound health disparities driven by gender, ethnicity, and chronic diseases across Latin American populations. Understanding these complex interactions is crucial for developing equitable and effective public health strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-unmasking-health-disparities-across-latin-america-gender-ethnicity-and-chronic-d.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis",
     title: "Nepal Pioneers Genetic Testing for Rheumatic Diseases, Revolutionizing Diagnosis",
     summary:
