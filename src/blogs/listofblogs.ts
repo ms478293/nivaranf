@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tech-oligarchs-rise-shaping-global-health-and-education-futures",
+    title: "Tech Oligarchs' Rise: Shaping Global Health and Education Futures",
+    summary:
+      "The unprecedented concentration of wealth and influence among a select group of tech leaders is profoundly reshaping global health and education landscapes. Their strategic investments and technological advancements raise critical questions about equitable access and the future direction of human development.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-tech-oligarchs-rise-shaping-global-health-and-education-futures.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-is-he-going-to-have-the-time-nih",
     title: "Global Health and Education Watch: ‘How is he going to have the time?’ NIH",
     summary:
