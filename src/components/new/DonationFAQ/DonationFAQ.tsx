@@ -23,7 +23,7 @@ export const DonationFAQ = () => {
         <Link href="/frequently-asked-questions">
           <AppButton variant="ghost" className="px-0 relative mt-4" asChild>
             <div className="flex items-center gap-1">
-              <span className="font-normal text-sm">View more FAQs</span>
+              <span className="font-normal text-sm">Browse donation FAQs</span>
               <MoveUpRightArrowIcon className="w-4 h-4 fill-primary-500" />
             </div>
           </AppButton>

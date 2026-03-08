@@ -1,23 +1,22 @@
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import StatsBox from "./StatsBox";
+
 const TOTAL_FIGURES = [
   {
     id: 1,
-    label: "Gaupalika",
-    // stats: calculatedTotalStats.totalGaupalikas,
-    stats: 328,
+    label: "Municipalities",
+    stats: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText,
   },
   {
     id: 2,
-    label: "Total Camps",
-    // stats: calculatedTotalStats.totalCamp,
-    stats: "1,200+",
+    label: "Patients Served",
+    stats: SANJEEVANI_PUBLIC_STATS.patientsServedText,
   },
   {
     id: 3,
-    label: "Camp Duration",
-    // stats: calculatedTotalStats.workingDay,
-    stats: "2025-2030",
+    label: "Provinces Covered",
+    stats: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`,
   },
 ];
 export const TotalFigures = () => (

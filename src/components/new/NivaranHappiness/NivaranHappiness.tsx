@@ -1,26 +1,27 @@
 import RenderList from "@/components/nivaran/common/renderList/RenderList";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import Image from "next/image";
 import MainTitle from "../MainTitle/MainTitle";
 
 const COUNTING_HAPPINESS_DATA = [
   {
     id: 1,
-    count: "$3.3M",
-    description: "Budget Allocated",
+    count: SANJEEVANI_PUBLIC_STATS.patientsServedText,
+    description: "Patients served",
     image: "/counting_happiness/count_happiness_3.jpg",
     alt: "Children working in difficult conditions to support their daily needs",
   },
   {
     id: 2,
-    count: "1.8 Million+",
-    description: "People will be healed",
+    count: SANJEEVANI_PUBLIC_STATS.campsCompletedText,
+    description: "Health camps completed",
     image: "/counting_happiness/count_happiness_2.png",
     alt: "Health worker providing community education and support to a patient",
   },
   {
     id: 3,
-    count: "1,200+",
-    description: "Camps all over Nepal",
+    count: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}`,
+    description: "Provinces reached",
     image: "/counting_happiness/count_happiness_1.png",
     alt: "Doctor counseling a patient about health concerns",
   },

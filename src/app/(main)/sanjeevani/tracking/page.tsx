@@ -5,25 +5,30 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Project Sanjeevani – Live Tracking Dashboard | Nivaran Foundation",
+    "Project Sanjeevani Tracking Portal | Mobile Health Camps in Nepal",
   description:
-    "Real-time project tracking for Project Sanjeevani — Nepal's National Rural Health Mission. Track camps, patients, coverage, and financial progress across all 7 provinces.",
+    "Track Project Sanjeevani in real time: mobile health camps, patients served, province coverage, and financial progress across rural Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/sanjeevani/tracking",
   },
+  keywords: [
+    "Project Sanjeevani tracking",
+    "mobile health camp dashboard Nepal",
+    "rural healthcare Nepal data",
+    "health NGO transparency Nepal",
+  ],
   openGraph: {
-    title: "Project Sanjeevani – Live Tracking Dashboard",
-    description:
-      SANJEEVANI_PUBLIC_COPY.trackingMetadata,
+    title: "Project Sanjeevani Tracking Portal | Mobile Health Camps in Nepal",
+    description: SANJEEVANI_PUBLIC_COPY.trackingMetadata,
     url: "https://www.nivaranfoundation.org/sanjeevani/tracking",
     siteName: "Nivaran Foundation",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Sanjeevani – Live Tracking",
+    title: "Project Sanjeevani Tracking Portal | Mobile Health Camps in Nepal",
     description:
-      "Track progress of Nepal's largest rural health mission in real time.",
+      "Track mobile health camps, patients served, coverage, and financial progress across rural Nepal.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

@@ -15,24 +15,30 @@ import Link from "next/link";
 import { Activity, CircleDollarSign, MapPinned, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Nivaran Foundation | Project Sanjeevani - Empowering Communities Across Nepal",
+  title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
   description:
-    `Project Sanjeevani brings healthcare to rural Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
+    `Project Sanjeevani is Nivaran Foundation's mobile health camp program in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
   alternates: {
     canonical: "https://www.nivaranfoundation.org/sanjeevani",
   },
+  keywords: [
+    "Project Sanjeevani",
+    "mobile health camps Nepal",
+    "rural healthcare Nepal",
+    "free health camp Nepal",
+    "Nepal health NGO",
+  ],
   openGraph: {
-    title: "Project Sanjeevani | Nivaran Foundation",
-    description: `Bringing healthcare to communities in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
+    title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
+    description: `Mobile health camps and rural healthcare delivery in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
     url: "https://www.nivaranfoundation.org/sanjeevani",
     siteName: "Nivaran Foundation",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Sanjeevani | Nivaran Foundation",
-    description: `Empowering communities across Nepal with healthcare access. ${SANJEEVANI_PUBLIC_COPY.summary}`,
+    title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
+    description: `Mobile health camps and rural healthcare delivery in Nepal. ${SANJEEVANI_PUBLIC_COPY.summary}`,
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

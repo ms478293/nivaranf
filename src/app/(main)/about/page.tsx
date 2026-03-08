@@ -13,7 +13,6 @@ import { SubscribeButton } from "@/components/SubscribeButton";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
-import { AnimatedStatCard } from "@/components/new/AnimatedStatCard/AnimatedStatCard";
 
 export const metadata: Metadata = {
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
@@ -211,13 +210,10 @@ export default function page() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Financial Transparency</h3>
               <p className="text-sm text-gray-600 mb-2">
-                <AnimatedStatCard
-                  value={96}
-                  suffix="%"
-                  label="of every dollar goes to programs"
-                  className="bg-transparent border-none p-0 hover:shadow-none hover:scale-100 !text-primary-500"
-                  numberClassName="text-2xl sm:text-3xl"
-                />
+                <span className="block text-2xl sm:text-3xl font-bold text-primary-500">96%</span>
+                <span className="block mt-3 text-center text-sm sm:text-base text-gray-600 font-medium">
+                  of every dollar goes to programs
+                </span>
               </p>
               <p className="text-xs text-gray-500">
                 Only 2% operations, 2% fundraising

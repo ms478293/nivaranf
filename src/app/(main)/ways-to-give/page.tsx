@@ -59,7 +59,7 @@ const GIVING_METHODS = [
     icon: "🏢",
     description:
       "Many employers match charitable donations, effectively doubling your impact at no extra cost. Check with your HR department or use Double the Donation to find out if your company matches.",
-    cta: "Learn More",
+    cta: "Check Employer Matching",
     href: "https://doublethedonation.com",
     external: true,
   },
