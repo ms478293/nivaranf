@@ -16,7 +16,7 @@ const ABOUT_US_LINK = [
   {
     id: 2,
     label: "Contact",
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 1,

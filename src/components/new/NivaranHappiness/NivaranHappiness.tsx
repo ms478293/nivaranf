@@ -1,5 +1,5 @@
-import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
+import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import Image from "next/image";
 import MainTitle from "../MainTitle/MainTitle";
 
@@ -20,7 +20,7 @@ const COUNTING_HAPPINESS_DATA = [
   },
   {
     id: 3,
-    count: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}`,
+    count: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`,
     description: "Provinces reached",
     image: "/counting_happiness/count_happiness_1.png",
     alt: "Doctor counseling a patient about health concerns",

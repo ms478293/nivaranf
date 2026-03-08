@@ -23,15 +23,20 @@ import {
 import {
   CAMP_MASTER_LOG,
   EXECUTIVE_DASHBOARD,
-  FINANCIAL_SUMMARY,
   FIVE_YEAR_ROLLOUT,
   IMPACT_METRICS,
   MONTHLY_TRACKER,
   PROVINCE_SUMMARY,
   RURAL_COVERAGE,
-  SCALING_SCENARIOS,
   type CampRecord,
 } from "@/content/sanjeevani-tracking-data";
+import {
+  CAPITAL_PHASE_PLAN,
+  PHASE_ONE_OPERATING_PATH,
+  REALISTIC_SCALING_SCENARIOS,
+  SANJEEVANI_FINANCE_MODEL,
+  VISION_MODEL_OPTIONS,
+} from "@/content/sanjeevani-finance-model";
 
 type TabKey = "overview" | "camps" | "finance";
 type Tone = "primary" | "secondary" | "forest" | "amber" | "slate";
@@ -64,6 +69,10 @@ function formatUSD(amount: number) {
   if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
   if (amount >= 1_000) return `$${(amount / 1_000).toFixed(0)}K`;
   return `$${amount.toLocaleString("en-US")}`;
+}
+
+function formatUSDRange(low: number, high: number) {
+  return `${formatUSD(low)} to ${formatUSD(high)}`;
 }
 
 function formatMonthLabel(month: string) {
@@ -272,12 +281,15 @@ export default function SanjeevaniTrackingDashboard() {
   const [activeTab, setActiveTab] = useState<TabKey>("overview");
 
   const d = EXECUTIVE_DASHBOARD;
+  const finance = SANJEEVANI_FINANCE_MODEL;
   const latestMonth = MONTHLY_TRACKER[MONTHLY_TRACKER.length - 1];
-  const currentYear = FIVE_YEAR_ROLLOUT.find((year) => year.year === 2026);
-  const currentScenario = SCALING_SCENARIOS.find((scenario) => scenario.teams === d.activeMedicalTeams);
+  const currentYear = PHASE_ONE_OPERATING_PATH.find((year) => year.year === 2026);
+  const currentScenario = REALISTIC_SCALING_SCENARIOS.find(
+    (scenario) => scenario.teams === d.activeMedicalTeams
+  );
   const maxProvincePatients = Math.max(...PROVINCE_SUMMARY.map((province) => province.totalPatients));
   const maxMonthlyPatients = Math.max(...MONTHLY_TRACKER.map((month) => month.patientsThisMonth));
-  const maxYearlyBudget = Math.max(...FIVE_YEAR_ROLLOUT.map((year) => year.estimatedBudget));
+  const maxYearlyBudget = Math.max(...PHASE_ONE_OPERATING_PATH.map((year) => year.estimatedBudget));
   const latestCamps = CAMP_MASTER_LOG.slice(-4).reverse();
   const totalReferrals = CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.referrals, 0);
   const totalMedicines = CAMP_MASTER_LOG.reduce(
@@ -290,19 +302,9 @@ export default function SanjeevaniTrackingDashboard() {
   const averageCampDuration =
     CAMP_MASTER_LOG.reduce((sum, camp) => sum + camp.effectiveDays, 0) /
     CAMP_MASTER_LOG.length;
-  const teamSummaries = ["Team A", "Team B"].map((team) => {
-    const camps = CAMP_MASTER_LOG.filter((camp) => camp.teamAssigned === team);
-    const patients = camps.reduce((sum, camp) => sum + camp.totalPatients, 0);
-    const spend = camps.reduce((sum, camp) => sum + camp.totalCost, 0);
-
-    return {
-      team,
-      camps: camps.length,
-      patients,
-      spend,
-      averagePatients: Math.round(patients / camps.length),
-    };
-  });
+  const averageAllInCampCost = currentYear
+    ? currentYear.estimatedBudget / currentYear.projectedCamps
+    : finance.currentAnnualOperatingBudget.base / 24;
 
   return (
     <div className="bg-[linear-gradient(180deg,#ffffff_0%,#fbfcfe_35%,#f8fafc_100%)] font-Poppins">
@@ -409,12 +411,18 @@ export default function SanjeevaniTrackingDashboard() {
                   </SurfaceCard>
                   <SurfaceCard className="p-4">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                      Unit cost
+                      All-in cost
                     </p>
                     <p className="mt-2 text-2xl font-semibold text-slate-900">
-                      <AnimatedCounter target={d.costPerPatient} prefix="$" decimals={1} />
+                      <AnimatedCounter
+                        target={finance.fullyLoadedCostPerPatient.base}
+                        prefix="$"
+                        decimals={1}
+                      />
                     </p>
-                    <p className="mt-1 text-xs text-slate-500">cost per patient served</p>
+                    <p className="mt-1 text-xs text-slate-500">
+                      {`base-case delivery cost; variable clinical input remains about $${finance.variableClinicalCostPerPatient.base.toFixed(1)}`}
+                    </p>
                   </SurfaceCard>
                   <SurfaceCard className="p-4">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
@@ -1192,46 +1200,117 @@ export default function SanjeevaniTrackingDashboard() {
           <Section id="finance-summary">
             <SectionHeader
               eyebrow="Finance And Scale"
-              title="Cost discipline and rollout readiness"
-              description="This view connects actual spend with the 2026-2030 scale model, so you can see what current execution costs and what future national expansion requires."
+              title="Finance reality, not just camp spend"
+              description="This view separates verified variable spend, fully loaded operating cost, the real Phase I operating path, and the later capital layers required for the larger Sanjeevani vision."
             />
 
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
               <MetricCard
                 icon={Wallet}
-                label="Spent To Date"
-                value={<AnimatedCounter target={FINANCIAL_SUMMARY.totalSpentSoFar / 1000} prefix="$" suffix="K" />}
-                detail="Real spend logged from the current operating period."
+                label="Verified Variable Spend"
+                value={<AnimatedCounter target={d.totalSpendingSoFar / 1000} prefix="$" suffix="K" />}
+                detail="Actual medicines and basic field-delivery spend logged from verified camps."
                 tone="primary"
               />
               <MetricCard
                 icon={TrendingUp}
-                label="Projected Annual Budget"
-                value={<AnimatedCounter target={FINANCIAL_SUMMARY.projectedAnnualBudget / 1000} prefix="$" suffix="K" />}
-                detail="Required budget to sustain the current two-team setup for a full year."
+                label="Current Annual OPEX"
+                value={
+                  <AnimatedCounter
+                    target={finance.currentAnnualOperatingBudget.base / 1000}
+                    prefix="$"
+                    suffix="K"
+                  />
+                }
+                detail="Base-case all-in budget for the current 2-team, ~50-staff operating model."
                 tone="secondary"
               />
               <MetricCard
                 icon={Target}
-                label="5-Year Budget"
-                value={<AnimatedCounter target={FINANCIAL_SUMMARY.projected5YearBudget / 1_000_000} prefix="$" suffix="M" decimals={1} />}
-                detail="Projected funding need for the full 2026-2030 rollout path."
+                label="Phase I Through 2030"
+                value={
+                  <AnimatedCounter
+                    target={finance.phaseOneOperatingEnvelope.base / 1_000_000}
+                    prefix="$"
+                    suffix="M"
+                    decimals={1}
+                  />
+                }
+                detail="Realistic operating path for mobile outreach and scale through 2030, excluding hospital construction."
                 tone="forest"
               />
+              <MetricCard
+                icon={BadgeDollarSign}
+                label="Phase I + II Tranche"
+                value={
+                  <AnimatedCounter
+                    target={finance.phaseOnePlusTwoTranche / 1_000_000}
+                    prefix="$"
+                    suffix="M"
+                    decimals={0}
+                  />
+                }
+                detail="A defensible fundraising tranche for operations, hubs, referral systems, and readiness, not the full project."
+                tone="amber"
+              />
             </div>
+
+            <SurfaceCard className="mt-5 p-5 md:p-6">
+              <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div className="max-w-3xl">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Finance reset
+                  </p>
+                  <h3 className="mt-2 text-xl font-semibold text-slate-900">
+                    The old $7.5 number is only the variable clinical layer
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-600">
+                    Tracked camp records still reflect medicine and basic consultation spend.
+                    Fully loaded economics also include payroll, transport, field lodging,
+                    equipment, admin, compliance, and contingency. That is why the annual
+                    operating budget and all-in cost per patient now sit much higher than the
+                    raw camp logs alone.
+                  </p>
+                </div>
+                <div className="grid gap-3 sm:grid-cols-2 lg:min-w-[360px]">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Variable clinical cost
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {`$${finance.variableClinicalCostPerPatient.base.toFixed(1)}`}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">
+                      direct medicines and consumables per patient
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Fully loaded cost
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {`$${finance.fullyLoadedCostPerPatient.base.toFixed(1)}`}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">
+                      base-case delivery cost per patient
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SurfaceCard>
           </Section>
 
           <Section id="budget-ladder" className="pt-0">
             <div className="grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
               <SurfaceCard className="p-6 md:p-8">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                  Budget ladder
+                  Phase I operating path
                 </p>
                 <h3 className="mt-2 text-2xl font-semibold text-slate-900">
-                  Year-by-year funding path
+                  Year-by-year fully loaded budget
                 </h3>
                 <div className="mt-6 space-y-4">
-                  {FIVE_YEAR_ROLLOUT.map((year) => (
+                  {PHASE_ONE_OPERATING_PATH.map((year) => (
                     <div key={year.year}>
                       <div className="mb-2 flex items-center justify-between gap-4">
                         <div>
@@ -1260,9 +1339,12 @@ export default function SanjeevaniTrackingDashboard() {
                     2026 reference point
                   </div>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    The current rollout model projects {currentYear?.projectedPatients.toLocaleString("en-US")} patients and{" "}
-                    {currentYear?.projectedCamps} camps in 2026 with an estimated budget of{" "}
-                    {currentYear ? formatUSD(currentYear.estimatedBudget) : "-"}.
+                    The realistic 2026 base case assumes{" "}
+                    {currentYear?.projectedPatients.toLocaleString("en-US")} patients,{" "}
+                    {currentYear?.projectedCamps} camps, about{" "}
+                    {currentScenario?.supportStaffFootprint} total staff supporting{" "}
+                    {d.activeMedicalTeams} active field teams, and an all-in operating
+                    budget of {currentYear ? formatUSD(currentYear.estimatedBudget) : "-"}.
                   </p>
                 </div>
               </SurfaceCard>
@@ -1272,11 +1354,11 @@ export default function SanjeevaniTrackingDashboard() {
                   Scaling scenarios
                 </p>
                 <h3 className="mt-2 text-2xl font-semibold text-slate-900">
-                  What team expansion changes
+                  What team expansion really costs
                 </h3>
 
                 <div className="mt-6 grid gap-4 md:grid-cols-2">
-                  {SCALING_SCENARIOS.map((scenario) => {
+                  {REALISTIC_SCALING_SCENARIOS.map((scenario) => {
                     const isCurrent = scenario.teams === d.activeMedicalTeams;
 
                     return (
@@ -1313,7 +1395,14 @@ export default function SanjeevaniTrackingDashboard() {
                             label="Annual capacity"
                             value={scenario.annualCapacity.toLocaleString("en-US")}
                           />
-                          <DetailRow label="Annual budget" value={formatUSD(scenario.annualBudget)} />
+                          <DetailRow
+                            label="Fully loaded annual budget"
+                            value={formatUSD(scenario.annualBudget)}
+                          />
+                          <DetailRow
+                            label="Support footprint"
+                            value={`~${scenario.supportStaffFootprint} staff`}
+                          />
                           <DetailRow
                             label="Years to full rural coverage"
                             value={scenario.yearsToComplete.toFixed(1)}
@@ -1334,7 +1423,7 @@ export default function SanjeevaniTrackingDashboard() {
                   Unit economics
                 </p>
                 <h3 className="mt-2 text-2xl font-semibold text-slate-900">
-                  Per-camp efficiency benchmarks
+                  Variable versus fully loaded cost
                 </h3>
                 <div className="mt-6">
                   <DetailRow
@@ -1342,92 +1431,113 @@ export default function SanjeevaniTrackingDashboard() {
                     value={d.avgPatientsPerCamp.toLocaleString("en-US")}
                   />
                   <DetailRow
-                    label="Cost per patient"
-                    value={`$${d.costPerPatient.toFixed(1)}`}
+                    label="Variable clinical cost / patient"
+                    value={formatUSDRange(
+                      finance.variableClinicalCostPerPatient.low,
+                      finance.variableClinicalCostPerPatient.high
+                    )}
                   />
                   <DetailRow
-                    label="Average cost per camp"
+                    label="Fully loaded cost / patient"
+                    value={formatUSDRange(
+                      finance.fullyLoadedCostPerPatient.low,
+                      finance.fullyLoadedCostPerPatient.high
+                    )}
+                  />
+                  <DetailRow
+                    label="Tracked variable cost / camp"
                     value={formatUSD(averageCampCost)}
+                  />
+                  <DetailRow
+                    label="Estimated all-in cost / camp"
+                    value={formatUSD(averageAllInCampCost)}
                   />
                   <DetailRow
                     label="Average camp duration"
                     value={`${Math.round(averageCampDuration)} days`}
                   />
-                  <DetailRow label="Doctors per camp" value="3" />
+                  <DetailRow
+                    label="Current operating footprint"
+                    value={`~${finance.currentOperatingAssumptions.totalStaff} staff`}
+                  />
                 </div>
 
                 <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4">
                   <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
                     <Gauge className="h-4 w-4 text-primary-500" />
-                    Scale gap
+                    Finance reality
                   </div>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    At the current two-team configuration, full rural coverage would take about{" "}
-                    {currentScenario?.yearsToComplete.toFixed(1)} years. Reaching the 2030 vision depends on planned team expansion rather than steady-state capacity alone.
+                    The old $7.5 figure only covers medicines and basic clinical consumables.
+                    It does not include payroll, fleet, field lodging, admin, equipment, or
+                    compliance. At the current two-team configuration, full rural coverage
+                    would still take about {currentScenario?.yearsToComplete.toFixed(1)} years
+                    without additional scale.
                   </p>
                 </div>
               </SurfaceCard>
 
               <SurfaceCard className="p-6 md:p-8">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                  Team performance
+                  Capital reality
                 </p>
                 <h3 className="mt-2 text-2xl font-semibold text-slate-900">
-                  Contribution by field team
+                  Later phases need their own capital strategy
                 </h3>
 
                 <div className="mt-6 space-y-6">
-                  {teamSummaries.map((team) => (
-                    <div key={team.team}>
-                      <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                  {CAPITAL_PHASE_PLAN.map((phase) => (
+                    <div key={phase.phase} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                         <div>
-                          <span
-                            className={`rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] ${
-                              team.team === "Team A"
-                                ? "bg-[#eaf3ff] text-secondary-700"
-                                : "bg-[#f4f0ff] text-violet-700"
-                            }`}
-                          >
-                            {team.team}
+                          <span className="rounded-full bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-600">
+                            {phase.phase}
                           </span>
                           <p className="mt-2 text-lg font-semibold text-slate-900">
-                            {team.patients.toLocaleString("en-US")} patients
+                            {phase.title}
                           </p>
                         </div>
-                        <div className="grid grid-cols-3 gap-3 text-right">
-                          <div>
-                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
-                              Camps
-                            </p>
-                            <p className="mt-1 text-sm font-semibold text-slate-900">{team.camps}</p>
-                          </div>
-                          <div>
-                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
-                              Avg/camp
-                            </p>
-                            <p className="mt-1 text-sm font-semibold text-slate-900">
-                              {team.averagePatients.toLocaleString("en-US")}
-                            </p>
-                          </div>
-                          <div>
-                            <p className="text-[10px] uppercase tracking-[0.14em] text-slate-500">
-                              Spend
-                            </p>
-                            <p className="mt-1 text-sm font-semibold text-slate-900">
-                              {formatUSD(team.spend)}
-                            </p>
-                          </div>
-                        </div>
+                        <p className="text-sm font-semibold text-slate-900">
+                          {formatUSDRange(phase.budget.low, phase.budget.high)}
+                        </p>
                       </div>
-                      <ProgressBar
-                        value={team.patients}
-                        max={d.totalPatientsServed}
-                        color={team.team === "Team A" ? "bg-secondary-500" : "bg-violet-500"}
-                        height="h-3"
-                        showLabel
-                      />
+                      <p className="mt-3 text-sm leading-7 text-slate-600">{phase.summary}</p>
+                      <p className="mt-2 text-xs leading-6 text-slate-500">{phase.note}</p>
                     </div>
                   ))}
+                </div>
+
+                <div className="mt-6 grid gap-4 md:grid-cols-2">
+                  <div className="rounded-2xl border border-slate-200 bg-[linear-gradient(140deg,#fff8f6_0%,#ffffff_100%)] p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Direct ownership vision
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {formatUSDRange(
+                        VISION_MODEL_OPTIONS.directOwnership.low,
+                        VISION_MODEL_OPTIONS.directOwnership.high
+                      )}
+                    </p>
+                    <p className="mt-2 text-xs leading-6 text-slate-500">
+                      If Nivaran directly owns and funds the hospital network and the central
+                      referral hospital.
+                    </p>
+                  </div>
+                  <div className="rounded-2xl border border-slate-200 bg-[linear-gradient(140deg,#f7fbff_0%,#ffffff_100%)] p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                      Partnership model
+                    </p>
+                    <p className="mt-2 text-2xl font-semibold text-slate-900">
+                      {formatUSDRange(
+                        VISION_MODEL_OPTIONS.partnershipModel.low,
+                        VISION_MODEL_OPTIONS.partnershipModel.high
+                      )}
+                    </p>
+                    <p className="mt-2 text-xs leading-6 text-slate-500">
+                      If Nivaran directly funds Phase I and II, then co-finances later
+                      hospitals with government, philanthropy, or PPP partners.
+                    </p>
+                  </div>
                 </div>
               </SurfaceCard>
             </div>
@@ -1528,7 +1638,7 @@ export default function SanjeevaniTrackingDashboard() {
                       value={`${selectedCamp.effectiveDays} days`}
                     />
                     <DetailRow
-                      label="Cost per patient"
+                      label="Variable cost per patient"
                       value={`$${selectedCamp.costPerPatient.toFixed(1)}`}
                     />
                     <DetailRow label="Major cases" value={selectedCamp.majorCases} />

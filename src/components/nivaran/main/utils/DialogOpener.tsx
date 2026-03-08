@@ -61,7 +61,7 @@ export const DialogOpener = ({ isToolkitOpen, setIsToolkitOpen }) => {
           </Button>
           <Button
             variant="ghost"
-            onClick={() => router.push("/contact")}
+            onClick={() => router.push("/contact-us")}
             className="bg-white px-6 py-3 rounded-none shadow-lg hover:bg-secondary-main hover:scale-105 transition-all duration-300 ease-in-out my-[1px] mr-[1px] rounded-br-lg"
           >
             Contact
@@ -80,7 +80,7 @@ export const DialogOpener = ({ isToolkitOpen, setIsToolkitOpen }) => {
         <div
           className="absolute  px-6 py-2  bg-primary-main/80  hover:bg-primary-main rounded-full text-white hover:cursor-pointer hover:scale-125 transition-transform duration-300"
           onClick={() => {
-            router.push("/contact");
+            router.push("/contact-us");
           }}
         >
           Need Help?

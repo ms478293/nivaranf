@@ -195,7 +195,7 @@ export const aboutUsData: { title: string; href: string }[] = [
   { title: "Financial Reports", href: "/docs" },
   { title: "Diversity and Inclusion", href: "/dei" },
   { title: "FAQ's", href: "/frequently-asked-questions" },
-  { title: "Get in Touch", href: "/contact" },
+  { title: "Get in Touch", href: "/contact-us" },
 ];
 
 export const newsAndStroiesData: {

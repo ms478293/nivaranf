@@ -45,7 +45,7 @@ export function NavBarUsa() {
           <NavigationMenuTrigger
             className={cn(
               navigationMenuTriggerStyle(),
-              ["/about", "/volunteer", "/contact"].includes(pathname)
+              ["/about", "/volunteer", "/contact", "/contact-us"].includes(pathname)
                 ? "bg-accent"
                 : "",
               "hover:text-primary-main text-xl"

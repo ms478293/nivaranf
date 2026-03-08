@@ -27,7 +27,7 @@ export const HOW_TO_HELP = [
       "Donating goods like clothing, medical supplies, and educational materials makes a significant impact. The foundation provides a list of needed items on its website, and every donation helps those in need.",
     btnLabel: "Contact us",
     icon: <GiftIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const HOW_TO_HELP = [
       "Businesses can partner with us to sponsor projects or support employee volunteering through CSR programs. These partnerships help us reach more people and make a bigger impact.",
     btnLabel: "Contact us",
     icon: <BuildingIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const HOW_TO_HELP = [
       "We fosters a culture of collaboration and respect, where teamwork and mutual support are at the core of our work, and every individual is valued for their contributions and perspectives through a fun and impactful way.",
     btnLabel: "Contact us",
     icon: <TentIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ export const HOW_TO_HELP = [
       "Volunteering your time and skills is invaluable. Whether assisting with events or working directly with programs, your involvement makes a tangible impact on the foundation’s success.",
     btnLabel: "Contact us",
     icon: <HandShakeIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ export const HOW_TO_HELP = [
       "Planned giving or bequests allow you to support the foundation long-term, ensuring their work continues to benefit communities in Nepal for future generations.",
     btnLabel: "Contact us",
     icon: <TrophyIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const HOW_TO_HELP = [
       "We’re seeking passionate individuals who want to make a difference. By joining our team, you’ll play a crucial role in advancing our mission to improve lives in Nepal. ",
     btnLabel: "Contact us",
     icon: <SuitcaseIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
-    link: "/contact",
+    link: "/contact-us",
   },
 ];
 

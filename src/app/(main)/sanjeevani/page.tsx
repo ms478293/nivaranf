@@ -9,6 +9,7 @@ import {
 } from "@/content/sanjeevani-public-stats";
 import { UPCOMING_PROJECTS_DATA } from "@/content/upcoming-projects";
 import { EXECUTIVE_DASHBOARD, CAMP_MASTER_LOG, PROVINCE_SUMMARY } from "@/content/sanjeevani-tracking-data";
+import { SANJEEVANI_FINANCE_MODEL } from "@/content/sanjeevani-finance-model";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,6 +46,8 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
+  const finance = SANJEEVANI_FINANCE_MODEL;
+
   return (
     <main className=" pt-20 font-Poppins flex flex-col gap-10">
       <section className=" w-full px-4">
@@ -145,9 +148,9 @@ const page = () => {
                   },
                   {
                     icon: CircleDollarSign,
-                    value: `$${Math.round(EXECUTIVE_DASHBOARD.totalSpendingSoFar / 1000)}K`,
-                    label: "Total Investment",
-                    sub: `~$${EXECUTIVE_DASHBOARD.costPerPatient} per patient`,
+                    value: `$${Math.round(finance.currentAnnualOperatingBudget.base / 1000)}K`,
+                    label: "Current Annual OPEX",
+                    sub: `Variable clinical ~$${finance.variableClinicalCostPerPatient.base.toFixed(1)}; all-in ~$${finance.fullyLoadedCostPerPatient.base.toFixed(1)}/patient`,
                     valueColor: "text-primary-600",
                   },
                 ].map((stat) => (
@@ -171,6 +174,15 @@ const page = () => {
                     <p className="mt-2 text-xs text-slate-500">{stat.sub}</p>
                   </article>
                 ))}
+              </div>
+
+              <div className="mt-4 rounded-2xl border border-slate-200 bg-white/85 px-5 py-4 text-sm leading-7 text-slate-600 shadow-[0_10px_24px_rgba(15,23,42,0.05)]">
+                <span className="font-semibold text-slate-900">Finance reset:</span> the
+                verified {` $${Math.round(EXECUTIVE_DASHBOARD.totalSpendingSoFar / 1000)}K `}
+                tracked so far reflects variable camp spend. The current two-team program is
+                better planned as a {` ~$${Math.round(finance.currentAnnualOperatingBudget.base / 1000)}K/year `}
+                operating model with a fully loaded care-delivery cost closer to
+                {` ~$${finance.fullyLoadedCostPerPatient.base.toFixed(1)} per patient.`}
               </div>
 
               <div className="mt-6 border-t border-slate-200 pt-5">

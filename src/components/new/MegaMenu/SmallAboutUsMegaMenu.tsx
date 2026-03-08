@@ -15,7 +15,7 @@ const ABOUT_US = [
   {
     id: 3,
     label: "Contact Us",
-    link: "/contact",
+    link: "/contact-us",
   },
   {
     id: 5,

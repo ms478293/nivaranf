@@ -1,5 +1,5 @@
-import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
+import RenderList from "@/components/nivaran/common/renderList/RenderList";
 import StatsBox from "./StatsBox";
 
 const TOTAL_FIGURES = [
@@ -15,7 +15,7 @@ const TOTAL_FIGURES = [
   },
   {
     id: 3,
-    label: "Provinces Covered",
+    label: "Province Coverage",
     stats: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`,
   },
 ];
