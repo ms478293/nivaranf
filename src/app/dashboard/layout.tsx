@@ -2,8 +2,17 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { CONTENT_PORTAL_SESSION_COOKIE } from "@/lib/content/constants";
 import { verifyContentPortalSession } from "@/lib/content/portal-session";
+import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Dashboard | Nivaran Foundation",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 type LayoutProps = {
   children: React.ReactNode;

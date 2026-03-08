@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Nivaran Foundation | Subscribe to our Newsletter",
   description:
     "Stay updated with Nivaran Foundation's latest news, impact stories, and opportunities to get involved. Join our community today.",
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: "https://www.nivaranfoundation.org/subscribe",
   },

@@ -228,6 +228,12 @@ export default function PressPage() {
                   "Live program metrics, camp activity, coverage footprint, and finance view.",
               },
               {
+                title: "Coverage in Nepal",
+                href: "/healthcare-coverage-nepal",
+                description:
+                  "Province-by-province and district-level healthcare coverage pages for citation and background.",
+              },
+              {
                 title: "Financial Reports",
                 href: "/financial-reports",
                 description:

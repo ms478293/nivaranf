@@ -1,6 +1,10 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
-import { SANJEEVANI_PROVINCE_PAGES, getProvinceCoverageData } from "@/content/sanjeevani-province-pages";
+import {
+  SANJEEVANI_PROVINCE_PAGES,
+  getProvinceCoverageData,
+  getProvinceDistrictCoverage,
+} from "@/content/sanjeevani-province-pages";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -52,6 +56,11 @@ const provinceCards = SANJEEVANI_PROVINCE_PAGES.map((page) => {
     latestCamp: data.latestCamp,
   };
 }).sort((a, b) => b.totalPatients - a.totalPatients);
+
+const districtCards = SANJEEVANI_PROVINCE_PAGES.flatMap((page) =>
+  getProvinceDistrictCoverage(page.slug)
+)
+  .sort((a, b) => b.totalPatients - a.totalPatients);
 
 export default function HealthcareCoverageNepalPage() {
   return (
@@ -176,6 +185,42 @@ export default function HealthcareCoverageNepalPage() {
               </p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="px-4 py-4">
+        <div className="max-w-[1320px] mx-auto rounded-3xl border border-slate-200 bg-slate-50 p-8">
+          <h2 className="text-2xl font-semibold text-slate-900">
+            District-level coverage pages
+          </h2>
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+            Province pages show breadth. District pages show the exact field
+            record behind each footprint claim, including municipalities,
+            camp windows, patients served, and service indicators.
+          </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {districtCards.map((district) => (
+              <Link
+                key={`${district.provinceSlug}-${district.districtSlug}`}
+                href={`/healthcare-coverage-nepal/${district.provinceSlug}/${district.districtSlug}`}
+                className="rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all hover:-translate-y-1 hover:border-primary-200 hover:shadow-[0_16px_35px_rgba(15,23,42,0.08)]"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary-500">
+                  {district.province}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">
+                  {district.district}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  {district.totalPatients.toLocaleString("en-US")} patients served in{" "}
+                  {district.municipalities.join(", ")}.
+                </p>
+                <p className="mt-3 inline-flex text-sm font-medium text-primary-500">
+                  Open district page →
+                </p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

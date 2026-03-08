@@ -1,4 +1,5 @@
 import { globalBlogs } from "@/blogs/listofblogs";
+import { getAllDistrictCoverageParams } from "@/content/sanjeevani-province-pages";
 import { getBlogPath } from "@/lib/blog-routes";
 import { getBlogFeed } from "@/lib/content/posts";
 import type { MetadataRoute } from "next";
@@ -94,7 +95,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  [...staticEntries, ...provinceCoverageEntries, ...staticBlogEntries, ...dynamicBlogEntries].forEach((entry) => {
+  const districtCoverageEntries: MetadataRoute.Sitemap =
+    getAllDistrictCoverageParams().map(({ province, district }) => ({
+      url: toAbsoluteUrl(`/healthcare-coverage-nepal/${province}/${district}`),
+      lastModified: keyPageLastModified,
+      changeFrequency: "weekly",
+      priority: 0.65,
+    }));
+
+  [
+    ...staticEntries,
+    ...provinceCoverageEntries,
+    ...districtCoverageEntries,
+    ...staticBlogEntries,
+    ...dynamicBlogEntries,
+  ].forEach((entry) => {
     deduped.set(entry.url, entry);
   });
 

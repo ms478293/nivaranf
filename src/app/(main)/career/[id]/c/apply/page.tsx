@@ -21,6 +21,10 @@ export async function generateMetadata({
   return {
     title: `Apply for ${job?.title || staticJob?.title || 'Position'} | Nivaran Foundation`,
     description: `Submit your application for ${job?.title || staticJob?.title || 'this position'} at Nivaran Foundation. Join our team in delivering healthcare and education to Nepal's underserved communities.`,
+    robots: {
+      index: false,
+      follow: true,
+    },
   };
 }
 

@@ -1,4 +1,8 @@
-import { CAMP_MASTER_LOG, PROVINCE_SUMMARY } from "./sanjeevani-tracking-data";
+import {
+  CAMP_MASTER_LOG,
+  PROVINCE_SUMMARY,
+  type CampRecord,
+} from "./sanjeevani-tracking-data";
 
 export type ProvincePageConfig = {
   slug: string;
@@ -7,6 +11,25 @@ export type ProvincePageConfig = {
   intro: string;
   challenge: string[];
   response: string[];
+};
+
+export type DistrictCoverageSummary = {
+  province: string;
+  provinceSlug: string;
+  district: string;
+  districtSlug: string;
+  municipalities: string[];
+  camps: CampRecord[];
+  totalPatients: number;
+  totalReferrals: number;
+  totalMedicinesDistributed: number;
+  effectiveDays: number;
+  firstCamp?: CampRecord;
+  latestCamp?: CampRecord;
+  provinceIntro: string;
+  provinceChallenge: string[];
+  provinceResponse: string[];
+  keywordTitle: string;
 };
 
 export const SANJEEVANI_PROVINCE_PAGES: ProvincePageConfig[] = [
@@ -121,6 +144,14 @@ export function getProvincePageConfig(slug: string) {
   return SANJEEVANI_PROVINCE_PAGES.find((item) => item.slug === slug);
 }
 
+function slugifyName(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 export function getProvinceCoverageData(slug: string) {
   const config = getProvincePageConfig(slug);
   if (!config) return null;
@@ -149,4 +180,78 @@ export function getProvinceCoverageData(slug: string) {
       0
     ),
   };
+}
+
+export function getProvinceDistrictCoverage(
+  provinceSlug: string
+): DistrictCoverageSummary[] {
+  const provinceData = getProvinceCoverageData(provinceSlug);
+  if (!provinceData) return [];
+
+  const groupedByDistrict = new Map<string, CampRecord[]>();
+
+  provinceData.camps.forEach((camp) => {
+    const existing = groupedByDistrict.get(camp.district) || [];
+    existing.push(camp);
+    groupedByDistrict.set(camp.district, existing);
+  });
+
+  return Array.from(groupedByDistrict.entries())
+    .map(([district, camps]) => {
+      const orderedCamps = [...camps].sort((a, b) =>
+        a.endDate.localeCompare(b.endDate)
+      );
+
+      return {
+        province: provinceData.province,
+        provinceSlug,
+        district,
+        districtSlug: slugifyName(district),
+        municipalities: Array.from(
+          new Set(orderedCamps.map((camp) => camp.ruralMunicipality))
+        ),
+        camps: orderedCamps,
+        totalPatients: orderedCamps.reduce(
+          (sum, camp) => sum + camp.totalPatients,
+          0
+        ),
+        totalReferrals: orderedCamps.reduce(
+          (sum, camp) => sum + camp.referrals,
+          0
+        ),
+        totalMedicinesDistributed: orderedCamps.reduce(
+          (sum, camp) => sum + camp.medicinesDistributed,
+          0
+        ),
+        effectiveDays: orderedCamps.reduce(
+          (sum, camp) => sum + camp.effectiveDays,
+          0
+        ),
+        firstCamp: orderedCamps[0],
+        latestCamp: orderedCamps.at(-1),
+        provinceIntro: provinceData.intro,
+        provinceChallenge: provinceData.challenge,
+        provinceResponse: provinceData.response,
+        keywordTitle: provinceData.keywordTitle,
+      };
+    })
+    .sort((a, b) => b.totalPatients - a.totalPatients);
+}
+
+export function getDistrictCoverageData(
+  provinceSlug: string,
+  districtSlug: string
+) {
+  return getProvinceDistrictCoverage(provinceSlug).find(
+    (item) => item.districtSlug === districtSlug
+  );
+}
+
+export function getAllDistrictCoverageParams() {
+  return SANJEEVANI_PROVINCE_PAGES.flatMap((province) =>
+    getProvinceDistrictCoverage(province.slug).map((district) => ({
+      province: province.slug,
+      district: district.districtSlug,
+    }))
+  );
 }

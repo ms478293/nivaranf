@@ -1,12 +1,9 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
-import {
-  getProvinceCoverageData,
-  getProvinceDistrictCoverage,
-} from "@/content/sanjeevani-province-pages";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
-import { notFound } from "next/navigation";
+import { getDistrictCoverageData } from "@/content/sanjeevani-province-pages";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 function formatDateLabel(value?: string) {
   if (!value) return "Date unavailable";
@@ -17,38 +14,42 @@ function formatDateLabel(value?: string) {
   });
 }
 
-export function ProvinceCoveragePage({ slug }: { slug: string }) {
-  const data = getProvinceCoverageData(slug);
+export function DistrictCoveragePage({
+  provinceSlug,
+  districtSlug,
+}: {
+  provinceSlug: string;
+  districtSlug: string;
+}) {
+  const data = getDistrictCoverageData(provinceSlug, districtSlug);
 
   if (!data) {
     notFound();
   }
 
-  const districtPages = getProvinceDistrictCoverage(slug);
-
   const faq = [
     {
-      question: `How many camps has Nivaran completed in ${data.province} Province?`,
-      answer: `Current Sanjeevani tracking records show ${data.provinceSummary.campsCompleted.toLocaleString(
+      question: `How many patients has Nivaran served in ${data.district} District?`,
+      answer: `Current Sanjeevani tracking records show ${data.totalPatients.toLocaleString(
         "en-US"
-      )} completed camp${data.provinceSummary.campsCompleted === 1 ? "" : "s"} in ${data.province} Province.`,
+      )} patients served in ${data.district} District across ${
+        data.camps.length
+      } recorded camp${data.camps.length === 1 ? "" : "s"}.`,
     },
     {
-      question: `How many patients has Nivaran served in ${data.province}?`,
-      answer: `The current verified total for ${data.province} Province is ${data.totalPatients.toLocaleString(
-        "en-US"
-      )} patients served across logged Sanjeevani camps.`,
-    },
-    {
-      question: `Which districts has Nivaran reached in ${data.province}?`,
-      answer: `${data.provinceSummary.districts.join(
+      question: `Which municipality has Nivaran reached in ${data.district}?`,
+      answer: `${data.municipalities.join(
         ", "
-      )} are the districts currently represented in the published Sanjeevani coverage record for ${data.province} Province.`,
+      )} is the rural municipality currently represented in the public Sanjeevani record for ${data.district} District.`,
     },
     {
-      question: `Why does province-level tracking matter?`,
+      question: `Why does district-level healthcare tracking matter?`,
       answer:
-        "Province-level pages make the healthcare rollout more transparent by showing where camps actually happened, how many patients were served, and how current geographic coverage maps onto the wider national mission.",
+        "District pages make healthcare access claims more credible by showing the exact geography, patient totals, camp windows, and field indicators behind the wider province narrative.",
+    },
+    {
+      question: `How does this district fit the wider Sanjeevani rollout?`,
+      answer: `${data.district} District is part of Nivaran Foundation's current ${data.province} Province footprint, which contributes to a national coverage record spanning all ${SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces of Nepal.`,
     },
   ];
 
@@ -65,6 +66,9 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
     })),
   };
 
+  const patientsPerDay = Math.round(data.totalPatients / data.effectiveDays);
+  const provinceHref = `/healthcare-coverage-nepal/${provinceSlug}`;
+
   return (
     <main className="font-Poppins pb-16">
       <script
@@ -77,7 +81,8 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
           items={[
             { label: "Home", href: "/" },
             { label: "Coverage in Nepal", href: "/healthcare-coverage-nepal" },
-            { label: data.province },
+            { label: data.province, href: provinceHref },
+            { label: data.district },
           ]}
         />
       </div>
@@ -85,31 +90,31 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
       <section className="px-4 py-8 md:py-12">
         <div className="max-w-[1320px] mx-auto rounded-[32px] border border-slate-200 bg-[radial-gradient(circle_at_top_left,rgba(115,199,208,0.18),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(242,162,134,0.22),transparent_32%),linear-gradient(140deg,#ffffff_0%,#fffaf6_100%)] p-8 md:p-12 shadow-[0_16px_45px_rgba(15,23,42,0.08)]">
           <p className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary-500">
-            Province Coverage
+            District Coverage
           </p>
           <h1 className="mt-5 max-w-4xl text-3xl font-semibold leading-[1.05] text-slate-900 sm:text-4xl md:text-5xl">
-            Healthcare access in {data.province} Province, Nepal
+            Healthcare access in {data.district} District, {data.province}
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            {data.intro} Current Sanjeevani records show{" "}
-            {data.totalPatients.toLocaleString("en-US")} patients served across{" "}
-            {data.provinceSummary.campsCompleted} completed camp
-            {data.provinceSummary.campsCompleted === 1 ? "" : "s"} in{" "}
-            {data.provinceSummary.districts.length} district
-            {data.provinceSummary.districts.length === 1 ? "" : "s"}.
+            {data.district} District is currently represented in the public
+            Sanjeevani record through {data.totalPatients.toLocaleString("en-US")}{" "}
+            patients served across {data.camps.length} recorded camp
+            {data.camps.length === 1 ? "" : "s"} in {data.municipalities.join(", ")}.
+            This district page shows the field record behind Nivaran
+            Foundation&apos;s wider {data.province} Province healthcare footprint.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="/sanjeevani/tracking"
+              href={provinceHref}
               className="inline-flex items-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-600"
             >
-              Open Tracking Portal
+              Open {data.province} Province Page
             </Link>
             <Link
-              href="/healthcare-coverage-nepal"
+              href="/sanjeevani/tracking"
               className="inline-flex items-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
             >
-              View Coverage Hub
+              Open Tracking Portal
             </Link>
           </div>
         </div>
@@ -121,23 +126,23 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
             {
               label: "Patients served",
               value: data.totalPatients.toLocaleString("en-US"),
-              note: `current verified total in ${data.province}`,
+              note: `current verified total in ${data.district}`,
             },
             {
-              label: "Camps completed",
-              value: data.provinceSummary.campsCompleted.toLocaleString("en-US"),
-              note: "published Sanjeevani camp count",
+              label: "Municipalities reached",
+              value: data.municipalities.length.toLocaleString("en-US"),
+              note: data.municipalities.join(", "),
             },
             {
-              label: "Districts covered",
-              value: data.provinceSummary.districts.length.toLocaleString("en-US"),
-              note: data.provinceSummary.districts.join(", "),
+              label: "Effective camp days",
+              value: data.effectiveDays.toLocaleString("en-US"),
+              note: "combined field days in current record",
             },
             {
               label: "Latest recorded camp",
               value: formatDateLabel(data.latestCamp?.endDate),
               note: data.latestCamp
-                ? `${data.latestCamp.district}, ${data.latestCamp.ruralMunicipality}`
+                ? `${data.latestCamp.ruralMunicipality}, ${data.latestCamp.teamAssigned}`
                 : "No recent camp logged",
             },
           ].map((stat) => (
@@ -161,33 +166,65 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
         <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
             <h2 className="text-2xl font-semibold text-slate-900">
-              Why this province matters
+              Why district-level tracking matters
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
-              {data.challenge.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+              <p>{data.provinceIntro}</p>
+              <p>
+                In practice, district-level visibility matters because access
+                barriers are local. The difference between routine care and
+                delayed treatment often comes down to whether screening,
+                medicines, and referral support reach a specific municipality,
+                not whether a province looks covered on paper.
+              </p>
+              <p>
+                That is why this page focuses on {data.district} specifically:
+                where the camp happened, how many patients were seen, how long
+                the field window lasted, and what service indicators were
+                logged.
+              </p>
             </div>
           </div>
+
           <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
             <h2 className="text-2xl font-semibold text-slate-900">
-              Current response footprint
+              Current recorded footprint
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
-              {data.response.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+              <p>
+                {data.district} currently sits inside the published{" "}
+                {data.province} Province rollout, with municipalities logged in
+                the Sanjeevani record and linked to a wider national coverage
+                footprint.
+              </p>
+              <p>
+                The current district record spans from{" "}
+                {formatDateLabel(data.firstCamp?.startDate)} to{" "}
+                {formatDateLabel(data.latestCamp?.endDate)} and includes{" "}
+                {data.totalReferrals.toLocaleString("en-US")} estimated referrals
+                plus {data.totalMedicinesDistributed.toLocaleString("en-US")}{" "}
+                medicines distributed.
+              </p>
             </div>
+
             <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
-                National context
+                Operational snapshot
               </p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Project Sanjeevani currently reports{" "}
-                {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served
-                across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces
-                of Nepal.
-              </p>
+              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                <div>
+                  <p className="text-2xl font-semibold text-slate-900">
+                    {patientsPerDay.toLocaleString("en-US")}
+                  </p>
+                  <p className="text-sm text-slate-500">avg patients per day</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-semibold text-slate-900">
+                    {data.camps.length.toLocaleString("en-US")}
+                  </p>
+                  <p className="text-sm text-slate-500">logged camp cycles</p>
+                </div>
+              </div>
             </div>
           </aside>
         </div>
@@ -197,35 +234,14 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
         <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-3">
           <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
             <h2 className="text-2xl font-semibold text-slate-900">
-              Districts served
-            </h2>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
-              {districtPages.map((district) => (
-                <li
-                  key={district.district}
-                  className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3"
-                >
-                  <Link
-                    href={`/healthcare-coverage-nepal/${slug}/${district.districtSlug}`}
-                    className="flex items-center justify-between gap-3 transition-colors hover:text-primary-500"
-                  >
-                    <span>{district.district}</span>
-                    <span className="text-xs font-medium uppercase tracking-[0.12em] text-slate-500">
-                      Open district page
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </article>
-
-          <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
-            <h2 className="text-2xl font-semibold text-slate-900">
-              Rural municipalities reached
+              Municipalities reached
             </h2>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
               {data.municipalities.map((municipality) => (
-                <li key={municipality} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                <li
+                  key={municipality}
+                  className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3"
+                >
                   {municipality}
                 </li>
               ))}
@@ -255,19 +271,34 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
               </div>
             </div>
           </article>
+
+          <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Province context
+            </h2>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
+              <p>
+                {data.province} is one of the {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}{" "}
+                provinces currently represented in the national Sanjeevani
+                footprint.
+              </p>
+              <p>{data.provinceChallenge[0]}</p>
+              <p>{data.provinceResponse[0]}</p>
+            </div>
+          </article>
         </div>
       </section>
 
       <section className="px-4 py-6">
         <div className="max-w-[1320px] mx-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
           <h2 className="text-2xl font-semibold text-slate-900">
-            Camp record in {data.province}
+            Camp record in {data.district} District
           </h2>
           <div className="mt-6 overflow-x-auto">
             <table className="min-w-full text-left text-sm text-slate-600">
               <thead>
                 <tr className="border-b border-slate-200 text-xs uppercase tracking-[0.12em] text-slate-500">
-                  <th className="px-3 py-3 font-semibold">District</th>
+                  <th className="px-3 py-3 font-semibold">Camp ID</th>
                   <th className="px-3 py-3 font-semibold">Municipality</th>
                   <th className="px-3 py-3 font-semibold">Camp Window</th>
                   <th className="px-3 py-3 font-semibold">Patients</th>
@@ -278,11 +309,12 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
                 {data.camps.map((camp) => (
                   <tr key={camp.campId} className="border-b border-slate-100 align-top">
                     <td className="px-3 py-4 font-medium text-slate-900">
-                      {camp.district}
+                      {camp.campId}
                     </td>
                     <td className="px-3 py-4">{camp.ruralMunicipality}</td>
                     <td className="px-3 py-4">
-                      {formatDateLabel(camp.startDate)} to {formatDateLabel(camp.endDate)}
+                      {formatDateLabel(camp.startDate)} to{" "}
+                      {formatDateLabel(camp.endDate)}
                     </td>
                     <td className="px-3 py-4">
                       {camp.totalPatients.toLocaleString("en-US")}
@@ -325,16 +357,16 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
             heading="Continue Exploring"
             links={[
               {
+                title: `${data.province} Province Coverage`,
+                href: provinceHref,
+                description:
+                  "Return to the province page for the full district footprint and camp record.",
+              },
+              {
                 title: "Coverage in Nepal",
                 href: "/healthcare-coverage-nepal",
                 description:
                   "View the full province-by-province coverage hub for Project Sanjeevani.",
-              },
-              {
-                title: "Project Sanjeevani",
-                href: "/sanjeevani",
-                description:
-                  "Review the main mobile healthcare program delivering this coverage footprint.",
               },
               {
                 title: "Tracking Portal",
@@ -343,10 +375,10 @@ export function ProvinceCoveragePage({ slug }: { slug: string }) {
                   "Open the live operating view for camps, coverage, and recent field activity.",
               },
               {
-                title: "Health NGO in Nepal",
-                href: "/health-ngo-nepal",
+                title: "Nivaran Fact Sheet",
+                href: "/impact-fact-sheet",
                 description:
-                  "See what makes a rural health organization credible beyond broad mission language.",
+                  "Use the fact sheet when citing current healthcare metrics and organization details.",
               },
             ]}
           />

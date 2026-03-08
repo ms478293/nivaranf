@@ -1,4 +1,13 @@
 import { DistrictInformationCard } from "@/components/nivaran/sanjeevani/homepage/DistrictInformationCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Internal Test Page | Nivaran Foundation",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 const currentDistrict = {
   districtName: "Bhaktapur",

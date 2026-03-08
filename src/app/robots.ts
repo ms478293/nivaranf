@@ -16,6 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         "/api/admin/*",
         "/blogs/editor/",
         "/blogs/editor/*",
+        "/test",
       ],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
