@@ -40,9 +40,9 @@ const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSub
 const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })));
 
 export const metadata: Metadata = {
-  title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+  title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
   description:
-    "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal. Support healthcare access where distance blocks treatment.",
+    "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, education support, and community outreach across underserved communities in Nepal.",
   metadataBase: new URL("https://www.nivaranfoundation.org"),
   alternates: {
     canonical: "https://www.nivaranfoundation.org",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     siteName: "Nivaran Foundation",
-    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+    title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
     url: "https://www.nivaranfoundation.org",
     type: "website",
     images: [
@@ -71,12 +71,12 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
+      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+    title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
     site: "@NivaranOrg",
     images: [
       {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
+      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
     creator: "@NivaranOrg",
   },
 
