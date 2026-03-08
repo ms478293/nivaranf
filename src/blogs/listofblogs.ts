@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-confronts-medical-misogyny-as-women-report-widespread-dismissal",
+    title: "Global Healthcare Confronts 'Medical Misogyny' as Women Report Widespread Dismissal",
+    summary:
+      "Across global healthcare systems, women frequently report their health concerns are dismissed or ignored due to systemic gender bias, a phenomenon increasingly recognized as 'medical misogyny.' This widespread issue leads to delayed diagnoses, inadequate treatment, and a profound erosion of trust in medical professionals.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-healthcare-confronts-medical-misogyny-as-women-report-widespread-dismissa.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "remote-robotic-surgery-bridges-continents-redefining-global-healthcare-access",
     title: "Remote Robotic Surgery Bridges Continents, Redefining Global Healthcare Access",
     summary:
