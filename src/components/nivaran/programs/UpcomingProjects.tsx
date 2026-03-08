@@ -48,7 +48,7 @@ export const UpcomingProjects = () => {
                 href={project.link}
                 className="text-primary-main font-medium hover:underline"
               >
-                Learn More
+                Explore Project {project.name}
               </Link>
             </div>
           </div>

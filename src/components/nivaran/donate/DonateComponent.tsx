@@ -143,7 +143,7 @@ export function DonationComponent() {
         </p>
         <Link href="/frequently-asked-questions">
           <div className="px-6 py-3 bg-primary-main text-white rounded-md shadow-md hover:bg-primary-main/90 hover:text-white transition duration-100">
-            Learn More
+            Read Donation FAQs
           </div>
         </Link>
       </div>

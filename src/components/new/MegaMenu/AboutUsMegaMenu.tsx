@@ -77,7 +77,7 @@ const AboutDescription = () => {
         className="text-primary-500"
         onClick={() => openActiveMegaMenu(null)}
       >
-        View more about NIVARAN
+        Explore Nivaran Foundation
       </Link>
     </div>
   );

@@ -100,7 +100,7 @@ const NewsAndStoriesMegaMenu = () => {
             <h3 className={headingGradientClass}>Trending Blogs</h3>
             <Link href="/blogs">
               <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
-                View more Blogs
+                Explore all blogs
               </AppButton>
             </Link>
           </div>
@@ -137,7 +137,7 @@ const NewsAndStoriesMegaMenu = () => {
             <h3 className={headingGradientClass}>Global Featured</h3>
             <Link href="/global-news">
               <AppButton variant="ghost" onClick={() => openActiveMegaMenu(null)}>
-                View more
+                Explore global news
               </AppButton>
             </Link>
           </div>

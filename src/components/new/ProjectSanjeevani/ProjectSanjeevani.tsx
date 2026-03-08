@@ -60,7 +60,7 @@ const ProjectSanjeevani = () => {
               variant="ghost"
               className="hover:scale-105 transition-transform duration-100 pl-0"
             >
-              <span>View more</span>
+              <span>Explore Project Sanjeevani</span>
               <RightArrowIcon className="w-5 h-5 fill-primary-500" />
             </AppButton>
           </Link>

@@ -4,6 +4,7 @@ import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact Nivaran Foundation | Nepal Healthcare NGO",
@@ -38,9 +39,49 @@ export const metadata: Metadata = {
   },
 };
 
+const CONTACT_FAQS = [
+  {
+    question: "How can I donate to Nivaran Foundation?",
+    answer:
+      "You can donate online through our Donate page. We accept credit cards, debit cards, and bank transfers. All donations are 501(c)(3) tax-deductible.",
+  },
+  {
+    question: "How do I volunteer with Nivaran?",
+    answer:
+      "Visit our Volunteer page to see current opportunities. We offer both in-person programs in Nepal and remote support roles.",
+  },
+  {
+    question: "Can my company partner with Nivaran?",
+    answer:
+      "Yes. We welcome corporate partnerships, CSR collaborations, and employer matching programs. Email partnerships@nivaranfoundation.org with details about your organization.",
+  },
+  {
+    question: "Where does Nivaran Foundation operate?",
+    answer:
+      "We primarily operate across rural districts of Nepal, running mobile health camps, education programs, and community development initiatives. Our US coordination office handles fundraising and partnerships.",
+  },
+];
+
 export default async function ContactUsPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: CONTACT_FAQS.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <main className="w-full px-4 font-Poppins pb-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <SetUserLocationCookie />
       <section className="max-w-[1320px] mx-auto flex flex-col md:gap-12">
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact Us" }]} className="mb-2" />
@@ -90,30 +131,32 @@ export default async function ContactUsPage() {
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-semibold text-gray-800 mb-2">How can I donate to Nivaran Foundation?</h3>
-              <p className="text-sm text-gray-600">
-                You can donate online through our <a href="/donate" className="text-primary-500 underline">Donate page</a>. We accept credit cards, debit cards, and bank transfers. All donations are 501(c)(3) tax-deductible.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-semibold text-gray-800 mb-2">How do I volunteer with Nivaran?</h3>
-              <p className="text-sm text-gray-600">
-                Visit our <a href="/volunteer" className="text-primary-500 underline">Volunteer page</a> to see current opportunities. We offer both in-person programs in Nepal and remote support roles.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-semibold text-gray-800 mb-2">Can my company partner with Nivaran?</h3>
-              <p className="text-sm text-gray-600">
-                Absolutely! We welcome corporate partnerships, CSR collaborations, and employer matching programs. Email us at partnerships@nivaranfoundation.org with details about your organization.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-              <h3 className="font-semibold text-gray-800 mb-2">Where does Nivaran Foundation operate?</h3>
-              <p className="text-sm text-gray-600">
-                We primarily operate across rural districts of Nepal, running mobile health camps, education programs, and community development initiatives. Our US coordination office handles fundraising and partnerships.
-              </p>
-            </div>
+            {CONTACT_FAQS.map((faq) => (
+              <div key={faq.question} className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h3 className="font-semibold text-gray-800 mb-2">{faq.question}</h3>
+                <p className="text-sm text-gray-600">
+                  {faq.question === "How can I donate to Nivaran Foundation?" ? (
+                    <>
+                      You can donate online through our{" "}
+                      <Link href="/donate" className="text-primary-500 underline">
+                        Donate page
+                      </Link>
+                      . We accept credit cards, debit cards, and bank transfers. All donations are 501(c)(3) tax-deductible.
+                    </>
+                  ) : faq.question === "How do I volunteer with Nivaran?" ? (
+                    <>
+                      Visit our{" "}
+                      <Link href="/volunteer" className="text-primary-500 underline">
+                        Volunteer page
+                      </Link>
+                      {" "}to see current opportunities. We offer both in-person programs in Nepal and remote support roles.
+                    </>
+                  ) : (
+                    faq.answer
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
       </section>

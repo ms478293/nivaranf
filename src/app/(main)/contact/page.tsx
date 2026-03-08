@@ -1,59 +1,13 @@
-import { ContactCardList } from "@/components/new/ContactCardList/ContactCardList";
-import ContactForm from "@/components/new/ContactForm/ContactForm";
-import { PageTitle } from "@/components/new/PageTitle/PageTitle";
-import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Metadata } from "next";
+import { permanentRedirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title:
-    "Nivaran Foundation | Contact Nivaran Foundation - Get in Touch with Us",
-  description:
-    "Reach out to Nivaran Foundation for inquiries or support. Connect with us to learn more about how we're making a global impact through our initiatives",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/contact",
-  },
-  openGraph: {
-    title: "Contact Us | Nivaran Foundation",
-    description: "Reach out to Nivaran Foundation for inquiries or support. Connect with us to learn more about our global impact.",
-    url: "https://www.nivaranfoundation.org/contact",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Us | Nivaran Foundation",
-    description: "Reach out to Nivaran Foundation for inquiries or support.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
+  robots: {
+    index: false,
+    follow: false,
   },
 };
 
-export default async function page() {
-  return (
-    <main className="w-full px-4 font-Poppins pb-10">
-      <SetUserLocationCookie />
-      <section
-        className="max-w-[1320px] mx-auto flex flex-col md:gap-12"
-        style={{
-          backgroundPosition: "top 10% left 40%",
-        }}
-      >
-        <div className="mb-4 md:mb-8 flex flex-col gap-2">
-          <PageTitle prefix="We're Here to" suffix="Answer Your Questions" />
-
-          <p className="text-sm text-gray-600">
-            For inquiries regarding our healthcare programs, donations, or
-            volunteer opportunities, please contact us
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          <ContactForm />
-          <div className="flex flex-col gap-8">
-            <ContactCardList />
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+export default function ContactRedirectPage() {
+  permanentRedirect("/contact-us");
 }
