@@ -1,18 +1,30 @@
 {
-  "windowStartUtc": "2026-03-07T04:00:00Z",
+  "windowStartUtc": "2026-03-08T18:00:00Z",
   "publishedInWindow": 1,
   "candidateCache": [
     {
-      "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
-      "summary": "Former education minister Mahabir Pun leads in Myagdi &nbsp;&nbsp; kathmandupost.com",
-      "publishedAtUtc": "2026-03-06T14:09:19Z",
+      "title": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3lIZ0QtbE1DUzVjZXBJaS01THZ6bkRtOEM2UFFYc2J4QU5DZkNwTmJVTzFjLXhQV3BNYWZCR0U1bUFiZ1dHUXd1ZUxPeWNpRjlUbXFnT0xWNTlOODNCaTA2VGtEbXRrV3drXzJqNXBzbXNRTFdYd1FmN0lXd0c2NHdwdlZBWFAxem1BQ29rRm8wUkZMWGhPLVV2UW02RDB0MWt6V0VUVi1SdmFxUWNmNlVuNGFuNDBha0V0dWdZVFRxbG9XWGV3RkJIRHNZRDEtOUlJdkswWmhxUmE4MVBNSmFR?oc=5",
+      "summary": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal &nbsp;&nbsp; myRepublica",
+      "publishedAtUtc": "2026-03-08T00:14:29Z",
       "domain": "news.google.com",
-      "score": 65.0,
+      "score": 73.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-08T18:52:52.046349Z"
+    },
+    {
+      "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY3hpSnNaOUZMa3IxZlUzUmNrcFlFQjFyTjVEeTNBc09vSjEtNTRkbVBkbmJhb3FXeks3NDYwOVRKWG5yejRWYVJaakxCUlJfNnNjQ1lSbUJNcHVWdDNiSU5oY1RZNkVsa3hJNF85dzRtUjBkSWRFMTJhNWFycElxeXcyVmVpangwVkxQemFvYlY5REQ1RXJJVURpZFFFVHNhcWtCT2FCN3pzNUpQR2ZFUTdrY2tsRHVHc2NpREJnbWtuQm9kRnR5dG52NVJxMVo0aThqLVNaMA?oc=5",
+      "summary": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus &nbsp;&nbsp; myRepublica",
+      "publishedAtUtc": "2026-03-08T10:39:28Z",
+      "domain": "news.google.com",
+      "score": 73.0,
       "healthHits": 0,
       "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-07T18:52:51.729037Z"
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-08T18:52:52.046349Z"
     },
     {
       "title": "School Times - The Himalayan Times",
@@ -24,6 +36,18 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=0, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-08T18:52:52.046349Z"
+    },
+    {
+      "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
+      "summary": "Former education minister Mahabir Pun leads in Myagdi &nbsp;&nbsp; kathmandupost.com",
+      "publishedAtUtc": "2026-03-06T14:09:19Z",
+      "domain": "news.google.com",
+      "score": 65.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
       "cachedAtUtc": "2026-03-07T18:52:51.729037Z"
     },
     {
@@ -252,6 +276,14 @@
       "publishedAtUtc": "2026-03-07T04:09:00.163395Z",
       "slug": "mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi",
       "blogUrl": "https://www.nivaranfoundation.org/news/mahabir-pun-s-enduring-vision-for-education-and-innovation-resonates-in-myagdi"
+    },
+    {
+      "contentHash": "d9d300cb651222445c7df2944e8aa7ac58cd1ccc",
+      "sourceTitle": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3lIZ0QtbE1DUzVjZXBJaS01THZ6bkRtOEM2UFFYc2J4QU5DZkNwTmJVTzFjLXhQV3BNYWZCR0U1bUFiZ1dHUXd1ZUxPeWNpRjlUbXFnT0xWNTlOODNCaTA2VGtEbXRrV3drXzJqNXBzbXNRTFdYd1FmN0lXd0c2NHdwdlZBWFAxem1BQ29rRm8wUkZMWGhPLVV2UW02RDB0MWt6V0VUVi1SdmFxUWNmNlVuNGFuNDBha0V0dWdZVFRxbG9XWGV3RkJIRHNZRDEtOUlJdkswWmhxUmE4MVBNSmFR?oc=5",
+      "publishedAtUtc": "2026-03-08T18:52:52.046349Z",
+      "slug": "nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis",
+      "blogUrl": "https://www.nivaranfoundation.org/news/nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis"
     }
   ],
   "runs": [
@@ -958,6 +990,91 @@
       "shortlist": [],
       "status": "skipped",
       "reason": "no non-duplicate trusted Nepal health/education candidate available this run"
+    },
+    {
+      "ranAtUtc": "2026-03-08T18:52:52.046349Z",
+      "windowStartUtc": "2026-03-08T18:00:00Z",
+      "publishedInWindowBefore": 0,
+      "hoursLeftInWindow": 24,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": true,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": true,
+      "thresholdUsed": 72,
+      "candidatesFetched": 3,
+      "candidateCacheCount": 18,
+      "candidatesAfterSourceDedupe": 3,
+      "candidatesAfterDedupe": 3,
+      "duplicateSkips": {
+        "historyHash": 0,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3lIZ0QtbE1DUzVjZXBJaS01THZ6bkRtOEM2UFFYc2J4QU5DZkNwTmJVTzFjLXhQV3BNYWZCR0U1bUFiZ1dHUXd1ZUxPeWNpRjlUbXFnT0xWNTlOODNCaTA2VGtEbXRrV3drXzJqNXBzbXNRTFdYd1FmN0lXd0c2NHdwdlZBWFAxem1BQ29rRm8wUkZMWGhPLVV2UW02RDB0MWt6V0VUVi1SdmFxUWNmNlVuNGFuNDBha0V0dWdZVFRxbG9XWGV3RkJIRHNZRDEtOUlJdkswWmhxUmE4MVBNSmFR?oc=5",
+          "score": 73,
+          "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0"
+        },
+        {
+          "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY3hpSnNaOUZMa3IxZlUzUmNrcFlFQjFyTjVEeTNBc09vSjEtNTRkbVBkbmJhb3FXeks3NDYwOVRKWG5yejRWYVJaakxCUlJfNnNjQ1lSbUJNcHVWdDNiSU5oY1RZNkVsa3hJNF85dzRtUjBkSWRFMTJhNWFycElxeXcyVmVpangwVkxQemFvYlY5REQ1RXJJVURpZFFFVHNhcWtCT2FCN3pzNUpQR2ZFUTdrY2tsRHVHc2NpREJnbWtuQm9kRnR5dG52NVJxMVo0aThqLVNaMA?oc=5",
+          "score": 73,
+          "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3lIZ0QtbE1DUzVjZXBJaS01THZ6bkRtOEM2UFFYc2J4QU5DZkNwTmJVTzFjLXhQV3BNYWZCR0U1bUFiZ1dHUXd1ZUxPeWNpRjlUbXFnT0xWNTlOODNCaTA2VGtEbXRrV3drXzJqNXBzbXNRTFdYd1FmN0lXd0c2NHdwdlZBWFAxem1BQ29rRm8wUkZMWGhPLVV2UW02RDB0MWt6V0VUVi1SdmFxUWNmNlVuNGFuNDBha0V0dWdZVFRxbG9XWGV3RkJIRHNZRDEtOUlJdkswWmhxUmE4MVBNSmFR?oc=5",
+        "score": 73,
+        "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0"
+      },
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Nepal Pioneers Genetic Testing for Rheumatic Diseases, Revolutionizing Diagnosis",
+      "generatedWordCount": 1493,
+      "mainImage": "/images/nepal-news/2026/2026-03-08-nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis.jpg",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5092
+      },
+      "generatedImageSharpness": 744.1876231910801,
+      "generatedImageCandidates": 4,
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2.0,
+        "generatedWords": 1524.0
+      },
+      "imageProviderRequested": "gemini",
+      "imageProviderUsed": "gemini",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis",
+        "mdxPath": "src/blogs/global/nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis",
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/nepal-news/2026/2026-03-08-nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false
+      },
+      "liveVerified": false,
+      "publishedInWindowAfter": 1
     }
   ]
 }
