@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-inexpensive-harmful-drinks-drive-disease-and-injury-surge",
+    title: "Global Health Crisis: Inexpensive Harmful Drinks Drive Disease and Injury Surge",
+    summary:
+      "New global reports from the World Health Organization highlight the urgent need for governments to increase taxes on sugary drinks and alcoholic beverages. This measure aims to counter the rising tide of preventable noncommunicable diseases and injuries, which are placing immense pressure on health systems globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-health-crisis-inexpensive-harmful-drinks-drive-disease-and-injury-surge.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-confronts-medical-misogyny-as-women-report-widespread-dismissal",
     title: "Global Healthcare Confronts 'Medical Misogyny' as Women Report Widespread Dismissal",
     summary:
