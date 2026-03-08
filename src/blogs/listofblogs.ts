@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-children-wounded-in-the-us-israeli-strikes-receive-treatment-in",
+    title: "Global Health and Education Watch: Children wounded in the US-Israeli strikes receive treatment in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-health-and-education-watch-children-wounded-in-the-us-israeli-strikes-rec.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-director-general-lauds-jordan-s-health-leadership-amidst-regional-challenges",
     title: "WHO Director-General Lauds Jordan's Health Leadership Amidst Regional Challenges",
     summary:
