@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-is-he-going-to-have-the-time-nih",
+    title: "Global Health and Education Watch: ‘How is he going to have the time?’ NIH",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-health-and-education-watch-how-is-he-going-to-have-the-time-nih.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-global-mental-health-crisis-navigating-political-turmoil-and-societal-stress",
     title: "The Global Mental Health Crisis: Navigating Political Turmoil and Societal Stress",
     summary:
