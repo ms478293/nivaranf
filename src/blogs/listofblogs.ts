@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "health-secretary-s-nutrition-pivot-divides-allies-amid-global-health-debates",
+    title: "Health Secretary's Nutrition Pivot Divides Allies Amid Global Health Debates",
+    summary:
+      "Health Secretary Kennedy's recent pivot from vaccine-centric advocacy to prioritizing \"real food\" initiatives has ignited significant debate among his traditional supporters. This strategic shift, unfolding amidst global health challenges and upcoming midterm elections, underscores the complex interplay of public health policy and political strategy.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-health-secretary-s-nutrition-pivot-divides-allies-amid-global-health-debates.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unmasking-health-disparities-across-latin-america-gender-ethnicity-and-chronic-disease",
     title: "Unmasking Health Disparities Across Latin America: Gender, Ethnicity, and Chronic Disease",
     summary:
