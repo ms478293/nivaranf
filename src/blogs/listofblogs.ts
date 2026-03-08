@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "caffeine-pouches-a-global-health-concern-for-adolescents",
+    title: "Caffeine Pouches: A Global Health Concern for Adolescents",
+    summary:
+      "A concerning global trend sees caffeine pouches targeting adolescents, promoted by social media influencers to young gym-goers and students. Health experts are raising alarms about the potential health risks and the urgent need for regulatory oversight.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-caffeine-pouches-a-global-health-concern-for-adolescents.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-as-unreviewed-food-ingredients-enter-supply-chains",
     title: "Global Alarm as Unreviewed Food Ingredients Enter Supply Chains",
     summary:
