@@ -23,6 +23,7 @@ const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: Me
   { path: "/health-ngo-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
   { path: "/free-health-camp-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
   { path: "/impact-fact-sheet", priority: 0.7, changeFrequency: "monthly", isKeyPage: true },
+  { path: "/healthcare-coverage-nepal", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
   { path: "/sanjeevani", priority: 0.8, changeFrequency: "weekly" },
   { path: "/sanjeevani/tracking", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
   { path: "/vidya", priority: 0.8, changeFrequency: "weekly" },
@@ -78,7 +79,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const deduped = new Map<string, MetadataRoute.Sitemap[number]>();
-  [...staticEntries, ...staticBlogEntries, ...dynamicBlogEntries].forEach((entry) => {
+  const provinceCoverageEntries: MetadataRoute.Sitemap = [
+    "karnali",
+    "sudurpashchim",
+    "bagmati",
+    "lumbini",
+    "madhesh",
+    "gandaki",
+    "koshi",
+  ].map((slug) => ({
+    url: toAbsoluteUrl(`/healthcare-coverage-nepal/${slug}`),
+    lastModified: keyPageLastModified,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  [...staticEntries, ...provinceCoverageEntries, ...staticBlogEntries, ...dynamicBlogEntries].forEach((entry) => {
     deduped.set(entry.url, entry);
   });
 

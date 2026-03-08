@@ -96,6 +96,12 @@ const RESOURCE_LINKS = [
     description:
       "A citation-ready overview of our mission, metrics, and reference pages for media and partners.",
   },
+  {
+    title: "Coverage in Nepal",
+    href: "/healthcare-coverage-nepal",
+    description:
+      "A province-by-province view of where Project Sanjeevani currently operates in Nepal.",
+  },
 ];
 
 export default function ProgramsPage() {

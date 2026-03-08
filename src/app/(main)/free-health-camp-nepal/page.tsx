@@ -115,6 +115,12 @@ export default function FreeHealthCampNepalPage() {
           description:
             "See why distance, delay, and referral gaps still shape health outcomes outside cities.",
         },
+        {
+          title: "Coverage in Nepal",
+          href: "/healthcare-coverage-nepal",
+          description:
+            "See where current Sanjeevani camp records are distributed across provinces and districts.",
+        },
       ]}
     />
   );

@@ -75,6 +75,11 @@ const referenceLinks = [
     description: "CSR and institutional partnership pathways for implementation support.",
   },
   {
+    title: "Coverage in Nepal",
+    href: "/healthcare-coverage-nepal",
+    description: "Province-by-province Sanjeevani coverage using current public camp records.",
+  },
+  {
     title: "Health NGO in Nepal",
     href: "/health-ngo-nepal",
     description: "A clearer explanation of what credible rural health execution requires.",
@@ -218,7 +223,8 @@ export default function ImpactFactSheetPage() {
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Use the press kit for logos, quick facts, and approved
                 organization details. Link to the tracking portal when citing
-                current healthcare rollout numbers.
+                current healthcare rollout numbers and the coverage hub when
+                referencing province-level footprint.
               </p>
             </article>
             <article className="rounded-2xl border border-slate-200 bg-slate-50 p-5">

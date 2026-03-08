@@ -1,0 +1,341 @@
+import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
+import { getProvinceCoverageData } from "@/content/sanjeevani-province-pages";
+import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+
+function formatDateLabel(value?: string) {
+  if (!value) return "Date unavailable";
+  return new Date(value).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+export function ProvinceCoveragePage({ slug }: { slug: string }) {
+  const data = getProvinceCoverageData(slug);
+
+  if (!data) {
+    notFound();
+  }
+
+  const faq = [
+    {
+      question: `How many camps has Nivaran completed in ${data.province} Province?`,
+      answer: `Current Sanjeevani tracking records show ${data.provinceSummary.campsCompleted.toLocaleString(
+        "en-US"
+      )} completed camp${data.provinceSummary.campsCompleted === 1 ? "" : "s"} in ${data.province} Province.`,
+    },
+    {
+      question: `How many patients has Nivaran served in ${data.province}?`,
+      answer: `The current verified total for ${data.province} Province is ${data.totalPatients.toLocaleString(
+        "en-US"
+      )} patients served across logged Sanjeevani camps.`,
+    },
+    {
+      question: `Which districts has Nivaran reached in ${data.province}?`,
+      answer: `${data.provinceSummary.districts.join(
+        ", "
+      )} are the districts currently represented in the published Sanjeevani coverage record for ${data.province} Province.`,
+    },
+    {
+      question: `Why does province-level tracking matter?`,
+      answer:
+        "Province-level pages make the healthcare rollout more transparent by showing where camps actually happened, how many patients were served, and how current geographic coverage maps onto the wider national mission.",
+    },
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  return (
+    <main className="font-Poppins pb-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <div className="max-w-[1320px] mx-auto px-4 pt-2">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Coverage in Nepal", href: "/healthcare-coverage-nepal" },
+            { label: data.province },
+          ]}
+        />
+      </div>
+
+      <section className="px-4 py-8 md:py-12">
+        <div className="max-w-[1320px] mx-auto rounded-[32px] border border-slate-200 bg-[radial-gradient(circle_at_top_left,rgba(115,199,208,0.18),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(242,162,134,0.22),transparent_32%),linear-gradient(140deg,#ffffff_0%,#fffaf6_100%)] p-8 md:p-12 shadow-[0_16px_45px_rgba(15,23,42,0.08)]">
+          <p className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary-500">
+            Province Coverage
+          </p>
+          <h1 className="mt-5 max-w-4xl text-3xl font-semibold leading-[1.05] text-slate-900 sm:text-4xl md:text-5xl">
+            Healthcare access in {data.province} Province, Nepal
+          </h1>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+            {data.intro} Current Sanjeevani records show{" "}
+            {data.totalPatients.toLocaleString("en-US")} patients served across{" "}
+            {data.provinceSummary.campsCompleted} completed camp
+            {data.provinceSummary.campsCompleted === 1 ? "" : "s"} in{" "}
+            {data.provinceSummary.districts.length} district
+            {data.provinceSummary.districts.length === 1 ? "" : "s"}.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/sanjeevani/tracking"
+              className="inline-flex items-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-600"
+            >
+              Open Tracking Portal
+            </Link>
+            <Link
+              href="/healthcare-coverage-nepal"
+              className="inline-flex items-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
+            >
+              View Coverage Hub
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-4">
+        <div className="max-w-[1320px] mx-auto grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {[
+            {
+              label: "Patients served",
+              value: data.totalPatients.toLocaleString("en-US"),
+              note: `current verified total in ${data.province}`,
+            },
+            {
+              label: "Camps completed",
+              value: data.provinceSummary.campsCompleted.toLocaleString("en-US"),
+              note: "published Sanjeevani camp count",
+            },
+            {
+              label: "Districts covered",
+              value: data.provinceSummary.districts.length.toLocaleString("en-US"),
+              note: data.provinceSummary.districts.join(", "),
+            },
+            {
+              label: "Latest recorded camp",
+              value: formatDateLabel(data.latestCamp?.endDate),
+              note: data.latestCamp
+                ? `${data.latestCamp.district}, ${data.latestCamp.ruralMunicipality}`
+                : "No recent camp logged",
+            },
+          ].map((stat) => (
+            <article
+              key={stat.label}
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                {stat.label}
+              </p>
+              <p className="mt-3 text-3xl font-semibold text-slate-900">
+                {stat.value}
+              </p>
+              <p className="mt-2 text-sm text-slate-500">{stat.note}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-4 py-6">
+        <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Why this province matters
+            </h2>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
+              {data.challenge.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+          <aside className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Current response footprint
+            </h2>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
+              {data.response.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                National context
+              </p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Project Sanjeevani currently reports{" "}
+                {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served
+                across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces
+                of Nepal.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section className="px-4 py-4">
+        <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-3">
+          <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Districts served
+            </h2>
+            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+              {data.provinceSummary.districts.map((district) => (
+                <li key={district} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  {district}
+                </li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Rural municipalities reached
+            </h2>
+            <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+              {data.municipalities.map((municipality) => (
+                <li key={municipality} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  {municipality}
+                </li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <h2 className="text-2xl font-semibold text-slate-900">
+              Service indicators
+            </h2>
+            <div className="mt-4 space-y-4 text-sm leading-6 text-slate-600">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                  Estimated referrals
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-slate-900">
+                  {data.totalReferrals.toLocaleString("en-US")}
+                </p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
+                  Medicines distributed
+                </p>
+                <p className="mt-2 text-2xl font-semibold text-slate-900">
+                  {data.totalMedicinesDistributed.toLocaleString("en-US")}
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="px-4 py-6">
+        <div className="max-w-[1320px] mx-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Camp record in {data.province}
+          </h2>
+          <div className="mt-6 overflow-x-auto">
+            <table className="min-w-full text-left text-sm text-slate-600">
+              <thead>
+                <tr className="border-b border-slate-200 text-xs uppercase tracking-[0.12em] text-slate-500">
+                  <th className="px-3 py-3 font-semibold">District</th>
+                  <th className="px-3 py-3 font-semibold">Municipality</th>
+                  <th className="px-3 py-3 font-semibold">Camp Window</th>
+                  <th className="px-3 py-3 font-semibold">Patients</th>
+                  <th className="px-3 py-3 font-semibold">Team</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.camps.map((camp) => (
+                  <tr key={camp.campId} className="border-b border-slate-100 align-top">
+                    <td className="px-3 py-4 font-medium text-slate-900">
+                      {camp.district}
+                    </td>
+                    <td className="px-3 py-4">{camp.ruralMunicipality}</td>
+                    <td className="px-3 py-4">
+                      {formatDateLabel(camp.startDate)} to {formatDateLabel(camp.endDate)}
+                    </td>
+                    <td className="px-3 py-4">
+                      {camp.totalPatients.toLocaleString("en-US")}
+                    </td>
+                    <td className="px-3 py-4">{camp.teamAssigned}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-6">
+        <div className="max-w-[1320px] mx-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Frequently asked questions
+          </h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {faq.map((item) => (
+              <article
+                key={item.question}
+                className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
+              >
+                <h3 className="text-base font-semibold text-slate-900">
+                  {item.question}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-4">
+        <div className="max-w-[1320px] mx-auto">
+          <RelatedContent
+            heading="Continue Exploring"
+            links={[
+              {
+                title: "Coverage in Nepal",
+                href: "/healthcare-coverage-nepal",
+                description:
+                  "View the full province-by-province coverage hub for Project Sanjeevani.",
+              },
+              {
+                title: "Project Sanjeevani",
+                href: "/sanjeevani",
+                description:
+                  "Review the main mobile healthcare program delivering this coverage footprint.",
+              },
+              {
+                title: "Tracking Portal",
+                href: "/sanjeevani/tracking",
+                description:
+                  "Open the live operating view for camps, coverage, and recent field activity.",
+              },
+              {
+                title: "Health NGO in Nepal",
+                href: "/health-ngo-nepal",
+                description:
+                  "See what makes a rural health organization credible beyond broad mission language.",
+              },
+            ]}
+          />
+        </div>
+      </section>
+    </main>
+  );
+}

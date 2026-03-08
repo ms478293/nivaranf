@@ -67,6 +67,11 @@ const SITE_PAGES = [
     url: "/impact-fact-sheet",
     description: "Citation-ready organization profile",
   },
+  {
+    title: "Coverage in Nepal",
+    url: "/healthcare-coverage-nepal",
+    description: "Province-by-province Sanjeevani footprint",
+  },
   { title: "Vidya", url: "/vidya", description: "Education program" },
   { title: "Terra", url: "/terra", description: "Environment program" },
   { title: "Nurture", url: "/nurture", description: "Women health program" },

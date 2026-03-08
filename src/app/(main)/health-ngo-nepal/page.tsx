@@ -115,6 +115,12 @@ export default function HealthNgoNepalPage() {
           description:
             "Use a citation-ready summary of our organization, programs, and current healthcare footprint.",
         },
+        {
+          title: "Coverage in Nepal",
+          href: "/healthcare-coverage-nepal",
+          description:
+            "Review the province-by-province footprint of Project Sanjeevani across Nepal.",
+        },
       ]}
     />
   );

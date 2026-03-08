@@ -346,6 +346,12 @@ const page = () => {
                   description:
                     "A direct explanation of how free health camps work before, during, and after field deployment.",
                 },
+                {
+                  title: "Coverage in Nepal",
+                  href: "/healthcare-coverage-nepal",
+                  description:
+                    "Explore the province-by-province footprint of current Sanjeevani camp records.",
+                },
               ]}
             />
             {/* </section> */}
