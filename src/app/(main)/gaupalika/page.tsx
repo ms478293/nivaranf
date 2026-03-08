@@ -28,5 +28,18 @@ export const metadata: Metadata = {
 };
 
 export default function MapPage() {
-  return <GaupalikaClientWrapper />;
+  return (
+    <main className="font-Poppins">
+      <section className="mx-auto max-w-[1320px] px-4 py-6">
+        <h1 className="sr-only">
+          Nivaran Foundation gaupalika coverage map across Nepal
+        </h1>
+        <p className="max-w-3xl text-sm leading-6 text-slate-600">
+          Explore the municipalities and local areas connected to Nivaran
+          Foundation&apos;s healthcare and education footprint in Nepal.
+        </p>
+      </section>
+      <GaupalikaClientWrapper />
+    </main>
+  );
 }

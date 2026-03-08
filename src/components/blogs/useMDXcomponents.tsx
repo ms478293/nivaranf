@@ -12,9 +12,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Customize <h1> and <h2> tags
     h1: ({ children }) => (
-      <h1 className="text-lg font-medium  justify-center hidden mb-4">
+      <h2 className="text-2xl font-semibold mb-4 mt-10">
         {children}
-      </h1>
+      </h2>
     ),
     h2: ({ children }) => (
       <h2 className="text-lg font-medium mb-4">{children}</h2>

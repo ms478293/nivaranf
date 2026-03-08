@@ -29,7 +29,7 @@ export default function Page() {
   return (
     <div className="w-full px-4 bg-white">
       <div className=" max-w-[1140px] mx-auto mb-4">
-        <CustomHeading className="lg:m-0 lg:my-4">
+        <CustomHeading as="h1" className="lg:m-0 lg:my-4">
           Our Inititatives
         </CustomHeading>
 
