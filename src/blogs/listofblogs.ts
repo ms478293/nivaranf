@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis",
+    title: "Nepal Pioneers Genetic Testing for Rheumatic Diseases, Revolutionizing Diagnosis",
+    summary:
+      "Nepal has launched its first-ever genetic testing service for rheumatic diseases, marking a pivotal moment in the nation's healthcare landscape. This groundbreaking initiative promises more accurate and timely diagnoses, improving patient outcomes nationwide.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-08-nepal-pioneers-genetic-testing-for-rheumatic-diseases-revolutionizing-diagnosis.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-health-breakthrough-four-in-ten-cancers-preventable-who-study-reveals",
     title: "Global Health Breakthrough: Four in Ten Cancers Preventable, WHO Study Reveals",
     summary:
