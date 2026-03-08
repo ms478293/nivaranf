@@ -47,10 +47,10 @@ const FooterUsa = () => {
               <span>96% of all our expenses go to program services.</span>
               <div className="flex justify-end">
                 <Link
-                  href="/docs"
+                  href="/financial-reports"
                   className="pb-2 border-b-2 border-primary-main"
                 >
-                  Lean More
+                  Learn More
                 </Link>
               </div>
             </div>

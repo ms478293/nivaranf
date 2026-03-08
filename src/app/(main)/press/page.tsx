@@ -4,6 +4,7 @@ import {
   SANJEEVANI_PUBLIC_COPY,
   SANJEEVANI_PUBLIC_STATS,
 } from "@/content/sanjeevani-public-stats";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -206,6 +207,40 @@ export default function PressPage() {
               LinkedIn
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="w-full px-4 py-4">
+        <div className="max-w-[1320px] mx-auto">
+          <RelatedContent
+            heading="Reference Pages"
+            links={[
+              {
+                title: "Nivaran Fact Sheet",
+                href: "/impact-fact-sheet",
+                description:
+                  "Citation-ready organization profile, healthcare metrics, and reference links.",
+              },
+              {
+                title: "Tracking Portal",
+                href: "/sanjeevani/tracking",
+                description:
+                  "Live program metrics, camp activity, coverage footprint, and finance view.",
+              },
+              {
+                title: "Financial Reports",
+                href: "/financial-reports",
+                description:
+                  "Transparency and reporting references for donors, media, and partners.",
+              },
+              {
+                title: "Corporate Partnerships",
+                href: "/corporate",
+                description:
+                  "CSR and institutional partnership pathways for implementation support.",
+              },
+            ]}
+          />
         </div>
       </section>
     </main>

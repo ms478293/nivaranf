@@ -102,6 +102,8 @@ export default function Healthcare() {
             { title: "Mobile Health Camps in Nepal", href: "/mobile-health-camps-nepal", description: "See how mobile outreach brings screening, medicine, and referral support closer to remote communities." },
             { title: "Rural Healthcare in Nepal", href: "/rural-healthcare-nepal", description: "Understand the access barriers shaping healthcare delivery across rural Nepal." },
             { title: "Maternal Health in Nepal", href: "/maternal-health-nepal", description: "Learn why maternal screening, counseling, and referral pathways matter in rural settings." },
+            { title: "Health NGO in Nepal", href: "/health-ngo-nepal", description: "Understand what credible rural healthcare delivery requires from a nonprofit operating in Nepal." },
+            { title: "Free Health Camp Nepal", href: "/free-health-camp-nepal", description: "See what a real free health camp includes, from staffing and screening to medicine and referrals." },
             { title: "Education Programs", href: "/programs/education", description: "Supporting underserved children through school access and learning resources." },
           ]}
         />

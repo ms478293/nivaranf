@@ -52,6 +52,21 @@ const SITE_PAGES = [
     url: "/maternal-health-nepal",
     description: "Screening, outreach, and referral",
   },
+  {
+    title: "Health NGO Nepal",
+    url: "/health-ngo-nepal",
+    description: "What credible rural health delivery requires",
+  },
+  {
+    title: "Free Health Camp Nepal",
+    url: "/free-health-camp-nepal",
+    description: "How a real free health camp works",
+  },
+  {
+    title: "Nivaran Fact Sheet",
+    url: "/impact-fact-sheet",
+    description: "Citation-ready organization profile",
+  },
   { title: "Vidya", url: "/vidya", description: "Education program" },
   { title: "Terra", url: "/terra", description: "Environment program" },
   { title: "Nurture", url: "/nurture", description: "Women health program" },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -134,6 +135,30 @@ export default function FinancialReportsPage() {
             </Link>
           </div>
         </div>
+
+        <RelatedContent
+          heading="Related Transparency Pages"
+          links={[
+            {
+              title: "Accountability & Transparency",
+              href: "/accountability-and-transparency",
+              description:
+                "See how Nivaran explains governance, disclosure, and operational accountability.",
+            },
+            {
+              title: "Financial Responsibility",
+              href: "/financial-responsibility",
+              description:
+                "Review the principles that guide budgeting, allocation, and responsible use of funds.",
+            },
+            {
+              title: "Nivaran Fact Sheet",
+              href: "/impact-fact-sheet",
+              description:
+                "Use a citation-ready summary of our organization, metrics, and reference routes.",
+            },
+          ]}
+        />
       </section>
     </main>
   );

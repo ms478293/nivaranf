@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Building2, ChartSpline, Globe, Handshake, ShieldCheck, Sparkles, TrendingUp, Users } from "lucide-react";
 import { CorporateCSRForm } from "@/components/new/CSR/CorporateCSRForm";
 import { ContactCardList } from "@/components/new/ContactCardList/ContactCardList";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 
 export const metadata: Metadata = {
   title: "Corporate CSR Partnerships | Nivaran Foundation",
@@ -372,7 +373,40 @@ export default function CorporatePage() {
           </div>
         </div>
       </section>
+
+      <section className="px-4 pb-14">
+        <div className="max-w-[1320px] mx-auto">
+          <RelatedContent
+            heading="Due Diligence Links"
+            links={[
+              {
+                title: "Nivaran Fact Sheet",
+                href: "/impact-fact-sheet",
+                description:
+                  "Citation-ready organization profile, metrics, and reference links for internal review.",
+              },
+              {
+                title: "Tracking Portal",
+                href: "/sanjeevani/tracking",
+                description:
+                  "Review live operating metrics from Project Sanjeevani and recent field activity.",
+              },
+              {
+                title: "Financial Reports",
+                href: "/financial-reports",
+                description:
+                  "Read reporting references and organization details used in donor and partner review.",
+              },
+              {
+                title: "Press & Media Kit",
+                href: "/press",
+                description:
+                  "Use quick facts, logos, and media contact details for stakeholder communications.",
+              },
+            ]}
+          />
+        </div>
+      </section>
     </main>
   );
 }
-

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://www.nivaranfoundation.org/brochure",
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 };

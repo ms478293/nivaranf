@@ -192,10 +192,10 @@ export const howToHelpData: {
 export const aboutUsData: { title: string; href: string }[] = [
   { title: "Mission and Vision", href: "/about" },
   { title: "Our Journey", href: "/journey" },
-  { title: "Financial Reports", href: "/docs" },
+  { title: "Financial Reports", href: "/financial-reports" },
   { title: "Diversity and Inclusion", href: "/dei" },
   { title: "FAQ's", href: "/frequently-asked-questions" },
-  { title: "Get in Touch", href: "/contact" },
+  { title: "Get in Touch", href: "/contact-us" },
 ];
 
 export const newsAndStroiesData: {

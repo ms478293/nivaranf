@@ -78,6 +78,24 @@ const RESOURCE_LINKS = [
     description:
       "Why antenatal care, referral pathways, and maternal outreach remain central to rural health delivery.",
   },
+  {
+    title: "Health NGO in Nepal",
+    href: "/health-ngo-nepal",
+    description:
+      "See what credible rural health delivery requires beyond awareness campaigns and generic mission language.",
+  },
+  {
+    title: "Free Health Camp Nepal",
+    href: "/free-health-camp-nepal",
+    description:
+      "A practical guide to how free health camps are staffed, organized, and followed up in rural Nepal.",
+  },
+  {
+    title: "Nivaran Fact Sheet",
+    href: "/impact-fact-sheet",
+    description:
+      "A citation-ready overview of our mission, metrics, and reference pages for media and partners.",
+  },
 ];
 
 export default function ProgramsPage() {

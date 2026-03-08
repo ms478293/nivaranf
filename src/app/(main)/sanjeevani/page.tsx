@@ -334,6 +334,18 @@ const page = () => {
                   description:
                     "Why maternal screening, counseling, and referral matter most in remote settings.",
                 },
+                {
+                  title: "Health NGO in Nepal",
+                  href: "/health-ngo-nepal",
+                  description:
+                    "What to expect from a credible healthcare nonprofit operating in rural Nepal.",
+                },
+                {
+                  title: "Free Health Camp Nepal",
+                  href: "/free-health-camp-nepal",
+                  description:
+                    "A direct explanation of how free health camps work before, during, and after field deployment.",
+                },
               ]}
             />
             {/* </section> */}
