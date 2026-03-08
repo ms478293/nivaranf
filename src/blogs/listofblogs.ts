@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-breakthrough-four-in-ten-cancers-preventable-who-study-reveals",
+    title: "Global Health Breakthrough: Four in Ten Cancers Preventable, WHO Study Reveals",
+    summary:
+      "A groundbreaking global analysis from the World Health Organization and IARC indicates that nearly half of all cancer diagnoses worldwide are potentially preventable. This extensive study identifies 30 modifiable risk factors, notably incorporating nine cancer-causing infections for the first time alongside established lifestyle and environmental factors.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-health-breakthrough-four-in-ten-cancers-preventable-who-study-reveals.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-adhd-diagnosis-helped-my-mental-health-letters",
     title: "Global Health and Education Watch: How ADHD diagnosis helped my mental health | Letters",
     summary:
