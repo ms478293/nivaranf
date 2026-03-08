@@ -148,6 +148,11 @@ const nextConfig: NextConfig = {
         destination: '/frequently-asked-questions',
         permanent: true,
       },
+      {
+        source: '/docs',
+        destination: '/financial-reports',
+        permanent: true,
+      },
     ];
   },
 };
