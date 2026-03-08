@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-china-s-competency-framework-offers-blueprint-for-primary-care-excellence",
+    title: "Global Health: China's Competency Framework Offers Blueprint for Primary Care Excellence",
+    summary:
+      "A groundbreaking framework from China outlines essential competencies for primary healthcare workers, setting a new standard for public health service delivery. This model offers critical insights for global efforts to strengthen primary care and achieve universal health coverage.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-global-health-china-s-competency-framework-offers-blueprint-for-primary-care-exc.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "caffeine-pouches-a-global-health-concern-for-adolescents",
     title: "Caffeine Pouches: A Global Health Concern for Adolescents",
     summary:
