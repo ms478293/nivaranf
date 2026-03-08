@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-director-general-lauds-jordan-s-health-leadership-amidst-regional-challenges",
+    title: "WHO Director-General Lauds Jordan's Health Leadership Amidst Regional Challenges",
+    summary:
+      "The WHO Director-General concluded a significant visit to Jordan, recognizing the nation's strong commitment to health system strengthening and humanitarian aid. The visit underscored collaborative efforts in advancing universal health coverage, mental health services, and emergency preparedness.",
+    thumbnailImage: "/images/global-news/2026/2026-03-08-who-director-general-lauds-jordan-s-health-leadership-amidst-regional-challenges.jpg",
+    date: "2026-03-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-is-chickenpox-and-who-can-get-an-nhs",
     title: "Global Health and Education Watch: What is chickenpox and who can get an NHS",
     summary:
