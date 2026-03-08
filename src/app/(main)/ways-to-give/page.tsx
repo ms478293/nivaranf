@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ways to Give | Nivaran Foundation",
-    description: "Explore all ways to support Nivaran Foundation.",
+    description: "See all the ways to support Nivaran Foundation through donations, matching gifts, volunteering, and partnerships.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

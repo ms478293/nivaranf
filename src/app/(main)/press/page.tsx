@@ -11,14 +11,14 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Press & Media Kit | Nivaran Foundation",
   description:
-    "Download Nivaran Foundation's press kit, logo assets, fact sheet, and media resources. For press inquiries, contact partnerships@nivaranfoundation.org.",
+    "Journalist resources, media contacts, program facts, brand assets, and organizational background for coverage of Nivaran Foundation and Project Sanjeevani.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/press",
   },
   openGraph: {
     title: "Press & Media Kit | Nivaran Foundation",
     description:
-      "Download Nivaran Foundation's press kit, logo assets, and media resources for press coverage.",
+      "Press resources, media contacts, and program facts for journalists and partners covering Nivaran Foundation.",
     url: "https://www.nivaranfoundation.org/press",
     type: "website",
     siteName: "Nivaran Foundation",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Press & Media Kit | Nivaran Foundation",
-    description: "Download press resources and media kit from Nivaran Foundation.",
+    description: "Media contacts, press resources, and program facts for Nivaran Foundation coverage.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

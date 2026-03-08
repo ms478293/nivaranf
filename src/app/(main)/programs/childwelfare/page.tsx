@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/programs/childwelfare",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function ChildWelfarePage() {

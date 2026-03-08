@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Privacy Policy - Nivaran Foundation Data Protection & Security",
   description:
-    "Read the Nivaran Foundation Privacy Policy to learn how we protect your personal data, ensure security, and maintain transparency in our data practices.",
+    "Learn how Nivaran Foundation collects, stores, protects, and uses personal data across donations, contact forms, subscriptions, and website interactions.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy | Nivaran Foundation",
-    description: "Learn how Nivaran Foundation protects your personal data and maintains transparency.",
+    description: "How Nivaran Foundation handles personal data, website interactions, and privacy protection.",
     url: "https://www.nivaranfoundation.org/privacy-policy",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Privacy Policy | Nivaran Foundation",
-    description: "Nivaran Foundation's data protection and privacy practices.",
+    description: "How Nivaran Foundation handles personal data and privacy protection.",
     site: "@NivaranOrg",
   },
 };

@@ -2,13 +2,11 @@
 import { InformationDisplayType } from "@/content/site-data";
 import { useScreenSize } from "@/lib/helpers/useScreenSize";
 import Image from "next/image";
-import { CustomHeading } from "../common/CustomHeading";
 
 export const ImageInformationDisplayCard = (data: InformationDisplayType) => {
   const screenSize = useScreenSize();
   return (
     <div className="max-w-[1140px] mx-auto ">
-      <CustomHeading className="mb-0">Our Vision</CustomHeading>
       <div className="flex flex-col md:flex-row gap-8 py-4 border justify-center items-center  border-white bg-white">
         {(data.imageAlignment == "left" || screenSize == "sm") && (
           <div className=" md:w-fit  lg:w-1/3">

@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Financial Reports | Nivaran Foundation",
   description:
-    "Access Nivaran Foundation financial reporting details, organization information, and report request pathways.",
+    "Access annual financial reports, transparency resources, reporting pathways, and accountability documentation for Nivaran Foundation.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/financial-reports",
   },
   openGraph: {
     title: "Financial Reports | Nivaran Foundation",
-    description: "Access financial reporting details, organization information, and report request pathways.",
+    description: "Access annual reporting details, organization information, and transparency documentation from Nivaran Foundation.",
     url: "https://www.nivaranfoundation.org/financial-reports",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Financial Reports | Nivaran Foundation",
-    description: "Nivaran Foundation financial reporting and transparency.",
+    description: "Annual financial reports, transparency resources, and reporting documentation from Nivaran Foundation.",
     site: "@NivaranOrg",
   },
 };

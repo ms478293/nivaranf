@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | Project Vidya - Transforming Global Education Through Innovation",
   description:
-    "Project Vidya uses technology to innovate and transform education, creating better learning experiences for brighter futures worldwide.",
+    "Project Vidya is Nivaran Foundation's education initiative focused on technology-enabled learning, teacher training, and long-term access to quality education for underserved communities.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/vidya",
   },
   openGraph: {
     title: "Project Vidya | Nivaran Foundation",
-    description: "Using technology to innovate and transform education for brighter futures worldwide.",
+    description: "Technology-enabled education, teacher training, and long-term learning access through Project Vidya.",
     url: "https://www.nivaranfoundation.org/vidya",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Project Vidya | Nivaran Foundation",
-    description: "Transforming global education through innovation.",
+    description: "Project Vidya focuses on education access, teacher support, and technology-enabled learning.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

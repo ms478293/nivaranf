@@ -1,6 +1,7 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import TargetedResults from "@/components/new/AboutStatCard/TargetedResults";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
+import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import SanjeevaniPhase from "@/components/new/SanjeevaniPhase/SanjeevaniPhase";
 import UpcomingProjects from "@/components/new/UpcomingProjects/UpcomingProjects";
 import {
@@ -273,6 +274,21 @@ const page = () => {
                     behind. This initiative brings quality healthcare directly
                     to the doorsteps of those who need it most.
                   </span>
+                  <span>
+                    For readers researching{" "}
+                    <Link href="/mobile-health-camps-nepal" className="text-primary-500 underline">
+                      mobile health camps in Nepal
+                    </Link>
+                    ,{" "}
+                    <Link href="/rural-healthcare-nepal" className="text-primary-500 underline">
+                      rural healthcare access
+                    </Link>
+                    , or{" "}
+                    <Link href="/maternal-health-nepal" className="text-primary-500 underline">
+                      maternal health challenges in Nepal
+                    </Link>
+                    , Sanjeevani is the operating model that connects those topics to real field execution.
+                  </span>
                 </p>
               </div>
 
@@ -297,6 +313,29 @@ const page = () => {
             <div>
               <SanjeevaniPhase />
             </div>
+            <RelatedContent
+              heading="Explore Healthcare Topics"
+              links={[
+                {
+                  title: "Mobile Health Camps in Nepal",
+                  href: "/mobile-health-camps-nepal",
+                  description:
+                    "How field camps reduce distance, delay, and first-contact barriers for rural communities.",
+                },
+                {
+                  title: "Rural Healthcare in Nepal",
+                  href: "/rural-healthcare-nepal",
+                  description:
+                    "A practical overview of the system barriers shaping healthcare access outside urban centers.",
+                },
+                {
+                  title: "Maternal Health in Nepal",
+                  href: "/maternal-health-nepal",
+                  description:
+                    "Why maternal screening, counseling, and referral matter most in remote settings.",
+                },
+              ]}
+            />
             {/* </section> */}
           </div>
         </div>

@@ -6,13 +6,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Attend an Event",
   description:
-    "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+    "Review Nivaran Foundation events, community initiatives, and planned program activities so supporters can follow upcoming outreach, campaigns, and engagement opportunities.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/attend",
   },
   openGraph: {
     title: "Attend an Event | Nivaran Foundation",
-    description: "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+    description: "Review Nivaran Foundation events, community initiatives, and planned program activities across the organization.",
     url: "https://www.nivaranfoundation.org/attend",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Attend an Event | Nivaran Foundation",
-    description: "See the latest on what events are ongoing, planned, or catalogued at Nivaran Foundation.",
+    description: "Review upcoming and planned events connected to Nivaran Foundation programs.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

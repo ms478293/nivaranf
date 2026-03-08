@@ -9,13 +9,13 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Make a Difference with Nivaran Foundation",
   description:
-    "Learn how you can support Nivaran Foundation's mission. Explore ways to contribute, volunteer, and help create lasting positive change in the community.",
+    "Support Nivaran Foundation through donations, volunteering, partnerships, fundraising, and advocacy to expand healthcare and education access in Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/how-to-help",
   },
   openGraph: {
     title: "How to Help | Nivaran Foundation",
-    description: "Learn how you can support Nivaran Foundation's mission. Explore ways to contribute, volunteer, and create lasting change.",
+    description: "Support Nivaran Foundation through donations, volunteering, partnerships, and practical ways to help.",
     url: "https://www.nivaranfoundation.org/how-to-help",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "How to Help | Nivaran Foundation",
-    description: "Explore ways to contribute and create lasting positive change.",
+    description: "See how donations, volunteering, partnerships, and advocacy support Nivaran Foundation programs in Nepal.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

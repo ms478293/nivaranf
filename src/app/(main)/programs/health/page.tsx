@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
   description:
-    "Explore Nivaran Foundation mobile health programs in Nepal delivering maternal care, child health, and essential treatment in remote communities.",
+    "Explore Nivaran Foundation healthcare programs in Nepal, including mobile health camps, maternal care outreach, child health support, and essential treatment in remote communities.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/programs/health",
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
     description:
-      "Nivaran Foundation mobile health programs provide essential care in underserved communities across Nepal.",
+      "Nivaran Foundation healthcare programs deliver mobile health camps, maternal care support, and essential treatment in underserved communities across Nepal.",
     url: "https://www.nivaranfoundation.org/programs/health",
     type: "website",
     siteName: "Nivaran Foundation",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
     description:
-      "Nivaran Foundation mobile health programs provide essential care in underserved communities across Nepal.",
+      "Mobile health camps, maternal care support, and essential treatment across underserved communities in Nepal.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
     images: ["https://www.nivaranfoundation.org/logo.png"],
@@ -96,13 +96,13 @@ export default function Healthcare() {
       </div>
       <div className="max-w-[1320px] mx-auto px-4">
         <RelatedContent
-          heading="Explore Our Programs"
+          heading="Explore Healthcare Resources"
           links={[
             { title: "Project Sanjeevani", href: "/sanjeevani", description: "Our flagship healthcare initiative delivering multi-specialty medical camps." },
+            { title: "Mobile Health Camps in Nepal", href: "/mobile-health-camps-nepal", description: "See how mobile outreach brings screening, medicine, and referral support closer to remote communities." },
+            { title: "Rural Healthcare in Nepal", href: "/rural-healthcare-nepal", description: "Understand the access barriers shaping healthcare delivery across rural Nepal." },
+            { title: "Maternal Health in Nepal", href: "/maternal-health-nepal", description: "Learn why maternal screening, counseling, and referral pathways matter in rural settings." },
             { title: "Education Programs", href: "/programs/education", description: "Supporting underserved children through school access and learning resources." },
-            { title: "About Nivaran Foundation", href: "/about", description: "Learn about our mission, team, and the impact we've made since 2020." },
-            { title: "Donate to Healthcare", href: "/donate", description: "Fund mobile health camps — $500 serves an entire village for a day." },
-            { title: "Volunteer with Us", href: "/volunteer", description: "Join our medical teams and make a direct impact in rural communities." },
           ]}
         />
       </div>

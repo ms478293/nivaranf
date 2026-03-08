@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title:
     "Nivaran Foundation | FAQ - Frequently Asked Questions about Nivaran Foundation",
   description:
-    "Find answers to common questions about Nivaran Foundation's services, data protection, and more on our FAQ page. Get the information you need quickly.",
+    "Find answers to common questions about Nivaran Foundation programs, donations, volunteering, privacy, and how healthcare and education work is delivered in Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/frequently-asked-questions",
   },
   openGraph: {
     title: "FAQ | Nivaran Foundation",
-    description: "Find answers to common questions about Nivaran Foundation's services, programs, and data protection.",
+    description: "Answers to common questions about donations, programs, volunteering, and operations at Nivaran Foundation.",
     url: "https://www.nivaranfoundation.org/frequently-asked-questions",
     siteName: "Nivaran Foundation",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FAQ | Nivaran Foundation",
-    description: "Find answers to common questions about Nivaran Foundation.",
+    description: "Answers to common questions about Nivaran Foundation programs, donations, and operations.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },

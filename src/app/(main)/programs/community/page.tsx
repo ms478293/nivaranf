@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.nivaranfoundation.org/programs/community",
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function CommunityPage() {

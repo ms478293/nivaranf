@@ -37,6 +37,21 @@ const SITE_PAGES = [
     url: "/sanjeevani",
     description: "Mobile health camp program",
   },
+  {
+    title: "Mobile Health Camps Nepal",
+    url: "/mobile-health-camps-nepal",
+    description: "How rural medical outreach works",
+  },
+  {
+    title: "Rural Healthcare Nepal",
+    url: "/rural-healthcare-nepal",
+    description: "Access barriers and field delivery",
+  },
+  {
+    title: "Maternal Health Nepal",
+    url: "/maternal-health-nepal",
+    description: "Screening, outreach, and referral",
+  },
   { title: "Vidya", url: "/vidya", description: "Education program" },
   { title: "Terra", url: "/terra", description: "Environment program" },
   { title: "Nurture", url: "/nurture", description: "Women health program" },
