@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iran-says-1-255-people-killed-in-us-israeli-attacks-mostly",
+    title: "Global Health and Education Watch: Iran says 1,255 people killed in US-Israeli attacks, mostly",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-health-and-education-watch-iran-says-1-255-people-killed-in-us-israeli-at.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-nhs-england-pauses-new-prescriptions-of-cross-sex-hormones-for",
     title: "Global Health and Education Watch: NHS England pauses new prescriptions of cross-sex hormones for",
     summary:
