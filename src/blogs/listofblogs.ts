@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-tool-unravels-viral-origins-bolstering-global-pandemic-preparedness",
+    title: "New Tool Unravels Viral Origins, Bolstering Global Pandemic Preparedness",
+    summary:
+      "A groundbreaking new research tool offers unprecedented clarity in determining the origins of viral outbreaks. This development significantly strengthens global health security by providing objective insights into pathogen emergence.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-new-tool-unravels-viral-origins-bolstering-global-pandemic-preparedness.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iran-says-1-255-people-killed-in-us-israeli-attacks-mostly",
     title: "Global Health and Education Watch: Iran says 1,255 people killed in US-Israeli attacks, mostly",
     summary:
