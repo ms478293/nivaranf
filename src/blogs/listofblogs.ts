@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-infection-acquired-protection-against-sars-cov-2-infection-and-clinical-severity-by",
+    title: "Global Health and Education Watch: Infection-acquired protection against SARS-CoV-2 infection and clinical severity by",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-health-and-education-watch-infection-acquired-protection-against-sars-cov.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "new-tool-unravels-viral-origins-bolstering-global-pandemic-preparedness",
     title: "New Tool Unravels Viral Origins, Bolstering Global Pandemic Preparedness",
     summary:
