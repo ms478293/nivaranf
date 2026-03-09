@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-reforms-threaten-disabled-children-s-legal-safeguards-charity-warns",
+    title: "Global Education Reforms Threaten Disabled Children's Legal Safeguards, Charity Warns",
+    summary:
+      "A leading charity has voiced alarm over proposed education reforms in a developed nation, fearing they could strip away vital legal protections for children with special educational needs and disabilities. This development highlights a broader global challenge in upholding inclusive education standards amidst budgetary pressures.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-education-reforms-threaten-disabled-children-s-legal-safeguards-charity-w.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nepal-s-youth-games-a-catalyst-for-educational-and-health-advancement",
     title: "Nepal's Youth Games: A Catalyst for Educational and Health Advancement",
     summary:
