@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ohio-state-university-president-resigns-over-inappropriate-relationship",
+    title: "Global Health and Education Watch: Ohio State University president resigns over ‘inappropriate relationship’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-health-and-education-watch-ohio-state-university-president-resigns-over-i.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-cancer-survival-rises-amidst-stark-health-equity-challenges",
     title: "Global Cancer Survival Rises Amidst Stark Health Equity Challenges",
     summary:
