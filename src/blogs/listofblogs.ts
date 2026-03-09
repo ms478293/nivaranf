@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-unveils-hidden-abuse-transforms-patient-care-amid-global-upheaval",
+    title: "AI Unveils Hidden Abuse, Transforms Patient Care Amid Global Upheaval",
+    summary:
+      "Healthcare innovations like Martha's Rule are enhancing patient safety, while AI tools are simultaneously uncovering under-reported abuse and providing therapeutic support to survivors. These advancements occur against a backdrop of global conflicts that profoundly impact mental health and societal stability.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-ai-unveils-hidden-abuse-transforms-patient-care-amid-global-upheaval.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "experts-urge-new-nepali-government-make-healthcare-top-priority",
     title: "Experts Urge New Nepali Government: Make Healthcare Top Priority",
     summary:
