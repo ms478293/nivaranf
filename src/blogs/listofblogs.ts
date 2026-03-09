@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-communities-embrace-informal-dialogues-for-mental-well-being",
+    title: "Global Communities Embrace Informal Dialogues for Mental Well-being",
+    summary:
+      "Informal community gatherings are emerging as vital platforms for mental health discussions globally, offering accessible support. These inclusive spaces help dismantle stigma and encourage open dialogue about personal well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-communities-embrace-informal-dialogues-for-mental-well-being.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "health-secretary-s-nutrition-pivot-divides-allies-amid-global-health-debates",
     title: "Health Secretary's Nutrition Pivot Divides Allies Amid Global Health Debates",
     summary:
