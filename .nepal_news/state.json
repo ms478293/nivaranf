@@ -3,16 +3,16 @@
   "publishedInWindow": 2,
   "candidateCache": [
     {
-      "title": "Experts urge new government to make healthcare top priority - kathmandupost.com",
+      "title": "Experts urge new government to make healthcare top priority - The Kathmandu Post",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRGNvdW01dWlmdUFJNzVPSGVxenRJYV9oa2hIVFZqVll0WUk0d01YX3NPZkNHallJQTJFOXBPZ25QT3pkNFV4OW1ROHdsNnAzNTk3SGhTRUxVQUc5X3Z3Y0RfNU9iSW8zWFo1cnplOFBpM0JPakxMWTRNVGV0TzZWNXBFRTZ0RGhZNjdYLUxfcVd2T0twMkxPVWNPSDI0OXZ2cGFkcGJrem0?oc=5",
-      "summary": "Experts urge new government to make healthcare top priority &nbsp;&nbsp; kathmandupost.com",
+      "summary": "Experts urge new government to make healthcare top priority &nbsp;&nbsp; The Kathmandu Post",
       "publishedAtUtc": "2026-03-09T01:59:03Z",
       "domain": "news.google.com",
       "score": 73.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T04:27:16.600923Z"
+      "cachedAtUtc": "2026-03-09T11:05:18.120099Z"
     },
     {
       "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
@@ -157,30 +157,6 @@
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
       "cachedAtUtc": "2026-03-05T19:36:43.735351Z"
-    },
-    {
-      "title": "Context - March 8, International Women’s Day: Women’s Access to Eye Health in Nepal - The Rising Nepal",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNZVA4aUp6cGdFejN4OXliRkVINUhVRmdmREJrdERBQUtFR2l3Y3JQUWZSN3lEMG1nOEV0YnB4OU5uZFN0NjdGMHVPWWp0U0pBeEJpMG53?oc=5",
-      "summary": "Context - March 8, International Women’s Day: Women’s Access to Eye Health in Nepal &nbsp;&nbsp; The Rising Nepal",
-      "publishedAtUtc": "2026-03-04T11:20:53Z",
-      "domain": "news.google.com",
-      "score": 75.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-05T11:02:02.628974Z"
-    },
-    {
-      "title": "Bir Hospital forms rapid response team to handle possible polling day emergencies - kathmandupost.com",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSEw5Q25kbGRVYXp6Ymd1MG02WTNVNUx5SDhCcE9mTzIyWnh1SzZNd3VNQy1HTUJRVk5pY1pZNlNidUFtQXF0WHdqVjc5bFNJeUg2NlVaNExNX0NFOVk4MzZqa1ppMUlHQXM3MmNTUFVsSU1XNE5BN29COHlURWNjdXkwZlZVbXFGUnZaRXlsbFlMNk94bzl0Y2M1bUVIOFFBN20zalFZMER0LXQ1Wmt5cExHOWFHaUptc2VYeWZIY1Bsdw?oc=5",
-      "summary": "Bir Hospital forms rapid response team to handle possible polling day emergencies &nbsp;&nbsp; kathmandupost.com",
-      "publishedAtUtc": "2026-03-03T15:54:45Z",
-      "domain": "news.google.com",
-      "score": 65.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-05T11:02:02.628974Z"
     }
   ],
   "publishedHashes": [],
@@ -1132,6 +1108,34 @@
       },
       "liveVerified": false,
       "publishedInWindowAfter": 2
+    },
+    {
+      "ranAtUtc": "2026-03-09T11:05:18.120099Z",
+      "windowStartUtc": "2026-03-08T18:00:00Z",
+      "publishedInWindowBefore": 2,
+      "hoursLeftInWindow": 7,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": false,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": false,
+      "thresholdUsed": 72,
+      "candidatesFetched": 1,
+      "candidateCacheCount": 13,
+      "candidatesAfterSourceDedupe": 0,
+      "candidatesAfterDedupe": 0,
+      "duplicateSkips": {
+        "historyHash": 0,
+        "historySource": 1,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [],
+      "status": "skipped",
+      "reason": "no non-duplicate trusted Nepal health/education candidate available this run"
     }
   ]
 }
