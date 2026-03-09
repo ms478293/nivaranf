@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-senators-urge-probe-into-deadly-attack-on-iranian-girls-school",
+    title: "US Senators Urge Probe into Deadly Attack on Iranian Girls' School",
+    summary:
+      "A devastating bombing at a girls' school in Minab, Iran, resulted in at least 170 fatalities, prompting strong international condemnation. Leading US Democrats are now calling for a comprehensive and impartial investigation into the appalling incident.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-us-senators-urge-probe-into-deadly-attack-on-iranian-girls-school.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-reforms-threaten-disabled-children-s-legal-safeguards-charity-warns",
     title: "Global Education Reforms Threaten Disabled Children's Legal Safeguards, Charity Warns",
     summary:
