@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "parkinson-s-claims-anti-war-icon-highlighting-global-health-challenge",
+    title: "Parkinson's Claims Anti-War Icon, Highlighting Global Health Challenge",
+    summary:
+      "Country Joe McDonald, the iconic anti-war musician, has died at 84 from Parkinson's complications, drawing renewed attention to the global impact of neurodegenerative conditions. His passing highlights the critical importance of advancing research and providing comprehensive care for those affected worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-parkinson-s-claims-anti-war-icon-highlighting-global-health-challenge.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-unveils-hidden-abuse-transforms-patient-care-amid-global-upheaval",
     title: "AI Unveils Hidden Abuse, Transforms Patient Care Amid Global Upheaval",
     summary:
