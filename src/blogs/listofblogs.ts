@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "volunteers-rebuild-sudan-s-oldest-psychiatric-hospital-amidst-war-s-devastation",
+    title: "Volunteers Rebuild Sudan's Oldest Psychiatric Hospital Amidst War's Devastation",
+    summary:
+      "In war-torn Sudan, volunteers are diligently rebuilding the nation's oldest psychiatric hospital, a vital institution destroyed by ongoing conflict. This critical effort unfolds as countless families, like one returning from displacement, struggle to find support for loved ones battling severe addiction and mental trauma.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-volunteers-rebuild-sudan-s-oldest-psychiatric-hospital-amidst-war-s-devastation.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "parkinson-s-claims-anti-war-icon-highlighting-global-health-challenge",
     title: "Parkinson's Claims Anti-War Icon, Highlighting Global Health Challenge",
     summary:
