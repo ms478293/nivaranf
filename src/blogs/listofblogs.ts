@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-s-youth-games-a-catalyst-for-educational-and-health-advancement",
+    title: "Nepal's Youth Games: A Catalyst for Educational and Health Advancement",
+    summary:
+      "Nepal is leveraging its role as host for international youth games to significantly enhance physical education curricula and promote robust public health among its younger generations. These events are seen as crucial opportunities to inspire active lifestyles and foster cross-cultural learning within the country's educational framework.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-09-nepal-s-youth-games-a-catalyst-for-educational-and-health-advancement.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-call-for-comprehensive-sex-education-communities-bridge-critical-gaps",
     title: "Global Call for Comprehensive Sex Education: Communities Bridge Critical Gaps",
     summary:
