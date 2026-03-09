@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-for-comprehensive-sex-education-communities-bridge-critical-gaps",
+    title: "Global Call for Comprehensive Sex Education: Communities Bridge Critical Gaps",
+    summary:
+      "Inadequate comprehensive sex education in schools presents a global challenge, leaving young people vulnerable to misinformation and health risks. Across diverse communities, parents and faith-based organizations are proactively developing alternative programs to ensure adolescents receive crucial, medically accurate information.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-call-for-comprehensive-sex-education-communities-bridge-critical-gaps.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hims-shares-shoot-up-after-weight-loss-drug-deal-with",
     title: "Global Health and Education Watch: Hims shares shoot up after weight-loss drug deal with",
     summary:
