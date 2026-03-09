@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cancer-survival-rises-amidst-stark-health-equity-challenges",
+    title: "Global Cancer Survival Rises Amidst Stark Health Equity Challenges",
+    summary:
+      "Global cancer survival rates have significantly improved over recent decades due to medical breakthroughs and public health initiatives. However, persistent inequalities in access to diagnostics and treatment mean these advancements do not reach everyone, highlighting a critical global health equity challenge.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-cancer-survival-rises-amidst-stark-health-equity-challenges.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-colman-mccarthy-87-journalist-who-waged-peace-in-the",
     title: "Global Health and Education Watch: Colman McCarthy, 87, Journalist Who Waged Peace in the",
     summary:
