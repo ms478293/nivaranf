@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-colman-mccarthy-87-journalist-who-waged-peace-in-the",
+    title: "Global Health and Education Watch: Colman McCarthy, 87, Journalist Who Waged Peace in the",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-health-and-education-watch-colman-mccarthy-87-journalist-who-waged-peace-.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-senators-urge-probe-into-deadly-attack-on-iranian-girls-school",
     title: "US Senators Urge Probe into Deadly Attack on Iranian Girls' School",
     summary:
