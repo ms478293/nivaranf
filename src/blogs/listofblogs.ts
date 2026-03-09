@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hims-shares-shoot-up-after-weight-loss-drug-deal-with",
+    title: "Global Health and Education Watch: Hims shares shoot up after weight-loss drug deal with",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-09-global-health-and-education-watch-hims-shares-shoot-up-after-weight-loss-drug-de.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-countries-progress-negotiations-in-support-of-who-pandemic-agreement",
     title: "Global Health and Education Watch: Countries progress negotiations in support of WHO Pandemic Agreement",
     summary:
