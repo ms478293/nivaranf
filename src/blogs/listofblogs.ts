@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "experts-urge-new-nepali-government-make-healthcare-top-priority",
+    title: "Experts Urge New Nepali Government: Make Healthcare Top Priority",
+    summary:
+      "Healthcare experts across Nepal are calling on the newly formed government to elevate public health to a primary national agenda. They stress that strategic investment and comprehensive reforms are crucial for ensuring equitable access and improving the nation's health outcomes.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-09-experts-urge-new-nepali-government-make-healthcare-top-priority.jpg",
+    date: "2026-03-09",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-communities-embrace-informal-dialogues-for-mental-well-being",
     title: "Global Communities Embrace Informal Dialogues for Mental Well-being",
     summary:
