@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-launches-urgent-2026-appeal-for-global-health-crises",
+    title: "WHO Launches Urgent 2026 Appeal for Global Health Crises",
+    summary:
+      "The World Health Organization has initiated its 2026 global appeal to secure vital healthcare for millions affected by humanitarian crises and conflicts. This urgent funding aims to bolster health systems and deliver essential services in dire circumstances worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-who-launches-urgent-2026-appeal-for-global-health-crises.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
     title: "Dhorpatan Measles Outbreak: A Stark Reminder of Nepal's Immunization Challenges",
     summary:
