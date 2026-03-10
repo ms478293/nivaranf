@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-s-silent-epidemic-alzheimer-s-disease-surges-unseen",
+    title: "Nepal's Silent Epidemic: Alzheimer's Disease Surges Unseen",
+    summary:
+      "Alzheimer's disease is rapidly increasing in Nepal, often misdiagnosed or overlooked due to lack of awareness and resources. This silent epidemic places immense strain on families and the healthcare system, necessitating immediate national focus and support.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-10-nepal-s-silent-epidemic-alzheimer-s-disease-surges-unseen.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "global-education-confronts-ai-safeguarding-critical-thinking",
     title: "Global Education Confronts AI: Safeguarding Critical Thinking",
     summary:
