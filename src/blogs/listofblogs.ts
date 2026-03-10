@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-culture-at-columbia-shielded-sexual-assault-by-physician-report",
+    title: "Global Health and Education Watch: Culture at Columbia Shielded Sexual Assault by Physician, Report",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-health-and-education-watch-culture-at-columbia-shielded-sexual-assault-by.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-prevent-pandemics-through-one-health-commitments",
     title: "Global Health and Education Watch: Prevent pandemics through One Health commitments",
     summary:
