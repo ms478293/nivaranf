@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-court-battle-looms-over-demand-for-jewish-student-staff-list-at-penn",
+    title: "US Court Battle Looms Over Demand for Jewish Student, Staff List at Penn",
+    summary:
+      "A US administration has initiated legal proceedings against the University of Pennsylvania for its refusal to disclose information about Jewish students and staff, citing an antisemitism inquiry. This case sparks significant debate over data privacy, academic autonomy, and the potential for discriminatory targeting within educational institutions globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-us-court-battle-looms-over-demand-for-jewish-student-staff-list-at-penn.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-john-oliver-on-the-demise-of-usaid-what-this",
     title: "Global Health and Education Watch: John Oliver on the demise of USAID: ‘What this",
     summary:
