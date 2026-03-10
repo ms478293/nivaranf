@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-schools-grapple-with-screen-time-a-growing-health-and-education-debate",
+    title: "Global Schools Grapple with Screen Time: A Growing Health and Education Debate",
+    summary:
+      "A global debate is intensifying over the pervasive use of digital screens in educational settings, driven by increasing parental concern and scientific evidence of potential harm to children. Schools worldwide are now re-evaluating their technology integration strategies amidst calls for a more balanced approach to learning.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-schools-grapple-with-screen-time-a-growing-health-and-education-debate.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "medical-students-face-heightened-suicide-risk-from-gambling-disorder",
     title: "Medical Students Face Heightened Suicide Risk from Gambling Disorder",
     summary:
