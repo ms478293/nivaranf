@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "medical-students-face-heightened-suicide-risk-from-gambling-disorder",
+    title: "Medical Students Face Heightened Suicide Risk from Gambling Disorder",
+    summary:
+      "A recent study highlights gambling disorder as a significant risk factor for suicidal ideation among medical students worldwide. The findings underscore an urgent need for targeted mental health interventions within medical education systems.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-medical-students-face-heightened-suicide-risk-from-gambling-disorder.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-launches-urgent-2026-appeal-for-global-health-crises",
     title: "WHO Launches Urgent 2026 Appeal for Global Health Crises",
     summary:
