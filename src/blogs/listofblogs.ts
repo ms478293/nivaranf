@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-conflict-s-shadow-protecting-health-and-education-amidst-escalation",
+    title: "Global Conflict's Shadow: Protecting Health and Education Amidst Escalation",
+    summary:
+      "Recent warnings of intensified military actions highlight the devastating impact of conflict on essential services. Protecting schools and hospitals remains paramount for global health and educational stability.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-conflict-s-shadow-protecting-health-and-education-amidst-escalation.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-culture-at-columbia-shielded-sexual-assault-by-physician-report",
     title: "Global Health and Education Watch: Culture at Columbia Shielded Sexual Assault by Physician, Report",
     summary:
