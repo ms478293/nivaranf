@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-confronts-ai-safeguarding-critical-thinking",
+    title: "Global Education Confronts AI: Safeguarding Critical Thinking",
+    summary:
+      "The rapid integration of AI into education challenges traditional learning, prompting global educators to innovate. They are developing new methods to foster critical thinking and human-centered skills amidst technological disruption.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-education-confronts-ai-safeguarding-critical-thinking.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-conflict-s-shadow-protecting-health-and-education-amidst-escalation",
     title: "Global Conflict's Shadow: Protecting Health and Education Amidst Escalation",
     summary:
