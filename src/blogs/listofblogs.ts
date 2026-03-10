@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-la-county-reports-first-drop-in-deaths-of-unhoused",
+    title: "Global Health and Education Watch: LA county reports first drop in deaths of unhoused",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-health-and-education-watch-la-county-reports-first-drop-in-deaths-of-unho.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-warns-black-rain-in-iran-poses-severe-global-health-risks",
     title: "WHO Warns: 'Black Rain' in Iran Poses Severe Global Health Risks",
     summary:
