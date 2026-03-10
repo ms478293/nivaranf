@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-inequity-a-crisis-of-unjust-disparities",
+    title: "Global Health Inequity: A Crisis of Unjust Disparities",
+    summary:
+      "Profound health inequities persist globally, with vast disparities in healthy life expectancy between different communities. Governments often prioritize short-term fixes over comprehensive strategies addressing the root social and commercial determinants of ill-health.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-health-inequity-a-crisis-of-unjust-disparities.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-schools-grapple-with-screen-time-a-growing-health-and-education-debate",
     title: "Global Schools Grapple with Screen Time: A Growing Health and Education Debate",
     summary:
