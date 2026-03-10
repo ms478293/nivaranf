@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive",
+    title: "Measles Outbreak in Dhorpatan: Nepal's Health Ministry Mobilizes for Urgent Vaccination Drive",
+    summary:
+      "A measles outbreak has been confirmed in Dhorpatan Municipality, Baglung, prompting the Ministry of Health and Population to initiate immediate vaccination preparations. This rapid response aims to contain the highly contagious disease and safeguard public health, particularly among children in the remote region.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-10-measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vacci.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "pioneers-of-covid-vaccine-depart-biontech-for-new-mrna-frontier",
     title: "Pioneers of COVID Vaccine Depart BioNTech for New mRNA Frontier",
     summary:
