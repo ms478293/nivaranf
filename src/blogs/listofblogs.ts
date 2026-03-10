@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "scrutiny-mounts-over-vaccine-advisor-s-research-amid-global-health-concerns",
+    title: "Scrutiny Mounts Over Vaccine Advisor's Research Amid Global Health Concerns",
+    summary:
+      "An MIT professor appointed to a key US vaccine advisory committee faces intense scrutiny over the scientific standards of his Covid-19 vaccine research. Public health experts fear his involvement could undermine evidence-based recommendations and global vaccine confidence.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-scrutiny-mounts-over-vaccine-advisor-s-research-amid-global-health-concerns.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive",
     title: "Measles Outbreak in Dhorpatan: Nepal's Health Ministry Mobilizes for Urgent Vaccination Drive",
     summary:
