@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-warns-black-rain-in-iran-poses-severe-global-health-risks",
+    title: "WHO Warns: 'Black Rain' in Iran Poses Severe Global Health Risks",
+    summary:
+      "The World Health Organization has issued a stark warning regarding the severe health risks posed by 'black rain' in Iran, following recent strikes on the nation's oil facilities. This environmental fallout threatens immediate and long-term public health, impacting respiratory systems, water quality, and agricultural land.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-who-warns-black-rain-in-iran-poses-severe-global-health-risks.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rfk-jr-s-pick-to-review-covid-vaccines-authored-misleading",
     title: "Global Health and Education Watch: RFK Jr’s pick to review Covid vaccines authored misleading",
     summary:
