@@ -1,7 +1,19 @@
 {
   "windowStartUtc": "2026-03-09T19:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
+    {
+      "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
+      "summary": "18 infected in measles outbreak in Dhorpatan &nbsp;&nbsp; The Kathmandu Post",
+      "publishedAtUtc": "2026-03-10T01:48:54Z",
+      "domain": "news.google.com",
+      "score": 73.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
+    },
     {
       "title": "Ujire SDM school student to represent India at Youth Games in Nepal - The Hindu",
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUGpOQUcxWG9udDZsTGFUMzNyTkZNN0JzNU9JQmNIenVIVWpJcThmUGFnbmRYRXRTTURLUG50cGJzSXlVTG9HVjJ1cUg1RjlFVmJEdHMzaHZJT0o4b1hHdjJObEdyZ3d4VGVWemw4S2cxcXlrX2VKTVQtQWYyQkFBXzFrNW80bGZnZzBoRXhOOGNDZ3g0NnV6czJMNTU0VDlzdWE4X195Z2ZMZThwRmswVHVHM3k3c3diaUtPVDVxVnJDQksyLWlQQWk1Qlk4dTDSAdYBQVVfeXFMT0FwN2c3RHQ4R3poY1V0aC1lZGdmZzg1a0ZnMXN4Qk5maDhDTGlUQW1YNUpRbmhGUFZtYWdXcFV2VFU4OTJIYXZpTHdqRlphUWtfN0pNNUxOdVdvUVRmX2dOWEk5S282NVJ6QXl0Yng4WVdHZDlNX1NURTJlZWttbWtkVVp5T282X0tUQmpRbnJONy04d28tWlFHN0szOXBHaHhtYWN6UGxwZUlnQm0tdWdtRVc3dVVhLW8tSC00c2h3RU84ZG5OSWVFRUhfVTFKMFM0XzJkZw?oc=5",
@@ -12,7 +24,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T19:11:29.687447Z"
+      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
     },
     {
       "title": "Experts urge new government to make healthcare top priority - The Kathmandu Post",
@@ -20,11 +32,11 @@
       "summary": "Experts urge new government to make healthcare top priority &nbsp;&nbsp; The Kathmandu Post",
       "publishedAtUtc": "2026-03-09T01:59:03Z",
       "domain": "news.google.com",
-      "score": 73.0,
+      "score": 65.0,
       "healthHits": 1,
       "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T19:11:29.687447Z"
+      "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
     },
     {
       "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
@@ -36,7 +48,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T19:11:29.687447Z"
+      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
     },
     {
       "title": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
@@ -133,42 +145,6 @@
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=2, global_hits=0",
       "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
-    },
-    {
-      "title": "3 days to HoR elections: Voter Education completed across the country - The Rising Nepal",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1rbXJGY0VIUm1VYktqQXlCb3VBSlhReThpeGYtWUU1VFc1ZFFUZjZsV0ljSlpnSFpKVWU5bnUxQXhEcEkwejZxZ1ZINnMxN0Nx?oc=5",
-      "summary": "3 days to HoR elections: Voter Education completed across the country &nbsp;&nbsp; The Rising Nepal",
-      "publishedAtUtc": "2026-03-05T06:39:18Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-06T04:17:50.229685Z"
-    },
-    {
-      "title": "Himalaya Eye Hospital serves 247,585 patients in a year - The Rising Nepal",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82YmtWZ25wYjhHSE13VWlfOTdfNThiS1NPSHZQS05IUTNlQWJtbmdacFV1aU5fLXNsTEl0ajgwMTAtVE9HeDc2UnhXNHF1ZGxz?oc=5",
-      "summary": "Himalaya Eye Hospital serves 247,585 patients in a year &nbsp;&nbsp; The Rising Nepal",
-      "publishedAtUtc": "2026-03-05T04:02:46Z",
-      "domain": "news.google.com",
-      "score": 76.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-03-05T19:36:43.735351Z"
-    },
-    {
-      "title": "A research year in medical school: My experience in Nepal - American Osteopathic Association | AOA",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanVkMUhNVHF2UFpuN0NLMU5pWnd3RG9zV0dPc1VQb1JnR3dGOV9KSHdBc1Jld2czTk54ZDlNNDVnMDNLVG96X1VJa3BkVDE2R0E2YXZHR2htY21fNWdCSjVLRXMydnItd21mR19JcThUNlR5MUktV1EzZkdqaUdkTUJwQnhGQjlmekp0TGszR0EtUGFqb3hsQl9lVDV3Yk8wQ0Rz?oc=5",
-      "summary": "A research year in medical school: My experience in Nepal &nbsp;&nbsp; American Osteopathic Association | AOA",
-      "publishedAtUtc": "2026-03-04T21:59:42Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-05T19:36:43.735351Z"
     }
   ],
   "publishedHashes": [],
@@ -252,6 +228,14 @@
       "publishedAtUtc": "2026-03-09T19:11:29.687447Z",
       "slug": "nepal-s-youth-games-a-catalyst-for-educational-and-health-advancement",
       "blogUrl": "https://www.nivaranfoundation.org/news/nepal-s-youth-games-a-catalyst-for-educational-and-health-advancement"
+    },
+    {
+      "contentHash": "67d94cb2fb1c4cd8100d3ba709609f9e4b9905c5",
+      "sourceTitle": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
+      "publishedAtUtc": "2026-03-10T04:18:42.594397Z",
+      "slug": "dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
+      "blogUrl": "https://www.nivaranfoundation.org/news/dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges"
     }
   ],
   "runs": [
@@ -1235,6 +1219,85 @@
       },
       "liveVerified": false,
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-03-10T04:18:42.594397Z",
+      "windowStartUtc": "2026-03-09T19:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 15,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": false,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": false,
+      "thresholdUsed": 72,
+      "candidatesFetched": 4,
+      "candidateCacheCount": 12,
+      "candidatesAfterSourceDedupe": 2,
+      "candidatesAfterDedupe": 2,
+      "duplicateSkips": {
+        "historyHash": 1,
+        "historySource": 1,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
+          "score": 73,
+          "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
+        "score": 73,
+        "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0"
+      },
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Dhorpatan Measles Outbreak: A Stark Reminder of Nepal's Immunization Challenges",
+      "generatedWordCount": 1308,
+      "mainImage": "/images/nepal-news/2026/2026-03-10-dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges.jpg",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5085
+      },
+      "generatedImageSharpness": 2110.6429615740235,
+      "generatedImageCandidates": 4,
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2.0,
+        "generatedWords": 1330.0
+      },
+      "imageProviderRequested": "gemini",
+      "imageProviderUsed": "gemini",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
+        "mdxPath": "src/blogs/global/dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/nepal-news/2026/2026-03-10-dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false
+      },
+      "liveVerified": false,
+      "publishedInWindowAfter": 2
     }
   ]
 }
