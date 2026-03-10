@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-john-oliver-on-the-demise-of-usaid-what-this",
+    title: "Global Health and Education Watch: John Oliver on the demise of USAID: ‘What this",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-global-health-and-education-watch-john-oliver-on-the-demise-of-usaid-what-this.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-inequity-a-crisis-of-unjust-disparities",
     title: "Global Health Inequity: A Crisis of Unjust Disparities",
     summary:
