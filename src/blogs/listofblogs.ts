@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
+    title: "Dhorpatan Measles Outbreak: A Stark Reminder of Nepal's Immunization Challenges",
+    summary:
+      "A recent measles outbreak in Dhorpatan, Baglung, has infected eighteen individuals, underscoring persistent challenges in Nepal's immunization efforts. This incident in a remote mountainous region calls for intensified public health interventions and strengthened vaccine delivery systems.",
+    thumbnailImage: "/images/nepal-news/2026/2026-03-10-dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
     slug: "martyn-butler-s-enduring-legacy-pioneering-hiv-aids-advocacy",
     title: "Martyn Butler's Enduring Legacy: Pioneering HIV/AIDS Advocacy",
     summary:
