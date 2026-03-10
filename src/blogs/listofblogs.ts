@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "martyn-butler-s-enduring-legacy-pioneering-hiv-aids-advocacy",
+    title: "Martyn Butler's Enduring Legacy: Pioneering HIV/AIDS Advocacy",
+    summary:
+      "Martyn Butler, a pivotal figure in the early fight against HIV/AIDS, co-founded the Terrence Higgins Trust in 1982. His courageous advocacy laid the groundwork for Europe's first and Britain's leading HIV charity, profoundly impacting global health.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-martyn-butler-s-enduring-legacy-pioneering-hiv-aids-advocacy.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ohio-state-university-president-resigns-over-inappropriate-relationship",
     title: "Global Health and Education Watch: Ohio State University president resigns over ‘inappropriate relationship’",
     summary:
