@@ -1,18 +1,30 @@
 {
   "windowStartUtc": "2026-03-09T19:00:00Z",
-  "publishedInWindow": 2,
+  "publishedInWindow": 3,
   "candidateCache": [
     {
-      "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
-      "summary": "18 infected in measles outbreak in Dhorpatan &nbsp;&nbsp; The Kathmandu Post",
-      "publishedAtUtc": "2026-03-10T01:48:54Z",
+      "title": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination - The Himalayan Times",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3BXbGdrTXRfZV9yeHlYeDJKa3NxLWxROHY1X0VfLVpvWGhPTTNwRERCWVRrWjdfUkxKWVB4bXhCczFrdUdfWjRmUHpVWXhLWGFONlFQMmlhazVEVC1BNmFUanlWX3lvdUVyckJyNTlXc2V4MVZJa1BWSWhBaUNSLUxJUzd0Q3NFeTVyLTd2b3Jrd2lkcW9LQW42Tnl2eFFGckdQc3dMc3NWUUEwdHpFUDQzQ0t0Y2RTdENOcW5n0gFcQVVfeXFMUFpzUUNnUnMzZXBwUjJxSXotdm5HR3FZS3paSGQ1OEY1RHRlNHFhbjF3NVlxZ0x6Y0Z6SldVN1RFZXRhZDFvYnBMQWVZRF80MlJJRmYtb1dqbDAyNkk?oc=5",
+      "summary": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination &nbsp;&nbsp; The Himalayan Times",
+      "publishedAtUtc": "2026-03-10T09:50:33Z",
       "domain": "news.google.com",
-      "score": 73.0,
+      "score": 78.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
+    },
+    {
+      "title": "The forgotten illness: Alzheimer's disease is quietly rising in Nepal - The Himalayan Times",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVNjAxemRRLWxOUHNaV3pmMDdaZnhpeUdDaW5zMWpKdEM0Y2g1MjhUaEUyWTRHS1JMSzFoRkxRVEgtdmVBWkZYZTZ6ZWxoNlVqallDZnVET2ZDbXQ0?oc=5",
+      "summary": "The forgotten illness: Alzheimer's disease is quietly rising in Nepal &nbsp;&nbsp; The Himalayan Times",
+      "publishedAtUtc": "2026-03-10T04:19:59Z",
+      "domain": "news.google.com",
+      "score": 76.0,
       "healthHits": 1,
       "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
+      "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
     },
     {
       "title": "Ujire SDM school student to represent India at Youth Games in Nepal - The Hindu",
@@ -24,7 +36,31 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
+    },
+    {
+      "title": "Kathmandu’s air pollution has crossed the very unhealthy level - Onlinekhabar English",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOODBMRUNDM2JFaktKTWRMSjNqdmlGdE51cXJKMmVQUlhqRDJCYy0xWWtVdzVUODVJek5WRzJ2ZVJTaktOVU9fc3l4YnBCTVhxb012VWJGYTJMM3UwUmNJWjUyRHhSVkVVUmtDLWEzVk85SVBXcWxXbzlqd2xKTUdFSWhlWWVIMFNxTXdoZXJJS2ZKT01nUkxUNWJBT2l6QV9S?oc=5",
+      "summary": "Kathmandu’s air pollution has crossed the very unhealthy level &nbsp;&nbsp; Onlinekhabar English",
+      "publishedAtUtc": "2026-03-10T06:38:38Z",
+      "domain": "news.google.com",
+      "score": 73.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
+    },
+    {
+      "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
+      "summary": "18 infected in measles outbreak in Dhorpatan &nbsp;&nbsp; The Kathmandu Post",
+      "publishedAtUtc": "2026-03-10T01:48:54Z",
+      "domain": "news.google.com",
+      "score": 73.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
     },
     {
       "title": "Experts urge new government to make healthcare top priority - The Kathmandu Post",
@@ -36,7 +72,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
+      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
     },
     {
       "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
@@ -109,42 +145,6 @@
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
       "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
-    },
-    {
-      "title": "Shaping Health And Illness Narratives - The Rising Nepal",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mMjg3XzFiMldaZEtZQ0UwcGtfY1hJUXdUOTNvMzZqa2N4Y1AtVTByY3dPWEdMZFplS0djMjZ1ZnNNU0tJZzVCSWl3ZGQ3TGJY?oc=5",
-      "summary": "Shaping Health And Illness Narratives &nbsp;&nbsp; The Rising Nepal",
-      "publishedAtUtc": "2026-03-06T02:17:39Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
-    },
-    {
-      "title": "Educating Nepalese women to provide improved care for their childbearing daughters-in-law - World Health Organization (WHO)",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOT0tmRWFfVDFlWjVoZ2JnNFF2N2hSa05qNGdGTzBZY0NWQkduMmxGdmNHQ1dOR0pmOTRPOTBtQUxiM2xWbEpEVDZfcWVhSTViWGI0U2ZNZ29MR25ob3BPUFNibzVDOGtFYXB5YV9rdjhEczZfeFN2V052MjM5T2tsaS0tcw?oc=5",
-      "summary": "Educating Nepalese women to provide improved care for their childbearing daughters-in-law &nbsp;&nbsp; World Health Organization (WHO)",
-      "publishedAtUtc": "2026-03-03T14:35:53Z",
-      "domain": "news.google.com",
-      "score": 69.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
-    },
-    {
-      "title": "Coordinator Dahal casts his vote at Nepal Police School Polling Centre, Chitwan - The Himalayan Times",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcUs2WnBkcm9Va1JrM2ctOE1vN04ycUJjUXBpUUFFeGFWWnNWd2pOS1dOc3dmOFN5X1paancwem5mSV9UZW5tWFBSRklscWw2NGRkZFJsMUJBLUZKV2w0aWpqM1JvaWZhMmtUZy13a2ViZExYUGdjUm4wT0VlUF9DMlhMeG9RZDI3YlhXWkVIRXNPVHBuNV9xM01aZFdMQ1lWQnZqVFNnMVNpRl91U0l3ck1QZTBBY3JSM2xHRdIBXEFVX3lxTFAwRlZEMGJreTJZNzRQTThFV2pySE1RMzRNZXd6TnZGdUE0b0NSX2J6aTQ3SGpqOENJbzRqNXVnZWpjRFhxd21aMUx4ak56enNOWXFpWnZFaFk4ZHM2?oc=5",
-      "summary": "Coordinator Dahal casts his vote at Nepal Police School Polling Centre, Chitwan &nbsp;&nbsp; The Himalayan Times",
-      "publishedAtUtc": "2026-03-05T03:15:08Z",
-      "domain": "news.google.com",
-      "score": 68.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=23, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-03-06T10:56:43.970111Z"
     }
   ],
   "publishedHashes": [],
@@ -236,6 +236,14 @@
       "publishedAtUtc": "2026-03-10T04:18:42.594397Z",
       "slug": "dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges",
       "blogUrl": "https://www.nivaranfoundation.org/news/dhorpatan-measles-outbreak-a-stark-reminder-of-nepal-s-immunization-challenges"
+    },
+    {
+      "contentHash": "3b36c2df7a5f209b17792b5fca52f2dfeabbd0af",
+      "sourceTitle": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination - The Himalayan Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3BXbGdrTXRfZV9yeHlYeDJKa3NxLWxROHY1X0VfLVpvWGhPTTNwRERCWVRrWjdfUkxKWVB4bXhCczFrdUdfWjRmUHpVWXhLWGFONlFQMmlhazVEVC1BNmFUanlWX3lvdUVyckJyNTlXc2V4MVZJa1BWSWhBaUNSLUxJUzd0Q3NFeTVyLTd2b3Jrd2lkcW9LQW42Tnl2eFFGckdQc3dMc3NWUUEwdHpFUDQzQ0t0Y2RTdENOcW5n0gFcQVVfeXFMUFpzUUNnUnMzZXBwUjJxSXotdm5HR3FZS3paSGQ1OEY1RHRlNHFhbjF3NVlxZ0x6Y0Z6SldVN1RFZXRhZDFvYnBMQWVZRF80MlJJRmYtb1dqbDAyNkk?oc=5",
+      "publishedAtUtc": "2026-03-10T11:02:24.200704Z",
+      "slug": "measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive",
+      "blogUrl": "https://www.nivaranfoundation.org/news/measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive"
     }
   ],
   "runs": [
@@ -1298,6 +1306,97 @@
       },
       "liveVerified": false,
       "publishedInWindowAfter": 2
+    },
+    {
+      "ranAtUtc": "2026-03-10T11:02:24.200704Z",
+      "windowStartUtc": "2026-03-09T19:00:00Z",
+      "publishedInWindowBefore": 2,
+      "hoursLeftInWindow": 8,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": false,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": false,
+      "thresholdUsed": 72,
+      "candidatesFetched": 6,
+      "candidateCacheCount": 12,
+      "candidatesAfterSourceDedupe": 3,
+      "candidatesAfterDedupe": 3,
+      "duplicateSkips": {
+        "historyHash": 2,
+        "historySource": 1,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination - The Himalayan Times",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3BXbGdrTXRfZV9yeHlYeDJKa3NxLWxROHY1X0VfLVpvWGhPTTNwRERCWVRrWjdfUkxKWVB4bXhCczFrdUdfWjRmUHpVWXhLWGFONlFQMmlhazVEVC1BNmFUanlWX3lvdUVyckJyNTlXc2V4MVZJa1BWSWhBaUNSLUxJUzd0Q3NFeTVyLTd2b3Jrd2lkcW9LQW42Tnl2eFFGckdQc3dMc3NWUUEwdHpFUDQzQ0t0Y2RTdENOcW5n0gFcQVVfeXFMUFpzUUNnUnMzZXBwUjJxSXotdm5HR3FZS3paSGQ1OEY1RHRlNHFhbjF3NVlxZ0x6Y0Z6SldVN1RFZXRhZDFvYnBMQWVZRF80MlJJRmYtb1dqbDAyNkk?oc=5",
+          "score": 78,
+          "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0"
+        },
+        {
+          "title": "The forgotten illness: Alzheimer's disease is quietly rising in Nepal - The Himalayan Times",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVNjAxemRRLWxOUHNaV3pmMDdaZnhpeUdDaW5zMWpKdEM0Y2g1MjhUaEUyWTRHS1JMSzFoRkxRVEgtdmVBWkZYZTZ6ZWxoNlVqallDZnVET2ZDbXQ0?oc=5",
+          "score": 76,
+          "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=2, global_hits=0"
+        },
+        {
+          "title": "Kathmandu’s air pollution has crossed the very unhealthy level - Onlinekhabar English",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOODBMRUNDM2JFaktKTWRMSjNqdmlGdE51cXJKMmVQUlhqRDJCYy0xWWtVdzVUODVJek5WRzJ2ZVJTaktOVU9fc3l4YnBCTVhxb012VWJGYTJMM3UwUmNJWjUyRHhSVkVVUmtDLWEzVk85SVBXcWxXbzlqd2xKTUdFSWhlWWVIMFNxTXdoZXJJS2ZKT01nUkxUNWJBT2l6QV9S?oc=5",
+          "score": 73,
+          "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination - The Himalayan Times",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3BXbGdrTXRfZV9yeHlYeDJKa3NxLWxROHY1X0VfLVpvWGhPTTNwRERCWVRrWjdfUkxKWVB4bXhCczFrdUdfWjRmUHpVWXhLWGFONlFQMmlhazVEVC1BNmFUanlWX3lvdUVyckJyNTlXc2V4MVZJa1BWSWhBaUNSLUxJUzd0Q3NFeTVyLTd2b3Jrd2lkcW9LQW42Tnl2eFFGckdQc3dMc3NWUUEwdHpFUDQzQ0t0Y2RTdENOcW5n0gFcQVVfeXFMUFpzUUNnUnMzZXBwUjJxSXotdm5HR3FZS3paSGQ1OEY1RHRlNHFhbjF3NVlxZ0x6Y0Z6SldVN1RFZXRhZDFvYnBMQWVZRF80MlJJRmYtb1dqbDAyNkk?oc=5",
+        "score": 78,
+        "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0"
+      },
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Measles Outbreak in Dhorpatan: Nepal's Health Ministry Mobilizes for Urgent Vaccination Drive",
+      "generatedWordCount": 1331,
+      "mainImage": "/images/nepal-news/2026/2026-03-10-measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vacci.jpg",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5100
+      },
+      "generatedImageSharpness": 1990.238741753786,
+      "generatedImageCandidates": 4,
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2.0,
+        "generatedWords": 1355.0
+      },
+      "imageProviderRequested": "gemini",
+      "imageProviderUsed": "gemini",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive",
+        "mdxPath": "src/blogs/global/measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vaccination-drive",
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/nepal-news/2026/2026-03-10-measles-outbreak-in-dhorpatan-nepal-s-health-ministry-mobilizes-for-urgent-vacci.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false
+      },
+      "liveVerified": false,
+      "publishedInWindowAfter": 3
     }
   ]
 }
