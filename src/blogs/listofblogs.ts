@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "pioneers-of-covid-vaccine-depart-biontech-for-new-mrna-frontier",
+    title: "Pioneers of COVID Vaccine Depart BioNTech for New mRNA Frontier",
+    summary:
+      "The visionary co-founders of BioNTech, Uğur Şahin and Özlem Türeci, are stepping down from the German pharmaceutical giant. They plan to establish a new mRNA-focused enterprise, aiming to push the boundaries of this transformative technology further.",
+    thumbnailImage: "/images/global-news/2026/2026-03-10-pioneers-of-covid-vaccine-depart-biontech-for-new-mrna-frontier.jpg",
+    date: "2026-03-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-court-battle-looms-over-demand-for-jewish-student-staff-list-at-penn",
     title: "US Court Battle Looms Over Demand for Jewish Student, Staff List at Penn",
     summary:
