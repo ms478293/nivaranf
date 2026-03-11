@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "immersive-journalism-unveiling-global-education-s-complexities",
+    title: "Immersive Journalism: Unveiling Global Education's Complexities",
+    summary:
+      "Covering vast education systems demands immersive, on-the-ground reporting to capture their intricate realities. This approach is crucial for understanding global educational challenges and informing communities effectively.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-immersive-journalism-unveiling-global-education-s-complexities.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-five-killed-in-strikes-on-lebanon-health-ministry-reports",
     title: "Global Health and Education Watch: Five killed in strikes on Lebanon, health ministry reports",
     summary:
