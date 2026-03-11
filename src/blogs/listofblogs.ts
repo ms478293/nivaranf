@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-commitment-drives-pandemic-accord-negotiations-forward",
+    title: "Global Commitment Drives Pandemic Accord Negotiations Forward",
+    summary:
+      "Member States of the World Health Organization recently concluded a pivotal round of negotiations on the Pathogen Access and Benefit Sharing (PABS) annex to the WHO Pandemic Agreement. This crucial component aims to ensure equitable access to health tools during future global health crises.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-global-commitment-drives-pandemic-accord-negotiations-forward.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-families-welcome-appointment-of-donna-ockenden-to-leeds-maternity",
     title: "Global Health and Education Watch: Families welcome appointment of Donna Ockenden to Leeds maternity",
     summary:
