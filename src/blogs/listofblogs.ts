@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-clinics-redefine-care-amid-financial-strain-embrace-aesthetics",
+    title: "Global Health Clinics Redefine Care Amid Financial Strain, Embrace Aesthetics",
+    summary:
+      "Across the globe, healthcare institutions are exploring innovative revenue streams, including aesthetic services, to combat financial pressures. This strategic shift aims to maintain essential care access but raises critical questions about mission and equity.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-global-health-clinics-redefine-care-amid-financial-strain-embrace-aesthetics.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "denmark-achieves-landmark-eliminates-mother-to-child-hiv-and-syphilis-transmission",
     title: "Denmark Achieves Landmark: Eliminates Mother-to-Child HIV and Syphilis Transmission",
     summary:
