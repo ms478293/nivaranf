@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-drone-strike-kills-17-devastates-school-and-health-centre",
+    title: "Sudan Drone Strike Kills 17, Devastates School and Health Centre",
+    summary:
+      "A drone strike in Sudan's White Nile province killed at least 17 people, mostly schoolgirls, and wounded ten others, hitting a secondary school and a healthcare centre. The attack underscores the devastating impact of the ongoing three-year conflict on vital civilian infrastructure and fundamental human rights.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-sudan-drone-strike-kills-17-devastates-school-and-health-centre.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-clinics-redefine-care-amid-financial-strain-embrace-aesthetics",
     title: "Global Health Clinics Redefine Care Amid Financial Strain, Embrace Aesthetics",
     summary:
