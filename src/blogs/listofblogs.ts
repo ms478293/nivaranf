@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "lebanese-families-seek-school-sanctuary-amidst-border-conflict",
+    title: "Lebanese Families Seek School Sanctuary Amidst Border Conflict",
+    summary:
+      "Families from southern Lebanon have sought shelter in a Sidon school, fleeing intense cross-border hostilities. This displacement underscores the urgent need for humanitarian aid and protection for civilians in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-lebanese-families-seek-school-sanctuary-amidst-border-conflict.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-conflict-deepens-health-crisis-across-middle-east-who-says",
     title: "Global Health and Education Watch: Conflict deepens health crisis across Middle East, WHO says",
     summary:
