@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ergonomics-key-to-post-conflict-workplace-safety-in-kurdistan",
+    title: "Ergonomics Key to Post-Conflict Workplace Safety in Kurdistan",
+    summary:
+      "Research from the Kurdistan Region of Iraq demonstrates the effectiveness of ILO ergonomic checkpoints in enhancing workplace health and safety within post-conflict small and medium-sized enterprises. This initiative offers a practical framework for improving working conditions and fostering sustainable economic recovery globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-ergonomics-key-to-post-conflict-workplace-safety-in-kurdistan.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "navigating-the-infodemic-pediatricians-confront-global-vaccine-misinformation",
     title: "Navigating the Infodemic: Pediatricians Confront Global Vaccine Misinformation",
     summary:
