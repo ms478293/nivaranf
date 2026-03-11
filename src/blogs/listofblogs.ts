@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "denmark-achieves-landmark-eliminates-mother-to-child-hiv-and-syphilis-transmission",
+    title: "Denmark Achieves Landmark: Eliminates Mother-to-Child HIV and Syphilis Transmission",
+    summary:
+      "Denmark has been certified by the World Health Organization for eliminating mother-to-child transmission of HIV and syphilis, marking a significant global health milestone. This achievement underscores the power of sustained public health commitment and integrated healthcare systems in protecting the most vulnerable.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-denmark-achieves-landmark-eliminates-mother-to-child-hiv-and-syphilis-transmissi.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-experts-fear-unethical-vaccine-trial-in-africa-is-prototype",
     title: "Global Health and Education Watch: Experts fear ‘unethical’ vaccine trial in Africa is ‘prototype’",
     summary:
