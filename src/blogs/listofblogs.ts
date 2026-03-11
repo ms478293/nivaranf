@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "iran-war-devastates-health-infrastructure-civilian-lives",
+    title: "Iran War Devastates Health Infrastructure, Civilian Lives",
+    summary:
+      "Recent conflict in Iran has severely impacted civilian populations and critical healthcare infrastructure. The Iranian Red Crescent reports nearly 20,000 civilian buildings and 77 healthcare facilities damaged or destroyed, exacerbating a growing humanitarian crisis.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-iran-war-devastates-health-infrastructure-civilian-lives.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-tuition-fees-system-is-a-mess-says-clegg",
     title: "Global Health and Education Watch: University tuition fees system is a 'mess', says Clegg",
     summary:
