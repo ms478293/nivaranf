@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "india-s-elite-tech-schools-grapple-with-tragic-student-suicide-crisis",
+    title: "India's Elite Tech Schools Grapple with Tragic Student Suicide Crisis",
+    summary:
+      "India's prestigious engineering institutions face a severe mental health crisis, with nearly 160 student suicides recorded over the past two decades. This alarming trend highlights the urgent need for comprehensive mental health support and systemic changes in elite educational environments globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-india-s-elite-tech-schools-grapple-with-tragic-student-suicide-crisis.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-commitment-drives-pandemic-accord-negotiations-forward",
     title: "Global Commitment Drives Pandemic Accord Negotiations Forward",
     summary:
