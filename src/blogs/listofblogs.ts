@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-conflict-deepens-health-crisis-across-middle-east-who-says",
+    title: "Global Health and Education Watch: Conflict deepens health crisis across Middle East, WHO says",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-global-health-and-education-watch-conflict-deepens-health-crisis-across-middle-e.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-drone-strike-kills-17-devastates-school-and-health-centre",
     title: "Sudan Drone Strike Kills 17, Devastates School and Health Centre",
     summary:
