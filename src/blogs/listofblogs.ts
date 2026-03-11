@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-generational-divide-isn-t-as-wide-as-you-think",
+    title: "Global Health and Education Watch: Generational divide isn’t as wide as you think |",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-global-health-and-education-watch-generational-divide-isn-t-as-wide-as-you-think.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "lebanese-families-seek-school-sanctuary-amidst-border-conflict",
     title: "Lebanese Families Seek School Sanctuary Amidst Border Conflict",
     summary:
