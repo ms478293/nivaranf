@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-coverage-and-associated-factors-of-inactivated-polio-vaccine-uptake",
+    title: "Global Health and Education Watch: Coverage and associated factors of inactivated polio vaccine uptake",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-global-health-and-education-watch-coverage-and-associated-factors-of-inactivated.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cancer-haunts-neighbors-of-canada-s-oil-sands-wastelands",
     title: "Global Health and Education Watch: Cancer Haunts Neighbors of Canada’s Oil Sands Wastelands",
     summary:
