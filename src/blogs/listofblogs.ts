@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "navigating-the-infodemic-pediatricians-confront-global-vaccine-misinformation",
+    title: "Navigating the Infodemic: Pediatricians Confront Global Vaccine Misinformation",
+    summary:
+      "Pediatricians globally are on the front lines, combating a surge of vaccine misinformation to protect children's health. They employ empathetic communication and evidence-based strategies to navigate parental mistrust and confusion.",
+    thumbnailImage: "/images/global-news/2026/2026-03-11-navigating-the-infodemic-pediatricians-confront-global-vaccine-misinformation.jpg",
+    date: "2026-03-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "immersive-journalism-unveiling-global-education-s-complexities",
     title: "Immersive Journalism: Unveiling Global Education's Complexities",
     summary:
