@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-reckoning-social-media-addiction-trial-signals-new-era-for-tech-accountability",
+    title: "Global Reckoning: Social Media Addiction Trial Signals New Era for Tech Accountability",
+    summary:
+      "A pivotal US jury trial examining the alleged addictive design of major social media platforms recently concluded, sparking global conversations about tech company responsibility. This case, seen as a bellwether, addresses claims that platforms intentionally foster addiction, leading to significant mental health challenges among young users worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-reckoning-social-media-addiction-trial-signals-new-era-for-tech-accountab.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-fatal-shooting-at-virginia-university-investigated-as-act-of",
     title: "Global Health and Education Watch: Fatal shooting at Virginia university investigated as act of",
     summary:
