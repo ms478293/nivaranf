@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-surge-in-mental-health-sick-leave-challenges-healthcare-systems",
+    title: "Global Surge in Mental Health Sick Leave Challenges Healthcare Systems",
+    summary:
+      "A significant global increase in medical certificates issued for mental health concerns is putting unprecedented strain on primary healthcare systems worldwide. This trend highlights a critical need for enhanced mental health support and proactive workplace well-being strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-surge-in-mental-health-sick-leave-challenges-healthcare-systems.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-instability-ai-risks-a-looming-crisis-for-health-and-education",
     title: "Global Instability, AI Risks: A Looming Crisis for Health and Education",
     summary:
