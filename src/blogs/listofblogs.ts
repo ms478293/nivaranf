@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-if-u-s-colleges-are-dying-why-are-students-applying",
+    title: "Global Health and Education Watch: If U.S. Colleges Are Dying, Why Are Students Applying?",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-health-and-education-watch-if-u-s-colleges-are-dying-why-are-students-app.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-women-receiving-worse-treatment-for-back-and-neck-pain",
     title: "Global Health and Education Watch: Women receiving worse treatment for back and neck pain",
     summary:
