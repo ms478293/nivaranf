@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-gps-tell-bbc-they-ve-never-refused-sick-note-for",
+    title: "Global Health and Education Watch: GPs tell BBC they've NEVER refused sick note for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-health-and-education-watch-gps-tell-bbc-they-ve-never-refused-sick-note-f.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-half-of-cataract-blindness-sufferers-await-sight-restoring-surgery",
     title: "Global Call: Half of Cataract Blindness Sufferers Await Sight-Restoring Surgery",
     summary:
