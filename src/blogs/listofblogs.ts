@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "china-s-new-law-mandates-mandarin-eroding-minority-language-education",
+    title: "China's New Law Mandates Mandarin, Eroding Minority Language Education",
+    summary:
+      "China's National People's Congress is poised to approve a new \"ethnic unity\" law that will fundamentally alter the linguistic landscape of its education system. This legislation prioritizes Mandarin instruction, effectively sidelining minority languages such as Tibetan, Uyghur, and Mongolian across schools nationwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-china-s-new-law-mandates-mandarin-eroding-minority-language-education.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "trauma-surgeon-s-global-witness-hope-amidst-unimaginable-horror",
     title: "Trauma Surgeon's Global Witness: Hope Amidst Unimaginable Horror",
     summary:
