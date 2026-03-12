@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unraveling-nicotine-s-grip-understanding-addiction-and-effective-quitting-strategies",
+    title: "Unraveling Nicotine's Grip: Understanding Addiction and Effective Quitting Strategies",
+    summary:
+      "Smoking's potent addictiveness stems from nicotine's rapid neurological impact, creating a powerful cycle of dependence. Effective quitting strategies combine pharmacological support with robust behavioral and psychological interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-unraveling-nicotine-s-grip-understanding-addiction-and-effective-quitting-strate.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-surge-in-mental-health-sick-leave-challenges-healthcare-systems",
     title: "Global Surge in Mental Health Sick Leave Challenges Healthcare Systems",
     summary:
