@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "devastating-strike-on-iranian-school-ignites-global-outcry-for-civilian-protection",
+    title: "Devastating Strike on Iranian School Ignites Global Outcry for Civilian Protection",
+    summary:
+      "A recent U.S. missile strike tragically impacted a school in Iran, resulting in the deaths of 175 individuals. This devastating event has sparked widespread international condemnation and intensified discussions on the protection of educational facilities during conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-devastating-strike-on-iranian-school-ignites-global-outcry-for-civilian-protecti.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gps-tell-bbc-they-ve-never-refused-sick-note-for",
     title: "Global Health and Education Watch: GPs tell BBC they've NEVER refused sick note for",
     summary:
