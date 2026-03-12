@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-energy-crisis-threatens-health-education-progress",
+    title: "Global Energy Crisis Threatens Health, Education Progress",
+    summary:
+      "An escalating Middle East conflict is causing the largest oil supply disruption in history, threatening global health and education systems. Soaring energy costs and economic instability risk reversing decades of progress, especially for vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-energy-crisis-threatens-health-education-progress.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "china-s-new-law-mandates-mandarin-eroding-minority-language-education",
     title: "China's New Law Mandates Mandarin, Eroding Minority Language Education",
     summary:
