@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-instability-ai-risks-a-looming-crisis-for-health-and-education",
+    title: "Global Instability, AI Risks: A Looming Crisis for Health and Education",
+    summary:
+      "Geopolitical conflicts and economic volatility are diverting crucial resources from global health and education initiatives. Simultaneously, the unchecked proliferation of AI presents new ethical dilemmas and risks to societal well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-instability-ai-risks-a-looming-crisis-for-health-and-education.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-bombed-the-iranian-girls-school-killing-more-than",
     title: "Global Health and Education Watch: Who bombed the Iranian girls’ school, killing more than",
     summary:
