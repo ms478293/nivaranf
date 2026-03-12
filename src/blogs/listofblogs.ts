@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-student-mental-health-crisis-social-pressure-s-toll-in-universities",
+    title: "Global Student Mental Health Crisis: Social Pressure's Toll in Universities",
+    summary:
+      "A recent study in Karachi, Pakistan, illuminates the critical connection between social pressure and mental health challenges among university students. Its findings underscore a global imperative for enhanced support systems and policy interventions in higher education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-student-mental-health-crisis-social-pressure-s-toll-in-universities.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-her-lab-worked-to-future-proof-fruits-and-vegetables",
     title: "Global Health and Education Watch: Her Lab Worked to Future-Proof Fruits and Vegetables",
     summary:
