@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-for-child-protection-brown-advocates-international-court-for-war-crimes",
+    title: "Global Call for Child Protection: Brown Advocates International Court for War Crimes",
+    summary:
+      "Former UK Prime Minister Gordon Brown has advocated for establishing an international criminal court specifically for crimes against children, asserting that schools must hold the same protected status as hospitals under global law. This urgent appeal follows a devastating missile attack on an Iranian school that resulted in the deaths of 168 schoolgirls, highlighting the urgent need for enhanced child protection in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-call-for-child-protection-brown-advocates-international-court-for-war-cri.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sleep-exercise-hydrate-do-we-really-need-to",
     title: "Global Health and Education Watch: Sleep, exercise, hydrate - do we really need to",
     summary:
