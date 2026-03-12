@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-bombed-the-iranian-girls-school-killing-more-than",
+    title: "Global Health and Education Watch: Who bombed the Iranian girls’ school, killing more than",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-health-and-education-watch-who-bombed-the-iranian-girls-school-killing-mo.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-for-child-protection-brown-advocates-international-court-for-war-crimes",
     title: "Global Call for Child Protection: Brown Advocates International Court for War Crimes",
     summary:
