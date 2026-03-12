@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-half-of-cataract-blindness-sufferers-await-sight-restoring-surgery",
+    title: "Global Call: Half of Cataract Blindness Sufferers Await Sight-Restoring Surgery",
+    summary:
+      "Millions globally endure preventable blindness due to cataracts, with half lacking access to life-changing surgery. The World Health Organization is pressing countries to accelerate efforts, highlighting the procedure as a highly effective and affordable solution.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-call-half-of-cataract-blindness-sufferers-await-sight-restoring-surgery.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-energy-crisis-threatens-health-education-progress",
     title: "Global Energy Crisis Threatens Health, Education Progress",
     summary:
