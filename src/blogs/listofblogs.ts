@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-gunman-one-victim-dead-in-shooting-at-old-dominion",
+    title: "Global Health and Education Watch: Gunman, one victim dead in shooting at Old Dominion",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-global-health-and-education-watch-gunman-one-victim-dead-in-shooting-at-old-domi.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "devastating-strike-on-iranian-school-ignites-global-outcry-for-civilian-protection",
     title: "Devastating Strike on Iranian School Ignites Global Outcry for Civilian Protection",
     summary:
