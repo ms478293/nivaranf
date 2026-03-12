@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "trauma-surgeon-s-global-witness-hope-amidst-unimaginable-horror",
+    title: "Trauma Surgeon's Global Witness: Hope Amidst Unimaginable Horror",
+    summary:
+      "Dr. Shehan Hettiaratchy, a leading trauma surgeon, shares his profound insights from treating victims of terror attacks and conflict zones like Ukraine and Gaza. Despite witnessing immense suffering, he maintains an unwavering belief in humanity's capacity for optimism and selfless action.",
+    thumbnailImage: "/images/global-news/2026/2026-03-12-trauma-surgeon-s-global-witness-hope-amidst-unimaginable-horror.jpg",
+    date: "2026-03-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-student-mental-health-crisis-social-pressure-s-toll-in-universities",
     title: "Global Student Mental Health Crisis: Social Pressure's Toll in Universities",
     summary:
