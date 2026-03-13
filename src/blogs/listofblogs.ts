@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-conflict-escalates-civilian-health-education-devastated-by-drone-warfare",
+    title: "Sudan Conflict Escalates: Civilian Health, Education Devastated by Drone Warfare",
+    summary:
+      "A recent drone attack on a market in Sudan killed 11, underscoring a rapidly escalating conflict where civilian casualties are mounting. Over 200 non-combatants have died in recent days, with critical infrastructure like schools and hospitals increasingly targeted.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-sudan-conflict-escalates-civilian-health-education-devastated-by-drone-warfare.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "africa-s-health-sovereignty-at-risk-us-biomedical-engagements-spark-imperialism-fears",
     title: "Africa's Health Sovereignty at Risk: US Biomedical Engagements Spark Imperialism Fears",
     summary:
