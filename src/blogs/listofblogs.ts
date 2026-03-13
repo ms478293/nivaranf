@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-toys-need-strict-global-oversight-for-child-safety",
+    title: "AI Toys Need Strict Global Oversight for Child Safety",
+    summary:
+      "New research from the University of Cambridge reveals AI-powered toys can misinterpret children's emotions, leading to inappropriate responses that could impact development. Experts are calling for immediate, tighter global regulations to safeguard children interacting with these increasingly sophisticated devices.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-ai-toys-need-strict-global-oversight-for-child-safety.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-conflict-escalates-civilian-health-education-devastated-by-drone-warfare",
     title: "Sudan Conflict Escalates: Civilian Health, Education Devastated by Drone Warfare",
     summary:
