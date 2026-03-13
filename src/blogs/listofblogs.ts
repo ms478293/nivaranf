@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-plasma-donation-safety-under-scrutiny-after-tragic-deaths",
+    title: "Global Alarm: Plasma Donation Safety Under Scrutiny After Tragic Deaths",
+    summary:
+      "Recent deaths linked to frequent plasma donations in Canadian for-profit clinics have raised significant global concerns about donor safety. This has prompted an urgent re-evaluation of regulatory standards and ethical practices across the international plasma supply chain.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-alarm-plasma-donation-safety-under-scrutiny-after-tragic-deaths.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-calls-iran-leaders-deranged-scumbags-as-middle-east",
     title: "Global Health and Education Watch: Trump calls Iran leaders ‘deranged scumbags’ as Middle East",
     summary:
