@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-policies-threaten-surge-in-lung-disease-and-premature-death",
+    title: "Global Health Alert: Policies Threaten Surge in Lung Disease and Premature Death",
+    summary:
+      "Experts predict a concerning rise in lung disease and premature mortality, stemming from policy changes impacting healthcare, environmental protection, and public health. This comprehensive analysis highlights the interconnectedness of policy decisions and global respiratory health outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-health-alert-policies-threaten-surge-in-lung-disease-and-premature-death.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-initiatives-bridge-care-gap-for-inmate-reintegration",
     title: "Global Health Initiatives Bridge Care Gap for Inmate Reintegration",
     summary:
