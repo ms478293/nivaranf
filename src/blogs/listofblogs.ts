@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "education-secretary-alleges-lawyer-exploitation-in-special-needs-system",
+    title: "Education Secretary Alleges Lawyer Exploitation in Special Needs System",
+    summary:
+      "A top education official has sparked a global conversation by accusing legal professionals of profiting from the struggles of parents seeking special needs support. This highlights the urgent need for equitable and less confrontational systems for children with disabilities worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-education-secretary-alleges-lawyer-exploitation-in-special-needs-system.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alert-policies-threaten-surge-in-lung-disease-and-premature-death",
     title: "Global Health Alert: Policies Threaten Surge in Lung Disease and Premature Death",
     summary:
