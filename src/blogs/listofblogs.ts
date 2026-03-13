@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-king-charles-concerned-about-alberta-separatist-movement-first-nation",
+    title: "Global Health and Education Watch: King Charles concerned about Alberta separatist movement, First Nation",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-health-and-education-watch-king-charles-concerned-about-alberta-separatis.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-toys-need-strict-global-oversight-for-child-safety",
     title: "AI Toys Need Strict Global Oversight for Child Safety",
     summary:
