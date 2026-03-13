@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-initiatives-bridge-care-gap-for-inmate-reintegration",
+    title: "Global Health Initiatives Bridge Care Gap for Inmate Reintegration",
+    summary:
+      "Across the globe, new financial mechanisms are emerging to support comprehensive healthcare for individuals transitioning from incarceration back into society. This strategic investment aims to improve public health outcomes and reduce recidivism by ensuring continuity of care.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-health-initiatives-bridge-care-gap-for-inmate-reintegration.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-implications-of-violence-in-sacred-and-educational-spaces",
     title: "Global Implications of Violence in Sacred and Educational Spaces",
     summary:
