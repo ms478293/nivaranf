@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-conflict-s-echoes-trauma-education-and-community-safety",
+    title: "Global Conflict's Echoes: Trauma, Education, and Community Safety",
+    summary:
+      "A recent synagogue attack in Michigan, driven by the perpetrator's profound loss in a global conflict, underscores the critical link between international hostilities and community well-being. This incident highlights the urgent need for robust mental health support and peace education to address trauma and foster resilience globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-conflict-s-echoes-trauma-education-and-community-safety.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "education-secretary-alleges-lawyer-exploitation-in-special-needs-system",
     title: "Education Secretary Alleges Lawyer Exploitation in Special Needs System",
     summary:
