@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "africa-s-health-sovereignty-at-risk-us-biomedical-engagements-spark-imperialism-fears",
+    title: "Africa's Health Sovereignty at Risk: US Biomedical Engagements Spark Imperialism Fears",
+    summary:
+      "New US health deals across Africa are raising significant concerns among local experts and civil society. Critics fear these initiatives could perpetuate biomedical extractivism, echoing historical patterns of unequal partnerships and resource exploitation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-africa-s-health-sovereignty-at-risk-us-biomedical-engagements-spark-imperialism-.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-plasma-donation-safety-under-scrutiny-after-tragic-deaths",
     title: "Global Alarm: Plasma Donation Safety Under Scrutiny After Tragic Deaths",
     summary:
