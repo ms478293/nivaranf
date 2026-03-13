@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-short-tempers-and-legal-threats-uk-teachers-report-rise",
+    title: "Global Health and Education Watch: Short tempers and legal threats: UK teachers report rise",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-health-and-education-watch-short-tempers-and-legal-threats-uk-teachers-re.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-reckoning-social-media-addiction-trial-signals-new-era-for-tech-accountability",
     title: "Global Reckoning: Social Media Addiction Trial Signals New Era for Tech Accountability",
     summary:
