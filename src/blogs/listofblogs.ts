@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-it-has-changed-my-life-how-a-dose-of",
+    title: "Global Health and Education Watch: ‘It has changed my life’: How a dose of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-health-and-education-watch-it-has-changed-my-life-how-a-dose-of.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "middle-east-crisis-a-global-health-and-education-catastrophe-unfolding",
     title: "Middle East Crisis: A Global Health and Education Catastrophe Unfolding",
     summary:
