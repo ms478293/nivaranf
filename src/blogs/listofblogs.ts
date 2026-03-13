@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-crisis-a-global-health-and-education-catastrophe-unfolding",
+    title: "Middle East Crisis: A Global Health and Education Catastrophe Unfolding",
+    summary:
+      "Escalating conflicts across the Middle East are causing a profound global health and education crisis, marked by mass displacement and critical service disruptions. Millions face dire conditions, with children and vulnerable families bearing the brunt of a generational catastrophe.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-middle-east-crisis-a-global-health-and-education-catastrophe-unfolding.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-friday-briefing-the-legacy-of-the-dunblane-massacre-30",
     title: "Global Health and Education Watch: Friday briefing: The legacy of the Dunblane massacre, 30",
     summary:
