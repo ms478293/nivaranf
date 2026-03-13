@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-implications-of-violence-in-sacred-and-educational-spaces",
+    title: "Global Implications of Violence in Sacred and Educational Spaces",
+    summary:
+      "Attacks on a Michigan synagogue and a Virginia university highlight a global pattern of violence impacting public and educational environments. This necessitates a comprehensive international focus on mental health, security, and educational strategies for prevention.",
+    thumbnailImage: "/images/global-news/2026/2026-03-13-global-implications-of-violence-in-sacred-and-educational-spaces.jpg",
+    date: "2026-03-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-should-schools-respond-in-emergency-situations",
     title: "Global Health and Education Watch: How should schools respond in emergency situations?",
     summary:
