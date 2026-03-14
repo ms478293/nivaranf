@@ -18,12 +18,12 @@ export const metadata: Metadata = {
     canonical: "https://global.nivaranfoundation.org/campaigns/israel",
   },
   openGraph: {
-    title: "Israel Humanitarian Response | Global Nivaran",
+    title: "Israel Humanitarian Response | Nivaran Global",
     description:
       "A dedicated campaign space for civilian-focused humanitarian response, partner briefings, and accountable public communication related to Israel.",
     url: "https://global.nivaranfoundation.org/campaigns/israel",
     type: "website",
-    siteName: "Global Nivaran",
+    siteName: "Nivaran Global",
   },
 };
 

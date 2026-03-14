@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stories",
   description:
-    "Field stories and human-centered reporting from Global Nivaran campaigns and humanitarian coverage.",
+    "Field stories and human-centered reporting from Nivaran Global campaigns and humanitarian coverage.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/stories",
   },

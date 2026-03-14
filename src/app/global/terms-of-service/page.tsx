@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Read the standalone terms of service for Global Nivaran, covering access to campaigns, reporting, briefings, and platform use on global.nivaranfoundation.org.",
+    "Read the standalone terms of service for Nivaran Global, covering access to campaigns, reporting, briefings, and platform use on global.nivaranfoundation.org.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/terms-of-service",
   },
@@ -15,7 +15,7 @@ const sections = [
   {
     title: "Use of the platform",
     body:
-      "Global Nivaran is a standalone public platform for humanitarian campaigns, reporting, stories, and partner briefings. By using the site, you agree to use it lawfully and not interfere with platform operations, security, or the integrity of published material.",
+      "Nivaran Global is a standalone public platform for humanitarian campaigns, reporting, stories, and partner briefings. By using the site, you agree to use it lawfully and not interfere with platform operations, security, or the integrity of published material.",
   },
   {
     title: "Editorial and campaign content",
@@ -30,7 +30,7 @@ const sections = [
   {
     title: "Intellectual property",
     body:
-      "Unless otherwise stated, site content, branding, layouts, and editorial material on global.nivaranfoundation.org belong to Global Nivaran or its licensors. Reuse beyond ordinary quotation, citation, or linking requires permission.",
+      "Unless otherwise stated, site content, branding, layouts, and editorial material on global.nivaranfoundation.org belong to Nivaran Global or its licensors. Reuse beyond ordinary quotation, citation, or linking requires permission.",
   },
   {
     title: "Availability and updates",
@@ -51,7 +51,7 @@ export default function GlobalTermsOfServicePage() {
         <section className="rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
           <MainTitle prefix="Terms" suffix="of Service" as="h1" className="mb-0" />
           <p className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-gray-800 md:text-5xl">
-            Terms for the Global Nivaran platform.
+            Terms for the Nivaran Global platform.
           </p>
           <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
             These terms apply specifically to <strong>global.nivaranfoundation.org</strong> and

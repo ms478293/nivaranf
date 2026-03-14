@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Global Nivaran for campaign briefings, newsroom inquiries, and partner operations conversations.",
+    "Contact Nivaran Global for campaign briefings, newsroom inquiries, and partner operations conversations.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/contact",
   },

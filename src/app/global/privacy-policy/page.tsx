@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Read the privacy policy for Global Nivaran, including how campaign, newsroom, and partner-contact information is handled on global.nivaranfoundation.org.",
+    "Read the privacy policy for Nivaran Global, including how campaign, newsroom, and partner-contact information is handled on global.nivaranfoundation.org.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/privacy-policy",
   },
@@ -15,7 +15,7 @@ const sections = [
   {
     title: "What this policy covers",
     body:
-      "This policy applies to global.nivaranfoundation.org, including campaign pages, newsroom pages, stories, briefings, and direct contact forms or email pathways connected to the Global Nivaran platform.",
+      "This policy applies to global.nivaranfoundation.org, including campaign pages, newsroom pages, stories, briefings, and direct contact forms or email pathways connected to the Nivaran Global platform.",
   },
   {
     title: "Information we may collect",
@@ -40,7 +40,7 @@ const sections = [
   {
     title: "Your contact point",
     body:
-      "Questions about privacy, data handling, or information requests for the Global Nivaran platform should be sent directly to the global support desk.",
+      "Questions about privacy, data handling, or information requests for the Nivaran Global platform should be sent directly to the global support desk.",
   },
 ] as const;
 
@@ -51,7 +51,7 @@ export default function GlobalPrivacyPolicyPage() {
         <section className="rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
           <MainTitle prefix="Privacy" suffix="Policy" as="h1" className="mb-0" />
           <p className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-gray-800 md:text-5xl">
-            Privacy rules for the Global Nivaran platform.
+            Privacy rules for the Nivaran Global platform.
           </p>
           <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
             This policy is specific to <strong>global.nivaranfoundation.org</strong> and is kept

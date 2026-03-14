@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Global Nivaran | Humanitarian Campaigns, Reporting & Action",
-    template: "%s | Global Nivaran",
+    default: "Nivaran Global | Humanitarian Campaigns, Reporting & Action",
+    template: "%s | Nivaran Global",
   },
   description:
-    "Global Nivaran is a standalone platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
+    "Nivaran Global is a standalone platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
 };
 
 export default function GlobalLayout({

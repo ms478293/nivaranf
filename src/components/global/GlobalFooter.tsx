@@ -29,7 +29,7 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
               </div>
             </div>
             <p className="max-w-md text-sm leading-7 text-gray-600">
-              Global Nivaran is a separate public-facing platform for cross-border campaigns,
+              Nivaran Global is a separate public-facing platform for cross-border campaigns,
               crisis reporting, partner briefings, and accountable humanitarian communication.
             </p>
             <p className="w-fit border-b border-gray-300 pb-1 text-sm text-gray-700">

@@ -54,12 +54,12 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
   },
   global: {
     siteUrl: "https://global.nivaranfoundation.org",
-    siteName: "Global Nivaran",
-    defaultTitle: "Global Nivaran | Humanitarian Campaigns, Reporting & Action",
+    siteName: "Nivaran Global",
+    defaultTitle: "Nivaran Global | Humanitarian Campaigns, Reporting & Action",
     defaultDescription:
-      "Global Nivaran is Nivaran Foundation's international platform for humanitarian campaigns, crisis reporting, and public-interest response coordination.",
+      "Nivaran Global is Nivaran Foundation's international platform for humanitarian campaigns, crisis reporting, and public-interest response coordination.",
     keywords: [
-      "Global Nivaran",
+      "Nivaran Global",
       "humanitarian campaigns",
       "humanitarian response",
       "global crisis reporting",
@@ -67,18 +67,18 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
       "public-interest response",
     ],
     themeColor: "#0f172a",
-    organizationName: "Global Nivaran",
+    organizationName: "Nivaran Global",
     contactEmail: "support@global.nivaranfoundation.org",
     searchPath: "/news",
-    articleFallbackTitle: "Global Nivaran | Humanitarian Reporting & Action",
+    articleFallbackTitle: "Nivaran Global | Humanitarian Reporting & Action",
     articleFallbackDescription:
-      "Read field reporting, analysis, and campaign updates from Global Nivaran.",
-    articleAuthorFallback: "Global Nivaran Editorial Desk",
+      "Read field reporting, analysis, and campaign updates from Nivaran Global.",
+    articleAuthorFallback: "Nivaran Global Editorial Desk",
     articleDefaultLocation: "Global Desk",
     articleDefaultDonateLine:
       "This reporting supports public understanding, partner alignment, and responsible humanitarian action. Back the work if you want this platform to keep publishing with clarity and discipline.",
     articleDefaultAuthorBio:
-      "Global Nivaran publishes campaign reporting, humanitarian analysis, and response briefings focused on civilian protection, health access, and accountable public communication.",
+      "Nivaran Global publishes campaign reporting, humanitarian analysis, and response briefings focused on civilian protection, health access, and accountable public communication.",
     articleCtaHref: "/contact",
     articleCtaLabel: "Talk to the global team",
   },

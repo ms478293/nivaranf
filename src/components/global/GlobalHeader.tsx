@@ -47,7 +47,7 @@ export default function GlobalHeader({ prefix }: { prefix: string }) {
         <Link
           href={withPrefix(prefix, "/")}
           className="flex items-center gap-3"
-          aria-label="Global Nivaran home"
+          aria-label="Nivaran Global home"
         >
           <Image
             src="/NivaranLogo.svg"

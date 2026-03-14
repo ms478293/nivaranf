@@ -15,25 +15,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Global Nivaran",
+  title: "Nivaran Global",
   description:
-    "Global Nivaran is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
+    "Nivaran Global is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/",
   },
   openGraph: {
-    title: "Global Nivaran",
+    title: "Nivaran Global",
     description:
-      "Global Nivaran is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
+      "Nivaran Global is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
     url: "https://global.nivaranfoundation.org/",
     type: "website",
-    siteName: "Global Nivaran",
+    siteName: "Nivaran Global",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Global Nivaran",
+    title: "Nivaran Global",
     description:
-      "Global Nivaran is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
+      "Nivaran Global is the dedicated Nivaran platform for humanitarian campaigns, crisis reporting, and partner-ready public communication.",
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
   },
@@ -54,7 +54,7 @@ export default async function GlobalHomePage() {
         <div className="mx-auto grid max-w-[1320px] gap-8 lg:grid-cols-[1.02fr_0.98fr]">
           <div className="rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-primary-500">
-              Global Nivaran
+              Nivaran Global
             </p>
             <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight text-gray-800 md:text-6xl md:leading-[1.08]">
               Humanitarian campaigns and global reporting under one Nivaran system.

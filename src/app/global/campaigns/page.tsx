@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Campaigns",
   description:
-    "Explore Global Nivaran campaigns built for humanitarian response, partner briefings, and accountable public communication.",
+    "Explore Nivaran Global campaigns built for humanitarian response, partner briefings, and accountable public communication.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/campaigns",
   },
