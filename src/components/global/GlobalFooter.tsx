@@ -33,7 +33,7 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
               crisis reporting, partner briefings, and accountable humanitarian communication.
             </p>
             <p className="w-fit border-b border-gray-300 pb-1 text-sm text-gray-700">
-              <Link href="mailto:global@nivaranfoundation.org">global@nivaranfoundation.org</Link>
+              <Link href="mailto:support@global.nivaranfoundation.org">support@global.nivaranfoundation.org</Link>
             </p>
           </div>
 
@@ -67,10 +67,10 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
         <div className="flex flex-col gap-4 text-xs text-gray-600 sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} NIVARAN FOUNDATION, INC. All rights reserved</p>
           <div className="flex flex-wrap items-center gap-4">
-            <Link href="https://www.nivaranfoundation.org/privacy-policy" className="hover:text-primary-500">
+            <Link href={withPrefix(prefix, "/privacy-policy")} className="hover:text-primary-500">
               Privacy Policy
             </Link>
-            <Link href="https://www.nivaranfoundation.org/terms-of-service" className="hover:text-primary-500">
+            <Link href={withPrefix(prefix, "/terms-of-service")} className="hover:text-primary-500">
               Terms of Service
             </Link>
           </div>

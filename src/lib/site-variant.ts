@@ -68,7 +68,7 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     ],
     themeColor: "#0f172a",
     organizationName: "Global Nivaran",
-    contactEmail: "global@nivaranfoundation.org",
+    contactEmail: "support@global.nivaranfoundation.org",
     searchPath: "/news",
     articleFallbackTitle: "Global Nivaran | Humanitarian Reporting & Action",
     articleFallbackDescription:

@@ -64,7 +64,7 @@ export default async function IsraelCampaignPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <AppButton asChild size="lg" className="font-normal">
-                <Link href="mailto:global@nivaranfoundation.org?subject=Israel%20Campaign%20Briefing">
+                <Link href="mailto:support@global.nivaranfoundation.org?subject=Israel%20Campaign%20Briefing">
                   Request campaign briefing
                 </Link>
               </AppButton>

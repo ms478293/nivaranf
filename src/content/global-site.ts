@@ -118,21 +118,21 @@ export const GLOBAL_CONTACT_CARDS = [
     title: "Campaign Briefings",
     body:
       "Request a structured campaign briefing for partnerships, designated funds, operating scope, or launch planning.",
-    href: "mailto:global@nivaranfoundation.org?subject=Global%20Nivaran%20Campaign%20Briefing",
-    cta: "Email global team",
+    href: "mailto:support@global.nivaranfoundation.org?subject=Global%20Nivaran%20Campaign%20Briefing",
+    cta: "Email support desk",
   },
   {
     title: "Media & Research",
     body:
       "Reach the editorial and strategy team for interviews, reporting context, or cross-border health and education analysis.",
-    href: "mailto:global@nivaranfoundation.org?subject=Global%20Nivaran%20Media%20Desk",
+    href: "mailto:support@global.nivaranfoundation.org?subject=Global%20Nivaran%20Media%20Desk",
     cta: "Contact newsroom",
   },
   {
     title: "Partner Operations",
     body:
       "Use this channel for implementation conversations, accountability frameworks, or partner due-diligence discussions.",
-    href: "mailto:global@nivaranfoundation.org?subject=Global%20Nivaran%20Partner%20Operations",
+    href: "mailto:support@global.nivaranfoundation.org?subject=Global%20Nivaran%20Partner%20Operations",
     cta: "Open partner channel",
   },
 ] as const;

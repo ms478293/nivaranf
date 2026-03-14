@@ -50,7 +50,7 @@ export default function GlobalContactPage() {
           </p>
           <div className="mt-6">
             <AppButton asChild size="lg" className="font-normal">
-              <Link href="mailto:global@nivaranfoundation.org">global@nivaranfoundation.org</Link>
+              <Link href="mailto:support@global.nivaranfoundation.org">support@global.nivaranfoundation.org</Link>
             </AppButton>
           </div>
         </section>
