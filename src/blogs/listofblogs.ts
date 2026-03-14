@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "deadly-strike-on-lebanon-healthcare-facility-ignites-global-outcry",
+    title: "Deadly Strike on Lebanon Healthcare Facility Ignites Global Outcry",
+    summary:
+      "An Israeli strike in southern Lebanon tragically claimed the lives of twelve healthcare workers at a primary facility, bringing the total medical staff casualties in the region to 31 in just twelve days. This devastating incident has drawn widespread condemnation, with the Lebanese Ministry of Health asserting a clear violation of international humanitarian laws.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-deadly-strike-on-lebanon-healthcare-facility-ignites-global-outcry.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israeli-strike-kills-12-healthcare-workers-in-southern-lebanon",
     title: "Global Health and Education Watch: Israeli strike kills 12 healthcare workers in southern Lebanon",
     summary:
