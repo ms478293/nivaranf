@@ -115,3 +115,22 @@ Update app later:
 cd /opt/nivaran/nivaranf-git
 sudo REPO_ROOT=/opt/nivaran/nivaranf-git RUN_USER=<your_linux_user> ENV_FILE=/etc/nivaran/web.env bash scripts/vps/update_web.sh
 ```
+
+
+## 8. Docker + Traefik option (recommended on your current VPS)
+
+If your VPS already runs Traefik on ports 80/443, use the Docker deployment instead of nginx.
+
+```bash
+cd /opt/nivaran/nivaranf-git
+sudo docker compose --env-file /etc/nivaran/web.env -f scripts/vps/docker-compose.hostinger.yml up -d --build
+```
+
+Verify:
+
+```bash
+sudo docker ps
+sudo docker logs --tail 100 $(sudo docker ps -q --filter name=nivaran-web)
+```
+
+This mode reuses the existing `n8n_default` Traefik network and requests certificates automatically for the configured hosts once DNS points to the VPS.
