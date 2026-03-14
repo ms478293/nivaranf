@@ -1,3 +1,5 @@
+import MainTitle from "@/components/new/MainTitle/MainTitle";
+import { AppButton } from "@/components/ui/app-button";
 import { GLOBAL_CONTACT_CARDS } from "@/content/global-site";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -13,34 +15,44 @@ export const metadata: Metadata = {
 
 export default function GlobalContactPage() {
   return (
-    <div className="px-4 pb-16 pt-10 md:px-6 md:pt-14">
-      <div className="mx-auto max-w-[1380px]">
-        <section className="rounded-[34px] border border-slate-200/80 bg-[linear-gradient(135deg,#ffffff_0%,#fff8f3_100%)] px-6 py-8 shadow-[0_18px_48px_rgba(15,23,42,0.08)] md:px-10 md:py-12">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-slate-500">Contact</p>
-          <h1 className="mt-4 font-[family:var(--global-font-display)] text-5xl leading-[0.92] text-slate-950 md:text-7xl">
+    <div className="px-4 pb-16 pt-8 md:pt-12">
+      <div className="mx-auto max-w-[1320px]">
+        <section className="rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
+          <MainTitle suffix="Global" prefix="Contact" as="h1" className="mb-0" />
+          <p className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-gray-800 md:text-5xl">
             Reach the global team with something concrete.
-          </h1>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
-            Use this page for campaign briefings, newsroom requests, partner conversations, and operational coordination. The fastest path is still a structured email with context, scope, and timing.
+          </p>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
+            Use this page for campaign briefings, newsroom requests, partner conversations, and
+            operational coordination. The fastest path is still a structured email with context,
+            scope, and timing.
           </p>
         </section>
 
-        <section className="mt-8 grid gap-6 md:grid-cols-3">
+        <section className="mt-6 grid gap-5 lg:grid-cols-3">
           {GLOBAL_CONTACT_CARDS.map((card) => (
-            <article
-              key={card.title}
-              className="rounded-[30px] border border-slate-200/80 bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.06)]"
-            >
-              <h2 className="text-2xl font-semibold text-slate-950">{card.title}</h2>
-              <p className="mt-4 text-sm leading-8 text-slate-600">{card.body}</p>
-              <Link
-                href={card.href}
-                className="mt-8 inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
-              >
-                {card.cta}
-              </Link>
+            <article key={card.title} className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-100">
+              <h2 className="text-2xl font-semibold text-gray-800">{card.title}</h2>
+              <p className="mt-4 text-sm leading-8 text-gray-600">{card.body}</p>
+              <div className="mt-6">
+                <AppButton asChild size="lg" className="font-normal">
+                  <Link href={card.href}>{card.cta}</Link>
+                </AppButton>
+              </div>
             </article>
           ))}
+        </section>
+
+        <section className="mt-6 rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
+          <MainTitle suffix="Direct" prefix="Email" className="mb-0" />
+          <p className="mt-4 max-w-2xl text-base leading-8 text-gray-600">
+            For urgent coordination, media outreach, or campaign planning, use the direct desk email.
+          </p>
+          <div className="mt-6">
+            <AppButton asChild size="lg" className="font-normal">
+              <Link href="mailto:global@nivaranfoundation.org">global@nivaranfoundation.org</Link>
+            </AppButton>
+          </div>
         </section>
       </div>
     </div>

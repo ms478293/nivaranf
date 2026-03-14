@@ -1,40 +1,52 @@
 export const GLOBAL_SITE_NAV = [
-  { label: "Home", href: "/" },
   { label: "Campaigns", href: "/campaigns" },
   { label: "Newsroom", href: "/news" },
   { label: "Stories", href: "/stories" },
+  { label: "Briefings", href: "/articles" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
 export const GLOBAL_HOME_METRICS = [
-  { value: "1", label: "Live campaign", note: "Built with separate reporting and partner-facing communication." },
-  { value: "3", label: "Response tracks", note: "Civilian aid, health continuity, and trusted public briefings." },
-  { value: "4", label: "Coverage streams", note: "Campaigns, analysis, stories, and cross-border updates in one system." },
+  {
+    value: "1",
+    label: "Active campaign",
+    note: "A dedicated response environment with separate communication and reporting.",
+  },
+  {
+    value: "3",
+    label: "Core functions",
+    note: "Campaign delivery, newsroom reporting, and partner-facing briefings.",
+  },
+  {
+    value: "24/7",
+    label: "Editorial posture",
+    note: "Built for fast-moving situations where clarity matters more than volume.",
+  },
 ] as const;
 
 export const GLOBAL_HOME_PILLARS = [
   {
     title: "Campaign infrastructure",
     body:
-      "We build campaign environments that can hold partner briefings, designated-use explanations, response timelines, and public accountability without collapsing into generic fundraising language.",
+      "We build campaign environments that can hold designated-use explanations, partner briefings, timelines, and public accountability without falling into generic fundraising language.",
   },
   {
-    title: "Crisis reporting",
+    title: "Reporting that is usable",
     body:
-      "The newsroom layer turns health, education, and conflict developments into decision-useful reporting that partners, media, and supporters can actually work from.",
+      "The newsroom layer turns health, education, and conflict developments into material that supporters, journalists, and partners can actually work from.",
   },
   {
-    title: "Civilian-centered action",
+    title: "Civilian-centered response",
     body:
-      "Every campaign frame is designed around the practical needs of civilians, families, health access, and continuity of care rather than optics.",
+      "Every campaign frame is designed around families, health access, continuity of care, and practical civilian needs instead of optics.",
   },
 ] as const;
 
 export const GLOBAL_OPERATING_PRINCIPLES = [
-  "Campaign pages must explain what the work is, who the partners are, and what the public can reasonably expect.",
-  "Reporting should stay specific, current, and useable by supporters, partners, and journalists without inflated claims.",
-  "Each campaign needs its own narrative, its own accountability language, and its own operating logic.",
-  "Newsroom coverage should help people understand the situation, not just react emotionally to it.",
+  "Publish scope before scale so supporters know what the work is actually built to do.",
+  "Keep campaign reporting specific, current, and disciplined enough for partners and media to rely on.",
+  "Separate each campaign from the main site narrative so accountability and decision-making stay clear.",
+  "Use the newsroom to explain what changed, why it matters, and what response conditions now exist.",
 ] as const;
 
 export const GLOBAL_CAMPAIGNS = [
@@ -44,7 +56,7 @@ export const GLOBAL_CAMPAIGNS = [
     status: "Live",
     eyebrow: "Featured campaign",
     summary:
-      "A campaign environment for civilian-focused humanitarian response, partner briefings, and disciplined public communication related to Israel.",
+      "A dedicated campaign environment for civilian-focused humanitarian response, partner briefings, and disciplined public communication related to Israel.",
     highlights: [
       "civilian protection and continuity of care",
       "family support and trauma-aware response framing",
@@ -105,7 +117,7 @@ export const GLOBAL_CONTACT_CARDS = [
   {
     title: "Campaign Briefings",
     body:
-      "Request a structured campaign briefing for partnerships, designated funds, operating scope, or public launch planning.",
+      "Request a structured campaign briefing for partnerships, designated funds, operating scope, or launch planning.",
     href: "mailto:global@nivaranfoundation.org?subject=Global%20Nivaran%20Campaign%20Briefing",
     cta: "Email global team",
   },
