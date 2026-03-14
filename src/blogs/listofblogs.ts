@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-protesters-in-cuba-attack-communist-party-office-in-rare",
+    title: "Global Health and Education Watch: Protesters in Cuba attack Communist party office in rare",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-global-health-and-education-watch-protesters-in-cuba-attack-communist-party-offi.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unilateral-foreign-policy-s-shadow-on-global-health-and-education",
     title: "Unilateral Foreign Policy's Shadow on Global Health and Education",
     summary:
