@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-out-of-the-blue-how-the-colour-of-light",
+    title: "Global Health and Education Watch: Out of the blue? How the colour of light",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-global-health-and-education-watch-out-of-the-blue-how-the-colour-of-light.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "trump-administration-s-ncar-dismantling-threatens-global-health-education",
     title: "Trump Administration's NCAR Dismantling Threatens Global Health, Education",
     summary:
