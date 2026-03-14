@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "israeli-strike-kills-12-healthcare-workers-escalating-crisis-in-southern-lebanon",
+    title: "Israeli Strike Kills 12 Healthcare Workers, Escalating Crisis in Southern Lebanon",
+    summary:
+      "An Israeli strike in southern Lebanon killed 12 healthcare workers, bringing the total medical staff casualties in the region to 31 over 12 days. The attack on a primary healthcare facility in Burj Qalaouiyah has drawn widespread condemnation for violating international humanitarian laws.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-israeli-strike-kills-12-healthcare-workers-escalating-crisis-in-southern-lebanon.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "deadly-strike-on-lebanon-healthcare-facility-ignites-global-outcry",
     title: "Deadly Strike on Lebanon Healthcare Facility Ignites Global Outcry",
     summary:
