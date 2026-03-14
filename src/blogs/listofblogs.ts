@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unilateral-foreign-policy-s-shadow-on-global-health-and-education",
+    title: "Unilateral Foreign Policy's Shadow on Global Health and Education",
+    summary:
+      "A former US army general's characterization of a 'we should do because we can' foreign policy approach raises critical questions about global stability. This perspective has far-reaching consequences for health and education initiatives worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-unilateral-foreign-policy-s-shadow-on-global-health-and-education.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "antisemitic-attacks-target-european-jewish-schools-raising-global-education-safety-concerns",
     title: "Antisemitic Attacks Target European Jewish Schools, Raising Global Education Safety Concerns",
     summary:
