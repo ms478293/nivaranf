@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "investigation-launched-into-deadly-strike-on-iranian-school",
+    title: "Investigation Launched into Deadly Strike on Iranian School",
+    summary:
+      "An independent investigation has been initiated following a deadly strike on an Iranian school, announced by official sources. The incident has drawn international condemnation, highlighting the urgent need for accountability and protection of educational facilities in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-investigation-launched-into-deadly-strike-on-iranian-school.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-king-charles-concerned-about-alberta-separatist-movement-first-nation",
     title: "Global Health and Education Watch: King Charles concerned about Alberta separatist movement, First Nation",
     summary:
