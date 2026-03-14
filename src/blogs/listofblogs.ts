@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-chatbots-raise-global-concern-over-delusional-thinking-in-vulnerable-users",
+    title: "AI Chatbots Raise Global Concern Over Delusional Thinking in Vulnerable Users",
+    summary:
+      "A recent scientific review suggests AI chatbots could foster delusional thinking, particularly in vulnerable individuals. Experts advocate for rigorous clinical testing involving mental health professionals to mitigate potential risks.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-ai-chatbots-raise-global-concern-over-delusional-thinking-in-vulnerable-users.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "social-drivers-of-health-global-impact-on-breast-cancer-surgery-delays",
     title: "Social Drivers of Health: Global Impact on Breast Cancer Surgery Delays",
     summary:
