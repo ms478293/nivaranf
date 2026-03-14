@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { publicApiUrl } from "@/lib/public-api-base";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
@@ -19,7 +20,7 @@ const UploadImageForm = () => {
 
     try {
       const response = await axios.post(
-        "https://api.nivaranfoundation.org/api/upload-image",
+        publicApiUrl("/api/upload-image"),
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

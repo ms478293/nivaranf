@@ -1,4 +1,5 @@
 "use client";
+import { publicApiUrl } from "@/lib/public-api-base";
 import { impactReportSchema } from "@/validations/validations";
 import Cookies from "js-cookie";
 import { z } from "zod";
@@ -232,10 +233,7 @@ export const generatePDF = async (data: z.infer<typeof impactReportSchema>) => {
       {photographs && photographs.length > 0 ? (
         photographs.map((photo) => (
           <View key={photo.id} style={styles.imageContainer}>
-            <Image
-              src={`https://api.nivaranfoundation.org${photo.url}`}
-              style={styles.image}
-            />
+            <Image src={publicApiUrl(photo.url || "")} style={styles.image} />
             <Text style={styles.text}>{photo.label}</Text>
           </View>
         ))

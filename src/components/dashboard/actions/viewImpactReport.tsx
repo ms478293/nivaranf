@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
+import { publicApiUrl } from "@/lib/public-api-base";
 import {
   Table,
   TableBody,
@@ -258,7 +259,7 @@ const ImpactCard: FC<{ impact: ImpactReport }> = ({ impact }) => {
               {impact.Photo.map((photo) => (
                 <img
                   key={photo.id}
-                  src={`https://api.nivaranfoundation.org${photo.url}`} // Adjust according to actual structure
+                  src={publicApiUrl(photo.url)}
                   alt="Impact Photo"
                   className="object-fill lg:w-48 lg:h-48 m-2"
                 />

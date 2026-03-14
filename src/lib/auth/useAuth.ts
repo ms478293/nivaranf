@@ -4,6 +4,7 @@ import axios from "axios";
 import "dotenv";
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import { publicApiUrl } from "../public-api-base";
 
 // Helper function to refresh the token
 export const refreshToken = async () => {
@@ -15,7 +16,7 @@ export const refreshToken = async () => {
 
   try {
     const response = await axios.post(
-      "https://api.nivaranfoundation.org/auth/refresh-token",
+      publicApiUrl("/auth/refresh-token"),
       { refresh }
     );
     const { accessToken, refreshToken: newRefreshToken } = response.data;

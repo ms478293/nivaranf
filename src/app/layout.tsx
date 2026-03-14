@@ -11,6 +11,11 @@ import Script from "next/script";
 import { Poppins } from "next/font/google";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
+const PUBLIC_API_BASE_URL = (
+  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.nivaranfoundation.org"
+).replace(/\/+$/, "");
+const ENABLE_VERCEL_ANALYTICS =
+  process.env.NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS !== "false";
 const DEFAULT_TITLE = "Nivaran Foundation | Free Healthcare & Education in Nepal";
 const DEFAULT_DESCRIPTION =
   "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, and education support to underserved communities in Nepal.";
@@ -182,7 +187,7 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://ipapi.co" />
-        <link rel="dns-prefetch" href="https://api.nivaranfoundation.org" />
+        <link rel="dns-prefetch" href={PUBLIC_API_BASE_URL} />
         <script
           id="Website-schema"
           type="application/ld+json"
@@ -276,7 +281,7 @@ export default async function RootLayout({
           <Toaster closeButton richColors theme="light" />
           {children}
           <CookieConsent />
-          <Analytics />
+          {ENABLE_VERCEL_ANALYTICS ? <Analytics /> : null}
         </Providers>
       </body>
     </html>

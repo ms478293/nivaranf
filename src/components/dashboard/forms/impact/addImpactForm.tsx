@@ -29,6 +29,7 @@ import { getAllFinsByFoundation, getFinsById } from "@/lib/api/finApi/api";
 import { getFoundationByName } from "@/lib/api/foundationApi/api";
 import { createImpact } from "@/lib/api/impactApi/api";
 import { getProgramById } from "@/lib/api/programApi/api";
+import { publicApiUrl } from "@/lib/public-api-base";
 import { cn } from "@/lib/utils";
 import { financialSchema, impactSchema } from "@/validations/validations";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -129,7 +130,7 @@ export function AddImpactForm() {
 
     try {
       const response = await axios.post(
-        "https://api.nivaranfoundation.org/api/upload-image",
+        publicApiUrl("/api/upload-image"),
         formData,
         {
           headers: {
@@ -505,7 +506,7 @@ export function AddImpactForm() {
           {photographs.map((photo, index) => (
             <div key={photo.id || index} className="flex items-center gap-4">
               <img
-                src={`https://api.nivaranfoundation.org:8000${photo.url}`}
+                src={publicApiUrl(photo.url)}
                 alt={photo.label}
                 className="w-16 h-16 object-cover"
               />

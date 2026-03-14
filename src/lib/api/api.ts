@@ -1,10 +1,11 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 import { refreshToken } from "../auth/useAuth";
+import { PUBLIC_API_BASE_URL } from "../public-api-base";
 
 // Create Axios instance
 export const api = axios.create({
-  baseURL: "https://api.nivaranfoundation.org", // Set your API base URL
+  baseURL: PUBLIC_API_BASE_URL,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
