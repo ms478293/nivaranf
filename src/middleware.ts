@@ -50,25 +50,46 @@ export function middleware(req: NextRequest) {
 
   const host = req.headers.get("host") || "";
   const allowedDomains = ["localhost", "nivaranfoundation.org", "vercel.app"];
+  const knownSubdomains = subdomains.map((item) => item.subdomain);
 
   const isAllowedDomain = allowedDomains.some((domain) =>
     host.includes(domain)
   );
   const subdomain = host.split(".")[0];
+  const isPreviewOrLocalHost =
+    host.includes("vercel.app") ||
+    host.startsWith("localhost") ||
+    host.startsWith("127.0.0.1");
+  const isKnownSubdomainHost =
+    isAllowedDomain &&
+    knownSubdomains.includes(subdomain) &&
+    !isPreviewOrLocalHost &&
+    !host.startsWith("nivaranfoundation.org");
 
   // Check if the subdomain is valid and not the main domain
   // Skip subdomain rewrite for main domain, localhost, and vercel preview URLs
-  if (
-    isAllowedDomain &&
-    subdomains.some((d) => d.subdomain === subdomain) &&
-    !host.includes("vercel.app") &&
-    !host.startsWith("localhost") &&
-    !host.startsWith("nivaranfoundation.org")
-  ) {
+  if (isKnownSubdomainHost) {
+    const subdomainPath = `/${subdomain}`;
+
+    if (pathname === subdomainPath || pathname.startsWith(`${subdomainPath}/`)) {
+      return NextResponse.next();
+    }
+
     const url = req.nextUrl.clone();
     // Rewrite based on subdomain and path
-    url.pathname = `/${subdomain}${url.pathname}`;
+    url.pathname = `${subdomainPath}${url.pathname}`;
     return NextResponse.rewrite(url);
+  }
+
+  const isDirectSubdomainPath = knownSubdomains.some(
+    (name) => pathname === `/${name}` || pathname.startsWith(`/${name}/`)
+  );
+
+  if (isDirectSubdomainPath && !isPreviewOrLocalHost) {
+    const redirectUrl = req.nextUrl.clone();
+    redirectUrl.pathname = "/";
+    redirectUrl.search = "";
+    return NextResponse.redirect(redirectUrl);
   }
 
   // Default behavior
