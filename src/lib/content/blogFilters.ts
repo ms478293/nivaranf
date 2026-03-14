@@ -40,14 +40,25 @@ const GLOBAL_TERMS = [
   "sri lanka",
 ];
 
-type BlogCandidate = Pick<blogListType, "title" | "summary" | "slug" | "author">;
+type BlogCandidate = Pick<blogListType, "title" | "summary" | "slug" | "author"> & {
+  location?: string | null;
+  keywords?: string[] | string | null;
+};
 
 function includesAny(text: string, terms: string[]) {
   return terms.some((term) => text.includes(term));
 }
 
+function normalizeKeywords(keywords?: string[] | string | null) {
+  if (Array.isArray(keywords)) {
+    return keywords.join(" ");
+  }
+
+  return keywords || "";
+}
+
 function toHaystack(blog: BlogCandidate) {
-  return `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""}`.toLowerCase();
+  return `${blog.title} ${blog.summary} ${blog.slug} ${blog.author ?? ""} ${blog.location ?? ""} ${normalizeKeywords(blog.keywords)}`.toLowerCase();
 }
 
 export function isGlobalNewsCandidate(blog: BlogCandidate) {

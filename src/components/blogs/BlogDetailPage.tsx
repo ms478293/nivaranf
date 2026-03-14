@@ -5,6 +5,8 @@ import {
   getBlogTypeBySlug,
   type BlogRouteSegment,
 } from "@/lib/blog-routes";
+import { getSiteVariantConfig, type SiteVariant } from "@/lib/site-variant";
+import { getSubdomainPathPrefix, withSubdomainPrefix } from "@/lib/subdomain-prefix";
 import {
   buildCanonicalPath,
   getRouteSegmentForContentType,
@@ -22,12 +24,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
+import { cache } from "react";
 import ArticleReadingProgress from "./ArticleReadingProgress";
 import ArticleShareButtons from "./ArticleShareButtons";
 import styles from "./article-template.module.css";
 import { mdxComponents } from "./mdxComponents";
+import { isNonNepalCandidate } from "@/lib/content/blogFilters";
 
-const SITE_URL = "https://www.nivaranfoundation.org";
 const STATIC_BLOG_DIRECTORIES = [
   path.join(process.cwd(), "src/blogs/global"),
   path.join(process.cwd(), "src/blogs/usa"),
@@ -66,6 +69,12 @@ type BlogFrontmatter = {
   authorBio?: string;
 };
 
+type StaticBlogEntry = {
+  slug: string;
+  content: string;
+  data: BlogFrontmatter;
+};
+
 const TYPE_BADGE_LABELS: Record<blogListType["type"], string> = {
   Story: "Field Story",
   Collaboration: "Collaboration",
@@ -86,18 +95,36 @@ const TYPE_BADGE_CLASSES: Record<blogListType["type"], string> = {
   Article: styles.typeArticle,
 };
 
-function toAbsoluteWebsiteUrl(value?: string) {
+function toAbsoluteWebsiteUrl(siteUrl: string, value?: string) {
   if (!value) return "";
   if (value.startsWith("http://") || value.startsWith("https://")) return value;
   const normalized = value.startsWith("/") ? value : `/${value}`;
-  return `${SITE_URL}${normalized}`;
+  return `${siteUrl}${normalized}`;
 }
 
-function ensureBrandInTitle(rawTitle?: string) {
+function ensureBrandInTitle(
+  rawTitle: string | undefined,
+  siteName: string,
+  fallbackTitle: string,
+) {
   const baseTitle = (rawTitle || "").trim();
-  if (!baseTitle) return "Nivaran Foundation | Rural Healthcare in Nepal";
-  if (baseTitle.toLowerCase().includes("nivaran foundation")) return baseTitle;
-  return `${baseTitle} | Nivaran Foundation`;
+  if (!baseTitle) return fallbackTitle;
+  if (baseTitle.toLowerCase().includes(siteName.toLowerCase())) return baseTitle;
+  return `${baseTitle} | ${siteName}`;
+}
+
+function buildMetadataTitle(
+  rawTitle: string | undefined,
+  siteVariant: SiteVariant,
+  siteName: string,
+  fallbackTitle: string,
+) {
+  if (siteVariant === "main") {
+    return ensureBrandInTitle(rawTitle, siteName, fallbackTitle);
+  }
+
+  const title = (rawTitle || "").trim();
+  return title || fallbackTitle;
 }
 
 function cleanDescription(rawDescription?: string) {
@@ -165,7 +192,16 @@ function calculateReadTimeMinutes(content: string) {
   return Math.max(1, Math.round(words / 220));
 }
 
-function getDefaultDonateLine(articleType: blogListType["type"]) {
+function getDefaultDonateLine(
+  articleType: blogListType["type"],
+  siteVariant: SiteVariant,
+) {
+  const siteConfig = getSiteVariantConfig(siteVariant);
+
+  if (siteVariant !== "main") {
+    return siteConfig.articleDefaultDonateLine;
+  }
+
   if (articleType === "Story") {
     return "This story reflects real families, real journeys, and real barriers. Your support helps our teams show up where care is hardest to reach.";
   }
@@ -175,8 +211,8 @@ function getDefaultDonateLine(articleType: blogListType["type"]) {
   return "Distance is the disease. Your support helps us bring healthcare and education to communities where access still depends on geography.";
 }
 
-function getDefaultAuthorBio() {
-  return "Nivaran Foundation runs mobile health and education programs in Nepal's rural regions, where the nearest doctor or classroom can be hours away.";
+function getDefaultAuthorBio(siteVariant: SiteVariant) {
+  return getSiteVariantConfig(siteVariant).articleDefaultAuthorBio;
 }
 
 function getDisplayTypeFromContentType(contentType: string): blogListType["type"] {
@@ -185,37 +221,31 @@ function getDisplayTypeFromContentType(contentType: string): blogListType["type"
   return "Article";
 }
 
-async function getBlogFile(slug: string) {
-  for (const directory of STATIC_BLOG_DIRECTORIES) {
-    const blogPath = path.join(directory, `${slug}.mdx`);
-
-    try {
-      const fileContents = await fs.readFile(blogPath, "utf8");
-      const parsed = matter(fileContents);
-
-      return {
-        content: parsed.content,
-        data: parsed.data as BlogFrontmatter,
-      };
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
-        throw error;
-      }
-    }
-  }
-
-  throw new Error(`Missing static blog file for slug "${slug}"`);
-}
-
-async function getAllGlobalBlogSlugs() {
-  const slugSet = new Set<string>();
+const getAllStaticBlogEntries = cache(async (): Promise<StaticBlogEntry[]> => {
+  const entries: StaticBlogEntry[] = [];
+  const seen = new Set<string>();
 
   for (const directory of STATIC_BLOG_DIRECTORIES) {
     try {
       const files = await fs.readdir(directory);
-      files
-        .filter((file) => file.endsWith(".mdx"))
-        .forEach((file) => slugSet.add(file.replace(/\.mdx$/, "")));
+
+      for (const file of files) {
+        if (!file.endsWith(".mdx")) continue;
+
+        const slug = file.replace(/\.mdx$/, "");
+        if (seen.has(slug)) continue;
+
+        const blogPath = path.join(directory, file);
+        const fileContents = await fs.readFile(blogPath, "utf8");
+        const parsed = matter(fileContents);
+
+        seen.add(slug);
+        entries.push({
+          slug,
+          content: parsed.content,
+          data: parsed.data as BlogFrontmatter,
+        });
+      }
     } catch (error) {
       if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
         throw error;
@@ -223,7 +253,44 @@ async function getAllGlobalBlogSlugs() {
     }
   }
 
-  return Array.from(slugSet);
+  return entries;
+});
+
+const getBlogFile = cache(async (slug: string) => {
+  const entries = await getAllStaticBlogEntries();
+  const match = entries.find((entry) => entry.slug === slug);
+
+  if (!match) {
+    throw new Error(`Missing static blog file for slug "${slug}"`);
+  }
+
+  return {
+    content: match.content,
+    data: match.data,
+  };
+});
+
+function isVisibleOnSiteVariant(
+  siteVariant: SiteVariant,
+  candidate: {
+    title?: string;
+    summary?: string;
+    slug: string;
+    author?: string;
+    location?: string | null;
+    keywords?: string[] | string | null;
+  },
+) {
+  if (siteVariant !== "global") return true;
+
+  return isNonNepalCandidate({
+    title: candidate.title || "",
+    summary: candidate.summary || "",
+    slug: candidate.slug,
+    author: candidate.author || "",
+    location: candidate.location,
+    keywords: candidate.keywords,
+  });
 }
 
 function getSegmentForSlug(slug: string): BlogRouteSegment {
@@ -232,15 +299,29 @@ function getSegmentForSlug(slug: string): BlogRouteSegment {
   return getBlogRouteSegmentByType(blogType);
 }
 
-export async function getStaticParamsForSegment(segment: BlogRouteSegment) {
+export async function getStaticParamsForSegment(
+  segment: BlogRouteSegment,
+  options: { siteVariant?: SiteVariant } = {},
+) {
   try {
-    const allSlugs = await getAllGlobalBlogSlugs();
-    const staticParams = allSlugs
-      .filter((slug) => getSegmentForSlug(slug) === segment)
-      .map((slug) => ({ slug }));
-    const portalParams = (await getPublishedBlogItemsBySegment(segment)).map(
-      (blog) => ({ slug: blog.slug })
-    );
+    const siteVariant = options.siteVariant || "main";
+    const staticEntries = await getAllStaticBlogEntries();
+    const staticParams = staticEntries
+      .filter((entry) => getSegmentForSlug(entry.slug) === segment)
+      .filter((entry) =>
+        isVisibleOnSiteVariant(siteVariant, {
+          title: entry.data.title,
+          summary: entry.data.subtitle,
+          slug: entry.slug,
+          author: entry.data.author,
+          location: entry.data.location,
+          keywords: entry.data.keywords,
+        }),
+      )
+      .map((entry) => ({ slug: entry.slug }));
+    const portalParams = (await getPublishedBlogItemsBySegment(segment))
+      .filter((blog) => isVisibleOnSiteVariant(siteVariant, blog))
+      .map((blog) => ({ slug: blog.slug }));
 
     const uniqueSlugs = Array.from(
       new Set([...staticParams, ...portalParams].map((entry) => entry.slug))
@@ -252,30 +333,65 @@ export async function getStaticParamsForSegment(segment: BlogRouteSegment) {
   }
 }
 
-export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
+export async function getMetadataForBlogSlug(
+  slug: string,
+  options: { siteVariant?: SiteVariant } = {},
+): Promise<Metadata> {
   try {
+    const siteVariant = options.siteVariant || "main";
+    const siteConfig = getSiteVariantConfig(siteVariant);
     const listEntry = globalBlogs.find((blog) => blog.slug === slug);
     const dynamicPost = listEntry
       ? null
       : await getPublishedContentPostBySlug(slug);
     if (dynamicPost) {
-      const title = ensureBrandInTitle(dynamicPost.seo_title || dynamicPost.title);
+      if (
+        !isVisibleOnSiteVariant(siteVariant, {
+          title: dynamicPost.title,
+          summary: dynamicPost.excerpt,
+          slug: dynamicPost.slug,
+          author: dynamicPost.author,
+          location: dynamicPost.location,
+          keywords: dynamicPost.keywords,
+        })
+      ) {
+        return {
+          title: siteConfig.articleFallbackTitle,
+          description: siteConfig.articleFallbackDescription,
+          robots: {
+            index: false,
+            follow: false,
+          },
+        };
+      }
+
+      const title = buildMetadataTitle(
+        dynamicPost.seo_title || dynamicPost.title,
+        siteVariant,
+        siteConfig.siteName,
+        siteConfig.articleFallbackTitle,
+      );
       const description = pickBestDescription(
         dynamicPost.seo_description ||
           dynamicPost.excerpt,
         buildExcerptFromContent(dynamicPost.body),
-        "Read the latest stories and updates from Nivaran Foundation."
+        siteConfig.articleFallbackDescription
       );
       const canonical =
-        dynamicPost.canonical_url ||
-        `${SITE_URL}${buildCanonicalPath(
-          dynamicPost.content_type,
-          dynamicPost.slug
-        )}`;
-      const imageUrl = toAbsoluteWebsiteUrl(dynamicPost.cover_image_url || "");
+        siteVariant === "main" && dynamicPost.canonical_url
+          ? dynamicPost.canonical_url
+          : `${siteConfig.siteUrl}${buildCanonicalPath(
+              dynamicPost.content_type,
+              dynamicPost.slug
+            )}`;
+      const imageUrl = toAbsoluteWebsiteUrl(
+        siteConfig.siteUrl,
+        dynamicPost.cover_image_url || "",
+      );
       const publishedTime = dynamicPost.published_at || undefined;
       const modifiedTime = dynamicPost.updated_at || undefined;
-      const authorName = dynamicPost.author || "Nivaran Foundation";
+      const authorName =
+        dynamicPost.author || siteConfig.articleAuthorFallback;
 
       return {
         title,
@@ -286,7 +402,7 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
           canonical,
         },
         openGraph: {
-          siteName: "Nivaran Foundation",
+          siteName: siteConfig.siteName,
           title,
           description,
           url: canonical,
@@ -297,13 +413,13 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
           section: dynamicPost.content_type,
           images: imageUrl
             ? [
-                {
-                  url: imageUrl,
-                  width: 1200,
-                  height: 630,
-                  alt: dynamicPost.title || "Nivaran Foundation article cover image",
-                },
-              ]
+              {
+                url: imageUrl,
+                width: 1200,
+                height: 630,
+                alt: dynamicPost.title || `${siteConfig.siteName} article cover image`,
+              },
+            ]
             : undefined,
         },
         twitter: {
@@ -319,20 +435,45 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
 
     const { data, content } = await getBlogFile(slug);
 
-    const title = ensureBrandInTitle(data.title || listEntry?.title || "Untitled Blog");
+    if (
+      !isVisibleOnSiteVariant(siteVariant, {
+        title: data.title || listEntry?.title,
+        summary: data.subtitle || listEntry?.summary,
+        slug,
+        author: data.author || listEntry?.author,
+        location: data.location,
+        keywords: data.keywords,
+      })
+    ) {
+      return {
+        title: siteConfig.articleFallbackTitle,
+        description: siteConfig.articleFallbackDescription,
+        robots: {
+          index: false,
+          follow: false,
+        },
+      };
+    }
+
+    const title = buildMetadataTitle(
+      data.title || listEntry?.title || "Untitled Blog",
+      siteVariant,
+      siteConfig.siteName,
+      siteConfig.articleFallbackTitle,
+    );
     const description = pickBestDescription(
       data.subtitle,
       listEntry?.summary,
       buildExcerptFromContent(content),
-      "Read the latest stories and updates from Nivaran Foundation."
+      siteConfig.articleFallbackDescription
     );
     const canonicalPath = listEntry
       ? getBlogPath(listEntry)
       : `/articles/${slug}`;
-    const canonical = `${SITE_URL}${canonicalPath}`;
-    const imageUrl = toAbsoluteWebsiteUrl(data.mainImage);
+    const canonical = `${siteConfig.siteUrl}${canonicalPath}`;
+    const imageUrl = toAbsoluteWebsiteUrl(siteConfig.siteUrl, data.mainImage);
     const publishedTime = data.date || listEntry?.date;
-    const authorName = data.author || "Nivaran Foundation";
+    const authorName = data.author || siteConfig.articleAuthorFallback;
 
     return {
       title,
@@ -343,7 +484,7 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
         canonical,
       },
       openGraph: {
-        siteName: "Nivaran Foundation",
+        siteName: siteConfig.siteName,
         title,
         description,
         url: canonical,
@@ -372,25 +513,32 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
     };
   } catch (error) {
     console.error("Error in getMetadataForBlogSlug:", error);
+    const siteVariant = options.siteVariant || "main";
+    const siteConfig = getSiteVariantConfig(siteVariant);
     const listEntry = globalBlogs.find((blog) => blog.slug === slug);
     if (listEntry) {
-      const title = ensureBrandInTitle(listEntry.title);
+      const title = buildMetadataTitle(
+        listEntry.title,
+        siteVariant,
+        siteConfig.siteName,
+        siteConfig.articleFallbackTitle,
+      );
       const description = pickBestDescription(
         listEntry.summary,
-        "Read the latest stories and updates from Nivaran Foundation."
+        siteConfig.articleFallbackDescription
       );
 
       return {
         title,
         description,
         alternates: {
-          canonical: `${SITE_URL}${getBlogPath(listEntry)}`,
+          canonical: `${siteConfig.siteUrl}${getBlogPath(listEntry)}`,
         },
       };
     }
     return {
-      title: "Untitled Blog | Nivaran Foundation",
-      description: "Read the latest stories and updates from Nivaran Foundation.",
+      title: siteConfig.articleFallbackTitle,
+      description: siteConfig.articleFallbackDescription,
     };
   }
 }
@@ -398,13 +546,16 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
 export async function renderBlogDetailPage({
   slug,
   segment,
+  siteVariant = "main",
 }: {
   slug: string;
   segment: BlogRouteSegment;
+  siteVariant?: SiteVariant;
 }) {
+  const siteConfig = getSiteVariantConfig(siteVariant);
   const listEntry = globalBlogs.find((blog) => blog.slug === slug);
   const dynamicPost = listEntry
-    ? null
+      ? null
     : await getPublishedContentPostBySlug(slug);
   let content = "";
   let data: BlogFrontmatter = {};
@@ -412,6 +563,12 @@ export async function renderBlogDetailPage({
   let resolvedSegment: BlogRouteSegment = getSegmentForSlug(slug);
   let resolvedPath = listEntry ? getBlogPath(listEntry) : `/articles/${slug}`;
   let readTimeMinutes = 1;
+  const sitePathPrefix =
+    siteVariant === "global"
+      ? await getSubdomainPathPrefix("global")
+      : siteVariant === "usa"
+        ? await getSubdomainPathPrefix("usa")
+        : "";
 
   if (dynamicPost) {
     content = dynamicPost.body;
@@ -445,17 +602,34 @@ export async function renderBlogDetailPage({
     }
   }
 
+  if (
+    !isVisibleOnSiteVariant(siteVariant, {
+      title: data.title || listEntry?.title,
+      summary: data.subtitle || listEntry?.summary,
+      slug,
+      author: data.author || listEntry?.author,
+      location: data.location,
+      keywords: data.keywords,
+    })
+  ) {
+    notFound();
+  }
+
   if (resolvedSegment !== segment) {
-    permanentRedirect(resolvedPath);
+    permanentRedirect(withSubdomainPrefix(sitePathPrefix, resolvedPath));
   }
 
   const title = data.title || listEntry?.title || "Untitled Blog";
   const subtitle = data.subtitle || listEntry?.summary || "";
-  const author = data.author || "Nivaran Foundation News Desk";
+  const author = data.author || siteConfig.articleAuthorFallback;
   const dateLabel = formatDate(data.date || listEntry?.date);
   const readTimeLabel = `${readTimeMinutes} min read`;
-  const location = data.location || "Nepal";
-  const articleUrl = `${SITE_URL}${resolvedPath}`;
+  const location = data.location || siteConfig.articleDefaultLocation;
+  const articleUrl = `${siteConfig.siteUrl}${resolvedPath}`;
+  const ctaHref = withSubdomainPrefix(
+    sitePathPrefix,
+    siteConfig.articleCtaHref,
+  );
 
   // Generate Article JSON-LD schema
   const articleSchema = {
@@ -463,18 +637,20 @@ export async function renderBlogDetailPage({
     "@type": "BlogPosting",
     headline: title,
     description: subtitle,
-    image: data.mainImage ? toAbsoluteWebsiteUrl(data.mainImage) : undefined,
+    image: data.mainImage
+      ? toAbsoluteWebsiteUrl(siteConfig.siteUrl, data.mainImage)
+      : undefined,
     author: {
       "@type": "Organization",
-      name: author || "Nivaran Foundation",
-      url: SITE_URL,
+      name: author || siteConfig.organizationName,
+      url: siteConfig.siteUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "Nivaran Foundation",
+      name: siteConfig.organizationName,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/NivaranLogo.svg`,
+        url: `${siteConfig.siteUrl}/NivaranLogo.svg`,
       },
     },
     datePublished: formatDateISO(data.date || listEntry?.date),
@@ -487,12 +663,14 @@ export async function renderBlogDetailPage({
 
   const staticRelatedBlogs = [...globalBlogs]
     .filter((blog) => blog.slug !== slug)
+    .filter((blog) => isVisibleOnSiteVariant(siteVariant, blog))
     .sort((a, b) => {
       const aSameType = a.type === resolvedType ? 1 : 0;
       const bSameType = b.type === resolvedType ? 1 : 0;
       return bSameType - aSameType;
     });
-  const dynamicRelatedBlogs = await getPublishedBlogItemsBySegment(resolvedSegment);
+  const dynamicRelatedBlogs = (await getPublishedBlogItemsBySegment(resolvedSegment))
+    .filter((blog) => isVisibleOnSiteVariant(siteVariant, blog));
 
   const relatedBySlug = new Map<string, blogListType>();
   staticRelatedBlogs.forEach((blog) => relatedBySlug.set(blog.slug, blog));
@@ -582,9 +760,9 @@ export async function renderBlogDetailPage({
           </div>
 
           <section className={styles.donateSection}>
-            <p>{data.donateLine || getDefaultDonateLine(resolvedType)}</p>
-            <Link href="/donate" className={styles.donateButton}>
-              Support this work
+            <p>{data.donateLine || getDefaultDonateLine(resolvedType, siteVariant)}</p>
+            <Link href={ctaHref} className={styles.donateButton}>
+              {siteConfig.articleCtaLabel}
             </Link>
           </section>
 
@@ -601,7 +779,7 @@ export async function renderBlogDetailPage({
             <div>
               <div className={styles.authorName}>{author}</div>
               <p className={styles.authorBio}>
-                {data.authorBio || getDefaultAuthorBio()}
+                {data.authorBio || getDefaultAuthorBio(siteVariant)}
               </p>
               <div className={styles.authorLinks}>
                 <a
@@ -643,7 +821,10 @@ export async function renderBlogDetailPage({
                 {relatedBlogs.map((relatedBlog) => (
                   <Link
                     className={styles.relatedCard}
-                    href={getBlogPath(relatedBlog)}
+                    href={withSubdomainPrefix(
+                      sitePathPrefix,
+                      getBlogPath(relatedBlog),
+                    )}
                     key={relatedBlog.slug}
                   >
                     <span className={styles.relatedCardType}>

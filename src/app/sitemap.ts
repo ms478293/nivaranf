@@ -5,6 +5,7 @@ import { getBlogFeed } from "@/lib/content/posts";
 import type { MetadataRoute } from "next";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
+const GLOBAL_SITE_URL = "https://global.nivaranfoundation.org";
 
 const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; isKeyPage?: boolean }> = [
   { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
@@ -53,6 +54,10 @@ function toAbsoluteUrl(path: string) {
   return `${SITE_URL}${path}`;
 }
 
+function toGlobalAbsoluteUrl(path: string) {
+  return `${GLOBAL_SITE_URL}${path}`;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const keyPageLastModified = new Date().toISOString();
@@ -62,6 +67,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: route.isKeyPage ? keyPageLastModified : now,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
+  }));
+
+  const globalEntries: MetadataRoute.Sitemap = [
+    "/",
+    "/campaigns",
+    "/campaigns/israel",
+    "/news",
+    "/stories",
+    "/articles",
+    "/contact",
+  ].map((path) => ({
+    url: toGlobalAbsoluteUrl(path),
+    lastModified: keyPageLastModified,
+    changeFrequency: path === "/" || path === "/news" ? "daily" : "weekly",
+    priority: path === "/" ? 0.9 : 0.7,
   }));
 
   const staticBlogEntries: MetadataRoute.Sitemap = globalBlogs.map((blog) => ({
@@ -105,6 +125,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   [
     ...staticEntries,
+    ...globalEntries,
     ...provinceCoverageEntries,
     ...districtCoverageEntries,
     ...staticBlogEntries,

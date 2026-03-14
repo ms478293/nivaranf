@@ -1,85 +1,35 @@
+import {
+  ISRAEL_CAMPAIGN_FAQ,
+  ISRAEL_CAMPAIGN_GUARDRAILS,
+  ISRAEL_CAMPAIGN_PILLARS,
+} from "@/content/global-site";
+import { getSubdomainPathPrefix, withSubdomainPrefix } from "@/lib/subdomain-prefix";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSubdomainPathPrefix, withSubdomainPrefix } from "@/lib/subdomain-prefix";
 
 export const metadata: Metadata = {
   title: "Israel Humanitarian Response",
   description:
-    "A separate Nivaran Global campaign page for humanitarian response and family-centered relief related to Israel, outside the Nepal program site.",
+    "A dedicated campaign space for civilian-focused humanitarian response, partner briefings, and accountable public communication related to Israel.",
   alternates: {
     canonical: "https://global.nivaranfoundation.org/campaigns/israel",
   },
   openGraph: {
-    title: "Israel Humanitarian Response | Nivaran Global",
+    title: "Israel Humanitarian Response | Global Nivaran",
     description:
-      "A distinct humanitarian campaign page, kept separate from Nepal health and education programs.",
+      "A dedicated campaign space for civilian-focused humanitarian response, partner briefings, and accountable public communication related to Israel.",
     url: "https://global.nivaranfoundation.org/campaigns/israel",
     type: "website",
-    siteName: "Nivaran Global",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Israel Humanitarian Response | Nivaran Global",
-    description:
-      "A separate humanitarian campaign page under Nivaran Global.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
+    siteName: "Global Nivaran",
   },
 };
-
-const focusAreas = [
-  {
-    title: "Emergency health access",
-    body:
-      "Short-horizon support for urgent medical needs, essential supplies, and practical coordination with credible local or international partners.",
-  },
-  {
-    title: "Children and families",
-    body:
-      "Trauma-informed family support, child wellbeing, and community-level protection concerns are treated as core humanitarian priorities, not side issues.",
-  },
-  {
-    title: "Accountable campaign reporting",
-    body:
-      "This campaign is meant to publish its own updates, designated-use logic, partner summaries, and public communication without borrowing Nepal program metrics.",
-  },
-];
-
-const guardrails = [
-  "This campaign lives on a separate subdomain so the Nepal site stays focused on Nepal programs.",
-  "Public updates, storytelling, and partner communication are handled under Nivaran Global rather than under Sanjeevani or Nepal program pages.",
-  "Before public fundraising scales, designated fund handling and reporting rules should be published clearly for this campaign.",
-];
-
-const faq = [
-  {
-    question: "Why is this campaign on a separate subdomain?",
-    answer:
-      "Because Nivaran's Nepal health and education work should remain distinct from global humanitarian campaigns. The separate subdomain keeps public messaging, reporting, and campaign identity cleaner.",
-  },
-  {
-    question: "What is the current focus of this page?",
-    answer:
-      "This page establishes the structure for a humanitarian response campaign related to Israel, with emphasis on civilian needs, family support, practical partnerships, and separate public accountability.",
-  },
-  {
-    question: "Will this use Nepal program metrics or fundraising language?",
-    answer:
-      "No. The purpose of Nivaran Global is to avoid mixing Nepal program storytelling, metrics, or donor claims into separate global causes.",
-  },
-  {
-    question: "How should partners engage right now?",
-    answer:
-      "The best next step is a direct partnership or campaign briefing request so scope, operating model, and reporting expectations are defined before scale.",
-  },
-];
 
 export default async function IsraelCampaignPage() {
   const prefix = await getSubdomainPathPrefix("global");
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faq.map((item) => ({
+    mainEntity: ISRAEL_CAMPAIGN_FAQ.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -96,133 +46,129 @@ export default async function IsraelCampaignPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <section className="px-4 py-10 md:py-14">
-        <div className="mx-auto max-w-[1320px] rounded-[36px] border border-slate-200 bg-[radial-gradient(circle_at_top_left,rgba(115,199,208,0.18),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(242,162,134,0.22),transparent_34%),linear-gradient(145deg,#ffffff_0%,#fff8f2_100%)] p-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] md:p-12">
-          <p className="inline-flex rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-primary-500">
-            Israel Campaign
-          </p>
-          <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[0.98] text-slate-900 md:text-6xl">
-            Israel Humanitarian Response
-          </h1>
-          <p className="mt-5 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
-            This page is the separate home for a humanitarian campaign related
-            to Israel. It exists under Nivaran Global so campaign identity,
-            partner communication, and future reporting stay distinct from the
-            Nepal mission site.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="mailto:partnerships@nivaranfoundation.org?subject=Nivaran%20Global%20%7C%20Israel%20Campaign%20Briefing"
-              className="rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-700"
-            >
-              Request campaign briefing
-            </Link>
-            <Link
-              href="https://www.nivaranfoundation.org/contact-us"
-              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
-            >
-              Contact partnerships team
-            </Link>
+      <section className="px-4 pt-10 md:px-6 md:pt-14">
+        <div className="mx-auto grid max-w-[1380px] gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="overflow-hidden rounded-[38px] border border-white/70 bg-[radial-gradient(circle_at_top_left,rgba(115,199,208,0.18),transparent_30%),radial-gradient(circle_at_88%_18%,rgba(242,162,134,0.24),transparent_34%),linear-gradient(140deg,#ffffff_0%,#fff6ef_100%)] px-6 py-8 shadow-[0_24px_60px_rgba(15,23,42,0.08)] md:px-10 md:py-12">
+            <p className="inline-flex rounded-full border border-slate-200 bg-white/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.34em] text-slate-600">
+              Featured campaign
+            </p>
+            <h1 className="mt-6 max-w-4xl font-[family:var(--global-font-display)] text-5xl leading-[0.9] text-slate-950 md:text-7xl">
+              Israel Humanitarian Response
+            </h1>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-slate-600 md:text-lg">
+              This campaign space is built for civilian-focused response planning, clear partner communication, and public accountability that can hold up under scrutiny. The emphasis is on practical response architecture, not generic messaging.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="mailto:global@nivaranfoundation.org?subject=Israel%20Campaign%20Briefing"
+                className="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800"
+              >
+                Request campaign briefing
+              </Link>
+              <Link
+                href={withSubdomainPrefix(prefix, "/contact")}
+                className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-950"
+              >
+                Contact operations
+              </Link>
+            </div>
           </div>
+
+          <aside className="rounded-[34px] border border-slate-200/80 bg-slate-950 p-6 text-white shadow-[0_24px_60px_rgba(15,23,42,0.18)] md:p-8">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-cyan-300">Campaign frame</p>
+            <div className="mt-6 space-y-4">
+              <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Current mode</p>
+                <p className="mt-2 text-lg font-semibold">Briefing and infrastructure</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Priority</p>
+                <p className="mt-2 text-lg font-semibold">Civilian aid and health continuity</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-400">Required discipline</p>
+                <p className="mt-2 text-lg font-semibold">Designated-use clarity and public reporting</p>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <section className="px-4 py-6">
-        <div className="mx-auto grid max-w-[1320px] gap-6 md:grid-cols-3">
-          {focusAreas.map((item) => (
+      <section className="px-4 py-8 md:px-6">
+        <div className="mx-auto grid max-w-[1380px] gap-6 md:grid-cols-3">
+          {ISRAEL_CAMPAIGN_PILLARS.map((item) => (
             <article
               key={item.title}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_12px_35px_rgba(15,23,42,0.05)]"
+              className="rounded-[30px] border border-slate-200/80 bg-white p-7 shadow-[0_14px_36px_rgba(15,23,42,0.06)]"
             >
-              <h2 className="text-2xl font-semibold text-slate-900">
-                {item.title}
-              </h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                {item.body}
-              </p>
+              <h2 className="text-2xl font-semibold text-slate-950">{item.title}</h2>
+              <p className="mt-4 text-sm leading-8 text-slate-600">{item.body}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="px-4 py-6">
-        <div className="mx-auto grid max-w-[1320px] gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_12px_35px_rgba(15,23,42,0.05)]">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary-500">
-              Why this setup matters
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold text-slate-900">
-              The point is separation, clarity, and cleaner public trust
+      <section className="px-4 py-4 md:px-6">
+        <div className="mx-auto grid max-w-[1380px] gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="rounded-[32px] border border-slate-200/80 bg-white px-6 py-8 shadow-[0_16px_42px_rgba(15,23,42,0.06)] md:px-8">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-slate-500">Why this campaign page exists</p>
+            <h2 className="mt-4 font-[family:var(--global-font-display)] text-4xl leading-none text-slate-950">
+              Serious campaigns need their own operating surface.
             </h2>
-            <div className="mt-5 space-y-4 text-sm leading-8 text-slate-600">
+            <div className="mt-6 space-y-4 text-sm leading-8 text-slate-600">
               <p>
-                You were right to avoid putting this inside the Nepal site.
-                A campaign related to Israel should not sit beside Sanjeevani,
-                Nepal coverage claims, or Nepal-specific donor messaging.
+                This page exists to hold the pieces that normally get blurred together: response framing, partner communication, public trust, and the mechanics of how the work will be explained.
               </p>
               <p>
-                This subdomain gives us a cleaner structure: separate landing
-                pages, separate updates, and room for campaign-specific
-                reporting once the operating model and designated fund handling
-                are finalized.
+                That separation matters. A strong campaign site should let supporters understand scope, let partners understand discipline, and let public reporting stay grounded in what can actually be delivered.
               </p>
               <p>
-                That separation protects both sides. The Nepal mission keeps
-                its own focus, and the global campaign gets its own identity
-                without feeling bolted onto an unrelated program site.
+                The result is a cleaner environment for briefings, launch preparation, and future updates if the work expands.
               </p>
             </div>
           </div>
 
-          <aside className="rounded-3xl border border-slate-200 bg-slate-950 p-8 text-white shadow-[0_20px_60px_rgba(15,23,42,0.18)]">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300">
-              Campaign Guardrails
-            </p>
-            <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-200">
-              {guardrails.map((item) => (
-                <li
+          <div className="rounded-[32px] border border-slate-200/80 bg-[linear-gradient(145deg,#ffffff_0%,#eef8f9_100%)] px-6 py-8 shadow-[0_16px_42px_rgba(15,23,42,0.06)] md:px-8">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-slate-500">Guardrails</p>
+            <div className="mt-6 grid gap-4">
+              {ISRAEL_CAMPAIGN_GUARDRAILS.map((item) => (
+                <div
                   key={item}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4"
+                  className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm leading-7 text-slate-700"
                 >
                   {item}
-                </li>
+                </div>
               ))}
-            </ul>
-          </aside>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="px-4 py-6">
-        <div className="mx-auto max-w-[1320px] rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_12px_35px_rgba(15,23,42,0.05)]">
+      <section className="px-4 py-4 md:px-6">
+        <div className="mx-auto max-w-[1380px] rounded-[32px] border border-slate-200/80 bg-white px-6 py-8 shadow-[0_16px_42px_rgba(15,23,42,0.06)] md:px-8">
           <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary-500">
-                Frequently Asked Questions
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold text-slate-900">
-                Common questions about the campaign structure
+              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-slate-500">Questions</p>
+              <h2 className="mt-4 font-[family:var(--global-font-display)] text-4xl leading-none text-slate-950">
+                Campaign FAQ
               </h2>
             </div>
             <Link
               href={withSubdomainPrefix(prefix, "/campaigns")}
-              className="text-sm font-medium text-primary-500"
+              className="text-sm font-semibold text-slate-700 transition-colors hover:text-slate-950"
             >
               Back to campaigns
             </Link>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {faq.map((item) => (
+            {ISRAEL_CAMPAIGN_FAQ.map((item) => (
               <article
                 key={item.question}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
+                className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5"
               >
-                <h3 className="text-base font-semibold text-slate-900">
-                  {item.question}
-                </h3>
-                <p className="mt-2 text-sm leading-7 text-slate-600">
-                  {item.answer}
-                </p>
+                <h3 className="text-base font-semibold text-slate-950">{item.question}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{item.answer}</p>
               </article>
             ))}
           </div>
