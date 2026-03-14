@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-this-doctor-treated-migrants-severe-injuries-at-the-us-mexico",
+    title: "Global Health and Education Watch: This doctor treated migrants’ severe injuries at the US-Mexico",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-global-health-and-education-watch-this-doctor-treated-migrants-severe-injuries-a.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-out-of-the-blue-how-the-colour-of-light",
     title: "Global Health and Education Watch: Out of the blue? How the colour of light",
     summary:
