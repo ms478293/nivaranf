@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "social-drivers-of-health-global-impact-on-breast-cancer-surgery-delays",
+    title: "Social Drivers of Health: Global Impact on Breast Cancer Surgery Delays",
+    summary:
+      "Emerging global research reveals that social drivers of health significantly contribute to delays in breast cancer surgery, impacting patient outcomes. Addressing these systemic inequities is crucial for improving timely access to life-saving treatment across diverse populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-social-drivers-of-health-global-impact-on-breast-cancer-surgery-delays.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-this-doctor-treated-migrants-severe-injuries-at-the-us-mexico",
     title: "Global Health and Education Watch: This doctor treated migrants’ severe injuries at the US-Mexico",
     summary:
