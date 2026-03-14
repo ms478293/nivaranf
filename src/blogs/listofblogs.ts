@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "trump-administration-s-ncar-dismantling-threatens-global-health-education",
+    title: "Trump Administration's NCAR Dismantling Threatens Global Health, Education",
+    summary:
+      "The Trump Administration's plans to dismantle NCAR, including transferring its supercomputer and space weather lab, raise alarms globally. This move threatens integrated climate research, global health preparedness, and international scientific education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-trump-administration-s-ncar-dismantling-threatens-global-health-education.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "amsterdam-jewish-school-attack-ignites-global-concern-for-educational-safety",
     title: "Amsterdam Jewish School Attack Ignites Global Concern for Educational Safety",
     summary:
