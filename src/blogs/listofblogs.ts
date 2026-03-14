@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "infant-fatality-in-london-sparks-global-dialogue-on-child-welfare",
+    title: "Infant Fatality in London Sparks Global Dialogue on Child Welfare",
+    summary:
+      "A recent tragedy in central London, involving the death of an 18-day-old infant, has brought critical global issues of child safety and parental well-being into sharp focus. This incident underscores the urgent need for robust support systems and mental health resources for new parents across the globe.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-infant-fatality-in-london-sparks-global-dialogue-on-child-welfare.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-unesco-condemns-strike-on-minab-girls-school-they-attacked",
     title: "Global Health and Education Watch: UNESCO condemns strike on Minab girls’ school: ‘They attacked",
     summary:
