@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-systems-grapple-with-exam-marking-accuracy-concerns",
+    title: "Global Education Systems Grapple with Exam Marking Accuracy Concerns",
+    summary:
+      "An educational institution recently uncovered numerous errors in GCSE English test markings, raising significant concerns about the reliability of high-stakes examinations. This incident underscores a critical global challenge in ensuring fairness and accuracy in student assessments.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-global-education-systems-grapple-with-exam-marking-accuracy-concerns.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "investigation-launched-into-deadly-strike-on-iranian-school",
     title: "Investigation Launched into Deadly Strike on Iranian School",
     summary:
