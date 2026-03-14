@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "antisemitic-attacks-target-european-jewish-schools-raising-global-education-safety-concerns",
+    title: "Antisemitic Attacks Target European Jewish Schools, Raising Global Education Safety Concerns",
+    summary:
+      "Two recent explosions targeting Jewish institutions in the Netherlands, including a school in Amsterdam, have heightened global concerns over antisemitic violence. These incidents, though causing no physical harm, highlight the urgent need to protect educational spaces from hate-motivated attacks and ensure the safety of all students.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-antisemitic-attacks-target-european-jewish-schools-raising-global-education-safe.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tragedy-forgiveness-and-learning-charges-dropped-in-georgia-teacher-s-prank-death",
     title: "Tragedy, Forgiveness, and Learning: Charges Dropped in Georgia Teacher's Prank Death",
     summary:
