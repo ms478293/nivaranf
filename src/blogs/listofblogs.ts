@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "amsterdam-jewish-school-attack-ignites-global-concern-for-educational-safety",
+    title: "Amsterdam Jewish School Attack Ignites Global Concern for Educational Safety",
+    summary:
+      "An explosion at a Jewish school in Amsterdam, characterized by authorities as a deliberate attack, has sparked widespread concern for the safety of educational institutions globally. The incident, which caused limited damage and no injuries, highlights the critical need to protect learning environments and vulnerable communities from targeted violence.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-amsterdam-jewish-school-attack-ignites-global-concern-for-educational-safety.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-confidential-health-records-from-uk-biobank-project-exposed-online",
     title: "Global Health and Education Watch: Confidential health records from UK BioBank project exposed online",
     summary:
