@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tragedy-forgiveness-and-learning-charges-dropped-in-georgia-teacher-s-prank-death",
+    title: "Tragedy, Forgiveness, and Learning: Charges Dropped in Georgia Teacher's Prank Death",
+    summary:
+      "Homicide charges have been dropped against a Georgia teenager involved in the tragic death of a high school teacher during a community prank. The decision came after the victim's family urged authorities against further legal action, highlighting a global conversation on restorative justice and school safety.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-tragedy-forgiveness-and-learning-charges-dropped-in-georgia-teacher-s-prank-deat.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-viral-interplay-reshaping-epidemic-timelines-and-health-risks",
     title: "Global Viral Interplay: Reshaping Epidemic Timelines and Health Risks",
     summary:
