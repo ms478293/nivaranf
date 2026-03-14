@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-viral-interplay-reshaping-epidemic-timelines-and-health-risks",
+    title: "Global Viral Interplay: Reshaping Epidemic Timelines and Health Risks",
+    summary:
+      "Groundbreaking research from Nature highlights the complex interplay between SARS-CoV-2, influenza, and RSV, demonstrating their significant influence on the timing and risk of global respiratory epidemics. This understanding is crucial for refining public health strategies and enhancing preparedness against future viral threats.",
+    thumbnailImage: "/images/global-news/2026/2026-03-14-global-viral-interplay-reshaping-epidemic-timelines-and-health-risks.jpg",
+    date: "2026-03-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-chatbots-raise-global-concern-over-delusional-thinking-in-vulnerable-users",
     title: "AI Chatbots Raise Global Concern Over Delusional Thinking in Vulnerable Users",
     summary:
