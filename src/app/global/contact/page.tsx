@@ -20,7 +20,7 @@ export default function GlobalContactPage() {
         <section className="rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
           <MainTitle suffix="Global" prefix="Contact" as="h1" className="mb-0" />
           <p className="mt-5 max-w-3xl text-3xl font-semibold leading-tight text-gray-800 md:text-5xl">
-            Reach the global team with something concrete.
+            Reach Nivaran Global with something concrete.
           </p>
           <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
             Use this page for campaign briefings, newsroom requests, partner conversations, and
@@ -46,7 +46,8 @@ export default function GlobalContactPage() {
         <section className="mt-6 rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
           <MainTitle suffix="Direct" prefix="Email" className="mb-0" />
           <p className="mt-4 max-w-2xl text-base leading-8 text-gray-600">
-            For urgent coordination, media outreach, or campaign planning, use the direct desk email.
+            For urgent coordination, media outreach, or campaign planning, use the Nivaran Global
+            support inbox.
           </p>
           <div className="mt-6">
             <AppButton asChild size="lg" className="font-normal">

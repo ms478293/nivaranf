@@ -40,7 +40,7 @@ const sections = [
   {
     title: "Contact",
     body:
-      "Questions about these terms or requests for permission should go through the dedicated support desk for the global platform.",
+      "Questions about these terms or requests for permission should go through the dedicated Nivaran Global support desk.",
   },
 ] as const;
 
@@ -77,12 +77,12 @@ export default function GlobalTermsOfServicePage() {
         <section className="mt-6 rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
           <MainTitle prefix="Legal" suffix="Contact" className="mb-0" />
           <p className="mt-4 max-w-2xl text-base leading-8 text-gray-600">
-            For permissions, legal questions, or platform-use issues, contact the global desk
+            For permissions, legal questions, or platform-use issues, contact Nivaran Global
             directly.
           </p>
           <div className="mt-6">
             <Link
-              href="mailto:support@global.nivaranfoundation.org?subject=Global%20Terms%20Inquiry"
+              href="mailto:support@global.nivaranfoundation.org?subject=Nivaran%20Global%20Terms%20Inquiry"
               className="inline-flex rounded-full bg-primary-main px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-500"
             >
               support@global.nivaranfoundation.org

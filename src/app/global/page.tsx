@@ -157,14 +157,14 @@ export default async function GlobalHomePage() {
                   Need a campaign or newsroom briefing?
                 </p>
                 <p className="mt-3 text-sm leading-7 text-gray-600">
-                  Use the global desk for partner coordination, media conversations, and
+                  Use the Nivaran Global desk for partner coordination, media conversations, and
                   structured response discussions.
                 </p>
                 <Link
                   href={withSubdomainPrefix(prefix, "/contact")}
                   className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-primary-500"
                 >
-                  Contact the global team
+                  Contact Nivaran Global
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </article>
@@ -245,8 +245,8 @@ export default async function GlobalHomePage() {
             <div>
               <MainTitle suffix="Latest" prefix="Reporting" className="mb-0" />
               <p className="mt-4 max-w-2xl text-base leading-8 text-gray-600">
-                The newsroom, stories, and briefing layers all sit inside the same global desk so
-                campaign work and public reporting stay aligned.
+                The newsroom, stories, and briefing layers all sit inside the same Nivaran Global
+                desk so campaign work and public reporting stay aligned.
               </p>
             </div>
             <Link href={withSubdomainPrefix(prefix, "/news")} className="text-sm font-medium text-primary-500">

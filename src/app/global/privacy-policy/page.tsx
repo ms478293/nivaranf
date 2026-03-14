@@ -40,7 +40,7 @@ const sections = [
   {
     title: "Your contact point",
     body:
-      "Questions about privacy, data handling, or information requests for the Nivaran Global platform should be sent directly to the global support desk.",
+      "Questions about privacy, data handling, or information requests for the Nivaran Global platform should be sent directly to the Nivaran Global support desk.",
   },
 ] as const;
 
@@ -75,13 +75,14 @@ export default function GlobalPrivacyPolicyPage() {
         </section>
 
         <section className="mt-6 rounded-3xl bg-white px-6 py-8 shadow-sm ring-1 ring-gray-100 md:px-8 md:py-10">
-          <MainTitle prefix="Global" suffix="Support" className="mb-0" />
+          <MainTitle prefix="Nivaran Global" suffix="Support" className="mb-0" />
           <p className="mt-4 max-w-2xl text-base leading-8 text-gray-600">
-            For privacy requests or policy questions, use the dedicated global support address.
+            For privacy requests or policy questions, use the dedicated Nivaran Global support
+            address.
           </p>
           <div className="mt-6">
             <Link
-              href="mailto:support@global.nivaranfoundation.org?subject=Global%20Privacy%20Request"
+              href="mailto:support@global.nivaranfoundation.org?subject=Nivaran%20Global%20Privacy%20Request"
               className="inline-flex rounded-full bg-primary-main px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-500"
             >
               support@global.nivaranfoundation.org

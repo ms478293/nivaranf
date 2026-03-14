@@ -74,13 +74,13 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     articleFallbackDescription:
       "Read field reporting, analysis, and campaign updates from Nivaran Global.",
     articleAuthorFallback: "Nivaran Global Editorial Desk",
-    articleDefaultLocation: "Global Desk",
+    articleDefaultLocation: "Nivaran Global Desk",
     articleDefaultDonateLine:
       "This reporting supports public understanding, partner alignment, and responsible humanitarian action. Back the work if you want this platform to keep publishing with clarity and discipline.",
     articleDefaultAuthorBio:
       "Nivaran Global publishes campaign reporting, humanitarian analysis, and response briefings focused on civilian protection, health access, and accountable public communication.",
     articleCtaHref: "/contact",
-    articleCtaLabel: "Talk to the global team",
+    articleCtaLabel: "Talk to Nivaran Global",
   },
   usa: {
     siteUrl: "https://usa.nivaranfoundation.org",

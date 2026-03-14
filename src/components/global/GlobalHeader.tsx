@@ -58,13 +58,13 @@ export default function GlobalHeader({ prefix }: { prefix: string }) {
           />
           <div className="hidden border-l border-gray-200 pl-3 sm:block">
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary-500">
-              Global Desk
+              Nivaran Global Desk
             </p>
             <p className="text-sm text-gray-700">Campaigns and reporting</p>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-1 min-[980px]:flex" aria-label="Global">
+        <nav className="hidden items-center gap-1 min-[980px]:flex" aria-label="Nivaran Global">
           {NAV_ITEMS.map((item) => {
             const href = withPrefix(prefix, item.href);
             const active =
@@ -110,7 +110,7 @@ export default function GlobalHeader({ prefix }: { prefix: string }) {
 
       {isOpen ? (
         <div className="border-t border-gray-200 bg-white px-4 py-4 min-[980px]:hidden">
-          <nav className="mx-auto flex max-w-[1320px] flex-col gap-2" aria-label="Mobile global">
+          <nav className="mx-auto flex max-w-[1320px] flex-col gap-2" aria-label="Mobile Nivaran Global">
             {NAV_ITEMS.map((item) => {
             const href = withPrefix(prefix, item.href);
             const active =

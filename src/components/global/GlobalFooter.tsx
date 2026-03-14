@@ -23,7 +23,7 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
               />
               <div className="border-l border-gray-200 pl-3">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-primary-500">
-                  Global Desk
+                  Nivaran Global Desk
                 </p>
                 <p className="text-sm text-gray-700">Humanitarian campaigns and reporting</p>
               </div>
