@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-concerns-rise-over-state-guardianship-for-vulnerable-populations",
+    title: "Global Concerns Rise Over State Guardianship for Vulnerable Populations",
+    summary:
+      "A recent policy shift empowering government attorneys to initiate guardianship for homeless individuals deemed unable to make healthcare decisions has ignited a global discussion. This move raises critical questions about individual autonomy, due process, and the ethical responsibilities of states towards their most vulnerable citizens.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-global-concerns-rise-over-state-guardianship-for-vulnerable-populations.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-security-imperiled-by-us-withdrawal-from-who",
     title: "Global Health Security Imperiled by US Withdrawal from WHO",
     summary:
