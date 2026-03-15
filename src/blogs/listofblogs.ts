@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "navigating-the-global-surge-of-anxiety-across-life-s-stages",
+    title: "Navigating the Global Surge of Anxiety Across Life's Stages",
+    summary:
+      "A global surge in anxiety is impacting individuals across all age groups, driven by widespread uncertainty. Understanding and implementing age-appropriate coping mechanisms are crucial for mental well-being worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-navigating-the-global-surge-of-anxiety-across-life-s-stages.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-colon-cancer-surges-among-under-50s-now-leading-cause-of-death",
     title: "Global Alarm: Colon Cancer Surges Among Under-50s, Now Leading Cause of Death",
     summary:
