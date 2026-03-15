@@ -5,6 +5,25 @@ import subdomains from "../subdomains.json";
 export function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const pathname = url.pathname;
+  const host = req.headers.get("host") || "";
+  const normalizedHost = host.toLowerCase().split(":")[0];
+  const subdomainRoutePrefixes: Record<string, string> = {
+    global: "/global",
+    usa: "/usa",
+  };
+
+  // Non-www → www 301 redirect (SEO: consolidate link equity)
+  if (
+    normalizedHost === "nivaranfoundation.org" &&
+    !pathname.startsWith("/_next") &&
+    !pathname.startsWith("/api")
+  ) {
+    return NextResponse.redirect(
+      new URL(`https://www.nivaranfoundation.org${pathname}${url.search}`),
+      301
+    );
+  }
+
   const isDashboardPath =
     pathname === "/dashboard" || pathname.startsWith("/dashboard/");
   const isBlogsEditorPath =
@@ -48,28 +67,36 @@ export function middleware(req: NextRequest) {
     return NextResponse.redirect(loginUrl);
   }
 
-  const host = req.headers.get("host") || "";
   const allowedDomains = ["localhost", "nivaranfoundation.org", "vercel.app"];
   const knownSubdomains = subdomains.map((item) => item.subdomain);
 
   const isAllowedDomain = allowedDomains.some((domain) =>
-    host.includes(domain)
+    normalizedHost.includes(domain)
   );
-  const subdomain = host.split(".")[0];
+  const subdomain = normalizedHost.split(".")[0];
   const isPreviewOrLocalHost =
-    host.includes("vercel.app") ||
-    host.startsWith("localhost") ||
-    host.startsWith("127.0.0.1");
+    normalizedHost.includes("vercel.app") ||
+    normalizedHost.startsWith("localhost") ||
+    normalizedHost.startsWith("127.0.0.1");
   const isKnownSubdomainHost =
     isAllowedDomain &&
     knownSubdomains.includes(subdomain) &&
     !isPreviewOrLocalHost &&
-    !host.startsWith("nivaranfoundation.org");
+    !normalizedHost.startsWith("nivaranfoundation.org");
+
+  // Root-level SEO routes that must NOT be rewritten on subdomains.
+  // These are handled by variant-aware route handlers at the app root.
+  const SEO_ROOT_PATHS = ["/robots.txt", "/sitemap.xml", "/llms.txt"];
 
   // Check if the subdomain is valid and not the main domain
   // Skip subdomain rewrite for main domain, localhost, and vercel preview URLs
   if (isKnownSubdomainHost) {
-    const subdomainPath = `/${subdomain}`;
+    // Let root-level SEO routes pass through to the app-root handlers
+    if (SEO_ROOT_PATHS.includes(pathname)) {
+      return NextResponse.next();
+    }
+
+    const subdomainPath = subdomainRoutePrefixes[subdomain] || `/${subdomain}`;
 
     if (pathname === subdomainPath || pathname.startsWith(`${subdomainPath}/`)) {
       return NextResponse.next();
@@ -81,8 +108,12 @@ export function middleware(req: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
-  const isDirectSubdomainPath = knownSubdomains.some(
-    (name) => pathname === `/${name}` || pathname.startsWith(`/${name}/`)
+  const reservedSubdomainPaths = [
+    ...knownSubdomains.map((name) => `/${name}`),
+    ...Object.values(subdomainRoutePrefixes),
+  ];
+  const isDirectSubdomainPath = reservedSubdomainPaths.some(
+    (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
   );
 
   if (isDirectSubdomainPath && !isPreviewOrLocalHost) {

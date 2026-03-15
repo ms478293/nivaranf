@@ -1,13 +1,26 @@
-import { globalBlogs } from "@/blogs/listofblogs";
 import { getAllDistrictCoverageParams } from "@/content/sanjeevani-province-pages";
 import { getBlogPath } from "@/lib/blog-routes";
 import { getBlogFeed } from "@/lib/content/posts";
+import { getGlobalFeedBySegment } from "@/lib/global-feed";
+import {
+  detectSiteVariantFromHost,
+  getSiteVariantConfig,
+} from "@/lib/site-variant";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { headers } from "next/headers";
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://www.nivaranfoundation.org";
-const GLOBAL_SITE_URL = "https://global.nivaranfoundation.org";
+type SitemapEntry = MetadataRoute.Sitemap[number];
 
-const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; isKeyPage?: boolean }> = [
+type StaticRoute = {
+  path: string;
+  priority: number;
+  changeFrequency: SitemapEntry["changeFrequency"];
+  isKeyPage?: boolean;
+};
+
+const MAIN_STATIC_ROUTES: StaticRoute[] = [
   { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
   { path: "/about", priority: 0.9, changeFrequency: "monthly", isKeyPage: true },
   { path: "/donate", priority: 1.0, changeFrequency: "weekly", isKeyPage: true },
@@ -50,56 +63,69 @@ const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: Me
   { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
 ];
 
-function toAbsoluteUrl(path: string) {
-  return `${SITE_URL}${path}`;
+const GLOBAL_STATIC_ROUTES: StaticRoute[] = [
+  { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
+  { path: "/campaigns", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/campaigns/israel", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/news", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
+  { path: "/stories", priority: 0.8, changeFrequency: "daily", isKeyPage: true },
+  { path: "/articles", priority: 0.8, changeFrequency: "daily", isKeyPage: true },
+  { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly" },
+];
+
+const USA_STATIC_ROUTES: StaticRoute[] = [
+  { path: "/", priority: 1.0, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/live", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/blogs", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
+];
+
+function toAbsoluteUrl(siteUrl: string, path: string) {
+  return `${siteUrl}${path}`;
 }
 
-function toGlobalAbsoluteUrl(path: string) {
-  return `${GLOBAL_SITE_URL}${path}`;
-}
-
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const now = new Date();
-  const keyPageLastModified = new Date().toISOString();
-
-  const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
-    url: toAbsoluteUrl(route.path),
+function buildStaticEntries(
+  siteUrl: string,
+  routes: StaticRoute[],
+  now: Date,
+  keyPageLastModified: string,
+): MetadataRoute.Sitemap {
+  return routes.map((route) => ({
+    url: toAbsoluteUrl(siteUrl, route.path),
     lastModified: route.isKeyPage ? keyPageLastModified : now,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
+}
 
-  const globalEntries: MetadataRoute.Sitemap = [
-    "/",
-    "/campaigns",
-    "/campaigns/israel",
-    "/news",
-    "/stories",
-    "/articles",
-    "/contact",
-  ].map((path) => ({
-    url: toGlobalAbsoluteUrl(path),
-    lastModified: keyPageLastModified,
-    changeFrequency: path === "/" || path === "/news" ? "daily" : "weekly",
-    priority: path === "/" ? 0.9 : 0.7,
-  }));
+function dedupeEntries(entries: MetadataRoute.Sitemap) {
+  const deduped = new Map<string, SitemapEntry>();
 
-  const staticBlogEntries: MetadataRoute.Sitemap = globalBlogs.map((blog) => ({
-    url: toAbsoluteUrl(getBlogPath(blog)),
-    lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  entries.forEach((entry) => {
+    deduped.set(entry.url, entry);
+  });
 
-  const dynamicBlogItems = await getBlogFeed(500);
-  const dynamicBlogEntries: MetadataRoute.Sitemap = dynamicBlogItems.map((blog) => ({
-    url: toAbsoluteUrl(getBlogPath(blog)),
-    lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "daily",
-    priority: 0.8,
-  }));
+  return Array.from(deduped.values());
+}
 
-  const deduped = new Map<string, MetadataRoute.Sitemap[number]>();
+async function getSeoVariant() {
+  const headerStore = await headers();
+  const host = headerStore.get("x-forwarded-host") || headerStore.get("host") || "";
+  return detectSiteVariantFromHost(host);
+}
+
+async function buildMainSitemap() {
+  const siteUrl = getSiteVariantConfig("main").siteUrl;
+  const now = new Date();
+  const keyPageLastModified = now.toISOString();
+  const staticEntries = buildStaticEntries(
+    siteUrl,
+    MAIN_STATIC_ROUTES,
+    now,
+    keyPageLastModified,
+  );
+
   const provinceCoverageEntries: MetadataRoute.Sitemap = [
     "karnali",
     "sudurpashchim",
@@ -109,7 +135,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "gandaki",
     "koshi",
   ].map((slug) => ({
-    url: toAbsoluteUrl(`/healthcare-coverage-nepal/${slug}`),
+    url: toAbsoluteUrl(siteUrl, `/healthcare-coverage-nepal/${slug}`),
     lastModified: keyPageLastModified,
     changeFrequency: "weekly",
     priority: 0.7,
@@ -117,22 +143,122 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const districtCoverageEntries: MetadataRoute.Sitemap =
     getAllDistrictCoverageParams().map(({ province, district }) => ({
-      url: toAbsoluteUrl(`/healthcare-coverage-nepal/${province}/${district}`),
+      url: toAbsoluteUrl(
+        siteUrl,
+        `/healthcare-coverage-nepal/${province}/${district}`,
+      ),
       lastModified: keyPageLastModified,
       changeFrequency: "weekly",
       priority: 0.65,
     }));
 
-  [
+  const blogItems = await getBlogFeed(500);
+  const blogEntries: MetadataRoute.Sitemap = blogItems.map((blog) => ({
+    url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
+    lastModified: blog.date ? new Date(blog.date) : now,
+    changeFrequency: "daily",
+    priority: 0.8,
+  }));
+
+  return dedupeEntries([
     ...staticEntries,
-    ...globalEntries,
     ...provinceCoverageEntries,
     ...districtCoverageEntries,
-    ...staticBlogEntries,
-    ...dynamicBlogEntries,
-  ].forEach((entry) => {
-    deduped.set(entry.url, entry);
-  });
+    ...blogEntries,
+  ]);
+}
 
-  return Array.from(deduped.values());
+async function buildGlobalSitemap() {
+  const siteUrl = getSiteVariantConfig("global").siteUrl;
+  const now = new Date();
+  const keyPageLastModified = now.toISOString();
+  const staticEntries = buildStaticEntries(
+    siteUrl,
+    GLOBAL_STATIC_ROUTES,
+    now,
+    keyPageLastModified,
+  );
+
+  const [news, stories, articles] = await Promise.all([
+    getGlobalFeedBySegment("news"),
+    getGlobalFeedBySegment("stories"),
+    getGlobalFeedBySegment("articles"),
+  ]);
+
+  const newsEntries: MetadataRoute.Sitemap = news.map((blog) => ({
+    url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
+    lastModified: blog.date ? new Date(blog.date) : now,
+    changeFrequency: "daily",
+    priority: 0.8,
+  }));
+
+  const storyEntries: MetadataRoute.Sitemap = stories.map((blog) => ({
+    url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
+    lastModified: blog.date ? new Date(blog.date) : now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  const articleEntries: MetadataRoute.Sitemap = articles.map((blog) => ({
+    url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
+    lastModified: blog.date ? new Date(blog.date) : now,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return dedupeEntries([
+    ...staticEntries,
+    ...newsEntries,
+    ...storyEntries,
+    ...articleEntries,
+  ]);
+}
+
+async function getUsaBlogSlugs() {
+  const directory = path.join(process.cwd(), "src", "blogs", "usa");
+
+  try {
+    const files = await fs.readdir(directory, { withFileTypes: true });
+    return files
+      .filter((entry) => entry.isFile() && /\.(md|mdx)$/i.test(entry.name))
+      .map((entry) => entry.name.replace(/\.(md|mdx)$/i, ""))
+      .sort();
+  } catch {
+    return [];
+  }
+}
+
+async function buildUsaSitemap() {
+  const siteUrl = getSiteVariantConfig("usa").siteUrl;
+  const now = new Date();
+  const keyPageLastModified = now.toISOString();
+  const staticEntries = buildStaticEntries(
+    siteUrl,
+    USA_STATIC_ROUTES,
+    now,
+    keyPageLastModified,
+  );
+  const blogSlugs = await getUsaBlogSlugs();
+  const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: toAbsoluteUrl(siteUrl, `/blogs/${slug}`),
+    lastModified: keyPageLastModified,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return dedupeEntries([...staticEntries, ...blogEntries]);
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const variant = await getSeoVariant();
+
+  if (variant === "global") {
+    return buildGlobalSitemap();
+  }
+
+  if (variant === "usa") {
+    return buildUsaSitemap();
+  }
+
+  return buildMainSitemap();
 }

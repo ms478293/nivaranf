@@ -112,6 +112,14 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
   },
 };
 
+export function detectSiteVariantFromHost(host: string): SiteVariant {
+  const normalizedHost = host.toLowerCase().split(":")[0].trim();
+
+  if (normalizedHost.startsWith("global.")) return "global";
+  if (normalizedHost.startsWith("usa.")) return "usa";
+  return "main";
+}
+
 export function getSiteVariantConfig(variant: SiteVariant) {
   return SITE_VARIANT_CONFIGS[variant];
 }
