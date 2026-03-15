@@ -3,11 +3,11 @@ import { useMegaMenuStore } from "@/store/useMegamenuStore";
 import Link from "next/link";
 
 const ABOUT_US_LINK = [
-  // {
-  //   id: 5,
-  //   label: "Leadership",
-  //   link: "/leadership",
-  // },
+  {
+    id: 5,
+    label: "Leadership",
+    link: "/leadership",
+  },
   {
     id: 4,
     label: "FAQ",

@@ -192,7 +192,7 @@ export const privacyPolicySections = [
       },
       {
         description:
-          "Boston, MA USA",
+          "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA",
       },
       {
         description: "Email: privacy@nivaranfoundation.org",

@@ -22,11 +22,11 @@ const ABOUT_US = [
     label: "FAQs",
     link: "/frequently-asked-questions",
   },
-  // {
-  //   id: 6,
-  //   label: "Leadership",
-  //   link: "/leadership",
-  // },
+  {
+    id: 6,
+    label: "Leadership",
+    link: "/leadership",
+  },
 ];
 
 export const SmallAboutUsMegaMenu = () => {

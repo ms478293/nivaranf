@@ -70,6 +70,8 @@ export const footerData = {
       name: "Accountability & Transparency",
       link: "/accountability-and-transparency",
     },
+    { name: "Leadership & Governance", link: "/leadership" },
+    { name: "Press Kit", link: "/press" },
     { name: "Financial Reports", link: "/financial-reports" },
     {
       name: "Financial Responsibility",

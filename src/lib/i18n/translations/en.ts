@@ -77,7 +77,7 @@ const en = {
   "footer.ourWorks": "Our Works",
   "footer.usefulLinks": "Useful Links",
   "footer.nonprofit": "501(c)(3) Nonprofit | EIN: 41-2656587",
-  "footer.location": "Boston, MA USA",
+  "footer.location": "Arlington, MA 02476, USA",
   "footer.copyright": "All rights reserved.",
 
   // Common

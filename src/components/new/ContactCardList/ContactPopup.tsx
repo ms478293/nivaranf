@@ -15,7 +15,7 @@ export const RegionPopup = ({ region }: { region: string }) => {
       id: "usa",
       name: "USA Office",
       details: {
-        address: "Boston, MA",
+        address: "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476",
         contact: "+1 (857) 701-7471",
       },
     },
