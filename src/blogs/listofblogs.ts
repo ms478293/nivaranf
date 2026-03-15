@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-security-faces-setback-as-united-states-initiates-who-withdrawal",
+    title: "Global Health Security Faces Setback as United States Initiates WHO Withdrawal",
+    summary:
+      "The World Health Organization expresses regret over the United States' notification to withdraw, a decision poised to impact global health security. This significant development will be deliberated by the WHO Executive Board and the World Health Assembly in upcoming meetings.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-global-health-security-faces-setback-as-united-states-initiates-who-withdrawal.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rebuilding-futures-global-education-s-imperative-in-crisis-zones",
     title: "Rebuilding Futures: Global Education's Imperative in Crisis Zones",
     summary:
