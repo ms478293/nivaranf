@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-colon-cancer-surges-among-under-50s-now-leading-cause-of-death",
+    title: "Global Alarm: Colon Cancer Surges Among Under-50s, Now Leading Cause of Death",
+    summary:
+      "Colorectal cancer has become the primary cause of cancer-related deaths for individuals under 50 in the United States, a trend experts warn could reflect a broader global health crisis. Younger people are urged to take symptoms like rectal bleeding seriously, as delayed diagnosis significantly impacts outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-global-alarm-colon-cancer-surges-among-under-50s-now-leading-cause-of-death.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-colon-cancer-now-leading-cause-of-cancer-deaths-under-2",
     title: "Global Health and Education Watch: Colon cancer now leading cause of cancer deaths under",
     summary:
