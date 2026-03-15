@@ -52,7 +52,7 @@ const MAIN_STATIC_ROUTES: StaticRoute[] = [
   { path: "/financial-reports", priority: 0.6 },
   { path: "/financial-responsibility", priority: 0.6 },
   { path: "/belonging-and-inclusion", priority: 0.6 },
-  { path: "/advisory-board", priority: 0.5 },
+  { path: "/advisory-board", priority: 0.6, isKeyPage: true },
   { path: "/dei", priority: 0.5 },
   { path: "/how-to-help", priority: 0.6 },
   { path: "/organize-locally", priority: 0.5 },
