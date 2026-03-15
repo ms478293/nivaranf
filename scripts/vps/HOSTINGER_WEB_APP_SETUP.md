@@ -2,11 +2,23 @@
 
 This repo can run on a VPS without Vercel.
 
+There are two supported deployment modes in this repo:
+- standalone VPS: `systemd` + `nginx` + `certbot`
+- shared proxy VPS: `Docker Compose` + `Traefik`
+
+The current production VPS uses the shared proxy mode.
+
+Canonical production paths:
+- live app checkout: `/opt/nivaran/nivaranf-web`
+- archived drifted checkouts: `/opt/nivaran/archive/`
+- production env file: `/etc/nivaran/web.env`
+- source-controlled compose file: `scripts/vps/docker-compose.hostinger.yml`
+
 What this VPS package covers:
 - Next.js web app build + runtime
-- `systemd` service for the site
-- `nginx` reverse proxy for `www`, `global`, and `usa`
-- TLS via `certbot`
+- either `systemd` or `Docker Compose` runtime
+- either `nginx` or existing `Traefik` reverse proxy
+- TLS via `certbot` or Traefik ACME
 - update workflow for future deploys
 
 What this repo does **not** include:
@@ -25,7 +37,37 @@ Point these records to your VPS public IP:
 
 Only move `api` if you also have the API backend ready.
 
-## 2. SSH into the VPS and run the installer
+## 2. Choose the deployment mode
+
+### Option A: shared Traefik VPS (current production)
+
+Use this when the server already has Docker + Traefik and other services are sharing the proxy.
+
+Clone or update the repo into the canonical live path:
+
+```bash
+sudo mkdir -p /opt/nivaran
+cd /opt/nivaran
+sudo git clone https://github.com/ms478293/nivaranf.git /opt/nivaran/nivaranf-web
+cd /opt/nivaran/nivaranf-web
+sudo git checkout main
+sudo git pull --ff-only origin main
+```
+
+If the repo already exists:
+
+```bash
+cd /opt/nivaran/nivaranf-web
+sudo git fetch --all --prune
+sudo git checkout main
+sudo git pull --ff-only origin main
+```
+
+### Option B: standalone VPS
+
+Use this only when the server is dedicated to the website and you want this repo to install its own `nginx` + `systemd` stack.
+
+Run the installer:
 
 ```bash
 cd /opt
@@ -66,6 +108,27 @@ Keep these values the same as production unless you are intentionally rotating t
 
 ## 4. Build and start the app
 
+### Option A: shared Traefik VPS
+
+After the env file is filled:
+
+```bash
+cd /opt/nivaran/nivaranf-web
+sudo docker compose -f scripts/vps/docker-compose.hostinger.yml build nivaran-web
+sudo docker compose -f scripts/vps/docker-compose.hostinger.yml up -d --force-recreate nivaran-web
+```
+
+Then verify:
+
+```bash
+sudo docker compose -f /opt/nivaran/nivaranf-web/scripts/vps/docker-compose.hostinger.yml ps
+curl -I http://127.0.0.1:3000
+```
+
+Traefik will handle HTTPS automatically once DNS points to the VPS.
+
+### Option B: standalone VPS
+
 After the env file is filled:
 
 ```bash
@@ -81,6 +144,12 @@ curl -I http://127.0.0.1:3000
 ```
 
 ## 5. Enable HTTPS
+
+### Option A: shared Traefik VPS
+
+After the DNS A records point to the VPS, Traefik should issue certificates automatically.
+
+### Option B: standalone VPS
 
 After the DNS A records point to the VPS and nginx is serving HTTP, run:
 
@@ -114,4 +183,14 @@ Update app later:
 ```bash
 cd /opt/nivaran/nivaranf-git
 sudo REPO_ROOT=/opt/nivaran/nivaranf-git RUN_USER=<your_linux_user> ENV_FILE=/etc/nivaran/web.env bash scripts/vps/update_web.sh
+```
+
+For the shared Traefik VPS:
+
+```bash
+cd /opt/nivaran/nivaranf-web
+sudo git pull --ff-only origin main
+sudo docker compose -f scripts/vps/docker-compose.hostinger.yml build nivaran-web
+sudo docker compose -f scripts/vps/docker-compose.hostinger.yml up -d --force-recreate nivaran-web
+sudo docker logs --tail 200 nivaran-web-1
 ```

@@ -1,0 +1,48 @@
+services:
+  nivaran-web:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-https://www.nivaranfoundation.org}
+        NEXT_PUBLIC_APP_URL: ${NEXT_PUBLIC_APP_URL:-https://www.nivaranfoundation.org}
+        NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-https://api.nivaranfoundation.org}
+        AUTH_API_BASE_URL: ${AUTH_API_BASE_URL:-https://api.nivaranfoundation.org}
+        NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS: ${NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS:-false}
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY:-}
+        NEXT_PUBLIC_SQUARE_APP_ID: ${NEXT_PUBLIC_SQUARE_APP_ID:-}
+        NEXT_PUBLIC_SQUARE_LOCATION_ID: ${NEXT_PUBLIC_SQUARE_LOCATION_ID:-}
+    restart: unless-stopped
+    env_file:
+      - /etc/nivaran/web.env
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=n8n_default
+      - traefik.http.routers.nivaran-main.rule=Host(`nivaranfoundation.org`) || Host(`www.nivaranfoundation.org`)
+      - traefik.http.routers.nivaran-main.entrypoints=web,websecure
+      - traefik.http.routers.nivaran-main.tls=true
+      - traefik.http.routers.nivaran-main.tls.certresolver=mytlschallenge
+      - traefik.http.routers.nivaran-main.tls.domains[0].main=nivaranfoundation.org
+      - traefik.http.routers.nivaran-main.tls.domains[0].sans=www.nivaranfoundation.org
+      - traefik.http.routers.nivaran-main.service=nivaran-web
+      - traefik.http.routers.nivaran-global.rule=Host(`global.nivaranfoundation.org`)
+      - traefik.http.routers.nivaran-global.entrypoints=web,websecure
+      - traefik.http.routers.nivaran-global.tls=true
+      - traefik.http.routers.nivaran-global.tls.certresolver=mytlschallenge
+      - traefik.http.routers.nivaran-global.tls.domains[0].main=global.nivaranfoundation.org
+      - traefik.http.routers.nivaran-global.service=nivaran-web
+      - traefik.http.routers.nivaran-usa.rule=Host(`usa.nivaranfoundation.org`)
+      - traefik.http.routers.nivaran-usa.entrypoints=web,websecure
+      - traefik.http.routers.nivaran-usa.tls=true
+      - traefik.http.routers.nivaran-usa.tls.certresolver=mytlschallenge
+      - traefik.http.routers.nivaran-usa.tls.domains[0].main=usa.nivaranfoundation.org
+      - traefik.http.routers.nivaran-usa.service=nivaran-web
+      - traefik.http.services.nivaran-web.loadbalancer.server.port=3000
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
+    name: n8n_default
