@@ -27,6 +27,12 @@ const PUBLIC_SEGMENT_BY_TYPE = {
   Article: "articles",
 };
 
+const SITE_URL_BY_VARIANT = {
+  main: "https://www.nivaranfoundation.org",
+  global: "https://global.nivaranfoundation.org",
+  usa: "https://usa.nivaranfoundation.org",
+};
+
 function fail(message) {
   console.error(`ERROR: ${message}`);
   process.exit(1);
@@ -119,6 +125,21 @@ function git(repoRoot, gitArgs) {
   }
 }
 
+function runNodeScript(repoRoot, scriptPath, scriptArgs) {
+  try {
+    return execFileSync("node", [scriptPath, ...scriptArgs], {
+      cwd: repoRoot,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "pipe"],
+    }).trim();
+  } catch (error) {
+    const stderr = error.stderr ? String(error.stderr).trim() : "";
+    throw new Error(
+      `${path.relative(repoRoot, scriptPath)} failed${stderr ? `: ${stderr}` : ""}`,
+    );
+  }
+}
+
 function isOfflineError(error) {
   const msg = (error?.stderr || error?.message || "").toLowerCase();
   return (
@@ -187,6 +208,35 @@ function getPublicPath(articleType, slug) {
   return `/${segment}/${slug}`;
 }
 
+function parseDistribution(raw) {
+  const fallback = ["main"];
+
+  if (raw === undefined || raw === null) {
+    return fallback;
+  }
+
+  const items = Array.isArray(raw)
+    ? raw
+    : typeof raw === "string"
+      ? raw
+          .split(",")
+          .map((value) => value.trim())
+          .filter(Boolean)
+      : fallback;
+
+  const unique = Array.from(
+    new Set(items.filter((value) => Object.hasOwn(SITE_URL_BY_VARIANT, value))),
+  );
+
+  return unique.length > 0 ? unique : fallback;
+}
+
+function getPublicUrls(articleType, slug, distribution) {
+  const publicPath = getPublicPath(articleType, slug);
+
+  return distribution.map((variant) => `${SITE_URL_BY_VARIANT[variant]}${publicPath}`);
+}
+
 function isHttpUrl(value) {
   return /^https?:\/\//i.test(value);
 }
@@ -240,6 +290,7 @@ function main() {
     keywords: args.keywords ?? config.keywords,
     body: args.body ?? config.body,
     bodyFile: args["body-file"] ?? config.bodyFile,
+    distribution: args.distribution ?? config.distribution,
     commitMessage: args["commit-message"] ?? config.commitMessage,
   };
 
@@ -259,6 +310,7 @@ function main() {
       : parseBoolean(merged.featured, "featured");
   const date = toDateString(merged.date);
   const author = merged.author || "Nivaran Foundation News Desk";
+  const distribution = parseDistribution(merged.distribution);
   const keywords =
     merged.keywords ||
     merged.title
@@ -361,6 +413,7 @@ function main() {
   const relMdxPath = path.relative(repoRoot, mdxPath);
   const relListPath = path.relative(repoRoot, listFilePath);
   const relImagePath = resolveLocalImagePath(repoRoot, merged.mainImage);
+  const publicUrls = getPublicUrls(articleType, slug, distribution);
 
   const commitMessage = merged.commitMessage || `Publish article: ${merged.title}`;
 
@@ -382,6 +435,18 @@ function main() {
     const result = tryGitPush(repoRoot, pushRemote, pushRefSpec);
     if (result.success) {
       pushed = true;
+      try {
+        const pingScriptPath = path.join(repoRoot, "scripts", "ping-indexnow.mjs");
+        runNodeScript(
+          repoRoot,
+          pingScriptPath,
+          publicUrls.flatMap((url) => ["--url", url]),
+        );
+      } catch (error) {
+        console.error(
+          `WARN: IndexNow ping failed: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
     } else if (result.offline) {
       const scriptsDir = path.dirname(new URL(import.meta.url).pathname);
       const queuePath = queuePush(
@@ -408,10 +473,8 @@ function main() {
     status: args["dry-run"] ? "dry-run" : "published",
     slug,
     mdxPath: relMdxPath,
-    blogUrl: `https://www.nivaranfoundation.org${getPublicPath(
-      articleType,
-      slug
-    )}`,
+    blogUrl: publicUrls[0],
+    blogUrls: publicUrls,
     listFile: relListPath,
     ...(relImagePath ? { imageFile: relImagePath } : {}),
     committed: !args["dry-run"] && (!!args.commit || !!args.push),

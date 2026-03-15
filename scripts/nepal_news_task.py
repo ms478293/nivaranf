@@ -1516,6 +1516,7 @@ def run_pipeline(args: argparse.Namespace) -> Dict:
         "donateLine": donate_line,
         "authorBio": author_bio,
         "bodyFile": str(body_file),
+        "distribution": ["main"],
         "commitMessage": f"Auto publish Nepal news: {title}",
     }
     config_file.write_text(json.dumps(article_config, indent=2, ensure_ascii=False), encoding="utf-8")
