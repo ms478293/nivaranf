@@ -1,4 +1,5 @@
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
+import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,6 +46,8 @@ export default function FreeHealthCampNepalPage() {
         "That includes community coordination, medical staffing, logistics, medicines, registration, screening, clinical review, and referral systems for cases that require higher-level care. Without those pieces, a camp becomes publicity rather than service delivery.",
         "Project Sanjeevani is built around the idea that a free health camp should be operationally accountable. The point is not just turnout. The point is useful care, verified delivery, and continuity where possible.",
       ]}
+      editorialNote="This page explains how free health camps function as an outreach model. It is not a treatment guide and should not replace advice from a licensed clinician or emergency service."
+      evidenceLinks={GENERAL_HEALTHCARE_EVIDENCE}
       sections={[
         {
           title: "Before the camp opens",

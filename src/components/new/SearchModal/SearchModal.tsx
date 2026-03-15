@@ -24,6 +24,11 @@ const SITE_PAGES = [
     description: "Board, governance, and management team",
   },
   {
+    title: "Editorial Standards",
+    url: "/editorial-standards",
+    description: "Sourcing, corrections, bylines, and healthcare content standards",
+  },
+  {
     title: "Advisory Board",
     url: "/advisory-board",
     description: "External expertise, review priorities, and governance context",

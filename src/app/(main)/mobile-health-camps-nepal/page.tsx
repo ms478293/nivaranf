@@ -1,4 +1,5 @@
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
+import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -43,6 +44,8 @@ export default function MobileHealthCampsNepalPage() {
         "A good mobile health camp is not just a one-day event. It is a field-delivery model that compresses travel, waiting time, and first-contact diagnosis into a shorter, more affordable window for the patient.",
         "In Nepal, this matters most where road access is weak, specialist care is concentrated in urban centers, and people delay care until symptoms become severe because reaching treatment is expensive and disruptive.",
       ]}
+      editorialNote="This page explains access barriers and outreach delivery models in Nepal. It is not medical advice. It should be read alongside Nivaran's care-model page and the official reference sources below."
+      evidenceLinks={GENERAL_HEALTHCARE_EVIDENCE}
       sections={[
         {
           title: "What a field camp actually does",

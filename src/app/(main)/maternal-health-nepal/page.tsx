@@ -1,4 +1,5 @@
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
+import { MATERNAL_HEALTH_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -43,6 +44,8 @@ export default function MaternalHealthNepalPage() {
         "Pregnant mothers do not need only information. They need timely contact with care, reliable referral routes, and fewer barriers to checkups that can detect risks before they become emergencies.",
         "That is why maternal health belongs inside broader rural healthcare planning. Outreach, local trust, and follow-up matter long before labor or hospital admission becomes urgent.",
       ]}
+      editorialNote="This page covers maternal-health access and referral systems at a public-information level. It is not a substitute for antenatal care, emergency obstetric assessment, or advice from a licensed clinician."
+      evidenceLinks={MATERNAL_HEALTH_EVIDENCE}
       sections={[
         {
           title: "Why early contact matters",

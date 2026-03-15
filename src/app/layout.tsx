@@ -259,8 +259,8 @@ export default async function RootLayout({
             />
           </>
         )}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://ipapi.co" />
         <link rel="dns-prefetch" href={PUBLIC_API_BASE_URL} />
 

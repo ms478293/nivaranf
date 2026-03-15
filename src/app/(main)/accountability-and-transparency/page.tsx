@@ -96,6 +96,32 @@ export default function AccountabilityAndTransparencyPage() {
           </div>
         </div>
 
+        <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 mt-8">
+          <h2 className="text-xl font-semibold text-gray-900">
+            How public diligence should work
+          </h2>
+          <div className="mt-3 space-y-4 text-sm leading-6 text-gray-600">
+            <p>
+              A trustworthy nonprofit should make its leadership, reporting
+              routes, core program logic, and current operating claims
+              inspectable without forcing every partner into a private diligence
+              process.
+            </p>
+            <p>
+              At Nivaran Foundation, that public diligence surface now includes
+              the leadership directory, financial reporting route, impact fact
+              sheet, care-model page, and Sanjeevani tracking portal. The goal
+              is to reduce ambiguity, not hide behind mission language.
+            </p>
+            <p>
+              When something is still in preparation, it should be stated
+              clearly. When a metric is current, it should match the shared
+              source of truth used across the website. That is the standard we
+              are working toward across every public route.
+            </p>
+          </div>
+        </div>
+
         <RelatedContent
           heading="Supporting Reference Pages"
           links={[

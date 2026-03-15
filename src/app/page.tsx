@@ -102,10 +102,6 @@ const page = () => {
       </header>
 
       <main id="main-content" role="main">
-        <h1 className="sr-only">
-          Nivaran Foundation: Free Healthcare and Education in Rural Nepal
-        </h1>
-
         <SetCookie />
 
         {/* Hero Section */}

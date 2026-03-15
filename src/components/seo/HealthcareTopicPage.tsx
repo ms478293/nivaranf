@@ -1,5 +1,6 @@
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
+import type { EvidenceLink } from "@/content/healthcare-evidence";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import Link from "next/link";
 
@@ -35,6 +36,8 @@ interface HealthcareTopicPageProps {
   sections: TopicSection[];
   faq: TopicFaq[];
   relatedLinks: TopicLink[];
+  editorialNote?: string;
+  evidenceLinks?: EvidenceLink[];
 }
 
 export function HealthcareTopicPage({
@@ -47,6 +50,8 @@ export function HealthcareTopicPage({
   sections,
   faq,
   relatedLinks,
+  editorialNote,
+  evidenceLinks,
 }: HealthcareTopicPageProps) {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -170,6 +175,65 @@ export function HealthcareTopicPage({
           </aside>
         </div>
       </section>
+
+      {(editorialNote || evidenceLinks?.length) && (
+        <section className="px-4 py-4">
+          <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+            <article className="rounded-3xl border border-slate-200 bg-slate-50 p-8">
+              <h2 className="text-2xl font-semibold text-slate-900">
+                Editorial and care-quality note
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                {editorialNote ||
+                  "This page is a public educational overview of access barriers and delivery models. It is not personal medical advice and should not replace diagnosis, treatment, or emergency care from a licensed clinician."}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Link
+                  href="/care-model"
+                  className="inline-flex items-center rounded-full bg-primary-500 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-600"
+                >
+                  Review Care Model
+                </Link>
+                <Link
+                  href="/editorial-standards"
+                  className="inline-flex items-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
+                >
+                  Editorial Standards
+                </Link>
+              </div>
+            </article>
+
+            {evidenceLinks?.length ? (
+              <article className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+                <h2 className="text-2xl font-semibold text-slate-900">
+                  Official reference sources
+                </h2>
+                <div className="mt-5 space-y-4">
+                  {evidenceLinks.map((source) => (
+                    <a
+                      key={source.href}
+                      href={source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-colors hover:border-primary-200 hover:bg-white"
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary-500">
+                        {source.source}
+                      </p>
+                      <h3 className="mt-2 text-base font-semibold text-slate-900">
+                        {source.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-6 text-slate-600">
+                        {source.note}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </article>
+            ) : null}
+          </div>
+        </section>
+      )}
 
       <section className="px-4 py-4">
         <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-3">

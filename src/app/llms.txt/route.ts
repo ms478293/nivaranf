@@ -9,11 +9,12 @@ const MAIN_LLMS_TXT = `# Nivaran Foundation
 ## About
 - [About Nivaran Foundation](https://www.nivaranfoundation.org/about): Mission, vision, founding story, and organizational overview
 - [Leadership & Governance](https://www.nivaranfoundation.org/leadership): Board, management, governance, and verification reference
+- [Editorial Standards](https://www.nivaranfoundation.org/editorial-standards): Public standards for sourcing, corrections, and healthcare content boundaries
 - [Advisory Board](https://www.nivaranfoundation.org/advisory-board): External expertise priorities, review focus, and governance context
 - [Care Model & Quality Standards](https://www.nivaranfoundation.org/care-model): Public reference for screening, referral, training, and safeguarding expectations
 - [Impact Fact Sheet](https://www.nivaranfoundation.org/impact-fact-sheet): Key statistics, reach, and measurable outcomes
 - [Accountability & Transparency](https://www.nivaranfoundation.org/accountability-and-transparency): Governance and financial stewardship
-- [Financial Reports](https://www.nivaranfoundation.org/financial-reports): Annual reports and Form 990 filings
+- [Financial Reports](https://www.nivaranfoundation.org/financial-reports): Reporting status, organization details, and diligence pathways
 
 ## Programs
 - [Project Sanjeevani](https://www.nivaranfoundation.org/sanjeevani): Flagship mobile health camp program serving rural Nepal

@@ -8,6 +8,7 @@ import { WhyNIvaran } from "@/components/new/WhyNivaran/WhyNIvaran";
 import { STORY_CONTENT } from "@/content/story-content";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Suspense } from "react";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
@@ -126,6 +127,93 @@ export default function page() {
 
         <div className="flex justify-center mt-12">
           <SubscribeButton label="Stay Updated with Our Journey" />
+        </div>
+      </section>
+
+      <section className="w-full px-4 py-12">
+        <div className="max-w-[1320px] mx-auto grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
+            <MainTitle
+              suffix="Founded by"
+              prefix="Mukesh Thakur"
+              className="max-w-[640px]"
+            />
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-gray-700">
+              Nivaran Foundation was founded by Mukesh Thakur after witnessing
+              how geography, poverty, and delayed access to care combine to push
+              rural families out of the health system altogether. The
+              organization&apos;s early direction was shaped by a simple
+              operating question: how do you bring real services closer to
+              communities that are routinely left too far from first-contact
+              care?
+            </p>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-gray-700">
+              That founder context still matters publicly. It gives partners,
+              donors, and journalists a named leadership reference behind the
+              mission, instead of an anonymous origin story. Nivaran&apos;s
+              public governance and leadership directory now makes that
+              institutional responsibility visible.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="/leadership"
+                className="inline-flex min-h-[44px] items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-primary-600"
+              >
+                Review Leadership
+              </Link>
+              <Link
+                href="/impact-fact-sheet"
+                className="inline-flex min-h-[44px] items-center rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-gray-800 transition hover:border-primary-500 hover:text-primary-500"
+              >
+                Open Fact Sheet
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-gray-200 bg-gray-50 p-8">
+            <h2 className="text-2xl font-semibold text-gray-900">
+              Public trust markers
+            </h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <article className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  Founder
+                </p>
+                <p className="mt-3 text-lg font-semibold text-gray-900">
+                  Mukesh Thakur
+                </p>
+              </article>
+              <article className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  Legal status
+                </p>
+                <p className="mt-3 text-lg font-semibold text-gray-900">
+                  U.S. 501(c)(3)
+                </p>
+              </article>
+              <article className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  EIN
+                </p>
+                <p className="mt-3 text-lg font-semibold text-gray-900">
+                  41-2656587
+                </p>
+              </article>
+              <article className="rounded-2xl border border-gray-200 bg-white p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                  U.S. office
+                </p>
+                <p className="mt-3 text-lg font-semibold text-gray-900">
+                  Arlington, MA
+                </p>
+              </article>
+            </div>
+            <p className="mt-6 text-sm leading-7 text-gray-600">
+              For external verification, start with the leadership page,
+              financial reports route, and impact fact sheet before requesting
+              further diligence documents.
+            </p>
+          </div>
         </div>
       </section>
 

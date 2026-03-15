@@ -113,6 +113,7 @@ const NivaranHeader = () => {
                 alt="Nivaran Logo"
                 width={100}
                 height={40}
+                priority
               />
             </Link>
             {screenSize !== "864px" ? (

@@ -29,7 +29,7 @@ const HeroTitle = ({
     // <div className="absolute w-full top-[38%] min-[390px]:top-[40%] sm:top-[60%] min-[430px]:top-[35%]  xl:top-[60%]    z-[20] px-4 ">
     <div className="w-full absolute z-[20] md:bottom-20 bottom-16 px-4">
       <div className="max-w-[1320px] mx-auto">
-        <div className="text-white md:text-4xl/[58px] text-xl min-[430px]:text-3xl  max-w-[700px] sm:max-w-[620px] font-[600] relative font-Poppins min-[430px]:leading-[3.5rem] sm:leading-normal  ">
+        <h1 className="text-white md:text-4xl/[58px] text-xl min-[430px]:text-3xl  max-w-[700px] sm:max-w-[620px] font-[600] relative font-Poppins min-[430px]:leading-[3.5rem] sm:leading-normal  ">
           Building a Better World{"  "}
           <span className="font-extralight ">Together by </span>
           <span className="text-primary-500 [&>span]:block absolute md:-right-[20rem] left-0 sm:left-auto sm:-right-[16rem] top-[4.5rem]  min-[430px]:top-[6.8rem] sm:top-16 md:top-16 max-[430px]:-right-32  h-[4.5rem] w-full overflow-hidden">
@@ -47,7 +47,7 @@ const HeroTitle = ({
               )}
             />
           </span>
-        </div>
+        </h1>
         <p className="text-white text-md md:text-lg/8 max-w-3xl leading-6 font-normal mt-10 min-[430px]:mt-12 min-[430px]:mb-2 sm:mt-2">
           Rewrite the story of tomorrow, one community at a time. Together, we
           are building a brighter future for all.

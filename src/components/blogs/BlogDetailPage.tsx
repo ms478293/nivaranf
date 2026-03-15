@@ -215,6 +215,27 @@ function getDefaultAuthorBio(siteVariant: SiteVariant) {
   return getSiteVariantConfig(siteVariant).articleDefaultAuthorBio;
 }
 
+function normalizeDisplayAuthor(authorName: string, siteVariant: SiteVariant) {
+  const value = authorName.trim();
+  if (!value) return getSiteVariantConfig(siteVariant).articleAuthorFallback;
+  if (/global desk/i.test(value)) return "Nivaran Global Editorial Team";
+  if (/nepal desk/i.test(value)) return "Nivaran Editorial Team";
+  if (/editorial desk/i.test(value)) {
+    return siteVariant === "global"
+      ? "Nivaran Global Editorial Team"
+      : "Nivaran Editorial Team";
+  }
+  return value;
+}
+
+function isGenericAuthorBio(authorBio?: string) {
+  const value = (authorBio || "").trim();
+  if (!value) return true;
+  return /bio line|desk provides|news desk|global desk|nepal desk|editorial desk/i.test(
+    value,
+  );
+}
+
 function getSchemaType(articleType: blogListType["type"]) {
   if (articleType === "News") return "NewsArticle";
   if (articleType === "Story") return "Article";
@@ -411,8 +432,10 @@ export async function getMetadataForBlogSlug(
       );
       const publishedTime = dynamicPost.published_at || undefined;
       const modifiedTime = dynamicPost.updated_at || undefined;
-      const authorName =
-        dynamicPost.author || siteConfig.articleAuthorFallback;
+      const authorName = normalizeDisplayAuthor(
+        dynamicPost.author || siteConfig.articleAuthorFallback,
+        siteVariant,
+      );
 
       return {
         title,
@@ -494,7 +517,10 @@ export async function getMetadataForBlogSlug(
     const canonical = `${siteConfig.siteUrl}${canonicalPath}`;
     const imageUrl = toAbsoluteWebsiteUrl(siteConfig.siteUrl, data.mainImage);
     const publishedTime = data.date || listEntry?.date;
-    const authorName = data.author || siteConfig.articleAuthorFallback;
+    const authorName = normalizeDisplayAuthor(
+      data.author || siteConfig.articleAuthorFallback,
+      siteVariant,
+    );
 
     return {
       title,
@@ -642,7 +668,10 @@ export async function renderBlogDetailPage({
 
   const title = data.title || listEntry?.title || "Untitled Blog";
   const subtitle = data.subtitle || listEntry?.summary || "";
-  const author = data.author || siteConfig.articleAuthorFallback;
+  const author = normalizeDisplayAuthor(
+    data.author || siteConfig.articleAuthorFallback,
+    siteVariant,
+  );
   const dateLabel = formatDate(data.date || listEntry?.date);
   const readTimeLabel = `${readTimeMinutes} min read`;
   const location = data.location || siteConfig.articleDefaultLocation;
@@ -811,9 +840,12 @@ export async function renderBlogDetailPage({
             <div>
               <div className={styles.authorName}>{author}</div>
               <p className={styles.authorBio}>
-                {data.authorBio || getDefaultAuthorBio(siteVariant)}
+                {isGenericAuthorBio(data.authorBio)
+                  ? getDefaultAuthorBio(siteVariant)
+                  : data.authorBio}
               </p>
               <div className={styles.authorLinks}>
+                <Link href="/editorial-standards">Editorial Standards</Link>
                 <a
                   href="https://www.instagram.com/nivaran.foundation/"
                   target="_blank"

@@ -1,4 +1,5 @@
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
+import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -43,6 +44,8 @@ export default function RuralHealthcareNepalPage() {
         "Rural healthcare is not only about whether a clinic exists on paper. It is about whether a patient can actually reach care, pay the indirect costs, receive the right next step, and return for follow-up when needed.",
         "That is why rural health strategy in Nepal has to combine field outreach, local trust, referral discipline, and better visibility into what is truly happening on the ground.",
       ]}
+      editorialNote="This page is an educational overview of healthcare access barriers in Nepal and should not be used as clinical guidance for diagnosis or treatment decisions."
+      evidenceLinks={GENERAL_HEALTHCARE_EVIDENCE}
       sections={[
         {
           title: "Distance changes clinical behavior",

@@ -1,4 +1,5 @@
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
+import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,6 +46,8 @@ export default function HealthNgoNepalPage() {
         "The practical difference between a credible rural health organization and a weak one is not branding. It is operational discipline: staffing, logistics, medicine management, screening protocols, local coordination, referral pathways, and public transparency around outcomes.",
         "Nivaran Foundation uses Project Sanjeevani to focus on that field reality. The goal is not only visibility. The goal is measurable care delivery in places where distance and infrastructure still block first contact with the health system.",
       ]}
+      editorialNote="This page is a public-interest explainer about healthcare delivery standards and nonprofit credibility. It is not a substitute for medical, legal, or due-diligence advice."
+      evidenceLinks={GENERAL_HEALTHCARE_EVIDENCE}
       sections={[
         {
           title: "What credible health delivery looks like",

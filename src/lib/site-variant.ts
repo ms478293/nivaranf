@@ -43,7 +43,7 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     articleFallbackTitle: "Nivaran Foundation | Rural Healthcare in Nepal",
     articleFallbackDescription:
       "Read the latest stories and updates from Nivaran Foundation.",
-    articleAuthorFallback: "Nivaran Foundation News Desk",
+    articleAuthorFallback: "Nivaran Editorial Team",
     articleDefaultLocation: "Nepal",
     articleDefaultDonateLine:
       "Distance is the disease. Your support helps us bring healthcare and education to communities where access still depends on geography.",
@@ -73,7 +73,7 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     articleFallbackTitle: "Nivaran Global | Humanitarian Reporting & Action",
     articleFallbackDescription:
       "Read field reporting, analysis, and campaign updates from Nivaran Global.",
-    articleAuthorFallback: "Nivaran Global Editorial Desk",
+    articleAuthorFallback: "Nivaran Global Editorial Team",
     articleDefaultLocation: "Nivaran Global Desk",
     articleDefaultDonateLine:
       "This reporting supports public understanding, partner alignment, and responsible humanitarian action. Back the work if you want this platform to keep publishing with clarity and discipline.",
@@ -101,7 +101,7 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     articleFallbackTitle: "Nivaran | United States",
     articleFallbackDescription:
       "Read the latest stories and updates from Nivaran.",
-    articleAuthorFallback: "Nivaran Editorial Desk",
+    articleAuthorFallback: "Nivaran Editorial Team",
     articleDefaultLocation: "United States",
     articleDefaultDonateLine:
       "Support the work that turns community trust into practical action, storytelling, and measurable public benefit.",
