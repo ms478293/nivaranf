@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "precision-strikes-on-classrooms-a-global-education-crisis",
+    title: "Precision Strikes on Classrooms: A Global Education Crisis",
+    summary:
+      "The deliberate targeting of educational institutions in conflict zones constitutes grave war crimes, devastating communities and future generations. Urgent global action is imperative to protect students and educators, and ensure perpetrators are held accountable under international law.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-precision-strikes-on-classrooms-a-global-education-crisis.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "brazil-ex-president-hospitalized-health-politics-intersect",
     title: "Brazil Ex-President Hospitalized: Health, Politics Intersect",
     summary:
