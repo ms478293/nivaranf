@@ -5,8 +5,10 @@ import { CookieConsent } from "@/components/new/CookieConsent/CookieConsent";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { getSiteVariantConfig, type SiteVariant } from "@/lib/site-variant";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Script from "next/script";
 import { Poppins } from "next/font/google";
 
@@ -19,6 +21,12 @@ const ENABLE_VERCEL_ANALYTICS =
 const DEFAULT_TITLE = "Nivaran Foundation";
 const DEFAULT_DESCRIPTION =
   "Nivaran Foundation builds humanitarian, health, education, and public-interest initiatives across multiple contexts.";
+
+function detectSiteVariant(host: string): SiteVariant {
+  if (host.startsWith("global.")) return "global";
+  if (host.startsWith("usa.")) return "usa";
+  return "main";
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -67,71 +75,80 @@ export const metadata: Metadata = {
   },
 };
 
-const websiteSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Nivaran Foundation",
-  alternateName: "Nivaran",
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo_img.jpg`,
-  description: DEFAULT_DESCRIPTION,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/blogs?q={search_term_string}` },
-    "query-input": "required name=search_term_string",
-  },
-  inLanguage: "en",
-};
+function buildSeoSchemas(variant: SiteVariant) {
+  if (variant !== "main") return null;
 
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": ["Organization", "NGO", "NonprofitOrganization", "MedicalOrganization"],
-  name: "Nivaran Foundation",
-  alternateName: "Nivaran",
-  url: SITE_URL,
-  logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png`, width: 1200, height: 665 },
-  image: `${SITE_URL}/logo.png`,
-  description: DEFAULT_DESCRIPTION,
-  foundingDate: "2020",
-  founder: {
-    "@type": "Person",
-    name: "Mukesh Thakur",
-    jobTitle: "Founder & Executive Director",
-    sameAs: "https://www.linkedin.com/in/mukeshthakur",
-  },
-  contactPoint: [{
-    "@type": "ContactPoint",
-    telephone: "+977-01-5354693",
-    contactType: "customer support",
-    email: "partnerships@nivaranfoundation.org",
-    areaServed: ["NP", "US"],
-    availableLanguage: ["English", "Nepali"],
-  }],
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=61584248211038",
-    "https://www.instagram.com/nivaran.foundation/",
-    "https://x.com/NivaranOrg",
-    "https://www.linkedin.com/company/nivaran-foundation",
-  ],
-  address: [
-    { "@type": "PostalAddress", streetAddress: "Kathmandu", addressLocality: "Kathmandu", addressRegion: "Bagmati", addressCountry: "NP" },
-    { "@type": "PostalAddress", streetAddress: "1025 Massachusetts Ave, Suite 303", addressLocality: "Arlington", addressRegion: "MA", postalCode: "02476", addressCountry: "US" },
-  ],
-  taxID: "41-2656587",
-  nonprofitStatus: "https://schema.org/Nonprofit501c3",
-  areaServed: [{ "@type": "Country", name: "Nepal" }, { "@type": "Country", name: "United States" }],
-  knowsAbout: ["Rural Healthcare", "Mobile Health Camps", "Maternal Health", "Child Health", "Education in Nepal", "Community Development"],
-  medicalSpecialty: ["https://schema.org/PrimaryCare", "https://schema.org/PublicHealth"],
-};
+  const config = getSiteVariantConfig("main");
+  const siteUrl = config.siteUrl;
 
-const donateActionSchema = {
-  "@context": "https://schema.org",
-  "@type": "DonateAction",
-  name: "Donate to Nivaran Foundation",
-  description: "Your tax-deductible donation funds healthcare and education in Nepal. 96% goes directly to programs.",
-  recipient: { "@type": "Organization", name: "Nivaran Foundation", url: SITE_URL },
-  target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/donate`, actionPlatform: "http://schema.org/DesktopWebPlatform" },
-};
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: config.siteName,
+    alternateName: "Nivaran",
+    url: siteUrl,
+    logo: `${siteUrl}/logo_img.jpg`,
+    description: config.defaultDescription,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${siteUrl}${config.searchPath}?q={search_term_string}` },
+      "query-input": "required name=search_term_string",
+    },
+    inLanguage: "en",
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "NGO", "NonprofitOrganization", "MedicalOrganization"],
+    name: config.siteName,
+    alternateName: "Nivaran",
+    url: siteUrl,
+    logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png`, width: 1200, height: 665 },
+    image: `${siteUrl}/logo.png`,
+    description: config.defaultDescription,
+    foundingDate: "2020",
+    founder: {
+      "@type": "Person",
+      name: "Mukesh Thakur",
+      jobTitle: "Founder & Executive Director",
+      sameAs: "https://www.linkedin.com/in/mukeshthakur",
+    },
+    contactPoint: [{
+      "@type": "ContactPoint",
+      telephone: "+977-01-5354693",
+      contactType: "customer support",
+      email: config.contactEmail,
+      areaServed: ["NP", "US"],
+      availableLanguage: ["English", "Nepali"],
+    }],
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61584248211038",
+      "https://www.instagram.com/nivaran.foundation/",
+      "https://x.com/NivaranOrg",
+      "https://www.linkedin.com/company/nivaran-foundation",
+    ],
+    address: [
+      { "@type": "PostalAddress", streetAddress: "Kathmandu", addressLocality: "Kathmandu", addressRegion: "Bagmati", addressCountry: "NP" },
+      { "@type": "PostalAddress", streetAddress: "1025 Massachusetts Ave, Suite 303", addressLocality: "Arlington", addressRegion: "MA", postalCode: "02476", addressCountry: "US" },
+    ],
+    taxID: "41-2656587",
+    nonprofitStatus: "https://schema.org/Nonprofit501c3",
+    areaServed: [{ "@type": "Country", name: "Nepal" }, { "@type": "Country", name: "United States" }],
+    knowsAbout: ["Rural Healthcare", "Mobile Health Camps", "Maternal Health", "Child Health", "Education in Nepal", "Community Development"],
+    medicalSpecialty: ["https://schema.org/PrimaryCare", "https://schema.org/PublicHealth"],
+  };
+
+  const donateActionSchema = {
+    "@context": "https://schema.org",
+    "@type": "DonateAction",
+    name: `Donate to ${config.siteName}`,
+    description: "Your tax-deductible donation funds healthcare and education in Nepal. 96% goes directly to programs.",
+    recipient: { "@type": "Organization", name: config.siteName, url: siteUrl },
+    target: { "@type": "EntryPoint", urlTemplate: `${siteUrl}/donate`, actionPlatform: "http://schema.org/DesktopWebPlatform" },
+  };
+
+  return { websiteSchema, organizationSchema, donateActionSchema };
+}
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -145,21 +162,35 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headerStore = await headers();
+  const host = headerStore.get("x-forwarded-host") || headerStore.get("host") || "";
+  const variant = detectSiteVariant(host);
+  const variantConfig = getSiteVariantConfig(variant);
+  const schemas = buildSeoSchemas(variant);
+
   return (
     <html lang="en">
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/logo.png" />
-        <meta name="theme-color" content="#eb5834" />
-        <link rel="alternate" hrefLang="en" href={SITE_URL} />
-        <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
+        <meta name="theme-color" content={variantConfig.themeColor} />
+        {variant === "main" && (
+          <>
+            <link rel="alternate" hrefLang="en" href={variantConfig.siteUrl} />
+            <link rel="alternate" hrefLang="x-default" href={variantConfig.siteUrl} />
+          </>
+        )}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://ipapi.co" />
         <link rel="dns-prefetch" href={PUBLIC_API_BASE_URL} />
-        <script id="Website-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <script id="Organization-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script id="DonateAction-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(donateActionSchema) }} />
+        {schemas && (
+          <>
+            <script id="Website-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.websiteSchema) }} />
+            <script id="Organization-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.organizationSchema) }} />
+            <script id="DonateAction-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.donateActionSchema) }} />
+          </>
+        )}
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QF370FRN47"

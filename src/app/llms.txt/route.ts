@@ -1,4 +1,7 @@
-# Nivaran Foundation
+import { headers } from "next/headers";
+import { NextResponse } from "next/server";
+
+const MAIN_LLMS_TXT = `# Nivaran Foundation
 
 > Nivaran Foundation is a 501(c)(3) nonprofit organization delivering free mobile health camps, maternal care, and education support to underserved communities across rural Nepal. Founded in 2020, Nivaran has served 17,000+ patients through 16+ health camps across all 7 provinces of Nepal. EIN: 41-2656587.
 
@@ -41,3 +44,37 @@
 
 ## FAQ
 - [Frequently Asked Questions](https://www.nivaranfoundation.org/frequently-asked-questions)
+`;
+
+const GLOBAL_LLMS_TXT = `# Nivaran Global
+
+> Nivaran Global is the international platform of Nivaran Foundation for humanitarian campaigns, crisis reporting, and public-interest response coordination.
+
+## Content
+- [News](https://global.nivaranfoundation.org/news): Field reporting and humanitarian analysis
+- [Articles](https://global.nivaranfoundation.org/articles): In-depth humanitarian articles
+- [Stories](https://global.nivaranfoundation.org/stories): Impact narratives from the field
+- [Campaigns](https://global.nivaranfoundation.org/campaigns): Active humanitarian campaigns
+
+## Contact
+- Email: support@global.nivaranfoundation.org
+- [Contact Page](https://global.nivaranfoundation.org/contact)
+`;
+
+export async function GET() {
+  const headerStore = await headers();
+  const host =
+    headerStore.get("x-forwarded-host") ||
+    headerStore.get("host") ||
+    "";
+
+  const isGlobal = host.startsWith("global.");
+  const content = isGlobal ? GLOBAL_LLMS_TXT : MAIN_LLMS_TXT;
+
+  return new NextResponse(content, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=86400, s-maxage=86400",
+    },
+  });
+}
