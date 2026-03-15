@@ -16,69 +16,68 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 type StaticRoute = {
   path: string;
   priority: number;
-  changeFrequency: SitemapEntry["changeFrequency"];
   isKeyPage?: boolean;
 };
 
 const MAIN_STATIC_ROUTES: StaticRoute[] = [
-  { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
-  { path: "/about", priority: 0.9, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/donate", priority: 1.0, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/contact-us", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/career", priority: 0.7, changeFrequency: "weekly" },
-  { path: "/blogs", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
-  { path: "/articles", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
-  { path: "/stories", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
-  { path: "/news", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
-  { path: "/global-news", priority: 0.8, changeFrequency: "hourly" },
-  { path: "/projects", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/mobile-health-camps-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/rural-healthcare-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/maternal-health-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/health-ngo-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/free-health-camp-nepal", priority: 0.8, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/impact-fact-sheet", priority: 0.7, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/healthcare-coverage-nepal", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/sanjeevani", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/sanjeevani/tracking", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/vidya", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/volunteer", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/programs", priority: 0.9, changeFrequency: "monthly", isKeyPage: true },
-  { path: "/programs/health", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/programs/education", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/gaupalika", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/corporate", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/accountability-and-transparency", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/financial-reports", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/financial-responsibility", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/belonging-and-inclusion", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/advisory-board", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/dei", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/how-to-help", priority: 0.6, changeFrequency: "monthly" },
-  { path: "/organize-locally", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/attend", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/journey", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/frequently-asked-questions", priority: 0.5, changeFrequency: "monthly" },
-  { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly" },
-  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/", priority: 1.0, isKeyPage: true },
+  { path: "/about", priority: 0.9, isKeyPage: true },
+  { path: "/donate", priority: 1.0, isKeyPage: true },
+  { path: "/contact-us", priority: 0.8 },
+  { path: "/career", priority: 0.7 },
+  { path: "/blogs", priority: 0.9, isKeyPage: true },
+  { path: "/articles", priority: 0.9, isKeyPage: true },
+  { path: "/stories", priority: 0.9, isKeyPage: true },
+  { path: "/news", priority: 0.9, isKeyPage: true },
+  { path: "/global-news", priority: 0.8 },
+  { path: "/projects", priority: 0.9, isKeyPage: true },
+  { path: "/mobile-health-camps-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/rural-healthcare-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/maternal-health-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/health-ngo-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/free-health-camp-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/impact-fact-sheet", priority: 0.7, isKeyPage: true },
+  { path: "/healthcare-coverage-nepal", priority: 0.8, isKeyPage: true },
+  { path: "/sanjeevani", priority: 0.8 },
+  { path: "/sanjeevani/tracking", priority: 0.8, isKeyPage: true },
+  { path: "/vidya", priority: 0.8 },
+  { path: "/volunteer", priority: 0.9, isKeyPage: true },
+  { path: "/programs", priority: 0.9, isKeyPage: true },
+  { path: "/programs/health", priority: 0.8 },
+  { path: "/programs/education", priority: 0.8 },
+  { path: "/gaupalika", priority: 0.6 },
+  { path: "/corporate", priority: 0.6 },
+  { path: "/accountability-and-transparency", priority: 0.6 },
+  { path: "/financial-reports", priority: 0.6 },
+  { path: "/financial-responsibility", priority: 0.6 },
+  { path: "/belonging-and-inclusion", priority: 0.6 },
+  { path: "/advisory-board", priority: 0.5 },
+  { path: "/dei", priority: 0.5 },
+  { path: "/how-to-help", priority: 0.6 },
+  { path: "/organize-locally", priority: 0.5 },
+  { path: "/attend", priority: 0.5 },
+  { path: "/journey", priority: 0.5 },
+  { path: "/frequently-asked-questions", priority: 0.5 },
+  { path: "/terms-of-service", priority: 0.3 },
+  { path: "/privacy-policy", priority: 0.3 },
 ];
 
 const GLOBAL_STATIC_ROUTES: StaticRoute[] = [
-  { path: "/", priority: 1.0, changeFrequency: "daily", isKeyPage: true },
-  { path: "/campaigns", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/campaigns/israel", priority: 0.9, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/news", priority: 0.9, changeFrequency: "daily", isKeyPage: true },
-  { path: "/stories", priority: 0.8, changeFrequency: "daily", isKeyPage: true },
-  { path: "/articles", priority: 0.8, changeFrequency: "daily", isKeyPage: true },
-  { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" },
-  { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/", priority: 1.0, isKeyPage: true },
+  { path: "/campaigns", priority: 0.9, isKeyPage: true },
+  { path: "/campaigns/israel", priority: 0.9, isKeyPage: true },
+  { path: "/news", priority: 0.9, isKeyPage: true },
+  { path: "/stories", priority: 0.8, isKeyPage: true },
+  { path: "/articles", priority: 0.8, isKeyPage: true },
+  { path: "/contact", priority: 0.7 },
+  { path: "/privacy-policy", priority: 0.3 },
+  { path: "/terms-of-service", priority: 0.3 },
 ];
 
 const USA_STATIC_ROUTES: StaticRoute[] = [
-  { path: "/", priority: 1.0, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/live", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
-  { path: "/blogs", priority: 0.8, changeFrequency: "weekly", isKeyPage: true },
+  { path: "/", priority: 1.0, isKeyPage: true },
+  { path: "/live", priority: 0.8, isKeyPage: true },
+  { path: "/blogs", priority: 0.8, isKeyPage: true },
 ];
 
 function toAbsoluteUrl(siteUrl: string, path: string) {
@@ -94,7 +93,6 @@ function buildStaticEntries(
   return routes.map((route) => ({
     url: toAbsoluteUrl(siteUrl, route.path),
     lastModified: route.isKeyPage ? keyPageLastModified : now,
-    changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
 }
@@ -137,7 +135,6 @@ async function buildMainSitemap() {
   ].map((slug) => ({
     url: toAbsoluteUrl(siteUrl, `/healthcare-coverage-nepal/${slug}`),
     lastModified: keyPageLastModified,
-    changeFrequency: "weekly",
     priority: 0.7,
   }));
 
@@ -148,7 +145,6 @@ async function buildMainSitemap() {
         `/healthcare-coverage-nepal/${province}/${district}`,
       ),
       lastModified: keyPageLastModified,
-      changeFrequency: "weekly",
       priority: 0.65,
     }));
 
@@ -156,7 +152,6 @@ async function buildMainSitemap() {
   const blogEntries: MetadataRoute.Sitemap = blogItems.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
     lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "daily",
     priority: 0.8,
   }));
 
@@ -188,21 +183,18 @@ async function buildGlobalSitemap() {
   const newsEntries: MetadataRoute.Sitemap = news.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
     lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "daily",
     priority: 0.8,
   }));
 
   const storyEntries: MetadataRoute.Sitemap = stories.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
     lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "weekly",
     priority: 0.7,
   }));
 
   const articleEntries: MetadataRoute.Sitemap = articles.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
     lastModified: blog.date ? new Date(blog.date) : now,
-    changeFrequency: "weekly",
     priority: 0.7,
   }));
 
@@ -242,7 +234,6 @@ async function buildUsaSitemap() {
   const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: toAbsoluteUrl(siteUrl, `/blogs/${slug}`),
     lastModified: keyPageLastModified,
-    changeFrequency: "monthly",
     priority: 0.7,
   }));
 
