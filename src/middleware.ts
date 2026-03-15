@@ -79,9 +79,18 @@ export function middleware(req: NextRequest) {
     !isPreviewOrLocalHost &&
     !host.startsWith("nivaranfoundation.org");
 
+  // Root-level SEO routes that must NOT be rewritten on subdomains.
+  // These are handled by variant-aware route handlers at the app root.
+  const SEO_ROOT_PATHS = ["/robots.txt", "/sitemap.xml", "/llms.txt"];
+
   // Check if the subdomain is valid and not the main domain
   // Skip subdomain rewrite for main domain, localhost, and vercel preview URLs
   if (isKnownSubdomainHost) {
+    // Let root-level SEO routes pass through to the app-root handlers
+    if (SEO_ROOT_PATHS.includes(pathname)) {
+      return NextResponse.next();
+    }
+
     const subdomainPath = `/${subdomain}`;
 
     if (pathname === subdomainPath || pathname.startsWith(`${subdomainPath}/`)) {

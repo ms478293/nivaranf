@@ -1,18 +1,58 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const INDEXNOW_KEY = "a450cb77f15ac5428077d787b9e52d2a";
-const SITE_URL = "https://www.nivaranfoundation.org";
+const DEFAULT_HOST = "www.nivaranfoundation.org";
+const ALLOWED_HOSTS = new Set([
+  "www.nivaranfoundation.org",
+  "nivaranfoundation.org",
+  "global.nivaranfoundation.org",
+  "usa.nivaranfoundation.org",
+]);
 const MAX_URLS = 100;
 
-function isValidUrl(value: unknown): value is string {
-  if (typeof value !== "string") return false;
-  if (value.startsWith("/")) return true;
+function resolveUrl(value: string): { host: string; url: string } | null {
+  if (value.startsWith("/")) {
+    const url = `https://${DEFAULT_HOST}${value}`;
+    return { host: DEFAULT_HOST, url };
+  }
   try {
     const parsed = new URL(value);
-    return parsed.hostname.endsWith("nivaranfoundation.org");
+    if (!ALLOWED_HOSTS.has(parsed.hostname)) return null;
+    return { host: parsed.hostname, url: value };
   } catch {
-    return false;
+    return null;
   }
+}
+
+async function submitToIndexNow(host: string, urls: string[]) {
+  const payload = {
+    host,
+    key: INDEXNOW_KEY,
+    keyLocation: `https://${host}/${INDEXNOW_KEY}.txt`,
+    urlList: urls,
+  };
+
+  const results = await Promise.allSettled([
+    fetch("https://api.indexnow.org/indexnow", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    }),
+    fetch("https://www.bing.com/indexnow", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    }),
+  ]);
+
+  return {
+    host,
+    submitted: urls.length,
+    results: results.map((r, i) => ({
+      engine: i === 0 ? "indexnow" : "bing",
+      status: r.status === "fulfilled" ? r.value.status : "error",
+    })),
+  };
 }
 
 export async function POST(req: NextRequest) {
@@ -69,52 +109,41 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const validUrls: string[] = [];
+  // Group valid URLs by host for correct IndexNow submission
+  const byHost = new Map<string, string[]>();
   const invalidUrls: string[] = [];
 
   for (const raw of rawUrls) {
-    if (isValidUrl(raw)) {
-      validUrls.push(
-        raw.startsWith("/") ? `${SITE_URL}${raw}` : raw
-      );
-    } else {
+    if (typeof raw !== "string") {
       invalidUrls.push(String(raw).slice(0, 200));
+      continue;
+    }
+    const resolved = resolveUrl(raw);
+    if (resolved) {
+      const list = byHost.get(resolved.host) || [];
+      list.push(resolved.url);
+      byHost.set(resolved.host, list);
+    } else {
+      invalidUrls.push(raw.slice(0, 200));
     }
   }
 
-  if (validUrls.length === 0) {
+  if (byHost.size === 0) {
     return NextResponse.json(
       { error: "No valid URLs provided", invalidUrls },
       { status: 400 }
     );
   }
 
-  const indexNowPayload = {
-    host: "www.nivaranfoundation.org",
-    key: INDEXNOW_KEY,
-    keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
-    urlList: validUrls,
-  };
-
-  const results = await Promise.allSettled([
-    fetch("https://api.indexnow.org/indexnow", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(indexNowPayload),
-    }),
-    fetch("https://www.bing.com/indexnow", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(indexNowPayload),
-    }),
-  ]);
+  // Submit per-host so each payload has the correct host/keyLocation
+  const submissions = await Promise.all(
+    Array.from(byHost.entries()).map(([host, urls]) =>
+      submitToIndexNow(host, urls)
+    )
+  );
 
   return NextResponse.json({
-    submitted: validUrls.length,
+    submissions,
     ...(invalidUrls.length > 0 && { skipped: invalidUrls }),
-    results: results.map((r, i) => ({
-      engine: i === 0 ? "indexnow" : "bing",
-      status: r.status === "fulfilled" ? r.value.status : "error",
-    })),
   });
 }
