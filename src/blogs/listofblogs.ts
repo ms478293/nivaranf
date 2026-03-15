@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hustle-culture-s-global-toll-reclaiming-sustainable-well-being",
+    title: "Hustle Culture's Global Toll: Reclaiming Sustainable Well-being",
+    summary:
+      "Across the globe, the pervasive 'hustle culture' is pushing professionals to unsustainable limits, leading to widespread burnout and mental health crises. This article explores the profound costs of this relentless drive and advocates for a global paradigm shift towards sustainable well-being and productivity.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-hustle-culture-s-global-toll-reclaiming-sustainable-well-being.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "navigating-the-global-surge-of-anxiety-across-life-s-stages",
     title: "Navigating the Global Surge of Anxiety Across Life's Stages",
     summary:
