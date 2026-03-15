@@ -26,7 +26,7 @@ export const BlogParagraphConfig = ({
   const [hasImage, setHasImage] = useState(config.hasImage ?? false);
   useEffect(() => {
     updateComponent(index, { ...config, hasImage }); // Sync with global state
-  }, [hasImage]);
+  }, [config, hasImage, index, updateComponent]);
 
   const handleTextChange = (value: string) => {
     updateComponent(index, { ...config, text: value });

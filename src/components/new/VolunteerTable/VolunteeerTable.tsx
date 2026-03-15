@@ -17,9 +17,9 @@ import { getAllPrograms } from "@/lib/api/programApi/api";
 import { deleteVolunteer, getAllVolunteers } from "@/lib/api/volunteerApi/api";
 import { useGetFoundation } from "@/lib/helpers/useFoundation";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
+import { ColumnDef } from "@tanstack/react-table";
 import { useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { DeleteConfirmationModal } from "../DeleteConfirmationModal/DeleteConfirmationModal";
 import { Modal } from "../Modal/Modal";
@@ -121,9 +121,9 @@ export const VolunteerTable = () => {
     queryFn: async () => await getAllPrograms(),
   });
 
-  const getProgramName = (programId: number) => {
+  const getProgramName = useCallback((programId: number) => {
     return programs?.find((program) => program.id === programId)?.name;
-  };
+  }, [programs]);
 
   const inActiveVolunteersData = volunteers?.filter(
     (v) =>
@@ -140,7 +140,7 @@ export const VolunteerTable = () => {
         v.programId === selectedProgram)
   );
 
-  const handleSelect = (option: string) => {
+  const handleSelect = useCallback((option: string) => {
     switch (option) {
       case "Delete":
         deleteModal.open();
@@ -155,9 +155,8 @@ export const VolunteerTable = () => {
       default:
         throw new Error("Not valid option");
     }
-  };
+  }, [deleteModal, viewModal]);
 
-  const columnHelper = createColumnHelper<VoluteerTableType>();
   const columns = useMemo(
     () =>
       [
@@ -281,7 +280,7 @@ export const VolunteerTable = () => {
                 )),
         },
       ] as ColumnDef<VoluteerTableType>[],
-    [columnHelper]
+    [activeTabs, getProgramName, handleSelect]
   );
 
   if (isError)

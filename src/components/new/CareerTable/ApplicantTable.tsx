@@ -10,8 +10,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useDisclosure } from "@/hooks/useDisclouse";
 import { deleteApplicant, getAlljobApplication } from "@/lib/api/jobApi/api";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
-import { useMemo, useState } from "react";
+import { ColumnDef } from "@tanstack/react-table";
+import { useCallback, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AppTable } from "../AppTable/AppTable";
 import { DeleteConfirmationModal } from "../DeleteConfirmationModal/DeleteConfirmationModal";
@@ -80,7 +80,7 @@ export const ApplicantTable = () => {
 
   const [, setIsRowSelected] = useState(false);
 
-  const handleSelect = (option: string) => {
+  const handleSelect = useCallback((option: string) => {
     switch (option) {
       case "Delete":
         deleteModal.open();
@@ -95,7 +95,7 @@ export const ApplicantTable = () => {
       default:
         throw new Error("Not valid option");
     }
-  };
+  }, [deleteModal, viewModal]);
 
   const { mutate: deleteAction } = useMutation({
     mutationFn: async () => {
@@ -123,7 +123,6 @@ export const ApplicantTable = () => {
   //   return isAfter(jobDate, today) || isEqual(jobDate, today);
   // }).length;
 
-  const columnHelper = createColumnHelper<JobApplication>();
   const columns = useMemo(
     () =>
       [
@@ -323,7 +322,7 @@ export const ApplicantTable = () => {
           ),
         },
       ] as ColumnDef<JobApplication>[],
-    [columnHelper]
+    [handleSelect]
   );
   if (isLoading) return <p>Loading...</p>;
 

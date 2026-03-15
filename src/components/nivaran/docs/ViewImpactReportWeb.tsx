@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 "use client";
 import { generatePDF } from "@/components/dashboard/actions/generatePdf";
 import { Button } from "@/components/ui/button";

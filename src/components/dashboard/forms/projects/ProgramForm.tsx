@@ -69,7 +69,7 @@ export const ProgramForm = ({
         // status: programData.status || "",
       });
     }
-  }, [programData]);
+  }, [form, programData]);
 
   const { mutate: addProgram, isPending: isAdding } = useMutation({
     mutationFn: async (data: z.infer<typeof programSchema>) => {

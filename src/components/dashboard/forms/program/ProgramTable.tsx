@@ -10,9 +10,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useDisclosure } from "@/hooks/useDisclouse";
 import { deleteProgram, getAllPrograms } from "@/lib/api/programApi/api";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
+import { ColumnDef } from "@tanstack/react-table";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { ProgramForm } from "../projects/ProgramForm";
 
@@ -87,7 +87,7 @@ export const ProgramTable = () => {
   const deleteModal = useDisclosure(false);
   const editModal = useDisclosure(false);
 
-  const handleSelect = (option: string) => {
+  const handleSelect = useCallback((option: string) => {
     switch (option) {
       case "Delete":
         deleteModal.open();
@@ -102,7 +102,7 @@ export const ProgramTable = () => {
       default:
         throw new Error("Not valid option");
     }
-  };
+  }, [deleteModal, editModal, viewModal]);
 
   const columns = useMemo(
     () =>
@@ -212,7 +212,7 @@ export const ProgramTable = () => {
           },
         },
       ] as ColumnDef<ProgramType>[],
-    [createColumnHelper]
+    [handleSelect]
   );
 
   if (isLoading) return <p>Loading...</p>;

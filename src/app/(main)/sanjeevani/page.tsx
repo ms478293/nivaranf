@@ -341,6 +341,12 @@ const page = () => {
                     "What to expect from a credible healthcare nonprofit operating in rural Nepal.",
                 },
                 {
+                  title: "Care Model & Quality Standards",
+                  href: "/care-model",
+                  description:
+                    "How Nivaran explains clinical quality, training, referral logic, and safeguarding in public terms.",
+                },
+                {
                   title: "Free Health Camp Nepal",
                   href: "/free-health-camp-nepal",
                   description:

@@ -247,6 +247,12 @@ export default function PressPage() {
                   "Board, management, and governance reference for journalists and partners.",
               },
               {
+                title: "Care Model & Quality Standards",
+                href: "/care-model",
+                description:
+                  "Public explanation of how outreach care quality, screening, and referral are described.",
+              },
+              {
                 title: "Tracking Portal",
                 href: "/sanjeevani/tracking",
                 description:

@@ -9,9 +9,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useDisclosure } from "@/hooks/useDisclouse";
 import { deletejob, getAllJobs } from "@/lib/api/jobApi/api";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
+import { ColumnDef } from "@tanstack/react-table";
 import { ExpandIcon } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { AppTable } from "../AppTable/AppTable";
 import { DeleteConfirmationModal } from "../DeleteConfirmationModal/DeleteConfirmationModal";
@@ -56,7 +56,7 @@ export const JobTable = () => {
 
   // const [isRowSelected, setIsRowSelected] = useState(false);
 
-  const handleSelect = (option: string) => {
+  const handleSelect = useCallback((option: string) => {
     switch (option) {
       case "Delete":
         deleteModal.open();
@@ -71,7 +71,7 @@ export const JobTable = () => {
       default:
         throw new Error("Not valid option");
     }
-  };
+  }, [deleteModal, editModal, viewModal]);
 
   const { mutate: deleteAction } = useMutation({
     mutationFn: async () => {
@@ -100,7 +100,6 @@ export const JobTable = () => {
   //   return isAfter(jobDate, today) || isEqual(jobDate, today);
   // }).length;
 
-  const columnHelper = createColumnHelper<CareerType>();
   const columns = useMemo(
     () =>
       [
@@ -158,7 +157,7 @@ export const JobTable = () => {
           ),
         },
       ] as ColumnDef<CareerType>[],
-    [columnHelper]
+    [handleSelect]
   );
 
   if (isLoading) return <p>Loading...</p>;

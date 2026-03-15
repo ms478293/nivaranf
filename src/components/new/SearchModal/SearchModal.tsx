@@ -28,6 +28,11 @@ const SITE_PAGES = [
     url: "/advisory-board",
     description: "External expertise, review priorities, and governance context",
   },
+  {
+    title: "Care Model & Quality Standards",
+    url: "/care-model",
+    description: "How outreach care, quality control, and referral logic are described",
+  },
   { title: "News & Stories", url: "/news", description: "Latest updates" },
   { title: "Blogs", url: "/blogs", description: "Articles and insights" },
   { title: "Contact Us", url: "/contact-us", description: "Get in touch" },

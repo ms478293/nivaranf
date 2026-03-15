@@ -1,5 +1,5 @@
 import EditorJS from "@editorjs/editorjs";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { EDITOR_CONFIG } from "../types/editor-config";
 
 const FormEditor = ({
@@ -12,8 +12,107 @@ const FormEditor = ({
   holder: string;
 }) => {
   const editorRef = useRef<EditorJS | null>(null);
+  const onChangeRef = useRef(onChange);
+  const valueRef = useRef(value);
   const [wordCount, setWordCount] = useState(0);
   const [lineNumbers, setLineNumbers] = useState<number[]>([]);
+
+  useEffect(() => {
+    onChangeRef.current = onChange;
+  }, [onChange]);
+
+  useEffect(() => {
+    valueRef.current = value;
+  }, [value]);
+
+  const processAndGenerateHTML = useCallback((data: any) => {
+    return data.blocks
+      .map((block: any) => {
+        if (!block || !block.type) {
+          console.warn("Invalid block data:", block);
+          return "";
+        }
+
+        switch (block.type) {
+          case "header":
+            if (!block.data.level || !block.data.text) {
+              console.warn("Invalid header block:", block);
+              return "";
+            }
+            return `<h${block.data.level}>${block.data.text}</h${block.data.level}>`;
+
+          case "list":
+            if (!block.data.style || !block.data.items) {
+              console.warn("Invalid list block:", block);
+              return "";
+            }
+            const listTag = block.data.style === "ordered" ? "ol" : "ul";
+            return `<${listTag}>${block.data.items
+              .map(
+                (item: any) =>
+                  `<li>${item.content || ""}${item.items
+                    ?.map(
+                      (subItem: any) =>
+                        `<ul><li>${subItem.content || ""}</li></ul>`
+                    )
+                    .join("")}</li>`
+              )
+              .join("")}</${listTag}>`;
+
+          case "quote":
+            if (!block.data.text || !block.data.caption) {
+              console.warn("Invalid quote block:", block);
+              return "";
+            }
+            return `<blockquote style="text-align: ${
+              block.data.alignment || "left"
+            }"><p>${block.data.text}</p><footer>${
+              block.data.caption
+            }</footer></blockquote>`;
+
+          case "checklist":
+            if (!block.data.items || !Array.isArray(block.data.items)) {
+              console.warn("Invalid checklist block:", block);
+              return "";
+            }
+            return block.data.items
+              .map(
+                (item: any) =>
+                  `<div><input type="checkbox" ${
+                    item.checked ? "checked" : ""
+                  } disabled> ${item.text || ""}</div>`
+              )
+              .join("");
+
+          default:
+            if (!block.data || !block.data.text) {
+              console.warn("Invalid default block:", block);
+              return "";
+            }
+            return `<p>${block.data.text}</p>`;
+        }
+      })
+      .join("");
+  }, []);
+
+  const updateWordCount = useCallback((blocks: any[]) => {
+    const nextWordCount = blocks
+      .map((block: any) => {
+        if (block.text) return block.text.split(/\s+/).filter(Boolean).length;
+        if (block.items) return block.items.flat().length;
+        return 0;
+      })
+      .reduce((sum, count) => sum + count, 0);
+    setWordCount(nextWordCount);
+  }, []);
+
+  const updateLineNumbers = useCallback((blocks: any[]) => {
+    const lineCount = blocks.map((block: any) => {
+      if (block.text) return block.text.split("\n").length;
+      return 1;
+    });
+    setLineNumbers(lineCount);
+  }, []);
 
   useEffect(() => {
     if (!editorRef.current) {
@@ -21,11 +120,13 @@ const FormEditor = ({
         holder: holder,
         tools: EDITOR_CONFIG as any,
         placeholder: "Add Content Here",
-        data: { blocks: [{ type: "paragraph", data: { text: value } }] },
+        data: {
+          blocks: [{ type: "paragraph", data: { text: valueRef.current } }],
+        },
         async onChange(api) {
           const data = await api.saver.save();
           const htmlContent = processAndGenerateHTML(data);
-          onChange(htmlContent); // Send HTML string output
+          onChangeRef.current(htmlContent);
           updateWordCount(data.blocks);
           updateLineNumbers(data.blocks);
         },
@@ -44,97 +145,7 @@ const FormEditor = ({
         editorRef.current = null;
       }
     };
-  }, []);
-
-  const processAndGenerateHTML = (data: any) => {
-    return data.blocks
-      .map((block: any) => {
-        if (!block || !block.type) {
-          console.warn("Invalid block data:", block);
-          return ""; // Skip invalid blocks
-        }
-
-        switch (block.type) {
-          case "header":
-            if (!block.data.level || !block.data.text) {
-              console.warn("Invalid header block:", block);
-              return ""; // Skip invalid header blocks
-            }
-            const tag = `h${block.data.level}`;
-            return `<${tag}>${block.data.text}</${tag}>`;
-
-          case "list":
-            if (!block.data.style || !block.data.items) {
-              console.warn("Invalid list block:", block);
-              return ""; // Skip invalid list blocks
-            }
-            const listTag = block.data.style === "ordered" ? "ol" : "ul";
-            return `<${listTag}>${block.data.items
-              .map(
-                (item: any) =>
-                  `<li>${item.content || ""}${item.items
-                    ?.map(
-                      (subItem: any) =>
-                        `<ul><li>${subItem.content || ""}</li></ul>`
-                    )
-                    .join("")}</li>`
-              )
-              .join("")}</${listTag}>`;
-
-          case "quote":
-            if (!block.data.text || !block.data.caption) {
-              console.warn("Invalid quote block:", block);
-              return ""; // Skip invalid quote blocks
-            }
-            return `<blockquote style="text-align: ${
-              block.data.alignment || "left"
-            }"><p>${block.data.text}</p><footer>${
-              block.data.caption
-            }</footer></blockquote>`;
-
-          case "checklist":
-            if (!block.data.items || !Array.isArray(block.data.items)) {
-              console.warn("Invalid checklist block:", block);
-              return ""; // Skip invalid checklist blocks
-            }
-            return block.data.items
-              .map(
-                (item: any) =>
-                  `<div><input type="checkbox" ${
-                    item.checked ? "checked" : ""
-                  } disabled> ${item.text || ""}</div>`
-              )
-              .join("");
-
-          default:
-            if (!block.data || !block.data.text) {
-              console.warn("Invalid default block:", block);
-              return ""; // Skip invalid default blocks
-            }
-            return `<p>${block.data.text}</p>`;
-        }
-      })
-      .join("");
-  };
-
-  const updateWordCount = (blocks: any[]) => {
-    const wordCount = blocks
-      .map((block: any) => {
-        if (block.text) return block.text.split(/\s+/).filter(Boolean).length;
-        if (block.items) return block.items.flat().length;
-        return 0;
-      })
-      .reduce((sum, count) => sum + count, 0);
-    setWordCount(wordCount);
-  };
-
-  const updateLineNumbers = (blocks: any[]) => {
-    const lineCount = blocks.map((block: any) => {
-      if (block.text) return block.text.split("\n").length;
-      return 1; // Default to one line for other types
-    });
-    setLineNumbers(lineCount);
-  };
+  }, [holder, processAndGenerateHTML, updateLineNumbers, updateWordCount]);
 
   return (
     <div className=" w-full">

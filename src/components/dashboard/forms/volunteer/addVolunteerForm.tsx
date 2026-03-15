@@ -76,7 +76,7 @@ export function VolunteerForm({
         programId: data.programId || 0,
       });
     }
-  }, [data]);
+  }, [data, form]);
 
   console.log("DATA EDIT", data);
 

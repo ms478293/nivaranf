@@ -112,7 +112,7 @@ export const CreateJobForm = ({
         additionalInfo: jobData.additionalInfo || {},
       });
     }
-  }, [jobData]);
+  }, [form, jobData]);
 
   const {
     fields: fieldsResponsibilities,
@@ -154,8 +154,9 @@ export const CreateJobForm = ({
     newKey: string
   ) => {
     const updatedValues = { ...form.getValues(field) };
+    const previousValue = updatedValues[oldKey] || "";
     delete updatedValues[oldKey];
-    updatedValues[newKey] = updatedValues[oldKey] || "";
+    updatedValues[newKey] = previousValue;
     form.setValue(field, updatedValues);
   };
 

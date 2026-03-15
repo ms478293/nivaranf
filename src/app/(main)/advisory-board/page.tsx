@@ -387,6 +387,12 @@ export default function AdvisoryBoardPage() {
                 "See the healthcare delivery context advisory review is meant to strengthen.",
             },
             {
+              title: "Care Model & Quality Standards",
+              href: "/care-model",
+              description:
+                "Public reference for quality control, referral boundaries, and care delivery expectations.",
+            },
+            {
               title: "Contact Us",
               href: "/contact-us",
               description:

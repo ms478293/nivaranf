@@ -233,6 +233,7 @@ export const generatePDF = async (data: z.infer<typeof impactReportSchema>) => {
       {photographs && photographs.length > 0 ? (
         photographs.map((photo) => (
           <View key={photo.id} style={styles.imageContainer}>
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <Image src={publicApiUrl(photo.url || "")} style={styles.image} />
             <Text style={styles.text}>{photo.label}</Text>
           </View>
