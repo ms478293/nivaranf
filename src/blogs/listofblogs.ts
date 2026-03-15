@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-security-imperiled-by-us-withdrawal-from-who",
+    title: "Global Health Security Imperiled by US Withdrawal from WHO",
+    summary:
+      "The World Health Organization has voiced deep concern over the United States' notification of withdrawal, signaling potential setbacks for global health security. This decision is slated for review by the WHO Executive Board and the World Health Assembly in upcoming sessions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-global-health-security-imperiled-by-us-withdrawal-from-who.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-security-faces-setback-as-united-states-initiates-who-withdrawal",
     title: "Global Health Security Faces Setback as United States Initiates WHO Withdrawal",
     summary:
