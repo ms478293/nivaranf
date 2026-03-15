@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-eu-tuition-fee-standoff-threatens-starmer-s-european-reset",
+    title: "UK-EU Tuition Fee Standoff Threatens Starmer's European Reset",
+    summary:
+      "A critical dispute over tuition fees for European students is jeopardizing the UK's ambitious plans to reset its relationship with the European Union. Brussels' unexpected demand for 'home' fees for its students could cost British universities an estimated £140 million annually.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-uk-eu-tuition-fee-standoff-threatens-starmer-s-european-reset.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hustle-culture-s-global-toll-reclaiming-sustainable-well-being",
     title: "Hustle Culture's Global Toll: Reclaiming Sustainable Well-being",
     summary:
