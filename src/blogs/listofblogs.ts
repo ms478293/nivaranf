@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rebuilding-futures-global-education-s-imperative-in-crisis-zones",
+    title: "Rebuilding Futures: Global Education's Imperative in Crisis Zones",
+    summary:
+      "Millions of children worldwide face disrupted education due to conflict and natural disasters, threatening their future. Global initiatives are urgently working to establish resilient learning environments and provide psychosocial support in these vulnerable regions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-rebuilding-futures-global-education-s-imperative-in-crisis-zones.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-eu-tuition-fee-standoff-threatens-starmer-s-european-reset",
     title: "UK-EU Tuition Fee Standoff Threatens Starmer's European Reset",
     summary:
