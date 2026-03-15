@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "colon-cancer-surges-among-under-50s-globally-prompting-urgent-health-warnings",
+    title: "Colon Cancer Surges Among Under-50s Globally, Prompting Urgent Health Warnings",
+    summary:
+      "Colorectal cancer is now the leading cause of cancer death for people under 50 in the US, a trend mirrored globally. Experts are urging younger individuals not to dismiss symptoms like rectal bleeding, as delayed diagnoses are increasingly common.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-colon-cancer-surges-among-under-50s-globally-prompting-urgent-health-warnings.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "precision-strikes-on-classrooms-a-global-education-crisis",
     title: "Precision Strikes on Classrooms: A Global Education Crisis",
     summary:
