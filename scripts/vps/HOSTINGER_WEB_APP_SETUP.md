@@ -14,6 +14,8 @@ Canonical production paths:
 - production env file: `/etc/nivaran/web.env`
 - source-controlled compose file: `scripts/vps/docker-compose.hostinger.yml`
 
+If you also run the `Global_News` and `Nepal_News` timers on the same VPS, point them at this same checkout instead of creating a second clone.
+
 What this VPS package covers:
 - Next.js web app build + runtime
 - either `systemd` or `Docker Compose` runtime

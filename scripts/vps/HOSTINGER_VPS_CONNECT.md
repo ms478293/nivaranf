@@ -5,18 +5,24 @@ This setup installs production timers on your VPS:
 - `nivaran-global-news.timer` -> runs hourly
 - `nivaran-nepal-news.timer` -> runs daily at 05:30 server local time
 
+Current production uses a single canonical repo checkout:
+
+- `/opt/nivaran/nivaranf-web`
+
+Do not keep a second automation-only clone such as `/opt/nivaran/nivaranf-git`.
+
 ## 1) SSH into VPS and run installer
 
 ```bash
 cd /opt
 # if repo not cloned yet, clone first or let installer clone automatically
-sudo bash /path/to/nivaranf-git/scripts/vps/install_hostinger_vps.sh
+sudo bash /path/to/nivaranf-web/scripts/vps/install_hostinger_vps.sh
 ```
 
 Optional overrides:
 
 ```bash
-sudo REPO_ROOT=/opt/nivaran/nivaranf-git RUN_USER=ubuntu SERVER_TIMEZONE=Asia/Kathmandu bash scripts/vps/install_hostinger_vps.sh
+sudo REPO_ROOT=/opt/nivaran/nivaranf-web RUN_USER=ubuntu SERVER_TIMEZONE=Asia/Kathmandu bash scripts/vps/install_hostinger_vps.sh
 ```
 
 ## 2) Fill environment secrets
@@ -75,7 +81,7 @@ curl -I https://discord.com
 2. Repo sync issues:
 
 ```bash
-cd /opt/nivaran/nivaranf-git && git status && git pull --ff-only
+cd /opt/nivaran/nivaranf-web && git status && git pull --ff-only
 ```
 
 3. Permissions:

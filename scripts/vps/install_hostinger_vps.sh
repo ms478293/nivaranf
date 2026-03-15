@@ -13,7 +13,7 @@ if [[ "${EUID}" -ne 0 ]]; then
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-DEFAULT_REPO_ROOT="/opt/nivaran/nivaranf-git"
+DEFAULT_REPO_ROOT="/opt/nivaran/nivaranf-web"
 REPO_URL="${REPO_URL:-https://github.com/ms478293/nivaranf.git}"
 REPO_ROOT="${REPO_ROOT:-${DEFAULT_REPO_ROOT}}"
 RUN_USER="${RUN_USER:-}"
@@ -63,7 +63,11 @@ echo "==> Syncing repository"
 sudo -u "${RUN_USER}" bash -lc "cd '${REPO_ROOT}' && git fetch --all --prune && git checkout main && git pull --ff-only origin main"
 
 echo "==> Installing Node dependencies"
-sudo -u "${RUN_USER}" bash -lc "cd '${REPO_ROOT}' && npm install"
+if [[ -f "${REPO_ROOT}/package-lock.json" ]]; then
+  sudo -u "${RUN_USER}" bash -lc "cd '${REPO_ROOT}' && npm ci --legacy-peer-deps"
+else
+  sudo -u "${RUN_USER}" bash -lc "cd '${REPO_ROOT}' && npm install --legacy-peer-deps"
+fi
 
 echo "==> Ensuring Python dependency (Pillow)"
 python3 -m pip install --upgrade --break-system-packages pillow >/dev/null 2>&1 || true
