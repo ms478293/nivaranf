@@ -72,7 +72,7 @@ const NivaranHeader = () => {
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     };
-  }, [activeMegaMenu]);
+  }, [activeMegaMenu, path]);
 
   // Handle Cmd+K / Ctrl+K keyboard shortcut for search
   useEffect(() => {

@@ -23,6 +23,11 @@ const SITE_PAGES = [
     url: "/leadership",
     description: "Board, governance, and management team",
   },
+  {
+    title: "Advisory Board",
+    url: "/advisory-board",
+    description: "External expertise, review priorities, and governance context",
+  },
   { title: "News & Stories", url: "/news", description: "Latest updates" },
   { title: "Blogs", url: "/blogs", description: "Articles and insights" },
   { title: "Contact Us", url: "/contact-us", description: "Get in touch" },

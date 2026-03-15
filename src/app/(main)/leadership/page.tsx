@@ -188,6 +188,12 @@ export default function LeadershipPage() {
               description:
                 "Journalist-facing background, fact sheet, contacts, and brand assets.",
             },
+            {
+              title: "Advisory Board",
+              href: "/advisory-board",
+              description:
+                "See how external technical and governance review is being structured.",
+            },
           ]}
         />
       </section>

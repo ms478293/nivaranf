@@ -13,7 +13,7 @@ export const useNumberCountAnimation = ({
   duration = 2000,
 }: // ref,
 NumberAnimationOption = {}) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(start);
   // const [hasAnimated, setHasAnimated] = useState(false);
 
   // useEffect(() => {
@@ -48,16 +48,30 @@ NumberAnimationOption = {}) => {
   // }, []);
 
   useEffect(() => {
-    const step = duration / end;
+    if (end <= start) {
+      setCount(end);
+      return;
+    }
+
+    setCount(start);
+
+    let current = start;
+    const totalSteps = Math.max(end - start, 1);
+    const stepDuration = Math.max(Math.floor(duration / totalSteps), 16);
 
     const timer = setInterval(() => {
-      start++;
-      setCount(start);
-      if (start === end) clearInterval(timer);
-    }, step);
+      current += 1;
+      if (current >= end) {
+        setCount(end);
+        clearInterval(timer);
+        return;
+      }
+
+      setCount(current);
+    }, stepDuration);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [duration, end, start]);
 
   return { count };
 };
