@@ -46,7 +46,7 @@ const QUICK_FACTS = [
   { label: "Type", value: "501(c)(3) Nonprofit" },
   { label: "EIN", value: "41-2656587" },
   { label: "Headquarters", value: "Kathmandu, Nepal" },
-  { label: "US Coordination", value: "United States" },
+  { label: "U.S. Office", value: "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476" },
   { label: "Focus Areas", value: "Healthcare, Education" },
   { label: "Patients Served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText },
   { label: "Health Camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText },
@@ -158,6 +158,25 @@ export default function PressPage() {
             <p>
               Through <strong>Project Vidya</strong>, we deliver education support including digital learning tools, teacher training, and school infrastructure improvements to rural Nepali schools.
             </p>
+            <p>
+              Additional public verification routes are available through our{" "}
+              <Link href="/leadership" className="text-primary-500 underline">
+                leadership &amp; governance
+              </Link>{" "}
+              page,{" "}
+              <Link href="/financial-reports" className="text-primary-500 underline">
+                financial reports
+              </Link>
+              , and{" "}
+              <Link
+                href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search"
+                target="_blank"
+                className="text-primary-500 underline"
+              >
+                IRS tax-exempt organization search
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -220,6 +239,12 @@ export default function PressPage() {
                 href: "/impact-fact-sheet",
                 description:
                   "Citation-ready organization profile, healthcare metrics, and reference links.",
+              },
+              {
+                title: "Leadership & Governance",
+                href: "/leadership",
+                description:
+                  "Board, management, and governance reference for journalists and partners.",
               },
               {
                 title: "Tracking Portal",

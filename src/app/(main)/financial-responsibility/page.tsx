@@ -90,6 +90,12 @@ export default function FinancialResponsibilityPage() {
             >
               Accountability &amp; Transparency
             </Link>
+            <Link
+              href="/leadership"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Leadership &amp; Governance
+            </Link>
           </div>
         </div>
       </section>

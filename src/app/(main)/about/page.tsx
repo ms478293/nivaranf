@@ -272,11 +272,20 @@ export default function page() {
                   nonprofit to create lasting, measurable change through
                   community health camps and education programs.
                 </p>
-                <p className="text-xs text-gray-400 mt-3 italic">
-                  To protect the privacy of our team working in sensitive
-                  regions, we share detailed leadership information upon request.
-                  Contact us at partnerships@nivaranfoundation.org
-                </p>
+                <div className="mt-4 flex flex-wrap justify-center gap-3 md:justify-start">
+                  <a
+                    href="/leadership"
+                    className="rounded-full bg-primary-500 px-4 py-2 text-xs font-semibold text-white"
+                  >
+                    View leadership &amp; governance
+                  </a>
+                  <a
+                    href="/financial-reports"
+                    className="rounded-full border border-gray-300 px-4 py-2 text-xs font-semibold text-gray-700 hover:border-primary-500"
+                  >
+                    Open financial reports
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -316,10 +325,11 @@ export default function page() {
           links={[
             { title: "Our Healthcare Programs", href: "/programs/health", description: "Free mobile health camps delivering maternal, child, and essential care across rural Nepal." },
             { title: "Project Sanjeevani", href: "/sanjeevani", description: "Our flagship healthcare initiative delivering multi-specialty care to remote communities." },
+            { title: "Leadership & Governance", href: "/leadership", description: "Board, management, and governance reference for due diligence and trust." },
             { title: "Education Initiatives", href: "/programs/education", description: "School access, learning support, and community-based education for underserved children." },
             { title: "Volunteer with Us", href: "/volunteer", description: "Join our teams in the field and make a direct impact on communities in need." },
             { title: "How to Help", href: "/how-to-help", description: "Every contribution matters — donate, volunteer, or spread the word." },
-            { title: "Donate", href: "/donate", description: "Your tax-deductible donation funds health camps, education programs, and community development." },
+            { title: "Financial Reports", href: "/financial-reports", description: "Reporting status, verification references, and due diligence pathways." },
           ]}
         />
       </div>

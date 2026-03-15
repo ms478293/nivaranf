@@ -18,6 +18,11 @@ const SITE_PAGES = [
     description: "Current and completed projects",
   },
   { title: "About Us", url: "/about", description: "Our story and mission" },
+  {
+    title: "Leadership",
+    url: "/leadership",
+    description: "Board, governance, and management team",
+  },
   { title: "News & Stories", url: "/news", description: "Latest updates" },
   { title: "Blogs", url: "/blogs", description: "Articles and insights" },
   { title: "Contact Us", url: "/contact-us", description: "Get in touch" },

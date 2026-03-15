@@ -77,6 +77,10 @@ export default function FinancialReportsPage() {
             </div>
             <div>
               <p className="text-green-700 font-medium">Head Office</p>
+              <p className="text-green-900">Kathmandu, Bagmati, Nepal</p>
+            </div>
+            <div>
+              <p className="text-green-700 font-medium">U.S. Office</p>
               <p className="text-green-900">
                 1025 Massachusetts Ave, Suite 303, Arlington, MA 02476
               </p>
@@ -109,6 +113,37 @@ export default function FinancialReportsPage() {
               <p className="text-sm text-gray-600 mt-2 leading-6">{item.detail}</p>
             </article>
           ))}
+        </div>
+
+        <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
+          <h2 className="text-xl font-semibold text-gray-900">
+            Due Diligence References
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-gray-600">
+            For partner review, donor diligence, and media background, start
+            with the linked public references below before requesting additional
+            documentation.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/leadership"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Leadership &amp; Governance
+            </Link>
+            <Link
+              href="/press"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Press &amp; Media Kit
+            </Link>
+            <Link
+              href="/impact-fact-sheet"
+              className="px-4 py-2 rounded-full border border-gray-300 text-sm hover:border-primary-500"
+            >
+              Impact Fact Sheet
+            </Link>
+          </div>
         </div>
 
         <div className="mt-10 rounded-xl border border-gray-200 bg-white p-6">
@@ -144,6 +179,12 @@ export default function FinancialReportsPage() {
               href: "/accountability-and-transparency",
               description:
                 "See how Nivaran explains governance, disclosure, and operational accountability.",
+            },
+            {
+              title: "Leadership & Governance",
+              href: "/leadership",
+              description:
+                "Review the public leadership directory and governance reference page.",
             },
             {
               title: "Financial Responsibility",

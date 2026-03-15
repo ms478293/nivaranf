@@ -100,6 +100,12 @@ export default function AccountabilityAndTransparencyPage() {
           heading="Supporting Reference Pages"
           links={[
             {
+              title: "Leadership & Governance",
+              href: "/leadership",
+              description:
+                "Public directory of board, program, operations, and fundraising leadership.",
+            },
+            {
               title: "Financial Reports",
               href: "/financial-reports",
               description:

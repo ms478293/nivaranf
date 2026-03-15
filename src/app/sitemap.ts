@@ -22,6 +22,7 @@ type StaticRoute = {
 const MAIN_STATIC_ROUTES: StaticRoute[] = [
   { path: "/", priority: 1.0, isKeyPage: true },
   { path: "/about", priority: 0.9, isKeyPage: true },
+  { path: "/leadership", priority: 0.7, isKeyPage: true },
   { path: "/donate", priority: 1.0, isKeyPage: true },
   { path: "/contact-us", priority: 0.8 },
   { path: "/career", priority: 0.7 },

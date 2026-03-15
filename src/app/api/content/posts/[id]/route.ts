@@ -16,6 +16,7 @@ function revalidateContentPaths(pathname?: string) {
   revalidatePath("/news");
   revalidatePath("/blogs");
   revalidatePath("/sitemap.xml");
+  revalidatePath("/news-sitemap.xml");
 }
 
 function toErrorResponse(error: unknown) {

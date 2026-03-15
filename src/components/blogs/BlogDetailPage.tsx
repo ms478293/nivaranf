@@ -215,6 +215,27 @@ function getDefaultAuthorBio(siteVariant: SiteVariant) {
   return getSiteVariantConfig(siteVariant).articleDefaultAuthorBio;
 }
 
+function getSchemaType(articleType: blogListType["type"]) {
+  if (articleType === "News") return "NewsArticle";
+  if (articleType === "Story") return "Article";
+  return "BlogPosting";
+}
+
+function getSchemaAuthor(authorName: string, siteConfig: ReturnType<typeof getSiteVariantConfig>) {
+  if (/desk|foundation|nivaran/i.test(authorName)) {
+    return {
+      "@type": "Organization",
+      name: authorName,
+      url: siteConfig.siteUrl,
+    };
+  }
+
+  return {
+    "@type": "Person",
+    name: authorName,
+  };
+}
+
 function getDisplayTypeFromContentType(contentType: string): blogListType["type"] {
   if (contentType === "Story") return "Story";
   if (contentType === "News") return "News";
@@ -631,34 +652,45 @@ export async function renderBlogDetailPage({
     siteConfig.articleCtaHref,
   );
 
+  const keywordList = data.keywords
+    ? data.keywords.split(",").map((keyword) => keyword.trim()).filter(Boolean)
+    : undefined;
+  const publishedIso = formatDateISO(data.date || listEntry?.date);
+  const modifiedIso = dynamicPost?.updated_at
+    ? formatDateISO(dynamicPost.updated_at)
+    : publishedIso;
+
   // Generate Article JSON-LD schema
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": getSchemaType(resolvedType),
     headline: title,
     description: subtitle,
     image: data.mainImage
       ? toAbsoluteWebsiteUrl(siteConfig.siteUrl, data.mainImage)
       : undefined,
-    author: {
-      "@type": "Organization",
-      name: author || siteConfig.organizationName,
-      url: siteConfig.siteUrl,
-    },
+    author: getSchemaAuthor(author || siteConfig.organizationName, siteConfig),
     publisher: {
       "@type": "Organization",
       name: siteConfig.organizationName,
+      url: siteConfig.siteUrl,
       logo: {
         "@type": "ImageObject",
-        url: `${siteConfig.siteUrl}/NivaranLogo.svg`,
+        url: `${siteConfig.siteUrl}/logo.png`,
+        width: 1200,
+        height: 665,
       },
     },
-    datePublished: formatDateISO(data.date || listEntry?.date),
-    dateModified: formatDateISO(data.date || listEntry?.date),
+    datePublished: publishedIso,
+    dateModified: modifiedIso,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": articleUrl,
     },
+    articleSection: TYPE_BADGE_LABELS[resolvedType],
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    keywords: keywordList,
   };
 
   const staticRelatedBlogs = [...globalBlogs]

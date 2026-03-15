@@ -86,7 +86,7 @@ export function middleware(req: NextRequest) {
 
   // Root-level SEO routes that must NOT be rewritten on subdomains.
   // These are handled by variant-aware route handlers at the app root.
-  const SEO_ROOT_PATHS = ["/robots.txt", "/sitemap.xml", "/llms.txt"];
+  const SEO_ROOT_PATHS = ["/robots.txt", "/sitemap.xml", "/news-sitemap.xml", "/llms.txt"];
 
   // Check if the subdomain is valid and not the main domain
   // Skip subdomain rewrite for main domain, localhost, and vercel preview URLs

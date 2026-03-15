@@ -10,6 +10,10 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   const host = headerStore.get("x-forwarded-host") || headerStore.get("host") || "";
   const variant = detectSiteVariantFromHost(host);
   const siteUrl = getSiteVariantConfig(variant).siteUrl;
+  const sitemaps =
+    variant === "usa"
+      ? [`${siteUrl}/sitemap.xml`]
+      : [`${siteUrl}/sitemap.xml`, `${siteUrl}/news-sitemap.xml`];
 
   return {
     rules: [
@@ -38,7 +42,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
       { userAgent: "Google-Extended", disallow: "/" },
       { userAgent: "Bytespider", disallow: "/" },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: sitemaps,
     host: siteUrl,
   };
 }
