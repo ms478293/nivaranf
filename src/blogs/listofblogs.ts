@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-regulator-faces-legal-challenge-over-public-funding-for-theological-colleges",
+    title: "UK Regulator Faces Legal Challenge Over Public Funding for Theological Colleges",
+    summary:
+      "A university regulator in England faces legal action from the National Secular Society over its alleged failure to investigate academic freedom concerns at theological colleges. The society argues these institutions may be ineligible for public funding due to their doctrinal commitments, prompting a judicial review.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-uk-regulator-faces-legal-challenge-over-public-funding-for-theological-colleges.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-concerns-rise-over-state-guardianship-for-vulnerable-populations",
     title: "Global Concerns Rise Over State Guardianship for Vulnerable Populations",
     summary:
