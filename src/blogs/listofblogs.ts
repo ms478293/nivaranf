@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "brazil-ex-president-hospitalized-health-politics-intersect",
+    title: "Brazil Ex-President Hospitalized: Health, Politics Intersect",
+    summary:
+      "Brazil's former President Jair Bolsonaro has been hospitalized with a lung infection, a development linked to persistent health issues stemming from a 2018 assassination attempt. His ongoing medical challenges underscore the intricate connection between personal health and national political stability.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-brazil-ex-president-hospitalized-health-politics-intersect.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dozens-of-medical-workers-killed-as-israel-hits-lebanon",
     title: "Global Health and Education Watch: Dozens of Medical Workers Killed as Israel Hits Lebanon",
     summary:
