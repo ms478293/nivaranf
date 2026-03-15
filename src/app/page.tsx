@@ -40,9 +40,9 @@ const NewsletterSubscribe = dynamic(() => import("@/components/new/NewsletterSub
 const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })));
 
 export const metadata: Metadata = {
-  title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+  title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
   description:
-    "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal. Support healthcare access where distance blocks treatment.",
+    "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, education support, and community outreach across underserved communities in Nepal.",
   metadataBase: new URL("https://www.nivaranfoundation.org"),
   alternates: {
     canonical: "https://www.nivaranfoundation.org",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     siteName: "Nivaran Foundation",
-    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+    title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
     url: "https://www.nivaranfoundation.org",
     type: "website",
     images: [
@@ -71,12 +71,12 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
+      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Mobile Health Camps in Nepal | Nivaran Foundation",
+    title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
     site: "@NivaranOrg",
     images: [
       {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers mobile health camps, maternal care, and child health services in remote Nepal.",
+      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
     creator: "@NivaranOrg",
   },
 
@@ -102,7 +102,7 @@ const page = () => {
       </header>
 
       <main id="main-content" role="main">
-        <h1 className="sr-only">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-900 py-0 m-0 absolute w-px h-px overflow-hidden clip-[rect(0,0,0,0)] whitespace-nowrap border-0 [clip-path:inset(50%)]">
           Nivaran Foundation: Free Healthcare and Education in Rural Nepal
         </h1>
 

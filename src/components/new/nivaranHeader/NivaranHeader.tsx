@@ -110,9 +110,11 @@ const NivaranHeader = () => {
             >
               <Image
                 src="/NivaranLogo.svg"
-                alt="Nivaran Logo"
+                alt="Nivaran Foundation Logo"
                 width={100}
                 height={40}
+                loading="eager"
+                priority
               />
             </Link>
             {screenSize !== "864px" ? (

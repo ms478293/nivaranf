@@ -20,8 +20,8 @@ function getSupabaseStoragePattern() {
 }
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
   productionBrowserSourceMaps: true,
-  // Existing config options
   experimental: {
     middlewarePrefetch: "strict",
     optimizePackageImports: [  // Tree-shake heavy icon/component libraries
@@ -124,6 +124,8 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 2592000,
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     remotePatterns: getSupabaseStoragePattern(),
   },
   async redirects() {
@@ -146,6 +148,11 @@ const nextConfig: NextConfig = {
       {
         source: '/faq',
         destination: '/frequently-asked-questions',
+        permanent: true,
+      },
+      {
+        source: '/docs',
+        destination: '/financial-reports',
         permanent: true,
       },
     ];

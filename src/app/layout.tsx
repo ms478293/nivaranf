@@ -83,46 +83,69 @@ const websiteSchema = {
     },
     "query-input": "required name=search_term_string",
   },
-  inLanguage: ["en", "ne"],
+  inLanguage: "en",
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": ["Organization", "NGO"],
+  "@type": ["Organization", "NGO", "NonprofitOrganization", "MedicalOrganization"],
   name: "Nivaran Foundation",
   alternateName: "Nivaran",
   url: SITE_URL,
-  logo: `${SITE_URL}/NivaranLogo.svg`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/logo.png`,
+    width: 1200,
+    height: 665,
+  },
   image: `${SITE_URL}/logo.png`,
   description: DEFAULT_DESCRIPTION,
   foundingDate: "2020",
   founder: {
     "@type": "Person",
     name: "Mukesh Thakur",
-    jobTitle: "Founder & Director",
+    jobTitle: "Founder & Executive Director",
     sameAs: "https://www.linkedin.com/in/mukeshthakur",
+    affiliation: {
+      "@type": "Organization",
+      name: "Nivaran Foundation",
+    },
   },
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+977-01-5354693",
-    contactType: "customer support",
-    email: "partnerships@nivaranfoundation.org",
-    areaServed: ["NP", "US"],
-    availableLanguage: ["English", "Nepali"],
-  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+977-01-5354693",
+      contactType: "customer support",
+      email: "partnerships@nivaranfoundation.org",
+      areaServed: ["NP", "US"],
+      availableLanguage: ["English", "Nepali"],
+    },
+  ],
   sameAs: [
     "https://www.facebook.com/profile.php?id=61584248211038",
     "https://www.instagram.com/nivaran.foundation/",
     "https://x.com/NivaranOrg",
     "https://www.linkedin.com/company/nivaran-foundation",
   ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Kathmandu, Nepal",
-    addressLocality: "Kathmandu",
-    addressCountry: "NP",
-  },
+  address: [
+    {
+      "@type": "PostalAddress",
+      streetAddress: "Kathmandu",
+      addressLocality: "Kathmandu",
+      addressRegion: "Bagmati",
+      addressCountry: "NP",
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: "1025 Massachusetts Ave, Suite 303",
+      addressLocality: "Arlington",
+      addressRegion: "MA",
+      postalCode: "02476",
+      addressCountry: "US",
+    },
+  ],
   taxID: "41-2656587",
+  nonprofitStatus: "https://schema.org/Nonprofit501c3",
   areaServed: [
     { "@type": "Country", name: "Nepal" },
     { "@type": "Country", name: "United States" },
@@ -134,8 +157,18 @@ const organizationSchema = {
     "Child Health",
     "Education in Nepal",
     "Community Development",
+    "Disease Prevention",
+    "Health Screening",
   ],
-  nonprofitStatus: "501c3",
+  medicalSpecialty: [
+    "https://schema.org/PrimaryCare",
+    "https://schema.org/PublicHealth",
+  ],
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    minValue: 10,
+    maxValue: 50,
+  },
 };
 
 const donateActionSchema = {
@@ -157,7 +190,7 @@ const donateActionSchema = {
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   display: "swap",
   preload: true,
 });
@@ -173,14 +206,13 @@ export default async function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/logo.png" />
-        <meta name="theme-color" content="#000000" />
-        {/* hreflang tags for bilingual support (English + Nepali) */}
+        <meta name="theme-color" content="#eb5834" />
+        {/* hreflang — English only (no separate Nepali content exists) */}
         <link rel="alternate" hrefLang="en" href={SITE_URL} />
-        <link rel="alternate" hrefLang="ne" href={SITE_URL} />
         <link rel="alternate" hrefLang="x-default" href={SITE_URL} />
-        {/* Preconnect to third-party origins to reduce render-blocking latency */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.clarity.ms" />
+        {/* DNS prefetch for third-party origins */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://ipapi.co" />
         <link rel="dns-prefetch" href="https://api.nivaranfoundation.org" />
         <script

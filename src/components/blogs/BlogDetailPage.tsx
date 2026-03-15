@@ -28,6 +28,10 @@ import styles from "./article-template.module.css";
 import { mdxComponents } from "./mdxComponents";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
+const STATIC_BLOG_DIRECTORIES = [
+  path.join(process.cwd(), "src/blogs/global"),
+  path.join(process.cwd(), "src/blogs/usa"),
+];
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -103,6 +107,19 @@ function cleanDescription(rawDescription?: string) {
   return `${value.slice(0, 157).trimEnd()}...`;
 }
 
+function pickBestDescription(...candidates: Array<string | undefined>) {
+  const cleaned = candidates
+    .map((candidate) => cleanDescription(candidate))
+    .filter(Boolean);
+
+  if (cleaned.length === 0) return "";
+
+  const preferred = cleaned.find((candidate) => candidate.length >= 110);
+  if (preferred) return preferred;
+
+  return [...cleaned].sort((a, b) => b.length - a.length)[0];
+}
+
 function buildExcerptFromContent(content?: string) {
   if (!content) return "";
   const plainText = content
@@ -169,23 +186,44 @@ function getDisplayTypeFromContentType(contentType: string): blogListType["type"
 }
 
 async function getBlogFile(slug: string) {
-  const blogPath = path.join(process.cwd(), "src/blogs/global", `${slug}.mdx`);
-  const fileContents = await fs.readFile(blogPath, "utf8");
-  const parsed = matter(fileContents);
+  for (const directory of STATIC_BLOG_DIRECTORIES) {
+    const blogPath = path.join(directory, `${slug}.mdx`);
 
-  return {
-    content: parsed.content,
-    data: parsed.data as BlogFrontmatter,
-  };
+    try {
+      const fileContents = await fs.readFile(blogPath, "utf8");
+      const parsed = matter(fileContents);
+
+      return {
+        content: parsed.content,
+        data: parsed.data as BlogFrontmatter,
+      };
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
+        throw error;
+      }
+    }
+  }
+
+  throw new Error(`Missing static blog file for slug "${slug}"`);
 }
 
 async function getAllGlobalBlogSlugs() {
-  const blogDirectory = path.join(process.cwd(), "src/blogs/global");
-  const files = await fs.readdir(blogDirectory);
+  const slugSet = new Set<string>();
 
-  return files
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => file.replace(/\.mdx$/, ""));
+  for (const directory of STATIC_BLOG_DIRECTORIES) {
+    try {
+      const files = await fs.readdir(directory);
+      files
+        .filter((file) => file.endsWith(".mdx"))
+        .forEach((file) => slugSet.add(file.replace(/\.mdx$/, "")));
+    } catch (error) {
+      if ((error as NodeJS.ErrnoException).code !== "ENOENT") {
+        throw error;
+      }
+    }
+  }
+
+  return Array.from(slugSet);
 }
 
 function getSegmentForSlug(slug: string): BlogRouteSegment {
@@ -222,11 +260,11 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
       : await getPublishedContentPostBySlug(slug);
     if (dynamicPost) {
       const title = ensureBrandInTitle(dynamicPost.seo_title || dynamicPost.title);
-      const description = cleanDescription(
+      const description = pickBestDescription(
         dynamicPost.seo_description ||
-          dynamicPost.excerpt ||
-          buildExcerptFromContent(dynamicPost.body) ||
-          "Read the latest stories and updates from Nivaran Foundation."
+          dynamicPost.excerpt,
+        buildExcerptFromContent(dynamicPost.body),
+        "Read the latest stories and updates from Nivaran Foundation."
       );
       const canonical =
         dynamicPost.canonical_url ||
@@ -282,11 +320,11 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
     const { data, content } = await getBlogFile(slug);
 
     const title = ensureBrandInTitle(data.title || listEntry?.title || "Untitled Blog");
-    const description = cleanDescription(
-      data.subtitle ||
-        listEntry?.summary ||
-        buildExcerptFromContent(content) ||
-        "Read the latest stories and updates from Nivaran Foundation."
+    const description = pickBestDescription(
+      data.subtitle,
+      listEntry?.summary,
+      buildExcerptFromContent(content),
+      "Read the latest stories and updates from Nivaran Foundation."
     );
     const canonicalPath = listEntry
       ? getBlogPath(listEntry)
@@ -334,6 +372,22 @@ export async function getMetadataForBlogSlug(slug: string): Promise<Metadata> {
     };
   } catch (error) {
     console.error("Error in getMetadataForBlogSlug:", error);
+    const listEntry = globalBlogs.find((blog) => blog.slug === slug);
+    if (listEntry) {
+      const title = ensureBrandInTitle(listEntry.title);
+      const description = pickBestDescription(
+        listEntry.summary,
+        "Read the latest stories and updates from Nivaran Foundation."
+      );
+
+      return {
+        title,
+        description,
+        alternates: {
+          canonical: `${SITE_URL}${getBlogPath(listEntry)}`,
+        },
+      };
+    }
     return {
       title: "Untitled Blog | Nivaran Foundation",
       description: "Read the latest stories and updates from Nivaran Foundation.",
@@ -420,7 +474,9 @@ export async function renderBlogDetailPage({
       name: "Nivaran Foundation",
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/NivaranLogo.svg`,
+        url: `${SITE_URL}/logo.png`,
+        width: 1200,
+        height: 665,
       },
     },
     datePublished: formatDateISO(data.date || listEntry?.date),
