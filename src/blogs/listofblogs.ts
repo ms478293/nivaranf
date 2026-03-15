@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-colon-cancer-now-leading-cause-of-cancer-deaths-under-50",
+    title: "Global Alarm: Colon Cancer Now Leading Cause of Cancer Deaths Under 50",
+    summary:
+      "Colorectal cancer has become the leading cause of cancer death for individuals under 50 in some regions, prompting global health experts to issue urgent warnings. Younger people are advised not to dismiss persistent symptoms and to prioritize early medical consultation for better outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-global-alarm-colon-cancer-now-leading-cause-of-cancer-deaths-under-50.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "colon-cancer-surges-among-under-50s-globally-prompting-urgent-health-warnings",
     title: "Colon Cancer Surges Among Under-50s Globally, Prompting Urgent Health Warnings",
     summary:
