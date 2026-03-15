@@ -68,7 +68,7 @@ export const JOB_OPENINGS: JobOpening[] = [
   {
     id: 2,
     title: 'Fundraising and Development Officer',
-    location: 'Boston, MA, USA (Remote options available)',
+    location: 'Arlington, MA, USA (Remote options available)',
     type: 'Full-time',
     department: 'Development',
     apply_before: '2026-03-01',
@@ -108,7 +108,7 @@ export const JOB_OPENINGS: JobOpening[] = [
       'Meaningful Work': 'Direct impact on life-saving healthcare programs in Nepal'
     },
     additional_info: {
-      'Work Location': 'Boston, MA office with remote work flexibility',
+      'Work Location': 'Arlington, MA office with remote work flexibility',
       'Reporting To': 'Executive Director',
       'Team Collaboration': 'Work closely with programs, communications, and finance teams',
       'Travel': 'Potential annual visit to Nepal project sites (all expenses paid)'
@@ -266,7 +266,7 @@ export const JOB_OPENINGS: JobOpening[] = [
 
 export const JOB_LOCATIONS = [
   'Kathmandu, Nepal',
-  'Boston, MA, USA',
+  'Arlington, MA, USA',
   'Remote',
   'Remote (Nepal/USA)'
 ];

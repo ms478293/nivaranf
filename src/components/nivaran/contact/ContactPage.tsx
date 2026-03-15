@@ -84,7 +84,7 @@ export const ContactPage = () => {
               New Road, Kathmandu
             </p>
             <p className="mt-2 text-blue-500 dark:text-blue-400">
-              USA Office: Boston MA, USA
+              USA Office: 1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA
             </p>
           </div>
 

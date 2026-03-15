@@ -16,7 +16,7 @@ const CONTACT_DATA = [
   },
   {
     id: 2,
-    address: "Boston, Massachusetts, United States",
+    address: "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, United States",
     contact: "+1 (857) 701-7471",
     email: "partnerships@nivaranfoundation.org",
     image: "/usa-flag.png",

@@ -28,7 +28,7 @@ export const CareerSidebar = () => {
       label:
         userLocation === "NP"
           ? "Newroad, Kathmandu"
-          : "USA Office: Boston MA, US",
+          : "USA Office: 1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA",
       icon: <LocationIcon className="w-6 h-6 stroke-secondary-800" />,
     },
   ];

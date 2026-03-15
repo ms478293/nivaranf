@@ -29,7 +29,7 @@ const MegaMenuFooter = () => {
           <p>+1 (857) 701-7471, +977 1-5312555</p>
           <p className="flex gap-6 items-center">
             <span>Newroad, Kathmandu</span>
-            <span>USA Office: Boston MA, US</span>
+            <span>USA Office: Arlington, MA 02476, USA</span>
           </p>
         </div>
       </div>
