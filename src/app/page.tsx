@@ -42,7 +42,7 @@ const WhatsAppButton = dynamic(() => import("@/components/new/WhatsAppButton/Wha
 export const metadata: Metadata = {
   title: "Nivaran Foundation | Free Healthcare & Education in Nepal",
   description:
-    "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, education support, and community outreach across underserved communities in Nepal.",
+    "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, and education support across rural Nepal.",
   metadataBase: new URL("https://www.nivaranfoundation.org"),
   alternates: {
     canonical: "https://www.nivaranfoundation.org",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
+      "Nivaran Foundation delivers mobile health camps, maternal care, and education support across rural Nepal.",
   },
 
   twitter: {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Nivaran Foundation delivers healthcare, education support, and community outreach across underserved communities in Nepal.",
+      "Nivaran Foundation delivers mobile health camps, maternal care, and education support across rural Nepal.",
     creator: "@NivaranOrg",
   },
 
