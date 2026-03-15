@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "teacher-banned-global-call-for-upholding-educational-ethics-and-safeguarding",
+    title: "Teacher Banned: Global Call for Upholding Educational Ethics and Safeguarding",
+    summary:
+      "A geography teacher was banned after sending £500 to a former pupil, with a panel deeming his actions 'clearly unprofessional'. This incident underscores the global importance of maintaining strict professional boundaries and robust safeguarding measures in education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-15-teacher-banned-global-call-for-upholding-educational-ethics-and-safeguarding.jpg",
+    date: "2026-03-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "infant-fatality-in-london-sparks-global-dialogue-on-child-welfare",
     title: "Infant Fatality in London Sparks Global Dialogue on Child Welfare",
     summary:
