@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-health-crisis-rising-ill-health-impacts-employment",
+    title: "Global Youth Health Crisis: Rising Ill Health Impacts Employment",
+    summary:
+      "A recent study reveals a significant increase in young Britons citing ill health as a primary barrier to employment, with a 70% surge in a decade among those not in education, employment, or training. This trend underscores a growing global challenge where youth health issues increasingly impede economic participation and societal well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-global-youth-health-crisis-rising-ill-health-impacts-employment.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kent-meningitis-outbreak-key-questions-answered",
     title: "Global Health and Education Watch: Kent meningitis outbreak: key questions answered",
     summary:
