@@ -64,7 +64,7 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
       },
       image: `${siteUrl}/logo.png`,
       description,
-      foundingDate: "2020",
+      foundingDate: "2024",
       founder: {
         "@type": "Person",
         name: "Mukesh Thakur",

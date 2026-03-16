@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 };
 
 const QUICK_FACTS = [
-  { label: "Founded", value: "2020" },
+  { label: "Founded", value: "2024" },
   { label: "Type", value: "501(c)(3) Nonprofit" },
   { label: "EIN", value: "41-2656587" },
   { label: "Headquarters", value: "Kathmandu, Nepal" },
@@ -147,7 +147,7 @@ export default function PressPage() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">About Nivaran Foundation</h2>
           <div className="max-w-3xl space-y-4 text-gray-700 text-sm leading-relaxed">
             <p>
-              Nivaran Foundation is a 501(c)(3) tax-exempt nonprofit organization founded in 2020. Our mission is to transform healthcare and education access for underserved communities in rural Nepal — where the nearest hospital can be a multi-day walk away.
+              Nivaran Foundation is a 501(c)(3) tax-exempt nonprofit organization founded in 2024. Our mission is to transform healthcare and education access for underserved communities in rural Nepal — where the nearest hospital can be a multi-day walk away.
             </p>
             <p>
               Through <strong>Project Sanjeevani</strong>, our flagship healthcare initiative, we operate mobile health camps that deliver free medical screenings, maternal care, and disease prevention services directly to communities with limited permanent healthcare access. {SANJEEVANI_PUBLIC_COPY.pressSummary}

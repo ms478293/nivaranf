@@ -18,7 +18,7 @@ import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 export const metadata: Metadata = {
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
   description:
-    "Nivaran Foundation is a 501(c)(3) nonprofit founded in 2020, delivering healthcare and education support to underserved communities across Nepal.",
+    "Nivaran Foundation is a 501(c)(3) nonprofit founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/about",
   },

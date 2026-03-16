@@ -4,7 +4,7 @@ import { detectSiteVariantFromHost } from "@/lib/site-variant";
 
 const MAIN_LLMS_TXT = `# Nivaran Foundation
 
-> Nivaran Foundation is a 501(c)(3) nonprofit organization delivering free mobile health camps, maternal care, and education support to underserved communities across rural Nepal. Founded in 2020, Nivaran has served 17,000+ patients through 16+ health camps across all 7 provinces of Nepal. EIN: 41-2656587.
+> Nivaran Foundation is a 501(c)(3) nonprofit organization delivering free mobile health camps, maternal care, and education support to underserved communities across rural Nepal. Founded in 2024, Nivaran has served 17,000+ patients through 16+ health camps across all 7 provinces of Nepal. EIN: 41-2656587.
 
 ## About
 - [About Nivaran Foundation](https://www.nivaranfoundation.org/about): Mission, vision, founding story, and organizational overview

@@ -68,7 +68,7 @@ const AboutDescription = () => {
     <div className="max-w-[315px] self-end gap-6 flex flex-col justify-between text-sm">
       <p className="text-gray-600 ">
         NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile health
-        camps and education programs across rural Nepal since 2020. Every dollar
+        camps and education programs across rural Nepal since 2024. Every dollar
         directly funds healthcare and learning for underserved communities.
       </p>
       {/*NOTE: Provide a link */}

@@ -46,7 +46,7 @@ const IMPACT_STATS = [
   { value: "96%", label: "Funds to Programs", icon: "💰" },
   { value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText, label: "Tracked Investment", icon: "📊" },
   { value: "4", label: "Program Phases", icon: "🗓️" },
-  { value: "2020", label: "Year Founded", icon: "🌱" },
+  { value: "2024", label: "Year Founded", icon: "🌱" },
 ];
 
 const FUND_ALLOCATION = [
@@ -57,7 +57,7 @@ const FUND_ALLOCATION = [
 ];
 
 const MILESTONES = [
-  { year: "2020", event: "Nivaran Foundation established as a 501(c)(3) nonprofit organization in the United States." },
+  { year: "2024", event: "Nivaran Foundation established as a 501(c)(3) nonprofit organization in the United States." },
   { year: "2025", event: "Project Sanjeevani Phase I launched with the first tracked rural health camps in Nepal." },
   { year: "2025", event: `Expanded to two field teams and reached all ${SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces during the first operating cycle.` },
   { year: "2026", event: `Current live tracking records show ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served across ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText} rural municipalities.` },
@@ -77,7 +77,7 @@ export default function ImpactPage() {
         <div className="max-w-[1320px] mx-auto text-center">
           <PageTitle prefix="Our Impact in" suffix="Rural Nepal" className="items-center" />
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Every dollar donated to Nivaran Foundation creates measurable change. Here is exactly where your support goes and what it has achieved since our founding in 2020.
+            Every dollar donated to Nivaran Foundation creates measurable change. Here is exactly where your support goes and what it has achieved since our founding in 2024.
           </p>
         </div>
       </section>

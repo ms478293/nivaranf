@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 const snapshotCards = [
-  { label: "Founded", value: "2020", note: "501(c)(3) nonprofit organization" },
+  { label: "Founded", value: "2024", note: "501(c)(3) nonprofit organization" },
   { label: "Patients served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText, note: "current verified cumulative total" },
   { label: "Health camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, note: "completed Project Sanjeevani camps" },
   { label: "Provinces covered", value: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`, note: "current national footprint" },
@@ -156,7 +156,7 @@ export default function ImpactFactSheetPage() {
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
               <p>
-                Nivaran Foundation is a 501(c)(3) nonprofit founded in 2020 and
+                Nivaran Foundation is a 501(c)(3) nonprofit founded in 2024 and
                 focused on healthcare and education delivery for underserved
                 communities in Nepal.
               </p>
