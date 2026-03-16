@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-kent-meningitis-outbreak-key-questions-answered",
+    title: "Global Health and Education Watch: Kent meningitis outbreak: key questions answered",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-global-health-and-education-watch-kent-meningitis-outbreak-key-questions-answere.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-in-deep-red-idaho-a-republican-rift-over-schools-and",
     title: "Global Health and Education Watch: In Deep-Red Idaho, a Republican Rift Over Schools and",
     summary:
