@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "kent-meningitis-outbreak-claims-second-young-life-sparks-urgent-global-health-dialogue",
+    title: "Kent Meningitis Outbreak Claims Second Young Life, Sparks Urgent Global Health Dialogue",
+    summary:
+      "A meningitis outbreak in Kent, UK, has tragically claimed a second young life, identified as a sixth-form student, Juliette. This devastating event has triggered an urgent public health response, with long queues forming for antibiotics at the University of Kent.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-kent-meningitis-outbreak-claims-second-young-life-sparks-urgent-global-health-di.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "kharkiv-s-children-learn-underground-a-global-beacon-of-educational-resilience-amidst-conflict",
     title: "Kharkiv's Children Learn Underground: A Global Beacon of Educational Resilience Amidst Conflict",
     summary:
