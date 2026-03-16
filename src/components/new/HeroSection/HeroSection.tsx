@@ -30,7 +30,7 @@ const HeroSection = () => {
 
   return (
     <div className="overflow-hidden  w-full h-full  flex justify-center font-Poppins">
-      <div className=" w-full h-[80vh] md:h-screen relative  overflow-hidden   ">
+      <div className=" w-full h-[65vh] min-[430px]:h-[70vh] sm:h-[80vh] md:h-screen relative  overflow-hidden   ">
         {/* Carousel Wrapper */}
         <div className=" w-full h-full ">
           <HeroImage currentImageIndex={currentImageIndex} images={IMAGES} />

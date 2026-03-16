@@ -30,7 +30,7 @@ const InsightsAndInspiraton = () => {
           </Link>
         </div>
         {/* <div className="flex justify-start  flex-wrap  snap-x snap-proximity  gap-4 [scrollbar-width:none] mt-8"> */}
-        <div className="grid-cols-1 flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-x-auto snap-x snap-proximity  [scrollbar-width:none] px-4 pb-8 pt-4 ">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-x-auto sm:overflow-x-visible snap-x snap-proximity [scrollbar-width:none] px-4 pb-8 pt-4 ">
           <RenderList
             data={featuredData}
             render={(data) => (
@@ -39,7 +39,7 @@ const InsightsAndInspiraton = () => {
                 key={data.slug}
                 className="max-sm:max-w-[min(345px,calc(100vw-2rem))] max-sm:min-w-[min(345px,calc(100vw-2rem))] max-sm:w-[min(345px,calc(100vw-2rem))]  snap-center "
               >
-                <BlogCard.Image className="h-[340px]" />
+                <BlogCard.Image className="h-[220px] sm:h-[280px] lg:h-[340px]" />
                 <BlogCard.TitleAndDescription className="text-lg/[30px] p-4" />
               </BlogCard>
             )}

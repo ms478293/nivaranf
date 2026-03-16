@@ -6,9 +6,9 @@ import Link from "next/link";
 const DonationBanner = () => {
   return (
     <section className="w-full px-4 bg-white font-Poppins -mb-10 ">
-      <div className="max-w-[1320px] mx-auto  p-4 sm:py-10 sm:px-16 rounded-2xl bg-[#3777BC]   relative overflow-hidden shadow-[2px_2px_10px_#3777bc55] ">
+      <div className="max-w-[1320px] mx-auto p-4 sm:py-8 sm:px-10 md:py-10 md:px-16 rounded-2xl bg-[#3777BC]   relative overflow-hidden shadow-[2px_2px_10px_#3777bc55] ">
         <div className="flex flex-col  relative z-[10]">
-          <h2 className="text-white text-xl sm:text-3xl font-semibold">
+          <h2 className="text-white text-lg min-[430px]:text-xl sm:text-2xl md:text-3xl font-semibold">
             What is the price of inaction?
           </h2>
 
@@ -27,7 +27,7 @@ const DonationBanner = () => {
             </div> */}
           </div>
 
-          <div className="flex flex-col gap-10 md:flex-row md:items-end justify-between ">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-10 md:flex-row md:items-end justify-between ">
             <p className="text-gray-50 text-sm font-medium  md:max-w-[40%]">
               {/* Don't wait — every moment counts in the fight for a better future */}
             </p>
@@ -53,7 +53,7 @@ const DonationBanner = () => {
           </div>
         </div>
 
-        <div className="absolute top-2 left-4 sm:left-8 h-full sm:h-[310px]  w-1/2 min-[445px]:w-1/4  sm:w-1/5 rotate-[10deg] sm:rotate-[15deg]">
+        <div className="absolute top-2 left-4 sm:left-8 h-full sm:h-[310px] w-1/4 sm:w-1/5 rotate-[10deg] sm:rotate-[15deg]">
           <Image
             width={200}
             height={310}

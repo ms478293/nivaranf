@@ -28,15 +28,15 @@ const UpcomingProjects = ({
           className="-mb-4 md:mb-0"
         /> */}
         {children}
-        <ul className="flex flex-col md:grid md:grid-cols-2 min-[880px]:gap-8 lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:justify-start gap-8 mt-8">
+        <ul className="flex flex-col gap-6 sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:flex-wrap lg:items-center lg:justify-start lg:gap-8 mt-8">
           <RenderList
             data={data}
             render={(data) => (
               <UpcomingProjectsCard
                 data={data}
-                className="w-[21rem] h-[13rem] min-[880px]:w-[25.5rem] min-[880px]:h-[17rem]"
+                className="w-full sm:w-auto sm:min-w-[18rem] md:w-[21rem] md:h-[13rem] h-[12rem] lg:w-[25.5rem] lg:h-[17rem]"
               >
-                <div className="bg-[#FFCD33] min-[880px]:w-[25rem] min-[880px]:h-64 w-[20.5rem] h-[12.2rem] rounded-lg "></div>
+                <div className="bg-[#FFCD33] w-full sm:w-auto md:w-[20.5rem] md:h-[12.2rem] h-[11rem] lg:w-[25rem] lg:h-64 rounded-lg "></div>
                 <FolderIcon
                   width={"700"}
                   height={"700"}

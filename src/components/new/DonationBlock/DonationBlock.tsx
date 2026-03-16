@@ -37,7 +37,7 @@ const DonationBlock = ({ className }: { className?: string }) => {
       <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-start gap-4 md:py-0 py-8">
         {DONATION_BLOCK_DATA.map((image) => (
           <div
-            className="w-full min-h-[300px] md:min-h-[350px] overflow-hidden relative rounded-2xl"
+            className="w-full min-h-[240px] min-[430px]:min-h-[280px] md:min-h-[350px] overflow-hidden relative rounded-2xl"
             key={image.id}
           >
             <Image
@@ -49,7 +49,7 @@ const DonationBlock = ({ className }: { className?: string }) => {
             />
 
             <div className="flex absolute bottom-0 z-10 flex-col gap-3 items-start p-5 w-full">
-              <h3 className="text-neutral-50 font-medium text-lg sm:text-xl/[28px] md:text-2xl/[40px] max-w-[300px] w-full leading-10 ">
+              <h3 className="text-neutral-50 font-medium text-base sm:text-xl/[28px] md:text-2xl/[40px] max-w-[300px] w-full leading-7 sm:leading-10 ">
                 {image.title.split(" ").slice(0, -1).join(" ")}{" "}
                 <span className="text-primary-500">
                   {image.title.split(" ").slice(-1)}

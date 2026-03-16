@@ -38,7 +38,7 @@ const WhereMoneyGoes = () => {
   return (
     <section className="w-full px-4 py-12 bg-white font-Poppins">
       <div className="max-w-[1320px] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Left: Fund Breakdown */}
           <div className="flex-1">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
@@ -130,7 +130,7 @@ const WhereMoneyGoes = () => {
               </a>
             </p>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-12">
             <div className="flex items-center gap-2 text-gray-600">
               <svg
                 className="w-5 h-5 text-green-600"

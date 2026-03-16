@@ -47,7 +47,7 @@ const NivaranHappiness = () => {
         </div>
 
         <ul
-          className="flex flex-col gap-4 sm:flex-row lg:px-12 xl:px-[100px] 2xl:px-[150px] "
+          className="flex flex-col gap-3 sm:flex-row sm:gap-4 md:px-4 lg:px-12 xl:px-[100px] 2xl:px-[150px] "
           role="list"
         >
           <RenderList
@@ -56,7 +56,7 @@ const NivaranHappiness = () => {
               <li
                 role="listitem"
                 key={data.id}
-                className="w-full h-[300px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:scale-[1.02]"
+                className="w-full h-[200px] min-[430px]:h-[250px] sm:h-[400px] lg:h-[500px] relative border border-gray-200 rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300 hover:scale-[1.02]"
               >
                 <Image
                   fill
@@ -68,7 +68,7 @@ const NivaranHappiness = () => {
 
                 <div className=" w-full h-full bg-[linear-gradient(to_bottom,_transparent_0%_,transparent_60%_,white_80%)] absolute z-[10] bottom-0">
                   <p className="absolute bottom-0 p-4 flex flex-col font-Poppins">
-                    <span className="text-primary-400 text-[36px]/[36px] font-bold ">
+                    <span className="text-primary-400 text-2xl sm:text-3xl lg:text-[36px]/[36px] font-bold ">
                       {data.count}
                     </span>
                     <span className="text-sm  text-gray-600">

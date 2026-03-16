@@ -151,7 +151,7 @@ const NewsletterSubscribe = ({
         className
       )}
     >
-      <div className="max-w-[1320px] mx-auto bg-gradient-to-r from-primary-main to-[#3777BC] rounded-2xl p-8 md:p-12 relative overflow-hidden">
+      <div className="max-w-[1320px] mx-auto bg-gradient-to-r from-primary-main to-[#3777BC] rounded-2xl p-5 sm:p-8 md:p-12 relative overflow-hidden">
         <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
           <div className="flex-grow">
             <h2 className="text-white text-xl md:text-2xl font-semibold">
