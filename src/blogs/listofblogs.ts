@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-strain-fuels-private-sector-reliance-watchdog-warns-of-two-tier-system",
+    title: "Global Healthcare Strain Fuels Private Sector Reliance, Watchdog Warns of Two-Tier System",
+    summary:
+      "Across the globe, public health systems are grappling with unprecedented demand, leading many patients to seek faster treatment in the private sector. This growing trend is sparking warnings from watchdogs about the emergence of a two-tier healthcare landscape, threatening universal access.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-global-healthcare-strain-fuels-private-sector-reliance-watchdog-warns-of-two-tie.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-guardian-view-on-post-16-qualifications-the-case-for",
     title: "Global Health and Education Watch: The Guardian view on post-16 qualifications: the case for",
     summary:
