@@ -584,8 +584,12 @@ export async function getMetadataForBlogSlug(
       };
     }
     return {
-      title: siteConfig.articleFallbackTitle,
-      description: siteConfig.articleFallbackDescription,
+      title: `Page Not Found | ${siteConfig.siteName}`,
+      description: "The requested content could not be found.",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 }

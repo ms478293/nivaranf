@@ -4,7 +4,7 @@ import { buildCanonicalPath } from "@/lib/content/automation";
 import { getPublishedContentPostBySlug } from "@/lib/content/posts";
 import { getMetadataForBlogSlug } from "@/components/blogs/BlogDetailPage";
 import type { Metadata } from "next";
-import { permanentRedirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 
 export async function generateStaticParams() {
   return globalBlogs.map((blog) => ({
@@ -34,5 +34,5 @@ export default async function LegacyBlogRedirectPage({
   if (dynamicPost) {
     permanentRedirect(buildCanonicalPath(dynamicPost.content_type, dynamicPost.slug));
   }
-  permanentRedirect(getBlogPathBySlug(slug));
+  notFound();
 }

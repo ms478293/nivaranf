@@ -12,12 +12,12 @@ const BlogHeading = ({
   color = "#ffffff",
 }: HeadingProps) => {
   return (
-    <h1
+    <h2
       className={`text-${fontSize} text-${align} text-lg font-medium text-gray-950`}
       style={{ color: color }}
     >
       {text}
-    </h1>
+    </h2>
   );
 };
 
