@@ -4,15 +4,18 @@ import HeaderUsa from "@/components/usa/common/HeaderUsa";
 import { cn } from "@/lib/utils";
 import Providers from "@/providers";
 import { Metadata } from "next";
-import { Montaga } from "next/font/google";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "Nivaran | United States",
   description: "",
 };
 
-// Load Google Font
-const montaga = Montaga({ subsets: ["latin"], weight: "400" });
+const montaga = localFont({
+  src: [{ path: "../../fonts/Montaga-400.ttf", weight: "400", style: "normal" }],
+  display: "swap",
+  preload: true,
+});
 
 export default function UsaLayout({ children }: { children: React.ReactNode }) {
   return (

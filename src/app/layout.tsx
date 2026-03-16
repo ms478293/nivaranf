@@ -12,8 +12,8 @@ import {
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
+import localFont from "next/font/local";
 import Script from "next/script";
-import { Poppins } from "next/font/google";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
 const PUBLIC_API_BASE_URL = (
@@ -201,9 +201,12 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
+const poppins = localFont({
+  src: [
+    { path: "../fonts/Poppins-400.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/Poppins-600.ttf", weight: "600", style: "normal" },
+    { path: "../fonts/Poppins-700.ttf", weight: "700", style: "normal" },
+  ],
   display: "swap",
   preload: true,
 });

@@ -18,8 +18,8 @@ import {
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { notFound, permanentRedirect } from "next/navigation";
-import { DM_Mono, Playfair_Display, Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -36,22 +36,32 @@ const STATIC_BLOG_DIRECTORIES = [
   path.join(process.cwd(), "src/blogs/usa"),
 ];
 
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["700", "900"],
+const playfairDisplay = localFont({
+  src: [
+    { path: "../../fonts/PlayfairDisplay-700.ttf", weight: "700", style: "normal" },
+    { path: "../../fonts/PlayfairDisplay-900.ttf", weight: "900", style: "normal" },
+  ],
   variable: "--article-font-display",
+  display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-  weight: ["300", "400", "600"],
+const sourceSerif = localFont({
+  src: [
+    { path: "../../fonts/SourceSerif4-300.ttf", weight: "300", style: "normal" },
+    { path: "../../fonts/SourceSerif4-400.ttf", weight: "400", style: "normal" },
+    { path: "../../fonts/SourceSerif4-600.ttf", weight: "600", style: "normal" },
+  ],
   variable: "--article-font-body",
+  display: "swap",
 });
 
-const dmMono = DM_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
+const dmMono = localFont({
+  src: [
+    { path: "../../fonts/DMMono-400.ttf", weight: "400", style: "normal" },
+    { path: "../../fonts/DMMono-500.ttf", weight: "500", style: "normal" },
+  ],
   variable: "--article-font-mono",
+  display: "swap",
 });
 
 type BlogFrontmatter = {

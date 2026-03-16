@@ -16,14 +16,14 @@ import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
+  title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
   description:
     "Nivaran Foundation is a 501(c)(3) nonprofit founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/about",
   },
   openGraph: {
-    title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
+    title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
     description:
       "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
     url: "https://www.nivaranfoundation.org/about",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Nivaran Foundation | NGO Serving Nepal Since 2020",
+    title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
     description:
       "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
     site: "@NivaranOrg",
