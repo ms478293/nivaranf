@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "kharkiv-s-children-learn-underground-a-global-beacon-of-educational-resilience-amidst-conflict",
+    title: "Kharkiv's Children Learn Underground: A Global Beacon of Educational Resilience Amidst Conflict",
+    summary:
+      "In Ukraine's war-torn Kharkiv, 20,000 children attend schools established within the city's subway system, a vital response to ongoing Russian assaults. This innovative underground education model provides safety and continuity, highlighting global challenges in protecting children's right to learn amidst conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-kharkiv-s-children-learn-underground-a-global-beacon-of-educational-resilience-a.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-are-the-symptoms-of-meningitis-and-is-there",
     title: "Global Health and Education Watch: What are the symptoms of meningitis and is there",
     summary:
