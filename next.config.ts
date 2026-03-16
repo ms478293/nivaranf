@@ -22,7 +22,6 @@ function getSupabaseStoragePattern() {
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: true,
-  output: "standalone",
   experimental: {
     middlewarePrefetch: "strict",
     optimizePackageImports: [  // Tree-shake heavy icon/component libraries
@@ -109,7 +108,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://vercel.live https://*.vercel.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: http:; font-src 'self' data:; connect-src 'self' https: wss:; frame-src 'self' https://www.youtube.com https://youtube.com https://square.link https://vercel.live; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://square.link; frame-ancestors 'none'; upgrade-insecure-requests",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://vercel.live https://*.vercel.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https: wss:; frame-src 'self' https://www.youtube.com https://youtube.com https://square.link https://vercel.live; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://square.link; frame-ancestors 'none'; upgrade-insecure-requests",
           },
         ],
       },

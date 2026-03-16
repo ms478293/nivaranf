@@ -1,4 +1,4 @@
-FROM node:20-bookworm-slim AS deps
+FROM node:20-bookworm-slim
 
 WORKDIR /app
 
@@ -7,14 +7,6 @@ COPY pnpm-lock.yaml* ./
 
 RUN npm ci --legacy-peer-deps
 
-
-FROM node:20-bookworm-slim AS builder
-
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
-COPY package*.json ./
-COPY pnpm-lock.yaml* ./
 COPY . .
 
 ARG NEXT_PUBLIC_SITE_URL=https://www.nivaranfoundation.org
@@ -40,27 +32,10 @@ ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL \
 
 RUN npm run build
 
-
-FROM node:20-bookworm-slim AS runner
-
-WORKDIR /app
-
 ENV NODE_ENV=production \
     PORT=3000 \
-    HOSTNAME=0.0.0.0 \
-    NEXT_TELEMETRY_DISABLED=1
-
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/src/blogs ./src/blogs
-COPY --from=builder /app/src/content ./src/content
-COPY --from=builder /app/scripts ./scripts
-COPY --from=builder /app/logs ./logs
-COPY --from=builder /app/.global_news ./.global_news
-COPY --from=builder /app/.nepal_news ./.nepal_news
-COPY --from=builder /app/.env.automation ./.env.automation
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+    HOSTNAME=0.0.0.0
 
 EXPOSE 3000
 
-CMD ["node", "server.js"]
+CMD ["npm", "run", "start", "--", "--hostname", "0.0.0.0", "--port", "3000"]
