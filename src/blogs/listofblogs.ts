@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-boosts-middle-east-health-aid-amid-escalating-regional-conflict",
+    title: "WHO Boosts Middle East Health Aid Amid Escalating Regional Conflict",
+    summary:
+      "The UN World Health Organization has released $2 million in emergency funds to bolster health systems in Lebanon, Iraq, and Syria. This critical aid responds to escalating regional conflicts, including US and Israeli strikes against Iran and Tehran's counterstrikes, which are severely impacting vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-who-boosts-middle-east-health-aid-amid-escalating-regional-conflict.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-strain-fuels-private-sector-reliance-watchdog-warns-of-two-tier-system",
     title: "Global Healthcare Strain Fuels Private Sector Reliance, Watchdog Warns of Two-Tier System",
     summary:
