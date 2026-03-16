@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-crisis-deepens-un-rushes-aid-amid-soaring-health-needs",
+    title: "Middle East Crisis Deepens: UN Rushes Aid Amid Soaring Health Needs",
+    summary:
+      "A deepening crisis in the Middle East has pushed health systems to the brink, triggering widespread displacement and food insecurity. UN agencies are urgently scaling up aid amidst severe logistical and security hurdles to address the escalating humanitarian catastrophe.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-middle-east-crisis-deepens-un-rushes-aid-amid-soaring-health-needs.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-confidential-report-calls-for-sweeping-changes-to-track-covid",
     title: "Global Health and Education Watch: Confidential Report Calls for Sweeping Changes to Track Covid",
     summary:
