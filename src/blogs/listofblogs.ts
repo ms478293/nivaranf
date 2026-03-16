@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "targeted-grants-transform-care-leavers-futures-global-study-finds",
+    title: "Targeted Grants Transform Care Leavers' Futures, Global Study Finds",
+    summary:
+      "A new study reveals that a one-off £2,000 grant dramatically improves outcomes for young adults leaving state care. Participants were found to be less likely to experience homelessness, hospital stays, or involvement with the justice system, offering a powerful model for global social welfare.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-targeted-grants-transform-care-leavers-futures-global-study-finds.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-health-crisis-rising-ill-health-impacts-employment",
     title: "Global Youth Health Crisis: Rising Ill Health Impacts Employment",
     summary:
