@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-confidential-report-calls-for-sweeping-changes-to-track-covid",
+    title: "Global Health and Education Watch: Confidential Report Calls for Sweeping Changes to Track Covid",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-global-health-and-education-watch-confidential-report-calls-for-sweeping-changes.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-boosts-middle-east-health-aid-amid-escalating-regional-conflict",
     title: "WHO Boosts Middle East Health Aid Amid Escalating Regional Conflict",
     summary:
