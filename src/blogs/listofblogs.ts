@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "eastern-india-hospital-fire-claims-ten-icu-patients-sparks-safety-review",
+    title: "Eastern India Hospital Fire Claims Ten ICU Patients, Sparks Safety Review",
+    summary:
+      "Ten critically ill patients perished in a devastating hospital fire in eastern India, prompting an immediate investigation into the cause. The incident underscores the critical need for enhanced fire safety protocols and infrastructure upgrades in healthcare facilities worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-eastern-india-hospital-fire-claims-ten-icu-patients-sparks-safety-review.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "targeted-grants-transform-care-leavers-futures-global-study-finds",
     title: "Targeted Grants Transform Care Leavers' Futures, Global Study Finds",
     summary:
