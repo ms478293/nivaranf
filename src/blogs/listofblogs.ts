@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-displaced-lebanese-shelter-in-schools-stadiums-amid-israeli-attacks",
+    title: "Global Health and Education Watch: Displaced Lebanese shelter in schools, stadiums amid Israeli attacks",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-16-global-health-and-education-watch-displaced-lebanese-shelter-in-schools-stadiums.jpg",
+    date: "2026-03-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "middle-east-crisis-deepens-un-rushes-aid-amid-soaring-health-needs",
     title: "Middle East Crisis Deepens: UN Rushes Aid Amid Soaring Health Needs",
     summary:
