@@ -100,7 +100,8 @@ export default function PressPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center">
               <div className="w-48 h-24 flex items-center justify-center mb-4">
-                <Image src="/NivaranLogo.svg" alt="Nivaran Foundation Logo SVG" width={192} height={80} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/NivaranLogo.svg" alt="Nivaran Foundation Logo SVG" width={192} height={80} />
               </div>
               <p className="text-sm font-medium text-gray-800 mb-2">Primary Logo (SVG)</p>
               <a

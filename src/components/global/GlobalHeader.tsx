@@ -3,7 +3,6 @@
 import { AppButton } from "@/components/ui/app-button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -49,7 +48,8 @@ export default function GlobalHeader({ prefix }: { prefix: string }) {
           className="flex items-center gap-3"
           aria-label="Nivaran Global home"
         >
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/NivaranLogo.svg"
             alt="Nivaran Foundation"
             width={110}

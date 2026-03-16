@@ -15,7 +15,6 @@ import {
 import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 
-import Image from "next/image";
 import { DialogOpenerUsa } from "./DialogOpenerUsa";
 
 export function NavBarUsa() {
@@ -61,11 +60,12 @@ export function NavBarUsa() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-bl from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md max-w-52"
                     href="https://www.nivaranfoundation.org/about"
                   >
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src="/NivaranLogo.svg"
                       height={107}
                       width={213}
-                      alt="Nivaran Logo"
+                      alt="Nivaran Foundation Logo"
                       className="backdrop-hue-rotate-60"
                     />
                     <div

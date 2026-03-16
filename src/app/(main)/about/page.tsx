@@ -70,9 +70,10 @@ export default function page() {
         <div className="flex flex-col gap-6 items-center max-w-[650px] mx-auto px-4">
           <div className="flex flex-col items-center ">
             <div className="w-[215px]">
-              <Image
-                src={"/NivaranLogo.svg"}
-                alt="Nivaran Logo"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/NivaranLogo.svg"
+                alt="Nivaran Foundation Logo"
                 width={215}
                 height={86}
               />

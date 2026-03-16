@@ -7,7 +7,6 @@ import { AppButton } from "@/components/ui/app-button";
 import { useOutsideEventListener } from "@/hooks/useOutsideEventListeners";
 import { useScreenSize } from "@/lib/helpers/useScreenSize";
 import { useMegaMenuStore } from "@/store/useMegamenuStore";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -108,12 +107,12 @@ const NivaranHeader = () => {
               onClick={() => openActiveMegaMenu(null)}
               aria-label="Nivaran Logo- Select to navigate to home page"
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/NivaranLogo.svg"
-                alt="Nivaran Logo"
+                alt="Nivaran Foundation Logo"
                 width={100}
                 height={40}
-                priority
               />
             </Link>
             {screenSize !== "864px" ? (

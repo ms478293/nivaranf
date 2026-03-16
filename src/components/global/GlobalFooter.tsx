@@ -1,5 +1,4 @@
 import { GLOBAL_SITE_NAV } from "@/content/global-site";
-import Image from "next/image";
 import Link from "next/link";
 
 function withPrefix(prefix: string, path: string) {
@@ -14,7 +13,8 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/NivaranLogo.svg"
                 alt="Nivaran Foundation"
                 width={110}

@@ -37,9 +37,10 @@ export function Sidebar() {
     <div className="w-full  rounded-lg  h-full overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 font-Poppins p-4 flex flex-col justify-between">
       <div className="w-full flex items-center justify-start mb-1 ">
         <Link className="w-24 cursor-pointer" href="/" aria-label="Nivaran Foundation home">
-          <Image
-            src={"/NivaranLogo.svg"}
-            alt="Nivaran Logo"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/NivaranLogo.svg"
+            alt="Nivaran Foundation Logo"
             width={96}
             height={38}
           />
