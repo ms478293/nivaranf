@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-kent-university-students-offered-meningitis-b-vaccine-amid-unprecedented",
+    title: "Global Health and Education Watch: Kent university students offered meningitis B vaccine amid ‘unprecedented’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-health-and-education-watch-kent-university-students-offered-meningitis-b-.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "middle-east-crisis-health-systems-crumble-children-suffer-amid-regional-ripples",
     title: "Middle East Crisis: Health Systems Crumble, Children Suffer Amid Regional Ripples",
     summary:
