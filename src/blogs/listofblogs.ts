@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "primary-care-modalities-impact-global-mental-health-crisis",
+    title: "Primary Care Modalities Impact Global Mental Health Crisis",
+    summary:
+      "A new global study highlights the critical link between primary care consultation types and the demand for acute mental health services. Findings suggest that the modality of initial care significantly impacts patient pathways to specialized support.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-primary-care-modalities-impact-global-mental-health-crisis.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-family-beyond-devastated-after-meningitis-death",
     title: "Global Health and Education Watch: Family 'beyond devastated' after meningitis death",
     summary:
