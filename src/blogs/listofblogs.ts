@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "federal-court-rejects-vaccine-policy-shift-citing-lack-of-scientific-basis",
+    title: "Federal Court Rejects Vaccine Policy Shift, Citing Lack of Scientific Basis",
+    summary:
+      "A federal district court has invalidated recent U.S. government vaccine policies, including revisions to childhood immunization schedules and limitations on COVID-19 shots. The ruling, stemming from a lawsuit by medical organizations, found decisions lacked a scientific foundation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-federal-court-rejects-vaccine-policy-shift-citing-lack-of-scientific-basis.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-preventive-cholera-vaccination-resumes-as-global-supply-reaches-critical",
     title: "Global Health and Education Watch: Preventive cholera vaccination resumes as global supply reaches critical",
     summary:
