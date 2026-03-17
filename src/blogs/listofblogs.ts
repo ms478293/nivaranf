@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-preventive-cholera-vaccination-resumes-as-global-supply-reaches-critical",
+    title: "Global Health and Education Watch: Preventive cholera vaccination resumes as global supply reaches critical",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-health-and-education-watch-preventive-cholera-vaccination-resumes-as-glob.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-telehealth-policies-must-prioritize-equity-review-reveals",
     title: "Global Telehealth Policies Must Prioritize Equity, Review Reveals",
     summary:
