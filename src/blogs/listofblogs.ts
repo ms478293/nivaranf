@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-family-beyond-devastated-after-meningitis-death",
+    title: "Global Health and Education Watch: Family 'beyond devastated' after meningitis death",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-health-and-education-watch-family-beyond-devastated-after-meningitis-deat.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tuesday-briefing-how-the-conflict-in-iran-shattered-the",
     title: "Global Health and Education Watch: Tuesday briefing: How the conflict in Iran shattered the",
     summary:
