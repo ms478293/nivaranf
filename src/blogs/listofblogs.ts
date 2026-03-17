@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-telehealth-policies-must-prioritize-equity-review-reveals",
+    title: "Global Telehealth Policies Must Prioritize Equity, Review Reveals",
+    summary:
+      "A global examination of telehealth policies, drawing insights from national reviews, underscores the critical need for equity-focused design. While virtual care offers vast potential, its benefits are often unevenly distributed, exacerbating existing health disparities without proactive policy interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-telehealth-policies-must-prioritize-equity-review-reveals.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alarms-ring-data-gaps-mar-vaccine-guidance",
     title: "Global Health Alarms Ring: Data Gaps Mar Vaccine Guidance",
     summary:
