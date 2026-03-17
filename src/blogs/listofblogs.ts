@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "argentina-exits-who-amidst-global-health-governance-debate",
+    title: "Argentina Exits WHO Amidst Global Health Governance Debate",
+    summary:
+      "Argentina has officially withdrawn from the World Health Organization, with President Javier Milei's government citing dissatisfaction with the WHO's COVID-19 pandemic response. This decision, echoing a previous US move, raises significant questions about the future of global health cooperation and multilateral institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-argentina-exits-who-amidst-global-health-governance-debate.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "aging-with-autism-a-global-healthcare-blind-spot",
     title: "Aging with Autism: A Global Healthcare Blind Spot",
     summary:
