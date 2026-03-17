@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarms-ring-data-gaps-mar-vaccine-guidance",
+    title: "Global Health Alarms Ring: Data Gaps Mar Vaccine Guidance",
+    summary:
+      "Internal memos reveal US health officials allegedly disregarded extensive data before altering Covid vaccine recommendations for children and pregnant individuals. This incident sparks international debate on the integrity of public health guidance and the critical role of scientific evidence.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-health-alarms-ring-data-gaps-mar-vaccine-guidance.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "eastern-india-hospital-fire-claims-ten-icu-patients-sparks-safety-review",
     title: "Eastern India Hospital Fire Claims Ten ICU Patients, Sparks Safety Review",
     summary:
