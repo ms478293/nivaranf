@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-crisis-health-systems-crumble-children-suffer-amid-regional-ripples",
+    title: "Middle East Crisis: Health Systems Crumble, Children Suffer Amid Regional Ripples",
+    summary:
+      "The escalating crisis in the Middle East is pushing health systems to breaking point, severely impacting children and displacing hundreds of thousands. UN agencies are scaling up emergency aid amidst immense logistical challenges to address the growing humanitarian toll.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-middle-east-crisis-health-systems-crumble-children-suffer-amid-regional-ripples.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-epstein-urged-media-mogul-to-give-up-control-of",
     title: "Global Health and Education Watch: Epstein urged media mogul to give up control of",
     summary:
