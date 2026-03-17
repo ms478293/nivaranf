@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "aging-with-autism-a-global-healthcare-blind-spot",
+    title: "Aging with Autism: A Global Healthcare Blind Spot",
+    summary:
+      "Older adults with autism often navigate a healthcare landscape ill-equipped to understand their specific needs, leading to significant health disparities. Recognizing and adapting systems globally is crucial for improving their well-being and quality of life.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-aging-with-autism-a-global-healthcare-blind-spot.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-is-menb-vaccine-not-given-to-teenagers-in",
     title: "Global Health and Education Watch: Why is MenB vaccine not given to teenagers in",
     summary:
