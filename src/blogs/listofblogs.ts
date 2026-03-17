@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-why-is-menb-vaccine-not-given-to-teenagers-in",
+    title: "Global Health and Education Watch: Why is MenB vaccine not given to teenagers in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-17-global-health-and-education-watch-why-is-menb-vaccine-not-given-to-teenagers-in.jpg",
+    date: "2026-03-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-meningitis-is-back-and-here-is-why",
     title: "Global Health and Education Watch: Meningitis is back – and here is why |",
     summary:
