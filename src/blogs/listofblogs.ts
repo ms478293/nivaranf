@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-number-of-meningitis-cases-investigated-in-kent-rises-to",
+    title: "Global Health and Education Watch: Number of meningitis cases investigated in Kent rises to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-18-global-health-and-education-watch-number-of-meningitis-cases-investigated-in-ken.jpg",
+    date: "2026-03-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ethiopian-study-highlights-critical-need-for-ncd-checkups",
     title: "Ethiopian Study Highlights Critical Need for NCD Checkups",
     summary:
