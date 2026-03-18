@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ruling-on-rfk-jr-s-vaccine-policy-changes-leaves-health",
+    title: "Global Health and Education Watch: Ruling on RFK Jr.’s Vaccine Policy Changes Leaves Health",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-18-global-health-and-education-watch-ruling-on-rfk-jr-s-vaccine-policy-changes-leav.jpg",
+    date: "2026-03-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kent-meningitis-outbreak-a-timeline-of-the-health-authorities",
     title: "Global Health and Education Watch: Kent meningitis outbreak: a timeline of the health authorities’",
     summary:
