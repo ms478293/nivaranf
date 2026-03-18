@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ethiopian-study-highlights-critical-need-for-ncd-checkups",
+    title: "Ethiopian Study Highlights Critical Need for NCD Checkups",
+    summary:
+      "A recent study in Gondar City, Ethiopia, explores awareness and factors influencing routine medical checkups for non-communicable diseases among adults. The findings offer crucial insights into improving preventive healthcare strategies in similar global settings.",
+    thumbnailImage: "/images/global-news/2026/2026-03-18-ethiopian-study-highlights-critical-need-for-ncd-checkups.jpg",
+    date: "2026-03-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-judge-blocks-rfk-jr-s-changes-to-us-childhood-vaccine",
     title: "Global Health and Education Watch: Judge blocks RFK Jr's changes to US childhood vaccine",
     summary:
