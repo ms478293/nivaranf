@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "minab-school-tragedy-who-will-answer-for-iran-s-slain-schoolchildren",
+    title: "Minab School Tragedy: Who Will Answer for Iran's Slain Schoolchildren?",
+    summary:
+      "A recent investigation into a deadly strike on a school in Minab, Iran, indicates the attack may have been deliberate, resulting in the tragic deaths of schoolchildren. This finding ignites a critical global debate on accountability for such actions and the protection of educational institutions in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-18-minab-school-tragedy-who-will-answer-for-iran-s-slain-schoolchildren.jpg",
+    date: "2026-03-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-as-a-meningitis-outbreak-spreads-in-kent-uk-here-s",
     title: "Global Health and Education Watch: As a Meningitis Outbreak Spreads in Kent, UK, Here’s",
     summary:
