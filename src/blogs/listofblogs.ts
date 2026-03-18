@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-warning-millions-face-loss-of-vital-reproductive-care",
+    title: "Global Health Warning: Millions Face Loss of Vital Reproductive Care",
+    summary:
+      "Millions of Americans are on the verge of losing access to critical birth control and STD screening services due to a federal funding cut. This impending crisis highlights the global vulnerability of public health systems and the devastating impact on vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-18-global-health-warning-millions-face-loss-of-vital-reproductive-care.jpg",
+    date: "2026-03-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-number-of-meningitis-cases-investigated-in-kent-rises-to",
     title: "Global Health and Education Watch: Number of meningitis cases investigated in Kent rises to",
     summary:
