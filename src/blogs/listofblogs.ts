@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-global-crisis-of-accessible-quality-education",
+    title: "The Global Crisis of Accessible, Quality Education",
+    summary:
+      "Families worldwide face immense pressure to find quality education for their children amidst rising costs and unequal access. This global struggle exacerbates social inequalities and impacts future generations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-the-global-crisis-of-accessible-quality-education.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-feasibility-of-short-term-hospital-mask-demand-forecasting-using-a",
     title: "Global Health and Education Watch: Feasibility of short-term hospital mask demand forecasting using a",
     summary:
