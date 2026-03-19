@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-aid-cuts-threaten-global-health-and-education-in-poorest-nations",
+    title: "UK Aid Cuts Threaten Global Health and Education in Poorest Nations",
+    summary:
+      "The UK government is implementing substantial cuts to its bilateral aid budget, particularly affecting African nations. This reduction, amounting to nearly £900 million by 2028-29, will severely impact critical health and education programs in some of the world's most vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-uk-aid-cuts-threaten-global-health-and-education-in-poorest-nations.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-death-toll-surpasses-1-000-in-lebanon-as-israeli-bombardment",
     title: "Global Health and Education Watch: Death toll surpasses 1,000 in Lebanon as Israeli bombardment",
     summary:
