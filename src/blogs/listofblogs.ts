@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-number-of-meningitis-cases-linked-to-kent-outbreak-rises",
+    title: "Global Health and Education Watch: Number of meningitis cases linked to Kent outbreak rises",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-global-health-and-education-watch-number-of-meningitis-cases-linked-to-kent-outb.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-public-health-alert-as-kent-meningitis-cases-rise",
     title: "Global Health and Education Watch: Public health alert as Kent meningitis cases rise",
     summary:
