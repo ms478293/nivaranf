@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-patients-harmed-as-covid-pandemic-brought-nhs-close-to",
+    title: "Global Health and Education Watch: Patients harmed as Covid pandemic brought NHS close to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-global-health-and-education-watch-patients-harmed-as-covid-pandemic-brought-nhs-.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-middle-east-live-19-march-civilians-bear-the-brunt",
     title: "Global Health and Education Watch: MIDDLE EAST LIVE 19 March: Civilians bear the brunt",
     summary:
