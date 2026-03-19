@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "honoring-educators-the-enduring-global-impact-of-dedicated-primary-school-teachers",
+    title: "Honoring Educators: The Enduring Global Impact of Dedicated Primary School Teachers",
+    summary:
+      "Tributes to a beloved primary school teacher underscore the universal impact of dedicated educators worldwide. Their foundational work in early education shapes futures and strengthens communities globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-honoring-educators-the-enduring-global-impact-of-dedicated-primary-school-teache.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-amid-deepening-crisis-in-palestine-girls-face-rising-risks",
     title: "Global Health and Education Watch: Amid deepening crisis in Palestine, girls face rising risks",
     summary:
