@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-funerals-held-for-afghans-killed-in-pakistani-strike-on",
+    title: "Global Health and Education Watch: Funerals held for Afghans killed in Pakistani strike on",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-global-health-and-education-watch-funerals-held-for-afghans-killed-in-pakistani-.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-florida-professors-quietly-defy-restrictions-on-race-and-gender",
     title: "Global Health and Education Watch: Florida professors quietly defy restrictions on race and gender",
     summary:
