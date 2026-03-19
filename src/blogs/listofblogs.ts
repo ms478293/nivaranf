@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "myanmar-s-secret-nurses-healing-a-nation-under-siege",
+    title: "Myanmar's Secret Nurses: Healing a Nation Under Siege",
+    summary:
+      "In Myanmar, a clandestine nursing school operating in the jungle has graduated its first class of 21 students, defying military surveillance and internet blackouts. These new nurses are prepared to provide vital healthcare to displaced populations and pro-democracy fighters in areas inaccessible to government services.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-myanmar-s-secret-nurses-healing-a-nation-under-siege.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-funerals-held-for-afghans-killed-in-pakistani-strike-on",
     title: "Global Health and Education Watch: Funerals held for Afghans killed in Pakistani strike on",
     summary:
