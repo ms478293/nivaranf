@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-systems-faced-collapse-saved-by-worker-dedication",
+    title: "Global Healthcare Systems Faced Collapse, Saved by Worker Dedication",
+    summary:
+      "An official inquiry into the UK's pandemic response revealed its health service was on the brink of collapse, surviving only due to the \"superhuman\" efforts of healthcare workers. This assessment underscores critical global lessons about pre-existing vulnerabilities, resource deficiencies, and the immense human cost borne by medical professionals worldwide during the crisis.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-global-healthcare-systems-faced-collapse-saved-by-worker-dedication.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "honoring-educators-the-enduring-global-impact-of-dedicated-primary-school-teachers",
     title: "Honoring Educators: The Enduring Global Impact of Dedicated Primary School Teachers",
     summary:
