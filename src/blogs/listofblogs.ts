@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-death-toll-surpasses-1-000-in-lebanon-as-israeli-bombardment",
+    title: "Global Health and Education Watch: Death toll surpasses 1,000 in Lebanon as Israeli bombardment",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-19-global-health-and-education-watch-death-toll-surpasses-1-000-in-lebanon-as-israe.jpg",
+    date: "2026-03-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-global-crisis-of-accessible-quality-education",
     title: "The Global Crisis of Accessible, Quality Education",
     summary:
