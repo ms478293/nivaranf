@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-vigilance-unpacking-the-threat-of-meningitis-b",
+    title: "Global Vigilance: Unpacking the Threat of Meningitis B",
+    summary:
+      "Meningitis B poses a serious global health challenge, particularly for infants and young adults, demanding swift recognition and intervention. Understanding its symptoms and the crucial role of vaccination is vital for prevention and mitigating its severe impact worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-vigilance-unpacking-the-threat-of-meningitis-b.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-meningitis-outbreak-at-the-university-of-kent-evokes",
     title: "Global Health and Education Watch: A Meningitis Outbreak at the University of Kent Evokes",
     summary:
