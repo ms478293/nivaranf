@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-systems-brace-for-impact-as-energy-shocks-deepen",
+    title: "Global Health Systems Brace for Impact as Energy Shocks Deepen",
+    summary:
+      "The deepening crisis in the Middle East, marked by infrastructure attacks and soaring oil prices, is creating profound global ripples. UN agencies warn of mounting pressure on health systems and supply chains worldwide, exacerbating humanitarian needs.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-systems-brace-for-impact-as-energy-shocks-deepen.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tessa-richards-obituary",
     title: "Global Health and Education Watch: Tessa Richards obituary",
     summary:
