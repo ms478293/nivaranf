@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-systems-on-brink-uk-inquiry-reveals-pandemic-vulnerabilities",
+    title: "Global Health Systems on Brink: UK Inquiry Reveals Pandemic Vulnerabilities",
+    summary:
+      "A recent inquiry into the UK's pandemic response delivered a stark verdict on its health service, highlighting its near collapse despite staff's extraordinary efforts. These revelations underscore universal challenges faced by healthcare systems worldwide and the urgent need for enhanced global preparedness.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-systems-on-brink-uk-inquiry-reveals-pandemic-vulnerabilities.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-father-of-meningitis-victim-18-tells-of-family-s-immeasurable",
     title: "Global Health and Education Watch: Father of meningitis victim, 18, tells of family’s ‘immeasurable’",
     summary:
