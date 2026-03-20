@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-independent-autism-committee-that-challenges-rfk-jr-s-overhaul-draws",
+    title: "Global Health and Education Watch: Independent autism committee that challenges RFK Jr’s overhaul draws",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-and-education-watch-independent-autism-committee-that-challenges-r.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-student-loan-office-relocation-signals-global-education-governance-shifts",
     title: "US Student Loan Office Relocation Signals Global Education Governance Shifts",
     summary:
