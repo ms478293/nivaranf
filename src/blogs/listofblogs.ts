@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "from-sore-ear-to-coma-meningitis-s-silent-swift-global-threat",
+    title: "From Sore Ear to Coma: Meningitis's Silent, Swift Global Threat",
+    summary:
+      "Mark McNamee's sudden battle with meningitis, escalating from a minor ailment to an induced coma, underscores the disease's rapid progression. This global health challenge demands heightened public awareness and robust preventative measures worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-from-sore-ear-to-coma-meningitis-s-silent-swift-global-threat.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-disease-agnostic-approach-to-ensemble-learning-for-infectious-disease",
     title: "Global Health and Education Watch: A disease-agnostic approach to ensemble learning for infectious disease",
     summary:
