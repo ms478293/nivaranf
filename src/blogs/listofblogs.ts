@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "doxy-pep-a-global-turning-point-in-syphilis-prevention",
+    title: "Doxy-PEP: A Global Turning Point in Syphilis Prevention",
+    summary:
+      "A pivotal study published in Nature examines the long-term public health impact of doxycycline post-exposure prophylaxis (doxy-PEP) on global syphilis transmission. This research highlights doxy-PEP's potential to significantly alter the landscape of sexually transmitted infection prevention.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-doxy-pep-a-global-turning-point-in-syphilis-prevention.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-uk-s-meningitis-outbreak-and-the-grim-legacy-of",
     title: "Global Health and Education Watch: The UK’s meningitis outbreak and the grim legacy of",
     summary:
