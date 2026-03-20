@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-disease-agnostic-approach-to-ensemble-learning-for-infectious-disease",
+    title: "Global Health and Education Watch: A disease-agnostic approach to ensemble learning for infectious disease",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-and-education-watch-a-disease-agnostic-approach-to-ensemble-learni.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-global-battle-for-early-years-care-a-persistent-struggle",
     title: "The Global Battle for Early Years Care: A Persistent Struggle",
     summary:
