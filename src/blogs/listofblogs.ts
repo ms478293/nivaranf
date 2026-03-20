@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "student-freed-from-detention-vows-continued-fight-for-migrant-youth-education",
+    title: "Student Freed from Detention Vows Continued Fight for Migrant Youth Education",
+    summary:
+      "Dylan Lopez Contreras, a New York City public school student recently freed from federal detention, has pledged to advocate for other migrants still held. His case highlights the critical global challenges faced by young migrants regarding their education and well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-student-freed-from-detention-vows-continued-fight-for-migrant-youth-education.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "from-sore-ear-to-coma-meningitis-s-silent-swift-global-threat",
     title: "From Sore Ear to Coma: Meningitis's Silent, Swift Global Threat",
     summary:
