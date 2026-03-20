@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-father-of-meningitis-victim-18-tells-of-family-s-immeasurable",
+    title: "Global Health and Education Watch: Father of meningitis victim, 18, tells of family’s ‘immeasurable’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-and-education-watch-father-of-meningitis-victim-18-tells-of-family.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-independent-autism-committee-that-challenges-rfk-jr-s-overhaul-draws",
     title: "Global Health and Education Watch: Independent autism committee that challenges RFK Jr’s overhaul draws",
     summary:
