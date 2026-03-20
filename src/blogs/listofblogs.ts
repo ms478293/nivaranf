@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-global-battle-for-early-years-care-a-persistent-struggle",
+    title: "The Global Battle for Early Years Care: A Persistent Struggle",
+    summary:
+      "Access to quality early childhood education and care is a global imperative, yet disparities persist worldwide. Recent progress in some nations highlights the ongoing advocacy needed to secure foundational learning for all children.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-the-global-battle-for-early-years-care-a-persistent-struggle.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-systems-on-brink-uk-inquiry-reveals-pandemic-vulnerabilities",
     title: "Global Health Systems on Brink: UK Inquiry Reveals Pandemic Vulnerabilities",
     summary:
