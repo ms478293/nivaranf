@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "martial-arts-icon-s-passing-highlights-global-health-and-lifelong-well-being",
+    title: "Martial Arts Icon's Passing Highlights Global Health and Lifelong Well-being",
+    summary:
+      "The passing of martial arts legend Chuck Norris at 86 sparks a global conversation on the enduring benefits of physical discipline. His life exemplified the profound connections between martial arts, healthy aging, and holistic well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-martial-arts-icon-s-passing-highlights-global-health-and-lifelong-well-being.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-administration-seeks-billions-from-harvard-over-anti-semitism-claims",
     title: "Global Health and Education Watch: Trump administration seeks billions from Harvard over anti-Semitism claims",
     summary:
