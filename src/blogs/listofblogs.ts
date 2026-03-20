@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-student-loan-office-relocation-signals-global-education-governance-shifts",
+    title: "US Student Loan Office Relocation Signals Global Education Governance Shifts",
+    summary:
+      "The United States is moving its federal student loan office to the Treasury Department, reflecting a broader governmental shift. This decision sparks international dialogue on centralized education policy and student financial aid management.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-us-student-loan-office-relocation-signals-global-education-governance-shifts.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-systems-faced-collapse-saved-by-worker-dedication",
     title: "Global Healthcare Systems Faced Collapse, Saved by Worker Dedication",
     summary:
