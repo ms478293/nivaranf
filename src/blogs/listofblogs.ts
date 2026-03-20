@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "kent-meningitis-outbreak-prompts-global-health-vigilance",
+    title: "Kent Meningitis Outbreak Prompts Global Health Vigilance",
+    summary:
+      "A severe meningitis outbreak in Kent, UK, has triggered a robust public health response, including widespread vaccination efforts. The situation highlights the critical need for global preparedness against infectious diseases, drawing comparisons and contrasts with past pandemics.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-kent-meningitis-outbreak-prompts-global-health-vigilance.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "student-freed-from-detention-vows-continued-fight-for-migrant-youth-education",
     title: "Student Freed from Detention Vows Continued Fight for Migrant Youth Education",
     summary:
