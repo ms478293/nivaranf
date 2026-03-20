@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-watch-kent-meningitis-outbreak-signals-broader-vigilance-against-menb",
+    title: "Global Health Watch: Kent Meningitis Outbreak Signals Broader Vigilance Against MenB",
+    summary:
+      "Reports from Kent suggest a potential peak in a recent meningitis B outbreak, with health officials closely monitoring the situation. This development highlights the persistent global challenge of meningococcal disease and the crucial role of public health surveillance.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-watch-kent-meningitis-outbreak-signals-broader-vigilance-against-m.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-systems-brace-for-impact-as-energy-shocks-deepen",
     title: "Global Health Systems Brace for Impact as Energy Shocks Deepen",
     summary:
