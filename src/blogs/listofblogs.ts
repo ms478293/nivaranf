@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-meningitis-outbreak-at-the-university-of-kent-evokes",
+    title: "Global Health and Education Watch: A Meningitis Outbreak at the University of Kent Evokes",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-and-education-watch-a-meningitis-outbreak-at-the-university-of-ken.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "martial-arts-icon-s-passing-highlights-global-health-and-lifelong-well-being",
     title: "Martial Arts Icon's Passing Highlights Global Health and Lifelong Well-being",
     summary:
