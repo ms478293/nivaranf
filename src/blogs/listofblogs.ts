@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-uncertainty-as-us-vaccine-advisory-body-faces-legal-turmoil",
+    title: "Global Health Uncertainty as US Vaccine Advisory Body Faces Legal Turmoil",
+    summary:
+      "A recent US federal court decision has created significant ambiguity regarding the operational status of its primary vaccine advisory committee. This unprecedented legal challenge poses potential ripple effects for global public health policy and vaccine confidence worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-20-global-health-uncertainty-as-us-vaccine-advisory-body-faces-legal-turmoil.jpg",
+    date: "2026-03-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-experts-consider-expanding-meningitis-vaccine-eligibility-after-kent-outbreak",
     title: "Global Health and Education Watch: Experts consider expanding meningitis vaccine eligibility after Kent outbreak",
     summary:
