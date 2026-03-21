@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "pet-passport-scheme-sparks-global-warning-for-british-eu-travelers",
+    title: "Pet Passport Scheme Sparks Global Warning for British EU Travelers",
+    summary:
+      "British pet owners are being warned against using foreign-issued pet passports to circumvent post-Brexit EU travel regulations for their animals. Experts highlight the potential for severe legal, financial, and animal welfare consequences, alongside public health risks.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-pet-passport-scheme-sparks-global-warning-for-british-eu-travelers.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-thousands-get-meningitis-vaccine-as-experts-wait-to-see",
     title: "Global Health and Education Watch: Thousands get meningitis vaccine as experts wait to see",
     summary:
