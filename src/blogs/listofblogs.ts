@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "christine-mccartney-s-enduring-legacy-revolutionizing-global-public-health-microbiology",
+    title: "Christine McCartney's Enduring Legacy: Revolutionizing Global Public Health Microbiology",
+    summary:
+      "Christine McCartney, a revered medical microbiologist, significantly advanced global public health through her tireless advocacy for integrated laboratory and epidemiological approaches. Her pioneering work in whole-genome sequencing transformed disease surveillance and response mechanisms across the world.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-christine-mccartney-s-enduring-legacy-revolutionizing-global-public-health-micro.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-uncertainty-as-us-vaccine-advisory-body-faces-legal-turmoil",
     title: "Global Health Uncertainty as US Vaccine Advisory Body Faces Legal Turmoil",
     summary:
