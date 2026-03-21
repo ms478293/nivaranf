@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-is-eager-to-disclose-details-on-others-health",
+    title: "Global Health and Education Watch: Trump is eager to disclose details on others’ health",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-trump-is-eager-to-disclose-details-on-others-h.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-wellness-heats-up-saunas-forge-connection-and-health",
     title: "Global Wellness Heats Up: Saunas Forge Connection and Health",
     summary:
