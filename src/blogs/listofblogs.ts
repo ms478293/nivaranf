@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-government-sues-harvard-over-antisemitism-allegations-sparking-global-debate",
+    title: "US Government Sues Harvard Over Antisemitism Allegations, Sparking Global Debate",
+    summary:
+      "The Trump administration has initiated legal action against Harvard University, alleging widespread antisemitism on campus. This lawsuit follows an extensive federal investigation and unsuccessful attempts to reach a settlement between the two parties.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-us-government-sues-harvard-over-antisemitism-allegations-sparking-global-debate.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "new-climate-resilient-apple-unveiled-offers-hope-for-global-food-security",
     title: "New Climate-Resilient Apple Unveiled, Offers Hope for Global Food Security",
     summary:
