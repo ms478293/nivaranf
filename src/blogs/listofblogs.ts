@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-something-i-ve-never-felt-since-covid-it-was-scarier",
+    title: "Global Health and Education Watch: ‘Something I’ve never felt since Covid. It was scarier’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-something-i-ve-never-felt-since-covid-it-was-s.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "california-state-university-challenges-federal-transgender-athlete-ban-sparking-global-education-debate",
     title: "California State University Challenges Federal Transgender Athlete Ban, Sparking Global Education Debate",
     summary:
