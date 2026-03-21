@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "california-state-university-challenges-federal-transgender-athlete-ban-sparking-global-education-debate",
+    title: "California State University Challenges Federal Transgender Athlete Ban, Sparking Global Education Debate",
+    summary:
+      "The California State University system has launched a legal challenge against a federal order restricting transgender student athletes, joining a select group of institutions opposing such mandates. This pivotal case, threatening federal funding for San Jose State, underscores a global debate on equity and inclusion within higher education and sports.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-california-state-university-challenges-federal-transgender-athlete-ban-sparking-.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-sequential-deep-learning-model-for-predicting-people-with",
     title: "Global Health and Education Watch: A sequential deep learning model for predicting people with",
     summary:
