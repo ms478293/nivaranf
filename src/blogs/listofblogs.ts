@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "in-utero-chikungunya-exposure-linked-to-increased-child-morbimortality",
+    title: "In-Utero Chikungunya Exposure Linked to Increased Child Morbimortality",
+    summary:
+      "New research highlights a significant link between in-utero chikungunya virus exposure and elevated rates of child morbidity and mortality. This global study underscores the urgent need for enhanced maternal health interventions and surveillance in endemic regions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-in-utero-chikungunya-exposure-linked-to-increased-child-morbimortality.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-is-eager-to-disclose-details-on-others-health",
     title: "Global Health and Education Watch: Trump is eager to disclose details on others’ health",
     summary:
