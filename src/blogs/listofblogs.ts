@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-five-questions-that-still-need-answering-about-the-meningitis",
+    title: "Global Health and Education Watch: Five questions that still need answering about the meningitis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-five-questions-that-still-need-answering-about.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-student-debt-crisis-deepens-us-policy-reversal-echoes-worldwide-challenges",
     title: "Global Student Debt Crisis Deepens: US Policy Reversal Echoes Worldwide Challenges",
     summary:
