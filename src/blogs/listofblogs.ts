@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-student-debt-crisis-deepens-us-policy-reversal-echoes-worldwide-challenges",
+    title: "Global Student Debt Crisis Deepens: US Policy Reversal Echoes Worldwide Challenges",
+    summary:
+      "A recent US federal court ruling, dismantling a significant student loan repayment initiative, leaves millions of American borrowers in uncertainty. This development underscores a growing global crisis where rising education costs and complex financing models burden students worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-student-debt-crisis-deepens-us-policy-reversal-echoes-worldwide-challenge.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-david-botstein-gene-mapping-pioneer-dies-at-83",
     title: "Global Health and Education Watch: David Botstein, Gene-Mapping Pioneer, Dies at 83",
     summary:
