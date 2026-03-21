@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-should-the-bank-of-mum-and-dad-pay-university",
+    title: "Global Health and Education Watch: Should the bank of mum and dad pay university",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-should-the-bank-of-mum-and-dad-pay-university.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-government-sues-harvard-over-antisemitism-allegations-sparking-global-debate",
     title: "US Government Sues Harvard Over Antisemitism Allegations, Sparking Global Debate",
     summary:
