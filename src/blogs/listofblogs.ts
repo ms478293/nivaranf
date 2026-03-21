@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-hospital-attack-kills-64-who-condemns-violence-against-healthcare",
+    title: "Sudan Hospital Attack Kills 64, WHO Condemns Violence Against Healthcare",
+    summary:
+      "A recent attack on a teaching hospital in Al Deain, East Darfur, resulted in the deaths of 64 individuals, including 13 children. The World Health Organization has condemned the violence, which has rendered the vital medical facility inoperable.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-sudan-hospital-attack-kills-64-who-condemns-violence-against-healthcare.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-spent-five-months-in-a-mother-and-baby",
     title: "Global Health and Education Watch: I spent five months in a mother and baby",
     summary:
