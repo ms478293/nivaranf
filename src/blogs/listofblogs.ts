@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-climate-resilient-apple-unveiled-offers-hope-for-global-food-security",
+    title: "New Climate-Resilient Apple Unveiled, Offers Hope for Global Food Security",
+    summary:
+      "Scientists at Washington State University have introduced the Sunflare apple, a new variety engineered for resilience against extreme weather. It offers a promising solution for global food security challenges exacerbated by climate change while maintaining high taste quality.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-new-climate-resilient-apple-unveiled-offers-hope-for-global-food-security.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-mental-health-the-peril-of-automated-care",
     title: "Global Mental Health: The Peril of Automated Care",
     summary:
