@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-wellness-heats-up-saunas-forge-connection-and-health",
+    title: "Global Wellness Heats Up: Saunas Forge Connection and Health",
+    summary:
+      "A global surge in sauna popularity highlights a growing desire for both physical health benefits and authentic human connection. These communal spaces are becoming crucial in fostering well-being and combating digital isolation worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-wellness-heats-up-saunas-forge-connection-and-health.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "pet-passport-scheme-sparks-global-warning-for-british-eu-travelers",
     title: "Pet Passport Scheme Sparks Global Warning for British EU Travelers",
     summary:
