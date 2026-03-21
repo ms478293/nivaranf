@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-sequential-deep-learning-model-for-predicting-people-with",
+    title: "Global Health and Education Watch: A sequential deep learning model for predicting people with",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-a-sequential-deep-learning-model-for-predictin.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "christine-mccartney-s-enduring-legacy-revolutionizing-global-public-health-microbiology",
     title: "Christine McCartney's Enduring Legacy: Revolutionizing Global Public Health Microbiology",
     summary:
