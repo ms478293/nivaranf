@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-campuses-grapple-with-intensified-antisemitism-fight",
+    title: "Global Campuses Grapple with Intensified Antisemitism Fight",
+    summary:
+      "A global debate intensifies as renewed governmental efforts to combat antisemitism on university campuses draw both support and skepticism. Educational institutions navigate the delicate balance between protecting students and upholding academic freedom amidst these accelerating pressures.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-campuses-grapple-with-intensified-antisemitism-fight.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-should-the-bank-of-mum-and-dad-pay-university",
     title: "Global Health and Education Watch: Should the bank of mum and dad pay university",
     summary:
