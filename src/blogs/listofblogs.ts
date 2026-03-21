@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-rhoda-roberts-indigenous-cultural-leader-who-introduced-the-term",
+    title: "Global Health and Education Watch: Rhoda Roberts, Indigenous cultural leader who introduced the term",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-health-and-education-watch-rhoda-roberts-indigenous-cultural-leader-who-i.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-alabama-student-reportedly-fell-to-his-death-in-barcelona",
     title: "Global Health and Education Watch: Alabama student reportedly fell to his death in Barcelona",
     summary:
