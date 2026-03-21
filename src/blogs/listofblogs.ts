@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-mental-health-the-peril-of-automated-care",
+    title: "Global Mental Health: The Peril of Automated Care",
+    summary:
+      "A major US healthcare provider faces therapist backlash over new screening systems that allegedly delay critical mental health care. This case highlights global concerns about technology's role in patient assessment and the potential for increased risk.",
+    thumbnailImage: "/images/global-news/2026/2026-03-21-global-mental-health-the-peril-of-automated-care.jpg",
+    date: "2026-03-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rhoda-roberts-indigenous-cultural-leader-who-introduced-the-term",
     title: "Global Health and Education Watch: Rhoda Roberts, Indigenous cultural leader who introduced the term",
     summary:
