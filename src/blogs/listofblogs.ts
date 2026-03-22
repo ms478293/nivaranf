@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-crisis-soaring-costs-deepen-inequality-threatening-futures",
+    title: "Global Education Crisis: Soaring Costs Deepen Inequality, Threatening Futures",
+    summary:
+      "A global affordability crisis in education is exacerbating economic disparities, threatening access to quality learning for millions. This trend risks entrenching social stratification and hindering global progress.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-education-crisis-soaring-costs-deepen-inequality-threatening-futures.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-health-department-investigates-13-states-that-require-insurance",
     title: "Global Health and Education Watch: US health department investigates 13 states that require insurance",
     summary:
