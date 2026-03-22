@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "lebanese-nurse-s-unyielding-dedication-amidst-war-s-aftermath",
+    title: "Lebanese Nurse's Unyielding Dedication Amidst War's Aftermath",
+    summary:
+      "A Lebanese nurse in the Bekaa Valley demonstrates extraordinary resilience, remaining at her hospital post after losing her fiancé in the 2024 Israel-Hezbollah war. Her unwavering commitment highlights the immense sacrifices of healthcare workers in conflict zones and the critical need for global support.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-lebanese-nurse-s-unyielding-dedication-amidst-war-s-aftermath.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-financial-literacy-essential-for-well-being-and-resilient-communities",
     title: "Global Financial Literacy: Essential for Well-being and Resilient Communities",
     summary:
