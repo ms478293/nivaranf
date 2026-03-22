@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-confront-rising-anxiety-a-call-for-mental-health-and-education-support",
+    title: "Global Youth Confront Rising Anxiety: A Call for Mental Health and Education Support",
+    summary:
+      "Across the globe, young adults are experiencing heightened anxiety regarding future uncertainties, from geopolitical tensions to environmental challenges. This escalating concern underscores a critical need for integrated mental health support and educational strategies to foster resilience and global understanding.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-youth-confront-rising-anxiety-a-call-for-mental-health-and-education-supp.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-hospital-attack-kills-dozens-who-condemns-targeting-of-healthcare",
     title: "Sudan Hospital Attack Kills Dozens, WHO Condemns Targeting of Healthcare",
     summary:
