@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-navigating-the-surge-in-proactive-body-scans",
+    title: "Global Health: Navigating the Surge in Proactive Body Scans",
+    summary:
+      "A global trend towards proactive health management is driving increased interest in advanced body scans, offering unprecedented insights into individual well-being. Understanding the various types, their benefits, and limitations is crucial for informed health decisions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-health-navigating-the-surge-in-proactive-body-scans.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-crisis-soaring-costs-deepen-inequality-threatening-futures",
     title: "Global Education Crisis: Soaring Costs Deepen Inequality, Threatening Futures",
     summary:
