@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-this-is-the-saddest-moment-families-search-for-loved",
+    title: "Global Health and Education Watch: ‘This is the saddest moment’: families search for loved",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-health-and-education-watch-this-is-the-saddest-moment-families-search-for.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-hospital-strike-kills-dozens-wounds-many-highlighting-healthcare-under-siege",
     title: "Sudan Hospital Strike Kills Dozens, Wounds Many, Highlighting Healthcare Under Siege",
     summary:
