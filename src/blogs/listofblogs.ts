@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-j-michael-bishop-nobel-prize-winner-for-cancer-research",
+    title: "Global Health and Education Watch: J. Michael Bishop, Nobel Prize Winner for Cancer Research",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-health-and-education-watch-j-michael-bishop-nobel-prize-winner-for-cancer.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "youngest-world-champion-inspires-global-youth",
     title: "Youngest World Champion Inspires Global Youth",
     summary:
