@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-era-in-obesity-treatment-drugs-thrive-with-lifestyle-synergy",
+    title: "New Era in Obesity Treatment: Drugs Thrive with Lifestyle Synergy",
+    summary:
+      "GLP-1 medications represent a significant advance in treating obesity and potentially addiction, influencing the brain's reward systems. However, clinical evidence strongly suggests that these drugs achieve the most durable outcomes when combined with substantial lifestyle adjustments, including diet, exercise, sleep, and muscle preservation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-new-era-in-obesity-treatment-drugs-thrive-with-lifestyle-synergy.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-confront-rising-anxiety-a-call-for-mental-health-and-education-support",
     title: "Global Youth Confront Rising Anxiety: A Call for Mental Health and Education Support",
     summary:
