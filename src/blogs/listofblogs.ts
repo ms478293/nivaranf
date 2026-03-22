@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-hospital-strike-kills-dozens-wounds-many-highlighting-healthcare-under-siege",
+    title: "Sudan Hospital Strike Kills Dozens, Wounds Many, Highlighting Healthcare Under Siege",
+    summary:
+      "A devastating strike on a healthcare facility in East Darfur, Sudan, has resulted in 64 fatalities and 89 injuries, as reported by the World Health Organization. This attack, reportedly by an army drone, underscores the severe and ongoing threat to medical infrastructure and civilian lives amidst the nation's protracted conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-sudan-hospital-strike-kills-dozens-wounds-many-highlighting-healthcare-under-sie.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unveiling-global-eye-cancer-disparities-a-call-for-equitable-health-initiatives",
     title: "Unveiling Global Eye Cancer Disparities: A Call for Equitable Health Initiatives",
     summary:
