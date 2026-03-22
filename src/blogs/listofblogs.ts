@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-hospital-attack-kills-dozens-who-condemns-targeting-of-healthcare",
+    title: "Sudan Hospital Attack Kills Dozens, WHO Condemns Targeting of Healthcare",
+    summary:
+      "A recent attack on a hospital in Sudan's Darfur region resulted in dozens of deaths, including 13 children, drawing strong condemnation from the World Health Organization. This incident underscores the devastating impact of the ongoing civil war on healthcare infrastructure and vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-sudan-hospital-attack-kills-dozens-who-condemns-targeting-of-healthcare.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-confirms-deadly-hospital-attack-in-sudan-amid-escalating-conflict",
     title: "WHO Confirms Deadly Hospital Attack in Sudan Amid Escalating Conflict",
     summary:
