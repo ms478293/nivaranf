@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-i-feel-so-grateful-to-be-alive-kent-university",
+    title: "Global Health and Education Watch: 'I feel so grateful to be alive,' Kent University",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-health-and-education-watch-i-feel-so-grateful-to-be-alive-kent-university.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "new-era-in-obesity-treatment-drugs-thrive-with-lifestyle-synergy",
     title: "New Era in Obesity Treatment: Drugs Thrive with Lifestyle Synergy",
     summary:
