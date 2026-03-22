@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-conflict-daily-toll-on-children-s-lives-and-futures-in-lebanon",
+    title: "Middle East Conflict: Daily Toll on Children's Lives and Futures in Lebanon",
+    summary:
+      "The ongoing conflict in the Middle East has claimed over a thousand lives and injured thousands more in Lebanon, with a daily toll equivalent to a classroom of children. This humanitarian crisis severely impacts critical health and education infrastructure, threatening a generation's future.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-middle-east-conflict-daily-toll-on-children-s-lives-and-futures-in-lebanon.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-feel-so-grateful-to-be-alive-kent-university",
     title: "Global Health and Education Watch: 'I feel so grateful to be alive,' Kent University",
     summary:
