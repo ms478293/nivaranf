@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unveiling-global-eye-cancer-disparities-a-call-for-equitable-health-initiatives",
+    title: "Unveiling Global Eye Cancer Disparities: A Call for Equitable Health Initiatives",
+    summary:
+      "New research reveals significant variations in eye cancer mortality across different populations and regions, emphasizing the urgent need for targeted public health interventions. These findings underscore the critical importance of equitable access to early diagnosis and specialized treatment worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-unveiling-global-eye-cancer-disparities-a-call-for-equitable-health-initiatives.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-hospital-attack-kills-64-who-condemns-violence-against-healthcare",
     title: "Sudan Hospital Attack Kills 64, WHO Condemns Violence Against Healthcare",
     summary:
