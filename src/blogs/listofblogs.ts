@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "youngest-world-champion-inspires-global-youth",
+    title: "Youngest World Champion Inspires Global Youth",
+    summary:
+      "Seventeen-year-old Cooper Lutkenhaus made history by becoming the youngest indoor world champion in the 800m, balancing his high school studies with elite athletic demands. His remarkable achievement sparks global conversations about nurturing young talent within educational frameworks and supporting holistic student development.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-youngest-world-champion-inspires-global-youth.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israeli-air-strikes-on-gaza-kill-four-palestinians",
     title: "Global Health and Education Watch: Israeli air strikes on Gaza kill four Palestinians",
     summary:
