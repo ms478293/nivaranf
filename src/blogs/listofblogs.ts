@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-outcry-youth-violence-and-the-resilience-of-community-support",
+    title: "Global Outcry: Youth Violence and the Resilience of Community Support",
+    summary:
+      "A 15-year-old schoolgirl's survival after a stabbing incident has sparked a global conversation on youth violence and community support. Her parents' ordeal, particularly her mother's terror while abroad, underscores the universal anxieties faced by families worldwide regarding children's safety and well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-outcry-youth-violence-and-the-resilience-of-community-support.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-j-michael-bishop-nobel-prize-winner-for-cancer-research",
     title: "Global Health and Education Watch: J. Michael Bishop, Nobel Prize Winner for Cancer Research",
     summary:
