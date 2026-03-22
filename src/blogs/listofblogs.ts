@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-confirms-deadly-hospital-attack-in-sudan-amid-escalating-conflict",
+    title: "WHO Confirms Deadly Hospital Attack in Sudan Amid Escalating Conflict",
+    summary:
+      "The World Health Organization has confirmed a deadly hospital attack in war-torn Sudan, resulting in 64 fatalities. This incident highlights the catastrophic consequences of the protracted conflict on vital healthcare facilities and civilian lives.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-who-confirms-deadly-hospital-attack-in-sudan-amid-escalating-conflict.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alert-kent-meningitis-outbreak-sees-case-count-revised-downward",
     title: "Global Health Alert: Kent Meningitis Outbreak Sees Case Count Revised Downward",
     summary:
