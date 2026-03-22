@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-financial-literacy-essential-for-well-being-and-resilient-communities",
+    title: "Global Financial Literacy: Essential for Well-being and Resilient Communities",
+    summary:
+      "The global imperative for stronger financial literacy is gaining recognition as a cornerstone of public health and individual well-being. Experts are increasingly advocating for accessible education to empower communities worldwide in building healthier financial habits.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-financial-literacy-essential-for-well-being-and-resilient-communities.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-navigating-the-surge-in-proactive-body-scans",
     title: "Global Health: Navigating the Surge in Proactive Body Scans",
     summary:
