@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-kent-meningitis-outbreak-sees-case-count-revised-downward",
+    title: "Global Health Alert: Kent Meningitis Outbreak Sees Case Count Revised Downward",
+    summary:
+      "The number of confirmed meningitis cases linked to a recent outbreak in Kent, UK, has been revised from 23 to 20 by the UK Health Security Agency after further testing. This reclassification underscores the dynamic nature of disease surveillance and the rigorous protocols involved in public health responses to infectious diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-03-22-global-health-alert-kent-meningitis-outbreak-sees-case-count-revised-downward.jpg",
+    date: "2026-03-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "lebanese-nurse-s-unyielding-dedication-amidst-war-s-aftermath",
     title: "Lebanese Nurse's Unyielding Dedication Amidst War's Aftermath",
     summary:
