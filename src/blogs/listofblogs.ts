@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "afghan-exodus-from-iran-a-dual-crisis-deepens-humanitarian-woes",
+    title: "Afghan Exodus from Iran: A Dual Crisis Deepens Humanitarian Woes",
+    summary:
+      "An escalating conflict in Iran has compelled over 70,000 Afghan workers and students to return home, severing a critical economic lifeline. This mass displacement exacerbates humanitarian challenges in Afghanistan, particularly impacting health and education sectors already under immense strain.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-afghan-exodus-from-iran-a-dual-crisis-deepens-humanitarian-woes.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-conflict-threatens-health-education-progress",
     title: "Global Conflict Threatens Health, Education Progress",
     summary:
