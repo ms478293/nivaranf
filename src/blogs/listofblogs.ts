@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "students-challenge-uk-visa-ban-a-global-education-rights-battle",
+    title: "Students Challenge UK Visa Ban: A Global Education Rights Battle",
+    summary:
+      "Six students from Sudan and Afghanistan are legally challenging the UK Home Office's visa ban, which they claim is racially discriminatory. This action seeks to overturn a policy preventing them from pursuing university studies in Britain, despite receiving offers from prestigious institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-students-challenge-uk-visa-ban-a-global-education-rights-battle.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hundreds-of-n-y-u-professors-begin-strike-over-pay-and",
     title: "Global Health and Education Watch: Hundreds of N.Y.U. Professors Begin Strike Over Pay and",
     summary:
