@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "imatinib-s-global-impact-unequal-outcomes-in-cml-treatment-revealed",
+    title: "Imatinib's Global Impact: Unequal Outcomes in CML Treatment Revealed",
+    summary:
+      "A landmark systematic review and meta-analysis reveals varying success rates of Imatinib in treating chronic myeloid leukemia globally. The study highlights critical disparities influenced by healthcare infrastructure, access, and monitoring capabilities across different regions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-imatinib-s-global-impact-unequal-outcomes-in-cml-treatment-revealed.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "middle-east-conflict-cultural-loss-threatens-education-and-mental-health-globally",
     title: "Middle East Conflict: Cultural Loss Threatens Education and Mental Health Globally",
     summary:
