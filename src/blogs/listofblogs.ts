@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "mitochondrial-dna-and-inflammation-linked-to-mortality-in-older-adults",
+    title: "Mitochondrial DNA and Inflammation Linked to Mortality in Older Adults",
+    summary:
+      "A significant study reveals that lower leukocyte mitochondrial DNA copy number and elevated inflammation are independently associated with increased mortality risk among older adults. These findings offer crucial insights into the biological mechanisms of aging and potential targets for interventions to promote healthier longevity.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-mitochondrial-dna-and-inflammation-linked-to-mortality-in-older-adults.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-vigilance-no-new-meningitis-cases-in-kent-outbreak",
     title: "Global Health Vigilance: No New Meningitis Cases in Kent Outbreak",
     summary:
