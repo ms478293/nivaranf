@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-jewish-and-muslim-people-face-a-wave-of-hate",
+    title: "Global Health and Education Watch: Jewish and Muslim People Face a Wave of Hate",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-health-and-education-watch-jewish-and-muslim-people-face-a-wave-of-hate.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "afghan-exodus-from-iran-a-dual-crisis-deepens-humanitarian-woes",
     title: "Afghan Exodus from Iran: A Dual Crisis Deepens Humanitarian Woes",
     summary:
