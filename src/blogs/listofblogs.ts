@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-conflict-threatens-health-education-progress",
+    title: "Global Conflict Threatens Health, Education Progress",
+    summary:
+      "A deepening crisis in the Middle East is inflicting a severe humanitarian toll and disrupting global stability, threatening vital health and education initiatives. The conflict's economic fallout, including unprecedented energy market disruptions, exacerbates vulnerabilities and diverts critical resources from global development goals.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-conflict-threatens-health-education-progress.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-outcry-youth-violence-and-the-resilience-of-community-support",
     title: "Global Outcry: Youth Violence and the Resilience of Community Support",
     summary:
