@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-for-stricter-minibus-rules-after-school-tragedies",
+    title: "Global Call for Stricter Minibus Rules After School Tragedies",
+    summary:
+      "Tragic incidents involving school minibuses have spurred a global movement for stricter safety regulations. Parents who have lost children are leading the charge for comprehensive reforms in driver training and vehicle standards.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-call-for-stricter-minibus-rules-after-school-tragedies.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-meningitis-outbreak-peaks-health-agencies-urge-continued-vigilance",
     title: "Global Meningitis Outbreak Peaks; Health Agencies Urge Continued Vigilance",
     summary:
