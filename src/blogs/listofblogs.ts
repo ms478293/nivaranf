@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "laguardia-air-crash-a-global-lens-on-emergency-health-response",
+    title: "LaGuardia Air Crash: A Global Lens on Emergency Health Response",
+    summary:
+      "A recent air crash at LaGuardia Airport resulted in fatalities and numerous injuries, highlighting the immense challenges faced by emergency and healthcare services. The incident prompts a global examination of preparedness for mass casualty events and the long-term support required for survivors.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-laguardia-air-crash-a-global-lens-on-emergency-health-response.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "students-challenge-uk-visa-ban-a-global-education-rights-battle",
     title: "Students Challenge UK Visa Ban: A Global Education Rights Battle",
     summary:
