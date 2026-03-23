@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-conflict-cultural-loss-threatens-education-and-mental-health-globally",
+    title: "Middle East Conflict: Cultural Loss Threatens Education and Mental Health Globally",
+    summary:
+      "The recent escalation of conflict across Iran, Israel, and Lebanon has led to widespread human suffering and the irreversible damage of vital cultural heritage sites. This destruction poses a critical long-term threat to educational continuity and the mental well-being of communities, extending far beyond the immediate conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-middle-east-conflict-cultural-loss-threatens-education-and-mental-health-globall.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-to-cut-film-and-modern-languages-courses",
     title: "Global Health and Education Watch: University to cut film and modern languages courses",
     summary:
