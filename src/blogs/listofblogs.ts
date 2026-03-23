@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-vigilance-no-new-meningitis-cases-in-kent-outbreak",
+    title: "Global Health Vigilance: No New Meningitis Cases in Kent Outbreak",
+    summary:
+      "Health authorities in the UK have reported no new meningitis cases linked to a recent outbreak in Kent, maintaining a total of 20 confirmed infections. This development highlights the ongoing global need for vigilant public health monitoring and swift containment strategies to protect communities from infectious diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-health-vigilance-no-new-meningitis-cases-in-kent-outbreak.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "teacher-banned-indefinitely-a-global-call-for-educational-safeguarding",
     title: "Teacher Banned Indefinitely: A Global Call for Educational Safeguarding",
     summary:
