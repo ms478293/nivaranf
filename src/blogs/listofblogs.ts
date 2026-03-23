@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hundreds-of-n-y-u-professors-begin-strike-over-pay-and",
+    title: "Global Health and Education Watch: Hundreds of N.Y.U. Professors Begin Strike Over Pay and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-health-and-education-watch-hundreds-of-n-y-u-professors-begin-strike-over.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "imatinib-s-global-impact-unequal-outcomes-in-cml-treatment-revealed",
     title: "Imatinib's Global Impact: Unequal Outcomes in CML Treatment Revealed",
     summary:
