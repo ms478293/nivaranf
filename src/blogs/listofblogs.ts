@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "teacher-banned-indefinitely-a-global-call-for-educational-safeguarding",
+    title: "Teacher Banned Indefinitely: A Global Call for Educational Safeguarding",
+    summary:
+      "A deputy housemaster at Bede's School has been indefinitely banned from teaching after declaring love for a pupil. This incident underscores the global need for stringent safeguarding and ethical conduct in educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-teacher-banned-indefinitely-a-global-call-for-educational-safeguarding.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "danone-acquires-huel-reshaping-global-nutrition-landscape",
     title: "Danone Acquires Huel, Reshaping Global Nutrition Landscape",
     summary:
