@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-visa-ban-blocks-women-s-education-echoing-restrictive-regimes",
+    title: "UK Visa Ban Blocks Women's Education, Echoing Restrictive Regimes",
+    summary:
+      "A recent UK Home Office decision has halted new study visas for applicants from Afghanistan, Sudan, Myanmar, and Cameroon, disproportionately affecting women seeking education. This policy change threatens to derail the academic aspirations of many, including those pursuing prestigious scholarships, and has drawn comparisons to restrictive regimes.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-uk-visa-ban-blocks-women-s-education-echoing-restrictive-regimes.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "laguardia-air-crash-a-global-lens-on-emergency-health-response",
     title: "LaGuardia Air Crash: A Global Lens on Emergency Health Response",
     summary:
