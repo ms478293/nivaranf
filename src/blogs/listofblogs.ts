@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-meningitis-outbreak-peaks-health-agencies-urge-continued-vigilance",
+    title: "Global Meningitis Outbreak Peaks; Health Agencies Urge Continued Vigilance",
+    summary:
+      "Health agencies globally confirm that a recent meningitis outbreak has moved past its peak, signaling a positive shift in the public health crisis. However, officials caution that ongoing surveillance and proactive preventative strategies remain critical to managing the disease's long-term impact and preventing future surges.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-global-meningitis-outbreak-peaks-health-agencies-urge-continued-vigilance.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-visa-ban-blocks-women-s-education-echoing-restrictive-regimes",
     title: "UK Visa Ban Blocks Women's Education, Echoing Restrictive Regimes",
     summary:
