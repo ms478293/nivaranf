@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "danone-acquires-huel-reshaping-global-nutrition-landscape",
+    title: "Danone Acquires Huel, Reshaping Global Nutrition Landscape",
+    summary:
+      "Danone's €1 billion acquisition of Huel underscores a global pivot towards convenient, nutritionally complete food solutions. This strategic move by the French conglomerate aims to deepen its presence in the rapidly expanding health and wellness market.",
+    thumbnailImage: "/images/global-news/2026/2026-03-23-danone-acquires-huel-reshaping-global-nutrition-landscape.jpg",
+    date: "2026-03-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-jewish-and-muslim-people-face-a-wave-of-hate",
     title: "Global Health and Education Watch: Jewish and Muslim People Face a Wave of Hate",
     summary:
