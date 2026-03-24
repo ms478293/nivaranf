@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-schools-face-scrutiny-over-exclusion-of-vulnerable-students",
+    title: "Global Schools Face Scrutiny Over Exclusion of Vulnerable Students",
+    summary:
+      "A recent study highlights a concerning trend where top-tier schools globally admit significantly fewer disadvantaged students with special educational needs and disabilities. This disparity raises serious questions about equitable access to quality education and potential systemic biases in admissions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-schools-face-scrutiny-over-exclusion-of-vulnerable-students.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-takeaways-from-the-times-s-inside-look-at-the-c-d-c",
     title: "Global Health and Education Watch: Takeaways From The Times’s Inside Look at the C.D.C.",
     summary:
