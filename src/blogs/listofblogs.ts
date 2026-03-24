@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-grapples-with-complex-legacies-of-historical-figures",
+    title: "Global Education Grapples with Complex Legacies of Historical Figures",
+    summary:
+      "Across educational systems globally, teachers are navigating how to present historical figures whose legacies are complicated by recent revelations. This shift emphasizes a more comprehensive and critical understanding of history and collective movements.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-education-grapples-with-complex-legacies-of-historical-figures.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-recommends-new-diagnostic-tools-to-help-end-tb",
     title: "Global Health and Education Watch: WHO recommends new diagnostic tools to help end TB",
     summary:
