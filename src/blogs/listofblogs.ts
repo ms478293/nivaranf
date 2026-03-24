@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-focus-meningitis-b-vaccine-widens-reach-amidst-declining-cases",
+    title: "Global Health Focus: Meningitis B Vaccine Widens Reach Amidst Declining Cases",
+    summary:
+      "A Meningitis B vaccination scheme in Kent, UK, has expanded to include Year 11 pupils in affected schools, demonstrating a proactive public health response. This initiative comes as national figures indicate a significant reduction in overall cases, highlighting the vaccine's effectiveness.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-health-focus-meningitis-b-vaccine-widens-reach-amidst-declining-cases.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-classrooms-confront-evolving-youth-challenges-reflected-in-popular-culture",
     title: "Global Classrooms Confront Evolving Youth Challenges Reflected in Popular Culture",
     summary:
