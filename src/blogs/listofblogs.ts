@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-hospital-strike-drone-attacks-escalate-civilian-health-crisis",
+    title: "Sudan Hospital Strike: Drone Attacks Escalate Civilian Health Crisis",
+    summary:
+      "A recent deadly attack on a Darfur hospital underscores an alarming surge in drone strikes targeting civilians in Sudan. UN agencies are urgently calling for protection of healthcare facilities and adherence to international humanitarian law amidst the escalating crisis.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-sudan-hospital-strike-drone-attacks-escalate-civilian-health-crisis.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-truly-transformative-new-diagnostic-tools-can-help-end-tuberculosis",
     title: "Global Health and Education Watch: ‘Truly transformative’ new diagnostic tools can help end tuberculosis",
     summary:
