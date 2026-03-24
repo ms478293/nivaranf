@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-classrooms-confront-evolving-youth-challenges-reflected-in-popular-culture",
+    title: "Global Classrooms Confront Evolving Youth Challenges Reflected in Popular Culture",
+    summary:
+      "Educational institutions globally are grappling with an evolving landscape of youth challenges, from historical issues like bullying to modern concerns such as cyber-bullying and vaping. Popular culture often mirrors these societal shifts, highlighting the critical need for comprehensive support and adaptive educational strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-classrooms-confront-evolving-youth-challenges-reflected-in-popular-cultur.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-grapples-with-complex-legacies-of-historical-figures",
     title: "Global Education Grapples with Complex Legacies of Historical Figures",
     summary:
