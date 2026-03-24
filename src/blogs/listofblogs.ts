@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-tango-therapy-how-the-dance-of-passion-is-helping",
+    title: "Global Health and Education Watch: Tango Therapy: How the Dance of Passion Is Helping",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-health-and-education-watch-tango-therapy-how-the-dance-of-passion-is-help.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-schools-face-scrutiny-over-exclusion-of-vulnerable-students",
     title: "Global Schools Face Scrutiny Over Exclusion of Vulnerable Students",
     summary:
