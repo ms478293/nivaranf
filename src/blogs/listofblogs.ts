@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-tragic-toll-of-sudan-s-destroyed-healthcare",
+    title: "Global Health and Education Watch: The tragic toll of Sudan’s destroyed healthcare",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-health-and-education-watch-the-tragic-toll-of-sudan-s-destroyed-healthcar.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-focus-meningitis-b-vaccine-widens-reach-amidst-declining-cases",
     title: "Global Health Focus: Meningitis B Vaccine Widens Reach Amidst Declining Cases",
     summary:
