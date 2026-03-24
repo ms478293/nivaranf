@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-settlers-vandalise-school-raise-israeli-flag-in-occupied",
+    title: "Global Health and Education Watch: Israeli settlers vandalise school, raise Israeli flag in occupied",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-24-global-health-and-education-watch-israeli-settlers-vandalise-school-raise-israel.jpg",
+    date: "2026-03-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-for-stricter-minibus-rules-after-school-tragedies",
     title: "Global Call for Stricter Minibus Rules After School Tragedies",
     summary:
