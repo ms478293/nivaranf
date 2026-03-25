@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-middle-east-crisis-live-iranian-official-warns-us-troops",
+    title: "Global Health and Education Watch: Middle East crisis live: Iranian official warns US troops",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-health-and-education-watch-middle-east-crisis-live-iranian-official-warns.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-out-of-school-crisis-deepens-273-million-children-denied-education",
     title: "Global Out-of-School Crisis Deepens: 273 Million Children Denied Education",
     summary:
