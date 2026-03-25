@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "merck-s-6-billion-biotech-pursuit-ignites-global-oncology-hopes",
+    title: "Merck's $6 Billion Biotech Pursuit Ignites Global Oncology Hopes",
+    summary:
+      "Merck is reportedly nearing a significant $6 billion acquisition of a biotech firm to enhance its oncology portfolio. This strategic move aims to integrate innovative treatments for bone and blood cancers, following recent breakthroughs in clinical data.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-merck-s-6-billion-biotech-pursuit-ignites-global-oncology-hopes.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "road-safety-crisis-nine-students-injured-in-iowa-school-curb-incident",
     title: "Road Safety Crisis: Nine Students Injured in Iowa School Curb Incident",
     summary:
