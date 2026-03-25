@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "navigating-the-digital-maze-combating-health-misinformation-online",
+    title: "Navigating the Digital Maze: Combating Health Misinformation Online",
+    summary:
+      "Health misinformation on social media poses a significant global challenge, leading many to embrace unproven remedies. Barbora Gray's personal journey highlights this danger, inspiring her to advocate for factual health information.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-navigating-the-digital-maze-combating-health-misinformation-online.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "china-s-dual-impact-on-african-health-a-complex-partnership",
     title: "China's Dual Impact on African Health: A Complex Partnership",
     summary:
