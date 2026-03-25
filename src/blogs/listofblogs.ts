@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-out-of-school-crisis-deepens-273-million-children-denied-education",
+    title: "Global Out-of-School Crisis Deepens: 273 Million Children Denied Education",
+    summary:
+      "The number of children and young people out of school worldwide has reached an alarming 273 million, marking a seventh consecutive annual increase. This crisis, highlighted by a recent UNESCO report, poses significant threats to global development and individual futures.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-out-of-school-crisis-deepens-273-million-children-denied-education.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "key-adviser-s-exit-from-federal-vaccine-panel-sparks-global-health-integrity-debate",
     title: "Key Adviser's Exit From Federal Vaccine Panel Sparks Global Health Integrity Debate",
     summary:
