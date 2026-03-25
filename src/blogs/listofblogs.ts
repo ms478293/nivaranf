@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "china-s-dual-impact-on-african-health-a-complex-partnership",
+    title: "China's Dual Impact on African Health: A Complex Partnership",
+    summary:
+      "China's expanding health role in Africa presents a complex duality of significant contributions and notable challenges. This analysis explores the strategic implications and practical outcomes of Beijing's healthcare initiatives across the continent.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-china-s-dual-impact-on-african-health-a-complex-partnership.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sudan-1000-days-of-war-deepen-the-world-s-worst",
     title: "Global Health and Education Watch: Sudan: 1000 days of war deepen the world’s worst",
     summary:
