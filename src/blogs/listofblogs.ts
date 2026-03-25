@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "key-adviser-s-exit-from-federal-vaccine-panel-sparks-global-health-integrity-debate",
+    title: "Key Adviser's Exit From Federal Vaccine Panel Sparks Global Health Integrity Debate",
+    summary:
+      "Dr. Robert Malone, vice chair of a prominent federal vaccine advisory committee, has resigned, raising questions about scientific independence. His controversial appointment followed a significant overhaul of the panel, sparking global discussion on public trust in health institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-key-adviser-s-exit-from-federal-vaccine-panel-sparks-global-health-integrity-deb.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-policy-shifts-linked-to-global-maternal-mortality-surge",
     title: "US Policy Shifts Linked to Global Maternal Mortality Surge",
     summary:
