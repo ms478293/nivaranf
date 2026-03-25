@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "kent-outbreak-spurs-global-reflection-on-vaccine-urgency",
+    title: "Kent Outbreak Spurs Global Reflection on Vaccine Urgency",
+    summary:
+      "A recent meningitis outbreak in Kent, England, tragically claiming two teenage lives, has prompted a significant surge in routine vaccination uptake across the country. This localized event serves as a stark global reminder of the persistent threat of preventable diseases and the paramount importance of sustained public health campaigns and vaccine accessibility.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-kent-outbreak-spurs-global-reflection-on-vaccine-urgency.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "navigating-the-digital-maze-combating-health-misinformation-online",
     title: "Navigating the Digital Maze: Combating Health Misinformation Online",
     summary:
