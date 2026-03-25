@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-policy-shifts-linked-to-global-maternal-mortality-surge",
+    title: "US Policy Shifts Linked to Global Maternal Mortality Surge",
+    summary:
+      "New research indicates a direct link between US presidential policy shifts and a rise in global maternal mortality. Cuts to family planning aid under Republican administrations are associated with an 11% increase in deaths during pregnancy and childbirth in aid-dependent nations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-us-policy-shifts-linked-to-global-maternal-mortality-surge.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "kent-outbreak-spurs-global-reflection-on-vaccine-urgency",
     title: "Kent Outbreak Spurs Global Reflection on Vaccine Urgency",
     summary:
