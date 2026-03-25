@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "middle-east-conflict-devastating-toll-on-health-and-education-systems",
+    title: "Middle East Conflict: Devastating Toll on Health and Education Systems",
+    summary:
+      "The persistent conflict across the Middle East is systematically dismantling essential health and education services, leaving millions vulnerable. This humanitarian crisis demands urgent global attention to mitigate the catastrophic long-term impacts on human development.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-middle-east-conflict-devastating-toll-on-health-and-education-systems.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-concerns-rise-over-teacher-misconduct-and-student-safety-in-educational-institutions",
     title: "Global Concerns Rise Over Teacher Misconduct and Student Safety in Educational Institutions",
     summary:
