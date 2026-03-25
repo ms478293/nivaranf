@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarms-delayed-outbreak-response-raises-urgent-questions",
+    title: "Global Health Alarms: Delayed Outbreak Response Raises Urgent Questions",
+    summary:
+      "A significant delay in alerting public health authorities to a potential meningitis outbreak has sparked international concern among health experts. This incident underscores the urgent need for robust global disease surveillance and swift intervention strategies to protect populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-health-alarms-delayed-outbreak-response-raises-urgent-questions.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "merck-s-6-billion-biotech-pursuit-ignites-global-oncology-hopes",
     title: "Merck's $6 Billion Biotech Pursuit Ignites Global Oncology Hopes",
     summary:
