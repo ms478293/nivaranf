@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-the-critical-two-day-window-in-outbreak-response",
+    title: "Global Health Alert: The Critical Two-Day Window in Outbreak Response",
+    summary:
+      "A two-day delay in reporting a meningitis outbreak in Kent, UK, highlights the critical importance of timely communication in global public health. This incident serves as a stark reminder of the universal need for robust surveillance and rapid response systems to contain infectious diseases effectively.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-health-alert-the-critical-two-day-window-in-outbreak-response.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-plant-based-meat-alternatives-understanding-the-benefits-and-trade-offs-for",
     title: "Global Health and Education Watch: Plant-based meat alternatives: understanding the benefits and trade-offs for",
     summary:
