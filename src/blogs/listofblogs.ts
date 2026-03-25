@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-concerns-rise-over-teacher-misconduct-and-student-safety-in-educational-institutions",
+    title: "Global Concerns Rise Over Teacher Misconduct and Student Safety in Educational Institutions",
+    summary:
+      "Charges against a former teacher at a Massachusetts boarding school for alleged sexual assault on students have ignited global discussions on child protection. The case underscores the critical need for robust safeguarding policies and a re-evaluation of consent laws in educational environments.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-concerns-rise-over-teacher-misconduct-and-student-safety-in-educational-i.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-influencers-are-promoting-these-three-health-tests-but",
     title: "Global Health and Education Watch: Influencers are promoting these three health tests – but",
     summary:
