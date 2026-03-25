@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-plant-based-meat-alternatives-understanding-the-benefits-and-trade-offs-for",
+    title: "Global Health and Education Watch: Plant-based meat alternatives: understanding the benefits and trade-offs for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-25-global-health-and-education-watch-plant-based-meat-alternatives-understanding-th.jpg",
+    date: "2026-03-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alarms-delayed-outbreak-response-raises-urgent-questions",
     title: "Global Health Alarms: Delayed Outbreak Response Raises Urgent Questions",
     summary:
