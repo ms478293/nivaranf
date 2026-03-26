@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leadership-vacuum-cdc-director-nomination-stalled",
+    title: "Global Health Leadership Vacuum: CDC Director Nomination Stalled",
+    summary:
+      "The Trump administration has postponed the nomination of a new Director for the Centers for Disease Control and Prevention. This delay stems from difficulties in identifying a candidate who can reconcile established public health principles with the Health Secretary's unique policy perspectives, particularly concerning vaccine efficacy.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-leadership-vacuum-cdc-director-nomination-stalled.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-parents-without-formal-support-plans-least-satisfied",
     title: "Global Education: Parents Without Formal Support Plans Least Satisfied",
     summary:
