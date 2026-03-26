@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "netherlands-leads-global-push-restricting-phones-and-social-media-in-schools",
+    title: "Netherlands Leads Global Push: Restricting Phones and Social Media in Schools",
+    summary:
+      "The Netherlands, two years after implementing a nationwide phone ban in schools, is now considering further restrictions on social media for under-16s. This move intensifies the global conversation around technology's impact on student health and academic performance.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-netherlands-leads-global-push-restricting-phones-and-social-media-in-schools.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-meta-and-google-liable-for-harm-to-children-s-mental",
     title: "Global Health and Education Watch: Meta and Google liable for harm to children’s mental",
     summary:
