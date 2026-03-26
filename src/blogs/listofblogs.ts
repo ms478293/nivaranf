@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-faces-headwinds-as-vat-changes-force-school-closure",
+    title: "Global Education Faces Headwinds as VAT Changes Force School Closure",
+    summary:
+      "A Christian independent school, serving 40 students, has announced its closure, attributing the decision to recent changes in value-added tax policy. This incident highlights a broader global trend of economic challenges impacting the viability of private educational institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-education-faces-headwinds-as-vat-changes-force-school-closure.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-policy-shift-embraces-refugees-migrants",
     title: "Global Health Policy Shift Embraces Refugees, Migrants",
     summary:
