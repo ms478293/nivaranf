@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "europe-s-healthcare-workers-resist-deportation-role-amid-public-health-fears",
+    title: "Europe's Healthcare Workers Resist Deportation Role Amid Public Health Fears",
+    summary:
+      "Over 1,100 European healthcare professionals are urging MEPs to reject proposed measures that could transform hospitals into immigration enforcement sites. They warn that such policies risk public health by creating a climate of fear, deterring undocumented individuals from seeking essential medical care.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-europe-s-healthcare-workers-resist-deportation-role-amid-public-health-fears.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leadership-vacuum-cdc-director-nomination-stalled",
     title: "Global Health Leadership Vacuum: CDC Director Nomination Stalled",
     summary:
