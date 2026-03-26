@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-parents-without-formal-support-plans-least-satisfied",
+    title: "Global Education: Parents Without Formal Support Plans Least Satisfied",
+    summary:
+      "Parents of children with special educational needs often feel alienated and unsupported when formal care plans are absent, a global issue impacting educational equity. This widespread dissatisfaction underscores a critical need for more robust, inclusive educational systems worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-education-parents-without-formal-support-plans-least-satisfied.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "netherlands-leads-global-push-restricting-phones-and-social-media-in-schools",
     title: "Netherlands Leads Global Push: Restricting Phones and Social Media in Schools",
     summary:
