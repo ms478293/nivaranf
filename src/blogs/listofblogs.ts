@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israel-hinders-repair-of-damaged-water-infra-deepening-gaza-s",
+    title: "Global Health and Education Watch: Israel hinders repair of damaged water infra deepening Gaza’s",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-and-education-watch-israel-hinders-repair-of-damaged-water-infra-d.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "europe-s-healthcare-workers-resist-deportation-role-amid-public-health-fears",
     title: "Europe's Healthcare Workers Resist Deportation Role Amid Public Health Fears",
     summary:
