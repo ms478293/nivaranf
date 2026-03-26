@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarms-ring-as-key-leadership-vacancies-persist",
+    title: "Global Health Alarms Ring as Key Leadership Vacancies Persist",
+    summary:
+      "Critical leadership roles in prominent national health agencies remain unfilled, raising concerns about the stability and effectiveness of global health responses. This vacuum threatens international cooperation on disease control and preparedness, impacting vulnerable populations worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-alarms-ring-as-key-leadership-vacancies-persist.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-faces-headwinds-as-vat-changes-force-school-closure",
     title: "Global Education Faces Headwinds as VAT Changes Force School Closure",
     summary:
