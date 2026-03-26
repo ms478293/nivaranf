@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-renews-commitment-to-a-leprosy-free-world-spotlighting-partnership",
+    title: "Global Health and Education Watch: WHO renews commitment to a leprosy-free world, spotlighting partnership",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-and-education-watch-who-renews-commitment-to-a-leprosy-free-world-.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-police-fire-water-cannons-at-chile-student-protest",
     title: "Global Health and Education Watch: Police fire water cannons at Chile student protest",
     summary:
