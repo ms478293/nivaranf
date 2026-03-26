@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-policy-shift-embraces-refugees-migrants",
+    title: "Global Health Policy Shift Embraces Refugees, Migrants",
+    summary:
+      "A recent World Health Organization report highlights encouraging global progress in inclusive health policies, revealing that over 60 countries now incorporate refugees and migrants into their national health systems. This represents a major shift, with two-thirds of surveyed nations demonstrating a commitment to ensuring health access for displaced populations.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-policy-shift-embraces-refugees-migrants.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-warns-of-health-crisis-unfolding-in-real-time",
     title: "Global Health and Education Watch: WHO warns of health crisis ‘unfolding in real time’",
     summary:
