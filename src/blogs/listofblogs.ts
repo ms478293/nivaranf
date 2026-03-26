@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sanctions-cripple-cuban-healthcare-a-looming-humanitarian-crisis-unfolds",
+    title: "Sanctions Cripple Cuban Healthcare: A Looming Humanitarian Crisis Unfolds",
+    summary:
+      "Cuba's healthcare system faces unprecedented challenges as U.S. sanctions disrupt essential oil supplies, impacting hospitals and clinics nationwide. This escalating crisis threatens access to critical medical care for millions across the Caribbean nation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-sanctions-cripple-cuban-healthcare-a-looming-humanitarian-crisis-unfolds.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alarms-ring-as-key-leadership-vacancies-persist",
     title: "Global Health Alarms Ring as Key Leadership Vacancies Persist",
     summary:
