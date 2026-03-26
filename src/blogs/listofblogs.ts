@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-meta-and-google-liable-for-harm-to-children-s-mental",
+    title: "Global Health and Education Watch: Meta and Google liable for harm to children’s mental",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-26-global-health-and-education-watch-meta-and-google-liable-for-harm-to-children-s-.jpg",
+    date: "2026-03-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-left-without-functioning-vaccine-panel-as-adviser-says",
     title: "Global Health and Education Watch: US left without functioning vaccine panel as adviser says",
     summary:
