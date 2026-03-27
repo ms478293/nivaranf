@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-middle-east-war-attacks-on-vital-healthcare-evacuation-strike",
+    title: "Global Health and Education Watch: Middle East war: Attacks on vital healthcare, evacuation strike",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-health-and-education-watch-middle-east-war-attacks-on-vital-healthcare-ev.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-russia-declares-protagonist-of-oscar-winning-documentary-a-foreign-agent",
     title: "Global Health and Education Watch: Russia declares protagonist of Oscar-winning documentary a ‘foreign agent’",
     summary:
