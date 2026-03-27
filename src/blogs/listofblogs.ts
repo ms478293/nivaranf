@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leadership-wobbles-us-vaccine-agenda-faces-headwinds",
+    title: "Global Health Leadership Wobbles: US Vaccine Agenda Faces Headwinds",
+    summary:
+      "The US Health Secretary's vaccine skepticism is creating significant domestic challenges, including stalled appointments and blocked policy changes. These internal struggles are raising alarms globally about potential impacts on international health cooperation and public confidence in vital immunization programs.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-health-leadership-wobbles-us-vaccine-agenda-faces-headwinds.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nyc-hospitals-drop-palantir-amid-global-scrutiny-of-ai-in-healthcare",
     title: "NYC Hospitals Drop Palantir Amid Global Scrutiny of AI in Healthcare",
     summary:
