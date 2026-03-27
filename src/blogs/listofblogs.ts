@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-schools-face-nutritional-challenge-as-convenience-foods-dominate-lunch-breaks",
+    title: "Global Schools Face Nutritional Challenge as Convenience Foods Dominate Lunch Breaks",
+    summary:
+      "A recent report from England reveals a significant shift in secondary school lunch habits, with students increasingly choosing convenient, often less nutritious, grab-and-go items over traditional sit-down meals. This trend poses substantial global health and educational challenges, impacting student well-being and academic performance.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-schools-face-nutritional-challenge-as-convenience-foods-dominate-lunch-br.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-middle-east-war-attacks-on-vital-healthcare-evacuation-strike",
     title: "Global Health and Education Watch: Middle East war: Attacks on vital healthcare, evacuation strike",
     summary:
