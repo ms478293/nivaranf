@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-science-future-imperiled-by-deep-university-research-cuts",
+    title: "Global Science Future Imperiled by Deep University Research Cuts",
+    summary:
+      "Major funding cuts to university physics departments in the UK threaten to halt critical research and impact the global scientific landscape. Senior scientists warn these reductions could lead to department closures and a significant setback for future innovation and education.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-science-future-imperiled-by-deep-university-research-cuts.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-home-education-under-scrutiny-balancing-rights-and-child-welfare",
     title: "Global Home Education Under Scrutiny: Balancing Rights and Child Welfare",
     summary:
