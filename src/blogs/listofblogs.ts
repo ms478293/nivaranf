@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-to-rethink-police-response-to-mental-health-crises",
+    title: "Global Call to Rethink Police Response to Mental Health Crises",
+    summary:
+      "A police officer's termination after fatally shooting a man in a mental health crisis underscores the critical global challenge of law enforcement's role in such situations. This event reignites discussions on the urgent need for enhanced de-escalation training and alternative crisis response models internationally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-call-to-rethink-police-response-to-mental-health-crises.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "k-pop-s-bts-connects-global-youth-to-korean-heritage-through-howard-university-link",
     title: "K-Pop's BTS Connects Global Youth to Korean Heritage Through Howard University Link",
     summary:
