@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nyc-hospitals-drop-palantir-amid-global-scrutiny-of-ai-in-healthcare",
+    title: "NYC Hospitals Drop Palantir Amid Global Scrutiny of AI in Healthcare",
+    summary:
+      "New York City's public hospital system will not renew its contract with Palantir, responding to activist concerns over data privacy. This move reflects growing international scrutiny of AI firms' roles in public health, particularly in the UK's NHS.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-nyc-hospitals-drop-palantir-amid-global-scrutiny-of-ai-in-healthcare.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-number-of-pupils-missing-more-than-half-of-school",
     title: "Global Health and Education Watch: Number of pupils missing more than half of school",
     summary:
