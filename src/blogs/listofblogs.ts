@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-zoomer-to-boomer-pay-phone-hotline-gets-two-generations-chatting",
+    title: "Global Health and Education Watch: A ‘Zoomer-to-Boomer’ Pay Phone Hotline Gets Two Generations Chatting",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-health-and-education-watch-a-zoomer-to-boomer-pay-phone-hotline-gets-two-.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-science-future-imperiled-by-deep-university-research-cuts",
     title: "Global Science Future Imperiled by Deep University Research Cuts",
     summary:
