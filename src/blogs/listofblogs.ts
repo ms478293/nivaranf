@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-home-education-under-scrutiny-balancing-rights-and-child-welfare",
+    title: "Global Home Education Under Scrutiny: Balancing Rights and Child Welfare",
+    summary:
+      "Policies aimed at reducing home education are sparking intense global debate and legal challenges, with campaigners arguing such measures could undermine parental rights. This contentious issue highlights the complex balance between state educational mandates and family choices, raising concerns for children's well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-home-education-under-scrutiny-balancing-rights-and-child-welfare.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-attacks-on-ukraine-s-health-care-increased-by-20-in-2",
     title: "Global Health and Education Watch: Attacks on Ukraine’s health care increased by 20% in",
     summary:
