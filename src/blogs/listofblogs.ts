@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-reform-candidate-in-wales-steps-down-after-apparent-nazi",
+    title: "Global Health and Education Watch: Reform candidate in Wales steps down after apparent Nazi",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-health-and-education-watch-reform-candidate-in-wales-steps-down-after-app.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-schools-in-england-must-be-compelled-to-offer-pupils",
     title: "Global Health and Education Watch: Schools in England must be compelled to offer pupils",
     summary:
