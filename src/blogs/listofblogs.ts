@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "k-pop-s-bts-connects-global-youth-to-korean-heritage-through-howard-university-link",
+    title: "K-Pop's BTS Connects Global Youth to Korean Heritage Through Howard University Link",
+    summary:
+      "Global music sensation BTS has forged a unique connection with Howard University, leveraging the historic Korean folk song 'Arirang' to promote their latest album. This initiative highlights the profound educational power of cultural exchange and historical preservation, bridging diverse global audiences.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-k-pop-s-bts-connects-global-youth-to-korean-heritage-through-howard-university-l.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-reform-candidate-in-wales-steps-down-after-apparent-nazi",
     title: "Global Health and Education Watch: Reform candidate in Wales steps down after apparent Nazi",
     summary:
