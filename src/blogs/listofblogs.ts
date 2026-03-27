@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-italy-investigates-beauty-brands-over-concerns-about-young-girls",
+    title: "Global Health and Education Watch: Italy investigates beauty brands over concerns about young girls’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-27-global-health-and-education-watch-italy-investigates-beauty-brands-over-concerns.jpg",
+    date: "2026-03-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-zoomer-to-boomer-pay-phone-hotline-gets-two-generations-chatting",
     title: "Global Health and Education Watch: A ‘Zoomer-to-Boomer’ Pay Phone Hotline Gets Two Generations Chatting",
     summary:
