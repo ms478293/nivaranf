@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-colleges-pressed-to-remove-names-of-epstein-s-friends-from",
+    title: "Global Health and Education Watch: Colleges Pressed to Remove Names of Epstein’s Friends From",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-colleges-pressed-to-remove-names-of-epstein-s-.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-streeting-praises-response-to-meningitis-outbreak",
     title: "Global Health and Education Watch: Streeting praises response to meningitis outbreak",
     summary:
