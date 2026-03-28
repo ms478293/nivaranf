@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "cambridge-revives-darwin-inspired-botany-course-after-historic-archive-uncovered",
+    title: "Cambridge Revives Darwin-Inspired Botany Course After Historic Archive Uncovered",
+    summary:
+      "The University of Cambridge is reviving a foundational botany course, utilizing rare 200-year-old teaching materials that once inspired Charles Darwin. This initiative offers contemporary students a unique opportunity to engage with the original scientific methods and specimens used by Darwin's mentor, John Stevens Henslow.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-cambridge-revives-darwin-inspired-botany-course-after-historic-archive-uncovered.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "chile-achieves-historic-leprosy-elimination-inspiring-global-health-efforts",
     title: "Chile Achieves Historic Leprosy Elimination, Inspiring Global Health Efforts",
     summary:
