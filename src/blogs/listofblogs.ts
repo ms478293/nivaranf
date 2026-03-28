@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-protests-signal-deep-concerns-over-health-and-governance",
+    title: "Global Protests Signal Deep Concerns Over Health and Governance",
+    summary:
+      "Massive global protests underscore growing public dissatisfaction with governance, reflecting profound concerns over health equity. These widespread demonstrations signal a collective demand for policies prioritizing public welfare and robust social safety nets.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-protests-signal-deep-concerns-over-health-and-governance.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-protests-decry-research-cuts-demand-no-kings-just-vaccines",
     title: "Global Protests Decry Research Cuts, Demand 'No Kings, Just Vaccines!'",
     summary:
