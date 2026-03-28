@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-nine-people-sick-from-e-coli-linked-to-raw",
+    title: "Global Health and Education Watch: Nine people sick from E coli linked to raw",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-nine-people-sick-from-e-coli-linked-to-raw.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "iranian-footballers-honor-school-strike-victims-amidst-escalating-conflict",
     title: "Iranian Footballers Honor School Strike Victims Amidst Escalating Conflict",
     summary:
