@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-under-threat-london-march-highlights-extremism-s-classroom-impact",
+    title: "Global Education Under Threat: London March Highlights Extremism's Classroom Impact",
+    summary:
+      "Hundreds of thousands marched in London, protesting the rise of the far right and its detrimental effects on society. The demonstration highlighted how such ideologies directly threaten inclusive educational settings and student well-being globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-education-under-threat-london-march-highlights-extremism-s-classroom-impa.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-urges-schools-worldwide-to-promote-healthy-eating-for",
     title: "Global Health and Education Watch: WHO urges schools worldwide to promote healthy eating for",
     summary:
