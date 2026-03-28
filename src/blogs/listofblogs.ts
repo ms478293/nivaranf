@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "iranian-footballers-honor-school-strike-victims-amidst-escalating-conflict",
+    title: "Iranian Footballers Honor School Strike Victims Amidst Escalating Conflict",
+    summary:
+      "Iran's national football team made a powerful statement, dedicating their first match since the Middle East conflict began to victims of a school strike. This gesture underscored the devastating human cost of the escalating regional tensions, particularly on education and youth.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-iranian-footballers-honor-school-strike-victims-amidst-escalating-conflict.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-polio-virus-detected-in-london-days-before-ministers-cut",
     title: "Global Health and Education Watch: Polio virus detected in London days before ministers cut",
     summary:
