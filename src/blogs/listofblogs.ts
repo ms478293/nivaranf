@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-sudden-death-of-a-man-who-told-chinese",
+    title: "Global Health and Education Watch: The Sudden Death of a Man Who Told Chinese",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-the-sudden-death-of-a-man-who-told-chinese.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "cambridge-revives-darwin-inspired-botany-course-after-historic-archive-uncovered",
     title: "Cambridge Revives Darwin-Inspired Botany Course After Historic Archive Uncovered",
     summary:
