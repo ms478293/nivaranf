@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-streeting-praises-response-to-meningitis-outbreak",
+    title: "Global Health and Education Watch: Streeting praises response to meningitis outbreak",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-streeting-praises-response-to-meningitis-outbr.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "student-s-gaza-war-protest-settlement-ignites-global-debate-on-free-speech-in-schools",
     title: "Student's Gaza War Protest Settlement Ignites Global Debate on Free Speech in Schools",
     summary:
