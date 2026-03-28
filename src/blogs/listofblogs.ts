@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-houthi-forces-enter-iran-conflict-with-missile-attacks-on",
+    title: "Global Health and Education Watch: Houthi forces enter Iran conflict with missile attacks on",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-houthi-forces-enter-iran-conflict-with-missile.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leaders-extend-crucial-pandemic-agreement-negotiations",
     title: "Global Health Leaders Extend Crucial Pandemic Agreement Negotiations",
     summary:
