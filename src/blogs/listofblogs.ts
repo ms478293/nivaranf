@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-polio-virus-detected-in-london-days-before-ministers-cut",
+    title: "Global Health and Education Watch: Polio virus detected in London days before ministers cut",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-and-education-watch-polio-virus-detected-in-london-days-before-min.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-yemen-s-houthis-launch-first-attack-on-israel-since-outbreak",
     title: "Global Health and Education Watch: Yemen’s Houthis launch first attack on Israel since outbreak",
     summary:
