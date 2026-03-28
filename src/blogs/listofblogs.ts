@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-protests-decry-research-cuts-demand-no-kings-just-vaccines",
+    title: "Global Protests Decry Research Cuts, Demand 'No Kings, Just Vaccines!'",
+    summary:
+      "Demonstrators globally, including a significant gathering at the NIH headquarters, protested against severe cuts to medical research funding. These actions underscore widespread concerns about the politicization of science and its critical implications for global health security.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-protests-decry-research-cuts-demand-no-kings-just-vaccines.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-colleges-pressed-to-remove-names-of-epstein-s-friends-from",
     title: "Global Health and Education Watch: Colleges Pressed to Remove Names of Epstein’s Friends From",
     summary:
