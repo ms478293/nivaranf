@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "student-s-gaza-war-protest-settlement-ignites-global-debate-on-free-speech-in-schools",
+    title: "Student's Gaza War Protest Settlement Ignites Global Debate on Free Speech in Schools",
+    summary:
+      "A Michigan middle school student, disciplined for protesting the Gaza war by not standing for the Pledge of Allegiance, has reached a settlement with her school district. The case highlights critical issues of student free speech, alleged racial discrimination, and the protection of minority voices in educational environments globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-student-s-gaza-war-protest-settlement-ignites-global-debate-on-free-speech-in-sc.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-under-threat-london-march-highlights-extremism-s-classroom-impact",
     title: "Global Education Under Threat: London March Highlights Extremism's Classroom Impact",
     summary:
