@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leaders-extend-crucial-pandemic-agreement-negotiations",
+    title: "Global Health Leaders Extend Crucial Pandemic Agreement Negotiations",
+    summary:
+      "WHO Member States have agreed to extend critical negotiations on the Pathogen Access and Benefit Sharing (PABS) annex to the Pandemic Agreement. This extension allows further deliberation on equitable access to vital resources ahead of its World Health Assembly consideration in May.",
+    thumbnailImage: "/images/global-news/2026/2026-03-28-global-health-leaders-extend-crucial-pandemic-agreement-negotiations.jpg",
+    date: "2026-03-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-protests-signal-deep-concerns-over-health-and-governance",
     title: "Global Protests Signal Deep Concerns Over Health and Governance",
     summary:
