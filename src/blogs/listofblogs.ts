@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-social-justice-issue-london-school-believes-it-has",
+    title: "Global Health and Education Watch: ‘A social justice issue’: London school believes it has",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-health-and-education-watch-a-social-justice-issue-london-school-believes-.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-systems-grapple-with-reform-amidst-performance-gaps",
     title: "Global Health Systems Grapple with Reform Amidst Performance Gaps",
     summary:
