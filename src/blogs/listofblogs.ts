@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "full-clitoral-nerve-network-mapped-revolutionizing-women-s-pelvic-surgery",
+    title: "Full Clitoral Nerve Network Mapped, Revolutionizing Women's Pelvic Surgery",
+    summary:
+      "A groundbreaking study has for the first time fully mapped the intricate network of clitoral nerves, a discovery poised to revolutionize women's pelvic surgery. This anatomical breakthrough aims to prevent post-operative sexual dysfunction and correct long-held medical misconceptions, enhancing global women's health.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-full-clitoral-nerve-network-mapped-revolutionizing-women-s-pelvic-surgery.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-to-action-confronting-stigma-and-mental-health-crisis-in-neglected-tropical-diseases",
     title: "Global Call to Action: Confronting Stigma and Mental Health Crisis in Neglected Tropical Diseases",
     summary:
