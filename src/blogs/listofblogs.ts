@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-systems-grapple-with-reform-amidst-performance-gaps",
+    title: "Global Health Systems Grapple with Reform Amidst Performance Gaps",
+    summary:
+      "Across the globe, national health systems face immense pressure to reform and improve services, often struggling with ambitious targets. The recent restructuring of a major European health service exemplifies the complex interplay between political optimism and the realities of healthcare delivery.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-health-systems-grapple-with-reform-amidst-performance-gaps.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-women-s-health-must-be-taken-more-seriously",
     title: "Global Health and Education Watch: 'Women's health must be taken more seriously'",
     summary:
