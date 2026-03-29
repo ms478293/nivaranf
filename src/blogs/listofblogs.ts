@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-fire-that-s-burning-again-welsh-language-resurges-thanks",
+    title: "Global Health and Education Watch: ‘A fire that’s burning again’: Welsh language resurges thanks",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-health-and-education-watch-a-fire-that-s-burning-again-welsh-language-res.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-faces-staffing-crisis-for-inclusive-classrooms",
     title: "Global Education Faces Staffing Crisis for Inclusive Classrooms",
     summary:
