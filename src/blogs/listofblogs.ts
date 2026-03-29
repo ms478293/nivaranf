@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "desert-oasis-challenges-traditional-education-a-global-model",
+    title: "Desert Oasis Challenges Traditional Education: A Global Model?",
+    summary:
+      "Far from urban centers, an experimental educational community in the California desert is redefining learning. Operating without traditional structures like tuition or grades, it draws individuals seeking unconventional academic and personal growth.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-desert-oasis-challenges-traditional-education-a-global-model.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-abortion-rate-holds-steady-largely-due-to-travel",
     title: "Global Health and Education Watch: US abortion rate holds steady largely due to travel",
     summary:
