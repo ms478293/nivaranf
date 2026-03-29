@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-faces-staffing-crisis-for-inclusive-classrooms",
+    title: "Global Education Faces Staffing Crisis for Inclusive Classrooms",
+    summary:
+      "A global education crisis looms as insufficient staffing and funding hinder the implementation of inclusive classrooms. Educational bodies emphasize the urgent need for increased investment to support diverse learning needs effectively.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-education-faces-staffing-crisis-for-inclusive-classrooms.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iran-war-live-updates-tehran-hit-by-heavy-airstrikes",
     title: "Global Health and Education Watch: Iran War Live Updates: Tehran Hit by Heavy Airstrikes",
     summary:
