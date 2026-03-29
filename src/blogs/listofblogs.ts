@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "airstrikes-batter-tehran-university-sparking-global-education-crisis-concerns",
+    title: "Airstrikes Batter Tehran University, Sparking Global Education Crisis Concerns",
+    summary:
+      "Recent airstrikes in Tehran have severely impacted a major university and surrounding residential areas, disrupting education and endangering civilian lives. The attacks underscore the profound and lasting humanitarian consequences of escalating regional conflict on vital societal institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-airstrikes-batter-tehran-university-sparking-global-education-crisis-concerns.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-fire-that-s-burning-again-welsh-language-resurges-thanks",
     title: "Global Health and Education Watch: ‘A fire that’s burning again’: Welsh language resurges thanks",
     summary:
