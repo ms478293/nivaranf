@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iran-war-live-updates-tehran-hit-by-heavy-airstrikes",
+    title: "Global Health and Education Watch: Iran War Live Updates: Tehran Hit by Heavy Airstrikes",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-health-and-education-watch-iran-war-live-updates-tehran-hit-by-heavy-airs.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with",
     title: "Global Health and Education Watch: 'Having coeliac disease aged 9 means I'm normal with",
     summary:
