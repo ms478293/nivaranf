@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-to-action-confronting-stigma-and-mental-health-crisis-in-neglected-tropical-diseases",
+    title: "Global Call to Action: Confronting Stigma and Mental Health Crisis in Neglected Tropical Diseases",
+    summary:
+      "On World NTD Day, the WHO highlighted the unseen suffering of millions with neglected tropical diseases due to discrimination and untreated mental health issues. A global call urges governments and partners to integrate mental health support into NTD elimination efforts, ensuring no one is left in isolation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-29-global-call-to-action-confronting-stigma-and-mental-health-crisis-in-neglected-t.jpg",
+    date: "2026-03-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "airstrikes-batter-tehran-university-sparking-global-education-crisis-concerns",
     title: "Airstrikes Batter Tehran University, Sparking Global Education Crisis Concerns",
     summary:
