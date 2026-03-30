@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-crisis-students-strike-over-teacher-shortages",
+    title: "Global Education Crisis: Students Strike Over Teacher Shortages",
+    summary:
+      "Students in one region have initiated protests, demanding action against critical teacher shortages disrupting their education. This localized event underscores a pervasive global crisis threatening academic futures and educational equity worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-education-crisis-students-strike-over-teacher-shortages.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-positive-thinking-helps-you-age-better-that-s-the-worst",
     title: "Global Health and Education Watch: Positive thinking helps you age better? That’s the worst",
     summary:
