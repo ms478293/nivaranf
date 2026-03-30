@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-vaping-dilemma-health-environment-and-policy-efficacy-post-ban",
+    title: "Global Vaping Dilemma: Health, Environment, and Policy Efficacy Post-Ban",
+    summary:
+      "Nearly a year after some regions moved to outlaw disposable vaping devices, new data suggests policy gains are modest, while creating unforeseen challenges. The global rise of vaping presents a complex public health and environmental conundrum, balancing harm reduction with new risks.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-vaping-dilemma-health-environment-and-policy-efficacy-post-ban.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-u-s-missile-hit-iranian-sports-hall-and-school",
     title: "Global Health and Education Watch: New U.S. Missile Hit Iranian Sports Hall and School",
     summary:
