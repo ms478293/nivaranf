@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-positive-thinking-helps-you-age-better-that-s-the-worst",
+    title: "Global Health and Education Watch: Positive thinking helps you age better? That’s the worst",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-health-and-education-watch-positive-thinking-helps-you-age-better-that-s-.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kent-s-meningitis-outbreak-taught-me-that-post-covid-britain-is",
     title: "Global Health and Education Watch: Kent’s meningitis outbreak taught me that post-Covid Britain is",
     summary:
