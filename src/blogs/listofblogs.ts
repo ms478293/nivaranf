@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-universities-face-crisis-job-cuts-threaten-education-quality-amid-strike-warnings",
+    title: "Global Universities Face Crisis: Job Cuts Threaten Education Quality Amid Strike Warnings",
+    summary:
+      "Universities globally are confronting significant financial challenges, leading to widespread job cuts that threaten the quality of education and student engagement. This precarious situation is prompting strong reactions from academic unions, with strike ballots underway in several regions to protest the proposed redundancies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-universities-face-crisis-job-cuts-threaten-education-quality-amid-strike-.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "conflict-s-toll-schools-and-water-systems-devastated-in-middle-east-war",
     title: "Conflict's Toll: Schools and Water Systems Devastated in Middle East War",
     summary:
