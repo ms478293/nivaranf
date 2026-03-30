@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "conflict-s-toll-schools-and-water-systems-devastated-in-middle-east-war",
+    title: "Conflict's Toll: Schools and Water Systems Devastated in Middle East War",
+    summary:
+      "Recent reports indicate a disturbing trend of civilian infrastructure, including schools and water facilities, being targeted in the ongoing Middle East conflict. This destruction severely undermines public health and educational access, exacerbating humanitarian crises across affected regions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-conflict-s-toll-schools-and-water-systems-devastated-in-middle-east-war.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-a-civics-school-with-a-conservative-bent-divided",
     title: "Global Health and Education Watch: How a Civics School With a Conservative Bent Divided",
     summary:
