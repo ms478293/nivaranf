@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-we-dug-up-medics-in-gaza-a-year-later",
+    title: "Global Health and Education Watch: We dug up medics in Gaza. A year later",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-health-and-education-watch-we-dug-up-medics-in-gaza-a-year-later.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "u-s-infant-mortality-trends-offer-global-insights-into-perinatal-health",
     title: "U.S. Infant Mortality Trends Offer Global Insights into Perinatal Health",
     summary:
