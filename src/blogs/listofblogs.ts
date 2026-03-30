@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "u-s-infant-mortality-trends-offer-global-insights-into-perinatal-health",
+    title: "U.S. Infant Mortality Trends Offer Global Insights into Perinatal Health",
+    summary:
+      "A recent study analyzing U.S. infant mortality trends from 2015 to 2023 reveals critical insights into the impact of gestational age on survival rates. This data offers valuable lessons for global health initiatives aimed at reducing infant mortality and enhancing perinatal care worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-u-s-infant-mortality-trends-offer-global-insights-into-perinatal-health.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-universities-face-crisis-job-cuts-threaten-education-quality-amid-strike-warnings",
     title: "Global Universities Face Crisis: Job Cuts Threaten Education Quality Amid Strike Warnings",
     summary:
