@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-new-u-s-missile-hit-iranian-sports-hall-and-school",
+    title: "Global Health and Education Watch: New U.S. Missile Hit Iranian Sports Hall and School",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-global-health-and-education-watch-new-u-s-missile-hit-iranian-sports-hall-and-sc.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-boston-university-pulls-pride-flags-raising-free-speech-worries",
     title: "Global Health and Education Watch: Boston University Pulls Pride Flags, Raising Free Speech Worries",
     summary:
