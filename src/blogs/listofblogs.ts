@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "canada-s-ndp-elects-avi-lewis-sparking-global-education-equity-debate",
+    title: "Canada's NDP Elects Avi Lewis, Sparking Global Education Equity Debate",
+    summary:
+      "Avi Lewis has been elected leader of Canada's New Democratic Party, promising a platform centered on equity, including tuition-free education and higher wealth taxes. This political shift in a G7 nation reignites global conversations on accessible education and progressive economic policies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-30-canada-s-ndp-elects-avi-lewis-sparking-global-education-equity-debate.jpg",
+    date: "2026-03-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-n-y-u-closes-its-abu-dhabi-campus-as-iran-vows",
     title: "Global Health and Education Watch: N.Y.U. Closes Its Abu Dhabi Campus as Iran Vows",
     summary:
