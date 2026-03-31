@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "libya-eradicates-trachoma-a-global-health-victory",
+    title: "Libya Eradicates Trachoma: A Global Health Victory",
+    summary:
+      "Libya has achieved a significant public health milestone, eliminating trachoma as a public health problem. This victory, validated by the WHO, prevents future generations from preventable blindness and underscores the global commitment to eradicating neglected tropical diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-libya-eradicates-trachoma-a-global-health-victory.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "canada-s-ndp-elects-avi-lewis-sparking-global-education-equity-debate",
     title: "Canada's NDP Elects Avi Lewis, Sparking Global Education Equity Debate",
     summary:
