@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-wealth-taxation-a-path-to-funding-essential-public-services",
+    title: "Global Wealth Taxation: A Path to Funding Essential Public Services",
+    summary:
+      "Across the globe, governments face immense pressure to fund vital public services like education and healthcare amidst growing wealth disparities. This article explores how progressive taxation, particularly targeting the ultra-wealthy, is gaining traction as a potential solution to bridge these critical funding gaps and foster more equitable societies.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-global-wealth-taxation-a-path-to-funding-essential-public-services.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-families-reunited-years-after-infants-evacuated-amidst-conflict",
     title: "Gaza Families Reunited: Years After Infants Evacuated Amidst Conflict",
     summary:
