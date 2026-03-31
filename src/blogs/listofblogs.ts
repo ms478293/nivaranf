@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "wearable-health-tech-soars-whoop-valuation-signals-industry-boom",
+    title: "Wearable Health Tech Soars: Whoop Valuation Signals Industry Boom",
+    summary:
+      "Wearable health technology firm Whoop has reached a $10 billion valuation after securing $575 million in new funding, signaling a major acceleration in the global health tracking market. The company, backed by sovereign wealth funds and elite athletes, is now reportedly eyeing an initial public offering amidst surging demand for personalized wellness solutions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-wearable-health-tech-soars-whoop-valuation-signals-industry-boom.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-something-wasn-t-right-wrong-sperm-given-to-uk-families",
     title: "Global Health and Education Watch: 'Something wasn't right': Wrong sperm given to UK families",
     summary:
