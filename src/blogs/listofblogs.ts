@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "court-approves-university-data-collection-on-jewish-affiliates-sparks-global-privacy-alarm",
+    title: "Court Approves University Data Collection on Jewish Affiliates, Sparks Global Privacy Alarm",
+    summary:
+      "A recent judicial ruling allows the U.S. government to collect names and contact information of Jewish individuals at a prominent university for an antisemitism investigation. This development has triggered significant apprehension among civil liberties advocates and the global community regarding data privacy and potential misuse of sensitive demographic information.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-court-approves-university-data-collection-on-jewish-affiliates-sparks-global-pri.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "british-billionaire-s-190m-cambridge-gift-boosts-global-education",
     title: "British Billionaire's £190M Cambridge Gift Boosts Global Education",
     summary:
