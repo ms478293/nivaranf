@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "british-billionaire-s-190m-cambridge-gift-boosts-global-education",
+    title: "British Billionaire's £190M Cambridge Gift Boosts Global Education",
+    summary:
+      "Hedge fund founder Chris Rokos has pledged £190 million to the University of Cambridge, driven by a desire to contribute to the UK. This significant philanthropic act will bolster global education and research capabilities at the prestigious institution.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-british-billionaire-s-190m-cambridge-gift-boosts-global-education.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tyre-hospital-repeatedly-struck-amid-escalating-southern-lebanon-conflict",
     title: "Tyre Hospital Repeatedly Struck Amid Escalating Southern Lebanon Conflict",
     summary:
