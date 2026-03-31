@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "bolivian-clowns-protest-education-decree-threatening-livelihoods",
+    title: "Bolivian Clowns Protest Education Decree Threatening Livelihoods",
+    summary:
+      "Clowns in Bolivia are protesting a new education decree that limits school extracurricular activities, directly impacting their income. The mandate, aimed at ensuring 200 days of lessons, inadvertently jeopardizes the livelihoods of many informal workers.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-bolivian-clowns-protest-education-decree-threatening-livelihoods.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "libya-eradicates-trachoma-a-global-health-victory",
     title: "Libya Eradicates Trachoma: A Global Health Victory",
     summary:
