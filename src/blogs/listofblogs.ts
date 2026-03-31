@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-deradicalisation-scheme-strains-under-mental-health-service-demand",
+    title: "UK Deradicalisation Scheme Strains Under Mental Health Service Demand",
+    summary:
+      "A UK deradicalisation initiative faces pressure as individuals reportedly use it to bypass long waits for mental health services. This trend highlights critical deficiencies in public health infrastructure, prompting global discussions on integrated care and resource allocation.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-uk-deradicalisation-scheme-strains-under-mental-health-service-demand.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-wealth-taxation-a-path-to-funding-essential-public-services",
     title: "Global Wealth Taxation: A Path to Funding Essential Public Services",
     summary:
