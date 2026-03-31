@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-families-reunited-years-after-infants-evacuated-amidst-conflict",
+    title: "Gaza Families Reunited: Years After Infants Evacuated Amidst Conflict",
+    summary:
+      "Infants evacuated from Gaza's al-Shifa Hospital during the 2023 conflict have finally reunited with their families after years of separation. This poignant return highlights the enduring human cost of conflict and the critical importance of humanitarian efforts.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-gaza-families-reunited-years-after-infants-evacuated-amidst-conflict.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "bard-college-s-82-million-real-estate-acquisition-sparks-global-education-debate",
     title: "Bard College's $82 Million Real Estate Acquisition Sparks Global Education Debate",
     summary:
