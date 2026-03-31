@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "bard-college-s-82-million-real-estate-acquisition-sparks-global-education-debate",
+    title: "Bard College's $82 Million Real Estate Acquisition Sparks Global Education Debate",
+    summary:
+      "Bard College recently received an $82 million donation of properties in Hudson, N.Y., from a nonprofit foundation, drawing attention to universities' expanding real estate footprints. The lack of detailed plans from the institution raises questions about transparency and community impact, reflecting broader global discussions.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-bard-college-s-82-million-real-estate-acquisition-sparks-global-education-debate.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "wearable-health-tech-soars-whoop-valuation-signals-industry-boom",
     title: "Wearable Health Tech Soars: Whoop Valuation Signals Industry Boom",
     summary:
