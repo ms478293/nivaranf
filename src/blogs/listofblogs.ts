@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-something-wasn-t-right-wrong-sperm-given-to-uk-families",
+    title: "Global Health and Education Watch: 'Something wasn't right': Wrong sperm given to UK families",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-global-health-and-education-watch-something-wasn-t-right-wrong-sperm-given-to-uk.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "bolivian-clowns-protest-education-decree-threatening-livelihoods",
     title: "Bolivian Clowns Protest Education Decree Threatening Livelihoods",
     summary:
