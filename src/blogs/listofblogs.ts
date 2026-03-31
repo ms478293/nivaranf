@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "jordan-who-partnership-advances-global-health-resilience-and-mental-well-being",
+    title: "Jordan-WHO Partnership Advances Global Health, Resilience, and Mental Well-being",
+    summary:
+      "Dr. Tedros Adhanom Ghebreyesus recently concluded a significant visit to Jordan, highlighting the nation's strong partnership with the World Health Organization. This collaboration is crucial for advancing universal health coverage, enhancing mental health services, and bolstering humanitarian health responses globally.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-jordan-who-partnership-advances-global-health-resilience-and-mental-well-being.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-deradicalisation-scheme-strains-under-mental-health-service-demand",
     title: "UK Deradicalisation Scheme Strains Under Mental Health Service Demand",
     summary:
