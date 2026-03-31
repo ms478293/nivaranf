@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tyre-hospital-repeatedly-struck-amid-escalating-southern-lebanon-conflict",
+    title: "Tyre Hospital Repeatedly Struck Amid Escalating Southern Lebanon Conflict",
+    summary:
+      "A key hospital in Tyre, southern Lebanon, has been subjected to Israeli attacks for a fifth time since the conflict began, critically undermining its capacity to provide essential medical services. These repeated strikes highlight the devastating impact of escalating regional conflict on civilian health infrastructure and the urgent need for protection.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-tyre-hospital-repeatedly-struck-amid-escalating-southern-lebanon-conflict.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "jordan-who-partnership-advances-global-health-resilience-and-mental-well-being",
     title: "Jordan-WHO Partnership Advances Global Health, Resilience, and Mental Well-being",
     summary:
