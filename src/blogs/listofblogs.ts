@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-calls-for-stricter-oversight-of-private-medicinal-cannabis-clinics",
+    title: "Global Calls for Stricter Oversight of Private Medicinal Cannabis Clinics",
+    summary:
+      "A recent UK inquest linked a patient's death to his medicinal cannabis prescription, highlighting critical gaps in regulation. This ruling intensifies global discussions on the need for tighter controls over private cannabis clinics and patient care.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-global-calls-for-stricter-oversight-of-private-medicinal-cannabis-clinics.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-teachers-witness-soaring-eating-disorders-anxiety-among-students",
     title: "Global Alarm: Teachers Witness Soaring Eating Disorders, Anxiety Among Students",
     summary:
