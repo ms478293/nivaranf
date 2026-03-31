@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-teachers-witness-soaring-eating-disorders-anxiety-among-students",
+    title: "Global Alarm: Teachers Witness Soaring Eating Disorders, Anxiety Among Students",
+    summary:
+      "A recent survey of English teachers reveals an alarming surge in student eating disorders and widespread exam anxiety. These findings reflect a critical, escalating global mental health crisis among children and adolescents in educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-03-31-global-alarm-teachers-witness-soaring-eating-disorders-anxiety-among-students.jpg",
+    date: "2026-03-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "court-approves-university-data-collection-on-jewish-affiliates-sparks-global-privacy-alarm",
     title: "Court Approves University Data Collection on Jewish Affiliates, Sparks Global Privacy Alarm",
     summary:
