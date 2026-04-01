@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-health-deals-african-nations-question-aid-for-minerals-and-data-demands",
+    title: "US Health Deals: African Nations Question Aid for Minerals and Data Demands",
+    summary:
+      "African nations, including Zimbabwe and Zambia, are voicing strong opposition to new US health aid agreements. These deals are perceived as 'lopsided' due to controversial demands for critical minerals and sensitive health data.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-us-health-deals-african-nations-question-aid-for-minerals-and-data-demands.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "fda-poised-to-restore-access-to-peptides-amid-global-health-and-longevity-debate",
     title: "FDA Poised to Restore Access to Peptides Amid Global Health and Longevity Debate",
     summary:
