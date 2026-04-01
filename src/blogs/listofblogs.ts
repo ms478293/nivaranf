@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "fda-poised-to-restore-access-to-peptides-amid-global-health-and-longevity-debate",
+    title: "FDA Poised to Restore Access to Peptides Amid Global Health and Longevity Debate",
+    summary:
+      "The U.S. Food and Drug Administration is anticipated to reverse its 2023 decision, allowing compounding pharmacies to once again sell certain peptides. This move follows advocacy efforts and reflects growing global interest in these compounds for health and longevity benefits.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-fda-poised-to-restore-access-to-peptides-amid-global-health-and-longevity-debate.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "stephen-lewis-tireless-global-health-advocate-dies-at-88",
     title: "Stephen Lewis, Tireless Global Health Advocate, Dies at 88",
     summary:
