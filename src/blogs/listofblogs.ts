@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-face-strain-amidst-escalating-geopolitical-tensions",
+    title: "Global Health and Education Face Strain Amidst Escalating Geopolitical Tensions",
+    summary:
+      "The Iran conflict, while financially benefiting Russia, is triggering severe global health and education crises. Supply chain disruptions threaten medicine availability, and resource reallocation jeopardizes educational progress worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-health-and-education-face-strain-amidst-escalating-geopolitical-tensions.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-extremism-s-evolving-threat-a-call-for-health-and-education-reset",
     title: "Global Extremism's Evolving Threat: A Call for Health and Education Reset",
     summary:
