@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-manosphere-is-dead-and-no-one-cares-about",
+    title: "Global Health and Education Watch: ‘The manosphere is dead and no one cares about",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-health-and-education-watch-the-manosphere-is-dead-and-no-one-cares-about.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-c-d-c-pauses-testing-for-rabies-and-pox-viruses",
     title: "Global Health and Education Watch: C.D.C. Pauses Testing for Rabies and Pox Viruses",
     summary:
