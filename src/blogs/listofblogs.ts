@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "stephen-lewis-tireless-global-health-advocate-dies-at-88",
+    title: "Stephen Lewis, Tireless Global Health Advocate, Dies at 88",
+    summary:
+      "Stephen Lewis, a prominent Canadian diplomat and human rights advocate, has passed away at 88 after a battle with cancer. He was widely recognized for his unwavering commitment to raising global awareness and action against the HIV/AIDS crisis.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-stephen-lewis-tireless-global-health-advocate-dies-at-88.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-shift-anti-obesity-jabs-target-heart-disease-risk",
     title: "Global Health Shift: Anti-Obesity Jabs Target Heart Disease Risk",
     summary:
