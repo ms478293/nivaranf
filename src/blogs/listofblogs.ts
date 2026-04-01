@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "fathers-forge-bonds-master-skills-in-global-parenting-evolution",
+    title: "Fathers Forge Bonds, Master Skills in Global Parenting Evolution",
+    summary:
+      "Across the globe, fathers are discovering community and practical parenting skills through innovative social clubs. These initiatives foster stronger family bonds and support men's mental health by providing a safe, educational environment.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-fathers-forge-bonds-master-skills-in-global-parenting-evolution.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-receives-lifesaving-aid-via-new-sea-route-amid-deepening-humanitarian-crisis",
     title: "Gaza Receives Lifesaving Aid Via New Sea Route Amid Deepening Humanitarian Crisis",
     summary:
