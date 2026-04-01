@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-shift-anti-obesity-jabs-target-heart-disease-risk",
+    title: "Global Health Shift: Anti-Obesity Jabs Target Heart Disease Risk",
+    summary:
+      "A significant development in public health sees anti-obesity medications being deployed to reduce the risk of heart attacks and strokes globally. This initiative marks a crucial step in addressing the escalating burden of cardiovascular diseases worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-health-shift-anti-obesity-jabs-target-heart-disease-risk.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-face-strain-amidst-escalating-geopolitical-tensions",
     title: "Global Health and Education Face Strain Amidst Escalating Geopolitical Tensions",
     summary:
