@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-extremism-s-evolving-threat-a-call-for-health-and-education-reset",
+    title: "Global Extremism's Evolving Threat: A Call for Health and Education Reset",
+    summary:
+      "Global counter-extremism efforts are struggling against evolving online threats, fluid ideologies, and the exploitation of vulnerable populations. A comprehensive global reset is needed, prioritizing mental health support and educational initiatives to build resilience and counter radicalization.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-extremism-s-evolving-threat-a-call-for-health-and-education-reset.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-calls-for-stricter-oversight-of-private-medicinal-cannabis-clinics",
     title: "Global Calls for Stricter Oversight of Private Medicinal Cannabis Clinics",
     summary:
