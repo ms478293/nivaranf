@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-receives-lifesaving-aid-via-new-sea-route-amid-deepening-humanitarian-crisis",
+    title: "Gaza Receives Lifesaving Aid Via New Sea Route Amid Deepening Humanitarian Crisis",
+    summary:
+      "The World Health Organization has successfully delivered 106 metric tonnes of vital nutrition supplies to Gaza, marking the inaugural shipment via a newly established sea corridor. This crucial aid arrives amidst severe humanitarian challenges, offering a glimmer of hope for vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-gaza-receives-lifesaving-aid-via-new-sea-route-amid-deepening-humanitarian-crisi.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-unregulated-chatbots-are-putting-lives-at-risk-letters",
     title: "Global Health and Education Watch: Unregulated chatbots are putting lives at risk | Letters",
     summary:
