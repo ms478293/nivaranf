@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-child-vision-crisis-deprivation-linked-to-poorer-screening-outcomes",
+    title: "Global Child Vision Crisis: Deprivation Linked to Poorer Screening Outcomes",
+    summary:
+      "A groundbreaking study reveals a strong association between socioeconomic deprivation and social vulnerability with adverse pediatric vision screening outcomes. These findings underscore the urgent need for integrated global health strategies to ensure equitable access to crucial eye care for all children.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-child-vision-crisis-deprivation-linked-to-poorer-screening-outcomes.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "fathers-forge-bonds-master-skills-in-global-parenting-evolution",
     title: "Fathers Forge Bonds, Master Skills in Global Parenting Evolution",
     summary:
