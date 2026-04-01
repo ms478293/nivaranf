@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cancer-prevention-four-in-ten-cases-preventable",
+    title: "Global Cancer Prevention: Four in Ten Cases Preventable",
+    summary:
+      "A landmark global analysis by WHO and IARC indicates that up to four in ten cancer cases worldwide are preventable. The study highlights 30 modifiable risk factors, including lifestyle choices, environmental exposures, and, for the first time, nine cancer-causing infections.",
+    thumbnailImage: "/images/global-news/2026/2026-04-01-global-cancer-prevention-four-in-ten-cases-preventable.jpg",
+    date: "2026-04-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-health-deals-african-nations-question-aid-for-minerals-and-data-demands",
     title: "US Health Deals: African Nations Question Aid for Minerals and Data Demands",
     summary:
