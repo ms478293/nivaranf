@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-faces-legal-onslaught-as-political-agendas-drive-lawsuits",
+    title: "Global Education Faces Legal Onslaught as Political Agendas Drive Lawsuits",
+    summary:
+      "Educational institutions globally are grappling with an unprecedented wave of lawsuits, as political figures and advocacy groups leverage legal systems to drive sweeping reforms. This strategic shift from legislative action to litigation is creating significant challenges for universities and school districts worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-education-faces-legal-onslaught-as-political-agendas-drive-lawsuits.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-syracuse-drops-84-programs-including-classics-ceramics-and-italian",
     title: "Global Health and Education Watch: Syracuse Drops 84 Programs Including Classics, Ceramics and Italian",
     summary:
