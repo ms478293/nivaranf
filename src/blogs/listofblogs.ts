@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-teachers-unite-to-combat-rising-educational-censorship",
+    title: "Global Teachers Unite to Combat Rising Educational Censorship",
+    summary:
+      "Education professionals globally are voicing strong opposition to increasing censorship in schools, with unions reporting widespread efforts to limit access to diverse books. This movement highlights concerns about academic freedom and the vital role of libraries in fostering critical thinking and inclusive learning environments.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-teachers-unite-to-combat-rising-educational-censorship.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-countries-progress-negotiations-in-support-of-who-pandemic-agreement-2",
     title: "Global Health and Education Watch: Countries progress negotiations in support of WHO Pandemic Agreement",
     summary:
