@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tehran-hospital-a-beacon-of-hope-amidst-conflict-for-children",
+    title: "Tehran Hospital: A Beacon of Hope Amidst Conflict for Children",
+    summary:
+      "In Tehran, the Children's Medical Center provides vital medical care alongside psychosocial support, organizing engaging activities to bring smiles and normalcy to young patients amidst ongoing conflict. This holistic approach helps children cope with illness and the stresses of war, fostering resilience and hope within the hospital walls.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-tehran-hospital-a-beacon-of-hope-amidst-conflict-for-children.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-imperative-safeguarding-drinking-water-from-microplastics-and-pharmaceuticals",
     title: "Global Imperative: Safeguarding Drinking Water from Microplastics and Pharmaceuticals",
     summary:
