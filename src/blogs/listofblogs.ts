@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-launches-urgent-global-appeal-for-health-in-crisis-zones",
+    title: "WHO Launches Urgent Global Appeal for Health in Crisis Zones",
+    summary:
+      "The World Health Organization has initiated its 2026 global appeal to secure vital funding for health services in humanitarian crises. This urgent call aims to reach millions of vulnerable individuals suffering from conflicts and disasters worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-who-launches-urgent-global-appeal-for-health-in-crisis-zones.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alert-cdc-staffing-crisis-halts-critical-disease-testing",
     title: "Global Health Alert: CDC Staffing Crisis Halts Critical Disease Testing",
     summary:
