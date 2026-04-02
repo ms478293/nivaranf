@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tiger-woods-prioritizes-health-declining-ryder-cup-captaincy",
+    title: "Tiger Woods Prioritizes Health, Declining Ryder Cup Captaincy",
+    summary:
+      "Golf legend Tiger Woods has declined the 2027 Ryder Cup captaincy, choosing to focus on his long-term health recovery following a severe car crash and recent legal issues. This decision underscores the critical importance of prioritizing personal well-being, even for global sports figures.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-tiger-woods-prioritizes-health-declining-ryder-cup-captaincy.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-faces-legal-onslaught-as-political-agendas-drive-lawsuits",
     title: "Global Education Faces Legal Onslaught as Political Agendas Drive Lawsuits",
     summary:
