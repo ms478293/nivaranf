@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-pupils-in-england-are-losing-their-thinking-skills-because",
+    title: "Global Health and Education Watch: Pupils in England are losing their thinking skills because",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-health-and-education-watch-pupils-in-england-are-losing-their-thinking-sk.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tragedy-strikes-ugandan-nursery-four-children-killed-in-stabbing-attack",
     title: "Tragedy Strikes Ugandan Nursery: Four Children Killed in Stabbing Attack",
     summary:
