@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-medical-education-shifts-nutrition-now-central-to-training",
+    title: "Global Medical Education Shifts: Nutrition Now Central to Training",
+    summary:
+      "A key medical accreditation agency has revised its standards, making nutrition a required component of medical school curricula following advocacy for educational reform. This move reflects a growing global recognition of nutrition's critical role in preventative health and comprehensive patient care.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-medical-education-shifts-nutrition-now-central-to-training.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-teacher-safety-crisis-revealed-by-15m-uk-payouts",
     title: "Global Call: Teacher Safety Crisis Revealed by £15M UK Payouts",
     summary:
