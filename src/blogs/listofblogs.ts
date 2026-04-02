@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-teacher-safety-crisis-revealed-by-15m-uk-payouts",
+    title: "Global Call: Teacher Safety Crisis Revealed by £15M UK Payouts",
+    summary:
+      "A UK teachers' union revealed £15 million in compensation for staff injuries, including rat-related illness and pupil assaults. These incidents underscore the urgent global need for improved health and safety standards in educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-call-teacher-safety-crisis-revealed-by-15m-uk-payouts.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-quality-health-information-for-all-is-a-fundamental-determinant",
     title: "Global Health and Education Watch: Quality health information for all is a fundamental determinant",
     summary:
