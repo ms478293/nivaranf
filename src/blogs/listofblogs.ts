@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-cdc-staffing-crisis-halts-critical-disease-testing",
+    title: "Global Health Alert: CDC Staffing Crisis Halts Critical Disease Testing",
+    summary:
+      "The US Centers for Disease Control and Prevention has temporarily suspended diagnostic testing for numerous infectious diseases due to severe staffing shortages. This development highlights critical weaknesses in public health infrastructure with potential global implications for disease surveillance and response.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-health-alert-cdc-staffing-crisis-halts-critical-disease-testing.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-pupils-in-england-are-losing-their-thinking-skills-because",
     title: "Global Health and Education Watch: Pupils in England are losing their thinking skills because",
     summary:
