@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-countries-progress-negotiations-in-support-of-who-pandemic-agreement-2",
+    title: "Global Health and Education Watch: Countries progress negotiations in support of WHO Pandemic Agreement",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-health-and-education-watch-countries-progress-negotiations-in-support-of-.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tiger-woods-prioritizes-health-declining-ryder-cup-captaincy",
     title: "Tiger Woods Prioritizes Health, Declining Ryder Cup Captaincy",
     summary:
