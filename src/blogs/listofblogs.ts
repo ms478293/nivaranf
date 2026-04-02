@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tragedy-strikes-ugandan-nursery-four-children-killed-in-stabbing-attack",
+    title: "Tragedy Strikes Ugandan Nursery: Four Children Killed in Stabbing Attack",
+    summary:
+      "Four young children were tragically killed in a stabbing attack at a nursery school in Uganda's capital, Kampala. Police have a suspect in custody, but the motive behind the horrific incident remains unknown, plunging the community into grief.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-tragedy-strikes-ugandan-nursery-four-children-killed-in-stabbing-attack.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-medical-education-shifts-nutrition-now-central-to-training",
     title: "Global Medical Education Shifts: Nutrition Now Central to Training",
     summary:
