@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "teacher-misconduct-allegations-spark-global-special-needs-safeguarding-debate",
+    title: "Teacher Misconduct Allegations Spark Global Special Needs Safeguarding Debate",
+    summary:
+      "Allegations against a special needs teacher in Boston have ignited a global discussion on student safeguarding. The incident underscores the critical importance of robust protective protocols and ethical conduct in educational settings for vulnerable children.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-teacher-misconduct-allegations-spark-global-special-needs-safeguarding-debate.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-launches-urgent-global-appeal-for-health-in-crisis-zones",
     title: "WHO Launches Urgent Global Appeal for Health in Crisis Zones",
     summary:
