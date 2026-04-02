@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-imperative-safeguarding-drinking-water-from-microplastics-and-pharmaceuticals",
+    title: "Global Imperative: Safeguarding Drinking Water from Microplastics and Pharmaceuticals",
+    summary:
+      "Nations globally are intensifying efforts to combat the widespread presence of microplastics and pharmaceutical residues in drinking water supplies. This critical initiative underscores the urgent need for international collaboration and advanced treatment solutions to protect public health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-02-global-imperative-safeguarding-drinking-water-from-microplastics-and-pharmaceuti.jpg",
+    date: "2026-04-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-threatens-100-tariff-on-us-drug-makers-that",
     title: "Global Health and Education Watch: Trump threatens 100% tariff on US drug makers that",
     summary:
