@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-health-alert-the-troubling-rise-of-teenage-caffeine-pouches",
+    title: "Global Youth Health Alert: The Troubling Rise of Teenage Caffeine Pouches",
+    summary:
+      "A global health concern is emerging as social media influencers promote caffeine pouches to adolescents, raising alarms among experts. These products pose significant health risks, including cardiovascular issues and addiction, for young users worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-youth-health-alert-the-troubling-rise-of-teenage-caffeine-pouches.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-the-us-and-israel-are-waging-war-on",
     title: "Global Health and Education Watch: How the US and Israel are waging war on",
     summary:
