@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-texas-voucher-program-incites-fight-over-funding-islamic-schools",
+    title: "Global Health and Education Watch: Texas Voucher Program Incites Fight Over Funding Islamic Schools",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-health-and-education-watch-texas-voucher-program-incites-fight-over-fundi.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-targeting-civilian-infrastructure-risks-catastrophic-humanitarian-crisis",
     title: "Global Alarm: Targeting Civilian Infrastructure Risks Catastrophic Humanitarian Crisis",
     summary:
