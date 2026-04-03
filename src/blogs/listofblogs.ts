@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalating-iran-conflict-devastates-health-infrastructure-threatening-global-well-being",
+    title: "Escalating Iran Conflict Devastates Health Infrastructure, Threatening Global Well-being",
+    summary:
+      "Recent military actions in Iran have resulted in widespread infrastructure damage, critically impacting the nation's public health capabilities. The destruction of a leading health institution raises alarms about a looming humanitarian crisis and severe global health implications.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-escalating-iran-conflict-devastates-health-infrastructure-threatening-global-wel.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tehran-hospital-a-beacon-of-hope-amidst-conflict-for-children",
     title: "Tehran Hospital: A Beacon of Hope Amidst Conflict for Children",
     summary:
