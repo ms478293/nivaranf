@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-screen-time-guidance-does-not-go-far-enough",
+    title: "Global Health and Education Watch: Screen time guidance does not go far enough |",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-health-and-education-watch-screen-time-guidance-does-not-go-far-enough.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-labour-is-letting-down-britain-s-children-says-national-education",
     title: "Global Health and Education Watch: Labour is letting down Britain’s children, says National Education",
     summary:
