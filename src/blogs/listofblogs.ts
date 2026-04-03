@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-s-health-crisis-doctors-watch-lives-slip-away-amidst-shortages",
+    title: "Sudan's Health Crisis: Doctors Watch Lives Slip Away Amidst Shortages",
+    summary:
+      "Violence in Sudan's South Kordofan state has crippled healthcare, leaving doctors in maternity hospitals with critical shortages and overwhelming patient numbers. Medical professionals are forced to make agonizing decisions as lives are lost due to a lack of essential supplies.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-sudan-s-health-crisis-doctors-watch-lives-slip-away-amidst-shortages.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-university-racing-fuels-future-engineering-talent",
     title: "Global University Racing Fuels Future Engineering Talent",
     summary:
