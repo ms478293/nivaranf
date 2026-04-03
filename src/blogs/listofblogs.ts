@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-crisis-retaining-teachers-through-enhanced-parental-leave",
+    title: "Global Education Crisis: Retaining Teachers Through Enhanced Parental Leave",
+    summary:
+      "A union in the UK is advocating for 26 weeks of fully paid maternity leave for teachers, citing an exodus of women from classrooms due to insufficient support. This issue reflects a broader global challenge where inadequate parental leave policies contribute to teacher attrition, impacting educational quality and gender equity.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-education-crisis-retaining-teachers-through-enhanced-parental-leave.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "academic-freedom-under-scrutiny-us-university-fires-professor-over-iran-war-criticism",
     title: "Academic Freedom Under Scrutiny: US University Fires Professor Over Iran War Criticism",
     summary:
