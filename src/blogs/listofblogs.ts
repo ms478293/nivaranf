@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-university-racing-fuels-future-engineering-talent",
+    title: "Global University Racing Fuels Future Engineering Talent",
+    summary:
+      "University engineering competitions like Formula Student are vital for global education, transforming theoretical knowledge into practical innovation. These programs nurture future STEM talent, equipping students with essential skills for advanced industries worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-university-racing-fuels-future-engineering-talent.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-screen-time-guidance-does-not-go-far-enough",
     title: "Global Health and Education Watch: Screen time guidance does not go far enough |",
     summary:
