@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "academic-freedom-under-scrutiny-us-university-fires-professor-over-iran-war-criticism",
+    title: "Academic Freedom Under Scrutiny: US University Fires Professor Over Iran War Criticism",
+    summary:
+      "A University of Washington professor was removed from his leadership role after using institutional communications to critique US-Israeli actions regarding Iran. This incident is part of a growing trend where academics face severe professional repercussions for voicing contentious political opinions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-academic-freedom-under-scrutiny-us-university-fires-professor-over-iran-war-crit.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-health-alert-the-troubling-rise-of-teenage-caffeine-pouches",
     title: "Global Youth Health Alert: The Troubling Rise of Teenage Caffeine Pouches",
     summary:
