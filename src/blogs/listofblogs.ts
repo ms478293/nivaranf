@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "youth-health-crisis-insecure-jobs-drive-global-economic-inactivity",
+    title: "Youth Health Crisis: Insecure Jobs Drive Global Economic Inactivity",
+    summary:
+      "New research highlights a concerning global trend where young individuals in low-paid, insecure jobs are increasingly forced to leave employment due to health issues. This phenomenon contributes significantly to economic inactivity, posing substantial challenges for both individual well-being and national economies worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-youth-health-crisis-insecure-jobs-drive-global-economic-inactivity.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-crisis-retaining-teachers-through-enhanced-parental-leave",
     title: "Global Education Crisis: Retaining Teachers Through Enhanced Parental Leave",
     summary:
