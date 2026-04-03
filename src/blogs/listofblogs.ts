@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-masculinity-crisis-is-brewing-in-uk-schools-union",
+    title: "Global Health and Education Watch: A ‘masculinity crisis’ is brewing in UK schools, union",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-health-and-education-watch-a-masculinity-crisis-is-brewing-in-uk-schools-.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-h-h-s-takes-a-first-step-toward-restoring-vaccine-advisory",
     title: "Global Health and Education Watch: H.H.S. Takes a First Step Toward Restoring Vaccine Advisory",
     summary:
