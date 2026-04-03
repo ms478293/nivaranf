@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-targeting-civilian-infrastructure-risks-catastrophic-humanitarian-crisis",
+    title: "Global Alarm: Targeting Civilian Infrastructure Risks Catastrophic Humanitarian Crisis",
+    summary:
+      "International law experts are deeply concerned by threats to target civilian infrastructure, including schools and health centers. Such actions could constitute serious war crimes, devastating essential services and causing immense human suffering.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-alarm-targeting-civilian-infrastructure-risks-catastrophic-humanitarian-c.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-s-health-crisis-doctors-watch-lives-slip-away-amidst-shortages",
     title: "Sudan's Health Crisis: Doctors Watch Lives Slip Away Amidst Shortages",
     summary:
