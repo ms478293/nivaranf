@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-nhs-rehabilitation-care-staff-shortage-fails-stroke-patients-say",
+    title: "Global Health and Education Watch: NHS rehabilitation care staff shortage fails stroke patients, say",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-03-global-health-and-education-watch-nhs-rehabilitation-care-staff-shortage-fails-s.jpg",
+    date: "2026-04-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalating-iran-conflict-devastates-health-infrastructure-threatening-global-well-being",
     title: "Escalating Iran Conflict Devastates Health Infrastructure, Threatening Global Well-being",
     summary:
