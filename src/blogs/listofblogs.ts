@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-alarms-over-escalating-attacks-on-iranian-healthcare-facilities",
+    title: "WHO Alarms Over Escalating Attacks on Iranian Healthcare Facilities",
+    summary:
+      "The World Health Organization has raised serious alarms over more than 20 reported attacks on healthcare facilities in Iran since March 1. These incidents highlight a grave humanitarian crisis and underscore the urgent need for protection of medical services.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-who-alarms-over-escalating-attacks-on-iranian-healthcare-facilities.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-masculinity-crisis-is-brewing-in-uk-schools-union",
     title: "Global Health and Education Watch: A ‘masculinity crisis’ is brewing in UK schools, union",
     summary:
