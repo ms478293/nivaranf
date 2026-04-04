@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-medicines-watchdog-to-investigate-uk-peptide-clinics-over-health",
+    title: "Global Health and Education Watch: Medicines watchdog to investigate UK peptide clinics over health",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-health-and-education-watch-medicines-watchdog-to-investigate-uk-peptide-c.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-feels-like-history-is-being-made-will-young-hungarian",
     title: "Global Health and Education Watch: ‘Feels like history is being made’: will young Hungarian",
     summary:
