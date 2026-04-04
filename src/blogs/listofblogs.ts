@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tehran-psychiatric-hospital-unusable-after-strike-deepening-humanitarian-crisis",
+    title: "Tehran Psychiatric Hospital Unusable After Strike, Deepening Humanitarian Crisis",
+    summary:
+      "A major psychiatric hospital in Tehran has been incapacitated following a recent US-Israeli strike, according to its chief. This incident critically disrupts essential mental health services for a vulnerable population already facing immense challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-tehran-psychiatric-hospital-unusable-after-strike-deepening-humanitarian-crisis.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-meet-the-pupils-teaching-speeders-a-lesson-in-kids",
     title: "Global Health and Education Watch: Meet the pupils teaching speeders a lesson in Kids",
     summary:
