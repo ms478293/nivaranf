@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-authorities-monitor-new-omicron-sub-variant-ba-3-2",
+    title: "Global Health Authorities Monitor New Omicron Sub-variant BA.3.2",
+    summary:
+      "A new Omicron sub-variant, BA.3.2, featuring numerous spike mutations, has been detected, prompting global health experts to call for serious attention rather than widespread alarm. While its severity is not yet confirmed, its emergence underscores the critical importance of ongoing international genomic surveillance and public health preparedness.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-health-authorities-monitor-new-omicron-sub-variant-ba-3-2.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-schools-face-masculinity-crisis-amid-rising-misogyny-concerns",
     title: "Global Schools Face 'Masculinity Crisis' Amid Rising Misogyny Concerns",
     summary:
