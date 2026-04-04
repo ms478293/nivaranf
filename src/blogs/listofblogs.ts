@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-schools-face-masculinity-crisis-amid-rising-misogyny-concerns",
+    title: "Global Schools Face 'Masculinity Crisis' Amid Rising Misogyny Concerns",
+    summary:
+      "A global teachers' union has issued a stark warning about a brewing 'masculinity crisis' in schools, driven by a rise in misogynistic attitudes among male students. This phenomenon poses significant challenges to educational systems and societal well-being, demanding urgent, comprehensive interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-schools-face-masculinity-crisis-amid-rising-misogyny-concerns.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "beyond-the-icu-the-lingering-global-health-crisis-of-post-intensive-care-syndrome",
     title: "Beyond the ICU: The Lingering Global Health Crisis of Post-Intensive Care Syndrome",
     summary:
