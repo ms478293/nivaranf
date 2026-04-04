@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "israeli-strike-damages-tyre-hospital-injuring-11-global-health-concerns-mount",
+    title: "Israeli Strike Damages Tyre Hospital, Injuring 11: Global Health Concerns Mount",
+    summary:
+      "An Israeli strike near the Lebanese Italian Hospital in Tyre injured at least 11 people and caused significant damage to the facility. The incident highlights mounting global concerns over the protection of healthcare in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-israeli-strike-damages-tyre-hospital-injuring-11-global-health-concerns-mount.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "harvard-s-grade-cap-proposal-ignites-global-debate-on-academic-standards",
     title: "Harvard's Grade Cap Proposal Ignites Global Debate on Academic Standards",
     summary:
