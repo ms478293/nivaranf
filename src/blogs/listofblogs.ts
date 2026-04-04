@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-imperiled-by-media-s-governance-misreporting",
+    title: "Global Health and Education Imperiled by Media's Governance Misreporting",
+    summary:
+      "A recent study in Wales reveals how media misrepresentation of devolved governance issues confuses the public, a problem mirrored globally. This widespread misinformation critically impedes informed decision-making regarding essential health and education services worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-health-and-education-imperiled-by-media-s-governance-misreporting.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-global-commitment-on-display-as-countries-negotiate-key-annex",
     title: "Global Health and Education Watch: Global commitment on display as countries negotiate key annex",
     summary:
