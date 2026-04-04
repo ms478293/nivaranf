@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "harvard-s-grade-cap-proposal-ignites-global-debate-on-academic-standards",
+    title: "Harvard's Grade Cap Proposal Ignites Global Debate on Academic Standards",
+    summary:
+      "Harvard University's faculty is poised to vote on a contentious proposal aimed at curbing grade inflation by capping top marks. This move has ignited a broader international conversation about academic rigor and the future of higher education assessment.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-harvard-s-grade-cap-proposal-ignites-global-debate-on-academic-standards.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-authorities-monitor-new-omicron-sub-variant-ba-3-2",
     title: "Global Health Authorities Monitor New Omicron Sub-variant BA.3.2",
     summary:
