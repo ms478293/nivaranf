@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-peptide-craze-hype-health-claims-and-regulatory-scrutiny",
+    title: "Global Peptide Craze: Hype, Health Claims, and Regulatory Scrutiny",
+    summary:
+      "Peptides are gaining global traction for purported benefits like anti-aging and weight loss, driven by social media influence. Health authorities are now scrutinizing these claims and the safety of unregulated products, urging caution.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-peptide-craze-hype-health-claims-and-regulatory-scrutiny.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-conflict-deepens-health-crisis-across-middle-east-who-says-2",
     title: "Global Health and Education Watch: Conflict deepens health crisis across Middle East, WHO says",
     summary:
