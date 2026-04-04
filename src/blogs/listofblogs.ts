@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iran-says-us-israel-belong-in-stone-age-after",
+    title: "Global Health and Education Watch: Iran says US, Israel belong in Stone Age after",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-global-health-and-education-watch-iran-says-us-israel-belong-in-stone-age-after.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tehran-psychiatric-hospital-unusable-after-strike-deepening-humanitarian-crisis",
     title: "Tehran Psychiatric Hospital Unusable After Strike, Deepening Humanitarian Crisis",
     summary:
