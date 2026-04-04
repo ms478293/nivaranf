@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "beyond-the-icu-the-lingering-global-health-crisis-of-post-intensive-care-syndrome",
+    title: "Beyond the ICU: The Lingering Global Health Crisis of Post-Intensive Care Syndrome",
+    summary:
+      "Many patients worldwide face significant physical, cognitive, and mental health struggles long after leaving intensive care. This global phenomenon, known as Post-Intensive Care Syndrome, demands greater awareness and integrated support systems for survivors.",
+    thumbnailImage: "/images/global-news/2026/2026-04-04-beyond-the-icu-the-lingering-global-health-crisis-of-post-intensive-care-syndrom.jpg",
+    date: "2026-04-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-imperiled-by-media-s-governance-misreporting",
     title: "Global Health and Education Imperiled by Media's Governance Misreporting",
     summary:
