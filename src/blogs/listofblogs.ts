@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "telehealth-giant-hims-hers-partners-with-novo-nordisk-after-weight-loss-drug-dispute",
+    title: "Telehealth Giant Hims & Hers Partners with Novo Nordisk After Weight-Loss Drug Dispute",
+    summary:
+      "US telehealth provider Hims & Hers has reached a significant agreement with Danish pharmaceutical giant Novo Nordisk regarding weight-loss medications. This deal marks a resolution to a prior dispute over compounded drug formulations, potentially expanding regulated access to effective obesity treatments worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-telehealth-giant-hims-hers-partners-with-novo-nordisk-after-weight-loss-drug-dis.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-digital-shift-re-evaluating-our-relationship-with-social-media",
     title: "Global Digital Shift: Re-evaluating Our Relationship with Social Media",
     summary:
