@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-systems-under-strain-the-peril-of-service-disruptions",
+    title: "Global Healthcare Systems Under Strain: The Peril of Service Disruptions",
+    summary:
+      "Healthcare systems globally face immense pressure as medical professionals advocate for improved conditions, leading to service disruptions. Patients are consistently urged not to defer necessary medical attention despite these challenges, highlighting a universal dilemma.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-healthcare-systems-under-strain-the-peril-of-service-disruptions.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "eli-lilly-acquires-centessa-bolstering-narcolepsy-treatment-pipeline-globally",
     title: "Eli Lilly Acquires Centessa, Bolstering Narcolepsy Treatment Pipeline Globally",
     summary:
