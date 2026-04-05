@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-digital-shift-re-evaluating-our-relationship-with-social-media",
+    title: "Global Digital Shift: Re-evaluating Our Relationship with Social Media",
+    summary:
+      "A global re-evaluation of social media engagement is underway, with many users opting for passive consumption or disengagement amidst growing concerns about mental well-being and the permanence of digital footprints. This shift reflects a broader societal introspection on technology's role in daily life and its impact on personal health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-digital-shift-re-evaluating-our-relationship-with-social-media.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-denmark-becomes-first-country-in-the-european-union-to",
     title: "Global Health and Education Watch: Denmark becomes first country in the European Union to",
     summary:
