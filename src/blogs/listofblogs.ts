@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-nhs-england-to-offer-weight-loss-drugs-to-1-2m-people",
+    title: "Global Health and Education Watch: NHS England to offer weight-loss drugs to 1.2m people",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-health-and-education-watch-nhs-england-to-offer-weight-loss-drugs-to-1-2m.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-less-meat-more-plants-top-us-heart-body-s-diet",
     title: "Global Health and Education Watch: Less meat, more plants: top US heart body’s diet",
     summary:
