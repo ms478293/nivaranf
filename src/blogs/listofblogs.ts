@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-i-always-considered-social-media-evil-big-tobacco-whistleblower",
+    title: "Global Health and Education Watch: ‘I always considered social media evil’: big tobacco whistleblower",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-health-and-education-watch-i-always-considered-social-media-evil-big-toba.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-satellite-mirror-plans-could-disrupt-sleep-and-ecosystems-worldwide",
     title: "Global Health and Education Watch: Satellite mirror plans could disrupt sleep and ecosystems worldwide",
     summary:
