@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "universal-child-care-global-equity-debate-ignites-policy-questions",
+    title: "Universal Child Care: Global Equity Debate Ignites Policy Questions",
+    summary:
+      "A new publicly funded preschool in an affluent urban center has sparked a global debate on the equitable distribution of universal child care resources. This development highlights the complex challenge of balancing universal access with addressing the most pressing needs in diverse socio-economic contexts worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-universal-child-care-global-equity-debate-ignites-policy-questions.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-co-founders-behind-pioneering-covid-vaccine-to-step-down-from",
     title: "Global Health and Education Watch: Co-founders behind pioneering Covid vaccine to step down from",
     summary:
