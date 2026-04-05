@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-strike-highlights-global-health-crisis-in-conflict-zones",
+    title: "Gaza Strike Highlights Global Health Crisis in Conflict Zones",
+    summary:
+      "An Israeli air strike in Gaza City has led to multiple severe injuries, further exacerbating the dire humanitarian and public health crisis in the besieged territory. This incident highlights the global imperative to protect civilians and ensure access to healthcare in conflict zones worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-gaza-strike-highlights-global-health-crisis-in-conflict-zones.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-push-needed-half-of-cataract-blindness-cases-lack-access-to-sight-restoring-surgery",
     title: "Global Push Needed: Half of Cataract Blindness Cases Lack Access to Sight-Restoring Surgery",
     summary:
