@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "eli-lilly-acquires-centessa-bolstering-narcolepsy-treatment-pipeline-globally",
+    title: "Eli Lilly Acquires Centessa, Bolstering Narcolepsy Treatment Pipeline Globally",
+    summary:
+      "Eli Lilly has announced its intention to acquire Centessa Pharmaceuticals for $6.3 billion, aiming to advance a promising narcolepsy drug. This strategic move highlights the pharmaceutical industry's focus on addressing unmet needs in neurological health worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-eli-lilly-acquires-centessa-bolstering-narcolepsy-treatment-pipeline-globally.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-school-will-mean-15-hours-travelling-say-mums",
     title: "Global Health and Education Watch: New school will mean 15 hours travelling, say mums",
     summary:
