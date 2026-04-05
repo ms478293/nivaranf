@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-denmark-becomes-first-country-in-the-european-union-to",
+    title: "Global Health and Education Watch: Denmark becomes first country in the European Union to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-health-and-education-watch-denmark-becomes-first-country-in-the-european-.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "universal-child-care-global-equity-debate-ignites-policy-questions",
     title: "Universal Child Care: Global Equity Debate Ignites Policy Questions",
     summary:
