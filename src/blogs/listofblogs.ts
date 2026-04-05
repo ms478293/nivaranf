@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-strengthening-child-safeguards-in-education-after-instructor-s-charges",
+    title: "Global Call: Strengthening Child Safeguards in Education After Instructor's Charges",
+    summary:
+      "Allegations against a preschool instructor in the United States, accused of abusing multiple children over an extended period, have sparked urgent global discussions on child safety in educational environments. This case underscores the critical need for comprehensive international strategies to prevent such abuses and protect vulnerable learners worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-call-strengthening-child-safeguards-in-education-after-instructor-s-charg.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "telehealth-giant-hims-hers-partners-with-novo-nordisk-after-weight-loss-drug-dispute",
     title: "Telehealth Giant Hims & Hers Partners with Novo Nordisk After Weight-Loss Drug Dispute",
     summary:
