@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "measles-surge-claims-lives-of-dozens-of-children-in-bangladesh",
+    title: "Measles Surge Claims Lives of Dozens of Children in Bangladesh",
+    summary:
+      "A suspected measles outbreak in Bangladesh has tragically claimed the lives of nearly 100 children, with thousands more exhibiting symptoms. This severe health crisis underscores the critical need for robust immunization programs and resilient health infrastructure worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-measles-surge-claims-lives-of-dozens-of-children-in-bangladesh.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-always-considered-social-media-evil-big-tobacco-whistleblower",
     title: "Global Health and Education Watch: ‘I always considered social media evil’: big tobacco whistleblower",
     summary:
