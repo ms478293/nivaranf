@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-us-health-officials-appear-to-shy-away-from-anti-vaccine",
+    title: "Global Health and Education Watch: US health officials appear to shy away from anti-vaccine",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-health-and-education-watch-us-health-officials-appear-to-shy-away-from-an.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "measles-surge-claims-lives-of-dozens-of-children-in-bangladesh",
     title: "Measles Surge Claims Lives of Dozens of Children in Bangladesh",
     summary:
