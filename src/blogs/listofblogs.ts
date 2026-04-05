@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-push-needed-half-of-cataract-blindness-cases-lack-access-to-sight-restoring-surgery",
+    title: "Global Push Needed: Half of Cataract Blindness Cases Lack Access to Sight-Restoring Surgery",
+    summary:
+      "Millions worldwide face preventable blindness due to cataracts, yet half lack access to simple, sight-restoring surgery. The World Health Organization is calling for urgent global action to strengthen health systems and expand access to this life-changing intervention.",
+    thumbnailImage: "/images/global-news/2026/2026-04-05-global-push-needed-half-of-cataract-blindness-cases-lack-access-to-sight-restori.jpg",
+    date: "2026-04-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hundreds-of-gps-tell-bbc-they-have-never-refused",
     title: "Global Health and Education Watch: Hundreds of GPs tell BBC they have never refused",
     summary:
