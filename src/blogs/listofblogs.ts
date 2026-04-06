@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-medicare-payment-boost-sparks-global-healthcare-funding-debate",
+    title: "US Medicare Payment Boost Sparks Global Healthcare Funding Debate",
+    summary:
+      "US health insurer shares surged following the Trump administration's decision to boost Medicare Advantage payments, impacting major players like UnitedHealth and Humana. This policy shift highlights the complex interplay of government funding, private sector involvement, and healthcare access in a global context.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-us-medicare-payment-boost-sparks-global-healthcare-funding-debate.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-administration-pulls-out-of-civil-rights-settlements-backing",
     title: "Global Health and Education Watch: Trump Administration Pulls Out of Civil Rights Settlements Backing",
     summary:
