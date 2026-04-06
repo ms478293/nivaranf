@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-international-student-decline-squeezes-colleges-reshapes-global-education",
+    title: "US International Student Decline Squeezes Colleges, Reshapes Global Education",
+    summary:
+      "A significant decline in international student enrollment in the United States, driven by Trump administration policies, is creating widespread financial strain for colleges. This shift is also profoundly reshaping global education dynamics and talent mobility worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-us-international-student-decline-squeezes-colleges-reshapes-global-education.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-the-us-needs-a-unified-mission-based-strategy-for",
     title: "Global Health and Education Watch: Why the US needs a unified, mission-based strategy for",
     summary:
