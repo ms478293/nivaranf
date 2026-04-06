@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-accessibility-safeguarding-essential-disability-support-programs",
+    title: "Global Accessibility: Safeguarding Essential Disability Support Programs",
+    summary:
+      "Across the globe, programs designed to enhance accessibility for individuals with disabilities are expanding, highlighting a universal need for support. However, this growth also brings challenges related to misuse and fraud, threatening the efficacy and fairness of these crucial initiatives.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-global-accessibility-safeguarding-essential-disability-support-programs.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-systems-under-strain-the-peril-of-service-disruptions",
     title: "Global Healthcare Systems Under Strain: The Peril of Service Disruptions",
     summary:
