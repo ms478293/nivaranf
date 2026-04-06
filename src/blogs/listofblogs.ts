@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "china-s-quiet-grief-an-education-influencer-s-death-sparks-global-debate-on-academic-pressure",
+    title: "China's Quiet Grief: An Education Influencer's Death Sparks Global Debate on Academic Pressure",
+    summary:
+      "The death of Chinese education influencer Zhang Xuefeng triggered a national outpouring of grief, reflecting deep public frustration with the country's demanding higher education system. This quiet revolt highlights global challenges in academic pressure, career pathways, and student well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-china-s-quiet-grief-an-education-influencer-s-death-sparks-global-debate-on-acad.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-accessibility-safeguarding-essential-disability-support-programs",
     title: "Global Accessibility: Safeguarding Essential Disability Support Programs",
     summary:
