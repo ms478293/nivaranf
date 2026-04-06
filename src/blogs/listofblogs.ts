@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "arizona-hiker-s-ordeal-spotlights-global-wilderness-health-risks",
+    title: "Arizona Hiker's Ordeal Spotlights Global Wilderness Health Risks",
+    summary:
+      "A hiker in Arizona was hospitalized in critical condition after sustaining over a hundred bee stings, requiring a complex helicopter rescue operation. This incident highlights the global importance of understanding wilderness risks and the critical role of rapid emergency response in remote environments.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-arizona-hiker-s-ordeal-spotlights-global-wilderness-health-risks.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-public-health-takes-center-stage-in-us-midterm-campaigns",
     title: "Global Health and Education Watch: Public health takes center stage in US midterm campaigns",
     summary:
