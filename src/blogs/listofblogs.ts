@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-administration-pulls-out-of-civil-rights-settlements-backing",
+    title: "Global Health and Education Watch: Trump Administration Pulls Out of Civil Rights Settlements Backing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-global-health-and-education-watch-trump-administration-pulls-out-of-civil-rights.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israeli-air-strike-kills-at-least-10-palestinians-near",
     title: "Global Health and Education Watch: Israeli air strike kills at least 10 Palestinians near",
     summary:
