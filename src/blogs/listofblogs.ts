@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-why-the-us-needs-a-unified-mission-based-strategy-for",
+    title: "Global Health and Education Watch: Why the US needs a unified, mission-based strategy for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-global-health-and-education-watch-why-the-us-needs-a-unified-mission-based-strat.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iran-s-top-university-bombed-as-us-israel-intensify-attacks",
     title: "Global Health and Education Watch: Iran’s top university bombed as US, Israel intensify attacks",
     summary:
