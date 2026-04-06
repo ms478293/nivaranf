@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "mpox-knowledge-and-vaccine-attitudes-in-lebanon-s-second-wave-revealed",
+    title: "Mpox Knowledge and Vaccine Attitudes in Lebanon's Second Wave Revealed",
+    summary:
+      "A recent study from Lebanon sheds light on public knowledge and attitudes towards mpox during its second wave. The findings underscore the importance of targeted public health campaigns to address misinformation and promote vaccination globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-mpox-knowledge-and-vaccine-attitudes-in-lebanon-s-second-wave-revealed.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-joint-statement-on-the-renewed-quadripartite-memorandum-of-understanding-2",
     title: "Global Health and Education Watch: Joint statement on the renewed Quadripartite Memorandum of Understanding",
     summary:
