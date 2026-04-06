@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-air-strike-kills-at-least-10-palestinians-near",
+    title: "Global Health and Education Watch: Israeli air strike kills at least 10 Palestinians near",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-global-health-and-education-watch-israeli-air-strike-kills-at-least-10-palestini.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sleep-exercise-hydrate-do-we-really-need-to-2",
     title: "Global Health and Education Watch: Sleep, exercise, hydrate - do we really need to",
     summary:
