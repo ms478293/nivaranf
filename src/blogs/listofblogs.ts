@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "un80-reform-advances-un-women-unfpa-merger-explored-for-enhanced-global-impact",
+    title: "UN80 Reform Advances: UN Women, UNFPA Merger Explored for Enhanced Global Impact",
+    summary:
+      "The UN80 reform initiative is now in its 'delivery phase,' with Member States assessing progress on pivotal proposals. Discussions include a potential merger of UN Women and UNFPA, alongside advancements in technology and data strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-un80-reform-advances-un-women-unfpa-merger-explored-for-enhanced-global-impact.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-calls-for-action-together-for-health-stand-with",
     title: "Global Health and Education Watch: WHO calls for action: “Together for health. Stand with",
     summary:
