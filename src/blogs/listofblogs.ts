@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "embracing-uncertainty-a-new-paradigm-for-global-medical-trust",
+    title: "Embracing Uncertainty: A New Paradigm for Global Medical Trust",
+    summary:
+      "The traditional image of an infallible physician is evolving globally as doctors find strength in vulnerability. Admitting uncertainty can enhance patient trust and lead to more compassionate, effective healthcare outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-04-06-embracing-uncertainty-a-new-paradigm-for-global-medical-trust.jpg",
+    date: "2026-04-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-international-student-decline-squeezes-colleges-reshapes-global-education",
     title: "US International Student Decline Squeezes Colleges, Reshapes Global Education",
     summary:
