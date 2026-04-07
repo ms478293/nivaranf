@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-pupils-back-to-school-in-holidays-to-deal-with",
+    title: "Global Health and Education Watch: Pupils back to school in holidays to deal with",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-global-health-and-education-watch-pupils-back-to-school-in-holidays-to-deal-with.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-paradox-women-live-longer-yet-suffer-more-from-systemic-bias",
     title: "Global Health Paradox: Women Live Longer, Yet Suffer More from Systemic Bias",
     summary:
