@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "invisible-threat-microplastics-linked-to-global-liver-disease-risk",
+    title: "Invisible Threat: Microplastics Linked to Global Liver Disease Risk",
+    summary:
+      "Emerging scientific evidence suggests that ubiquitous microplastic and nanoplastic particles are not merely environmental pollutants but a significant, overlooked threat to global human health. These microscopic plastic fragments are increasingly implicated in the development and progression of liver diseases, posing a critical challenge to public health worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-invisible-threat-microplastics-linked-to-global-liver-disease-risk.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-bosses-can-help-ease-britain-s-sickness-crisis-says-former",
     title: "Global Health and Education Watch: Bosses can help ease Britain’s sickness crisis, says former",
     summary:
