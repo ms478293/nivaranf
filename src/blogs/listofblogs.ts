@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "schools-must-practice-emergency-responses-beyond-fire-drills",
+    title: "Schools Must Practice Emergency Responses Beyond Fire Drills",
+    summary:
+      "Schools worldwide are urged to adopt comprehensive emergency preparedness, practicing responses for various threats beyond just fire drills. This proactive approach aims to build resilience and ensure safety for students and staff in an evolving global landscape.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-schools-must-practice-emergency-responses-beyond-fire-drills.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-middle-east-crisis-live-trump-says-he-is-not",
     title: "Global Health and Education Watch: Middle East crisis live: Trump says he is ‘not",
     summary:
