@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leadership-nci-program-shapes-cancer-prevention-experts",
+    title: "Global Health Leadership: NCI Program Shapes Cancer Prevention Experts",
+    summary:
+      "The NCI Cancer Prevention Fellowship Program is successfully training a new generation of multidisciplinary public health leaders. These experts are vital for advancing global strategies against the rising incidence of cancer.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-global-health-leadership-nci-program-shapes-cancer-prevention-experts.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-us-israel-are-waging-a-war-on-iranian",
     title: "Global Health and Education Watch: How US, Israel are waging a war on Iranian",
     summary:
