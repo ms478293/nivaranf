@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "exploitation-unveiled-the-harsh-reality-for-international-students-in-the-uk",
+    title: "Exploitation Unveiled: The Harsh Reality for International Students in the UK",
+    summary:
+      "British universities' reliance on international student fees fuels a predatory recruitment ecosystem, leaving many hopefuls and their families in profound debt. This system often exposes students to exploitation, blurring lines between education and potential trafficking.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-exploitation-unveiled-the-harsh-reality-for-international-students-in-the-uk.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "schools-must-practice-emergency-responses-beyond-fire-drills",
     title: "Schools Must Practice Emergency Responses Beyond Fire Drills",
     summary:
