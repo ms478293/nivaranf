@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-bosses-can-help-ease-britain-s-sickness-crisis-says-former",
+    title: "Global Health and Education Watch: Bosses can help ease Britain’s sickness crisis, says former",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-global-health-and-education-watch-bosses-can-help-ease-britain-s-sickness-crisis.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "exploitation-unveiled-the-harsh-reality-for-international-students-in-the-uk",
     title: "Exploitation Unveiled: The Harsh Reality for International Students in the UK",
     summary:
