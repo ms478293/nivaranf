@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-paradox-women-live-longer-yet-suffer-more-from-systemic-bias",
+    title: "Global Health Paradox: Women Live Longer, Yet Suffer More from Systemic Bias",
+    summary:
+      "Globally, women are living longer than ever before, but systemic medical bias and frequent misdiagnosis mean they are not living better. This disparity highlights a critical need for inclusive healthcare research and gender-sensitive clinical practices worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-global-health-paradox-women-live-longer-yet-suffer-more-from-systemic-bias.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leadership-nci-program-shapes-cancer-prevention-experts",
     title: "Global Health Leadership: NCI Program Shapes Cancer Prevention Experts",
     summary:
