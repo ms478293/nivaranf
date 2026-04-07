@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-crises-converge-mediterranean-tragedy-afghan-displacement-and-one-health-imperative",
+    title: "Global Crises Converge: Mediterranean Tragedy, Afghan Displacement, and One Health Imperative",
+    summary:
+      "Over 180 individuals are feared lost in recent Mediterranean shipwrecks, while Afghanistan faces severe displacement. These crises underscore the urgency of global cooperation, as leaders convene for a 'One Health' summit to address interconnected human, animal, and environmental health threats.",
+    thumbnailImage: "/images/global-news/2026/2026-04-07-global-crises-converge-mediterranean-tragedy-afghan-displacement-and-one-health-.jpg",
+    date: "2026-04-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-teaching-in-an-american-university-feels-very-strange-right",
     title: "Global Health and Education Watch: Teaching in an American University Feels Very Strange Right",
     summary:
