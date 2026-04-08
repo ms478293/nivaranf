@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-scrutiny-schools-grapple-with-gender-identity-parental-rights-and-student-well-being",
+    title: "Global Scrutiny: Schools Grapple with Gender Identity, Parental Rights, and Student Well-being",
+    summary:
+      "A high-profile investigation into a major U.S. school district's gender disclosure policies underscores a growing global debate. This case, prompted by a tragic lawsuit, illuminates the intricate balance required between student well-being, parental rights, and school responsibilities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-08-global-scrutiny-schools-grapple-with-gender-identity-parental-rights-and-student.jpg",
+    date: "2026-04-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hospitals-coping-well-with-doctors-strike-so-far",
     title: "Global Health and Education Watch: Hospitals coping well with doctors' strike so far",
     summary:
