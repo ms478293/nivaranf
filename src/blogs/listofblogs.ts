@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "yemen-s-children-face-perilous-path-to-education-amidst-enduring-conflict",
+    title: "Yemen's Children Face Perilous Path to Education Amidst Enduring Conflict",
+    summary:
+      "A Yemeni teenager was tragically killed by a suspected sniper while en route to school in Taiz, sparking profound grief and global concern. This incident highlights the extreme dangers children face in conflict zones, where the fundamental right to education is under constant threat.",
+    thumbnailImage: "/images/global-news/2026/2026-04-08-yemen-s-children-face-perilous-path-to-education-amidst-enduring-conflict.jpg",
+    date: "2026-04-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-funding-is-vital-to-end-the-scourge-of-polio",
     title: "Global Health and Education Watch: Funding is vital to end the scourge of polio",
     summary:
