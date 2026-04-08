@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-road-safety-spotlighted-after-tragic-tourist-fatality-in-vietnam",
+    title: "Global Road Safety Spotlighted After Tragic Tourist Fatality in Vietnam",
+    summary:
+      "The recent death of a British teenager in a motorcycle accident on Vietnam's Ha Giang loop has brought renewed attention to the critical need for robust global road safety measures and accessible emergency medical services for international travelers. This tragic incident highlights the inherent risks in adventure tourism and the imperative for comprehensive pre-travel education and support systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-08-global-road-safety-spotlighted-after-tragic-tourist-fatality-in-vietnam.jpg",
+    date: "2026-04-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ban-for-teacher-who-told-pupils-about-drunken-night",
     title: "Global Health and Education Watch: Ban for teacher who told pupils about drunken night",
     summary:
