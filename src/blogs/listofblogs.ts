@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-funding-is-vital-to-end-the-scourge-of-polio",
+    title: "Global Health and Education Watch: Funding is vital to end the scourge of polio",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-08-global-health-and-education-watch-funding-is-vital-to-end-the-scourge-of-polio.jpg",
+    date: "2026-04-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-world-held-hostage-by-reliance-on-fossil-fuels-christiana",
     title: "Global Health and Education Watch: World held hostage by reliance on fossil fuels, Christiana",
     summary:
