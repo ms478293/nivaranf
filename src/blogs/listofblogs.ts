@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-systems-grapple-with-strikes-amid-holiday-disruptions",
+    title: "Global Healthcare Systems Grapple with Strikes Amid Holiday Disruptions",
+    summary:
+      "A recent six-day doctors' strike in England, strategically timed over the Easter holiday, severely impacted hospital operations and patient care, with authorities citing deliberate intent to disrupt. This incident underscores universal challenges faced by healthcare systems globally in managing worker disputes and ensuring continuity of essential services during critical periods.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-global-healthcare-systems-grapple-with-strikes-amid-holiday-disruptions.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-excessive-financial-risks-threaten-survival-of-many-english-universities",
     title: "Global Health and Education Watch: ‘Excessive’ financial risks threaten survival of many English universities",
     summary:
