@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "lebanon-s-health-system-crumbles-under-israeli-strikes-amidst-ceasefire-hopes",
+    title: "Lebanon's Health System Crumbles Under Israeli Strikes Amidst Ceasefire Hopes",
+    summary:
+      "A recent wave of Israeli airstrikes in Lebanon, following a US-Iran ceasefire announcement, has severely crippled the nation's already fragile health system. The World Health Organization reports widespread destruction and an inability to cope with the influx of casualties and disruption to essential services.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-lebanon-s-health-system-crumbles-under-israeli-strikes-amidst-ceasefire-hopes.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-withdrawal-from-who-global-health-security-at-a-crossroads",
     title: "US Withdrawal from WHO: Global Health Security at a Crossroads",
     summary:
