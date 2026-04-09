@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-study-illuminates-effective-early-childhood-weight-interventions",
+    title: "Global Study Illuminates Effective Early Childhood Weight Interventions",
+    summary:
+      "A landmark systematic review and meta-analysis reveals critical insights into effective healthy weight interventions during early childhood. The findings offer a global roadmap for public health initiatives aimed at preventing childhood obesity.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-global-study-illuminates-effective-early-childhood-weight-interventions.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "iranians-unite-in-outrage-over-strike-on-premier-university",
     title: "Iranians Unite in Outrage Over Strike on Premier University",
     summary:
