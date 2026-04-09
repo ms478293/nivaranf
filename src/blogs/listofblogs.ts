@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-study-reveals-complex-malnutrition-patterns-in-sub-saharan-african-children",
+    title: "New Study Reveals Complex Malnutrition Patterns in Sub-Saharan African Children",
+    summary:
+      "A recent study highlights the severe challenge of children in sub-Saharan Africa suffering from multiple forms of malnutrition simultaneously. This research underscores the urgent need for comprehensive, integrated interventions to address these complex health burdens effectively.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-new-study-reveals-complex-malnutrition-patterns-in-sub-saharan-african-children.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "thousands-face-loan-repayment-crisis-over-ineligible-courses",
     title: "Thousands Face Loan Repayment Crisis Over Ineligible Courses",
     summary:
