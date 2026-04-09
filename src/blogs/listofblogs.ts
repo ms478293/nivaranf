@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-thursday-briefing-what-difference-will-the-ceasefire-in-the",
+    title: "Global Health and Education Watch: Thursday briefing: ​What difference will the ceasefire in the",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-global-health-and-education-watch-thursday-briefing-what-difference-will-the-cea.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-systems-grapple-with-strikes-amid-holiday-disruptions",
     title: "Global Healthcare Systems Grapple with Strikes Amid Holiday Disruptions",
     summary:
