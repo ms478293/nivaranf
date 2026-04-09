@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "iranians-unite-in-outrage-over-strike-on-premier-university",
+    title: "Iranians Unite in Outrage Over Strike on Premier University",
+    summary:
+      "A recent strike on the Sharif University of Technology in Tehran has sparked widespread condemnation from both Iranian government officials and anti-government activists. This incident marks the latest targeting of a higher education institution in Iran, raising global concerns about the protection of academic spaces.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-iranians-unite-in-outrage-over-strike-on-premier-university.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "new-study-reveals-complex-malnutrition-patterns-in-sub-saharan-african-children",
     title: "New Study Reveals Complex Malnutrition Patterns in Sub-Saharan African Children",
     summary:
