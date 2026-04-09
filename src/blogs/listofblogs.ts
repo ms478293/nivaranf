@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "thousands-face-loan-repayment-crisis-over-ineligible-courses",
+    title: "Thousands Face Loan Repayment Crisis Over Ineligible Courses",
+    summary:
+      "Over 22,000 students worldwide are confronting demands to repay maintenance and childcare loans after their courses were retrospectively declared ineligible. This unprecedented situation highlights critical flaws in student finance administration and regulatory oversight, causing immense financial and emotional distress.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-thousands-face-loan-repayment-crisis-over-ineligible-courses.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-george-clooney-calls-donald-trump-s-a-whole-civilization-will",
     title: "Global Health and Education Watch: George Clooney calls Donald Trump’s ‘a whole civilization will",
     summary:
