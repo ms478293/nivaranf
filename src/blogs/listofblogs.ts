@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-governance-faces-scrutiny-amidst-vaccine-policy-shift",
+    title: "Global Health Governance Faces Scrutiny Amidst Vaccine Policy Shift",
+    summary:
+      "A major nation's new charter redefines its vaccine policy advisory panel, allowing the Health Secretary to reclaim policy revision. This move sparks global debate on scientific autonomy and public trust in health governance.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-global-health-governance-faces-scrutiny-amidst-vaccine-policy-shift.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hospitals-in-beirut-struggle-to-deal-with-casualties-after",
     title: "Global Health and Education Watch: Hospitals in Beirut struggle to deal with casualties after",
     summary:
