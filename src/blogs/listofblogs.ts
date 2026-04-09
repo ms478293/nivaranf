@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hospitals-in-beirut-struggle-to-deal-with-casualties-after",
+    title: "Global Health and Education Watch: Hospitals in Beirut struggle to deal with casualties after",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-global-health-and-education-watch-hospitals-in-beirut-struggle-to-deal-with-casu.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "wearable-health-tech-valuations-soar-signifying-data-s-rising-global-value",
     title: "Wearable Health Tech Valuations Soar, Signifying Data's Rising Global Value",
     summary:
