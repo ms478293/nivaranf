@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-withdrawal-from-who-global-health-security-at-a-crossroads",
+    title: "US Withdrawal from WHO: Global Health Security at a Crossroads",
+    summary:
+      "The World Health Organization has acknowledged the United States' notification of withdrawal, a decision it views as detrimental to both American and global health security. This significant development will be deliberated by the WHO Executive Board and the World Health Assembly in upcoming meetings.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-us-withdrawal-from-who-global-health-security-at-a-crossroads.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-study-illuminates-effective-early-childhood-weight-interventions",
     title: "Global Study Illuminates Effective Early Childhood Weight Interventions",
     summary:
