@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "wearable-health-tech-valuations-soar-signifying-data-s-rising-global-value",
+    title: "Wearable Health Tech Valuations Soar, Signifying Data's Rising Global Value",
+    summary:
+      "The recent multi-billion dollar valuations of health wearable companies Oura and Whoop underscore a significant global investment trend in personal health technology. This development signals a growing recognition of health data as a valuable asset, driving innovation and reshaping the future of wellness worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-09-wearable-health-tech-valuations-soar-signifying-data-s-rising-global-value.jpg",
+    date: "2026-04-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "lebanon-s-health-system-crumbles-under-israeli-strikes-amidst-ceasefire-hopes",
     title: "Lebanon's Health System Crumbles Under Israeli Strikes Amidst Ceasefire Hopes",
     summary:
