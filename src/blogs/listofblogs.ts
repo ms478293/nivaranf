@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-lebanon-airstrike-casualties-still-under-the-rubble-as-ambulances",
+    title: "Global Health and Education Watch: Lebanon airstrike casualties ‘still under the rubble’ as ambulances",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-global-health-and-education-watch-lebanon-airstrike-casualties-still-under-the-r.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-weather-tracker-cyclone-maila-batters-solomon-islands-with-115mph",
     title: "Global Health and Education Watch: Weather tracker: Cyclone Maila batters Solomon Islands with 115mph",
     summary:
