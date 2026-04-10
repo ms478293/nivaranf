@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-why-was-a-florida-woman-forced-to-have-a",
+    title: "Global Health and Education Watch: Why was a Florida woman forced to have a",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-global-health-and-education-watch-why-was-a-florida-woman-forced-to-have-a.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-woman-with-three-deadly-diseases-has-remarkable-recovery-after",
     title: "Global Health and Education Watch: Woman with three deadly diseases has ‘remarkable’ recovery after",
     summary:
