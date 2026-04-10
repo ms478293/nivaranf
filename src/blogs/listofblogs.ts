@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "isle-of-wight-study-probes-environmental-keys-to-well-being",
+    title: "Isle of Wight Study Probes Environmental Keys to Well-being",
+    summary:
+      "A new research initiative is underway on the Isle of Wight to uncover the specific environmental and lifestyle factors that contribute to residents' improved health. This study aims to provide insights into how geographical locations can foster well-being, with potential global implications for public health strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-isle-of-wight-study-probes-environmental-keys-to-well-being.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-s-crisis-deepens-millions-displaced-health-systems-collapse-in-war-s-third-year",
     title: "Sudan's Crisis Deepens: Millions Displaced, Health Systems Collapse in War's Third Year",
     summary:
