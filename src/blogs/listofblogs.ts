@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "repurposed-drug-shows-promise-in-aggressive-ovarian-cancer-survival-trial",
+    title: "Repurposed Drug Shows Promise in Aggressive Ovarian Cancer Survival Trial",
+    summary:
+      "A clinical trial indicates that Relacorilant, a drug previously used for Cushing's syndrome, could significantly extend survival for patients battling aggressive, platinum-resistant ovarian cancer. This development offers new hope for those facing limited treatment options worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-repurposed-drug-shows-promise-in-aggressive-ovarian-cancer-survival-trial.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "isle-of-wight-study-probes-environmental-keys-to-well-being",
     title: "Isle of Wight Study Probes Environmental Keys to Well-being",
     summary:
