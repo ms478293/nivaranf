@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-can-food-actually-be-medicine-these-doctors-say-yes",
+    title: "Global Health and Education Watch: Can Food Actually Be Medicine? These Doctors Say Yes",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-global-health-and-education-watch-can-food-actually-be-medicine-these-doctors-sa.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-diagnoses-rare-illness-ending-years-of-misery-and-misdiagnosis",
     title: "AI Diagnoses Rare Illness, Ending Years of Misery and Misdiagnosis",
     summary:
