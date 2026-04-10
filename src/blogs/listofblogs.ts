@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "beyond-the-brush-why-tongue-cleaning-is-crucial-for-global-oral-health",
+    title: "Beyond the Brush: Why Tongue Cleaning is Crucial for Global Oral Health",
+    summary:
+      "Despite widespread awareness of teeth brushing, experts globally emphasize the critical, often neglected, role of tongue cleaning in maintaining oral health. This simple practice is deemed as vital as brushing for preventing bad breath and contributing to overall well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-beyond-the-brush-why-tongue-cleaning-is-crucial-for-global-oral-health.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-of-ottawa-in-lockdown-amid-violent-incident",
     title: "Global Health and Education Watch: University of Ottawa in Lockdown Amid ‘Violent Incident’",
     summary:
