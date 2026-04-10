@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-diagnoses-rare-illness-ending-years-of-misery-and-misdiagnosis",
+    title: "AI Diagnoses Rare Illness, Ending Years of Misery and Misdiagnosis",
+    summary:
+      "After years of baffling symptoms and medical dismissals, a woman's rare condition was finally identified with the unexpected aid of ChatGPT. This case underscores the burgeoning role of artificial intelligence in overcoming diagnostic challenges in global health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-ai-diagnoses-rare-illness-ending-years-of-misery-and-misdiagnosis.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rafah-restrictions-shatter-dreams-gaza-s-future-doctors-face-bleak-horizon",
     title: "Rafah Restrictions Shatter Dreams: Gaza's Future Doctors Face Bleak Horizon",
     summary:
