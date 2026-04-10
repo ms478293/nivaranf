@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-s-crisis-deepens-millions-displaced-health-systems-collapse-in-war-s-third-year",
+    title: "Sudan's Crisis Deepens: Millions Displaced, Health Systems Collapse in War's Third Year",
+    summary:
+      "Sudan's devastating civil war enters its third year, leaving 14 million people displaced and a nation grappling with widespread hunger. The conflict has decimated the health system, triggering disease outbreaks and a profound humanitarian crisis.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-sudan-s-crisis-deepens-millions-displaced-health-systems-collapse-in-war-s-third.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "guinea-bissau-hepatitis-b-birth-dose-trial-under-global-scrutiny",
     title: "Guinea-Bissau Hepatitis B Birth Dose Trial Under Global Scrutiny",
     summary:
