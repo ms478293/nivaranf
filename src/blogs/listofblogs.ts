@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rafah-restrictions-shatter-dreams-gaza-s-future-doctors-face-bleak-horizon",
+    title: "Rafah Restrictions Shatter Dreams: Gaza's Future Doctors Face Bleak Horizon",
+    summary:
+      "Ongoing restrictions at the Rafah crossing have severely impacted a Palestinian medical student's academic future, jeopardizing their dream of becoming a doctor. This individual case highlights the broader, catastrophic disruption of education and healthcare pathways for countless students in conflict-affected regions worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-rafah-restrictions-shatter-dreams-gaza-s-future-doctors-face-bleak-horizon.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-was-a-florida-woman-forced-to-have-a",
     title: "Global Health and Education Watch: Why was a Florida woman forced to have a",
     summary:
