@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-transforms-mock-exam-grading-faster-feedback-reduced-bias",
+    title: "AI Transforms Mock Exam Grading: Faster Feedback, Reduced Bias",
+    summary:
+      "Artificial intelligence is being deployed in schools worldwide to mark mock exams, offering students faster, more comprehensive feedback. This innovation aims to reduce teacher bias and streamline assessment processes across educational institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-ai-transforms-mock-exam-grading-faster-feedback-reduced-bias.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-unites-who-forum-forges-stronger-scientific-collaboration",
     title: "Global Health Unites: WHO Forum Forges Stronger Scientific Collaboration",
     summary:
