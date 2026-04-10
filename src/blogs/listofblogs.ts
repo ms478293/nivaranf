@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "guinea-bissau-hepatitis-b-birth-dose-trial-under-global-scrutiny",
+    title: "Guinea-Bissau Hepatitis B Birth Dose Trial Under Global Scrutiny",
+    summary:
+      "A planned hepatitis B birth dose vaccine trial in Guinea-Bissau is drawing global attention, with the World Health Organization emphasizing rigorous ethical oversight. This research is vital for advancing strategies to combat the widespread viral infection, particularly in vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-10-guinea-bissau-hepatitis-b-birth-dose-trial-under-global-scrutiny.jpg",
+    date: "2026-04-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israel-threatens-healthcare-as-it-continues-to-attack-lebanon",
     title: "Global Health and Education Watch: Israel threatens healthcare as it continues to attack Lebanon",
     summary:
