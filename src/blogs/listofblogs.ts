@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-debate-should-teenagers-everywhere-receive-menb-vaccine",
+    title: "Global Debate: Should Teenagers Everywhere Receive MenB Vaccine?",
+    summary:
+      "A recent meningitis outbreak in the UK has reignited discussions about the global efficacy and accessibility of the MenB vaccine for teenagers. Health organizations are evaluating the public health benefits and economic implications of extending routine immunization programs to older age groups.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-debate-should-teenagers-everywhere-receive-menb-vaccine.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-s-makeshift-university-ignites-hope-amidst-unprecedented-educational-crisis",
     title: "Gaza's Makeshift University Ignites Hope Amidst Unprecedented Educational Crisis",
     summary:
