@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-health-advantage-of-optimism-a-global-perspective-on-well-being",
+    title: "The Health Advantage of Optimism: A Global Perspective on Well-being",
+    summary:
+      "Emerging global health research indicates that cultivating optimism offers significant benefits for physical and mental well-being. Prioritizing a positive mindset may prove more beneficial for health than a purely realistic or pessimistic view.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-the-health-advantage-of-optimism-a-global-perspective-on-well-being.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "covid-19-vaccination-s-impact-on-mgus-a-global-reassurance",
     title: "COVID-19 Vaccination's Impact on MGUS: A Global Reassurance",
     summary:
