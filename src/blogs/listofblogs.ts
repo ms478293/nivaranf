@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "urban-violence-echoes-a-global-health-imperative-from-new-york-s-grand-central",
+    title: "Urban Violence Echoes: A Global Health Imperative from New York's Grand Central",
+    summary:
+      "A recent violent event at New York's Grand Central station, leaving two critically injured, highlights the pervasive challenge of urban violence. This incident serves as a stark reminder of the global imperative to address public safety through robust health and social interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-urban-violence-echoes-a-global-health-imperative-from-new-york-s-grand-central.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-debate-should-teenagers-everywhere-receive-menb-vaccine",
     title: "Global Debate: Should Teenagers Everywhere Receive MenB Vaccine?",
     summary:
