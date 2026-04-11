@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarms-ring-over-surging-glyphosate-herbicide-use",
+    title: "Global Health Alarms Ring Over Surging Glyphosate Herbicide Use",
+    summary:
+      "Global use of the herbicide glyphosate has surged tenfold over three decades, sparking widespread alarm among public health advocates. This escalating reliance, initially driven by agricultural efficiency, now prompts urgent calls for regulatory intervention and sustainable alternatives.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-health-alarms-ring-over-surging-glyphosate-herbicide-use.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "urban-violence-echoes-a-global-health-imperative-from-new-york-s-grand-central",
     title: "Urban Violence Echoes: A Global Health Imperative from New York's Grand Central",
     summary:
