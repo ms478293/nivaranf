@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "university-leadership-navigates-global-campus-safety-challenges-post-incident",
+    title: "University Leadership Navigates Global Campus Safety Challenges Post-Incident",
+    summary:
+      "A major university's decision to retain its police chief following a fatal campus incident highlights ongoing global discussions about security and leadership in higher education. This move underscores the complex challenges institutions face in ensuring student safety while maintaining community trust and academic freedom.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-university-leadership-navigates-global-campus-safety-challenges-post-incident.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-under-scrutiny-academic-freedom-challenged-by-political-intervention",
     title: "Global Education Under Scrutiny: Academic Freedom Challenged by Political Intervention",
     summary:
