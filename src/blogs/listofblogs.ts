@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "artemis-ii-s-return-a-beacon-for-global-health-and-education",
+    title: "Artemis II's Return: A Beacon for Global Health and Education",
+    summary:
+      "The successful return of the Artemis II mission marks a pivotal moment for space exploration, extending its influence far beyond the cosmos. This achievement serves as a powerful catalyst for advancements in global health research and ignites a renewed passion for STEM education across continents.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-artemis-ii-s-return-a-beacon-for-global-health-and-education.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-health-advantage-of-optimism-a-global-perspective-on-well-being",
     title: "The Health Advantage of Optimism: A Global Perspective on Well-being",
     summary:
