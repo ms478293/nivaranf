@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-mourns-as-airstrikes-claim-lives-deepening-health-crisis",
+    title: "Gaza Mourns as Airstrikes Claim Lives, Deepening Health Crisis",
+    summary:
+      "Families in Gaza are grappling with profound grief following overnight Israeli air strikes that killed seven individuals. The incident further strains the region's beleaguered healthcare system and intensifies the humanitarian crisis impacting countless lives.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-gaza-mourns-as-airstrikes-claim-lives-deepening-health-crisis.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-student-loan-interest-could-rise-despite-cap-on-rates",
     title: "Global Health and Education Watch: Student loan interest could rise despite cap on rates",
     summary:
