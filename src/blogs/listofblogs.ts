@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-strikes-kill-at-least-18-people-across-southern",
+    title: "Global Health and Education Watch: Israeli strikes kill at least 18 people across southern",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-health-and-education-watch-israeli-strikes-kill-at-least-18-people-across.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-mourns-as-airstrikes-claim-lives-deepening-health-crisis",
     title: "Gaza Mourns as Airstrikes Claim Lives, Deepening Health Crisis",
     summary:
