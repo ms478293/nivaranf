@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-weekend-students-at-15-universities-in-england-told-to",
+    title: "Global Health and Education Watch: Weekend students at 15 universities in England told to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-health-and-education-watch-weekend-students-at-15-universities-in-england.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "artemis-ii-s-return-a-beacon-for-global-health-and-education",
     title: "Artemis II's Return: A Beacon for Global Health and Education",
     summary:
