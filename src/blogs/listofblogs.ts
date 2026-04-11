@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iran-war-live-us-negotiators-due-to-arrive-in",
+    title: "Global Health and Education Watch: Iran war live: US negotiators due to arrive in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-health-and-education-watch-iran-war-live-us-negotiators-due-to-arrive-in.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "beyond-the-brush-why-tongue-cleaning-is-crucial-for-global-oral-health",
     title: "Beyond the Brush: Why Tongue Cleaning is Crucial for Global Oral Health",
     summary:
