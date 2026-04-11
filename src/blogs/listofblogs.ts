@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-makeshift-university-ignites-hope-amidst-unprecedented-educational-crisis",
+    title: "Gaza's Makeshift University Ignites Hope Amidst Unprecedented Educational Crisis",
+    summary:
+      "In war-torn Gaza, a makeshift university powered by solar energy is providing a vital academic lifeline. It offers students a chance to resume their education amidst the destruction of traditional institutions and severe resource scarcity.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-gaza-s-makeshift-university-ignites-hope-amidst-unprecedented-educational-crisis.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-midwifery-under-threat-georgia-case-highlights-urgent-need-for-reform",
     title: "Global Midwifery Under Threat: Georgia Case Highlights Urgent Need for Reform",
     summary:
