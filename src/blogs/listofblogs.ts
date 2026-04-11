@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "covid-19-vaccination-s-impact-on-mgus-a-global-reassurance",
+    title: "COVID-19 Vaccination's Impact on MGUS: A Global Reassurance",
+    summary:
+      "A significant global study provides crucial insights into the safety of SARS-CoV-2 vaccination for individuals with Monoclonal Gammopathy of Undetermined Significance (MGUS). The population-based iStopMM research offers reassurance, indicating no heightened risk of MGUS progression post-vaccination.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-covid-19-vaccination-s-impact-on-mgus-a-global-reassurance.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iran-war-live-us-negotiators-due-to-arrive-in",
     title: "Global Health and Education Watch: Iran war live: US negotiators due to arrive in",
     summary:
