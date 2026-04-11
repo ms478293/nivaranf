@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-under-scrutiny-academic-freedom-challenged-by-political-intervention",
+    title: "Global Education Under Scrutiny: Academic Freedom Challenged by Political Intervention",
+    summary:
+      "Recent judicial dismissals following blocks on student deportations have sparked global concern over academic freedom and student rights. This incident highlights the increasing intersection of geopolitical tensions and educational institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-education-under-scrutiny-academic-freedom-challenged-by-political-interve.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-top-c-d-c-official-delays-report-on-covid-shot-s-effectiveness",
     title: "Global Health and Education Watch: Top C.D.C. Official Delays Report on Covid Shot’s Effectiveness",
     summary:
