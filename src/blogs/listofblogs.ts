@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "culinary-memorial-a-restaurant-s-name-echoes-gaza-s-grief-fosters-global-hope",
+    title: "Culinary Memorial: A Restaurant's Name Echoes Gaza's Grief, Fosters Global Hope",
+    summary:
+      "A restaurant near Columbia University offers Palestinian cuisine, serving as a poignant memorial for a five-year-old child killed in Gaza. It stands as a powerful symbol of cultural preservation and hope amidst global conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-culinary-memorial-a-restaurant-s-name-echoes-gaza-s-grief-fosters-global-hope.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alarms-ring-over-surging-glyphosate-herbicide-use",
     title: "Global Health Alarms Ring Over Surging Glyphosate Herbicide Use",
     summary:
