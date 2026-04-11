@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-midwifery-under-threat-georgia-case-highlights-urgent-need-for-reform",
+    title: "Global Midwifery Under Threat: Georgia Case Highlights Urgent Need for Reform",
+    summary:
+      "A new lawsuit in Georgia, USA, seeks to decriminalize midwives, highlighting a global paradox where essential maternal healthcare providers face legal and systemic barriers despite worsening health crises. This situation underscores the urgent need for international reforms to integrate and support midwifery for safer, more equitable births worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-11-global-midwifery-under-threat-georgia-case-highlights-urgent-need-for-reform.jpg",
+    date: "2026-04-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-looking-for-a-college-scholarship-on-social-media-sites",
     title: "Global Health and Education Watch: Looking for a College Scholarship on Social Media Sites?",
     summary:
