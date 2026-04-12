@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-s-school-food-overhaul-signals-global-health-imperative",
+    title: "England's School Food Overhaul Signals Global Health Imperative",
+    summary:
+      "England's first school food standards update in 13 years will ban high-calorie items to tackle childhood obesity, impacting meals from September. This move highlights a critical global challenge in child health and nutrition, prompting a reevaluation of school meal policies worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-england-s-school-food-overhaul-signals-global-health-imperative.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rodolfo-acuna-chicano-studies-pioneer-leaves-enduring-educational-legacy",
     title: "Rodolfo Acuña, Chicano Studies Pioneer, Leaves Enduring Educational Legacy",
     summary:
