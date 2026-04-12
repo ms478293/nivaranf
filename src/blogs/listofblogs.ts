@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "fatal-dog-attacks-spark-global-dialogue-on-public-safety-and-animal-welfare",
+    title: "Fatal Dog Attacks Spark Global Dialogue on Public Safety and Animal Welfare",
+    summary:
+      "Recent fatal dog attacks in the United Kingdom have brought renewed international attention to critical issues of public safety and animal welfare. These incidents highlight the global imperative for comprehensive strategies in responsible pet ownership and effective animal control.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-fatal-dog-attacks-spark-global-dialogue-on-public-safety-and-animal-welfare.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-votes-for-populist-parties-in-may-elections-will-put",
     title: "Global Health and Education Watch: Votes for populist parties in May elections will put",
     summary:
