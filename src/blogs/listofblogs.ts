@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-higher-education-governance-under-scrutiny-after-university-leader-s-dismissal",
+    title: "Global Higher Education Governance Under Scrutiny After University Leader's Dismissal",
+    summary:
+      "The recent dismissal of a leading university president has ignited a global conversation on the intricate dynamics of higher education governance. Regents assert the former leader was fully aware of performance concerns, highlighting the complexities of institutional oversight.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-higher-education-governance-under-scrutiny-after-university-leader-s-dism.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "fatal-dog-attacks-spark-global-dialogue-on-public-safety-and-animal-welfare",
     title: "Fatal Dog Attacks Spark Global Dialogue on Public Safety and Animal Welfare",
     summary:
