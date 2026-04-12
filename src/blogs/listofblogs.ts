@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cholera-vaccination-resumes-after-critical-supply-milestone",
+    title: "Global Cholera Vaccination Resumes After Critical Supply Milestone",
+    summary:
+      "Preventive cholera vaccination campaigns have resumed globally following a crucial increase in vaccine supply, enabling the first such initiatives in over three years. Mozambique leads the restart, with Bangladesh and the Democratic Republic of the Congo also slated for vital preventive efforts.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-cholera-vaccination-resumes-after-critical-supply-milestone.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-progress-in-reducing-child-deaths-slows-as-4-9-million-2",
     title: "Global Health and Education Watch: Progress in reducing child deaths slows as 4.9 million",
     summary:
