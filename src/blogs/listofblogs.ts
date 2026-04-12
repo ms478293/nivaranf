@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dr-tiktok-patients-diagnose-chronic-illnesses-with-anonymous-commenters",
+    title: "Global Health and Education Watch: Dr TikTok: patients diagnose chronic illnesses with anonymous commenters’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-health-and-education-watch-dr-tiktok-patients-diagnose-chronic-illnesses-.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-indian-music-legend-asha-bhosle-dies-aged-92",
     title: "Global Health and Education Watch: Indian music legend Asha Bhosle dies aged 92",
     summary:
