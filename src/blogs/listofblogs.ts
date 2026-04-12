@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-we-will-end-up-with-an-nhs-without-doctors",
+    title: "Global Health and Education Watch: 'We will end up with an NHS without doctors'",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-health-and-education-watch-we-will-end-up-with-an-nhs-without-doctors.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-bangladesh-launches-measles-vaccination-drive-as-child-death-toll",
     title: "Global Health and Education Watch: Bangladesh launches measles vaccination drive as child death toll",
     summary:
