@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-indian-music-legend-asha-bhosle-dies-aged-92",
+    title: "Global Health and Education Watch: Indian music legend Asha Bhosle dies aged 92",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-health-and-education-watch-indian-music-legend-asha-bhosle-dies-aged-92.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-s-new-budget-ignores-dying-americans-and-gives-away",
     title: "Global Health and Education Watch: Trump’s new budget ignores dying Americans and gives away",
     summary:
