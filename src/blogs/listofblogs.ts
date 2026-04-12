@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nursing-loan-repayment-shocks-students-face-unexpected-debt-burden",
+    title: "Nursing Loan Repayment Shocks: Students Face Unexpected Debt Burden",
+    summary:
+      "Students and recent graduates worldwide are facing profound financial distress after being informed that educational loans, previously granted for their nursing degrees, were issued in error and must now be repaid. This unexpected demand for repayment is causing significant anxiety and jeopardizing the financial stability of many aspiring healthcare professionals.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-nursing-loan-repayment-shocks-students-face-unexpected-debt-burden.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-higher-education-governance-under-scrutiny-after-university-leader-s-dismissal",
     title: "Global Higher Education Governance Under Scrutiny After University Leader's Dismissal",
     summary:
