@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-deep-fried-food-banned-in-new-plans-for-school-dinners",
+    title: "Global Health and Education Watch: Deep-fried food banned in new plans for school dinners",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-health-and-education-watch-deep-fried-food-banned-in-new-plans-for-school.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "england-s-school-food-overhaul-signals-global-health-imperative",
     title: "England's School Food Overhaul Signals Global Health Imperative",
     summary:
