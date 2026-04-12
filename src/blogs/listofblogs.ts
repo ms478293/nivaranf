@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rodolfo-acuna-chicano-studies-pioneer-leaves-enduring-educational-legacy",
+    title: "Rodolfo Acuña, Chicano Studies Pioneer, Leaves Enduring Educational Legacy",
+    summary:
+      "Rodolfo Acuña, a pivotal figure in the establishment of Chicano Studies, has passed away at 93. His foundational text, 'Occupied America,' continues to influence academic discourse and educational programs worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-rodolfo-acu-a-chicano-studies-pioneer-leaves-enduring-educational-legacy.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "nursing-loan-repayment-shocks-students-face-unexpected-debt-burden",
     title: "Nursing Loan Repayment Shocks: Students Face Unexpected Debt Burden",
     summary:
