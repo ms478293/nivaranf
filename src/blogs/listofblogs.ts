@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-in-private-meeting-trump-soothes-disenchanted-maha-leaders",
+    title: "Global Health and Education Watch: In Private Meeting, Trump Soothes Disenchanted MAHA Leaders",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-12-global-health-and-education-watch-in-private-meeting-trump-soothes-disenchanted-.jpg",
+    date: "2026-04-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-cholera-vaccination-resumes-after-critical-supply-milestone",
     title: "Global Cholera Vaccination Resumes After Critical Supply Milestone",
     summary:
