@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-04-13T09:00:00Z",
-  "publishedInWindow": 2,
+  "publishedInWindow": 3,
   "candidateCache": [
     {
       "title": "Progress in reducing child deaths slows as 4.9 million children die before age five",
@@ -12,7 +12,7 @@
       "healthHits": 8,
       "educationHits": 2,
       "reason": "relevance=84, credibility=35, freshness=0, health_hits=8, education_hits=2, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Conflict deepens health crisis across Middle East, WHO says",
@@ -24,7 +24,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=58, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "A New Focus on Wellness for Students at the School of American Ballet",
@@ -36,7 +36,19 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Kratom poisonings soar in US as experts blame synthetic versions and caution against bans",
+      "link": "https://www.theguardian.com/us-news/2026/apr/13/kratom-poisonings-increase",
+      "summary": "Experts say natural kratom may offer benefits and blame synthetic derivatives for surge in poisonings noted by CDC A recent Centers for Disease Control and Prevention (CDC) report shows that kratom poisonings have soared in the US, but experts say this is probably due to synthetic derivatives like 7-OH, and that blanket kratom bans could harm people using natural kratom to aid pain management or addiction recovery. Walter Prozialeck, a pharmacology professor at Midwestern University, said he was unsurprised by the report, which found that kratom-related poisonings went up by about 1,200% over the last decade, with a marked surge in 2025. Continue reading...",
+      "publishedAtUtc": "2026-04-13T12:00:39Z",
+      "domain": "theguardian.com",
+      "score": 83.0,
+      "healthHits": 1,
+      "educationHits": 1,
+      "reason": "relevance=30, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Attacks on Ukraine’s health care increased by 20% in 2025",
@@ -48,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "AI to predict how bowel cancer patients will respond to new NHS drug",
@@ -60,7 +72,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Black women in Georgia turn to midwives for safer births – so why does the state criminalize many of them?",
@@ -72,7 +84,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Woman with three deadly diseases has ‘remarkable’ recovery after cell therapy",
@@ -84,7 +96,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=37, credibility=35, freshness=4, health_hits=2, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Funding is vital to end the scourge of polio | Letter",
@@ -96,7 +108,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO and France shift One Health vision to action with new high-impact initiatives",
@@ -108,7 +120,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Deep-fried food banned in new plans for school dinners",
@@ -120,7 +132,43 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Southport attack: ‘catastrophic’ failures by multiple agencies contributed to atrocity, public inquiry finds – live updates",
+      "link": "https://www.theguardian.com/uk-news/live/2026/apr/13/southport-attack-public-inquiry-findings-latest-news-updates",
+      "summary": "Parents of Axel Rudakubana, who killed three young girls at a dance workshop in summer 2024, also blamed by inquiry Attack blamed on agencies’ failures and killer’s ‘irresponsible’ parents Rudakubana was known to the state from October 2019, when the then 13-year-old made several calls to Childline admitting to having murderous thoughts about a bully. He said he had taken a kitchen knife to school on 10 occasions. Two months later, he returned to his high school armed with a hockey stick and attacked another pupil, breaking their wrist. Police later found a knife in his backpack and arrested him on suspicion of assault and carrying a bladed article. Continue reading...",
+      "publishedAtUtc": "2026-04-13T11:47:42Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Are spider bites on the rise in England?",
+      "link": "https://www.bbc.com/news/articles/cwyvg1jyry0o?at_medium=RSS&at_campaign=rss",
+      "summary": "Experts say noble false widow spiders could be to blame for an increase in bites being treated in hospital.",
+      "publishedAtUtc": "2026-04-13T10:55:48Z",
+      "domain": "bbc.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Nurse wins settlement in trans pronouns dispute",
+      "link": "https://www.bbc.com/news/articles/cx2vlxdnnpqo?at_medium=RSS&at_campaign=rss",
+      "summary": "Melle was racially abused by a transgender woman at a hospital after she addressed them as \"Mr\".",
+      "publishedAtUtc": "2026-04-13T10:39:58Z",
+      "domain": "bbc.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Streeting denies changing pay deal for resident doctors",
@@ -132,7 +180,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Characterizing healthcare provider experiences delivering genomic testing in a Federally Qualified Health Center",
@@ -144,11 +192,11 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "To Fill Drone Force Ranks, Russia Targets a New Demographic: Students",
-      "link": "https://www.nytimes.com/2026/04/13/world/europe/russia-.html",
+      "link": "https://www.nytimes.com/2026/04/13/world/europe/russia-ukraine-war-recruitment-students.html",
       "summary": "Recruitment sessions have taken place at hundreds of universities and colleges across the country.",
       "publishedAtUtc": "2026-04-13T09:02:51Z",
       "domain": "nytimes.com",
@@ -156,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Judges Fired After Blocking Deportations of Pro-Palestinian Students",
@@ -168,7 +216,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Fried nuggets and steamed sponges off menu in school food overhaul in England",
@@ -180,7 +228,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Private firms providing services to NHS made £1.6bn profit in two years, research finds",
@@ -192,7 +240,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘I just want to feel like me again’: the women still waiting for breast reconstruction years after lockdown",
@@ -204,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Votes for populist parties in May elections will put NHS at risk, Streeting says",
@@ -216,19 +264,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
-      "title": "Dr TikTok: patients diagnose chronic illnesses with anonymous commenters’ help",
-      "link": "https://www.theguardian.com/technology/2026/apr/12/tiktok-diagnose-cancer-chronic-illnesses-doctors",
-      "summary": "TikTok users increasingly say the app has steered them toward diagnosing medical problems not yet identified Malina Lee, a 31-year-old wedding baker based in San Antonio, Texas, joined TikTok during the Covid pandemic lockdowns in 2020. Like many people at the time, she was bored and began using the platform to pass the time and advertise her business. She didn’t expect a cancer diagnosis. Four years after Lee joined the app, a commenter with the username “PickleFart” told her that her neck looked asymmetrical in a way that could suggest she had a goiter – an enlarged thyroid gland – and that she should get it checked out. The anonymous amateur clinician turned out to be right – Lee had thyroid cancer, received treatment quickly, and, less than a year later, was cancer free. Continue reading...",
-      "publishedAtUtc": "2026-04-12T12:00:16Z",
-      "domain": "theguardian.com",
+      "title": "Israeli forces fire tear gas near Palestinian schoolchildren",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israeli-forces-fire-tear-gas-near-palestinian-schoolchildren?traffic_source=rss",
+      "summary": "Israeli forces fired tear gas towards a group of children trying to walk to school in the occupied West Bank.",
+      "publishedAtUtc": "2026-04-13T10:50:04Z",
+      "domain": "aljazeera.com",
       "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO urges schools worldwide to promote healthy eating for children",
@@ -240,7 +288,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=1, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Why is MenB vaccine not given to teenagers in UK and should they be offered it?",
@@ -252,7 +300,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "First-ever WHO Forum unites 800+ Collaborating Centres for stronger scientific collaboration",
@@ -264,7 +312,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Have You Used A.I. Chatbots for Nutrition Advice?",
@@ -276,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Repurposed drug may extend survival in aggressive ovarian cancer, trial shows",
@@ -288,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘This is as important as your teeth’: are you skipping this key part of mouth hygiene?",
@@ -300,7 +348,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Why was a Florida woman forced to have a C-section? | Tayo Bero",
@@ -312,7 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Communities unite to address stigma and discrimination affecting people with neglected tropical diseases",
@@ -324,19 +372,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
-    },
-    {
-      "title": "Lebanon airstrike casualties ‘still under the rubble’ as ambulances, hospitals face new threats",
-      "link": "https://news.un.org/feed/view/en/story/2026/04/1167280",
-      "summary": "With Lebanon still reeling from Israel’s devastating airstrikes on 8 April, UN humanitarians reported new fears of attacks on ambulances and looming food shortages in the south of the country on Friday.",
-      "publishedAtUtc": "2026-04-10T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Trump Administration Pulls Out of Civil Rights Settlements Backing Trans Students",
@@ -348,7 +384,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Six years after COVID-19’s global alarm: Is the world better prepared for the next pandemic?",
@@ -360,7 +396,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Weekend students at 15 universities in England told to return loans and grants",
@@ -372,7 +408,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Campaigners demand action to break UK’s ‘addiction’ to controversial herbicide",
@@ -384,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO validates elimination of trachoma as a public health problem in Libya",
@@ -396,7 +432,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Impact of SARS-CoV-2 vaccination on monoclonal gammopathy of undetermined significance: results from the population-based iStopMM study",
@@ -408,7 +444,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Chile becomes the first country in the Americas to be verified by WHO for the elimination of leprosy",
@@ -420,7 +456,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Recommendations for influenza vaccine composition for the 2026-2027 northern hemisphere season",
@@ -432,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -444,7 +480,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Are UK students at risk of more deadly meningitis outbreaks?",
@@ -456,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "The teenage caffeine pouch trend troubling US experts",
@@ -468,7 +504,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "New Charter Allows RFK Jr. to Reclaim Vaccine Policy Despite Court Ruling",
@@ -480,7 +516,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Plunging International Student Enrollment Under Trump Squeezes Colleges",
@@ -492,7 +528,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Four in ten cancer cases could be prevented globally",
@@ -504,19 +540,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
-    },
-    {
-      "title": "Sudan: 14 million displaced; hunger and attacks on health continue as war enters fourth year",
-      "link": "https://news.un.org/feed/view/en/story/2026/04/1167281",
-      "summary": "As Sudan approaches the third anniversary of a brutal civil war, millions remain displaced and hungry while the health system lies in ruins, with no end to the violence in sight, UN agencies said on Friday.",
-      "publishedAtUtc": "2026-04-10T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "I got a £10,000 loan for my nursing degree. Now they say it's an error and I have to pay it back",
@@ -528,7 +552,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Student loan interest could rise despite cap on rates",
@@ -540,7 +564,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘A social justice issue’: London school believes it has model for Send inclusion",
@@ -552,7 +576,19 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Dr TikTok: patients diagnose chronic illnesses with anonymous commenters’ help",
+      "link": "https://www.theguardian.com/technology/2026/apr/12/tiktok-diagnose-cancer-chronic-illnesses-doctors",
+      "summary": "TikTok users increasingly say the app has steered them toward diagnosing medical problems not yet identified Malina Lee, a 31-year-old wedding baker based in San Antonio, Texas, joined TikTok during the Covid pandemic lockdowns in 2020. Like many people at the time, she was bored and began using the platform to pass the time and advertise her business. She didn’t expect a cancer diagnosis. Four years after Lee joined the app, a commenter with the username “PickleFart” told her that her neck looked asymmetrical in a way that could suggest she had a goiter – an enlarged thyroid gland – and that she should get it checked out. The anonymous amateur clinician turned out to be right – Lee had thyroid cancer, received treatment quickly, and, less than a year later, was cancer free. Continue reading...",
+      "publishedAtUtc": "2026-04-12T12:00:16Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Yet more reasons to look on the bright side . . .",
@@ -564,7 +600,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO calls for action: “Together for health. Stand with science.” to mark World Health Day",
@@ -576,7 +612,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO recommends new diagnostic tools to help end TB",
@@ -588,7 +624,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "ChatGPT 'uncovered woman's rare condition' after years of misdiagnosis",
@@ -600,7 +636,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Pupils back to school in holidays to deal with fallout from cyber attack",
@@ -612,7 +648,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "'Our teachers use AI to mark mock exams'",
@@ -624,7 +660,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Outcomes of the NCI cancer prevention fellowship program in training multidisciplinary public health professional leaders",
@@ -636,7 +672,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Microplastics, nanoplastics and liver disease: an emerging health concern?",
@@ -648,7 +684,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "For Many Patients Leaving the I.C.U., the Struggle Has Only Just Begun",
@@ -660,7 +696,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Texas Considers Required Reading List for Schools, Which Includes the Bible",
@@ -672,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Iranians Condemn Strike on a Top University",
@@ -684,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO launches 2026 appeal to help millions of people in health emergencies and crisis settings",
@@ -696,7 +732,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Lebanon airstrike casualties ‘still under the rubble’ as ambulances, hospitals face new threats",
+      "link": "https://news.un.org/feed/view/en/story/2026/04/1167280",
+      "summary": "With Lebanon still reeling from Israel’s devastating airstrikes on 8 April, UN humanitarians reported new fears of attacks on ambulances and looming food shortages in the south of the country on Friday.",
+      "publishedAtUtc": "2026-04-10T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Lebanon: Health system overwhelmed following a ‘horrific’ day of Israeli strikes",
@@ -708,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Top C.D.C. Official Delays Report on Covid Shot’s Effectiveness",
@@ -720,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘Excessive’ financial risks threaten survival of many English universities, report warns",
@@ -732,7 +780,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘We watched them die before our eyes’: Sudan health workers helpless amid medical shortages",
@@ -744,7 +792,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "What is chickenpox and who can get an NHS vaccine?",
@@ -756,7 +804,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Global commitment on display as countries negotiate key annex to the Pandemic Agreement",
@@ -768,7 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "World News in Brief: Death on the Mediterranean, displacement in Afghanistan, ‘One Health’ summit",
@@ -780,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "From misdiagnosis to medical bias: Why women are living longer but not better",
@@ -792,19 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
-    },
-    {
-      "title": "UN80 Initiative enters ‘delivery phase’, as Member States review progress on key work areas",
-      "link": "https://news.un.org/feed/view/en/story/2026/04/1167253",
-      "summary": "Top officials updated Member States Monday on selected proposals under the UN80 reform initiative, including an initial assessment of a possible merger between gender equality agency, UN Women, and the UN reproductive health agency, UNFPA, as well as updates on the technology and data tracks.",
-      "publishedAtUtc": "2026-04-06T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "E.P.A. Targets Microplastics and Drugs in Drinking Water",
@@ -816,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Brown University Keeps Police Chief Who Took Over After Shooting",
@@ -828,7 +864,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Trump Administration Investigating L.A. Schools’ Gender Disclosure Policies",
@@ -840,7 +876,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "For Oura and Whoop, health has a reasonable chance of being wealth",
@@ -852,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Hospital waited two days before raising alarm about meningitis outbreak",
@@ -864,7 +900,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Meningitis outbreak passes peak, says health agency",
@@ -876,7 +912,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "I spent five months in a mother and baby mental health unit - here's what I want mums to know",
@@ -888,7 +924,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "UK deradicalisation scheme being used to speed mental health service access, review warns",
@@ -900,7 +936,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Meta and Google liable for harm to children’s mental health in landmark US case",
@@ -912,7 +948,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "WHO Member States agree to extend negotiations on key annex to the Pandemic Agreement",
@@ -924,7 +960,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Encouraging progress in inclusive health policies for refugees and migrants",
@@ -936,7 +972,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Denmark becomes first country in the European Union to eliminate mother-to-child transmission of HIV and syphilis",
@@ -948,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "One in two people facing cataract blindness need access to life-changing surgery",
@@ -960,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Joint statement on the renewed Quadripartite Memorandum of Understanding regarding cooperation on One Health until 2030",
@@ -972,7 +1008,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "Sudan: 14 million displaced; hunger and attacks on health continue as war enters fourth year",
+      "link": "https://news.un.org/feed/view/en/story/2026/04/1167281",
+      "summary": "As Sudan approaches the third anniversary of a brutal civil war, millions remain displaced and hungry while the health system lies in ruins, with no end to the violence in sight, UN agencies said on Friday.",
+      "publishedAtUtc": "2026-04-10T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Researchers look into island's health benefits",
@@ -984,7 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Hospitals coping well with doctors' strike so far - NHS boss",
@@ -996,7 +1044,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "22,000 students told to pay back 'mis-sold' maintenance loans",
@@ -1008,7 +1056,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Schools in knife crime hotspots to get specialist training",
@@ -1020,7 +1068,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Co-occurrence patterns of malnutrition indicators among children in sub-Saharan Africa",
@@ -1032,7 +1080,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Assessing the effectiveness of healthy weight interventions in the early years of childhood: a systematic review and meta-analysis of evidence from high-income countries",
@@ -1044,7 +1092,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "In Private Meeting, Trump Soothes Disenchanted MAHA Leaders",
@@ -1056,7 +1104,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Top Regent Defends Firing of Wisconsin University Leader",
@@ -1068,7 +1116,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Rodolfo Acuña, 93, Forthright Scholar at Forefront of Chicano Studies, Dies",
@@ -1080,7 +1128,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Leader of University of Wisconsin System Is Fired by the Board",
@@ -1092,7 +1140,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Pentagon Stays Mum on School Strike, Even as Trump Boasts of Iran Rescue",
@@ -1104,7 +1152,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "It’s always been a fight to get children the early years care they deserve. It’s time to fight again | Polly Toynbee",
@@ -1116,7 +1164,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Alarm in health service over Palantir staff being given NHS email accounts",
@@ -1128,7 +1176,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "US health insurer shares jump as Trump administration boosts Medicare payments",
@@ -1140,7 +1188,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Statement on the planned hepatitis B birth dose vaccine trial in Guinea-Bissau",
@@ -1152,7 +1200,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Preventive cholera vaccination resumes as global supply reaches critical milestone",
@@ -1164,7 +1212,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "UN80 Initiative enters ‘delivery phase’, as Member States review progress on key work areas",
+      "link": "https://news.un.org/feed/view/en/story/2026/04/1167253",
+      "summary": "Top officials updated Member States Monday on selected proposals under the UN80 reform initiative, including an initial assessment of a possible merger between gender equality agency, UN Women, and the UN reproductive health agency, UNFPA, as well as updates on the technology and data tracks.",
+      "publishedAtUtc": "2026-04-06T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Sleep, exercise, hydrate - do we really need to stick to recommended daily doses?",
@@ -1176,7 +1236,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Patients harmed as Covid pandemic brought NHS close to collapse, inquiry finds",
@@ -1188,7 +1248,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘Beyond worried’: the families waiting to hear how Send overhaul will change their lives",
@@ -1200,7 +1260,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Bosses can help ease Britain’s sickness crisis, says former John Lewis chair",
@@ -1212,7 +1272,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Whoop hits $10bn valuation as health tracking takes off",
@@ -1224,7 +1284,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Weight-loss jabs will be offered on NHS for people at risk of further heart attacks",
@@ -1236,7 +1296,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "'Something wasn't right': Wrong sperm given to UK families by IVF clinics in northern Cyprus",
@@ -1248,7 +1308,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Streeting praises response to meningitis outbreak",
@@ -1260,7 +1320,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "What are the symptoms of meningitis and how is it spread?",
@@ -1272,7 +1332,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Paying back my student loan is more painful now I have a young family",
@@ -1284,7 +1344,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "What does Neet stand for and how many are there in the UK?",
@@ -1296,7 +1356,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "What is SEND and how many children get support?",
@@ -1308,7 +1368,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Why the US needs a unified, mission-based strategy for health innovation",
@@ -1320,7 +1380,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Knowledge and attitudes toward mpox among the Lebanese population during the second wave and their attitudes toward vaccination",
@@ -1332,7 +1392,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "A “paradox of progress” shapes the social determinants of infectious diseases in Vietnam, 1975–2025",
@@ -1344,7 +1404,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Quality health information for all is a fundamental determinant of health",
@@ -1356,7 +1416,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Area Deprivation and Social Vulnerability Are Associated with Pediatric Vision Screening Outcomes in the University of California, Irvine EyeMobile Program",
@@ -1368,7 +1428,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "‘Under Protest,’ Raw Dairy Farm Recalls Cheddar Linked to 9 E. Coli Cases",
@@ -1380,7 +1440,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "H.H.S. Takes a First Step Toward Restoring Vaccine Advisory Committee",
@@ -1392,7 +1452,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "China Mourned an Education Influencer. The Grief Was a Quiet Revolt.",
@@ -1404,7 +1464,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1416,7 +1476,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Merck seals $5.7bn biotech deal to boost cancer drug pipeline",
@@ -1428,7 +1488,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "Danone to buy meal-in-bottle maker Huel in €1bn deal",
@@ -1440,7 +1500,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
     },
     {
       "title": "The UK’s meningitis outbreak and the grim legacy of Covid",
@@ -1452,6 +1512,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-04-13T12:10:41.737683Z"
+    },
+    {
+      "title": "To Fill Drone Force Ranks, Russia Targets a New Demographic: Students",
+      "link": "https://www.nytimes.com/2026/04/13/world/europe/russia-.html",
+      "summary": "Recruitment sessions have taken place at hundreds of universities and colleges across the country.",
+      "publishedAtUtc": "2026-04-13T09:02:51Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-04-13T10:55:56.229004Z"
     },
     {
@@ -2341,44 +2413,9 @@
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-04-09T14:10:42.155444Z"
-    },
-    {
-      "title": "Thursday briefing: ​What difference will the ceasefire in the Middle East make, and will it hold?",
-      "link": "https://www.theguardian.com/world/2026/apr/09/thursday-briefing-what-difference-will-the-ceasefire-in-the-middle-east-make-and-will-it-hold",
-      "summary": "In today’s newsletter: The truce offers a reprieve after weeks of turmoil, ​b​ut unresolved disputes and competing interpretations ​of what was agreed, threaten to pull the region back toward crisis​ at a moment’s notice Good morning. On Tuesday, just an hour before the deadline imposed by Donald Trump for Iran to reopen navigation in the strait of Hormuz or face a wave of “civilisation-ending” strikes, a two-week pause in hostilities was announced. After weeks of US and Israeli attacks on Tehran, and Iranian retaliation across the region, the news prompted relief among world leaders. But unanswered questions are piling up. Israel’s assault on Lebanon continues , with Trump describing that conflict as a separate skirmish not included in the deal, despite Iran seeming to think otherwise. Overnight the US president has used social media to warn that “the ‘shootin’ starts,’ bigger, and better, and stronger than anyone has ever seen before” unless Tehran complies with “the real agreement”. Middle East | The fate of the two-week ceasefire in the Iran conflict looked in peril as both sides gave divergent versions of what had been agreed. Iran halted the passage of oil tankers because of an alleged Israeli ceasefire breach. Middle East | Israel carried out its largest attack on Lebanon since its war with Hezbollah began, killing at least 254 people and wounding 837. Middle East | The UK has a “job” to help reopen the strait of Hormuz , Keir Starmer said on arriving in the Middle East, as Iranian reports said the key shipping route was closed again just hours after the supposed US-Iran ceasefire. Ukraine | The US has ignored compelling evidence that Russia has been helping Iran to target US bases in the Middle East because it misguidedly “trusts” Vladimir Putin, according to the Ukrainian president, Volodymyr Zelenskyy. Education | Many English universities are taking excessive financial risks with borrowing and expansion of student numbers, threatening not only their own survival but that of others in the sector, the thinktank Higher Education Policy Institute (Hepi) has warned. Continue reading...",
-      "publishedAtUtc": "2026-04-09T05:45:23Z",
-      "domain": "theguardian.com",
-      "score": 78.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=25, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-04-09T11:16:50.804544Z"
-    },
-    {
-      "title": "JD Vance claims US is not interfering in Hungary election",
-      "link": "https://www.theguardian.com/world/2026/apr/08/jd-vance-dismisses-claims-us-interfering-hungarian-election-budapest-viktor-orban",
-      "summary": "US vice-president says on visit to Budapest ‘we had to show’ support for Viktor Orbán, as opposition leads polls Hungary elections: what is at stake and who is likely to win? JD Vance has pushed back against claims that the US is interfering in Hungarian politics, describing the accusations as “darkly ironic”, as a set of polls suggested the opposition Tisza party could win a supermajority in the forthcoming elections. After spending his first day in Budapest excoriating the EU and accusing it of being behind one of the “worst examples” of foreign interference, the US vice-president spent part of Wednesday morning speaking at a thinktank and educational institution linked to Hungary’s leader, Viktor Orbán. Continue reading...",
-      "publishedAtUtc": "2026-04-08T17:18:45Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-04-09T11:16:50.804544Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "5bd3005a600a762293d0d54c9bbd9dc1cbf3b2d5",
-      "sourceTitle": "Independent autism committee that challenges RFK Jr’s overhaul draws criticism",
-      "sourceUrl": "https://www.theguardian.com/us-news/2026/mar/19/us-autism-committee-rfk-jr",
-      "sourceDomain": "theguardian.com",
-      "publishedAtUtc": "2026-03-20T04:57:11.275865Z",
-      "slug": "global-health-and-education-watch-independent-autism-committee-that-challenges-rfk-jr-s-overhaul-draws",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-independent-autism-committee-that-challenges-rfk-jr-s-overhaul-draws",
-      "mainImage": "/images/global-news/2026/2026-03-20-global-health-and-education-watch-independent-autism-committee-that-challenges-r.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-03-20-global-health-and-education-watch-independent-autism-committee-that-challenges-r.jpg"
-    },
     {
       "contentHash": "cc8ed6d92a7c0e563a9e440289682d1d7abcede7",
       "sourceTitle": "Father of meningitis victim, 18, tells of family’s ‘immeasurable’ devastation",
@@ -6767,145 +6804,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/ai-revolutionizes-bowel-cancer-treatment-predicting-drug-response-globally",
       "mainImage": "/images/global-news/2026/2026-04-13-ai-revolutionizes-bowel-cancer-treatment-predicting-drug-response-globally.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-ai-revolutionizes-bowel-cancer-treatment-predicting-drug-response-globally.jpg"
+    },
+    {
+      "contentHash": "1c3d23fc1d7e14cd63e9bad982dc112d84bb21ac",
+      "sourceTitle": "Israeli forces fire tear gas near Palestinian schoolchildren",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israeli-forces-fire-tear-gas-near-palestinian-schoolchildren?traffic_source=rss",
+      "sourceDomain": "aljazeera.com",
+      "publishedAtUtc": "2026-04-13T12:10:41.737683Z",
+      "slug": "global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+      "mainImage": "/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-03-29T05:50:31.381038Z",
-      "windowStartUtc": "2026-03-28T21:00:00Z",
-      "publishedInWindowBefore": 4,
-      "hoursLeftInWindow": 4,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "bbc.com": 2,
-        "who.int": 3,
-        "theguardian.com": 10,
-        "nytimes.com": 2,
-        "aljazeera.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 3,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 134,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 134,
-      "candidateCacheCount": 240,
-      "candidatesAfterSourceDedupe": 27,
-      "candidatesAfterDedupe": 27,
-      "duplicateSkips": {
-        "historyHash": 95,
-        "historySource": 12,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Airstrikes batter a university and residential zones in Tehran.",
-          "link": "https://www.nytimes.com/live/2026/03/29/world/iran-war-trump-israel-oil/airstrikes-university-tehran",
-          "score": 70,
-          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        },
-        {
-          "title": "Murder inquiry launched after death of young woman in Leeds",
-          "link": "https://www.theguardian.com/uk-news/2026/mar/28/young-woman-leeds-west-yorkshire-police-investigation",
-          "score": 70,
-          "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Doctors waiting on asylum decisions can work in NHS as Home Office lifts ban",
-          "link": "https://www.theguardian.com/uk-news/2026/mar/26/doctors-waiting-on-asylum-decisions-can-work-in-nhs-as-home-office-lifts-ban",
-          "score": 66,
-          "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "'Having coeliac disease aged 9 means I'm normal with a tiny twist'",
-        "link": "https://www.bbc.com/news/articles/cvgkdxw1v9vo?at_medium=RSS&at_campaign=rss",
-        "score": 56,
-        "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: 'Having coeliac disease aged 9 means I'm normal with",
-      "generatedWordCount": 1180,
-      "mainImage": "/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4320
-      },
-      "generatedImageSharpness": 1084.0137314709266,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview",
-        "nano-banana-pro-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "Expecting ',' delimiter: line 11 column 3421 (char 5358)",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1317.0,
-        "generatedWords": 1180.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/a5a3/live/466a68a0-2448-11f1-8350-0b57c2d91bf3.jpg",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal-with"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-03-29-global-health-and-education-watch-having-coeliac-disease-aged-9-means-i-m-normal.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 5
-    },
     {
       "ranAtUtc": "2026-03-29T07:18:54.525019Z",
       "windowStartUtc": "2026-03-28T21:00:00Z",
@@ -38686,6 +38598,130 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 2
+    },
+    {
+      "ranAtUtc": "2026-04-13T12:10:41.737683Z",
+      "windowStartUtc": "2026-04-13T09:00:00Z",
+      "publishedInWindowBefore": 2,
+      "hoursLeftInWindow": 9,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "bbc.com",
+        "nature.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 7,
+        "bbc.com": 3,
+        "nytimes.com": 4,
+        "nature.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 3,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 126,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 126,
+      "candidateCacheCount": 201,
+      "candidatesAfterSourceDedupe": 17,
+      "candidatesAfterDedupe": 17,
+      "duplicateSkips": {
+        "historyHash": 107,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Israeli forces fire tear gas near Palestinian schoolchildren",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israeli-forces-fire-tear-gas-near-palestinian-schoolchildren?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Israeli forces fire tear gas near Palestinian schoolchildren",
+        "link": "https://www.aljazeera.com/video/newsfeed/2026/4/13/israeli-forces-fire-tear-gas-near-palestinian-schoolchildren?traffic_source=rss",
+        "score": 70,
+        "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Israeli forces fire tear gas near Palestinian schoolchildren",
+      "generatedWordCount": 1181,
+      "mainImage": "/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4800
+      },
+      "generatedImageSharpness": 95.12353230522834,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview",
+        "nano-banana-pro-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "Generated article too short (878 words); need >= 1000",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 447.0,
+        "generatedWords": 1181.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/04/Screenshot-2026-04-13-at-11.45.45-1776077339.png?resize=1920%2C1200",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-13-global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 3
     }
   ]
 }
