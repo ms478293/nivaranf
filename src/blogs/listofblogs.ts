@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "genomic-testing-s-global-reach-bridging-gaps-in-community-health-centers",
+    title: "Genomic Testing's Global Reach: Bridging Gaps in Community Health Centers",
+    summary:
+      "A pivotal study examines the integration of genomic testing into Federally Qualified Health Centers, highlighting the critical role of providers in expanding equitable access to precision medicine. It underscores both the significant opportunities and the systemic hurdles faced in diverse global healthcare landscapes.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-genomic-testing-s-global-reach-bridging-gaps-in-community-health-centers.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-silence-on-school-strike-undermines-education-in-conflict",
     title: "Global Silence on School Strike Undermines Education in Conflict",
     summary:
