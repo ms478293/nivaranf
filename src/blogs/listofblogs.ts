@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sussex-baby-deaths-inquiry-will-fail-to-learn-lessons",
+    title: "Global Health and Education Watch: Sussex baby deaths inquiry will fail to learn lessons",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-global-health-and-education-watch-sussex-baby-deaths-inquiry-will-fail-to-learn-.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alert-understanding-the-noble-false-widow-spider-s-impact",
     title: "Global Health Alert: Understanding the Noble False Widow Spider's Impact",
     summary:
