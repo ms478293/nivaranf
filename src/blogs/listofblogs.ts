@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-building-a-program-to-improve-postpartum-depression-screening-triage",
+    title: "Global Health and Education Watch: Building a program to improve postpartum depression screening, triage",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-global-health-and-education-watch-building-a-program-to-improve-postpartum-depre.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israeli-forces-fire-tear-gas-near-palestinian-schoolchildren",
     title: "Global Health and Education Watch: Israeli forces fire tear gas near Palestinian schoolchildren",
     summary:
