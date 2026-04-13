@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-understanding-the-noble-false-widow-spider-s-impact",
+    title: "Global Health Alert: Understanding the Noble False Widow Spider's Impact",
+    summary:
+      "The noble false widow spider is increasingly implicated in a rise of hospital-treated bites across various regions. While often alarming, experts clarify the typical severity and necessary precautions for these encounters.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-global-health-alert-understanding-the-noble-false-widow-spider-s-impact.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-building-a-program-to-improve-postpartum-depression-screening-triage",
     title: "Global Health and Education Watch: Building a program to improve postpartum depression screening, triage",
     summary:
