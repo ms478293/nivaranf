@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-revolutionizes-bowel-cancer-treatment-predicting-drug-response-globally",
+    title: "AI Revolutionizes Bowel Cancer Treatment: Predicting Drug Response Globally",
+    summary:
+      "Researchers have developed an AI-driven tool, PhenMap, to predict how advanced bowel cancer patients will respond to new NHS drugs. This innovation aims to prevent ineffective treatments, improving patient outcomes and optimizing healthcare resources globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-ai-revolutionizes-bowel-cancer-treatment-predicting-drug-response-globally.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-new-focus-on-wellness-for-students-at-the",
     title: "Global Health and Education Watch: A New Focus on Wellness for Students at the",
     summary:
