@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tragedy-highlights-global-risks-in-medical-tourism-and-mental-health-support",
+    title: "Tragedy Highlights Global Risks in Medical Tourism and Mental Health Support",
+    summary:
+      "The tragic death of Pawel Bukowski, who took his own life after a disastrous dental procedure in Turkey left him toothless and severely depressed, has brought the inherent risks of global medical tourism into sharp focus. This incident prompts a crucial re-evaluation of patient safety, regulatory oversight, and mental health support systems for individuals seeking medical care abroad.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-tragedy-highlights-global-risks-in-medical-tourism-and-mental-health-support.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-nurse-wins-settlement-in-trans-pronouns-dispute",
     title: "Global Health and Education Watch: Nurse wins settlement in trans pronouns dispute",
     summary:
