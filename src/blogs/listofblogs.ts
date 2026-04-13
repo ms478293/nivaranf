@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "russia-s-drone-force-recruitment-a-global-challenge-to-education-and-youth",
+    title: "Russia's Drone Force Recruitment: A Global Challenge to Education and Youth",
+    summary:
+      "Russia is extensively recruiting students from hundreds of universities for its drone forces, sparking global concerns about the militarization of education. This initiative profoundly impacts academic autonomy, student well-being, and long-term societal development.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-russia-s-drone-force-recruitment-a-global-challenge-to-education-and-youth.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kratom-poisonings-soar-in-us-as-experts-blame-synthetic",
     title: "Global Health and Education Watch: Kratom poisonings soar in US as experts blame synthetic",
     summary:
