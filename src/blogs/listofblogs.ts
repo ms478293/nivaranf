@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-silence-on-school-strike-undermines-education-in-conflict",
+    title: "Global Silence on School Strike Undermines Education in Conflict",
+    summary:
+      "A recent Tomahawk missile strike on an Iranian school received no official comment from the Pentagon, despite a concurrent, highly publicized rescue mission. This selective transparency highlights critical global concerns regarding the protection of educational institutions in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-global-silence-on-school-strike-undermines-education-in-conflict.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-concerns-raised-about-motorbike-tourist-trail-after-death-of",
     title: "Global Health and Education Watch: Concerns raised about motorbike tourist trail after death of",
     summary:
