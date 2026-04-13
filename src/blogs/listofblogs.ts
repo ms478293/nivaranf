@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-new-focus-on-wellness-for-students-at-the",
+    title: "Global Health and Education Watch: A New Focus on Wellness for Students at the",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-13-global-health-and-education-watch-a-new-focus-on-wellness-for-students-at-the.jpg",
+    date: "2026-04-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "genomic-testing-s-global-reach-bridging-gaps-in-community-health-centers",
     title: "Genomic Testing's Global Reach: Bridging Gaps in Community Health Centers",
     summary:
