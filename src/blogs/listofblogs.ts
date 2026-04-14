@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-readiness-a-call-for-educational-reform",
+    title: "Global Youth Readiness: A Call for Educational Reform",
+    summary:
+      "A global challenge is emerging as education systems struggle to prepare young people for the demands of modern employment, leading to widespread youth unemployment and inactivity. This issue necessitates a concerted effort from parents, schools, and policymakers to foster essential skills and pathways to productive futures.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-youth-readiness-a-call-for-educational-reform.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-almost-2bn-to-be-affected-by-metabolic-liver-disease",
     title: "Global Health and Education Watch: Almost 2bn to be affected by metabolic liver disease",
     summary:
