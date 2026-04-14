@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-post-acute-organ-complications-within-one-year-following-covid-19-hospitalization",
+    title: "Global Health and Education Watch: Post-acute organ complications within one year following COVID-19 hospitalization",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-health-and-education-watch-post-acute-organ-complications-within-one-year.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-school-food-standards-pilot-in-england-cuts-meal-uptake",
     title: "Global Health and Education Watch: School food standards pilot in England cuts meal uptake",
     summary:
