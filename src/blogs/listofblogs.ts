@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-child-poverty-and-liver-disease-threaten-future-generations",
+    title: "Global Health: Child Poverty and Liver Disease Threaten Future Generations",
+    summary:
+      "Child poverty, exacerbated by austerity policies, continues to scar millions globally, impacting health and education. Concurrently, Metabolic Associated Steatotic Liver Disease (MASLD) is projected to affect 1.8 billion people worldwide by 2050, driven by rising obesity and blood sugar levels.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-health-child-poverty-and-liver-disease-threaten-future-generations.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-readiness-a-call-for-educational-reform",
     title: "Global Youth Readiness: A Call for Educational Reform",
     summary:
