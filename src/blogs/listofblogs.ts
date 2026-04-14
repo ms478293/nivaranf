@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-equity-unpacking-the-dynamics-of-influence",
+    title: "Global Health Equity: Unpacking the Dynamics of Influence",
+    summary:
+      "Global health equity faces significant challenges from the disproportionate influence of powerful nations and economic blocs. This article explores how politicized agendas and resource control impact health and education access globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-health-equity-unpacking-the-dynamics-of-influence.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-us-shifts-contraception-program-to-pro-natalist-agenda",
     title: "Global Alarm: US Shifts Contraception Program to Pro-Natalist Agenda",
     summary:
