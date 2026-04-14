@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "canada-s-refugee-healthcare-cuts-spark-global-concern-over-human-rights",
+    title: "Canada's Refugee Healthcare Cuts Spark Global Concern Over Human Rights",
+    summary:
+      "Canada faces intense criticism for planned co-payments on refugee healthcare, set to begin May 1, 2026. Health workers and rights advocates argue these financial barriers will deny essential care and contradict international human rights commitments.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-canada-s-refugee-healthcare-cuts-spark-global-concern-over-human-rights.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ishmael-jaffree-who-won-case-rejecting-school-prayer-dies",
     title: "Global Health and Education Watch: Ishmael Jaffree, Who Won Case Rejecting School Prayer, Dies",
     summary:
