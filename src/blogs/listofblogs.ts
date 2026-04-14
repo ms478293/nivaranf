@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-us-shifts-contraception-program-to-pro-natalist-agenda",
+    title: "Global Alarm: US Shifts Contraception Program to Pro-Natalist Agenda",
+    summary:
+      "The US administration is reportedly transforming Title X, a federal contraception program, into a pro-conception initiative. This ideological shift raises global concerns about reproductive health access and women's autonomy.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-alarm-us-shifts-contraception-program-to-pro-natalist-agenda.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-wildlife-trade-accelerates-disease-spillover-to-humans",
     title: "Global Wildlife Trade Accelerates Disease Spillover to Humans",
     summary:
