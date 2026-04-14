@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hospital-scandal-exposes-global-healthcare-safety-crisis",
+    title: "Hospital Scandal Exposes Global Healthcare Safety Crisis",
+    summary:
+      "An HIV outbreak among children in Pakistan has been linked to a hospital caught reusing syringes on camera. The incident highlights critical global challenges in healthcare safety, infection control, and regulatory oversight.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-hospital-scandal-exposes-global-healthcare-safety-crisis.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-equity-unpacking-the-dynamics-of-influence",
     title: "Global Health Equity: Unpacking the Dynamics of Influence",
     summary:
