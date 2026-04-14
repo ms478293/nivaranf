@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-almost-2bn-to-be-affected-by-metabolic-liver-disease",
+    title: "Global Health and Education Watch: Almost 2bn to be affected by metabolic liver disease",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-health-and-education-watch-almost-2bn-to-be-affected-by-metabolic-liver-d.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tragedy-highlights-global-risks-in-medical-tourism-and-mental-health-support",
     title: "Tragedy Highlights Global Risks in Medical Tourism and Mental Health Support",
     summary:
