@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-wildlife-trade-accelerates-disease-spillover-to-humans",
+    title: "Global Wildlife Trade Accelerates Disease Spillover to Humans",
+    summary:
+      "A recent study reveals that the global wildlife trade significantly accelerates the spread of diseases from animals to humans, posing substantial public health risks. Both legal and illegal trade, particularly live animal markets, create dangerous conditions for pathogen spillover.",
+    thumbnailImage: "/images/global-news/2026/2026-04-14-global-wildlife-trade-accelerates-disease-spillover-to-humans.jpg",
+    date: "2026-04-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-child-poverty-and-liver-disease-threaten-future-generations",
     title: "Global Health: Child Poverty and Liver Disease Threaten Future Generations",
     summary:
