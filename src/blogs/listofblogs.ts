@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leaders-urge-who-action-on-steatotic-liver-disease",
+    title: "Global Health Leaders Urge WHO Action on Steatotic Liver Disease",
+    summary:
+      "A global coalition of health experts is advocating for a World Health Assembly resolution to address steatotic liver disease. This critical step aims to elevate awareness, standardize care, and accelerate research for the escalating global health challenge.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-global-health-leaders-urge-who-action-on-steatotic-liver-disease.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "immunocompromised-patients-face-deadly-risks-amid-global-healthcare-strain",
     title: "Immunocompromised Patients Face Deadly Risks Amid Global Healthcare Strain",
     summary:
