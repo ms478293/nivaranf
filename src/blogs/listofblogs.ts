@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "immunocompromised-patients-face-deadly-risks-amid-global-healthcare-strain",
+    title: "Immunocompromised Patients Face Deadly Risks Amid Global Healthcare Strain",
+    summary:
+      "The perilous experiences of immunocompromised patients in crowded emergency departments underscore a critical global health challenge. These environments, often strained by capacity issues, heighten the risk of severe infections for the most vulnerable.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-immunocompromised-patients-face-deadly-risks-amid-global-healthcare-strain.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "turkiye-school-shootings-spark-global-alarm-over-education-safety",
     title: "Turkiye School Shootings Spark Global Alarm Over Education Safety",
     summary:
