@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-systems-at-a-crossroads-navigating-the-public-private-divide",
+    title: "Global Health Systems at a Crossroads: Navigating the Public-Private Divide",
+    summary:
+      "Across the globe, healthcare systems face increasing pressure, leading to a complex interplay between public provision and private alternatives. This shift raises significant concerns about equitable access and the potential for creating deeply divided health services.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-global-health-systems-at-a-crossroads-navigating-the-public-private-divide.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "flawed-data-undermines-ai-disease-prediction-posing-global-health-risks",
     title: "Flawed Data Undermines AI Disease Prediction, Posing Global Health Risks",
     summary:
