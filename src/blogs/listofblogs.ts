@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "women-s-health-plans-launched-amid-persistent-global-concerns-of-being-unheard",
+    title: "Women's Health Plans Launched Amid Persistent Global Concerns of Being Unheard",
+    summary:
+      "New global health strategies are being introduced to improve care for women and girls, yet many remain unconvinced these plans will address long-standing issues of feeling ignored within healthcare systems. The initiatives aim to tackle disparities, but a history of medical neglect fuels skepticism about their real-world impact.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-women-s-health-plans-launched-amid-persistent-global-concerns-of-being-unheard.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-people-in-england-s-poorest-areas-live-less-than-50",
     title: "Global Health and Education Watch: People in England’s poorest areas live less than 50",
     summary:
