@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "healthcare-strikes-a-global-call-for-diplomacy-amidst-mounting-crisis",
+    title: "Healthcare Strikes: A Global Call for Diplomacy Amidst Mounting Crisis",
+    summary:
+      "Ongoing healthcare strikes worldwide are profoundly impacting patient services and exacerbating divisions within the medical community. Urgent diplomatic intervention is increasingly seen as essential to mitigate the crisis and restore stability to health systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-healthcare-strikes-a-global-call-for-diplomacy-amidst-mounting-crisis.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-africa-nearly-20-million-measles-deaths-averted-since-2000",
     title: "Global Health and Education Watch: Africa: Nearly 20 million measles deaths averted since 2000",
     summary:
