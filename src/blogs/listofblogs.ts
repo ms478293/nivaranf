@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "turkiye-school-shootings-spark-global-alarm-over-education-safety",
+    title: "Turkiye School Shootings Spark Global Alarm Over Education Safety",
+    summary:
+      "Three students and a teacher were tragically killed in a school shooting in Turkiye's Kahramanmaras province, marking the country's second such incident in two days. This alarming event underscores the escalating global concerns about violence threatening educational institutions and the safety of students and educators.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-turkiye-school-shootings-spark-global-alarm-over-education-safety.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sri-lankan-student-could-be-deported-from-uk-after",
     title: "Global Health and Education Watch: Sri Lankan student could be deported from UK after",
     summary:
