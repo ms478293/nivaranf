@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "flawed-data-undermines-ai-disease-prediction-posing-global-health-risks",
+    title: "Flawed Data Undermines AI Disease Prediction, Posing Global Health Risks",
+    summary:
+      "A recent Nature investigation highlights a critical flaw in numerous AI disease-prediction models: their training on questionable data. This widespread issue poses a significant global health risk, potentially leading to biased diagnoses and exacerbating health inequities across diverse populations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-flawed-data-undermines-ai-disease-prediction-posing-global-health-risks.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-one-school-has-banned-phones-for-some-pupils",
     title: "Global Health and Education Watch: Why one school has banned phones for some pupils",
     summary:
