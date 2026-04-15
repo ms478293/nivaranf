@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-watchdog-warns-unmaintained-water-filters-pose-widespread-health-risks",
+    title: "Global Health Watchdog Warns: Unmaintained Water Filters Pose Widespread Health Risks",
+    summary:
+      "A global health watchdog has issued a stark warning regarding the widespread health risks posed by poorly maintained domestic water filters. Despite the safety of many public water supplies, consumer reliance on neglected private filtration systems creates a dangerous pathway for contamination.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-global-health-watchdog-warns-unmaintained-water-filters-pose-widespread-health-r.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-systems-at-a-crossroads-navigating-the-public-private-divide",
     title: "Global Health Systems at a Crossroads: Navigating the Public-Private Divide",
     summary:
