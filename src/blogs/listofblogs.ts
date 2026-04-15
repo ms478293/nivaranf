@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-fertility-decisions-shaped-by-mental-health-concerns",
+    title: "Global Fertility Decisions Shaped by Mental Health Concerns",
+    summary:
+      "Mental health is increasingly influencing reproductive choices globally, prompting individuals to assess their capacity for parenthood. This shift highlights the urgent need for accessible mental healthcare and robust societal support systems for prospective parents.",
+    thumbnailImage: "/images/global-news/2026/2026-04-15-global-fertility-decisions-shaped-by-mental-health-concerns.jpg",
+    date: "2026-04-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-watchdog-warns-unmaintained-water-filters-pose-widespread-health-risks",
     title: "Global Health Watchdog Warns: Unmaintained Water Filters Pose Widespread Health Risks",
     summary:
