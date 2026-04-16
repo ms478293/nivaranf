@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "turkiye-s-schools-grapple-with-grief-after-second-deadly-shooting",
+    title: "Turkiye's Schools Grapple with Grief After Second Deadly Shooting",
+    summary:
+      "Turkiye is reeling from its second school shooting in a week, with a 14-year-old student's actions at Ayser Calik School raising the death toll to 10. This devastating event highlights the urgent global need to address school violence and its profound impact on student safety and mental health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-turkiye-s-schools-grapple-with-grief-after-second-deadly-shooting.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "game-theory-models-revolutionize-university-public-health-emergency-response",
     title: "Game Theory Models Revolutionize University Public Health Emergency Response",
     summary:
