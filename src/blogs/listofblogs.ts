@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "game-theory-models-revolutionize-university-public-health-emergency-response",
+    title: "Game Theory Models Revolutionize University Public Health Emergency Response",
+    summary:
+      "A groundbreaking study introduces an evolutionary game model to enhance public health emergency management within universities globally. This innovative approach analyzes strategic interactions among campus stakeholders to foster more resilient and adaptive response mechanisms.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-game-theory-models-revolutionize-university-public-health-emergency-response.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "children-unprepared-global-schools-face-basic-skill-deficit",
     title: "Children Unprepared: Global Schools Face Basic Skill Deficit",
     summary:
