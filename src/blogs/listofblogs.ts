@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-bridging-the-educational-psychology-gap-for-children-s-futures",
+    title: "Global Call: Bridging the Educational Psychology Gap for Children's Futures",
+    summary:
+      "A recent report underscores a significant shortage of educational psychologists in England, revealing a critical need for enhanced support for children with special educational needs. This challenge mirrors a broader global issue, demanding urgent investment in child mental health and inclusive education services worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-global-call-bridging-the-educational-psychology-gap-for-children-s-futures.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uncharted-territory-uncertainty-as-us-vaccine-guidance-falls-apart",
     title: "Global Health and Education Watch: ‘Uncharted territory’: uncertainty as US vaccine guidance falls apart",
     summary:
