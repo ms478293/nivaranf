@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-universities-grapple-with-mounting-crises-amidst-eroding-public-trust",
+    title: "Global Universities Grapple with Mounting Crises Amidst Eroding Public Trust",
+    summary:
+      "Across the globe, universities are confronting a wave of complex challenges, ranging from internal governance issues to financial instability and declining public confidence. These mounting troubles highlight a critical juncture for higher education, demanding urgent and comprehensive reforms to safeguard its future.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-global-universities-grapple-with-mounting-crises-amidst-eroding-public-trust.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "israeli-strike-devastates-area-near-lebanon-hospital-sparking-global-health-concerns",
     title: "Israeli Strike Devastates Area Near Lebanon Hospital, Sparking Global Health Concerns",
     summary:
