@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rethinking-colonial-narratives-the-global-imperative-for-truth-in-education",
+    title: "Rethinking Colonial Narratives: The Global Imperative for Truth in Education",
+    summary:
+      "Educational systems globally must confront how colonial histories are taught, moving beyond biased narratives to foster a deeper, more accurate understanding. This critical shift is essential for shaping students' perspectives on race, migration, and global justice.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-rethinking-colonial-narratives-the-global-imperative-for-truth-in-education.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-tensions-chicago-union-mayor-standoff-reflects-wider-challenges",
     title: "Global Education Tensions: Chicago Union-Mayor Standoff Reflects Wider Challenges",
     summary:
