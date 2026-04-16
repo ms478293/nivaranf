@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "children-unprepared-global-schools-face-basic-skill-deficit",
+    title: "Children Unprepared: Global Schools Face Basic Skill Deficit",
+    summary:
+      "Schools globally are increasingly encountering children starting primary education without essential skills like toilet training and basic communication. This trend places significant demands on educators and impacts early learning environments worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-children-unprepared-global-schools-face-basic-skill-deficit.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-rollout-of-covid-19-vaccines-was-extraordinary-feat-inquiry",
     title: "Global Health and Education Watch: UK rollout of Covid-19 vaccines was ‘extraordinary feat’, inquiry",
     summary:
