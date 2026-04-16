@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "israeli-strike-devastates-area-near-lebanon-hospital-sparking-global-health-concerns",
+    title: "Israeli Strike Devastates Area Near Lebanon Hospital, Sparking Global Health Concerns",
+    summary:
+      "An Israeli air attack near a hospital in southern Lebanon destroyed surrounding buildings and emergency vehicles, severely impacting regional healthcare infrastructure. This incident underscores the escalating global challenge of protecting medical facilities and ensuring humanitarian access in areas of conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-israeli-strike-devastates-area-near-lebanon-hospital-sparking-global-health-conc.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-bridging-the-educational-psychology-gap-for-children-s-futures",
     title: "Global Call: Bridging the Educational Psychology Gap for Children's Futures",
     summary:
