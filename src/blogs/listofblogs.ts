@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-tensions-chicago-union-mayor-standoff-reflects-wider-challenges",
+    title: "Global Education Tensions: Chicago Union-Mayor Standoff Reflects Wider Challenges",
+    summary:
+      "A conflict between the Chicago Teachers Union and Mayor Brandon Johnson regarding school operations on May Day underscores global challenges in urban education. This local dispute reflects broader tensions between labor advocacy, administrative priorities, and parental concerns across international school systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-global-education-tensions-chicago-union-mayor-standoff-reflects-wider-challenges.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rfk-jr-accused-of-dangerous-conspiracy-theories-at-heated",
     title: "Global Health and Education Watch: RFK Jr accused of ‘dangerous conspiracy theories’ at heated",
     summary:
