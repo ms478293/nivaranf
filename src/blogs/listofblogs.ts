@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-s-dual-edge-transforming-global-public-health-navigating-complexities",
+    title: "AI's Dual Edge: Transforming Global Public Health, Navigating Complexities",
+    summary:
+      "Artificial intelligence is poised to revolutionize global public health, offering powerful tools for disease prediction, personalized care, and resource optimization. However, its widespread adoption necessitates careful navigation of ethical dilemmas, data privacy concerns, and equity challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-04-16-ai-s-dual-edge-transforming-global-public-health-navigating-complexities.jpg",
+    date: "2026-04-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "women-s-health-plans-launched-amid-persistent-global-concerns-of-being-unheard",
     title: "Women's Health Plans Launched Amid Persistent Global Concerns of Being Unheard",
     summary:
