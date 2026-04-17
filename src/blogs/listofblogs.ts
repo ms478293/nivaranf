@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ensuring-student-health-global-food-safety-standards-in-higher-education",
+    title: "Ensuring Student Health: Global Food Safety Standards in Higher Education",
+    summary:
+      "A new study reveals significant insights into food safety knowledge, attitudes, and practices among university food handlers in Northwestern China. These findings underscore the global imperative for enhanced training and oversight to protect student health in educational institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-ensuring-student-health-global-food-safety-standards-in-higher-education.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unesco-bolsters-protection-for-middle-east-heritage-amid-escalating-conflict",
     title: "UNESCO Bolsters Protection for Middle East Heritage Amid Escalating Conflict",
     summary:
