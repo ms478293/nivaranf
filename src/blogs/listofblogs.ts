@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-three-meningitis-b-cases-confirmed-in-dorset-as-young",
+    title: "Global Health and Education Watch: Three meningitis B cases confirmed in Dorset as young",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-global-health-and-education-watch-three-meningitis-b-cases-confirmed-in-dorset-a.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leadership-trump-nominates-erica-schwartz-to-helm-cdc",
     title: "Global Health Leadership: Trump Nominates Erica Schwartz to Helm CDC",
     summary:
