@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "prominent-figure-adjusts-stance-on-vaccine-safety-amid-congressional-scrutiny",
+    title: "Prominent Figure Adjusts Stance on Vaccine Safety Amid Congressional Scrutiny",
+    summary:
+      "During a recent congressional hearing, Robert F. Kennedy Jr. acknowledged the measles vaccine's safety and effectiveness for most people. This statement represents a notable shift from his long-standing skepticism regarding established vaccine policies.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-prominent-figure-adjusts-stance-on-vaccine-safety-amid-congressional-scrutiny.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-inside-the-cdc-s-leadership-vacuum-work-at-a-standstill",
     title: "Global Health and Education Watch: Inside the CDC’s leadership vacuum: work at a ‘standstill’",
     summary:
