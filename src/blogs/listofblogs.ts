@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-surgeon-who-removed-wrong-organ-from-patient-is-charged",
+    title: "Global Health and Education Watch: Surgeon Who Removed Wrong Organ From Patient Is Charged",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-global-health-and-education-watch-surgeon-who-removed-wrong-organ-from-patient-i.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "integrated-mental-health-support-for-diabetes-patients-a-global-imperative",
     title: "Integrated Mental Health Support for Diabetes Patients: A Global Imperative",
     summary:
