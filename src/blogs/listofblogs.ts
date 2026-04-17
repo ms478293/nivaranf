@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unesco-bolsters-protection-for-middle-east-heritage-amid-escalating-conflict",
+    title: "UNESCO Bolsters Protection for Middle East Heritage Amid Escalating Conflict",
+    summary:
+      "UNESCO has granted enhanced protection status to numerous cultural heritage sites across the Middle East. This critical intervention follows reports of significant damage to historical locations in Israel, Iran, and Lebanon since the regional conflict escalated on February 28, 2026.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-unesco-bolsters-protection-for-middle-east-heritage-amid-escalating-conflict.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "southern-lebanon-s-sole-functioning-hospital-damaged-amidst-escalating-conflict",
     title: "Southern Lebanon's Sole Functioning Hospital Damaged Amidst Escalating Conflict",
     summary:
