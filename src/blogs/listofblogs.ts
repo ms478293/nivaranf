@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-lawmakers-clash-with-rfk-jr-as-he-shifts-focus",
+    title: "Global Health and Education Watch: Lawmakers clash with RFK Jr as he shifts focus",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-global-health-and-education-watch-lawmakers-clash-with-rfk-jr-as-he-shifts-focus.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "development-s-double-edge-vietnam-s-infectious-disease-paradox",
     title: "Development's Double Edge: Vietnam's Infectious Disease Paradox",
     summary:
