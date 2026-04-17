@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "solomon-islands-confronts-hidden-gambling-surge-amidst-economic-strain",
+    title: "Solomon Islands Confronts Hidden Gambling Surge Amidst Economic Strain",
+    summary:
+      "In Honiara, Solomon Islands, an illegal street card game called 'Pass' is rapidly gaining traction, luring individuals with the promise of quick wealth despite significant financial risks. This growing phenomenon, often played in clandestine, smoky venues, raises concerns about its socio-economic impact on the community and its vital institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-solomon-islands-confronts-hidden-gambling-surge-amidst-economic-strain.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-surgeon-who-removed-wrong-organ-from-patient-is-charged",
     title: "Global Health and Education Watch: Surgeon Who Removed Wrong Organ From Patient Is Charged",
     summary:
