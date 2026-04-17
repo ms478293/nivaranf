@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "southern-lebanon-s-sole-functioning-hospital-damaged-amidst-escalating-conflict",
+    title: "Southern Lebanon's Sole Functioning Hospital Damaged Amidst Escalating Conflict",
+    summary:
+      "Tibnin Hospital, the sole operational medical facility in southern Lebanon, sustained damage from recent Israeli strikes, severely impacting healthcare access for thousands. This incident underscores the devastating consequences of conflict on civilian infrastructure and humanitarian aid efforts in the region.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-southern-lebanon-s-sole-functioning-hospital-damaged-amidst-escalating-conflict.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-three-meningitis-b-cases-confirmed-in-dorset-as-young",
     title: "Global Health and Education Watch: Three meningitis B cases confirmed in Dorset as young",
     summary:
