@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-vaccine-rollout-hailed-as-feat-support-urged-for-harmed",
+    title: "Global Vaccine Rollout Hailed as Feat, Support Urged for Harmed",
+    summary:
+      "A recent inquiry report extols the global Covid-19 vaccine rollout as an extraordinary achievement, saving countless lives worldwide. Concurrently, it underscores the critical need for improved support systems for the small minority who suffered adverse effects.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-global-vaccine-rollout-hailed-as-feat-support-urged-for-harmed.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rethinking-colonial-narratives-the-global-imperative-for-truth-in-education",
     title: "Rethinking Colonial Narratives: The Global Imperative for Truth in Education",
     summary:
