@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "south-sudan-s-deepening-crisis-violence-hunger-and-health-collapse-amid-un-cuts",
+    title: "South Sudan's Deepening Crisis: Violence, Hunger, and Health Collapse Amid UN Cuts",
+    summary:
+      "Senior UN officials recently presented a dire assessment of South Sudan to the Security Council, highlighting escalating violence, widespread hunger, and a collapsing health system. These challenges are compounded by significant budget cuts to the UN peacekeeping mission, severely limiting its ability to protect civilians and deliver crucial aid.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-south-sudan-s-deepening-crisis-violence-hunger-and-health-collapse-amid-un-cuts.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ensuring-student-health-global-food-safety-standards-in-higher-education",
     title: "Ensuring Student Health: Global Food Safety Standards in Higher Education",
     summary:
