@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "integrated-mental-health-support-for-diabetes-patients-a-global-imperative",
+    title: "Integrated Mental Health Support for Diabetes Patients: A Global Imperative",
+    summary:
+      "A new program in the UK aims to provide integrated mental health support for people living with diabetes, addressing a significant comorbidity. This initiative underscores the urgent global need for holistic care models that recognize the profound link between physical and mental well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-integrated-mental-health-support-for-diabetes-patients-a-global-imperative.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "south-sudan-s-deepening-crisis-violence-hunger-and-health-collapse-amid-un-cuts",
     title: "South Sudan's Deepening Crisis: Violence, Hunger, and Health Collapse Amid UN Cuts",
     summary:
