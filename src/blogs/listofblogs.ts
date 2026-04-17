@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leadership-trump-nominates-erica-schwartz-to-helm-cdc",
+    title: "Global Health Leadership: Trump Nominates Erica Schwartz to Helm CDC",
+    summary:
+      "President Donald Trump has nominated Dr. Erica Schwartz, a former Deputy Surgeon General and US Coast Guard Rear Admiral, to lead the Centers for Disease Control and Prevention (CDC). This appointment concludes a prolonged search for a permanent head of the vital global public health agency, signaling a new chapter for its international operations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-global-health-leadership-trump-nominates-erica-schwartz-to-helm-cdc.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "prominent-figure-adjusts-stance-on-vaccine-safety-amid-congressional-scrutiny",
     title: "Prominent Figure Adjusts Stance on Vaccine Safety Amid Congressional Scrutiny",
     summary:
