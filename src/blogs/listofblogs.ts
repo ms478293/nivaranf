@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "development-s-double-edge-vietnam-s-infectious-disease-paradox",
+    title: "Development's Double Edge: Vietnam's Infectious Disease Paradox",
+    summary:
+      "Vietnam's journey of rapid development highlights a 'paradox of progress,' where societal advancements inadvertently create new vulnerabilities to infectious diseases. This global phenomenon underscores the need for integrated public health strategies in rapidly changing economies.",
+    thumbnailImage: "/images/global-news/2026/2026-04-17-development-s-double-edge-vietnam-s-infectious-disease-paradox.jpg",
+    date: "2026-04-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-vaccine-rollout-hailed-as-feat-support-urged-for-harmed",
     title: "Global Vaccine Rollout Hailed as Feat, Support Urged for Harmed",
     summary:
