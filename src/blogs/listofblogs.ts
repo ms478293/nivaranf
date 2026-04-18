@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "alzheimer-s-gamechanger-drugs-show-trivial-impact-global-review-concludes",
+    title: "Alzheimer's 'Gamechanger' Drugs Show Trivial Impact, Global Review Concludes",
+    summary:
+      "A comprehensive global review of anti-amyloid Alzheimer's drugs has found their impact on cognitive decline to be 'trivial,' offering no noticeable difference for patients. This challenges previous 'gamechanger' claims, prompting re-evaluation of current treatment paradigms.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-alzheimer-s-gamechanger-drugs-show-trivial-impact-global-review-concludes.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "healthcare-decentralization-a-global-blueprint-for-community-well-being",
     title: "Healthcare Decentralization: A Global Blueprint for Community Well-being",
     summary:
