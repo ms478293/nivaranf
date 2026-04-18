@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trust-in-vaccines-needs-rebuilding-despite-extraordinary-feat-of",
+    title: "Global Health and Education Watch: Trust in vaccines needs rebuilding despite ‘extraordinary feat’ of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-health-and-education-watch-trust-in-vaccines-needs-rebuilding-despite-ext.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "community-health-workers-a-global-lifeline-for-aging-populations",
     title: "Community Health Workers: A Global Lifeline for Aging Populations",
     summary:
