@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-should-you-really-trust-health-advice-from-an-ai",
+    title: "Global Health and Education Watch: Should you really trust health advice from an AI",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-health-and-education-watch-should-you-really-trust-health-advice-from-an-.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "alzheimer-s-gamechanger-drugs-show-trivial-impact-global-review-concludes",
     title: "Alzheimer's 'Gamechanger' Drugs Show Trivial Impact, Global Review Concludes",
     summary:
