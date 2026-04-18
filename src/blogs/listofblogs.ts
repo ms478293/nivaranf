@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-individual-versus-group-based-interventions-a-systematic-review-and-meta-analysis",
+    title: "Global Health and Education Watch: Individual versus group-based interventions: a systematic review and meta-analysis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-health-and-education-watch-individual-versus-group-based-interventions-a-.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-s-al-noor-centre-a-beacon-of-hope-for-visually-impaired-children",
     title: "Gaza's Al-Noor Centre: A Beacon of Hope for Visually Impaired Children",
     summary:
