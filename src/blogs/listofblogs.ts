@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "geopolitical-stability-a-cornerstone-for-global-health-and-education",
+    title: "Geopolitical Stability: A Cornerstone for Global Health and Education",
+    summary:
+      "Geopolitical dynamics, exemplified by the strategic importance of maritime routes like the Strait of Hormuz, profoundly influence the global landscape of health and education. Maintaining stability in these critical areas is paramount for ensuring the consistent delivery of essential medical supplies and educational materials worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-geopolitical-stability-a-cornerstone-for-global-health-and-education.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "embracing-the-downpour-how-rain-walks-nurture-global-mental-well-being",
     title: "Embracing the Downpour: How Rain Walks Nurture Global Mental Well-being",
     summary:
