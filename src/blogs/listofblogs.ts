@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-conflict-plunges-women-into-pervasive-fear-and-gender-based-violence-risk",
+    title: "Sudan Conflict Plunges Women into Pervasive Fear and Gender-Based Violence Risk",
+    summary:
+      "The escalating conflict in Sudan has created an environment of extreme peril for women and girls, with widespread reports of insecurity and heightened risks of gender-based violence. Displaced populations are particularly vulnerable, facing dangers both during flight and within crowded humanitarian settings.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-sudan-conflict-plunges-women-into-pervasive-fear-and-gender-based-violence-risk.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-individual-versus-group-based-interventions-a-systematic-review-and-meta-analysis",
     title: "Global Health and Education Watch: Individual versus group-based interventions: a systematic review and meta-analysis",
     summary:
