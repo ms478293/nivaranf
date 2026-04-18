@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "pregnancy-vaccine-offers-80-protection-against-infant-rsv-hospitalizations",
+    title: "Pregnancy Vaccine Offers 80% Protection Against Infant RSV Hospitalizations",
+    summary:
+      "A new study validates a maternal vaccine's remarkable effectiveness, showing an 80% reduction in infant hospital admissions due to severe RSV. This breakthrough offers excellent protection against life-threatening chest infections, promising a significant global health impact.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-pregnancy-vaccine-offers-80-protection-against-infant-rsv-hospitalizations.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "solomon-islands-confronts-hidden-gambling-surge-amidst-economic-strain",
     title: "Solomon Islands Confronts Hidden Gambling Surge Amidst Economic Strain",
     summary:
