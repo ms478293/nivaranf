@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-it-s-a-powder-keg-romania-leads-eu-measles-cases",
+    title: "Global Health and Education Watch: ‘It’s a powder keg’: Romania leads EU measles cases",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-health-and-education-watch-it-s-a-powder-keg-romania-leads-eu-measles-cas.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-conflict-plunges-women-into-pervasive-fear-and-gender-based-violence-risk",
     title: "Sudan Conflict Plunges Women into Pervasive Fear and Gender-Based Violence Risk",
     summary:
