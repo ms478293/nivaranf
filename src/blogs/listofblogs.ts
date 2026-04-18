@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "community-health-workers-a-global-lifeline-for-aging-populations",
+    title: "Community Health Workers: A Global Lifeline for Aging Populations",
+    summary:
+      "Globally, an aging population and healthcare professional shortages strain health systems, leaving many older adults vulnerable. Community health workers are emerging as a critical solution, providing personalized care and connecting seniors to essential services worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-community-health-workers-a-global-lifeline-for-aging-populations.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "geopolitical-stability-a-cornerstone-for-global-health-and-education",
     title: "Geopolitical Stability: A Cornerstone for Global Health and Education",
     summary:
