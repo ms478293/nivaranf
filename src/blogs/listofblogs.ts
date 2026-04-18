@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-al-noor-centre-a-beacon-of-hope-for-visually-impaired-children",
+    title: "Gaza's Al-Noor Centre: A Beacon of Hope for Visually Impaired Children",
+    summary:
+      "The Al-Noor Centre in Gaza offers vital education and comprehensive support to visually impaired children, serving as a critical lifeline. Operated by UNRWA, it empowers these children to overcome adversity and build brighter futures.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-gaza-s-al-noor-centre-a-beacon-of-hope-for-visually-impaired-children.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "pregnancy-vaccine-offers-80-protection-against-infant-rsv-hospitalizations",
     title: "Pregnancy Vaccine Offers 80% Protection Against Infant RSV Hospitalizations",
     summary:
