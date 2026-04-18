@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "healthcare-decentralization-a-global-blueprint-for-community-well-being",
+    title: "Healthcare Decentralization: A Global Blueprint for Community Well-being",
+    summary:
+      "A pioneering initiative in the UK demonstrates how relocating medical services to community spaces can significantly improve healthcare accessibility and patient experience. This innovative model also offers a powerful strategy for rejuvenating urban retail areas, presenting a global blueprint for integrated health and sustainable urban development.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-healthcare-decentralization-a-global-blueprint-for-community-well-being.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-australia-s-other-half-heals-all-aboard-the-superyacht",
     title: "Global Health and Education Watch: How Australia’s other half heals: all aboard the superyacht",
     summary:
