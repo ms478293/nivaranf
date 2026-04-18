@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-shift-trump-administration-eyes-loosening-psychedelic-research-restrictions",
+    title: "Global Shift: Trump Administration Eyes Loosening Psychedelic Research Restrictions",
+    summary:
+      "The Trump administration is reportedly preparing an executive order to ease restrictions on psychedelic drug research. This move could significantly accelerate studies into their potential for treating PTSD, depression, and other mental health conditions globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-shift-trump-administration-eyes-loosening-psychedelic-research-restrictio.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-it-s-a-powder-keg-romania-leads-eu-measles-cases",
     title: "Global Health and Education Watch: ‘It’s a powder keg’: Romania leads EU measles cases",
     summary:
