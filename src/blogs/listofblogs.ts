@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-cookie-house-at-carleton-college-in-minnesota-keeps-students",
+    title: "Global Health and Education Watch: Cookie House at Carleton College in Minnesota Keeps Students",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-global-health-and-education-watch-cookie-house-at-carleton-college-in-minnesota-.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-my-weekly-juggling-act-being-a-teacher-to",
     title: "Global Health and Education Watch: My weekly juggling act - being a teacher to",
     summary:
