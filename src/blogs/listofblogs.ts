@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "harvard-s-slavery-legacy-project-marred-by-researcher-exodus-and-obstruction-claims",
+    title: "Harvard's Slavery Legacy Project Marred by Researcher Exodus and Obstruction Claims",
+    summary:
+      "Harvard University's ambitious $100 million project investigating its historical ties to slavery is embroiled in controversy. Academics involved allege obstruction and a hostile environment, leading to departures and firings, raising concerns about institutional commitment to historical truth.",
+    thumbnailImage: "/images/global-news/2026/2026-04-18-harvard-s-slavery-legacy-project-marred-by-researcher-exodus-and-obstruction-cla.jpg",
+    date: "2026-04-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-shift-trump-administration-eyes-loosening-psychedelic-research-restrictions",
     title: "Global Shift: Trump Administration Eyes Loosening Psychedelic Research Restrictions",
     summary:
