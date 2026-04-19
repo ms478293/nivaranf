@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "principal-honored-for-heroism-after-disarming-school-intruder",
+    title: "Principal Honored for Heroism After Disarming School Intruder",
+    summary:
+      "A high school principal in Oklahoma, Kirk Moore, was recently honored as prom king by his students after he bravely disarmed an armed intruder on campus. This act of heroism, which saw him sustain a gunshot wound, underscored his dedication to student safety and inspired his community.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-principal-honored-for-heroism-after-disarming-school-intruder.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "world-cup-winner-s-revelation-highlights-global-body-image-crisis",
     title: "World Cup Winner's Revelation Highlights Global Body Image Crisis",
     summary:
