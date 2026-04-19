@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "world-cup-winner-s-revelation-highlights-global-body-image-crisis",
+    title: "World Cup Winner's Revelation Highlights Global Body Image Crisis",
+    summary:
+      "England rugby international Ellie Kildunne has openly discussed her battle with body dysmorphia and disordered eating during the Covid-19 pandemic. Her experience underscores a critical global health challenge affecting individuals across all walks of life, including elite athletes.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-world-cup-winner-s-revelation-highlights-global-body-image-crisis.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-vaccine-success-heralds-new-era-but-trust-remains-elusive",
     title: "Global Vaccine Success Heralds New Era, But Trust Remains Elusive",
     summary:
