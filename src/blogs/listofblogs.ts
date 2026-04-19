@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does",
+    title: "Global Health and Education Watch: What is the UK Covid inquiry and how does",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-should-you-really-trust-health-advice-from-an-ai",
     title: "Global Health and Education Watch: Should you really trust health advice from an AI",
     summary:
