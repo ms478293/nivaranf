@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-fee-hikes-big-bonuses-then-bosses-exit-the-curious",
+    title: "Global Health and Education Watch: Fee hikes, big bonuses, then bosses exit: the curious",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-health-and-education-watch-fee-hikes-big-bonuses-then-bosses-exit-the-cur.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "michigan-clerk-s-heroism-highlights-global-call-for-vigilance-in-youth-safety",
     title: "Michigan Clerk's Heroism Highlights Global Call for Vigilance in Youth Safety",
     summary:
