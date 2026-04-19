@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-guardian-view-on-school-food-there-is-no",
+    title: "Global Health and Education Watch: The Guardian view on school food: there is no",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-health-and-education-watch-the-guardian-view-on-school-food-there-is-no.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-3-university-of-iowa-students-injured-during-a-shooting",
     title: "Global Health and Education Watch: 3 University of Iowa Students Injured During a Shooting",
     summary:
