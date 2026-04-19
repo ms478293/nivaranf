@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalating-attacks-cripple-healthcare-across-middle-east",
+    title: "Escalating Attacks Cripple Healthcare Across Middle East",
+    summary:
+      "Recent Israeli military actions have profoundly impacted healthcare systems across Iran, Lebanon, and Gaza, leading to widespread destruction of medical facilities and critical service disruptions. These assaults pose severe challenges to civilian populations and humanitarian efforts, undermining the fundamental right to health in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-escalating-attacks-cripple-healthcare-across-middle-east.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-guardian-view-on-school-food-there-is-no",
     title: "Global Health and Education Watch: The Guardian view on school food: there is no",
     summary:
