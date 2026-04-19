@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "michigan-clerk-s-heroism-highlights-global-call-for-vigilance-in-youth-safety",
+    title: "Michigan Clerk's Heroism Highlights Global Call for Vigilance in Youth Safety",
+    summary:
+      "A quick-thinking gas station clerk in Michigan saved a 16-year-old girl from an alleged kidnapper after she silently mouthed \"help.\" This act of bravery highlights the critical role of community vigilance in safeguarding young people worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-michigan-clerk-s-heroism-highlights-global-call-for-vigilance-in-youth-safety.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-push-for-early-science-engagement-california-museum-sets-example",
     title: "Global Push for Early Science Engagement: California Museum Sets Example",
     summary:
