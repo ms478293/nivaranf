@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-fight-against-medical-misogyny-has-a-long-way",
+    title: "Global Health and Education Watch: The fight against medical misogyny has a long way",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-health-and-education-watch-the-fight-against-medical-misogyny-has-a-long-.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-student-groups-navigate-ideological-shifts-campus-discontent",
     title: "Global Student Groups Navigate Ideological Shifts, Campus Discontent",
     summary:
