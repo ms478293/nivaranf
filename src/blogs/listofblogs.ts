@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-leaders-champion-early-learning-in-symbolic-cross-partisan-outreach",
+    title: "Global Leaders Champion Early Learning in Symbolic Cross-Partisan Outreach",
+    summary:
+      "Former US President Barack Obama and New York City Mayor Zohran Mamdani recently engaged with preschoolers at a Bronx childcare center, highlighting the critical role of early learning. This bipartisan interaction serves as a powerful reminder of the global imperative to invest in foundational education for future generations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-leaders-champion-early-learning-in-symbolic-cross-partisan-outreach.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-fight-against-medical-misogyny-has-a-long-way",
     title: "Global Health and Education Watch: The fight against medical misogyny has a long way",
     summary:
