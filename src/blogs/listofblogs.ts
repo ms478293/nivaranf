@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-student-groups-navigate-ideological-shifts-campus-discontent",
+    title: "Global Student Groups Navigate Ideological Shifts, Campus Discontent",
+    summary:
+      "Student organizations worldwide are increasingly confronting internal ideological disagreements and shifts in leadership direction. These challenges are reshaping campus activism and influencing the broader educational environment for youth.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-student-groups-navigate-ideological-shifts-campus-discontent.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalating-attacks-cripple-healthcare-across-middle-east",
     title: "Escalating Attacks Cripple Healthcare Across Middle East",
     summary:
