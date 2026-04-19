@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-push-for-early-science-engagement-california-museum-sets-example",
+    title: "Global Push for Early Science Engagement: California Museum Sets Example",
+    summary:
+      "The KidSTREAM museum, a $7 million initiative in California, exemplifies a growing global recognition of the importance of early childhood science education. Born from a teacher's vision, it underscores the value of interactive learning environments for young minds worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-push-for-early-science-engagement-california-museum-sets-example.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "the-digital-dilemma-reclaiming-education-from-tech-over-reliance",
     title: "The Digital Dilemma: Reclaiming Education from Tech Over-Reliance",
     summary:
