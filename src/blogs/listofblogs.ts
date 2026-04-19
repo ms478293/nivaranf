@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-three-young-people-contract-meningitis-in-weymouth",
+    title: "Global Health and Education Watch: Three young people contract meningitis in Weymouth",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-health-and-education-watch-three-young-people-contract-meningitis-in-weym.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-leaders-champion-early-learning-in-symbolic-cross-partisan-outreach",
     title: "Global Leaders Champion Early Learning in Symbolic Cross-Partisan Outreach",
     summary:
