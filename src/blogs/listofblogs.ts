@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-vaccine-success-heralds-new-era-but-trust-remains-elusive",
+    title: "Global Vaccine Success Heralds New Era, But Trust Remains Elusive",
+    summary:
+      "Recent findings confirm that widespread immunisation campaigns have averted countless deaths globally, particularly during health crises. However, the critical need to rebuild and sustain public trust in health interventions remains a significant hurdle for future global health initiatives.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-global-vaccine-success-heralds-new-era-but-trust-remains-elusive.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-fee-hikes-big-bonuses-then-bosses-exit-the-curious",
     title: "Global Health and Education Watch: Fee hikes, big bonuses, then bosses exit: the curious",
     summary:
