@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-digital-dilemma-reclaiming-education-from-tech-over-reliance",
+    title: "The Digital Dilemma: Reclaiming Education from Tech Over-Reliance",
+    summary:
+      "Across the globe, educational institutions are grappling with the pervasive influence of technology, prompting a critical re-evaluation of its role. This shift advocates for technology to return to its rightful place as a supportive tool, rather than the central pillar of learning.",
+    thumbnailImage: "/images/global-news/2026/2026-04-19-the-digital-dilemma-reclaiming-education-from-tech-over-reliance.jpg",
+    date: "2026-04-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-recommends-new-diagnostic-tools-to-help-end-tb-2",
     title: "Global Health and Education Watch: WHO recommends new diagnostic tools to help end TB",
     summary:
