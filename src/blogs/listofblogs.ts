@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-public-sanitation-decline-threatens-well-being-and-equity",
+    title: "Global Health Crisis: Public Sanitation Decline Threatens Well-being and Equity",
+    summary:
+      "A new report reveals a significant decline in public toilet facilities across England, creating 'toilet deserts' that harm public health and local economies. This trend mirrors a broader global challenge in maintaining essential sanitation infrastructure, impacting vulnerable populations and urban development worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-global-health-crisis-public-sanitation-decline-threatens-well-being-and-equity.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-s-last-stand-one-hospital-battles-tropical-disease-amidst-war-s-devastation",
     title: "Sudan's Last Stand: One Hospital Battles Tropical Disease Amidst War's Devastation",
     summary:
