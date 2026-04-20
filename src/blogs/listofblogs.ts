@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "breakthrough-in-organ-transplants-offers-hope-for-drug-free-life",
+    title: "Breakthrough in Organ Transplants Offers Hope for Drug-Free Life",
+    summary:
+      "A groundbreaking study at the University of Pittsburgh enabled three liver transplant recipients to cease anti-rejection drugs by introducing donor immune cells. This innovative approach, while not universally successful, offers significant hope for improving post-transplant quality of life globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-breakthrough-in-organ-transplants-offers-hope-for-drug-free-life.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "economic-evaluation-guiding-global-health-investment-for-impact",
     title: "Economic Evaluation: Guiding Global Health Investment for Impact",
     summary:
