@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "economic-evaluation-guiding-global-health-investment-for-impact",
+    title: "Economic Evaluation: Guiding Global Health Investment for Impact",
+    summary:
+      "Health economic evaluation is crucial for making informed decisions in global health, ensuring resources are allocated effectively for maximum impact. This analytical approach supports policymakers worldwide in developing sustainable and equitable health interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-economic-evaluation-guiding-global-health-investment-for-impact.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-crisis-public-sanitation-decline-threatens-well-being-and-equity",
     title: "Global Health Crisis: Public Sanitation Decline Threatens Well-being and Equity",
     summary:
