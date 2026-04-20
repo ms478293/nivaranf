@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "universities-face-fines-for-free-speech-failures-amid-global-education-debate",
+    title: "Universities Face Fines for Free Speech Failures Amid Global Education Debate",
+    summary:
+      "A new complaints system is set to impose substantial fines on universities failing to uphold free speech, with penalties reaching up to £500,000 or 2% of income. This development underscores a growing international focus on safeguarding open dialogue within higher education institutions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-universities-face-fines-for-free-speech-failures-amid-global-education-debate.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-health-visitors-call-for-limits-on-impossible-1-000-family-caseloads",
     title: "Global Health and Education Watch: Health visitors call for limits on 'impossible' 1,000-family caseloads",
     summary:
