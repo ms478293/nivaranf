@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-decade-long-recovery-needs-over-71-billion-for-essential-services",
+    title: "Gaza's Decade-Long Recovery Needs Over $71 Billion for Essential Services",
+    summary:
+      "A recent international assessment reveals Gaza requires more than $71 billion over the next decade for comprehensive recovery. The report underscores extensive devastation across critical sectors including health, education, and housing, necessitating urgent global support.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-gaza-s-decade-long-recovery-needs-over-71-billion-for-essential-services.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones",
     title: "UN Forum Urges Global Action for Indigenous Healthcare in Conflict Zones",
     summary:
