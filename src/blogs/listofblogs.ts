@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-s-last-stand-one-hospital-battles-tropical-disease-amidst-war-s-devastation",
+    title: "Sudan's Last Stand: One Hospital Battles Tropical Disease Amidst War's Devastation",
+    summary:
+      "Sudan's protracted conflict has rendered 37 percent of its health facilities non-operational, leaving millions without critical medical care. Amidst this collapse, a solitary hospital remains functional, serving as the nation's only bulwark against a surge in tropical diseases exacerbated by the ongoing war.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-sudan-s-last-stand-one-hospital-battles-tropical-disease-amidst-war-s-devastatio.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-exam-obsessed-schools-leave-pupils-unready-for-work-alan-milburn",
     title: "Global Health and Education Watch: ‘Exam-obsessed’ schools leave pupils unready for work, Alan Milburn",
     summary:
