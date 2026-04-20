@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones",
+    title: "UN Forum Urges Global Action for Indigenous Healthcare in Conflict Zones",
+    summary:
+      "A significant UN forum in New York recently addressed critical healthcare disparities for Indigenous Peoples, especially those affected by conflict. Discussions emphasized the urgent need for culturally sensitive services and robust international support to protect their fundamental right to health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "breakthrough-in-organ-transplants-offers-hope-for-drug-free-life",
     title: "Breakthrough in Organ Transplants Offers Hope for Drug-Free Life",
     summary:
