@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-falls-crisis-trillion-dollar-economic-burden-looms-by-2050",
+    title: "Global Falls Crisis: Trillion-Dollar Economic Burden Looms by 2050",
+    summary:
+      "A groundbreaking study projects the global economic burden of falls to reach trillions by 2050, impacting 190 countries. This escalating crisis necessitates immediate, coordinated health and economic interventions worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-global-falls-crisis-trillion-dollar-economic-burden-looms-by-2050.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-analysis-of-alzheimer-s-drugs-stirs-debate-about-their-effectiveness",
     title: "Global Health and Education Watch: Analysis of Alzheimer’s Drugs Stirs Debate About Their Effectiveness",
     summary:
