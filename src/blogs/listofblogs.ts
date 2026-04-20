@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-moves-to-legally-ban-mobile-phones-in-schools-to-boost-learning-and-wellbeing",
+    title: "England Moves to Legally Ban Mobile Phones in Schools to Boost Learning and Wellbeing",
+    summary:
+      "England's government is set to introduce legislation mandating a ban on mobile phones in all schools, transforming existing guidance into a legal requirement. This initiative seeks to enhance educational environments, reduce distractions, and support student mental well-being across the nation.",
+    thumbnailImage: "/images/global-news/2026/2026-04-20-england-moves-to-legally-ban-mobile-phones-in-schools-to-boost-learning-and-well.jpg",
+    date: "2026-04-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-s-decade-long-recovery-needs-over-71-billion-for-essential-services",
     title: "Gaza's Decade-Long Recovery Needs Over $71 Billion for Essential Services",
     summary:
