@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sudan-refugees-returning-home-face-new-struggle-for-survival",
+    title: "Global Health and Education Watch: Sudan refugees returning home face new ‘struggle for survival’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-global-health-and-education-watch-sudan-refugees-returning-home-face-new-struggl.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-economic-collapse-pushes-highly-educated-gazans-into-the-survival",
     title: "Global Health and Education Watch: Economic collapse pushes highly educated Gazans into the ‘survival",
     summary:
