@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sustainable-housing-design-transforms-child-health-in-rural-africa",
+    title: "Sustainable Housing Design Transforms Child Health in Rural Africa",
+    summary:
+      "A landmark cluster-randomized controlled trial published in Nature Medicine demonstrates the profound impact of sustainable housing on child health in rural Africa. The innovative designs significantly reduce respiratory infections, diarrheal diseases, and malaria, offering a scalable blueprint for global health improvement.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-sustainable-housing-design-transforms-child-health-in-rural-africa.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "wellington-emergency-highlights-global-climate-threat-to-education-and-health",
     title: "Wellington Emergency Highlights Global Climate Threat to Education and Health",
     summary:
