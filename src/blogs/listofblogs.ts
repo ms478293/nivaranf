@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-world-news-in-brief-ai-diagnostics-humanitarian-deal-for",
+    title: "Global Health and Education Watch: World News in Brief: AI diagnostics, humanitarian deal for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-global-health-and-education-watch-world-news-in-brief-ai-diagnostics-humanitaria.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sustainable-housing-design-transforms-child-health-in-rural-africa",
     title: "Sustainable Housing Design Transforms Child Health in Rural Africa",
     summary:
