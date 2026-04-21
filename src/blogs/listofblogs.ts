@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-s-crisis-long-waits-sicker-patients-strained-systems",
+    title: "Global Healthcare's Crisis: Long Waits, Sicker Patients, Strained Systems",
+    summary:
+      "Healthcare systems worldwide are struggling under immense pressure, leading to prolonged patient waiting times and deteriorating health conditions. This global crisis, fueled by staff shortages and systemic inefficiencies, demands urgent attention to prevent further erosion of public health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-global-healthcare-s-crisis-long-waits-sicker-patients-strained-systems.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "england-moves-to-legally-ban-mobile-phones-in-schools-to-boost-learning-and-wellbeing",
     title: "England Moves to Legally Ban Mobile Phones in Schools to Boost Learning and Wellbeing",
     summary:
