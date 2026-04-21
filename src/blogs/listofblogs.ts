@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "wellington-emergency-highlights-global-climate-threat-to-education-and-health",
+    title: "Wellington Emergency Highlights Global Climate Threat to Education and Health",
+    summary:
+      "New Zealand's capital, Wellington, has declared an emergency following torrential rains that triggered widespread flash floods and landslides, forcing the closure of over 100 schools. This event underscores the escalating global challenge extreme weather poses to public health and education infrastructure.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-wellington-emergency-highlights-global-climate-threat-to-education-and-health.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-maternity-boss-confident-as-unit-reopens",
     title: "Global Health and Education Watch: Maternity boss 'confident' as unit reopens",
     summary:
