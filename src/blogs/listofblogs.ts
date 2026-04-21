@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-military-ends-mandatory-flu-vaccine-for-soldiers",
+    title: "US Military Ends Mandatory Flu Vaccine for Soldiers",
+    summary:
+      "The US military has ceased mandatory flu vaccinations for its personnel, citing principles of 'medical autonomy' and criticizing previous mandates as 'overreaching'. This policy shift initiates a broader global discussion on individual health rights versus collective military readiness and public health imperatives.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-us-military-ends-mandatory-flu-vaccine-for-soldiers.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "chinese-student-jailed-after-australian-protests-sparks-global-concern-over-academic-freedom",
     title: "Chinese Student Jailed After Australian Protests, Sparks Global Concern Over Academic Freedom",
     summary:
