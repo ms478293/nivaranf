@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "chinese-student-jailed-after-australian-protests-sparks-global-concern-over-academic-freedom",
+    title: "Chinese Student Jailed After Australian Protests, Sparks Global Concern Over Academic Freedom",
+    summary:
+      "An international student has reportedly been sentenced to six years in prison in China after participating in pro-democracy protests in Australia. This incident has prompted urgent calls for the Australian government to enhance protections for overseas students against political repression.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-chinese-student-jailed-after-australian-protests-sparks-global-concern-over-acad.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tuesday-briefing-what-it-might-take-for-lasting-peace",
     title: "Global Health and Education Watch: Tuesday briefing: What it might take for lasting peace",
     summary:
