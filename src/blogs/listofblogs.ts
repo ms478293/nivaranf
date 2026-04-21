@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "malaria-deaths-rise-amidst-vaccine-promise-a-global-health-paradox",
+    title: "Malaria Deaths Rise Amidst Vaccine Promise: A Global Health Paradox",
+    summary:
+      "The global health community grapples with a paradoxical rise in malaria deaths, even as innovative vaccines offer new hope. This alarming trend underscores the complex interplay of environmental, biological, and systemic factors hindering progress against the ancient disease.",
+    thumbnailImage: "/images/global-news/2026/2026-04-21-malaria-deaths-rise-amidst-vaccine-promise-a-global-health-paradox.jpg",
+    date: "2026-04-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-encouraging-progress-in-inclusive-health-policies-for-refugees-and",
     title: "Global Health and Education Watch: Encouraging progress in inclusive health policies for refugees and",
     summary:
