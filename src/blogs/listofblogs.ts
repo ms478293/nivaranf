@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-security-under-scrutiny-amid-vaccine-policy-disagreements",
+    title: "Global Health Security Under Scrutiny Amid Vaccine Policy Disagreements",
+    summary:
+      "A recent high-profile refusal to endorse a public health leader's vaccine stance highlights growing global challenges to immunization efforts. This political friction emerges as vaccine-preventable diseases, like measles, experience alarming resurgences across various nations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-global-health-security-under-scrutiny-amid-vaccine-policy-disagreements.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-systems-grapple-with-falling-birth-rates-and-surplus-school-places",
     title: "Global Education Systems Grapple with Falling Birth Rates and Surplus School Places",
     summary:
