@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-study-links-dietary-intake-to-women-s-infertility",
+    title: "Global Study Links Dietary Intake to Women's Infertility",
+    summary:
+      "A recent global study published in Nature reveals significant links between dietary nutrient intake, nutritional status, and infertility in women. The findings underscore the urgent need for comprehensive nutritional strategies to support reproductive health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-global-study-links-dietary-intake-to-women-s-infertility.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-security-under-scrutiny-amid-vaccine-policy-disagreements",
     title: "Global Health Security Under Scrutiny Amid Vaccine Policy Disagreements",
     summary:
