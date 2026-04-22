@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "west-bank-school-shooting-kills-child-raises-global-education-and-health-concerns",
+    title: "West Bank School Shooting Kills Child, Raises Global Education and Health Concerns",
+    summary:
+      "Two Palestinians, including a child, were killed in an Israeli shooting near a West Bank school, according to the Palestinian health ministry. The incident in Al Mughayir, a village experiencing increased settler violence, highlights grave concerns for civilian health and education in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-west-bank-school-shooting-kills-child-raises-global-education-and-health-concern.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-paradox-students-trained-but-jobs-scarce",
     title: "Global Health Paradox: Students Trained, But Jobs Scarce",
     summary:
