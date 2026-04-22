@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-systems-grapple-with-falling-birth-rates-and-surplus-school-places",
+    title: "Global Education Systems Grapple with Falling Birth Rates and Surplus School Places",
+    summary:
+      "Nations globally face a critical juncture as declining birth rates lead to an unprecedented surplus of school places, threatening funding and infrastructure. Proactive policy and integrated planning are urgently needed to avert widespread disruption to education systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-global-education-systems-grapple-with-falling-birth-rates-and-surplus-school-pla.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "avian-flu-vaccine-trial-advances-global-pandemic-preparedness",
     title: "Avian Flu Vaccine Trial Advances Global Pandemic Preparedness",
     summary:
