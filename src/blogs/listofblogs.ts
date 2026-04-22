@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "avian-flu-vaccine-trial-advances-global-pandemic-preparedness",
+    title: "Avian Flu Vaccine Trial Advances Global Pandemic Preparedness",
+    summary:
+      "A significant human trial has commenced for a vaccine designed to combat the H5N1 avian influenza strain, a virus devastating bird populations globally. This proactive measure aims to prepare the world for a potential pandemic, though the virus has not yet demonstrated sustained human-to-human spread.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-avian-flu-vaccine-trial-advances-global-pandemic-preparedness.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "west-bank-school-shooting-kills-child-raises-global-education-and-health-concerns",
     title: "West Bank School Shooting Kills Child, Raises Global Education and Health Concerns",
     summary:
