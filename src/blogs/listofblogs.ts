@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-attacks-on-ukraine-s-health-care-increased-by-20-in-3",
+    title: "Global Health and Education Watch: Attacks on Ukraine’s health care increased by 20% in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-global-health-and-education-watch-attacks-on-ukraine-s-health-care-increased-by-.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-study-links-dietary-intake-to-women-s-infertility",
     title: "Global Study Links Dietary Intake to Women's Infertility",
     summary:
