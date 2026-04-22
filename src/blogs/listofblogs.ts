@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "steering-ai-s-future-global-regulation-crucial-for-health-and-education",
+    title: "Steering AI's Future: Global Regulation Crucial for Health and Education",
+    summary:
+      "Artificial Intelligence pioneer Geoffrey Hinton warns that unregulated AI resembles a powerful vehicle without control, necessitating urgent global governance. This call underscores the critical need for frameworks to ethically guide AI's transformative potential in global health and education.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-steering-ai-s-future-global-regulation-crucial-for-health-and-education.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-calls-for-clarity-over-schools-smartphone-ban",
     title: "Global Health and Education Watch: Calls for clarity over schools smartphone ban",
     summary:
