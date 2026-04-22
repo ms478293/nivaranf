@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-paradox-students-trained-but-jobs-scarce",
+    title: "Global Health Paradox: Students Trained, But Jobs Scarce",
+    summary:
+      "Across various nations, a concerning trend is emerging where healthcare systems invest heavily in training professionals, only for graduates to face significant challenges securing employment. This paradox highlights systemic failures in long-term workforce planning and resource allocation within the global health sector.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-global-health-paradox-students-trained-but-jobs-scarce.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sudan-refugees-returning-home-face-new-struggle-for-survival",
     title: "Global Health and Education Watch: Sudan refugees returning home face new ‘struggle for survival’",
     summary:
