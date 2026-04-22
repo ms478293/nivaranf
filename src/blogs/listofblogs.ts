@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "west-bank-children-face-daily-obstacles-to-education-amidst-settler-blockades",
+    title: "West Bank Children Face Daily Obstacles to Education Amidst Settler Blockades",
+    summary:
+      "In the West Bank, Palestinian children face daily impediments to accessing education, as Israeli settlers reportedly block their path to school. This ongoing disruption has led to peaceful daily sit-ins by students, teachers, and families near Umm al-Khair village, highlighting a critical challenge to fundamental educational rights.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-west-bank-children-face-daily-obstacles-to-education-amidst-settler-blockades.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-attacks-on-ukraine-s-health-care-increased-by-20-in-3",
     title: "Global Health and Education Watch: Attacks on Ukraine’s health care increased by 20% in",
     summary:
