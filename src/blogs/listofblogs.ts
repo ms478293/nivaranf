@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-health-data-scandal-half-million-patient-records-allegedly-for-sale-in-china",
+    title: "UK Health Data Scandal: Half-Million Patient Records Allegedly For Sale in China",
+    summary:
+      "Sensitive health data belonging to half a million participants in a prominent UK research project was reportedly discovered for sale on a Chinese e-commerce site. This alarming incident has ignited serious concerns regarding data security, patient privacy, and the international governance of biomedical information.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-uk-health-data-scandal-half-million-patient-records-allegedly-for-sale-in-china.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-for-enhanced-maternal-safety-after-tragic-home-birth-fatality",
     title: "Global Call for Enhanced Maternal Safety After Tragic Home Birth Fatality",
     summary:
