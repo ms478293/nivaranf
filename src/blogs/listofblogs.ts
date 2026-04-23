@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "west-bank-funeral-disrupted-by-tear-gas-raising-health-and-education-concerns",
+    title: "West Bank Funeral Disrupted by Tear Gas, Raising Health and Education Concerns",
+    summary:
+      "A funeral for two Palestinians, reportedly killed by settlers, was disrupted by Israeli forces firing tear gas at a West Bank school. This incident underscores the profound challenges to community well-being and educational stability in conflict-affected regions.",
+    thumbnailImage: "/images/global-news/2026/2026-04-22-west-bank-funeral-disrupted-by-tear-gas-raising-health-and-education-concerns.jpg",
+    date: "2026-04-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "steering-ai-s-future-global-regulation-crucial-for-health-and-education",
     title: "Steering AI's Future: Global Regulation Crucial for Health and Education",
     summary:
