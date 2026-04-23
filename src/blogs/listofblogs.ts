@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "iran-school-bombing-the-lingering-shadow-of-a-missing-child",
+    title: "Iran School Bombing: The Lingering Shadow of a Missing Child",
+    summary:
+      "The case of Makan Nasiri, a seven-year-old boy missing after a school bombing in Iran, has been closed by authorities, leaving his parents without closure. His disappearance highlights the profound and tragic impact of conflict on children and educational institutions globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-iran-school-bombing-the-lingering-shadow-of-a-missing-child.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kathy-attawell-obituary",
     title: "Global Health and Education Watch: Kathy Attawell obituary",
     summary:
