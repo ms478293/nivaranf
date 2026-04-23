@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-progress-defies-funding-challenges-who-report-reveals",
+    title: "Global Health Progress Defies Funding Challenges, WHO Report Reveals",
+    summary:
+      "The World Health Organization's 2025 Results Report indicates remarkable health gains for hundreds of millions globally, achieved despite considerable funding reductions. This highlights the organization's strategic resilience and the enduring impact of international health initiatives amidst financial pressures.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-global-health-progress-defies-funding-challenges-who-report-reveals.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "iran-school-bombing-the-lingering-shadow-of-a-missing-child",
     title: "Iran School Bombing: The Lingering Shadow of a Missing Child",
     summary:
