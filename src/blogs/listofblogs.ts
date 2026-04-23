@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-certifies-the-bahamas-for-eliminating-mother-to-child-transmission-of",
+    title: "Global Health and Education Watch: WHO certifies the Bahamas for eliminating mother-to-child transmission of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-global-health-and-education-watch-who-certifies-the-bahamas-for-eliminating-moth.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-was-wrong-about-the-danger-of-smartphones-in",
     title: "Global Health and Education Watch: I was wrong about the danger of smartphones in",
     summary:
