@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-for-enhanced-maternal-safety-after-tragic-home-birth-fatality",
+    title: "Global Call for Enhanced Maternal Safety After Tragic Home Birth Fatality",
+    summary:
+      "A devastating case involving the death of an infant following an 'unsafe' home birth has brought renewed scrutiny to global maternal healthcare standards. The incident, where medical advice was reportedly overridden, emphasizes the critical need for robust patient safety protocols and transparent communication worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-global-call-for-enhanced-maternal-safety-after-tragic-home-birth-fatality.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-reports-measurable-health-impact-in-2025-amid-transition",
     title: "Global Health and Education Watch: WHO reports measurable health impact in 2025 amid transition",
     summary:
