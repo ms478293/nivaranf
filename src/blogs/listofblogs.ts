@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-therapies-offer-hope-in-global-fight-against-pancreatic-cancer",
+    title: "New Therapies Offer Hope in Global Fight Against Pancreatic Cancer",
+    summary:
+      "Recent clinical trials have unveiled two distinct experimental treatments demonstrating encouraging potential against pancreatic cancer, a notoriously aggressive disease. These developments offer a crucial glimmer of hope for patients globally, where current therapeutic options remain limited.",
+    thumbnailImage: "/images/global-news/2026/2026-04-23-new-therapies-offer-hope-in-global-fight-against-pancreatic-cancer.jpg",
+    date: "2026-04-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-your-pint-could-come-with-a-surprising-health-benefit",
     title: "Global Health and Education Watch: Your pint could come with a surprising health benefit",
     summary:
