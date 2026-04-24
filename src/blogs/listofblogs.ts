@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "tragic-discovery-rocks-usf-roommate-held-after-student-found-deceased",
+    title: "Tragic Discovery Rocks USF: Roommate Held After Student Found Deceased",
+    summary:
+      "The discovery of a Bangladeshi doctoral student's body near a Tampa Bay bridge has led to the arrest of his roommate. This tragic event has intensified the search for another missing student and sparked urgent discussions about international student welfare and safety at universities worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-tragic-discovery-rocks-usf-roommate-held-after-student-found-deceased.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-officials-investigate-n-y-c-schools-over-pro-palestinian-group",
     title: "Global Health and Education Watch: Trump Officials Investigate N.Y.C. Schools Over Pro-Palestinian Group",
     summary:
