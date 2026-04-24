@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "university-sued-over-professor-arrests-during-pro-palestine-campus-protests",
+    title: "University Sued Over Professor Arrests During Pro-Palestine Campus Protests",
+    summary:
+      "A philosophy professor and colleagues have initiated legal action against their university, alleging a failure to safeguard students and staff during a crackdown on pro-Palestine protests. The lawsuit highlights growing global tensions between academic institutions and their communities regarding freedom of expression.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-university-sued-over-professor-arrests-during-pro-palestine-campus-protests.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-health-data-scandal-half-million-patient-records-allegedly-for-sale-in-china",
     title: "UK Health Data Scandal: Half-Million Patient Records Allegedly For Sale in China",
     summary:
