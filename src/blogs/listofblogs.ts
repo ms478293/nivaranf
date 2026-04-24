@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-mamdani-expected-to-reject-bill-involving-police-at-school",
+    title: "Global Health and Education Watch: Mamdani Expected to Reject Bill Involving Police at School",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-global-health-and-education-watch-mamdani-expected-to-reject-bill-involving-poli.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "surprising-pint-beer-s-unexpected-brain-boosting-vitamin-contribution-revealed",
     title: "Surprising Pint: Beer's Unexpected Brain-Boosting Vitamin Contribution Revealed",
     summary:
