@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-largest-catch-up-initiative-delivers-over-100-million-childhood-vaccinations",
+    title: "Global Health and Education Watch: Largest catch-up initiative delivers over 100 million childhood vaccinations",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-global-health-and-education-watch-largest-catch-up-initiative-delivers-over-100-.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "south-lebanon-hospital-devastated-un-mission-reveals-dire-health-crisis",
     title: "South Lebanon Hospital Devastated: UN Mission Reveals Dire Health Crisis",
     summary:
