@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "grief-s-ultimate-toll-mother-seeks-assisted-death-amidst-global-debate",
+    title: "Grief's Ultimate Toll: Mother Seeks Assisted Death Amidst Global Debate",
+    summary:
+      "A mother, profoundly affected by her son's death, traveled to a Swiss clinic for assisted dying, highlighting the global complexities of end-of-life choices. Her case underscores the intense debate surrounding grief, mental health, and the legal landscape of assisted dying worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-grief-s-ultimate-toll-mother-seeks-assisted-death-amidst-global-debate.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "tragic-discovery-rocks-usf-roommate-held-after-student-found-deceased",
     title: "Tragic Discovery Rocks USF: Roommate Held After Student Found Deceased",
     summary:
