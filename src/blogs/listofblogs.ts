@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "surprising-pint-beer-s-unexpected-brain-boosting-vitamin-contribution-revealed",
+    title: "Surprising Pint: Beer's Unexpected Brain-Boosting Vitamin Contribution Revealed",
+    summary:
+      "Groundbreaking research published in a respected journal indicates that moderate beer consumption may contribute substantial levels of essential brain-boosting vitamins to one's diet. This finding prompts a global conversation on the nuanced relationship between fermented beverages, nutrition, and public health, underscoring the critical importance of moderation.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-surprising-pint-beer-s-unexpected-brain-boosting-vitamin-contribution-revealed.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-algeria-eliminates-trachoma-as-a-public-health-problem",
     title: "Global Health and Education Watch: Algeria eliminates trachoma as a public health problem",
     summary:
