@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-silent-crisis-children-losing-their-voices-amidst-unspeakable-trauma",
+    title: "Gaza's Silent Crisis: Children Losing Their Voices Amidst Unspeakable Trauma",
+    summary:
+      "An estimated one million children in Gaza urgently require mental health support, as a growing number are losing their ability to speak due to profound trauma. This crisis highlights the devastating, long-term psychological impact of conflict on young populations worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-gaza-s-silent-crisis-children-losing-their-voices-amidst-unspeakable-trauma.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-gambling-addiction-is-out-of-control-as-betting",
     title: "Global Health and Education Watch: US gambling addiction is ‘out of control’ as betting",
     summary:
