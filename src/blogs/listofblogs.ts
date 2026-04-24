@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "south-lebanon-hospital-devastated-un-mission-reveals-dire-health-crisis",
+    title: "South Lebanon Hospital Devastated: UN Mission Reveals Dire Health Crisis",
+    summary:
+      "A recent United Nations Children's Fund (UNICEF) mission to southern Lebanon's Tebnine region revealed widespread destruction, particularly impacting a major hospital. The assessment underscores the critical need for immediate humanitarian aid and long-term reconstruction efforts to restore essential health services.",
+    thumbnailImage: "/images/global-news/2026/2026-04-24-south-lebanon-hospital-devastated-un-mission-reveals-dire-health-crisis.jpg",
+    date: "2026-04-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-make-america-healthy-again-movement-is-cooling-on",
     title: "Global Health and Education Watch: The ‘Make America Healthy Again’ Movement Is Cooling on",
     summary:
