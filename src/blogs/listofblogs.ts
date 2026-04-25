@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "student-heroism-on-school-bus-a-global-call-for-emergency-preparedness",
+    title: "Student Heroism on School Bus: A Global Call for Emergency Preparedness",
+    summary:
+      "In a remarkable act of bravery, middle school students in Mississippi averted a potential tragedy by safely stopping their bus after the driver lost consciousness. This incident underscores the urgent global imperative for comprehensive emergency preparedness and health education within school systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-student-heroism-on-school-bus-a-global-call-for-emergency-preparedness.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-roommate-charged-with-murder-in-deaths-of-university-of",
     title: "Global Health and Education Watch: Roommate charged with murder in deaths of University of",
     summary:
