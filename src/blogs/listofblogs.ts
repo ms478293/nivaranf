@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-shifts-los-angeles-curbs-student-screen-time",
+    title: "Global Education Shifts: Los Angeles Curbs Student Screen Time",
+    summary:
+      "The Los Angeles Unified School District has voted to implement strict new screen time limits for students, including device bans during breaks and classroom restrictions. This move signals a significant global trend towards re-evaluating technology's role in education and safeguarding student well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-global-education-shifts-los-angeles-curbs-student-screen-time.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "grief-s-ultimate-toll-mother-seeks-assisted-death-amidst-global-debate",
     title: "Grief's Ultimate Toll: Mother Seeks Assisted Death Amidst Global Debate",
     summary:
