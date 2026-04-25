@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ireland-demands-israel-compensate-for-demolished-palestinian-school",
+    title: "Ireland Demands Israel Compensate for Demolished Palestinian School",
+    summary:
+      "Ireland has formally demanded that Israeli authorities reimburse the costs of a Palestinian school in the West Bank, which was demolished by settlers. This move underscores growing international concern over the destruction of critical educational infrastructure in occupied territories.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-ireland-demands-israel-compensate-for-demolished-palestinian-school.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-schoolboys-fatal-hike-remembered-in-black-forest-90",
     title: "Global Health and Education Watch: UK schoolboys’ fatal hike remembered in Black Forest 90",
     summary:
