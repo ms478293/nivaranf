@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-families-of-iranian-children-killed-in-school-airstrike-pen",
+    title: "Global Health and Education Watch: Families of Iranian Children Killed in School Airstrike Pen",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-global-health-and-education-watch-families-of-iranian-children-killed-in-school-.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-schools-forced-to-cut-back-on-support-for-send",
     title: "Global Health and Education Watch: Schools forced to cut back on support for Send",
     summary:
