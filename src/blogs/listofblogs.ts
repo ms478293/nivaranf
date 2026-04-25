@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-health-crisis-deepens-amid-recovery-hurdles-unexploded-ordnance-threat",
+    title: "Gaza's Health Crisis Deepens Amid Recovery Hurdles, Unexploded Ordnance Threat",
+    summary:
+      "Gaza faces a deepening humanitarian catastrophe, with critical health services crippled and recovery efforts severely hampered by ongoing dangers. UN experts highlight the immense threat posed by widespread unexploded ordnance, barely surveyed, complicating any return to normalcy.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-gaza-s-health-crisis-deepens-amid-recovery-hurdles-unexploded-ordnance-threat.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-shifts-los-angeles-curbs-student-screen-time",
     title: "Global Education Shifts: Los Angeles Curbs Student Screen Time",
     summary:
