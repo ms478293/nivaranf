@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-s-school-meal-overhaul-sparks-global-debate-on-child-nutrition",
+    title: "England's School Meal Overhaul Sparks Global Debate on Child Nutrition",
+    summary:
+      "A new initiative to enhance school meal nutrition in England faces significant pushback from caterers, who warn of service disruptions and increased costs. This development underscores the complex global dilemma of balancing children's health with the practicalities of food provision in educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-england-s-school-meal-overhaul-sparks-global-debate-on-child-nutrition.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "youths-plead-guilty-in-harvard-medical-school-lab-explosion",
     title: "Youths Plead Guilty in Harvard Medical School Lab Explosion",
     summary:
