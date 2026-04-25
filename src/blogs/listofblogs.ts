@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-roommate-charged-with-murder-in-deaths-of-university-of",
+    title: "Global Health and Education Watch: Roommate charged with murder in deaths of University of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-global-health-and-education-watch-roommate-charged-with-murder-in-deaths-of-univ.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "native-hawaiian-medical-scholarship-faces-discrimination-lawsuit-threatening-decades-of-progress",
     title: "Native Hawaiian Medical Scholarship Faces Discrimination Lawsuit, Threatening Decades of Progress",
     summary:
