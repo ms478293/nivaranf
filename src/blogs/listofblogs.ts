@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "digital-communication-s-subtle-strain-on-global-mental-health",
+    title: "Digital Communication's Subtle Strain on Global Mental Health",
+    summary:
+      "The pervasive nature of digital communication, even beyond social media, is subtly eroding global mental well-being by fostering an 'always-on' culture. This constant connectivity blurs personal and professional boundaries, contributing to widespread stress and mental fatigue.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-digital-communication-s-subtle-strain-on-global-mental-health.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-senior-lucy-letby-hospital-boss-arrested",
     title: "Global Health and Education Watch: Senior Lucy Letby hospital boss arrested",
     summary:
