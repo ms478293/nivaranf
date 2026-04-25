@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-as-trump-officials-pushed-health-savings-accounts-rfk-jr",
+    title: "Global Health and Education Watch: As Trump Officials Pushed Health Savings Accounts, RFK Jr",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-global-health-and-education-watch-as-trump-officials-pushed-health-savings-accou.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ireland-demands-israel-compensate-for-demolished-palestinian-school",
     title: "Ireland Demands Israel Compensate for Demolished Palestinian School",
     summary:
