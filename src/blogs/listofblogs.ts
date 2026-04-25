@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "chile-achieves-historic-leprosy-elimination-inspiring-global-health-efforts-2",
+    title: "Chile Achieves Historic Leprosy Elimination, Inspiring Global Health Efforts",
+    summary:
+      "Chile has been officially verified by the World Health Organization (WHO) as having eliminated leprosy, marking a significant public health milestone. This achievement positions Chile as the first country in the Americas and only the second globally to reach this critical benchmark.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-chile-achieves-historic-leprosy-elimination-inspiring-global-health-efforts.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-as-trump-officials-pushed-health-savings-accounts-rfk-jr",
     title: "Global Health and Education Watch: As Trump Officials Pushed Health Savings Accounts, RFK Jr",
     summary:
