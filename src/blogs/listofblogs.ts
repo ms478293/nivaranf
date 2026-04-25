@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "texas-camp-tragedy-prompts-global-review-of-youth-safety-protocols",
+    title: "Texas Camp Tragedy Prompts Global Review of Youth Safety Protocols",
+    summary:
+      "A Texas summer camp where 27 individuals died in a 2025 flood faces potential closure due to unmet health and safety requirements. This incident highlights critical global challenges in ensuring robust emergency protocols and regulatory oversight for youth facilities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-texas-camp-tragedy-prompts-global-review-of-youth-safety-protocols.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-healthcare-under-siege-protecting-frontline-workers-and-sacred-spaces",
     title: "Global Healthcare Under Siege: Protecting Frontline Workers and Sacred Spaces",
     summary:
