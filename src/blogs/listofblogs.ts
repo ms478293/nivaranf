@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "youths-plead-guilty-in-harvard-medical-school-lab-explosion",
+    title: "Youths Plead Guilty in Harvard Medical School Lab Explosion",
+    summary:
+      "Two young men, Logan David Patterson and Dominick Frank Cardoza, have pleaded guilty to charges stemming from a November incident involving the detonation of a commercial firework in a Harvard Medical School research laboratory. The event underscores critical discussions on campus security and the protection of vital scientific infrastructure worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-youths-plead-guilty-in-harvard-medical-school-lab-explosion.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "student-heroism-on-school-bus-a-global-call-for-emergency-preparedness",
     title: "Student Heroism on School Bus: A Global Call for Emergency Preparedness",
     summary:
