@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "native-hawaiian-medical-scholarship-faces-discrimination-lawsuit-threatening-decades-of-progress",
+    title: "Native Hawaiian Medical Scholarship Faces Discrimination Lawsuit, Threatening Decades of Progress",
+    summary:
+      "A federal scholarship program vital to Native Hawaiian healthcare for over 35 years is facing a discrimination lawsuit from a conservative group. This legal challenge threatens to dismantle a crucial pathway for medical students serving Hawaii's underserved communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-native-hawaiian-medical-scholarship-faces-discrimination-lawsuit-threatening-dec.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "digital-communication-s-subtle-strain-on-global-mental-health",
     title: "Digital Communication's Subtle Strain on Global Mental Health",
     summary:
