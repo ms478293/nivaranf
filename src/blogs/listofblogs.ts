@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-under-siege-protecting-frontline-workers-and-sacred-spaces",
+    title: "Global Healthcare Under Siege: Protecting Frontline Workers and Sacred Spaces",
+    summary:
+      "A tragic incident at a Chicago hospital, resulting in the death of a police officer and critical injury to another, highlights the escalating global issue of violence impacting healthcare environments. This event serves as a stark reminder of the imperative to safeguard medical professionals and patients from harm.",
+    thumbnailImage: "/images/global-news/2026/2026-04-25-global-healthcare-under-siege-protecting-frontline-workers-and-sacred-spaces.jpg",
+    date: "2026-04-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "england-s-school-meal-overhaul-sparks-global-debate-on-child-nutrition",
     title: "England's School Meal Overhaul Sparks Global Debate on Child Nutrition",
     summary:
