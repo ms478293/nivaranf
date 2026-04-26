@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-unitedhealth-group-reports-flat-earnings-in-the-first-quarter",
+    title: "Global Health and Education Watch: UnitedHealth Group Reports Flat Earnings in the First Quarter",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-health-and-education-watch-unitedhealth-group-reports-flat-earnings-in-th.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ban-fur-farming-or-risk-a-new-pandemic",
     title: "Global Health and Education Watch: Ban fur farming or risk a new pandemic |",
     summary:
