@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-accord-negotiations-extended-on-critical-pandemic-annex",
+    title: "Global Health Accord Negotiations Extended on Critical Pandemic Annex",
+    summary:
+      "WHO Member States have agreed to extend crucial negotiations on the Pathogen Access and Benefit Sharing (PABS) annex to the Pandemic Agreement. Discussions will resume in late April, aiming for a robust consensus before the World Health Assembly's scheduled consideration in May.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-health-accord-negotiations-extended-on-critical-pandemic-annex.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-rises-over-politicization-of-drug-pricing-decisions",
     title: "Global Alarm Rises Over Politicization of Drug Pricing Decisions",
     summary:
