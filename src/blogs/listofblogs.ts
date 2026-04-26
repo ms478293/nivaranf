@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "libya-eradicates-trachoma-a-global-health-milestone",
+    title: "Libya Eradicates Trachoma, A Global Health Milestone",
+    summary:
+      "Libya has achieved a significant public health victory, eliminating trachoma as a public health problem, as validated by the World Health Organization. This landmark accomplishment safeguards future generations from preventable blindness and underscores the global commitment to overcoming neglected tropical diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-libya-eradicates-trachoma-a-global-health-milestone.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-a-a-u-p-is-growing-fast-as-it-ramps-up",
     title: "Global Health and Education Watch: The A.A.U.P. Is Growing Fast as It Ramps Up",
     summary:
