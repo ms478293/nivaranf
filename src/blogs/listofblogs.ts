@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-foot-health-crisis-ill-fitting-children-s-shoes-cause-rising-ailments",
+    title: "Global Foot Health Crisis: Ill-Fitting Children's Shoes Cause Rising Ailments",
+    summary:
+      "A global health concern is emerging as experts report an increase in childhood foot conditions like bunions, primarily linked to ill-fitting footwear. The decline of specialist children's shoe shops leaves many parents without crucial fitting advice, jeopardizing long-term foot health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-foot-health-crisis-ill-fitting-children-s-shoes-cause-rising-ailments.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "brain-science-unlocks-global-media-engagement-secrets",
     title: "Brain Science Unlocks Global Media Engagement Secrets",
     summary:
