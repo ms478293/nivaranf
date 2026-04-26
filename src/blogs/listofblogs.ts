@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "new-bacterial-discovery-offers-hope-against-deadly-childhood-disease-noma",
+    title: "New Bacterial Discovery Offers Hope Against Deadly Childhood Disease Noma",
+    summary:
+      "An unprecedented bacterial species has been identified in patients suffering from noma, a severe neglected tropical disease. This breakthrough offers significant potential for developing more effective interventions against the devastating childhood condition.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-new-bacterial-discovery-offers-hope-against-deadly-childhood-disease-noma.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-families-of-iranian-children-killed-in-school-airstrike-pen",
     title: "Global Health and Education Watch: Families of Iranian Children Killed in School Airstrike Pen",
     summary:
