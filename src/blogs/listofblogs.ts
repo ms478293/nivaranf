@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-from-syringes-to-stents-iran-war-exposes-nhs-dependency",
+    title: "Global Health and Education Watch: From syringes to stents: Iran war exposes NHS dependency",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-health-and-education-watch-from-syringes-to-stents-iran-war-exposes-nhs-d.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-recommendations-for-influenza-vaccine-composition-for-the-2026-2027-northern-3",
     title: "Global Health and Education Watch: Recommendations for influenza vaccine composition for the 2026-2027 northern",
     summary:
