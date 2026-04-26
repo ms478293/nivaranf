@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-i-paid-for-a-private-hysterectomy",
+    title: "Global Health and Education Watch: 'I paid for a private hysterectomy'",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-health-and-education-watch-i-paid-for-a-private-hysterectomy.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "new-bacterial-discovery-offers-hope-against-deadly-childhood-disease-noma",
     title: "New Bacterial Discovery Offers Hope Against Deadly Childhood Disease Noma",
     summary:
