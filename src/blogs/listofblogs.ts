@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-scrolling-and-worrying-the-hidden-dangers-of-diy-diagnosis",
+    title: "Global Health and Education Watch: Scrolling and worrying: the hidden dangers of DIY diagnosis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-health-and-education-watch-scrolling-and-worrying-the-hidden-dangers-of-d.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-accord-negotiations-extended-on-critical-pandemic-annex",
     title: "Global Health Accord Negotiations Extended on Critical Pandemic Annex",
     summary:
