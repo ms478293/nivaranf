@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "brain-science-unlocks-global-media-engagement-secrets",
+    title: "Brain Science Unlocks Global Media Engagement Secrets",
+    summary:
+      "A groundbreaking project at the University of Bristol tracks brain activity and physiological responses to understand deep viewer engagement with media. This innovative research aims to provide data-driven insights for creators globally, enhancing educational content, public health messaging, and overall cognitive well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-brain-science-unlocks-global-media-engagement-secrets.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-government-move-to-delay-social-media-ban-faces",
     title: "Global Health and Education Watch: UK government move to delay social media ban faces",
     summary:
