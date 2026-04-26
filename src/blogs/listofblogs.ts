@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-rises-over-politicization-of-drug-pricing-decisions",
+    title: "Global Alarm Rises Over Politicization of Drug Pricing Decisions",
+    summary:
+      "A recent policy shift allowing direct government intervention in drug pricing, bypassing independent health technology assessments, has sparked global concern. Critics fear such moves could compromise healthcare integrity, benefit pharmaceutical giants, and jeopardize patient access to vital treatments.",
+    thumbnailImage: "/images/global-news/2026/2026-04-26-global-alarm-rises-over-politicization-of-drug-pricing-decisions.jpg",
+    date: "2026-04-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-from-syringes-to-stents-iran-war-exposes-nhs-dependency",
     title: "Global Health and Education Watch: From syringes to stents: Iran war exposes NHS dependency",
     summary:
