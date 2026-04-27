@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-war-and-neglect-fuel-deadly-measles-epidemic-in-sudan-s",
+    title: "Global Health and Education Watch: War and neglect fuel deadly measles epidemic in Sudan’s",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-global-health-and-education-watch-war-and-neglect-fuel-deadly-measles-epidemic-i.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "healthcare-s-global-economic-footprint-a-double-edged-sword",
     title: "Healthcare's Global Economic Footprint: A Double-Edged Sword",
     summary:
