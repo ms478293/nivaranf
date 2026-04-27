@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-conflicts-undermine-health-education-systems",
+    title: "Global Conflicts Undermine Health, Education Systems",
+    summary:
+      "Recent violence in Mali, including the killing of its defence minister, highlights the severe threats posed by insurgencies to critical health and education infrastructure. Such conflicts globally disrupt essential services, displacing populations and hindering long-term development efforts.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-global-conflicts-undermine-health-education-systems.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-foot-health-crisis-ill-fitting-children-s-shoes-cause-rising-ailments",
     title: "Global Foot Health Crisis: Ill-Fitting Children's Shoes Cause Rising Ailments",
     summary:
