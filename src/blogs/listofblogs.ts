@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "school-pe-trauma-a-global-barrier-to-lifelong-health-and-movement",
+    title: "School PE Trauma: A Global Barrier to Lifelong Health and Movement",
+    summary:
+      "Negative experiences in school physical education can lead to a lifelong aversion to exercise, contributing to global health crises. A paradigm shift in PE is crucial to foster a love for movement and combat sedentary lifestyles worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-school-pe-trauma-a-global-barrier-to-lifelong-health-and-movement.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-subtle-but-powerful-form-of-self-validation-how-to-start",
     title: "Global Health and Education Watch: ‘Subtle but powerful form of self-validation’: how to start",
     summary:
