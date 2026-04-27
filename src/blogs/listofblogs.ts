@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-quest-for-longevity-does-wealth-buy-health-and-extended-life",
+    title: "Global Quest for Longevity: Does Wealth Buy Health and Extended Life?",
+    summary:
+      "The global desire for extended, healthier lives has fueled a massive wellness industry offering myriad services and supplements. This article examines the efficacy of these costly interventions versus foundational health practices.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-global-quest-for-longevity-does-wealth-buy-health-and-extended-life.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-director-general-lauds-jordan-s-health-progress-and-global-partnership",
     title: "WHO Director-General Lauds Jordan's Health Progress and Global Partnership",
     summary:
