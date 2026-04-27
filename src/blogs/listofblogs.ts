@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-warning-healthy-life-expectancy-declines-amidst-widespread-challenges",
+    title: "Global Health Warning: Healthy Life Expectancy Declines Amidst Widespread Challenges",
+    summary:
+      "A recent decline in healthy life expectancy in developed nations signals a worrying global trend. Underlying factors like deprivation, poor housing, and obesity are universally eroding years of good health, necessitating a concerted international response.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-global-health-warning-healthy-life-expectancy-declines-amidst-widespread-challen.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-war-and-neglect-fuel-deadly-measles-epidemic-in-sudan-s",
     title: "Global Health and Education Watch: War and neglect fuel deadly measles epidemic in Sudan’s",
     summary:
