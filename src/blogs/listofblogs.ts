@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "healthcare-s-global-economic-footprint-a-double-edged-sword",
+    title: "Healthcare's Global Economic Footprint: A Double-Edged Sword",
+    summary:
+      "Healthcare has become a dominant force in the global economy, fueling growth and employment across nations. However, this expansion also brings escalating costs and significant disparities in access and affordability.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-healthcare-s-global-economic-footprint-a-double-edged-sword.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-conflicts-undermine-health-education-systems",
     title: "Global Conflicts Undermine Health, Education Systems",
     summary:
