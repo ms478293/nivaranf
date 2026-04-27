@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-director-general-lauds-jordan-s-health-progress-and-global-partnership",
+    title: "WHO Director-General Lauds Jordan's Health Progress and Global Partnership",
+    summary:
+      "The World Health Organization's Director-General, Dr. Tedros Adhanom Ghebreyesus, recently concluded a significant visit to Jordan, reinforcing a strong partnership. His trip underscored Jordan's advancements in health system delivery, emergency relief, and the critical area of mental health.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-who-director-general-lauds-jordan-s-health-progress-and-global-partnership.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "school-pe-trauma-a-global-barrier-to-lifelong-health-and-movement",
     title: "School PE Trauma: A Global Barrier to Lifelong Health and Movement",
     summary:
