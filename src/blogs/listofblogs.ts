@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sleep-rebound-after-restriction-linked-to-lower-mortality-risk",
+    title: "Sleep Rebound After Restriction Linked to Lower Mortality Risk",
+    summary:
+      "Groundbreaking research published in Nature Communications indicates that acute sleep rebound following periods of sleep restriction is associated with a reduced risk of mortality. This finding suggests that the body's ability to recover lost sleep plays a crucial role in long-term health and survival.",
+    thumbnailImage: "/images/global-news/2026/2026-04-27-sleep-rebound-after-restriction-linked-to-lower-mortality-risk.jpg",
+    date: "2026-04-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-warning-healthy-life-expectancy-declines-amidst-widespread-challenges",
     title: "Global Health Warning: Healthy Life Expectancy Declines Amidst Widespread Challenges",
     summary:
