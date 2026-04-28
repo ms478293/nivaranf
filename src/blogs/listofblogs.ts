@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-adenomyosis-ruined-my-life",
+    title: "Global Health and Education Watch: 'Adenomyosis ruined my life'",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-global-health-and-education-watch-adenomyosis-ruined-my-life.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-s-child-survivors-face-lifelong-scars-amidst-collapsed-healthcare",
     title: "Gaza's Child Survivors Face Lifelong Scars Amidst Collapsed Healthcare",
     summary:
