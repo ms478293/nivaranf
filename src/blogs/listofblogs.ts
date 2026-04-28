@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-child-survivors-face-lifelong-scars-amidst-collapsed-healthcare",
+    title: "Gaza's Child Survivors Face Lifelong Scars Amidst Collapsed Healthcare",
+    summary:
+      "Children surviving the conflict in Gaza are facing lifelong disabilities from injuries like burns and toxic gas exposure. The collapse of the region's healthcare system leaves them without essential care and rehabilitation.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-gaza-s-child-survivors-face-lifelong-scars-amidst-collapsed-healthcare.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-some-form-of-social-media-restrictions-for-under-16s-minister",
     title: "Global Health and Education Watch: 'Some form' of social media restrictions for under-16s, minister",
     summary:
