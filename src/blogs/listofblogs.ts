@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-efforts-to-eliminate-hepatitis-delivers-gains-but-more-action",
+    title: "Global Health and Education Watch: Efforts to eliminate hepatitis delivers gains but more action",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-global-health-and-education-watch-efforts-to-eliminate-hepatitis-delivers-gains-.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-if-it-feels-like-the-world-is-rejecting-science",
     title: "Global Health and Education Watch: If it feels like the world is rejecting science",
     summary:
