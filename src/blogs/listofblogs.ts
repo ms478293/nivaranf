@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-calls-for-stepped-up-action-to-eliminate-viral",
+    title: "Global Health and Education Watch: WHO calls for stepped up action to eliminate viral",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-global-health-and-education-watch-who-calls-for-stepped-up-action-to-eliminate-v.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-college-aid-appeals-face-delays-stressing-students",
     title: "Global College Aid Appeals Face Delays, Stressing Students",
     summary:
