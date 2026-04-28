@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-some-form-of-social-media-restrictions-for-under-16s-minister",
+    title: "Global Health and Education Watch: 'Some form' of social media restrictions for under-16s, minister",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-global-health-and-education-watch-some-form-of-social-media-restrictions-for-und.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-italy-extradites-chinese-cyber-espionage-suspect-to-us",
     title: "Global Health and Education Watch: Italy extradites Chinese cyber-espionage suspect to US",
     summary:
