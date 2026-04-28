@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-college-aid-appeals-face-delays-stressing-students",
+    title: "Global College Aid Appeals Face Delays, Stressing Students",
+    summary:
+      "Delays in financial aid appeal responses are causing significant stress for students globally, hindering their ability to make timely enrollment decisions. This widespread issue underscores the urgent need for greater transparency and efficiency in university financial aid systems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-28-global-college-aid-appeals-face-delays-stressing-students.jpg",
+    date: "2026-04-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-adenomyosis-ruined-my-life",
     title: "Global Health and Education Watch: 'Adenomyosis ruined my life'",
     summary:
