@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-equity-threatened-by-slowdown-in-discrimination-cases",
+    title: "Global Education Equity Threatened by Slowdown in Discrimination Cases",
+    summary:
+      "Recent data reveals a substantial decrease in the resolution of discrimination complaints within a prominent education department, raising concerns about the enforcement of civil rights in educational settings. This trend underscores a broader global challenge to ensuring equitable access and treatment for all students.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-global-education-equity-threatened-by-slowdown-in-discrimination-cases.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-efforts-to-eliminate-hepatitis-delivers-gains-but-more-action",
     title: "Global Health and Education Watch: Efforts to eliminate hepatitis delivers gains but more action",
     summary:
