@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "afghan-university-attack-shatters-student-dreams-deepens-education-crisis",
+    title: "Afghan University Attack Shatters Student Dreams, Deepens Education Crisis",
+    summary:
+      "Afghan students are reeling from a missile attack on their university, an incident officials attribute to regional tensions. This devastating event underscores the critical vulnerability of educational spaces and the profound impact on academic futures in conflict-affected areas.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-afghan-university-attack-shatters-student-dreams-deepens-education-crisis.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "canada-s-shifting-appeal-indian-students-reconsider-study-abroad-dreams",
     title: "Canada's Shifting Appeal: Indian Students Reconsider Study Abroad Dreams",
     summary:
