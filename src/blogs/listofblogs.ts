@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "australia-eradicates-trachoma-a-global-health-milestone",
+    title: "Australia Eradicates Trachoma: A Global Health Milestone",
+    summary:
+      "Australia has been validated by the World Health Organization for eliminating trachoma as a public health problem, a significant achievement for global health. This milestone underscores successful efforts in combating neglected tropical diseases and improving the well-being of indigenous populations.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-australia-eradicates-trachoma-a-global-health-milestone.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-families-sue-openai-alleging-chatbot-aided-in-canadian-school",
     title: "Global Health and Education Watch: Families sue OpenAI, alleging chatbot aided in Canadian school",
     summary:
