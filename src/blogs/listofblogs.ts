@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-university-wins-record-freedom-of-speech-fine-challenge",
+    title: "Global Health and Education Watch: University wins record freedom of speech fine challenge",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-global-health-and-education-watch-university-wins-record-freedom-of-speech-fine-.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "south-sudan-faces-catastrophic-hunger-over-half-population-acutely-food-insecure",
     title: "South Sudan Faces Catastrophic Hunger: Over Half Population Acutely Food Insecure",
     summary:
