@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "canada-s-shifting-appeal-indian-students-reconsider-study-abroad-dreams",
+    title: "Canada's Shifting Appeal: Indian Students Reconsider Study Abroad Dreams",
+    summary:
+      "Indian students are increasingly reassessing Canada as a study destination due to evolving immigration policies and escalating living expenses. This shift marks a significant change in global education migration trends, impacting thousands of aspiring international students.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-canada-s-shifting-appeal-indian-students-reconsider-study-abroad-dreams.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-equity-threatened-by-slowdown-in-discrimination-cases",
     title: "Global Education Equity Threatened by Slowdown in Discrimination Cases",
     summary:
