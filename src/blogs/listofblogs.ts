@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-s-gradual-smoking-ban-a-global-blueprint-for-a-smoke-free-future",
+    title: "UK's Gradual Smoking Ban: A Global Blueprint for a Smoke-Free Future",
+    summary:
+      "The UK has enacted a landmark bill to create a \"smoke-free generation\" by gradually increasing the legal smoking age annually from 2027. This novel approach, deemed a public relations success, is being closely watched globally as a potential model for other nations seeking to end tobacco use.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-uk-s-gradual-smoking-ban-a-global-blueprint-for-a-smoke-free-future.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "afghan-university-attack-shatters-student-dreams-deepens-education-crisis",
     title: "Afghan University Attack Shatters Student Dreams, Deepens Education Crisis",
     summary:
