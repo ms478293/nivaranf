@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unveiling-cognitive-health-disparities-in-indigenous-communities",
+    title: "Unveiling Cognitive Health Disparities in Indigenous Communities",
+    summary:
+      "A groundbreaking study reveals significant cognitive impairment and related health conditions within American Indian communities. This research underscores urgent global health disparities facing indigenous populations worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-unveiling-cognitive-health-disparities-in-indigenous-communities.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-s-gradual-smoking-ban-a-global-blueprint-for-a-smoke-free-future",
     title: "UK's Gradual Smoking Ban: A Global Blueprint for a Smoke-Free Future",
     summary:
