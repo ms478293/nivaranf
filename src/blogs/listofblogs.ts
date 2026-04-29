@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "south-sudan-faces-catastrophic-hunger-over-half-population-acutely-food-insecure",
+    title: "South Sudan Faces Catastrophic Hunger: Over Half Population Acutely Food Insecure",
+    summary:
+      "Over half of South Sudan's population, 7.8 million people, is grappling with an acute hunger crisis exacerbated by ongoing conflict and widespread displacement. This dire situation has left 2.2 million children suffering from acute malnutrition, demanding urgent global attention and humanitarian intervention.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-south-sudan-faces-catastrophic-hunger-over-half-population-acutely-food-insecure.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unveiling-cognitive-health-disparities-in-indigenous-communities",
     title: "Unveiling Cognitive Health Disparities in Indigenous Communities",
     summary:
