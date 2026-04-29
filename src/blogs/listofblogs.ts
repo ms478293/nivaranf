@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "american-universities-lose-luster-for-french-students-amid-shifting-global-perceptions",
+    title: "American Universities Lose Luster for French Students Amid Shifting Global Perceptions",
+    summary:
+      "A notable shift is occurring in international student preferences, with French students increasingly opting for European universities over traditional American Ivy League institutions. This trend is driven by growing anxieties regarding U.S. visa policies, perceived threats to academic freedom, and safety concerns.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-american-universities-lose-luster-for-french-students-amid-shifting-global-perce.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-wins-record-freedom-of-speech-fine-challenge",
     title: "Global Health and Education Watch: University wins record freedom of speech fine challenge",
     summary:
