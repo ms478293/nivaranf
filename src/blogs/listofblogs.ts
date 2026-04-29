@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarms-silenced-a-threat-to-disease-surveillance",
+    title: "Global Health Alarms Silenced: A Threat to Disease Surveillance",
+    summary:
+      "Recent actions to dismantle key scientific advisory panels threaten the global public health infrastructure vital for early disease detection. This move echoes historical challenges, underscoring the critical importance of robust surveillance systems in preventing future health crises.",
+    thumbnailImage: "/images/global-news/2026/2026-04-29-global-health-alarms-silenced-a-threat-to-disease-surveillance.jpg",
+    date: "2026-04-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "australia-eradicates-trachoma-a-global-health-milestone",
     title: "Australia Eradicates Trachoma: A Global Health Milestone",
     summary:
