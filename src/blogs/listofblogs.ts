@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-push-for-integrated-maternal-mental-health-care-gains-momentum",
+    title: "Global Push for Integrated Maternal Mental Health Care Gains Momentum",
+    summary:
+      "A new mother and baby mental health unit planned for Northern Ireland highlights a growing global commitment to integrated perinatal care. This development underscores the urgent need for accessible, specialized support for mothers and infants facing mental health challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-global-push-for-integrated-maternal-mental-health-care-gains-momentum.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "indoor-air-purifiers-offer-vital-shield-against-wildfire-smoke-health-risks",
     title: "Indoor Air Purifiers Offer Vital Shield Against Wildfire Smoke Health Risks",
     summary:
