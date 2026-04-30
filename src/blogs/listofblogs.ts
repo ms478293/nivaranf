@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-doctors-release-sought-by-rights-group-in-landmark-israel-court-petition",
+    title: "Gaza Doctors' Release Sought by Rights Group in Landmark Israel Court Petition",
+    summary:
+      "A prominent Israeli human rights organization has petitioned the nation's highest court, demanding the immediate release of fourteen Palestinian doctors detained from Gaza. The group argues their continued incarceration severely impedes efforts to restore the territory's collapsed healthcare system.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-gaza-doctors-release-sought-by-rights-group-in-landmark-israel-court-petition.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-fuels-escalating-online-abuse-against-women-journalists-threatening-global-press-freedom",
     title: "AI Fuels Escalating Online Abuse Against Women Journalists, Threatening Global Press Freedom",
     summary:
