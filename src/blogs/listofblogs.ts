@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "advanced-practitioners-enhancing-global-healthcare-not-compromising-safety",
+    title: "Advanced Practitioners: Enhancing Global Healthcare, Not Compromising Safety",
+    summary:
+      "The global healthcare landscape is increasingly relying on advanced practitioners to address physician shortages and improve patient access. These highly trained professionals operate within multidisciplinary teams, providing evidence-based care without compromising safety.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-advanced-practitioners-enhancing-global-healthcare-not-compromising-safety.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-in-backlash-against-tech-in-schools-parents-are-winning",
     title: "Global Health and Education Watch: In Backlash Against Tech in Schools, Parents Are Winning",
     summary:
