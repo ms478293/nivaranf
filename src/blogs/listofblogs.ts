@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-austerity-policies-erode-healthy-life-expectancy-worldwide",
+    title: "Global Health Crisis: Austerity Policies Erode Healthy Life Expectancy Worldwide",
+    summary:
+      "A growing body of evidence suggests that economic austerity measures are contributing to a troubling decline in healthy life expectancy across various nations. These policies, often characterized by cuts to public spending, are exacerbating health inequalities and undermining essential social services globally.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-global-health-crisis-austerity-policies-erode-healthy-life-expectancy-worldwide.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-doctors-release-sought-by-rights-group-in-landmark-israel-court-petition",
     title: "Gaza Doctors' Release Sought by Rights Group in Landmark Israel Court Petition",
     summary:
