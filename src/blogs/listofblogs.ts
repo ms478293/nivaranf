@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-teachers-vow-to-fight-censorship-after-school-book-row",
+    title: "Global Health and Education Watch: Teachers vow to 'fight censorship' after school book row",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-global-health-and-education-watch-teachers-vow-to-fight-censorship-after-school-.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "advanced-practitioners-enhancing-global-healthcare-not-compromising-safety",
     title: "Advanced Practitioners: Enhancing Global Healthcare, Not Compromising Safety",
     summary:
