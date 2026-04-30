@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-fuels-escalating-online-abuse-against-women-journalists-threatening-global-press-freedom",
+    title: "AI Fuels Escalating Online Abuse Against Women Journalists, Threatening Global Press Freedom",
+    summary:
+      "Online violence targeting women journalists has doubled since 2020, with artificial intelligence amplifying its severity and reach. This alarming trend poses significant threats to their well-being, press freedom, and the integrity of global information ecosystems.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-ai-fuels-escalating-online-abuse-against-women-journalists-threatening-global-pr.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-push-for-integrated-maternal-mental-health-care-gains-momentum",
     title: "Global Push for Integrated Maternal Mental Health Care Gains Momentum",
     summary:
