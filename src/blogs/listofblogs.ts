@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "radioactive-heavy-metals-in-breast-milk-a-global-health-concern-for-infants",
+    title: "Radioactive Heavy Metals in Breast Milk: A Global Health Concern for Infants",
+    summary:
+      "A global review reveals the concerning presence of uranium and other radioactive heavy metals in breast milk. This critical finding underscores potential environmental health risks and their profound impact on early life development worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-radioactive-heavy-metals-in-breast-milk-a-global-health-concern-for-infants.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-a-i-killed-student-writing-and-revived-it",
     title: "Global Health and Education Watch: How A.I. Killed Student Writing (and Revived It)",
     summary:
