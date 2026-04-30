@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "indoor-air-purifiers-offer-vital-shield-against-wildfire-smoke-health-risks",
+    title: "Indoor Air Purifiers Offer Vital Shield Against Wildfire Smoke Health Risks",
+    summary:
+      "As wildfires intensify globally, new research highlights the effectiveness of indoor air purifiers in safeguarding public health. These devices significantly reduce exposure to harmful particulate matter, mitigating severe respiratory and cardiovascular impacts.",
+    thumbnailImage: "/images/global-news/2026/2026-04-30-indoor-air-purifiers-offer-vital-shield-against-wildfire-smoke-health-risks.jpg",
+    date: "2026-04-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "radioactive-heavy-metals-in-breast-milk-a-global-health-concern-for-infants",
     title: "Radioactive Heavy Metals in Breast Milk: A Global Health Concern for Infants",
     summary:
