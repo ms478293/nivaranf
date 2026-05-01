@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ofsted-inspections-pushing-headteachers-to-point-of-destruction-union",
+    title: "Global Health and Education Watch: Ofsted inspections pushing headteachers to ‘point of destruction’, union",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-global-health-and-education-watch-ofsted-inspections-pushing-headteachers-to-poi.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "cricket-club-curbs-social-media-to-safeguard-player-mental-health-globally",
     title: "Cricket Club Curbs Social Media to Safeguard Player Mental Health Globally",
     summary:
