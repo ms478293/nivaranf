@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-vaccine-skeptic-in-trump-s-new-c-d-c-leadership-team",
+    title: "Global Health and Education Watch: The Vaccine Skeptic in Trump’s New C.D.C. Leadership Team",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-global-health-and-education-watch-the-vaccine-skeptic-in-trump-s-new-c-d-c-leade.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sudanese-journalists-awarded-unesco-press-freedom-prize",
     title: "Global Health and Education Watch: Sudanese journalists awarded UNESCO press freedom prize",
     summary:
