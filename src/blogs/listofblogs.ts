@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "brazil-s-hiv-transmission-elimination-a-global-health-blueprint",
+    title: "Brazil's HIV Transmission Elimination: A Global Health Blueprint",
+    summary:
+      "Brazil has achieved a significant milestone in eliminating mother-to-child HIV transmission, showcasing the power of universal healthcare and integrated services. This success provides a vital framework for other nations striving to achieve similar public health goals.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-brazil-s-hiv-transmission-elimination-a-global-health-blueprint.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-vaccine-skeptic-in-trump-s-new-c-d-c-leadership-team",
     title: "Global Health and Education Watch: The Vaccine Skeptic in Trump’s New C.D.C. Leadership Team",
     summary:
