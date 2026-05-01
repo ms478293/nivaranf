@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-iranian-nobel-laureate-narges-mohammadi-hospitalised-as-health-deteriorates",
+    title: "Global Health and Education Watch: Iranian Nobel laureate Narges Mohammadi hospitalised as health deteriorates",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-global-health-and-education-watch-iranian-nobel-laureate-narges-mohammadi-hospit.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "south-america-grapples-with-persistent-healthcare-inequities-demanding-urgent-global-attention",
     title: "South America Grapples with Persistent Healthcare Inequities, Demanding Urgent Global Attention",
     summary:
