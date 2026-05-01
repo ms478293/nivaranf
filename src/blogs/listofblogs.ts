@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-nigerian-military-runs-a-fulani-concentration-camp-group-says",
+    title: "Global Health and Education Watch: Nigerian Military Runs a Fulani ‘Concentration Camp,’ Group Says",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-global-health-and-education-watch-nigerian-military-runs-a-fulani-concentration-.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-crisis-austerity-policies-erode-healthy-life-expectancy-worldwide",
     title: "Global Health Crisis: Austerity Policies Erode Healthy Life Expectancy Worldwide",
     summary:
