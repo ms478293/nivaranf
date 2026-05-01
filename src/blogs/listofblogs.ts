@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-firms-rethink-weight-loss-drug-coverage-amid-soaring-costs",
+    title: "Global Firms Rethink Weight-Loss Drug Coverage Amid Soaring Costs",
+    summary:
+      "PwC is withdrawing coverage for popular weight-loss medications from its employee health plans, citing unsustainable costs and the drugs' widespread adoption. This move highlights a growing global challenge for corporations balancing employee wellness with escalating pharmaceutical expenses.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-global-firms-rethink-weight-loss-drug-coverage-amid-soaring-costs.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-it-ruined-my-night-photographers-accused-of-targeting-women",
     title: "Global Health and Education Watch: ‘It ruined my night’: photographers accused of targeting women",
     summary:
