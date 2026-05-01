@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ability-grouping-boosts-top-maths-students-harms-none-study-finds",
+    title: "Ability Grouping Boosts Top Maths Students, Harms None, Study Finds",
+    summary:
+      "A groundbreaking study from University College London suggests teaching secondary school maths in ability-grouped classes significantly improves outcomes for high-achievers. Crucially, the research indicates this approach does not negatively impact the progress of students with lower prior attainment, upending long-held assumptions in education.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-ability-grouping-boosts-top-maths-students-harms-none-study-finds.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-it-s-the-most-normal-thing-in-the-world-to",
     title: "Global Health and Education Watch: 'It's the most normal thing in the world to",
     summary:
