@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "south-america-grapples-with-persistent-healthcare-inequities-demanding-urgent-global-attention",
+    title: "South America Grapples with Persistent Healthcare Inequities, Demanding Urgent Global Attention",
+    summary:
+      "Healthcare inequalities remain a critical issue across South America, with millions facing significant barriers to essential medical services. These disparities, often rooted in socioeconomic status, geography, and ethnicity, exacerbate health outcomes and hinder regional development.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-south-america-grapples-with-persistent-healthcare-inequities-demanding-urgent-gl.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ability-grouping-boosts-top-maths-students-harms-none-study-finds",
     title: "Ability Grouping Boosts Top Maths Students, Harms None, Study Finds",
     summary:
