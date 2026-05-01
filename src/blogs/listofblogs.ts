@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "cricket-club-curbs-social-media-to-safeguard-player-mental-health-globally",
+    title: "Cricket Club Curbs Social Media to Safeguard Player Mental Health Globally",
+    summary:
+      "An English cricket club has implemented a ban on social media comments to shield its players from online abuse and safeguard their mental health. This initiative underscores a growing global awareness of the psychological toll social media can take on professional athletes.",
+    thumbnailImage: "/images/global-news/2026/2026-05-01-cricket-club-curbs-social-media-to-safeguard-player-mental-health-globally.jpg",
+    date: "2026-05-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "brazil-s-hiv-transmission-elimination-a-global-health-blueprint",
     title: "Brazil's HIV Transmission Elimination: A Global Health Blueprint",
     summary:
