@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "severe-uk-threat-level-prompts-global-health-education-preparedness-focus",
+    title: "Severe UK Threat Level Prompts Global Health, Education Preparedness Focus",
+    summary:
+      "A severe threat level in the United Kingdom has prompted advisories for citizens, highlighting the profound implications for public health and educational continuity. This development underscores the urgent need for robust global strategies to safeguard community well-being and learning environments amidst evolving security landscapes.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-severe-uk-threat-level-prompts-global-health-education-preparedness-focus.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "west-bank-schools-under-siege-a-global-education-crisis",
     title: "West Bank Schools Under Siege: A Global Education Crisis",
     summary:
