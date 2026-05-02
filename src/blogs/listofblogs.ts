@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "west-bank-schools-under-siege-a-global-education-crisis",
+    title: "West Bank Schools Under Siege: A Global Education Crisis",
+    summary:
+      "Education across Palestine faces severe threats as violence escalates, exemplified by the recent killing of 14-year-old Aws al-Naasan outside his school. This ongoing targeting of educational institutions jeopardizes the safety and future of countless students in the West Bank.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-west-bank-schools-under-siege-a-global-education-crisis.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-first-malaria-drug-for-babies-is-approved-in-major",
     title: "Global Health and Education Watch: First malaria drug for babies is approved in ‘major",
     summary:
