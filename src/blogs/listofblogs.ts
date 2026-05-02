@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-e-mobility-safety-parental-accountability-after-fatal-teen-crash",
+    title: "Global E-Mobility Safety: Parental Accountability After Fatal Teen Crash",
+    summary:
+      "A California mother faces involuntary manslaughter charges after her son's illegal e-motorcycle ride led to a fatal collision with an elderly man. This tragic event underscores growing global concerns about e-mobility safety, parental responsibility, and the urgent need for comprehensive regulatory frameworks.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-global-e-mobility-safety-parental-accountability-after-fatal-teen-crash.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-conflict-deepens-health-crisis-across-middle-east-who-says-3",
     title: "Global Health and Education Watch: Conflict deepens health crisis across Middle East, WHO says",
     summary:
