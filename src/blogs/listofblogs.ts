@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-member-states-agree-to-extend-negotiations-on-pathogen",
+    title: "Global Health and Education Watch: WHO Member States agree to extend negotiations on Pathogen",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-global-health-and-education-watch-who-member-states-agree-to-extend-negotiations.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "campus-discourse-erupts-cornell-incident-reflects-global-higher-education-tensions",
     title: "Campus Discourse Erupts: Cornell Incident Reflects Global Higher Education Tensions",
     summary:
