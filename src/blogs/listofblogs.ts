@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "campus-discourse-erupts-cornell-incident-reflects-global-higher-education-tensions",
+    title: "Campus Discourse Erupts: Cornell Incident Reflects Global Higher Education Tensions",
+    summary:
+      "A debate on the Israeli-Palestinian conflict at Cornell University reportedly culminated in an alleged physical altercation involving the university president and student protesters. This incident underscores the growing global challenges faced by higher education institutions in balancing free expression with campus safety.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-campus-discourse-erupts-cornell-incident-reflects-global-higher-education-tensio.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iranian-nobel-laureate-narges-mohammadi-hospitalised-as-health-deteriorates",
     title: "Global Health and Education Watch: Iranian Nobel laureate Narges Mohammadi hospitalised as health deteriorates",
     summary:
