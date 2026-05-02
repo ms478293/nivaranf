@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-supreme-court-appeal-ignites-global-debate-on-abortion-pill-access",
+    title: "US Supreme Court Appeal Ignites Global Debate on Abortion Pill Access",
+    summary:
+      "A US Supreme Court appeal by Danco Laboratories challenges restrictions on telemedicine and mail-order access to the abortion pill mifepristone. This legal battle has significant global implications for reproductive rights, healthcare equity, and the future of medication access worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-us-supreme-court-appeal-ignites-global-debate-on-abortion-pill-access.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-happiest-time-of-life-is-as-you-get",
     title: "Global Health and Education Watch: ‘The happiest time of life is as you get",
     summary:
