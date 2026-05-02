@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "caffeine-pouch-craze-global-health-alarm-for-youth",
+    title: "Caffeine Pouch Craze: Global Health Alarm for Youth",
+    summary:
+      "A global surge in caffeine pouch use among teenagers, driven by social media influencers, is alarming health experts. These products pose serious risks to adolescent health, including cardiac issues, anxiety, and addiction, prompting calls for urgent regulation and awareness.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-caffeine-pouch-craze-global-health-alarm-for-youth.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-obamacare-enrollment-drops-sharply-as-costs-rise",
     title: "Global Health and Education Watch: Obamacare Enrollment Drops Sharply as Costs Rise",
     summary:
