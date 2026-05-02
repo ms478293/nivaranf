@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-revise-recall-then-rest-your-exam-season-survival",
+    title: "Global Health and Education Watch: Revise, recall, then rest - your exam season survival",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-global-health-and-education-watch-revise-recall-then-rest-your-exam-season-survi.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-problem-with-healthy-life-expectancy",
     title: "Global Health and Education Watch: The problem with healthy life expectancy",
     summary:
