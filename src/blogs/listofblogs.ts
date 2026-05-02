@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-obamacare-enrollment-drops-sharply-as-costs-rise",
+    title: "Global Health and Education Watch: Obamacare Enrollment Drops Sharply as Costs Rise",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-02-global-health-and-education-watch-obamacare-enrollment-drops-sharply-as-costs-ri.jpg",
+    date: "2026-05-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-office-for-students-university-of-sussex-humiliation-is-a",
     title: "Global Health and Education Watch: Office for Students’ University of Sussex humiliation is a",
     summary:
