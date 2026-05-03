@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "the-echo-of-words-how-teacher-comments-shape-global-education-and-identity",
+    title: "The Echo of Words: How Teacher Comments Shape Global Education and Identity",
+    summary:
+      "A seemingly minor comment from an educator can have profound, lifelong impacts on a student's self-esteem and educational path. This global issue highlights the critical importance of empathetic communication and inclusive practices in classrooms worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-the-echo-of-words-how-teacher-comments-shape-global-education-and-identity.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-drowning-in-misinformation-under-rfk-jr-autism-advocates",
     title: "Global Health and Education Watch: US ‘drowning in misinformation’ under RFK Jr, autism advocates",
     summary:
