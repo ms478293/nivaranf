@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "deadly-hantavirus-outbreak-strikes-cruise-ship-raising-global-health-concerns",
+    title: "Deadly Hantavirus Outbreak Strikes Cruise Ship, Raising Global Health Concerns",
+    summary:
+      "A suspected hantavirus outbreak aboard a cruise ship in the Atlantic has led to three passenger deaths and several others falling critically ill. Global health authorities are monitoring the situation closely as the vessel docks in South Africa, initiating an immediate public health investigation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-deadly-hantavirus-outbreak-strikes-cruise-ship-raising-global-health-concerns.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-is-chickenpox-and-who-can-get-an-nhs-3",
     title: "Global Health and Education Watch: What is chickenpox and who can get an NHS",
     summary:
