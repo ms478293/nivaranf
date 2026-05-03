@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "thailand-s-muay-thai-visa-a-global-model-for-health-and-cultural-immersion",
+    title: "Thailand's Muay Thai Visa: A Global Model for Health and Cultural Immersion",
+    summary:
+      "Thailand is offering a five-year visa to visitors who engage in “soft power” activities like Muay Thai training, promoting cultural exchange and extended stays. This initiative highlights a growing trend in global travel, blending health, education, and immersive experiences.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-thailand-s-muay-thai-visa-a-global-model-for-health-and-cultural-immersion.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-supreme-court-appeal-ignites-global-debate-on-abortion-pill-access",
     title: "US Supreme Court Appeal Ignites Global Debate on Abortion Pill Access",
     summary:
