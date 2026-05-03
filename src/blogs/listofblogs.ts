@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "suspected-hantavirus-outbreak-claims-three-lives-on-atlantic-cruise",
+    title: "Suspected Hantavirus Outbreak Claims Three Lives on Atlantic Cruise",
+    summary:
+      "A suspected hantavirus outbreak aboard an Atlantic cruise ship has resulted in three passenger deaths and one critical case, according to the World Health Organization. This rare incident has triggered an urgent international public health investigation into the rodent-transmitted illness.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-suspected-hantavirus-outbreak-claims-three-lives-on-atlantic-cruise.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "lorraine-ribbons-a-life-of-heartfelt-service-for-children-globally",
     title: "Lorraine Ribbons: A Life of Heartfelt Service for Children Globally",
     summary:
