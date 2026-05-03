@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-classrooms-confront-demographic-shift-fewer-students-more-questions",
+    title: "Global Classrooms Confront Demographic Shift: Fewer Students, More Questions",
+    summary:
+      "Across continents, educational systems are grappling with shrinking student enrollments, a phenomenon driven by profound demographic shifts. This global trend necessitates innovative policy responses to manage underutilized facilities and sustain high-quality learning environments.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-global-classrooms-confront-demographic-shift-fewer-students-more-questions.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-global-commitment-on-display-as-countries-negotiate-key-annex-2",
     title: "Global Health and Education Watch: Global commitment on display as countries negotiate key annex",
     summary:
