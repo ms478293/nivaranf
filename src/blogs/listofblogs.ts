@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "lorraine-ribbons-a-life-of-heartfelt-service-for-children-globally",
+    title: "Lorraine Ribbons: A Life of Heartfelt Service for Children Globally",
+    summary:
+      "Lorraine Ribbons, who passed at 72, dedicated her life to supporting families affected by children's heart conditions through extensive volunteering. Her personal experience became a global beacon of empathy, providing vital hospital visits, therapeutic holidays, and peer counselling.",
+    thumbnailImage: "/images/global-news/2026/2026-05-03-lorraine-ribbons-a-life-of-heartfelt-service-for-children-globally.jpg",
+    date: "2026-05-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "deadly-hantavirus-outbreak-strikes-cruise-ship-raising-global-health-concerns",
     title: "Deadly Hantavirus Outbreak Strikes Cruise Ship, Raising Global Health Concerns",
     summary:
