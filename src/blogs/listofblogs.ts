@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-outbreak-on-cruise-ship-claims-three-lives-who-monitors-global-health-threat",
+    title: "Hantavirus Outbreak on Cruise Ship Claims Three Lives, WHO Monitors Global Health Threat",
+    summary:
+      "Three individuals have died and three others are critically ill following a suspected hantavirus outbreak on a cruise ship, as confirmed by the World Health Organization. The incident highlights the complex challenges of managing zoonotic diseases within international travel contexts and the critical need for robust global health surveillance.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-hantavirus-outbreak-on-cruise-ship-claims-three-lives-who-monitors-global-health.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "data-driven-insights-transform-global-healthcare-slash-costs",
     title: "Data-Driven Insights Transform Global Healthcare, Slash Costs",
     summary:
