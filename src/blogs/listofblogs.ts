@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cancer-care-revolutionized-by-rapid-injectable-immunotherapy",
+    title: "Global Cancer Care Revolutionized by Rapid Injectable Immunotherapy",
+    summary:
+      "A groundbreaking injectable immunotherapy drug, initially rolled out in the UK, promises to transform cancer treatment by significantly cutting down hospital time for patients. This innovation offers a more convenient and efficient approach to care, with potential global implications for healthcare systems and patient quality of life.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-global-cancer-care-revolutionized-by-rapid-injectable-immunotherapy.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "suspected-hantavirus-outbreak-claims-three-lives-on-atlantic-cruise",
     title: "Suspected Hantavirus Outbreak Claims Three Lives on Atlantic Cruise",
     summary:
