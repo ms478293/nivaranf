@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-to-know-about-the-suspected-hantavirus-outbreak-on",
+    title: "Global Health and Education Watch: What to Know About the Suspected Hantavirus Outbreak on",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-global-health-and-education-watch-what-to-know-about-the-suspected-hantavirus-ou.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "deadly-hantavirus-outbreak-on-cruise-ship-triggers-global-health-emergency",
     title: "Deadly Hantavirus Outbreak on Cruise Ship Triggers Global Health Emergency",
     summary:
