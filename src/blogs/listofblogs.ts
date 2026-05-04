@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "virtual-reality-trials-offer-new-hope-for-student-stress-relief-globally",
+    title: "Virtual Reality Trials Offer New Hope for Student Stress Relief Globally",
+    summary:
+      "A pioneering program in London schools is deploying virtual reality to help students manage stress from exams, ADHD, and personal challenges. This initiative highlights a growing global trend towards innovative tech solutions for youth mental health in educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-virtual-reality-trials-offer-new-hope-for-student-stress-relief-globally.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "denmark-s-triumph-a-global-blueprint-to-end-mother-to-child-hiv-syphilis-transmission",
     title: "Denmark's Triumph: A Global Blueprint to End Mother-to-Child HIV, Syphilis Transmission",
     summary:
