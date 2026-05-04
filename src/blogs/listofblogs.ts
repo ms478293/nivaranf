@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "data-driven-insights-transform-global-healthcare-slash-costs",
+    title: "Data-Driven Insights Transform Global Healthcare, Slash Costs",
+    summary:
+      "New research leverages data analytics to pinpoint critical disease pathways, known as \"hub chains,\" that drive healthcare utilization. This innovative approach promises to reduce global healthcare costs and improve patient outcomes by enabling more targeted interventions.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-data-driven-insights-transform-global-healthcare-slash-costs.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "former-nyc-mayor-giuliani-hospitalized-in-critical-condition-global-concerns-emerge",
     title: "Former NYC Mayor Giuliani Hospitalized in Critical Condition, Global Concerns Emerge",
     summary:
