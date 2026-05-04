@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "deadly-hantavirus-outbreak-on-cruise-ship-triggers-global-health-emergency",
+    title: "Deadly Hantavirus Outbreak on Cruise Ship Triggers Global Health Emergency",
+    summary:
+      "A virulent hantavirus outbreak aboard a cruise ship in the Atlantic Ocean has prompted an immediate, coordinated international public health intervention. The World Health Organization is leading efforts to contain the deadly pathogen and prevent its wider spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-deadly-hantavirus-outbreak-on-cruise-ship-triggers-global-health-emergency.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-outbreak-on-cruise-ship-claims-three-lives-who-monitors-global-health-threat",
     title: "Hantavirus Outbreak on Cruise Ship Claims Three Lives, WHO Monitors Global Health Threat",
     summary:
