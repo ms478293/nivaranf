@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "denmark-s-triumph-a-global-blueprint-to-end-mother-to-child-hiv-syphilis-transmission",
+    title: "Denmark's Triumph: A Global Blueprint to End Mother-to-Child HIV, Syphilis Transmission",
+    summary:
+      "Denmark has become the first EU nation certified by WHO for eliminating mother-to-child transmission of HIV and syphilis. This landmark achievement highlights the critical role of universal healthcare and sustained public health commitment.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-denmark-s-triumph-a-global-blueprint-to-end-mother-to-child-hiv-syphilis-transmi.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-school-cellphone-ban-study-finds-mixed-results",
     title: "Global Health and Education Watch: School Cellphone Ban Study Finds Mixed Results",
     summary:
