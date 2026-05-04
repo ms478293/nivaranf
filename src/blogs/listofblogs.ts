@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "former-nyc-mayor-giuliani-hospitalized-in-critical-condition-global-concerns-emerge",
+    title: "Former NYC Mayor Giuliani Hospitalized in Critical Condition, Global Concerns Emerge",
+    summary:
+      "Former New York City Mayor Rudy Giuliani has been hospitalized in critical but stable condition, according to his spokesman. The news has drawn global attention, with political figures and the public closely following developments.",
+    thumbnailImage: "/images/global-news/2026/2026-05-04-former-nyc-mayor-giuliani-hospitalized-in-critical-condition-global-concerns-eme.jpg",
+    date: "2026-05-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "virtual-reality-trials-offer-new-hope-for-student-stress-relief-globally",
     title: "Virtual Reality Trials Offer New Hope for Student Stress Relief Globally",
     summary:
