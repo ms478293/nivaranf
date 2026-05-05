@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "escalating-regional-tensions-devastate-lebanese-health-sector-threaten-global-aid",
+    title: "Escalating Regional Tensions Devastate Lebanese Health Sector, Threaten Global Aid",
+    summary:
+      "Ongoing regional conflicts have inflicted a devastating human cost in Lebanon, with thousands killed and injured, severely straining the nation's healthcare infrastructure. This crisis highlights the urgent global need for sustained humanitarian aid and robust health system support amidst escalating geopolitical tensions.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-escalating-regional-tensions-devastate-lebanese-health-sector-threaten-global-ai.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-association-between-health-literacy-and-the-need-for-hemodialysis",
     title: "Global Health and Education Watch: Association between health literacy and the need for hemodialysis",
     summary:
