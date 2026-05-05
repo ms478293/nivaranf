@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "mauritania-s-private-school-closure-plan-ignites-nationwide-education-debate",
+    title: "Mauritania's Private School Closure Plan Ignites Nationwide Education Debate",
+    summary:
+      "Mauritania's government has announced a controversial plan to shut down most private primary schools, aiming to consolidate students into the public education system. This policy shift has triggered widespread public outcry and protests across the nation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-mauritania-s-private-school-closure-plan-ignites-nationwide-education-debate.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-education-or-food-funding-shortfalls-force-sudanese-refugees-in",
     title: "Global Health and Education Watch: Education or food? Funding shortfalls force Sudanese refugees in",
     summary:
