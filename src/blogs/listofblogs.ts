@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "a-decade-of-disregard-global-healthcare-under-siege-in-conflicts",
+    title: "A Decade of Disregard: Global Healthcare Under Siege in Conflicts",
+    summary:
+      "A decade since UN Resolution 2286 aimed to safeguard healthcare in armed conflicts, the situation has alarmingly worsened. Major humanitarian organizations are now issuing a joint, urgent call for global action to protect medical facilities and personnel.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-a-decade-of-disregard-global-healthcare-under-siege-in-conflicts.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "escalating-regional-tensions-devastate-lebanese-health-sector-threaten-global-aid",
     title: "Escalating Regional Tensions Devastate Lebanese Health Sector, Threaten Global Aid",
     summary:
