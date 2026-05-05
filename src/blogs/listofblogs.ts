@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-education-or-food-funding-shortfalls-force-sudanese-refugees-in",
+    title: "Global Health and Education Watch: Education or food? Funding shortfalls force Sudanese refugees in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-global-health-and-education-watch-education-or-food-funding-shortfalls-force-sud.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "stranded-cruise-ship-battles-hantavirus-outbreak-amid-global-health-fears",
     title: "Stranded Cruise Ship Battles Hantavirus Outbreak Amid Global Health Fears",
     summary:
