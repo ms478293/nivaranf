@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "stranded-cruise-ship-battles-hantavirus-outbreak-amid-global-health-fears",
+    title: "Stranded Cruise Ship Battles Hantavirus Outbreak Amid Global Health Fears",
+    summary:
+      "A cruise ship is stranded at sea following a hantavirus outbreak, prompting global health concerns. Passengers remain calm but face an extended journey as authorities assess the disease's potential spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-stranded-cruise-ship-battles-hantavirus-outbreak-amid-global-health-fears.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-struck-cruise-ship-heads-to-canaries-amid-transmission-concerns",
     title: "Hantavirus-Struck Cruise Ship Heads to Canaries Amid Transmission Concerns",
     summary:
