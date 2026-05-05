@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rethinking-nutrition-why-when-we-eat-matters-for-global-health",
+    title: "Rethinking Nutrition: Why 'When' We Eat Matters for Global Health",
+    summary:
+      "New research is challenging decades of dietary advice by highlighting the critical role of meal timing in overall health. This evolving understanding could revolutionize global approaches to metabolic well-being and chronic disease prevention.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-rethinking-nutrition-why-when-we-eat-matters-for-global-health.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "homes-as-health-hubs-a-new-era-of-proactive-design",
     title: "Homes as Health Hubs: A New Era of Proactive Design",
     summary:
