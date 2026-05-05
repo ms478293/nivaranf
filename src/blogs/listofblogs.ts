@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-struck-cruise-ship-heads-to-canaries-amid-transmission-concerns",
+    title: "Hantavirus-Struck Cruise Ship Heads to Canaries Amid Transmission Concerns",
+    summary:
+      "A cruise ship affected by Hantavirus is en route to the Canary Islands, prompting Spanish authorities to await expert health inspections before granting port entry. The World Health Organization is closely monitoring the situation, noting the unusual possibility of human-to-human transmission in this outbreak.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-hantavirus-struck-cruise-ship-heads-to-canaries-amid-transmission-concerns.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rethinking-nutrition-why-when-we-eat-matters-for-global-health",
     title: "Rethinking Nutrition: Why 'When' We Eat Matters for Global Health",
     summary:
