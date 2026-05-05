@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-association-between-health-literacy-and-the-need-for-hemodialysis",
+    title: "Global Health and Education Watch: Association between health literacy and the need for hemodialysis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-global-health-and-education-watch-association-between-health-literacy-and-the-ne.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-scramble-to-evacuate-two-people-from-cruise-ship-amid",
     title: "Global Health and Education Watch: Scramble to evacuate two people from cruise ship amid",
     summary:
