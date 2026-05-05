@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "homes-as-health-hubs-a-new-era-of-proactive-design",
+    title: "Homes as Health Hubs: A New Era of Proactive Design",
+    summary:
+      "A global movement is emerging where medical consultants collaborate with architects and designers to \"diagnose\" and enhance the health-promoting qualities of homes. This innovative approach aims to embed long-term well-being into residential environments, transforming how we perceive and construct our living spaces.",
+    thumbnailImage: "/images/global-news/2026/2026-05-05-homes-as-health-hubs-a-new-era-of-proactive-design.jpg",
+    date: "2026-05-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "a-decade-of-disregard-global-healthcare-under-siege-in-conflicts",
     title: "A Decade of Disregard: Global Healthcare Under Siege in Conflicts",
     summary:
