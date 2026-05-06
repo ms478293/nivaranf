@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-psychotropic-medication-use-lifestyle-genetic-risk-for-high-bmi",
+    title: "Global Health and Education Watch: Psychotropic medication use, lifestyle, genetic risk for high BMI",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-global-health-and-education-watch-psychotropic-medication-use-lifestyle-genetic-.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "visa-barriers-threaten-global-health-and-education-exchange",
     title: "Visa Barriers Threaten Global Health and Education Exchange",
     summary:
