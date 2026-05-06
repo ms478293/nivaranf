@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-rare-viruses-resurface-posing-new-threats-in-confined-environments",
+    title: "Global Health Alert: Rare Viruses Resurface, Posing New Threats in Confined Environments",
+    summary:
+      "The recent suspected hantavirus outbreak serves as a stark reminder of the global threat posed by rare, re-emerging viruses. It highlights the critical need for robust public health infrastructure and rapid response mechanisms, especially in environments where disease transmission can accelerate quickly.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-global-health-alert-rare-viruses-resurface-posing-new-threats-in-confined-enviro.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-inference-of-latent-epidemic-regimes-and-generative-simulations-reveal",
     title: "Global Health and Education Watch: Inference of latent epidemic regimes and generative simulations reveal",
     summary:
