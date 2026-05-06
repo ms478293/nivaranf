@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "visa-barriers-threaten-global-health-and-education-exchange",
+    title: "Visa Barriers Threaten Global Health and Education Exchange",
+    summary:
+      "Stringent visa policies and rising global tensions are significantly impeding international cooperation in health and education sectors. This trend threatens scientific progress, academic exchange, and the global capacity to address critical challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-visa-barriers-threaten-global-health-and-education-exchange.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-cyberattacks-threaten-health-education-technical-fixes-insufficient",
     title: "Global Cyberattacks Threaten Health, Education: Technical Fixes Insufficient",
     summary:
