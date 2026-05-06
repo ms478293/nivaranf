@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-abortion-pills-under-threat-women-s-lives-at-risk",
+    title: "Global Health Crisis: Abortion Pills Under Threat, Women's Lives at Risk",
+    summary:
+      "Around the globe, access to safe medical abortion, particularly through pills like mifepristone, is increasingly under threat from restrictive legislation and judicial challenges. This erosion of reproductive rights leads to tragic outcomes, including preventable deaths and profound socio-economic setbacks for women.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-global-health-crisis-abortion-pills-under-threat-women-s-lives-at-risk.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "american-healthcare-costs-a-hidden-driver-of-global-economic-imbalance",
     title: "American Healthcare Costs: A Hidden Driver of Global Economic Imbalance",
     summary:
