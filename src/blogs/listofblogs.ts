@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cyberattacks-threaten-health-education-technical-fixes-insufficient",
+    title: "Global Cyberattacks Threaten Health, Education: Technical Fixes Insufficient",
+    summary:
+      "The global rise of cyberattacks is critically endangering health systems and educational institutions worldwide. Purely technical solutions are proving insufficient, demanding a holistic strategy involving human factors, policy, and international cooperation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-global-cyberattacks-threaten-health-education-technical-fixes-insufficient.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "human-transmissible-hantavirus-strain-detected-on-cruise-ship",
     title: "Human-Transmissible Hantavirus Strain Detected on Cruise Ship",
     summary:
