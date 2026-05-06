@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "universities-worldwide-embrace-ai-integration-for-future-of-education-and-health",
+    title: "Universities Worldwide Embrace AI Integration for Future of Education and Health",
+    summary:
+      "Academic institutions globally are making substantial investments to integrate artificial intelligence across various disciplines, aiming to revolutionize education and critical sectors like healthcare. This strategic shift reflects a worldwide commitment to leveraging AI's transformative potential for societal advancement.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-universities-worldwide-embrace-ai-integration-for-future-of-education-and-health.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ann-barrett-obituary",
     title: "Global Health and Education Watch: Ann Barrett obituary",
     summary:
