@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "human-transmissible-hantavirus-strain-detected-on-cruise-ship",
+    title: "Human-Transmissible Hantavirus Strain Detected on Cruise Ship",
+    summary:
+      "The Andes strain of Hantavirus, known for its human-to-human transmission capability, has been identified in two confirmed cases linked to a recent cruise ship outbreak. This discovery by South African health authorities highlights the urgent need for robust international surveillance and rapid response mechanisms against emerging infectious threats.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-human-transmissible-hantavirus-strain-detected-on-cruise-ship.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "universities-worldwide-embrace-ai-integration-for-future-of-education-and-health",
     title: "Universities Worldwide Embrace AI Integration for Future of Education and Health",
     summary:
