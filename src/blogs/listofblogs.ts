@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "american-healthcare-costs-a-hidden-driver-of-global-economic-imbalance",
+    title: "American Healthcare Costs: A Hidden Driver of Global Economic Imbalance",
+    summary:
+      "The exorbitant cost of healthcare in the United States is increasingly recognized as a significant, yet often overlooked, factor contributing to global economic disparities. These expenditures influence everything from pharmaceutical pricing to the migration of medical professionals, shaping health outcomes far beyond American borders.",
+    thumbnailImage: "/images/global-news/2026/2026-05-06-american-healthcare-costs-a-hidden-driver-of-global-economic-imbalance.jpg",
+    date: "2026-05-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-psychotropic-medication-use-lifestyle-genetic-risk-for-high-bmi",
     title: "Global Health and Education Watch: Psychotropic medication use, lifestyle, genetic risk for high BMI",
     summary:
