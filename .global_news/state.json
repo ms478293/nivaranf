@@ -1,6 +1,6 @@
 {
-  "windowStartUtc": "2026-05-07T00:00:00Z",
-  "publishedInWindow": 4,
+  "windowStartUtc": "2026-05-07T12:00:00Z",
+  "publishedInWindow": 1,
   "candidateCache": [
     {
       "title": "Progress in reducing child deaths slows as 4.9 million children die before age five",
@@ -12,7 +12,7 @@
       "healthHits": 8,
       "educationHits": 2,
       "reason": "relevance=84, credibility=35, freshness=0, health_hits=8, education_hits=2, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Conflict deepens health crisis across Middle East, WHO says",
@@ -24,7 +24,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=58, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Largest catch-up initiative delivers over 100 million childhood vaccinations",
@@ -36,7 +36,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO reports measurable health impact in 2025 amid transition to new strategy",
@@ -48,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=55, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "'I didn't know how much I struggled with my autism at school'",
@@ -60,19 +60,19 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=37, credibility=35, freshness=18, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
-      "title": "Hantavirus outbreak: Another passenger contracts disease",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167449",
-      "summary": "It’s been confirmed that another passenger from the cruise liner linked to the outbreak of hantavirus has contracted the disease, which has claimed the lives of three people on board and sparked an international alert coordinated by the UN World Health Organization (WHO).",
-      "publishedAtUtc": "2026-05-06T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 88.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=35, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "title": "More than 50,000 pupils expected to strike over German rearmament policy",
+      "link": "https://www.theguardian.com/world/2026/may/07/germany-pupils-strike-rearmament-policy-protest-boycott",
+      "summary": "Organisers of nationwide protest say its aim is to stop the government turning young Germans into ‘cannon fodder’ Tens of thousands of pupils across Germany are expected to boycott the classroom and take to the streets in a nationwide protest organisers say is to stop the government’s rearmament policy turning young people into “cannon fodder”. Despite threats from teachers’ associations and education ministries, which have said anyone who demonstrates during school hours could risk penalties and even expulsion, organisers say they expect the number of participants at Friday’s school strike to be at least as high as the estimated 50,000 who attended each of the first two. Continue reading...",
+      "publishedAtUtc": "2026-05-07T11:39:44Z",
+      "domain": "theguardian.com",
+      "score": 89.0,
+      "healthHits": 0,
+      "educationHits": 4,
+      "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "A game-changer for good health? Scientists believe ‘we are when we eat’ | Devi Sridhar",
@@ -84,7 +84,7 @@
       "healthHits": 3,
       "educationHits": 1,
       "reason": "relevance=42, credibility=35, freshness=10, health_hits=3, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Argentina races to find origins of cruise ship hantavirus outbreak, amid reports some passengers have returned to US",
@@ -96,7 +96,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO certifies the Bahamas for eliminating mother-to-child transmission of HIV",
@@ -108,7 +108,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=50, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Attacks on Ukraine’s health care increased by 20% in 2025",
@@ -120,7 +120,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "My kids are taking their first big exams – and revealing my own anxieties about AI and long division | Emma Brockes",
@@ -132,7 +132,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Ann Barrett obituary",
@@ -144,7 +144,7 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=37, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Abortion pills are saving women’s lives. The right is trying to eliminate them | Moira Donegan",
@@ -156,7 +156,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=37, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Efforts to eliminate hepatitis delivers gains but more action needed to meet 2030 targets",
@@ -168,19 +168,43 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Hantavirus outbreak: Another passenger contracts disease",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167449",
+      "summary": "It’s been confirmed that another passenger from the cruise liner linked to the outbreak of hantavirus has contracted the disease, which has claimed the lives of three people on board and sparked an international alert coordinated by the UN World Health Organization (WHO).",
+      "publishedAtUtc": "2026-05-06T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 80.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=35, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Florida Creates a More Conservative Course to Rival A.P. History",
       "link": "https://www.nytimes.com/2026/05/07/us/florida-conservative-history-course-ap.html",
       "summary": "Here are ways Florida’s advanced high school history program, which students can use for college credit, differs from other curriculums.",
-      "publishedAtUtc": "2026-05-07T09:02:33Z",
+      "publishedAtUtc": "2026-05-07T11:54:44Z",
       "domain": "nytimes.com",
       "score": 80.0,
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Parents in Wales urged to ‘be vigilant’ about hand-washing amid hepatitis A outbreak",
+      "link": "https://www.theguardian.com/uk-news/2026/may/07/hand-washing-hepatitis-outbreak-wales",
+      "summary": "At least three households in Barry, south Wales, identified as having contracted the liver infection Health authorities have asked parents and carers to be “vigilant with their children’s hand-washing” after a hepatitis A outbreak in Barry, south Wales. Public Health Wales said at least three households in the seaside town had been identified as having contracted the same liver infection, and there were worries it was spreading locally. Continue reading...",
+      "publishedAtUtc": "2026-05-07T11:05:53Z",
+      "domain": "theguardian.com",
+      "score": 80.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Britons on hantavirus-hit ship to be asked to isolate back in UK for 45 days",
@@ -192,7 +216,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "World ‘unprepared’ for next pandemic as countries fail to agree on sharing information, tests and vaccines",
@@ -204,7 +228,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "N.Y.C. Schools Could Lose 153,000 Students in Next Decade, Study Finds",
@@ -216,7 +240,19 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Netherlands Tests Flight Attendant for Hantavirus as Officials Track Cruise Ship Outbreak",
+      "link": "https://www.nytimes.com/2026/05/07/world/europe/hantavirus-cruise-ship-outbreak.html",
+      "summary": "Global health officials are tracking people connected to a deadly outbreak on a cruise ship. One infected passenger had briefly boarded a flight from South Africa to the Netherlands before she died.",
+      "publishedAtUtc": "2026-05-07T11:56:50Z",
+      "domain": "nytimes.com",
+      "score": 77.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Cook more at home to reduce ultra-processed food intake, say cardiologist groups",
@@ -228,43 +264,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
-    },
-    {
-      "title": "WHO leads response to cruise ship hantavirus outbreak",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167433",
-      "summary": "An outbreak of deadly hantavirus aboard a cruise ship in the Atlantic Ocean has triggered an international public health response.",
-      "publishedAtUtc": "2026-05-04T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 76.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
-    },
-    {
-      "title": "Cruise passengers tell of life on board stranded ship after hantavirus outbreak",
-      "link": "https://www.bbc.com/news/articles/clype7ededzo?at_medium=RSS&at_campaign=rss",
-      "summary": "While passengers onboard the MV Hondius say the situation is calm, they face days at sea as officials warn the disease may have spread.",
-      "publishedAtUtc": "2026-05-06T11:52:42Z",
-      "domain": "bbc.com",
-      "score": 75.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
-    },
-    {
-      "title": "Hantavirus strain that spreads between humans found in cruise ship passengers",
-      "link": "https://www.bbc.com/news/articles/ce8pypvjx1ko?at_medium=RSS&at_campaign=rss",
-      "summary": "South Africa's health ministry said the Andes strain of the virus was found in two confirmed cases linked to the outbreak.",
-      "publishedAtUtc": "2026-05-06T10:32:59Z",
-      "domain": "bbc.com",
-      "score": 75.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Justice Dept. Accuses U.C.L.A. Medical School of Bias Against White and Asian Applicants",
@@ -276,7 +276,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘Close to zero impact’: US study casts doubt on effect of phone ban in schools",
@@ -288,19 +288,31 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘Restaurants won’t survive’: Michelin chef opens venues abroad to withstand UK taxes",
       "link": "https://www.theguardian.com/food/2026/may/07/restaurants-michelin-chef-uk-hospitality-tax-business",
       "summary": "Jason Atherton, who has restaurants in Dubai, St Moritz and now Tuscany, says it’s tough to stay afloat in UK hospitality industry A British Michelin-starred chef says he is opening restaurants abroad to subsidise his UK venues against a backdrop of high taxes and a struggling hospitality sector. Jason Atherton is now in Forte dei Marmi, on the Tuscan coast in Italy, where he is preparing his newest opening, Maria’s, which will be in the Principessa hotel. The Sheffield-born chef now has restaurants all over the world, including in Dubai and St Moritz. Continue reading...",
-      "publishedAtUtc": "2026-05-07T08:00:42Z",
+      "publishedAtUtc": "2026-05-07T11:16:48Z",
       "domain": "theguardian.com",
       "score": 74.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "May elections live: Badenoch rows back on Reform pacts as millions cast their votes",
+      "link": "https://www.theguardian.com/politics/live/2026/may/07/may-local-elections-polls-open-england-scotland-wales-uk-politics-latest-news-updates",
+      "summary": "Tory leader tells Sun that there won’t be council tie-ups as Farage’s party is not ‘serious’ as votes under way in England, Wales and Scotland And here is the eve-of-poll statement that Rhun ap Iorwerth , the Plaid Cymru leader, issued yesterday. Service is a value which has always sustained Wales. It’s a value instilled in me from a young age by my parents, both teachers. It’s a value I’ve sought to pass on to my children - the gift of giving back to the people and places who gave us so much. Tomorrow is a chance for the people of Wales to choose who serves our nation for the next four years. It’s Plaid Cymru’s deep sense of service to Wales - focusing just on our needs and our future - that first drew me to politics. Today is Scotland’s opportunity to choose a better future by voting SNP for real action on the cost of living, to lock Nigel Farage out of power, and to secure a fresh start with independence. I urge people in every part of Scotland to unite behind the SNP to make it happen. The SNP is the only party that has set out a positive vision for Scotland’s future - and we are the only party with a serious plan to support people with the cost of living. We have set out our plans to bring down food costs, give families more support with the cost of childcare, lower the cost of your daily commute and provide more support for first time buyers. The SNP wants to lower your bills – but all the other parties want to do is stop us. They have no plan of their own and nothing to offer. They want you to vote for an opposition to stop things happening. I am asking people to vote for an SNP Government to get things done. By casting both votes for the SNP, Scotland can elect a strong majority SNP government that will always stand up for Scotland, prioritise the cost of living, and deliver that fresh start of independence that Scotland needs. That opportunity of a better future is now within touching distance. Let’s make it happen today by voting SNP. Continue reading...",
+      "publishedAtUtc": "2026-05-07T11:52:38Z",
+      "domain": "theguardian.com",
+      "score": 74.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "After three years of conflict, Sudan faces a deeper health crisis",
@@ -312,7 +324,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "U.S.C. Will Infuse A.I. Across University with $200 Million Donation",
@@ -324,7 +336,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "British crew member in need of urgent medical care amid suspected hantavirus outbreak on cruise ship",
@@ -336,7 +348,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO prequalifies first-ever malaria treatment for newborns and infants, adds new diagnostic tests",
@@ -348,7 +360,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What is the Andes Strain of Hantavirus?",
@@ -360,7 +372,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "How Did You Grow and Change This School Year?",
@@ -372,7 +384,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Hantavirus hell: deadly virus takes hold of cruise ship – The Latest",
@@ -384,31 +396,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
-    },
-    {
-      "title": "May elections live: millions cast their votes across England, Scotland and Wales",
-      "link": "https://www.theguardian.com/politics/live/2026/may/07/may-local-elections-polls-open-england-scotland-wales-uk-politics-latest-news-updates",
-      "summary": "About 5,000 councillors and six mayors up for election in England, while Scotland chooses 129 MSPs, and Wales selects 96 members of the Senedd And here is the eve-of-poll statement that Rhun ap Iorwerth , the Plaid Cymru leader, issued yesterday. Service is a value which has always sustained Wales. It’s a value instilled in me from a young age by my parents, both teachers. It’s a value I’ve sought to pass on to my children - the gift of giving back to the people and places who gave us so much. Tomorrow is a chance for the people of Wales to choose who serves our nation for the next four years. It’s Plaid Cymru’s deep sense of service to Wales - focusing just on our needs and our future - that first drew me to politics. Today is Scotland’s opportunity to choose a better future by voting SNP for real action on the cost of living, to lock Nigel Farage out of power, and to secure a fresh start with independence. I urge people in every part of Scotland to unite behind the SNP to make it happen. The SNP is the only party that has set out a positive vision for Scotland’s future - and we are the only party with a serious plan to support people with the cost of living. We have set out our plans to bring down food costs, give families more support with the cost of childcare, lower the cost of your daily commute and provide more support for first time buyers. The SNP wants to lower your bills – but all the other parties want to do is stop us. They have no plan of their own and nothing to offer. They want you to vote for an opposition to stop things happening. I am asking people to vote for an SNP Government to get things done. By casting both votes for the SNP, Scotland can elect a strong majority SNP government that will always stand up for Scotland, prioritise the cost of living, and deliver that fresh start of independence that Scotland needs. That opportunity of a better future is now within touching distance. Let’s make it happen today by voting SNP. Continue reading...",
-      "publishedAtUtc": "2026-05-07T09:30:27Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
-    },
-    {
-      "title": "Global rise of cyberattacks exposes limits of technical solutions",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167439",
-      "summary": "The internet reaches into every corner of the world and is vital to everything from health systems and financial markets to public services and election organising. This intense global interconnectedness clearly comes with great benefits, but a cybercrime epidemic is putting millions of lives at risk.",
-      "publishedAtUtc": "2026-05-04T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 71.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "How A.I. Killed Student Writing (and Revived It)",
@@ -420,31 +408,43 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=32, credibility=35, freshness=4, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
-      "title": "World News in Brief: Iranian Nobel winner’s declining health, rising attacks on healthcare, debt crisis hits women, Aid to Mozambique",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167436",
-      "summary": "Concern is mounting over the health of imprisoned Iranian Nobel Peace Prize laureate Narges Mohammadi, who was reportedly being held alongside high-risk offenders.",
+      "title": "WHO leads response to cruise ship hantavirus outbreak",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167433",
+      "summary": "An outbreak of deadly hantavirus aboard a cruise ship in the Atlantic Ocean has triggered an international public health response.",
       "publishedAtUtc": "2026-05-04T12:00:00Z",
       "domain": "news.un.org",
       "score": 70.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "A practice-based framework for point-of-care chronic disease management",
+      "link": "https://www.nature.com/articles/s44222-026-00441-7",
+      "summary": "",
+      "publishedAtUtc": "2026-05-07T00:00:00Z",
+      "domain": "nature.com",
+      "score": 70.0,
       "healthHits": 1,
       "educationHits": 0,
-      "reason": "relevance=25, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Employees With Medical Conditions Challenge C.D.C. In-Office Requirement",
       "link": "https://www.nytimes.com/2026/05/07/health/cdc-worker-accomodations-disabilities.html",
       "summary": "The health agency has been particularly strict in abolishing at-home work, overriding accommodations that were granted years before the pandemic.",
-      "publishedAtUtc": "2026-05-07T09:01:39Z",
+      "publishedAtUtc": "2026-05-07T09:01:40Z",
       "domain": "nytimes.com",
       "score": 70.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Hantavirus Patients Land in Amsterdam With More Cruise Ship Evacuations Planned",
@@ -456,7 +456,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "A Project in Europe Tested Whether Students Could Live Without Smartphones",
+      "link": "https://www.nytimes.com/2026/05/07/world/europe/smartphones-austria-children-experiment.html",
+      "summary": "For three weeks, thousands of children in Europe went without social media or their smartphones, or both. This is the diary of their digital detox.",
+      "publishedAtUtc": "2026-05-07T09:47:26Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "U.S. Health Authorities Monitor Hantavirus Cruise Passengers in Georgia, California and Arizona",
@@ -468,7 +480,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Air-Conditioning Is in Short Supply as Asia Swelters",
@@ -480,7 +492,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Where did the cruise ship hantavirus come from and what happens next?",
+      "link": "https://www.theguardian.com/world/2026/may/07/where-cruise-ship-hantavirus-from-what-next-canary-islands",
+      "summary": "As the remaining passengers head for the Canary Islands we look at how the virus spreads and what is being done The cruise ship hit with a deadly outbreak of hantavirus is on its way to the Canary Islands where the remaining passengers are expected to be repatriated provided they have no symptoms of the infection. Here we look at the investigation into the outbreak and what comes next. Continue reading...",
+      "publishedAtUtc": "2026-05-07T11:59:55Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Doctors’ archaic attitudes over sterilisation | Letter",
@@ -492,31 +516,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
-      "title": "Man charged in DC shooting was walking near JD Vance’s motorcade, agent says",
-      "link": "https://www.theguardian.com/us-news/2026/may/06/washington-dc-shooting-jd-vance",
-      "summary": "Michael Marx was shot by authorities multiple times and then taken to a hospital after bystander was wounded A man accused of firing a gun at law enforcement officers near the Washington monument this week was walking along the path of JD Vance ’s motorcade before the shooting and made a vulgar remark about the White House after the confrontation, according to a court filing on Wednesday. Michael Marx, 45, of Midland, Texas, was shot multiple times during Monday’s confrontation and was in the back of an ambulance on his way to a hospital when he said: “‘F—k the White House’ and ‘Kill me, kill me, kill me’”, a Secret Service agent said in an affidavit. Continue reading...",
-      "publishedAtUtc": "2026-05-06T22:26:44Z",
+      "title": "Woman, 28, charged after allegedly posing as 16-year-old Bronx student",
+      "link": "https://www.theguardian.com/us-news/2026/may/07/new-york-bronx-high-school-woman-posing-as-student",
+      "summary": "Suspect accused of enrolling under false identity before arrest, in case echoing similar US incidents A 28-year-old woman pretended to be age 16 and enrolled at a Bronx high school under a false identity before New York City police jailed her recently, according to officials. Kacy Claassen pleaded not guilty to charges of criminal impersonation in the second degree as well as trespassing on 28 April, the day after her arrest, Bronx court records show. Continue reading...",
+      "publishedAtUtc": "2026-05-07T10:22:46Z",
       "domain": "theguardian.com",
       "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "UK and US launch disease control measures over hantavirus",
       "link": "https://www.ft.com/content/d93941a2-027a-48d2-a65b-49f43f7ab350",
       "summary": "Some passengers had already left cruise ship struck with rodent-borne illness before alarm was raised",
-      "publishedAtUtc": "2026-05-07T08:44:06Z",
+      "publishedAtUtc": "2026-05-07T10:40:50Z",
       "domain": "ft.com",
       "score": 70.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Spain to repatriate 150 passengers from cruise hit by rat-borne virus",
@@ -528,7 +552,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Passenger from Hantavirus-hit ship speaks to Al Jazeera from isolation",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/5/7/passenger-from-hantavirus-hit-ship-speaks-to-al-jazeera-from-isolation?traffic_source=rss",
+      "summary": "A passenger from the cruise ship hit with a Hantavirus outbreak has spoken to Al Jazeera from isolation.",
+      "publishedAtUtc": "2026-05-07T11:09:56Z",
+      "domain": "aljazeera.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Bolivian police fire tear gas at protesting teachers",
@@ -540,7 +576,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "France introduces one‑euro canteen meals for all students",
@@ -552,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Association between health literacy and the need for hemodialysis in patients with type 2 diabetes: a case-control study",
@@ -564,7 +600,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=30, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "School Cellphone Ban Study Finds Mixed Results",
@@ -576,7 +612,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Cruise Ship Struck by Hantavirus Is to Head to Canary Islands, W.H.O. Says",
@@ -588,7 +624,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "I was wrong about the danger of smartphones in schools. It’s far, far worse than I thought | Lola Okolosie",
@@ -600,7 +636,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Singapore introduces caning for boys who bully others at school",
@@ -612,7 +648,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Australia becomes the 30th country to eliminate trachoma as a public health problem",
@@ -624,7 +660,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO and France shift One Health vision to action with new high-impact initiatives",
@@ -636,7 +672,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Single dose of magic mushroom psychedelic can cause anatomical brain changes, study finds",
@@ -648,7 +684,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Cruise passengers tell of life on board stranded ship after hantavirus outbreak",
+      "link": "https://www.bbc.com/news/articles/clype7ededzo?at_medium=RSS&at_campaign=rss",
+      "summary": "While passengers onboard the MV Hondius say the situation is calm, they face days at sea as officials warn the disease may have spread.",
+      "publishedAtUtc": "2026-05-06T11:52:42Z",
+      "domain": "bbc.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Hantavirus strain that spreads between humans found in cruise ship passengers",
+      "link": "https://www.bbc.com/news/articles/ce8pypvjx1ko?at_medium=RSS&at_campaign=rss",
+      "summary": "South Africa's health ministry said the Andes strain of the virus was found in two confirmed cases linked to the outbreak.",
+      "publishedAtUtc": "2026-05-06T10:32:59Z",
+      "domain": "bbc.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Car Driven by Cornell’s President Bumps Into Students After Confrontation Over Gaza",
@@ -660,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Slow Alzheimer’s diagnoses ‘mean UK patients missing out on experimental treatments’",
@@ -672,7 +732,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "When rare viruses return",
@@ -684,7 +744,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "World News in Brief: Gulf tensions rise, Gaza health needs ‘staggering’, skills gap threat",
@@ -696,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Education or food? Funding shortfalls force Sudanese refugees in Egypt to ‘make very difficult decisions’",
@@ -708,7 +768,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Human spread of hantavirus not ruled out on cruise ship",
@@ -720,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Ofsted inspections pushing headteachers to ‘point of destruction’, union chief says",
@@ -732,7 +792,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO Member States agree to extend negotiations on Pathogen Access and Benefit Sharing annex",
@@ -744,7 +804,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Global rise of cyberattacks exposes limits of technical solutions",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167439",
+      "summary": "The internet reaches into every corner of the world and is vital to everything from health systems and financial markets to public services and election organising. This intense global interconnectedness clearly comes with great benefits, but a cybercrime epidemic is putting millions of lives at risk.",
+      "publishedAtUtc": "2026-05-04T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Three dead in suspected hantavirus infection outbreak on cruise ship: WHO",
@@ -756,7 +828,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO validates elimination of trachoma as a public health problem in Libya",
@@ -768,7 +840,19 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "World News in Brief: Iranian Nobel winner’s declining health, rising attacks on healthcare, debt crisis hits women, Aid to Mozambique",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167436",
+      "summary": "Concern is mounting over the health of imprisoned Iranian Nobel Peace Prize laureate Narges Mohammadi, who was reportedly being held alongside high-risk offenders.",
+      "publishedAtUtc": "2026-05-04T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=25, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Hantavirus Outbreaks Are Rare, but They Aren’t Going Away and There’s No Cure",
@@ -780,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Reclaiming the Name of the Black Hero Who Inspired ‘Uncle Tom’s Cabin’",
@@ -792,7 +876,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "American healthcare costs drive global imbalances",
@@ -804,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Algeria eliminates trachoma as a public health problem",
@@ -816,7 +900,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "First-ever WHO Forum unites 800+ Collaborating Centres for stronger scientific collaboration",
@@ -828,7 +912,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Chile becomes the first country in the Americas to be verified by WHO for the elimination of leprosy",
@@ -840,7 +924,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Recommendations for influenza vaccine composition for the 2026-2027 northern hemisphere season",
@@ -852,7 +936,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -864,7 +948,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Caffeine pouch craze: A teenage trend troubling some experts",
@@ -876,7 +960,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘Go inside, he will kill you’: Israeli militants step up West Bank school attacks",
@@ -888,7 +972,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘It ruined my night’: photographers accused of targeting women at St Andrews May Dip",
@@ -900,7 +984,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Joint call by the President of the ICRC, the Director-General of WHO and the International President of MSF",
@@ -912,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "UN leads call to prepare ‘for when digital systems fail’",
@@ -924,7 +1008,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Psychotropic medication use, lifestyle, genetic risk for high BMI and the incidence of cardiovascular disease",
@@ -936,7 +1020,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Genomic newborn screening: data retention for research and clinical reuse",
@@ -948,7 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "F.D.A. Blocked Publication of Research Finding Covid and Shingles Vaccines Were Safe",
@@ -960,7 +1044,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Kennedy Starts a Push to Help Americans Quit Antidepressants",
@@ -972,7 +1056,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Supreme Court Temporarily Restores Access to Abortion Pill by Mail",
@@ -984,7 +1068,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "3 Dead in Hantavirus Outbreak Aboard Cruise Ship, W.H.O. Says",
@@ -996,7 +1080,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Trump Administration Investigating Smith College Over Transgender Admissions",
@@ -1008,7 +1092,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "The Growing Rift Between the UAE and Saudi Arabia, Explained",
@@ -1020,7 +1104,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "BioNTech to cut fifth of workforce as it winds down Covid vaccine production",
@@ -1032,7 +1116,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Does your home need a doctor?",
@@ -1044,7 +1128,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO calls for action: “Together for health. Stand with science.” to mark World Health Day",
@@ -1056,7 +1140,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO recommends new diagnostic tools to help end TB",
@@ -1068,7 +1152,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Mother and baby mental health unit to go ahead",
@@ -1080,7 +1164,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Revise, recall, then rest - your exam season survival guide",
@@ -1092,7 +1176,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Data-driven identification of hub chains in disease accruals to reduce healthcare utilization and costs",
@@ -1104,7 +1188,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "As Enrollment Shrinks, a Clash Between the Have- and Have-Not Schools",
@@ -1116,7 +1200,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘I see it as trafficking’: the brutal reality of life as a foreign student in the UK",
@@ -1128,7 +1212,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What is chickenpox and who can get an NHS vaccine?",
@@ -1140,7 +1224,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "University wins record freedom of speech fine challenge",
@@ -1152,7 +1236,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Teachers' union warns of 'masculinity crisis brewing' in schools",
@@ -1164,7 +1248,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "World News in Brief: Aung San Suu Kyi released from prison, Israel’s new death penalty, Cambodia convictions, healthcare inequalities in South America",
@@ -1176,7 +1260,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Brazilian elimination of mother-to-child HIV transmission: lessons for large-scale global health systems",
@@ -1188,7 +1272,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "The Vaccine Skeptic in Trump’s New C.D.C. Leadership Team",
@@ -1200,7 +1284,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Trump Administration Imposes Caps on Graduate School Loans",
@@ -1212,7 +1296,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Flaws in Kenya’s AI-driven health reforms driving up costs for the poorest",
@@ -1224,7 +1308,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Calls for clarity over schools smartphone ban",
@@ -1236,7 +1320,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Phones to be banned in schools by law in England under government plans",
@@ -1248,7 +1332,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "The city where primary school places come with a toilet-training guide",
@@ -1260,7 +1344,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Mississippi Middle School Students Avert Bus Crash After Driver Loses Control",
@@ -1272,7 +1356,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "I took an algorithm to court in Sweden. The algorithm won | Charlotta Kronblad",
@@ -1284,7 +1368,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "WHO Member States agree to extend negotiations on key annex to the Pandemic Agreement",
@@ -1296,7 +1380,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Encouraging progress in inclusive health policies for refugees and migrants",
@@ -1308,7 +1392,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Denmark becomes first country in the European Union to eliminate mother-to-child transmission of HIV and syphilis",
@@ -1320,7 +1404,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "NHS cancer jab could save patients hours in hospital",
@@ -1332,7 +1416,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What is Ofsted and how does the new school ratings system work?",
@@ -1344,7 +1428,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Inference of latent epidemic regimes and generative simulations reveal how inequality and mobility shape COVID-19 transmission",
@@ -1356,7 +1440,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Implications for distancing measures on in-person school and work attendance from Italian post-pandemic social contact data",
@@ -1368,7 +1452,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What Is Hantavirus, Which Is Linked to the Deaths of 3 People Aboard a Cruise Ship?",
@@ -1380,7 +1464,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Obamacare Enrollment Drops Sharply as Costs Rise",
@@ -1392,7 +1476,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Trump Picks Nicole Saphier for Surgeon General After Withdrawing Casey Means Nomination",
@@ -1404,7 +1488,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Two High Schoolers in Mississippi Are Released After Being Detained by ICE",
@@ -1416,7 +1500,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "They Left for the School Bus. ICE Picked Them Up Instead.",
@@ -1428,7 +1512,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "The problem with healthy life expectancy",
@@ -1440,7 +1524,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "PwC will drop cover for weight-loss drugs from employee health plans",
@@ -1452,7 +1536,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Bird flu vaccine trial against potential pandemic strain begins",
@@ -1464,7 +1548,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Rollout of Covid vaccines extraordinary feat - inquiry report",
@@ -1476,7 +1560,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Vaccines a huge success, but public trust must be earned - key findings from Covid report",
@@ -1488,7 +1572,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What is the UK Covid inquiry and how does it work?",
@@ -1500,7 +1584,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Deep-fried food banned in new plans for school dinners",
@@ -1512,7 +1596,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Dietary nutrient intake and nutritional status in women with infertility: a cross-sectional study",
@@ -1524,7 +1608,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "US health secretary’s son launches investment fund tied to health movement",
@@ -1536,7 +1620,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Should you really trust health advice from an AI chatbot?",
@@ -1548,7 +1632,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "What are the symptoms of meningitis and how is it spread?",
@@ -1560,7 +1644,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "'I paid for a private hysterectomy'",
@@ -1572,7 +1656,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Researchers look into island's health benefits",
@@ -1584,7 +1668,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Doctors' strikes can have surprising benefits - but are they sustainable?",
@@ -1596,7 +1680,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Hospitals coping well with doctors' strike so far - NHS boss",
@@ -1608,7 +1692,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "'Huge relief' as students given loans 'in error' get repayment reprieve",
@@ -1620,7 +1704,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "New university free speech complaints system to come into force this year",
@@ -1632,7 +1716,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Nine universities start legal action over student loan error row",
@@ -1644,7 +1728,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "22,000 students told to pay back 'mis-sold' maintenance loans",
@@ -1656,7 +1740,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Indoor air purifiers mitigate health impacts of wildfire smoke",
@@ -1668,7 +1752,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "A scoping review of uranium and other radioactive heavy metals in breast milk and their impact on early life health",
@@ -1680,7 +1764,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Cognitive impairment and its associated health conditions in American Indian communities",
@@ -1692,7 +1776,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Acute sleep rebound following sleep restriction is associated with reduced mortality risk",
@@ -1704,7 +1788,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1716,7 +1800,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
@@ -1728,7 +1812,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
@@ -1740,7 +1824,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
     },
     {
       "title": "Healthcare is driving America’s economy",
@@ -1752,6 +1836,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-07T12:05:13.950774Z"
+    },
+    {
+      "title": "Man charged in DC shooting was walking near JD Vance’s motorcade, agent says",
+      "link": "https://www.theguardian.com/us-news/2026/may/06/washington-dc-shooting-jd-vance",
+      "summary": "Michael Marx was shot by authorities multiple times and then taken to a hospital after bystander was wounded A man accused of firing a gun at law enforcement officers near the Washington monument this week was walking along the path of JD Vance ’s motorcade before the shooting and made a vulgar remark about the White House after the confrontation, according to a court filing on Wednesday. Michael Marx, 45, of Midland, Texas, was shot multiple times during Monday’s confrontation and was in the back of an ambulance on his way to a hospital when he said: “‘F—k the White House’ and ‘Kill me, kill me, kill me’”, a Secret Service agent said in an affidavit. Continue reading...",
+      "publishedAtUtc": "2026-05-06T22:26:44Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-05-07T09:45:49.572478Z"
     },
     {
@@ -2785,116 +2881,9 @@
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "Cellular Rejuvenation Has the Potential to Reverse Aging",
-      "link": "https://www.nytimes.com/2026/04/27/magazine/cell-rejuventation-biotech-longevity-research-altos-labs.html",
-      "summary": "A new therapy has the potential to cure hundreds of diseases — and even reverse aging.",
-      "publishedAtUtc": "2026-05-01T13:47:08Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "Civil Rights Cases Slow at Education Dept. Amid Trump’s Overhaul",
-      "link": "https://www.nytimes.com/2026/04/28/us/politics/education-department-civil-rights-trump.html",
-      "summary": "Data obtained by The New York Times shows that the Education Department resolved 30 percent fewer discrimination complaints in 2025 compared with the previous year.",
-      "publishedAtUtc": "2026-04-28T19:23:41Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "A.I.-Themed High School Is Put on Hold After Parental Backlash",
-      "link": "https://www.nytimes.com/2026/04/27/nyregion/nyc-ai-high-school-halted.html",
-      "summary": "Families in New York City expressed concerns about the rapid adoption of the technology. The schools chancellor also canceled a plan to close two Upper West Side schools.",
-      "publishedAtUtc": "2026-04-27T23:20:25Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "Woman denied permanent birth control on NHS wins case with ombudsman",
-      "link": "https://www.theguardian.com/society/2026/may/01/woman-denied-permanent-birth-control-nhs-wins-case-ombudsman-leah-spasova",
-      "summary": "Leah Spasova from Oxfordshire fought for 10 years to obtain tubal ligation procedure, while men could get vasectomies Analysis: questions over how accessible procedure should be A woman denied a permanent form of birth control on the NHS over fears she might regret it, while men were allowed contraceptive procedures, has won her case with the health ombudsman. Leah Spasova, a psychologist from Oxfordshire, spent a decade fighting to obtain female sterilisation at her local trust, a procedure that blocks or seals the fallopian tubes to prevent pregnancy. By contrast, men can undergo a vasectomy, a procedure that stops sperm from being released. Continue reading...",
-      "publishedAtUtc": "2026-05-01T13:00:04Z",
-      "domain": "theguardian.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "Economic burden of falls for 190 countries and territories from 2020 to 2050 based on health-augmented macroeconomic modelling",
-      "link": "https://www.nature.com/articles/s41562-026-02451-2",
-      "summary": "",
-      "publishedAtUtc": "2026-04-20T00:00:00Z",
-      "domain": "nature.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-04T14:29:28.650944Z"
-    },
-    {
-      "title": "Three dead in suspected hantavirus outbreak on Atlantic cruise ship",
-      "link": "https://www.aljazeera.com/news/2026/5/3/three-dead-in-suspected-hantavirus-outbreak-on-atlantic-cruise-ship?traffic_source=rss",
-      "summary": "Three of six passengers ill from a suspected rodent-transmitted virus have died, and one is in intensive care, WHO says.",
-      "publishedAtUtc": "2026-05-03T21:59:20Z",
-      "domain": "aljazeera.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-04T12:06:37.377226Z"
-    },
-    {
-      "title": "Afghanistan risks losing 25,000 women teachers and health workers",
-      "link": "https://news.un.org/feed/view/en/story/2026/04/1167389",
-      "summary": "Restrictions on girls’ education and women’s employment in Afghanistan could leave the country with a deficit of over 25,000 female teachers and health workers by 2030, the UN Children’s Fund (UNICEF) warned on Tuesday.&nbsp;",
-      "publishedAtUtc": "2026-04-27T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 2,
-      "reason": "relevance=35, credibility=35, freshness=0, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-04T12:06:37.377226Z"
-    },
-    {
-      "title": "Hearing for suspect in White House correspondents’ dinner shooting scheduled for today – US politics live",
-      "link": "https://www.theguardian.com/us-news/live/2026/may/04/donald-trump-white-house-correspondents-dinner-shooting-cole-allen-rudy-giuliani-hegseth-rubio-iran-us-politics-latest-news-updates",
-      "summary": "Cole Allen remains in custody after being charged with attempting to assassinate Donald Trump The Trump administration’s attack on the 87-year-old food aid program that supports tens of millions of low-income Americans escalated last week as the agriculture secretary, Brooke Rollins, claimed that 14,000 Supplemental Nutritional Assistance Program (Snap) recipients included owners of luxury vehicles such as Ferraris, Bentleys and Teslas. Critics charge that the broadside is part of a disinformation campaign aimed at undermining a benefit relied on by some of the most vulnerable people in the US. Continue reading...",
-      "publishedAtUtc": "2026-05-04T11:42:59Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-04T12:06:37.377226Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "f0c41bdc2e20f40bbf461d46bc9a80f7b121ad09",
-      "sourceTitle": "Ban for teacher who told pupils about drunken night",
-      "sourceUrl": "https://www.bbc.com/news/articles/c625q951ng3o?at_medium=RSS&at_campaign=rss",
-      "sourceDomain": "bbc.com",
-      "publishedAtUtc": "2026-04-08T09:18:06.153431Z",
-      "slug": "global-health-and-education-watch-ban-for-teacher-who-told-pupils-about-drunken-night",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ban-for-teacher-who-told-pupils-about-drunken-night",
-      "mainImage": "/images/global-news/2026/2026-04-08-global-health-and-education-watch-ban-for-teacher-who-told-pupils-about-drunken-.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-08-global-health-and-education-watch-ban-for-teacher-who-told-pupils-about-drunken-.jpg"
-    },
     {
       "contentHash": "6b2105a37c71f5b1a53cb815bddc17d4c350f813",
       "sourceTitle": "Family pay tribute to British teenager killed in motorcycle crash in Vietnam",
@@ -7283,146 +7272,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-uk-and-us-launch-disease-control-measures-over-hantavirus",
       "mainImage": "/images/global-news/2026/2026-05-07-global-health-and-education-watch-uk-and-us-launch-disease-control-measures-over.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-uk-and-us-launch-disease-control-measures-over.jpg"
+    },
+    {
+      "contentHash": "1ddc7fa0260c036542af47447bbac5bfb18b4bab",
+      "sourceTitle": "More than 50,000 pupils expected to strike over German rearmament policy",
+      "sourceUrl": "https://www.theguardian.com/world/2026/may/07/germany-pupils-strike-rearmament-policy-protest-boycott",
+      "sourceDomain": "theguardian.com",
+      "publishedAtUtc": "2026-05-07T12:05:13.950774Z",
+      "slug": "global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+      "mainImage": "/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-04-19T03:49:19.942348Z",
-      "windowStartUtc": "2026-04-18T23:00:00Z",
-      "publishedInWindowBefore": 1,
-      "hoursLeftInWindow": 8,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "bbc.com",
-        "nytimes.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 3,
-        "nature.com": 1,
-        "news.un.org": 1,
-        "theguardian.com": 6,
-        "nytimes.com": 3,
-        "bbc.com": 3
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 3,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 139,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 139,
-      "candidateCacheCount": 231,
-      "candidatesAfterSourceDedupe": 29,
-      "candidatesAfterDedupe": 29,
-      "duplicateSkips": {
-        "historyHash": 107,
-        "historySource": 3,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "What is the UK Covid inquiry and how does it work?",
-          "link": "https://www.bbc.com/news/articles/cdr3kx6xmp5o?at_medium=RSS&at_campaign=rss",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Vaccines a huge success, but public trust must be earned - key findings from Covid report",
-          "link": "https://www.bbc.com/news/articles/ce3dp52l70zo?at_medium=RSS&at_campaign=rss",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "World Cup winner Kildunne reveals body dysmorphia struggle",
-          "link": "https://www.bbc.com/news/videos/cgrlper5n8yo?at_medium=RSS&at_campaign=rss",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "What is the UK Covid inquiry and how does it work?",
-        "link": "https://www.bbc.com/news/articles/cdr3kx6xmp5o?at_medium=RSS&at_campaign=rss",
-        "score": 64,
-        "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: What is the UK Covid inquiry and how does",
-      "generatedWordCount": 1181,
-      "mainImage": "/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4320
-      },
-      "generatedImageSharpness": 1213.6488124281052,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview",
-        "nano-banana-pro-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "Generated article too short (902 words); need >= 1000",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 2115.0,
-        "generatedWords": 1181.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/2bda/live/d088bf20-5723-11f0-82f9-ffcaa67a8d94.jpg",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-19-global-health-and-education-watch-what-is-the-uk-covid-inquiry-and-how-does.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 2
-    },
     {
       "ranAtUtc": "2026-04-19T06:07:57.559379Z",
       "windowStartUtc": "2026-04-18T23:00:00Z",
@@ -39644,6 +39507,148 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 4
+    },
+    {
+      "ranAtUtc": "2026-05-07T12:05:13.950774Z",
+      "windowStartUtc": "2026-05-07T12:00:00Z",
+      "publishedInWindowBefore": 0,
+      "hoursLeftInWindow": 12,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "bbc.com",
+        "ft.com",
+        "news.un.org",
+        "nytimes.com",
+        "who.int"
+      ],
+      "recentDomainCounts": {
+        "news.un.org": 2,
+        "aljazeera.com": 2,
+        "nature.com": 1,
+        "ft.com": 2,
+        "theguardian.com": 1,
+        "nytimes.com": 1,
+        "bbc.com": 1,
+        "who.int": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 3,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 153,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 153,
+      "candidateCacheCount": 240,
+      "candidatesAfterSourceDedupe": 64,
+      "candidatesAfterDedupe": 64,
+      "duplicateSkips": {
+        "historyHash": 85,
+        "historySource": 4,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "More than 50,000 pupils expected to strike over German rearmament policy",
+          "link": "https://www.theguardian.com/world/2026/may/07/germany-pupils-strike-rearmament-policy-protest-boycott",
+          "score": 89,
+          "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=0"
+        },
+        {
+          "title": "Argentina races to find origins of cruise ship hantavirus outbreak, amid reports some passengers have returned to US",
+          "link": "https://www.theguardian.com/world/2026/may/07/argentina-origins-hantavirus-outbreak-cruise-ship-mv-hondius",
+          "score": 86,
+          "reason": "relevance=33, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=1"
+        },
+        {
+          "title": "My kids are taking their first big exams – and revealing my own anxieties about AI and long division | Emma Brockes",
+          "link": "https://www.theguardian.com/commentisfree/2026/may/07/kids-year-big-exams-anxieties-ai-long-division",
+          "score": 82,
+          "reason": "relevance=29, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "More than 50,000 pupils expected to strike over German rearmament policy",
+        "link": "https://www.theguardian.com/world/2026/may/07/germany-pupils-strike-rearmament-policy-protest-boycott",
+        "score": 89,
+        "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=0"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: More than 50,000 pupils expected to strike over German",
+      "generatedWordCount": 1273,
+      "mainImage": "/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4032
+      },
+      "generatedImageSharpness": 4644.426563863693,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview",
+        "nano-banana-pro-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "Generated article too short (971 words); need >= 1000",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 1574.0,
+        "generatedWords": 1273.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://i.guim.co.uk/img/media/ea53c45a94a1197b6c8184a054fe1d8a5f0f3d5b/834_0_4164_3333/master/4164.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=56131937fff88ef283d9fe34762006b6",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 1
     }
   ]
 }
