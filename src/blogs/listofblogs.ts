@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-risk-assessed-low-amid-global-health-vigilance",
+    title: "Hantavirus Risk Assessed Low Amid Global Health Vigilance",
+    summary:
+      "The World Health Organization has declared the public health risk from Hantavirus to be low, despite ongoing investigations into its origins. Global health bodies remain vigilant, emphasizing surveillance and preparedness for emerging zoonotic threats.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-hantavirus-risk-assessed-low-amid-global-health-vigilance.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-florida-creates-a-more-conservative-course-to-rival-a-p",
     title: "Global Health and Education Watch: Florida Creates a More Conservative Course to Rival A.P",
     summary:
