@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leaders-unite-for-transformative-one-health-action",
+    title: "Global Health Leaders Unite for Transformative One Health Action",
+    summary:
+      "The World Health Organization and France launched high-impact One Health initiatives on World Health Day 2026, aiming to prevent future health crises. This collaborative effort addresses critical global challenges like climate change, zoonotic diseases, and health inequities through integrated strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-global-health-leaders-unite-for-transformative-one-health-action.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-argentina-investigates-link-to-deadly-hantavirus-outbreak-on-cruise",
     title: "Global Health and Education Watch: Argentina investigates link to deadly hantavirus outbreak on cruise",
     summary:
