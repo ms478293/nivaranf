@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hantavirus-outbreak-on-cruise-ship-not-another-covid-who",
+    title: "Global Health and Education Watch: Hantavirus outbreak on cruise ship not ‘another COVID’, WHO",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-global-health-and-education-watch-hantavirus-outbreak-on-cruise-ship-not-another.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-risk-assessed-low-amid-global-health-vigilance",
     title: "Hantavirus Risk Assessed Low Amid Global Health Vigilance",
     summary:
