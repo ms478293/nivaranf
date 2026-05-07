@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-outbreak-on-cruise-liner-global-health-alert-intensifies-with-new-case",
+    title: "Hantavirus Outbreak on Cruise Liner: Global Health Alert Intensifies with New Case",
+    summary:
+      "A new hantavirus case linked to a recent cruise liner voyage has intensified a global health alert, bringing the total confirmed cases to several, including three fatalities. The UN World Health Organization is coordinating an international response to contain the rodent-borne disease and investigate its source.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-hantavirus-outbreak-on-cruise-liner-global-health-alert-intensifies-with-new-cas.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-didn-t-know-how-much-i-struggled-with-my",
     title: "Global Health and Education Watch: 'I didn't know how much I struggled with my",
     summary:
