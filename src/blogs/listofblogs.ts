@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-over-german",
+    title: "Global Health and Education Watch: More than 50,000 pupils expected to strike over German",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-global-health-and-education-watch-more-than-50-000-pupils-expected-to-strike-ove.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-and-us-launch-disease-control-measures-over-hantavirus",
     title: "Global Health and Education Watch: UK and US launch disease control measures over hantavirus",
     summary:
