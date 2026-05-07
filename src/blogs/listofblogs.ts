@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-argentina-investigates-link-to-deadly-hantavirus-outbreak-on-cruise",
+    title: "Global Health and Education Watch: Argentina investigates link to deadly hantavirus outbreak on cruise",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-07-global-health-and-education-watch-argentina-investigates-link-to-deadly-hantavir.jpg",
+    date: "2026-05-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-outbreak-on-cruise-liner-global-health-alert-intensifies-with-new-case",
     title: "Hantavirus Outbreak on Cruise Liner: Global Health Alert Intensifies with New Case",
     summary:
