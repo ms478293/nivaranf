@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-hantavirus-outbreak-on-cruise-ship-triggers-worldwide-tracing-effort",
+    title: "Global Health Alert: Hantavirus Outbreak on Cruise Ship Triggers Worldwide Tracing Effort",
+    summary:
+      "An urgent global health operation is underway to trace passengers from the MV Hondius cruise ship following a hantavirus outbreak. The UN health agency has confirmed at least five cases, linking the infection to individuals who have dispersed across approximately 12 countries.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-global-health-alert-hantavirus-outbreak-on-cruise-ship-triggers-worldwide-tracin.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "advanced-ai-model-revolutionizes-epidemic-monitoring-in-europe",
     title: "Advanced AI Model Revolutionizes Epidemic Monitoring in Europe",
     summary:
