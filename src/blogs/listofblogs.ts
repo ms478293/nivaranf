@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-university-explores-endometriosis-and-cancer-link",
+    title: "Global Health and Education Watch: University explores endometriosis and cancer link",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-global-health-and-education-watch-university-explores-endometriosis-and-cancer-l.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-s-response-to-hantavirus-cases-linked-to-a-cruise",
     title: "Global Health and Education Watch: WHO’s response to hantavirus cases linked to a cruise",
     summary:
