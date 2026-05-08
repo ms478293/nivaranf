@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-crises-threaten-health-education-and-future-skills",
+    title: "Global Crises Threaten Health, Education, and Future Skills",
+    summary:
+      "The United Nations has voiced profound alarm over escalating humanitarian crises, particularly the staggering health needs in regions like Gaza. Concurrently, a growing global skills gap poses a significant threat to future economic stability and human development, underscoring interconnected challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-global-crises-threaten-health-education-and-future-skills.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-explores-endometriosis-and-cancer-link",
     title: "Global Health and Education Watch: University explores endometriosis and cancer link",
     summary:
