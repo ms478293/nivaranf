@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "advanced-ai-model-revolutionizes-epidemic-monitoring-in-europe",
+    title: "Advanced AI Model Revolutionizes Epidemic Monitoring in Europe",
+    summary:
+      "A groundbreaking study introduces an advanced epidemiological model combining networked SIRS dynamics with Kalman filter state estimation. This innovation promises significantly enhanced real-time epidemic monitoring and response capabilities across Europe.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-advanced-ai-model-revolutionizes-epidemic-monitoring-in-europe.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-education-faces-crisis-as-student-enrollment-declines-worldwide",
     title: "Global Education Faces Crisis as Student Enrollment Declines Worldwide",
     summary:
