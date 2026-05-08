@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "remote-island-battles-hantavirus-as-cruise-outbreak-highlights-global-health-vulnerabilities",
+    title: "Remote Island Battles Hantavirus as Cruise Outbreak Highlights Global Health Vulnerabilities",
+    summary:
+      "A hantavirus outbreak on a cruise ship has led to a British national receiving critical care on the extremely remote island of Tristan da Cunha. This incident highlights the profound challenges of global health security and rapid response in isolated communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-remote-island-battles-hantavirus-as-cruise-outbreak-highlights-global-health-vul.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-scare-third-briton-linked-to-cruise-outbreak",
     title: "Hantavirus Scare: Third Briton Linked to Cruise Outbreak",
     summary:
