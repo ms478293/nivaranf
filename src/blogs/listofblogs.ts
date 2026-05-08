@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "football-calendar-failings-admitted-player-health-crisis-demands-global-action",
+    title: "Football Calendar Failings Admitted: Player Health Crisis Demands Global Action",
+    summary:
+      "A landmark admission by a European football body acknowledges critical failings in the sport's calendar, jeopardizing player health and safety. This development follows a challenge by the global players' union, FIFPRO, highlighting the urgent need for systemic change in professional football.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-football-calendar-failings-admitted-player-health-crisis-demands-global-action.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "remote-island-battles-hantavirus-as-cruise-outbreak-highlights-global-health-vulnerabilities",
     title: "Remote Island Battles Hantavirus as Cruise Outbreak Highlights Global Health Vulnerabilities",
     summary:
