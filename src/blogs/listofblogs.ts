@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-faces-crisis-as-student-enrollment-declines-worldwide",
+    title: "Global Education Faces Crisis as Student Enrollment Declines Worldwide",
+    summary:
+      "Across continents, declining birth rates are fundamentally reshaping public education, leading to underutilized schools and unprecedented budget challenges. Nations must adapt infrastructure and funding models to ensure quality learning amid this profound demographic transformation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-global-education-faces-crisis-as-student-enrollment-declines-worldwide.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "football-calendar-failings-admitted-player-health-crisis-demands-global-action",
     title: "Football Calendar Failings Admitted: Player Health Crisis Demands Global Action",
     summary:
