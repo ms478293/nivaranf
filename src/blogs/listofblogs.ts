@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-dangerous-is-the-hantavirus-outbreak",
+    title: "Global Health and Education Watch: How dangerous is the hantavirus outbreak?",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-global-health-and-education-watch-how-dangerous-is-the-hantavirus-outbreak.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-practice-based-framework-for-point-of-care-chronic-disease-management",
     title: "Global Health and Education Watch: A practice-based framework for point-of-care chronic disease management",
     summary:
