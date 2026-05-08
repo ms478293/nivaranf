@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-scare-third-briton-linked-to-cruise-outbreak",
+    title: "Hantavirus Scare: Third Briton Linked to Cruise Outbreak",
+    summary:
+      "A third British national is suspected of contracting hantavirus, linked to an ongoing outbreak originating from a cruise ship. Health authorities are closely monitoring the situation as cases emerge across multiple continents, underscoring global health security concerns.",
+    thumbnailImage: "/images/global-news/2026/2026-05-08-hantavirus-scare-third-briton-linked-to-cruise-outbreak.jpg",
+    date: "2026-05-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-crises-threaten-health-education-and-future-skills",
     title: "Global Crises Threaten Health, Education, and Future Skills",
     summary:
