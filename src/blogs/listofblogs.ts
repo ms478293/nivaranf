@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-chief-heads-to-tenerife-to-oversee-sunday-arrival",
+    title: "Global Health and Education Watch: WHO chief heads to Tenerife to oversee Sunday arrival",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-global-health-and-education-watch-who-chief-heads-to-tenerife-to-oversee-sunday-.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-message-by-the-who-director-general-to-the-people-of",
     title: "Global Health and Education Watch: Message by the WHO Director-General to the people of",
     summary:
