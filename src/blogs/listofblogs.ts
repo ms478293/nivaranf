@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-initiative-stalled-green-school-playgrounds-face-funding-cuts",
+    title: "Global Health Initiative Stalled: Green School Playgrounds Face Funding Cuts",
+    summary:
+      "A critical U.S. Environmental Protection Agency grant, focused on enhancing school playgrounds for children's health, was abruptly canceled. This setback underscores broader global challenges in securing sustained funding for vital environmental health and education initiatives.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-global-health-initiative-stalled-green-school-playgrounds-face-funding-cuts.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "cambodian-children-s-education-shattered-by-border-conflict-displacement",
     title: "Cambodian Children's Education Shattered by Border Conflict Displacement",
     summary:
