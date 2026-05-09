@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "england-s-teacher-strike-vote-echoes-global-education-funding-crisis",
+    title: "England's Teacher Strike Vote Echoes Global Education Funding Crisis",
+    summary:
+      "Teachers in England are preparing to vote on strike action over pay, signaling growing discontent within the education sector. This development underscores a broader global struggle to adequately compensate educators and maintain educational quality.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-england-s-teacher-strike-vote-echoes-global-education-funding-crisis.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "education-endures-lebanese-children-learn-amidst-displacement-crisis",
     title: "Education Endures: Lebanese Children Learn Amidst Displacement Crisis",
     summary:
