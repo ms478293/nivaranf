@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "education-endures-lebanese-children-learn-amidst-displacement-crisis",
+    title: "Education Endures: Lebanese Children Learn Amidst Displacement Crisis",
+    summary:
+      "Amidst ongoing displacement in Lebanon, a school in Sidon has become a haven for families from the south, ensuring children can continue their education. This initiative highlights the critical importance of maintaining learning environments even in the face of profound adversity and instability.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-education-endures-lebanese-children-learn-amidst-displacement-crisis.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tenerife-prepares-to-evacuate-hantavirus-cruise-ship",
     title: "Global Health and Education Watch: Tenerife prepares to evacuate hantavirus cruise ship",
     summary:
