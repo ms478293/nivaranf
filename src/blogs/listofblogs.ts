@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-house-home-wellbeing-active-living-special-2026",
+    title: "Global Health and Education Watch: House & Home Wellbeing & Active Living Special 2026",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-global-health-and-education-watch-house-home-wellbeing-active-living-special-202.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hantavirus-misinformation-runs-rampant-as-the-us-is-unequipped",
     title: "Global Health and Education Watch: Hantavirus misinformation runs rampant as the US is unequipped",
     summary:
