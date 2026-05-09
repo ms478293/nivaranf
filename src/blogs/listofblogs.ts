@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "cambodian-children-s-education-shattered-by-border-conflict-displacement",
+    title: "Cambodian Children's Education Shattered by Border Conflict Displacement",
+    summary:
+      "In Cambodia's volatile border regions, thousands of families remain displaced by past conflicts with Thailand, living under a tense ceasefire. The instability has severely impacted children's access to education, threatening their future prospects and perpetuating cycles of vulnerability.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-cambodian-children-s-education-shattered-by-border-conflict-displacement.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-house-home-wellbeing-active-living-special-2026",
     title: "Global Health and Education Watch: House & Home Wellbeing & Active Living Special 2026",
     summary:
