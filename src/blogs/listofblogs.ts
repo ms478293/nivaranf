@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-breakthrough-air-sampling-revolutionizes-virus-surveillance",
+    title: "Global Health Breakthrough: Air Sampling Revolutionizes Virus Surveillance",
+    summary:
+      "A groundbreaking study published in *Nature* demonstrates that indoor air sampling accurately tracks respiratory viruses, mirroring wastewater and clinical data. This innovation promises a transformative, non-invasive approach to global public health surveillance and early outbreak detection.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-global-health-breakthrough-air-sampling-revolutionizes-virus-surveillance.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-initiative-stalled-green-school-playgrounds-face-funding-cuts",
     title: "Global Health Initiative Stalled: Green School Playgrounds Face Funding Cuts",
     summary:
