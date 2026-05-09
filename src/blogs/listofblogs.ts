@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-unites-who-forum-forges-stronger-scientific-collaboration-2",
+    title: "Global Health Unites: WHO Forum Forges Stronger Scientific Collaboration",
+    summary:
+      "The World Health Organization convened its inaugural Global Forum of Collaborating Centres, bringing together a vast network of over 800 institutions from more than 80 countries. This landmark event aims to fortify scientific cooperation and enhance collective responses to pressing global health challenges.",
+    thumbnailImage: "/images/global-news/2026/2026-05-09-global-health-unites-who-forum-forges-stronger-scientific-collaboration.jpg",
+    date: "2026-05-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-breakthrough-air-sampling-revolutionizes-virus-surveillance",
     title: "Global Health Breakthrough: Air Sampling Revolutionizes Virus Surveillance",
     summary:
