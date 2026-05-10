@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-for-unity-health-and-science-unite-for-a-healthier-future",
+    title: "Global Call for Unity: Health and Science Unite for a Healthier Future",
+    summary:
+      "The World Health Organization marks its anniversary with a global campaign, \"Together for health. Stand with science.\" This initiative calls for renewed worldwide commitment to collaborative action and scientific support as fundamental drivers for improving global health outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-call-for-unity-health-and-science-unite-for-a-healthier-future.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-expected-to-fire-head-of-food-and-drug",
     title: "Global Health and Education Watch: Trump expected to fire head of Food and Drug",
     summary:
