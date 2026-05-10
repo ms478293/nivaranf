@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-clarifies-hantavirus-outbreak-distinct-from-covid-19-pandemic-threat",
+    title: "WHO Clarifies Hantavirus Outbreak Distinct from COVID-19 Pandemic Threat",
+    summary:
+      "The World Health Organization has clarified that the recent Hantavirus outbreak poses a different public health challenge than the COVID-19 pandemic. Experts highlight the virus's specific transmission routes and lower risk of widespread human-to-human spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-who-clarifies-hantavirus-outbreak-distinct-from-covid-19-pandemic-threat.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-to-know-about-the-hantavirus-outbreak-on-an",
     title: "Global Health and Education Watch: What to Know About the Hantavirus Outbreak on an",
     summary:
