@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "pregnancy-s-hidden-crisis-mental-illness-demands-global-attention",
+    title: "Pregnancy's Hidden Crisis: Mental Illness Demands Global Attention",
+    summary:
+      "Mental illness is the most common complication of pregnancy and postpartum, often overlooked by healthcare providers. Integrated care, specialist support, and public awareness are crucial to prevent severe maternal health crises globally.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-pregnancy-s-hidden-crisis-mental-illness-demands-global-attention.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-response-hantavirus-cruise-ship-disembarkation-in-tenerife",
     title: "Global Health Response: Hantavirus Cruise Ship Disembarkation in Tenerife",
     summary:
