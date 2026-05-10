@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-response-hantavirus-cruise-ship-disembarkation-in-tenerife",
+    title: "Global Health Response: Hantavirus Cruise Ship Disembarkation in Tenerife",
+    summary:
+      "Passengers and crew from the MV Hondius cruise ship have begun disembarking in Tenerife following a hantavirus alert, managed by a coordinated international health operation. The World Health Organization has reassured the public, emphasizing that this outbreak does not pose a similar threat to the recent global pandemic.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-health-response-hantavirus-cruise-ship-disembarkation-in-tenerife.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-guardian-view-on-the-who-pandemic-treaty-the",
     title: "Global Health and Education Watch: The Guardian view on the WHO pandemic treaty: the",
     summary:
