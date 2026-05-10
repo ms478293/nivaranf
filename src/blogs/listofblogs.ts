@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dozens-of-people-from-cruise-ship-struck-by-hantavirus",
+    title: "Global Health and Education Watch: Dozens of people from cruise ship struck by hantavirus",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-health-and-education-watch-dozens-of-people-from-cruise-ship-struck-by-ha.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "pregnancy-s-hidden-crisis-mental-illness-demands-global-attention",
     title: "Pregnancy's Hidden Crisis: Mental Illness Demands Global Attention",
     summary:
