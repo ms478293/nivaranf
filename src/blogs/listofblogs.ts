@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hantavirus-your-questions-answered",
+    title: "Global Health and Education Watch: Hantavirus: Your questions answered",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-health-and-education-watch-hantavirus-your-questions-answered.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-my-husband-s-weight-loss-is-triggering-my-eating-disorders",
     title: "Global Health and Education Watch: My husband’s weight loss is triggering my eating disorders",
     summary:
