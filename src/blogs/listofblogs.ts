@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ukraine-healthcare-under-siege-over-3-000-attacks-verified-since-invasion",
+    title: "Ukraine Healthcare Under Siege: Over 3,000 Attacks Verified Since Invasion",
+    summary:
+      "Over 3,000 attacks on healthcare infrastructure and personnel have been verified in Ukraine since the full-scale Russian invasion began in February 2022. This alarming figure, reported by the World Health Organization, underscores a severe violation of international humanitarian law and a catastrophic impact on civilian health.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-ukraine-healthcare-under-siege-over-3-000-attacks-verified-since-invasion.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-for-unity-health-and-science-unite-for-a-healthier-future",
     title: "Global Call for Unity: Health and Science Unite for a Healthier Future",
     summary:
