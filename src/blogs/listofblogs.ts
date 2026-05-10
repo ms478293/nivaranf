@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-education-grapples-with-ai-shaping-future-learning",
+    title: "Global Education Grapples with AI: Shaping Future Learning",
+    summary:
+      "The integration of artificial intelligence into educational settings globally presents both opportunities and challenges for student learning and development. Educators are increasingly focusing on how students interact with AI tools to foster critical thinking rather than simply avoiding their use.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-education-grapples-with-ai-shaping-future-learning.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ukraine-healthcare-under-siege-over-3-000-attacks-verified-since-invasion",
     title: "Ukraine Healthcare Under Siege: Over 3,000 Attacks Verified Since Invasion",
     summary:
