@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-advocates-challenge-baby-formula-safety-claims",
+    title: "Global Health Advocates Challenge Baby Formula Safety Claims",
+    summary:
+      "Independent scientists have challenged government claims of high safety standards for baby formula, revealing widespread contamination with dangerous chemicals like PFAS and phthalates. This discrepancy raises significant global health concerns for infant development and calls for greater transparency and stricter regulation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-10-global-health-advocates-challenge-baby-formula-safety-claims.jpg",
+    date: "2026-05-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dozens-of-people-from-cruise-ship-struck-by-hantavirus",
     title: "Global Health and Education Watch: Dozens of people from cruise ship struck by hantavirus",
     summary:
