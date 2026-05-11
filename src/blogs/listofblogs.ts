@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-revival-cursive-writing-flourishes-beyond-classrooms",
+    title: "Global Revival: Cursive Writing Flourishes Beyond Classrooms",
+    summary:
+      "Across the globe, after-school clubs and libraries are witnessing a resurgence in cursive writing instruction, filling a gap left by its removal from many formal curricula. This revival is fueled by a growing understanding of cursive's cognitive benefits for brain development, fine motor skills, and its role in cultural literacy.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-global-revival-cursive-writing-flourishes-beyond-classrooms.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "from-death-row-to-new-life-a-story-of-rehabilitation-and-hope",
     title: "From Death Row to New Life: A Story of Rehabilitation and Hope",
     summary:
