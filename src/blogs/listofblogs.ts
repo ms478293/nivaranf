@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-hantavirus-outbreak-highlights-critical-gaps-in-disease-transmission-knowledge",
+    title: "Global Hantavirus Outbreak Highlights Critical Gaps in Disease Transmission Knowledge",
+    summary:
+      "A recent global Hantavirus outbreak is challenging established understandings of disease transmission, revealing critical gaps in scientific knowledge. This event emphasizes the necessity for enhanced international research and robust public health strategies to combat emerging zoonotic threats.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-global-hantavirus-outbreak-highlights-critical-gaps-in-disease-transmission-know.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-newcastle-s-burn-on-mental-health-and-importance-of-asking",
     title: "Global Health and Education Watch: Newcastle's Burn on mental health and importance of asking",
     summary:
