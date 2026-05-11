@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "from-death-row-to-new-life-a-story-of-rehabilitation-and-hope",
+    title: "From Death Row to New Life: A Story of Rehabilitation and Hope",
+    summary:
+      "A Thai woman, once on death row for drug trafficking, found solace and a path to rehabilitation through learning to sew during her 20-year imprisonment. Her story underscores the transformative potential of vocational training and support for re-entry into society.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-from-death-row-to-new-life-a-story-of-rehabilitation-and-hope.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-crises-disrupt-pregnancy-outcomes-a-call-for-resilient-systems",
     title: "Global Health Crises Disrupt Pregnancy Outcomes: A Call for Resilient Systems",
     summary:
