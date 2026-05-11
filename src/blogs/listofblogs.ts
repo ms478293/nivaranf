@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-push-for-equitable-women-s-health-addressing-historical-disparities",
+    title: "Global Push for Equitable Women's Health: Addressing Historical Disparities",
+    summary:
+      "Across the globe, advocates are intensifying efforts to rectify long-standing inequities in women's healthcare provision. These initiatives aim to dismantle systemic barriers and ensure more responsive, comprehensive health services for all women.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-global-push-for-equitable-women-s-health-addressing-historical-disparities.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gaza-health-system-documentary-wins-bafta-spotlighting-crisis",
     title: "Gaza Health System Documentary Wins BAFTA, Spotlighting Crisis",
     summary:
