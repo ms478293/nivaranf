@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crises-disrupt-pregnancy-outcomes-a-call-for-resilient-systems",
+    title: "Global Health Crises Disrupt Pregnancy Outcomes: A Call for Resilient Systems",
+    summary:
+      "A recent study reveals significant shifts in pregnancy outcomes during periods of major health system disruption, highlighting increased risks for mothers and newborns globally. This analysis calls for robust, adaptable healthcare infrastructures to safeguard maternal and child health during future crises.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-global-health-crises-disrupt-pregnancy-outcomes-a-call-for-resilient-systems.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-push-for-equitable-women-s-health-addressing-historical-disparities",
     title: "Global Push for Equitable Women's Health: Addressing Historical Disparities",
     summary:
