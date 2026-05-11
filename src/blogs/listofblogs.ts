@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-newcastle-s-burn-on-mental-health-and-importance-of-asking",
+    title: "Global Health and Education Watch: Newcastle's Burn on mental health and importance of asking",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-global-health-and-education-watch-newcastle-s-burn-on-mental-health-and-importan.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-revival-cursive-writing-flourishes-beyond-classrooms",
     title: "Global Revival: Cursive Writing Flourishes Beyond Classrooms",
     summary:
