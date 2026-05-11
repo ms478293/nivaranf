@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-health-system-documentary-wins-bafta-spotlighting-crisis",
+    title: "Gaza Health System Documentary Wins BAFTA, Spotlighting Crisis",
+    summary:
+      "A documentary revealing the severe impact on Gaza's health system and its dedicated personnel has been honored with a BAFTA for Best Current Affairs. This prestigious award brings critical global attention to the ongoing humanitarian crisis and the urgent need for protection of medical infrastructure and staff in conflict zones.",
+    thumbnailImage: "/images/global-news/2026/2026-05-11-gaza-health-system-documentary-wins-bafta-spotlighting-crisis.jpg",
+    date: "2026-05-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cruise-ship-linked-to-hantavirus-outbreak-arrives-in-spain-s",
     title: "Global Health and Education Watch: Cruise Ship Linked to Hantavirus Outbreak Arrives in Spain’s",
     summary:
