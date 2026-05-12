@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "lebanon-s-education-crisis-deepens-war-threatens-a-generation",
+    title: "Lebanon's Education Crisis Deepens: War Threatens a Generation",
+    summary:
+      "Israel's war on Lebanon has displaced hundreds of thousands, exacerbating an already fragile education system. This latest crisis threatens to create a \"lost generation\" of Lebanese students, impacting their future and the nation's stability.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-lebanon-s-education-crisis-deepens-war-threatens-a-generation.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "pemphigus-unveiling-the-global-family-burden-of-chronic-disease",
     title: "Pemphigus: Unveiling the Global Family Burden of Chronic Disease",
     summary:
