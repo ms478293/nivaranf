@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-for-good-transforming-global-health-and-education-through-intelligent-systems",
+    title: "AI for Good: Transforming Global Health and Education Through Intelligent Systems",
+    summary:
+      "A new book highlights the global applications of artificial intelligence in advancing health and education. It explores how AI is moving beyond theoretical discussions to deliver tangible societal benefits.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-ai-for-good-transforming-global-health-and-education-through-intelligent-systems.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hantavirus-hit-ship-evacuation-completed-as-quarantines-begin",
     title: "Global Health and Education Watch: Hantavirus-hit ship evacuation completed as quarantines begin",
     summary:
