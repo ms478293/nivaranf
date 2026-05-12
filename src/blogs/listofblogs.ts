@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "women-only-mental-health-sanctuaries-emerge-globally-as-hospital-alternatives",
+    title: "Women-Only Mental Health Sanctuaries Emerge Globally as Hospital Alternatives",
+    summary:
+      "A pioneering women-only mental health crisis house is set to open, offering a vital alternative to traditional hospital care. This initiative highlights a growing global movement towards gender-specific, community-based mental health support.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-women-only-mental-health-sanctuaries-emerge-globally-as-hospital-alternatives.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-progress-in-reducing-child-deaths-slows-as-4-9-million-3",
     title: "Global Health and Education Watch: Progress in reducing child deaths slows as 4.9 million",
     summary:
