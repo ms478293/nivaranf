@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-from-childhood-to-university-economic-inequality-shapes-life-chances",
+    title: "Global Health and Education Watch: From childhood to university, economic inequality shapes life chances",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-global-health-and-education-watch-from-childhood-to-university-economic-inequali.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-architecture-can-save-lives",
     title: "Global Health and Education Watch: How architecture can save lives",
     summary:
