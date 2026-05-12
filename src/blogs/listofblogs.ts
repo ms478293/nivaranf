@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "pemphigus-unveiling-the-global-family-burden-of-chronic-disease",
+    title: "Pemphigus: Unveiling the Global Family Burden of Chronic Disease",
+    summary:
+      "A recent cross-sectional survey sheds light on the significant, multifaceted burden pemphigus places on families globally. The findings underscore the critical need for comprehensive support systems extending beyond individual patient care.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-pemphigus-unveiling-the-global-family-burden-of-chronic-disease.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "women-only-mental-health-sanctuaries-emerge-globally-as-hospital-alternatives",
     title: "Women-Only Mental Health Sanctuaries Emerge Globally as Hospital Alternatives",
     summary:
