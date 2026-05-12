@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hundreds-displaced-medical-services-suspended-amid-gang-violence-in",
+    title: "Global Health and Education Watch: Hundreds displaced, medical services suspended amid gang violence in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-global-health-and-education-watch-hundreds-displaced-medical-services-suspended-.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-monday-briefing-will-the-international-effort-to-stop-the",
     title: "Global Health and Education Watch: Monday briefing: Will the international effort to stop the",
     summary:
