@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-progress-in-reducing-child-deaths-slows-as-4-9-million-3",
+    title: "Global Health and Education Watch: Progress in reducing child deaths slows as 4.9 million",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-12-global-health-and-education-watch-progress-in-reducing-child-deaths-slows-as-4-9.jpg",
+    date: "2026-05-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-for-good-transforming-global-health-and-education-through-intelligent-systems",
     title: "AI for Good: Transforming Global Health and Education Through Intelligent Systems",
     summary:
