@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-drone",
+    title: "Global Health and Education Watch: World News in Brief: Mounting waste in Gaza, drone",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-dro.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alert-hantavirus-cruise-passengers-begin-home-isolation",
     title: "Global Health Alert: Hantavirus Cruise Passengers Begin Home Isolation",
     summary:
