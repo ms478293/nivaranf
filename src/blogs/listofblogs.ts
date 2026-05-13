@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-worried-should-we-be-about-hantavirus",
+    title: "Global Health and Education Watch: How Worried Should We Be About Hantavirus?",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-global-health-and-education-watch-how-worried-should-we-be-about-hantavirus.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-regulator-faces-scrutiny-over-alleged-vaccine-safety-data-suppression",
     title: "US Regulator Faces Scrutiny Over Alleged Vaccine Safety Data Suppression",
     summary:
