@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alert-hantavirus-cruise-passengers-begin-home-isolation",
+    title: "Global Health Alert: Hantavirus Cruise Passengers Begin Home Isolation",
+    summary:
+      "Six individuals from the MV Hondius cruise ship, implicated in a hantavirus outbreak, have been discharged from a UK hospital to continue their isolation at home. Health officials confirm they remain asymptomatic as they undertake a mandatory 45-day isolation period.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-global-health-alert-hantavirus-cruise-passengers-begin-home-isolation.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-progress-falters-who-report-warns-of-reversal",
     title: "Global Health Progress Falters: WHO Report Warns of Reversal",
     summary:
