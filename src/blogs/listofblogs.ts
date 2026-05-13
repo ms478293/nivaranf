@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-progress-falters-who-report-warns-of-reversal",
+    title: "Global Health Progress Falters: WHO Report Warns of Reversal",
+    summary:
+      "A new WHO report reveals global health progress is stalling and even reversing in critical areas, threatening decades of advancements. Disparities in health outcomes are widening, demanding immediate and concerted international efforts.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-global-health-progress-falters-who-report-warns-of-reversal.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-class-politics-of-modern-outbreaks",
     title: "Global Health and Education Watch: The class politics of modern outbreaks",
     summary:
