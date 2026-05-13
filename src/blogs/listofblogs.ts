@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-withholds-major-health-funding-amid-fraud-concerns",
+    title: "US Withholds Major Health Funding Amid Fraud Concerns",
+    summary:
+      "The United States administration will withhold $1.3 billion in Medicaid payments from California, citing insufficient efforts to combat fraud. This decision highlights global challenges in maintaining fiscal integrity within large-scale public health insurance programs.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-us-withholds-major-health-funding-amid-fraud-concerns.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-drone",
     title: "Global Health and Education Watch: World News in Brief: Mounting waste in Gaza, drone",
     summary:
