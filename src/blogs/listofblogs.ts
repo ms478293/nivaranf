@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sydney-dental-clinic-prompts-global-health-warning",
+    title: "Sydney Dental Clinic Prompts Global Health Warning",
+    summary:
+      "Australian health authorities have issued an urgent warning to patients of a Sydney dental clinic, advising them to undergo testing for viruses including HIV due to significant infection control failures. This incident underscores the critical importance of stringent health safety protocols in healthcare settings globally.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-worried-should-we-be-about-hantavirus",
     title: "Global Health and Education Watch: How Worried Should We Be About Hantavirus?",
     summary:
