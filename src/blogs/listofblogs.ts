@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-regulator-faces-scrutiny-over-alleged-vaccine-safety-data-suppression",
+    title: "US Regulator Faces Scrutiny Over Alleged Vaccine Safety Data Suppression",
+    summary:
+      "The US Food and Drug Administration is under scrutiny following reports of alleged suppression of vaccine safety studies. This situation raises significant questions about transparency and the integrity of public health data dissemination worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-13-us-regulator-faces-scrutiny-over-alleged-vaccine-safety-data-suppression.jpg",
+    date: "2026-05-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-from-childhood-to-university-economic-inequality-shapes-life-chances",
     title: "Global Health and Education Watch: From childhood to university, economic inequality shapes life chances",
     summary:
