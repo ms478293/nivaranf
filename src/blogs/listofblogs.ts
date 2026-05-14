@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ucf-commencement-speaker-draws-boos-after-a-i-remarks",
+    title: "Global Health and Education Watch: UCF Commencement Speaker Draws Boos After A.I. Remarks",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-14-global-health-and-education-watch-ucf-commencement-speaker-draws-boos-after-a-i-.jpg",
+    date: "2026-05-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-for-three-years-i-scoured-the-world-for-answers",
     title: "Global Health and Education Watch: For three years I scoured the world for answers",
     summary:
