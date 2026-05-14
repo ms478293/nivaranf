@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-students-in-caracas-to-demand-release-of-political-prisoners",
+    title: "Global Health and Education Watch: Students in Caracas to demand release of political prisoners",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-14-global-health-and-education-watch-students-in-caracas-to-demand-release-of-polit.jpg",
+    date: "2026-05-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hidden-salt-threat-global-lunch-choices-expose-unseen-health-risks",
     title: "Hidden Salt Threat: Global Lunch Choices Expose Unseen Health Risks",
     summary:
