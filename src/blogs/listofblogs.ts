@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "chad-s-refugee-crisis-overwhelms-eastern-maternity-care",
+    title: "Chad’s Refugee Crisis Overwhelms Eastern Maternity Care",
+    summary:
+      "Eastern Chad's maternity care is severely strained by a worsening humanitarian crisis, forcing women to give birth in overcrowded clinics lacking essential resources. The UN reproductive health agency, UNFPA, highlights critical shortages of medicine, equipment, and anesthesia, jeopardizing maternal and infant lives.",
+    thumbnailImage: "/images/global-news/2026/2026-05-14-chad-s-refugee-crisis-overwhelms-eastern-maternity-care.jpg",
+    date: "2026-05-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-withholds-major-health-funding-amid-fraud-concerns",
     title: "US Withholds Major Health Funding Amid Fraud Concerns",
     summary:
