@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-healthcare-systems-tackle-waiting-lists-amidst-efficiency-drives",
+    title: "Global Healthcare Systems Tackle Waiting Lists Amidst Efficiency Drives",
+    summary:
+      "Healthcare systems globally are striving to reduce patient waiting times, a critical challenge impacting millions. England's recent achievement of an interim target for treating patients within 18 weeks highlights both progress and persistent obstacles in delivering equitable and timely care.",
+    thumbnailImage: "/images/global-news/2026/2026-05-14-global-healthcare-systems-tackle-waiting-lists-amidst-efficiency-drives.jpg",
+    date: "2026-05-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ucf-commencement-speaker-draws-boos-after-a-i-remarks",
     title: "Global Health and Education Watch: UCF Commencement Speaker Draws Boos After A.I. Remarks",
     summary:
