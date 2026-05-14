@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hidden-salt-threat-global-lunch-choices-expose-unseen-health-risks",
+    title: "Hidden Salt Threat: Global Lunch Choices Expose Unseen Health Risks",
+    summary:
+      "A recent analysis reveals that many popular convenience lunch options, such as sandwiches, contain dangerously high levels of sodium, often exceeding the salt content of multiple fast-food cheeseburgers. This hidden health risk underscores a critical global challenge in promoting healthier dietary choices and addressing non-communicable diseases.",
+    thumbnailImage: "/images/global-news/2026/2026-05-14-hidden-salt-threat-global-lunch-choices-expose-unseen-health-risks.jpg",
+    date: "2026-05-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "chad-s-refugee-crisis-overwhelms-eastern-maternity-care",
     title: "Chad’s Refugee Crisis Overwhelms Eastern Maternity Care",
     summary:
