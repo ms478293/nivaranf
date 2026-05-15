@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-cornell-criticizes-students-after-its-president-bumps-them-with",
+    title: "Global Health and Education Watch: Cornell Criticizes Students After Its President Bumps Them With",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-global-health-and-education-watch-cornell-criticizes-students-after-its-presiden.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-briefing-chat-hantavirus-what-this-outbreak-reveals-about",
     title: "Global Health and Education Watch: Briefing Chat: Hantavirus — what this outbreak reveals about",
     summary:
