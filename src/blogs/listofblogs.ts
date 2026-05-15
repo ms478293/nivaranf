@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "elevating-mental-health-research-a-global-imperative-for-visibility-and-impact",
+    title: "Elevating Mental Health Research: A Global Imperative for Visibility and Impact",
+    summary:
+      "Mental health research globally suffers from critical invisibility, impeding progress against widespread conditions. Elevating its profile through increased funding, open science, and community engagement is essential for global well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-elevating-mental-health-research-a-global-imperative-for-visibility-and-impact.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "antidepressants-in-pregnancy-new-global-study-offers-reassurance-on-autism-adhd-risk",
     title: "Antidepressants in Pregnancy: New Global Study Offers Reassurance on Autism, ADHD Risk",
     summary:
