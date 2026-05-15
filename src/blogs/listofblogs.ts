@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-resurgence-global-health-preparedness-under-scrutiny",
+    title: "Hantavirus Resurgence: Global Health Preparedness Under Scrutiny",
+    summary:
+      "Three fatalities from a hantavirus outbreak on a cruise ship have triggered global health alarms, prompting a reevaluation of pandemic preparedness. This incident underscores the persistent threat of zoonotic diseases and the critical need for robust surveillance and rapid response mechanisms worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-hantavirus-resurgence-global-health-preparedness-under-scrutiny.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-sounds-alarm-over-nicotine-pouches-targeting-young-people",
     title: "Global Health and Education Watch: WHO sounds alarm over nicotine pouches targeting young people",
     summary:
