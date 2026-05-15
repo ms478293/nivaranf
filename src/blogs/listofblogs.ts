@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "antidepressants-in-pregnancy-new-global-study-offers-reassurance-on-autism-adhd-risk",
+    title: "Antidepressants in Pregnancy: New Global Study Offers Reassurance on Autism, ADHD Risk",
+    summary:
+      "A comprehensive global study involving over half a million pregnancies has found that antidepressant use during gestation does not increase a child's risk of developing autism or ADHD. The research suggests that any previously observed correlations were likely due to underlying maternal mental health conditions and genetic predispositions, offering significant reassurance to expectant mothers and clinicians worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-antidepressants-in-pregnancy-new-global-study-offers-reassurance-on-autism-adhd-.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-acute-hunger-grips-nearly-20-million-people-in-war-battered",
     title: "Global Health and Education Watch: Acute hunger grips nearly 20 million people in war-battered",
     summary:
