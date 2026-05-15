@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-graduates-forge-resilience-amidst-turbulent-years-in-higher-education",
+    title: "Global Graduates Forge Resilience Amidst Turbulent Years in Higher Education",
+    summary:
+      "University graduates globally are emerging from academic careers marked by significant political and social upheaval. Their journey underscores the critical role of higher education in fostering resilience and adaptability in a rapidly changing world.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-global-graduates-forge-resilience-amidst-turbulent-years-in-higher-education.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "elevating-mental-health-research-a-global-imperative-for-visibility-and-impact",
     title: "Elevating Mental Health Research: A Global Imperative for Visibility and Impact",
     summary:
