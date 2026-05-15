@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-sounds-alarm-over-nicotine-pouches-targeting-young-people",
+    title: "Global Health and Education Watch: WHO sounds alarm over nicotine pouches targeting young people",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-15-global-health-and-education-watch-who-sounds-alarm-over-nicotine-pouches-targeti.jpg",
+    date: "2026-05-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-follow-up-message-by-the-who-director-general-to-the-people",
     title: "Global Health and Education Watch: Follow-up message by the WHO Director-General to the people",
     summary:
