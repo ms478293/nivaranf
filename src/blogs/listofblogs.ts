@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-warns-nicotine-pouch-brands-targeting-youth-as-sales",
+    title: "Global Health and Education Watch: WHO warns nicotine pouch brands targeting youth as sales",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-and-education-watch-who-warns-nicotine-pouch-brands-targeting-yout.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leadership-shifts-new-minister-faces-universal-challenges",
     title: "Global Health Leadership Shifts: New Minister Faces Universal Challenges",
     summary:
