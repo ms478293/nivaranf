@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leadership-shifts-new-minister-faces-universal-challenges",
+    title: "Global Health Leadership Shifts: New Minister Faces Universal Challenges",
+    summary:
+      "James Murray's appointment as health secretary highlights the universal challenges confronting health ministers globally. His tenure will be defined by efforts to address post-pandemic recovery, chronic diseases, and health equity.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-leadership-shifts-new-minister-faces-universal-challenges.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cornell-criticizes-students-after-its-president-bumps-them-with",
     title: "Global Health and Education Watch: Cornell Criticizes Students After Its President Bumps Them With",
     summary:
