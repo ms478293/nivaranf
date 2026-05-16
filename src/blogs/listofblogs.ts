@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-gunmen-kidnap-dozens-of-students-in-nigeria-s-borno-state",
+    title: "Global Health and Education Watch: Gunmen kidnap dozens of students in Nigeria’s Borno State",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-and-education-watch-gunmen-kidnap-dozens-of-students-in-nigeria-s-.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "cuba-s-healthcare-system-grapples-with-crippling-blackouts-and-medicine-scarcity",
     title: "Cuba's Healthcare System Grapples with Crippling Blackouts and Medicine Scarcity",
     summary:
