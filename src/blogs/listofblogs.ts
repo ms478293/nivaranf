@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-experts-urge-who-declare-climate-crisis-an-emergency",
+    title: "Global Health Experts Urge WHO: Declare Climate Crisis an Emergency",
+    summary:
+      "Leading international experts are calling on the World Health Organization to declare the climate crisis a global public health emergency. Such a declaration would trigger a crucial coordinated international response, potentially saving millions of lives from escalating health threats.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-experts-urge-who-declare-climate-crisis-an-emergency.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "drc-ebola-outbreak-high-lethality-rapid-spread-risk-amidst-population-movement",
     title: "DRC Ebola Outbreak: High Lethality, Rapid Spread Risk Amidst Population Movement",
     summary:
