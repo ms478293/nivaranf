@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "genomic-screening-s-ethical-crossroads-guiding-public-health-with-duty-based-principles",
+    title: "Genomic Screening's Ethical Crossroads: Guiding Public Health with Duty-Based Principles",
+    summary:
+      "The global expansion of genomic-based public health screening programs necessitates a robust ethical framework. Duty-based ethics offers a critical guide for responsible implementation, emphasizing individual rights, equity, and data protection.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-genomic-screening-s-ethical-crossroads-guiding-public-health-with-duty-based-pri.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-health-agency-names-two-schools-affected-by-berkshire-meningitis",
     title: "Global Health and Education Watch: Health agency names two schools affected by Berkshire meningitis",
     summary:
