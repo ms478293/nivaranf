@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "congo-declares-major-ebola-outbreak-amid-concerns-over-delayed-announcement",
+    title: "Congo Declares Major Ebola Outbreak Amid Concerns Over Delayed Announcement",
+    summary:
+      "The Democratic Republic of Congo has officially declared a significant Ebola outbreak, with an African health agency reporting dozens of fatalities and hundreds of suspected cases. This announcement has raised concerns among global health experts regarding the delay in public disclosure.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-congo-declares-major-ebola-outbreak-amid-concerns-over-delayed-announcement.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "genomic-screening-s-ethical-crossroads-guiding-public-health-with-duty-based-principles",
     title: "Genomic Screening's Ethical Crossroads: Guiding Public Health with Duty-Based Principles",
     summary:
