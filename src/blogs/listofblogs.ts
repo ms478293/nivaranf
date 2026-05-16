@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "sudan-s-hunger-crisis-deepens-millions-face-acute-food-shortages-amid-conflict",
+    title: "Sudan's Hunger Crisis Deepens: Millions Face Acute Food Shortages Amid Conflict",
+    summary:
+      "Nearly 20 million people in Sudan are grappling with acute hunger, with over 800,000 children at severe malnutrition risk this year. Ongoing civil war, widespread displacement, and failing food and health systems are exacerbating one of the world’s gravest humanitarian crises, pushing regions closer to famine.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-sudan-s-hunger-crisis-deepens-millions-face-acute-food-shortages-amid-conflict.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-after-three-years-of-conflict-sudan-faces-a-deeper-2",
     title: "Global Health and Education Watch: After three years of conflict, Sudan faces a deeper",
     summary:
