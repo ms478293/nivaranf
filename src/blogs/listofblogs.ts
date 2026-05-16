@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "unpacking-the-saltiest-meal-a-global-health-wake-up-call",
+    title: "Unpacking the 'Saltiest' Meal: A Global Health Wake-Up Call",
+    summary:
+      "A health correspondent's experiment vividly demonstrated the profound immediate effects of consuming excessive dietary salt. This experience underscores the urgent global need to address high sodium intake and its widespread impact on public health.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-unpacking-the-saltiest-meal-a-global-health-wake-up-call.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "congo-declares-major-ebola-outbreak-amid-concerns-over-delayed-announcement",
     title: "Congo Declares Major Ebola Outbreak Amid Concerns Over Delayed Announcement",
     summary:
