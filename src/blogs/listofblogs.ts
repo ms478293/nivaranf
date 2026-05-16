@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-health-agency-names-two-schools-affected-by-berkshire-meningitis",
+    title: "Global Health and Education Watch: Health agency names two schools affected by Berkshire meningitis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-and-education-watch-health-agency-names-two-schools-affected-by-be.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gunmen-kidnap-dozens-of-students-in-nigeria-s-borno-state",
     title: "Global Health and Education Watch: Gunmen kidnap dozens of students in Nigeria’s Borno State",
     summary:
