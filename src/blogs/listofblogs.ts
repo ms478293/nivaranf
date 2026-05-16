@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-after-three-years-of-conflict-sudan-faces-a-deeper-2",
+    title: "Global Health and Education Watch: After three years of conflict, Sudan faces a deeper",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-global-health-and-education-watch-after-three-years-of-conflict-sudan-faces-a-de.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "unpacking-the-saltiest-meal-a-global-health-wake-up-call",
     title: "Unpacking the 'Saltiest' Meal: A Global Health Wake-Up Call",
     summary:
