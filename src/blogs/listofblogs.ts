@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "drc-ebola-outbreak-high-lethality-rapid-spread-risk-amidst-population-movement",
+    title: "DRC Ebola Outbreak: High Lethality, Rapid Spread Risk Amidst Population Movement",
+    summary:
+      "The Democratic Republic of Congo faces a severe Ebola outbreak with a very high lethality rate, as the death toll reaches 80. Concerns are mounting over the Bundibugyo strain's rapid spread potential, exacerbated by intense population movement across the region.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-drc-ebola-outbreak-high-lethality-rapid-spread-risk-amidst-population-movement.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "sudan-s-hunger-crisis-deepens-millions-face-acute-food-shortages-amid-conflict",
     title: "Sudan's Hunger Crisis Deepens: Millions Face Acute Food Shortages Amid Conflict",
     summary:
