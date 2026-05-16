@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "cuba-s-healthcare-system-grapples-with-crippling-blackouts-and-medicine-scarcity",
+    title: "Cuba's Healthcare System Grapples with Crippling Blackouts and Medicine Scarcity",
+    summary:
+      "Hospitals across Cuba are facing an escalating healthcare crisis, marked by widespread blackouts and severe fuel shortages. UN officials have warned that these disruptions are forcing the suspension of critical surgeries and jeopardizing the operation of lifesaving medical equipment.",
+    thumbnailImage: "/images/global-news/2026/2026-05-16-cuba-s-healthcare-system-grapples-with-crippling-blackouts-and-medicine-scarcity.jpg",
+    date: "2026-05-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-warns-nicotine-pouch-brands-targeting-youth-as-sales",
     title: "Global Health and Education Watch: WHO warns nicotine pouch brands targeting youth as sales",
     summary:
