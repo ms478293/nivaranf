@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "university-insolvency-threatens-global-student-futures-demands-urgent-action",
+    title: "University Insolvency Threatens Global Student Futures, Demands Urgent Action",
+    summary:
+      "A recent parliamentary committee report underscores the severe financial risks facing universities globally, calling for immediate governmental contingency planning. This looming crisis could jeopardize millions of students' education and financial investments if institutions fail.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-university-insolvency-threatens-global-student-futures-demands-urgent-action.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-declares-ebola-outbreak-global-emergency-amidst-vaccine-gap",
     title: "WHO Declares Ebola Outbreak Global Emergency Amidst Vaccine Gap",
     summary:
