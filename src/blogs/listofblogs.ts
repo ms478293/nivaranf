@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-new-cancer-test-makes-me-feel-women-s-health-matters",
+    title: "Global Health and Education Watch: 'New cancer test makes me feel women's health matters'",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-global-health-and-education-watch-new-cancer-test-makes-me-feel-women-s-health-m.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "patagonia-s-hantavirus-battle-a-global-health-blueprint",
     title: "Patagonia's Hantavirus Battle: A Global Health Blueprint",
     summary:
