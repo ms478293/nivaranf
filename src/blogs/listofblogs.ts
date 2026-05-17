@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-declares-ebola-outbreak-global-emergency-amidst-vaccine-gap",
+    title: "WHO Declares Ebola Outbreak Global Emergency Amidst Vaccine Gap",
+    summary:
+      "The World Health Organization has declared the escalating Ebola outbreak a Public Health Emergency of International Concern, following confirmed cases in the Democratic Republic of Congo and Uganda. This critical declaration highlights the urgent need for a coordinated global response, especially given the absence of an approved vaccine for this particular Ebola strain.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-who-declares-ebola-outbreak-global-emergency-amidst-vaccine-gap.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-declares-global-health-emergency-on-ebola",
     title: "Global Health and Education Watch: WHO declares global health emergency on Ebola",
     summary:
