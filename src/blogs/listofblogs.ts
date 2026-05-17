@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "making-physical-activity-core-to-global-education-for-lifelong-health",
+    title: "Making Physical Activity Core to Global Education for Lifelong Health",
+    summary:
+      "Integrating sport and physical activity into the heart of school life globally is essential for fostering lifelong healthy habits and holistic development. This demands significant structural changes and innovative approaches to ensure positive and inclusive experiences for all students.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-making-physical-activity-core-to-global-education-for-lifelong-health.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-declares-ebola-outbreak-in-drc-and-uganda-a-global-health-emergency",
     title: "WHO Declares Ebola Outbreak in DRC and Uganda a Global Health Emergency",
     summary:
