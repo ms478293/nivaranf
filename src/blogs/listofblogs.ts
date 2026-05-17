@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-hunger-crisis-deepens-millions-face-acute-malnutrition-in-somalia-and-dr-congo",
+    title: "Global Hunger Crisis Deepens: Millions Face Acute Malnutrition in Somalia and DR Congo",
+    summary:
+      "Nearly six million people in Somalia are projected to face acute hunger, with 1.9 million at emergency levels, as a severe food crisis grips the nation. Simultaneously, a protracted humanitarian emergency continues to drive widespread hunger and health crises across the Democratic Republic of Congo, demanding immediate global attention and action.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-global-hunger-crisis-deepens-millions-face-acute-malnutrition-in-somalia-and-dr-.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-cancer-test-makes-me-feel-women-s-health-matters",
     title: "Global Health and Education Watch: 'New cancer test makes me feel women's health matters'",
     summary:
