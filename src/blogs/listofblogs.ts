@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "hantavirus-outbreak-on-antarctic-cruise-reignites-global-pandemic-concerns",
+    title: "Hantavirus Outbreak on Antarctic Cruise Reignites Global Pandemic Concerns",
+    summary:
+      "The hantavirus outbreak aboard the MV Hondius during an Antarctic cruise triggered widespread alarm, reminding a world still recovering from Covid-19 of persistent zoonotic threats. For passengers and crew, the immediate danger was a terrifying reality in the isolated polar region.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-hantavirus-outbreak-on-antarctic-cruise-reignites-global-pandemic-concerns.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-canada-confirms-first-hantavirus-case-in-isolation-in-british",
     title: "Global Health and Education Watch: Canada confirms first hantavirus case in isolation in British",
     summary:
