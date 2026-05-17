@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-declares-ebola-outbreak-in-dr-congo-uganda-a-global-health-emergency",
+    title: "WHO Declares Ebola Outbreak in DR Congo, Uganda a Global Health Emergency",
+    summary:
+      "The World Health Organization has declared the escalating Ebola outbreak spanning the Democratic Republic of Congo and Uganda a global health emergency. This critical designation aims to galvanize international resources and coordinated efforts to contain the deadly virus.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-who-declares-ebola-outbreak-in-dr-congo-uganda-a-global-health-emergency.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-outbreak-in-drc-uganda-declared-global-health-emergency",
     title: "Ebola Outbreak in DRC, Uganda Declared Global Health Emergency",
     summary:
