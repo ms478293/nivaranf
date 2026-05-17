@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "patagonia-s-hantavirus-battle-a-global-health-blueprint",
+    title: "Patagonia's Hantavirus Battle: A Global Health Blueprint",
+    summary:
+      "The Hantavirus outbreak in Argentina's Patagonia region in 2018 prompted significant public health reforms, demonstrating the critical need for robust disease control measures. This regional experience offers invaluable insights for global strategies against emerging zoonotic threats and enhancing health security worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-patagonia-s-hantavirus-battle-a-global-health-blueprint.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "hantavirus-outbreak-on-antarctic-cruise-reignites-global-pandemic-concerns",
     title: "Hantavirus Outbreak on Antarctic Cruise Reignites Global Pandemic Concerns",
     summary:
