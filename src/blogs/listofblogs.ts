@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-outbreak-in-drc-uganda-declared-global-health-emergency",
+    title: "Ebola Outbreak in DRC, Uganda Declared Global Health Emergency",
+    summary:
+      "The World Health Organization has declared an Ebola epidemic caused by the Bundibugyo virus in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern. This critical designation mobilizes global resources and coordination to contain the cross-border outbreak and prevent wider spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-17-ebola-outbreak-in-drc-uganda-declared-global-health-emergency.jpg",
+    date: "2026-05-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-hunger-crisis-deepens-millions-face-acute-malnutrition-in-somalia-and-dr-congo",
     title: "Global Hunger Crisis Deepens: Millions Face Acute Malnutrition in Somalia and DR Congo",
     summary:
