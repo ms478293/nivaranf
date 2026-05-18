@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-alarm-un-warns-of-escalating-violence-against-lgbtiq-communities",
+    title: "Global Alarm: UN Warns of Escalating Violence Against LGBTIQ+ Communities",
+    summary:
+      "The United Nations human rights chief has issued a stark warning about the pervasive violence and discrimination faced by LGBTIQ+ individuals worldwide. This includes significant bullying in schools, which severely impacts youth, and broader systemic barriers to health and well-being.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-global-alarm-un-warns-of-escalating-violence-against-lgbtiq-communities.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "meningitis-b-cases-spotlight-global-school-health-vigilance",
     title: "Meningitis B Cases Spotlight Global School Health Vigilance",
     summary:
