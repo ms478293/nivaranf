@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-emergency-declared-global-health-security-under-renewed-threat",
+    title: "Ebola Emergency Declared: Global Health Security Under Renewed Threat",
+    summary:
+      "The World Health Organization has declared the latest Ebola outbreak a Public Health Emergency of International Concern. This critical designation mobilizes global resources and mandates coordinated efforts to contain the virus and bolster future pandemic preparedness.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-ebola-emergency-declared-global-health-security-under-renewed-threat.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-crisis-women-children-adolescents-face-breaking-point",
     title: "Global Health Crisis: Women, Children, Adolescents Face Breaking Point",
     summary:
