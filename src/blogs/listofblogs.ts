@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-surge-in-childhood-anxiety-demands-urgent-attention",
+    title: "Global Surge in Childhood Anxiety Demands Urgent Attention",
+    summary:
+      "Doctor's visits for children's anxiety have escalated by over 250 percent in a decade, according to a significant study involving nearly two million children. This alarming trend underscores a pervasive global challenge impacting the well-being of the younger generation.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-global-surge-in-childhood-anxiety-demands-urgent-attention.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-call-to-action-integrating-arts-for-health-and-education",
     title: "Global Call to Action: Integrating Arts for Health and Education",
     summary:
