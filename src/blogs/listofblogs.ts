@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-emergency-declared-as-ebola-claims-lives-in-democratic-republic-of-congo",
+    title: "Global Health Emergency Declared as Ebola Claims Lives in Democratic Republic of Congo",
+    summary:
+      "The World Health Organization has declared a global health emergency after a recent Ebola outbreak claimed approximately 80 lives in the Democratic Republic of Congo. This critical declaration underscores the urgent need for international collaboration and robust public health interventions to contain the deadly virus.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-global-health-emergency-declared-as-ebola-claims-lives-in-democratic-republic-of.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "dementia-s-ncd-status-a-global-health-paradigm-shift",
     title: "Dementia's NCD Status: A Global Health Paradigm Shift",
     summary:
