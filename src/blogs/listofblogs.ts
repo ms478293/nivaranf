@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-call-to-action-integrating-arts-for-health-and-education",
+    title: "Global Call to Action: Integrating Arts for Health and Education",
+    summary:
+      "Engaging with the arts offers significant benefits for mental health, cognitive development, and social cohesion across all age groups. Global advocates urge policymakers to prioritize creative opportunities, integrating them into education and public health strategies.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-global-call-to-action-integrating-arts-for-health-and-education.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-outbreak-follows-hunger-and-displacement-crisis-in-dr",
     title: "Global Health and Education Watch: Ebola outbreak follows hunger and displacement crisis in DR",
     summary:
