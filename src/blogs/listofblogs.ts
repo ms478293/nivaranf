@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "dementia-s-ncd-status-a-global-health-paradigm-shift",
+    title: "Dementia's NCD Status: A Global Health Paradigm Shift",
+    summary:
+      "The classification of dementia as a noncommunicable disease marks a pivotal moment in global health policy, promising increased focus and resources. This redefinition is expected to drive integrated public health strategies, enhanced research, and improved care worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-dementia-s-ncd-status-a-global-health-paradigm-shift.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "making-physical-activity-core-to-global-education-for-lifelong-health",
     title: "Making Physical Activity Core to Global Education for Lifelong Health",
     summary:
