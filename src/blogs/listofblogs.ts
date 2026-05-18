@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "meningitis-b-cases-spotlight-global-school-health-vigilance",
+    title: "Meningitis B Cases Spotlight Global School Health Vigilance",
+    summary:
+      "Two pupils in Reading, UK, have been confirmed with Meningitis B, prompting public health action. This incident serves as a stark reminder of the persistent global threat posed by infectious diseases within school communities and the vital role of vaccination.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-meningitis-b-cases-spotlight-global-school-health-vigilance.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-emergency-declared-as-ebola-claims-lives-in-democratic-republic-of-congo",
     title: "Global Health Emergency Declared as Ebola Claims Lives in Democratic Republic of Congo",
     summary:
