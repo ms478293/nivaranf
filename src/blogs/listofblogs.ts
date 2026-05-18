@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-women-children-adolescents-face-breaking-point",
+    title: "Global Health Crisis: Women, Children, Adolescents Face Breaking Point",
+    summary:
+      "A confluence of global crises—reduced aid, crippling debt, and widespread conflict—is severely undermining maternal and child health systems. This escalating emergency threatens to reverse decades of progress, demanding urgent international action to protect the world's most vulnerable populations.",
+    thumbnailImage: "/images/global-news/2026/2026-05-18-global-health-crisis-women-children-adolescents-face-breaking-point.jpg",
+    date: "2026-05-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-alarm-un-warns-of-escalating-violence-against-lgbtiq-communities",
     title: "Global Alarm: UN Warns of Escalating Violence Against LGBTIQ+ Communities",
     summary:
