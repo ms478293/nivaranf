@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-director-general-presents-award-for-global-health-to-four-distinguished",
+    title: "Global Health and Education Watch: Director-General presents Award for Global Health to four distinguished",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-19-global-health-and-education-watch-director-general-presents-award-for-global-hea.jpg",
+    date: "2026-05-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-surge-in-childhood-anxiety-demands-urgent-attention",
     title: "Global Surge in Childhood Anxiety Demands Urgent Attention",
     summary:
