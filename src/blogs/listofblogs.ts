@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-emergency-ebola-outbreak-ignites-urgent-vaccine-race",
+    title: "Global Health Emergency: Ebola Outbreak Ignites Urgent Vaccine Race",
+    summary:
+      "A virulent Ebola outbreak has prompted an international scramble for new vaccine solutions. World Health Organization experts are meeting to identify and recommend candidate jabs for immediate clinical trials.",
+    thumbnailImage: "/images/global-news/2026/2026-05-19-global-health-emergency-ebola-outbreak-ignites-urgent-vaccine-race.jpg",
+    date: "2026-05-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-director-general-presents-award-for-global-health-to-four-distinguished",
     title: "Global Health and Education Watch: Director-General presents Award for Global Health to four distinguished",
     summary:
