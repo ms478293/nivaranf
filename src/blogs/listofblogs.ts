@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-threatens-central-africa-who-warns-of-prolonged-outbreak",
+    title: "Ebola Threatens Central Africa: WHO Warns of Prolonged Outbreak",
+    summary:
+      "A new Ebola outbreak in Central Africa poses a severe public health crisis, with the World Health Organization warning it could persist for months. Over 130 suspected deaths and 540 cases have been reported in the Democratic Republic of Congo and Uganda, though experts believe the true figures are considerably higher.",
+    thumbnailImage: "/images/global-news/2026/2026-05-19-ebola-threatens-central-africa-who-warns-of-prolonged-outbreak.jpg",
+    date: "2026-05-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rubio-criticizes-who-s-ebola-response-as-us-continues-sweeping",
     title: "Global Health and Education Watch: Rubio criticizes WHO’s Ebola response as US continues sweeping",
     summary:
