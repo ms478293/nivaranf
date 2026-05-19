@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "anticipating-respiratory-crises-a-new-global-early-warning-system",
+    title: "Anticipating Respiratory Crises: A New Global Early Warning System",
+    summary:
+      "Researchers have developed an advanced real-time early warning system utilizing transfer learning to anticipate respiratory disease outbreaks globally. This innovative approach promises to revolutionize public health preparedness and response by providing crucial lead time for intervention.",
+    thumbnailImage: "/images/global-news/2026/2026-05-19-anticipating-respiratory-crises-a-new-global-early-warning-system.jpg",
+    date: "2026-05-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "gunmen-abduct-dozens-in-nigeria-school-attacks-sparking-global-concern",
     title: "Gunmen Abduct Dozens in Nigeria School Attacks, Sparking Global Concern",
     summary:
