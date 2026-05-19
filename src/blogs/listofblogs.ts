@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gunmen-abduct-dozens-in-nigeria-school-attacks-sparking-global-concern",
+    title: "Gunmen Abduct Dozens in Nigeria School Attacks, Sparking Global Concern",
+    summary:
+      "In a series of coordinated attacks, gunmen abducted 39 students and 7 teachers from schools in Nigeria, targeting children as young as two. These latest kidnappings underscore the escalating insecurity and profound challenges facing education and child safety across the region.",
+    thumbnailImage: "/images/global-news/2026/2026-05-19-gunmen-abduct-dozens-in-nigeria-school-attacks-sparking-global-concern.jpg",
+    date: "2026-05-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-emergency-ebola-outbreak-ignites-urgent-vaccine-race",
     title: "Global Health Emergency: Ebola Outbreak Ignites Urgent Vaccine Race",
     summary:
