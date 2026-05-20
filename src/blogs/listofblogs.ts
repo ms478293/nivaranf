@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-crisis-exposes-global-health-preparedness-gaps",
+    title: "Ebola Crisis Exposes Global Health Preparedness Gaps",
+    summary:
+      "The recent Ebola outbreak has starkly revealed critical deficiencies in global pandemic preparedness. Reduced international aid and a growing political aversion to collaborative public health initiatives are undermining collective defenses worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-20-ebola-crisis-exposes-global-health-preparedness-gaps.jpg",
+    date: "2026-05-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-outbreak-feared-spreading-faster-in-central-africa-who-warns",
     title: "Ebola Outbreak Feared Spreading Faster in Central Africa, WHO Warns",
     summary:
