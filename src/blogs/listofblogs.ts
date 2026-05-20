@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-risk-is-high-inside-dr-congo-but-it-s",
+    title: "Global Health and Education Watch: Ebola risk is high inside DR Congo but it’s",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-20-global-health-and-education-watch-ebola-risk-is-high-inside-dr-congo-but-it-s.jpg",
+    date: "2026-05-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-modelling-impacts-of-paediatric-amoxicillin-shortage-management-on-pneumococcal",
     title: "Global Health and Education Watch: Modelling impacts of paediatric amoxicillin shortage management on pneumococcal",
     summary:
