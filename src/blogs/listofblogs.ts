@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-outbreak-feared-spreading-faster-in-central-africa-who-warns",
+    title: "Ebola Outbreak Feared Spreading Faster in Central Africa, WHO Warns",
+    summary:
+      "A World Health Organization doctor warns that the Ebola outbreak in central Africa may be accelerating beyond initial estimates, with hundreds of suspected cases. Experts fear the true number of infections could be significantly higher, necessitating immediate and robust international intervention.",
+    thumbnailImage: "/images/global-news/2026/2026-05-20-ebola-outbreak-feared-spreading-faster-in-central-africa-who-warns.jpg",
+    date: "2026-05-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-threatens-central-africa-who-warns-of-prolonged-outbreak",
     title: "Ebola Threatens Central Africa: WHO Warns of Prolonged Outbreak",
     summary:
