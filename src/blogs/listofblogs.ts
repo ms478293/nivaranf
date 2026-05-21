@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-s-front-line-communities-key-to-halting-rare-strain-outbreak",
+    title: "Ebola's Front Line: Communities Key to Halting Rare Strain Outbreak",
+    summary:
+      "A rare and aggressive Ebola strain is challenging health authorities in Eastern Democratic Republic of Congo and Uganda. The World Health Organization is implementing a swift, community-centered strategy to contain the outbreak and prevent wider transmission.",
+    thumbnailImage: "/images/global-news/2026/2026-05-21-ebola-s-front-line-communities-key-to-halting-rare-strain-outbreak.jpg",
+    date: "2026-05-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "delayed-ebola-detection-in-dr-congo-exposes-global-health-fragility",
     title: "Delayed Ebola Detection in DR Congo Exposes Global Health Fragility",
     summary:
