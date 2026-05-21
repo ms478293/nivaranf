@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "children-at-climate-crisis-forefront-a-global-health-imperative",
+    title: "Children at Climate Crisis Forefront: A Global Health Imperative",
+    summary:
+      "The climate crisis demands recognition as a global public health emergency, with children positioned at the absolute forefront of any effective response. Early life disruptions from climate change profoundly affect child nutrition, learning, and physical and mental health, threatening decades of global progress.",
+    thumbnailImage: "/images/global-news/2026/2026-05-21-children-at-climate-crisis-forefront-a-global-health-imperative.jpg",
+    date: "2026-05-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-s-front-line-communities-key-to-halting-rare-strain-outbreak",
     title: "Ebola's Front Line: Communities Key to Halting Rare Strain Outbreak",
     summary:
