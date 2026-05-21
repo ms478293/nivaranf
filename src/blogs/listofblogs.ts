@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "meningitis-cluster-highlights-global-public-health-vigilance",
+    title: "Meningitis Cluster Highlights Global Public Health Vigilance",
+    summary:
+      "A recent cluster of Meningitis B cases has prompted heightened public health awareness, emphasizing the ongoing global challenge of infectious disease management. This incident highlights the critical importance of widespread vaccination and vigilant public health responses to safeguard communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-21-meningitis-cluster-highlights-global-public-health-vigilance.jpg",
+    date: "2026-05-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-outbreak-is-unlikely-to-become-global-threat-w-h-o",
     title: "Global Health and Education Watch: Ebola Outbreak Is Unlikely to Become Global Threat, W.H.O",
     summary:
