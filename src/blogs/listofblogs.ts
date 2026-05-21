@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-mental-health-crisis-one-in-eight-lives-with-a-disorder-suicide-a-constant-threat",
+    title: "Global Mental Health Crisis: One in Eight Lives with a Disorder, Suicide a Constant Threat",
+    summary:
+      "A recent report indicates that nearly one in eight individuals globally lives with a mental disorder. Alarmingly, a life is lost to suicide every 43 seconds, underscoring the profound human cost of these conditions.",
+    thumbnailImage: "/images/global-news/2026/2026-05-21-global-mental-health-crisis-one-in-eight-lives-with-a-disorder-suicide-a-constan.jpg",
+    date: "2026-05-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-seventy-ninth-world-health-assembly-honours-global-champions-advancing-primary",
     title: "Global Health and Education Watch: Seventy-ninth World Health Assembly honours global champions advancing primary",
     summary:
