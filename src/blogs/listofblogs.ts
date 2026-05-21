@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "delayed-ebola-detection-in-dr-congo-exposes-global-health-fragility",
+    title: "Delayed Ebola Detection in DR Congo Exposes Global Health Fragility",
+    summary:
+      "An Ebola outbreak in the Democratic Republic of Congo went undetected for weeks, highlighting severe breakdowns in reporting and weak health systems. This alarming delay in a conflict-affected area poses significant global health security risks.",
+    thumbnailImage: "/images/global-news/2026/2026-05-21-delayed-ebola-detection-in-dr-congo-exposes-global-health-fragility.jpg",
+    date: "2026-05-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-mental-health-crisis-one-in-eight-lives-with-a-disorder-suicide-a-constant-threat",
     title: "Global Mental Health Crisis: One in Eight Lives with a Disorder, Suicide a Constant Threat",
     summary:
