@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-risk-escalates-to-very-high-in-dr-congo-amid-regional-concerns",
+    title: "Ebola Risk Escalates to 'Very High' in DR Congo Amid Regional Concerns",
+    summary:
+      "The Democratic Republic of Congo faces a 'very high' Ebola risk, according to the UN health agency. While the wider region is at 'high' risk, global concern remains 'low' due to robust preparedness measures.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-ebola-risk-escalates-to-very-high-in-dr-congo-amid-regional-concerns.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-deadly-measles-outbreak-sickens-thousands-of-children-in-bangladesh",
     title: "Global Health and Education Watch: Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh",
     summary:
