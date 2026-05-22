@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leaders-chart-future-course-at-world-health-assembly",
+    title: "Global Health Leaders Chart Future Course at World Health Assembly",
+    summary:
+      "The Seventy-ninth World Health Assembly concluded its 20 May session with robust discussions on pressing global health priorities. Member states deliberated on strategies to strengthen health systems, enhance pandemic preparedness, and advance universal health coverage worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-global-health-leaders-chart-future-course-at-world-health-assembly.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-risk-escalates-to-very-high-in-dr-congo-amid-regional-concerns",
     title: "Ebola Risk Escalates to 'Very High' in DR Congo Amid Regional Concerns",
     summary:
