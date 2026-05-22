@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-leaders-convene-at-wha-to-tackle-pandemics-uhc-and-climate-crisis",
+    title: "Global Health Leaders Convene at WHA to Tackle Pandemics, UHC, and Climate Crisis",
+    summary:
+      "The 79th World Health Assembly on May 21, 2026, focused on strengthening global health security, advancing universal health coverage, and addressing climate change impacts. Member states deliberated on equitable access to care, pandemic preparedness, and sustainable health financing for a healthier future.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-global-health-leaders-convene-at-wha-to-tackle-pandemics-uhc-and-climate-crisis.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gonorrhoea-and-syphilis-hit-record-levels-in-europe",
     title: "Global Health and Education Watch: Gonorrhoea and syphilis hit record levels in Europe",
     summary:
