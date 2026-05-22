@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "meta-settles-landmark-social-media-addiction-lawsuit-sparking-global-accountability-debate",
+    title: "Meta Settles Landmark Social Media Addiction Lawsuit, Sparking Global Accountability Debate",
+    summary:
+      "Meta has reached a significant settlement with a Kentucky school district regarding claims that its social platforms are designed to be addictive, harming children's mental health. This resolution, following similar agreements by TikTok, Snap, and YouTube, underscores growing global scrutiny on tech companies' impact on youth well-being and education.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-meta-settles-landmark-social-media-addiction-lawsuit-sparking-global-accountabil.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-crisis-looms-as-who-assembly-confronts-ebola-hantavirus",
     title: "Global Health Crisis Looms as WHO Assembly Confronts Ebola, Hantavirus",
     summary:
