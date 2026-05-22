@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-deadly-measles-outbreak-sickens-thousands-of-children-in-bangladesh",
+    title: "Global Health and Education Watch: Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-global-health-and-education-watch-deadly-measles-outbreak-sickens-thousands-of-c.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "meta-settles-landmark-social-media-addiction-lawsuit-sparking-global-accountability-debate",
     title: "Meta Settles Landmark Social Media Addiction Lawsuit, Sparking Global Accountability Debate",
     summary:
