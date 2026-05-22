@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "arson-at-drc-ebola-hospital-undermines-global-health-security",
+    title: "Arson at DRC Ebola Hospital Undermines Global Health Security",
+    summary:
+      "An Ebola treatment facility in the Democratic Republic of Congo was deliberately set ablaze by protesters, marking a severe setback in efforts to control a burgeoning outbreak. This act underscores the critical challenges of community mistrust and misinformation in global health emergencies.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-arson-at-drc-ebola-hospital-undermines-global-health-security.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leaders-convene-at-wha-to-tackle-pandemics-uhc-and-climate-crisis",
     title: "Global Health Leaders Convene at WHA to Tackle Pandemics, UHC, and Climate Crisis",
     summary:
