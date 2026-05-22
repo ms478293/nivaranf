@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-crisis-looms-as-who-assembly-confronts-ebola-hantavirus",
+    title: "Global Health Crisis Looms as WHO Assembly Confronts Ebola, Hantavirus",
+    summary:
+      "The World Health Organization's annual assembly convened amidst urgent global health crises, including active Ebola outbreaks and a hantavirus-stricken cruise ship. Delegates grappled with the dual challenges of escalating disease threats and critical funding shortfalls, compounded by geopolitical complexities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-22-global-health-crisis-looms-as-who-assembly-confronts-ebola-hantavirus.jpg",
+    date: "2026-05-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-big-europe-and-asian-private-equity-health-funds-merge",
     title: "Global Health and Education Watch: Big Europe and Asian private equity health funds merge",
     summary:
