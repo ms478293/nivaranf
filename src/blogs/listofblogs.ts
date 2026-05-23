@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-concerns-mount-over-diminishing-investment-in-primary-school-sports-programs",
+    title: "Global Concerns Mount Over Diminishing Investment in Primary School Sports Programs",
+    summary:
+      "Recent policy changes in a major developed economy signal a significant reduction in funding for primary school sports initiatives. This move raises global concerns about the long-term implications for child health, physical literacy, and comprehensive educational development.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-global-concerns-mount-over-diminishing-investment-in-primary-school-sports-progr.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-risk-very-high-in-eastern-dr-congo-as",
     title: "Global Health and Education Watch: Ebola risk ‘very high’ in eastern DR Congo as",
     summary:
