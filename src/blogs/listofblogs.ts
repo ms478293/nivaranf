@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-bundibugyo-declared-global-health-emergency-in-drc-uganda",
+    title: "Ebola Bundibugyo Declared Global Health Emergency in DRC, Uganda",
+    summary:
+      "The WHO has declared an Ebola Bundibugyo outbreak in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern (PHEIC). This critical designation triggers heightened global vigilance and coordinated international response efforts to contain the deadly virus.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-ebola-bundibugyo-declared-global-health-emergency-in-drc-uganda.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-autism-therapy-boom-ethical-concerns-emerge-amidst-financial-pressures",
     title: "Global Autism Therapy Boom: Ethical Concerns Emerge Amidst Financial Pressures",
     summary:
