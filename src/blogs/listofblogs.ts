@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-autism-therapy-boom-ethical-concerns-emerge-amidst-financial-pressures",
+    title: "Global Autism Therapy Boom: Ethical Concerns Emerge Amidst Financial Pressures",
+    summary:
+      "The global surge in autism therapy clinics, while expanding access, has introduced significant financial pressures, leading to concerns about overbilling and potential harm. Public health systems worldwide face increasing strain as the industry's focus on revenue can overshadow the ethical delivery of crucial services to preschoolers.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-global-autism-therapy-boom-ethical-concerns-emerge-amidst-financial-pressures.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-concerns-mount-over-diminishing-investment-in-primary-school-sports-programs",
     title: "Global Concerns Mount Over Diminishing Investment in Primary School Sports Programs",
     summary:
