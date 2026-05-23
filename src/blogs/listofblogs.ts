@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-women-cycle-syncing-their-workflow",
+    title: "Global Health and Education Watch: The women ‘cycle syncing’ their workflow",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-global-health-and-education-watch-the-women-cycle-syncing-their-workflow.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
     title: "Measles Outbreak Claims Over 500 Children in Bangladesh, Igniting Global Health Concerns",
     summary:
