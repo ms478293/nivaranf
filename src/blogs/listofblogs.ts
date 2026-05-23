@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "uk-scientists-near-trials-for-bundibugyo-ebola-vaccine",
+    title: "UK Scientists Near Trials for Bundibugyo Ebola Vaccine",
+    summary:
+      "UK scientists are on the verge of clinical trials for a new vaccine specifically designed to combat the Bundibugyo strain of Ebola, a variant responsible for a third of infections. This development marks a significant step towards global health security, addressing a strain for which no proven vaccine currently exists.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-uk-scientists-near-trials-for-bundibugyo-ebola-vaccine.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-bundibugyo-declared-global-health-emergency-in-drc-uganda",
     title: "Ebola Bundibugyo Declared Global Health Emergency in DRC, Uganda",
     summary:
