@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
+    title: "Measles Outbreak Claims Over 500 Children in Bangladesh, Igniting Global Health Concerns",
+    summary:
+      "A devastating measles outbreak in Bangladesh has claimed the lives of over 500 children, primarily those aged six months to five years. This tragedy underscores persistent vulnerabilities in global health systems and the critical importance of widespread immunization.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "uk-scientists-near-trials-for-bundibugyo-ebola-vaccine",
     title: "UK Scientists Near Trials for Bundibugyo Ebola Vaccine",
     summary:
