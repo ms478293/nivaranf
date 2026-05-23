@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "from-kharkiv-s-echoes-to-uk-s-health-service-a-doctor-s-resilient-journey",
+    title: "From Kharkiv's Echoes to UK's Health Service: A Doctor's Resilient Journey",
+    summary:
+      "Dr. Inna Soldatenko, a Ukrainian physician, escaped the 2022 conflict in Kharkiv and has since established a new life and career within the United Kingdom's health system. Her journey highlights the profound resilience of displaced professionals contributing vital skills to their new communities while inspiring others.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-from-kharkiv-s-echoes-to-uk-s-health-service-a-doctor-s-resilient-journey.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-women-cycle-syncing-their-workflow",
     title: "Global Health and Education Watch: The women ‘cycle syncing’ their workflow",
     summary:
