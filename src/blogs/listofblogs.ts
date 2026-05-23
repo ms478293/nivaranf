@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-outbreak-disrupts-life-along-the-drc-uganda-border",
+    title: "Global Health and Education Watch: Ebola outbreak disrupts life along the DRC-Uganda border",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-23-global-health-and-education-watch-ebola-outbreak-disrupts-life-along-the-drc-uga.jpg",
+    date: "2026-05-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-leaders-chart-future-course-at-world-health-assembly",
     title: "Global Health Leaders Chart Future Course at World Health Assembly",
     summary:
