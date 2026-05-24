@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-u-s-ebola-travel-ban-faces-criticism-from-congo-health",
+    title: "Global Health and Education Watch: U.S. Ebola Travel Ban Faces Criticism From Congo Health",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-24-global-health-and-education-watch-u-s-ebola-travel-ban-faces-criticism-from-cong.jpg",
+    date: "2026-05-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-alarm-us-absence-feared-amidst-central-african-ebola-resurgence",
     title: "Global Health Alarm: US Absence Feared Amidst Central African Ebola Resurgence",
     summary:
