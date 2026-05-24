@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "breakthrough-hope-for-pre-eclampsia-a-global-health-imperative",
+    title: "Breakthrough Hope for Pre-eclampsia: A Global Health Imperative",
+    summary:
+      "Pre-eclampsia tragically claims over 70,000 maternal lives annually across the globe, underscoring an urgent need for effective interventions. Emerging research into a potential new treatment offers a beacon of hope for improving maternal and infant health outcomes.",
+    thumbnailImage: "/images/global-news/2026/2026-05-24-breakthrough-hope-for-pre-eclampsia-a-global-health-imperative.jpg",
+    date: "2026-05-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-seventy-ninth-world-health-assembly-daily-update-23-may",
     title: "Global Health and Education Watch: Seventy-ninth World Health Assembly – Daily update: 23 May",
     summary:
