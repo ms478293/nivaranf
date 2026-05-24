@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-spreads-to-uganda-escalating-drc-outbreak-crisis",
+    title: "Ebola Spreads to Uganda, Escalating DRC Outbreak Crisis",
+    summary:
+      "The Ebola outbreak in eastern Democratic Republic of Congo has escalated with confirmed cases now reported in neighboring Uganda. This cross-border spread highlights the urgent need for intensified regional and international cooperation to contain the deadly virus.",
+    thumbnailImage: "/images/global-news/2026/2026-05-24-ebola-spreads-to-uganda-escalating-drc-outbreak-crisis.jpg",
+    date: "2026-05-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "breakthrough-hope-for-pre-eclampsia-a-global-health-imperative",
     title: "Breakthrough Hope for Pre-eclampsia: A Global Health Imperative",
     summary:
