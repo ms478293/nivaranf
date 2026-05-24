@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-alarm-us-absence-feared-amidst-central-african-ebola-resurgence",
+    title: "Global Health Alarm: US Absence Feared Amidst Central African Ebola Resurgence",
+    summary:
+      "An undetected Ebola outbreak, involving the rare Bundibugyo variant, is spreading across central Africa, particularly in the Democratic Republic of Congo. Experts warn of a critical lack of US engagement and support, following significant cuts to global public health initiatives and vital scientific research.",
+    thumbnailImage: "/images/global-news/2026/2026-05-24-global-health-alarm-us-absence-feared-amidst-central-african-ebola-resurgence.jpg",
+    date: "2026-05-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "from-kharkiv-s-echoes-to-uk-s-health-service-a-doctor-s-resilient-journey",
     title: "From Kharkiv's Echoes to UK's Health Service: A Doctor's Resilient Journey",
     summary:
