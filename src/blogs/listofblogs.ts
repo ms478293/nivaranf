@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "dr-congo-ebola-crisis-deepens-amidst-rising-cases-and-health-worker-attacks",
+    title: "DR Congo Ebola Crisis Deepens Amidst Rising Cases and Health Worker Attacks",
+    summary:
+      "The Democratic Republic of Congo is grappling with a severe Ebola outbreak, with over 900 suspected cases reported in the country's eastern region. Health workers face escalating attacks and critical resource shortages, complicating containment efforts and posing a significant challenge to public health.",
+    thumbnailImage: "/images/global-news/2026/2026-05-24-dr-congo-ebola-crisis-deepens-amidst-rising-cases-and-health-worker-attacks.jpg",
+    date: "2026-05-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-spreads-to-uganda-escalating-drc-outbreak-crisis",
     title: "Ebola Spreads to Uganda, Escalating DRC Outbreak Crisis",
     summary:
