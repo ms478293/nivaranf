@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-epidemic-escalates-who-chief-warns-of-crisis-outpacing-global-response",
+    title: "Ebola Epidemic Escalates: WHO Chief Warns of Crisis Outpacing Global Response",
+    summary:
+      "The World Health Organization's chief warns that a rapidly escalating Ebola epidemic is outpacing current response efforts, with suspected deaths reaching 220. Delayed detection of cases means health responders are struggling to catch up, risking wider spread and greater loss of life.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-ebola-epidemic-escalates-who-chief-warns-of-crisis-outpacing-global-response.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-childcare-costs-under-scrutiny-a-universal-challenge",
     title: "Global Childcare Costs Under Scrutiny: A Universal Challenge",
     summary:
