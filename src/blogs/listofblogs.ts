@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-one-and-done-heart-disease-prevention-scientists-show-it-may-be",
+    title: "Global Health and Education Watch: One-and-Done Heart Disease Prevention? Scientists Show It May Be",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-global-health-and-education-watch-one-and-done-heart-disease-prevention-scientis.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-epidemic-escalates-who-chief-warns-of-crisis-outpacing-global-response",
     title: "Ebola Epidemic Escalates: WHO Chief Warns of Crisis Outpacing Global Response",
     summary:
