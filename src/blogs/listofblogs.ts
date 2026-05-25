@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-s-resurgence-in-drc-outpaces-containment-threatening-regional-stability",
+    title: "Ebola's Resurgence in DRC Outpaces Containment, Threatening Regional Stability",
+    summary:
+      "The Democratic Republic of the Congo faces a rapidly escalating Ebola epidemic with over 900 suspected cases of the Bundibugyo strain and 220 suspected deaths. Containment efforts are struggling to keep pace with the virus's spread, prompting urgent calls for enhanced international support.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-ebola-s-resurgence-in-drc-outpaces-containment-threatening-regional-stability.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-one-and-done-heart-disease-prevention-scientists-show-it-may-be",
     title: "Global Health and Education Watch: One-and-Done Heart Disease Prevention? Scientists Show It May Be",
     summary:
