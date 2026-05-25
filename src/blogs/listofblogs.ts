@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-chief-urges-urgent-global-action-on-ebola-pandemic-preparedness",
+    title: "WHO Chief Urges Urgent Global Action on Ebola, Pandemic Preparedness",
+    summary:
+      "The head of the World Health Organization has issued a stark warning regarding global vulnerability to rapidly spreading infectious diseases, citing recent Ebola and hantavirus outbreaks. He emphasized the critical need for urgent action and sustained investment in pandemic preparedness and response mechanisms worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-who-chief-urges-urgent-global-action-on-ebola-pandemic-preparedness.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "dr-congo-ebola-crisis-deepens-amidst-rising-cases-and-health-worker-attacks",
     title: "DR Congo Ebola Crisis Deepens Amidst Rising Cases and Health Worker Attacks",
     summary:
