@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "europe-s-unexpected-firefighters-vineyards-truffles-and-honey",
+    title: "Europe's Unexpected Firefighters: Vineyards, Truffles, and Honey",
+    summary:
+      "As climate change intensifies wildfire threats, European nations are discovering how specialized agriculture like viticulture, truffle cultivation, and apiculture can create natural firebreaks and resilient landscapes. These methods not only protect communities and ecosystems but also offer significant economic and health benefits.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-europe-s-unexpected-firefighters-vineyards-truffles-and-honey.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "us-voters-strongly-back-global-hiv-aids-relief-amidst-midterm-stakes",
     title: "US Voters Strongly Back Global HIV/AIDS Relief Amidst Midterm Stakes",
     summary:
