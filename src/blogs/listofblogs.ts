@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "us-voters-strongly-back-global-hiv-aids-relief-amidst-midterm-stakes",
+    title: "US Voters Strongly Back Global HIV/AIDS Relief Amidst Midterm Stakes",
+    summary:
+      "A recent poll indicates strong US voter support for the global HIV/AIDS relief program, PEPFAR, which also fortifies health systems against other threats. This widespread public backing could significantly influence the upcoming US midterm elections, as voters favor candidates who champion the initiative.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-us-voters-strongly-back-global-hiv-aids-relief-amidst-midterm-stakes.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-chief-urges-urgent-global-action-on-ebola-pandemic-preparedness",
     title: "WHO Chief Urges Urgent Global Action on Ebola, Pandemic Preparedness",
     summary:
