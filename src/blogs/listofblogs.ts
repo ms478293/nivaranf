@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-childcare-costs-under-scrutiny-a-universal-challenge",
+    title: "Global Childcare Costs Under Scrutiny: A Universal Challenge",
+    summary:
+      "An initiative in the UK to investigate hidden childcare costs highlights a pervasive global issue. Families worldwide face unexpected expenses that erode the benefits of government-funded early education and care programs.",
+    thumbnailImage: "/images/global-news/2026/2026-05-25-global-childcare-costs-under-scrutiny-a-universal-challenge.jpg",
+    date: "2026-05-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-seventy-ninth-world-health-assembly-daily-update-22-may",
     title: "Global Health and Education Watch: Seventy-ninth World Health Assembly – Daily update: 22 May",
     summary:
