@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "belgium-train-collision-claims-four-lives-including-two-children",
+    title: "Belgium Train Collision Claims Four Lives, Including Two Children",
+    summary:
+      "A devastating train collision with a school van near Brussels resulted in four fatalities, including two children aged 12 and 15. The victims were students attending a special education institution, prompting urgent calls for enhanced transport safety.",
+    thumbnailImage: "/images/global-news/2026/2026-05-26-belgium-train-collision-claims-four-lives-including-two-children.jpg",
+    date: "2026-05-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-scotland-fans-book-20-school-buses-for-games-at",
     title: "Global Health and Education Watch: Scotland fans book 20 school buses for games at",
     summary:
