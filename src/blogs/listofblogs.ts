@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-curse-of-burnout-britain-affects-politicians-as-much",
+    title: "Global Health and Education Watch: The curse of burnout Britain affects politicians as much",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-26-global-health-and-education-watch-the-curse-of-burnout-britain-affects-politicia.jpg",
+    date: "2026-05-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-outbreak-in-drc-outpaces-response-who-warns-global-health-crisis-looms",
     title: "Ebola Outbreak in DRC Outpaces Response, WHO Warns Global Health Crisis Looms",
     summary:
