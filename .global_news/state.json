@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-05-26T16:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
     {
       "title": "Largest catch-up initiative delivers over 100 million childhood vaccinations",
@@ -12,7 +12,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "WHO reports measurable health impact in 2025 amid transition to new strategy",
@@ -24,19 +24,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=55, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Spread of Ebola in DRC ‘outpacing’ response efforts, warns WHO",
-      "link": "https://www.theguardian.com/world/2026/may/25/spread-of-ebola-in-drc-outpacing-response-efforts-warns-who",
-      "summary": "Director general of World Health Organization urges neighbouring countries to take immediate action The World Health Organization has warned that the Ebola outbreak is outpacing response efforts and countries neighbouring the Democratic Republic of Congo (DRC) are at high risk from the disease. “We are urgently scaling up operations, but at the moment the epidemic is outpacing us,” said the WHO’s director-general, Dr Tedros Adhanom Ghebreyesus, as he urged neighbouring countries to take immediate action. Continue reading...",
-      "publishedAtUtc": "2026-05-25T17:00:30Z",
-      "domain": "theguardian.com",
-      "score": 89.0,
-      "healthHits": 4,
-      "educationHits": 0,
-      "reason": "relevance=36, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "The curse of burnout Britain affects politicians as much as everyone else: give Carla Denyer a break | Gaby Hinsliff",
@@ -48,7 +36,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=35, credibility=35, freshness=18, health_hits=2, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -60,7 +48,31 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Short Naps, Long Hours: How Autism Clinics Squeeze Medicaid Dollars Out of Preschoolers",
+      "link": "https://www.nytimes.com/2026/05/23/health/autism-therapy-clinics.html",
+      "summary": "The industry has grown rapidly, straining state budgets. A focus on finances has led to overbilling, fraud and even harm.",
+      "publishedAtUtc": "2026-05-26T17:45:56Z",
+      "domain": "nytimes.com",
+      "score": 81.0,
+      "healthHits": 1,
+      "educationHits": 1,
+      "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Spread of Ebola in DRC ‘outpacing’ response efforts, warns WHO",
+      "link": "https://www.theguardian.com/world/2026/may/25/spread-of-ebola-in-drc-outpacing-response-efforts-warns-who",
+      "summary": "Director general of World Health Organization urges neighbouring countries to take immediate action The World Health Organization has warned that the Ebola outbreak is outpacing response efforts and countries neighbouring the Democratic Republic of Congo (DRC) are at high risk from the disease. “We are urgently scaling up operations, but at the moment the epidemic is outpacing us,” said the WHO’s director-general, Dr Tedros Adhanom Ghebreyesus, as he urged neighbouring countries to take immediate action. Continue reading...",
+      "publishedAtUtc": "2026-05-25T17:00:30Z",
+      "domain": "theguardian.com",
+      "score": 81.0,
+      "healthHits": 4,
+      "educationHits": 0,
+      "reason": "relevance=36, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Efforts to eliminate hepatitis delivers gains but more action needed to meet 2030 targets",
@@ -72,19 +84,19 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Belgium Crash Kills 4 as Train Hits School Van",
       "link": "https://www.nytimes.com/2026/05/26/world/europe/belgium-minibus-train-collision-children.html",
       "summary": "Two children, 12 and 15, were among those killed in the crash near Brussels, officials said. The students in the van attended a special education school.",
-      "publishedAtUtc": "2026-05-26T15:50:12Z",
+      "publishedAtUtc": "2026-05-26T15:50:13Z",
       "domain": "nytimes.com",
       "score": 80.0,
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "A job that changed me: As an anxious first-time surgical assistant, the casual workplace dynamics surprised me",
@@ -96,7 +108,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Suspected Ebola cases in DRC pass 900 as health workers face attacks and shortages",
@@ -108,7 +120,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -120,7 +132,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=4, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "How Profit-Seeking Autism Clinics Can Harm Kids",
@@ -132,7 +144,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Manchester University to offer work placements to all undergraduates",
+      "link": "https://www.theguardian.com/business/2026/may/26/manchester-university-to-offer-work-placements-to-all-undergraduates",
+      "summary": "Russell Group university promises students, from chemical engineering to classics, ‘meaningful real-world experience’ A leading UK university is promising work placements to all undergraduates regardless of their degree, to better equip them for the challenges of the job market. In what appears to be a first for a large Russell Group institution, the University of Manchester is planning to offer “meaningful real-world experience” to all students, in subjects from classics to chemical engineering. Continue reading...",
+      "publishedAtUtc": "2026-05-26T17:25:54Z",
+      "domain": "theguardian.com",
+      "score": 77.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -144,10 +168,10 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
-      "title": "Why Trump administration’s plan to attempt to destroy Pfas is ‘nonsenscial’",
+      "title": "Why Trump administration’s plan to attempt to destroy Pfas is ‘nonsensical’",
       "link": "https://www.theguardian.com/us-news/2026/may/26/trump-administration-pfas-drinking-water-regulation",
       "summary": "The EPA said it was cutting Biden-era regulations on Pfas in drinking water, but advocates say the move will harm public health and benefit industry A new Trump administration plan to ditch Pfas drinking water regulations and instead attempt to destroy “forever chemicals” on a wide scale tears a page from the fossil fuel industry’s carbon capture playbook, and will benefit the industry while harming public health. The US Environmental Protection Agency last week announced it is moving to kill strong Biden-era drinking water limits around four Pfas compounds, and delaying implementation for two more. It represented a blow to public health – advocates say strong limits and a dramatic cut in the production of the dangerous chemicals are imperative. Continue reading...",
       "publishedAtUtc": "2026-05-26T12:00:50Z",
@@ -156,7 +180,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "US voters support HIV/Aids relief – will Trump’s cuts backfire in the midterms?",
@@ -168,7 +192,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "WHO prequalifies first-ever malaria treatment for newborns and infants, adds new diagnostic tests",
@@ -180,7 +204,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "International airlines urged to stick to safety measures in wake of Ebola outbreak",
@@ -192,7 +216,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "From Kharkiv to the UK’s health service: Ukrainian doctor rebuilds her life – and helps others do the same",
@@ -204,19 +228,19 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=33, credibility=35, freshness=4, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "A Powerful H.I.V. Drug Lands in Zambia. But Will It Reach Those Who Need It?",
       "link": "https://www.nytimes.com/2026/05/26/health/lenacapavir-hiv-zambia.html",
       "summary": "Lenacapavir, which protects people from H.I.V. infection with twice-yearly shots, is arriving in a country where the health system has been hollowed out by American aid cuts.",
-      "publishedAtUtc": "2026-05-26T15:47:05Z",
+      "publishedAtUtc": "2026-05-26T15:47:06Z",
       "domain": "nytimes.com",
       "score": 72.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Rahm Emanuel, a Possible 2028 Contender, Calls for Higher Education Reforms",
@@ -228,7 +252,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Paris School Worker Tried for Child Abuse in Widespread Assault Inquiry",
@@ -240,7 +264,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Are We Pandemic Ready?",
@@ -252,19 +276,43 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
-      "title": "Trump to undergo annual physical after year of public attention to health issues",
-      "link": "https://www.theguardian.com/us-news/2026/may/26/trump-annual-physical-health-issues",
-      "summary": "US president, who turns 80 next month, frequently casts himself as fit but recent photos have added to questions about his health Sign up for the Breaking News US newsletter email Donald Trump, who turns 80 next month, will undergo his routine annual physical on Tuesday at Walter Reed National Military Medical Center, after a year of public attention on apparently minor health issues. The US president frequently casts himself as more energetic and fitter than Joe Biden, his Democratic predecessor who left office last year at age 82 after facing questions about his fitness for the job. Continue reading...",
-      "publishedAtUtc": "2026-05-26T11:53:37Z",
+      "title": "Inequalities in health are the result of where you’re born, live, work and grow old | Letter",
+      "link": "https://www.theguardian.com/society/2026/may/26/inequalities-in-health-are-the-result-of-where-youre-born-live-work-and-grow-old",
+      "summary": "Our life expectancy is not simply our personal responsibility, writes Jennie Popay Having spent several decades as a researcher in the health equity field, I was irritated to see that well-worn, misleading trope about personal responsibility for poor health being given the oxygen of publicity by the Guardian ( At least 80% responsibility for ill health in old age down to individual, study says, 20 May ). The Oxford Longevity Project’s study gave the impression that the main cause of poor health and its unequal distribution is an open question. That is not the case. The weight of evidence accumulated over decades is clear: the primary causes of inequalities in health, driving poorer health for poorer groups, are the material conditions in which people are born, live, work and grow old. It is growing inequalities in access to material resources, power and privilege, not irresponsible behaviours, which have created a 20-year gap in healthy life expectancy between the most and least advantaged groups in the UK. Continue reading...",
+      "publishedAtUtc": "2026-05-26T17:00:54Z",
       "domain": "theguardian.com",
       "score": 72.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Trump completes annual physical after year of public attention to health issues",
+      "link": "https://www.theguardian.com/us-news/2026/may/26/trump-annual-physical-health-issues",
+      "summary": "US president, who turns 80 next month, frequently casts himself as fit but recent photos have added to questions about his health Sign up for the Breaking News US newsletter email Donald Trump, the oldest inaugurated president in US history, completed a physical exam on Tuesday at Walter Reed national military medical center, amid questions around his health. “Everything checked out PERFECTLY,” the US president declared in a social media post. Continue reading...",
+      "publishedAtUtc": "2026-05-26T18:50:41Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Reform UK’s Makerfield candidate appeared to doubt seriousness of Covid on X",
+      "link": "https://www.theguardian.com/politics/2026/may/26/reform-makerfield-byelection-candidate-covid-x",
+      "summary": "Exclusive: Robert Kenyon has been linked to vaccine scepticism and advised a person with the virus to ‘stop having boosters’ The Reform UK candidate in this month’s Makerfield byelection appeared to express doubt over the seriousness of Covid and the efficacy of vaccines for the virus in another tranche of messages unearthed from now-deleted social media posts. Previously seen messages from Robert Kenyon showed him interacting with far-right figures and expressing strong support for Donald Trump. Separately, the broadcaster Carol Vorderman has asked Kenyon to apologise for “disgusting comments” he made about her on X in the past. Continue reading...",
+      "publishedAtUtc": "2026-05-26T18:08:57Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Strep A vaccine gets $140mn backing",
@@ -276,7 +324,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Scotland fans book 20 school buses for games at ‘inaccessible’ US World Cup",
@@ -288,7 +336,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -300,7 +348,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Ebola epidemic spreading rapidly and outpacing containment efforts",
@@ -312,7 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Lethal Ebola virus outbreak triggers urgent international quest for vaccine",
@@ -324,7 +372,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
@@ -336,7 +384,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "WHO chief calls for urgent Ebola action and pandemic preparedness",
@@ -348,7 +396,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Ebola outbreak: ‘Every epidemic begins in a community and ends in a community’",
@@ -360,7 +408,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Australia confirms first diphtheria death amid worst outbreak in decades",
@@ -372,7 +420,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "PCOS name change 'more representative of condition'",
@@ -384,7 +432,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Some A-level papers voided for students after exams leaked online",
@@ -396,7 +444,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Education secretary to ask competition watchdog to review hidden childcare costs",
@@ -408,7 +456,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Eli Lilly to Buy 3 Vaccine Developers",
@@ -420,7 +468,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Threat of Deportations Leads to Risky Childbirth for Haitian Mothers",
@@ -432,7 +480,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "I lost my beloved husband after 35 years, then my sister and my father. Here’s how I rebuilt my old happy self",
@@ -444,19 +492,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Four people killed in Belgium in train and school bus collision",
-      "link": "https://www.theguardian.com/world/2026/may/26/investigation-belgium-train-school-bus-collision-buggenhout-flanders",
-      "summary": "Two children among dead after incident at level crossing near town of Buggenhout in Flanders Europe – latest updates An investigation is under way after four people, including two children, were killed when a school minibus collided with a train in northern Belgium. Five children were injured in the crash at a level crossing near the small town of Buggenhout in Flanders on Tuesday. Continue reading...",
-      "publishedAtUtc": "2026-05-26T12:39:21Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "WHO declares global health emergency on Ebola",
@@ -468,7 +504,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "UK universities warn of cuts for impoverished students if dire funding issues continue",
@@ -480,7 +516,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Australia becomes the 30th country to eliminate trachoma as a public health problem",
@@ -492,7 +528,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
     },
     {
       "title": "Primary schools to lose out as Labour scraps 2012 Olympic legacy sports grant",
@@ -504,6 +540,1014 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Pioneering study aims to find out how repeated blows to head in women’s rugby affects brain",
+      "link": "https://www.theguardian.com/education/2026/may/24/pioneering-study-aims-to-find-out-how-repeated-blows-to-head-in-womens-rugby-affects-brain",
+      "summary": "Risk of CTE in men’s sports has been widely studied, but female brains are softer and more vulnerable Cleo Pallister-Turley, a forward for Cardiff university’s women’s rugby team, winces as she recalls two major concussions from playing rugby. “Girls ask me, ‘aren’t you worried about getting injured?’,” the biomedical sciences student said. “I enjoy the physicality and the intensity. For me, no other sports compare.” Women’s rugby has enjoyed significant growth in recent years. Women now make up a quarter of players worldwide, according to World Rugby, and more than 400 clubs offer rugby to women and girls around the UK; in the 1990s, only a handful existed. Continue reading...",
+      "publishedAtUtc": "2026-05-24T06:00:49Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "With Ebola, we need to learn from past failures | Letters",
+      "link": "https://www.theguardian.com/world/2026/may/24/with-ebola-we-need-to-learn-from-past-failures",
+      "summary": "Readers respond Devi Sridhar’s call for the world to act now over the outbreak in the Democratic Republic of the Congo Devi Sridhar is right that this Ebola outbreak needs urgent attention ( Ebola in the DRC needs the world’s attention now – if your neighbour’s house is on fire, you don’t wait and watch, 19 May ). Present an engineer with a problem needing a build or fix and you will often hear: “You can have it good, fast or cheap – pick two.” In global outbreak responses, we learn too late every time that we must pick “fast” first. Having worked on the west African Ebola outbreak in 2014-16 and on smaller Ebola responses in the Democratic Republic of the Congo in 2018-2020, I have seen the same failure pattern repeat. We think too long before going in, despite knowing what is needed, and we overestimate the complexity of what must be accomplished. Continue reading...",
+      "publishedAtUtc": "2026-05-24T15:38:06Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "WHO’s response to hantavirus cases linked to a cruise ship",
+      "link": "https://www.who.int/news/item/07-05-2026-who-s-response-to-hantavirus-cases-linked-to-a-cruise-ship",
+      "summary": "Dr Tedros Adhanom Ghebreyesus, WHO Director-General, briefed media today on a cluster of hantavirus cases linked to a cruise ship, the MV Hondius. Eight cases have been reported so far, including three deaths. Five of the 8 cases have been confirmed as hantavirus. The hantavirus involved is the Andes virus, the only species known to be capable of limited transmission between humans, linked to close and prolonged contact. Describing the situation, Dr Tedros said, &ldquo;While this is a serious incident, WHO assesses the public health risk as low.&rdquo; He noted that given the incubation period, &ldquo;it&rsquo;s possible that more cases may be reported.&rdquo; WHO is coordinating closely with multiple countries under the International Health Regulations or IHR, rules that define the rights and obligations of countries and WHO in responding to public health events. This event demonstrates why the IHR exist, demonstrating the importance of global cooperation and solidarity in responding to health threats that know no borders. &ldquo;Our priorities are to ensure the affected patients receive care, that the remaining passengers on the ship are kept safe and treated with dignity, and to prevent any further spread of the virus,&rdquo; Dr Tedros said. WHO has taken a number of actions since it was notified of the situation on Saturday, 2 May 2026. The latest of these include deploying an expert on board the ship, to support a comprehensive medical assessment of all passengers and crew, while gathering critical information to evaluate their risk of infection. WHO has arranged for the shipment of 2500 diagnostic kits from Argentina to laboratories in five countries to strengthen testing capacity. The Organization is also developing step-by-step operational guidance for the safe and respectful disembarkation and onward travel of passengers and crew when they arrive. Watch the full press conference &nbsp;",
+      "publishedAtUtc": "2026-05-07T17:21:37Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "U.S. Ebola Travel Ban Faces Criticism From Congo Health Officials",
+      "link": "https://www.nytimes.com/2026/05/23/world/africa/ebola-outbreak-congo-shrug.html",
+      "summary": "Kinshasa residents continue to pack markets, bars and public transportation, despite growing international concern about the spread of the virus.",
+      "publishedAtUtc": "2026-05-23T19:46:08Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "NHS spends record £241m outsourcing scan analysis to private firms",
+      "link": "https://www.theguardian.com/society/2026/may/25/nhs-spends-record-241m-outsourcing-scan-analysis-to-private-firms",
+      "summary": "Radiologists say ‘ballooning’ costs reflect staffing failures, forcing a reliance on lower-quality private scan reports The NHS is paying private firms record sums to analyse diagnostic scans because hospitals are too busy and understaffed to do the work themselves, research has revealed. The amount being spent on outsourced the interpretation of CT and MRI scans is “spiralling out of control” and reflects a short-sighted failure to train enough doctors, ministers are being told. Continue reading...",
+      "publishedAtUtc": "2026-05-25T07:00:19Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Algeria eliminates trachoma as a public health problem",
+      "link": "https://www.who.int/news/item/23-04-2026-algeria-eliminates-trachoma-as-a-public-health-problem",
+      "summary": "The World Health Organization (WHO) has validated Algeria as having eliminated trachoma as a public health problem, making it the 10th country in WHO’s African Region and the 29th country globally to achieve this significant milestone.",
+      "publishedAtUtc": "2026-04-23T10:46:17Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh",
+      "link": "https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html",
+      "summary": "The outbreak, with more than 8,000 confirmed cases and another 60,000 suspected infections, has prompted an emergency vaccination drive.",
+      "publishedAtUtc": "2026-05-22T10:12:38Z",
+      "domain": "nytimes.com",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "White House pauses removal of detainees to DRC as Ebola outbreak widens",
+      "link": "https://www.theguardian.com/world/2026/may/23/white-house-pauses-detainee-removal-drc-ebola",
+      "summary": "But Trump administration will not return detainees deported to third countries in disease-stricken region The Trump administration will temporarily pause the removal of refugees to the Democratic Republic of the Congo (DRC) during a spiraling Ebola outbreak, according to reporting by Politico, but experts say the move won’t help prevent the spread of the disease. At least one woman is now in limbo after officials moved her to Kinshasa, the capital of the DRC, and now say they won’t bring her back because of the Ebola travel ban – despite a judge’s order for her return. Continue reading...",
+      "publishedAtUtc": "2026-05-23T14:33:05Z",
+      "domain": "theguardian.com",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "One-and-Done Heart Disease Prevention? Scientists Show It May Be Possible.",
+      "link": "https://www.nytimes.com/2026/05/25/health/cholesterol-ldl-gene-therapy.html",
+      "summary": "A single infusion of an experimental gene-editing drug seemed to reduce LDL long-term in a small trial. The results may point to something “curative,” one expert said.",
+      "publishedAtUtc": "2026-05-25T12:45:05Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "How Wine, Truffles and Honey Could Help Europe Fight Wildfires",
+      "link": "https://www.nytimes.com/2026/05/25/world/europe/wine-truffles-firefighting-climate-change.html",
+      "summary": "Countries are learning that the finer things in life sometimes have a serendipitous side benefit.",
+      "publishedAtUtc": "2026-05-25T16:12:34Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "‘Massive’ child abuse scandal in France as school staff investigated for violence and sexual assault",
+      "link": "https://www.theguardian.com/world/2026/may/25/massive-child-abuse-scandal-in-france-as-school-staff-investigated-for-violence-and-sexual-assault",
+      "summary": "Paris police looking into more than 100 allegations of mistreatment by ‘monitors’ after parents’ groups said they had fought for years to be taken seriously France is facing a child abuse scandal as ‘monitors’ at dozens of state nursery and primary schools are investigated for violence, sexual assault and rape. Paris police are examining more than 100 allegations of mistreatment, physical violence and rape of children as young as three by school monitors during lunch breaks, nap times and after-school activities, prosecutors have confirmed. Continue reading...",
+      "publishedAtUtc": "2026-05-25T05:00:18Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "I avoid AI tools because thinking is supposed to be hard. It’s what makes us human | Wendy Liu",
+      "link": "https://www.theguardian.com/commentisfree/2026/may/24/ai-tools-thinking-human-hard-coding-writing-technology",
+      "summary": "As intelligence itself becomes privatised by big tech, allowing your intellectual faculties to wither in service of inane bots seems a dangerous move Long before the age of multi-billion-dollar AI companies promising to disrupt the field of software development, I was learning to code the hard way. It was the mid-2000s, and I was a child with unmonitored access to the family computer. With the help of a basic text editor program, I learned how to make websites – first basic, then increasingly complex – from scratch. The results were never as beautiful or polished as in my imagination, but I could live with that, because I was learning a craft. The painstaking hours of debugging and poring over arcane documentation for projects that I eventually abandoned never felt wasted. Continue reading...",
+      "publishedAtUtc": "2026-05-24T07:00:50Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Key facts to counter online misinformation about perimenopause",
+      "link": "https://www.theguardian.com/society/2026/may/25/counter-online-misinformation-perimenopause-contraception",
+      "summary": "Experts say some social media advice could obscure underlying health problems or create risk of unintended pregnancies A growing number of women are seeing misleading information about perimenopause on social media – prompting concerns that some could be led to false conclusions that obscure real underlying health difficulties or even create the risk of unintended pregnancies. Here are some of the key facts behind the problem. Continue reading...",
+      "publishedAtUtc": "2026-05-25T09:00:21Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
+      "link": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
+      "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
+      "publishedAtUtc": "2026-05-14T13:27:15Z",
+      "domain": "who.int",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Tunisia validated by WHO as having eliminated trachoma as a public health problem",
+      "link": "https://www.who.int/news/item/14-05-2026-tunisia-validated-by-who-as-having-eliminated-trachoma-as-a-public-health-problem",
+      "summary": "Tunisia has been officially validated by the World Health Organization (WHO) as having eliminated trachoma as a public health problem, marking a significant achievement after decades of sustained effort.",
+      "publishedAtUtc": "2026-05-14T09:23:04Z",
+      "domain": "who.int",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "WHO Member States agree to extend negotiations on Pathogen Access and Benefit Sharing annex",
+      "link": "https://www.who.int/news/item/01-05-2026-who-member-states-agree-to-extend-negotiations-on-pathogen-access-and-benefit-sharing-annex",
+      "summary": "Member States of the World Health Organization (WHO) have progressed work on the Pathogen Access and Benefit Sharing (PABS) annex, a key part of the WHO Pandemic Agreement, and today agreed additional time was needed to finalize the framework for ensuring a better, more equitable, response to future pandemics. Countries today ended the resumed session of the sixth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement in Geneva, focused on the PABS system. The outcome of this work will be presented to the Seventy-ninth World Health Assembly (WHA) later this month. Given the need for further negotiations, the Assembly will be asked to consider continuing IGWG&rsquo;s work as mandated in Resolution WHA78.1 and submit the outcome to the next Assembly in May 2027, or earlier by a special session of WHA in 2026. &ldquo;Real progress was made on the PABS annex and I am confident through continued negotiations differences will be overcome,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Member States should continue approaching the outstanding issues with a sense of urgency because the next pandemic is a matter of when, not if. The PABS annex is the last piece of the puzzle not only for the Pandemic Agreement but all initiatives that WHO and Member States have implemented as a result of lessons learned from the COVID-19 pandemic.&rdquo; The PABS system is intended to ensure, on equal footing, the rapid sharing of pathogens with pandemic potential and the fair and equitable sharing of benefits arising from their use, such as vaccines, diagnostics and therapeutics. Finalizing the PABS Annex is necessary so countries can proceed with signature and ratification of the Pandemic Agreement. &ldquo;Finalizing a document of such technical and legal complexity requires precision and dedication, both of which the Member States have demonstrated in full,&rdquo; said IGWG Bureau Co-Chair Ambassador Tovar da Silva Nunes of Brazil. &ldquo;We are not there yet, but with an extension of our negotiations, we will get there.&rdquo; IGWG Co-Chair Mr Matthew Harpur said: &ldquo;WHO Member States have demonstrated strong and continuing commitment to negotiations on a Pathogen Access and Benefit Sharing system annex. The IGWG Bureau is confident we are moving in the right direction to finalize the PABS annex, and in doing so provide the WHO Pandemic Agreement with the framework needed to ensure countries are better, and more equitably, prepared and protected for the next pandemic.&rdquo; The IGWG will hold its seventh meeting from 6 to 17 July 2026. In May 2025, the World Health Assembly adopted the WHO Pandemic Agreement to strengthen how countries prevent, prepare for, and respond to pandemics. It also established an open-ended Intergovernmental Working Group (IGWG) to carry out key tasks, including drafting and negotiating the PABS system. &nbsp; &nbsp;",
+      "publishedAtUtc": "2026-05-01T16:52:42Z",
+      "domain": "who.int",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Trump Officials’ Strict Stand on Ebola Leaves Health Experts ‘Stunned’",
+      "link": "https://www.nytimes.com/2026/05/21/us/hantavirus-ebola-quarantine-trump.html",
+      "summary": "Public health experts say the administration’s quarantine orders go beyond what is needed to prevent the U.S. spread of Ebola and hantavirus.",
+      "publishedAtUtc": "2026-05-22T00:22:27Z",
+      "domain": "nytimes.com",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Struggling with the nine times table? I have a failsafe method | Adrian Chiles",
+      "link": "https://www.theguardian.com/commentisfree/2026/may/21/struggling-with-the-nine-times-table-i-have-a-failsafe-method",
+      "summary": "Apparently, nines are the hardest to grasp for primary school children. If only they’d learned how to cheat like me Maths was never my thing. I quite enjoyed it at O-level, to the extent that I chose to do it at A-level. As early as the first week of the A-level course, however, it became abundantly clear that the subject was quite beyond me. I simply couldn’t make head or tail of what the teacher was on about. Looking around at the rest of the class quietly getting on with it, I remember wondering if there had been some primer course over the summer that everyone but me had attended. I just didn’t get it. There didn’t seem to be any certainties any more, rarely anything so straightforward as a right or wrong answer. There were enough grey areas in my other subjects – English and history. From my maths I wanted certainty, objective truth, which as far as I could see wasn’t part of it any more. Continue reading...",
+      "publishedAtUtc": "2026-05-21T10:00:07Z",
+      "domain": "theguardian.com",
+      "score": 61.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Global health gains face threat of reversal",
+      "link": "https://www.who.int/news/item/13-05-2026-global-health-gains-face-threat-of-reversal",
+      "summary": "The world is falling short on health targets, with progress uneven, slowing, and in some areas reversing, according to the World Health Statistics 2026 report, published today by the World Health Organization (WHO).",
+      "publishedAtUtc": "2026-05-13T13:02:54Z",
+      "domain": "who.int",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola risk ‘very high’ in eastern DR Congo as UN intensifies response",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167575",
+      "summary": "The UN is rushing emergency personnel, funding and supplies into eastern Democratic Republic of the Congo (DRC) to counter the fast-growing Ebola outbreak spreading through conflict-ravaged provinces.",
+      "publishedAtUtc": "2026-05-22T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "U.S. Adds Security Measures at Dulles to Receive Citizens Who Have Been in Ebola Outbreak Region",
+      "link": "https://www.nytimes.com/2026/05/21/us/politics/us-entry-restrictions-ebola-outbreak.html",
+      "summary": "The Department of Homeland Security directed all flights carrying certain travelers to arrive at Dulles International Airport in Virginia.",
+      "publishedAtUtc": "2026-05-21T18:52:38Z",
+      "domain": "nytimes.com",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola Crisis Sparks Debate Over Global Health Double Standards",
+      "link": "https://www.nytimes.com/2026/05/20/world/africa/ebola-virus-outbreak-africa.html",
+      "summary": "To some Africans, the claim that the continent’s largest health agency had already bungled its response scratched a familiar wound.",
+      "publishedAtUtc": "2026-05-20T21:14:29Z",
+      "domain": "nytimes.com",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Weather tracker: Heavy rain triggers flooding and landslides in parts of China",
+      "link": "https://www.theguardian.com/environment/2026/may/22/slow-moving-bands-heavy-rain-flooding-landslides-china",
+      "summary": "Twelve dead as southern and central areas also suffer travel disruption, electricity outages and evacuations Heavy, prolonged rainfall in southern and central China has resulted in weather warnings for flash flooding, landslides and waterlogging. The slow-moving band of rainfall spanned 620 miles (1,000km) and travelled eastwards across the regions on Tuesday. It was formed from the convergence of multiple bands of rain originating from the Bay of Bengal, South China Sea and Pacific Ocean. Given the accompanying low wind speeds, high daily and hourly rainfall totals have been recorded, with as much as 75mm locally in Hunan, 85mm in Anhui in a 24-hour period, and 95mm on the island of Hainan. Twelve people have died because of the flooding and hundreds of residents have been evacuated by emergency services. There were major travel disruptions, electricity outages, as well as school and business closures. Social media posts showed submerged cars and people fishing along flooded streets. Continue reading...",
+      "publishedAtUtc": "2026-05-22T08:04:33Z",
+      "domain": "theguardian.com",
+      "score": 60.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Big Europe and Asian private equity health funds merge to defy AI disruption",
+      "link": "https://www.ft.com/content/4da49f68-6a8d-4e1a-a933-abe10c185ff7",
+      "summary": "Global Healthcare Opportunities and CBC Group say $21bn investment manager will be world’s largest in sector",
+      "publishedAtUtc": "2026-05-20T04:00:33Z",
+      "domain": "ft.com",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Students at risk if universities go bust, say MPs",
+      "link": "https://www.bbc.com/news/articles/ce3p93j3823o?at_medium=RSS&at_campaign=rss",
+      "summary": "An Education Select Committee report finds the government needs to make urgent plans for universities facing insolvency.",
+      "publishedAtUtc": "2026-05-12T00:17:10Z",
+      "domain": "bbc.com",
+      "score": 59.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "University wins record freedom of speech fine challenge",
+      "link": "https://www.bbc.com/news/articles/cp8pnwyy0zjo?at_medium=RSS&at_campaign=rss",
+      "summary": "A record fine had been issued by the Office for Students over the university's trans and non-binary inclusion policy.",
+      "publishedAtUtc": "2026-04-29T16:30:01Z",
+      "domain": "bbc.com",
+      "score": 59.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola raises questions over pandemic preparedness",
+      "link": "https://www.ft.com/content/1c72baba-c2f9-41c8-a159-08f2ddba6a5c",
+      "summary": "Aid cuts and US hostility to concept of global public health endanger us all",
+      "publishedAtUtc": "2026-05-19T16:06:43Z",
+      "domain": "ft.com",
+      "score": 59.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
+      "link": "https://www.who.int/news/item/23-05-2026-seventy-ninth-world-health-assembly---daily-update--23-may-2026",
+      "summary": "Summary of discussions of 23 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-23T12:32:25Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
+      "link": "https://www.who.int/news/item/22-05-2026-seventy-ninth-world-health-assembly-daily-update-22-may-2026",
+      "summary": "Summary of discussions of 22 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-22T19:24:59Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
+      "link": "https://www.who.int/news/item/21-05-2026-seventy-ninth-world-health-assembly---daily-update--21-may-2026",
+      "summary": "Summary of discussions of 21 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-21T20:33:06Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
+      "link": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly---daily-update--20-may-2026",
+      "summary": "Summary of discussions of 20 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-21T19:48:30Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
+      "link": "https://www.who.int/news/item/19-05-2026-seventy-ninth-world-health-assembly---daily-update--19-may-2026",
+      "summary": "Summary of discussions of 19 May at Seventy-ninth World Health Assembly",
+      "publishedAtUtc": "2026-05-20T15:01:32Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Joint call by the President of the ICRC, the Director-General of WHO and the International President of MSF",
+      "link": "https://www.who.int/news/item/04-05-2026-joint-call-by-the-president-of-the-icrc--the-director-general-of-who-and-the-international-president-of-msf",
+      "summary": "Ten years ago, the UN Security Council unanimously adopted Resolution 2286 on health care in armed conflicts. The situation is even worse compared to 10 years ago. Today, we mark not an achievement – we mark a failure. As violence affecting medical facilities, transport and personnel continues unabated, the harm this resolution sought to prevent has not diminished. It has continued and, in many contexts, intensified. As the heads of the International Committee of the Red Cross (ICRC), the World Health Organization (WHO), and Médecins Sans Frontières (MSF), we join others in the international community in issuing an urgent call for action.",
+      "publishedAtUtc": "2026-05-04T06:44:57Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ukraine: UN alarmed by reports of deadly strike on dormitory in occupied Luhansk",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167579",
+      "summary": "The United Nations voiced alarm on Friday over reports of an overnight attack on a vocational school and dormitory in the town of Starobilsk in Ukraine’s Luhansk region which killed and injured multiple civilians, including children.",
+      "publishedAtUtc": "2026-05-22T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 58.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "UN agencies step up Ebola response in eastern DR Congo",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167567",
+      "summary": "United Nations agencies have moved swiftly to support efforts to contain the latest Ebola outbreak in eastern Democratic Republic of the Congo (DRC), delivering emergency medical supplies, protective equipment and logistics support.",
+      "publishedAtUtc": "2026-05-21T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola risk raised to 'very high' in DR Congo",
+      "link": "https://www.bbc.com/news/articles/cr7p30m1dn1o?at_medium=RSS&at_campaign=rss",
+      "summary": "The head of the UN health agency says the risk in the wider region is \"high\", but it remains \"low\" at the global level.",
+      "publishedAtUtc": "2026-05-22T16:23:08Z",
+      "domain": "bbc.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Gonorrhoea and syphilis hit record levels in Europe",
+      "link": "https://www.bbc.com/news/articles/cm2pj07dr7lo?at_medium=RSS&at_campaign=rss",
+      "summary": "STIs have surged thanks to record cases and gaps in testing and prevention, a health agency reports.",
+      "publishedAtUtc": "2026-05-21T12:19:15Z",
+      "domain": "bbc.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola outbreak may be spreading faster than first thought, WHO doctor warns",
+      "link": "https://www.bbc.com/news/articles/ceqp11gn1l8o?at_medium=RSS&at_campaign=rss",
+      "summary": "Hundreds of cases are suspected in central Africa but experts fear the actual number may be much higher.",
+      "publishedAtUtc": "2026-05-19T19:32:22Z",
+      "domain": "bbc.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "5 Takeaways From a Times Investigation on Autism Therapy Clinics",
+      "link": "https://www.nytimes.com/2026/05/23/health/autisim-clinics-investigation.html",
+      "summary": "A rapidly growing industry often overprescribes treatment to young children with autism, who spend as many as 40 hours a week at the facilities.",
+      "publishedAtUtc": "2026-05-23T09:00:44Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "25 States Sue Over Changes Limiting Federal Loans for Nursing Degrees",
+      "link": "https://www.nytimes.com/2026/05/19/us/politics/nursing-loans.html",
+      "summary": "Governors and attorneys general from the states and District of Columbia argue the Education Department’s decision not to label nursing as a professional degree will contribute to worker shortages.",
+      "publishedAtUtc": "2026-05-20T22:40:35Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola spread for weeks before DR Congo raised alarm",
+      "link": "https://www.ft.com/content/216f04f8-a9f7-4659-8523-4411f2a563da",
+      "summary": "Reporting breakdown and weak health systems in conflict-hit country allowed virus to go undetected",
+      "publishedAtUtc": "2026-05-21T04:00:32Z",
+      "domain": "ft.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "'New cancer test makes me feel women's health matters'",
+      "link": "https://www.bbc.com/news/articles/ckgp0gedjk3o?at_medium=RSS&at_campaign=rss",
+      "summary": "A patient praises a new test for womb cancer being trialled at hospitals in Suffolk and Essex.",
+      "publishedAtUtc": "2026-05-17T05:37:49Z",
+      "domain": "bbc.com",
+      "score": 57.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Teachers in England to vote on striking over pay",
+      "link": "https://www.bbc.com/news/articles/crlpdgxe317o?at_medium=RSS&at_campaign=rss",
+      "summary": "The National Education Union says it will hold a formal ballot this autumn without \"urgent action\".",
+      "publishedAtUtc": "2026-05-09T18:14:57Z",
+      "domain": "bbc.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Calls for clarity over schools smartphone ban",
+      "link": "https://www.bbc.com/news/articles/cgrlvxqkwg8o?at_medium=RSS&at_campaign=rss",
+      "summary": "Minister plan to ban smartphones in English schools, but headteachers and campaigners have called for more direction on how to enforce it.",
+      "publishedAtUtc": "2026-04-22T15:34:26Z",
+      "domain": "bbc.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Phones to be banned in schools by law in England under government plans",
+      "link": "https://www.bbc.com/news/articles/c5y7vd6gpq1o?at_medium=RSS&at_campaign=rss",
+      "summary": "Education minister Jacqui Smith said the move would create \"a clear legal requirement for schools\".",
+      "publishedAtUtc": "2026-04-21T07:33:19Z",
+      "domain": "bbc.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Revise, recall, then rest - your exam season survival guide",
+      "link": "https://www.bbc.com/news/articles/c1j2lw5r24jo?at_medium=RSS&at_campaign=rss",
+      "summary": "Teachers and tutors share tips for students to get through exam season.",
+      "publishedAtUtc": "2026-05-01T23:06:00Z",
+      "domain": "bbc.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
+      "link": "https://www.who.int/news/item/15-05-2026-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-surge",
+      "summary": "The World Health Organization (WHO) warns about the rapid growth and aggressive marketing of nicotine pouches, especially targeting youth, amid limited regulation worldwide. Nicotine pouches pose significant health risks and governments are urged to implement strong regulatory measures to prevent addiction and protect young people.",
+      "publishedAtUtc": "2026-05-14T17:26:02Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Gaza: Life-saving medicines blocked as killing continues, disease gains ground",
+      "link": "https://news.un.org/feed/view/en/story/2026/05/1167572",
+      "summary": "Dire conditions in Gaza marked by continuing violence, rodent infestations and the spread of infectious disease are being made worse by blockages of essential medical supplies, UN agencies warned on Friday.",
+      "publishedAtUtc": "2026-05-22T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "UK scientists developing Ebola vaccine that could be ready for trials in months",
+      "link": "https://www.bbc.com/news/articles/cy82gkr7xzlo?at_medium=RSS&at_campaign=rss",
+      "summary": "The rare species of Ebola involved - known as Bundibugyo - kills around a third of those infected and has no proven vaccine yet.",
+      "publishedAtUtc": "2026-05-22T15:03:51Z",
+      "domain": "bbc.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "'I used to be the shy kid'",
+      "link": "https://www.bbc.com/news/videos/cp9pje2zprvo?at_medium=RSS&at_campaign=rss",
+      "summary": "Tyler West opens up about his experience of school on Sort Your Life Out Unpacked.",
+      "publishedAtUtc": "2026-05-21T13:01:11Z",
+      "domain": "bbc.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "What you need to know about latest meningitis cluster",
+      "link": "https://www.bbc.com/news/videos/cvgz1pl3x73o?at_medium=RSS&at_campaign=rss",
+      "summary": "After a fourth case of meningitis B has been confirmed in Reading, BBC South's health correspondent Alastair Fee shares what you need to know.",
+      "publishedAtUtc": "2026-05-20T18:25:45Z",
+      "domain": "bbc.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "2 Minnesota Autism Therapy Providers Charged in $46 Million Medicaid Fraud Case",
+      "link": "https://www.nytimes.com/2026/05/21/us/politics/medicaid-fraud-minnesota-autism.html",
+      "summary": "The Justice Department claims that clinics used fake diagnoses and kickbacks to parents to bring children into treatment.",
+      "publishedAtUtc": "2026-05-22T01:25:24Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Ebola Containment Efforts May Have Been Hindered by USAID Shutdown and CDC Cuts",
+      "link": "https://www.nytimes.com/2026/05/20/health/ebola-congo-united-states-trump.html",
+      "summary": "Aid cuts by the Trump administration have shut down crucial disease surveillance networks and medical supply chains in East Africa.",
+      "publishedAtUtc": "2026-05-20T20:43:47Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "On the Ground in South Sudan: Why Akobo Faces an Ebola Risk",
+      "link": "https://www.nytimes.com/2026/05/22/world/africa/ebola-south-sudan-congo.html",
+      "summary": "Hunger and conflict are on the minds of the residents of Akobo, where an outbreak could have devastating consequences.",
+      "publishedAtUtc": "2026-05-22T14:30:42Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Trump Administration Offers Conflicting View of Civil Rights Cuts",
+      "link": "https://www.nytimes.com/2026/05/22/us/politics/mcmahon-education-cuts.html",
+      "summary": "Education Secretary Linda McMahon has said she wants to hire more civil rights lawyers, but the White House has proposed cutting that office in half.",
+      "publishedAtUtc": "2026-05-22T20:53:52Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Meta Settles a School District’s Social Media Addiction Lawsuit",
+      "link": "https://www.nytimes.com/2026/05/21/technology/meta-settlement-social-media-addiction-lawsuit.html",
+      "summary": "Snap, TikTok and YouTube had already settled with the Kentucky district, allowing the companies to avert the first in a series of federal trials.",
+      "publishedAtUtc": "2026-05-21T20:21:02Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "2 Florida College Students Suspended Over Racist Group Chat",
+      "link": "https://www.nytimes.com/2026/05/21/us/florida-students-racist-group-chat-fiu.html",
+      "summary": "The students held leadership positions in Republican groups. The racist rhetoric, documented in court papers, highlights a growing rift in the party.",
+      "publishedAtUtc": "2026-05-21T17:30:46Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "School Choice Is Creating Two Separate School Systems",
+      "link": "https://www.nytimes.com/2026/05/20/headway/school-choice-movement-vouchers-education.html",
+      "summary": "Plus, plans for a national voucher program.",
+      "publishedAtUtc": "2026-05-20T18:06:42Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "‘Canada is handing people over to ICE’: refugees rejected at border face US detention",
+      "link": "https://www.theguardian.com/world/2026/may/23/canadians-refugees-rejected-face-ice-detention",
+      "summary": "As Canada tightens asylum rules, refugees reuniting with family say they were turned over to ICE and jailed for months after failed border claims As each day in US detention passes, Markens Appolon can feel the life he had dreamed of slipping away. The 25-year-old fled Haiti to escape the rampant gang violence that upended his university studies in economics, and planned to join family in Montreal. Continue reading...",
+      "publishedAtUtc": "2026-05-23T11:00:28Z",
+      "domain": "theguardian.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Britons use overseas clinics to pick babies’ sex",
+      "link": "https://www.ft.com/content/9cdbc15d-fc74-45f4-82f3-81f501d81513",
+      "summary": "Fertility clinics say growing number of people travelling abroad for embryo screening procedures banned in UK",
+      "publishedAtUtc": "2026-05-20T04:00:12Z",
+      "domain": "ft.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Who is James Murray, the new health secretary replacing Wes Streeting?",
+      "link": "https://www.bbc.com/news/articles/c2e2jr01ejno?at_medium=RSS&at_campaign=rss",
+      "summary": "What are the most pressing priorities for the new minister in charge of health?",
+      "publishedAtUtc": "2026-05-15T13:55:54Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Potential new treatment for pre-eclampsia",
+      "link": "https://www.bbc.com/news/videos/c3r27w78drdo?at_medium=RSS&at_campaign=rss",
+      "summary": "Pre-eclampsia causes more than 70,000 maternal deaths every year worldwide",
+      "publishedAtUtc": "2026-05-19T15:07:19Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Bird flu vaccine trial against potential pandemic strain begins",
+      "link": "https://www.bbc.com/news/articles/cy41z0yj8mjo?at_medium=RSS&at_campaign=rss",
+      "summary": "The jab targets the H5N1 flu strain which has caused devastating infections in bird populations worldwide, but has yet to spread between humans.",
+      "publishedAtUtc": "2026-04-21T23:00:08Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Rollout of Covid vaccines extraordinary feat - inquiry report",
+      "link": "https://www.bbc.com/news/articles/cp8dpjx1yvmo?at_medium=RSS&at_campaign=rss",
+      "summary": "Covid vaccines saved hundreds of thousands of lives, but a small minority harmed need better support, says report.",
+      "publishedAtUtc": "2026-04-16T14:39:07Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Vaccines a huge success, but public trust must be earned - key findings from Covid report",
+      "link": "https://www.bbc.com/news/articles/ce3dp52l70zo?at_medium=RSS&at_campaign=rss",
+      "summary": "Immunisation saved hundreds of thousands of UK lives, but vaccine hesitancy remains an issue.",
+      "publishedAtUtc": "2026-04-16T13:02:12Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "What is the UK Covid inquiry and how does it work?",
+      "link": "https://www.bbc.com/news/articles/cdr3kx6xmp5o?at_medium=RSS&at_campaign=rss",
+      "summary": "The fourth report from the inquiry into the pandemic said the vaccine roll-out was an \"extraordinary feat\".",
+      "publishedAtUtc": "2026-04-16T11:20:11Z",
+      "domain": "bbc.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "'We're right on track,' says Streeting as key target for hospital waiting times hit",
+      "link": "https://www.bbc.com/news/articles/cvgzv0j19vvo?at_medium=RSS&at_campaign=rss",
+      "summary": "Government his its interim target of 65% of patients in England being treated within 18 weeks.",
+      "publishedAtUtc": "2026-05-14T14:26:20Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Posh sandwich has more salt than nearly five cheeseburgers",
+      "link": "https://www.bbc.com/news/articles/c4g4l54g2ppo?at_medium=RSS&at_campaign=rss",
+      "summary": "Action on Salt & Sugar said people should not be exposed to a \"hidden health risk every time they buy lunch\".",
+      "publishedAtUtc": "2026-05-13T10:57:35Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "I tried the UK's 'saltiest' sandwich - here's what I learned",
+      "link": "https://www.bbc.com/news/articles/cd9pylq25y9o?at_medium=RSS&at_campaign=rss",
+      "summary": "Health correspondent James Gallagher absorbs more than the recommended daily limit in just one meal to find out how salt affects our bodies.",
+      "publishedAtUtc": "2026-05-15T23:56:15Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Should you really trust health advice from an AI chatbot?",
+      "link": "https://www.bbc.com/news/articles/clyepyy82kxo?at_medium=RSS&at_campaign=rss",
+      "summary": "Abi has had very mixed results when asking a chatbot for guidance about her health issues.",
+      "publishedAtUtc": "2026-04-18T23:04:43Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "What are the symptoms of meningitis and is there a vaccine?",
+      "link": "https://www.bbc.com/news/articles/c7432klgyldo?at_medium=RSS&at_campaign=rss",
+      "summary": "A college student has died and two people are being treated after cases of meningitis in Reading, Berkshire.",
+      "publishedAtUtc": "2026-05-15T09:59:31Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Researchers look into island's health benefits",
+      "link": "https://www.bbc.com/news/articles/c5yvpr21mnno?at_medium=RSS&at_campaign=rss",
+      "summary": "The team aims to find out what it is about the Isle of Wight that makes people feel better.",
+      "publishedAtUtc": "2026-04-08T05:11:23Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Doctors' strikes can have surprising benefits - but are they sustainable?",
+      "link": "https://www.bbc.com/news/articles/cp3l2pygnlyo?at_medium=RSS&at_campaign=rss",
+      "summary": "Some hospital trusts tell the BBC previous action has seen shorter waits, faster decisions and calmer corridors.",
+      "publishedAtUtc": "2026-04-13T23:06:45Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Hospitals coping well with doctors' strike so far - NHS boss",
+      "link": "https://www.bbc.com/news/articles/clyrzrp0x5go?at_medium=RSS&at_campaign=rss",
+      "summary": "Resident doctors in England – the new name for junior doctors – are taking part in their 15th walkout in a long-running pay dispute.",
+      "publishedAtUtc": "2026-04-08T10:56:27Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "'Huge relief' as students given loans 'in error' get repayment reprieve",
+      "link": "https://www.bbc.com/news/articles/c0e7jjwzn7eo?at_medium=RSS&at_campaign=rss",
+      "summary": "Approximately 22,000 weekend students had been told their courses were never eligible for student finance.",
+      "publishedAtUtc": "2026-04-20T16:07:01Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "New university free speech complaints system to come into force this year",
+      "link": "https://www.bbc.com/news/articles/cm29dngvjqeo?at_medium=RSS&at_campaign=rss",
+      "summary": "Universities could face fines of £500,000 or 2% of their income if they are found to have failed to protect free speech.",
+      "publishedAtUtc": "2026-04-19T23:06:13Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "What is Ofsted and how does the new school ratings system work?",
+      "link": "https://www.bbc.com/news/articles/cz0xe4zmpeyo?at_medium=RSS&at_campaign=rss",
+      "summary": "The rating system changed after the death of head Ruth Perry highlighted the pressure of inspections.",
+      "publishedAtUtc": "2026-04-30T13:20:01Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "The Guardian University Guide 2026 – the rankings",
+      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
+      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
+      "publishedAtUtc": "2025-09-13T07:01:01Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
+      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
+      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
+      "publishedAtUtc": "2026-04-19T10:00:39Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
+      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
+      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
+      "publishedAtUtc": "2026-04-17T07:00:24Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "The women ‘cycle syncing’ their workflow",
+      "link": "https://www.ft.com/content/c67a5cae-1a1f-4491-b8ed-753125e1b650",
+      "summary": "Menstrual health awareness is prompting some workers to optimise creative, social or focused tasks around their hormones",
+      "publishedAtUtc": "2026-05-19T10:30:09Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Patagonia shares lessons on what it learned from hantavirus",
+      "link": "https://www.ft.com/content/e34361e4-8929-44a5-9bf0-254d0f7c67cd",
+      "summary": "Region where passengers may have caught rat-borne virus tightened controls after 2018 outbreak in Argentina",
+      "publishedAtUtc": "2026-05-17T13:40:11Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "How architecture can save lives",
+      "link": "https://www.ft.com/content/201f77ec-53af-4af8-ab46-8a4fecbc70af",
+      "summary": "Carefully designed homes in Tanzania have been shown to lower disease rates among children",
+      "publishedAtUtc": "2026-05-12T16:55:44Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-05-26T19:30:19.203282Z"
+    },
+    {
+      "title": "Four people killed in Belgium in train and school bus collision",
+      "link": "https://www.theguardian.com/world/2026/may/26/investigation-belgium-train-school-bus-collision-buggenhout-flanders",
+      "summary": "Two children among dead after incident at level crossing near town of Buggenhout in Flanders Europe – latest updates An investigation is under way after four people, including two children, were killed when a school minibus collided with a train in northern Belgium. Five children were injured in the crash at a level crossing near the small town of Buggenhout in Flanders on Tuesday. Continue reading...",
+      "publishedAtUtc": "2026-05-26T12:39:21Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
     },
     {
@@ -519,30 +1563,6 @@
       "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
     },
     {
-      "title": "Short Naps, Long Hours: How Autism Clinics Squeeze Medicaid Dollars Out of Preschoolers",
-      "link": "https://www.nytimes.com/2026/05/23/health/autism-therapy-clinics.html",
-      "summary": "The industry has grown rapidly, straining state budgets. A focus on finances has led to overbilling, fraud and even harm.",
-      "publishedAtUtc": "2026-05-23T09:00:16Z",
-      "domain": "nytimes.com",
-      "score": 67.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Pioneering study aims to find out how repeated blows to head in women’s rugby affects brain",
-      "link": "https://www.theguardian.com/education/2026/may/24/pioneering-study-aims-to-find-out-how-repeated-blows-to-head-in-womens-rugby-affects-brain",
-      "summary": "Risk of CTE in men’s sports has been widely studied, but female brains are softer and more vulnerable Cleo Pallister-Turley, a forward for Cardiff university’s women’s rugby team, winces as she recalls two major concussions from playing rugby. “Girls ask me, ‘aren’t you worried about getting injured?’,” the biomedical sciences student said. “I enjoy the physicality and the intensity. For me, no other sports compare.” Women’s rugby has enjoyed significant growth in recent years. Women now make up a quarter of players worldwide, according to World Rugby, and more than 400 clubs offer rugby to women and girls around the UK; in the 1990s, only a handful existed. Continue reading...",
-      "publishedAtUtc": "2026-05-24T06:00:49Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
       "title": "Soft power sell-off: anger as British Council announces sale of historic Madrid building",
       "link": "https://www.theguardian.com/politics/2026/may/22/soft-power-sell-off-anger-british-council-sale-historic-madrid-building",
       "summary": "Backlash grows among European staff against radical cuts to pay off Covid-era debt, with some accusing council of ‘colonial attitude’ The historic Palacete building at 31 Paseo del General Martínez Campos in Madrid’s upmarket Chamberí district has been home to the British Council in Spain for about 70 years. About 5,000 students each year pass through its 35 classrooms, learning English, attending exams, and forging cultural ties with the UK. Over the years that is hundreds of thousands of Madrileños (people from Madrid), while it also serves as a centre for the expat community. Continue reading...",
@@ -555,42 +1575,6 @@
       "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
     },
     {
-      "title": "With Ebola, we need to learn from past failures | Letters",
-      "link": "https://www.theguardian.com/world/2026/may/24/with-ebola-we-need-to-learn-from-past-failures",
-      "summary": "Readers respond Devi Sridhar’s call for the world to act now over the outbreak in the Democratic Republic of the Congo Devi Sridhar is right that this Ebola outbreak needs urgent attention ( Ebola in the DRC needs the world’s attention now – if your neighbour’s house is on fire, you don’t wait and watch, 19 May ). Present an engineer with a problem needing a build or fix and you will often hear: “You can have it good, fast or cheap – pick two.” In global outbreak responses, we learn too late every time that we must pick “fast” first. Having worked on the west African Ebola outbreak in 2014-16 and on smaller Ebola responses in the Democratic Republic of the Congo in 2018-2020, I have seen the same failure pattern repeat. We think too long before going in, despite knowing what is needed, and we overestimate the complexity of what must be accomplished. Continue reading...",
-      "publishedAtUtc": "2026-05-24T15:38:06Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "WHO’s response to hantavirus cases linked to a cruise ship",
-      "link": "https://www.who.int/news/item/07-05-2026-who-s-response-to-hantavirus-cases-linked-to-a-cruise-ship",
-      "summary": "Dr Tedros Adhanom Ghebreyesus, WHO Director-General, briefed media today on a cluster of hantavirus cases linked to a cruise ship, the MV Hondius. Eight cases have been reported so far, including three deaths. Five of the 8 cases have been confirmed as hantavirus. The hantavirus involved is the Andes virus, the only species known to be capable of limited transmission between humans, linked to close and prolonged contact. Describing the situation, Dr Tedros said, &ldquo;While this is a serious incident, WHO assesses the public health risk as low.&rdquo; He noted that given the incubation period, &ldquo;it&rsquo;s possible that more cases may be reported.&rdquo; WHO is coordinating closely with multiple countries under the International Health Regulations or IHR, rules that define the rights and obligations of countries and WHO in responding to public health events. This event demonstrates why the IHR exist, demonstrating the importance of global cooperation and solidarity in responding to health threats that know no borders. &ldquo;Our priorities are to ensure the affected patients receive care, that the remaining passengers on the ship are kept safe and treated with dignity, and to prevent any further spread of the virus,&rdquo; Dr Tedros said. WHO has taken a number of actions since it was notified of the situation on Saturday, 2 May 2026. The latest of these include deploying an expert on board the ship, to support a comprehensive medical assessment of all passengers and crew, while gathering critical information to evaluate their risk of infection. WHO has arranged for the shipment of 2500 diagnostic kits from Argentina to laboratories in five countries to strengthen testing capacity. The Organization is also developing step-by-step operational guidance for the safe and respectful disembarkation and onward travel of passengers and crew when they arrive. Watch the full press conference &nbsp;",
-      "publishedAtUtc": "2026-05-07T17:21:37Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "U.S. Ebola Travel Ban Faces Criticism From Congo Health Officials",
-      "link": "https://www.nytimes.com/2026/05/23/world/africa/ebola-outbreak-congo-shrug.html",
-      "summary": "Kinshasa residents continue to pack markets, bars and public transportation, despite growing international concern about the spread of the virus.",
-      "publishedAtUtc": "2026-05-23T19:46:08Z",
-      "domain": "nytimes.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
       "title": "My kids are taking their first big exams – and revealing my own anxieties about AI and long division | Emma Brockes",
       "link": "https://www.theguardian.com/commentisfree/2026/may/07/kids-year-big-exams-anxieties-ai-long-division",
       "summary": "As the traditional route of school, university and entry-level job is ever more precarious, it’s no wonder parents are feeling the strain Called on to do long division, how would you fare? I had no illusions going in. I couldn’t do it the first time round and, four decades later, it seemed unlikely the situation had improved. (For a split second I thought AI might help, but it was like listening to street directions, only worse.) And so, while parents of 11-year-olds offer sympathy and support for their children ahead of year 6 Sats exams next week, let’s not lose sight of the real victims here, which is us parents who have been forced to revisit multi-stage maths problems when we had made large and deliberate life choices to avoid them. Of course, Sats “don’t matter”, or if you’re a more liberal parent, exams as a whole don’t matter – a statement that, if it was a consoling lie at one time, seems to be becoming ever more true. Arguments around the value of testing have been going on for ever, but as AI eviscerates the entry-level job market and university degrees become increasingly expensive and at odds with the skills young people may actually need, you have to wonder whether the old systems of education are still fit for purpose – and if they’re not, what exactly should replace them? Continue reading...",
@@ -600,954 +1584,6 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "NHS spends record £241m outsourcing scan analysis to private firms",
-      "link": "https://www.theguardian.com/society/2026/may/25/nhs-spends-record-241m-outsourcing-scan-analysis-to-private-firms",
-      "summary": "Radiologists say ‘ballooning’ costs reflect staffing failures, forcing a reliance on lower-quality private scan reports The NHS is paying private firms record sums to analyse diagnostic scans because hospitals are too busy and understaffed to do the work themselves, research has revealed. The amount being spent on outsourced the interpretation of CT and MRI scans is “spiralling out of control” and reflects a short-sighted failure to train enough doctors, ministers are being told. Continue reading...",
-      "publishedAtUtc": "2026-05-25T07:00:19Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Algeria eliminates trachoma as a public health problem",
-      "link": "https://www.who.int/news/item/23-04-2026-algeria-eliminates-trachoma-as-a-public-health-problem",
-      "summary": "The World Health Organization (WHO) has validated Algeria as having eliminated trachoma as a public health problem, making it the 10th country in WHO’s African Region and the 29th country globally to achieve this significant milestone.",
-      "publishedAtUtc": "2026-04-23T10:46:17Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Deadly Measles Outbreak Sickens Thousands of Children in Bangladesh",
-      "link": "https://www.nytimes.com/2026/05/22/world/asia/bangladesh-measles-outbreak-vaccines.html",
-      "summary": "The outbreak, with more than 8,000 confirmed cases and another 60,000 suspected infections, has prompted an emergency vaccination drive.",
-      "publishedAtUtc": "2026-05-22T10:12:38Z",
-      "domain": "nytimes.com",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "White House pauses removal of detainees to DRC as Ebola outbreak widens",
-      "link": "https://www.theguardian.com/world/2026/may/23/white-house-pauses-detainee-removal-drc-ebola",
-      "summary": "But Trump administration will not return detainees deported to third countries in disease-stricken region The Trump administration will temporarily pause the removal of refugees to the Democratic Republic of the Congo (DRC) during a spiraling Ebola outbreak, according to reporting by Politico, but experts say the move won’t help prevent the spread of the disease. At least one woman is now in limbo after officials moved her to Kinshasa, the capital of the DRC, and now say they won’t bring her back because of the Ebola travel ban – despite a judge’s order for her return. Continue reading...",
-      "publishedAtUtc": "2026-05-23T14:33:05Z",
-      "domain": "theguardian.com",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "One-and-Done Heart Disease Prevention? Scientists Show It May Be Possible.",
-      "link": "https://www.nytimes.com/2026/05/25/health/cholesterol-ldl-gene-therapy.html",
-      "summary": "A single infusion of an experimental gene-editing drug seemed to reduce LDL long-term in a small trial. The results may point to something “curative,” one expert said.",
-      "publishedAtUtc": "2026-05-25T12:45:05Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "How Wine, Truffles and Honey Could Help Europe Fight Wildfires",
-      "link": "https://www.nytimes.com/2026/05/25/world/europe/wine-truffles-firefighting-climate-change.html",
-      "summary": "Countries are learning that the finer things in life sometimes have a serendipitous side benefit.",
-      "publishedAtUtc": "2026-05-25T16:12:34Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "‘Massive’ child abuse scandal in France as school staff investigated for violence and sexual assault",
-      "link": "https://www.theguardian.com/world/2026/may/25/massive-child-abuse-scandal-in-france-as-school-staff-investigated-for-violence-and-sexual-assault",
-      "summary": "Paris police looking into more than 100 allegations of mistreatment by ‘monitors’ after parents’ groups said they had fought for years to be taken seriously France is facing a child abuse scandal as ‘monitors’ at dozens of state nursery and primary schools are investigated for violence, sexual assault and rape. Paris police are examining more than 100 allegations of mistreatment, physical violence and rape of children as young as three by school monitors during lunch breaks, nap times and after-school activities, prosecutors have confirmed. Continue reading...",
-      "publishedAtUtc": "2026-05-25T05:00:18Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "I avoid AI tools because thinking is supposed to be hard. It’s what makes us human | Wendy Liu",
-      "link": "https://www.theguardian.com/commentisfree/2026/may/24/ai-tools-thinking-human-hard-coding-writing-technology",
-      "summary": "As intelligence itself becomes privatised by big tech, allowing your intellectual faculties to wither in service of inane bots seems a dangerous move Long before the age of multi-billion-dollar AI companies promising to disrupt the field of software development, I was learning to code the hard way. It was the mid-2000s, and I was a child with unmonitored access to the family computer. With the help of a basic text editor program, I learned how to make websites – first basic, then increasingly complex – from scratch. The results were never as beautiful or polished as in my imagination, but I could live with that, because I was learning a craft. The painstaking hours of debugging and poring over arcane documentation for projects that I eventually abandoned never felt wasted. Continue reading...",
-      "publishedAtUtc": "2026-05-24T07:00:50Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Key facts to counter online misinformation about perimenopause",
-      "link": "https://www.theguardian.com/society/2026/may/25/counter-online-misinformation-perimenopause-contraception",
-      "summary": "Experts say some social media advice could obscure underlying health problems or create risk of unintended pregnancies A growing number of women are seeing misleading information about perimenopause on social media – prompting concerns that some could be led to false conclusions that obscure real underlying health difficulties or even create the risk of unintended pregnancies. Here are some of the key facts behind the problem. Continue reading...",
-      "publishedAtUtc": "2026-05-25T09:00:21Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
-      "link": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
-      "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
-      "publishedAtUtc": "2026-05-14T13:27:15Z",
-      "domain": "who.int",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Tunisia validated by WHO as having eliminated trachoma as a public health problem",
-      "link": "https://www.who.int/news/item/14-05-2026-tunisia-validated-by-who-as-having-eliminated-trachoma-as-a-public-health-problem",
-      "summary": "Tunisia has been officially validated by the World Health Organization (WHO) as having eliminated trachoma as a public health problem, marking a significant achievement after decades of sustained effort.",
-      "publishedAtUtc": "2026-05-14T09:23:04Z",
-      "domain": "who.int",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "WHO Member States agree to extend negotiations on Pathogen Access and Benefit Sharing annex",
-      "link": "https://www.who.int/news/item/01-05-2026-who-member-states-agree-to-extend-negotiations-on-pathogen-access-and-benefit-sharing-annex",
-      "summary": "Member States of the World Health Organization (WHO) have progressed work on the Pathogen Access and Benefit Sharing (PABS) annex, a key part of the WHO Pandemic Agreement, and today agreed additional time was needed to finalize the framework for ensuring a better, more equitable, response to future pandemics. Countries today ended the resumed session of the sixth meeting of the Intergovernmental Working Group (IGWG) on the WHO Pandemic Agreement in Geneva, focused on the PABS system. The outcome of this work will be presented to the Seventy-ninth World Health Assembly (WHA) later this month. Given the need for further negotiations, the Assembly will be asked to consider continuing IGWG&rsquo;s work as mandated in Resolution WHA78.1 and submit the outcome to the next Assembly in May 2027, or earlier by a special session of WHA in 2026. &ldquo;Real progress was made on the PABS annex and I am confident through continued negotiations differences will be overcome,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Member States should continue approaching the outstanding issues with a sense of urgency because the next pandemic is a matter of when, not if. The PABS annex is the last piece of the puzzle not only for the Pandemic Agreement but all initiatives that WHO and Member States have implemented as a result of lessons learned from the COVID-19 pandemic.&rdquo; The PABS system is intended to ensure, on equal footing, the rapid sharing of pathogens with pandemic potential and the fair and equitable sharing of benefits arising from their use, such as vaccines, diagnostics and therapeutics. Finalizing the PABS Annex is necessary so countries can proceed with signature and ratification of the Pandemic Agreement. &ldquo;Finalizing a document of such technical and legal complexity requires precision and dedication, both of which the Member States have demonstrated in full,&rdquo; said IGWG Bureau Co-Chair Ambassador Tovar da Silva Nunes of Brazil. &ldquo;We are not there yet, but with an extension of our negotiations, we will get there.&rdquo; IGWG Co-Chair Mr Matthew Harpur said: &ldquo;WHO Member States have demonstrated strong and continuing commitment to negotiations on a Pathogen Access and Benefit Sharing system annex. The IGWG Bureau is confident we are moving in the right direction to finalize the PABS annex, and in doing so provide the WHO Pandemic Agreement with the framework needed to ensure countries are better, and more equitably, prepared and protected for the next pandemic.&rdquo; The IGWG will hold its seventh meeting from 6 to 17 July 2026. In May 2025, the World Health Assembly adopted the WHO Pandemic Agreement to strengthen how countries prevent, prepare for, and respond to pandemics. It also established an open-ended Intergovernmental Working Group (IGWG) to carry out key tasks, including drafting and negotiating the PABS system. &nbsp; &nbsp;",
-      "publishedAtUtc": "2026-05-01T16:52:42Z",
-      "domain": "who.int",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Trump Officials’ Strict Stand on Ebola Leaves Health Experts ‘Stunned’",
-      "link": "https://www.nytimes.com/2026/05/21/us/hantavirus-ebola-quarantine-trump.html",
-      "summary": "Public health experts say the administration’s quarantine orders go beyond what is needed to prevent the U.S. spread of Ebola and hantavirus.",
-      "publishedAtUtc": "2026-05-22T00:22:27Z",
-      "domain": "nytimes.com",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Struggling with the nine times table? I have a failsafe method | Adrian Chiles",
-      "link": "https://www.theguardian.com/commentisfree/2026/may/21/struggling-with-the-nine-times-table-i-have-a-failsafe-method",
-      "summary": "Apparently, nines are the hardest to grasp for primary school children. If only they’d learned how to cheat like me Maths was never my thing. I quite enjoyed it at O-level, to the extent that I chose to do it at A-level. As early as the first week of the A-level course, however, it became abundantly clear that the subject was quite beyond me. I simply couldn’t make head or tail of what the teacher was on about. Looking around at the rest of the class quietly getting on with it, I remember wondering if there had been some primer course over the summer that everyone but me had attended. I just didn’t get it. There didn’t seem to be any certainties any more, rarely anything so straightforward as a right or wrong answer. There were enough grey areas in my other subjects – English and history. From my maths I wanted certainty, objective truth, which as far as I could see wasn’t part of it any more. Continue reading...",
-      "publishedAtUtc": "2026-05-21T10:00:07Z",
-      "domain": "theguardian.com",
-      "score": 61.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Global health gains face threat of reversal",
-      "link": "https://www.who.int/news/item/13-05-2026-global-health-gains-face-threat-of-reversal",
-      "summary": "The world is falling short on health targets, with progress uneven, slowing, and in some areas reversing, according to the World Health Statistics 2026 report, published today by the World Health Organization (WHO).",
-      "publishedAtUtc": "2026-05-13T13:02:54Z",
-      "domain": "who.int",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola risk ‘very high’ in eastern DR Congo as UN intensifies response",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167575",
-      "summary": "The UN is rushing emergency personnel, funding and supplies into eastern Democratic Republic of the Congo (DRC) to counter the fast-growing Ebola outbreak spreading through conflict-ravaged provinces.",
-      "publishedAtUtc": "2026-05-22T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "U.S. Adds Security Measures at Dulles to Receive Citizens Who Have Been in Ebola Outbreak Region",
-      "link": "https://www.nytimes.com/2026/05/21/us/politics/us-entry-restrictions-ebola-outbreak.html",
-      "summary": "The Department of Homeland Security directed all flights carrying certain travelers to arrive at Dulles International Airport in Virginia.",
-      "publishedAtUtc": "2026-05-21T18:52:38Z",
-      "domain": "nytimes.com",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola Crisis Sparks Debate Over Global Health Double Standards",
-      "link": "https://www.nytimes.com/2026/05/20/world/africa/ebola-virus-outbreak-africa.html",
-      "summary": "To some Africans, the claim that the continent’s largest health agency had already bungled its response scratched a familiar wound.",
-      "publishedAtUtc": "2026-05-20T21:14:29Z",
-      "domain": "nytimes.com",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Weather tracker: Heavy rain triggers flooding and landslides in parts of China",
-      "link": "https://www.theguardian.com/environment/2026/may/22/slow-moving-bands-heavy-rain-flooding-landslides-china",
-      "summary": "Twelve dead as southern and central areas also suffer travel disruption, electricity outages and evacuations Heavy, prolonged rainfall in southern and central China has resulted in weather warnings for flash flooding, landslides and waterlogging. The slow-moving band of rainfall spanned 620 miles (1,000km) and travelled eastwards across the regions on Tuesday. It was formed from the convergence of multiple bands of rain originating from the Bay of Bengal, South China Sea and Pacific Ocean. Given the accompanying low wind speeds, high daily and hourly rainfall totals have been recorded, with as much as 75mm locally in Hunan, 85mm in Anhui in a 24-hour period, and 95mm on the island of Hainan. Twelve people have died because of the flooding and hundreds of residents have been evacuated by emergency services. There were major travel disruptions, electricity outages, as well as school and business closures. Social media posts showed submerged cars and people fishing along flooded streets. Continue reading...",
-      "publishedAtUtc": "2026-05-22T08:04:33Z",
-      "domain": "theguardian.com",
-      "score": 60.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Big Europe and Asian private equity health funds merge to defy AI disruption",
-      "link": "https://www.ft.com/content/4da49f68-6a8d-4e1a-a933-abe10c185ff7",
-      "summary": "Global Healthcare Opportunities and CBC Group say $21bn investment manager will be world’s largest in sector",
-      "publishedAtUtc": "2026-05-20T04:00:33Z",
-      "domain": "ft.com",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Students at risk if universities go bust, say MPs",
-      "link": "https://www.bbc.com/news/articles/ce3p93j3823o?at_medium=RSS&at_campaign=rss",
-      "summary": "An Education Select Committee report finds the government needs to make urgent plans for universities facing insolvency.",
-      "publishedAtUtc": "2026-05-12T00:17:10Z",
-      "domain": "bbc.com",
-      "score": 59.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "University wins record freedom of speech fine challenge",
-      "link": "https://www.bbc.com/news/articles/cp8pnwyy0zjo?at_medium=RSS&at_campaign=rss",
-      "summary": "A record fine had been issued by the Office for Students over the university's trans and non-binary inclusion policy.",
-      "publishedAtUtc": "2026-04-29T16:30:01Z",
-      "domain": "bbc.com",
-      "score": 59.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola raises questions over pandemic preparedness",
-      "link": "https://www.ft.com/content/1c72baba-c2f9-41c8-a159-08f2ddba6a5c",
-      "summary": "Aid cuts and US hostility to concept of global public health endanger us all",
-      "publishedAtUtc": "2026-05-19T16:06:43Z",
-      "domain": "ft.com",
-      "score": 59.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
-      "link": "https://www.who.int/news/item/23-05-2026-seventy-ninth-world-health-assembly---daily-update--23-may-2026",
-      "summary": "Summary of discussions of 23 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-23T12:32:25Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
-      "link": "https://www.who.int/news/item/22-05-2026-seventy-ninth-world-health-assembly-daily-update-22-may-2026",
-      "summary": "Summary of discussions of 22 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-22T19:24:59Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
-      "link": "https://www.who.int/news/item/21-05-2026-seventy-ninth-world-health-assembly---daily-update--21-may-2026",
-      "summary": "Summary of discussions of 21 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-21T20:33:06Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
-      "link": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly---daily-update--20-may-2026",
-      "summary": "Summary of discussions of 20 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-21T19:48:30Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
-      "link": "https://www.who.int/news/item/19-05-2026-seventy-ninth-world-health-assembly---daily-update--19-may-2026",
-      "summary": "Summary of discussions of 19 May at Seventy-ninth World Health Assembly",
-      "publishedAtUtc": "2026-05-20T15:01:32Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Joint call by the President of the ICRC, the Director-General of WHO and the International President of MSF",
-      "link": "https://www.who.int/news/item/04-05-2026-joint-call-by-the-president-of-the-icrc--the-director-general-of-who-and-the-international-president-of-msf",
-      "summary": "Ten years ago, the UN Security Council unanimously adopted Resolution 2286 on health care in armed conflicts. The situation is even worse compared to 10 years ago. Today, we mark not an achievement – we mark a failure. As violence affecting medical facilities, transport and personnel continues unabated, the harm this resolution sought to prevent has not diminished. It has continued and, in many contexts, intensified. As the heads of the International Committee of the Red Cross (ICRC), the World Health Organization (WHO), and Médecins Sans Frontières (MSF), we join others in the international community in issuing an urgent call for action.",
-      "publishedAtUtc": "2026-05-04T06:44:57Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ukraine: UN alarmed by reports of deadly strike on dormitory in occupied Luhansk",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167579",
-      "summary": "The United Nations voiced alarm on Friday over reports of an overnight attack on a vocational school and dormitory in the town of Starobilsk in Ukraine’s Luhansk region which killed and injured multiple civilians, including children.",
-      "publishedAtUtc": "2026-05-22T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 58.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "UN agencies step up Ebola response in eastern DR Congo",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167567",
-      "summary": "United Nations agencies have moved swiftly to support efforts to contain the latest Ebola outbreak in eastern Democratic Republic of the Congo (DRC), delivering emergency medical supplies, protective equipment and logistics support.",
-      "publishedAtUtc": "2026-05-21T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola risk raised to 'very high' in DR Congo",
-      "link": "https://www.bbc.com/news/articles/cr7p30m1dn1o?at_medium=RSS&at_campaign=rss",
-      "summary": "The head of the UN health agency says the risk in the wider region is \"high\", but it remains \"low\" at the global level.",
-      "publishedAtUtc": "2026-05-22T16:23:08Z",
-      "domain": "bbc.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Gonorrhoea and syphilis hit record levels in Europe",
-      "link": "https://www.bbc.com/news/articles/cm2pj07dr7lo?at_medium=RSS&at_campaign=rss",
-      "summary": "STIs have surged thanks to record cases and gaps in testing and prevention, a health agency reports.",
-      "publishedAtUtc": "2026-05-21T12:19:15Z",
-      "domain": "bbc.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola outbreak may be spreading faster than first thought, WHO doctor warns",
-      "link": "https://www.bbc.com/news/articles/ceqp11gn1l8o?at_medium=RSS&at_campaign=rss",
-      "summary": "Hundreds of cases are suspected in central Africa but experts fear the actual number may be much higher.",
-      "publishedAtUtc": "2026-05-19T19:32:22Z",
-      "domain": "bbc.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "5 Takeaways From a Times Investigation on Autism Therapy Clinics",
-      "link": "https://www.nytimes.com/2026/05/23/health/autisim-clinics-investigation.html",
-      "summary": "A rapidly growing industry often overprescribes treatment to young children with autism, who spend as many as 40 hours a week at the facilities.",
-      "publishedAtUtc": "2026-05-23T09:00:44Z",
-      "domain": "nytimes.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "25 States Sue Over Changes Limiting Federal Loans for Nursing Degrees",
-      "link": "https://www.nytimes.com/2026/05/19/us/politics/nursing-loans.html",
-      "summary": "Governors and attorneys general from the states and District of Columbia argue the Education Department’s decision not to label nursing as a professional degree will contribute to worker shortages.",
-      "publishedAtUtc": "2026-05-20T22:40:35Z",
-      "domain": "nytimes.com",
-      "score": 58.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola spread for weeks before DR Congo raised alarm",
-      "link": "https://www.ft.com/content/216f04f8-a9f7-4659-8523-4411f2a563da",
-      "summary": "Reporting breakdown and weak health systems in conflict-hit country allowed virus to go undetected",
-      "publishedAtUtc": "2026-05-21T04:00:32Z",
-      "domain": "ft.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "'New cancer test makes me feel women's health matters'",
-      "link": "https://www.bbc.com/news/articles/ckgp0gedjk3o?at_medium=RSS&at_campaign=rss",
-      "summary": "A patient praises a new test for womb cancer being trialled at hospitals in Suffolk and Essex.",
-      "publishedAtUtc": "2026-05-17T05:37:49Z",
-      "domain": "bbc.com",
-      "score": 57.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Teachers in England to vote on striking over pay",
-      "link": "https://www.bbc.com/news/articles/crlpdgxe317o?at_medium=RSS&at_campaign=rss",
-      "summary": "The National Education Union says it will hold a formal ballot this autumn without \"urgent action\".",
-      "publishedAtUtc": "2026-05-09T18:14:57Z",
-      "domain": "bbc.com",
-      "score": 57.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Calls for clarity over schools smartphone ban",
-      "link": "https://www.bbc.com/news/articles/cgrlvxqkwg8o?at_medium=RSS&at_campaign=rss",
-      "summary": "Minister plan to ban smartphones in English schools, but headteachers and campaigners have called for more direction on how to enforce it.",
-      "publishedAtUtc": "2026-04-22T15:34:26Z",
-      "domain": "bbc.com",
-      "score": 57.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Phones to be banned in schools by law in England under government plans",
-      "link": "https://www.bbc.com/news/articles/c5y7vd6gpq1o?at_medium=RSS&at_campaign=rss",
-      "summary": "Education minister Jacqui Smith said the move would create \"a clear legal requirement for schools\".",
-      "publishedAtUtc": "2026-04-21T07:33:19Z",
-      "domain": "bbc.com",
-      "score": 57.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Revise, recall, then rest - your exam season survival guide",
-      "link": "https://www.bbc.com/news/articles/c1j2lw5r24jo?at_medium=RSS&at_campaign=rss",
-      "summary": "Teachers and tutors share tips for students to get through exam season.",
-      "publishedAtUtc": "2026-05-01T23:06:00Z",
-      "domain": "bbc.com",
-      "score": 57.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
-      "link": "https://www.who.int/news/item/15-05-2026-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-surge",
-      "summary": "The World Health Organization (WHO) warns about the rapid growth and aggressive marketing of nicotine pouches, especially targeting youth, amid limited regulation worldwide. Nicotine pouches pose significant health risks and governments are urged to implement strong regulatory measures to prevent addiction and protect young people.",
-      "publishedAtUtc": "2026-05-14T17:26:02Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Gaza: Life-saving medicines blocked as killing continues, disease gains ground",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167572",
-      "summary": "Dire conditions in Gaza marked by continuing violence, rodent infestations and the spread of infectious disease are being made worse by blockages of essential medical supplies, UN agencies warned on Friday.",
-      "publishedAtUtc": "2026-05-22T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "UK scientists developing Ebola vaccine that could be ready for trials in months",
-      "link": "https://www.bbc.com/news/articles/cy82gkr7xzlo?at_medium=RSS&at_campaign=rss",
-      "summary": "The rare species of Ebola involved - known as Bundibugyo - kills around a third of those infected and has no proven vaccine yet.",
-      "publishedAtUtc": "2026-05-22T15:03:51Z",
-      "domain": "bbc.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "'I used to be the shy kid'",
-      "link": "https://www.bbc.com/news/videos/cp9pje2zprvo?at_medium=RSS&at_campaign=rss",
-      "summary": "Tyler West opens up about his experience of school on Sort Your Life Out Unpacked.",
-      "publishedAtUtc": "2026-05-21T13:01:11Z",
-      "domain": "bbc.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "What you need to know about latest meningitis cluster",
-      "link": "https://www.bbc.com/news/videos/cvgz1pl3x73o?at_medium=RSS&at_campaign=rss",
-      "summary": "After a fourth case of meningitis B has been confirmed in Reading, BBC South's health correspondent Alastair Fee shares what you need to know.",
-      "publishedAtUtc": "2026-05-20T18:25:45Z",
-      "domain": "bbc.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "2 Minnesota Autism Therapy Providers Charged in $46 Million Medicaid Fraud Case",
-      "link": "https://www.nytimes.com/2026/05/21/us/politics/medicaid-fraud-minnesota-autism.html",
-      "summary": "The Justice Department claims that clinics used fake diagnoses and kickbacks to parents to bring children into treatment.",
-      "publishedAtUtc": "2026-05-22T01:25:24Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Ebola Containment Efforts May Have Been Hindered by USAID Shutdown and CDC Cuts",
-      "link": "https://www.nytimes.com/2026/05/20/health/ebola-congo-united-states-trump.html",
-      "summary": "Aid cuts by the Trump administration have shut down crucial disease surveillance networks and medical supply chains in East Africa.",
-      "publishedAtUtc": "2026-05-20T20:43:47Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "On the Ground in South Sudan: Why Akobo Faces an Ebola Risk",
-      "link": "https://www.nytimes.com/2026/05/22/world/africa/ebola-south-sudan-congo.html",
-      "summary": "Hunger and conflict are on the minds of the residents of Akobo, where an outbreak could have devastating consequences.",
-      "publishedAtUtc": "2026-05-22T14:30:42Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Trump Administration Offers Conflicting View of Civil Rights Cuts",
-      "link": "https://www.nytimes.com/2026/05/22/us/politics/mcmahon-education-cuts.html",
-      "summary": "Education Secretary Linda McMahon has said she wants to hire more civil rights lawyers, but the White House has proposed cutting that office in half.",
-      "publishedAtUtc": "2026-05-22T20:53:52Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Meta Settles a School District’s Social Media Addiction Lawsuit",
-      "link": "https://www.nytimes.com/2026/05/21/technology/meta-settlement-social-media-addiction-lawsuit.html",
-      "summary": "Snap, TikTok and YouTube had already settled with the Kentucky district, allowing the companies to avert the first in a series of federal trials.",
-      "publishedAtUtc": "2026-05-21T20:21:02Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "2 Florida College Students Suspended Over Racist Group Chat",
-      "link": "https://www.nytimes.com/2026/05/21/us/florida-students-racist-group-chat-fiu.html",
-      "summary": "The students held leadership positions in Republican groups. The racist rhetoric, documented in court papers, highlights a growing rift in the party.",
-      "publishedAtUtc": "2026-05-21T17:30:46Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "School Choice Is Creating Two Separate School Systems",
-      "link": "https://www.nytimes.com/2026/05/20/headway/school-choice-movement-vouchers-education.html",
-      "summary": "Plus, plans for a national voucher program.",
-      "publishedAtUtc": "2026-05-20T18:06:42Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "‘Canada is handing people over to ICE’: refugees rejected at border face US detention",
-      "link": "https://www.theguardian.com/world/2026/may/23/canadians-refugees-rejected-face-ice-detention",
-      "summary": "As Canada tightens asylum rules, refugees reuniting with family say they were turned over to ICE and jailed for months after failed border claims As each day in US detention passes, Markens Appolon can feel the life he had dreamed of slipping away. The 25-year-old fled Haiti to escape the rampant gang violence that upended his university studies in economics, and planned to join family in Montreal. Continue reading...",
-      "publishedAtUtc": "2026-05-23T11:00:28Z",
-      "domain": "theguardian.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Britons use overseas clinics to pick babies’ sex",
-      "link": "https://www.ft.com/content/9cdbc15d-fc74-45f4-82f3-81f501d81513",
-      "summary": "Fertility clinics say growing number of people travelling abroad for embryo screening procedures banned in UK",
-      "publishedAtUtc": "2026-05-20T04:00:12Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Who is James Murray, the new health secretary replacing Wes Streeting?",
-      "link": "https://www.bbc.com/news/articles/c2e2jr01ejno?at_medium=RSS&at_campaign=rss",
-      "summary": "What are the most pressing priorities for the new minister in charge of health?",
-      "publishedAtUtc": "2026-05-15T13:55:54Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Potential new treatment for pre-eclampsia",
-      "link": "https://www.bbc.com/news/videos/c3r27w78drdo?at_medium=RSS&at_campaign=rss",
-      "summary": "Pre-eclampsia causes more than 70,000 maternal deaths every year worldwide",
-      "publishedAtUtc": "2026-05-19T15:07:19Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Bird flu vaccine trial against potential pandemic strain begins",
-      "link": "https://www.bbc.com/news/articles/cy41z0yj8mjo?at_medium=RSS&at_campaign=rss",
-      "summary": "The jab targets the H5N1 flu strain which has caused devastating infections in bird populations worldwide, but has yet to spread between humans.",
-      "publishedAtUtc": "2026-04-21T23:00:08Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Rollout of Covid vaccines extraordinary feat - inquiry report",
-      "link": "https://www.bbc.com/news/articles/cp8dpjx1yvmo?at_medium=RSS&at_campaign=rss",
-      "summary": "Covid vaccines saved hundreds of thousands of lives, but a small minority harmed need better support, says report.",
-      "publishedAtUtc": "2026-04-16T14:39:07Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Vaccines a huge success, but public trust must be earned - key findings from Covid report",
-      "link": "https://www.bbc.com/news/articles/ce3dp52l70zo?at_medium=RSS&at_campaign=rss",
-      "summary": "Immunisation saved hundreds of thousands of UK lives, but vaccine hesitancy remains an issue.",
-      "publishedAtUtc": "2026-04-16T13:02:12Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "What is the UK Covid inquiry and how does it work?",
-      "link": "https://www.bbc.com/news/articles/cdr3kx6xmp5o?at_medium=RSS&at_campaign=rss",
-      "summary": "The fourth report from the inquiry into the pandemic said the vaccine roll-out was an \"extraordinary feat\".",
-      "publishedAtUtc": "2026-04-16T11:20:11Z",
-      "domain": "bbc.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "'We're right on track,' says Streeting as key target for hospital waiting times hit",
-      "link": "https://www.bbc.com/news/articles/cvgzv0j19vvo?at_medium=RSS&at_campaign=rss",
-      "summary": "Government his its interim target of 65% of patients in England being treated within 18 weeks.",
-      "publishedAtUtc": "2026-05-14T14:26:20Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Posh sandwich has more salt than nearly five cheeseburgers",
-      "link": "https://www.bbc.com/news/articles/c4g4l54g2ppo?at_medium=RSS&at_campaign=rss",
-      "summary": "Action on Salt & Sugar said people should not be exposed to a \"hidden health risk every time they buy lunch\".",
-      "publishedAtUtc": "2026-05-13T10:57:35Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "I tried the UK's 'saltiest' sandwich - here's what I learned",
-      "link": "https://www.bbc.com/news/articles/cd9pylq25y9o?at_medium=RSS&at_campaign=rss",
-      "summary": "Health correspondent James Gallagher absorbs more than the recommended daily limit in just one meal to find out how salt affects our bodies.",
-      "publishedAtUtc": "2026-05-15T23:56:15Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Should you really trust health advice from an AI chatbot?",
-      "link": "https://www.bbc.com/news/articles/clyepyy82kxo?at_medium=RSS&at_campaign=rss",
-      "summary": "Abi has had very mixed results when asking a chatbot for guidance about her health issues.",
-      "publishedAtUtc": "2026-04-18T23:04:43Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "What are the symptoms of meningitis and is there a vaccine?",
-      "link": "https://www.bbc.com/news/articles/c7432klgyldo?at_medium=RSS&at_campaign=rss",
-      "summary": "A college student has died and two people are being treated after cases of meningitis in Reading, Berkshire.",
-      "publishedAtUtc": "2026-05-15T09:59:31Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Researchers look into island's health benefits",
-      "link": "https://www.bbc.com/news/articles/c5yvpr21mnno?at_medium=RSS&at_campaign=rss",
-      "summary": "The team aims to find out what it is about the Isle of Wight that makes people feel better.",
-      "publishedAtUtc": "2026-04-08T05:11:23Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Doctors' strikes can have surprising benefits - but are they sustainable?",
-      "link": "https://www.bbc.com/news/articles/cp3l2pygnlyo?at_medium=RSS&at_campaign=rss",
-      "summary": "Some hospital trusts tell the BBC previous action has seen shorter waits, faster decisions and calmer corridors.",
-      "publishedAtUtc": "2026-04-13T23:06:45Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Hospitals coping well with doctors' strike so far - NHS boss",
-      "link": "https://www.bbc.com/news/articles/clyrzrp0x5go?at_medium=RSS&at_campaign=rss",
-      "summary": "Resident doctors in England – the new name for junior doctors – are taking part in their 15th walkout in a long-running pay dispute.",
-      "publishedAtUtc": "2026-04-08T10:56:27Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "'Huge relief' as students given loans 'in error' get repayment reprieve",
-      "link": "https://www.bbc.com/news/articles/c0e7jjwzn7eo?at_medium=RSS&at_campaign=rss",
-      "summary": "Approximately 22,000 weekend students had been told their courses were never eligible for student finance.",
-      "publishedAtUtc": "2026-04-20T16:07:01Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "New university free speech complaints system to come into force this year",
-      "link": "https://www.bbc.com/news/articles/cm29dngvjqeo?at_medium=RSS&at_campaign=rss",
-      "summary": "Universities could face fines of £500,000 or 2% of their income if they are found to have failed to protect free speech.",
-      "publishedAtUtc": "2026-04-19T23:06:13Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "What is Ofsted and how does the new school ratings system work?",
-      "link": "https://www.bbc.com/news/articles/cz0xe4zmpeyo?at_medium=RSS&at_campaign=rss",
-      "summary": "The rating system changed after the death of head Ruth Perry highlighted the pressure of inspections.",
-      "publishedAtUtc": "2026-04-30T13:20:01Z",
-      "domain": "bbc.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "The Guardian University Guide 2026 – the rankings",
-      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
-      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
-      "publishedAtUtc": "2025-09-13T07:01:01Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
-      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
-      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
-      "publishedAtUtc": "2026-04-19T10:00:39Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
-      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
-      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
-      "publishedAtUtc": "2026-04-17T07:00:24Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "The women ‘cycle syncing’ their workflow",
-      "link": "https://www.ft.com/content/c67a5cae-1a1f-4491-b8ed-753125e1b650",
-      "summary": "Menstrual health awareness is prompting some workers to optimise creative, social or focused tasks around their hormones",
-      "publishedAtUtc": "2026-05-19T10:30:09Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "Patagonia shares lessons on what it learned from hantavirus",
-      "link": "https://www.ft.com/content/e34361e4-8929-44a5-9bf0-254d0f7c67cd",
-      "summary": "Region where passengers may have caught rat-borne virus tightened controls after 2018 outbreak in Argentina",
-      "publishedAtUtc": "2026-05-17T13:40:11Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
-    },
-    {
-      "title": "How architecture can save lives",
-      "link": "https://www.ft.com/content/201f77ec-53af-4af8-ab46-8a4fecbc70af",
-      "summary": "Carefully designed homes in Tanzania have been shown to lower disease rates among children",
-      "publishedAtUtc": "2026-05-12T16:55:44Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-05-26T16:52:58.255588Z"
     },
     {
@@ -2557,44 +2593,9 @@
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-05-22T20:07:04.754286Z"
-    },
-    {
-      "title": "WHO assembly opens under shadow of Ebola, hantavirus and funding cuts",
-      "link": "https://news.un.org/feed/view/en/story/2026/05/1167539",
-      "summary": "From Ebola outbreaks in Central Africa to the complex evacuation of passengers aboard a hantavirus-stricken cruise ship, the UN World Health Organization (WHO) opened its annual assembly on Monday as countries grapple with disease outbreaks, deep funding cuts and growing geopolitical tension.",
-      "publishedAtUtc": "2026-05-18T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 72.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=33, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-05-22T18:04:11.053969Z"
-    },
-    {
-      "title": "Israeli attacks kill several in Lebanon, with health workers targeted",
-      "link": "https://www.aljazeera.com/news/2026/5/22/israeli-attacks-kill-several-in-lebanon-with-health-workers-targeted?traffic_source=rss",
-      "summary": "More than 400 people have been killed since the ceasefire came into effect in mid-April.",
-      "publishedAtUtc": "2026-05-22T13:11:41Z",
-      "domain": "aljazeera.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-05-22T18:04:11.053969Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "50faa009ef69b4eadeb590d8e9335b15a6149923",
-      "sourceTitle": "UN Forum puts spotlight on healthcare for Indigenous Peoples",
-      "sourceUrl": "https://news.un.org/feed/view/en/story/2026/04/1167337",
-      "sourceDomain": "news.un.org",
-      "publishedAtUtc": "2026-04-20T22:01:06.586808Z",
-      "slug": "un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones",
-      "blogUrl": "https://www.nivaranfoundation.org/news/un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones",
-      "mainImage": "/images/global-news/2026/2026-04-20-un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-20-un-forum-urges-global-action-for-indigenous-healthcare-in-conflict-zones.jpg"
-    },
     {
       "contentHash": "115edbb0fb41cc8260703dc8b2e7661c220721ea",
       "sourceTitle": "Report finds Gaza needs more than $71bn in next decade for recovery",
@@ -6983,148 +6984,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing",
       "mainImage": "/images/global-news/2026/2026-05-26-global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing.jpg"
+    },
+    {
+      "contentHash": "6720451c869744870daa7d977a21b522679b3acf",
+      "sourceTitle": "Australia confirms first diphtheria death amid worst outbreak in decades",
+      "sourceUrl": "https://www.bbc.com/news/articles/c759q6y26w3o?at_medium=RSS&at_campaign=rss",
+      "sourceDomain": "bbc.com",
+      "publishedAtUtc": "2026-05-26T19:30:19.203282Z",
+      "slug": "australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+      "blogUrl": "https://www.nivaranfoundation.org/news/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+      "mainImage": "/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-05-02T21:00:08.270142Z",
-      "windowStartUtc": "2026-05-02T21:00:00Z",
-      "publishedInWindowBefore": 0,
-      "hoursLeftInWindow": 12,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "bbc.com",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "theguardian.com": 5,
-        "news.un.org": 1,
-        "aljazeera.com": 2,
-        "nytimes.com": 3,
-        "who.int": 2,
-        "ft.com": 1,
-        "bbc.com": 2
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 3,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 129,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 129,
-      "candidateCacheCount": 220,
-      "candidatesAfterSourceDedupe": 33,
-      "candidatesAfterDedupe": 33,
-      "duplicateSkips": {
-        "historyHash": 95,
-        "historySource": 1,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "‘The happiest time of life is as you get older’: can positive thinking help you age better?",
-          "link": "https://www.theguardian.com/science/2026/may/03/getting-older-ageing-happiest-time-of-life",
-          "score": 74,
-          "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "Abortion pill maker asks US supreme court to halt ban on mail-order access",
-          "link": "https://www.theguardian.com/world/2026/may/02/abortion-pill-emergency-appeal-supreme-court",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Learning Muay Thai Can Allow Visitors to Stay in Thailand Longer",
-          "link": "https://www.nytimes.com/2026/05/02/world/asia/muay-thai-thailand-visa.html",
-          "score": 70,
-          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Israel’s ‘two-tier’ policing and the crime epidemic in Palestinian towns",
-        "link": "https://www.aljazeera.com/news/2026/5/2/israels-two-tier-policing-and-the-crime-epidemic-in-palestinian-towns?traffic_source=rss",
-        "score": 70,
-        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Israel’s ‘two-tier’ policing and the crime epidemic in Palestinian",
-      "generatedWordCount": 1177,
-      "mainImage": "/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 5760
-      },
-      "generatedImageSharpness": 2088.223263381533,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview",
-        "nano-banana-pro-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "Expecting ',' delimiter: line 11 column 1077 (char 3443)",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1513.0,
-        "generatedWords": 1177.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/04/ap_69f39750bd8f9-1777571664.jpg?resize=1920%2C1440",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epidemic-in-palestinian"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-02-global-health-and-education-watch-israel-s-two-tier-policing-and-the-crime-epide.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 1
-    },
     {
       "ranAtUtc": "2026-05-02T21:57:47.054239Z",
       "windowStartUtc": "2026-05-02T21:00:00Z",
@@ -40368,6 +40241,144 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-05-26T19:30:19.203282Z",
+      "windowStartUtc": "2026-05-26T16:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 9,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "ft.com",
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "aljazeera.com": 1,
+        "nytimes.com": 1,
+        "news.un.org": 1,
+        "theguardian.com": 2,
+        "ft.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 128,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 128,
+      "candidateCacheCount": 216,
+      "candidatesAfterSourceDedupe": 59,
+      "candidatesAfterDedupe": 59,
+      "duplicateSkips": {
+        "historyHash": 67,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Belgium Crash Kills 4 as Train Hits School Van",
+          "link": "https://www.nytimes.com/2026/05/26/world/europe/belgium-minibus-train-collision-children.html",
+          "score": 80,
+          "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0"
+        },
+        {
+          "title": "How Profit-Seeking Autism Clinics Can Harm Kids",
+          "link": "https://www.nytimes.com/video/health/100000010889107/how-profit-seeking-autism-clinics-can-harm-kids.html",
+          "score": 77,
+          "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "International airlines urged to stick to safety measures in wake of Ebola outbreak",
+          "link": "https://news.un.org/feed/view/en/story/2026/05/1167587",
+          "score": 72,
+          "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Australia confirms first diphtheria death amid worst outbreak in decades",
+        "link": "https://www.bbc.com/news/articles/c759q6y26w3o?at_medium=RSS&at_campaign=rss",
+        "score": 70,
+        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Australia's First Diphtheria Death in Decades Signals Global Health Warning",
+      "generatedWordCount": 1192,
+      "mainImage": "/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4320
+      },
+      "generatedImageSharpness": 445.40618615430765,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview",
+        "nano-banana-pro-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "gemini",
+      "geminiTextError": "",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 7.0,
+        "sourceWords": 927.0,
+        "generatedWords": 1209.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/0abc/live/4ec8aee0-58d1-11f1-90e2-edf2febf1e9d.jpg",
+      "publishResult": {
+        "status": "published",
+        "slug": "australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+        "mdxPath": "src/blogs/global/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+          "https://global.nivaranfoundation.org/news/australia-s-first-diphtheria-death-in-decades-signals-global-health-warning"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
