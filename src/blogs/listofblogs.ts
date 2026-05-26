@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing",
+    title: "Global Health and Education Watch: Strep A vaccine gets $140mn backing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-26-global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing.jpg",
+    date: "2026-05-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-curse-of-burnout-britain-affects-politicians-as-much",
     title: "Global Health and Education Watch: The curse of burnout Britain affects politicians as much",
     summary:
