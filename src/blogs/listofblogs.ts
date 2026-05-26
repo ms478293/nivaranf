@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "australia-s-first-diphtheria-death-in-decades-signals-global-health-warning",
+    title: "Australia's First Diphtheria Death in Decades Signals Global Health Warning",
+    summary:
+      "Australia has recorded its first diphtheria death in decades amidst its worst outbreak in generations, highlighting a critical global health concern. This tragic event underscores the urgent need for robust vaccination programs and vigilance against vaccine-preventable diseases worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-26-australia-s-first-diphtheria-death-in-decades-signals-global-health-warning.jpg",
+    date: "2026-05-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-strep-a-vaccine-gets-140mn-backing",
     title: "Global Health and Education Watch: Strep A vaccine gets $140mn backing",
     summary:
