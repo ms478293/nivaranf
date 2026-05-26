@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-outbreak-in-drc-outpaces-response-who-warns-global-health-crisis-looms",
+    title: "Ebola Outbreak in DRC Outpaces Response, WHO Warns Global Health Crisis Looms",
+    summary:
+      "The World Health Organization warns the Ebola outbreak in the Democratic Republic of Congo is accelerating faster than containment efforts. Neighboring countries face an elevated risk, necessitating immediate, coordinated international intervention to prevent wider regional spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-26-ebola-outbreak-in-drc-outpaces-response-who-warns-global-health-crisis-looms.jpg",
+    date: "2026-05-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-s-resurgence-in-drc-outpaces-containment-threatening-regional-stability",
     title: "Ebola's Resurgence in DRC Outpaces Containment, Threatening Regional Stability",
     summary:
