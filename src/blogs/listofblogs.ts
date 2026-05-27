@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-my-daughter-went-into-hospital-to-get-better",
+    title: "Global Health and Education Watch: 'My daughter went into hospital to get better",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-global-health-and-education-watch-my-daughter-went-into-hospital-to-get-better.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-aviation-urged-to-uphold-ebola-safety-amidst-spreading-outbreak",
     title: "Global Aviation Urged to Uphold Ebola Safety Amidst Spreading Outbreak",
     summary:
