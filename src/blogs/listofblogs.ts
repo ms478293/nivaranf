@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-educators-ponder-ai-and-screen-time-curbs-for-young-learners",
+    title: "Global Educators Ponder AI and Screen Time Curbs for Young Learners",
+    summary:
+      "A prominent teachers' union has issued strong recommendations against screen time for young children and AI chatbot use in elementary schools. This move highlights growing global concerns about technology's impact on child development and learning.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-global-educators-ponder-ai-and-screen-time-curbs-for-young-learners.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-disengagement-crisis-looms-urgent-action-needed-to-avert-lost-generation",
     title: "Global Youth Disengagement Crisis Looms: Urgent Action Needed to Avert Lost Generation",
     summary:
