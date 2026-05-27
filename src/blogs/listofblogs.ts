@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-chief-urges-drc-ceasefire-amidst-escalating-ebola-crisis",
+    title: "WHO Chief Urges DRC Ceasefire Amidst Escalating Ebola Crisis",
+    summary:
+      "The head of the World Health Organization has urgently called for an immediate ceasefire in eastern Democratic Republic of Congo to combat a rapidly escalating Ebola outbreak. This plea comes as Uganda closes its border, highlighting the severe regional implications of the health crisis compounded by ongoing conflict.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-who-chief-urges-drc-ceasefire-amidst-escalating-ebola-crisis.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "climate-crisis-accelerates-global-antibiotic-resistance-posing-grave-health-threat",
     title: "Climate Crisis Accelerates Global Antibiotic Resistance, Posing Grave Health Threat",
     summary:
