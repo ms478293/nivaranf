@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-disengagement-crisis-looms-urgent-action-needed-to-avert-lost-generation",
+    title: "Global Youth Disengagement Crisis Looms: Urgent Action Needed to Avert Lost Generation",
+    summary:
+      "A recent UK review highlights a potential 25% surge in young people not in employment, education, or training by the early 2030s, signaling a critical global challenge. This trend underscores the urgent need for comprehensive policy overhauls to prevent a widespread 'lost generation' across nations.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-global-youth-disengagement-crisis-looms-urgent-action-needed-to-avert-lost-gener.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-outbreak-in-dr-congo-collides-with-conflict-and",
     title: "Global Health and Education Watch: Ebola outbreak in DR Congo collides with conflict and",
     summary:
