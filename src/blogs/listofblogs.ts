@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "climate-crisis-accelerates-global-antibiotic-resistance-posing-grave-health-threat",
+    title: "Climate Crisis Accelerates Global Antibiotic Resistance, Posing Grave Health Threat",
+    summary:
+      "The climate crisis is significantly accelerating the global rise of antibiotic resistance, with experts linking it to a 10% increase in salmonella resistance genes. This escalating threat to human health now claims over a million lives annually, demanding urgent international attention.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-climate-crisis-accelerates-global-antibiotic-resistance-posing-grave-health-thre.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-my-daughter-went-into-hospital-to-get-better",
     title: "Global Health and Education Watch: 'My daughter went into hospital to get better",
     summary:
