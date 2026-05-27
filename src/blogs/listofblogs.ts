@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-aviation-urged-to-uphold-ebola-safety-amidst-spreading-outbreak",
+    title: "Global Aviation Urged to Uphold Ebola Safety Amidst Spreading Outbreak",
+    summary:
+      "A deadly Ebola strain continues its spread in the Democratic Republic of the Congo, with cases now confirmed in neighboring Uganda. The UN aviation agency is urging international governments and flight operators to strictly follow established post-COVID-19 pandemic safety guidelines.",
+    thumbnailImage: "/images/global-news/2026/2026-05-27-global-aviation-urged-to-uphold-ebola-safety-amidst-spreading-outbreak.jpg",
+    date: "2026-05-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "belgium-train-collision-claims-four-lives-including-two-children",
     title: "Belgium Train Collision Claims Four Lives, Including Two Children",
     summary:
