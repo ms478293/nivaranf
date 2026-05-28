@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-crisis-a-generation-betrayed-by-systemic-neglect",
+    title: "Global Youth Crisis: A Generation Betrayed by Systemic Neglect",
+    summary:
+      "A profound global crisis is marginalizing millions of young people, leaving them without adequate support in education, health, and employment. This systemic neglect demands a comprehensive, integrated international response to avert a deepening societal catastrophe.",
+    thumbnailImage: "/images/global-news/2026/2026-05-28-global-youth-crisis-a-generation-betrayed-by-systemic-neglect.jpg",
+    date: "2026-05-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "digital-exam-flaws-erode-trust-in-global-education",
     title: "Digital Exam Flaws Erode Trust in Global Education",
     summary:
