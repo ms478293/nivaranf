@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "dr-congo-ebola-fight-hampered-by-deep-mistrust-and-disinformation",
+    title: "DR Congo Ebola Fight Hampered by Deep Mistrust and Disinformation",
+    summary:
+      "The ongoing Ebola outbreak in eastern DR Congo, the third-worst in history, faces severe challenges from widespread disinformation and community mistrust. These factors significantly impede public health efforts, delaying containment and increasing the risk of further spread.",
+    thumbnailImage: "/images/global-news/2026/2026-05-28-dr-congo-ebola-fight-hampered-by-deep-mistrust-and-disinformation.jpg",
+    date: "2026-05-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-aid-cuts-and-climate-change-drive-deadly-malaria-surge",
     title: "Global Health and Education Watch: Aid cuts and climate change drive deadly malaria surge",
     summary:
