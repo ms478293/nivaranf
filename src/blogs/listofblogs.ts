@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "digital-exam-flaws-erode-trust-in-global-education",
+    title: "Digital Exam Flaws Erode Trust in Global Education",
+    summary:
+      "Recent controversies surrounding India's Grade 12 examinations, including allegations of hacking and mismatched answer sheets, have cast a shadow over the integrity of digital evaluation. These issues underscore the global challenges in implementing reliable and secure large-scale educational assessment technologies.",
+    thumbnailImage: "/images/global-news/2026/2026-05-28-digital-exam-flaws-erode-trust-in-global-education.jpg",
+    date: "2026-05-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "dr-congo-ebola-fight-hampered-by-deep-mistrust-and-disinformation",
     title: "DR Congo Ebola Fight Hampered by Deep Mistrust and Disinformation",
     summary:
