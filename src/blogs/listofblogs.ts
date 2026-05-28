@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-message-by-the-who-director-general-to-the-people-of-2",
+    title: "Global Health and Education Watch: Message by the WHO Director-General to the people of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-28-global-health-and-education-watch-message-by-the-who-director-general-to-the-peo.jpg",
+    date: "2026-05-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "who-chief-urges-ceasefire-amidst-dr-congo-ebola-resurgence",
     title: "WHO Chief Urges Ceasefire Amidst DR Congo Ebola Resurgence",
     summary:
