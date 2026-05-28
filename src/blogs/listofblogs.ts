@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-chief-urges-ceasefire-amidst-dr-congo-ebola-resurgence",
+    title: "WHO Chief Urges Ceasefire Amidst DR Congo Ebola Resurgence",
+    summary:
+      "The Director-General of the World Health Organization traveled to the Democratic Republic of the Congo to address a severe Ebola resurgence in its conflict-ridden eastern provinces. He emphasized that a ceasefire is crucial for health workers to effectively contain the deadly virus amidst rampant instability.",
+    thumbnailImage: "/images/global-news/2026/2026-05-28-who-chief-urges-ceasefire-amidst-dr-congo-ebola-resurgence.jpg",
+    date: "2026-05-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-crisis-a-generation-betrayed-by-systemic-neglect",
     title: "Global Youth Crisis: A Generation Betrayed by Systemic Neglect",
     summary:
