@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sunak-is-right-that-our-students-need-financial-literacy",
+    title: "Global Health and Education Watch: Sunak is right that our students need financial literacy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-global-health-and-education-watch-sunak-is-right-that-our-students-need-financia.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ebola-s-cruel-paradox-when-care-becomes-contagion-on-the-frontline",
     title: "Ebola's Cruel Paradox: When Care Becomes Contagion on the Frontline",
     summary:
