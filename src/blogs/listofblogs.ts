@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ebola-s-cruel-paradox-when-care-becomes-contagion-on-the-frontline",
+    title: "Ebola's Cruel Paradox: When Care Becomes Contagion on the Frontline",
+    summary:
+      "A deadly Ebola outbreak grips the Democratic Republic of Congo, with the World Health Organization reporting over 900 suspected cases and more than 200 deaths. The crisis underscores the profound risks faced by those caring for the sick, transforming acts of compassion into pathways for contagion.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-ebola-s-cruel-paradox-when-care-becomes-contagion-on-the-frontline.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-experts-convened-by-who-advise-on-candidate-treatments-and",
     title: "Global Health and Education Watch: Experts convened by WHO advise on candidate treatments and",
     summary:
