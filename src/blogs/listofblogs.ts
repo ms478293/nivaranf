@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "kenya-dorm-fire-kills-16-eight-students-arrested-in-tragic-blaze",
+    title: "Kenya Dorm Fire Kills 16, Eight Students Arrested in Tragic Blaze",
+    summary:
+      "Sixteen students perished in a dormitory fire at a Kenyan school, leading to the arrest of eight students who may face charges next week. The tragedy has prompted a national inquiry into school safety standards and infrastructure.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-kenya-dorm-fire-kills-16-eight-students-arrested-in-tragic-blaze.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sunak-is-right-that-our-students-need-financial-literacy",
     title: "Global Health and Education Watch: Sunak is right that our students need financial literacy",
     summary:
