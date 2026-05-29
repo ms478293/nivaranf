@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-experts-convened-by-who-advise-on-candidate-treatments-and",
+    title: "Global Health and Education Watch: Experts convened by WHO advise on candidate treatments and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-global-health-and-education-watch-experts-convened-by-who-advise-on-candidate-tr.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-forgot-what-it-s-like-to-be-outside-intensive",
     title: "Global Health and Education Watch: 'I forgot what it's like to be outside': Intensive",
     summary:
