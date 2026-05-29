@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-crisis-disengagement-threatens-future-health-and-education",
+    title: "Global Youth Crisis: Disengagement Threatens Future Health and Education",
+    summary:
+      "A growing global phenomenon sees millions of young people disengaged from education, employment, and training, raising alarms about a potential \"lost generation.\" This widespread issue threatens long-term societal health, educational progress, and economic stability across continents.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-global-youth-crisis-disengagement-threatens-future-health-and-education.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-we-investigated-police-use-of-force-in-texas",
     title: "Global Health and Education Watch: How We Investigated Police Use of Force in Texas",
     summary:
