@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "gaza-s-silent-crisis-dental-health-forfeited-amidst-economic-desperation",
+    title: "Gaza's Silent Crisis: Dental Health Forfeited Amidst Economic Desperation",
+    summary:
+      "In Gaza, families are increasingly forced to forgo critical dental treatment due to prohibitive costs and severe economic hardship. This difficult decision has profound and lasting negative impacts on public health, particularly among vulnerable children.",
+    thumbnailImage: "/images/global-news/2026/2026-05-29-gaza-s-silent-crisis-dental-health-forfeited-amidst-economic-desperation.jpg",
+    date: "2026-05-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-crisis-disengagement-threatens-future-health-and-education",
     title: "Global Youth Crisis: Disengagement Threatens Future Health and Education",
     summary:
