@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "aid-cuts-jeopardize-ebola-containment-in-drc-as-virus-spreads-regionally",
+    title: "Aid Cuts Jeopardize Ebola Containment in DRC as Virus Spreads Regionally",
+    summary:
+      "A rapidly spreading Ebola outbreak in the Democratic Republic of Congo's Ituri province has claimed hundreds of lives and now threatens wider regional stability. Health workers warn that significant cuts in international aid are severely hampering containment efforts, making a prolonged crisis increasingly likely.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-aid-cuts-jeopardize-ebola-containment-in-drc-as-virus-spreads-regionally.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-urges-governments-to-protect-young-people-from-addiction",
     title: "Global Health and Education Watch: WHO urges governments to protect young people from addiction",
     summary:
