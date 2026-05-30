@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "healing-heights-rooftop-gardens-transform-intensive-care-recovery",
+    title: "Healing Heights: Rooftop Gardens Transform Intensive Care Recovery",
+    summary:
+      "A groundbreaking initiative at King's College Hospital in London introduces a rooftop intensive care ward, allowing critically ill patients access to natural environments. This innovative approach aims to accelerate healing and improve mental well-being during prolonged hospital stays.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-healing-heights-rooftop-gardens-transform-intensive-care-recovery.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "football-s-respite-kicking-hope-amidst-gaza-s-hardship",
     title: "Football's Respite: Kicking Hope Amidst Gaza's Hardship",
     summary:
