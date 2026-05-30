@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "football-s-respite-kicking-hope-amidst-gaza-s-hardship",
+    title: "Football's Respite: Kicking Hope Amidst Gaza's Hardship",
+    summary:
+      "In the shattered Occupied Palestinian Territory of Gaza, football matches organized by a former professional player are providing a crucial, albeit brief, respite from daily hardship. These games offer a vital sense of normalcy and joy for thousands living in overcrowded temporary shelters, fostering mental well-being and community cohesion.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-football-s-respite-kicking-hope-amidst-gaza-s-hardship.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-chief-visits-bunia-epicentre-of-the-ebola-outbreak",
     title: "Global Health and Education Watch: WHO chief visits Bunia, epicentre of the Ebola outbreak",
     summary:
