@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-urges-governments-to-protect-young-people-from-addiction",
+    title: "Global Health and Education Watch: WHO urges governments to protect young people from addiction",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-global-health-and-education-watch-who-urges-governments-to-protect-young-people-.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-implications-of-leader-health-after-presidential-checkup",
     title: "Global Implications of Leader Health After Presidential Checkup",
     summary:
