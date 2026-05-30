@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-classrooms-bake-climate-change-extends-heat-season-threatening-education",
+    title: "Global Classrooms Bake: Climate Change Extends Heat Season, Threatening Education",
+    summary:
+      "Climate change is extending heat seasons globally, causing classrooms to become dangerously hot and disrupting academic calendars. This phenomenon threatens student health, impairs learning, and demands urgent, adaptive strategies for educational systems worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-global-classrooms-bake-climate-change-extends-heat-season-threatening-education.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "kenya-dorm-fire-kills-16-eight-students-arrested-in-tragic-blaze",
     title: "Kenya Dorm Fire Kills 16, Eight Students Arrested in Tragic Blaze",
     summary:
