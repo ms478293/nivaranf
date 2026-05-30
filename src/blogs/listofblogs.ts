@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-implications-of-leader-health-after-presidential-checkup",
+    title: "Global Implications of Leader Health After Presidential Checkup",
+    summary:
+      "The White House recently released the results of the US president's annual medical examination, confirming his excellent health and fitness for duty. This report reignites global conversations about the transparency of leaders' health and its profound impact on international governance and stability.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-global-implications-of-leader-health-after-presidential-checkup.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rwanda-russia-nuclear-pact-boosts-africa-s-health-education-future",
     title: "Rwanda-Russia Nuclear Pact Boosts Africa's Health, Education Future",
     summary:
