@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "inside-an-ebola-ward-a-glimpse-into-humanity-s-fight",
+    title: "Inside an Ebola Ward: A Glimpse into Humanity's Fight",
+    summary:
+      "A recent report offers a stark look inside an Ebola treatment ward in an African region, where patients, including children, battle a deadly disease amid a rapidly escalating outbreak. The account highlights the immense challenges faced by healthcare workers and the profound human cost of the epidemic.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-inside-an-ebola-ward-a-glimpse-into-humanity-s-fight.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-among-the-things-he-feared-most-was-death-the",
     title: "Global Health and Education Watch: ‘Among the things he feared most was death’: the",
     summary:
