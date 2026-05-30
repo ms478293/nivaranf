@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rwanda-russia-nuclear-pact-boosts-africa-s-health-education-future",
+    title: "Rwanda-Russia Nuclear Pact Boosts Africa's Health, Education Future",
+    summary:
+      "Rwanda's recent nuclear deal with Russia signals a pivotal moment for scientific advancement and healthcare capacity building in Africa. The collaboration focuses on training and research, aiming to cultivate a skilled workforce and enhance medical technology across the region.",
+    thumbnailImage: "/images/global-news/2026/2026-05-30-rwanda-russia-nuclear-pact-boosts-africa-s-health-education-future.jpg",
+    date: "2026-05-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-classrooms-bake-climate-change-extends-heat-season-threatening-education",
     title: "Global Classrooms Bake: Climate Change Extends Heat Season, Threatening Education",
     summary:
