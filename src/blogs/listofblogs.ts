@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "who-hails-ebola-recoveries-amidst-challenging-outbreak-response",
+    title: "WHO Hails Ebola Recoveries Amidst Challenging Outbreak Response",
+    summary:
+      "The World Health Organization has announced the recovery of five Ebola patients, offering a beacon of hope amidst a recent outbreak that has tragically claimed over 220 suspected lives within two weeks. This development underscores the critical importance of rapid response and effective medical interventions in containing the highly contagious disease.",
+    thumbnailImage: "/images/global-news/2026/2026-05-31-who-hails-ebola-recoveries-amidst-challenging-outbreak-response.jpg",
+    date: "2026-05-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-cancer-workforce-crisis-looms-100-million-shortfall-by-2050",
     title: "Global Cancer Workforce Crisis Looms: 100 Million Shortfall by 2050",
     summary:
