@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "rethinking-pcos-a-global-call-for-clarity-and-empowerment",
+    title: "Rethinking PCOS: A Global Call for Clarity and Empowerment",
+    summary:
+      "Over 170 million women globally grapple with Polycystic Ovary Syndrome, a condition often misunderstood due to its misleading name. A growing movement advocates for renaming PCOS to better reflect its complex systemic nature and empower affected individuals worldwide.",
+    thumbnailImage: "/images/global-news/2026/2026-05-31-rethinking-pcos-a-global-call-for-clarity-and-empowerment.jpg",
+    date: "2026-05-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-nigeria-s-algorithmic-apothecary-fuels-a-surge-in-risky",
     title: "Global Health and Education Watch: How Nigeria’s ‘algorithmic apothecary’ fuels a surge in risky",
     summary:
