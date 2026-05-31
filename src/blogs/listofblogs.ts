@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-youth-disengagement-understanding-the-neet-challenge",
+    title: "Global Youth Disengagement: Understanding the NEET Challenge",
+    summary:
+      "The phenomenon of young people Not in Education, Employment, or Training (NEET) represents a critical global challenge impacting socio-economic stability and individual well-being. Addressing this issue requires comprehensive strategies that span educational reform, economic opportunity, and robust social support systems.",
+    thumbnailImage: "/images/global-news/2026/2026-05-31-global-youth-disengagement-understanding-the-neet-challenge.jpg",
+    date: "2026-05-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-you-are-not-alone-who-chief-vows-to-stand",
     title: "Global Health and Education Watch: ‘You are not alone’: WHO chief vows to stand",
     summary:
