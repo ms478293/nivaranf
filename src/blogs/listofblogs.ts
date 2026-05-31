@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "notre-dame-report-uncovers-priest-abuse-exposing-global-institutional-failures-in-safeguarding-students",
+    title: "Notre Dame Report Uncovers Priest Abuse, Exposing Global Institutional Failures in Safeguarding Students",
+    summary:
+      "A commissioned report found Notre Dame failed to adequately respond to sexual misconduct allegations against a priest, involving a 'weighing scheme.' This investigation underscores critical global lessons in institutional accountability and student safeguarding within educational settings.",
+    thumbnailImage: "/images/global-news/2026/2026-05-31-notre-dame-report-uncovers-priest-abuse-exposing-global-institutional-failures-i.jpg",
+    date: "2026-05-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-youth-disengagement-understanding-the-neet-challenge",
     title: "Global Youth Disengagement: Understanding the NEET Challenge",
     summary:
