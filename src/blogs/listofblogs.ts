@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-cancer-workforce-crisis-looms-100-million-shortfall-by-2050",
+    title: "Global Cancer Workforce Crisis Looms: 100 Million Shortfall by 2050",
+    summary:
+      "A dire report reveals the world faces a staggering 100 million healthcare staff shortfall by 2050, primarily impacting cancer care. This impending crisis threatens to overwhelm global healthcare systems, leading to severe delays in diagnosis and treatment for millions.",
+    thumbnailImage: "/images/global-news/2026/2026-05-31-global-cancer-workforce-crisis-looms-100-million-shortfall-by-2050.jpg",
+    date: "2026-05-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "rethinking-pcos-a-global-call-for-clarity-and-empowerment",
     title: "Rethinking PCOS: A Global Call for Clarity and Empowerment",
     summary:
