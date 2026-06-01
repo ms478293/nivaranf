@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "ai-university-experiment-california-s-costly-chaos-in-higher-education",
+    title: "AI University Experiment: California's Costly Chaos in Higher Education",
+    summary:
+      "California's ambitious $16.9 million initiative to integrate AI across its public university system has instead resulted in significant operational chaos and student discontent. This case study offers crucial insights for global educational institutions considering similar large-scale technological transformations.",
+    thumbnailImage: "/images/global-news/2026/2026-06-01-ai-university-experiment-california-s-costly-chaos-in-higher-education.jpg",
+    date: "2026-06-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "drc-who-forge-united-front-against-bundibugyo-ebola-outbreak",
     title: "DRC, WHO Forge United Front Against Bundibugyo Ebola Outbreak",
     summary:
