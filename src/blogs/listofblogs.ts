@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "drc-who-forge-united-front-against-bundibugyo-ebola-outbreak",
+    title: "DRC, WHO Forge United Front Against Bundibugyo Ebola Outbreak",
+    summary:
+      "The Democratic Republic of Congo and the World Health Organization have reaffirmed their robust partnership to tackle a rapidly evolving Ebola outbreak caused by the Bundibugyo virus. Joint efforts focus on intensified surveillance, patient care, and crucial community engagement to interrupt transmission and strengthen long-term health resilience.",
+    thumbnailImage: "/images/global-news/2026/2026-06-01-drc-who-forge-united-front-against-bundibugyo-ebola-outbreak.jpg",
+    date: "2026-06-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "notre-dame-report-uncovers-priest-abuse-exposing-global-institutional-failures-in-safeguarding-students",
     title: "Notre Dame Report Uncovers Priest Abuse, Exposing Global Institutional Failures in Safeguarding Students",
     summary:
