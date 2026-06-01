@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-strike-damages-hospital-in-southern-lebanon",
+    title: "Global Health and Education Watch: Israeli strike damages hospital in southern Lebanon",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-01-global-health-and-education-watch-israeli-strike-damages-hospital-in-southern-le.jpg",
+    date: "2026-06-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "ai-university-experiment-california-s-costly-chaos-in-higher-education",
     title: "AI University Experiment: California's Costly Chaos in Higher Education",
     summary:
