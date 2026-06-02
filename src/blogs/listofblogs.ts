@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-as-ebola-spreads-scientists-race-to-find-vaccines-and",
+    title: "Global Health and Education Watch: As Ebola Spreads, Scientists Race to Find Vaccines and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-02-global-health-and-education-watch-as-ebola-spreads-scientists-race-to-find-vacci.jpg",
+    date: "2026-06-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-rude-awakening-more-doctors-running-for-office-in",
     title: "Global Health and Education Watch: ‘A rude awakening’: more doctors running for office in",
     summary:
