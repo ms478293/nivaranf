@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dr-congo-ebola-outbreak-nurses-discharged-after-full-recovery",
+    title: "Global Health and Education Watch: DR Congo Ebola outbreak: Nurses discharged after full recovery",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-02-global-health-and-education-watch-dr-congo-ebola-outbreak-nurses-discharged-afte.jpg",
+    date: "2026-06-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what",
     title: "Global Health and Education Watch: Midwives want to make childbirth miraculous – so what",
     summary:
