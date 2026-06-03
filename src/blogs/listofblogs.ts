@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-outbreak-stirs-familiar-grim-sense-of-foreboding",
+    title: "Global Health and Education Watch: Ebola outbreak stirs familiar grim sense of foreboding",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-03-global-health-and-education-watch-ebola-outbreak-stirs-familiar-grim-sense-of-fo.jpg",
+    date: "2026-06-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-students-and-graduates-share-your-views-on-going",
     title: "Global Health and Education Watch: UK students and graduates: share your views on going",
     summary:
