@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-don-t-be-too-kind-maternity-staff-used-offensive-terms",
+    title: "Global Health and Education Watch: 'Don't be too kind': Maternity staff used offensive terms",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-03-global-health-and-education-watch-don-t-be-too-kind-maternity-staff-used-offensi.jpg",
+    date: "2026-06-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-fire-at-new-delhi-hotel-kills-at-least-21",
     title: "Global Health and Education Watch: Fire at New Delhi hotel kills at least 21",
     summary:
