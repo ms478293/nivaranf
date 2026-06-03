@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-students-and-graduates-share-your-views-on-going",
+    title: "Global Health and Education Watch: UK students and graduates: share your views on going",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-03-global-health-and-education-watch-uk-students-and-graduates-share-your-views-on-.jpg",
+    date: "2026-06-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who",
     title: "Global Health and Education Watch: Lebanon hospital strikes impact most vulnerable patients, warns WHO",
     summary:
