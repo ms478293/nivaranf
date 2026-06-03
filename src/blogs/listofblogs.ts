@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-we-are-catching-up-who-chief-on-dr",
+    title: "Global Health and Education Watch: ‘We are catching up’ – WHO chief on DR",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-03-global-health-and-education-watch-we-are-catching-up-who-chief-on-dr.jpg",
+    date: "2026-06-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-don-t-be-too-kind-maternity-staff-used-offensive-terms",
     title: "Global Health and Education Watch: 'Don't be too kind': Maternity staff used offensive terms",
     summary:
