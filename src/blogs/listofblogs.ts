@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-regional-health-agency-issues-measles-alert-for-world-cup",
+    title: "Global Health and Education Watch: Regional health agency issues measles alert for World Cup",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-04-global-health-and-education-watch-regional-health-agency-issues-measles-alert-fo.jpg",
+    date: "2026-06-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ballet-tech-gave-them-dance-now-they-give-back",
     title: "Global Health and Education Watch: Ballet Tech Gave Them Dance. Now They Give Back.",
     summary:
