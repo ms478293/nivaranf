@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-from-food-lines-in-somalia-to-clinics-in-afghanistan",
+    title: "Global Health and Education Watch: From food lines in Somalia to clinics in Afghanistan",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-05-global-health-and-education-watch-from-food-lines-in-somalia-to-clinics-in-afgha.jpg",
+    date: "2026-06-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-mistrust-spreads-with-the-ebola-virus-in-congo",
     title: "Global Health and Education Watch: Mistrust Spreads With the Ebola Virus in Congo",
     summary:
