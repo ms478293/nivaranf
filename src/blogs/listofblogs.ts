@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-experts-criticise-plan-for-american-only-ebola-quarantine-centre-in",
+    title: "Global Health and Education Watch: Experts criticise plan for American-only Ebola quarantine centre in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-05-global-health-and-education-watch-experts-criticise-plan-for-american-only-ebola.jpg",
+    date: "2026-06-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-family-of-girl-left-brain-damaged-at-birth-accept-28m",
     title: "Global Health and Education Watch: Family of girl left brain-damaged at birth accept £28m",
     summary:
