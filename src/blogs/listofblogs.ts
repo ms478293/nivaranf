@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-africa-cdc-and-who-launch-joint-continental-ebola-response",
+    title: "Global Health and Education Watch: Africa CDC and WHO launch joint continental Ebola response",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-06-global-health-and-education-watch-africa-cdc-and-who-launch-joint-continental-eb.jpg",
+    date: "2026-06-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ohio-state-agrees-to-100-million-payout-over-sexual",
     title: "Global Health and Education Watch: Ohio State Agrees to $100 Million Payout Over Sexual",
     summary:
