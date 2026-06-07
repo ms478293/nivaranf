@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-rfk-jr-appears-disengaged-on-many-health-department-matters",
+    title: "Global Health and Education Watch: RFK Jr. Appears Disengaged on Many Health Department Matters",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-07-global-health-and-education-watch-rfk-jr-appears-disengaged-on-many-health-depar.jpg",
+    date: "2026-06-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-genital-herpes-rising-in-england-despite-overall-drop-in",
     title: "Global Health and Education Watch: Genital herpes rising in England, despite overall drop in",
     summary:
