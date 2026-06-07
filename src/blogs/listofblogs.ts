@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-the-hosts-are-preparing-for-an-ebola-outbreak",
+    title: "Global Health and Education Watch: How the hosts are preparing for an Ebola outbreak",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-07-global-health-and-education-watch-how-the-hosts-are-preparing-for-an-ebola-outbr.jpg",
+    date: "2026-06-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize",
     title: "Global Health and Education Watch: Stevie Nicks donates $3m to medical school to recognize",
     summary:
