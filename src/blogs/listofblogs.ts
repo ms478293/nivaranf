@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-a-i-classroom-is-quiet-way-too-quiet",
+    title: "Global Health and Education Watch: The A.I. Classroom Is Quiet. Way Too Quiet.",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-08-global-health-and-education-watch-the-a-i-classroom-is-quiet-way-too-quiet.jpg",
+    date: "2026-06-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-and-jihadis-threaten-africa-s-oldest-national-park",
     title: "Global Health and Education Watch: Ebola and jihadis threaten Africa’s oldest national park",
     summary:
