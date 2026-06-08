@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-chief-lauds-uganda-s-response-to-ebola-outbreak",
+    title: "Global Health and Education Watch: WHO chief lauds Uganda’s response to Ebola outbreak",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-08-global-health-and-education-watch-who-chief-lauds-uganda-s-response-to-ebola-out.jpg",
+    date: "2026-06-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-more-than-half-of-staff-who-died-in-service",
     title: "Global Health and Education Watch: More than half of staff who died in service",
     summary:
