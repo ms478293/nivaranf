@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-have-a-thorny-medical-question-your-doctor-may-be",
+    title: "Global Health and Education Watch: Have a Thorny Medical Question? Your Doctor May Be",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-09-global-health-and-education-watch-have-a-thorny-medical-question-your-doctor-may.jpg",
+    date: "2026-06-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-healthy-cooperation-how-northern-universities-are-linking-with-nhs",
     title: "Global Health and Education Watch: Healthy cooperation: how northern universities are linking with NHS",
     summary:
