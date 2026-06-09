@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-bear-captured-after-days-of-panic-and-school-closures",
+    title: "Global Health and Education Watch: Bear captured after days of panic and school closures",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-09-global-health-and-education-watch-bear-captured-after-days-of-panic-and-school-c.jpg",
+    date: "2026-06-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-karmelo-anthony-19-found-guilty-of-murder-of-austin",
     title: "Global Health and Education Watch: Karmelo Anthony, 19, found guilty of murder of Austin",
     summary:
