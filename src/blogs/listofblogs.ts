@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-majority-of-city-council-members-urge-mamdani-to-pause",
+    title: "Global Health and Education Watch: Majority of City Council Members Urge Mamdani to Pause",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-10-global-health-and-education-watch-majority-of-city-council-members-urge-mamdani-.jpg",
+    date: "2026-06-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-building-trust-and-lab-testing-at-the-heart-of",
     title: "Global Health and Education Watch: Building trust and lab testing at the heart of",
     summary:
