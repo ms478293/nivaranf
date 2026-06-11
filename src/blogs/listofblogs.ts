@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-children-hit-by-parents-more-likely-to-bully-others",
+    title: "Global Health and Education Watch: Children hit by parents more likely to bully others",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-11-global-health-and-education-watch-children-hit-by-parents-more-likely-to-bully-o.jpg",
+    date: "2026-06-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-india-s-deadly-dengue-crisis-is-now-no-longer",
     title: "Global Health and Education Watch: Why India’s deadly dengue crisis is now no longer",
     summary:
