@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-school-leavers-and-new-students-to-be-offered",
+    title: "Global Health and Education Watch: UK school leavers and new students to be offered",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-12-global-health-and-education-watch-uk-school-leavers-and-new-students-to-be-offer.jpg",
+    date: "2026-06-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-more-than-one-in-five-pupils-in-england-getting",
     title: "Global Health and Education Watch: More than one in five pupils in England getting",
     summary:
