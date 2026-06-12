@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-06-12T14:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
     {
       "title": "UK school leavers and new students to be offered meningitis B vaccine",
@@ -12,19 +12,7 @@
       "healthHits": 3,
       "educationHits": 3,
       "reason": "relevance=48, credibility=35, freshness=18, health_hits=3, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "Bananas could vanish from US school meals. Here’s why",
-      "link": "https://www.theguardian.com/environment/2026/jun/11/farm-bill-school-lunches-non-us-foods",
-      "summary": "New Farm Bill places caps on non-US foods; nutritionists say it restricts availability of healthy meals for kids School nutrition workers and advocates have “lots of concerns about bananas”, said Erin Ogden, policy associate for federal child nutrition programs at the Center for Science in the Public Interest (CSPI). Bananas are nutrient-dense foods that many children like. That makes them popular offerings in school cafeterias, since any healthy food that a kid will eat prevents waste and ensures that child isn’t eating either nothing or something less wholesome instead. Continue reading...",
-      "publishedAtUtc": "2026-06-11T17:00:21Z",
-      "domain": "theguardian.com",
-      "score": 90.0,
-      "healthHits": 2,
-      "educationHits": 1,
-      "reason": "relevance=37, credibility=35, freshness=18, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -36,19 +24,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "More than one in five pupils in England have special educational needs, figures show",
-      "link": "https://www.theguardian.com/education/2026/jun/11/pupils-england-special-educational-needs",
-      "summary": "Data shows sharp rise in number of children getting extra support and highlights pressure on schools, families and councils More than one in five pupils in England now have special educational needs, as the latest official figures show a sharp increase in the numbers of children receiving extra support in school. The annual data from the Department for Education (DfE) confirms predictions of an increase in families seeking education, health and care plans (EHCPs) – the individual agreements detailing extra support – before the government’s efforts to overhaul funding and provision for children with special educational needs and disabilities (Send). Continue reading...",
-      "publishedAtUtc": "2026-06-11T16:32:56Z",
-      "domain": "theguardian.com",
-      "score": 88.0,
-      "healthHits": 1,
-      "educationHits": 2,
-      "reason": "relevance=35, credibility=35, freshness=18, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -60,7 +36,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -72,7 +48,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Natural history GCSE to teach teenagers to plant wildflower-friendly gardens",
@@ -84,7 +60,19 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "WHO report shows progress in blood safety, but there are worrying gaps",
+      "link": "https://news.un.org/feed/view/en/story/2026/06/1167703",
+      "summary": "Every day, safe blood helps save the lives of women experiencing childbirth complications, accident victims, cancer patients and people living with chronic diseases. Yet despite decades of progress, access to lifesaving blood remains deeply unequal, with shortages continuing to put lives at risk in many lower-income countries, according to a new World Health Organization (WHO) report.",
+      "publishedAtUtc": "2026-06-12T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 83.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Sunak is right that our students need financial literacy – but that shouldn’t mean yet more maths | Simon Jenkins",
@@ -96,7 +84,19 @@
       "healthHits": 2,
       "educationHits": 4,
       "reason": "relevance=48, credibility=35, freshness=0, health_hits=2, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Bananas could vanish from US school meals. Here’s why",
+      "link": "https://www.theguardian.com/environment/2026/jun/11/farm-bill-school-lunches-non-us-foods",
+      "summary": "New Farm Bill places caps on non-US foods; nutritionists say it restricts availability of healthy meals for kids School nutrition workers and advocates have “lots of concerns about bananas”, said Erin Ogden, policy associate for federal child nutrition programs at the Center for Science in the Public Interest (CSPI). Bananas are nutrient-dense foods that many children like. That makes them popular offerings in school cafeterias, since any healthy food that a kid will eat prevents waste and ensures that child isn’t eating either nothing or something less wholesome instead. Continue reading...",
+      "publishedAtUtc": "2026-06-11T17:00:21Z",
+      "domain": "theguardian.com",
+      "score": 82.0,
+      "healthHits": 2,
+      "educationHits": 1,
+      "reason": "relevance=37, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "College opens lifelike hospital training ward",
@@ -108,7 +108,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -120,7 +120,19 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "More than one in five pupils in England have special educational needs, figures show",
+      "link": "https://www.theguardian.com/education/2026/jun/11/pupils-england-special-educational-needs",
+      "summary": "Data shows sharp rise in number of children getting extra support and highlights pressure on schools, families and councils More than one in five pupils in England now have special educational needs, as the latest official figures show a sharp increase in the numbers of children receiving extra support in school. The annual data from the Department for Education (DfE) confirms predictions of an increase in families seeking education, health and care plans (EHCPs) – the individual agreements detailing extra support – before the government’s efforts to overhaul funding and provision for children with special educational needs and disabilities (Send). Continue reading...",
+      "publishedAtUtc": "2026-06-11T16:32:56Z",
+      "domain": "theguardian.com",
+      "score": 80.0,
+      "healthHits": 1,
+      "educationHits": 2,
+      "reason": "relevance=35, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Emergency hospital admissions fell after introduction of London’s T-charge and Ulez, study suggests",
@@ -132,7 +144,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "US measles cases pass 2,000 this year as outbreak nears worst in decades",
@@ -144,7 +156,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Labour doesn't seem to like Send schools for kids like mine – but here's what we'll lose if these precious places are forgotten | John Harris",
@@ -156,7 +168,7 @@
       "healthHits": 0,
       "educationHits": 5,
       "reason": "relevance=39, credibility=35, freshness=4, health_hits=0, education_hits=5, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Funding cuts and repressive laws raise risk of new HIV epidemic, says UNAids",
@@ -168,7 +180,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=25, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Majority of City Council Members Urge Mamdani to Pause A.I. in Schools",
@@ -180,7 +192,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=32, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Joseph Ana obituary",
@@ -192,31 +204,31 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Data is not enough: from Covid to measles, America must relearn risk communication | Lynne Peeples",
       "link": "https://www.theguardian.com/commentisfree/2026/jun/12/covid-measles-hantavirus-ebola-risk-communication",
-      "summary": "The confusion over hantavirus and Ebola is a reminder that we must do better at explaining how to respond to an outbreak Two unfolding outbreaks continue to command global attention. As a hantavirus outbreak tied to a cruise ship appears to be petering out, Ebola cases continue to mount in Africa. Alongside them have emerged familiar artifacts of the Covid era, including dashboards , trackers, maps, risk estimates, and a polarized mix of alarming and dismissive takes. Once again, we’re able to watch disease spread in almost real time. Yet despite all the information, many people are left asking the same questions: what can I trust? How bad is this, really? What should I do? Continue reading...",
+      "summary": "The confusion over hantavirus and Ebola is a reminder that we must do better at explaining how to respond to an outbreak Two unfolding outbreaks continue to command global attention. As a hantavirus outbreak tied to a cruise ship appears to be petering out, Ebola cases continue to mount in Africa. Alongside them have emerged familiar artifacts of the Covid era, including dashboards , trackers, maps, risk estimates and a polarized mix of alarming and dismissive takes. Once again, we’re able to watch disease spread in almost real time. Yet despite all the information, many people are left asking the same questions: what can I trust? How bad is this, really? What should I do? Continue reading...",
       "publishedAtUtc": "2026-06-12T14:00:48Z",
       "domain": "theguardian.com",
       "score": 77.0,
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
-      "title": "Autistic children injected with unapproved stem cell treatments supported by RFK Jr",
+      "title": "Autistic children being injected with unapproved stem cell treatments supported by RFK Jr",
       "link": "https://www.theguardian.com/society/2026/jun/12/autism-stem-cell-infusions-rfk-jr",
-      "summary": "Desperate US parents pay up to $20,000 a session for a procedure scientists say could be bogus Autistic children as young as 18 months old are being injected with human stem cells derived from umbilical cords in unapproved, unproven and potentially harmful “treatments” that scientists warn are proliferating across the US under the active encouragement of the US health secretary, Robert F Kennedy Jr . Clinics in Florida, Texas and other states are selling what they bill as “regenerative medicine” to families with autistic children who have intensive care needs. Parents who have taken their children through the process talked to the Guardian about their hopes and fears for a therapy that appears to be gaining ground in the US. Continue reading...",
+      "summary": "Desperate US parents paying up to $20,000 a session for a procedure scientists say could be bogus Autistic children as young as 18 months old are being injected with human stem cells derived from umbilical cords in unapproved, unproven and potentially harmful “treatments” that scientists warn are proliferating across the US under the active encouragement of the US health secretary, Robert F Kennedy Jr . Clinics in Florida, Texas and other states are selling what they bill as “regenerative medicine” to families with autistic children who have intensive care needs. Parents who have taken their children through the process talked about their hopes and fears for a therapy that appears to be gaining ground in the US. Continue reading...",
       "publishedAtUtc": "2026-06-12T11:00:45Z",
       "domain": "theguardian.com",
       "score": 77.0,
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "A new test claims to tell how well you’re ageing – and even when you’ll die. But I’d rather not know | Helen Pilcher",
@@ -228,7 +240,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "World News in Brief: Turk condemns Northern Ireland riots, jobs at risk over animal disease spread, heatwaves spark public health crisis in Europe",
@@ -240,7 +252,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Meningitis B vaccine to be offered to a million young people",
@@ -252,19 +264,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "Nearly 3,000 NHS patients a day receiving corridor care in England, figures show",
-      "link": "https://www.theguardian.com/society/2026/jun/11/nhs-patients-receiving-corridor-care-england-official-figures",
-      "summary": "Data published for the first time recorded 2,241 daily cases of A&amp;E corridor care, with 699 patients also treated in other inappropriate settings Almost 3,000 patients a day in England are receiving care in hospital corridors due to an unavailability of beds in A&amp;E units across the country, according to official figures. Corridor care occurs when a patient receives treatment in a setting that is clinically inappropriate and is deemed to be undignified and unsafe. Continue reading...",
-      "publishedAtUtc": "2026-06-11T14:28:01Z",
-      "domain": "theguardian.com",
-      "score": 75.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Thailand’s Princess Bajrakitiyabha dies aged 47 after years in a coma",
@@ -276,7 +276,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -288,7 +288,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -300,19 +300,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "The Researcher Who Didn’t Want to Know",
-      "link": "https://www.nytimes.com/2026/06/11/science/researcher-huntingtons-disease-wexler.html",
-      "summary": "Her decades of work on Huntington’s disease helped lead to the creation of a genetic test for the devastating condition. Why didn’t she take it herself?",
-      "publishedAtUtc": "2026-06-11T16:56:14Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "World Cup Ticket Prices in Mexico City Too Expensive for Most Fans",
@@ -324,7 +312,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "‘Autistic kids are being experimented on’: inside America’s booming market for unproven stem cell infusions",
@@ -336,19 +324,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
-      "title": "Wegovy weight-loss pills to be available for patients in UK to buy",
-      "link": "https://www.theguardian.com/science/2026/jun/11/wegovy-weight-loss-pills-available-in-uk-to-buy",
-      "summary": "Regulator approval means patients who meet criteria will be able to purchase tablets with private prescription Patients in the UK will soon be able to buy the Wegovy weight-loss pill, the medicines regulator announced on Thursday. It is the first GLP-1 receptor agonist tablet for weight-loss to be approved by the Medicines and Healthcare products Regulatory Agency (MHRA), making the UK the third country to authorise the pills, behind the US and the United Arab Emirates. Continue reading...",
-      "publishedAtUtc": "2026-06-11T16:25:40Z",
+      "title": "Texas shooting leaves one person dead and nine others in hospital",
+      "link": "https://www.theguardian.com/us-news/2026/jun/12/midland-texas-shooting",
+      "summary": "Midland police reported that the suspected shooter was dead after a two-hour standoff Sign up for the Breaking News US newsletter email A shooting on Friday in Midland, Texas, has killed one person and sent a further nine to the hospital with injuries, according to the city’s authorities. The possible suspect was in a standoff with officers for around two hours but later on Friday afternoon was reported deceased, police and the city’s mayor said. Continue reading...",
+      "publishedAtUtc": "2026-06-12T17:26:05Z",
       "domain": "theguardian.com",
       "score": 72.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Alarm as Ebola spreads into new areas of DR Congo",
+      "link": "https://www.aljazeera.com/news/2026/6/12/alarm-as-ebola-spreads-into-new-areas-of-dr-congo?traffic_source=rss",
+      "summary": "Cases are being identified in new health zones on a near-daily basis, warns WHO&#039;s head of epidemiology.",
+      "publishedAtUtc": "2026-06-12T15:37:25Z",
+      "domain": "aljazeera.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -360,7 +360,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Children hit by parents more likely to bully others, research finds",
@@ -372,7 +372,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
@@ -384,7 +384,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "DR Congo: Ebola spreads as agencies brace for child victims",
@@ -396,7 +396,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "What is meningitis B and why is a vaccine only being offered to some teenagers?",
@@ -408,19 +408,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Cancellations 'unavoidable' during hospital strike",
+      "link": "https://www.bbc.com/news/articles/ckg89vk7em7o?at_medium=RSS&at_campaign=rss",
+      "summary": "The British Medical Association has announced more strike action in an ongoing dispute over pay.",
+      "publishedAtUtc": "2026-06-12T15:03:33Z",
+      "domain": "bbc.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Scientists Measure Earth’s Vast Underground Fungal Webs",
       "link": "https://www.nytimes.com/2026/06/11/science/ecology-mycorrhizal-fungus.html",
       "summary": "With machine learning and a high-resolution imaging robot, scientists measured and mapped the extent of Earth’s carbon circulatory system.",
-      "publishedAtUtc": "2026-06-12T13:46:52Z",
+      "publishedAtUtc": "2026-06-12T14:34:15Z",
       "domain": "nytimes.com",
       "score": 70.0,
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "From man boobs to baldness: everything you wanted to know about midlife wellness … but were too male to ask",
@@ -432,7 +444,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Lupus patients in England in remission after pioneering NHS trial of GM therapy",
@@ -444,19 +456,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "Toronto police officer shot while investigating US consulate attack",
-      "link": "https://www.theguardian.com/world/2026/jun/11/toronto-police-shot-us-consulate-attack",
-      "summary": "Suspect, 19, still at large after officer dies in hospital having been shot while searching an apartment A Toronto police officer has been shot dead as police raided an apartment allegedly linked to the March attack on the US consulate, the city’s police chief, Myron Demkiw, said. Demkiw said 43-year-old constable Marc Pinizzotto was shot while conducting an early-morning search warrant in the north-west of the city and later died at a hospital. Continue reading...",
-      "publishedAtUtc": "2026-06-11T15:23:01Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Indonesian students protest gov’t policies amid economic strain",
@@ -468,7 +468,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Australia becomes the 30th country to eliminate trachoma as a public health problem",
@@ -480,7 +480,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "A&E patients with non-urgent ailments may be told to come back later under NHS plans",
@@ -492,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "More than one in five pupils in England getting special educational needs support",
@@ -504,7 +504,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Trump’s justice department is weaponizing civil rights laws against students of color | ReNika Moore",
@@ -516,7 +516,19 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Nearly 3,000 NHS patients a day receiving corridor care in England, figures show",
+      "link": "https://www.theguardian.com/society/2026/jun/11/nhs-patients-receiving-corridor-care-england-official-figures",
+      "summary": "Data published for the first time recorded 2,241 daily cases of A&amp;E corridor care, with 699 patients also treated in other inappropriate settings Almost 3,000 patients a day in England are receiving care in hospital corridors due to an unavailability of beds in A&amp;E units across the country, according to official figures. Corridor care occurs when a patient receives treatment in a setting that is clinically inappropriate and is deemed to be undignified and unsafe. Continue reading...",
+      "publishedAtUtc": "2026-06-11T14:28:01Z",
+      "domain": "theguardian.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
@@ -528,7 +540,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "UK minister defends changes to student loans as criticism mounts",
@@ -540,7 +552,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Rachel Downey obituary",
+      "link": "https://www.theguardian.com/education/2026/jun/10/rachel-downey-obituary",
+      "summary": "My wife, Rachel Downey, was a health and social affairs journalist who went on to become a communications strategist at the Department of Health. There she worked at the heart of health policy, translating complex and often sensitive issues into communications that the public could understand. It was demanding, important work and she was exceptionally good at it. Most recently Rachel, who has died of renal failure aged 60, was head of public relations at the Office of the Patient Safety Commissioner. It was a role that felt, in many ways, made for her, as the Office exists to amplify the voices of patients who have been harmed, to hold systems to account and to drive change where it is most needed. Continue reading...",
+      "publishedAtUtc": "2026-06-10T16:44:11Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "WHO’s response to hantavirus cases linked to a cruise ship",
@@ -552,7 +576,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Smacking children could lead to lower GCSE grades, study suggests",
@@ -564,7 +588,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "The Researcher Who Didn’t Want to Know",
+      "link": "https://www.nytimes.com/2026/06/11/science/researcher-huntingtons-disease-wexler.html",
+      "summary": "Her decades of work on Huntington’s disease helped lead to the creation of a genetic test for the devastating condition. Why didn’t she take it herself?",
+      "publishedAtUtc": "2026-06-11T16:56:14Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Can’t Pay Medical Bills? Trump Administration Suggests Getting a Loan",
@@ -576,7 +612,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "NAEP Test Shows Younger Students Recovering From Pandemic",
@@ -588,7 +624,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Wegovy weight-loss pills to be available for patients in UK to buy",
+      "link": "https://www.theguardian.com/science/2026/jun/11/wegovy-weight-loss-pills-available-in-uk-to-buy",
+      "summary": "Regulator approval means patients who meet criteria will be able to purchase tablets with private prescription Patients in the UK will soon be able to buy the Wegovy weight-loss pill, the medicines regulator announced on Thursday. It is the first GLP-1 receptor agonist tablet for weight-loss to be approved by the Medicines and Healthcare products Regulatory Agency (MHRA), making the UK the third country to authorise the pills, behind the US and the United Arab Emirates. Continue reading...",
+      "publishedAtUtc": "2026-06-11T16:25:40Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Two children die from measles as England data shows 100 new infections",
@@ -600,7 +648,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Ministers want 60% of pupils in England ‘actively’ travelling to school by 2035",
@@ -612,7 +660,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Advanced radiotherapy for prostate cancer to cut sessions from 20 to five",
@@ -624,19 +672,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "Cancellations 'unavoidable' during hospital strike",
-      "link": "https://www.bbc.com/news/articles/ckg89vk7em7o?at_medium=RSS&at_campaign=rss",
-      "summary": "The British Medical Association has announced more strike action in an ongoing dispute over pay.",
-      "publishedAtUtc": "2026-06-11T13:56:11Z",
-      "domain": "bbc.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Uptick in children and teenagers enjoying reading for first time in 5 years",
@@ -648,7 +684,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "A Newer Approach to Editing Embryos Ignites Debate",
@@ -660,7 +696,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "City Council Calls for Tighter Review of N.Y.C. School System Contracts",
@@ -672,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "University of Florida Chooses Stuart Bell for President Over Some Conservative Criticism",
@@ -684,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "New York City Schools Chancellor Being Investigated Over No-Bid Contract",
@@ -696,7 +732,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Trump Law Would Also Direct Voucher Money to Public Schools",
@@ -708,7 +744,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Florida Creates a More Conservative Course to Rival A.P. History",
@@ -720,7 +756,19 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Toronto police officer shot while investigating US consulate attack",
+      "link": "https://www.theguardian.com/world/2026/jun/11/toronto-police-shot-us-consulate-attack",
+      "summary": "Suspect, 19, still at large after officer dies in hospital having been shot while searching an apartment A Toronto police officer has been shot dead as police raided an apartment allegedly linked to the March attack on the US consulate, the city’s police chief, Myron Demkiw, said. Demkiw said 43-year-old constable Marc Pinizzotto was shot while conducting an early-morning search warrant in the north-west of the city and later died at a hospital. Continue reading...",
+      "publishedAtUtc": "2026-06-11T15:23:01Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "‘It just fell off him’: Parents turn to private clinics for children’s weight loss jabs",
@@ -732,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
@@ -744,7 +792,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Tunisia validated by WHO as having eliminated trachoma as a public health problem",
@@ -756,7 +804,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "WHO Member States agree to extend negotiations on Pathogen Access and Benefit Sharing annex",
@@ -768,7 +816,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "RFK Jr. Appears Disengaged on Many Health Department Matters Beyond Vaccines",
@@ -780,7 +828,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Global health gains face threat of reversal",
@@ -792,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Building trust and lab testing at the heart of DRC Ebola response: WHO",
@@ -804,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Students at risk if universities go bust, say MPs",
@@ -816,7 +864,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Joint call by the President of the ICRC, the Director-General of WHO and the International President of MSF",
@@ -828,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "More than half of staff who died in service worked in Gaza, UN chief says at memorial",
@@ -840,7 +888,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "'No dead ends': What the Dutch can teach us about tackling youth unemployment",
@@ -852,7 +900,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "How do you give Britain’s hidden army of young carers a break? | Is Mum OK? Documentary",
@@ -864,7 +912,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Aiden's story of life as a young carer | Is Mum OK? Documentary",
@@ -876,7 +924,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Only the Right Tests Can Stop This Ebola Outbreak. Congo Has Hardly Any.",
@@ -888,7 +936,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Trump Megadonor Gave $5.5 Million Estate to Robert F. Kennedy Jr.’s Anti-Vaccine Group",
@@ -900,7 +948,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Ebola outbreak stirs familiar grim sense of foreboding",
@@ -912,7 +960,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
@@ -924,7 +972,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
@@ -936,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
@@ -948,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "‘Rare, untreatable strain’: Ebola toll mounts in eastern DR Congo",
@@ -960,7 +1008,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Deadly quake strikes Philippines on first day of school year",
@@ -972,19 +1020,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "Pupils asked to walk to school through army firing range, MP claims",
-      "link": "https://www.bbc.com/news/articles/cjrpr3pqnz3o?at_medium=RSS&at_campaign=rss",
-      "summary": "Getting children to school is becoming a thorny issue for councils to deal with.",
-      "publishedAtUtc": "2026-06-05T17:18:47Z",
-      "domain": "bbc.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Have a Thorny Medical Question? Your Doctor May Be Using A.I. for That.",
@@ -996,19 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
-    },
-    {
-      "title": "The Gold Mines at the Heart of This Ebola Outbreak",
-      "link": "https://www.nytimes.com/2026/06/05/world/africa/congo-ebola-gold-mine.html",
-      "summary": "Mining has been the lifeblood of this remote Congolese hill town for decades. Now, it is fueling the spread of a devastating virus.",
-      "publishedAtUtc": "2026-06-05T15:13:35Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Rubio Suggests U.S. Return to Global Vaccine Program in Rebuke of Kennedy",
@@ -1020,7 +1044,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "A.I. Degree Programs Surge as Colleges Seek Students and Relevance",
@@ -1032,7 +1056,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Ebola and jihadis threaten Africa’s oldest national park",
@@ -1044,7 +1068,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Plan to tighten healthy food rules provokes backlash from UK industry",
@@ -1056,7 +1080,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
@@ -1068,7 +1092,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
@@ -1080,7 +1104,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
@@ -1092,7 +1116,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
@@ -1104,7 +1128,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
@@ -1116,7 +1140,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "'World-first' vaccine designed by artificial intelligence",
@@ -1128,7 +1152,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Why renaming my health condition could help other women",
@@ -1140,7 +1164,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Bird flu vaccine trial against potential pandemic strain begins",
@@ -1152,7 +1176,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Rollout of Covid vaccines extraordinary feat - inquiry report",
@@ -1164,7 +1188,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Vaccines a huge success, but public trust must be earned - key findings from Covid report",
@@ -1176,7 +1200,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "What is the UK Covid inquiry and how does it work?",
@@ -1188,7 +1212,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Bernard Roizman, Virologist Who Demystified Herpes, Dies at 96",
@@ -1200,7 +1224,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Ultra-processed food harms tied to content not manufacture, review says",
@@ -1212,7 +1236,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Strep A vaccine gets $140mn backing",
@@ -1224,7 +1248,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "'I forgot what it's like to be outside': Intensive care ward opens on rooftop",
@@ -1236,7 +1260,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "What are the plans for Liverpool Women's Hospital?",
@@ -1248,7 +1272,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "'I've requested a full hysterectomy'",
@@ -1260,7 +1284,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Emma Barnett: We can't ignore this disease that leaves one in 10 women like me in agony",
@@ -1272,7 +1296,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Doctors' strikes can have surprising benefits - but are they sustainable?",
@@ -1284,7 +1308,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "Pupils asked to walk to school through army firing range, MP claims",
+      "link": "https://www.bbc.com/news/articles/cjrpr3pqnz3o?at_medium=RSS&at_campaign=rss",
+      "summary": "Getting children to school is becoming a thorny issue for councils to deal with.",
+      "publishedAtUtc": "2026-06-05T17:18:47Z",
+      "domain": "bbc.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "A-level maths exam marking to be watched closely by regulator after students say paper was 'unfair'",
@@ -1296,7 +1332,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Falling pupil numbers should lead to smaller class sizes, says union",
@@ -1308,7 +1344,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Some A-level papers voided for students after exams leaked online",
@@ -1320,7 +1356,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Education secretary to ask competition watchdog to review hidden childcare costs",
@@ -1332,7 +1368,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
+    },
+    {
+      "title": "The Gold Mines at the Heart of This Ebola Outbreak",
+      "link": "https://www.nytimes.com/2026/06/05/world/africa/congo-ebola-gold-mine.html",
+      "summary": "Mining has been the lifeblood of this remote Congolese hill town for decades. Now, it is fueling the spread of a devastating virus.",
+      "publishedAtUtc": "2026-06-05T15:13:35Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "As Ebola Outbreak Widens, Trump Has Yet to Outline a Plan",
@@ -1344,7 +1392,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1356,7 +1404,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
@@ -1368,7 +1416,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
@@ -1380,7 +1428,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Ebola spreads to new areas of DR Congo as outbreak widens",
@@ -1392,7 +1440,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Anger and suspicion as Ebola spreads through eastern DR Congo",
@@ -1404,7 +1452,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T14:16:37.480921Z"
+      "cachedAtUtc": "2026-06-12T17:47:20.171987Z"
     },
     {
       "title": "Thai Princess Bajrakitiyabha dies at 47 after three years in coma",
@@ -1440,18 +1488,6 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-12T11:10:38.046116Z"
-    },
-    {
-      "title": "Rachel Downey obituary",
-      "link": "https://www.theguardian.com/education/2026/jun/10/rachel-downey-obituary",
-      "summary": "My wife, Rachel Downey, was a health and social affairs journalist who went on to become a communications strategist at the Department of Health. There she worked at the heart of health policy, translating complex and often sensitive issues into communications that the public could understand. It was demanding, important work and she was exceptionally good at it. Most recently Rachel, who has died of renal failure aged 60, was head of public relations at the Office of the Patient Safety Commissioner. It was a role that felt, in many ways, made for her, as the Office exists to amplify the voices of patients who have been harmed, to hold systems to account and to drive change where it is most needed. Continue reading...",
-      "publishedAtUtc": "2026-06-10T16:44:11Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-06-12T11:10:38.046116Z"
     },
     {
@@ -2404,17 +2440,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "9847e339c0ce7ae8b3d6d0adcaef355623fa5da9",
-      "sourceTitle": "We detected Aids through a federal early warning system. Trump has decimated it | Robert B Shpiner",
-      "sourceUrl": "https://www.theguardian.com/global/commentisfree/2026/apr/29/aids-national-science-board-mmwr",
-      "sourceDomain": "theguardian.com",
-      "publishedAtUtc": "2026-04-29T23:11:09.825077Z",
-      "slug": "global-health-alarms-silenced-a-threat-to-disease-surveillance",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-alarms-silenced-a-threat-to-disease-surveillance",
-      "mainImage": "/images/global-news/2026/2026-04-29-global-health-alarms-silenced-a-threat-to-disease-surveillance.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-04-29-global-health-alarms-silenced-a-threat-to-disease-surveillance.jpg"
-    },
     {
       "contentHash": "5959e6d349047071cb77719f82578b1be2e8501f",
       "sourceTitle": "In Backlash Against Tech in Schools, Parents Are Winning Rollbacks",
@@ -6803,151 +6828,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bananas-could-vanish-from-us-school-meals-here-s-why",
       "mainImage": "/images/global-news/2026/2026-06-12-global-health-and-education-watch-bananas-could-vanish-from-us-school-meals-here.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-bananas-could-vanish-from-us-school-meals-here.jpg"
+    },
+    {
+      "contentHash": "6f9419e672b1cbcd5c0cf3098457f3b71cc859af",
+      "sourceTitle": "World Cup Ticket Prices in Mexico City Too Expensive for Most Fans",
+      "sourceUrl": "https://www.nytimes.com/2026/06/12/us/world-cup-tickets-expensive-mexico.html",
+      "sourceDomain": "nytimes.com",
+      "publishedAtUtc": "2026-06-12T17:47:20.171987Z",
+      "slug": "global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+      "mainImage": "/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-05-13T10:42:20.060699Z",
-      "windowStartUtc": "2026-05-13T07:00:00Z",
-      "publishedInWindowBefore": 1,
-      "hoursLeftInWindow": 9,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "ft.com",
-        "nature.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "who.int": 1,
-        "bbc.com": 1,
-        "nature.com": 1,
-        "aljazeera.com": 1,
-        "ft.com": 1,
-        "news.un.org": 1,
-        "theguardian.com": 1,
-        "nytimes.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 3,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 156,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 156,
-      "candidateCacheCount": 240,
-      "candidatesAfterSourceDedupe": 65,
-      "candidatesAfterDedupe": 65,
-      "duplicateSkips": {
-        "historyHash": 91,
-        "historySource": 0,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "The class politics of modern outbreaks",
-          "link": "https://www.aljazeera.com/opinions/2026/5/13/the-class-politics-of-modern-outbreaks?traffic_source=rss",
-          "score": 85,
-          "reason": "relevance=32, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Too many of us were traumatised by sport at school – but it’s never too late to change | Cath Bishop",
-          "link": "https://www.theguardian.com/sport/2026/may/12/physical-exercise-pe-school-trauma-curriculum-activity-levels-uk",
-          "score": 82,
-          "reason": "relevance=37, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=0"
-        },
-        {
-          "title": "US university’s commencement speaker reveals he will pay off students’ final-year loans",
-          "link": "https://www.theguardian.com/us-news/2026/may/12/north-carolina-state-commencement-speaker-paying-off-student-loans",
-          "score": 80,
-          "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Sydney dentist's patients warned of viruses including HIV",
-        "link": "https://www.bbc.com/news/articles/cvgzegw72jlo?at_medium=RSS&at_campaign=rss",
-        "score": 70,
-        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Sydney Dental Clinic Prompts Global Health Warning",
-      "generatedWordCount": 1003,
-      "mainImage": "/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/sydney-dental-clinic-prompts-global-health-warning",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4320
-      },
-      "generatedImageSharpness": 487.53127224637296,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview",
-        "nano-banana-pro-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "gemini",
-      "geminiTextError": "",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 4.0,
-        "sourceWords": 820.0,
-        "generatedWords": 1017.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/d8d3/live/f8b494b0-4e8f-11f1-b092-4797e4fbbf94.jpg",
-      "publishResult": {
-        "status": "published",
-        "slug": "sydney-dental-clinic-prompts-global-health-warning",
-        "mdxPath": "src/blogs/global/sydney-dental-clinic-prompts-global-health-warning.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/sydney-dental-clinic-prompts-global-health-warning",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/sydney-dental-clinic-prompts-global-health-warning",
-          "https://global.nivaranfoundation.org/news/sydney-dental-clinic-prompts-global-health-warning"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-13-sydney-dental-clinic-prompts-global-health-warning.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 2
-    },
     {
       "ranAtUtc": "2026-05-13T13:28:11.004480Z",
       "windowStartUtc": "2026-05-13T07:00:00Z",
@@ -40035,6 +39929,141 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-06-12T17:47:20.171987Z",
+      "windowStartUtc": "2026-06-12T14:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 9,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "bbc.com",
+        "news.un.org",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "news.un.org": 2,
+        "bbc.com": 1,
+        "theguardian.com": 2,
+        "aljazeera.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 121,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 121,
+      "candidateCacheCount": 203,
+      "candidatesAfterSourceDedupe": 60,
+      "candidatesAfterDedupe": 60,
+      "duplicateSkips": {
+        "historyHash": 61,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "College opens lifelike hospital training ward",
+          "link": "https://www.bbc.com/news/videos/c8d2q8446g9o?at_medium=RSS&at_campaign=rss",
+          "score": 81,
+          "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "Meningitis B vaccine to be offered to a million young people",
+          "link": "https://www.bbc.com/news/articles/c982352my98o?at_medium=RSS&at_campaign=rss",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "World Cup Ticket Prices in Mexico City Too Expensive for Most Fans",
+          "link": "https://www.nytimes.com/2026/06/12/us/world-cup-tickets-expensive-mexico.html",
+          "score": 72,
+          "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "World Cup Ticket Prices in Mexico City Too Expensive for Most Fans",
+        "link": "https://www.nytimes.com/2026/06/12/us/world-cup-tickets-expensive-mexico.html",
+        "score": 72,
+        "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: World Cup Ticket Prices in Mexico City Too Expensive",
+      "generatedWordCount": 1187,
+      "mainImage": "/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4320
+      },
+      "generatedImageSharpness": 169.62322240563313,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "Could not generate image from Gemini models (gemini-2.0-flash-exp-image-generation: JSON request failed: HTTP Error 403: Forbidden | gemini-2.5-flash-image: JSON request failed: HTTP Error 403: Forbidden | gemini-3.1-flash-image-preview: JSON request failed: HTTP Error 403: Forbidden | gemini-3-pro-image-preview: JSON request failed: HTTP Error 403: Forbidden)",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 0.0,
+        "generatedWords": 1187.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "offline-fallback",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-expensive"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-12-global-health-and-education-watch-world-cup-ticket-prices-in-mexico-city-too-exp.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
