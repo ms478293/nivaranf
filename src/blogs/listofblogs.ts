@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-bananas-could-vanish-from-us-school-meals-here-s-why",
+    title: "Global Health and Education Watch: Bananas could vanish from US school meals. Here’s why",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-12-global-health-and-education-watch-bananas-could-vanish-from-us-school-meals-here.jpg",
+    date: "2026-06-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-thai-princess-bajrakitiyabha-dies-at-47-after-three-years",
     title: "Global Health and Education Watch: Thai Princess Bajrakitiyabha dies at 47 after three years",
     summary:
