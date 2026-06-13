@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-natural-history-gcse-to-teach-teenagers-to-plant-wildflower-friendly",
+    title: "Global Health and Education Watch: Natural history GCSE to teach teenagers to plant wildflower-friendly",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-13-global-health-and-education-watch-natural-history-gcse-to-teach-teenagers-to-pla.jpg",
+    date: "2026-06-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-comes-for-congo-s-most-vulnerable-children",
     title: "Global Health and Education Watch: Ebola Comes for Congo’s Most Vulnerable Children",
     summary:
