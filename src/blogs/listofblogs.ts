@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-is-meningitis-b-and-why-is-a-vaccine",
+    title: "Global Health and Education Watch: What is meningitis B and why is a vaccine",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-14-global-health-and-education-watch-what-is-meningitis-b-and-why-is-a-vaccine.jpg",
+    date: "2026-06-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-huge-spectrum-of-people-coming-together-how-parkrun",
     title: "Global Health and Education Watch: ‘A huge spectrum of people coming together’: how parkrun",
     summary:
