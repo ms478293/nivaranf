@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-instability-war-and-closed-borders-how-aid-workers-get",
+    title: "Global Health and Education Watch: Instability, war and closed borders: How aid workers get",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-14-global-health-and-education-watch-instability-war-and-closed-borders-how-aid-wor.jpg",
+    date: "2026-06-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-is-your-health-hack-worth-it-we-ask-the",
     title: "Global Health and Education Watch: Is your health hack worth it? We ask the",
     summary:
