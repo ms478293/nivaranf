@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-secrets-of-a-soccer-turf-master",
+    title: "Global Health and Education Watch: The Secrets of a Soccer-Turf Master",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-14-global-health-and-education-watch-the-secrets-of-a-soccer-turf-master.jpg",
+    date: "2026-06-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-one-month-on-will-the-latest-outbreak-in",
     title: "Global Health and Education Watch: Ebola one month on: will the latest outbreak in",
     summary:
