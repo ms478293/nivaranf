@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ivory-coast-beats-ecuador-1-0-at-fifa-world-cup",
+    title: "Global Health and Education Watch: Ivory Coast beats Ecuador 1-0 at FIFA World Cup",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-15-global-health-and-education-watch-ivory-coast-beats-ecuador-1-0-at-fifa-world-cu.jpg",
+    date: "2026-06-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uk-hypermobility-sufferers-wait-up-to-21-years-for",
     title: "Global Health and Education Watch: UK hypermobility sufferers wait up to 21 years for",
     summary:
