@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-taboo-subjects-on-the-table-at-women-s-health-event",
+    title: "Global Health and Education Watch: Taboo subjects on the table at women's health event",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-15-global-health-and-education-watch-taboo-subjects-on-the-table-at-women-s-health-.jpg",
+    date: "2026-06-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-right-now-we-could-be-living-through-a-hantavirus",
     title: "Global Health and Education Watch: Right now, we could be living through a hantavirus",
     summary:
