@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-open-letter-to-leaders-of-g7-g20-brics-and",
+    title: "Global Health and Education Watch: Open letter to leaders of G7, G20, BRICS and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-16-global-health-and-education-watch-open-letter-to-leaders-of-g7-g20-brics-and.jpg",
+    date: "2026-06-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-violent-attacks-on-schools-pupils-and-staff-around-the",
     title: "Global Health and Education Watch: Violent attacks on schools, pupils and staff around the",
     summary:
