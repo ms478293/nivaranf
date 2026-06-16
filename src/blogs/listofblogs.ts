@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-best-books-on-sport-health-and-wellness-to",
+    title: "Global Health and Education Watch: The best books on sport, health and wellness to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-16-global-health-and-education-watch-the-best-books-on-sport-health-and-wellness-to.jpg",
+    date: "2026-06-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-post-apartheid-south-africa-50-years-after-soweto-riots-what",
     title: "Global Health and Education Watch: Post-apartheid South Africa: 50 years after Soweto riots, what",
     summary:
