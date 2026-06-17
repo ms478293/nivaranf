@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-keir-starmer-says-he-wants-to-offer-burnham-big",
+    title: "Global Health and Education Watch: Keir Starmer says he wants to offer Burnham ‘big",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-17-global-health-and-education-watch-keir-starmer-says-he-wants-to-offer-burnham-bi.jpg",
+    date: "2026-06-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-recovery-of-ebola-patients-offers-rare-moments-of-joy",
     title: "Global Health and Education Watch: Recovery of Ebola patients offers rare moments of joy",
     summary:
