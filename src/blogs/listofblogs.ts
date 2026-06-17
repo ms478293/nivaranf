@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-and-brazil-urge-world-leaders-to-finalise-pandemic",
+    title: "Global Health and Education Watch: WHO and Brazil urge world leaders to finalise Pandemic",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-17-global-health-and-education-watch-who-and-brazil-urge-world-leaders-to-finalise-.jpg",
+    date: "2026-06-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-lack-of-learning-disability-nurses-in-uk-is-an-absolute",
     title: "Global Health and Education Watch: Lack of learning-disability nurses in UK is an ‘absolute",
     summary:
