@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-issues-comprehensive-guidelines-on-filovirus-disease-including-ebola",
+    title: "Global Health and Education Watch: WHO issues comprehensive guidelines on filovirus disease, including Ebola",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-18-global-health-and-education-watch-who-issues-comprehensive-guidelines-on-filovir.jpg",
+    date: "2026-06-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-treatment-capacity-expands-in-dr-congo-as-who",
     title: "Global Health and Education Watch: Ebola treatment capacity expands in DR Congo as WHO",
     summary:
