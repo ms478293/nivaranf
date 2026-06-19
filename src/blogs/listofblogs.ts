@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-average-student-in-england-leaves-university-with-47-700-debt",
+    title: "Global Health and Education Watch: Average student in England leaves university with £47,700 debt",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-19-global-health-and-education-watch-average-student-in-england-leaves-university-w.jpg",
+    date: "2026-06-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-elizabeth-greenhall-obituary",
     title: "Global Health and Education Watch: Elizabeth Greenhall obituary",
     summary:
