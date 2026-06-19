@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-fermentation-flavour-and-the-future-of-food-making-sustainability",
+    title: "Global Health and Education Watch: Fermentation, flavour and the future of food: Making sustainability",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-19-global-health-and-education-watch-fermentation-flavour-and-the-future-of-food-ma.jpg",
+    date: "2026-06-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-could-the-hpv-vaccine-eliminate-cervical-cancer-deaths",
     title: "Global Health and Education Watch: Could the HPV vaccine eliminate cervical cancer deaths?",
     summary:
