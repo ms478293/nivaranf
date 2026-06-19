@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-at-past-championship-parades-many-students-skipped-school",
+    title: "Global Health and Education Watch: At Past Championship Parades, Many Students Skipped School",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-19-global-health-and-education-watch-at-past-championship-parades-many-students-ski.jpg",
+    date: "2026-06-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cdc-to-tap-107m-in-emergency-funding-for-ebola",
     title: "Global Health and Education Watch: CDC to tap $107m in emergency funding for Ebola",
     summary:
