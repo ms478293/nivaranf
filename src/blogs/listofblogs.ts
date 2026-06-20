@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-disability-groups-fear-rfk-jr-s-new-special-education-role",
+    title: "Global Health and Education Watch: Disability Groups Fear RFK Jr.’s New Special Education Role",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-20-global-health-and-education-watch-disability-groups-fear-rfk-jr-s-new-special-ed.jpg",
+    date: "2026-06-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-m-a-critical-care-doctor-i-ve-never-seen-the",
     title: "Global Health and Education Watch: I’m a critical care doctor. I’ve never seen the",
     summary:
