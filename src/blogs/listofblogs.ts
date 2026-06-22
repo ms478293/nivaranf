@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-to-start-strength-training-in-midlife-according-to",
+    title: "Global Health and Education Watch: How to start strength training in midlife, according to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-22-global-health-and-education-watch-how-to-start-strength-training-in-midlife-acco.jpg",
+    date: "2026-06-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-truly-horrific-the-stories-of-five-people-affected-by",
     title: "Global Health and Education Watch: ‘Truly horrific’: the stories of five people affected by",
     summary:
