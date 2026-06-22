@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-afghanistan-in-crisis-drought-malnutrition-and-a-worsening-humanitarian",
+    title: "Global Health and Education Watch: Afghanistan in crisis: Drought, malnutrition and a worsening humanitarian",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-22-global-health-and-education-watch-afghanistan-in-crisis-drought-malnutrition-and.jpg",
+    date: "2026-06-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-two-students-arrested-after-three-killed-in-philippines-school",
     title: "Global Health and Education Watch: Two students arrested after three killed in Philippines school",
     summary:
