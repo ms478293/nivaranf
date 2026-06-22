@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-two-students-arrested-after-three-killed-in-philippines-school",
+    title: "Global Health and Education Watch: Two students arrested after three killed in Philippines school",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-22-global-health-and-education-watch-two-students-arrested-after-three-killed-in-ph.jpg",
+    date: "2026-06-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rates-on-new-student-loans-will-rise-on-july",
     title: "Global Health and Education Watch: Rates on New Student Loans Will Rise on July",
     summary:
