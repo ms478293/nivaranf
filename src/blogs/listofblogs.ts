@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-symptoms-in-current-outbreak-may-be-milder-than-3",
+    title: "Global Health and Education Watch: Ebola Symptoms in Current Outbreak May Be Milder Than",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-24-global-health-and-education-watch-ebola-symptoms-in-current-outbreak-may-be-mild.jpg",
+    date: "2026-06-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-diabetes-patients-in-gaza-face-survival-battle-amid-war",
     title: "Global Health and Education Watch: Diabetes patients in Gaza face survival battle amid war",
     summary:
