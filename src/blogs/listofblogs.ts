@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-us-public-health-agency-concludes-hantavirus-response-as-outbreak",
+    title: "Global Health and Education Watch: US public health agency concludes hantavirus response as outbreak",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-24-global-health-and-education-watch-us-public-health-agency-concludes-hantavirus-r.jpg",
+    date: "2026-06-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-stripe-and-anthropic-invest-in-combating-respiratory-diseases-2",
     title: "Global Health and Education Watch: Stripe and Anthropic invest in combating respiratory diseases",
     summary:
