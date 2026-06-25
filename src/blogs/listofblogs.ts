@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-school-exams",
+    title: "Global Health and Education Watch: Unions urge teachers to strike as French school exams",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-25-global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-schoo.jpg",
+    date: "2026-06-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hundreds-of-mothers-and-babies-died-or-were-harmed-2",
     title: "Global Health and Education Watch: Hundreds of mothers and babies died or were harmed",
     summary:
