@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-655-million-people-still-living-without-electricity-underscore-urgent",
+    title: "Global Health and Education Watch: 655 million people still living without electricity underscore urgent",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-25-global-health-and-education-watch-655-million-people-still-living-without-electr.jpg",
+    date: "2026-06-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-los-angeles-names-a-new-schools-superintendent-after-scandal",
     title: "Global Health and Education Watch: Los Angeles Names a New Schools Superintendent After Scandal",
     summary:
