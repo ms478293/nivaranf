@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-venezuela-earthquakes-hit-a-health-system-already-in",
+    title: "Global Health and Education Watch: The Venezuela Earthquakes Hit a Health System Already in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-26-global-health-and-education-watch-the-venezuela-earthquakes-hit-a-health-system-.jpg",
+    date: "2026-06-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-evidence-casts-doubt-on-rfk-jr-testimony-before",
     title: "Global Health and Education Watch: New evidence casts doubt on RFK Jr testimony before",
     summary:
