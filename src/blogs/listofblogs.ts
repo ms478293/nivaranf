@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-europe-heatwave-breaks-records-as-un-agencies-ramp-up",
+    title: "Global Health and Education Watch: Europe heatwave breaks records as UN agencies ramp up",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-26-global-health-and-education-watch-europe-heatwave-breaks-records-as-un-agencies-.jpg",
+    date: "2026-06-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-plan-intl-mental-health-impact-of-venezuelan-quakes-can",
     title: "Global Health and Education Watch: Plan Intl: ‘Mental health impact of Venezuelan quakes can",
     summary:
