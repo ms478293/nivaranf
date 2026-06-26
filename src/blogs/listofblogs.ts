@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-m-i-t-didn-t-publish-an-antisemitism-report-a-professor-wrote",
+    title: "Global Health and Education Watch: M.I.T. Didn’t Publish an Antisemitism Report. A Professor Wrote",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-26-global-health-and-education-watch-m-i-t-didn-t-publish-an-antisemitism-report-a-.jpg",
+    date: "2026-06-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-the-hpv-vaccine-changes-how-we-think-about-2",
     title: "Global Health and Education Watch: How the HPV vaccine changes how we think about",
     summary:
