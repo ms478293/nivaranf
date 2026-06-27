@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-no-school-living-in-a-tent-but-it-s-exam",
+    title: "Global Health and Education Watch: No school, living in a tent, but it’s exam",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-27-global-health-and-education-watch-no-school-living-in-a-tent-but-it-s-exam.jpg",
+    date: "2026-06-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-quidelortho-looks-to-sell-testing-unit-as-pe-circles",
     title: "Global Health and Education Watch: QuidelOrtho looks to sell testing unit as PE circles",
     summary:
