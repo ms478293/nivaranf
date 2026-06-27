@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-06-26T21:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
     {
       "title": "Trump administration orders US health programs to move away from overdose prevention",
@@ -12,7 +12,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=47, credibility=35, freshness=18, health_hits=3, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Unions urge teachers to strike as French school exams go ahead in up to 40C heat",
@@ -24,7 +24,7 @@
       "healthHits": 1,
       "educationHits": 5,
       "reason": "relevance=48, credibility=35, freshness=10, health_hits=1, education_hits=5, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Mark Tame obituary",
@@ -36,7 +36,7 @@
       "healthHits": 2,
       "educationHits": 2,
       "reason": "relevance=40, credibility=35, freshness=18, health_hits=2, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
@@ -48,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -60,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -72,7 +72,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -84,7 +84,19 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Gavin Newsom urges a national 'billionaires' tax' while fighting one in California",
+      "link": "https://www.theguardian.com/us-news/2026/jun/26/gavin-newsom-national-billionaires-tax",
+      "summary": "California governor calls for national tax on super-wealthy and suggests the US should own a stake in AI companies US politics live – latest updates California’s governor, Gavin Newsom , called for a national “billionaires tax” on Friday as he fights a ballot measure targeting the ultra-wealthy in his home state. Newsom, who is expected to run for president in 2028, published his proposal the day after California officials certified a ballot measure to levy a one-time 5% tax on residents worth more than $1bn. The initiative, called the California Billionaire Tax Act, was brought by the Service Employees International Union-United Healthcare Workers West (SEIU-UHW) and would fund the state’s healthcare, education and food assistance programs. Continue reading...",
+      "publishedAtUtc": "2026-06-26T23:17:47Z",
+      "domain": "theguardian.com",
+      "score": 85.0,
+      "healthHits": 1,
+      "educationHits": 1,
+      "reason": "relevance=32, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Whereabouts of nearly 300 people with Ebola unknown in DR Congo",
@@ -96,7 +108,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "The Guardian view on the Ockenden maternity review: lifting standards must be the number one priority | Editorial",
@@ -108,7 +120,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=39, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Hundreds of mothers and babies died or were harmed at ‘toxic’ NHS trust - The Latest",
@@ -120,7 +132,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=37, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -132,7 +144,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Bodies in Nottingham NHS trust mortuary in state of ‘advanced deterioration’, inspectors say",
@@ -144,7 +156,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=35, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
@@ -156,7 +168,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=40, credibility=35, freshness=4, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "The Venezuela Earthquakes Hit a Health System Already in Crisis",
@@ -168,7 +180,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "New evidence casts doubt on RFK Jr testimony before Senate",
@@ -180,7 +192,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "One in four graduates will lose financially from going to university, IFS estimates",
@@ -192,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -204,7 +216,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Global drug use reaches record high as increasingly potent synthetic drugs spread",
@@ -216,7 +228,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "A moment that changed me: A telegram arrived – and I had to choose between my head and my heart",
@@ -228,7 +240,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=31, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "The Mission review – a surgeon saves lives in war-torn Gaza in a visceral portrait of human endurance",
@@ -240,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Bible Passages Will Be Required Reading in Texas Public Schools",
@@ -252,19 +264,19 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Pro-MAGA Groups Spur Trump Push For Cultural Change In Schools",
       "link": "https://www.nytimes.com/2026/06/26/us/politics/defending-education-smith-transgender.html",
       "summary": "One nonprofit, Defending Education, initiated nearly a dozen civil rights investigations targeting diversity programs and transgender policies.",
-      "publishedAtUtc": "2026-06-26T16:39:21Z",
+      "publishedAtUtc": "2026-06-26T16:39:22Z",
       "domain": "nytimes.com",
       "score": 75.0,
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "How Trump’s Education Department Is Targeting Trans Students",
@@ -276,7 +288,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Why is alcohol dangerous in a heatwave, and should I cut it out completely?",
@@ -288,19 +300,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Trump Issues Order to Reduce Pesticides in Food as Kennedy Allies Fume",
-      "link": "https://www.nytimes.com/2026/06/25/us/politics/trump-order-pesticides-rfk.html",
-      "summary": "The order, which calls for studying the health risks of pesticides in the food supply, does not involve new federal funding, and does not call for regulations or legislation.",
-      "publishedAtUtc": "2026-06-26T00:24:06Z",
-      "domain": "nytimes.com",
-      "score": 74.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Los Angeles Names a New Schools Superintendent After Scandal",
@@ -312,7 +312,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Teenage boys in UK ‘stuck’ reading primary-level books while girls’ tastes expand",
@@ -324,7 +324,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "‘I was miserable at my old school’: UK social media ban puts spotlight on hybrid learning",
@@ -336,7 +336,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "France confirms first Ebola case in doctor who had worked in DRC",
@@ -348,7 +348,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -360,7 +360,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -372,7 +372,835 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The High School Pipeline to South Korea’s Chip-Making Fortunes",
+      "link": "https://www.nytimes.com/2026/06/26/business/korea-chip-high-school.html",
+      "summary": "Huge memory-chip profits from the global A.I. boom have increased interest in semiconductor factory work. But behind the hype are uncertain job prospects.",
+      "publishedAtUtc": "2026-06-26T07:34:38Z",
+      "domain": "nytimes.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "These Unpaid Interns Want $32 an Hour. And Health Insurance.",
+      "link": "https://www.nytimes.com/2026/06/26/nyregion/unpaid-internships-nyc.html",
+      "summary": "A group of government interns is campaigning for a paid wage, reigniting a debate over ethics and opportunity in one of the world’s most expensive cities.",
+      "publishedAtUtc": "2026-06-26T15:46:40Z",
+      "domain": "nytimes.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Scenes of Collapse: The Emergency at Venezuela’s Hospitals",
+      "link": "https://www.nytimes.com/2026/06/26/world/americas/venezuela-hospitals-earthquake-collapse.html",
+      "summary": "A snapshot of the toll of the country’s twin quakes.",
+      "publishedAtUtc": "2026-06-27T00:51:44Z",
+      "domain": "nytimes.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "New study suggests health damage from exposure to Ohio toxic train spill",
+      "link": "https://www.theguardian.com/us-news/2026/jun/26/ohio-east-palestine-train-toxic-crash",
+      "summary": "Research finds immune systems still ‘responding to toxic chemical exposures’ related to East Palestine derailment In the weeks after the East Palestine train wreck culminated in a towering fireball and chemical release in the small Ohio town, Jessica Boersma was seriously exposed to the stew of compounds emitted from the derailment site. Boersma lives less than a quarter mile away, and, as a city council member, she had to spend significant time at the site coordinating with first responders. Continue reading...",
+      "publishedAtUtc": "2026-06-26T12:00:15Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
+      "link": "https://www.who.int/news/item/17-06-2026-who-issues-comprehensive-guidelines-on-filovirus-disease--including-ebola-and-marburg-disease",
+      "summary": "As the Democratic Republic of the Congo is battling an Ebola disease outbreak caused by the Bundibugyo virus, the World Health Organization (WHO) has released its first comprehensive guidelines for the clinical management of filovirus disease which include all types of Ebola and Marburg viruses. The new guidelines highlight the importance of early supportive care to improve patient survival and health outcomes, outlining 16 evidence-based recommendations.",
+      "publishedAtUtc": "2026-06-17T13:30:57Z",
+      "domain": "who.int",
+      "score": 71.0,
+      "healthHits": 4,
+      "educationHits": 0,
+      "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
+      "link": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
+      "summary": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
+      "publishedAtUtc": "2026-05-16T23:21:17Z",
+      "domain": "who.int",
+      "score": 71.0,
+      "healthHits": 4,
+      "educationHits": 0,
+      "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Lives at risk in DR Congo as Ebola outbreak continues to outpace response",
+      "link": "https://news.un.org/feed/view/en/story/2026/06/1167801",
+      "summary": "The Ebola outbreak in the Democratic Republic of the Congo (DRC) continues to spread faster than aid efforts can keep pace, despite significant gains in treatment capacity and growing community engagement, the World Health Organization (WHO) warned on Wednesday.",
+      "publishedAtUtc": "2026-06-24T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 71.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "‘Horrific’ maternity care failings at Nottingham NHS trust prompt calls for public inquiry",
+      "link": "https://www.theguardian.com/society/2026/jun/24/horrific-maternity-care-failings-at-nottingham-nhs-trust-prompt-calls-for-public-inquiry",
+      "summary": "Report uncovers biggest childbirth scandal in NHS history in which 520 mothers and babies suffered ‘potentially avoidable’ harm or died Horrific failings led to 520 mothers and babies in Nottingham suffering harm or dying, sparking calls for a public inquiry into maternity care across England. In all, 444 women and 76 newborn babies suffered “potentially avoidable” outcomes, a damning three-year long review of the biggest childbirth scandal in NHS history concluded. A “bullying and toxic culture” persisted at NUH over many years and impeded moves to improve care. Maternity service managers and the trust’s senior leaders were repeatedly warned about a host of serious problems in the maternity units at both hospitals but did not take effective action. Maternity staff displayed “a culture of not admitting women who were seeking admission in labour”, despite the risks this posed to them and their babies. Both maternity units were consistently seriously short-staffed and could not cope with the number of births and complexity of cases they had to handle. One baby girl who died early in gestation was “inadvertently disposed of as clinical waste by laboratory staff after her postmortem examination”, compounding her parents’ distress. Continue reading...",
+      "publishedAtUtc": "2026-06-24T19:18:14Z",
+      "domain": "theguardian.com",
+      "score": 71.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
+      "link": "https://www.nytimes.com/2026/06/26/us/politics/yale-trump-administration-admissions-race.html",
+      "summary": "The university hired a high-powered law firm to try to reach an agreement with the Justice Department over claims its admissions practices hurt white and Asian applicants.",
+      "publishedAtUtc": "2026-06-26T18:46:20Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Anger Over Supreme Court Rulings on Immigration",
+      "link": "https://www.nytimes.com/2026/06/26/opinion/supreme-court-immigration.html",
+      "summary": "Readers are dismayed by the justices’ decisions. Also: The Huntington’s dilemma; a woman’s age; students, cheating and A.I.",
+      "publishedAtUtc": "2026-06-26T19:22:33Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "A Bold Idea to Open Up Elite Colleges",
+      "link": "https://www.nytimes.com/2026/06/25/opinion/college-cost-education-tuition-ivy-league.html",
+      "summary": "Wanting to make top schools look less like country clubs and more like the country shouldn’t be a partisan issue.",
+      "publishedAtUtc": "2026-06-26T18:50:38Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Venezuela Live Updates: Trump’s Vow to ‘Run’ Venezuela Is Tested After Quakes",
+      "link": "https://www.nytimes.com/live/2026/06/26/world/venezuela-earthquake",
+      "summary": "The U.S. dispatched hundreds of rescue workers to help the Venezuelan government, as the injured overwhelmed hospitals and the death toll rose to 920. The Pentagon sent two ships, transport planes and helicopters.",
+      "publishedAtUtc": "2026-06-27T04:08:02Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Heat Wave Prompts Paris to Suspend Sports Events and Public Drinking",
+      "link": "https://www.nytimes.com/2026/06/26/world/europe/france-heat-alcohol-paris-ban.html",
+      "summary": "The Paris police chief, Patrice Faure, said that alcohol restrictions were intended to ease pressure on health services.",
+      "publishedAtUtc": "2026-06-26T12:27:37Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "M.I.T. Didn’t Publish an Antisemitism Report. A Professor Wrote His Own.",
+      "link": "https://www.nytimes.com/2026/06/25/us/mit-antisemitism-book.html",
+      "summary": "Now, the professor is in a fight with the university over whether he can use M.I.T. money to promote a book critical of the school.",
+      "publishedAtUtc": "2026-06-25T09:00:54Z",
+      "domain": "nytimes.com",
+      "score": 69.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Failure to plan for rising temperatures has left UK’s schools sweltering",
+      "link": "https://www.theguardian.com/education/2026/jun/24/failure-to-plan-for-rising-temperatures-has-left-uks-schools-sweltering",
+      "summary": "Many buildings are in use past their predicted lifespans, but even newer designs lack measures to beat heat To see the UK’s failure to plan for the impacts of climate crisis, look no further than Beaconsfield primary school in west London – where a building more than 100 years old copes with extreme temperatures better than its neighbour, built less than 10 years ago. “I’ve got two buildings on my site – the older building is a Victorian-Edwardian-style building. It’s roughly 130 years old. That building is constructed with solid brickwork, very thick walls. It stays warm in winter and in summer it tends to keep the heat out so it is cooler inside. Even this week it’s starting to get uncomfortable but it’s still tolerable,” said Dave Woods, Beaconsfield’s headteacher. Continue reading...",
+      "publishedAtUtc": "2026-06-24T05:00:36Z",
+      "domain": "theguardian.com",
+      "score": 69.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Inside the C.D.C.’s Mad Scramble to Meet Kennedy’s Demands",
+      "link": "https://www.nytimes.com/2026/06/25/us/politics/kennedy-cdc-emails.html",
+      "summary": "A cache of internal emails offers a look at the pressure the nation’s public health officials faced from the new health secretary in the early months of the Trump administration.",
+      "publishedAtUtc": "2026-06-25T21:18:20Z",
+      "domain": "nytimes.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Extreme Heat Across Europe Creates Divide Over Leaving Schools Open",
+      "link": "https://www.nytimes.com/2026/06/24/world/europe/heat-wave-schools-open-closed-france-uk.html",
+      "summary": "Few schools in Britain or France have air-conditioning to keep children cool in soaring temperatures, leaving parents, teachers and officials divided about what to do.",
+      "publishedAtUtc": "2026-06-24T15:20:40Z",
+      "domain": "nytimes.com",
+      "score": 67.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Three in five young gun violence survivors do not receive mental healthcare – this California bill can fix that",
+      "link": "https://www.theguardian.com/us-news/2026/jun/25/california-thrive-act-gun-violence",
+      "summary": "The Thrive Act will create a pilot program that offers mental health resources for shooting survivors and witnesses under 25 When Marvin Pérez and his family moved from their home country of Guatemala to Oakland, California , he thought it would lead to a better life for them all. But two years ago, when he was 23, Pérez was walking home from a store just four blocks from his family’s house. Someone drove past him and shot at Pérez multiple times, hitting him in his left leg. His physical recovery was difficult. The bullet couldn’t be removed and remains lodged inside the leg. Pérez spent about three months doing physical therapy and resting at home, which meant he couldn’t play soccer, his favorite pastime. The mental toll he endured, however, was far tougher. During the day, all he could think about was the shooting, and when he slept, he had nightmares about what happened to him. It was made even harder by the fact that he felt as if he didn’t have anyone he could share these feelings with. Continue reading...",
+      "publishedAtUtc": "2026-06-25T13:00:28Z",
+      "domain": "theguardian.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
+      "link": "https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus",
+      "summary": "In response to the current outbreak of Ebola disease caused by Bundibugyo virus occurring in the Democratic Republic of the Congo, with cases also reported in Uganda, WHO convened several of its expert and advisory groups. These groups assessed potential vaccines and therapeutics for both prevention and treatment of Bundibugyo virus disease (BVD).",
+      "publishedAtUtc": "2026-05-28T19:10:18Z",
+      "domain": "who.int",
+      "score": 66.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Europe heatwave breaks records as UN agencies ramp up health warnings",
+      "link": "https://news.un.org/feed/view/en/story/2026/06/1167808",
+      "summary": "As a record-breaking heatwave grips large parts of Europe, the World Meteorological Organization (WMO), national weather services and partners are mobilising heat-health action plans for millions of people facing dangerous temperatures.&nbsp;",
+      "publishedAtUtc": "2026-06-25T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Trump Issues Order to Reduce Pesticides in Food as Kennedy Allies Fume",
+      "link": "https://www.nytimes.com/2026/06/25/us/politics/trump-order-pesticides-rfk.html",
+      "summary": "The order, which calls for studying the health risks of pesticides in the food supply, does not involve new federal funding, and does not call for regulations or legislation.",
+      "publishedAtUtc": "2026-06-26T00:24:06Z",
+      "domain": "nytimes.com",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Can a Youth Boom Survive South Sudan’s Education Crisis?",
+      "link": "https://www.nytimes.com/2026/06/25/world/africa/south-sudan-usaid-education.html",
+      "summary": "South Sudan is the world’s newest nation and its education system is on the verge of collapse, putting an entire generation at risk.",
+      "publishedAtUtc": "2026-06-25T13:09:25Z",
+      "domain": "nytimes.com",
+      "score": 66.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
+      "link": "https://www.theguardian.com/music/2026/jun/24/the-project-returning-music-to-our-bodies-bettina-varwig-faultless",
+      "summary": "Listeners in the 17th and 18th centuries experienced music in a startlingly vivid – and physical – way. A fascinating academic project is wondering if we should let ourselves be much more moved, and get moving. Plus: a prime minister’s musical legacy? Professor Bettina Varwig wants to get us moving – and feeling, and listening, but primarily moving. The University of Cambridge academic says classical audiences today are “asked to leave our breathing, pulsing, feeling bodies at the door”. In concert halls we are told not to move or make a sound, subdue all the things that make us human. Whatever you do, don’t give in to the things your body is viscerally telling you when you experience a piece like Bach’s St John Passion, the way the music churns emotions and agitates your sinful heart. You have to listen passively, you can’t sigh or cry or clap in the wrong place, even if that’s what your whole being is telling you that you need to do to communicate the corporeal and spiritual pain the music is putting you through. Varwig dreams of a different world. Her research focuses on how 17th and 18th-century listeners responded to music. “When you read about how music affected listeners in Bach’s time, their testimonies are striking in their bodily intensity,” she says. “Music contracted their innards and made their hearts leap. It could taste like vinegar in your throat. It could melt your earwax. It could draw your soul out of your body.” Continue reading...",
+      "publishedAtUtc": "2026-06-24T13:34:42Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Why Ebola came back — and a warning for the next pandemic",
+      "link": "https://www.ft.com/content/e6e31057-aded-4109-9f5e-6808c7737b0d",
+      "summary": "The outbreak in the DR Congo is unlikely to spread worldwide. But it comes at a time of cuts to health budgets and exposes a worrying lack of preparedness for ‘Disease X’",
+      "publishedAtUtc": "2026-06-13T04:00:22Z",
+      "domain": "ft.com",
+      "score": 66.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
+      "link": "https://www.who.int/news/item/24-06-2026-655-million-people-still-living-without-electricity-underscore-urgent-need-to-deliver-on-universal-energy-access-target",
+      "summary": "At a time when energy security and affordability have risen to the top of the development agenda, 655 million people globally still lack access to electricity, and two billion use polluting fuels and technologies for cooking putting their health and well-being at risk.",
+      "publishedAtUtc": "2026-06-24T11:57:55Z",
+      "domain": "who.int",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "World News in Brief: Students injured in Sudan drone strike, dangerous returns in south Lebanon, celebrating women diplomats",
+      "link": "https://news.un.org/feed/view/en/story/2026/06/1167804",
+      "summary": "Ongoing fighting in the Sudanese city of El Obeid continues to endanger civilians and damage infrastructure, the United Nations said on Wednesday.",
+      "publishedAtUtc": "2026-06-24T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 64.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Congo Ebola Crisis: Contact Tracing Is Dangerously Behind, Officials Warn",
+      "link": "https://www.nytimes.com/2026/06/25/world/africa/africa-cdc-congo-ebola.html",
+      "summary": "Most of the people testing positive for Ebola in the Democratic Republic of Congo are not on health workers’ radar, suggesting that contact tracing is lagging dangerously behind.",
+      "publishedAtUtc": "2026-06-25T22:57:49Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Medical Journal Retracts Study Claiming Cancer Therapy Is More Effective When Given in the Morning",
+      "link": "https://www.nytimes.com/2026/06/25/business/china-cancer-treatment-research-retraction.html",
+      "summary": "In a notice flagging a series of problems with a clinical trial, the journal Nature Medicine said its editors “no longer have confidence in the integrity of the results.”",
+      "publishedAtUtc": "2026-06-26T02:27:02Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "France Identifies Its First Case of Ebola",
+      "link": "https://www.nytimes.com/2026/06/24/world/europe/ebola-france.html",
+      "summary": "A doctor who had traveled to the Democratic Republic of Congo was infected, the French health ministry said. The authorities said the risk to the wider population was low.",
+      "publishedAtUtc": "2026-06-24T21:37:56Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "‘Infection control becomes almost impossible’: four doctors on the NHS heatwave crisis",
+      "link": "https://www.theguardian.com/society/2026/jun/25/four-doctors-nhs-heatwave-crisis",
+      "summary": "Frontline medics describe extreme heat conditions they feel are unsafe and lacking in dignity for patients Hospitals in England declare critical incidents as machines and IT fail in heat Hospitals in England are declaring critical incidents with radiotherapy machines, MRI scanners, cooling units and IT systems failing owing to the extreme heat. Here four doctors describe their experiences on the frontline that they say feels unsafe and dangerous for patients amid the worst NHS heatwave crisis in years. Continue reading...",
+      "publishedAtUtc": "2026-06-25T16:57:50Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Hospitals in England declare critical incidents as machines and IT fail in heat",
+      "link": "https://www.theguardian.com/society/2026/jun/25/hospitals-nhs-england-critical-incidents-machines-it-fail-extreme-heat",
+      "summary": "Extreme weather breaks MRI scanners and cooling units and workload rises for sleep-deprived staff on sweltering wards ‘Infection control becomes almost impossible’: four doctors on the NHS heatwave crisis Doctors have set out the disastrous impact extreme heat is having on the NHS in England, with radiotherapy machines and MRI scanners failing, critical IT systems stalling and cooling units that serve entire hospitals breaking down. The hot weather has also prompted a surge in admissions and people arriving at A&amp;E, causing severe overcrowding in some places and exacerbating heat-related pressures on infrastructure. Continue reading...",
+      "publishedAtUtc": "2026-06-25T16:55:54Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The Trump administration is calling frozen embryos children | Moira Donegan",
+      "link": "https://www.theguardian.com/commentisfree/2026/jun/25/the-trump-administration-is-calling-frozen-embryos-children",
+      "summary": "A document on an embryo adoption program may be marginal – but it marks an escalation in the pursuit of fetal personhood The Trump administration quietly declared frozen embryos to be children last week. In a call for grant applications related to a nearly 20-year-old program meant to raise awareness about frozen embryo adoption , the Department of Health and Human Services referred to frozen embryos using the terms “child” and “children”, calling for screening standards for frozen embryo purchasers to be raised to those applied to parents seeking to adopt actual children. The document refers to frozen embryos as “children who already exist and are in need of a family”. The language is strange and conspicuous in context, even if that context itself may seem marginal: what the Trump administration has done here is change its phrasing in the guidelines for a longstanding and somewhat obscure grant program. Continue reading...",
+      "publishedAtUtc": "2026-06-25T10:00:12Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The Ebola Outbreak’s Central Mystery: Where Did This Virus Come From?",
+      "link": "https://www.nytimes.com/2026/06/24/science/ebola-bundibugyo-animal-reservoir.html",
+      "summary": "Scientists believe that the Bundibugyo virus persists in an animal species, occasionally spilling over into humans. But they have yet to identify the species.",
+      "publishedAtUtc": "2026-06-24T15:04:00Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The Drop-off in Dropouts",
+      "link": "https://www.nytimes.com/2026/06/24/headway/high-school-graduation-rates.html",
+      "summary": "How high schools closed the graduation gap.",
+      "publishedAtUtc": "2026-06-24T16:23:15Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Labour MPs criticise language used by Kemi Badenoch in fractious PMQs",
+      "link": "https://www.theguardian.com/politics/2026/jun/24/labour-criticise-language-kemi-badenoch-pmqs-parliament",
+      "summary": "Tory leader reprimanded by speaker for invective against minister and saying Starmer had ‘400 knives in his back’ Labour MPs have criticised Kemi Badenoch after a fractious prime minister’s questions on Wednesday, in which she accused the education secretary of being a “spiteful class warrior”. In a rare move, Badenoch was chastised by the speaker, Lindsay Hoyle, in the chamber of the House of Commons after she took the personal swipe at Bridget Phillipson before saying that Keir Starmer had been betrayed and had “400 knives stuck in his back”. Continue reading...",
+      "publishedAtUtc": "2026-06-24T16:32:03Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "UK hospitals cancel operations because of lack of air conditioning",
+      "link": "https://www.ft.com/content/fb187483-f496-4432-976e-0aaa9d0506fd",
+      "summary": "Record June temperatures put up to 4,000 surgeries at risk",
+      "publishedAtUtc": "2026-06-25T11:38:39Z",
+      "domain": "ft.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Stripe and Anthropic invest in combating respiratory diseases",
+      "link": "https://www.ft.com/content/db7499ef-4608-4bd7-87d2-6b15a0ebd353",
+      "summary": "Consortium puts $500mn into finding new drugs and scaling up air-treatment technologies",
+      "publishedAtUtc": "2026-06-24T12:00:06Z",
+      "domain": "ft.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
+      "link": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
+      "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
+      "publishedAtUtc": "2026-05-14T13:27:15Z",
+      "domain": "who.int",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Tunisia validated by WHO as having eliminated trachoma as a public health problem",
+      "link": "https://www.who.int/news/item/14-05-2026-tunisia-validated-by-who-as-having-eliminated-trachoma-as-a-public-health-problem",
+      "summary": "Tunisia has been officially validated by the World Health Organization (WHO) as having eliminated trachoma as a public health problem, marking a significant achievement after decades of sustained effort.",
+      "publishedAtUtc": "2026-05-14T09:23:04Z",
+      "domain": "who.int",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Ebola Symptoms in Current Outbreak May Be Milder Than in Previous Ones",
+      "link": "https://www.nytimes.com/2026/06/23/health/ebola-symptoms-death-rate.html",
+      "summary": "That is good news for patients, but officials fear it will make controlling the spread of the disease harder.",
+      "publishedAtUtc": "2026-06-23T15:31:22Z",
+      "domain": "nytimes.com",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "High School Students Heckle Bard President Over His Ties With Epstein",
+      "link": "https://www.nytimes.com/2026/06/22/nyregion/bard-college-botsein-epstein-high-school-commencement.html",
+      "summary": "At a graduation ceremony for high schools affiliated with the college, Leon Botstein said, “To get anything done, you’re going to have to dance with the devil.”",
+      "publishedAtUtc": "2026-06-22T22:58:48Z",
+      "domain": "nytimes.com",
+      "score": 61.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Global health gains face threat of reversal",
+      "link": "https://www.who.int/news/item/13-05-2026-global-health-gains-face-threat-of-reversal",
+      "summary": "The world is falling short on health targets, with progress uneven, slowing, and in some areas reversing, according to the World Health Statistics 2026 report, published today by the World Health Organization (WHO).",
+      "publishedAtUtc": "2026-05-13T13:02:54Z",
+      "domain": "who.int",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "New Plan Scales Back C.D.C.’s Work on Diseases Abroad",
+      "link": "https://www.nytimes.com/2026/06/17/health/pepfar-cdc-cuts.html",
+      "summary": "The State Department is taking over much of the control of global health initiatives, for which critics say the department does not have the expertise.",
+      "publishedAtUtc": "2026-06-17T19:43:08Z",
+      "domain": "nytimes.com",
+      "score": 59.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
+      "link": "https://www.who.int/news/item/12-06-2026-safe-blood-supply-improves-as-voluntary-donations-exceed-85---but-many-people-still-lack-access",
+      "summary": "New data from the World Health Organization (WHO) show sustained progress towards safer blood supplies globally but also highlight persistent inequalities in access to safe blood and weaknesses in governance, financing and regulation of blood systems.",
+      "publishedAtUtc": "2026-06-12T12:35:26Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
+      "link": "https://www.theguardian.com/commentisfree/2026/jun/18/uk-social-media-ban-dangers-young-people-education-content",
+      "summary": "A ban alone will have limited impact and could make things worse. A good strategy needs more educational content – and more money As a parent, I understand the appeal of the announcement on Monday by the prime minister that would prevent children under 16 from using social media. Right now, you are in constant battle with the infinite scroll for your child’s attention, while their impetus to explore the real world is subdued by endless entertainment always within reach. At best, their rapidly developing brains are rotted by a diet of the synthetic, sensationalist and shallow – humanity’s least impressive creative output catering to its lousiest instincts. At worst, they are being preyed upon by forces intent on manipulating, exploiting or recruiting them. You look around and wonder where they are, even as they are right under your nose. You worry they will never experience the boredom that leads to creativity and propels us forward. The desire to protect children from an often hostile environment makes sense, and the ban sends a signal of what we deem acceptable, and maybe even opens up the possibility of a behavioural shift in how we use social media. But evidence from Australia, where similar legislation was enacted last December, is not encouraging. According to one study , two-thirds of young people retained their accounts, while 51% of those most affected by the ban now see less news. The fact is that this demographic get most of its news from social media feeds , consumed incidentally amid footage of fights, diet tips and dance crazes and conveyed by influencers whose shtick is authenticity not accuracy. But it is encountered nonetheless. If we remove access, we need to create alternative routes to news and information. Continue reading...",
+      "publishedAtUtc": "2026-06-18T11:00:02Z",
+      "domain": "theguardian.com",
+      "score": 58.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "A Deadly Outbreak of Plague, Nearly 5,000 Years Before the Black Death",
+      "link": "https://www.nytimes.com/2026/06/17/science/oldest-plague-siberian-skeletons.html",
+      "summary": "The oldest known cases, discovered among hunter-gatherers in Siberian graves, contradict the theory that the disease once was mild.",
+      "publishedAtUtc": "2026-06-17T19:45:31Z",
+      "domain": "nytimes.com",
+      "score": 57.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Mental Health Can Complicate Family Planning",
+      "link": "https://www.nytimes.com/2026/06/17/well/mind/mental-health-family-children.html",
+      "summary": "Five stories show the hurdles that people with psychological diagnoses face when considering parenthood.",
+      "publishedAtUtc": "2026-06-17T17:02:19Z",
+      "domain": "nytimes.com",
+      "score": 57.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "AI medical tools match or surpass doctors for advice",
+      "link": "https://www.ft.com/content/734a45ee-86c4-47e1-8323-569bc14dcdd7",
+      "summary": "Two health models displayed clinical value across a range of diagnostic and treatment decisions, studies show",
+      "publishedAtUtc": "2026-06-17T15:00:05Z",
+      "domain": "ft.com",
+      "score": 57.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
+      "link": "https://www.who.int/news/item/04-06-2026-unsafe-food-causes-866-million-illnesses-and-1.5-million-deaths-annually--young-children-at-highest-risk",
+      "summary": "Children aged less than five years face almost three times the risk of illness from unsafe food than older children and adults, according to new estimates released today by the World Health Organization (WHO).",
+      "publishedAtUtc": "2026-06-03T22:30:11Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
+      "link": "https://www.who.int/news/item/29-05-2026-who-urges-governments-to-protect-young-people-from-addiction-to-tobacco-and-nicotine-products",
+      "summary": "Worldwide, at least 40 million children aged 13–15 use tobacco products, and young people’s use of e-cigarettes and nicotine pouches continues to rise. In advance of World No Tobacco Day – 31 May – the World Health Organization (WHO) urges governments around the world to protect a new generation from becoming addicted to tobacco and nicotine products.",
+      "publishedAtUtc": "2026-05-29T08:48:28Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
+      "link": "https://www.who.int/news/item/15-05-2026-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-surge",
+      "summary": "The World Health Organization (WHO) warns about the rapid growth and aggressive marketing of nicotine pouches, especially targeting youth, amid limited regulation worldwide. Nicotine pouches pose significant health risks and governments are urged to implement strong regulatory measures to prevent addiction and protect young people.",
+      "publishedAtUtc": "2026-05-14T17:26:02Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Justice Dept. Unveils Medicare Fraud Charges as Part of Larger Health Care Prosecutions",
+      "link": "https://www.nytimes.com/2026/06/23/us/skin-substitutes-medicare-fraud.html",
+      "summary": "The department is taking aim at pricey “skin substitutes,” an overused wound care treatment that cost the government nearly $15 billion in 2025.",
+      "publishedAtUtc": "2026-06-23T22:23:00Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Cities and Schools Are Testing Wastewater for Illicit Drugs",
+      "link": "https://www.nytimes.com/2026/06/21/health/drug-testing-wastwater-sewage.html",
+      "summary": "The White House recently endorsed monitoring sewage for evidence of drug use. Critics fear such efforts could violate privacy and stigmatize neighborhoods.",
+      "publishedAtUtc": "2026-06-21T17:55:13Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The A.I. Boom Boosted Teacher Pay in a Rural County. Can It Last?",
+      "link": "https://www.nytimes.com/2026/06/23/us/louisana-teachers-bonus-meta-tax-revenue.html",
+      "summary": "The large bonuses tied to data center construction in Richland Parish, La., are unprecedented, but critics say it is not a panacea.",
+      "publishedAtUtc": "2026-06-23T13:33:23Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "EU faces fierce criticism over plans to host Taliban in Brussels",
+      "link": "https://www.theguardian.com/world/2026/jun/23/eu-faces-fierce-criticism-plans-host-taliban-brussels",
+      "summary": "Rights campaigners and MEPs say meeting would normalise regime that erases women from public life Rights campaigners and MEPs have warned that a meeting between EU officials and a Taliban delegation in Brussels risks normalising a regime that has banned girls from school beyond the sixth grade and sought to erase women from public life, while its ranks include two leaders accused of crimes against humanity. A spokesperson for the Afghan foreign ministry confirmed that a delegation representing the ⁠Taliban had travelled to Brussels after the Belgian foreign ministry issued five single-day visas. Continue reading...",
+      "publishedAtUtc": "2026-06-23T14:11:58Z",
+      "domain": "theguardian.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
+      "link": "https://www.who.int/news/item/23-05-2026-seventy-ninth-world-health-assembly---daily-update--23-may-2026",
+      "summary": "Summary of discussions of 23 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-23T12:32:25Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
+      "link": "https://www.who.int/news/item/22-05-2026-seventy-ninth-world-health-assembly-daily-update-22-may-2026",
+      "summary": "Summary of discussions of 22 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-22T19:24:59Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
+      "link": "https://www.who.int/news/item/21-05-2026-seventy-ninth-world-health-assembly---daily-update--21-may-2026",
+      "summary": "Summary of discussions of 21 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-21T20:33:06Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
+      "link": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly---daily-update--20-may-2026",
+      "summary": "Summary of discussions of 20 May at the Seventy-ninth World Health Assembly.",
+      "publishedAtUtc": "2026-05-21T19:48:30Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
+      "link": "https://www.who.int/news/item/19-05-2026-seventy-ninth-world-health-assembly---daily-update--19-may-2026",
+      "summary": "Summary of discussions of 19 May at Seventy-ninth World Health Assembly",
+      "publishedAtUtc": "2026-05-20T15:01:32Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "‘Period tax’ on sanitary products to be abolished, says Pakistan minister",
+      "link": "https://www.theguardian.com/global-development/2026/jun/17/period-tax-sanitary-products-abolished-pakistan-minister",
+      "summary": "Campaigners welcome announcement cutting levies on menstrual health items, but say their work to end period poverty is ‘far from over’ Pakistan plans to abolish “period tax”, in a victory for young campaigners who had taken the government to court over the charges. Finance minister Muhammad Aurangzeb announced that sanitary towels and related items were “daily necessities that are indispensable for women’s health, dignity and full participation in social activities”, and said he intended to remove the sales tax. Continue reading...",
+      "publishedAtUtc": "2026-06-17T12:46:15Z",
+      "domain": "theguardian.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Buildings May Soon Have ‘Immune Systems’ That Fight Airborne Disease",
+      "link": "https://www.nytimes.com/2026/06/19/science/indoor-air-viruses-bacteria.html",
+      "summary": "Following the pandemic, the federal government is spending $150 million on new technology to ensure clean indoor air. Here’s what scientists are pursuing.",
+      "publishedAtUtc": "2026-06-19T09:00:28Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The Guardian University Guide 2026 – the rankings",
+      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
+      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
+      "publishedAtUtc": "2025-09-13T07:01:01Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
+      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
+      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
+      "publishedAtUtc": "2026-04-19T10:00:39Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
+      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
+      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
+      "publishedAtUtc": "2026-04-17T07:00:24Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
+      "link": "https://www.ft.com/content/f97a3ea9-29c5-42bb-bf4e-d4f6929b40d1",
+      "summary": "Japanese brewer’s Takeshi Minakata says alcohol ‘can be a good thing’ as it ‘helps make people happy’",
+      "publishedAtUtc": "2026-06-20T04:00:20Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "The best books on sport, health and wellness to read this summer",
+      "link": "https://www.ft.com/content/78396c43-dd77-4810-b222-99088e069787",
+      "summary": "Simon Kuper and Anjana Ahuja select their best mid-year reads",
+      "publishedAtUtc": "2026-06-16T14:00:05Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "Is your health hack worth it? We ask the experts",
+      "link": "https://www.ft.com/content/d6daa9fb-0105-46bc-88c4-77a07280ded6",
+      "summary": "Get the science behind a host of wellness trends – from melatonin to electrolytes – to sort the fact from fiction",
+      "publishedAtUtc": "2026-06-14T04:00:32Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
+    },
+    {
+      "title": "‘It just fell off him’: Parents turn to private clinics for children’s weight loss jabs",
+      "link": "https://www.ft.com/content/287682c8-3158-4d5e-b53d-6d65fced32a7",
+      "summary": "Lack of formal guidance creates uncertainty over which children can receive treatment on NHS",
+      "publishedAtUtc": "2026-06-10T04:00:16Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-06-27T04:16:22.461155Z"
     },
     {
       "title": "Global learning losses threaten an entire generation",
@@ -385,822 +1213,6 @@
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=2",
       "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Congo Ebola Crisis: Contact Tracing Is Dangerously Behind, Officials Warn",
-      "link": "https://www.nytimes.com/2026/06/25/world/africa/africa-cdc-congo-ebola.html",
-      "summary": "Most of the people testing positive for Ebola in the Democratic Republic of Congo are not on health workers’ radar, suggesting that contact tracing is lagging dangerously behind.",
-      "publishedAtUtc": "2026-06-25T22:57:49Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Medical Journal Retracts Study Claiming Cancer Therapy Is More Effective When Given in the Morning",
-      "link": "https://www.nytimes.com/2026/06/25/business/china-cancer-treatment-research-retraction.html",
-      "summary": "In a notice flagging a series of problems with a clinical trial, the journal Nature Medicine said its editors “no longer have confidence in the integrity of the results.”",
-      "publishedAtUtc": "2026-06-26T02:27:02Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The High School Pipeline to South Korea’s Chip-Making Fortunes",
-      "link": "https://www.nytimes.com/2026/06/26/business/korea-chip-high-school.html",
-      "summary": "Huge memory-chip profits from the global A.I. boom have increased interest in semiconductor factory work. But behind the hype are uncertain job prospects.",
-      "publishedAtUtc": "2026-06-26T07:34:38Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "These Unpaid Interns Want $32 an Hour. And Health Insurance.",
-      "link": "https://www.nytimes.com/2026/06/26/nyregion/unpaid-internships-nyc.html",
-      "summary": "A group of government interns is campaigning for a paid wage, reigniting a debate over ethics and opportunity in one of the world’s most expensive cities.",
-      "publishedAtUtc": "2026-06-26T15:46:40Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Venezuela Live Updates: Hospitals Overwhelmed as International Rescue Teams Arrive",
-      "link": "https://www.nytimes.com/live/2026/06/26/world/venezuela-earthquake",
-      "summary": "Survivors raced the injured to hospitals in cars and pickup trucks as the death toll rose to 920 people. Hundreds more are believed to be missing or trapped under rubble. Two dozen countries are sending aid.",
-      "publishedAtUtc": "2026-06-26T21:26:04Z",
-      "domain": "nytimes.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "New study suggests health damage from exposure to Ohio toxic train spill",
-      "link": "https://www.theguardian.com/us-news/2026/jun/26/ohio-east-palestine-train-toxic-crash",
-      "summary": "Research finds immune systems still ‘responding to toxic chemical exposures’ related to East Palestine derailment In the weeks after the East Palestine train wreck culminated in a towering fireball and chemical release in the small Ohio town, Jessica Boersma was seriously exposed to the stew of compounds emitted from the derailment site. Boersma lives less than a quarter mile away, and, as a city council member, she had to spend significant time at the site coordinating with first responders. Continue reading...",
-      "publishedAtUtc": "2026-06-26T12:00:15Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
-      "link": "https://www.who.int/news/item/17-06-2026-who-issues-comprehensive-guidelines-on-filovirus-disease--including-ebola-and-marburg-disease",
-      "summary": "As the Democratic Republic of the Congo is battling an Ebola disease outbreak caused by the Bundibugyo virus, the World Health Organization (WHO) has released its first comprehensive guidelines for the clinical management of filovirus disease which include all types of Ebola and Marburg viruses. The new guidelines highlight the importance of early supportive care to improve patient survival and health outcomes, outlining 16 evidence-based recommendations.",
-      "publishedAtUtc": "2026-06-17T13:30:57Z",
-      "domain": "who.int",
-      "score": 71.0,
-      "healthHits": 4,
-      "educationHits": 0,
-      "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
-      "link": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
-      "summary": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
-      "publishedAtUtc": "2026-05-16T23:21:17Z",
-      "domain": "who.int",
-      "score": 71.0,
-      "healthHits": 4,
-      "educationHits": 0,
-      "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Lives at risk in DR Congo as Ebola outbreak continues to outpace response",
-      "link": "https://news.un.org/feed/view/en/story/2026/06/1167801",
-      "summary": "The Ebola outbreak in the Democratic Republic of the Congo (DRC) continues to spread faster than aid efforts can keep pace, despite significant gains in treatment capacity and growing community engagement, the World Health Organization (WHO) warned on Wednesday.",
-      "publishedAtUtc": "2026-06-24T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 71.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "‘Horrific’ maternity care failings at Nottingham NHS trust prompt calls for public inquiry",
-      "link": "https://www.theguardian.com/society/2026/jun/24/horrific-maternity-care-failings-at-nottingham-nhs-trust-prompt-calls-for-public-inquiry",
-      "summary": "Report uncovers biggest childbirth scandal in NHS history in which 520 mothers and babies suffered ‘potentially avoidable’ harm or died Horrific failings led to 520 mothers and babies in Nottingham suffering harm or dying, sparking calls for a public inquiry into maternity care across England. In all, 444 women and 76 newborn babies suffered “potentially avoidable” outcomes, a damning three-year long review of the biggest childbirth scandal in NHS history concluded. A “bullying and toxic culture” persisted at NUH over many years and impeded moves to improve care. Maternity service managers and the trust’s senior leaders were repeatedly warned about a host of serious problems in the maternity units at both hospitals but did not take effective action. Maternity staff displayed “a culture of not admitting women who were seeking admission in labour”, despite the risks this posed to them and their babies. Both maternity units were consistently seriously short-staffed and could not cope with the number of births and complexity of cases they had to handle. One baby girl who died early in gestation was “inadvertently disposed of as clinical waste by laboratory staff after her postmortem examination”, compounding her parents’ distress. Continue reading...",
-      "publishedAtUtc": "2026-06-24T19:18:14Z",
-      "domain": "theguardian.com",
-      "score": 71.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
-      "link": "https://www.nytimes.com/2026/06/26/us/politics/yale-trump-administration-admissions-race.html",
-      "summary": "The university hired a high-powered law firm to try to reach an agreement with the Justice Department over claims its admissions practices hurt white and Asian applicants.",
-      "publishedAtUtc": "2026-06-26T18:46:20Z",
-      "domain": "nytimes.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Anger Over Supreme Court Rulings on Immigration",
-      "link": "https://www.nytimes.com/2026/06/26/opinion/supreme-court-immigration.html",
-      "summary": "Readers are dismayed by the justices’ decisions. Also: The Huntington’s dilemma; a woman’s age; students, cheating and A.I.",
-      "publishedAtUtc": "2026-06-26T19:22:33Z",
-      "domain": "nytimes.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "A Bold Idea to Open Up Elite Colleges",
-      "link": "https://www.nytimes.com/2026/06/25/opinion/college-cost-education-tuition-ivy-league.html",
-      "summary": "Wanting to make top schools look less like country clubs and more like the country shouldn’t be a partisan issue.",
-      "publishedAtUtc": "2026-06-26T18:50:38Z",
-      "domain": "nytimes.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Heat Wave Prompts Paris to Suspend Sports Events and Public Drinking",
-      "link": "https://www.nytimes.com/2026/06/26/world/europe/france-heat-alcohol-paris-ban.html",
-      "summary": "The Paris police chief, Patrice Faure, said that alcohol restrictions were intended to ease pressure on health services.",
-      "publishedAtUtc": "2026-06-26T12:27:36Z",
-      "domain": "nytimes.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "M.I.T. Didn’t Publish an Antisemitism Report. A Professor Wrote His Own.",
-      "link": "https://www.nytimes.com/2026/06/25/us/mit-antisemitism-book.html",
-      "summary": "Now, the professor is in a fight with the university over whether he can use M.I.T. money to promote a book critical of the school.",
-      "publishedAtUtc": "2026-06-25T09:00:54Z",
-      "domain": "nytimes.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Failure to plan for rising temperatures has left UK’s schools sweltering",
-      "link": "https://www.theguardian.com/education/2026/jun/24/failure-to-plan-for-rising-temperatures-has-left-uks-schools-sweltering",
-      "summary": "Many buildings are in use past their predicted lifespans, but even newer designs lack measures to beat heat To see the UK’s failure to plan for the impacts of climate crisis, look no further than Beaconsfield primary school in west London – where a building more than 100 years old copes with extreme temperatures better than its neighbour, built less than 10 years ago. “I’ve got two buildings on my site – the older building is a Victorian-Edwardian-style building. It’s roughly 130 years old. That building is constructed with solid brickwork, very thick walls. It stays warm in winter and in summer it tends to keep the heat out so it is cooler inside. Even this week it’s starting to get uncomfortable but it’s still tolerable,” said Dave Woods, Beaconsfield’s headteacher. Continue reading...",
-      "publishedAtUtc": "2026-06-24T05:00:36Z",
-      "domain": "theguardian.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Inside the C.D.C.’s Mad Scramble to Meet Kennedy’s Demands",
-      "link": "https://www.nytimes.com/2026/06/25/us/politics/kennedy-cdc-emails.html",
-      "summary": "A cache of internal emails offers a look at the pressure the nation’s public health officials faced from the new health secretary in the early months of the Trump administration.",
-      "publishedAtUtc": "2026-06-25T21:18:20Z",
-      "domain": "nytimes.com",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Extreme Heat Across Europe Creates Divide Over Leaving Schools Open",
-      "link": "https://www.nytimes.com/2026/06/24/world/europe/heat-wave-schools-open-closed-france-uk.html",
-      "summary": "Few schools in Britain or France have air-conditioning to keep children cool in soaring temperatures, leaving parents, teachers and officials divided about what to do.",
-      "publishedAtUtc": "2026-06-24T15:20:40Z",
-      "domain": "nytimes.com",
-      "score": 67.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Three in five young gun violence survivors do not receive mental healthcare – this California bill can fix that",
-      "link": "https://www.theguardian.com/us-news/2026/jun/25/california-thrive-act-gun-violence",
-      "summary": "The Thrive Act will create a pilot program that offers mental health resources for shooting survivors and witnesses under 25 When Marvin Pérez and his family moved from their home country of Guatemala to Oakland, California , he thought it would lead to a better life for them all. But two years ago, when he was 23, Pérez was walking home from a store just four blocks from his family’s house. Someone drove past him and shot at Pérez multiple times, hitting him in his left leg. His physical recovery was difficult. The bullet couldn’t be removed and remains lodged inside the leg. Pérez spent about three months doing physical therapy and resting at home, which meant he couldn’t play soccer, his favorite pastime. The mental toll he endured, however, was far tougher. During the day, all he could think about was the shooting, and when he slept, he had nightmares about what happened to him. It was made even harder by the fact that he felt as if he didn’t have anyone he could share these feelings with. Continue reading...",
-      "publishedAtUtc": "2026-06-25T13:00:28Z",
-      "domain": "theguardian.com",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
-      "link": "https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus",
-      "summary": "In response to the current outbreak of Ebola disease caused by Bundibugyo virus occurring in the Democratic Republic of the Congo, with cases also reported in Uganda, WHO convened several of its expert and advisory groups. These groups assessed potential vaccines and therapeutics for both prevention and treatment of Bundibugyo virus disease (BVD).",
-      "publishedAtUtc": "2026-05-28T19:10:18Z",
-      "domain": "who.int",
-      "score": 66.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Europe heatwave breaks records as UN agencies ramp up health warnings",
-      "link": "https://news.un.org/feed/view/en/story/2026/06/1167808",
-      "summary": "As a record-breaking heatwave grips large parts of Europe, the World Meteorological Organization (WMO), national weather services and partners are mobilising heat-health action plans for millions of people facing dangerous temperatures.&nbsp;",
-      "publishedAtUtc": "2026-06-25T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Can a Youth Boom Survive South Sudan’s Education Crisis?",
-      "link": "https://www.nytimes.com/2026/06/25/world/africa/south-sudan-usaid-education.html",
-      "summary": "South Sudan is the world’s newest nation and its education system is on the verge of collapse, putting an entire generation at risk.",
-      "publishedAtUtc": "2026-06-25T13:09:25Z",
-      "domain": "nytimes.com",
-      "score": 66.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
-      "link": "https://www.theguardian.com/music/2026/jun/24/the-project-returning-music-to-our-bodies-bettina-varwig-faultless",
-      "summary": "Listeners in the 17th and 18th centuries experienced music in a startlingly vivid – and physical – way. A fascinating academic project is wondering if we should let ourselves be much more moved, and get moving. Plus: a prime minister’s musical legacy? Professor Bettina Varwig wants to get us moving – and feeling, and listening, but primarily moving. The University of Cambridge academic says classical audiences today are “asked to leave our breathing, pulsing, feeling bodies at the door”. In concert halls we are told not to move or make a sound, subdue all the things that make us human. Whatever you do, don’t give in to the things your body is viscerally telling you when you experience a piece like Bach’s St John Passion, the way the music churns emotions and agitates your sinful heart. You have to listen passively, you can’t sigh or cry or clap in the wrong place, even if that’s what your whole being is telling you that you need to do to communicate the corporeal and spiritual pain the music is putting you through. Varwig dreams of a different world. Her research focuses on how 17th and 18th-century listeners responded to music. “When you read about how music affected listeners in Bach’s time, their testimonies are striking in their bodily intensity,” she says. “Music contracted their innards and made their hearts leap. It could taste like vinegar in your throat. It could melt your earwax. It could draw your soul out of your body.” Continue reading...",
-      "publishedAtUtc": "2026-06-24T13:34:42Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Why Ebola came back — and a warning for the next pandemic",
-      "link": "https://www.ft.com/content/e6e31057-aded-4109-9f5e-6808c7737b0d",
-      "summary": "The outbreak in the DR Congo is unlikely to spread worldwide. But it comes at a time of cuts to health budgets and exposes a worrying lack of preparedness for ‘Disease X’",
-      "publishedAtUtc": "2026-06-13T04:00:22Z",
-      "domain": "ft.com",
-      "score": 66.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
-      "link": "https://www.who.int/news/item/24-06-2026-655-million-people-still-living-without-electricity-underscore-urgent-need-to-deliver-on-universal-energy-access-target",
-      "summary": "At a time when energy security and affordability have risen to the top of the development agenda, 655 million people globally still lack access to electricity, and two billion use polluting fuels and technologies for cooking putting their health and well-being at risk.",
-      "publishedAtUtc": "2026-06-24T11:57:55Z",
-      "domain": "who.int",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "World News in Brief: Students injured in Sudan drone strike, dangerous returns in south Lebanon, celebrating women diplomats",
-      "link": "https://news.un.org/feed/view/en/story/2026/06/1167804",
-      "summary": "Ongoing fighting in the Sudanese city of El Obeid continues to endanger civilians and damage infrastructure, the United Nations said on Wednesday.",
-      "publishedAtUtc": "2026-06-24T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 64.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "France Identifies Its First Case of Ebola",
-      "link": "https://www.nytimes.com/2026/06/24/world/europe/ebola-france.html",
-      "summary": "A doctor who had traveled to the Democratic Republic of Congo was infected, the French health ministry said. The authorities said the risk to the wider population was low.",
-      "publishedAtUtc": "2026-06-24T21:37:56Z",
-      "domain": "nytimes.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "‘Infection control becomes almost impossible’: four doctors on the NHS heatwave crisis",
-      "link": "https://www.theguardian.com/society/2026/jun/25/four-doctors-nhs-heatwave-crisis",
-      "summary": "Frontline medics describe extreme heat conditions they feel are unsafe and lacking in dignity for patients Hospitals in England declare critical incidents as machines and IT fail in heat Hospitals in England are declaring critical incidents with radiotherapy machines, MRI scanners, cooling units and IT systems failing owing to the extreme heat. Here four doctors describe their experiences on the frontline that they say feels unsafe and dangerous for patients amid the worst NHS heatwave crisis in years. Continue reading...",
-      "publishedAtUtc": "2026-06-25T16:57:50Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Hospitals in England declare critical incidents as machines and IT fail in heat",
-      "link": "https://www.theguardian.com/society/2026/jun/25/hospitals-nhs-england-critical-incidents-machines-it-fail-extreme-heat",
-      "summary": "Extreme weather breaks MRI scanners and cooling units and workload rises for sleep-deprived staff on sweltering wards ‘Infection control becomes almost impossible’: four doctors on the NHS heatwave crisis Doctors have set out the disastrous impact extreme heat is having on the NHS in England, with radiotherapy machines and MRI scanners failing, critical IT systems stalling and cooling units that serve entire hospitals breaking down. The hot weather has also prompted a surge in admissions and people arriving at A&amp;E, causing severe overcrowding in some places and exacerbating heat-related pressures on infrastructure. Continue reading...",
-      "publishedAtUtc": "2026-06-25T16:55:54Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The Trump administration is calling frozen embryos children | Moira Donegan",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/25/the-trump-administration-is-calling-frozen-embryos-children",
-      "summary": "A document on an embryo adoption program may be marginal – but it marks an escalation in the pursuit of fetal personhood The Trump administration quietly declared frozen embryos to be children last week. In a call for grant applications related to a nearly 20-year-old program meant to raise awareness about frozen embryo adoption , the Department of Health and Human Services referred to frozen embryos using the terms “child” and “children”, calling for screening standards for frozen embryo purchasers to be raised to those applied to parents seeking to adopt actual children. The document refers to frozen embryos as “children who already exist and are in need of a family”. The language is strange and conspicuous in context, even if that context itself may seem marginal: what the Trump administration has done here is change its phrasing in the guidelines for a longstanding and somewhat obscure grant program. Continue reading...",
-      "publishedAtUtc": "2026-06-25T10:00:12Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The Ebola Outbreak’s Central Mystery: Where Did This Virus Come From?",
-      "link": "https://www.nytimes.com/2026/06/24/science/ebola-bundibugyo-animal-reservoir.html",
-      "summary": "Scientists believe that the Bundibugyo virus persists in an animal species, occasionally spilling over into humans. But they have yet to identify the species.",
-      "publishedAtUtc": "2026-06-24T15:04:00Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Justice Dept. Unveils Medicare Fraud Charges as Part of Larger Health Care Prosecutions",
-      "link": "https://www.nytimes.com/2026/06/23/us/skin-substitutes-medicare-fraud.html",
-      "summary": "The department is taking aim at pricey “skin substitutes,” an overused wound care treatment that cost the government nearly $15 billion in 2025.",
-      "publishedAtUtc": "2026-06-23T22:23:00Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The Drop-off in Dropouts",
-      "link": "https://www.nytimes.com/2026/06/24/headway/high-school-graduation-rates.html",
-      "summary": "How high schools closed the graduation gap.",
-      "publishedAtUtc": "2026-06-24T16:23:15Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Labour MPs criticise language used by Kemi Badenoch in fractious PMQs",
-      "link": "https://www.theguardian.com/politics/2026/jun/24/labour-criticise-language-kemi-badenoch-pmqs-parliament",
-      "summary": "Tory leader reprimanded by speaker for invective against minister and saying Starmer had ‘400 knives in his back’ Labour MPs have criticised Kemi Badenoch after a fractious prime minister’s questions on Wednesday, in which she accused the education secretary of being a “spiteful class warrior”. In a rare move, Badenoch was chastised by the speaker, Lindsay Hoyle, in the chamber of the House of Commons after she took the personal swipe at Bridget Phillipson before saying that Keir Starmer had been betrayed and had “400 knives stuck in his back”. Continue reading...",
-      "publishedAtUtc": "2026-06-24T16:32:03Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "UK hospitals cancel operations because of lack of air conditioning",
-      "link": "https://www.ft.com/content/fb187483-f496-4432-976e-0aaa9d0506fd",
-      "summary": "Record June temperatures put up to 4,000 surgeries at risk",
-      "publishedAtUtc": "2026-06-25T11:38:39Z",
-      "domain": "ft.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Stripe and Anthropic invest in combating respiratory diseases",
-      "link": "https://www.ft.com/content/db7499ef-4608-4bd7-87d2-6b15a0ebd353",
-      "summary": "Consortium puts $500mn into finding new drugs and scaling up air-treatment technologies",
-      "publishedAtUtc": "2026-06-24T12:00:06Z",
-      "domain": "ft.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
-      "link": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
-      "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
-      "publishedAtUtc": "2026-05-14T13:27:15Z",
-      "domain": "who.int",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Tunisia validated by WHO as having eliminated trachoma as a public health problem",
-      "link": "https://www.who.int/news/item/14-05-2026-tunisia-validated-by-who-as-having-eliminated-trachoma-as-a-public-health-problem",
-      "summary": "Tunisia has been officially validated by the World Health Organization (WHO) as having eliminated trachoma as a public health problem, marking a significant achievement after decades of sustained effort.",
-      "publishedAtUtc": "2026-05-14T09:23:04Z",
-      "domain": "who.int",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Ebola Symptoms in Current Outbreak May Be Milder Than in Previous Ones",
-      "link": "https://www.nytimes.com/2026/06/23/health/ebola-symptoms-death-rate.html",
-      "summary": "That is good news for patients, but officials fear it will make controlling the spread of the disease harder.",
-      "publishedAtUtc": "2026-06-23T15:31:22Z",
-      "domain": "nytimes.com",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "High School Students Heckle Bard President Over His Ties With Epstein",
-      "link": "https://www.nytimes.com/2026/06/22/nyregion/bard-college-botsein-epstein-high-school-commencement.html",
-      "summary": "At a graduation ceremony for high schools affiliated with the college, Leon Botstein said, “To get anything done, you’re going to have to dance with the devil.”",
-      "publishedAtUtc": "2026-06-22T22:58:48Z",
-      "domain": "nytimes.com",
-      "score": 61.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Global health gains face threat of reversal",
-      "link": "https://www.who.int/news/item/13-05-2026-global-health-gains-face-threat-of-reversal",
-      "summary": "The world is falling short on health targets, with progress uneven, slowing, and in some areas reversing, according to the World Health Statistics 2026 report, published today by the World Health Organization (WHO).",
-      "publishedAtUtc": "2026-05-13T13:02:54Z",
-      "domain": "who.int",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=25, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "New Plan Scales Back C.D.C.’s Work on Diseases Abroad",
-      "link": "https://www.nytimes.com/2026/06/17/health/pepfar-cdc-cuts.html",
-      "summary": "The State Department is taking over much of the control of global health initiatives, for which critics say the department does not have the expertise.",
-      "publishedAtUtc": "2026-06-17T19:43:08Z",
-      "domain": "nytimes.com",
-      "score": 59.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
-      "link": "https://www.who.int/news/item/12-06-2026-safe-blood-supply-improves-as-voluntary-donations-exceed-85---but-many-people-still-lack-access",
-      "summary": "New data from the World Health Organization (WHO) show sustained progress towards safer blood supplies globally but also highlight persistent inequalities in access to safe blood and weaknesses in governance, financing and regulation of blood systems.",
-      "publishedAtUtc": "2026-06-12T12:35:26Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
-      "link": "https://www.theguardian.com/commentisfree/2026/jun/18/uk-social-media-ban-dangers-young-people-education-content",
-      "summary": "A ban alone will have limited impact and could make things worse. A good strategy needs more educational content – and more money As a parent, I understand the appeal of the announcement on Monday by the prime minister that would prevent children under 16 from using social media. Right now, you are in constant battle with the infinite scroll for your child’s attention, while their impetus to explore the real world is subdued by endless entertainment always within reach. At best, their rapidly developing brains are rotted by a diet of the synthetic, sensationalist and shallow – humanity’s least impressive creative output catering to its lousiest instincts. At worst, they are being preyed upon by forces intent on manipulating, exploiting or recruiting them. You look around and wonder where they are, even as they are right under your nose. You worry they will never experience the boredom that leads to creativity and propels us forward. The desire to protect children from an often hostile environment makes sense, and the ban sends a signal of what we deem acceptable, and maybe even opens up the possibility of a behavioural shift in how we use social media. But evidence from Australia, where similar legislation was enacted last December, is not encouraging. According to one study , two-thirds of young people retained their accounts, while 51% of those most affected by the ban now see less news. The fact is that this demographic get most of its news from social media feeds , consumed incidentally amid footage of fights, diet tips and dance crazes and conveyed by influencers whose shtick is authenticity not accuracy. But it is encountered nonetheless. If we remove access, we need to create alternative routes to news and information. Continue reading...",
-      "publishedAtUtc": "2026-06-18T11:00:02Z",
-      "domain": "theguardian.com",
-      "score": 58.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "A Deadly Outbreak of Plague, Nearly 5,000 Years Before the Black Death",
-      "link": "https://www.nytimes.com/2026/06/17/science/oldest-plague-siberian-skeletons.html",
-      "summary": "The oldest known cases, discovered among hunter-gatherers in Siberian graves, contradict the theory that the disease once was mild.",
-      "publishedAtUtc": "2026-06-17T19:45:31Z",
-      "domain": "nytimes.com",
-      "score": 57.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Mental Health Can Complicate Family Planning",
-      "link": "https://www.nytimes.com/2026/06/17/well/mind/mental-health-family-children.html",
-      "summary": "Five stories show the hurdles that people with psychological diagnoses face when considering parenthood.",
-      "publishedAtUtc": "2026-06-17T17:02:19Z",
-      "domain": "nytimes.com",
-      "score": 57.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "AI medical tools match or surpass doctors for advice",
-      "link": "https://www.ft.com/content/734a45ee-86c4-47e1-8323-569bc14dcdd7",
-      "summary": "Two health models displayed clinical value across a range of diagnostic and treatment decisions, studies show",
-      "publishedAtUtc": "2026-06-17T15:00:05Z",
-      "domain": "ft.com",
-      "score": 57.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
-      "link": "https://www.who.int/news/item/04-06-2026-unsafe-food-causes-866-million-illnesses-and-1.5-million-deaths-annually--young-children-at-highest-risk",
-      "summary": "Children aged less than five years face almost three times the risk of illness from unsafe food than older children and adults, according to new estimates released today by the World Health Organization (WHO).",
-      "publishedAtUtc": "2026-06-03T22:30:11Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
-      "link": "https://www.who.int/news/item/29-05-2026-who-urges-governments-to-protect-young-people-from-addiction-to-tobacco-and-nicotine-products",
-      "summary": "Worldwide, at least 40 million children aged 13–15 use tobacco products, and young people’s use of e-cigarettes and nicotine pouches continues to rise. In advance of World No Tobacco Day – 31 May – the World Health Organization (WHO) urges governments around the world to protect a new generation from becoming addicted to tobacco and nicotine products.",
-      "publishedAtUtc": "2026-05-29T08:48:28Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
-      "link": "https://www.who.int/news/item/15-05-2026-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-surge",
-      "summary": "The World Health Organization (WHO) warns about the rapid growth and aggressive marketing of nicotine pouches, especially targeting youth, amid limited regulation worldwide. Nicotine pouches pose significant health risks and governments are urged to implement strong regulatory measures to prevent addiction and protect young people.",
-      "publishedAtUtc": "2026-05-14T17:26:02Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Cities and Schools Are Testing Wastewater for Illicit Drugs",
-      "link": "https://www.nytimes.com/2026/06/21/health/drug-testing-wastwater-sewage.html",
-      "summary": "The White House recently endorsed monitoring sewage for evidence of drug use. Critics fear such efforts could violate privacy and stigmatize neighborhoods.",
-      "publishedAtUtc": "2026-06-21T17:55:13Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The A.I. Boom Boosted Teacher Pay in a Rural County. Can It Last?",
-      "link": "https://www.nytimes.com/2026/06/23/us/louisana-teachers-bonus-meta-tax-revenue.html",
-      "summary": "The large bonuses tied to data center construction in Richland Parish, La., are unprecedented, but critics say it is not a panacea.",
-      "publishedAtUtc": "2026-06-23T13:33:23Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "EU faces fierce criticism over plans to host Taliban in Brussels",
-      "link": "https://www.theguardian.com/world/2026/jun/23/eu-faces-fierce-criticism-plans-host-taliban-brussels",
-      "summary": "Rights campaigners and MEPs say meeting would normalise regime that erases women from public life Rights campaigners and MEPs have warned that a meeting between EU officials and a Taliban delegation in Brussels risks normalising a regime that has banned girls from school beyond the sixth grade and sought to erase women from public life, while its ranks include two leaders accused of crimes against humanity. A spokesperson for the Afghan foreign ministry confirmed that a delegation representing the ⁠Taliban had travelled to Brussels after the Belgian foreign ministry issued five single-day visas. Continue reading...",
-      "publishedAtUtc": "2026-06-23T14:11:58Z",
-      "domain": "theguardian.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
-      "link": "https://www.ft.com/content/f97a3ea9-29c5-42bb-bf4e-d4f6929b40d1",
-      "summary": "Japanese brewer’s Takeshi Minakata says alcohol ‘can be a good thing’ as it ‘helps make people happy’",
-      "publishedAtUtc": "2026-06-20T04:00:20Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
-      "link": "https://www.who.int/news/item/23-05-2026-seventy-ninth-world-health-assembly---daily-update--23-may-2026",
-      "summary": "Summary of discussions of 23 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-23T12:32:25Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
-      "link": "https://www.who.int/news/item/22-05-2026-seventy-ninth-world-health-assembly-daily-update-22-may-2026",
-      "summary": "Summary of discussions of 22 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-22T19:24:59Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
-      "link": "https://www.who.int/news/item/21-05-2026-seventy-ninth-world-health-assembly---daily-update--21-may-2026",
-      "summary": "Summary of discussions of 21 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-21T20:33:06Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
-      "link": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly---daily-update--20-may-2026",
-      "summary": "Summary of discussions of 20 May at the Seventy-ninth World Health Assembly.",
-      "publishedAtUtc": "2026-05-21T19:48:30Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
-      "link": "https://www.who.int/news/item/19-05-2026-seventy-ninth-world-health-assembly---daily-update--19-may-2026",
-      "summary": "Summary of discussions of 19 May at Seventy-ninth World Health Assembly",
-      "publishedAtUtc": "2026-05-20T15:01:32Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "‘Period tax’ on sanitary products to be abolished, says Pakistan minister",
-      "link": "https://www.theguardian.com/global-development/2026/jun/17/period-tax-sanitary-products-abolished-pakistan-minister",
-      "summary": "Campaigners welcome announcement cutting levies on menstrual health items, but say their work to end period poverty is ‘far from over’ Pakistan plans to abolish “period tax”, in a victory for young campaigners who had taken the government to court over the charges. Finance minister Muhammad Aurangzeb announced that sanitary towels and related items were “daily necessities that are indispensable for women’s health, dignity and full participation in social activities”, and said he intended to remove the sales tax. Continue reading...",
-      "publishedAtUtc": "2026-06-17T12:46:15Z",
-      "domain": "theguardian.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Buildings May Soon Have ‘Immune Systems’ That Fight Airborne Disease",
-      "link": "https://www.nytimes.com/2026/06/19/science/indoor-air-viruses-bacteria.html",
-      "summary": "Following the pandemic, the federal government is spending $150 million on new technology to ensure clean indoor air. Here’s what scientists are pursuing.",
-      "publishedAtUtc": "2026-06-19T09:00:28Z",
-      "domain": "nytimes.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The Guardian University Guide 2026 – the rankings",
-      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
-      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
-      "publishedAtUtc": "2025-09-13T07:01:01Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
-      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
-      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
-      "publishedAtUtc": "2026-04-19T10:00:39Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
-      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
-      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
-      "publishedAtUtc": "2026-04-17T07:00:24Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "The best books on sport, health and wellness to read this summer",
-      "link": "https://www.ft.com/content/78396c43-dd77-4810-b222-99088e069787",
-      "summary": "Simon Kuper and Anjana Ahuja select their best mid-year reads",
-      "publishedAtUtc": "2026-06-16T14:00:05Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Is your health hack worth it? We ask the experts",
-      "link": "https://www.ft.com/content/d6daa9fb-0105-46bc-88c4-77a07280ded6",
-      "summary": "Get the science behind a host of wellness trends – from melatonin to electrolytes – to sort the fact from fiction",
-      "publishedAtUtc": "2026-06-14T04:00:32Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "‘It just fell off him’: Parents turn to private clinics for children’s weight loss jabs",
-      "link": "https://www.ft.com/content/287682c8-3158-4d5e-b53d-6d65fced32a7",
-      "summary": "Lack of formal guidance creates uncertainty over which children can receive treatment on NHS",
-      "publishedAtUtc": "2026-06-10T04:00:16Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-26T21:40:47.103816Z"
-    },
-    {
-      "title": "Gavin Newsom urges a national 'billionaires' tax' while fighting one in California",
-      "link": "https://www.theguardian.com/us-news/2026/jun/26/gavin-newsom-national-billionaires-tax",
-      "summary": "California governor calls for national tax on super-wealthy and suggests the US should own a stake in AI companies US politics live – latest updates California’s governor, Gavin Newsom , called for a national “billionaires tax” on Friday as he fights a ballot measure targeting the ultra-wealthy in his home state. Newsom, who is expected to run for president in 2028, published his proposal the day after California officials certified a ballot proposal to levy a one-time 5% tax on residents worth more than $1bn. The proposal, called the California Billionaire Tax Act, was brought by the Service Employees International Union-United Healthcare Workers West (SEIU-UHW) and would fund the state’s healthcare, education and food assistance programs. Continue reading...",
-      "publishedAtUtc": "2026-06-26T19:33:16Z",
-      "domain": "theguardian.com",
-      "score": 85.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=32, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-06-26T20:08:31.255000Z"
     },
     {
       "title": "Texas makes Bible passages required reading for millions of public school students",
@@ -2821,80 +2833,9 @@
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-06-23T05:16:05.707335Z"
-    },
-    {
-      "title": "Elizabeth Greenhall obituary",
-      "link": "https://www.theguardian.com/society/2026/jun/19/elizabeth-greenhall-obituary",
-      "summary": "My friend Liz Greenhall, who has died aged 83, was a public health consultant who was responsible for family planning services in Oxfordshire. Her work broke new ground in the provision of healthcare for young women and marginalised groups, and included the institution of “Bodyzone” clinics in schools, where pupils had direct access to advice on a range of health issues including providing contraception. In 2000 the Faculty of Family Planning and Reproductive Healthcare (now known as the College of Sexual and Reproductive Healthcare) recognised her work with the grant of the David Bromham memorial award. Continue reading...",
-      "publishedAtUtc": "2026-06-19T11:58:38Z",
-      "domain": "theguardian.com",
-      "score": 79.0,
-      "healthHits": 3,
-      "educationHits": 1,
-      "reason": "relevance=40, credibility=35, freshness=4, health_hits=3, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-23T00:20:58.691054Z"
-    },
-    {
-      "title": "Fire at animation studio in India’s Lucknow kills at least 14",
-      "link": "https://www.aljazeera.com/news/2026/6/22/fire-at-animation-studio-in-indias-lucknow-kills-at-least-14?traffic_source=rss",
-      "summary": "The blaze broke out in a commercial building with a library and animation studio, killing mostly college students.",
-      "publishedAtUtc": "2026-06-22T20:48:01Z",
-      "domain": "aljazeera.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-23T00:20:58.691054Z"
-    },
-    {
-      "title": "Top teaching union says Burnham is Labour’s best chance of beating Reform",
-      "link": "https://www.theguardian.com/politics/2026/jun/17/top-teaching-union-backs-burnham-as-labours-best-chance-of-beating-reform",
-      "summary": "Exclusive: NASUWT leader Matt Wrack also calls for more robust change from the government on education policy UK politics live – latest updates The leader of one of the country’s biggest teaching unions has said Andy Burnham is Labour’s best chance for beating Reform in a general election. The general secretary of NASUWT, Matt Wrack, was speaking to the Guardian in the run-up to Thursday’s Makerfield byelection, in which the Greater Manchester mayor hopes to return to parliament and pave the way for a possible leadership challenge. Continue reading...",
-      "publishedAtUtc": "2026-06-17T14:35:44Z",
-      "domain": "theguardian.com",
-      "score": 60.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-06-23T00:20:58.691054Z"
-    },
-    {
-      "title": "New research links prenatal exposure to Pfas to later development of PMOS",
-      "link": "https://www.theguardian.com/environment/2026/jun/19/prenatal-exposure-pfas-pmos-development-study",
-      "summary": "Study suggests exposure to ‘forever chemicals’ may be a main driver of disease, formerly called PCOS, authors say New research for the first time links prenatal exposure to Pfas “forever chemicals” with the development of polyendocrine metabolic ovarian syndrome (PMOS) later in life. PMOS, formerly known as polycystic ovary syndrome (PCOS), is estimated to impact about 13% of women. Many cases are undiagnosed, and the disease’s cause largely remains a mystery. Continue reading...",
-      "publishedAtUtc": "2026-06-19T12:00:31Z",
-      "domain": "theguardian.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-23T00:20:58.691054Z"
-    },
-    {
-      "title": "Ebola and jihadis threaten Africa’s oldest national park",
-      "link": "https://www.ft.com/content/1560124d-d3fa-4184-873b-c609dae8f00e",
-      "summary": "Virunga’s park rangers are tasked with fighting off Isis-affiliated militants and preventing spread of a deadly disease",
-      "publishedAtUtc": "2026-06-08T04:00:14Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-06-23T00:20:58.691054Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "610447a1abf6b6f4ec3eeff308e421080f6ae620",
-      "sourceTitle": "Mo Farah urges against possible £120m cut to school sports in England",
-      "sourceUrl": "https://www.theguardian.com/education/2026/may/07/mo-farah-against-cut-school-sports-england",
-      "sourceDomain": "theguardian.com",
-      "publishedAtUtc": "2026-05-08T03:52:28.581480Z",
-      "slug": "global-health-and-education-watch-mo-farah-urges-against-possible-120m-cut-to-school",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-mo-farah-urges-against-possible-120m-cut-to-school",
-      "mainImage": "/images/global-news/2026/2026-05-08-global-health-and-education-watch-mo-farah-urges-against-possible-120m-cut-to-sc.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-08-global-health-and-education-watch-mo-farah-urges-against-possible-120m-cut-to-sc.jpg"
-    },
     {
       "contentHash": "9aeb4d07ca7445f0bf53be129afc525f81492ec8",
       "sourceTitle": "Hantavirus Response Shows How Trump Cuts Have Compromised U.S. Preparedness",
@@ -7283,150 +7224,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-global-drug-use-reaches-record-high-as-increasingly-potent",
       "mainImage": "/images/global-news/2026/2026-06-26-global-health-and-education-watch-global-drug-use-reaches-record-high-as-increas.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-26-global-health-and-education-watch-global-drug-use-reaches-record-high-as-increas.jpg"
+    },
+    {
+      "contentHash": "6b749e69de72ad1728d2b8fc5715fba6ac3f5bf6",
+      "sourceTitle": "Bible Passages Will Be Required Reading in Texas Public Schools",
+      "sourceUrl": "https://www.nytimes.com/2026/06/25/us/texas-schools-book-list.html",
+      "sourceDomain": "nytimes.com",
+      "publishedAtUtc": "2026-06-27T04:16:22.461155Z",
+      "slug": "global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+      "mainImage": "/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-05-23T21:08:34.164623Z",
-      "windowStartUtc": "2026-05-23T12:00:00Z",
-      "publishedInWindowBefore": 4,
-      "hoursLeftInWindow": 3,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "bbc.com",
-        "ft.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "bbc.com": 2,
-        "who.int": 2,
-        "aljazeera.com": 1,
-        "ft.com": 1,
-        "news.un.org": 1,
-        "theguardian.com": 1,
-        "nytimes.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 137,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 137,
-      "candidateCacheCount": 240,
-      "candidatesAfterSourceDedupe": 73,
-      "candidatesAfterDedupe": 73,
-      "duplicateSkips": {
-        "historyHash": 62,
-        "historySource": 2,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "From Kharkiv to the UK’s health service: Ukrainian doctor rebuilds her life – and helps others do the same",
-          "link": "https://news.un.org/feed/view/en/story/2026/05/1167569",
-          "score": 86,
-          "reason": "relevance=33, credibility=35, freshness=18, health_hits=1, education_hits=2, global_hits=0"
-        },
-        {
-          "title": "US is ‘simply choosing not to stop’ Ebola outbreak after massive public health cuts, experts say",
-          "link": "https://www.theguardian.com/world/2026/may/21/ebola-outbreak-public-health",
-          "score": 81,
-          "reason": "relevance=36, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "Ebola: US ban on travellers from DRC, Uganda or South Sudan ‘not the solution’",
-          "link": "https://www.theguardian.com/global-development/2026/may/21/ebola-us-ban-travellers-drc-uganda-south-sudan",
-          "score": 80,
-          "reason": "relevance=35, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=2"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "More than 500 children die in measles outbreak in Bangladesh",
-        "link": "https://www.aljazeera.com/news/2026/5/23/more-than-500-children-killed-in-measles-outbreak-in-bangladesh?traffic_source=rss",
-        "score": 70,
-        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Measles Outbreak Claims Over 500 Children in Bangladesh, Igniting Global Health Concerns",
-      "generatedWordCount": 1024,
-      "mainImage": "/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 5760
-      },
-      "generatedImageSharpness": 92.75692267438983,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview",
-        "nano-banana-pro-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "gemini",
-      "geminiTextError": "",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 5.0,
-        "sourceWords": 749.0,
-        "generatedWords": 1030.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/05/13955053-1779547580.jpg?resize=1920%2C1440",
-      "publishResult": {
-        "status": "published",
-        "slug": "measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
-        "mdxPath": "src/blogs/global/measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns",
-          "https://global.nivaranfoundation.org/news/measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-concerns"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-23-measles-outbreak-claims-over-500-children-in-bangladesh-igniting-global-health-c.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 5
-    },
     {
       "ranAtUtc": "2026-05-23T22:07:35.247004Z",
       "windowStartUtc": "2026-05-23T12:00:00Z",
@@ -40105,6 +39916,141 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-06-27T04:16:22.461155Z",
+      "windowStartUtc": "2026-06-26T21:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 5,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "aljazeera.com": 1,
+        "news.un.org": 2,
+        "theguardian.com": 2,
+        "nytimes.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 100,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 100,
+      "candidateCacheCount": 236,
+      "candidatesAfterSourceDedupe": 55,
+      "candidatesAfterDedupe": 55,
+      "duplicateSkips": {
+        "historyHash": 45,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Bible Passages Will Be Required Reading in Texas Public Schools",
+          "link": "https://www.nytimes.com/2026/06/25/us/texas-schools-book-list.html",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+        },
+        {
+          "title": "Pro-MAGA Groups Spur Trump Push For Cultural Change In Schools",
+          "link": "https://www.nytimes.com/2026/06/26/us/politics/defending-education-smith-transgender.html",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+        },
+        {
+          "title": "How Trump’s Education Department Is Targeting Trans Students",
+          "link": "https://www.nytimes.com/video/us/100000010927494/how-trump-mcmahon-use-title-ix-to-target-transgender-students.html",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Bible Passages Will Be Required Reading in Texas Public Schools",
+        "link": "https://www.nytimes.com/2026/06/25/us/texas-schools-book-list.html",
+        "score": 75,
+        "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Bible Passages Will Be Required Reading in Texas Public",
+      "generatedWordCount": 1186,
+      "mainImage": "/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4320
+      },
+      "generatedImageSharpness": 173.85423798427396,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "Could not generate image from Gemini models (gemini-2.0-flash-exp-image-generation: JSON request failed: HTTP Error 403: Forbidden | gemini-2.5-flash-image: JSON request failed: HTTP Error 403: Forbidden | gemini-3.1-flash-image-preview: JSON request failed: HTTP Error 403: Forbidden | gemini-3-pro-image-preview: JSON request failed: HTTP Error 403: Forbidden)",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 0.0,
+        "generatedWords": 1186.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "offline-fallback",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-27-global-health-and-education-watch-bible-passages-will-be-required-reading-in-tex.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
