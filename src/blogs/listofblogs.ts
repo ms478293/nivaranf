@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-administration-orders-us-health-programs-to-move-away-3",
+    title: "Global Health and Education Watch: Trump administration orders US health programs to move away",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-27-global-health-and-education-watch-trump-administration-orders-us-health-programs.jpg",
+    date: "2026-06-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-bible-passages-will-be-required-reading-in-texas-public",
     title: "Global Health and Education Watch: Bible Passages Will Be Required Reading in Texas Public",
     summary:
