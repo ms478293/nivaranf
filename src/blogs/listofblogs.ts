@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-world-news-in-brief-students-injured-in-sudan-drone-3",
+    title: "Global Health and Education Watch: World News in Brief: Students injured in Sudan drone",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-27-global-health-and-education-watch-world-news-in-brief-students-injured-in-sudan-.jpg",
+    date: "2026-06-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-bodies-in-nottingham-nhs-trust-mortuary-in-state-of",
     title: "Global Health and Education Watch: Bodies in Nottingham NHS trust mortuary in state of",
     summary:
