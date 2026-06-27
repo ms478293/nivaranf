@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-guardian-view-on-the-ockenden-maternity-review-lifting",
+    title: "Global Health and Education Watch: The Guardian view on the Ockenden maternity review: lifting",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-27-global-health-and-education-watch-the-guardian-view-on-the-ockenden-maternity-re.jpg",
+    date: "2026-06-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-no-school-living-in-a-tent-but-it-s-exam",
     title: "Global Health and Education Watch: No school, living in a tent, but it’s exam",
     summary:
