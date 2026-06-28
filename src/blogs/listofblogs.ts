@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-young-britons-turn-to-private-healthcare-as-faith-in",
+    title: "Global Health and Education Watch: Young Britons turn to private healthcare as faith in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-28-global-health-and-education-watch-young-britons-turn-to-private-healthcare-as-fa.jpg",
+    date: "2026-06-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-drones-used-to-fight-mosquitoes-as-dengue-fever-surges",
     title: "Global Health and Education Watch: Drones Used to Fight Mosquitoes as Dengue Fever Surges",
     summary:
