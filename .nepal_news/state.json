@@ -1,152 +1,7 @@
 {
-  "windowStartUtc": "2026-03-10T19:00:00Z",
-  "publishedInWindow": 1,
-  "candidateCache": [
-    {
-      "title": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination - The Himalayan Times",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQX3BXbGdrTXRfZV9yeHlYeDJKa3NxLWxROHY1X0VfLVpvWGhPTTNwRERCWVRrWjdfUkxKWVB4bXhCczFrdUdfWjRmUHpVWXhLWGFONlFQMmlhazVEVC1BNmFUanlWX3lvdUVyckJyNTlXc2V4MVZJa1BWSWhBaUNSLUxJUzd0Q3NFeTVyLTd2b3Jrd2lkcW9LQW42Tnl2eFFGckdQc3dMc3NWUUEwdHpFUDQzQ0t0Y2RTdENOcW5n0gFcQVVfeXFMUFpzUUNnUnMzZXBwUjJxSXotdm5HR3FZS3paSGQ1OEY1RHRlNHFhbjF3NVlxZ0x6Y0Z6SldVN1RFZXRhZDFvYnBMQWVZRF80MlJJRmYtb1dqbDAyNkk?oc=5",
-      "summary": "Measles detected in Dhorpatan Municipality, Health Ministry preparing for vaccination &nbsp;&nbsp; The Himalayan Times",
-      "publishedAtUtc": "2026-03-10T09:50:33Z",
-      "domain": "news.google.com",
-      "score": 78.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T19:09:56.572196Z"
-    },
-    {
-      "title": "The forgotten illness: Alzheimer's disease is quietly rising in Nepal - The Himalayan Times",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVNjAxemRRLWxOUHNaV3pmMDdaZnhpeUdDaW5zMWpKdEM0Y2g1MjhUaEUyWTRHS1JMSzFoRkxRVEgtdmVBWkZYZTZ6ZWxoNlVqallDZnVET2ZDbXQ0?oc=5",
-      "summary": "The forgotten illness: Alzheimer's disease is quietly rising in Nepal &nbsp;&nbsp; The Himalayan Times",
-      "publishedAtUtc": "2026-03-10T04:19:59Z",
-      "domain": "news.google.com",
-      "score": 76.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-03-10T19:09:56.572196Z"
-    },
-    {
-      "title": "Kathmandu’s air pollution has crossed the very unhealthy level - Onlinekhabar English",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOODBMRUNDM2JFaktKTWRMSjNqdmlGdE51cXJKMmVQUlhqRDJCYy0xWWtVdzVUODVJek5WRzJ2ZVJTaktOVU9fc3l4YnBCTVhxb012VWJGYTJMM3UwUmNJWjUyRHhSVkVVUmtDLWEzVk85SVBXcWxXbzlqd2xKTUdFSWhlWWVIMFNxTXdoZXJJS2ZKT01nUkxUNWJBT2l6QV9S?oc=5",
-      "summary": "Kathmandu’s air pollution has crossed the very unhealthy level &nbsp;&nbsp; Onlinekhabar English",
-      "publishedAtUtc": "2026-03-10T06:38:38Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T19:09:56.572196Z"
-    },
-    {
-      "title": "18 infected in measles outbreak in Dhorpatan - The Kathmandu Post",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdVZteWFVY2c1MExkbDZmYnJUa185S1JldThvN2F1N1A1X2xVNTJ1MTFXMFJHNVoyUGljdzh4QUhYREVISFVYTXRqUlh3UHFaQTd0TE9EUkQycVd1TFQzb0RvZldzOHF3LUQxcjg4LS1VR3NEcE9ual9PWjBfQ21oYTZ5Z3dEc2xZRWY3bDJkVG9MQQ?oc=5",
-      "summary": "18 infected in measles outbreak in Dhorpatan &nbsp;&nbsp; The Kathmandu Post",
-      "publishedAtUtc": "2026-03-10T01:48:54Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T19:09:56.572196Z"
-    },
-    {
-      "title": "Experts urge new government to make healthcare top priority - The Kathmandu Post",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRGNvdW01dWlmdUFJNzVPSGVxenRJYV9oa2hIVFZqVll0WUk0d01YX3NPZkNHallJQTJFOXBPZ25QT3pkNFV4OW1ROHdsNnAzNTk3SGhTRUxVQUc5X3Z3Y0RfNU9iSW8zWFo1cnplOFBpM0JPakxMWTRNVGV0TzZWNXBFRTZ0RGhZNjdYLUxfcVd2T0twMkxPVWNPSDI0OXZ2cGFkcGJrem0?oc=5",
-      "summary": "Experts urge new government to make healthcare top priority &nbsp;&nbsp; The Kathmandu Post",
-      "publishedAtUtc": "2026-03-09T01:59:03Z",
-      "domain": "news.google.com",
-      "score": 65.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T19:09:56.572196Z"
-    },
-    {
-      "title": "Ujire SDM school student to represent India at Youth Games in Nepal - The Hindu",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUGpOQUcxWG9udDZsTGFUMzNyTkZNN0JzNU9JQmNIenVIVWpJcThmUGFnbmRYRXRTTURLUG50cGJzSXlVTG9HVjJ1cUg1RjlFVmJEdHMzaHZJT0o4b1hHdjJObEdyZ3d4VGVWemw4S2cxcXlrX2VKTVQtQWYyQkFBXzFrNW80bGZnZzBoRXhOOGNDZ3g0NnV6czJMNTU0VDlzdWE4X195Z2ZMZThwRmswVHVHM3k3c3diaUtPVDVxVnJDQksyLWlQQWk1Qlk4dTDSAdYBQVVfeXFMT0FwN2c3RHQ4R3poY1V0aC1lZGdmZzg1a0ZnMXN4Qk5maDhDTGlUQW1YNUpRbmhGUFZtYWdXcFV2VFU4OTJIYXZpTHdqRlphUWtfN0pNNUxOdVdvUVRmX2dOWEk5S282NVJ6QXl0Yng4WVdHZDlNX1NURTJlZWttbWtkVVp5T282X0tUQmpRbnJONy04d28tWlFHN0szOXBHaHhtYWN6UGxwZUlnQm0tdWdtRVc3dVVhLW8tSC00c2h3RU84ZG5OSWVFRUhfVTFKMFM0XzJkZw?oc=5",
-      "summary": "Ujire SDM school student to represent India at Youth Games in Nepal &nbsp;&nbsp; The Hindu",
-      "publishedAtUtc": "2026-03-09T14:31:00Z",
-      "domain": "news.google.com",
-      "score": 73.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=18, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T11:02:24.200704Z"
-    },
-    {
-      "title": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus - myRepublica",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPY3hpSnNaOUZMa3IxZlUzUmNrcFlFQjFyTjVEeTNBc09vSjEtNTRkbVBkbmJhb3FXeks3NDYwOVRKWG5yejRWYVJaakxCUlJfNnNjQ1lSbUJNcHVWdDNiSU5oY1RZNkVsa3hJNF85dzRtUjBkSWRFMTJhNWFycElxeXcyVmVpangwVkxQemFvYlY5REQ1RXJJVURpZFFFVHNhcWtCT2FCN3pzNUpQR2ZFUTdrY2tsRHVHc2NpREJnbWtuQm9kRnR5dG52NVJxMVo0aThqLVNaMA?oc=5",
-      "summary": "Govt schools in Kathmandu Valley ill-prepared to prevent spread of coronavirus &nbsp;&nbsp; myRepublica",
-      "publishedAtUtc": "2026-03-08T10:39:28Z",
-      "domain": "news.google.com",
-      "score": 65.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-10T04:18:42.594397Z"
-    },
-    {
-      "title": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal - myRepublica",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPR3lIZ0QtbE1DUzVjZXBJaS01THZ6bkRtOEM2UFFYc2J4QU5DZkNwTmJVTzFjLXhQV3BNYWZCR0U1bUFiZ1dHUXd1ZUxPeWNpRjlUbXFnT0xWNTlOODNCaTA2VGtEbXRrV3drXzJqNXBzbXNRTFdYd1FmN0lXd0c2NHdwdlZBWFAxem1BQ29rRm8wUkZMWGhPLVV2UW02RDB0MWt6V0VUVi1SdmFxUWNmNlVuNGFuNDBha0V0dWdZVFRxbG9XWGV3RkJIRHNZRDEtOUlJdkswWmhxUmE4MVBNSmFR?oc=5",
-      "summary": "Genetic test for diagnosis of rheumatic diseases started for first time in Nepal &nbsp;&nbsp; myRepublica",
-      "publishedAtUtc": "2026-03-08T00:14:29Z",
-      "domain": "news.google.com",
-      "score": 65.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T19:11:29.687447Z"
-    },
-    {
-      "title": "School Times - The Himalayan Times",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iYmhSYWhjRUNoRml5bzhMV2tzaUF5c1hXbjBmcVk5UEhzSUZ1ak9lNnRFZFMwb3lubVNFcEVWQTVMaURUTFNKVWhRTDJEdjF0dzQxaQ?oc=5",
-      "summary": "School Times &nbsp;&nbsp; The Himalayan Times",
-      "publishedAtUtc": "2025-08-06T04:52:12Z",
-      "domain": "news.google.com",
-      "score": 55.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=0, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-09T04:27:16.600923Z"
-    },
-    {
-      "title": "Former education minister Mahabir Pun leads in Myagdi - kathmandupost.com",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQV9qNjBOX3Joc3Z0bzNSVmN4dXVOYUt3UnRUTnJBRjNpN0U5eWV5blZ4aEY0ak1iblJEMGR1QmMycWhNNGxPc0lmSGUzM19RdnEtQmdNdmRSS05JUFJuZkZkdjZ2OEg3QzlnN3ozcEg2TXBQTXhncnB1MEQ0STVlcm1xR29rSTRqX1dHNUJWeHRYbmJXVnhBbl95dUplRFVM?oc=5",
-      "summary": "Former education minister Mahabir Pun leads in Myagdi &nbsp;&nbsp; kathmandupost.com",
-      "publishedAtUtc": "2026-03-06T14:09:19Z",
-      "domain": "news.google.com",
-      "score": 65.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=20, credibility=35, freshness=10, health_hits=0, education_hits=1, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-07T18:52:51.729037Z"
-    },
-    {
-      "title": "Balendra Shah could be Nepal’s next PM at 35? Married to public health professional, has a baby girl - India.Com",
-      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQVk4MTRDM1IxbmVuZFd1ZlFZSlUzUjNERDFITjVrYXJDeG5JNlYwUWxnbkRfSFNybHljTm1GSmVLQXZzcDdRZDRKZ0NUYnRhdjZZTVU0UWZWNV9ja3o1NlN6eHhVRFZZUGpFRko2bFp4YWlkVkFtTFExZnpKRk5MRUN1a0pGcTZmSFE2T2RmOWg5U2ZneGR5QUxjYjAwZmR5cVI5NGpFczdjNWlrMG5mTUFHR2k3NkFmM3VBZlZJTkdLeEI3MGM4QzhiQTA1WHdZdE1zWDk4Zmtxa2hZYTRZbjdacVRKd1A2NGhPeFM5ZTZ0VWVoVHFGM0lxSmJCX0YwZHRRTGlNZnJ6UjFFNFlINWVFLXV6Rm5yS1NRN2530gGjAkFVX3lxTE0tQkp2LWZWQkNzRWFmdXFoT3R1TVdBTVJxNHhiMHZlZW9aNXRWN05YZ1pZSm16VFlucmV6d2hvZ2szTXA3WjNtY0k2d3dqTWpWUC13T3RMSVpjTG5jNFota0M3VUlLMWxhejZiRWV1MUlQZVI3TWpVclVXMFVEblNqVUg3V2ZBOFdZdVItcW5ZMkhZNUwzd0oydlNCNDRPZEpMeWsybGhnLUFDR2VSbFl1MUV3VTVSNkdHU3lOT0NVRzVfbk1HZS1VSk5aRElweUplM29rb05kVjlTcmFXakI4bkRuakVHSC1kNmdlN2tfVmFqbzdOazRwRmVZN3V4eDNTRUxGUjdVR2RrblJQSTVUS1N6amJ0bHdVNzlIdDMtVlIyUQ?oc=5",
-      "summary": "Balendra Shah could be Nepal’s next PM at 35? Married to public health professional, has a baby girl &nbsp;&nbsp; India.Com",
-      "publishedAtUtc": "2026-03-06T09:05:16Z",
-      "domain": "news.google.com",
-      "score": 78.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=25, credibility=35, freshness=18, health_hits=2, education_hits=0, nepal_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
-    },
-    {
-      "title": "Nepal’s push to eliminate lymphatic filariasis by 2030 - World Health Organization (WHO)",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbEwtOVJOd3d4YXFNX1V3Y2R6b0I0OGE5NDBSTlhzSXVlNm85LWgzWk8wbDlMekxHZzF1YjlYUjdIa2xTMDFPOElFMk5jZERVZGNHcHNvMHotVVdFYl95Z2dRcG5EZmdDMHFBUVY3QnZ3YTFIbWRvWE9QUUgwb2RPZUtSMFAtUjlGTFlteHlxeThtZE5WR3BoUk1VRW5GZjZuN1A4YWh3?oc=5",
-      "summary": "Nepal’s push to eliminate lymphatic filariasis by 2030 &nbsp;&nbsp; World Health Organization (WHO)",
-      "publishedAtUtc": "2026-03-04T06:40:19Z",
-      "domain": "news.google.com",
-      "score": 69.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=1, education_hits=0, nepal_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-03-07T04:09:00.163395Z"
-    }
-  ],
+  "windowStartUtc": "2026-06-28T06:00:00Z",
+  "publishedInWindow": 0,
+  "candidateCache": [],
   "publishedHashes": [],
   "history": [
     {
@@ -1490,6 +1345,34 @@
       },
       "liveVerified": false,
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-06-28T06:41:17.567637Z",
+      "windowStartUtc": "2026-06-28T06:00:00Z",
+      "publishedInWindowBefore": 0,
+      "hoursLeftInWindow": 24,
+      "windowHours": 24,
+      "minPerDay": 1,
+      "maxPerDay": 3,
+      "mustPublishToday": true,
+      "targetMinIn12Hours": 1,
+      "hardMaxIn12Hours": 3,
+      "forcePublishEveryRun": false,
+      "publishFallbackEnabled": true,
+      "thresholdUsed": 72,
+      "candidatesFetched": 0,
+      "candidateCacheCount": 0,
+      "candidatesAfterSourceDedupe": 0,
+      "candidatesAfterDedupe": 0,
+      "duplicateSkips": {
+        "historyHash": 0,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [],
+      "status": "skipped",
+      "reason": "no non-duplicate trusted Nepal health/education candidate available this run"
     }
   ]
 }
