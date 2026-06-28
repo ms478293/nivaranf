@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-whereabouts-of-nearly-300-people-with-ebola-unknown-in",
+    title: "Global Health and Education Watch: Whereabouts of nearly 300 people with Ebola unknown in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-28-global-health-and-education-watch-whereabouts-of-nearly-300-people-with-ebola-un.jpg",
+    date: "2026-06-28",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-q-a-why-humanitarian-aid-is-crucial-to-stopping-the",
     title: "Global Health and Education Watch: Q&A: Why humanitarian aid is crucial to stopping the",
     summary:
