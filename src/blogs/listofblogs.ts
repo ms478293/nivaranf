@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-an-attack-on-ebola-s-first-responders",
+    title: "Global Health and Education Watch: An Attack on Ebola’s First Responders",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-29-global-health-and-education-watch-an-attack-on-ebola-s-first-responders.jpg",
+    date: "2026-06-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-trump-s-education-department-is-targeting-trans-students-2",
     title: "Global Health and Education Watch: How Trump’s Education Department Is Targeting Trans Students",
     summary:
