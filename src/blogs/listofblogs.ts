@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-high-performing-schools-in-england-should-be-encouraged-to-admit",
+    title: "Global Health and Education Watch: High-performing schools in England ‘should be encouraged to admit",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-29-global-health-and-education-watch-high-performing-schools-in-england-should-be-e.jpg",
+    date: "2026-06-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gaza-high-school-student-s-fight-for-a-future",
     title: "Global Health and Education Watch: Gaza high school student’s fight for a future",
     summary:
