@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-venezuela-quake-key-services-crippled-and-health-workers-missing",
+    title: "Global Health and Education Watch: Venezuela quake: Key services crippled and health workers missing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-30-global-health-and-education-watch-venezuela-quake-key-services-crippled-and-heal.jpg",
+    date: "2026-06-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-columbia-university-has-a-new-president-again-this-one",
     title: "Global Health and Education Watch: Columbia University Has a New President. Again. This One",
     summary:
