@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-healthcare-situation-in-dr-congo-improves-amidst-ebola-crisis",
+    title: "Global Health and Education Watch: Healthcare situation in DR Congo improves amidst Ebola crisis",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-30-global-health-and-education-watch-healthcare-situation-in-dr-congo-improves-amid.jpg",
+    date: "2026-06-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-who-plan-urges-stronger-action-against-fungal-disease",
     title: "Global Health and Education Watch: New WHO plan urges stronger action against fungal disease",
     summary:
