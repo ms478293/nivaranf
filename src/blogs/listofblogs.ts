@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-columbia-university-has-a-new-president-again-this-one",
+    title: "Global Health and Education Watch: Columbia University Has a New President. Again. This One",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-06-30-global-health-and-education-watch-columbia-university-has-a-new-president-again-.jpg",
+    date: "2026-06-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dr-congo-says-1-307-ebola-cases-confirmed-including-377",
     title: "Global Health and Education Watch: DR Congo says 1,307 Ebola cases confirmed, including 377",
     summary:
