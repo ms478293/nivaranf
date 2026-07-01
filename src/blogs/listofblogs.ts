@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-risky-burial-in-the-heart-of-an-ebola",
+    title: "Global Health and Education Watch: A Risky Burial in the Heart of an Ebola",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-01-global-health-and-education-watch-a-risky-burial-in-the-heart-of-an-ebola.jpg",
+    date: "2026-07-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-nearly-three-in-four-us-scam-victims-report-mental",
     title: "Global Health and Education Watch: Nearly three in four US scam victims report mental",
     summary:
