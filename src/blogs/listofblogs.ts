@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-aid-workers-in-venezuela-fear-disease-outbreaks-after-twin",
+    title: "Global Health and Education Watch: Aid Workers in Venezuela Fear Disease Outbreaks After Twin",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-01-global-health-and-education-watch-aid-workers-in-venezuela-fear-disease-outbreak.jpg",
+    date: "2026-07-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-people-with-strong-chest-and-back-less-likely-to",
     title: "Global Health and Education Watch: People with strong chest and back less likely to",
     summary:
