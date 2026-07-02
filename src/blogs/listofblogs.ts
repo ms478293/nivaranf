@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-patient-enrolment-begins-in-a-scientific-trial-to-identify",
+    title: "Global Health and Education Watch: Patient enrolment begins in a scientific trial to identify",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-02-global-health-and-education-watch-patient-enrolment-begins-in-a-scientific-trial.jpg",
+    date: "2026-07-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-taking-the-world-s-temperature-who-chief-spotlights-global-health-3",
     title: "Global Health and Education Watch: Taking the world’s temperature: WHO chief spotlights global health",
     summary:
