@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-inside-the-c-d-c-s-mad-scramble-to-meet-kennedy-s-demands",
+    title: "Global Health and Education Watch: Inside the C.D.C.’s Mad Scramble to Meet Kennedy’s Demands",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-04-global-health-and-education-watch-inside-the-c-d-c-s-mad-scramble-to-meet-kenned.jpg",
+    date: "2026-07-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-overseas-education-project-for-women-and-girls-axed-by",
     title: "Global Health and Education Watch: Overseas education project for women and girls axed by",
     summary:
