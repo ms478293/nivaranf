@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-at-least-20-drown-as-boat-carrying-students-after",
+    title: "Global Health and Education Watch: At least 20 drown as boat carrying students after",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-04-global-health-and-education-watch-at-least-20-drown-as-boat-carrying-students-af.jpg",
+    date: "2026-07-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-safe-return-home-tackling-stigma-on-uganda-s-ebola",
     title: "Global Health and Education Watch: A safe return home: Tackling stigma on Uganda's Ebola",
     summary:
