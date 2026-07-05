@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-07-05T20:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
     {
       "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
@@ -12,7 +12,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -24,7 +24,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "WHO adds first diagnostic test for Ebola Bundibugyo virus to its Emergency Use Listing",
@@ -36,7 +36,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=49, credibility=35, freshness=4, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -48,7 +48,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -60,7 +60,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Roll up, roll up! Older generation find joy and fearlessness in circus",
@@ -72,7 +72,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -84,7 +84,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Cutting language courses puts social mobility at risk, say UK experts",
@@ -96,7 +96,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
@@ -108,7 +108,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=40, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Consider the parents caring for adult children not in work or education | Letter",
@@ -120,7 +120,19 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
+    },
+    {
+      "title": "Michigan Democrat Mallory McMorrow ends bid for US Senate",
+      "link": "https://www.theguardian.com/us-news/2026/jul/05/mallory-mcmorrow-drops-out-senate-race-michigan",
+      "summary": "Exit leaves primary voters to choose between progressive Abdul El-Sayed and centrist Haley Stevens in must-win seat Mallory McMorrow, a Michigan Democrat, has dropped out of a contentious US Senate primary campaign , setting up a straight fight between the party’s progressive and establishment wings – represented by Abdul El-Sayed , a former public health official, and Haley Stevens, a congresswoman. McMorrow ’s retreat marks the end of a center-left bid to hold the seat being vacated this year by the Democrat Gary Peters. The three-way primary contest was a close one earlier in the campaign, but polls indicated that McMorrow’s support had plunged in recent weeks, as El-Sayed raced past her and Stevens to emerge as the frontrunner for the party’s nomination. Continue reading...",
+      "publishedAtUtc": "2026-07-05T21:34:28Z",
+      "domain": "theguardian.com",
+      "score": 75.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Clusters of Severe Stomach Illness Reported Across the U.S.",
@@ -132,7 +144,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Overseas education project for women and girls axed by UK after two years",
@@ -144,7 +156,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -156,7 +168,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -168,7 +180,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Third of disadvantaged white pupils in England leave primary school without being able to read properly",
@@ -180,7 +192,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Deaths in France surged 30% during hottest week of record June heatwave",
@@ -192,7 +204,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
@@ -204,7 +216,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -216,7 +228,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Deadly MV Hondius Hantavirus Outbreak Is Over, W.H.O. Says",
@@ -228,7 +240,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Ofsted drops ‘clumsy’ and ‘offensive’ guidance linking autism and extremism",
@@ -240,7 +252,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Problems with Andy Burnham’s drive for devolution | Letters",
@@ -252,7 +264,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Palestinians rally outside Al-Shifa hospital, demanding medical evacuation",
@@ -264,7 +276,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "‘The situation is terrible’: aid workers on life in Sudanese city pummelled by drone strikes",
@@ -276,7 +288,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "China says man who flew plane into Beijing skyscraper had mental health problems",
@@ -288,7 +300,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -300,7 +312,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "A safe return home: Tackling stigma on Uganda's Ebola frontline",
@@ -312,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Taking the world’s temperature: WHO chief spotlights global health emergencies",
@@ -324,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "New WHO plan urges stronger action against fungal disease",
@@ -336,7 +348,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Plans must be put in place before heatwaves – not cobbled together during them | Letters",
@@ -348,7 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
@@ -360,7 +372,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Venezuela's earthquake-hit hospitals pushed to the brink as disease risk grows",
@@ -372,7 +384,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Pakistan roof collapse kills 14 children at tutoring centre",
@@ -384,7 +396,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Week-long heatwave due in England with 34C peak in south-east",
@@ -396,7 +408,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Patient enrolment begins in a scientific trial to identify the first effective treatments for Bundibugyo virus disease",
@@ -408,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Venezuela quake: Key services crippled and health workers missing",
@@ -420,7 +432,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "People awaiting hospital treatment to get three weeks’ notice under NHS England plans",
@@ -432,7 +444,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "From birth until death: how the ethnicity pain gap follows people through life",
@@ -444,7 +456,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
@@ -456,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Courtney Sale Ross, Founder and Funder of a Quirky School, Dies at 78",
@@ -468,7 +480,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Outrage over ‘cruel’ Florida move to ban undocumented students from college",
@@ -480,7 +492,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "The Guardian view on universities: public confidence in degrees is wavering – ministers should shore it up | Editorial",
@@ -492,7 +504,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Sitting for more than 30 minutes at a time linked to higher risk of cancer death",
@@ -504,7 +516,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Canadian boy dies of rabies after waking to find bat on his face",
@@ -516,7 +528,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
@@ -528,7 +540,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
@@ -540,7 +552,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Inside the C.D.C.’s Mad Scramble to Meet Kennedy’s Demands",
@@ -552,7 +564,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Ebola Symptoms in Current Outbreak May Be Milder Than in Previous Ones",
@@ -564,7 +576,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Bible Passages Will Be Required Reading in Texas Public Schools",
@@ -576,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Pro-MAGA Groups Spur Trump Push For Cultural Change In Schools",
@@ -588,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -600,7 +612,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Young Britons turn to private healthcare as faith in NHS cracks",
@@ -612,7 +624,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "AI medical tools match or surpass doctors for advice",
@@ -624,7 +636,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
@@ -636,7 +648,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
@@ -648,7 +660,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
@@ -660,7 +672,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Trump Issues Order to Reduce Pesticides in Food as Kennedy Allies Fume",
@@ -672,7 +684,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Columbia University Has a New President. Again. This One Plans to Stay.",
@@ -684,7 +696,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Nursing Students and Others Get Higher Student Loan Limits",
@@ -696,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Berkeley Will Start Institute Named for Pelosi",
@@ -708,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
@@ -720,7 +732,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Women from minority backgrounds in UK less likely to receive epidurals, research finds",
@@ -732,7 +744,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
@@ -744,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
@@ -756,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
@@ -768,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
@@ -780,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
@@ -792,7 +804,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
@@ -804,7 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Congo Ebola Crisis: Contact Tracing Is Dangerously Behind, Officials Warn",
@@ -816,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Medical Journal Retracts Study Claiming Cancer Therapy Is More Effective When Given in the Morning",
@@ -828,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "France Identifies Its First Case of Ebola",
@@ -840,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "The High School Pipeline to South Korea’s Chip-Making Fortunes",
@@ -852,7 +864,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "These Unpaid Interns Want $32 an Hour. And Health Insurance.",
@@ -864,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "The Ebola Outbreak’s Central Mystery: Where Did This Virus Come From?",
@@ -876,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
@@ -888,7 +900,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -900,7 +912,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
@@ -912,7 +924,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
@@ -924,7 +936,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "QuidelOrtho looks to sell testing unit as PE circles healthcare companies",
@@ -936,7 +948,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "UK hospitals cancel operations because of lack of air conditioning",
@@ -948,7 +960,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Stripe and Anthropic invest in combating respiratory diseases",
@@ -960,7 +972,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
@@ -972,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "The best books on sport, health and wellness to read this summer",
@@ -984,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-05T20:23:11.593035Z"
+      "cachedAtUtc": "2026-07-05T22:14:01.158077Z"
     },
     {
       "title": "Jailed Gaza hospital chief in life-threatening condition, rights group says",
@@ -1840,17 +1852,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "2679551b36c8f2549326dc730ff68dcaf9f212d6",
-      "sourceTitle": "World News in Brief: Mounting waste in Gaza, drone attacks in Sudan, aid truck struck in Ukraine",
-      "sourceUrl": "https://news.un.org/feed/view/en/story/2026/05/1167502",
-      "sourceDomain": "news.un.org",
-      "publishedAtUtc": "2026-05-13T20:56:43.048707Z",
-      "slug": "global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-drone",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-drone",
-      "mainImage": "/images/global-news/2026/2026-05-13-global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-dro.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-13-global-health-and-education-watch-world-news-in-brief-mounting-waste-in-gaza-dro.jpg"
-    },
     {
       "contentHash": "34a83088833e9a2f2c3b7fb57c2cb96057cb6bdd",
       "sourceTitle": "Trump Administration Will Withhold $1.3 Billion in Medicaid Payments to California",
@@ -6239,144 +6240,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ofsted-drops-clumsy-and-offensive-guidance-linking-autism-and",
       "mainImage": "/images/global-news/2026/2026-07-05-global-health-and-education-watch-ofsted-drops-clumsy-and-offensive-guidance-lin.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-ofsted-drops-clumsy-and-offensive-guidance-lin.jpg"
+    },
+    {
+      "contentHash": "b08bad0e708764818d9dd986c57fc19d7049fcae",
+      "sourceTitle": "Palestinians rally outside Al-Shifa hospital, demanding medical evacuation",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/5/palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation?traffic_source=rss",
+      "sourceDomain": "aljazeera.com",
+      "publishedAtUtc": "2026-07-05T22:14:01.158077Z",
+      "slug": "global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+      "mainImage": "/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-06-02T01:38:01.840812Z",
-      "windowStartUtc": "2026-06-02T01:00:00Z",
-      "publishedInWindowBefore": 0,
-      "hoursLeftInWindow": 12,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "bbc.com",
-        "news.un.org",
-        "nytimes.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "who.int": 1,
-        "nytimes.com": 1,
-        "aljazeera.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 122,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 122,
-      "candidateCacheCount": 212,
-      "candidatesAfterSourceDedupe": 56,
-      "candidatesAfterDedupe": 55,
-      "duplicateSkips": {
-        "historyHash": 64,
-        "historySource": 2,
-        "existingSource": 0,
-        "title": 1
-      },
-      "shortlist": [
-        {
-          "title": "DR Congo Ebola outbreak: Nurses discharged after full recovery",
-          "link": "https://news.un.org/feed/view/en/story/2026/06/1167613",
-          "score": 86,
-          "reason": "relevance=33, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "Three Ebola vaccines in development amid growing outbreak fears",
-          "link": "https://www.bbc.com/news/articles/cn8pw93929wo?at_medium=RSS&at_campaign=rss",
-          "score": 86,
-          "reason": "relevance=33, credibility=35, freshness=18, health_hits=2, education_hits=1, global_hits=0"
-        },
-        {
-          "title": "Midwives want to make childbirth miraculous – so what went so wrong in Nottingham? | Zoe Williams",
-          "link": "https://www.theguardian.com/commentisfree/2026/jun/01/midwives-childbirth-nottingham-foh",
-          "score": 83,
-          "reason": "relevance=30, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Midwives want to make childbirth miraculous – so what went so wrong in Nottingham? | Zoe Williams",
-        "link": "https://www.theguardian.com/commentisfree/2026/jun/01/midwives-childbirth-nottingham-foh",
-        "score": 83,
-        "reason": "relevance=30, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Midwives want to make childbirth miraculous – so what",
-      "generatedWordCount": 1479,
-      "mainImage": "/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 456.45633097963207,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1387.0,
-        "generatedWords": 1479.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/bb0003c9f71435ae7a7cadd478b3635fb668ab5f/859_0_4338_3471/master/4338.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&enable=upscale&s=4b037e3195e65864044ad73d458289ac",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so-what"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-midwives-want-to-make-childbirth-miraculous-so.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 1
-    },
     {
       "ranAtUtc": "2026-06-02T06:55:35.400415Z",
       "windowStartUtc": "2026-06-02T01:00:00Z",
@@ -38623,6 +38500,127 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-07-05T22:14:01.158077Z",
+      "windowStartUtc": "2026-07-05T20:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 10,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "nytimes.com": 2,
+        "theguardian.com": 6,
+        "aljazeera.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 83,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 83,
+      "candidateCacheCount": 154,
+      "candidatesAfterSourceDedupe": 27,
+      "candidatesAfterDedupe": 27,
+      "duplicateSkips": {
+        "historyHash": 56,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Palestinians rally outside Al-Shifa hospital, demanding medical evacuation",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/7/5/palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Palestinians rally outside Al-Shifa hospital, demanding medical evacuation",
+        "link": "https://www.aljazeera.com/video/newsfeed/2026/7/5/palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation?traffic_source=rss",
+        "score": 70,
+        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Palestinians rally outside Al-Shifa hospital, demanding medical evacuation",
+      "generatedWordCount": 1177,
+      "mainImage": "/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5760
+      },
+      "generatedImageSharpness": 248.41504944871974,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 454.0,
+        "generatedWords": 1177.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/WIDE-THUMB-Al-Shifa-protest-1783276764.png?resize=1920%2C1440",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-demanding-medical-evacuation"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-05-global-health-and-education-watch-palestinians-rally-outside-al-shifa-hospital-d.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
