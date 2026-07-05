@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-pro-maga-groups-spur-trump-push-for-cultural-change-in",
+    title: "Global Health and Education Watch: Pro-MAGA Groups Spur Trump Push For Cultural Change In",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-05-global-health-and-education-watch-pro-maga-groups-spur-trump-push-for-cultural-c.jpg",
+    date: "2026-07-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-jailed-gaza-hospital-chief-in-life-threatening-condition-rights-group",
     title: "Global Health and Education Watch: Jailed Gaza hospital chief in life-threatening condition, rights group",
     summary:
