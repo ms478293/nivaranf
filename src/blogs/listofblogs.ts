@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ofsted-drops-clumsy-and-offensive-guidance-linking-autism-and",
+    title: "Global Health and Education Watch: Ofsted drops ‘clumsy’ and ‘offensive’ guidance linking autism and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-05-global-health-and-education-watch-ofsted-drops-clumsy-and-offensive-guidance-lin.jpg",
+    date: "2026-07-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cutting-language-courses-puts-social-mobility-at-risk-say",
     title: "Global Health and Education Watch: Cutting language courses puts social mobility at risk, say",
     summary:
