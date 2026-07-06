@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-07-06T09:00:00Z",
-  "publishedInWindow": 2,
+  "publishedInWindow": 3,
   "candidateCache": [
     {
       "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
@@ -12,7 +12,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -24,7 +24,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "WHO adds first diagnostic test for Ebola Bundibugyo virus to its Emergency Use Listing",
@@ -36,7 +36,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=49, credibility=35, freshness=4, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -48,7 +48,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -60,19 +60,31 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Farage warned attack against ‘establishment’ over unregistered gifts could lead to harsher punishment – UK politics live",
       "link": "https://www.theguardian.com/politics/live/2026/jul/06/nigel-farage-reform-unregistered-gift-crypto-christopher-harborne-keir-starmer-labour-andy-burnham-uk-politics-live",
       "summary": "Reform UK leader claims he is victim of ‘hit job’ as parliamentary standards commissioner investigates £5m donation On the subject of Andy Burnham, the Financial Times is running a story today saying the access talks his team is holding with senior civil servants, intended to help Whitehall departments get ready to implement the new PM’s policy agenda, are being hindered by the fact that Burnham has not decided who will do the top cabinet jobs. In the story, Lucy Fisher, George Parker and Anna Gross say: Talks have not yet formally started with the Treasury and Burnham’s refusal to nominate a chancellor has complicated transition planning. One Labour figure complained Burnham’s operation was “skeletal”, adding: “Access talks require a shadow cabinet. Burnham needs to nominate key people in advance or he cannot have meaningful talks” …. Yes. And look – I’m not going to go into what we discussed privately, but everything I’ve seen from Andy publicly suggests that he knows that welfare reform is absolutely necessary … [because] it’s fundamentally about the life chances of a whole generation of young people. And if we think the best option and best opportunity that we can gift as a country to a generation of young people is a life on benefits – are we serious? My sense is that the appetite, both within the parliamentary Labour party and the new administration, will be absolutely up for doing this. One of those is how we support young people. I will not defend an education system that is overly focused on the university route and does not lay out paths to technical qualifications for our young people. Too many young people get to year 10 at school, and they can’t see where school is taking them, because the system isn’t focusing on those young people. And then, at 16, I believe we need the guarantee of a work placement for 16 to 18-year-olds, apprenticeships for every 16 to 18-year-old who wants one, and what I’ve done in Great Manchester is something that might be looked at more broadly, free bus travel for 16 to 18-year-olds, so that they can access those opportunities. Continue reading...",
-      "publishedAtUtc": "2026-07-06T12:54:03Z",
+      "publishedAtUtc": "2026-07-06T16:17:24Z",
       "domain": "theguardian.com",
       "score": 86.0,
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Clusters of Severe Stomach Illness Reported Across the U.S.",
+      "link": "https://www.nytimes.com/2026/07/02/well/cyclospora-infection-united-states.html",
+      "summary": "Public health experts said there were more cases than usual of the disease caused by cyclospora, which is spread through contaminated food and drink.",
+      "publishedAtUtc": "2026-07-06T15:37:34Z",
+      "domain": "nytimes.com",
+      "score": 82.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=29, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -84,31 +96,19 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
-      "title": "Cutting language courses puts social mobility at risk, say UK experts",
-      "link": "https://www.theguardian.com/education/2026/jul/05/cutting-university-language-courses-puts-social-mobility-at-risk-say-experts",
-      "summary": "Exclusive: University moves and falling exam entries fuel concerns about opportunities for working-class pupils Cutting language courses at universities and schools risks undermining social mobility and vocational skills, former education secretaries and experts in the UK have warned. More than 70 languages academics were among 500 staff at the University of Exeter to be told last week they were at risk of redundancy as it seeks to cut 150 full-time posts , predominantly in the humanities. The announcement followed the proposal by the University of Nottingham to become the first Russell Group university to offer no language degrees . Continue reading...",
-      "publishedAtUtc": "2026-07-05T14:00:28Z",
-      "domain": "theguardian.com",
-      "score": 80.0,
-      "healthHits": 0,
-      "educationHits": 3,
-      "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Watchdog warns of risks to patients as private equity’s stake in US healthcare grows",
-      "link": "https://www.theguardian.com/us-news/2026/jul/06/us-private-equity-healthcare-joint-ventures",
-      "summary": "New report details slew of ventures between private equity and nonprofits and calls for greater government oversight A watchdog group is calling for greater government oversight of joint ventures between private equity firms and non-profit healthcare providers, arguing that the arrangements could present “risks” to “patients, payers and employees”. In a new report, Private Equity Stakeholder Project (PESP), a vocal critic of the industry, detailed more than 500 joint ventures between private equity and nonprofit healthcare providers – ranging from rural hospitals to major religiously affiliated health systems to hospice care providers. The group argued those risks could include extraction of profit and a decline in quality of care. Continue reading...",
-      "publishedAtUtc": "2026-07-06T11:00:02Z",
+      "title": "How US-UK drug deal will benefit patients | Letters",
+      "link": "https://www.theguardian.com/society/2026/jul/06/how-us-uk-drug-deal-will-benefit-patients",
+      "summary": "Many new medicines have reached NHS patients as a result of the government’s reformed pricing arrangements, writes Richard Torbett . Plus a letter from Nick Hoile The suggestion that the US-UK pharmaceutical agreement will result in excess deaths is alarmist and relies on a heavily critiqued approach to modelling how much the NHS can spend to generate health ( US-UK drug deal could result in 229,000 excess deaths in England, analysis suggests, 1 July ). It is underpinned by incomplete data. In just the last three months, many new medicines that would otherwise have been withheld or delayed have reached NHS patients as a result of the reformed pricing arrangements. These include treatments for several cancers, blood disorders and autoimmune conditions. This progress has resulted from an increase in the National Institute for Health and Care Excellence cost-effectiveness threshold, which had not moved in almost 25 years, despite the NHS falling behind comparable European countries on access to new treatments, particularly for cancer and rare diseases. Continue reading...",
+      "publishedAtUtc": "2026-07-06T16:17:11Z",
       "domain": "theguardian.com",
       "score": 77.0,
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
@@ -120,7 +120,19 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=40, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Taking a walk down memory lane | Letters",
+      "link": "https://www.theguardian.com/science/2026/jul/06/taking-a-walk-down-memory-lane",
+      "summary": "Readers respond to letters about testing mental capacity Re memory tests ( Letters, 1 July ), my mother was taken to hospital some years ago after an infection overwhelmed her. She was confused and stressed. A doctor wanted to check her mental capacity and gave her paper and a pencil, asking that she write down a sentence with a subject, an object and a verb. I was trying to find the words to say that this was unfair, given her health. A lot of people might not even know what was meant by a subject and an object. But my mother wrote: “I will not do this”, giving us a withering look. Ross Bradshaw Nottingham Continue reading...",
+      "publishedAtUtc": "2026-07-06T16:15:55Z",
+      "domain": "theguardian.com",
+      "score": 75.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "NHS to rate English trusts on tackling violence and racism towards staff",
@@ -132,7 +144,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Consider the parents caring for adult children not in work or education | Letter",
@@ -144,7 +156,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Learning another language appears to slow brain ageing, scientists say",
@@ -156,7 +168,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Overseas education project for women and girls axed by UK after two years",
@@ -168,19 +180,19 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
-      "title": "Middle East crisis live: Funeral procession for supreme leader Ali Khamenei begins in Iran",
+      "title": "Middle East crisis: Funeral procession for supreme leader Ali Khamenei begins in Iran – as it happened",
       "link": "https://www.theguardian.com/world/live/2026/jul/06/iran-middle-east-crisis-funeral-supreme-leader-ali-khamenei-tehran-latest-news-updates",
       "summary": "Millions join funeral procession in capital of Tehran to mourn Khamenei who was kiled in US-Israel airstrikes in February Lebanese state media said an Israeli strike on a car in the country’s south on Monday killed four people, including three women, despite a fragile ceasefire between Israel and Hezbollah. Lebanon’s official National News Agency (NNA) said a school principal, her mother, a foreign female domestic worker and a male Syrian worker were killed when “an Israeli drone targeted the car” they were travelling in as they returned from inspecting their family home in Nabatieh al-Fawqa. Continue reading...",
-      "publishedAtUtc": "2026-07-06T12:41:17Z",
+      "publishedAtUtc": "2026-07-06T15:58:04Z",
       "domain": "theguardian.com",
       "score": 74.0,
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -192,7 +204,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Roll up, roll up! Older generation find joy and fearlessness in circus",
@@ -204,7 +216,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -216,19 +228,31 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Bring Back the SAT, California",
       "link": "https://www.nytimes.com/2026/07/06/opinion/university-california-sat-testing-admissions.html",
       "summary": "Under the test-blind policy, more students are thrown into classes for which they are unprepared.",
-      "publishedAtUtc": "2026-07-06T09:00:33Z",
+      "publishedAtUtc": "2026-07-06T16:29:56Z",
       "domain": "nytimes.com",
       "score": 72.0,
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Cutting language courses puts social mobility at risk, say UK experts",
+      "link": "https://www.theguardian.com/education/2026/jul/05/cutting-university-language-courses-puts-social-mobility-at-risk-say-experts",
+      "summary": "Exclusive: University moves and falling exam entries fuel concerns about opportunities for working-class pupils Cutting language courses at universities and schools risks undermining social mobility and vocational skills, former education secretaries and experts in the UK have warned. More than 70 languages academics were among 500 staff at the University of Exeter to be told last week they were at risk of redundancy as it seeks to cut 150 full-time posts , predominantly in the humanities. The announcement followed the proposal by the University of Nottingham to become the first Russell Group university to offer no language degrees . Continue reading...",
+      "publishedAtUtc": "2026-07-05T14:00:28Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 3,
+      "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Third of disadvantaged white pupils in England leave primary school without being able to read properly",
@@ -240,7 +264,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Deaths in France surged 30% during hottest week of record June heatwave",
@@ -252,7 +276,31 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "UK charity funding school at heart of illegal Israeli settlement expansion",
+      "link": "https://www.theguardian.com/world/2026/jul/06/british-charity-friends-of-yeshivat-shavei-illegal-settlement-hebron",
+      "summary": "Friends of Yeshivat Shavei Hevron sent nearly £200,000 to school in Hebron – where Israel has been accused of imposing apartheid – between 2019 and 2024 A British charity is funding a religious school at the heart of expansion plans for the illegal Israeli settlement in the Palestinian city of Hebron. Friends of Yeshivat Shavei Hevron sent nearly £200,000 to the school between 2019 and 2024, the last year for which accounts are publicly available on the website of the Charity Commission, the charity regulator for England and Wales. Continue reading...",
+      "publishedAtUtc": "2026-07-06T14:10:08Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Baby dies after Israeli troops block emergency journey to hospital",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/baby-dies-after-israeli-troops-block-emergency-journey-to-hospital?traffic_source=rss",
+      "summary": "A baby died after his family’s attempt to reach hospital was blocked by Israel at a checkpoint in the occupied West Bank",
+      "publishedAtUtc": "2026-07-06T13:13:53Z",
+      "domain": "aljazeera.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
@@ -264,7 +312,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -276,7 +324,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Zyn’s Popularity Has Tobacco Companies Racing to Cash In",
@@ -288,19 +336,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Problems with Andy Burnham’s drive for devolution | Letters",
-      "link": "https://www.theguardian.com/politics/2026/jul/05/problems-with-andy-burnhams-drive-for-devolution",
-      "summary": "Daughne Taylor and John Marriott respond to the prospective new prime minister’s 10-year proposal to cede more power to regions and communities Andy Burnham’s flagship promise to devolve power to the local level will not apply to the NHS if the current health bill passes into law in its present form ( Andy Burnham to pledge ‘good growth in every postcode’ in devolution plan, 28 June ). Currently, NHS foundation trusts have a statutory duty to have a council of governors. These are unpaid volunteers, democratically elected from the public and staff. They exist independent of NHS management to represent local views, and they hold the vital power to appoint the chair of the trust. However, the current health bill will remove this requirement. Under these proposals, local trusts will effectively be allowed to “mark their own homework”, while trust chairs will be appointed centrally from Whitehall. This is the absolute antithesis of Burnham’s devolution proposals. Instead of centralisation, all trusts should have a statutory council of governors. By moving to a locally selected model rather than an elected one, this system would be significantly cheaper to run. These bodies must remain independent of NHS management, represent the public and staff, be charged with appointing trust chairs, and hold a statutory right to speak “truth to power” at board meetings. Implementing such legislation is not just about democracy – it is a safety measure that would help prevent local NHS disasters before they are allowed to escalate. Daughne Taylor Chair, National Lead Governors Association • While wishing Andy Burnham well in his one-man odyssey to put our country right, I have to caution him on apparently seeking to devolve real power and money to individuals rather than democratically accountable organisations. If he is thinking of creating even more elected mayors, he had better make sure that these individuals are up to the task. The example of our local mayors is not encouraging. However, with current budgets of around £25m each, they can’t do that much damage. If real money and power is at play, what he should be advocating is nothing short of a federal United Kingdom, on the lines of Germany. For this to work over here, the overwhelming economic power of England over Northern Ireland, Wales and Scotland needs to be diluted by the creation of six or seven English directly elected regional assemblies. This would leave the federal parliament in London responsible for a narrow portfolio, including foreign affairs, defence and economic development, with a senate, drawing its members from the regions and nations of the UK, to scrutinise legislation. John Marriott North Hykeham, Lincolnshire Continue reading...",
-      "publishedAtUtc": "2026-07-05T16:03:54Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Inside the NHS hospital trialling psychedelics to treat depression",
@@ -312,7 +348,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Lebanon latest: Teacher killed by Israeli airstrike",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/lebanon-latest-teacher-killed-by-israeli-airstrike-2?traffic_source=rss",
+      "summary": "Al Jazeera’s Heidi Pett brings you the latest from Lebanon, where Israeli strikes continue despite a ‘ceasefire’.",
+      "publishedAtUtc": "2026-07-06T16:10:09Z",
+      "domain": "aljazeera.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "‘The situation is terrible’: aid workers on life in Sudanese city pummelled by drone strikes",
@@ -324,19 +372,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Clusters of Severe Stomach Illness Reported Across the U.S.",
-      "link": "https://www.nytimes.com/2026/07/02/well/cyclospora-infection-united-states.html",
-      "summary": "Public health experts said there were more cases than usual of the disease caused by cyclospora, which is spread through contaminated food and drink.",
-      "publishedAtUtc": "2026-07-02T22:55:49Z",
-      "domain": "nytimes.com",
-      "score": 68.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=29, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -348,7 +384,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "A safe return home: Tackling stigma on Uganda's Ebola frontline",
@@ -360,7 +396,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Taking the world’s temperature: WHO chief spotlights global health emergencies",
@@ -372,7 +408,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "New WHO plan urges stronger action against fungal disease",
@@ -384,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Plans must be put in place before heatwaves – not cobbled together during them | Letters",
@@ -396,7 +432,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
@@ -408,7 +444,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Venezuela's earthquake-hit hospitals pushed to the brink as disease risk grows",
@@ -420,7 +456,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Deadly MV Hondius Hantavirus Outbreak Is Over, W.H.O. Says",
@@ -432,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Pakistan roof collapse kills 14 children at tutoring centre",
@@ -444,7 +480,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Week-long heatwave due in England with 34C peak in south-east",
@@ -456,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Patient enrolment begins in a scientific trial to identify the first effective treatments for Bundibugyo virus disease",
@@ -468,7 +504,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Venezuela quake: Key services crippled and health workers missing",
@@ -480,7 +516,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "China says man who flew plane into Beijing skyscraper had mental health problems",
@@ -492,7 +528,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Ofsted drops ‘clumsy’ and ‘offensive’ guidance linking autism and extremism",
@@ -504,7 +540,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Problems with Andy Burnham’s drive for devolution | Letters",
+      "link": "https://www.theguardian.com/politics/2026/jul/05/problems-with-andy-burnhams-drive-for-devolution",
+      "summary": "Daughne Taylor and John Marriott respond to the prospective new prime minister’s 10-year proposal to cede more power to regions and communities Andy Burnham’s flagship promise to devolve power to the local level will not apply to the NHS if the current health bill passes into law in its present form ( Andy Burnham to pledge ‘good growth in every postcode’ in devolution plan, 28 June ). Currently, NHS foundation trusts have a statutory duty to have a council of governors. These are unpaid volunteers, democratically elected from the public and staff. They exist independent of NHS management to represent local views, and they hold the vital power to appoint the chair of the trust. However, the current health bill will remove this requirement. Under these proposals, local trusts will effectively be allowed to “mark their own homework”, while trust chairs will be appointed centrally from Whitehall. This is the absolute antithesis of Burnham’s devolution proposals. Instead of centralisation, all trusts should have a statutory council of governors. By moving to a locally selected model rather than an elected one, this system would be significantly cheaper to run. These bodies must remain independent of NHS management, represent the public and staff, be charged with appointing trust chairs, and hold a statutory right to speak “truth to power” at board meetings. Implementing such legislation is not just about democracy – it is a safety measure that would help prevent local NHS disasters before they are allowed to escalate. Daughne Taylor Chair, National Lead Governors Association • While wishing Andy Burnham well in his one-man odyssey to put our country right, I have to caution him on apparently seeking to devolve real power and money to individuals rather than democratically accountable organisations. If he is thinking of creating even more elected mayors, he had better make sure that these individuals are up to the task. The example of our local mayors is not encouraging. However, with current budgets of around £25m each, they can’t do that much damage. If real money and power is at play, what he should be advocating is nothing short of a federal United Kingdom, on the lines of Germany. For this to work over here, the overwhelming economic power of England over Northern Ireland, Wales and Scotland needs to be diluted by the creation of six or seven English directly elected regional assemblies. This would leave the federal parliament in London responsible for a narrow portfolio, including foreign affairs, defence and economic development, with a senate, drawing its members from the regions and nations of the UK, to scrutinise legislation. John Marriott North Hykeham, Lincolnshire Continue reading...",
+      "publishedAtUtc": "2026-07-05T16:03:54Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
@@ -516,7 +564,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Courtney Sale Ross, Founder and Funder of a Quirky School, Dies at 78",
@@ -528,7 +576,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "The Guardian view on universities: public confidence in degrees is wavering – ministers should shore it up | Editorial",
@@ -540,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Sitting for more than 30 minutes at a time linked to higher risk of cancer death",
@@ -552,7 +600,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Canadian boy dies of rabies after waking to find bat on his face",
@@ -564,7 +612,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
@@ -576,7 +624,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Professor Fired for Criticizing Charlie Kirk Wins $1.9 Million Settlement",
@@ -588,7 +636,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
@@ -600,7 +648,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Inside the C.D.C.’s Mad Scramble to Meet Kennedy’s Demands",
@@ -612,7 +660,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Bible Passages Will Be Required Reading in Texas Public Schools",
@@ -624,7 +672,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Pro-MAGA Groups Spur Trump Push For Cultural Change In Schools",
@@ -636,7 +684,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -648,7 +696,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Young Britons turn to private healthcare as faith in NHS cracks",
@@ -660,7 +708,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "AI medical tools match or surpass doctors for advice",
@@ -672,7 +720,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
@@ -684,7 +732,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
@@ -696,7 +744,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
@@ -708,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Trump Issues Order to Reduce Pesticides in Food as Kennedy Allies Fume",
@@ -720,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Columbia University Has a New President. Again. This One Plans to Stay.",
@@ -732,7 +780,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Nursing Students and Others Get Higher Student Loan Limits",
@@ -744,7 +792,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
@@ -756,7 +804,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "People awaiting hospital treatment to get three weeks’ notice under NHS England plans",
@@ -768,7 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
@@ -780,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
@@ -792,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
@@ -804,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
@@ -816,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
@@ -828,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
@@ -840,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Congo Ebola Crisis: Contact Tracing Is Dangerously Behind, Officials Warn",
@@ -852,7 +900,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
     },
     {
       "title": "Medical Journal Retracts Study Claiming Cancer Therapy Is More Effective When Given in the Morning",
@@ -864,6 +912,162 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "The High School Pipeline to South Korea’s Chip-Making Fortunes",
+      "link": "https://www.nytimes.com/2026/06/26/business/korea-chip-high-school.html",
+      "summary": "Huge memory-chip profits from the global A.I. boom have increased interest in semiconductor factory work. But behind the hype are uncertain job prospects.",
+      "publishedAtUtc": "2026-06-26T07:34:38Z",
+      "domain": "nytimes.com",
+      "score": 54.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "These Unpaid Interns Want $32 an Hour. And Health Insurance.",
+      "link": "https://www.nytimes.com/2026/06/26/nyregion/unpaid-internships-nyc.html",
+      "summary": "A group of government interns is campaigning for a paid wage, reigniting a debate over ethics and opportunity in one of the world’s most expensive cities.",
+      "publishedAtUtc": "2026-06-26T15:46:40Z",
+      "domain": "nytimes.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Berkeley Will Start Institute Named for Pelosi",
+      "link": "https://www.nytimes.com/2026/06/29/us/berkeley-pelosi-democracy.html",
+      "summary": "The Trump administration has been scrutinizing the University of California, Berkeley, which insists its new program will be a nonpartisan venture.",
+      "publishedAtUtc": "2026-06-29T09:01:22Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
+      "link": "https://www.nytimes.com/2026/06/26/us/politics/yale-trump-administration-admissions-race.html",
+      "summary": "The university hired a high-powered law firm to try to reach an agreement with the Justice Department over claims its admissions practices hurt white and Asian applicants.",
+      "publishedAtUtc": "2026-06-26T18:46:20Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "The Guardian University Guide 2026 – the rankings",
+      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
+      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
+      "publishedAtUtc": "2025-09-13T07:01:01Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
+      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
+      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
+      "publishedAtUtc": "2026-04-19T10:00:39Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
+      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
+      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
+      "publishedAtUtc": "2026-04-17T07:00:24Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "QuidelOrtho looks to sell testing unit as PE circles healthcare companies",
+      "link": "https://www.ft.com/content/404f832c-89cf-49f7-a546-b0e4eb965f15",
+      "summary": "Diagnostic company’s shares are down 90% since its rapid antigen tests were the first to be approved for Covid-19",
+      "publishedAtUtc": "2026-06-27T10:00:00Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "UK hospitals cancel operations because of lack of air conditioning",
+      "link": "https://www.ft.com/content/fb187483-f496-4432-976e-0aaa9d0506fd",
+      "summary": "Record June temperatures put up to 4,000 surgeries at risk",
+      "publishedAtUtc": "2026-06-25T11:38:39Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Stripe and Anthropic invest in combating respiratory diseases",
+      "link": "https://www.ft.com/content/db7499ef-4608-4bd7-87d2-6b15a0ebd353",
+      "summary": "Consortium puts $500mn into finding new drugs and scaling up air-treatment technologies",
+      "publishedAtUtc": "2026-06-24T12:00:06Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
+      "link": "https://www.ft.com/content/f97a3ea9-29c5-42bb-bf4e-d4f6929b40d1",
+      "summary": "Japanese brewer’s Takeshi Minakata says alcohol ‘can be a good thing’ as it ‘helps make people happy’",
+      "publishedAtUtc": "2026-06-20T04:00:20Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "The best books on sport, health and wellness to read this summer",
+      "link": "https://www.ft.com/content/78396c43-dd77-4810-b222-99088e069787",
+      "summary": "Simon Kuper and Anjana Ahuja select their best mid-year reads",
+      "publishedAtUtc": "2026-06-16T14:00:05Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-06T16:31:36.545428Z"
+    },
+    {
+      "title": "Watchdog warns of risks to patients as private equity’s stake in US healthcare grows",
+      "link": "https://www.theguardian.com/us-news/2026/jul/06/us-private-equity-healthcare-joint-ventures",
+      "summary": "New report details slew of ventures between private equity and nonprofits and calls for greater government oversight A watchdog group is calling for greater government oversight of joint ventures between private equity firms and non-profit healthcare providers, arguing that the arrangements could present “risks” to “patients, payers and employees”. In a new report, Private Equity Stakeholder Project (PESP), a vocal critic of the industry, detailed more than 500 joint ventures between private equity and nonprofit healthcare providers – ranging from rural hospitals to major religiously affiliated health systems to hospice care providers. The group argued those risks could include extraction of profit and a decline in quality of care. Continue reading...",
+      "publishedAtUtc": "2026-07-06T11:00:02Z",
+      "domain": "theguardian.com",
+      "score": 77.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
     },
     {
@@ -879,155 +1083,11 @@
       "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
     },
     {
-      "title": "The High School Pipeline to South Korea’s Chip-Making Fortunes",
-      "link": "https://www.nytimes.com/2026/06/26/business/korea-chip-high-school.html",
-      "summary": "Huge memory-chip profits from the global A.I. boom have increased interest in semiconductor factory work. But behind the hype are uncertain job prospects.",
-      "publishedAtUtc": "2026-06-26T07:34:38Z",
-      "domain": "nytimes.com",
-      "score": 54.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "These Unpaid Interns Want $32 an Hour. And Health Insurance.",
-      "link": "https://www.nytimes.com/2026/06/26/nyregion/unpaid-internships-nyc.html",
-      "summary": "A group of government interns is campaigning for a paid wage, reigniting a debate over ethics and opportunity in one of the world’s most expensive cities.",
-      "publishedAtUtc": "2026-06-26T15:46:40Z",
-      "domain": "nytimes.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
       "title": "The Ebola Outbreak’s Central Mystery: Where Did This Virus Come From?",
       "link": "https://www.nytimes.com/2026/06/24/science/ebola-bundibugyo-animal-reservoir.html",
       "summary": "Scientists believe that the Bundibugyo virus persists in an animal species, occasionally spilling over into humans. But they have yet to identify the species.",
       "publishedAtUtc": "2026-06-24T15:04:00Z",
       "domain": "nytimes.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Berkeley Will Start Institute Named for Pelosi",
-      "link": "https://www.nytimes.com/2026/06/29/us/berkeley-pelosi-democracy.html",
-      "summary": "The Trump administration has been scrutinizing the University of California, Berkeley, which insists its new program will be a nonpartisan venture.",
-      "publishedAtUtc": "2026-06-29T09:01:22Z",
-      "domain": "nytimes.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
-      "link": "https://www.nytimes.com/2026/06/26/us/politics/yale-trump-administration-admissions-race.html",
-      "summary": "The university hired a high-powered law firm to try to reach an agreement with the Justice Department over claims its admissions practices hurt white and Asian applicants.",
-      "publishedAtUtc": "2026-06-26T18:46:20Z",
-      "domain": "nytimes.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "The Guardian University Guide 2026 – the rankings",
-      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
-      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
-      "publishedAtUtc": "2025-09-13T07:01:01Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
-      "link": "https://www.theguardian.com/education/2026/apr/19/fee-bonuses-bosses-city-and-guilds-privatisation-charity-commission",
-      "summary": "Sale of vocational training brand and million-pound executive pay deals now subject to Charity Commission inquiry When electrician Charlie Butler was contacted by City &amp; Guilds last autumn, he received a shock. He had branched out to launch a new company schooling future sparkies in Essex, offering City &amp; Guilds-affiliated courses and qualifications. When the representative from the training charity called, Butler was expecting a quick conversation about a small uptick in the annual fees. Continue reading...",
-      "publishedAtUtc": "2026-04-19T10:00:39Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
-      "link": "https://www.theguardian.com/education/2026/apr/17/pupils-school-lunch-menu-government-ban-obesity",
-      "summary": "Though welcomed by chefs and campaigners, many schools say the government’s plan to remove ‘grab and go’ options from the menu is a step too far It is lunchtime at Richard Challoner school, a Catholic comprehensive for boys in New Malden, south-west London. The familiar smell of school lunch is beginning to waft around the corridors. In the canteen, there is a moment of calm as the kitchen team make final preparations before year 7 descend – a mass of chatting, laughing boys, with backpacks swinging and empty tummies grumbling. Continue reading...",
-      "publishedAtUtc": "2026-04-17T07:00:24Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "QuidelOrtho looks to sell testing unit as PE circles healthcare companies",
-      "link": "https://www.ft.com/content/404f832c-89cf-49f7-a546-b0e4eb965f15",
-      "summary": "Diagnostic company’s shares are down 90% since its rapid antigen tests were the first to be approved for Covid-19",
-      "publishedAtUtc": "2026-06-27T10:00:00Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "UK hospitals cancel operations because of lack of air conditioning",
-      "link": "https://www.ft.com/content/fb187483-f496-4432-976e-0aaa9d0506fd",
-      "summary": "Record June temperatures put up to 4,000 surgeries at risk",
-      "publishedAtUtc": "2026-06-25T11:38:39Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Stripe and Anthropic invest in combating respiratory diseases",
-      "link": "https://www.ft.com/content/db7499ef-4608-4bd7-87d2-6b15a0ebd353",
-      "summary": "Consortium puts $500mn into finding new drugs and scaling up air-treatment technologies",
-      "publishedAtUtc": "2026-06-24T12:00:06Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
-      "link": "https://www.ft.com/content/f97a3ea9-29c5-42bb-bf4e-d4f6929b40d1",
-      "summary": "Japanese brewer’s Takeshi Minakata says alcohol ‘can be a good thing’ as it ‘helps make people happy’",
-      "publishedAtUtc": "2026-06-20T04:00:20Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-06T13:00:04.667198Z"
-    },
-    {
-      "title": "The best books on sport, health and wellness to read this summer",
-      "link": "https://www.ft.com/content/78396c43-dd77-4810-b222-99088e069787",
-      "summary": "Simon Kuper and Anjana Ahuja select their best mid-year reads",
-      "publishedAtUtc": "2026-06-16T14:00:05Z",
-      "domain": "ft.com",
       "score": 52.0,
       "healthHits": 1,
       "educationHits": 0,
@@ -1873,104 +1933,9 @@
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-07-02T17:03:34.246330Z"
-    },
-    {
-      "title": "Frequent AI chatbot users more likely to believe anti-vaccine myths, poll finds",
-      "link": "https://www.theguardian.com/technology/2026/jun/30/ai-chatbot-use-anti-vaccine-myths-poll",
-      "summary": "Poll finds use of AI tools for health advice is correlated with belief in vaccine falsehoods, such as shots causing autism Adults in the US who frequently seek out health advice from artificial intelligence chatbots are more likely to believe myths about vaccines, according to a poll released on Tuesday by health research firm KFF. The survey, which was conducted in May and polled a representative sample of 2,480 US adults, found that use of AI tools and chatbots correlated with belief in falsehoods such as vaccines causing autism or that the measles vaccine poses more danger than the corresponding virus. The connection remained while controlling for factors such as age, race, education and political partisanship. Continue reading...",
-      "publishedAtUtc": "2026-06-30T19:51:07Z",
-      "domain": "theguardian.com",
-      "score": 80.0,
-      "healthHits": 2,
-      "educationHits": 1,
-      "reason": "relevance=35, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "WHO declares hantavirus outbreak linked to cruise ship over",
-      "link": "https://www.theguardian.com/world/2026/jul/02/hantavirus-ends-who",
-      "summary": "The outbreak infected 13 people and ‌killed three Sign up for the Breaking News US newsletter email The World ⁠Health Organization on Thursday declared the ⁠ hantavirus ⁠outbreak ​linked to a cruise ⁠ship over after the last identified ⁠contact of an ​exposed ‌person ‌completed quarantine and tested ‌negative for the virus. The outbreak, which infected 13 people and ‌killed three, involved the Andes virus, ​a rare hantavirus strain that typically circulates in ⁠Argentina and Chile. ​The cruise ​ship, MV Hondius, ​set off ​from ‌Argentina ​on ​1 April. Continue reading...",
-      "publishedAtUtc": "2026-07-02T13:43:18Z",
-      "domain": "theguardian.com",
-      "score": 79.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "People with strong chest and back less likely to have a heart attack, analysis suggests",
-      "link": "https://www.theguardian.com/science/2026/jun/30/strong-chest-back-less-likely-heart-attack-analysis",
-      "summary": "Researchers think people with greater muscle density in torso area, who are also less likely to die prematurely, are those who exercise more People with strong chest and back muscles are less likely to have a heart attack or die prematurely, analysis using artificial intelligence suggests. Researchers led by the University of Edinburgh used AI to examine hospital scans of 1,722 patients, aged mostly in their 50s, who had chest pain. Continue reading...",
-      "publishedAtUtc": "2026-06-30T14:00:08Z",
-      "domain": "theguardian.com",
-      "score": 75.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=30, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "Damning report on England maternity care ‘watershed moment’, health secretary says",
-      "link": "https://www.theguardian.com/politics/2026/jun/30/england-maternity-commissioner-shocking-failings-amos-review",
-      "summary": "Announcing creation of a maternity commissioner, James Murray says Amos report highlights ‘toxic’ culture in some NHS units Analysis: Transparency, standards and a new commissioner – but does maternity review go far enough? Valerie Amos’s devastating indictment of maternity care has to be a “watershed moment” for how the NHS treats pregnant women and babies, the health secretary has said. James Murray pledged that Lady Amos’s report would lead to significant improvements and that “toxic dynamics” which damage relationships between hospital staff providing childbirth care would be dismantled. Continue reading...",
-      "publishedAtUtc": "2026-06-30T15:33:00Z",
-      "domain": "theguardian.com",
-      "score": 69.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "Women with irregular periods should be checked for PMOS, NHS says",
-      "link": "https://www.theguardian.com/society/2026/jul/01/women-with-irregular-periods-should-be-checked-for-pmos-nhs-says",
-      "summary": "Polyendocrine metabolic ovarian syndrome is underdiagnosed and inconsistently managed, according to Nice Up to 4 million women with irregular periods should be investigated for polyendocrine metabolic ovarian syndrome, according to new NHS guidance . PMOS, previously known as polycystic ovarian syndrome, is believed to affect up to 13% of reproductive age women , the World Health Organization estimates. Continue reading...",
-      "publishedAtUtc": "2026-06-30T23:01:19Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "What does the Amos report reveal about maternity and neonatal care in England?",
-      "link": "https://www.theguardian.com/society/2026/jun/30/valerie-amos-report-maternity-neonatal-care-england",
-      "summary": "Amos review confirms patients received unacceptable care that led to stillbirths, serious injuries and maternal deaths Damning report on maternity care in England is a ‘watershed moment’ Valerie Amos, a Labour peer and former diplomat, has published her long-awaited review into maternity and neonatal care across England. This is what we know: Continue reading...",
-      "publishedAtUtc": "2026-06-30T17:40:16Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
-    },
-    {
-      "title": "I pushed myself too hard at the gym – and ended up in the hospital",
-      "link": "https://www.theguardian.com/wellness/2026/jun/30/exertional-rhabdomyolysis-cause",
-      "summary": "Reckless exercise can lead to exertional rhabdomyolysis, a condition that has risen due to the popularity of high-intensity workouts In January 2025, I attended my first bootcamp class. I had spent the day hunched over my laptop, anxious and craving an intense workout that would dispel my worries. I booked the class at a nearby gym, and the five-star reviews promised the all-consuming exercise I wanted: “Militant style instructor, but very motivating,” read one. Another: “Hardest workout of my life; extremely rewarding.” Continue reading...",
-      "publishedAtUtc": "2026-06-30T16:00:10Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-02T14:28:35.783652Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "aa8470ab48bae6a26a36714618447151adf5266f",
-      "sourceTitle": "A data and knowledge cross-level fusion-driven learning framework for detecting missing diagnosis",
-      "sourceUrl": "https://www.nature.com/articles/s41746-026-02725-z",
-      "sourceDomain": "nature.com",
-      "publishedAtUtc": "2026-05-14T10:32:58.036475Z",
-      "slug": "global-health-and-education-watch-a-data-and-knowledge-cross-level-fusion-driven-learning-framework-for",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-a-data-and-knowledge-cross-level-fusion-driven-learning-framework-for",
-      "mainImage": "/images/global-news/2026/2026-05-14-global-health-and-education-watch-a-data-and-knowledge-cross-level-fusion-driven.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-14-global-health-and-education-watch-a-data-and-knowledge-cross-level-fusion-driven.jpg"
-    },
     {
       "contentHash": "9b3114a163017b7b33a364002868059a761f16c2",
       "sourceTitle": "For three years I scoured the world for answers to Europe’s big problems – here’s what I found",
@@ -6359,145 +6324,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-bring-back-the-sat-california",
       "mainImage": "/images/global-news/2026/2026-07-06-global-health-and-education-watch-bring-back-the-sat-california.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-bring-back-the-sat-california.jpg"
+    },
+    {
+      "contentHash": "bd7e4fc1b9cfd9051f791dd6656a0bcac400d9b2",
+      "sourceTitle": "Baby dies after Israeli troops block emergency journey to hospital",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/7/6/baby-dies-after-israeli-troops-block-emergency-journey-to-hospital?traffic_source=rss",
+      "sourceDomain": "aljazeera.com",
+      "publishedAtUtc": "2026-07-06T16:31:36.545428Z",
+      "slug": "global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+      "mainImage": "/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-06-02T23:09:09.001267Z",
-      "windowStartUtc": "2026-06-02T16:00:00Z",
-      "publishedInWindowBefore": 2,
-      "hoursLeftInWindow": 5,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "bbc.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "theguardian.com": 2,
-        "news.un.org": 1,
-        "bbc.com": 1,
-        "nytimes.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 120,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 120,
-      "candidateCacheCount": 212,
-      "candidatesAfterSourceDedupe": 59,
-      "candidatesAfterDedupe": 58,
-      "duplicateSkips": {
-        "historyHash": 60,
-        "historySource": 1,
-        "existingSource": 0,
-        "title": 1
-      },
-      "shortlist": [
-        {
-          "title": "Lebanon hospital strikes impact most vulnerable patients, warns WHO",
-          "link": "https://news.un.org/feed/view/en/story/2026/06/1167621",
-          "score": 79,
-          "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Trump Megadonor Gave $5.5 Million Estate to Robert F. Kennedy Jr.’s Anti-Vaccine Group",
-          "link": "https://www.nytimes.com/2026/06/02/business/economy/mellon-kennedy-childrens-health-defense.html",
-          "score": 75,
-          "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Only the Right Tests Can Stop This Ebola Outbreak. Congo Has Hardly Any.",
-          "link": "https://www.nytimes.com/2026/06/02/health/ebola-tests-congo.html",
-          "score": 75,
-          "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Lebanon hospital strikes impact most vulnerable patients, warns WHO",
-        "link": "https://news.un.org/feed/view/en/story/2026/06/1167621",
-        "score": 79,
-        "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Lebanon hospital strikes impact most vulnerable patients, warns WHO",
-      "generatedWordCount": 1195,
-      "mainImage": "/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4184
-      },
-      "generatedImageSharpness": 6411.1676381726875,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 909.0,
-        "generatedWords": 1195.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/27-04-2026-UNICEF-Lebanon-03.jpg/image770x420cropped.jpg",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerable-patients-warns-who"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-02-global-health-and-education-watch-lebanon-hospital-strikes-impact-most-vulnerabl.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 3
-    },
     {
       "ranAtUtc": "2026-06-03T01:47:17.699221Z",
       "windowStartUtc": "2026-06-02T16:00:00Z",
@@ -38716,6 +38556,143 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 2
+    },
+    {
+      "ranAtUtc": "2026-07-06T16:31:36.545428Z",
+      "windowStartUtc": "2026-07-06T09:00:00Z",
+      "publishedInWindowBefore": 2,
+      "hoursLeftInWindow": 5,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "ft.com",
+        "nature.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 3,
+        "aljazeera.com": 1,
+        "nature.com": 1,
+        "ft.com": 1,
+        "nytimes.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 88,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 88,
+      "candidateCacheCount": 161,
+      "candidatesAfterSourceDedupe": 30,
+      "candidatesAfterDedupe": 30,
+      "duplicateSkips": {
+        "historyHash": 58,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Baby dies after Israeli troops block emergency journey to hospital",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/baby-dies-after-israeli-troops-block-emergency-journey-to-hospital?traffic_source=rss",
+          "score": 72,
+          "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "Zyn’s Popularity Has Tobacco Companies Racing to Cash In",
+          "link": "https://www.nytimes.com/2026/07/06/business/zyn-nicotine-pouches-tobacco.html",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "Lebanon latest: Teacher killed by Israeli airstrike",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/lebanon-latest-teacher-killed-by-israeli-airstrike-2?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Baby dies after Israeli troops block emergency journey to hospital",
+        "link": "https://www.aljazeera.com/video/newsfeed/2026/7/6/baby-dies-after-israeli-troops-block-emergency-journey-to-hospital?traffic_source=rss",
+        "score": 72,
+        "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Baby dies after Israeli troops block emergency journey to",
+      "generatedWordCount": 1185,
+      "mainImage": "/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4325
+      },
+      "generatedImageSharpness": 456.4937331651233,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 443.0,
+        "generatedWords": 1185.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1783343556.jpg?resize=1918%2C1080&quality=80",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency-journey-to"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-06-global-health-and-education-watch-baby-dies-after-israeli-troops-block-emergency.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 3
     }
   ]
 }
