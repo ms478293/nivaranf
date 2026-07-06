@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-integrating-a-national-crisis-counseling-hotline-into-iran-s-primary",
+    title: "Global Health and Education Watch: Integrating a national crisis counseling hotline into Iran’s primary",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-06-global-health-and-education-watch-integrating-a-national-crisis-counseling-hotli.jpg",
+    date: "2026-07-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-nhs-to-rate-english-trusts-on-tackling-violence-and",
     title: "Global Health and Education Watch: NHS to rate English trusts on tackling violence and",
     summary:
