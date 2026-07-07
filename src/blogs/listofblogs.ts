@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-continues-to-spread-in-drc-as-death-toll",
+    title: "Global Health and Education Watch: Ebola continues to spread in DRC as death toll",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-07-global-health-and-education-watch-ebola-continues-to-spread-in-drc-as-death-toll.jpg",
+    date: "2026-07-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-administration-guts-efforts-to-prevent-gun-violence-suppressing",
     title: "Global Health and Education Watch: Trump Administration Guts Efforts to Prevent Gun Violence, Suppressing",
     summary:
