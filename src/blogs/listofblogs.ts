@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-details-scarce-as-mitch-mcconnell-continues-recovery-in-hospital",
+    title: "Global Health and Education Watch: Details scarce as Mitch McConnell ‘continues recovery’ in hospital",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-07-global-health-and-education-watch-details-scarce-as-mitch-mcconnell-continues-re.jpg",
+    date: "2026-07-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-taking-a-walk-down-memory-lane-letters",
     title: "Global Health and Education Watch: Taking a walk down memory lane | Letters",
     summary:
