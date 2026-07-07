@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-taking-a-walk-down-memory-lane-letters",
+    title: "Global Health and Education Watch: Taking a walk down memory lane | Letters",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-07-global-health-and-education-watch-taking-a-walk-down-memory-lane-letters.jpg",
+    date: "2026-07-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-us-uk-drug-deal-will-benefit-patients-letters",
     title: "Global Health and Education Watch: How US-UK drug deal will benefit patients | Letters",
     summary:
