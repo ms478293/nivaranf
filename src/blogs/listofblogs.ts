@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-administration-guts-efforts-to-prevent-gun-violence-suppressing",
+    title: "Global Health and Education Watch: Trump Administration Guts Efforts to Prevent Gun Violence, Suppressing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-07-global-health-and-education-watch-trump-administration-guts-efforts-to-prevent-g.jpg",
+    date: "2026-07-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-is-the-new-gaza-administration-as-hamas-dissolves",
     title: "Global Health and Education Watch: What is the new Gaza administration as Hamas dissolves",
     summary:
