@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-us-appeals-court-strikes-down-key-part-of-florida",
+    title: "Global Health and Education Watch: US appeals court strikes down key part of Florida",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-08-global-health-and-education-watch-us-appeals-court-strikes-down-key-part-of-flor.jpg",
+    date: "2026-07-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-yale-law-school-fights-to-stop-trump-deal-3",
     title: "Global Health and Education Watch: Yale Law School Fights to Stop Trump Deal",
     summary:
