@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-follow-up-message-by-the-who-director-general-to-the-people-2",
+    title: "Global Health and Education Watch: Follow-up message by the WHO Director-General to the people",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-08-global-health-and-education-watch-follow-up-message-by-the-who-director-general-.jpg",
+    date: "2026-07-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-appeals-court-strikes-down-key-part-of-florida",
     title: "Global Health and Education Watch: US appeals court strikes down key part of Florida",
     summary:
