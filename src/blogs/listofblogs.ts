@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ministers-look-at-restricting-cash-payments-as-disability-benefits",
+    title: "Global Health and Education Watch: Ministers look at restricting cash payments as disability benefits",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-09-global-health-and-education-watch-ministers-look-at-restricting-cash-payments-as.jpg",
+    date: "2026-07-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-warns-nicotine-pouch-brands-targeting-youth-as-sales-2",
     title: "Global Health and Education Watch: WHO warns nicotine pouch brands targeting youth as sales",
     summary:
