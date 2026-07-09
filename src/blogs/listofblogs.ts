@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-to-turn-your-phone-into-a-personal-health",
+    title: "Global Health and Education Watch: How to Turn Your Phone Into a Personal Health",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-09-global-health-and-education-watch-how-to-turn-your-phone-into-a-personal-health.jpg",
+    date: "2026-07-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-legionnaires-outbreak-rocks-new-york-as-experts-warn-of",
     title: "Global Health and Education Watch: Legionnaires’ outbreak rocks New York as experts warn of",
     summary:
