@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-lawmakers-target-the-power-of-health-insurance-giants",
+    title: "Global Health and Education Watch: Lawmakers Target the Power of Health Insurance Giants",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-09-global-health-and-education-watch-lawmakers-target-the-power-of-health-insurance.jpg",
+    date: "2026-07-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-geospatial-science-can-boost-equitable-access-to-healthcare",
     title: "Global Health and Education Watch: How geospatial science can boost equitable access to healthcare",
     summary:
