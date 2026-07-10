@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-fake-ids-dummy-manuscripts-and-a-rare-book-heist",
+    title: "Global Health and Education Watch: Fake IDs, Dummy Manuscripts and a Rare Book Heist",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-10-global-health-and-education-watch-fake-ids-dummy-manuscripts-and-a-rare-book-hei.jpg",
+    date: "2026-07-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
     title: "Global Health and Education Watch: Venezuela earthquakes toll rises to 3,889 as risk of",
     summary:
