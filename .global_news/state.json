@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-07-09T20:00:00Z",
-  "publishedInWindow": 3,
+  "publishedInWindow": 4,
   "candidateCache": [
     {
       "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
@@ -12,7 +12,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -24,7 +24,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -36,7 +36,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -48,7 +48,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO adds first diagnostic test for Ebola Bundibugyo virus to its Emergency Use Listing",
@@ -60,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=49, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Legionnaires’ outbreak rocks New York as experts warn of rising climate threat",
@@ -72,7 +72,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -84,7 +84,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "What is cyclosporiasis, the parasitic illness causing ‘explosive’ diarrhea?",
@@ -96,7 +96,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO calls for urgent action as new cancer cases are projected to nearly double by 2050",
@@ -108,7 +108,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
@@ -120,7 +120,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=40, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Cancer cases expected to soar worldwide, WHO report finds",
@@ -132,19 +132,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
-    },
-    {
-      "title": "Ministers look at restricting cash payments as disability benefits bill soars",
-      "link": "https://www.ft.com/content/7a2f3b3e-e7de-4f7b-ab72-26b38abe6f3b",
-      "summary": "Rise in claims since 2019 has been driven by mental health and neuro-developmental conditions",
-      "publishedAtUtc": "2026-07-09T04:00:23Z",
-      "domain": "ft.com",
-      "score": 75.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "UK swelters in third heatwave of the year as western Europe counts cost of hottest-ever June",
@@ -156,7 +144,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -168,7 +156,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -180,7 +168,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "DJ and broadcaster Paul Gambaccini reveals Alzheimer’s diagnosis",
@@ -192,7 +180,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
@@ -204,7 +192,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -216,7 +204,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Ebola continues to spread in DRC as death toll passes 500, WHO warns",
@@ -228,19 +216,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
-    },
-    {
-      "title": "Zyn’s Popularity Has Tobacco Companies Racing to Cash In",
-      "link": "https://www.nytimes.com/2026/07/06/business/zyn-nicotine-pouches-tobacco.html",
-      "summary": "The makers of nicotine pouches are building new plants and expanding to meet demand. While influencers claim health benefits, experts warn the products can be highly addictive.",
-      "publishedAtUtc": "2026-07-09T02:06:07Z",
-      "domain": "nytimes.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "How to Turn Your Phone Into a Personal Health Dashboard",
@@ -252,7 +228,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Fake IDs, Dummy Manuscripts and a Rare Book Heist at U.C.L.A.",
@@ -264,7 +240,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Vape packaging and flavouring face restrictions under UK plans to reduce appeal to children",
@@ -276,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "MPs urge Labour to ditch £330m Palantir software contract with NHS",
@@ -288,7 +264,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "New York sues 3M, DuPont and others over 'forever chemicals' in consumer goods",
@@ -300,7 +276,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "An athlete’s guide to healthy feet",
@@ -312,7 +288,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
+    },
+    {
+      "title": "Venezuela earthquakes toll rises to 3,889 as risk of disease grows",
+      "link": "https://www.aljazeera.com/news/2026/7/9/venezuela-earthquakes-toll-rises-to-3889-as-risk-of-disease-grows?traffic_source=rss",
+      "summary": "The United Nations launched an appeal for roughly $300 million to assist survivors of Venezuela&#039;s earthquakes",
+      "publishedAtUtc": "2026-07-09T23:25:50Z",
+      "domain": "aljazeera.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Physical Education review – boisterous, cliche-busting lesson on teen masculinity",
@@ -324,7 +312,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Clusters of Severe Stomach Illness Reported Across the U.S.",
@@ -336,7 +324,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -348,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "As parents, we’re struggling to support our children who are not working or studying | Letters",
@@ -360,7 +348,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Andrea Shaw, Plaintiff in Anti-Vaccine Suit, Is Charged With Murder of Her Twins",
@@ -372,7 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Yale Law School Fights to Stop Trump Deal",
@@ -384,7 +372,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "US appeals court strikes down key part of Florida law restricting campus race and gender discussions",
@@ -396,7 +384,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "US Food and Drug Administration rejects petition to set Pfas limits in food",
@@ -408,7 +396,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
+    },
+    {
+      "title": "Ministers look at restricting cash payments as disability benefits bill soars",
+      "link": "https://www.ft.com/content/7a2f3b3e-e7de-4f7b-ab72-26b38abe6f3b",
+      "summary": "Rise in claims since 2019 has been driven by mental health and neuro-developmental conditions",
+      "publishedAtUtc": "2026-07-09T04:00:23Z",
+      "domain": "ft.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
@@ -420,7 +420,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Cancer cases could nearly double by 2050 without urgent action, WHO warns",
@@ -432,7 +432,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Trump Administration Guts Efforts to Prevent Gun Violence, Suppressing Reports",
@@ -444,7 +444,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Men’s average testosterone levels have halved in last 50 years, say scientists",
@@ -456,7 +456,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "What will define Elon Musk’s legacy? Doge cuts to USAID Ebola programs",
@@ -468,7 +468,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Restoring dignity: Senegalese surgeon and Burundian foundation win reproductive health awards",
@@ -480,7 +480,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Two Cases Raise Concerns About Civil Liberties in the U.S.",
@@ -492,7 +492,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Pore substitute: can AI be trusted when it comes to skincare advice?",
@@ -504,7 +504,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Lawmakers Target the Power of Health Insurance Giants",
@@ -516,7 +516,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Our Bacteria Are Talking. We’ve Just Begun to Understand What They’re Saying.",
@@ -528,7 +528,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
+    },
+    {
+      "title": "Zyn’s Popularity Has Tobacco Companies Racing to Cash In",
+      "link": "https://www.nytimes.com/2026/07/06/business/zyn-nicotine-pouches-tobacco.html",
+      "summary": "The makers of nicotine pouches are building new plants and expanding to meet demand. While influencers claim health benefits, experts warn the products can be highly addictive.",
+      "publishedAtUtc": "2026-07-09T02:06:07Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "In Some U.K. Hospitals, the T.L.C. Includes a Movie Theater",
@@ -540,7 +552,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Utah Moves to Close Teen Treatment Center Accused of Abusing Girls",
@@ -552,7 +564,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Part of Florida’s ‘Stop WOKE’ Law Ruled Illegal by Appeals Court",
@@ -564,7 +576,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Three arrested in fraud investigation at University of Greater Manchester",
@@ -576,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Britain’s markets attracting generation of highly educated entrepreneurs",
@@ -588,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Burnham urged to ditch ‘dangerous’ UK-US NHS drug deal",
@@ -600,19 +612,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
-    },
-    {
-      "title": "Sri Lanka prison riot kills 26, with more than 100 others wounded",
-      "link": "https://www.theguardian.com/world/2026/jul/07/sri-lanka-prison-riot-death-toll-injuries",
-      "summary": "Victims with cuts and gunshot injuries rushed to hospital after fighting between prisoners from two drug gangs Clashes at a Sri Lankan jail have killed 26 people, including seven guards, and wounded more than 100 in the country’s deadliest prison riot in years, officials said. Victims with cuts and gunshot injuries were rushed to Negombo hospital, north of the capital Colombo after overnight fighting between prisoners from two drug gangs, police said on Monday. Continue reading...",
-      "publishedAtUtc": "2026-07-07T00:35:19Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "The male wellness guide to peptides",
@@ -624,7 +624,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Megan Nolan: health, self and weight control in the age of GLP-1s",
@@ -636,7 +636,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Deadly MV Hondius Hantavirus Outbreak Is Over, W.H.O. Says",
@@ -648,7 +648,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "The Guardian view on universities: public confidence in degrees is wavering – ministers should shore it up | Editorial",
@@ -660,7 +660,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Learning another language appears to slow brain ageing, scientists say",
@@ -672,7 +672,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Patient enrolment begins in a scientific trial to identify the first effective treatments for Bundibugyo virus disease",
@@ -684,7 +684,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
@@ -696,7 +696,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "More than 300,000 pupils estimated absent after England World Cup win",
@@ -708,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
@@ -720,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Courtney Sale Ross, Founder and Funder of a Quirky School, Dies at 78",
@@ -732,7 +732,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -744,7 +744,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Young Britons turn to private healthcare as faith in NHS cracks",
@@ -756,7 +756,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
@@ -768,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
@@ -780,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
@@ -792,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
@@ -804,7 +804,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
+    },
+    {
+      "title": "Sri Lanka prison riot kills 26, with more than 100 others wounded",
+      "link": "https://www.theguardian.com/world/2026/jul/07/sri-lanka-prison-riot-death-toll-injuries",
+      "summary": "Victims with cuts and gunshot injuries rushed to hospital after fighting between prisoners from two drug gangs Clashes at a Sri Lankan jail have killed 26 people, including seven guards, and wounded more than 100 in the country’s deadliest prison riot in years, officials said. Victims with cuts and gunshot injuries were rushed to Negombo hospital, north of the capital Colombo after overnight fighting between prisoners from two drug gangs, police said on Monday. Continue reading...",
+      "publishedAtUtc": "2026-07-07T00:35:19Z",
+      "domain": "theguardian.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Inside the NHS hospital trialling psychedelics to treat depression",
@@ -816,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
@@ -828,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
@@ -840,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
@@ -852,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
@@ -864,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
@@ -876,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
@@ -888,7 +900,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Professor Fired for Criticizing Charlie Kirk Wins $1.9 Million Settlement",
@@ -900,7 +912,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Columbia University Has a New President. Again. This One Plans to Stay.",
@@ -912,7 +924,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Nursing Students and Others Get Higher Student Loan Limits",
@@ -924,7 +936,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Berkeley Will Start Institute Named for Pelosi",
@@ -936,7 +948,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
@@ -948,7 +960,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -960,7 +972,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
@@ -972,7 +984,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
@@ -984,7 +996,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "QuidelOrtho looks to sell testing unit as PE circles healthcare companies",
@@ -996,7 +1008,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "UK hospitals cancel operations because of lack of air conditioning",
@@ -1008,7 +1020,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Stripe and Anthropic invest in combating respiratory diseases",
@@ -1020,7 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-09T23:37:12.973649Z"
+      "cachedAtUtc": "2026-07-10T04:12:44.227066Z"
     },
     {
       "title": "Beer can boost ‘spiritual or mental’ health, says Kirin president",
@@ -2236,17 +2248,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "827635e2ccaddf1a1a6a2e147512aa2eeb7e51c1",
-      "sourceTitle": "Canada confirms first hantavirus case in isolation in British Columbia",
-      "sourceUrl": "https://www.theguardian.com/world/2026/may/16/canada-first-hantavirus-case-british-columbia",
-      "sourceDomain": "theguardian.com",
-      "publishedAtUtc": "2026-05-16T23:06:05.588179Z",
-      "slug": "global-health-and-education-watch-canada-confirms-first-hantavirus-case-in-isolation-in-british",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-canada-confirms-first-hantavirus-case-in-isolation-in-british",
-      "mainImage": "/images/global-news/2026/2026-05-16-global-health-and-education-watch-canada-confirms-first-hantavirus-case-in-isola.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-16-global-health-and-education-watch-canada-confirms-first-hantavirus-case-in-isola.jpg"
-    },
     {
       "contentHash": "a13c885f8d2515dd60bd236c1feebf9217721d97",
       "sourceTitle": "How a Nature Cruise Turned Into a Nightmare",
@@ -6635,141 +6636,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-an-athlete-s-guide-to-healthy-feet",
       "mainImage": "/images/global-news/2026/2026-07-09-global-health-and-education-watch-an-athlete-s-guide-to-healthy-feet.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-09-global-health-and-education-watch-an-athlete-s-guide-to-healthy-feet.jpg"
+    },
+    {
+      "contentHash": "08f3e0ef43183143688cdce7f9db672f621a6cac",
+      "sourceTitle": "Venezuela earthquakes toll rises to 3,889 as risk of disease grows",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/7/9/venezuela-earthquakes-toll-rises-to-3889-as-risk-of-disease-grows?traffic_source=rss",
+      "sourceDomain": "aljazeera.com",
+      "publishedAtUtc": "2026-07-10T04:12:44.227066Z",
+      "slug": "global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+      "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-06-06T18:22:00.733834Z",
-      "windowStartUtc": "2026-06-06T10:00:00Z",
-      "publishedInWindowBefore": 4,
-      "hoursLeftInWindow": 4,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "bbc.com",
-        "news.un.org",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "bbc.com": 2,
-        "nytimes.com": 2,
-        "news.un.org": 2,
-        "who.int": 1,
-        "theguardian.com": 2,
-        "aljazeera.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 121,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 121,
-      "candidateCacheCount": 223,
-      "candidatesAfterSourceDedupe": 58,
-      "candidatesAfterDedupe": 58,
-      "duplicateSkips": {
-        "historyHash": 61,
-        "historySource": 2,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "‘I’m a cockroach’: Gen Z protest movement lands in Indian capital",
-          "link": "https://www.aljazeera.com/features/2026/6/6/im-a-cockroach-gen-z-protest-movement-lands-in-indian-capital?traffic_source=rss",
-          "score": 70,
-          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        },
-        {
-          "title": "Cockroach Janta Party rallies in New Delhi for youth protests",
-          "link": "https://www.aljazeera.com/gallery/2026/6/6/youth-led-satire-cockroach-janta-party-protests-exam-system-failures?traffic_source=rss",
-          "score": 70,
-          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "‘I’m a cockroach’: Gen Z protest movement lands in Indian capital",
-        "link": "https://www.aljazeera.com/features/2026/6/6/im-a-cockroach-gen-z-protest-movement-lands-in-indian-capital?traffic_source=rss",
-        "score": 70,
-        "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: ‘I’m a cockroach’: Gen Z protest movement lands in",
-      "generatedWordCount": 1180,
-      "mainImage": "/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 5760
-      },
-      "generatedImageSharpness": 2704.981240240215,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1487.0,
-        "generatedWords": 1180.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/06/IMG_8422-1780745371.jpeg?resize=1920%2C1440",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-in"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-06-global-health-and-education-watch-i-m-a-cockroach-gen-z-protest-movement-lands-i.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 5
-    },
     {
       "ranAtUtc": "2026-06-06T20:23:04.023618Z",
       "windowStartUtc": "2026-06-06T10:00:00Z",
@@ -38906,6 +38786,143 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 3
+    },
+    {
+      "ranAtUtc": "2026-07-10T04:12:44.227066Z",
+      "windowStartUtc": "2026-07-09T20:00:00Z",
+      "publishedInWindowBefore": 3,
+      "hoursLeftInWindow": 4,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "ft.com",
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com",
+        "who.int"
+      ],
+      "recentDomainCounts": {
+        "who.int": 2,
+        "ft.com": 2,
+        "news.un.org": 1,
+        "theguardian.com": 2,
+        "nytimes.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 86,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 86,
+      "candidateCacheCount": 187,
+      "candidatesAfterSourceDedupe": 36,
+      "candidatesAfterDedupe": 36,
+      "duplicateSkips": {
+        "historyHash": 50,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Fake IDs, Dummy Manuscripts and a Rare Book Heist at U.C.L.A.",
+          "link": "https://www.nytimes.com/2026/07/09/us/ucla-library-theft-chinese-books-california.html",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "Venezuela earthquakes toll rises to 3,889 as risk of disease grows",
+          "link": "https://www.aljazeera.com/news/2026/7/9/venezuela-earthquakes-toll-rises-to-3889-as-risk-of-disease-grows?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "Two Cases Raise Concerns About Civil Liberties in the U.S.",
+          "link": "https://www.nytimes.com/2026/07/07/nyregion/two-cases-raise-concerns-about-civil-liberties-in-the-us.html",
+          "score": 64,
+          "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Venezuela earthquakes toll rises to 3,889 as risk of disease grows",
+        "link": "https://www.aljazeera.com/news/2026/7/9/venezuela-earthquakes-toll-rises-to-3889-as-risk-of-disease-grows?traffic_source=rss",
+        "score": 70,
+        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Venezuela earthquakes toll rises to 3,889 as risk of",
+      "generatedWordCount": 1180,
+      "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5760
+      },
+      "generatedImageSharpness": 1404.6834098397458,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 806.0,
+        "generatedWords": 1180.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/AFP__20260630__B8UD2ZQ__v3__HighRes__TopshotVenezuelaEarthquakeAftermath-1782973516.jpg?resize=1920%2C1440",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-risk-of"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-venezuela-earthquakes-toll-rises-to-3-889-as-r.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 4
     }
   ]
 }
