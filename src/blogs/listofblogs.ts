@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+    title: "Global Health and Education Watch: World News in Brief: UN spotlights education aid solution",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+    date: "2026-07-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-family-mourns-baby-after-israeli-forces-blocked-journey-to",
     title: "Global Health and Education Watch: Family mourns baby after Israeli forces blocked journey to",
     summary:
