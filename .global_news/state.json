@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-07-10T11:00:00Z",
-  "publishedInWindow": 3,
+  "publishedInWindow": 4,
   "candidateCache": [
     {
       "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
@@ -12,7 +12,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=56, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
@@ -24,7 +24,7 @@
       "healthHits": 5,
       "educationHits": 1,
       "reason": "relevance=54, credibility=35, freshness=0, health_hits=5, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Africa CDC and WHO launch joint continental Ebola response plan",
@@ -36,7 +36,7 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
@@ -48,7 +48,19 @@
       "healthHits": 6,
       "educationHits": 0,
       "reason": "relevance=52, credibility=35, freshness=0, health_hits=6, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
+    },
+    {
+      "title": "World News in Brief: UN spotlights education aid solution, Sri Lanka prison violence, humanitarian aid to Venezuela",
+      "link": "https://news.un.org/feed/view/en/story/2026/07/1167918",
+      "summary": "The UN Educational, Scientific and Cultural Organization (UNESCO) urged international lenders to expand debt-for-education swaps, warning in a Friday report that many developing countries are spending more on debt servicing than on schooling their children.&nbsp;",
+      "publishedAtUtc": "2026-07-10T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 85.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=32, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=2",
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO adds first diagnostic test for Ebola Bundibugyo virus to its Emergency Use Listing",
@@ -60,7 +72,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=49, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
@@ -72,7 +84,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=45, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Developing countries spend more repaying foreign debt than on education, UN reveals",
@@ -84,7 +96,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO calls for urgent action as new cancer cases are projected to nearly double by 2050",
@@ -96,7 +108,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
@@ -108,7 +120,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=40, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Cancer cases expected to soar worldwide, WHO report finds",
@@ -120,19 +132,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
-      "title": "UK swelters in third heatwave of the year as western Europe counts cost of hottest-ever June",
-      "link": "https://www.theguardian.com/environment/2026/jul/09/uk-swelters-third-heatwave-western-europe-counts-cost-hottest-ever-june",
-      "summary": "Britain expands heat alerts while estimates suggest June’s death toll could surpass 20,000 across continent The UK is sweltering through the peak of its third heatwave of the year as countries around Europe struggle to recover from an early onslaught of baking summer heat. Punishing temperatures pushed higher by fossil fuel pollution have broken records across the continent in recent weeks. Western Europe experienced its hottest June on record , scientists confirmed on Thursday, accompanied by high global ocean temperatures that could cause “mass-mortality events” for some species. Continue reading...",
-      "publishedAtUtc": "2026-07-09T17:39:03Z",
-      "domain": "theguardian.com",
-      "score": 74.0,
-      "healthHits": 1,
+      "title": "Hospital workers wounded in Israeli drone attack on Gaza’s Kamal Adwan",
+      "link": "https://www.aljazeera.com/news/2026/7/10/hospital-workers-wounded-in-israeli-drone-attack-on-gazas-kamal-adwan?traffic_source=rss",
+      "summary": "Palestinian Health Ministry denounces attack as part of Israel&#039;s &#039;systematic targeting of health facilities&#039;.",
+      "publishedAtUtc": "2026-07-10T18:01:25Z",
+      "domain": "aljazeera.com",
+      "score": 75.0,
+      "healthHits": 2,
       "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Legionnaires’ outbreak rocks New York as experts warn of rising climate threat",
@@ -144,7 +156,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
@@ -156,7 +168,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=38, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
@@ -168,7 +180,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "New cholera outbreak alert for Sudan’s war-weary communities",
@@ -180,7 +192,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "DJ and broadcaster Paul Gambaccini reveals Alzheimer’s diagnosis",
@@ -192,7 +204,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
@@ -204,7 +216,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
@@ -216,7 +228,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "N.Y.C. Council Speaker Turns Up Pressure on Schools Chief Over Contracts",
@@ -228,7 +240,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Fastest growing Ebola outbreak ever: how conflict, aid cuts and misinformation fuel a deadly threat",
@@ -240,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Vape packaging and flavouring face restrictions under UK plans to reduce appeal to children",
@@ -252,19 +264,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
-      "title": "MPs urge Labour to ditch £330m Palantir software contract with NHS",
-      "link": "https://www.theguardian.com/politics/2026/jul/09/mps-urge-labour-to-ditch-330m-palantir-software-contract-with-nhs",
-      "summary": "Cross-party group backs call from science and technology committee to look at alternative options, citing ‘serious mistrust’ A second parliamentary committee has urged Labour to scrap Palantir’s £330m contract with the NHS, increasing pressure on the next prime minister over government deals with the US tech company. MPs on the health and social care select committee want the NHS to cut ties with Palantir and find a replacement for its system, which is supposed to unify and analyse huge amounts of often highly sensitive NHS health data. Continue reading...",
-      "publishedAtUtc": "2026-07-09T18:12:00Z",
-      "domain": "theguardian.com",
+      "title": "Clinical Sinner demolishes Djokovic to set up Wimbledon final with Zverev",
+      "link": "https://www.aljazeera.com/sports/2026/7/10/clinical-sinner-demolishes-djokovic-to-set-up-wimbledon-final-with-zverev?traffic_source=rss",
+      "summary": "Sinner is targeting his fifth Grand Slam title, which would bring him within two of the tally of rival Carlos Alcaraz.",
+      "publishedAtUtc": "2026-07-10T18:29:54Z",
+      "domain": "aljazeera.com",
       "score": 70.0,
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Family mourns baby after Israeli forces blocked journey to hospital",
@@ -276,7 +288,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Physical Education review – boisterous, cliche-busting lesson on teen masculinity",
@@ -288,19 +300,19 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "What is cyclosporiasis, the parasitic illness causing ‘explosive’ diarrhea?",
       "link": "https://www.theguardian.com/us-news/2026/jul/09/cyclosporiasis-illness-explainer",
-      "summary": "Illness surging in Michigan and other US states is rarely life-threatening, CDC says – but it can have severe effects Cases of cyclosporiasis – a parasitic illness that can cause “explosive”, watery diarrhea – have surged across the United States in recent days, health officials have said, with an abnormally large outbreak of almost 1,000 cases reported in Michigan . Michigan typically reports about 50 cases a year, making the current outbreak the largest in the state’s history and one of the nation’s biggest in recent years. Ohio has also reported a sharp increase, with 177 cases as of 2 July, since the CDC’s last count. Continue reading...",
+      "summary": "Illness surging in Michigan and other US states is rarely life-threatening, CDC says – but it can have severe effects CDC investigates parasite that’s caused cases of ‘explosive’ diarrhea in 18 US states Cases of cyclosporiasis – a parasitic illness that can cause “explosive”, watery diarrhea – have surged across the United States in recent days, health officials have said, with an abnormally large outbreak of almost 1,000 cases reported in Michigan . Michigan typically reports about 50 cases a year, making the current outbreak the largest in the state’s history and one of the nation’s biggest in recent years. Ohio has also reported a sharp increase, with 177 cases as of 2 July, since the CDC’s last count. Continue reading...",
       "publishedAtUtc": "2026-07-09T10:00:03Z",
       "domain": "theguardian.com",
       "score": 69.0,
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Clusters of Severe Stomach Illness Reported Across the U.S.",
@@ -312,7 +324,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -324,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "As parents, we’re struggling to support our children who are not working or studying | Letters",
@@ -336,7 +348,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Andrea Shaw, Plaintiff in Anti-Vaccine Suit, Is Charged With Murder of Her Twins",
@@ -348,19 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
-    },
-    {
-      "title": "Yale Law School Fights to Stop Trump Deal",
-      "link": "https://www.nytimes.com/2026/07/07/us/yale-law-school-dean-trump-deal.html",
-      "summary": "The university has been in talks to resolve investigations into its admissions practices. The law school’s dean and some faculty have argued a deal could compromise its independence.",
-      "publishedAtUtc": "2026-07-07T18:08:40Z",
-      "domain": "nytimes.com",
-      "score": 67.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "US appeals court strikes down key part of Florida law restricting campus race and gender discussions",
@@ -372,7 +372,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "US Food and Drug Administration rejects petition to set Pfas limits in food",
@@ -384,7 +384,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Ministers look at restricting cash payments as disability benefits bill soars",
@@ -396,7 +396,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
@@ -408,7 +408,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Cancer cases could nearly double by 2050 without urgent action, WHO warns",
@@ -420,7 +420,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
+    },
+    {
+      "title": "UK swelters in third heatwave of the year as western Europe counts cost of hottest-ever June",
+      "link": "https://www.theguardian.com/environment/2026/jul/09/uk-swelters-third-heatwave-western-europe-counts-cost-hottest-ever-june",
+      "summary": "Britain expands heat alerts while estimates suggest June’s death toll could surpass 20,000 across continent The UK is sweltering through the peak of its third heatwave of the year as countries around Europe struggle to recover from an early onslaught of baking summer heat. Punishing temperatures pushed higher by fossil fuel pollution have broken records across the continent in recent weeks. Western Europe experienced its hottest June on record , scientists confirmed on Thursday, accompanied by high global ocean temperatures that could cause “mass-mortality events” for some species. Continue reading...",
+      "publishedAtUtc": "2026-07-09T17:39:03Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Ebola continues to spread in DRC as death toll passes 500, WHO warns",
@@ -432,7 +444,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Restoring dignity: Senegalese surgeon and Burundian foundation win reproductive health awards",
@@ -444,7 +456,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Lawmakers Target the Power of Health Insurance Giants",
@@ -456,7 +468,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Our Bacteria Are Talking. We’ve Just Begun to Understand What They’re Saying.",
@@ -468,7 +480,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Zyn’s Popularity Has Tobacco Companies Racing to Cash In",
@@ -480,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "How to Turn Your Phone Into a Personal Health Dashboard",
@@ -492,7 +504,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "In Some U.K. Hospitals, the T.L.C. Includes a Movie Theater",
@@ -504,7 +516,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Utah Moves to Close Teen Treatment Center Accused of Abusing Girls",
@@ -516,7 +528,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Part of Florida’s ‘Stop WOKE’ Law Ruled Illegal by Appeals Court",
@@ -528,7 +540,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Fake IDs, Dummy Manuscripts and a Rare Book Heist at U.C.L.A.",
@@ -540,7 +552,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Three arrested in fraud investigation at University of Greater Manchester",
@@ -552,7 +564,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Britain’s markets attracting generation of highly educated entrepreneurs",
@@ -564,7 +576,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
+    },
+    {
+      "title": "MPs urge Labour to ditch £330m Palantir software contract with NHS",
+      "link": "https://www.theguardian.com/politics/2026/jul/09/mps-urge-labour-to-ditch-330m-palantir-software-contract-with-nhs",
+      "summary": "Cross-party group backs call from science and technology committee to look at alternative options, citing ‘serious mistrust’ A second parliamentary committee has urged Labour to scrap Palantir’s £330m contract with the NHS, increasing pressure on the next prime minister over government deals with the US tech company. MPs on the health and social care select committee want the NHS to cut ties with Palantir and find a replacement for its system, which is supposed to unify and analyse huge amounts of often highly sensitive NHS health data. Continue reading...",
+      "publishedAtUtc": "2026-07-09T18:12:00Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "New York sues 3M, DuPont and others over 'forever chemicals' in consumer goods",
@@ -576,7 +600,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "An athlete’s guide to healthy feet",
@@ -588,7 +612,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "The male wellness guide to peptides",
@@ -600,7 +624,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Megan Nolan: health, self and weight control in the age of GLP-1s",
@@ -612,7 +636,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Deadly MV Hondius Hantavirus Outbreak Is Over, W.H.O. Says",
@@ -624,7 +648,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
+    },
+    {
+      "title": "Yale Law School Fights to Stop Trump Deal",
+      "link": "https://www.nytimes.com/2026/07/07/us/yale-law-school-dean-trump-deal.html",
+      "summary": "The university has been in talks to resolve investigations into its admissions practices. The law school’s dean and some faculty have argued a deal could compromise its independence.",
+      "publishedAtUtc": "2026-07-07T18:08:40Z",
+      "domain": "nytimes.com",
+      "score": 61.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "The Guardian view on universities: public confidence in degrees is wavering – ministers should shore it up | Editorial",
@@ -636,7 +672,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Trump Administration Guts Efforts to Prevent Gun Violence, Suppressing Reports",
@@ -648,7 +684,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Men’s average testosterone levels have halved in last 50 years, say scientists",
@@ -660,7 +696,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Patient enrolment begins in a scientific trial to identify the first effective treatments for Bundibugyo virus disease",
@@ -672,7 +708,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Safe blood supply improves as voluntary donations exceed 85%, but many people still lack access",
@@ -684,7 +720,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "We must be alive to the dangers of a UK social media ban – and the way to really help young people | Rosie Parkyn",
@@ -696,7 +732,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Pore substitute: can AI be trusted when it comes to skincare advice?",
@@ -708,7 +744,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Courtney Sale Ross, Founder and Funder of a Quirky School, Dies at 78",
@@ -720,7 +756,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -732,7 +768,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Young Britons turn to private healthcare as faith in NHS cracks",
@@ -744,7 +780,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Unsafe food causes 866 million illnesses and 1.5 million deaths annually, young children at highest risk",
@@ -756,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO urges governments to protect young people from addiction to tobacco and nicotine products",
@@ -768,7 +804,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "WHO warns nicotine pouch brands targeting youth as sales surge",
@@ -780,7 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Making earwax melt and teeth rattle: the project returning music to our bodies",
@@ -792,7 +828,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Burnham urged to ditch ‘dangerous’ UK-US NHS drug deal",
@@ -804,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Inside the NHS hospital trialling psychedelics to treat depression",
@@ -816,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "655 million people still living without electricity underscore urgent need to deliver on universal energy access target",
@@ -828,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 23 May 2026",
@@ -840,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 22 May 2026",
@@ -852,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 21 May 2026",
@@ -864,7 +900,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 20 May 2026",
@@ -876,7 +912,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Seventy-ninth World Health Assembly – Daily update: 19 May 2026",
@@ -888,7 +924,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Professor Fired for Criticizing Charlie Kirk Wins $1.9 Million Settlement",
@@ -900,7 +936,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Columbia University Has a New President. Again. This One Plans to Stay.",
@@ -912,7 +948,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Nursing Students and Others Get Higher Student Loan Limits",
@@ -924,7 +960,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Berkeley Will Start Institute Named for Pelosi",
@@ -936,7 +972,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Yale Seeks Trump Administration Deal in Inquiry Over Race and Admissions",
@@ -948,7 +984,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -960,7 +996,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Fee hikes, big bonuses, then bosses exit: the curious case of City & Guilds privatisation",
@@ -972,7 +1008,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "‘No cheeseburgers … they would go bankrupt’: pupils reject plan to cut fatty foods from lunch menus",
@@ -984,7 +1020,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-07-10T17:08:51.837525Z"
+      "cachedAtUtc": "2026-07-10T18:45:10.325555Z"
     },
     {
       "title": "Pacific gray whales facing ‘catastrophic’ die-off as climate crisis hits food supply",
@@ -2140,17 +2176,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "cb03768a07d2481c070fc473a69bd0ac9151c213",
-      "sourceTitle": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
-      "sourceUrl": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
-      "sourceDomain": "who.int",
-      "publishedAtUtc": "2026-05-17T11:24:59.899063Z",
-      "slug": "ebola-outbreak-in-drc-uganda-declared-global-health-emergency",
-      "blogUrl": "https://www.nivaranfoundation.org/news/ebola-outbreak-in-drc-uganda-declared-global-health-emergency",
-      "mainImage": "/images/global-news/2026/2026-05-17-ebola-outbreak-in-drc-uganda-declared-global-health-emergency.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-05-17-ebola-outbreak-in-drc-uganda-declared-global-health-emergency.jpg"
-    },
     {
       "contentHash": "dcaa2d2662f33abc6f134b6e3c8d44b1d75f2292",
       "sourceTitle": "WHO declares Ebola outbreak in DR Congo, Uganda a global health emergency",
@@ -6539,145 +6564,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-family-mourns-baby-after-israeli-forces-blocked-journey-to",
       "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-family-mourns-baby-after-israeli-forces-blocke.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-family-mourns-baby-after-israeli-forces-blocke.jpg"
+    },
+    {
+      "contentHash": "593f5ead4a44f2133130a6ece0abea5b9b0848bb",
+      "sourceTitle": "World News in Brief: UN spotlights education aid solution, Sri Lanka prison violence, humanitarian aid to Venezuela",
+      "sourceUrl": "https://news.un.org/feed/view/en/story/2026/07/1167918",
+      "sourceDomain": "news.un.org",
+      "publishedAtUtc": "2026-07-10T18:45:10.325555Z",
+      "slug": "global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+      "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-06-07T09:35:09.474011Z",
-      "windowStartUtc": "2026-06-06T22:00:00Z",
-      "publishedInWindowBefore": 3,
-      "hoursLeftInWindow": 1,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "bbc.com",
-        "news.un.org",
-        "nytimes.com"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 2,
-        "bbc.com": 2,
-        "theguardian.com": 1,
-        "news.un.org": 2,
-        "nytimes.com": 2
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 120,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 120,
-      "candidateCacheCount": 219,
-      "candidatesAfterSourceDedupe": 54,
-      "candidatesAfterDedupe": 54,
-      "duplicateSkips": {
-        "historyHash": 64,
-        "historySource": 2,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Stevie Nicks donates $3m to medical school to recognize her voice doctor",
-          "link": "https://www.theguardian.com/music/2026/jun/06/stevie-nicks-donates-ucs-medical-school",
-          "score": 77,
-          "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
-        },
-        {
-          "title": "Ebola spread in central Africa could match 2014 record outbreak, US health officials say",
-          "link": "https://www.theguardian.com/world/2026/jun/06/ebola-spread-in-central-africa-could-match-2014-record-outbreak-us-health-officials-say",
-          "score": 74,
-          "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "How to prevent older people from having fatal falls | Letters",
-          "link": "https://www.theguardian.com/society/2026/jun/05/how-to-prevent-older-people-from-having-fatal-falls",
-          "score": 71,
-          "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Stevie Nicks donates $3m to medical school to recognize her voice doctor",
-        "link": "https://www.theguardian.com/music/2026/jun/06/stevie-nicks-donates-ucs-medical-school",
-        "score": 77,
-        "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Stevie Nicks donates $3m to medical school to recognize",
-      "generatedWordCount": 1266,
-      "mainImage": "/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 2072.6154735928376,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 895.0,
-        "generatedWords": 1266.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/468ab779c4e8d9939973f2a07f9531506ba7e9ed/250_0_2499_2000/master/2499.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=dad9aeaa1aedfd12717be3e4e6111562",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-recognize"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-07-global-health-and-education-watch-stevie-nicks-donates-3m-to-medical-school-to-r.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 4
-    },
     {
       "ranAtUtc": "2026-06-07T12:03:08.761480Z",
       "windowStartUtc": "2026-06-07T12:00:00Z",
@@ -38812,6 +38712,144 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 3
+    },
+    {
+      "ranAtUtc": "2026-07-10T18:45:10.325555Z",
+      "windowStartUtc": "2026-07-10T11:00:00Z",
+      "publishedInWindowBefore": 3,
+      "hoursLeftInWindow": 5,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "ft.com",
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 2,
+        "who.int": 1,
+        "ft.com": 1,
+        "aljazeera.com": 2,
+        "nytimes.com": 1,
+        "news.un.org": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 60,
+      "primaryCandidatesFetched": 85,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 85,
+      "candidateCacheCount": 181,
+      "candidatesAfterSourceDedupe": 34,
+      "candidatesAfterDedupe": 34,
+      "duplicateSkips": {
+        "historyHash": 51,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "World News in Brief: UN spotlights education aid solution, Sri Lanka prison violence, humanitarian aid to Venezuela",
+          "link": "https://news.un.org/feed/view/en/story/2026/07/1167918",
+          "score": 85,
+          "reason": "relevance=32, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=2"
+        },
+        {
+          "title": "N.Y.C. Council Speaker Turns Up Pressure on Schools Chief Over Contracts",
+          "link": "https://www.nytimes.com/2026/07/09/nyregion/nyc-doe-contracts-schools.html",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "Our Bacteria Are Talking. We’ve Just Begun to Understand What They’re Saying.",
+          "link": "https://www.nytimes.com/2026/07/08/magazine/microbiome-gut-health.html",
+          "score": 62,
+          "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "World News in Brief: UN spotlights education aid solution, Sri Lanka prison violence, humanitarian aid to Venezuela",
+        "link": "https://news.un.org/feed/view/en/story/2026/07/1167918",
+        "score": 85,
+        "reason": "relevance=32, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=2"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: World News in Brief: UN spotlights education aid solution",
+      "generatedWordCount": 1205,
+      "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4184
+      },
+      "generatedImageSharpness": 1532.1714692918151,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 1129.0,
+        "generatedWords": 1205.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/06/29-06-2026-UNICEF-Madagascar.jpg/image770x420cropped.jpg",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-world-news-in-brief-un-spotlights-education-aid-solution"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-10-global-health-and-education-watch-world-news-in-brief-un-spotlights-education-ai.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 4
     }
   ]
 }
