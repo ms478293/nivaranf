@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-male-wellness-guide-to-peptides",
+    title: "Global Health and Education Watch: The male wellness guide to peptides",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-10-global-health-and-education-watch-the-male-wellness-guide-to-peptides.jpg",
+    date: "2026-07-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-epidemic-of-ebola-disease-caused-by-bundibugyo-virus-in",
     title: "Global Health and Education Watch: Epidemic of Ebola Disease caused by Bundibugyo virus in",
     summary:
