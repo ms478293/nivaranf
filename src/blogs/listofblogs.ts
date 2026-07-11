@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-tarmac-playgrounds-and-windows-that-don-t-open-why-hot-3",
+    title: "Global Health and Education Watch: Tarmac playgrounds and windows that don’t open: why hot",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-11-global-health-and-education-watch-tarmac-playgrounds-and-windows-that-don-t-open.jpg",
+    date: "2026-07-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-power-cuts-plunge-gaza-hospitals-into-darkness-as-israel-s",
     title: "Global Health and Education Watch: Power cuts plunge Gaza hospitals into darkness as Israel’s",
     summary:
