@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-historian-kerri-k-greenidge-and-her-book-the-grimkes",
+    title: "Global Health and Education Watch: Historian Kerri K. Greenidge and Her Book ‘The Grimkes’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-11-global-health-and-education-watch-historian-kerri-k-greenidge-and-her-book-the-g.jpg",
+    date: "2026-07-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-male-wellness-guide-to-peptides",
     title: "Global Health and Education Watch: The male wellness guide to peptides",
     summary:
