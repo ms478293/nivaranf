@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into",
+    title: "Global Health and Education Watch: Heatwave conditions in England and Wales to continue into",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
+    date: "2026-07-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-n-y-c-council-speaker-turns-up-pressure-on-schools-chief-2",
     title: "Global Health and Education Watch: N.Y.C. Council Speaker Turns Up Pressure on Schools Chief",
     summary:
