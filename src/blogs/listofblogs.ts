@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-we-are-the-lost-generation-of-sudan-students-in",
+    title: "Global Health and Education Watch: ‘We are the lost generation of Sudan’: Students in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-11-global-health-and-education-watch-we-are-the-lost-generation-of-sudan-students-i.jpg",
+    date: "2026-07-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-s-really-going-on-with-mental-health",
     title: "Global Health and Education Watch: What’s really going on with mental health?",
     summary:
