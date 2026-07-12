@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-new-anti-racism-standard-will-force-australian-universities-to-use",
+    title: "Global Health and Education Watch: New anti-racism standard will force Australian universities to use",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-12-global-health-and-education-watch-new-anti-racism-standard-will-force-australian.jpg",
+    date: "2026-07-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-first-patients-enrolled-in-record-breaking-ebola-treatment-trial-in",
     title: "Global Health and Education Watch: First patients enrolled in record-breaking Ebola treatment trial in",
     summary:
