@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-flawed-disciplinary-hearings-at-work-cost-uk-economy-28-5bn",
+    title: "Global Health and Education Watch: Flawed disciplinary hearings at work cost UK economy £28.5bn",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-12-global-health-and-education-watch-flawed-disciplinary-hearings-at-work-cost-uk-e.jpg",
+    date: "2026-07-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dj-and-broadcaster-paul-gambaccini-reveals-alzheimer-s-diagnosis",
     title: "Global Health and Education Watch: DJ and broadcaster Paul Gambaccini reveals Alzheimer’s diagnosis",
     summary:
