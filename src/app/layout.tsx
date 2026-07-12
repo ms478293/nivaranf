@@ -2,6 +2,7 @@ import Providers from "@/providers";
 import "./globals.css";
 
 import { CookieConsent } from "@/components/new/CookieConsent/CookieConsent";
+import WeatherAdvisory from "@/components/nivaran/common/WeatherAdvisory";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
@@ -16,9 +17,6 @@ import localFont from "next/font/local";
 import Script from "next/script";
 
 const SITE_URL = "https://www.nivaranfoundation.org";
-const PUBLIC_API_BASE_URL = (
-  process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.nivaranfoundation.org"
-).replace(/\/+$/, "");
 const ENABLE_VERCEL_ANALYTICS =
   process.env.NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS !== "false";
 const DEFAULT_TITLE = "Nivaran Foundation";
@@ -265,7 +263,6 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://ipapi.co" />
-        <link rel="dns-prefetch" href={PUBLIC_API_BASE_URL} />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QF370FRN47"
@@ -301,6 +298,7 @@ export default async function RootLayout({
           <SetUserLocationCookie />
           <Toaster closeButton richColors theme="light" />
           {children}
+          <WeatherAdvisory />
           <CookieConsent />
           {ENABLE_VERCEL_ANALYTICS ? <Analytics /> : null}
         </Providers>
