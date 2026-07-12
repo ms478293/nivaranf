@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-couple-found-burned-and-semi-conscious-in-almeria-amid",
+    title: "Global Health and Education Watch: UK couple found burned and semi-conscious in Almería amid",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-couple-found-burned-and-semi-conscious-in-a.jpg",
+    date: "2026-07-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-georgia-teen-to-appear-in-plea-hearing-over-2024",
     title: "Global Health and Education Watch: Georgia teen to appear in plea hearing over 2024",
     summary:
