@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-children-will-be-one-of-unhealthiest-generations-in",
+    title: "Global Health and Education Watch: UK children will be one of unhealthiest generations in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-13-global-health-and-education-watch-uk-children-will-be-one-of-unhealthiest-genera.jpg",
+    date: "2026-07-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-afghanistan-3-7-million-young-lives-at-risk-of-malnutrition",
     title: "Global Health and Education Watch: Afghanistan: 3.7 million young lives at risk of malnutrition",
     summary:
