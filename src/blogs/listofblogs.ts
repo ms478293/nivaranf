@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-lettuce-or-salad-greens-identified-as-potential-source-of",
+    title: "Global Health and Education Watch: ‘Lettuce or Salad Greens’ Identified as Potential Source of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-14-global-health-and-education-watch-lettuce-or-salad-greens-identified-as-potentia.jpg",
+    date: "2026-07-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tuberculosis-outbreak-at-colorado-ice-jail-sickens-at-least",
     title: "Global Health and Education Watch: Tuberculosis outbreak at Colorado ICE jail sickens at least",
     summary:
