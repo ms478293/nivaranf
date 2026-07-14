@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-pilot-scheme-in-england-to-convert-empty-classrooms-into",
+    title: "Global Health and Education Watch: Pilot scheme in England to convert empty classrooms into",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-14-global-health-and-education-watch-pilot-scheme-in-england-to-convert-empty-class.jpg",
+    date: "2026-07-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-lettuce-or-salad-greens-identified-as-potential-source-of",
     title: "Global Health and Education Watch: ‘Lettuce or Salad Greens’ Identified as Potential Source of",
     summary:
