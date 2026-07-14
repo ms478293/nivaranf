@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue",
+    title: "Global Health and Education Watch: Cyclospora outbreaks causing diarrhea in US expected to continue",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
+    date: "2026-07-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-pilot-scheme-in-england-to-convert-empty-classrooms-into",
     title: "Global Health and Education Watch: Pilot scheme in England to convert empty classrooms into",
     summary:
