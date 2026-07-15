@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-childhood-vaccination-rate-increases-slightly-but-millions-remain-unprotected",
+    title: "Global Health and Education Watch: Childhood vaccination rate increases slightly, but millions remain unprotected",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-15-global-health-and-education-watch-childhood-vaccination-rate-increases-slightly-.jpg",
+    date: "2026-07-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-global-childhood-immunization-coverage-inches-forward-despite-conflict-and-3",
     title: "Global Health and Education Watch: Global childhood immunization coverage inches forward despite conflict and",
     summary:
