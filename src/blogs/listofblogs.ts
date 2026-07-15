@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-public-health-groups-sue-f-d-a-over-flavored-e-cigarette-policy",
+    title: "Global Health and Education Watch: Public Health Groups Sue F.D.A. Over Flavored E-Cigarette Policy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-15-global-health-and-education-watch-public-health-groups-sue-f-d-a-over-flavored-e.jpg",
+    date: "2026-07-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-palestine-weekly-israel-attacks-children-hospitals-in-bloody-week",
     title: "Global Health and Education Watch: Palestine weekly: Israel attacks children, hospitals in bloody week",
     summary:
