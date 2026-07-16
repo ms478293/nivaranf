@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-heat-deaths-are-not-inevitable-who-pushes-europe-to",
+    title: "Global Health and Education Watch: ‘Heat deaths are not inevitable’: WHO pushes Europe to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-16-global-health-and-education-watch-heat-deaths-are-not-inevitable-who-pushes-euro.jpg",
+    date: "2026-07-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-first-meeting-of-the-ihr-emergency-committee-regarding-the",
     title: "Global Health and Education Watch: First meeting of the IHR Emergency Committee regarding the",
     summary:
