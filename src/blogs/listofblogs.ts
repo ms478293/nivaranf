@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-new-who-guidelines-up-to-45-of-dementia-risk",
+    title: "Global Health and Education Watch: New WHO guidelines: up to 45% of dementia risk",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-16-global-health-and-education-watch-new-who-guidelines-up-to-45-of-dementia-risk.jpg",
+    date: "2026-07-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-world-news-in-brief-schools-closed-in-west-bank",
     title: "Global Health and Education Watch: World News in Brief: Schools closed in West Bank",
     summary:
