@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-canada-wildfire-air-pollution-and-heat-wave-combo-pose",
+    title: "Global Health and Education Watch: Canada Wildfire Air Pollution and Heat Wave Combo Pose",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-16-global-health-and-education-watch-canada-wildfire-air-pollution-and-heat-wave-co.jpg",
+    date: "2026-07-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iranian-doctor-says-us-strike-damaged-children-s-cancer-hospital",
     title: "Global Health and Education Watch: Iranian doctor says US strike damaged children’s cancer hospital",
     summary:
