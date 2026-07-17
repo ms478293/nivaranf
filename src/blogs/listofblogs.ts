@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-cyclospora-linked-to-taylor-farms-lettuce-sent-to-taco",
+    title: "Global Health and Education Watch: Cyclospora Linked to Taylor Farms Lettuce Sent to Taco",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-17-global-health-and-education-watch-cyclospora-linked-to-taylor-farms-lettuce-sent.jpg",
+    date: "2026-07-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-why-is-pakistan-s-sindh-province-facing-a-major-child-3",
     title: "Global Health and Education Watch: Why is Pakistan’s Sindh province facing a major child",
     summary:
