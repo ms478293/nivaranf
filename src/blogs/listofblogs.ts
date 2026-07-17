@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-help-my-sofa-is-killing-me-the-toxic-chemicals",
+    title: "Global Health and Education Watch: Help, my sofa is killing me! The toxic chemicals",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-17-global-health-and-education-watch-help-my-sofa-is-killing-me-the-toxic-chemicals.jpg",
+    date: "2026-07-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-seventy-ninth-world-health-assembly-daily-update-22-may-2",
     title: "Global Health and Education Watch: Seventy-ninth World Health Assembly – Daily update: 22 May",
     summary:
