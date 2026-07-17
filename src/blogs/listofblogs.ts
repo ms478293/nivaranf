@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-taking-salsa-classes-can-improve-mental-health-oxford-study",
+    title: "Global Health and Education Watch: Taking salsa classes can improve mental health, Oxford study",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-17-global-health-and-education-watch-taking-salsa-classes-can-improve-mental-health.jpg",
+    date: "2026-07-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-uganda-school-bus-crash-kills-20-children-and-1",
     title: "Global Health and Education Watch: Uganda school bus crash kills 20 children and 1",
     summary:
