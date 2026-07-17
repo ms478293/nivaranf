@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-warns-dr-congo-ebola-outbreak-is-outpacing-response",
+    title: "Global Health and Education Watch: WHO warns DR Congo Ebola outbreak is outpacing response",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-17-global-health-and-education-watch-who-warns-dr-congo-ebola-outbreak-is-outpacing.jpg",
+    date: "2026-07-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-offer-teenagers-a-meningitis-b-vaccine-on-nhs-advisers",
     title: "Global Health and Education Watch: Offer teenagers a meningitis B vaccine on NHS, advisers",
     summary:
