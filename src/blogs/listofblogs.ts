@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-death-toll-from-uganda-school-bus-crash-rises-to",
+    title: "Global Health and Education Watch: Death toll from Uganda school bus crash rises to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-18-global-health-and-education-watch-death-toll-from-uganda-school-bus-crash-rises-.jpg",
+    date: "2026-07-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-s-deep-public-health-cuts-hinder-response-to-record-3",
     title: "Global Health and Education Watch: Trump’s deep public health cuts hinder response to record",
     summary:
