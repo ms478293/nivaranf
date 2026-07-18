@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-taylor-farms-expands-iceberg-lettuce-recall-to-27-states",
+    title: "Global Health and Education Watch: Taylor Farms Expands Iceberg Lettuce Recall to 27 States",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-18-global-health-and-education-watch-taylor-farms-expands-iceberg-lettuce-recall-to.jpg",
+    date: "2026-07-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-message-by-the-who-director-general-to-the-people-of-3",
     title: "Global Health and Education Watch: Message by the WHO Director-General to the people of",
     summary:
