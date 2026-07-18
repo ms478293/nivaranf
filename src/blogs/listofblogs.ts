@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-harnessing-data-science-to-control-non-communicable-diseases-in-africa",
+    title: "Global Health and Education Watch: Harnessing data science to control non-communicable diseases in Africa",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-18-global-health-and-education-watch-harnessing-data-science-to-control-non-communi.jpg",
+    date: "2026-07-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-north-dakota-men-who-discover-they-were-switched-as",
     title: "Global Health and Education Watch: North Dakota men who discover they were switched as",
     summary:
