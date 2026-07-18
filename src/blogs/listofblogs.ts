@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-faced-with-inadequate-us-healthcare-black-women-fly-to",
+    title: "Global Health and Education Watch: Faced with inadequate US healthcare, Black women fly to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-18-global-health-and-education-watch-faced-with-inadequate-us-healthcare-black-wome.jpg",
+    date: "2026-07-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-taylor-farms-expands-iceberg-lettuce-recall-to-27-states",
     title: "Global Health and Education Watch: Taylor Farms Expands Iceberg Lettuce Recall to 27 States",
     summary:
