@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-army-destroys-three-schools-in-southern-lebanon-minister",
+    title: "Global Health and Education Watch: Israeli army destroys three schools in southern Lebanon, minister",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-18-global-health-and-education-watch-israeli-army-destroys-three-schools-in-souther.jpg",
+    date: "2026-07-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-guidance-offers-hope-for-reducing-the-global-toll",
     title: "Global Health and Education Watch: New guidance offers hope for reducing the global toll",
     summary:
