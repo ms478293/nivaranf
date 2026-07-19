@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-why-is-this-billionaire-s-name-all-over-harvard-s-campus",
+    title: "Global Health and Education Watch: Why Is This Billionaire’s Name All Over Harvard’s Campus?",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-19-global-health-and-education-watch-why-is-this-billionaire-s-name-all-over-harvar.jpg",
+    date: "2026-07-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-experts-convened-by-who-advise-on-candidate-treatments-and-2",
     title: "Global Health and Education Watch: Experts convened by WHO advise on candidate treatments and",
     summary:
