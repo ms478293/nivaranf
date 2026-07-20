@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-photos-police-fire-tear-gas-at-india-s-cockroach-movement",
+    title: "Global Health and Education Watch: Photos: Police fire tear gas at India’s Cockroach movement",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-20-global-health-and-education-watch-photos-police-fire-tear-gas-at-india-s-cockroa.jpg",
+    date: "2026-07-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-complete-shock-and-dismay-scientists-unite-against-trump-s-1tn",
     title: "Global Health and Education Watch: ‘Complete shock and dismay’: scientists unite against Trump’s $1tn",
     summary:
