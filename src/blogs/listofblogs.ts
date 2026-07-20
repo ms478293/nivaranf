@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-astrazeneca-highlights-rare-diseases-in-80bn-revenue-push",
+    title: "Global Health and Education Watch: AstraZeneca highlights rare diseases in $80bn revenue push",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-20-global-health-and-education-watch-astrazeneca-highlights-rare-diseases-in-80bn-r.jpg",
+    date: "2026-07-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israel-s-brutality-cannot-continue-in-plain-sight-letters",
     title: "Global Health and Education Watch: Israel’s brutality cannot continue in plain sight | Letters",
     summary:
