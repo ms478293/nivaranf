@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-guardian-view-on-humanities-cuts-in-universities-academic",
+    title: "Global Health and Education Watch: The Guardian view on humanities cuts in universities: academic",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-20-global-health-and-education-watch-the-guardian-view-on-humanities-cuts-in-univer.jpg",
+    date: "2026-07-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-epidemics-and-rage",
     title: "Global Health and Education Watch: Epidemics and Rage",
     summary:
