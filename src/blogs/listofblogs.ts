@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-road-deaths-fall-by-21-globally-but-stronger-action",
+    title: "Global Health and Education Watch: Road deaths fall by 21% globally but stronger action",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-21-global-health-and-education-watch-road-deaths-fall-by-21-globally-but-stronger-a.jpg",
+    date: "2026-07-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-health-response-brings-lifesaving-care-closer-to-thousands-in",
     title: "Global Health and Education Watch: Health response brings lifesaving care closer to thousands in",
     summary:
