@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-won-t-back-down-indian-student-protesters-return-after-police-2",
+    title: "Global Health and Education Watch: ‘Won’t back down’: Indian student protesters return after police",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-21-global-health-and-education-watch-won-t-back-down-indian-student-protesters-retu.jpg",
+    date: "2026-07-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-won-t-back-down-indian-student-protesters-return-after-police",
     title: "Global Health and Education Watch: ‘Won’t back down’: Indian student protesters return after police",
     summary:
