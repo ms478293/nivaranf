@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-at-a-utah-campus-an-emotional-odyssey-after-charlie",
+    title: "Global Health and Education Watch: At a Utah Campus, an Emotional Odyssey After Charlie",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-22-global-health-and-education-watch-at-a-utah-campus-an-emotional-odyssey-after-ch.jpg",
+    date: "2026-07-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-india-protest-how-modi-s-refusal-to-sack-education-minister",
     title: "Global Health and Education Watch: India protest: How Modi’s refusal to sack education minister",
     summary:
