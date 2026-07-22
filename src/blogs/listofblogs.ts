@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-joint-statement-by-the-government-of-the-democratic-republic",
+    title: "Global Health and Education Watch: Joint statement by the Government of the Democratic Republic",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-22-global-health-and-education-watch-joint-statement-by-the-government-of-the-democ.jpg",
+    date: "2026-07-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-india-s-young-protesters-are-bloodied-but-unbowed",
     title: "Global Health and Education Watch: India’s Young Protesters Are Bloodied but Unbowed",
     summary:
