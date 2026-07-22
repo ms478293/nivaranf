@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-thousands-prevented-from-returning-home-to-southern-lebanon",
+    title: "Global Health and Education Watch: Thousands prevented from returning home to southern Lebanon",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-22-global-health-and-education-watch-thousands-prevented-from-returning-home-to-sou.jpg",
+    date: "2026-07-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-us-cyclospora-cases-mount-as-authorities-struggle-to-find",
     title: "Global Health and Education Watch: US cyclospora cases mount as authorities struggle to find",
     summary:
