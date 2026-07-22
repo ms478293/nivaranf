@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-un-report-global-hunger-levels-ease-for-third-consecutive",
+    title: "Global Health and Education Watch: UN report: Global hunger levels ease for third consecutive",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-22-global-health-and-education-watch-un-report-global-hunger-levels-ease-for-third-.jpg",
+    date: "2026-07-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-fourth-person-dies-in-new-york-city-legionnaires-disease",
     title: "Global Health and Education Watch: Fourth person dies in New York City legionnaires’ disease",
     summary:
