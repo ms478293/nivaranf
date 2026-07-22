@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-us-cyclospora-cases-mount-as-authorities-struggle-to-find",
+    title: "Global Health and Education Watch: US cyclospora cases mount as authorities struggle to find",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-22-global-health-and-education-watch-us-cyclospora-cases-mount-as-authorities-strug.jpg",
+    date: "2026-07-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-at-a-utah-campus-an-emotional-odyssey-after-charlie",
     title: "Global Health and Education Watch: At a Utah Campus, an Emotional Odyssey After Charlie",
     summary:
