@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-n-y-c-schools-miss-out-on-431-million-in-medicaid",
+    title: "Global Health and Education Watch: N.Y.C. Schools Miss Out on $431 Million in Medicaid",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-23-global-health-and-education-watch-n-y-c-schools-miss-out-on-431-million-in-medic.jpg",
+    date: "2026-07-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gaza-s-food-gains-could-unravel-without-sustained-aid-un",
     title: "Global Health and Education Watch: Gaza’s food gains could unravel without sustained aid, UN",
     summary:
