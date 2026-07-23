@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-gaza-s-food-gains-could-unravel-without-sustained-aid-un",
+    title: "Global Health and Education Watch: Gaza’s food gains could unravel without sustained aid, UN",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-23-global-health-and-education-watch-gaza-s-food-gains-could-unravel-without-sustai.jpg",
+    date: "2026-07-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-does-make-america-healthy-again-hold-up-against",
     title: "Global Health and Education Watch: How does Make America Healthy Again hold up against",
     summary:
