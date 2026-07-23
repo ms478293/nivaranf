@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-indian-activist-wangchuk-ends-26-day-hunger-strike-over-exam",
+    title: "Global Health and Education Watch: Indian activist Wangchuk ends 26-day hunger strike over exam",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-23-global-health-and-education-watch-indian-activist-wangchuk-ends-26-day-hunger-st.jpg",
+    date: "2026-07-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-launches-seven-strategies-to-prevent-drowning",
     title: "Global Health and Education Watch: WHO launches seven strategies to prevent drowning",
     summary:
