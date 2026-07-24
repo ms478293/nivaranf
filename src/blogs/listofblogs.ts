@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-wildfires-surge-across-europe-as-spain-and-france-battle",
+    title: "Global Health and Education Watch: Wildfires surge across Europe as Spain and France battle",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-24-global-health-and-education-watch-wildfires-surge-across-europe-as-spain-and-fra.jpg",
+    date: "2026-07-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-indian-student-protests-what-s-next-after-modi-s-promise-on",
     title: "Global Health and Education Watch: Indian student protests: What’s next after Modi’s promise on",
     summary:
