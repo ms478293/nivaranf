@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-replacing-gas-stove-can-help-asthmatics-as-much-as",
+    title: "Global Health and Education Watch: Replacing gas stove can help asthmatics as much as",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-24-global-health-and-education-watch-replacing-gas-stove-can-help-asthmatics-as-muc.jpg",
+    date: "2026-07-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-rapid-rise-of-english-councils-funding-private-online",
     title: "Global Health and Education Watch: The rapid rise of English councils funding private online",
     summary:
