@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-geriatric-emergency-departments-do-differently",
+    title: "Global Health and Education Watch: What Geriatric Emergency Departments Do Differently",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-25-global-health-and-education-watch-what-geriatric-emergency-departments-do-differ.jpg",
+    date: "2026-07-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-maha-inc-how-companies-tied-to-kennedy-s-movement-are-5",
     title: "Global Health and Education Watch: Maha Inc: how companies tied to Kennedy’s movement are",
     summary:
