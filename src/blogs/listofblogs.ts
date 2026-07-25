@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-reclaiming-stolen-childhoods-swimming-classes-resume-in-gaza-after",
+    title: "Global Health and Education Watch: Reclaiming stolen childhoods: swimming classes resume in Gaza after",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-25-global-health-and-education-watch-reclaiming-stolen-childhoods-swimming-classes-.jpg",
+    date: "2026-07-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-global-south-is-being-forced-to-choose-creditors",
     title: "Global Health and Education Watch: The Global South is being forced to choose creditors",
     summary:
