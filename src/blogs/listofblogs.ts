@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-unequal-mental-health-impacts-of-extreme-weather-and-climate",
+    title: "Global Health and Education Watch: Unequal mental health impacts of extreme weather and climate",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-25-global-health-and-education-watch-unequal-mental-health-impacts-of-extreme-weath.jpg",
+    date: "2026-07-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-my-advice-to-new-tate-director-show-us",
     title: "Global Health and Education Watch: My advice to new Tate director – show us",
     summary:
