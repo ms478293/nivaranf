@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-lead-pollution-poses-health-risk-says-review-sparked-by",
+    title: "Global Health and Education Watch: Lead pollution poses health risk, says review sparked by",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-26-global-health-and-education-watch-lead-pollution-poses-health-risk-says-review-s.jpg",
+    date: "2026-07-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sally-the-robot-was-coming-to-a-new-york-2",
     title: "Global Health and Education Watch: Sally the Robot Was Coming to a New York",
     summary:
