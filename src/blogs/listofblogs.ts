@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-yemen-s-health-workers-race-to-halt-latest-outbreak-of",
+    title: "Global Health and Education Watch: Yemen’s health workers race to halt latest outbreak of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-26-global-health-and-education-watch-yemen-s-health-workers-race-to-halt-latest-out.jpg",
+    date: "2026-07-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-is-burnham-s-oxbridge-heavy-cabinet-a-sign-of-social-mobility",
     title: "Global Health and Education Watch: Is Burnham’s Oxbridge-heavy cabinet a sign of social mobility",
     summary:
