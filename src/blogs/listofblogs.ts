@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-s-border-czar-probes-possible-vetting-failures-after-ice",
+    title: "Global Health and Education Watch: Trump’s border czar probes possible vetting failures after ICE",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-26-global-health-and-education-watch-trump-s-border-czar-probes-possible-vetting-fa.jpg",
+    date: "2026-07-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-england-s-north-south-life-expectancy-gap-grows-despite-record-longevity",
     title: "Global Health and Education Watch: England’s north-south life expectancy gap grows despite record longevity",
     summary:
