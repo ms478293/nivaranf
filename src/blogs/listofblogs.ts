@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-unsafe-food-causes-866-million-illnesses-and-1-5-million-2",
+    title: "Global Health and Education Watch: Unsafe food causes 866 million illnesses and 1.5 million",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-26-global-health-and-education-watch-unsafe-food-causes-866-million-illnesses-and-1.jpg",
+    date: "2026-07-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gaza-dialysis-patients-face-grueling-hospital-journey-by-donkey",
     title: "Global Health and Education Watch: Gaza: Dialysis patients face grueling hospital journey by donkey",
     summary:
