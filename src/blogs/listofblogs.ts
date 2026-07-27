@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-palantir-tool-has-not-cut-hospital-discharge-delays-study",
+    title: "Global Health and Education Watch: Palantir tool has not cut hospital discharge delays, study",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-27-global-health-and-education-watch-palantir-tool-has-not-cut-hospital-discharge-d.jpg",
+    date: "2026-07-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-s-border-czar-probes-possible-vetting-failures-after-ice-5",
     title: "Global Health and Education Watch: Trump’s border czar probes possible vetting failures after ICE",
     summary:
