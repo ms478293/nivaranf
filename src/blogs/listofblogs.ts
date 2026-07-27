@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-students-and-staff-work-to-bring-islamic-university-of",
+    title: "Global Health and Education Watch: Students and staff work to bring Islamic University of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-27-global-health-and-education-watch-students-and-staff-work-to-bring-islamic-unive.jpg",
+    date: "2026-07-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in",
     title: "Global Health and Education Watch: Can This New Enzyme Turn Back the Clock in",
     summary:
