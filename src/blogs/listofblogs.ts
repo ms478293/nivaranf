@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ice-cream-for-education-gaza-cafe-raises-funds-for",
+    title: "Global Health and Education Watch: Ice cream for education: Gaza cafe raises funds for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-29-global-health-and-education-watch-ice-cream-for-education-gaza-cafe-raises-funds.jpg",
+    date: "2026-07-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-hunger-hampers-ebola-response-as-cases-top-3-200-in",
     title: "Global Health and Education Watch: Hunger hampers Ebola response as cases top 3,200 in",
     summary:
