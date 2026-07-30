@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-funding",
+    title: "Global Health and Education Watch: Trump cuts WHO off from Gavi vaccine alliance funding",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-30-global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-.jpg",
+    date: "2026-07-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-high-prices-and-funding-cuts-stall-hiv-prevention-revolution-4",
     title: "Global Health and Education Watch: High prices and funding cuts stall HIV prevention revolution",
     summary:
