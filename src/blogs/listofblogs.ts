@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-you-re-welcome-at-suny-new-york-tells-students-disenrolled",
+    title: "Global Health and Education Watch: You’re Welcome at SUNY, New York Tells Students Disenrolled",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-31-global-health-and-education-watch-you-re-welcome-at-suny-new-york-tells-students.jpg",
+    date: "2026-07-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-first-somewhat-optimistic-day-in-france-since-fire-outbreak",
     title: "Global Health and Education Watch: ‘First somewhat optimistic day’ in France since fire outbreak",
     summary:
