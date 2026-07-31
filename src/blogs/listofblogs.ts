@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-calls-grow-to-flunk-portugal-s-education-minister-amid-exam",
+    title: "Global Health and Education Watch: Calls grow ‘to flunk’ Portugal’s education minister amid exam",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-07-31-global-health-and-education-watch-calls-grow-to-flunk-portugal-s-education-minis.jpg",
+    date: "2026-07-31",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-safe-blood-supply-improves-as-voluntary-donations-exceed-85-2",
     title: "Global Health and Education Watch: Safe blood supply improves as voluntary donations exceed 85%",
     summary:
