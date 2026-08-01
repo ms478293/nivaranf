@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-retrospective-evaluation-of-school-related-measures-on-pre-vaccination-transmission-dynamics",
+    title: "Global Health and Education Watch: Retrospective evaluation of school-related measures on pre-vaccination transmission dynamics",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-01-global-health-and-education-watch-retrospective-evaluation-of-school-related-mea.jpg",
+    date: "2026-08-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-african-union-and-world-health-organization-renew-strategic-partnership",
     title: "Global Health and Education Watch: African Union and World Health Organization renew strategic partnership",
     summary:
