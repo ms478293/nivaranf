@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-mystery-virus-started-killing-horses-then-humans-was",
+    title: "Global Health and Education Watch: A mystery virus started killing horses. Then humans. Was",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-02-global-health-and-education-watch-a-mystery-virus-started-killing-horses-then-hu.jpg",
+    date: "2026-08-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-rfk-jr-tells-us-families-to-vaccinate-children-against",
     title: "Global Health and Education Watch: RFK Jr tells US families to vaccinate children against",
     summary:
