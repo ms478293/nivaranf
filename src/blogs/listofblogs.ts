@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-he-s-a-narcissist-could-idaho-killer-bryan-kohberger-win",
+    title: "Global Health and Education Watch: ‘He’s a narcissist’: could Idaho killer Bryan Kohberger win",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-02-global-health-and-education-watch-he-s-a-narcissist-could-idaho-killer-bryan-koh.jpg",
+    date: "2026-08-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands",
     title: "Global Health and Education Watch: Enhancing Global Health and Well-Being: WHO and the Netherlands",
     summary:
