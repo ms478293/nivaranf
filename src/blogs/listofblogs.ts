@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-montessori-learning-is-being-shut-down-at-leah-s-school",
+    title: "Global Health and Education Watch: Montessori learning is being shut down at Leah’s school",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-03-global-health-and-education-watch-montessori-learning-is-being-shut-down-at-leah.jpg",
+    date: "2026-08-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-and-the-netherlands-renew-their-partnership-on-climate",
     title: "Global Health and Education Watch: WHO and the Netherlands renew their partnership on climate",
     summary:
