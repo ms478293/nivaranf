@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litigation",
+    title: "Global Health and Education Watch: Self-Help Influencer Nicole LePera Faces Litigation",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-03-global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litig.jpg",
+    date: "2026-08-03",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-he-s-a-narcissist-could-idaho-killer-bryan-kohberger-win",
     title: "Global Health and Education Watch: ‘He’s a narcissist’: could Idaho killer Bryan Kohberger win",
     summary:
