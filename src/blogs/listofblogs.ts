@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-spotlight-on-fauci-said-to-boost-book-sales-for",
+    title: "Global Health and Education Watch: Spotlight on Fauci Said to Boost Book Sales for",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-04-global-health-and-education-watch-spotlight-on-fauci-said-to-boost-book-sales-fo.jpg",
+    date: "2026-08-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dr-congo-ebola-outbreak-kills-more-than-1-700-as",
     title: "Global Health and Education Watch: DR Congo Ebola outbreak kills more than 1,700 as",
     summary:
