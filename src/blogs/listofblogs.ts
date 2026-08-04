@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-education-dept-to-wipe-out-student-loans-of-170-000",
+    title: "Global Health and Education Watch: Education Dept. to Wipe Out Student Loans of 170,000",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-04-global-health-and-education-watch-education-dept-to-wipe-out-student-loans-of-17.jpg",
+    date: "2026-08-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gps-breast-cancer-guidelines-miss-95-of-women-who",
     title: "Global Health and Education Watch: GPs’ breast cancer guidelines ‘miss’ 95% of women who",
     summary:
