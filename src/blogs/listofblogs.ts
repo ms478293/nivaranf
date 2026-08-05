@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-p-g-seals-3-8bn-deal-for-supplements-company-thorne",
+    title: "Global Health and Education Watch: P&G seals $3.8bn deal for supplements company Thorne",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-05-global-health-and-education-watch-p-g-seals-3-8bn-deal-for-supplements-company-t.jpg",
+    date: "2026-08-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-new-ebola-vaccine-trial-launches-as-outbreak-spreads-in",
     title: "Global Health and Education Watch: New Ebola vaccine trial launches as outbreak spreads in",
     summary:
