@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-teachers-need-help-with-ai-a-union-is-offering",
+    title: "Global Health and Education Watch: Teachers need help with AI. A union is offering",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-05-global-health-and-education-watch-teachers-need-help-with-ai-a-union-is-offering.jpg",
+    date: "2026-08-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-women-must-not-be-put-under-pressure-to-have",
     title: "Global Health and Education Watch: Women must not be put under pressure to have",
     summary:
