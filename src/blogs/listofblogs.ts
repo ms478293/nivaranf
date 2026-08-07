@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-who-and-the-kingdom-of-saudi-arabia-sign-agreements",
+    title: "Global Health and Education Watch: WHO and the Kingdom of Saudi Arabia sign agreements",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-07-global-health-and-education-watch-who-and-the-kingdom-of-saudi-arabia-sign-agree.jpg",
+    date: "2026-08-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-several-killed-after-student-opens-fire-inside-thailand-school",
     title: "Global Health and Education Watch: Several killed after student opens fire inside Thailand school",
     summary:
