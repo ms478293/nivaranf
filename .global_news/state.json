@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-08-07T13:00:00Z",
-  "publishedInWindow": 5,
+  "publishedInWindow": 6,
   "candidateCache": [
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
@@ -12,7 +12,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "‘It can make you psychotic or give you a cardiac arrest’: why are so many children vaping the ‘prison drug’ spice?",
@@ -24,7 +24,7 @@
       "healthHits": 2,
       "educationHits": 3,
       "reason": "relevance=45, credibility=35, freshness=10, health_hits=2, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "With their assault on science, Trumpists aren’t just harming America – they’re harming themselves | Jan-Werner Müller",
@@ -36,7 +36,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Primary schools to be told to identify children at risk of future unemployment",
@@ -48,7 +48,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Ebola in DR Congo: Childhood deaths rise; hopes raised over new vaccine",
@@ -60,7 +60,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -72,7 +72,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -84,7 +84,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Thailand school shooting: eight killed including suspected attacker, police say",
@@ -96,7 +96,31 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "‘Black-Bear Pastrami’ Is No Longer on the Menu in This College’s Dorms",
+      "link": "https://www.nytimes.com/2026/08/07/nyregion/cornell-student-bear-meat.html",
+      "summary": "After two Cornell University students skinned a black bear in a communal kitchen last year to make a meal, the school changed the rules.",
+      "publishedAtUtc": "2026-08-07T21:30:52Z",
+      "domain": "nytimes.com",
+      "score": 80.0,
+      "healthHits": 0,
+      "educationHits": 3,
+      "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+      "link": "https://www.aljazeera.com/news/2026/8/7/ebola-cases-top-4000-in-drc-as-who-urges-ervebo-vaccine-trial?traffic_source=rss",
+      "summary": "The Bundibugyo epidemic, ​the world&#039;s second-largest, has been described as the ⁠fastest-spreading on record.",
+      "publishedAtUtc": "2026-08-07T20:41:46Z",
+      "domain": "aljazeera.com",
+      "score": 79.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -108,7 +132,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -120,7 +144,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Why are ultra-processed food firms panicking and suing? Because they know time is running out | Felicity Lawrence",
@@ -132,7 +156,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Women must not be put under pressure to have ‘ideal birth’, says Yvette Cooper",
@@ -144,7 +168,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "U.S. Restores Some Vaccine and Health Aid to Unicef, Gavi and World Food Programme",
@@ -156,7 +180,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=4, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Tuskegee University Banned Bonnets and Durags. Students Mostly Wonder Why.",
@@ -168,7 +192,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Boy Kills Grandparents and Then Five Teachers, Thai Authorities Say",
@@ -180,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Millions in England face longer waits for mental health care as NHS providers plan cuts",
@@ -192,7 +216,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Friday briefing: What the Jason Arday row reveals about equality in modern Britain",
@@ -204,7 +228,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "CDC reportedly expands scope of US cyclosporiasis outbreak to 15 states, including Arkansas and Missouri",
@@ -216,7 +240,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -228,7 +252,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Cambridge academics reject university’s attempt to end row over Jason Arday",
@@ -240,7 +264,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
@@ -252,7 +276,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Israel indicts settler over death of Palestinian activist who worked on No Other Land",
@@ -264,7 +288,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "NHS must prepare for annual summer heat pressures, says Yvette Cooper",
@@ -276,7 +300,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -288,7 +312,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "New Ebola vaccine trial launches as outbreak spreads in DR Congo",
@@ -300,7 +324,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "A Promising Heart Drug Fails, Challenging a Long-Held Theory of Disease",
@@ -312,7 +336,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Justice Department Accuses Duke Law School of Racial Discrimination",
@@ -324,7 +348,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Judge Rules Two Virginia Schools Must Change Confederate Names",
@@ -336,7 +360,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "College Is More Political Than Ever. But in a New, Insidious Way.",
@@ -348,7 +372,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "US labour market sheds jobs in July as labour force participation slumps",
@@ -360,7 +384,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Two civilians killed in Houthi strike on Marib, says Yemen’s government",
@@ -372,7 +396,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "Diego Maradona bloated, bedridden and resigned before death, says masseur",
@@ -384,7 +408,643 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
+      "link": "https://www.who.int/news/item/23-05-2024-Qatar-Fund-for-Development-(QFFD)-supports-the-implementation-of-WHO's-extended-13th-General-Programme-of-Work-with-flexible-funding",
+      "summary": "Ahead of the Seventy-seventh World Health Assembly , the Qatar Fund for Development (QFFD) and the World Health Organization (WHO) have signed a Core Contribution Agreement to support the implementation of WHO&rsquo;s extended Thirteenth General Programme of Work. The agreement entails a contribution of US$&nbsp;4&nbsp;million from the State of Qatar to WHO, through QFFD, aimed at enhancing the Organization's efforts in addressing global health challenges. This partnership underscores the State of Qatar and QFFD's unwavering commitment to improving health outcomes and promoting sustainable development goals worldwide. \"Our partnership with WHO is a testament to our dedication to leaving no one behind in the pursuit of health equity worldwide. By supporting WHO, we aim to empower communities, enhance healthcare access, and contribute to a healthier future for all,\" said Mr Sultan Ahmed Al-Aseeri, Acting Director-General of QFFD. &ldquo;Flexible funds are critical for WHO&rsquo;s life-saving work. With thanks to long-standing partners like the Qatar Fund for Development, WHO can use these funds to swiftly respond to global health needs as they arise. I am grateful to the State of Qatar for their support and for allowing us the flexibility we need to carry out our mission and mandate,&rdquo; said WHO Director-General Dr Tedros Adhanom Ghebreyesus. The extended Thirteenth General Programme of Work (GWP13) focuses on a comprehensive approach to health, addressing communicable and non-communicable diseases, strengthening health systems, and promoting health through the life course. This collaboration will particularly emphasize supporting countries in crisis and post-crisis contexts, aligning with the State of Qatar and QFFD's mission to provide crucial aid where it is needed most. As the world continues to navigate complex health challenges, the partnership between QFFD and WHO represents a beacon of hope and a model for international cooperation in the realm of global health. This agreement is a significant step towards achieving the shared goal of a healthier, more resilient world.",
+      "publishedAtUtc": "2024-05-23T12:12:51Z",
+      "domain": "who.int",
+      "score": 69.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "He Had Tenure. The New School Laid Him Off Anyway.",
+      "link": "https://www.nytimes.com/2026/08/05/nyregion/new-school-faculty-fired-nyc.html",
+      "summary": "The professor, a longtime critic of the university, was among 19 educators who lost their positions as the institution navigated financial woes.",
+      "publishedAtUtc": "2026-08-06T00:00:05Z",
+      "domain": "nytimes.com",
+      "score": 69.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "‘Children were calling for their mummies’: UK pupils struggle in 40C-plus classrooms",
+      "link": "https://www.theguardian.com/education/2026/jul/11/uk-pupils-struggle-extreme-heat-schools-classrooms",
+      "summary": "Teachers call for schools to be urgently adapted for hot weather amid reports of nausea, fainting and heatstroke The extreme heat that has hit the UK twice in the past few weeks has left teachers struggling to cope as temperatures in some classrooms climb above 40C, with pupils and staff suffering from heatstroke, nausea and headaches. Teachers say they have been desperately trying to keep children safe, with some covering younger pupils in wet paper towels as they lie on the floor, while older students have been given trays of water under their desks to put their feet in. Continue reading...",
+      "publishedAtUtc": "2026-07-11T06:00:41Z",
+      "domain": "theguardian.com",
+      "score": 69.0,
+      "healthHits": 0,
+      "educationHits": 4,
+      "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left | Jason Okundaye",
+      "link": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
+      "summary": "The Cambridge academic has rightly now resigned. But that won’t end the targeting of senior black figures or the lazy way institutions promote faux equality ‘To be honest with you, I thought you’d just believe me.” That was the breathtaking response of Prof Jason Arday when the Guardian interrogated the details he provided of an alleged racist campaign of intimidation against him, which involved a severed pig’s head, a masked man wielding a knife and bullets in the post. Arday had been unable to provide evidence, and when the Guardian contacted the relevant parties, including a south London butcher and the police, his claims were either refuted or could not be verified. Arday, whose appointment as professor of sociology of education at Cambridge became a widely lauded moment in the aftermath of Black Lives Matter, has found himself in the eye of the storm. Allegations of extensive plagiarism in his doctoral thesis, completed at Liverpool John Moores University, recently made their way from the Substack of self-described “race realist” academic Nathan Cofnas into the national press. The defence of Arday had rested on the fact that an investigation had already been conducted, and cleared him of plagiarism. And yet the case has taken on a life of its own. Continue reading...",
+      "publishedAtUtc": "2026-08-06T05:00:39Z",
+      "domain": "theguardian.com",
+      "score": 69.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Strengthening public health across Lebanon with EIB Global",
+      "link": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
+      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and healthcare support to over 50 000 people with chronic diseases like diabetes, cardiovascular issues, and cancer",
+      "publishedAtUtc": "2025-04-01T11:55:48Z",
+      "domain": "who.int",
+      "score": 68.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
+      "link": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems",
+      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO&rsquo;s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his recent remarks to the Philanthropy Asia Summit, held in Singapore on 5&ndash;7 May 2025. In his remarks, he expressed his appreciation to the Temasek Foundation and the Philanthropy Asia Alliance for organizing the Summit while highlighting the importance of philanthropy in strengthening global health, supporting country self-reliance, and partnering with WHO to address health challenges in an increasingly turbulent world. At the Summit, Dr Tedros thanked His Excellency President Tharman and Singapore, for its leadership in global health and its support to WHO. Dr Tedros stated that Singapore and the Temasek Foundation were amongst the first to pledge support to WHO&rsquo;s Investment Round.&ldquo;We look forward to your continued leadership and partnership as we work together to realize WHO&rsquo;s founding vision: the highest attainable standard of health &ndash; not as a luxury for some, but a right for all&rdquo;, said Dr Tedros. During the Investment Round, WHO has sought to expand its donor base, including by engaging strategically with philanthropic organizations. As Dr Tedros noted, partnerships with philanthropies help countries to strengthen essential health services and make sustainable progress towards universal health coverage. Philanthropic actors play a vital role in improving global health outcomes, providing significant resources and expertise needed to build stronger and more accessible health-care systems. Investments made by philanthropic partners often complement and amplify the work of governments, international organizations and other stakeholders in the global health community. Philanthropy can be particularly effective in supporting innovative or high-risk research that may not be funded though more traditional funding sources. Philanthropic actors are effective partners when it comes to raising awareness and advocating for policies to improve global health outcomes, address health disparities and promote health equity. Looking ahead, philanthropic collaboration will remain central to achieving the goals outlined in WHO&rsquo;s Fourteenth General Programme of Work. Developing strong partnerships with philanthropic actors allows WHO to leverage the strengths of a range of global health players to bring better health to people and maximize impact.",
+      "publishedAtUtc": "2025-05-19T11:53:23Z",
+      "domain": "who.int",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+      "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+      "summary": "Governments of the world today agreed to continue working on a proposed pandemic agreement, and to further refine the draft, ahead of the Seventy-seventh World Health Assembly that starts 27 May 2024. Governments meeting at the World Health Organization headquarters in Geneva agreed to resume hybrid and in-person discussions over coming weeks to advance work on critical issues, including around a proposed new global system for pathogen access and benefits sharing (i.e. life-saving vaccines, treatments and diagnostics); pandemic prevention and One Health; and the financial coordination needed to scale up countries&rsquo; capacities to prepare for and respond to pandemics. \"During more than two years of intensive negotiations, WHO&rsquo;s Member States have shown unwavering commitment to forging a generational agreement to protect the world from a repeat of the horrors caused by the COVID-19 pandemic,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;I welcome the determination that all countries have shown to continue their work and fulfill the mission on which they embarked.&rdquo; The Member State-led Intergovernmental Negotiating Body (INB) was established over two years ago to take this effort forward. The Bureau of the INB, which is guiding the process, will submit its outcome for consideration at the World Health Assembly. INB Bureau Co-Chair Dr Precious Matsoso, from South Africa, said progress had been made during this latest round of discussions on a wide range of issues contained in the draft agreement. &ldquo;We are witnessing history play out before our eyes during this process, with the coming together of all countries to decide a binding pact to protect all citizens of the world,&rdquo; said Ms Matsoso. &ldquo;This is not a simple exercise. This is the first ever process to develop a proposed agreement on pandemic prevention, preparedness and response. Getting this done means getting it right, and the INB Bureau is committed to help finalize a meaningful, lasting agreement.&rdquo; Fellow INB Bureau Co-Chair, Mr Roland Driece, from the Netherlands, said when countries launched the process two years ago to develop a pandemic agreement, they did so knowing they had set an ambitious timeline to reach an ambitious goal. &ldquo;This unprecedented effort by all WHO Member States was launched in response to an unprecedented global emergency &ndash; the COVID-19 pandemic,&rdquo; said Mr Driece. &ldquo;These sovereign states did so recognizing that great collaboration and coordination were needed in the face of pandemics. While negotiations have been challenging at times, all countries agree that the world must be better prepared for the next pandemic. It is not a matter of if a pandemic will happen again; it is a matter of when. We cannot afford to miss this historic opportunity to make the world safer from the next pandemic threat.&rdquo; In March 2021, heads of state and government from two dozen countries issued a statement of commitment calling for global collaboration to prepare for, prevent and respond to pandemics. In December 2021, WHO Member States decided to launch a global process to draft and negotiate a legally binding convention, agreement or other international instrument to strengthen pandemic prevention, preparedness and response. &nbsp;",
+      "publishedAtUtc": "2024-05-10T19:15:31Z",
+      "domain": "who.int",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Recovery in Ukraine, one life at a time",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168053",
+      "summary": "In classrooms, maternity wards, hospital corridors and local communities across Ukraine, people are rebuilding their lives despite the ongoing war.",
+      "publishedAtUtc": "2026-08-01T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 67.0,
+      "healthHits": 1,
+      "educationHits": 1,
+      "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The mRNA technology behind Moderna’s Covid vaccine reaches the flu",
+      "link": "https://www.theguardian.com/us-news/2026/aug/06/flu-shot-covid-moderna-mrna-mflusiva",
+      "summary": "The mFlusiva vaccine for older people is first made with mRNA platform key to ending coronavirus pandemic The Food and Drug Administration has approved a new kind of flu vaccine for older people, the first made with the same mRNA technology that was key to ending the Covid -19 pandemic, Moderna, the manufacturer, said. The shot, named mFlusiva, is intended for adults aged 50 or older. Other brands of flu shots already have begun arriving in pharmacies ahead of fall vaccination season, and Moderna said late on Wednesday that it expected some of its new version to be available soon at select retailers. Continue reading...",
+      "publishedAtUtc": "2026-08-06T13:56:28Z",
+      "domain": "theguardian.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Chipotle removes jalapeños amid US salmonella outbreak investigation",
+      "link": "https://www.theguardian.com/us-news/2026/aug/04/chipotle-jalapenos-salmonella-investigation",
+      "summary": "Restaurant chain pulls peppers ‘out of an abundance of caution’ as salmonella outbreak sickens 110 people Chipotle said on Tuesday ⁠it had removed jalapeños from some of the chain’s restaurants after identifying ⁠the peppers as ⁠a ​potential ingredient tied to a salmonella outbreak, replacing them ⁠with supplies from different growers. The company said it ​began tracing ‌ingredients through its supply ‌chain after learning of a ‌potential outbreak and identified jalapeños from a common lot as a possible source. Continue reading...",
+      "publishedAtUtc": "2026-08-04T18:09:58Z",
+      "domain": "theguardian.com",
+      "score": 67.0,
+      "healthHits": 1,
+      "educationHits": 1,
+      "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Security Council LIVE: Warnings of famine and collapse as South Sudan's peace deal frays",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168089",
+      "summary": "Nearly eight million people in South Sudan – more than half the population – face crisis-level hunger, with famine risk now flagged in four counties, as the Security Council met this morning in New York. A cholera outbreak has killed more than 1,700 people, and some aid workers are being killed and abducted even as they try to reach those most at risk. Follow live coverage below.",
+      "publishedAtUtc": "2026-08-06T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Education Dept. to Wipe Out Student Loans of 170,000 More Defrauded Borrowers",
+      "link": "https://www.nytimes.com/2026/08/03/business/student-loans-borrower-defense.html",
+      "summary": "The sprawling case, centered on students defrauded by for-profit schools, has now become the largest class-action settlement in American history.",
+      "publishedAtUtc": "2026-08-03T21:24:03Z",
+      "domain": "nytimes.com",
+      "score": 66.0,
+      "healthHits": 0,
+      "educationHits": 3,
+      "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+      "link": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+      "publishedAtUtc": "2025-03-06T12:48:53Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
+      "link": "https://www.who.int/news/item/29-08-2024-the-republic-of-korea-and-who-discuss-joint-priorities--challenges-and-trends-around-global-health",
+      "summary": "The World Health Organization (WHO) and the Republic of Korea have a long-standing partnership spanning over 75 years. As a result of their fruitful collaboration, there has been significant progress in health and development all around the world. The Republic of Korea has gone from being a donor-recipient country to a donor-country and is now a leader in global health and playing a critical role on the world stage. Dr Catharina Boehme, Assistant Director-General for External Relations and Governance (WHO) and Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination (Ministry of Health and Welfare, Republic of Korea), together with counterparts from WHO and the Government of the Republic of Korea. &copy; WHO To further strengthen this partnership and our commitment to working jointly to address global health challenges, WHO and the Republic of Korea convened their second Strategic Dialogue in Seoul from 28 to 29 August 2024. Dr Catharina Boehme, Assistant Directory-General for External Relations and Governance, led the WHO delegation and was accompanied by an in-person team and colleagues participating virtually from the three levels of the Organization (headquarters, regional, and country offices). Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination, Ministry of Health, led the Republic of Korea delegation and was joined by senior officials including Dr Young-Mee Jee, Commissioner, Korea Disease Control and Prevention Agency, as well as senior counterparts from the Ministry of Foreign Affairs, and the Ministry of Food and Drug Safety. In addition, in line with WHO's work to enhance collaboration with parliamentarians, the WHO delegation also met with various Members of the National Assembly that are championing the global health agenda. The recently concluded two-day meeting resulted in an alignment of priorities and paved the way for enhanced collaboration between WHO and the Government of Korea. WHO delegation with Mr Jonghan Park, Director-General, Development Cooperation (Ministry of Foreign Affairs) - holding up the WHO Investment Case report . &copy; WHO &nbsp;",
+      "publishedAtUtc": "2024-09-04T09:19:05Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
+      "link": "https://www.who.int/news/item/27-08-2024-fourteen-african-countries--key-partners-unite-to-provide-critical-resources-for-health-in-who-s-first-ever-investment-round",
+      "summary": "In an unprecedented show of unity in support of the World Health Organization, 14 African countries and many partners pledged over US$ 45 million to the WHO Investment Round, a three-month-old initiative aimed at generating sustainable financing for the organization at the center of the global health architecture. The commitments were made during the World Health Organization (WHO) Regional Committee for Africa, with heads of state and government from across the continent underscoring the importance of investing in global health and ensuring a strong WHO. &ldquo;I thank our African Region Member States for actively supporting WHO&rsquo;s first Investment Round to mobilize predictable and flexible resources needed for our core work over the next four years,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Full, sustainable funding will enable WHO to support countries better in their work to build healthier, more resilient, and more prosperous populations.&rdquo; The countries and partners came together for the historic event aimed at sustainably funding WHO and thus enabling it to more effectively fulfil its mandate and advance key objectives to promote, provide and protect health and well-being for all. The countries included Botswana, Cabo Verde, Chad, Congo, Ethiopia, Gambia, Mauritius, Namibia, Niger, Rwanda, Senegal, Seychelles, South Africa, and the United Republic of Tanzania. Many partners joined Members States in making commitments of support to WHO and committing to providing pledges later in the year, including Helmsley Charitable Trust, World Diabetes Foundation, Roche, Kuwait Fund for Arab Economic Development, the Bill &amp; Melinda Gates Foundation, African Development Bank and the WHO Foundation. &ldquo;A strong, predictable and sustainably financed WHO is essential for our region and the world to meet the multiple health threats we face; and support the prevention of disease based on the vast evidence at our disposal,&rdquo; said Dr Matshidiso Moeti, WHO Regional Director for Africa. &ldquo;Every pledge and every partnership counts. Together, we can achieve a future where health and well-being are accessible to all.&rdquo; The WHO Investment Round will continue in the coming months and feature key pledging moments around the world. Learn more about the WHO Investment Round . Launched at the World Health Assembly in May 2024, the Investment Round aims to generate contributions that are flexible and thereby aligned with WHO&rsquo;s strategy as approved by its Member States; predictably provided at the start of the four-year budget cycle to enable strategic decision-making; and resilient in that they will derive from a larger, more diverse set of donors. &nbsp;",
+      "publishedAtUtc": "2024-08-27T19:45:08Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The U.S. Relies on Family Caregivers. Millions of Them Are Kids.",
+      "link": "https://www.nytimes.com/2026/08/05/magazine/child-family-caregivers-aacy.html",
+      "summary": "The modern health care system requires the work of caregiving to fall to whoever else lives in a household — even if they’re kids.",
+      "publishedAtUtc": "2026-08-05T16:31:26Z",
+      "domain": "nytimes.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "University of Greater Manchester ends contract of embattled vice-chancellor",
+      "link": "https://www.theguardian.com/uk-news/2026/aug/06/university-of-greater-manchester-ends-contract-vice-chancellor-george-holmes",
+      "summary": "George Holmes was suspended in 2025 over allegations involving financial mismanagement and other misconduct The University of Greater Manchester’s embattled vice-chancellor has had his contract terminated by the university’s governing body, ending a period of uncertainty over the university’s leadership. George Holmes, who had led the university for two decades, was initially suspended last year over allegations involving financial mismanagement and other misconduct. Continue reading...",
+      "publishedAtUtc": "2026-08-06T16:02:45Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Study finds three midlife health factors that could delay dementia for 13 years",
+      "link": "https://www.theguardian.com/society/2026/aug/05/midlife-health-factors-delay-dementia-study",
+      "summary": "Research suggests addressing risk factors for poor cardiovascular health between the ages of 45 and 65 could help reduce risk of cognitive decline Scientists claim to have identified three health measures in middle age that can ward off dementia for more than a decade. Having normal blood pressure, no type 2 diabetes, and not smoking between the ages of 45 and 65 were associated with almost 13 additional years, on average, of dementia-free life, a study shows. Continue reading...",
+      "publishedAtUtc": "2026-08-05T20:00:27Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Top Ugandan footballer killed by robbers armed with paving stones",
+      "link": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
+      "summary": "David Owori, who played for the national team, died in hospital after he tried to stop robbers taking his phone The Ugandan football community is in mourning after the death of a player who was fatally injured during a robbery in the capital, Kampala, on Tuesday night. David Owori, who captained Sports Club Villa, a Uganda Premier League club, and represented the national team, was attacked after resisting an attempt to steal his mobile phone and other belongings near his home in Makindye division. Continue reading...",
+      "publishedAtUtc": "2026-08-06T14:30:32Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Pakistan precinct suspends all 78 officers and staff over alleged rape at police station",
+      "link": "https://www.theguardian.com/world/2026/aug/05/pakistan-precinct-suspends-all-officers-and-staff",
+      "summary": "Lahore police official says all personnel were responsible for preventing and reporting any wrongdoing at station The alleged rape of a 20-year-old woman with learning disabilities in a police station in Lahore, Pakistan, has prompted authorities to suspend all 78 police officers and staff at the precinct, in one of the country’s biggest ever disciplinary actions against its police force. The woman alleges that an assistant sub-inspector apprehended her, took her to Ghaziabad police station and raped her in a room on the second floor. The woman’s family said she disappeared on the street, before returning home in tears and stating that she had been sexually assaulted at the station. Continue reading...",
+      "publishedAtUtc": "2026-08-05T15:23:06Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
+      "link": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health",
+      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
+      "publishedAtUtc": "2026-02-25T18:06:55Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
+      "link": "https://www.who.int/news/item/10-04-2025-worldwide-rally-for-maternal-and-newborn-health-marks-world-health-day-2025",
+      "summary": "On the occasion of the World Health Day 2025 dedicated to the theme of Healthier beginnings, hopeful futures, over 100 global WHO offices have organized wide-ranging public advocacy actions in collaboration with Member States, communities, health workers, partner and donor agencies and civil society organizations.",
+      "publishedAtUtc": "2025-04-10T15:02:54Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
+      "link": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
+      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic directions and Belgium's development cooperation priorities in the context of an evolving global health landscape.",
+      "publishedAtUtc": "2025-03-11T08:49:23Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Amid Cyclospora Outbreak, Demand for Locally Grown Lettuce Surges",
+      "link": "https://www.nytimes.com/2026/08/06/business/cyclospora-lettuce-local-produce.html",
+      "summary": "Small produce stands and farmers’ markets are seeing a surge in demand for leafy greens as sales of lettuce and salad kits from grocery chains and big retailers drop.",
+      "publishedAtUtc": "2026-08-06T16:47:11Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "F.D.A. Approves Moderna’s mRNA Flu Vaccine",
+      "link": "https://www.nytimes.com/2026/08/05/health/mrna-flu-vaccine-moderna.html",
+      "summary": "The agency had initially refused to even review the application but reversed course after a public outcry.",
+      "publishedAtUtc": "2026-08-06T02:24:28Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Senate Confirms Dr. Erica Schwartz as C.D.C. Director",
+      "link": "https://www.nytimes.com/2026/08/05/health/cdc-erica-schwartz.html",
+      "summary": "Dr. Schwartz, a deputy surgeon general in the first Trump administration, has publicly supported childhood vaccines.",
+      "publishedAtUtc": "2026-08-05T21:11:14Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Incident at Texas School Underscores Concerns About Police Officers on Campuses",
+      "link": "https://www.nytimes.com/2026/08/06/us/converse-texas-school-officer-incident-policing.html",
+      "summary": "The incident, one of thousands of times that school officers in Texas have used physical force in recent years, underscores long-held concerns about policing in schools.",
+      "publishedAtUtc": "2026-08-06T11:10:56Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Star Scholar Jason Arday Resigns From Cambridge",
+      "link": "https://www.nytimes.com/2026/08/05/books/review/cambridge-jason-arday-resignation-investigation.html",
+      "summary": "Jason Arday was hired by the University of Cambridge in 2023 as the youngest Black professor in its history. Doubt has since been cast on his academic qualifications and claims about his life.",
+      "publishedAtUtc": "2026-08-06T00:08:46Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "New Zealand is Racing to Vaccinate Its Endangered Birds Against Bird Flu",
+      "link": "https://www.nytimes.com/2026/08/05/world/australia/new-zealand-bird-flu-vaccines.html",
+      "summary": "Conservation experts are trying to slow the march of the viral disease in a country that is home to rare and endangered bird species.",
+      "publishedAtUtc": "2026-08-05T21:11:52Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Dons call for Cambridge leaders to take blame for Jason Arday appointment",
+      "link": "https://www.theguardian.com/uk-news/2026/aug/06/jason-arday-cambridge-dons-demand-accountability-grotesque-racism",
+      "summary": "Exclusive: Academics call for inquiry, saying university must be held accountable for ‘grotesque racism unleashed’ The University of Cambridge’s leaders deserve blame for the “grotesque racism unleashed” by Jason Arday’s appointment as professor, according to academics calling for the university to hold an independent inquiry. The Guardian understands that senior dons at Cambridge are circulating a joint letter calling for an inquiry into the processes and circumstances around Arday being given the position, with many suggesting the university wanted a “quick fix” to improve the diversity of its staff. Continue reading...",
+      "publishedAtUtc": "2026-08-06T19:54:47Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Exiled PM vows to return to Bangladesh despite execution threat",
+      "link": "https://www.theguardian.com/world/2026/aug/05/exiled-pm-vows-to-return-sheikh-hasina-bangladesh-despite-execution-threat",
+      "summary": "Sheikh Hasina plans a December comeback two years after being ousted in a bloody uprising led by students Bangladesh’s ousted prime minister Sheikh Hasina has vowed to return home by the end of the year, even though she faces a death sentence. “They may put me in a cell. They may kill me. Anything may happen, but still I have to go,” said Hasina, two years after a student-led uprising toppled her government. Continue reading...",
+      "publishedAtUtc": "2026-08-05T17:45:17Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Gaza ‘unsafe for civilians’ as Israeli attacks hit homes and classrooms",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168077",
+      "summary": "Gaza remains unsafe for civilians as Israeli attacks continue, including on schools and canvas classrooms, despite the October Israel-Hamas ceasefire that ended two years of war, the Office for the Coordination of Humanitarian Affairs (OCHA) warned on Tuesday.",
+      "publishedAtUtc": "2026-08-04T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 61.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "DR Congo: New centre opens at heart of record Ebola outbreak",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168064",
+      "summary": "New UN-partnered centres will serve eastern Democratic Republic of the Congo (DRC) as confirmed Ebola cases continued to climb sharply over the weekend in the largest-ever outbreak of the highly contagious disease in the country.",
+      "publishedAtUtc": "2026-08-03T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Scrapping foreign doctors scheme will hurt the NHS | Letter",
+      "link": "https://www.theguardian.com/society/2026/aug/04/scrapping-foreign-doctors-scheme-will-hurt-the-nhs",
+      "summary": "The move is regressive and removes a successful route for international collaboration, including education and research, writes Dr Peter Trewby The decision to abolish the medical training initiative (MTI) scheme ( Medical colleges condemn scrapping of NHS placements for overseas doctors, 31 July ) risks reversing years of progress in medical diplomacy and repeating earlier mistakes in the UK’s treatment of international medical graduates (IMGs). In the early 2000s, in response to perceived workforce shortages, the government actively recruited IMGs and established a new GMC exam centre to process applicants at scale. Thousands came to the UK, but the number of available posts was insufficient. The government responded by ending the permit-free visa, which had allowed IMGs to work in the UK, so doctors could now only apply for posts when no UK graduate had applied, regardless of relative merits. International exchanges built over decades ended abruptly. Continue reading...",
+      "publishedAtUtc": "2026-08-04T15:54:07Z",
+      "domain": "theguardian.com",
+      "score": 60.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO launches unique training course to enable parliamentarians in global health security",
+      "link": "https://www.who.int/news/item/12-07-2024-who-launches-unique-training-course-to-enable-parliamentarians-in-global-health-security",
+      "summary": "The World Health Organization has released \"The Role of Parliaments and Parliamentarians in Strengthening Health Security Preparedness\", an online training course. This essential resource aims to equip parliamentarians with the knowledge and tools necessary to enhance global health security efforts.",
+      "publishedAtUtc": "2024-07-12T15:17:48Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
+      "link": "https://www.theguardian.com/education/2026/jun/27/uk-university-students-forced-to-live-at-home",
+      "summary": "Experts say students from poorer backgrounds increasingly having to limit their options because of money worries Most days, Mariam spends hours simply waiting. The 19-year-old University College London student often finishes her lectures by mid-morning but has careers events or society meetings in the evening. The three-hour round trip to her family home means travelling back and forth makes little sense, so she waits on campus instead. More often than not, by the time the event starts, she is too exhausted to stay long. Continue reading...",
+      "publishedAtUtc": "2026-06-27T12:00:03Z",
+      "domain": "theguardian.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO statement on notification of withdrawal of the United States",
+      "link": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
+      "summary": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
+      "publishedAtUtc": "2026-01-24T20:09:49Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "WHO comments on United States’ announcement of intent to withdraw",
+      "link": "https://www.who.int/news/item/21-01-2025-who-comments-on-united-states--announcement-of-intent-to-withdraw",
+      "summary": "The World Health Organization regrets the announcement that the United States of America intends to withdraw from the organization.",
+      "publishedAtUtc": "2025-01-21T10:04:49Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Spotlight on Fauci Said to Boost Book Sales for Kennedy and His Publisher",
+      "link": "https://www.nytimes.com/2026/08/03/us/politics/fauci-rfk-publisher.html",
+      "summary": "Health Secretary Robert F. Kennedy Jr., his son, and Senator Rand Paul have all written books criticizing Dr. Anthony S. Fauci. All were published by a company led by a close Kennedy adviser.",
+      "publishedAtUtc": "2026-08-04T19:23:09Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Self-Help Influencer Nicole LePera Faces Litigation",
+      "link": "https://www.nytimes.com/2026/08/02/style/nicole-lepera-self-help-litigation-holistic-psychologist.html",
+      "summary": "Millions look to Nicole LePera for advice on how to achieve contentment and maintain healthy relationships. But her own story is complicated.",
+      "publishedAtUtc": "2026-08-03T17:11:13Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Brown’s President Will Resign after a Tenure that Included Trump Deal",
+      "link": "https://www.nytimes.com/2026/08/03/us/brown-president-christina-paxson-resign.html",
+      "summary": "The president, Christina H. Paxson, led the campus for over a decade, but in recent years faced protests, political pressure and a shooting that killed two students.",
+      "publishedAtUtc": "2026-08-03T21:14:49Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "After Colleges Reject ‘Compact,’ Trump Officials Try a Letter",
+      "link": "https://www.nytimes.com/2026/08/03/us/trump-mcmahon-colleges-letter.html",
+      "summary": "The open letter from Education Secretary Linda McMahon fell far short of the attempt at a compact last year that dangled research money in return for embracing the Trump administration’s agenda.",
+      "publishedAtUtc": "2026-08-03T21:51:44Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
+      "link": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
+      "summary": "Jason Arday was regarded as an academic superstar, but then questions about his work prompted scrutiny of his backstory and counterclaims of racism When the superstar academic Jason Arday took to the stage at the British Sociological Association’s 75th anniversary conference earlier this year, he delivered a talk called Wanted Dead or Alive: the Playbook. The youngest black professor in Cambridge University’s history told an audience of his peers that the playbook in question had helped bring down some of the biggest names in US academia. Conservative “activists” were trawling through the work of black academics, looking for anything to use against them: inconsistencies, citation errors, passages in their work that were similar to existing papers. Continue reading...",
+      "publishedAtUtc": "2026-08-01T11:45:52Z",
+      "domain": "theguardian.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "P&G seals $3.8bn deal for supplements company Thorne",
+      "link": "https://www.ft.com/content/237bfa1a-e1af-493c-a6a6-ef2f36b519f8?syn-25a6b1a6=1",
+      "summary": "Consumer goods group expands its health business in a sector that has boomed since Covid pandemic",
+      "publishedAtUtc": "2026-08-04T18:32:20Z",
+      "domain": "ft.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "MPs call for routine lead testing for children living near abandoned mines",
+      "link": "https://www.ft.com/content/b15dbbf8-d479-4be6-ba3c-c7e6831fbcca?syn-25a6b1a6=1",
+      "summary": "Health risks from Britain’s industrial past have been ‘left unaddressed’ for too long, Welsh secretary told",
+      "publishedAtUtc": "2026-08-02T04:00:06Z",
+      "domain": "ft.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Luxembourg and WHO sign two strategic agreements",
+      "link": "https://www.who.int/news/item/23-12-2024-luxembourg-and-who-sign-two-strategic-agreements",
+      "summary": "A Strategic Partnership Framework (SPF) with the Ministry of Development Cooperation and Humanitarian Affairs and multiyear agreement with the Ministry of Health and Social Safety was signed on 20 December 2024. By signing two new partnership agreements, Luxembourg reaffirmed its continued support for WHO to fulfill a shared mission to promote, provide and protect health.",
+      "publishedAtUtc": "2024-12-23T16:44:44Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "G20 health ministers rally support for WHO’s Investment Round",
+      "link": "https://www.who.int/news/item/01-11-2024-g20-health-ministers-rally-support-for-who-s-investment-round",
+      "summary": "Ministers of Health expressed their support for WHO's Investment Round during a G20 meeting chaired by Brazil held today in Rio de Janeiro.",
+      "publishedAtUtc": "2024-10-31T18:48:12Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Palantir tool has not cut hospital discharge delays, says study",
+      "link": "https://www.ft.com/content/cbd1a5ad-ffe7-43c2-9760-16bbefcb6cf4?syn-25a6b1a6=1",
+      "summary": "Think-tank’s findings likely to add to calls for audit of NHS England claims around Federated Data Platform",
+      "publishedAtUtc": "2026-07-27T04:00:14Z",
+      "domain": "ft.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The Guardian University Guide 2026 – the rankings",
+      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
+      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
+      "publishedAtUtc": "2025-09-13T07:01:01Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "‘Without this it’s all just tourists’: the fight to save Soho’s last primary school",
+      "link": "https://www.theguardian.com/education/2026/jul/18/without-this-school-its-all-just-tourists-fight-for-soho-last-primary",
+      "summary": "Falling pupil numbers have left ‘unique’ London school facing an uncertain future, but its supporters have ambitious plans Sandwiched between a strip club, a West End theatre and a pub might not be the most obvious location for a school but Soho Parish C of E primary has thrived for decades among the colourful charms of inner London. But in an area that once had 16 schools, Soho Parish is the last remaining and its time may soon be up, a victim of the post-Covid downturn and falling pupil numbers that are forecast to close hundreds of primary schools across England. Continue reading...",
+      "publishedAtUtc": "2026-07-18T08:00:52Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "The London members’ clubs joining the wellness revolution",
+      "link": "https://www.ft.com/content/0a9c2833-b913-460e-8d79-c1b8ea661c08",
+      "summary": "Socialising is still the focus, but as people quit alcohol for healthier pursuits, the industry is responding to demand",
+      "publishedAtUtc": "2026-07-28T04:00:05Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Lead pollution poses health risk, says review sparked by FT investigation",
+      "link": "https://www.ft.com/content/92b0ffcb-3878-400b-ad1a-80597b7b9450?syn-25a6b1a6=1",
+      "summary": "Animals reared near ex-mining sites ‘can have high, potentially toxic concentrations of metals’, academics find",
+      "publishedAtUtc": "2026-07-26T04:00:08Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
+    },
+    {
+      "title": "Maha Inc: how companies tied to Kennedy’s movement are poised to benefit",
+      "link": "https://www.ft.com/content/1a7cdff0-5e52-4fa1-8b21-978e501eb791?syn-25a6b1a6=1",
+      "summary": "Kaleidoscope of industries emerge as early winners from administration’s health regulation overhaul",
+      "publishedAtUtc": "2026-07-25T11:00:09Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T21:55:15.581438Z"
     },
     {
       "title": "First school for robots opens in China",
@@ -399,234 +1059,6 @@
       "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
     },
     {
-      "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
-      "link": "https://www.who.int/news/item/23-05-2024-Qatar-Fund-for-Development-(QFFD)-supports-the-implementation-of-WHO's-extended-13th-General-Programme-of-Work-with-flexible-funding",
-      "summary": "Ahead of the Seventy-seventh World Health Assembly , the Qatar Fund for Development (QFFD) and the World Health Organization (WHO) have signed a Core Contribution Agreement to support the implementation of WHO&rsquo;s extended Thirteenth General Programme of Work. The agreement entails a contribution of US$&nbsp;4&nbsp;million from the State of Qatar to WHO, through QFFD, aimed at enhancing the Organization's efforts in addressing global health challenges. This partnership underscores the State of Qatar and QFFD's unwavering commitment to improving health outcomes and promoting sustainable development goals worldwide. \"Our partnership with WHO is a testament to our dedication to leaving no one behind in the pursuit of health equity worldwide. By supporting WHO, we aim to empower communities, enhance healthcare access, and contribute to a healthier future for all,\" said Mr Sultan Ahmed Al-Aseeri, Acting Director-General of QFFD. &ldquo;Flexible funds are critical for WHO&rsquo;s life-saving work. With thanks to long-standing partners like the Qatar Fund for Development, WHO can use these funds to swiftly respond to global health needs as they arise. I am grateful to the State of Qatar for their support and for allowing us the flexibility we need to carry out our mission and mandate,&rdquo; said WHO Director-General Dr Tedros Adhanom Ghebreyesus. The extended Thirteenth General Programme of Work (GWP13) focuses on a comprehensive approach to health, addressing communicable and non-communicable diseases, strengthening health systems, and promoting health through the life course. This collaboration will particularly emphasize supporting countries in crisis and post-crisis contexts, aligning with the State of Qatar and QFFD's mission to provide crucial aid where it is needed most. As the world continues to navigate complex health challenges, the partnership between QFFD and WHO represents a beacon of hope and a model for international cooperation in the realm of global health. This agreement is a significant step towards achieving the shared goal of a healthier, more resilient world.",
-      "publishedAtUtc": "2024-05-23T12:12:51Z",
-      "domain": "who.int",
-      "score": 69.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "He Had Tenure. The New School Laid Him Off Anyway.",
-      "link": "https://www.nytimes.com/2026/08/05/nyregion/new-school-faculty-fired-nyc.html",
-      "summary": "The professor, a longtime critic of the university, was among 19 educators who lost their positions as the institution navigated financial woes.",
-      "publishedAtUtc": "2026-08-06T00:00:05Z",
-      "domain": "nytimes.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "‘Children were calling for their mummies’: UK pupils struggle in 40C-plus classrooms",
-      "link": "https://www.theguardian.com/education/2026/jul/11/uk-pupils-struggle-extreme-heat-schools-classrooms",
-      "summary": "Teachers call for schools to be urgently adapted for hot weather amid reports of nausea, fainting and heatstroke The extreme heat that has hit the UK twice in the past few weeks has left teachers struggling to cope as temperatures in some classrooms climb above 40C, with pupils and staff suffering from heatstroke, nausea and headaches. Teachers say they have been desperately trying to keep children safe, with some covering younger pupils in wet paper towels as they lie on the floor, while older students have been given trays of water under their desks to put their feet in. Continue reading...",
-      "publishedAtUtc": "2026-07-11T06:00:41Z",
-      "domain": "theguardian.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 4,
-      "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left | Jason Okundaye",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
-      "summary": "The Cambridge academic has rightly now resigned. But that won’t end the targeting of senior black figures or the lazy way institutions promote faux equality ‘To be honest with you, I thought you’d just believe me.” That was the breathtaking response of Prof Jason Arday when the Guardian interrogated the details he provided of an alleged racist campaign of intimidation against him, which involved a severed pig’s head, a masked man wielding a knife and bullets in the post. Arday had been unable to provide evidence, and when the Guardian contacted the relevant parties, including a south London butcher and the police, his claims were either refuted or could not be verified. Arday, whose appointment as professor of sociology of education at Cambridge became a widely lauded moment in the aftermath of Black Lives Matter, has found himself in the eye of the storm. Allegations of extensive plagiarism in his doctoral thesis, completed at Liverpool John Moores University, recently made their way from the Substack of self-described “race realist” academic Nathan Cofnas into the national press. The defence of Arday had rested on the fact that an investigation had already been conducted, and cleared him of plagiarism. And yet the case has taken on a life of its own. Continue reading...",
-      "publishedAtUtc": "2026-08-06T05:00:39Z",
-      "domain": "theguardian.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Strengthening public health across Lebanon with EIB Global",
-      "link": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
-      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and healthcare support to over 50 000 people with chronic diseases like diabetes, cardiovascular issues, and cancer",
-      "publishedAtUtc": "2025-04-01T11:55:48Z",
-      "domain": "who.int",
-      "score": 68.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
-      "link": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems",
-      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO&rsquo;s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his recent remarks to the Philanthropy Asia Summit, held in Singapore on 5&ndash;7 May 2025. In his remarks, he expressed his appreciation to the Temasek Foundation and the Philanthropy Asia Alliance for organizing the Summit while highlighting the importance of philanthropy in strengthening global health, supporting country self-reliance, and partnering with WHO to address health challenges in an increasingly turbulent world. At the Summit, Dr Tedros thanked His Excellency President Tharman and Singapore, for its leadership in global health and its support to WHO. Dr Tedros stated that Singapore and the Temasek Foundation were amongst the first to pledge support to WHO&rsquo;s Investment Round.&ldquo;We look forward to your continued leadership and partnership as we work together to realize WHO&rsquo;s founding vision: the highest attainable standard of health &ndash; not as a luxury for some, but a right for all&rdquo;, said Dr Tedros. During the Investment Round, WHO has sought to expand its donor base, including by engaging strategically with philanthropic organizations. As Dr Tedros noted, partnerships with philanthropies help countries to strengthen essential health services and make sustainable progress towards universal health coverage. Philanthropic actors play a vital role in improving global health outcomes, providing significant resources and expertise needed to build stronger and more accessible health-care systems. Investments made by philanthropic partners often complement and amplify the work of governments, international organizations and other stakeholders in the global health community. Philanthropy can be particularly effective in supporting innovative or high-risk research that may not be funded though more traditional funding sources. Philanthropic actors are effective partners when it comes to raising awareness and advocating for policies to improve global health outcomes, address health disparities and promote health equity. Looking ahead, philanthropic collaboration will remain central to achieving the goals outlined in WHO&rsquo;s Fourteenth General Programme of Work. Developing strong partnerships with philanthropic actors allows WHO to leverage the strengths of a range of global health players to bring better health to people and maximize impact.",
-      "publishedAtUtc": "2025-05-19T11:53:23Z",
-      "domain": "who.int",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
-      "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
-      "summary": "Governments of the world today agreed to continue working on a proposed pandemic agreement, and to further refine the draft, ahead of the Seventy-seventh World Health Assembly that starts 27 May 2024. Governments meeting at the World Health Organization headquarters in Geneva agreed to resume hybrid and in-person discussions over coming weeks to advance work on critical issues, including around a proposed new global system for pathogen access and benefits sharing (i.e. life-saving vaccines, treatments and diagnostics); pandemic prevention and One Health; and the financial coordination needed to scale up countries&rsquo; capacities to prepare for and respond to pandemics. \"During more than two years of intensive negotiations, WHO&rsquo;s Member States have shown unwavering commitment to forging a generational agreement to protect the world from a repeat of the horrors caused by the COVID-19 pandemic,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;I welcome the determination that all countries have shown to continue their work and fulfill the mission on which they embarked.&rdquo; The Member State-led Intergovernmental Negotiating Body (INB) was established over two years ago to take this effort forward. The Bureau of the INB, which is guiding the process, will submit its outcome for consideration at the World Health Assembly. INB Bureau Co-Chair Dr Precious Matsoso, from South Africa, said progress had been made during this latest round of discussions on a wide range of issues contained in the draft agreement. &ldquo;We are witnessing history play out before our eyes during this process, with the coming together of all countries to decide a binding pact to protect all citizens of the world,&rdquo; said Ms Matsoso. &ldquo;This is not a simple exercise. This is the first ever process to develop a proposed agreement on pandemic prevention, preparedness and response. Getting this done means getting it right, and the INB Bureau is committed to help finalize a meaningful, lasting agreement.&rdquo; Fellow INB Bureau Co-Chair, Mr Roland Driece, from the Netherlands, said when countries launched the process two years ago to develop a pandemic agreement, they did so knowing they had set an ambitious timeline to reach an ambitious goal. &ldquo;This unprecedented effort by all WHO Member States was launched in response to an unprecedented global emergency &ndash; the COVID-19 pandemic,&rdquo; said Mr Driece. &ldquo;These sovereign states did so recognizing that great collaboration and coordination were needed in the face of pandemics. While negotiations have been challenging at times, all countries agree that the world must be better prepared for the next pandemic. It is not a matter of if a pandemic will happen again; it is a matter of when. We cannot afford to miss this historic opportunity to make the world safer from the next pandemic threat.&rdquo; In March 2021, heads of state and government from two dozen countries issued a statement of commitment calling for global collaboration to prepare for, prevent and respond to pandemics. In December 2021, WHO Member States decided to launch a global process to draft and negotiate a legally binding convention, agreement or other international instrument to strengthen pandemic prevention, preparedness and response. &nbsp;",
-      "publishedAtUtc": "2024-05-10T19:15:31Z",
-      "domain": "who.int",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Recovery in Ukraine, one life at a time",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168053",
-      "summary": "In classrooms, maternity wards, hospital corridors and local communities across Ukraine, people are rebuilding their lives despite the ongoing war.",
-      "publishedAtUtc": "2026-08-01T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 67.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The mRNA technology behind Moderna’s Covid vaccine reaches the flu",
-      "link": "https://www.theguardian.com/us-news/2026/aug/06/flu-shot-covid-moderna-mrna-mflusiva",
-      "summary": "The mFlusiva vaccine for older people is first made with mRNA platform key to ending coronavirus pandemic The Food and Drug Administration has approved a new kind of flu vaccine for older people, the first made with the same mRNA technology that was key to ending the Covid -19 pandemic, Moderna, the manufacturer, said. The shot, named mFlusiva, is intended for adults aged 50 or older. Other brands of flu shots already have begun arriving in pharmacies ahead of fall vaccination season, and Moderna said late on Wednesday that it expected some of its new version to be available soon at select retailers. Continue reading...",
-      "publishedAtUtc": "2026-08-06T13:56:28Z",
-      "domain": "theguardian.com",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Chipotle removes jalapeños amid US salmonella outbreak investigation",
-      "link": "https://www.theguardian.com/us-news/2026/aug/04/chipotle-jalapenos-salmonella-investigation",
-      "summary": "Restaurant chain pulls peppers ‘out of an abundance of caution’ as salmonella outbreak sickens 110 people Chipotle said on Tuesday ⁠it had removed jalapeños from some of the chain’s restaurants after identifying ⁠the peppers as ⁠a ​potential ingredient tied to a salmonella outbreak, replacing them ⁠with supplies from different growers. The company said it ​began tracing ‌ingredients through its supply ‌chain after learning of a ‌potential outbreak and identified jalapeños from a common lot as a possible source. Continue reading...",
-      "publishedAtUtc": "2026-08-04T18:09:58Z",
-      "domain": "theguardian.com",
-      "score": 67.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Security Council LIVE: Warnings of famine and collapse as South Sudan's peace deal frays",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168089",
-      "summary": "Nearly eight million people in South Sudan – more than half the population – face crisis-level hunger, with famine risk now flagged in four counties, as the Security Council met this morning in New York. A cholera outbreak has killed more than 1,700 people, and some aid workers are being killed and abducted even as they try to reach those most at risk. Follow live coverage below.",
-      "publishedAtUtc": "2026-08-06T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Education Dept. to Wipe Out Student Loans of 170,000 More Defrauded Borrowers",
-      "link": "https://www.nytimes.com/2026/08/03/business/student-loans-borrower-defense.html",
-      "summary": "The sprawling case, centered on students defrauded by for-profit schools, has now become the largest class-action settlement in American history.",
-      "publishedAtUtc": "2026-08-03T21:24:03Z",
-      "domain": "nytimes.com",
-      "score": 66.0,
-      "healthHits": 0,
-      "educationHits": 3,
-      "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
-      "link": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
-      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
-      "publishedAtUtc": "2025-03-06T12:48:53Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
-      "link": "https://www.who.int/news/item/29-08-2024-the-republic-of-korea-and-who-discuss-joint-priorities--challenges-and-trends-around-global-health",
-      "summary": "The World Health Organization (WHO) and the Republic of Korea have a long-standing partnership spanning over 75 years. As a result of their fruitful collaboration, there has been significant progress in health and development all around the world. The Republic of Korea has gone from being a donor-recipient country to a donor-country and is now a leader in global health and playing a critical role on the world stage. Dr Catharina Boehme, Assistant Director-General for External Relations and Governance (WHO) and Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination (Ministry of Health and Welfare, Republic of Korea), together with counterparts from WHO and the Government of the Republic of Korea. &copy; WHO To further strengthen this partnership and our commitment to working jointly to address global health challenges, WHO and the Republic of Korea convened their second Strategic Dialogue in Seoul from 28 to 29 August 2024. Dr Catharina Boehme, Assistant Directory-General for External Relations and Governance, led the WHO delegation and was accompanied by an in-person team and colleagues participating virtually from the three levels of the Organization (headquarters, regional, and country offices). Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination, Ministry of Health, led the Republic of Korea delegation and was joined by senior officials including Dr Young-Mee Jee, Commissioner, Korea Disease Control and Prevention Agency, as well as senior counterparts from the Ministry of Foreign Affairs, and the Ministry of Food and Drug Safety. In addition, in line with WHO's work to enhance collaboration with parliamentarians, the WHO delegation also met with various Members of the National Assembly that are championing the global health agenda. The recently concluded two-day meeting resulted in an alignment of priorities and paved the way for enhanced collaboration between WHO and the Government of Korea. WHO delegation with Mr Jonghan Park, Director-General, Development Cooperation (Ministry of Foreign Affairs) - holding up the WHO Investment Case report . &copy; WHO &nbsp;",
-      "publishedAtUtc": "2024-09-04T09:19:05Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
-      "link": "https://www.who.int/news/item/27-08-2024-fourteen-african-countries--key-partners-unite-to-provide-critical-resources-for-health-in-who-s-first-ever-investment-round",
-      "summary": "In an unprecedented show of unity in support of the World Health Organization, 14 African countries and many partners pledged over US$ 45 million to the WHO Investment Round, a three-month-old initiative aimed at generating sustainable financing for the organization at the center of the global health architecture. The commitments were made during the World Health Organization (WHO) Regional Committee for Africa, with heads of state and government from across the continent underscoring the importance of investing in global health and ensuring a strong WHO. &ldquo;I thank our African Region Member States for actively supporting WHO&rsquo;s first Investment Round to mobilize predictable and flexible resources needed for our core work over the next four years,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Full, sustainable funding will enable WHO to support countries better in their work to build healthier, more resilient, and more prosperous populations.&rdquo; The countries and partners came together for the historic event aimed at sustainably funding WHO and thus enabling it to more effectively fulfil its mandate and advance key objectives to promote, provide and protect health and well-being for all. The countries included Botswana, Cabo Verde, Chad, Congo, Ethiopia, Gambia, Mauritius, Namibia, Niger, Rwanda, Senegal, Seychelles, South Africa, and the United Republic of Tanzania. Many partners joined Members States in making commitments of support to WHO and committing to providing pledges later in the year, including Helmsley Charitable Trust, World Diabetes Foundation, Roche, Kuwait Fund for Arab Economic Development, the Bill &amp; Melinda Gates Foundation, African Development Bank and the WHO Foundation. &ldquo;A strong, predictable and sustainably financed WHO is essential for our region and the world to meet the multiple health threats we face; and support the prevention of disease based on the vast evidence at our disposal,&rdquo; said Dr Matshidiso Moeti, WHO Regional Director for Africa. &ldquo;Every pledge and every partnership counts. Together, we can achieve a future where health and well-being are accessible to all.&rdquo; The WHO Investment Round will continue in the coming months and feature key pledging moments around the world. Learn more about the WHO Investment Round . Launched at the World Health Assembly in May 2024, the Investment Round aims to generate contributions that are flexible and thereby aligned with WHO&rsquo;s strategy as approved by its Member States; predictably provided at the start of the four-year budget cycle to enable strategic decision-making; and resilient in that they will derive from a larger, more diverse set of donors. &nbsp;",
-      "publishedAtUtc": "2024-08-27T19:45:08Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The U.S. Relies on Family Caregivers. Millions of Them Are Kids.",
-      "link": "https://www.nytimes.com/2026/08/05/magazine/child-family-caregivers-aacy.html",
-      "summary": "The modern health care system requires the work of caregiving to fall to whoever else lives in a household — even if they’re kids.",
-      "publishedAtUtc": "2026-08-05T16:31:26Z",
-      "domain": "nytimes.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "University of Greater Manchester ends contract of embattled vice-chancellor",
-      "link": "https://www.theguardian.com/uk-news/2026/aug/06/university-of-greater-manchester-ends-contract-vice-chancellor-george-holmes",
-      "summary": "George Holmes was suspended in 2025 over allegations involving financial mismanagement and other misconduct The University of Greater Manchester’s embattled vice-chancellor has had his contract terminated by the university’s governing body, ending a period of uncertainty over the university’s leadership. George Holmes, who had led the university for two decades, was initially suspended last year over allegations involving financial mismanagement and other misconduct. Continue reading...",
-      "publishedAtUtc": "2026-08-06T16:02:45Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Study finds three midlife health factors that could delay dementia for 13 years",
-      "link": "https://www.theguardian.com/society/2026/aug/05/midlife-health-factors-delay-dementia-study",
-      "summary": "Research suggests addressing risk factors for poor cardiovascular health between the ages of 45 and 65 could help reduce risk of cognitive decline Scientists claim to have identified three health measures in middle age that can ward off dementia for more than a decade. Having normal blood pressure, no type 2 diabetes, and not smoking between the ages of 45 and 65 were associated with almost 13 additional years, on average, of dementia-free life, a study shows. Continue reading...",
-      "publishedAtUtc": "2026-08-05T20:00:27Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Top Ugandan footballer killed by robbers armed with paving stones",
-      "link": "https://www.theguardian.com/football/2026/aug/06/top-uganda-footballer-killed-robbery-kampala",
-      "summary": "David Owori, who played for the national team, died in hospital after he tried to stop robbers taking his phone The Ugandan football community is in mourning after the death of a player who was fatally injured during a robbery in the capital, Kampala, on Tuesday night. David Owori, who captained Sports Club Villa, a Uganda Premier League club, and represented the national team, was attacked after resisting an attempt to steal his mobile phone and other belongings near his home in Makindye division. Continue reading...",
-      "publishedAtUtc": "2026-08-06T14:30:32Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
       "title": "Peruvian cardinal hails $150m lead poisoning settlement for 1,300 people as a ‘historic milestone’",
       "link": "https://www.theguardian.com/global-development/2026/aug/05/peruvian-cardinal-historic-milestone-150m-lead-poisoning-settlement-1300-children",
       "summary": "Cardinal Pedro Barreto received death threats and harassment during his almost 20-year campaign against a US mining company’s operations in the Andes A Peruvian cardinal who received a barrage of death threats when he challenged the firm behind a toxic smelter has called a $150m (£111m) out-of-court settlement to more than 1,000 people who were allegedly poisoned by the plant as children “a historic milestone”. Cardinal Pedro Barreto, 82, was in Rome meeting Pope Leo XIV and other cardinals in June when he received news that the firm that ran the smelter, the Doe Run Company, a subsidiary of Renco Group, would pay $150m to 1,373 Peruvians who have suffered health impacts since childhood. Continue reading...",
@@ -636,414 +1068,6 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Pakistan precinct suspends all 78 officers and staff over alleged rape at police station",
-      "link": "https://www.theguardian.com/world/2026/aug/05/pakistan-precinct-suspends-all-officers-and-staff",
-      "summary": "Lahore police official says all personnel were responsible for preventing and reporting any wrongdoing at station The alleged rape of a 20-year-old woman with learning disabilities in a police station in Lahore, Pakistan, has prompted authorities to suspend all 78 police officers and staff at the precinct, in one of the country’s biggest ever disciplinary actions against its police force. The woman alleges that an assistant sub-inspector apprehended her, took her to Ghaziabad police station and raped her in a room on the second floor. The woman’s family said she disappeared on the street, before returning home in tears and stating that she had been sexually assaulted at the station. Continue reading...",
-      "publishedAtUtc": "2026-08-05T15:23:06Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
-      "link": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health",
-      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
-      "publishedAtUtc": "2026-02-25T18:06:55Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
-      "link": "https://www.who.int/news/item/10-04-2025-worldwide-rally-for-maternal-and-newborn-health-marks-world-health-day-2025",
-      "summary": "On the occasion of the World Health Day 2025 dedicated to the theme of Healthier beginnings, hopeful futures, over 100 global WHO offices have organized wide-ranging public advocacy actions in collaboration with Member States, communities, health workers, partner and donor agencies and civil society organizations.",
-      "publishedAtUtc": "2025-04-10T15:02:54Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
-      "link": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
-      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic directions and Belgium's development cooperation priorities in the context of an evolving global health landscape.",
-      "publishedAtUtc": "2025-03-11T08:49:23Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Amid Cyclospora Outbreak, Demand for Locally Grown Lettuce Surges",
-      "link": "https://www.nytimes.com/2026/08/06/business/cyclospora-lettuce-local-produce.html",
-      "summary": "Small produce stands and farmers’ markets are seeing a surge in demand for leafy greens as sales of lettuce and salad kits from grocery chains and big retailers drop.",
-      "publishedAtUtc": "2026-08-06T16:47:11Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "F.D.A. Approves Moderna’s mRNA Flu Vaccine",
-      "link": "https://www.nytimes.com/2026/08/05/health/mrna-flu-vaccine-moderna.html",
-      "summary": "The agency had initially refused to even review the application but reversed course after a public outcry.",
-      "publishedAtUtc": "2026-08-06T02:24:28Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Senate Confirms Dr. Erica Schwartz as C.D.C. Director",
-      "link": "https://www.nytimes.com/2026/08/05/health/cdc-erica-schwartz.html",
-      "summary": "Dr. Schwartz, a deputy surgeon general in the first Trump administration, has publicly supported childhood vaccines.",
-      "publishedAtUtc": "2026-08-05T21:11:14Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Incident at Texas School Underscores Concerns About Police Officers on Campuses",
-      "link": "https://www.nytimes.com/2026/08/06/us/converse-texas-school-officer-incident-policing.html",
-      "summary": "The incident, one of thousands of times that school officers in Texas have used physical force in recent years, underscores long-held concerns about policing in schools.",
-      "publishedAtUtc": "2026-08-06T11:10:56Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Star Scholar Jason Arday Resigns From Cambridge",
-      "link": "https://www.nytimes.com/2026/08/05/books/review/cambridge-jason-arday-resignation-investigation.html",
-      "summary": "Jason Arday was hired by the University of Cambridge in 2023 as the youngest Black professor in its history. Doubt has since been cast on his academic qualifications and claims about his life.",
-      "publishedAtUtc": "2026-08-06T00:08:46Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "New Zealand is Racing to Vaccinate Its Endangered Birds Against Bird Flu",
-      "link": "https://www.nytimes.com/2026/08/05/world/australia/new-zealand-bird-flu-vaccines.html",
-      "summary": "Conservation experts are trying to slow the march of the viral disease in a country that is home to rare and endangered bird species.",
-      "publishedAtUtc": "2026-08-05T21:11:52Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Dons call for Cambridge leaders to take blame for Jason Arday appointment",
-      "link": "https://www.theguardian.com/uk-news/2026/aug/06/jason-arday-cambridge-dons-demand-accountability-grotesque-racism",
-      "summary": "Exclusive: Academics call for inquiry, saying university must be held accountable for ‘grotesque racism unleashed’ The University of Cambridge’s leaders deserve blame for the “grotesque racism unleashed” by Jason Arday’s appointment as professor, according to academics calling for the university to hold an independent inquiry. The Guardian understands that senior dons at Cambridge are circulating a joint letter calling for an inquiry into the processes and circumstances around Arday being given the position, with many suggesting the university wanted a “quick fix” to improve the diversity of its staff. Continue reading...",
-      "publishedAtUtc": "2026-08-06T19:54:47Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Exiled PM vows to return to Bangladesh despite execution threat",
-      "link": "https://www.theguardian.com/world/2026/aug/05/exiled-pm-vows-to-return-sheikh-hasina-bangladesh-despite-execution-threat",
-      "summary": "Sheikh Hasina plans a December comeback two years after being ousted in a bloody uprising led by students Bangladesh’s ousted prime minister Sheikh Hasina has vowed to return home by the end of the year, even though she faces a death sentence. “They may put me in a cell. They may kill me. Anything may happen, but still I have to go,” said Hasina, two years after a student-led uprising toppled her government. Continue reading...",
-      "publishedAtUtc": "2026-08-05T17:45:17Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Gaza ‘unsafe for civilians’ as Israeli attacks hit homes and classrooms",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168077",
-      "summary": "Gaza remains unsafe for civilians as Israeli attacks continue, including on schools and canvas classrooms, despite the October Israel-Hamas ceasefire that ended two years of war, the Office for the Coordination of Humanitarian Affairs (OCHA) warned on Tuesday.",
-      "publishedAtUtc": "2026-08-04T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 61.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "DR Congo: New centre opens at heart of record Ebola outbreak",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168064",
-      "summary": "New UN-partnered centres will serve eastern Democratic Republic of the Congo (DRC) as confirmed Ebola cases continued to climb sharply over the weekend in the largest-ever outbreak of the highly contagious disease in the country.",
-      "publishedAtUtc": "2026-08-03T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 61.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Scrapping foreign doctors scheme will hurt the NHS | Letter",
-      "link": "https://www.theguardian.com/society/2026/aug/04/scrapping-foreign-doctors-scheme-will-hurt-the-nhs",
-      "summary": "The move is regressive and removes a successful route for international collaboration, including education and research, writes Dr Peter Trewby The decision to abolish the medical training initiative (MTI) scheme ( Medical colleges condemn scrapping of NHS placements for overseas doctors, 31 July ) risks reversing years of progress in medical diplomacy and repeating earlier mistakes in the UK’s treatment of international medical graduates (IMGs). In the early 2000s, in response to perceived workforce shortages, the government actively recruited IMGs and established a new GMC exam centre to process applicants at scale. Thousands came to the UK, but the number of available posts was insufficient. The government responded by ending the permit-free visa, which had allowed IMGs to work in the UK, so doctors could now only apply for posts when no UK graduate had applied, regardless of relative merits. International exchanges built over decades ended abruptly. Continue reading...",
-      "publishedAtUtc": "2026-08-04T15:54:07Z",
-      "domain": "theguardian.com",
-      "score": 60.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO launches unique training course to enable parliamentarians in global health security",
-      "link": "https://www.who.int/news/item/12-07-2024-who-launches-unique-training-course-to-enable-parliamentarians-in-global-health-security",
-      "summary": "The World Health Organization has released \"The Role of Parliaments and Parliamentarians in Strengthening Health Security Preparedness\", an online training course. This essential resource aims to equip parliamentarians with the knowledge and tools necessary to enhance global health security efforts.",
-      "publishedAtUtc": "2024-07-12T15:17:48Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
-      "link": "https://www.theguardian.com/education/2026/jun/27/uk-university-students-forced-to-live-at-home",
-      "summary": "Experts say students from poorer backgrounds increasingly having to limit their options because of money worries Most days, Mariam spends hours simply waiting. The 19-year-old University College London student often finishes her lectures by mid-morning but has careers events or society meetings in the evening. The three-hour round trip to her family home means travelling back and forth makes little sense, so she waits on campus instead. More often than not, by the time the event starts, she is too exhausted to stay long. Continue reading...",
-      "publishedAtUtc": "2026-06-27T12:00:03Z",
-      "domain": "theguardian.com",
-      "score": 57.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO statement on notification of withdrawal of the United States",
-      "link": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
-      "summary": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
-      "publishedAtUtc": "2026-01-24T20:09:49Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "WHO comments on United States’ announcement of intent to withdraw",
-      "link": "https://www.who.int/news/item/21-01-2025-who-comments-on-united-states--announcement-of-intent-to-withdraw",
-      "summary": "The World Health Organization regrets the announcement that the United States of America intends to withdraw from the organization.",
-      "publishedAtUtc": "2025-01-21T10:04:49Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Spotlight on Fauci Said to Boost Book Sales for Kennedy and His Publisher",
-      "link": "https://www.nytimes.com/2026/08/03/us/politics/fauci-rfk-publisher.html",
-      "summary": "Health Secretary Robert F. Kennedy Jr., his son, and Senator Rand Paul have all written books criticizing Dr. Anthony S. Fauci. All were published by a company led by a close Kennedy adviser.",
-      "publishedAtUtc": "2026-08-04T19:23:09Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Self-Help Influencer Nicole LePera Faces Litigation",
-      "link": "https://www.nytimes.com/2026/08/02/style/nicole-lepera-self-help-litigation-holistic-psychologist.html",
-      "summary": "Millions look to Nicole LePera for advice on how to achieve contentment and maintain healthy relationships. But her own story is complicated.",
-      "publishedAtUtc": "2026-08-03T17:11:13Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Brown’s President Will Resign after a Tenure that Included Trump Deal",
-      "link": "https://www.nytimes.com/2026/08/03/us/brown-president-christina-paxson-resign.html",
-      "summary": "The president, Christina H. Paxson, led the campus for over a decade, but in recent years faced protests, political pressure and a shooting that killed two students.",
-      "publishedAtUtc": "2026-08-03T21:14:49Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "After Colleges Reject ‘Compact,’ Trump Officials Try a Letter",
-      "link": "https://www.nytimes.com/2026/08/03/us/trump-mcmahon-colleges-letter.html",
-      "summary": "The open letter from Education Secretary Linda McMahon fell far short of the attempt at a compact last year that dangled research money in return for embracing the Trump administration’s agenda.",
-      "publishedAtUtc": "2026-08-03T21:51:44Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
-      "link": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
-      "summary": "Jason Arday was regarded as an academic superstar, but then questions about his work prompted scrutiny of his backstory and counterclaims of racism When the superstar academic Jason Arday took to the stage at the British Sociological Association’s 75th anniversary conference earlier this year, he delivered a talk called Wanted Dead or Alive: the Playbook. The youngest black professor in Cambridge University’s history told an audience of his peers that the playbook in question had helped bring down some of the biggest names in US academia. Conservative “activists” were trawling through the work of black academics, looking for anything to use against them: inconsistencies, citation errors, passages in their work that were similar to existing papers. Continue reading...",
-      "publishedAtUtc": "2026-08-01T11:45:52Z",
-      "domain": "theguardian.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "P&G seals $3.8bn deal for supplements company Thorne",
-      "link": "https://www.ft.com/content/237bfa1a-e1af-493c-a6a6-ef2f36b519f8?syn-25a6b1a6=1",
-      "summary": "Consumer goods group expands its health business in a sector that has boomed since Covid pandemic",
-      "publishedAtUtc": "2026-08-04T18:32:20Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "MPs call for routine lead testing for children living near abandoned mines",
-      "link": "https://www.ft.com/content/b15dbbf8-d479-4be6-ba3c-c7e6831fbcca?syn-25a6b1a6=1",
-      "summary": "Health risks from Britain’s industrial past have been ‘left unaddressed’ for too long, Welsh secretary told",
-      "publishedAtUtc": "2026-08-02T04:00:06Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Luxembourg and WHO sign two strategic agreements",
-      "link": "https://www.who.int/news/item/23-12-2024-luxembourg-and-who-sign-two-strategic-agreements",
-      "summary": "A Strategic Partnership Framework (SPF) with the Ministry of Development Cooperation and Humanitarian Affairs and multiyear agreement with the Ministry of Health and Social Safety was signed on 20 December 2024. By signing two new partnership agreements, Luxembourg reaffirmed its continued support for WHO to fulfill a shared mission to promote, provide and protect health.",
-      "publishedAtUtc": "2024-12-23T16:44:44Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "G20 health ministers rally support for WHO’s Investment Round",
-      "link": "https://www.who.int/news/item/01-11-2024-g20-health-ministers-rally-support-for-who-s-investment-round",
-      "summary": "Ministers of Health expressed their support for WHO's Investment Round during a G20 meeting chaired by Brazil held today in Rio de Janeiro.",
-      "publishedAtUtc": "2024-10-31T18:48:12Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Palantir tool has not cut hospital discharge delays, says study",
-      "link": "https://www.ft.com/content/cbd1a5ad-ffe7-43c2-9760-16bbefcb6cf4?syn-25a6b1a6=1",
-      "summary": "Think-tank’s findings likely to add to calls for audit of NHS England claims around Federated Data Platform",
-      "publishedAtUtc": "2026-07-27T04:00:14Z",
-      "domain": "ft.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The Guardian University Guide 2026 – the rankings",
-      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
-      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
-      "publishedAtUtc": "2025-09-13T07:01:01Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "‘Without this it’s all just tourists’: the fight to save Soho’s last primary school",
-      "link": "https://www.theguardian.com/education/2026/jul/18/without-this-school-its-all-just-tourists-fight-for-soho-last-primary",
-      "summary": "Falling pupil numbers have left ‘unique’ London school facing an uncertain future, but its supporters have ambitious plans Sandwiched between a strip club, a West End theatre and a pub might not be the most obvious location for a school but Soho Parish C of E primary has thrived for decades among the colourful charms of inner London. But in an area that once had 16 schools, Soho Parish is the last remaining and its time may soon be up, a victim of the post-Covid downturn and falling pupil numbers that are forecast to close hundreds of primary schools across England. Continue reading...",
-      "publishedAtUtc": "2026-07-18T08:00:52Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "The London members’ clubs joining the wellness revolution",
-      "link": "https://www.ft.com/content/0a9c2833-b913-460e-8d79-c1b8ea661c08",
-      "summary": "Socialising is still the focus, but as people quit alcohol for healthier pursuits, the industry is responding to demand",
-      "publishedAtUtc": "2026-07-28T04:00:05Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Lead pollution poses health risk, says review sparked by FT investigation",
-      "link": "https://www.ft.com/content/92b0ffcb-3878-400b-ad1a-80597b7b9450?syn-25a6b1a6=1",
-      "summary": "Animals reared near ex-mining sites ‘can have high, potentially toxic concentrations of metals’, academics find",
-      "publishedAtUtc": "2026-07-26T04:00:08Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
-    },
-    {
-      "title": "Maha Inc: how companies tied to Kennedy’s movement are poised to benefit",
-      "link": "https://www.ft.com/content/1a7cdff0-5e52-4fa1-8b21-978e501eb791?syn-25a6b1a6=1",
-      "summary": "Kaleidoscope of industries emerge as early winners from administration’s health regulation overhaul",
-      "publishedAtUtc": "2026-07-25T11:00:09Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-07T20:01:50.571610Z"
     },
     {
@@ -2317,44 +2341,9 @@
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-03T23:20:02.298246Z"
-    },
-    {
-      "title": "Montessori learning is being shut down at Leah’s school – is a push towards ‘explicit instruction’ to blame?",
-      "link": "https://www.theguardian.com/australia-news/2026/aug/03/montessori-learning-is-being-shut-down-at-leahs-school-is-a-push-towards-explicit-instruction-to-blame",
-      "summary": "Critics say the one size-fits-all approach doesn’t work for all students and there are questions about the body that helped design it Michelle’s year-eight daughter, Leah*, has been in and out of hospital since birth with complex medical issues, and Michelle says flexible learning through a Montessori program has allowed her to keep up with school. She says the Montessori stream at their nearby public school in Victoria has taken a lot of anxiety out of her daughter’s education, due to its “self-directed learning”. Continue reading...",
-      "publishedAtUtc": "2026-08-03T15:00:21Z",
-      "domain": "theguardian.com",
-      "score": 96.0,
-      "healthHits": 1,
-      "educationHits": 4,
-      "reason": "relevance=43, credibility=35, freshness=18, health_hits=1, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-03T21:21:58.184736Z"
-    },
-    {
-      "title": "Man who returned fire at In-N-Out gunman had done firearm training after 2021 mass shooting",
-      "link": "https://www.theguardian.com/us-news/2026/aug/03/in-n-out-shooting-idaho",
-      "summary": "Police credited Jordan Salinas with limiting number of victims in attack on restaurant in Twin Falls, Idaho A healthcare worker returning fire on a 24-year-old gunman who killed three people and wounded several others an In-N-Out Burger in Twin Falls, Idaho, has said his impulse to confront the attacker was “automatic” and “mechanical”. That description from 35-year-old Jordan Salinas came in an interview with the Idaho Statesman that was published on Sunday, providing a detailed account of actions that police credited with limiting the number of victims in the attack a day earlier. Continue reading...",
-      "publishedAtUtc": "2026-08-03T19:05:35Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-03T21:21:58.184736Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "ff3275a636c19926e9244d6b4ff17336823b15d6",
-      "sourceTitle": "Currency crash and visa crackdowns force Indian students to rethink studying abroad",
-      "sourceUrl": "https://www.bbc.com/news/articles/c8x2gd9lkxzo?at_medium=RSS&at_campaign=rss",
-      "sourceDomain": "bbc.com",
-      "publishedAtUtc": "2026-06-21T23:44:50.435823Z",
-      "slug": "global-health-and-education-watch-currency-crash-and-visa-crackdowns-force-indian-students-to",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-currency-crash-and-visa-crackdowns-force-indian-students-to",
-      "mainImage": "/images/global-news/2026/2026-06-21-global-health-and-education-watch-currency-crash-and-visa-crackdowns-force-india.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-21-global-health-and-education-watch-currency-crash-and-visa-crackdowns-force-india.jpg"
-    },
     {
       "contentHash": "cd522e1f71e9bfa2415dbb02ab1e4779de3e8f81",
       "sourceTitle": "Rates on New Student Loans Will Rise on July 1",
@@ -6743,146 +6732,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-in-dr-congo-childhood-deaths-rise-hopes-raised-2",
       "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-in-dr-congo-childhood-deaths-rise-hopes-.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-in-dr-congo-childhood-deaths-rise-hopes-.jpg"
+    },
+    {
+      "contentHash": "2d611ffa90f0f434bb37f96755684ac6adb02e7d",
+      "sourceTitle": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/8/7/ebola-cases-top-4000-in-drc-as-who-urges-ervebo-vaccine-trial?traffic_source=rss",
+      "sourceDomain": "aljazeera.com",
+      "publishedAtUtc": "2026-08-07T21:55:15.581438Z",
+      "slug": "global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+      "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-07-12T15:14:43.304094Z",
-      "windowStartUtc": "2026-07-12T12:00:00Z",
-      "publishedInWindowBefore": 2,
-      "hoursLeftInWindow": 9,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "ft.com",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "ft.com": 2,
-        "aljazeera.com": 2,
-        "theguardian.com": 5,
-        "nytimes.com": 2,
-        "who.int": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 85,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 85,
-      "candidateCacheCount": 156,
-      "candidatesAfterSourceDedupe": 23,
-      "candidatesAfterDedupe": 23,
-      "duplicateSkips": {
-        "historyHash": 62,
-        "historySource": 0,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "UK becoming ‘wild west’ for experimental peptides, expert warns",
-          "link": "https://www.theguardian.com/society/2026/jul/12/uk-wild-west-for-experimental-peptides-expert",
-          "score": 74,
-          "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "At last, a proper excuse for monoglots to learn another language: it helps keep your brain young | Rhiannon Lucy Cosslett",
-          "link": "https://www.theguardian.com/commentisfree/2026/jul/12/learn-another-language-french-restaurant-service-multilingual",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        },
-        {
-          "title": "UK couple found burned and semi-conscious in Almería amid Spanish wildfires",
-          "link": "https://www.theguardian.com/world/2026/jul/12/uk-couple-burned-semi-conscious-almeria-spanish-wildfires",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "UK becoming ‘wild west’ for experimental peptides, expert warns",
-        "link": "https://www.theguardian.com/society/2026/jul/12/uk-wild-west-for-experimental-peptides-expert",
-        "score": 74,
-        "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: UK becoming ‘wild west’ for experimental peptides, expert warns",
-      "generatedWordCount": 1258,
-      "mainImage": "/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 1672.1961900558217,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1200.0,
-        "generatedWords": 1258.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/9d33b020347000ef159ce7e9e8b349a0450a0fdf/0_0_2000_1600/master/2000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=04908a8c7c44af01c2650ebf09a0ce43",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptides-expert-warns"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-12-global-health-and-education-watch-uk-becoming-wild-west-for-experimental-peptide.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 3
-    },
     {
       "ranAtUtc": "2026-07-12T16:13:56.914774Z",
       "windowStartUtc": "2026-07-12T12:00:00Z",
@@ -39097,6 +38960,142 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 5
+    },
+    {
+      "ranAtUtc": "2026-08-07T21:55:15.581438Z",
+      "windowStartUtc": "2026-08-07T13:00:00Z",
+      "publishedInWindowBefore": 5,
+      "hoursLeftInWindow": 4,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com",
+        "who.int"
+      ],
+      "recentDomainCounts": {
+        "aljazeera.com": 2,
+        "nytimes.com": 3,
+        "news.un.org": 2,
+        "who.int": 2,
+        "theguardian.com": 3
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 60,
+      "primaryCandidatesFetched": 87,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 87,
+      "candidateCacheCount": 195,
+      "candidatesAfterSourceDedupe": 47,
+      "candidatesAfterDedupe": 47,
+      "duplicateSkips": {
+        "historyHash": 38,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "‘Black-Bear Pastrami’ Is No Longer on the Menu in This College’s Dorms",
+          "link": "https://www.nytimes.com/2026/08/07/nyregion/cornell-student-bear-meat.html",
+          "score": 80,
+          "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0"
+        },
+        {
+          "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+          "link": "https://www.aljazeera.com/news/2026/8/7/ebola-cases-top-4000-in-drc-as-who-urges-ervebo-vaccine-trial?traffic_source=rss",
+          "score": 79,
+          "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1"
+        },
+        {
+          "title": "Why are ultra-processed food firms panicking and suing? Because they know time is running out | Felicity Lawrence",
+          "link": "https://www.theguardian.com/commentisfree/2026/aug/07/ultra-processed-food-firms-sue-harm-products-regulation",
+          "score": 76,
+          "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+        "link": "https://www.aljazeera.com/news/2026/8/7/ebola-cases-top-4000-in-drc-as-who-urges-ervebo-vaccine-trial?traffic_source=rss",
+        "score": 79,
+        "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Ebola cases top 4,000 in DRC as WHO urges",
+      "generatedWordCount": 1179,
+      "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5760
+      },
+      "generatedImageSharpness": 900.6097507611015,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 950.0,
+        "generatedWords": 1179.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/08/reuters_6a763a20-1786133024.jpg?resize=1920%2C1440",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-ebola-cases-top-4-000-in-drc-as-who-urges.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 6
     }
   ]
 }
