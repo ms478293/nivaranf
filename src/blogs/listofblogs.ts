@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-why-are-ultra-processed-food-firms-panicking-and-suing-because",
+    title: "Global Health and Education Watch: Why are ultra-processed food firms panicking and suing? Because",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-07-global-health-and-education-watch-why-are-ultra-processed-food-firms-panicking-a.jpg",
+    date: "2026-08-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-boy-kills-grandparents-and-then-five-teachers-thai-authorities",
     title: "Global Health and Education Watch: Boy Kills Grandparents and Then Five Teachers, Thai Authorities",
     summary:
