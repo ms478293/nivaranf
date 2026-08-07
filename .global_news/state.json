@@ -1,19 +1,7 @@
 {
   "windowStartUtc": "2026-08-07T00:00:00Z",
-  "publishedInWindow": 4,
+  "publishedInWindow": 5,
   "candidateCache": [
-    {
-      "title": "‘It can make you psychotic or give you a cardiac arrest’: why are so many children vaping the ‘prison drug’ spice?",
-      "link": "https://www.theguardian.com/society/2026/aug/06/psychotic-cardiac-arrest-children-vaping-prison-drug-spice",
-      "summary": "Parents and teachers worry about the number of kids who vape cannabis. But many of them are using something far more dangerous – without even realising it I bumped into an old acquaintance the other day. Updating me on his children’s ages, he said, with an eyeroll of resignation: “My daughter’s 15 now; just found a cannabis vape in her room.” It’s an increasingly common and concerning situation for parents – with no way of telling if a vape does in fact contain weed (which comes with its own risks, just like vaping tobacco) or something much worse. Instead of the natural cannabinoids THC or CBD, these vapes can contain a much cheaper substitute: the “prison drug” spice. Last year scientists from the University of Bath analysed 1,923 vapes that had been confiscated from children in 114 schools in England, and found that 13% contained spice. In London and Lancashire it was 25%. And this is among vapes of all kinds, nicotine included, not just those that purported to contain cannabis. As for vapes labelled as containing THC, CBD or cannabis, when the drug-testing service Wedinos (part of Public Health Wales) examined 297 samples received in the year up to March 2025, it found that 39% contained spice. Continue reading...",
-      "publishedAtUtc": "2026-08-06T09:00:44Z",
-      "domain": "theguardian.com",
-      "score": 98.0,
-      "healthHits": 2,
-      "educationHits": 3,
-      "reason": "relevance=45, credibility=35, freshness=18, health_hits=2, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
-    },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
       "link": "https://www.who.int/news/item/17-05-2024-ireland-and-who-work-together-to-improve-access-to-assistive-technology-globally",
@@ -24,7 +12,19 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
+    },
+    {
+      "title": "‘It can make you psychotic or give you a cardiac arrest’: why are so many children vaping the ‘prison drug’ spice?",
+      "link": "https://www.theguardian.com/society/2026/aug/06/psychotic-cardiac-arrest-children-vaping-prison-drug-spice",
+      "summary": "Parents and teachers worry about the number of kids who vape cannabis. But many of them are using something far more dangerous – without even realising it I bumped into an old acquaintance the other day. Updating me on his children’s ages, he said, with an eyeroll of resignation: “My daughter’s 15 now; just found a cannabis vape in her room.” It’s an increasingly common and concerning situation for parents – with no way of telling if a vape does in fact contain weed (which comes with its own risks, just like vaping tobacco) or something much worse. Instead of the natural cannabinoids THC or CBD, these vapes can contain a much cheaper substitute: the “prison drug” spice. Last year scientists from the University of Bath analysed 1,923 vapes that had been confiscated from children in 114 schools in England, and found that 13% contained spice. In London and Lancashire it was 25%. And this is among vapes of all kinds, nicotine included, not just those that purported to contain cannabis. As for vapes labelled as containing THC, CBD or cannabis, when the drug-testing service Wedinos (part of Public Health Wales) examined 297 samples received in the year up to March 2025, it found that 39% contained spice. Continue reading...",
+      "publishedAtUtc": "2026-08-06T09:00:44Z",
+      "domain": "theguardian.com",
+      "score": 90.0,
+      "healthHits": 2,
+      "educationHits": 3,
+      "reason": "relevance=45, credibility=35, freshness=10, health_hits=2, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Primary schools to be told to identify children at risk of future unemployment",
@@ -36,7 +36,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -48,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -60,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
@@ -72,7 +72,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -84,7 +84,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -96,7 +96,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "ACLU blasts Trump’s new orders on birthright citizenship, saying they are doomed to fail in court– as it happened",
@@ -108,7 +108,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "New Ebola vaccine trial launches as outbreak spreads in DR Congo",
@@ -120,7 +120,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Why are ultra-processed food firms panicking and suing? Because they know time is running out | Felicity Lawrence",
@@ -132,7 +132,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Women must not be put under pressure to have ‘ideal birth’, says Yvette Cooper",
@@ -144,7 +144,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "U.S. Restores Some Vaccine and Health Aid to Unicef, Gavi and World Food Programme",
@@ -156,7 +156,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=4, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Tuskegee University Banned Bonnets and Durags. Students Mostly Wonder Why.",
@@ -168,7 +168,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The mRNA technology behind Moderna’s Covid vaccine reaches the flu",
@@ -180,7 +180,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
@@ -192,7 +192,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Travel restrictions – from Israel and Europe – trap students in Gaza",
@@ -204,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Security Council LIVE: Warnings of famine and collapse as South Sudan's peace deal frays",
@@ -216,7 +216,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Trump Administration Plans to Upend Head Start by Deregulating It",
@@ -228,7 +228,7 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=35, credibility=35, freshness=4, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Friday briefing: What the Jason Arday row reveals about equality in modern Britain",
@@ -240,7 +240,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "CDC reportedly expands scope of US cyclosporiasis outbreak to 15 states, including Arkansas and Missouri",
@@ -252,7 +252,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Chipotle removes jalapeños amid US salmonella outbreak investigation",
@@ -264,7 +264,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -276,7 +276,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "University of Greater Manchester ends contract of embattled vice-chancellor",
@@ -288,7 +288,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Top Ugandan footballer killed by robbers armed with paving stones",
@@ -300,7 +300,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "They gave me to someone who could not read or write … it would be better if you buried me alive",
@@ -312,7 +312,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "NHS must prepare for annual summer heat pressures, says Yvette Cooper",
@@ -324,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -336,7 +336,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "A Promising Heart Drug Fails, Challenging a Long-Held Theory of Disease",
@@ -348,7 +348,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
+    },
+    {
+      "title": "College Is More Political Than Ever. But in a New, Insidious Way.",
+      "link": "https://www.nytimes.com/2026/08/07/opinion/college-politics-woke-polarization.html",
+      "summary": "Students are self-segregating by ideology.",
+      "publishedAtUtc": "2026-08-07T09:02:06Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Justice Department Accuses Duke Law School of Racial Discrimination",
@@ -360,7 +372,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Incident at Texas School Underscores Concerns About Police Officers on Campuses",
@@ -372,19 +384,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
-      "title": "Thailand School Shooting Leaves at Least Six",
+      "title": "Thailand School Shooting Leaves at Least Eight Dead",
       "link": "https://www.nytimes.com/2026/08/07/world/asia/thailand-school-shooting.html",
-      "summary": "A student opened fire at a high school near Bangkok, according to local news media.",
-      "publishedAtUtc": "2026-08-07T06:15:13Z",
+      "summary": "A student killed his grandparents at their home before opening fire at a high school near Bangkok and turning the gun on himself, the authorities said.",
+      "publishedAtUtc": "2026-08-07T08:25:21Z",
       "domain": "nytimes.com",
       "score": 70.0,
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Dons call for Cambridge leaders to take blame for Jason Arday appointment",
@@ -396,7 +408,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Danish pupils will have to orally defend essays in attempt to combat AI cheating",
@@ -408,19 +420,43 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
+    },
+    {
+      "title": "Thailand school shooting: eight killed including suspected attacker, police say",
+      "link": "https://www.theguardian.com/world/2026/aug/07/thailand-school-shooting-debsirin-nonthaburi-bangkok",
+      "summary": "Teenager killed his grandparents ⁠before opening fire at school near Bangkok, where 23 others were wounded Thailand school shooting – latest updates A Thai teenager killed his grandparents before opening fire at his school, where he shot five people dead and took his own life, police have said, in an attack that has shaken a country struggling to deal with gun violence. Police said the 14-year-old pupil wounded another 23 people in the school ⁠shooting on the outskirts of Bangkok on Friday morning. Continue reading...",
+      "publishedAtUtc": "2026-08-07T07:51:24Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
+    },
+    {
+      "title": "The other classroom: Returning to sacred knowledge",
+      "link": "https://www.aljazeera.com/features/longform/2026/8/7/the-other-classroom-returning-to-sacred-knowledge?traffic_source=rss",
+      "summary": "Why doctors, lawyers and other professionals are turning to Darul Qasim in Chicago to rediscover Islamic scholarship.",
+      "publishedAtUtc": "2026-08-07T08:41:06Z",
+      "domain": "aljazeera.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "At least six killed, 15 wounded in Thailand school shooting, police say",
       "link": "https://www.aljazeera.com/news/2026/8/7/one-killed-four-injured-in-thailand-school-shooting-officials-say?traffic_source=rss",
-      "summary": "Authorities say suspected gunman also found dead after shooting at a school northwest of Bangkok.",
+      "summary": "Authorities say suspected gunman shot and ⁠killed his grandparents ​at their home before opening fire at the school.",
       "publishedAtUtc": "2026-08-07T04:23:52Z",
       "domain": "aljazeera.com",
       "score": 70.0,
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -432,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "He Had Tenure. The New School Laid Him Off Anyway.",
@@ -444,7 +480,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "‘Children were calling for their mummies’: UK pupils struggle in 40C-plus classrooms",
@@ -456,7 +492,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left | Jason Okundaye",
@@ -468,7 +504,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Strengthening public health across Lebanon with EIB Global",
@@ -480,7 +516,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "You’re Welcome at SUNY, New York Tells Students Disenrolled by Howard",
@@ -492,7 +528,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
@@ -504,7 +540,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
@@ -516,7 +552,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Gaza ‘unsafe for civilians’ as Israeli attacks hit homes and classrooms",
@@ -528,7 +564,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Recovery in Ukraine, one life at a time",
@@ -540,7 +576,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=4, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Mexico’s top university orders 58,000 students to resit entrance exam after suspected cheating",
@@ -552,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Education Dept. to Wipe Out Student Loans of 170,000 More Defrauded Borrowers",
@@ -564,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Scrapping foreign doctors scheme will hurt the NHS | Letter",
@@ -576,7 +612,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
@@ -588,7 +624,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
@@ -600,7 +636,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
@@ -612,7 +648,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The U.S. Relies on Family Caregivers. Millions of Them Are Kids.",
@@ -624,7 +660,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Study finds three midlife health factors that could delay dementia for 13 years",
@@ -636,7 +672,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Peruvian cardinal hails $150m lead poisoning settlement for 1,300 people as a ‘historic milestone’",
@@ -648,7 +684,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Pakistan precinct suspends all 78 officers and staff over alleged rape at police station",
@@ -660,7 +696,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -672,7 +708,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
@@ -684,7 +720,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
@@ -696,7 +732,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Did 75,000 Students Cheat on a College-Entrance Exam in Mexico?",
@@ -708,7 +744,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "F.D.A. Approves Moderna’s mRNA Flu Vaccine",
@@ -720,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Senate Confirms Dr. Erica Schwartz as C.D.C. Director",
@@ -732,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Spotlight on Fauci Said to Boost Book Sales for Kennedy and His Publisher",
@@ -744,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Star Scholar Jason Arday Resigns From Cambridge",
@@ -756,7 +792,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "New Zealand is Racing to Vaccinate Its Endangered Birds Against Bird Flu",
@@ -768,7 +804,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Exiled PM vows to return to Bangladesh despite execution threat",
@@ -780,7 +816,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "P&G seals $3.8bn deal for supplements company Thorne",
@@ -792,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "DR Congo: New centre opens at heart of record Ebola outbreak",
@@ -804,7 +840,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Wildfire smoke poses hidden health threat",
@@ -816,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Cancer survivors need protection from future discrimination, say German politicians",
@@ -828,19 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
-    },
-    {
-      "title": "The rapid rise of English councils funding private online school places",
-      "link": "https://www.ft.com/content/40bca32f-d715-48f9-9a8f-fb4bd3f199b8?syn-25a6b1a6=1",
-      "summary": "Virtual learning is a lifeline for some but a lack of regulation is raising concerns",
-      "publishedAtUtc": "2026-07-24T04:00:04Z",
-      "domain": "ft.com",
-      "score": 59.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO launches unique training course to enable parliamentarians in global health security",
@@ -852,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "I’m all for the nanny state – but we should abolish fines for holidays in term time | Rhiannon Lucy Cosslett",
@@ -864,7 +888,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -876,7 +900,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO statement on notification of withdrawal of the United States",
@@ -888,7 +912,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "WHO comments on United States’ announcement of intent to withdraw",
@@ -900,7 +924,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Self-Help Influencer Nicole LePera Faces Litigation",
@@ -912,7 +936,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Brown’s President Will Resign after a Tenure that Included Trump Deal",
@@ -924,7 +948,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "After Colleges Reject ‘Compact,’ Trump Officials Try a Letter",
@@ -936,7 +960,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Mildred Pitts Walter, Author of Books for Black Children, Dies at 103",
@@ -948,7 +972,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
@@ -960,7 +984,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "MPs call for routine lead testing for children living near abandoned mines",
@@ -972,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Luxembourg and WHO sign two strategic agreements",
@@ -984,7 +1008,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "G20 health ministers rally support for WHO’s Investment Round",
@@ -996,7 +1020,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Palantir tool has not cut hospital discharge delays, says study",
@@ -1008,7 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1020,7 +1044,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "‘Without this it’s all just tourists’: the fight to save Soho’s last primary school",
@@ -1032,7 +1056,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "The London members’ clubs joining the wellness revolution",
@@ -1044,7 +1068,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Lead pollution poses health risk, says review sparked by FT investigation",
@@ -1056,7 +1080,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
     },
     {
       "title": "Maha Inc: how companies tied to Kennedy’s movement are poised to benefit",
@@ -1068,6 +1092,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-07T09:16:31.959114Z"
+    },
+    {
+      "title": "The rapid rise of English councils funding private online school places",
+      "link": "https://www.ft.com/content/40bca32f-d715-48f9-9a8f-fb4bd3f199b8?syn-25a6b1a6=1",
+      "summary": "Virtual learning is a lifeline for some but a lack of regulation is raising concerns",
+      "publishedAtUtc": "2026-07-24T04:00:04Z",
+      "domain": "ft.com",
+      "score": 59.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
       "cachedAtUtc": "2026-08-07T07:41:37.555103Z"
     },
     {
@@ -2281,92 +2317,9 @@
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=4",
       "cachedAtUtc": "2026-08-03T11:47:11.208147Z"
-    },
-    {
-      "title": "Liechtenstein’s archaic abortion laws need to be modernised. But a prince is standing in the way | Gabriella Alvarez-Hummel",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/03/liechtenstein-abortion-law-modernised-prince-alois",
-      "summary": "The hurdles for women who have to travel abroad to access abortion are considerable, but Hereditary Prince Alois says he will veto any changes The first person Maria* called when she found out she was pregnant was her doctor. The second person was a lawyer. The single mother of one was in shock, and considering terminating the pregnancy. But she first had to make sure that she wasn’t about to do something illegal, because all she knew was that abortions were forbidden where she lived . “On top of the emotional mountain that was already there, I also had to deal with this,” Maria told me. She also knew she wouldn’t get any information about abortions in her own country – that’s illegal too. After making her decision, she drove to a clinic across the border. It was a stressful, if short, 45-minute drive, at the end of which another hurdle was waiting: “Oh, you’re from Liechtenstein?” the receptionist said, according to Maria. “Then you have to pay immediately – 680 Swiss francs (£620) please.” She was taken aback and asked: “What if I can’t pay that right now?” The receptionist replied: “Then you’ll have to come back tomorrow.” Gabriella Alvarez-Hummel is a campaigner and journalist from Liechtenstein, focusing on reproductive rights Continue reading...",
-      "publishedAtUtc": "2026-08-03T04:00:41Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
-    },
-    {
-      "title": "US representative Marcy Kaptur taken to hospital after car crash",
-      "link": "https://www.theguardian.com/us-news/2026/aug/02/marcy-kaptur-congresswoman-hospital-car-crash",
-      "summary": "Toledo police say Ohio Democrat is active and alert after two-vehicle hit-and-run collision on Sunday Marcy Kaptur is being treated ⁠for non-life-threatening injuries after a car crash in Toledo, ⁠ Ohio , on Sunday, ⁠the ​ Democratic US representative’s office said. Kaptur, 80, was a passenger ⁠in the vehicle and on her way to church, her office ⁠said. Toledo police did not ​respond to ‌a request from Reuters for ‌comment. Continue reading...",
-      "publishedAtUtc": "2026-08-02T20:20:52Z",
-      "domain": "theguardian.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
-    },
-    {
-      "title": "Suicide bombing kills at least 14 people in Pakistan’s Swat Valley",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/3/suicide-bombing-kills-at-least-14-people-in-pakistans-swat-valley?traffic_source=rss",
-      "summary": "Footage shows blast victims hurried into a hospital in northwestern Pakistan, after a suicide bombing.",
-      "publishedAtUtc": "2026-08-03T00:18:50Z",
-      "domain": "aljazeera.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
-    },
-    {
-      "title": "India’s Cockroach movement threatens to restart protests after mass student arrests",
-      "link": "https://www.theguardian.com/world/2026/jul/28/india-cockroach-janta-party-cjp-demands-protesters-release",
-      "summary": "Cockroach Janta party says government has broken promise, with detentions in Delhi, Assam, West Bengal and Bihar India’s youth-led “Cockroach” movement, whose nationwide protests forced the resignation of the education minister , has accused the government of backtracking on its promise not to act against student protesters and has threatened to restart demonstrations. The Cockroach Janta party (CJP), which organised mass protests over exam paper leaks and other irregularities, said it had received reports of hundreds of students being detained or “harassed” by police. Continue reading...",
-      "publishedAtUtc": "2026-07-28T07:23:37Z",
-      "domain": "theguardian.com",
-      "score": 65.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=26, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
-    },
-    {
-      "title": "Trump’s Effort to Gut Education Dept. Rebuked by Senate Committee",
-      "link": "https://www.nytimes.com/2026/07/30/us/politics/senate-committee-education-dept.html",
-      "summary": "The bipartisan bill is a long way from becoming law, but it represents the strongest opposition yet from Congress to the administration’s agenda.",
-      "publishedAtUtc": "2026-07-30T20:19:01Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
-    },
-    {
-      "title": "The cost and burden of avoiding ‘forever chemicals’ should not fall on parents | Letter",
-      "link": "https://www.theguardian.com/environment/2026/jul/30/the-cost-and-burden-of-avoiding-forever-chemicals-should-not-fall-on-parents",
-      "summary": "Kendal Archer says it is the government’s responsibility to legislate and big agriculture’s responsibility not to cover our food in chemicals I read your article ( ‘Forever chemicals’ linked to gut inflammation in children after early exposure, 24 July ) on prenatal and early-life exposure to Pfas leading to higher levels of intestinal inflammation in children – and by extension colorectal cancer – with interest. I’m a mum of two. Since my first pregnancy, I have grappled with the endless advice and contradictions on health. Should I use glass bottles of non-organic milk, or plastic bottles of organic milk. Organic broccoli wrapped in plastic, or plastic-free non-organic broccoli. Continue reading...",
-      "publishedAtUtc": "2026-07-30T17:04:27Z",
-      "domain": "theguardian.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-03T07:43:29.249767Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "e6ffb98c2e32605aca405d74a85ebb7bacb2997b",
-      "sourceTitle": "Student Cheating Is Becoming Impossible to Detect in an A.I. Era",
-      "sourceUrl": "https://www.nytimes.com/2026/06/18/us/ai-apps-students-cheat.html",
-      "sourceDomain": "nytimes.com",
-      "publishedAtUtc": "2026-06-21T00:29:34.287230Z",
-      "slug": "global-health-and-education-watch-student-cheating-is-becoming-impossible-to-detect-in-an",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-student-cheating-is-becoming-impossible-to-detect-in-an",
-      "mainImage": "/images/global-news/2026/2026-06-21-global-health-and-education-watch-student-cheating-is-becoming-impossible-to-det.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-21-global-health-and-education-watch-student-cheating-is-becoming-impossible-to-det.jpg"
-    },
     {
       "contentHash": "e0727cd5ac93358095c14f279855f9c8b760680f",
       "sourceTitle": "Ebola in DR Congo: One month on, scaled up response remains insufficient",
@@ -6755,144 +6708,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-justice-department-accuses-duke-law-school-of-racial-discrimination",
       "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-justice-department-accuses-duke-law-school-of-.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-justice-department-accuses-duke-law-school-of-.jpg"
+    },
+    {
+      "contentHash": "94d7c89b7cf1e6ad26a5fc2374e7e12ffc5f665d",
+      "sourceTitle": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+      "sourceUrl": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+      "sourceDomain": "who.int",
+      "publishedAtUtc": "2026-08-07T09:16:31.959114Z",
+      "slug": "global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+      "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-07-11T23:09:01.785486Z",
-      "windowStartUtc": "2026-07-11T12:00:00Z",
-      "publishedInWindowBefore": 7,
-      "hoursLeftInWindow": 1,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "ft.com",
-        "nytimes.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "nytimes.com": 3,
-        "theguardian.com": 5,
-        "ft.com": 2,
-        "aljazeera.com": 2
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 84,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 84,
-      "candidateCacheCount": 169,
-      "candidatesAfterSourceDedupe": 24,
-      "candidatesAfterDedupe": 24,
-      "duplicateSkips": {
-        "historyHash": 60,
-        "historySource": 0,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Heatwave conditions in England and Wales to continue into next week, says Met Office",
-          "link": "https://www.theguardian.com/uk-news/2026/jul/11/heatwave-conditions-england-wales-next-week-met-office",
-          "score": 74,
-          "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "UK swelters in third heatwave of the year as western Europe counts cost of hottest-ever June",
-          "link": "https://www.theguardian.com/environment/2026/jul/09/uk-swelters-third-heatwave-western-europe-counts-cost-hottest-ever-june",
-          "score": 66,
-          "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "DJ and broadcaster Paul Gambaccini reveals Alzheimer’s diagnosis",
-          "link": "https://www.theguardian.com/media/2026/jul/10/paul-gambaccini-radio-tv-alzheimers-disease-diagnosis-health",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Heatwave conditions in England and Wales to continue into next week, says Met Office",
-        "link": "https://www.theguardian.com/uk-news/2026/jul/11/heatwave-conditions-england-wales-next-week-met-office",
-        "score": 74,
-        "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Heatwave conditions in England and Wales to continue into",
-      "generatedWordCount": 1231,
-      "mainImage": "/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 787.6638852591963,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1530.0,
-        "generatedWords": 1231.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/21da476cd35c9ba405ff46e24a2bceacbe25406f/1256_0_6278_5025/master/6278.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=faa56d5ba3cb7730c41fa8dde1d5b508",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-continue-into"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-11-global-health-and-education-watch-heatwave-conditions-in-england-and-wales-to-co.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 8
-    },
     {
       "ranAtUtc": "2026-07-12T00:10:08.585103Z",
       "windowStartUtc": "2026-07-12T00:00:00Z",
@@ -39093,6 +38922,142 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 4
+    },
+    {
+      "ranAtUtc": "2026-08-07T09:16:31.959114Z",
+      "windowStartUtc": "2026-08-07T00:00:00Z",
+      "publishedInWindowBefore": 4,
+      "hoursLeftInWindow": 3,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "who.int": 1,
+        "theguardian.com": 2,
+        "aljazeera.com": 1,
+        "nytimes.com": 2,
+        "news.un.org": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 91,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 91,
+      "candidateCacheCount": 193,
+      "candidatesAfterSourceDedupe": 53,
+      "candidatesAfterDedupe": 53,
+      "duplicateSkips": {
+        "historyHash": 36,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "The other classroom: Returning to sacred knowledge",
+          "link": "https://www.aljazeera.com/features/longform/2026/8/7/the-other-classroom-returning-to-sacred-knowledge?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "At least six killed, 15 wounded in Thailand school shooting, police say",
+          "link": "https://www.aljazeera.com/news/2026/8/7/one-killed-four-injured-in-thailand-school-shooting-officials-say?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+          "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+          "score": 67,
+          "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+        "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+        "score": 67,
+        "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Governments agree to continue their steady progress on proposed",
+      "generatedWordCount": 1679,
+      "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5120
+      },
+      "generatedImageSharpness": 2850.1073897122874,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 1058.0,
+        "generatedWords": 1679.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://cdn.who.int/media/images/default-source/governance/_wh19547.tmb-1200v.jpg?sfvrsn=826797c0_7",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-governments-agree-to-continue-their-steady-progress-on-proposed"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-07-global-health-and-education-watch-governments-agree-to-continue-their-steady-pro.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 5
     }
   ]
 }
