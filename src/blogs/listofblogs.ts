@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-takedown-of-jason-arday-has-overjoyed-the-right",
+    title: "Global Health and Education Watch: The takedown of Jason Arday has overjoyed the right",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-08-global-health-and-education-watch-the-takedown-of-jason-arday-has-overjoyed-the-.jpg",
+    date: "2026-08-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-lionel-messi-s-father-dies-aged-68-after-a-long",
     title: "Global Health and Education Watch: Lionel Messi’s father dies aged 68 after a long",
     summary:
