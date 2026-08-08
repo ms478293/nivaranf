@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-yemen-s-collapsing-healthcare-forces-the-sick-to-seek-alternative",
+    title: "Global Health and Education Watch: Yemen’s collapsing healthcare forces the sick to seek alternative",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-08-global-health-and-education-watch-yemen-s-collapsing-healthcare-forces-the-sick-.jpg",
+    date: "2026-08-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cdc-reportedly-expands-scope-of-us-cyclosporiasis-outbreak-to",
     title: "Global Health and Education Watch: CDC reportedly expands scope of US cyclosporiasis outbreak to",
     summary:
