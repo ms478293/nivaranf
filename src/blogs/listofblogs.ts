@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-reading-scores-drop-for-n-y-c-students-amid-revamp-of",
+    title: "Global Health and Education Watch: Reading Scores Drop for N.Y.C. Students Amid Revamp of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-08-global-health-and-education-watch-reading-scores-drop-for-n-y-c-students-amid-re.jpg",
+    date: "2026-08-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-students-skinned-a-bear-in-a-dorm-cornell-realized",
     title: "Global Health and Education Watch: Students Skinned a Bear in a Dorm. Cornell Realized",
     summary:
