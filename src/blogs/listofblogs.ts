@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-rest-assured-the-new-cdc-director-thinks-abortion-surveillance",
+    title: "Global Health and Education Watch: Rest assured, the new CDC director thinks ‘abortion surveillance’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-08-global-health-and-education-watch-rest-assured-the-new-cdc-director-thinks-abort.jpg",
+    date: "2026-08-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-judge-rules-two-virginia-schools-must-change-confederate-names",
     title: "Global Health and Education Watch: Judge Rules Two Virginia Schools Must Change Confederate Names",
     summary:
