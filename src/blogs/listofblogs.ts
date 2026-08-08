@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-virus-behind-massive-outbreak-in-drc-could-be",
+    title: "Global Health and Education Watch: Ebola virus behind massive outbreak in DRC could be",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-08-global-health-and-education-watch-ebola-virus-behind-massive-outbreak-in-drc-cou.jpg",
+    date: "2026-08-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-lion-saved-as-cub-from-ukraine-war-and-brought",
     title: "Global Health and Education Watch: Lion saved as cub from Ukraine war and brought",
     summary:
