@@ -1,19 +1,7 @@
 {
   "windowStartUtc": "2026-08-09T02:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
-    {
-      "title": "‘I couldn’t breathe’: the deadly health burden of wildfire smoke",
-      "link": "https://www.theguardian.com/news/ng-interactive/2026/aug/08/wildfire-smoke-unknown-health-impacts",
-      "summary": "Scientists race to untangle complex links between exposure and mortality as fire weather grows more prevalent A thousand kilometres from the infernos gorging on northern Ontario’s boreal forests, Erin O’Connor watched the sky above Canada’s biggest city turn an “almost post-apocalyptic” orange as it filled with light-scattering particles of soot and ash. Stepping outside the halls of Toronto General hospital, where air filters were keeping patients safe from the worst of the fumes, she was struck by a smell so strong it felt like standing by a campfire. “It really hit you in the face as soon as you walked outside,” said O’Connor, who runs University Health Network’s emergency department and saw a rise in patients presenting with allergies and shortness of breath. “As the days progressed, it was like that everywhere. It seemed even inside you could smell that burning.” Continue reading...",
-      "publishedAtUtc": "2026-08-08T05:00:37Z",
-      "domain": "theguardian.com",
-      "score": 95.0,
-      "healthHits": 3,
-      "educationHits": 1,
-      "reason": "relevance=42, credibility=35, freshness=18, health_hits=3, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
-    },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
       "link": "https://www.who.int/news/item/17-05-2024-ireland-and-who-work-together-to-improve-access-to-assistive-technology-globally",
@@ -24,7 +12,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘It can make you psychotic or give you a cardiac arrest’: why are so many children vaping the ‘prison drug’ spice?",
@@ -36,7 +24,7 @@
       "healthHits": 2,
       "educationHits": 3,
       "reason": "relevance=45, credibility=35, freshness=10, health_hits=2, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Rest assured, the new CDC director thinks ‘abortion surveillance’ is essential | Arwa Mahdawi",
@@ -48,7 +36,19 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
+    },
+    {
+      "title": "‘I couldn’t breathe’: the deadly health burden of wildfire smoke",
+      "link": "https://www.theguardian.com/news/ng-interactive/2026/aug/08/wildfire-smoke-unknown-health-impacts",
+      "summary": "Scientists race to untangle complex links between exposure and mortality as fire weather grows more prevalent A thousand kilometres from the infernos gorging on northern Ontario’s boreal forests, Erin O’Connor watched the sky above Canada’s biggest city turn an “almost post-apocalyptic” orange as it filled with light-scattering particles of soot and ash. Stepping outside the halls of Toronto General hospital, where air filters were keeping patients safe from the worst of the fumes, she was struck by a smell so strong it felt like standing by a campfire. “It really hit you in the face as soon as you walked outside,” said O’Connor, who runs University Health Network’s emergency department and saw a rise in patients presenting with allergies and shortness of breath. “As the days progressed, it was like that everywhere. It seemed even inside you could smell that burning.” Continue reading...",
+      "publishedAtUtc": "2026-08-08T05:00:37Z",
+      "domain": "theguardian.com",
+      "score": 87.0,
+      "healthHits": 3,
+      "educationHits": 1,
+      "reason": "relevance=42, credibility=35, freshness=10, health_hits=3, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Thailand school shooting toll rises to nine after 12-year-old dies, police say",
@@ -60,7 +60,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=30, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -72,7 +72,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -84,7 +84,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Reading Scores Drop for N.Y.C. Students Amid Revamp of Literacy Program",
@@ -96,7 +96,19 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
+    },
+    {
+      "title": "Cockroach protests: parents of Indian students who took their own lives reveal pressure of leaked exam papers and resits",
+      "link": "https://www.theguardian.com/global-development/2026/aug/09/cockroach-protests-parents-of-indian-students-who-took-their-own-lives-reveal-pressure-of-leaked-exam-papers-and-resits",
+      "summary": "The number of student suicides in the country has risen steeply in the past 10 years and many families blame education system mismanagement as a contributing factor When the Indian government announced the resignation of its education minister in late July after weeks of protest, there were widespread celebrations. Students from across the country had joined the mass demonstrations led by the Cockroach Janta party amid growing resentment over repeated examination cancellations and question paper leaks. The pressure of exams in the country has only increased in recent years. The number of student suicides rose from 8,068 in 2014, to 14,488 in 2024 – an increase of roughly 80% – according to the Accidental Deaths and Suicides in India report released by the country’s National Crime Records Bureau. After family problems, failure in examinations has been listed as the leading cause of suicides among students. Continue reading...",
+      "publishedAtUtc": "2026-08-09T04:00:04Z",
+      "domain": "theguardian.com",
+      "score": 79.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=26, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘I hate what AI is doing to the minds and happiness of the young’: Katherine Rundell on the view from the classroom",
@@ -108,7 +120,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=26, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "With their assault on science, Trumpists aren’t just harming America – they’re harming themselves | Jan-Werner Müller",
@@ -120,7 +132,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Primary schools to be told to identify children at risk of future unemployment",
@@ -132,7 +144,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -144,7 +156,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -156,7 +168,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Ebola in DR Congo: Childhood deaths rise; hopes raised over new vaccine",
@@ -168,7 +180,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=10, health_hits=4, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "U.S. Restores Some Vaccine and Health Aid to Unicef, Gavi and World Food Programme",
@@ -180,7 +192,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=36, credibility=35, freshness=4, health_hits=4, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Thailand school shooting: eight killed including suspected attacker, police say",
@@ -192,7 +204,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=10, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -204,7 +216,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Students Skinned a Bear in a Dorm. Cornell Realized It Should Ban That.",
@@ -216,7 +228,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Ebola virus behind massive outbreak in DRC could be mutating, officials say",
@@ -228,7 +240,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Gaza health chief urges action to ‘save’ Dr Abu Safia before it’s too late",
@@ -240,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -252,7 +264,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "New Ebola vaccine trial launches as outbreak spreads in DR Congo",
@@ -264,7 +276,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "As Thailand Gets Known for Mass Shootings, Fresh Pledges to Fix Gun Laws",
@@ -276,7 +288,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Is it OK to talk about Ariana Grande’s body? There is no right answer",
@@ -288,7 +300,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Women must not be put under pressure to have ‘ideal birth’, says Yvette Cooper",
@@ -300,7 +312,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=31, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -312,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘Children were calling for their mummies’: UK pupils struggle in 40C-plus classrooms",
@@ -324,19 +336,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
-    },
-    {
-      "title": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left | Jason Okundaye",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
-      "summary": "The Cambridge academic has rightly now resigned. But that won’t end the targeting of senior black figures or the lazy way institutions promote faux equality ‘To be honest with you, I thought you’d just believe me.” That was the breathtaking response of Prof Jason Arday when the Guardian interrogated the details he provided of an alleged racist campaign of intimidation against him, which involved a severed pig’s head, a masked man wielding a knife and bullets in the post. Arday had been unable to provide evidence, and when the Guardian contacted the relevant parties, including a south London butcher and the police, his claims were either refuted or could not be verified. Arday, whose appointment as professor of sociology of education at Cambridge became a widely lauded moment in the aftermath of Black Lives Matter, has found himself in the eye of the storm. Allegations of extensive plagiarism in his doctoral thesis, completed at Liverpool John Moores University, recently made their way from the Substack of self-described “race realist” academic Nathan Cofnas into the national press. The defence of Arday had rested on the fact that an investigation had already been conducted, and cleared him of plagiarism. And yet the case has taken on a life of its own. Continue reading...",
-      "publishedAtUtc": "2026-08-06T05:00:39Z",
-      "domain": "theguardian.com",
-      "score": 69.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Strengthening public health across Lebanon with EIB Global",
@@ -348,7 +348,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Why are ultra-processed food firms panicking and suing? Because they know time is running out | Felicity Lawrence",
@@ -360,7 +360,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "CDC reportedly expands scope of US cyclosporiasis outbreak to 15 states, including Arkansas and Missouri",
@@ -372,7 +372,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
@@ -384,7 +384,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
@@ -396,7 +396,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Tuskegee University Banned Bonnets and Durags. Students Mostly Wonder Why.",
@@ -408,7 +408,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Boy Kills Grandparents and Then Five Teachers, Thai Authorities Say",
@@ -420,7 +420,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Millions in England face longer waits for mental health care as NHS providers plan cuts",
@@ -432,7 +432,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "The mRNA technology behind Moderna’s Covid vaccine reaches the flu",
@@ -444,7 +444,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Security Council LIVE: Warnings of famine and collapse as South Sudan's peace deal frays",
@@ -456,7 +456,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Education Dept. to Wipe Out Student Loans of 170,000 More Defrauded Borrowers",
@@ -468,7 +468,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Friday briefing: What the Jason Arday row reveals about equality in modern Britain",
@@ -480,7 +480,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
@@ -492,7 +492,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
@@ -504,7 +504,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
@@ -516,7 +516,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "NHS must prepare for annual summer heat pressures, says Yvette Cooper",
@@ -528,7 +528,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Cambridge academics reject university’s attempt to end row over Jason Arday",
@@ -540,19 +540,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
-    },
-    {
-      "title": "University of Greater Manchester ends contract of embattled vice-chancellor",
-      "link": "https://www.theguardian.com/uk-news/2026/aug/06/university-of-greater-manchester-ends-contract-vice-chancellor-george-holmes",
-      "summary": "George Holmes was suspended in 2025 over allegations involving financial mismanagement and other misconduct The University of Greater Manchester’s embattled vice-chancellor has had his contract terminated by the university’s governing body, ending a period of uncertainty over the university’s leadership. George Holmes, who had led the university for two decades, was initially suspended last year over allegations involving financial mismanagement and other misconduct. Continue reading...",
-      "publishedAtUtc": "2026-08-06T16:02:45Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Top Ugandan footballer killed by robbers armed with paving stones",
@@ -564,7 +552,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Israel indicts settler over death of Palestinian activist who worked on No Other Land",
@@ -576,7 +564,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -588,7 +576,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
@@ -600,7 +588,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
@@ -612,7 +600,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "He Had Tenure. The New School Laid Him Off Anyway.",
@@ -624,7 +612,19 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
+    },
+    {
+      "title": "The takedown of Jason Arday has overjoyed the right, and must be a wake-up call for the left | Jason Okundaye",
+      "link": "https://www.theguardian.com/commentisfree/2026/aug/06/jason-arday-dei-race-issues-university-of-cambridge",
+      "summary": "The Cambridge academic has rightly now resigned. But that won’t end the targeting of senior black figures or the lazy way institutions promote faux equality ‘To be honest with you, I thought you’d just believe me.” That was the breathtaking response of Prof Jason Arday when the Guardian interrogated the details he provided of an alleged racist campaign of intimidation against him, which involved a severed pig’s head, a masked man wielding a knife and bullets in the post. Arday had been unable to provide evidence, and when the Guardian contacted the relevant parties, including a south London butcher and the police, his claims were either refuted or could not be verified. Arday, whose appointment as professor of sociology of education at Cambridge became a widely lauded moment in the aftermath of Black Lives Matter, has found himself in the eye of the storm. Allegations of extensive plagiarism in his doctoral thesis, completed at Liverpool John Moores University, recently made their way from the Substack of self-described “race realist” academic Nathan Cofnas into the national press. The defence of Arday had rested on the fact that an investigation had already been conducted, and cleared him of plagiarism. And yet the case has taken on a life of its own. Continue reading...",
+      "publishedAtUtc": "2026-08-06T05:00:39Z",
+      "domain": "theguardian.com",
+      "score": 63.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘Sudan is losing another generation’ to war, Mohammed warns",
@@ -636,7 +636,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "A Promising Heart Drug Fails, Challenging a Long-Held Theory of Disease",
@@ -648,7 +648,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Amid Cyclospora Outbreak, Demand for Locally Grown Lettuce Surges",
@@ -660,7 +660,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Self-Help Influencer Nicole LePera Faces Litigation",
@@ -672,7 +672,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Incident at Texas School Underscores Concerns About Police Officers on Campuses",
@@ -684,7 +684,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Justice Department Accuses Duke Law School of Racial Discrimination",
@@ -696,7 +696,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Judge Rules Two Virginia Schools Must Change Confederate Names",
@@ -708,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "College Is More Political Than Ever. But in a New, Insidious Way.",
@@ -720,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Dons call for Cambridge leaders to take blame for Jason Arday appointment",
@@ -732,7 +732,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Gaza ‘unsafe for civilians’ as Israeli attacks hit homes and classrooms",
@@ -744,7 +744,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "DR Congo: New centre opens at heart of record Ebola outbreak",
@@ -756,7 +756,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO launches unique training course to enable parliamentarians in global health security",
@@ -768,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "The U.S. Relies on Family Caregivers. Millions of Them Are Kids.",
@@ -780,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Study finds three midlife health factors that could delay dementia for 13 years",
@@ -792,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Pakistan precinct suspends all 78 officers and staff over alleged rape at police station",
@@ -804,7 +804,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘I’m missing out’: the cash-strapped UK university students forced to live at home",
@@ -816,7 +816,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO statement on notification of withdrawal of the United States",
@@ -828,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "WHO comments on United States’ announcement of intent to withdraw",
@@ -840,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "F.D.A. Approves Moderna’s mRNA Flu Vaccine",
@@ -852,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Senate Confirms Dr. Erica Schwartz as C.D.C. Director",
@@ -864,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Spotlight on Fauci Said to Boost Book Sales for Kennedy and His Publisher",
@@ -876,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Star Scholar Jason Arday Resigns From Cambridge",
@@ -888,7 +888,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Brown’s President Will Resign after a Tenure that Included Trump Deal",
@@ -900,7 +900,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "After Colleges Reject ‘Compact,’ Trump Officials Try a Letter",
@@ -912,7 +912,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "New Zealand is Racing to Vaccinate Its Endangered Birds Against Bird Flu",
@@ -924,7 +924,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Exiled PM vows to return to Bangladesh despite execution threat",
@@ -936,7 +936,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "P&G seals $3.8bn deal for supplements company Thorne",
@@ -948,19 +948,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
-    },
-    {
-      "title": "MPs call for routine lead testing for children living near abandoned mines",
-      "link": "https://www.ft.com/content/b15dbbf8-d479-4be6-ba3c-c7e6831fbcca?syn-25a6b1a6=1",
-      "summary": "Health risks from Britain’s industrial past have been ‘left unaddressed’ for too long, Welsh secretary told",
-      "publishedAtUtc": "2026-08-02T04:00:06Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Luxembourg and WHO sign two strategic agreements",
@@ -972,7 +960,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "G20 health ministers rally support for WHO’s Investment Round",
@@ -984,7 +972,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Palantir tool has not cut hospital discharge delays, says study",
@@ -996,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1008,7 +996,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
@@ -1020,7 +1008,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "‘Without this it’s all just tourists’: the fight to save Soho’s last primary school",
@@ -1032,7 +1020,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
+    },
+    {
+      "title": "MPs call for routine lead testing for children living near abandoned mines",
+      "link": "https://www.ft.com/content/b15dbbf8-d479-4be6-ba3c-c7e6831fbcca?syn-25a6b1a6=1",
+      "summary": "Health risks from Britain’s industrial past have been ‘left unaddressed’ for too long, Welsh secretary told",
+      "publishedAtUtc": "2026-08-02T04:00:06Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "The London members’ clubs joining the wellness revolution",
@@ -1044,7 +1044,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Lead pollution poses health risk, says review sparked by FT investigation",
@@ -1056,7 +1056,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
     },
     {
       "title": "Maha Inc: how companies tied to Kennedy’s movement are poised to benefit",
@@ -1068,6 +1068,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-09T05:59:40.452192Z"
+    },
+    {
+      "title": "University of Greater Manchester ends contract of embattled vice-chancellor",
+      "link": "https://www.theguardian.com/uk-news/2026/aug/06/university-of-greater-manchester-ends-contract-vice-chancellor-george-holmes",
+      "summary": "George Holmes was suspended in 2025 over allegations involving financial mismanagement and other misconduct The University of Greater Manchester’s embattled vice-chancellor has had his contract terminated by the university’s governing body, ending a period of uncertainty over the university’s leadership. George Holmes, who had led the university for two decades, was initially suspended last year over allegations involving financial mismanagement and other misconduct. Continue reading...",
+      "publishedAtUtc": "2026-08-06T16:02:45Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-08-09T02:28:45.509914Z"
     },
     {
@@ -2365,68 +2377,9 @@
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-08-05T06:58:08.542941Z"
-    },
-    {
-      "title": "Annie thought perimenopause symptoms were keeping her awake. Alcohol was playing a role too | Diane Young",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/03/perimenopause-alcohol-sleep",
-      "summary": "Hot flushes, anxiety, poor sleep and mood swings are common during perimenopause. But the very thing Annie was using to manage her symptoms had become an even bigger problem The modern mind is a column where experts discuss mental health issues they are seeing in their work When Annie* started pacing around her house at 3am and struggling to find words during work meetings, she put it down to stress and perimenopause. She wasn’t entirely wrong. But it wasn’t the whole story. At 43, she was juggling a full-time job as a hospitality HR manager, three teenage children and the endless demands of family life. Like many women in midlife, she felt stretched in every direction. “I was doing long hours at work, running around with kids’ activities and household chores. I wasn’t sleeping well. Then I’d get up feeling exhausted and spend the day dealing with headaches, mood swings, hot flushes and brain fog. I went around in circles for six months feeling like my world was imploding.” Continue reading...",
-      "publishedAtUtc": "2026-08-02T15:00:25Z",
-      "domain": "theguardian.com",
-      "score": 76.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=31, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-05T03:31:22.975529Z"
-    },
-    {
-      "title": "Government contracts to require job creation instead of green targets under new rules",
-      "link": "https://www.theguardian.com/society/2026/aug/04/government-contracts-to-require-job-creation-instead-of-green-targets-under-new-rules",
-      "summary": "Louise Haigh says taxpayer money must benefit local communities amid backlash from environmental groups Ministers will scrap the requirement for companies to prove their green and progressive values before they are awarded government contracts, and instead ask firms to prove they will help young people back into work. As part of a government push to reduce the number of people not in education, employment or training (Neets) in the UK and boost regional growth, public sector buyers will double the consideration they give to whether companies will get more people into jobs, rather than if they can show they are improving social and environmental wellbeing. Government procurement contracts account for about £90bn of taxpayers’ money spent each year. Continue reading...",
-      "publishedAtUtc": "2026-08-04T21:30:00Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-05T03:31:22.975529Z"
-    },
-    {
-      "title": "Traffic, mobiles, music … let’s turn the volume down | Letters",
-      "link": "https://www.theguardian.com/environment/2026/aug/02/traffic-mobiles-music-lets-turn-the-volume-down",
-      "summary": "Readers respond to an editorial on the health impact of noise pollution Your editorial is right that noise pollution deserves to be treated as a public-health issue rather than a mere irritation ( The Guardian view on noise pollution: keep it down, 28 July ). Yet one obvious source of urban noise receives little attention: modified cars and motorbikes whose exhausts and engines have been made far louder than manufacturers intended. Anyone living in a city or town knows the difference between the background hum of traffic and the explosive revving, popping and roaring produced by a small minority of drivers and riders. These vehicles can wake entire terraces, disrupt outdoor spaces and make life less pleasant for everyone else. Continue reading...",
-      "publishedAtUtc": "2026-08-02T16:12:53Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-05T03:31:22.975529Z"
-    },
-    {
-      "title": "US cyclospora cases mount as authorities struggle to find source",
-      "link": "https://www.ft.com/content/8497ab71-cfa3-4651-bf9e-40c63e23cf15?syn-25a6b1a6=1",
-      "summary": "Thousands have been sickened in an outbreak centred in the Midwest and believed to be tied to a parasite found on lettuce",
-      "publishedAtUtc": "2026-07-22T10:00:10Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-05T03:31:22.975529Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "74fd007673bd19ff5e9f2fe9d01e072e9981dbdd",
-      "sourceTitle": "Unions urge teachers to strike as French school exams go ahead in up to 40C heat",
-      "sourceUrl": "https://www.theguardian.com/world/2026/jun/25/unions-urge-teachers-strike-french-school-exams-heat",
-      "sourceDomain": "theguardian.com",
-      "publishedAtUtc": "2026-06-25T17:24:23.777095Z",
-      "slug": "global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-school-exams",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-school-exams",
-      "mainImage": "/images/global-news/2026/2026-06-25-global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-schoo.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-06-25-global-health-and-education-watch-unions-urge-teachers-to-strike-as-french-schoo.jpg"
-    },
     {
       "contentHash": "750dd303f49713e2c18765fa66d61c92b9060278",
       "sourceTitle": "UK hospitals cancel operations because of lack of air conditioning",
@@ -6815,146 +6768,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-thailand-school-shooting-toll-rises-to-nine-after-12-year-old",
       "mainImage": "/images/global-news/2026/2026-08-09-global-health-and-education-watch-thailand-school-shooting-toll-rises-to-nine-af.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-thailand-school-shooting-toll-rises-to-nine-af.jpg"
+    },
+    {
+      "contentHash": "d1842e1a6eca89f24ef4694d6d5e119761ae824b",
+      "sourceTitle": "Cockroach protests: parents of Indian students who took their own lives reveal pressure of leaked exam papers and resits",
+      "sourceUrl": "https://www.theguardian.com/global-development/2026/aug/09/cockroach-protests-parents-of-indian-students-who-took-their-own-lives-reveal-pressure-of-leaked-exam-papers-and-resits",
+      "sourceDomain": "theguardian.com",
+      "publishedAtUtc": "2026-08-09T05:59:40.452192Z",
+      "slug": "global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+      "mainImage": "/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-07-14T21:24:52.564802Z",
-      "windowStartUtc": "2026-07-14T20:00:00Z",
-      "publishedInWindowBefore": 1,
-      "hoursLeftInWindow": 11,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "news.un.org": 2,
-        "theguardian.com": 4,
-        "nytimes.com": 2,
-        "aljazeera.com": 2,
-        "who.int": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 86,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 86,
-      "candidateCacheCount": 142,
-      "candidatesAfterSourceDedupe": 23,
-      "candidatesAfterDedupe": 23,
-      "duplicateSkips": {
-        "historyHash": 62,
-        "historySource": 1,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Cyclospora outbreaks causing diarrhea in US expected to continue through August",
-          "link": "https://www.theguardian.com/us-news/2026/jul/14/explosive-diarrhea-cyclospora-outbreak-investigation",
-          "score": 87,
-          "reason": "relevance=34, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Protect public health policies from lobbying firms | Letter",
-          "link": "https://www.theguardian.com/politics/2026/jul/14/protect-public-health-policies-from-lobbying-firms",
-          "score": 79,
-          "reason": "relevance=26, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "Humanities among degrees being ‘extinguished’ by hard-up universities",
-          "link": "https://www.theguardian.com/education/2026/jul/14/university-job-cuts-humanities-social-sciences",
-          "score": 75,
-          "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Cyclospora outbreaks causing diarrhea in US expected to continue through August",
-        "link": "https://www.theguardian.com/us-news/2026/jul/14/explosive-diarrhea-cyclospora-outbreak-investigation",
-        "score": 87,
-        "reason": "relevance=34, credibility=35, freshness=18, health_hits=4, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Cyclospora outbreaks causing diarrhea in US expected to continue",
-      "generatedWordCount": 1270,
-      "mainImage": "/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 418.0789597777148,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1121.0,
-        "generatedWords": 1270.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/e274dbb13c53c5a43d38766d861f04a1c7716536/753_0_2160_1728/master/2160.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f7f9563d21a733fbc209a31ebeba20e8",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-expected-to-continue"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-14-global-health-and-education-watch-cyclospora-outbreaks-causing-diarrhea-in-us-ex.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 2
-    },
     {
       "ranAtUtc": "2026-07-14T23:13:53.366401Z",
       "windowStartUtc": "2026-07-14T20:00:00Z",
@@ -39259,6 +39086,142 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-08-09T05:59:40.452192Z",
+      "windowStartUtc": "2026-08-09T02:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 9,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 10,
+        "nature.com": 1,
+        "aljazeera.com": 4,
+        "who.int": 1,
+        "news.un.org": 1,
+        "nytimes.com": 2
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 89,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 89,
+      "candidateCacheCount": 198,
+      "candidatesAfterSourceDedupe": 33,
+      "candidatesAfterDedupe": 33,
+      "duplicateSkips": {
+        "historyHash": 54,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Cockroach protests: parents of Indian students who took their own lives reveal pressure of leaked exam papers and resits",
+          "link": "https://www.theguardian.com/global-development/2026/aug/09/cockroach-protests-parents-of-indian-students-who-took-their-own-lives-reveal-pressure-of-leaked-exam-papers-and-resits",
+          "score": 79,
+          "reason": "relevance=26, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+        },
+        {
+          "title": "Why are ultra-processed food firms panicking and suing? Because they know time is running out | Felicity Lawrence",
+          "link": "https://www.theguardian.com/commentisfree/2026/aug/07/ultra-processed-food-firms-sue-harm-products-regulation",
+          "score": 68,
+          "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1"
+        },
+        {
+          "title": "The mRNA technology behind Moderna’s Covid vaccine reaches the flu",
+          "link": "https://www.theguardian.com/us-news/2026/aug/06/flu-shot-covid-moderna-mrna-mflusiva",
+          "score": 67,
+          "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Cockroach protests: parents of Indian students who took their own lives reveal pressure of leaked exam papers and resits",
+        "link": "https://www.theguardian.com/global-development/2026/aug/09/cockroach-protests-parents-of-indian-students-who-took-their-own-lives-reveal-pressure-of-leaked-exam-papers-and-resits",
+        "score": 79,
+        "reason": "relevance=26, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Cockroach protests: parents of Indian students who took their",
+      "generatedWordCount": 1319,
+      "mainImage": "/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4032
+      },
+      "generatedImageSharpness": 1320.1264517657244,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 2214.0,
+        "generatedWords": 1319.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://i.guim.co.uk/img/media/be40db432ccc4299d7fc1c31fd114f293d88ed4b/631_0_4547_3640/master/4547.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0f70ae4d6a444b51de8901fe87130f95",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-cockroach-protests-parents-of-indian-students-who-took-their-3"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-09-global-health-and-education-watch-cockroach-protests-parents-of-indian-students-.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
