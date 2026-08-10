@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dr-congo-ebola-is-killing-people-before-they-ever",
+    title: "Global Health and Education Watch: DR Congo: Ebola is killing people before they ever",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-10-global-health-and-education-watch-dr-congo-ebola-is-killing-people-before-they-e.jpg",
+    date: "2026-08-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-signs-order-attempting-to-override-cdc-vaccine-schedule",
     title: "Global Health and Education Watch: Trump signs order attempting to override CDC vaccine schedule",
     summary:
