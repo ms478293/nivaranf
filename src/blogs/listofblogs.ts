@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-frank-in-depth-discussion-as-belgium-and-who-map-ahead",
+    title: "Global Health and Education Watch: Frank, in-depth discussion as Belgium and WHO map ahead",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-10-global-health-and-education-watch-frank-in-depth-discussion-as-belgium-and-who-m.jpg",
+    date: "2026-08-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-students-face-ticking-timebomb-of-debt-and-higher-taxes",
     title: "Global Health and Education Watch: Students face ‘ticking timebomb’ of debt and higher taxes",
     summary:
