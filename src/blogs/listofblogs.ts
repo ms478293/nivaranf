@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-forces-kill-one-in-gaza-as-another-body",
+    title: "Global Health and Education Watch: Israeli forces kill one in Gaza as another body",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-10-global-health-and-education-watch-israeli-forces-kill-one-in-gaza-as-another-bod.jpg",
+    date: "2026-08-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-i-cheating-threatens-the-value-of-online-degrees",
     title: "Global Health and Education Watch: A.I. Cheating Threatens the Value of Online Degrees",
     summary:
