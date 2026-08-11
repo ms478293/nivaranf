@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-hca-workers-push-for-higher-pay-and-more-staffing",
+    title: "Global Health and Education Watch: HCA workers push for higher pay and more staffing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-11-global-health-and-education-watch-hca-workers-push-for-higher-pay-and-more-staff.jpg",
+    date: "2026-08-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-good-luck-if-you-re-waiting-for-a-level-results-just",
     title: "Global Health and Education Watch: Good luck if you’re waiting for A-level results. Just",
     summary:
