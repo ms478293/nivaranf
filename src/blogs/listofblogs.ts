@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-amber-heat-health-alerts-kick-in-across-most-of",
+    title: "Global Health and Education Watch: Amber heat health alerts kick in across most of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-11-global-health-and-education-watch-amber-heat-health-alerts-kick-in-across-most-o.jpg",
+    date: "2026-08-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-breast-cancer-screening-guidelines-discriminate-against-families-like-mine-2",
     title: "Global Health and Education Watch: Breast cancer screening guidelines discriminate against families like mine",
     summary:
