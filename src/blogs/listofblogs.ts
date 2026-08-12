@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-university-of-cambridge-whistleblower-who-reported-alleged-bullying-wins",
+    title: "Global Health and Education Watch: University of Cambridge whistleblower who reported alleged bullying wins",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-12-global-health-and-education-watch-university-of-cambridge-whistleblower-who-repo.jpg",
+    date: "2026-08-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-s-vaccine-order-is-about-feelings-not-facts",
     title: "Global Health and Education Watch: Trump’s vaccine order is about feelings, not facts |",
     summary:
