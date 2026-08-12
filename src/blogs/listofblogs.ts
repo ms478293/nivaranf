@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-signs-executive-order-calling-for-fewer-childhood-vaccines",
+    title: "Global Health and Education Watch: Trump Signs Executive Order Calling for Fewer Childhood Vaccines",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-12-global-health-and-education-watch-trump-signs-executive-order-calling-for-fewer-.jpg",
+    date: "2026-08-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-unesco-says-2-4-million-afghan-girls-denied-access-to-3",
     title: "Global Health and Education Watch: UNESCO says 2.4 million Afghan girls denied access to",
     summary:
