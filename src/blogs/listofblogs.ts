@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-g20-health-ministers-rally-support-for-who-s-investment-round",
+    title: "Global Health and Education Watch: G20 health ministers rally support for WHO’s Investment Round",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-13-global-health-and-education-watch-g20-health-ministers-rally-support-for-who-s-i.jpg",
+    date: "2026-08-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cholera-spreads-across-borders-in-west-and-central-africa-2",
     title: "Global Health and Education Watch: Cholera spreads across borders in West and Central Africa",
     summary:
