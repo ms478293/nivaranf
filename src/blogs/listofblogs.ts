@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-a-patient-s-final-breath-in-a-congolese-ebola-ward",
+    title: "Global Health and Education Watch: A Patient’s Final Breath in a Congolese Ebola Ward",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-13-global-health-and-education-watch-a-patient-s-final-breath-in-a-congolese-ebola-.jpg",
+    date: "2026-08-13",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-jason-arday-is-now-the-stick-the-right-will",
     title: "Global Health and Education Watch: Jason Arday is now the stick the right will",
     summary:
