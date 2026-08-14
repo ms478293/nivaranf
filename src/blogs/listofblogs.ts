@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-google-turns-on-gemini-a-i-for-students-using-its",
+    title: "Global Health and Education Watch: Google Turns On Gemini A.I. for Students Using Its",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-14-global-health-and-education-watch-google-turns-on-gemini-a-i-for-students-using-.jpg",
+    date: "2026-08-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-we-re-seeing-lots-of-people-who-feel-dizzy-how",
     title: "Global Health and Education Watch: ‘We’re seeing lots of people who feel dizzy’: how",
     summary:
