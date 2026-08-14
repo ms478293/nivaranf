@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-luigi-mangione-pleads-guilty-in-unitedhealthcare-ceo-s-killing",
+    title: "Global Health and Education Watch: Luigi Mangione pleads guilty in UnitedHealthcare CEO’s killing",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-14-global-health-and-education-watch-luigi-mangione-pleads-guilty-in-unitedhealthca.jpg",
+    date: "2026-08-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-google-turns-on-gemini-a-i-for-students-using-its",
     title: "Global Health and Education Watch: Google Turns On Gemini A.I. for Students Using Its",
     summary:
