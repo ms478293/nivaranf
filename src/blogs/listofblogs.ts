@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-students-squeezed-out-of-university-courses-after-bumper-crop",
+    title: "Global Health and Education Watch: Students squeezed out of university courses after bumper crop",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-14-global-health-and-education-watch-students-squeezed-out-of-university-courses-af.jpg",
+    date: "2026-08-14",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-first-generation-monovalent-vaccines-blocked-transmission-of-delta-and-omicron",
     title: "Global Health and Education Watch: First-generation monovalent vaccines blocked transmission of Delta and Omicron",
     summary:
