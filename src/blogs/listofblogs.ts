@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-we-know-about-the-crisis-aboard-the-uss",
+    title: "Global Health and Education Watch: What we know about the crisis aboard the USS",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-15-global-health-and-education-watch-what-we-know-about-the-crisis-aboard-the-uss.jpg",
+    date: "2026-08-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-a-sudanese-refugee-became-a-head-teacher-in",
     title: "Global Health and Education Watch: How a Sudanese refugee became a head teacher in",
     summary:
