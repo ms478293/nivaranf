@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-american-missionary-kidnapped-in-niger-freed-after-nine-months",
+    title: "Global Health and Education Watch: American missionary kidnapped in Niger freed after nine months",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-15-global-health-and-education-watch-american-missionary-kidnapped-in-niger-freed-a.jpg",
+    date: "2026-08-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest",
     title: "Global Health and Education Watch: Iceberg, romaine, kale: which salad greens are healthiest?",
     summary:
