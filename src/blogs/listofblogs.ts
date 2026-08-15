@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-jason-arday-professor-at-centre-of-cambridge-plagiarism-row",
+    title: "Global Health and Education Watch: Jason Arday, professor at centre of Cambridge plagiarism row",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-15-global-health-and-education-watch-jason-arday-professor-at-centre-of-cambridge-p.jpg",
+    date: "2026-08-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tributes-paid-to-jason-arday-after-former-cambridge-professor-s-3",
     title: "Global Health and Education Watch: Tributes paid to Jason Arday after former Cambridge professor’s",
     summary:
