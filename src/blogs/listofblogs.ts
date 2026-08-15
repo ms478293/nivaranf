@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-professor-s-death-leaves-behind-hard-questions-for-cambridge-on",
+    title: "Global Health and Education Watch: Professor’s Death Leaves Behind Hard Questions for Cambridge on",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-15-global-health-and-education-watch-professor-s-death-leaves-behind-hard-questions.jpg",
+    date: "2026-08-15",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-sudan-the-harrowing-reality-of-giving-birth-in-a",
     title: "Global Health and Education Watch: Sudan: The harrowing reality of giving birth in a",
     summary:
