@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-republican-senator-denounces-trump-s-crazy-stupid-claims-about-mmr",
+    title: "Global Health and Education Watch: Republican senator denounces Trump’s ‘crazy, stupid’ claims about MMR",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-16-global-health-and-education-watch-republican-senator-denounces-trump-s-crazy-stu.jpg",
+    date: "2026-08-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-women-should-not-have-to-travel-for-hours-to",
     title: "Global Health and Education Watch: Women should not have to travel for hours to",
     summary:
