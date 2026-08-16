@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-this-is-the-solution-to-america-s-literacy-crisis-and",
+    title: "Global Health and Education Watch: This Is the Solution to America’s Literacy Crisis, and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-16-global-health-and-education-watch-this-is-the-solution-to-america-s-literacy-cri.jpg",
+    date: "2026-08-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-democrats-demand-answers-from-trump-on-uss-abraham-lincoln",
     title: "Global Health and Education Watch: Democrats demand answers from Trump on USS Abraham Lincoln",
     summary:
