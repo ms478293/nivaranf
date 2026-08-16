@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-israeli-strikes-in-lebanon-kill-11-health-officials-say",
+    title: "Global Health and Education Watch: Israeli Strikes in Lebanon Kill 11, Health Officials Say",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-16-global-health-and-education-watch-israeli-strikes-in-lebanon-kill-11-health-offi.jpg",
+    date: "2026-08-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-where-the-teacher-is-a-hero",
     title: "Global Health and Education Watch: Where the Teacher Is a Hero",
     summary:
