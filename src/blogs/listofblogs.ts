@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-from-food-to-tech-to-travel-the-best-student",
+    title: "Global Health and Education Watch: From food to tech to travel: the best student",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-16-global-health-and-education-watch-from-food-to-tech-to-travel-the-best-student.jpg",
+    date: "2026-08-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-israeli-strikes-in-lebanon-kill-11-health-officials-say",
     title: "Global Health and Education Watch: Israeli Strikes in Lebanon Kill 11, Health Officials Say",
     summary:
