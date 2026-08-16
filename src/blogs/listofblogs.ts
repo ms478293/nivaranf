@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-cambridge-university-defends-its-mental-health-support-for-jason-2",
+    title: "Global Health and Education Watch: Cambridge University defends its mental health support for Jason",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-16-global-health-and-education-watch-cambridge-university-defends-its-mental-health.jpg",
+    date: "2026-08-16",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-cambridge-university-defends-its-mental-health-support-for-jason",
     title: "Global Health and Education Watch: Cambridge University defends its mental health support for Jason",
     summary:
