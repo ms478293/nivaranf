@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-monday-briefing-what-can-andy-burnham-learn-from-spain-s",
+    title: "Global Health and Education Watch: Monday briefing: What can Andy Burnham learn from Spain’s",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-monday-briefing-what-can-andy-burnham-learn-fr.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-covid-vaccine-and-pregnancy-what-to-know-now",
     title: "Global Health and Education Watch: Covid Vaccine and Pregnancy: What to Know Now",
     summary:
