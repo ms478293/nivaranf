@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-says-kim-jong-un-has-responded-to-his-overtures",
+    title: "Global Health and Education Watch: Trump says Kim Jong-un has responded to his overtures",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-trump-says-kim-jong-un-has-responded-to-his-ov.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-let-my-students-watch-me-struggle-with-a",
     title: "Global Health and Education Watch: I Let My Students Watch Me Struggle With a",
     summary:
