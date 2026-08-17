@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-one-woman-with-a-very-rare-disease-secured",
+    title: "Global Health and Education Watch: How One Woman With a Very Rare Disease Secured",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-how-one-woman-with-a-very-rare-disease-secured.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-explosion-reported-at-school-in-afghan-capital-kabul",
     title: "Global Health and Education Watch: Explosion reported at school in Afghan capital Kabul",
     summary:
