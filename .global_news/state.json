@@ -1,6 +1,6 @@
 {
   "windowStartUtc": "2026-08-16T21:00:00Z",
-  "publishedInWindow": 3,
+  "publishedInWindow": 4,
   "candidateCache": [
     {
       "title": "Cambridge University defends its mental health support for Jason Arday",
@@ -12,7 +12,7 @@
       "healthHits": 2,
       "educationHits": 2,
       "reason": "relevance=40, credibility=35, freshness=18, health_hits=2, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
@@ -24,7 +24,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Our children are less cognitively capable,’ says neuroscientist who wants to cut screen use in schools",
@@ -36,7 +36,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "AI cheating, leaked papers and marking errors: how exam protests went global",
@@ -48,7 +48,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=31, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -60,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -72,7 +72,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Republican senator denounces Trump’s ‘crazy, stupid’ claims about MMR vaccine safety",
@@ -84,7 +84,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=29, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Cholera Outbreak Sickens Over 90 in Myanmar’s Biggest City",
@@ -96,7 +96,19 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
+    },
+    {
+      "title": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+      "link": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
+      "summary": "At least 2,325 people have been killed, according to government data, surpassing the death toll from 2018-20 outbreak The Ebola outbreak in the Democratic Republic of Congo is now the deadliest in the country’s history with at least 2,325 people killed, according to government data, surpassing the toll from the 2018-20 outbreak. Congo’s public health institute said on Sunday that confirmed cases had risen to 4,945, including 101 new cases detected in the previous 24 hours. Continue reading...",
+      "publishedAtUtc": "2026-08-17T00:09:57Z",
+      "domain": "theguardian.com",
+      "score": 80.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -108,7 +120,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -120,7 +132,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "University of Michigan Will Ease Up on Grades for Student Mental Health",
@@ -132,7 +144,7 @@
       "healthHits": 2,
       "educationHits": 2,
       "reason": "relevance=38, credibility=35, freshness=4, health_hits=2, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "An HBCU has banned durags and bonnets. That reinforces anti-Blackness | AD Carson",
@@ -144,7 +156,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=38, credibility=35, freshness=4, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "US admiral praises USS Lincoln crew amid reported mental health concerns",
@@ -156,7 +168,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Why cancer, not cost of living, may be the biggest issue in Iowa’s midterm elections",
@@ -168,7 +180,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Democrats demand answers from Trump on USS Abraham Lincoln conditions",
@@ -180,19 +192,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
-    },
-    {
-      "title": "Suspect in Virginia State University shooting found hiding in dorm closet",
-      "link": "https://www.theguardian.com/us-news/2026/aug/16/virginia-state-university-shooting-suspect-arrested",
-      "summary": "Suspect, 19, who is not enrolled at the university arrested in connection with shooting of five people, authorities say A young man suspected in connection with the shooting of five people on Saturday on the campus of Virginia State University (VSU) hid in a dormitory closet for more than 14 hours being found and arrested, according to authorities. The suspect – identified as 19-year-old Camron Harris – was found in Seward Hall on VSU’s campus at 4pm, local police Lt James Lamb said, according to the Virginia news outlet WTVR . The shooting occurred at about 1.30am on Saturday. The Associated Press contributed reporting Continue reading...",
-      "publishedAtUtc": "2026-08-16T19:39:03Z",
-      "domain": "theguardian.com",
-      "score": 74.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -204,7 +204,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "This Is the Solution to America’s Literacy Crisis, and It’s a Lot of Fun",
@@ -216,7 +216,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Google Turns On Gemini A.I. for Students Using Its Classroom App",
@@ -228,7 +228,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Women should not have to travel for hours to give birth | Letters",
@@ -240,7 +240,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘It was barbaric. I was crying my eyes out’: why are so many women left in agony by routine womb examinations?",
@@ -252,7 +252,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
+    },
+    {
+      "title": "Trump orders cuts to South Korea joint drills despite warnings of North’s growing battlefield experience",
+      "link": "https://www.theguardian.com/world/2026/aug/17/trump-cuts-south-korea-joint-drills-us-military-good-relationship-kim-jong-un",
+      "summary": "President says move is based on ‘very good relationship with Kim Jong-un’ but US military officials have said Ukraine war is boosting regime’s combat capabilities Donald Trump has said he is scaling back joint US military drills with South Korea aimed at deterring North Korea, despite military officials from both countries warning that Kim Jong-un’s regime was learning new battlefield tactics from the Ukraine war. The drills under Ulchi Freedom Shield, one of two major annual exercises held by South Korea and the US, start on Monday and run until 27 August. Continue reading...",
+      "publishedAtUtc": "2026-08-17T00:19:53Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
+    },
+    {
+      "title": "Suspect in Virginia State University shooting found hiding in dorm closet",
+      "link": "https://www.theguardian.com/us-news/2026/aug/16/virginia-state-university-shooting-suspect-arrested",
+      "summary": "Suspect, 19, who is not enrolled at the university arrested in connection with shooting of five people, authorities say A young man suspected in connection with the shooting of five people on Saturday on the campus of Virginia State University (VSU) hid in a dormitory closet for more than 14 hours before being found and arrested, according to authorities. The suspect – identified as 19-year-old Camron Harris – was found in Seward Hall on VSU’s campus at 4pm, local police Lt James Lamb said, according to the Virginia news outlet WTVR . The shooting occurred at about 1.30am on Saturday. Continue reading...",
+      "publishedAtUtc": "2026-08-16T19:39:03Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -264,7 +288,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "California law would force companies to disclose toxic chemicals in disposable diapers",
@@ -276,7 +300,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
+    },
+    {
+      "title": "Lala weakens to tropical storm as it lashes Hawaii with heavy wind and rain",
+      "link": "https://www.theguardian.com/world/2026/aug/16/hurricane-lala-hawaii-big-island-avoids-landfall",
+      "summary": "Hurricane Lala downgraded after skirting Big Island as one person dies and over 130,000 households are without power Hurricane Lala weakened to a tropical storm on Sunday after skirting Hawaii without making landfall, but it wasn’t done punishing the Big Island with hurricane-force gusts. Total rainfall of nearly 3ft (1 meter) was expected on the higher windward slopes, turning rivers into raging torrents and threatening mudslides. The Hawaii governor, Josh Green, said at least one person died in a car accident in the South Point area of the Big Island, where more than 100 homes were destroyed. More than 200,000 homes and businesses were without power on Sunday afternoon across Hawaii’s three largest islands, according to the utility tracker PowerOutage.us . At least three hospitals were operating on generator power, and 19 roofs were lost, Green said. Continue reading...",
+      "publishedAtUtc": "2026-08-16T23:45:12Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -288,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "An attack on healthcare every six hours, and no one held to account",
@@ -300,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Cheap travel is not a defence’: the parents facing court for school absences in England",
@@ -312,7 +348,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Children were calling for their mummies’: UK pupils struggle in 40C-plus classrooms",
@@ -324,7 +360,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘We’re seeing lots of people who feel dizzy’: how heatwaves are taking a toll on people’s health and the NHS",
@@ -336,7 +372,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Strengthening public health across Lebanon with EIB Global",
@@ -348,7 +384,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Warned but not protected’: Four in ten adults in England ignore heat alerts",
@@ -360,7 +396,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Good luck if you’re waiting for A-level results. Just don’t ask me what to do next | Zoe Williams",
@@ -372,7 +408,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
@@ -384,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
@@ -396,7 +432,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Ebola is winning’: Epidemic now killing one person every 30 minutes",
@@ -408,7 +444,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Canadian plasma clinics pause collections after deaths of two donors",
@@ -420,7 +456,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Iceberg, romaine, kale: which salad greens are healthiest?",
@@ -432,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "What is the MMR vaccine and how does Trump’s executive order affect parents and children?",
@@ -444,7 +480,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "American missionary kidnapped in Niger freed after nine months",
@@ -456,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
@@ -468,7 +504,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
@@ -480,7 +516,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
@@ -492,7 +528,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Ebola tracing improves in DR Congo – but the virus is still winning the race",
@@ -504,7 +540,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO chief voices concern over Trump Administration’s executive order on vaccines",
@@ -516,7 +552,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Parkrun is a joy for many. Get involved | Letters",
@@ -528,7 +564,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Polls open in Clacton, where Farage spent more than £10,000 in byelection against Count Binface – as it happened",
@@ -540,7 +576,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
@@ -552,7 +588,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Professor’s Death Leaves Behind Hard Questions for Cambridge on Race and Hiring",
@@ -564,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Tributes paid to Jason Arday after former Cambridge professor’s death",
@@ -576,7 +612,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Jason Arday, professor at centre of Cambridge plagiarism row, found dead",
@@ -588,7 +624,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Massive egg recall in US south and south-west due to salmonella outbreak",
@@ -600,7 +636,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -612,7 +648,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
@@ -624,7 +660,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
@@ -636,7 +672,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Ebola deaths top 2,000 as scientists race to develop vaccine",
@@ -648,7 +684,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Jason Arday is now the stick the right will use to beat back racial equality. Don’t let that happen | Afua Hirsch",
@@ -660,7 +696,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Food Standards Agency should do more in the fight against ultra-processed foods | Letters",
@@ -672,7 +708,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Former Mexican governor charged in case of 43 students who vanished in 2014",
@@ -684,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Sudan: The harrowing reality of giving birth in a war zone",
@@ -696,7 +732,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Outrage at UnitedHealth and Other Insurers Persists After Brian Thompson Killing",
@@ -708,7 +744,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Covid Vaccine and Pregnancy: What to Know Now",
@@ -720,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "FDA Classifies Egg Recall as Class I for Highest Health Risk",
@@ -732,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Students Skinned a Bear in a Dorm. Cornell Realized It Should Ban That.",
@@ -744,7 +780,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Reading Scores Drop for N.Y.C. Students Amid Revamp of Literacy Program",
@@ -756,7 +792,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Where the Teacher Is a Hero",
@@ -768,7 +804,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Chatbots Are Pushing Us Toward a Post-Human Internet",
@@ -780,7 +816,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Israeli Strikes in Lebanon Kill 11, Health Officials Say",
@@ -792,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Jason Arday, Cambridge Professor Accused of Plagiarism, Is Found Dead",
@@ -804,7 +840,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Kevin Rideout, American Missionary Kidnapped in Niger, Is Released",
@@ -816,19 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
-    },
-    {
-      "title": "After 2 Plasma Donor Deaths, Company Pauses Clinics in Canada",
-      "link": "https://www.nytimes.com/2026/08/13/world/canada/plasma-blood-donation-deaths-grifols.html",
-      "summary": "Grifols, a Spanish company, said “unfounded attention” on its blood plasma business in Canada had led it to temporarily end collections at 17 clinics.",
-      "publishedAtUtc": "2026-08-13T23:41:27Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "From food to tech to travel: the best student deals and discounts",
@@ -840,7 +864,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Dangerously hostile’: heatwaves leave hospital wards unsafe, data reveals",
@@ -852,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "A City Mobilizes Against a Stubborn Health Threat: Mosquitoes",
@@ -864,7 +888,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "RFK Jr. Stirred Vaccine Fears in Pennsylvania Years Before Measles Outbreak",
@@ -876,7 +900,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "New Yorkers Who Lost Insurance After Trump Cuts Face Hard Choices",
@@ -888,7 +912,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO launches unique training course to enable parliamentarians in global health security",
@@ -900,7 +924,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "World News in Brief: Afghanistan education, Myanmar flooding, Syria recovery, homecare workers in New York",
@@ -912,7 +936,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Cholera spreads across borders in West and Central Africa",
@@ -924,7 +948,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Ward Churchill, Professor Who Challenged His Dismissal Over 9/11 Essay, Dies at 78",
@@ -936,7 +960,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "116 Grams: A Play to Lose Weight review – a shocking satire of body policing",
@@ -948,7 +972,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO statement on notification of withdrawal of the United States",
@@ -960,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "WHO comments on United States’ announcement of intent to withdraw",
@@ -972,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Five years after Taliban takeover, Afghan women ‘erased from public life’",
@@ -984,7 +1008,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "This Pesticide May Be Too Dangerous to Use. Farmers Say They Need It.",
@@ -996,7 +1020,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Trump Wants the M.M.R. Vaccine Split Into Three Separate Shots. Doctors Say It’s a Bad Idea.",
@@ -1008,7 +1032,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Judge Dismisses Trump Administration’s Antisemitism Case Against Harvard",
@@ -1020,7 +1044,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Palestinian Americans File Discrimination Lawsuit Against Columbia",
@@ -1032,7 +1056,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Trump Sues New York and Other States Over In-State Tuition for Migrants",
@@ -1044,7 +1068,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "A.I. Agents Are Taking Entire Online Courses for Cheating Students",
@@ -1056,7 +1080,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Mamdani to Give Free Broadway Tickets to High Schoolers",
@@ -1068,7 +1092,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
+    },
+    {
+      "title": "After 2 Plasma Donor Deaths, Company Pauses Clinics in Canada",
+      "link": "https://www.nytimes.com/2026/08/13/world/canada/plasma-blood-donation-deaths-grifols.html",
+      "summary": "Grifols, a Spanish company, said “unfounded attention” on its blood plasma business in Canada had led it to temporarily end collections at 17 clinics.",
+      "publishedAtUtc": "2026-08-13T23:41:27Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘I’m going for a few pints now’: nerves and joy as students collect their A-level results",
@@ -1080,7 +1116,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "New UN plastic treaty is going backwards, experts say",
@@ -1092,7 +1128,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Wildfire smoke threatens to cloud the ‘Pure Michigan’ brand",
@@ -1104,7 +1140,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Luxembourg and WHO sign two strategic agreements",
@@ -1116,7 +1152,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "G20 health ministers rally support for WHO’s Investment Round",
@@ -1128,7 +1164,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Palantir tool has not cut hospital discharge delays, says study",
@@ -1140,7 +1176,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Amid Cyclospora Outbreak, Demand for Locally Grown Lettuce Surges",
@@ -1152,7 +1188,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "A Promising Heart Drug Fails, Challenging a Long-Held Theory of Disease",
@@ -1164,7 +1200,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Judge Rules Two Virginia Schools Must Change Confederate Names",
@@ -1176,7 +1212,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Incident at Texas School Underscores Concerns About Police Officers on Campuses",
@@ -1188,7 +1224,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Justice Department Accuses Duke Law School of Racial Discrimination",
@@ -1200,7 +1236,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -1212,7 +1248,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
@@ -1224,7 +1260,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "‘Without this it’s all just tourists’: the fight to save Soho’s last primary school",
@@ -1236,7 +1272,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "P&G seals $3.8bn deal for supplements company Thorne",
@@ -1248,7 +1284,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "MPs call for routine lead testing for children living near abandoned mines",
@@ -1260,7 +1296,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "The London members’ clubs joining the wellness revolution",
@@ -1272,7 +1308,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T23:35:04.463482Z"
+      "cachedAtUtc": "2026-08-17T01:56:29.034495Z"
     },
     {
       "title": "Patients treated in tents after earthquake damages Indonesia hospital",
@@ -1297,18 +1333,6 @@
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-16T20:39:26.561048Z"
-    },
-    {
-      "title": "Lala weakens to tropical storm as it lashes Hawaii with heavy wind and rain",
-      "link": "https://www.theguardian.com/world/2026/aug/16/hurricane-lala-hawaii-big-island-avoids-landfall",
-      "summary": "Hurricane Lala downgraded after skirting Big Island as one person dies and over 130,000 households are without power Hurricane Lala weakened to a tropical storm on Sunday after skirting Hawaii without making landfall, but it wasn’t done punishing the Big Island with hurricane-force gusts. Total rainfall of nearly 3ft (one meter) was expected on the higher windward slopes, turning rivers into raging torrents and threatening mudslides. The Hawaii governor, Josh Green, said at least one person died in a car accident in the South Point area of the Big Island. More than 130,000 households were without power Sunday morning across Hawaii’s three largest islands, according to the utility tracker poweroutage.us. At least three hospitals were operating on generator power, and 19 roofs were lost, Green said. Continue reading...",
-      "publishedAtUtc": "2026-08-16T15:18:07Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-16T19:37:14.710389Z"
     },
     {
       "title": "‘Our rota crew have the best summer’: parents share how they get through the school holiday",
@@ -2641,32 +2665,9 @@
       "educationHits": 0,
       "reason": "relevance=27, credibility=35, freshness=4, health_hits=3, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-13T02:47:18.454032Z"
-    },
-    {
-      "title": "DR Congo Ebola outbreak set to become deadliest on record, WHO warns",
-      "link": "https://www.aljazeera.com/news/2026/8/12/dr-congo-ebola-outbreak-set-to-become-deadliest-on-record-who-warns?traffic_source=rss",
-      "summary": "Outbreak to eclipse West Africa&#039;s Ebola outbreak of 2014 to 2016 if it continues at current pace, WHO chief says.",
-      "publishedAtUtc": "2026-08-12T18:23:25Z",
-      "domain": "aljazeera.com",
-      "score": 72.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-12T23:58:19.475761Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "cf1393d569668dfb2b21308f20e304a5d5131a0d",
-      "sourceTitle": "Power cuts plunge Gaza hospitals into darkness as Israel’s attacks persist",
-      "sourceUrl": "https://www.aljazeera.com/features/2026/7/11/power-cuts-plunge-gaza-hospitals-into-darkness-as-israels-attacks-persist?traffic_source=rss",
-      "sourceDomain": "aljazeera.com",
-      "publishedAtUtc": "2026-07-11T17:17:32.305613Z",
-      "slug": "global-health-and-education-watch-power-cuts-plunge-gaza-hospitals-into-darkness-as-israel-s",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-power-cuts-plunge-gaza-hospitals-into-darkness-as-israel-s",
-      "mainImage": "/images/global-news/2026/2026-07-11-global-health-and-education-watch-power-cuts-plunge-gaza-hospitals-into-darkness.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-11-global-health-and-education-watch-power-cuts-plunge-gaza-hospitals-into-darkness.jpg"
-    },
     {
       "contentHash": "8516da8648042619ae669f33a851c46617a45d6d",
       "sourceTitle": "Tarmac playgrounds and windows that don’t open: why hot spells turn our schools into heat traps | Harry Paticas",
@@ -7055,141 +7056,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-it-was-barbaric-i-was-crying-my-eyes-out",
       "mainImage": "/images/global-news/2026/2026-08-16-global-health-and-education-watch-it-was-barbaric-i-was-crying-my-eyes-out.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-16-global-health-and-education-watch-it-was-barbaric-i-was-crying-my-eyes-out.jpg"
+    },
+    {
+      "contentHash": "ba3b377dadddc6c3098d282134fafa23a363aef7",
+      "sourceTitle": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+      "sourceUrl": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
+      "sourceDomain": "theguardian.com",
+      "publishedAtUtc": "2026-08-17T01:56:29.034495Z",
+      "slug": "global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+      "mainImage": "/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-07-27T11:38:54.415022Z",
-      "windowStartUtc": "2026-07-27T11:00:00Z",
-      "publishedInWindowBefore": 0,
-      "hoursLeftInWindow": 12,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "ft.com",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 2,
-        "news.un.org": 1,
-        "who.int": 1,
-        "nytimes.com": 1,
-        "theguardian.com": 2,
-        "ft.com": 1
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 91,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 91,
-      "candidateCacheCount": 207,
-      "candidatesAfterSourceDedupe": 33,
-      "candidatesAfterDedupe": 33,
-      "duplicateSkips": {
-        "historyHash": 55,
-        "historySource": 3,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Can This New Enzyme Turn Back the Clock in Bodily Tissues?",
-          "link": "https://www.nytimes.com/2026/07/24/science/enzymes-aging-cmlase.html",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Who Are the People Protesting in India?",
-          "link": "https://www.nytimes.com/2026/07/25/world/asia/india-protests-profiles.html",
-          "score": 64,
-          "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Can This New Enzyme Turn Back the Clock in Bodily Tissues?",
-        "link": "https://www.nytimes.com/2026/07/24/science/enzymes-aging-cmlase.html",
-        "score": 64,
-        "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Can This New Enzyme Turn Back the Clock in",
-      "generatedWordCount": 1184,
-      "mainImage": "/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4320
-      },
-      "generatedImageSharpness": 179.69507995861363,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "Could not generate image from Gemini models (gemini-2.0-flash-exp-image-generation: JSON request failed: HTTP Error 403: Forbidden | gemini-2.5-flash-image: JSON request failed: HTTP Error 403: Forbidden | gemini-3.1-flash-image-preview: JSON request failed: HTTP Error 403: Forbidden | gemini-3-pro-image-preview: JSON request failed: HTTP Error 403: Forbidden)",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 0.0,
-        "generatedWords": 1184.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "offline-fallback",
-      "sourceImageUrl": "",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-27-global-health-and-education-watch-can-this-new-enzyme-turn-back-the-clock-in.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 1
-    },
     {
       "ranAtUtc": "2026-07-27T15:16:23.923480Z",
       "windowStartUtc": "2026-07-27T11:00:00Z",
@@ -39406,6 +39286,140 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 3
+    },
+    {
+      "ranAtUtc": "2026-08-17T01:56:29.034495Z",
+      "windowStartUtc": "2026-08-16T21:00:00Z",
+      "publishedInWindowBefore": 3,
+      "hoursLeftInWindow": 8,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "nytimes.com": 4,
+        "theguardian.com": 12,
+        "aljazeera.com": 3,
+        "nature.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 109,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 109,
+      "candidateCacheCount": 222,
+      "candidatesAfterSourceDedupe": 26,
+      "candidatesAfterDedupe": 26,
+      "duplicateSkips": {
+        "historyHash": 81,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+          "link": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
+          "score": 80,
+          "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0"
+        },
+        {
+          "title": "Trump orders cuts to South Korea joint drills despite warnings of North’s growing battlefield experience",
+          "link": "https://www.theguardian.com/world/2026/aug/17/trump-cuts-south-korea-joint-drills-us-military-good-relationship-kim-jong-un",
+          "score": 72,
+          "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "California law would force companies to disclose toxic chemicals in disposable diapers",
+          "link": "https://www.theguardian.com/us-news/2026/aug/16/california-law-chemicals-diapers",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Ebola outbreak in Democratic Republic of Congo now deadliest in country’s history",
+        "link": "https://www.theguardian.com/world/2026/aug/17/ebola-outbreak-drc-democratic-republic-of-congo-deadliest-in-history",
+        "score": 80,
+        "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Ebola outbreak in Democratic Republic of Congo now deadliest",
+      "generatedWordCount": 1243,
+      "mainImage": "/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4032
+      },
+      "generatedImageSharpness": 959.8485955114359,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 849.0,
+        "generatedWords": 1243.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://i.guim.co.uk/img/media/a393063cc2d82e5b3b20c44e22654a645b95ab37/581_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=01a5dd5d8d86bc2efe5aced65507cdaa",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo-now-deadliest"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-17-global-health-and-education-watch-ebola-outbreak-in-democratic-republic-of-congo.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 4
     }
   ]
 }
