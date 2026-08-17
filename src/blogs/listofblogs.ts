@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-california-law-would-force-companies-to-disclose-toxic-chemicals",
+    title: "Global Health and Education Watch: California law would force companies to disclose toxic chemicals",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-california-law-would-force-companies-to-disclo.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-all-aboard-the-cervical-screening-bus-how-nhs-clinic-on-wheels",
     title: "Global Health and Education Watch: All aboard the cervical screening bus: how NHS clinic-on-wheels",
     summary:
