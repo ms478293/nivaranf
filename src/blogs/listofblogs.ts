@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-all-aboard-the-cervical-screening-bus-how-nhs-clinic-on-wheels",
+    title: "Global Health and Education Watch: All aboard the cervical screening bus: how NHS clinic-on-wheels",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-all-aboard-the-cervical-screening-bus-how-nhs-.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-orders-cuts-to-south-korea-joint-drills-despite",
     title: "Global Health and Education Watch: Trump orders cuts to South Korea joint drills despite",
     summary:
