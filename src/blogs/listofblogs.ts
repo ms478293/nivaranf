@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-support-for-jason-arday-s-family-shows-britain-still-cares",
+    title: "Global Health and Education Watch: Support for Jason Arday’s family shows ‘Britain still cares’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-support-for-jason-arday-s-family-shows-britain.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-louisiana-s-new-surgeon-general-wants-to-transform-public",
     title: "Global Health and Education Watch: How Louisiana’s New Surgeon General Wants to Transform Public",
     summary:
