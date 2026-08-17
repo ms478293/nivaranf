@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-alzheimer-s-research-is-latest-casualty-in-trump-administration-war",
+    title: "Global Health and Education Watch: Alzheimer’s research is latest casualty in Trump administration war",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-17-global-health-and-education-watch-alzheimer-s-research-is-latest-casualty-in-tru.jpg",
+    date: "2026-08-17",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-cuts-us-south-korea-military-drills-citing-good-relationship",
     title: "Global Health and Education Watch: Trump cuts US-South Korea military drills citing ‘good relationship",
     summary:
