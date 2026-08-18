@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-texas-tech-university-is-using-a-i-to-cut-left-leaning",
+    title: "Global Health and Education Watch: Texas Tech University Is Using A.I. to Cut Left-Leaning",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-texas-tech-university-is-using-a-i-to-cut-left.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-too-hot-to-sleep-how-heatwaves-at-night-affect",
     title: "Global Health and Education Watch: Too hot to sleep? How heatwaves at night affect",
     summary:
