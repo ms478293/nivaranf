@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-2-0-has-deleted-or-altered-nearly-400-us",
+    title: "Global Health and Education Watch: Trump 2.0 has deleted or altered nearly 400 US",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-trump-2-0-has-deleted-or-altered-nearly-400-us.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-india-s-cockroach-movement-makes-schools-next-battleground-against-modi",
     title: "Global Health and Education Watch: India’s ‘Cockroach’ movement makes schools next battleground against Modi",
     summary:
