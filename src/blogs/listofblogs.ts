@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-motorbike-riders-carrying-the-sick-may-hold-key",
+    title: "Global Health and Education Watch: Ebola: Motorbike riders carrying the sick may hold key",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-ebola-motorbike-riders-carrying-the-sick-may-h.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-trump-2-0-has-deleted-or-altered-nearly-400-us",
     title: "Global Health and Education Watch: Trump 2.0 has deleted or altered nearly 400 US",
     summary:
