@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-top-economists-urge-burnham-to-sign-uk-up-to",
+    title: "Global Health and Education Watch: Top economists urge Burnham to sign UK up to",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-top-economists-urge-burnham-to-sign-uk-up-to.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-spend-more-on-vet-services-to-curb-pandemic-threat",
     title: "Global Health and Education Watch: Spend more on vet services to curb pandemic threat",
     summary:
