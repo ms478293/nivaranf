@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-student-bank-accounts-don-t-be-swayed-by-the-freebies",
+    title: "Global Health and Education Watch: Student bank accounts: don’t be swayed by the freebies",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-student-bank-accounts-don-t-be-swayed-by-the-f.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-tuesday-briefing-what-the-simon-levy-case-tells-us",
     title: "Global Health and Education Watch: Tuesday briefing: What the Simon Levy case tells us",
     summary:
