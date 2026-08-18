@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-outbreak-becomes-deadliest-in-dr-congo-s-history",
+    title: "Global Health and Education Watch: Ebola outbreak becomes deadliest in DR Congo’s history",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-ebola-outbreak-becomes-deadliest-in-dr-congo-s.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-extreme-heat-more-dangerous-for-people-60-and-over-3",
     title: "Global Health and Education Watch: Extreme heat more dangerous for people 60 and over",
     summary:
