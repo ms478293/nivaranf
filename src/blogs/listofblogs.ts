@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-do-students-lose-when-they-stop-writing",
+    title: "Global Health and Education Watch: What Do Students Lose When They Stop Writing?",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-18-global-health-and-education-watch-what-do-students-lose-when-they-stop-writing.jpg",
+    date: "2026-08-18",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-outbreak-becomes-deadliest-in-dr-congo-s-history",
     title: "Global Health and Education Watch: Ebola outbreak becomes deadliest in DR Congo’s history",
     summary:
