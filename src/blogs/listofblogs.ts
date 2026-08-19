@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-to-nominate-heidi-overton-a-top-domestic-policy",
+    title: "Global Health and Education Watch: Trump to Nominate Heidi Overton, a Top Domestic Policy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-19-global-health-and-education-watch-trump-to-nominate-heidi-overton-a-top-domestic.jpg",
+    date: "2026-08-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gps-advice-service-is-causing-cancer-diagnoses-to-be",
     title: "Global Health and Education Watch: GPs’ advice service is causing cancer diagnoses to be",
     summary:
