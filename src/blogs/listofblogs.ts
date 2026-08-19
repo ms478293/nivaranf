@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-nominates-abortion-opponent-heidi-overton-to-be-head",
+    title: "Global Health and Education Watch: Trump nominates abortion opponent Heidi Overton to be head",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-19-global-health-and-education-watch-trump-nominates-abortion-opponent-heidi-overto.jpg",
+    date: "2026-08-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-american-hiker-dies-after-lightning-strike-on-mount-etna",
     title: "Global Health and Education Watch: American Hiker Dies After Lightning Strike on Mount Etna",
     summary:
