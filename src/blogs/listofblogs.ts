@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-moderna-share-price-doubles-on-melanoma-vaccine-trial-success",
+    title: "Global Health and Education Watch: Moderna share price doubles on melanoma vaccine trial success",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-19-global-health-and-education-watch-moderna-share-price-doubles-on-melanoma-vaccin.jpg",
+    date: "2026-08-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-medical-researcher-who-touted-covid-cure-and-was-hailed",
     title: "Global Health and Education Watch: Medical researcher who touted Covid ‘cure’ and was hailed",
     summary:
