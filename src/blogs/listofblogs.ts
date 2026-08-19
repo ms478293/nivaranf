@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-at-43-i-was-fit-and-happy-then-i",
+    title: "Global Health and Education Watch: At 43, I was fit and happy. Then I",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-19-global-health-and-education-watch-at-43-i-was-fit-and-happy-then-i.jpg",
+    date: "2026-08-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-guardian-view-on-the-ebola-outbreak-in-the",
     title: "Global Health and Education Watch: The Guardian view on the Ebola outbreak in the",
     summary:
