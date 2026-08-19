@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-trump-nominates-heidi-overton-to-lead-us-food-and",
+    title: "Global Health and Education Watch: Trump nominates Heidi Overton to lead US Food and",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-19-global-health-and-education-watch-trump-nominates-heidi-overton-to-lead-us-food-.jpg",
+    date: "2026-08-19",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-brazil-bus-crash-kills-at-least-23-and-injures",
     title: "Global Health and Education Watch: Brazil bus crash kills at least 23 and injures",
     summary:
