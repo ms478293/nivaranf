@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dr-congo-to-receive-70-000-doses-of-ervebo-vaccine",
+    title: "Global Health and Education Watch: DR Congo to receive 70,000 doses of Ervebo vaccine",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-20-global-health-and-education-watch-dr-congo-to-receive-70-000-doses-of-ervebo-vac.jpg",
+    date: "2026-08-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-university-suspends-us-academic-leading-jason-arday-plagiarism-accusations-2",
     title: "Global Health and Education Watch: University suspends US academic leading Jason Arday plagiarism accusations",
     summary:
