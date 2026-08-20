@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-mamdani-sues-city-council-over-10-000-bonuses-to-teachers",
+    title: "Global Health and Education Watch: Mamdani Sues City Council Over $10,000 Bonuses to Teachers’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-20-global-health-and-education-watch-mamdani-sues-city-council-over-10-000-bonuses-.jpg",
+    date: "2026-08-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-kat-chan-eating-your-way-to-better-health",
     title: "Global Health and Education Watch: Kat Chan: eating your way to better health",
     summary:
