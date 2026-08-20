@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-burnham-announces-plans-to-clean-up-illegal-waste-dumps",
+    title: "Global Health and Education Watch: Burnham announces plans to clean up illegal waste dumps",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-20-global-health-and-education-watch-burnham-announces-plans-to-clean-up-illegal-wa.jpg",
+    date: "2026-08-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-solidarity-is-essential-in-a-more-transactional-global-health-2",
     title: "Global Health and Education Watch: Solidarity is essential in a more transactional global health",
     summary:
