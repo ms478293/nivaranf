@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-love-you-to-death-review-is-this-all-5",
+    title: "Global Health and Education Watch: Love You to Death review – is this all",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-20-global-health-and-education-watch-love-you-to-death-review-is-this-all.jpg",
+    date: "2026-08-20",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-love-you-to-death-review-is-this-all-4",
     title: "Global Health and Education Watch: Love You to Death review – is this all",
     summary:
