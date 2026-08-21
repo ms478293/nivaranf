@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-dr-congo-ebola-outbreak-spreading-exponentially-un-responders-warn",
+    title: "Global Health and Education Watch: DR Congo Ebola outbreak spreading exponentially, UN responders warn",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-21-global-health-and-education-watch-dr-congo-ebola-outbreak-spreading-exponentiall.jpg",
+    date: "2026-08-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-ebola-outbreak-growing-faster-wider-as-drc-death-toll",
     title: "Global Health and Education Watch: Ebola outbreak ‘growing faster, ⁠⁠wider’ as DRC death toll",
     summary:
