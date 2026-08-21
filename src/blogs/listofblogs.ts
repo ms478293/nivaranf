@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-jailed-ex-pakistan-pm-imran-khan-allowed-brief-hospital-visit",
+    title: "Global Health and Education Watch: Jailed ex-Pakistan PM Imran Khan allowed brief hospital visit",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-21-global-health-and-education-watch-jailed-ex-pakistan-pm-imran-khan-allowed-brief.jpg",
+    date: "2026-08-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-academic-who-publicized-plagiarism-allegations-against-jason-arday-is",
     title: "Global Health and Education Watch: Academic Who Publicized Plagiarism Allegations Against Jason Arday Is",
     summary:
