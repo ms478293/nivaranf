@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-outbreak-five-big-questions",
+    title: "Global Health and Education Watch: Ebola outbreak: five big questions",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-21-global-health-and-education-watch-ebola-outbreak-five-big-questions.jpg",
+    date: "2026-08-21",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-burnham-to-chair-growth-meeting-call-at-no-10",
     title: "Global Health and Education Watch: Burnham to chair growth meeting call at No 10",
     summary:
