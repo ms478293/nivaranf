@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-men-with-heart-disease-at-higher-risk-of",
+    title: "Global Health and Education Watch: UK men with heart disease at higher risk of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-22-global-health-and-education-watch-uk-men-with-heart-disease-at-higher-risk-of.jpg",
+    date: "2026-08-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-outrage-in-india-over-death-of-six-year-old-slapped-by",
     title: "Global Health and Education Watch: Outrage in India over death of six-year-old ‘slapped’ by",
     summary:
