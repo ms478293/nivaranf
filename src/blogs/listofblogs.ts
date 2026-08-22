@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-outrage-in-india-over-death-of-six-year-old-slapped-by",
+    title: "Global Health and Education Watch: Outrage in India over death of six-year-old ‘slapped’ by",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-22-global-health-and-education-watch-outrage-in-india-over-death-of-six-year-old-sl.jpg",
+    date: "2026-08-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-pakistan-s-imran-khan-back-to-prison-after-evaluation-at",
     title: "Global Health and Education Watch: Pakistan’s Imran Khan back to prison after evaluation at",
     summary:
