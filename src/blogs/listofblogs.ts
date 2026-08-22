@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-does-harry-and-meghan-s-return-to-england-mean",
+    title: "Global Health and Education Watch: What Does Harry and Meghan’s Return to England Mean",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-22-global-health-and-education-watch-what-does-harry-and-meghan-s-return-to-england.jpg",
+    date: "2026-08-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-40-000-bottles-of-eye-drops-across-the-us-recalled",
     title: "Global Health and Education Watch: 40,000 bottles of eye drops across the US recalled",
     summary:
