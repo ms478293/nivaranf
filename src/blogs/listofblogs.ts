@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-i-asked-13-college-grads-for-dorm-essentials-that",
+    title: "Global Health and Education Watch: I asked 13 college grads for dorm essentials that",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-22-global-health-and-education-watch-i-asked-13-college-grads-for-dorm-essentials-t.jpg",
+    date: "2026-08-22",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-somalia-child-hunger-crisis-deepens-after-aid-cuts-unicef",
     title: "Global Health and Education Watch: Somalia child hunger crisis deepens after aid cuts, UNICEF",
     summary:
