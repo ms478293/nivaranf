@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-lesson-from-canada-s-collapsed-trade-talks-with-the",
+    title: "Global Health and Education Watch: The lesson from Canada’s collapsed trade talks with the",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-the-lesson-from-canada-s-collapsed-trade-talks.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-it-s-unwise-to-end-local-scrutiny-of-nhs-trusts",
     title: "Global Health and Education Watch: It’s unwise to end local scrutiny of NHS trusts",
     summary:
