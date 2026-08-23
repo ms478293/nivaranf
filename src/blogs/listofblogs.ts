@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-big-tech-captured-american-schools",
+    title: "Global Health and Education Watch: How Big Tech Captured American Schools",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-how-big-tech-captured-american-schools.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-frustrated-gp-patients-hang-up-as-yorkshire-accent-baffles",
     title: "Global Health and Education Watch: Frustrated GP patients hang up as Yorkshire accent baffles",
     summary:
