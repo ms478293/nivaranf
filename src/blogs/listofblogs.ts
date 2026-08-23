@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-does-the-trump-administration-have-against-the-26th-3",
+    title: "Global Health and Education Watch: What Does the Trump Administration Have Against the 26th",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-what-does-the-trump-administration-have-agains.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-in-rural-chad-solar-kiosks-bring-healthcare-closer",
     title: "Global Health and Education Watch: In rural Chad, solar kiosks bring healthcare closer",
     summary:
