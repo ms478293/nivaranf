@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-what-to-know-about-the-ebola-outbreak-centered-in-3",
+    title: "Global Health and Education Watch: What to Know About the Ebola Outbreak Centered in",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-what-to-know-about-the-ebola-outbreak-centered.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-what-to-know-about-the-ebola-outbreak-centered-in-2",
     title: "Global Health and Education Watch: What to Know About the Ebola Outbreak Centered in",
     summary:
