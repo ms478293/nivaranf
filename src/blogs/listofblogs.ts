@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-how-the-deadliest-bundibugyo-ebola-outbreak-can-be-stopped-2",
+    title: "Global Health and Education Watch: How the deadliest Bundibugyo Ebola outbreak can be stopped",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-how-the-deadliest-bundibugyo-ebola-outbreak-ca.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-the-deadliest-bundibugyo-ebola-outbreak-can-be-stopped",
     title: "Global Health and Education Watch: How the deadliest Bundibugyo Ebola outbreak can be stopped",
     summary:
