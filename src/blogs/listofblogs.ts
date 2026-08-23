@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-fast-moving-wildfire-in-reno-nevada-forces-thousands-to-evacuate",
+    title: "Global Health and Education Watch: Fast-moving wildfire in Reno, Nevada, forces thousands to evacuate",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-fast-moving-wildfire-in-reno-nevada-forces-tho.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-gaza-s-hospitals-are-running-out-of-oxygen-as-healthcare",
     title: "Global Health and Education Watch: Gaza’s hospitals are running out of oxygen as healthcare",
     summary:
