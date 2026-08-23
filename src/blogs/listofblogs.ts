@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-australia-news-live-one-nation-mp-gives-hat-tip",
+    title: "Global Health and Education Watch: Australia news live: One Nation MP gives ‘hat tip’",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-23-global-health-and-education-watch-australia-news-live-one-nation-mp-gives-hat-ti.jpg",
+    date: "2026-08-23",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-moderna-s-shift-to-cancer-company-lifts-stock-up-177",
     title: "Global Health and Education Watch: Moderna’s Shift to Cancer Company Lifts Stock Up 177%",
     summary:
