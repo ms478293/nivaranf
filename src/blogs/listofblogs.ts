@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-most-english-secondary-schools-are-breaking-healthy-food-rules",
+    title: "Global Health and Education Watch: Most English secondary schools are breaking healthy food rules",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-most-english-secondary-schools-are-breaking-he.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-government-vows-to-make-business-rate-valuations-for-pubs",
     title: "Global Health and Education Watch: Government vows to make business rate valuations for pubs",
     summary:
