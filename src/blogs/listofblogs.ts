@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-alfalfa-sprouts-linked-to-food-poisoning-outbreak-in-15-states",
+    title: "Global Health and Education Watch: Alfalfa sprouts linked to food-poisoning outbreak in 15 states",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-alfalfa-sprouts-linked-to-food-poisoning-outbr.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-we-would-like-to-hear-from-young-people-in",
     title: "Global Health and Education Watch: We would like to hear from young people in",
     summary:
