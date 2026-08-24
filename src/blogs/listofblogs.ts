@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-sudan-war-22-million-education-boost-to-help-200-000",
+    title: "Global Health and Education Watch: Sudan war: $22 million education boost to help 200,000",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-sudan-war-22-million-education-boost-to-help-2.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-after-100-days-of-the-deadliest-ebola-outbreak-it",
     title: "Global Health and Education Watch: After 100 days of the deadliest Ebola outbreak, it",
     summary:
