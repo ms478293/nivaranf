@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-uk-graduate-job-vacancies-plunge-to-lowest-in-a",
+    title: "Global Health and Education Watch: UK graduate job vacancies plunge to lowest in a",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-uk-graduate-job-vacancies-plunge-to-lowest-in-.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-how-can-we-stop-destroying-the-prospects-of-a-2",
     title: "Global Health and Education Watch: How can we stop destroying the prospects of a",
     summary:
