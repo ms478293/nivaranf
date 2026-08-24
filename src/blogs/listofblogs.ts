@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-social-media-goes-into-overdrive-with-lindsay-clancy-conspiracy",
+    title: "Global Health and Education Watch: Social media goes into overdrive with Lindsay Clancy conspiracy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-social-media-goes-into-overdrive-with-lindsay-.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-children-make-up-half-of-mpox-cases-in-guinea-bissau",
     title: "Global Health and Education Watch: Children make up half of mpox cases in Guinea-Bissau",
     summary:
