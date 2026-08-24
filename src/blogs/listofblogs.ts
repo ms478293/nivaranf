@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-children-make-up-half-of-mpox-cases-in-guinea-bissau",
+    title: "Global Health and Education Watch: Children make up half of mpox cases in Guinea-Bissau",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-24-global-health-and-education-watch-children-make-up-half-of-mpox-cases-in-guinea-.jpg",
+    date: "2026-08-24",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-dreamy-ice-creams-controversial-country-houses-and-hot-health",
     title: "Global Health and Education Watch: Dreamy ice creams, controversial country houses and hot health",
     summary:
