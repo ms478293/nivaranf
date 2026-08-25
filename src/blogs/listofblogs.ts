@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-two-unvaccinated-people-die-of-measles-in-pennsylvania",
+    title: "Global Health and Education Watch: Two unvaccinated people die of measles in Pennsylvania",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-25-global-health-and-education-watch-two-unvaccinated-people-die-of-measles-in-penn.jpg",
+    date: "2026-08-25",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-reader-q-a-international-correspondent-luke-harding-answers-your-questions",
     title: "Global Health and Education Watch: Reader Q&A: international correspondent Luke Harding answers your questions",
     summary:
