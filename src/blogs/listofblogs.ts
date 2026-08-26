@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-american-students-shouldn-t-be-guinea-pigs-for-chatbots",
+    title: "Global Health and Education Watch: American Students Shouldn’t Be Guinea Pigs for Chatbots",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-26-global-health-and-education-watch-american-students-shouldn-t-be-guinea-pigs-for.jpg",
+    date: "2026-08-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-i-just-give-from-my-heart-how-dolly-parton-s",
     title: "Global Health and Education Watch: ‘I just give from my heart’: how Dolly Parton’s",
     summary:
