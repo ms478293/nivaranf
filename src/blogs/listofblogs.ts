@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-instagram-chief-testifies-at-meta-trial-says-few-teens",
+    title: "Global Health and Education Watch: Instagram chief testifies at Meta trial, says few teens",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-26-global-health-and-education-watch-instagram-chief-testifies-at-meta-trial-says-f.jpg",
+    date: "2026-08-26",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-year-of-after-school-care-now-costs-2-800-a-child",
     title: "Global Health and Education Watch: Year of after-school care now costs £2,800 a child",
     summary:
