@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-london-neurosurgeons-perform-first-successful-ai-assisted-operation-to-remove",
+    title: "Global Health and Education Watch: London neurosurgeons perform first successful AI-assisted operation to remove",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-27-global-health-and-education-watch-london-neurosurgeons-perform-first-successful-.jpg",
+    date: "2026-08-27",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-london-is-worst-area-in-england-and-wales-for",
     title: "Global Health and Education Watch: London is worst area in England and Wales for",
     summary:
