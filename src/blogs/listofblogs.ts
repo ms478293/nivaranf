@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-ebola-spreads-to-two-new-zones-in-drc-60",
+    title: "Global Health and Education Watch: Ebola spreads to two new zones in DRC; 60",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-29-global-health-and-education-watch-ebola-spreads-to-two-new-zones-in-drc-60.jpg",
+    date: "2026-08-29",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-drc-begins-vaccinating-front-line-healthcare-workers-against-ebola-2",
     title: "Global Health and Education Watch: DRC begins vaccinating front-line healthcare workers against Ebola",
     summary:
