@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-new-york-city-to-increase-cooling-tower-inspections-after",
+    title: "Global Health and Education Watch: New York City to increase cooling tower inspections after",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-30-global-health-and-education-watch-new-york-city-to-increase-cooling-tower-inspec.jpg",
+    date: "2026-08-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-inside-a-secret-school-for-afghan-girls-2",
     title: "Global Health and Education Watch: Inside a Secret School for Afghan Girls",
     summary:
