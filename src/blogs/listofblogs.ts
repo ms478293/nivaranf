@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-inside-america-s-rogue-stem-cell-industry",
+    title: "Global Health and Education Watch: Inside America’s rogue stem cell industry",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-08-30-global-health-and-education-watch-inside-america-s-rogue-stem-cell-industry.jpg",
+    date: "2026-08-30",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-who-reports-more-than-3-200-attacks-on-ukraine-s-healthcare",
     title: "Global Health and Education Watch: WHO reports more than 3,200 attacks on Ukraine’s healthcare",
     summary:
