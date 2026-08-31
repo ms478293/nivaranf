@@ -1,19 +1,7 @@
 {
   "windowStartUtc": "2026-08-31T13:00:00Z",
-  "publishedInWindow": 1,
+  "publishedInWindow": 2,
   "candidateCache": [
-    {
-      "title": "Clive Parkinson obituary",
-      "link": "https://www.theguardian.com/education/2026/aug/28/clive-parkinson-obituary",
-      "summary": "My partner, Clive Parkinson, who has died aged 63, was reader in arts, health and social justice at Manchester Metropolitan University. Working across the NHS, higher education and the voluntary sector, Clive became one of the UK’s leading voices in arts and health. Born in Morecambe, Lancashire, Clive was the son of George, a lorry driver, and Betty (nee Thurlby), a shop worker; both helped nurture the compassion and sense of community that would shape his life. After leaving school at 16 in 1979 with few qualifications, Clive attended Lancaster &amp; Morecambe College before establishing an art studio for the residents of the Royal Albert, a large Victorian hospital for adults with learning disabilities – an experience he would later describe as the most formative of his life. While there, he completed a part-time degree in independent studies and visual art at Lancaster University, where his research focused on the relationship between creativity, culture, the arts and health. Continue reading...",
-      "publishedAtUtc": "2026-08-28T18:34:46Z",
-      "domain": "theguardian.com",
-      "score": 95.0,
-      "healthHits": 2,
-      "educationHits": 4,
-      "reason": "relevance=50, credibility=35, freshness=10, health_hits=2, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
       "link": "https://www.who.int/news/item/17-05-2024-ireland-and-who-work-together-to-improve-access-to-assistive-technology-globally",
@@ -24,7 +12,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "More and more undergrads are living at home. That’s a crying shame – here’s why | Rohan Sathyamoorthy",
@@ -36,7 +24,19 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Clive Parkinson obituary",
+      "link": "https://www.theguardian.com/education/2026/aug/28/clive-parkinson-obituary",
+      "summary": "My partner, Clive Parkinson, who has died aged 63, was reader in arts, health and social justice at Manchester Metropolitan University. Working across the NHS, higher education and the voluntary sector, Clive became one of the UK’s leading voices in arts and health. Born in Morecambe, Lancashire, Clive was the son of George, a lorry driver, and Betty (nee Thurlby), a shop worker; both helped nurture the compassion and sense of community that would shape his life. After leaving school at 16 in 1979 with few qualifications, Clive attended Lancaster &amp; Morecambe College before establishing an art studio for the residents of the Royal Albert, a large Victorian hospital for adults with learning disabilities – an experience he would later describe as the most formative of his life. While there, he completed a part-time degree in independent studies and visual art at Lancaster University, where his research focused on the relationship between creativity, culture, the arts and health. Continue reading...",
+      "publishedAtUtc": "2026-08-28T18:34:46Z",
+      "domain": "theguardian.com",
+      "score": 89.0,
+      "healthHits": 2,
+      "educationHits": 4,
+      "reason": "relevance=50, credibility=35, freshness=4, health_hits=2, education_hits=4, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -48,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -60,19 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "New York City to increase cooling tower inspections after legionnaires’ outbreaks",
-      "link": "https://www.theguardian.com/society/2026/aug/30/new-york-city-cooling-towers-legionnaires-outbreaks",
-      "summary": "State and city lawmakers push to boost regulations after two outbreaks of the disease over the last two summers New York lawmakers are now trying to better protect residents from the deadly legionnaires’ disease by increasing regulations and inspections of cooling towers after two outbreaks of the infection over the last two summers and a raft of new lawsuits. Legionnaires’ disease is a serious pneumonia caused by a bacterium called legionella. It often comes from large air-conditioning systems, like those used in hotels, hospitals and high-rise buildings, because the cooling towers contain water to remove heat. If not well maintained, the liquid can foster the bacteria, which can then be swept into fans and circulated through the air. Continue reading...",
-      "publishedAtUtc": "2026-08-30T14:07:44Z",
-      "domain": "theguardian.com",
-      "score": 80.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Meet the gen Zers finding job opportunities teaching English abroad",
@@ -84,7 +72,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=34, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "‘In walked this big bundle of energy’: the day Dolly Parton came to Rotherham",
@@ -96,7 +84,7 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=33, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -108,7 +96,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -120,7 +108,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Smelling test: children need education in sniffing aromas, scientist says",
@@ -132,19 +120,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Tom Towelling Teaches You to Knit review – quirky yarns and a pop quiz in maths",
-      "link": "https://www.theguardian.com/stage/2026/aug/28/tom-towelling-teaches-you-to-knit-review-pleasance-courtyard-edinburgh",
-      "summary": "Pleasance Courtyard, Edinburgh Hopping from a PowerPoint on hairlines to songs about favourite motorways, Towelling’s set is fun but drops a stitch or two The route from the classroom to the comedy stage is well travelled, and ex-maths teacher Tom Towelling makes it the thread of his show here, conducting his audience like so many recalcitrant pupils under his charge. In case that sounds triggering, never fear: this debut show is unlike any other schoolroom you’ve been in. Towelling is one of several oddball comics elevated to the best newcomer shortlist for this year’s Edinburgh comedy awards , and his show is a noodly, mellow collage of sketch, song and educational back-and-forth with the crowd. Let’s get the title – Tom Towelling Teaches You to Knit – out of the way early. When audience members play ball with this or that bit of interaction, the Birmingham man rewards them by binding them together loosely with wool. As the show progresses, a cat’s cradle unspools, towards – well, nothing in particular. The idea goes undeveloped. That’s not the only instance here when you feel you’re on the receiving end of quirkiness for quirkiness’s sake – see his song about favourite motorways, or a fairly cheap closing routine revealing his supposed life ambition. Continue reading...",
-      "publishedAtUtc": "2026-08-28T15:15:00Z",
-      "domain": "theguardian.com",
-      "score": 77.0,
-      "healthHits": 0,
-      "educationHits": 4,
-      "reason": "relevance=32, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "French high schools rush to put Macron’s phone ban into force",
@@ -156,7 +132,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Is it true that … mental health is affected by inflammation?",
@@ -168,7 +144,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Over 6,000 Ebola cases confirmed in DRC as death toll nears 3,000",
+      "link": "https://www.aljazeera.com/news/2026/8/31/over-6000-ebola-cases-confirmed-in-drc-as-death-toll-nears-3000?traffic_source=rss",
+      "summary": "Outbreak in the DRC &#039;the fastest-spreading Ebola epidemic ever recorded,&#039; as country struggles to contain infections.",
+      "publishedAtUtc": "2026-08-31T16:24:20Z",
+      "domain": "aljazeera.com",
+      "score": 75.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "‘Who knows what they’re taking?’: people risk the gray market for the newest weight-loss drug",
@@ -180,7 +168,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -192,7 +180,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Sweden ends aid to Liberia in a hammer blow to women’s rights and healthcare",
@@ -204,19 +192,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
-      "title": "‘People should not feel guilty’: weekend lie-in may be good for you, experts say",
-      "link": "https://www.theguardian.com/lifeandstyle/2026/aug/30/sleeping-in-weekend-may-be-good-for-you-study",
-      "summary": "Previous advice stressed risks of sleeping in but about 90 minutes extra could prevent high blood pressure For years, experts have stressed the risks of lie-ins, warning that catching up on missed sleep at the weekend can disrupt the body’s internal clock and trigger adverse health effects. Now analysis has produced a heartening caveat to that advice: if you do not overdo it, weekend lie-ins may be good for you, with an ideal benchmark of 1hr 27min extra in bed to protect against high blood pressure. Continue reading...",
-      "publishedAtUtc": "2026-08-30T17:00:01Z",
+      "title": "New York City to increase cooling tower inspections after legionnaires’ outbreaks",
+      "link": "https://www.theguardian.com/society/2026/aug/30/new-york-city-cooling-towers-legionnaires-outbreaks",
+      "summary": "State and city lawmakers push to boost regulations after two outbreaks of the disease over the last two summers New York lawmakers are now trying to better protect residents from the deadly legionnaires’ disease by increasing regulations and inspections of cooling towers after two outbreaks of the infection over the last two summers and a raft of new lawsuits. Legionnaires’ disease is a serious pneumonia caused by a bacterium called legionella. It often comes from large air-conditioning systems, like those used in hotels, hospitals and high-rise buildings, because the cooling towers contain water to remove heat. If not well maintained, the liquid can foster the bacteria, which can then be swept into fans and circulated through the air. Continue reading...",
+      "publishedAtUtc": "2026-08-30T14:07:44Z",
       "domain": "theguardian.com",
       "score": 72.0,
-      "healthHits": 1,
+      "healthHits": 3,
       "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "reason": "relevance=27, credibility=35, freshness=10, health_hits=3, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Tom Towelling Teaches You to Knit review – quirky yarns and a pop quiz in maths",
+      "link": "https://www.theguardian.com/stage/2026/aug/28/tom-towelling-teaches-you-to-knit-review-pleasance-courtyard-edinburgh",
+      "summary": "Pleasance Courtyard, Edinburgh Hopping from a PowerPoint on hairlines to songs about favourite motorways, Towelling’s set is fun but drops a stitch or two The route from the classroom to the comedy stage is well travelled, and ex-maths teacher Tom Towelling makes it the thread of his show here, conducting his audience like so many recalcitrant pupils under his charge. In case that sounds triggering, never fear: this debut show is unlike any other schoolroom you’ve been in. Towelling is one of several oddball comics elevated to the best newcomer shortlist for this year’s Edinburgh comedy awards , and his show is a noodly, mellow collage of sketch, song and educational back-and-forth with the crowd. Let’s get the title – Tom Towelling Teaches You to Knit – out of the way early. When audience members play ball with this or that bit of interaction, the Birmingham man rewards them by binding them together loosely with wool. As the show progresses, a cat’s cradle unspools, towards – well, nothing in particular. The idea goes undeveloped. That’s not the only instance here when you feel you’re on the receiving end of quirkiness for quirkiness’s sake – see his song about favourite motorways, or a fairly cheap closing routine revealing his supposed life ambition. Continue reading...",
+      "publishedAtUtc": "2026-08-28T15:15:00Z",
+      "domain": "theguardian.com",
+      "score": 71.0,
+      "healthHits": 0,
+      "educationHits": 4,
+      "reason": "relevance=32, credibility=35, freshness=4, health_hits=0, education_hits=4, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "‘Our children are less cognitively capable,’ says neuroscientist who wants to cut screen use in schools",
@@ -228,7 +228,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -240,7 +240,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Malaria, Likely Spread by Mosquito on Plane, Kills 2 Airport Workers in Germany",
@@ -252,7 +252,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Baby Goats From a Traveling Petting Zoo Test Positive for Rabies",
@@ -264,7 +264,31 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Day Cares Will Get Funds to Open in Time for School, Mamdani Says",
+      "link": "https://www.nytimes.com/2026/08/31/nyregion/day-care-funding-nyc-mamdani.html",
+      "summary": "Mr. Mamdani and Kamar Samuels, the chancellor of the city’s schools, made the announcement after some providers told The New York Times they had no money to open on the first day of school.",
+      "publishedAtUtc": "2026-08-31T18:26:37Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Private Equity Wants to Invest in College Sports. Some Schools Are Wary.",
+      "link": "https://www.nytimes.com/2026/08/31/business/private-equity-college-sports.html",
+      "summary": "As desperate as many athletic programs are for money, they are proceeding cautiously when it comes to deals with private equity.",
+      "publishedAtUtc": "2026-08-31T18:52:09Z",
+      "domain": "nytimes.com",
+      "score": 70.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "By Fighting Union Pay Bonus, Mamdani Wins Rare Praise From Conservatives",
@@ -276,19 +300,43 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
-      "title": "Jason Arday accuser given three-month teaching ban but can continue research",
-      "link": "https://www.theguardian.com/uk-news/2026/aug/30/nathan-cofnas-jason-arday-accuser-teaching-ban-research",
-      "summary": "Nathan Cofnas told by Ghent University to work remotely as US ambassador claims credit for lifting of suspension Prof Jason Arday’s accuser Nathan Cofnas has been barred from teaching on Ghent University campus for three months but has been allowed to continue his research position. Cofnas, an American academic, was suspended from his postdoctoral research position at the Belgian institution earlier this month pending a “preliminary investigation” launched after Arday’s death. Continue reading...",
-      "publishedAtUtc": "2026-08-30T15:35:11Z",
+      "title": "Caregiver creep: how helping elderly relatives can snowball into a full-time job",
+      "link": "https://www.theguardian.com/wellness/2026/aug/31/caregiver-creep-caring-elderly-relatives",
+      "summary": "Assisting an ageing loved one can start with small tasks but may lead to full-time caregiving that requires more support Helping an ageing parent or loved one often begins with easy-to-field requests: Pick up a prescription. Drive them to a doctor’s appointment. Grab groceries. However, light tasks – just “helping out” here and there – may eventually snowball into the avalanche of full-time caregiving, a phenomenon becoming known as “caregiver creep”. Like “ caregiver burnout ”, it’s not a formal term, but there is growing awareness about this slow build among healthcare providers and experts. Continue reading...",
+      "publishedAtUtc": "2026-08-31T16:00:30Z",
       "domain": "theguardian.com",
       "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘Superhuman’ AI tool spots heart disease in less than 2 seconds",
+      "link": "https://www.theguardian.com/technology/2026/aug/31/superhuman-ai-tool-spots-heart-disease",
+      "summary": "Technology trained on millions of routine ECGs could fast-track high-risk patients for treatment Doctors have developed a “superhuman” AI tool that can spot heart disease in less than two seconds. The groundbreaking technology has been trained on millions of patients and works by extracting more information from a routine electrocardiogram (ECG) than the human eye can typically see. Continue reading...",
+      "publishedAtUtc": "2026-08-31T16:00:29Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "A pediatrician is running for Senate. Can doctors change the political debate over health and science?",
+      "link": "https://www.theguardian.com/us-news/2026/aug/31/annie-andrews-south-carolina-senate",
+      "summary": "After Lindsey Graham’s death, Democrat Annie Andrews finds herself in a closely watched race as she seeks to flip his Republican seat Annie Andrews was a dark horse Democrat challenging a five-term Republican in the US Senate when 314 Action, a political action fund devoted to electing scientists and doctors, first backed her. Now, after the unexpected death of Senator Lindsey Graham, Andrews finds herself in a closely watched race. Donald Trump persuaded South Carolina voters last week to select Graham’s sister, Darline , as the new Republican candidate. They will face off in November in an election still heavily favored to keep the seat in Republican hands in the conservative state. Continue reading...",
+      "publishedAtUtc": "2026-08-31T14:08:12Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Doctors’ AI scribes get names of drugs and diagnoses wrong, NHS watchdog warns",
@@ -300,7 +348,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "NHS to offer free high-street cholesterol tests in England",
@@ -312,19 +360,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "So you have diarrhea. Here’s what to do and when to seek care",
-      "link": "https://www.theguardian.com/wellness/2026/aug/30/diarrhea-home-treatment-symptoms",
-      "summary": "The discussion about diarrhea has increased lately, especially with the rise of cyclosporiasis. Although unpleasant, it is manageable and can be treated at home In the US, people are discussing diarrhea more than usual. As of late August, more than 17,000 people across the US have had cyclosporiasis, a parasitic infection often traced to contaminated produce. But tens of millions of diarrhea cases occur in the US every year, caused by lots of other factors. Some causes, such as cyclospora infection, benefit from antibiotic treatment. But most episodes of diarrhea go away by themselves and don’t require treatment apart from staying hydrated, says Benjamin Levy, a gastroenterologist at the University of Chicago. Continue reading...",
-      "publishedAtUtc": "2026-08-30T16:00:01Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -336,7 +372,691 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Share Your Experiences With the Public Health System in Louisiana",
+      "link": "https://www.nytimes.com/2026/08/17/us/share-your-experiences-with-the-public-health-system-in-louisiana.html",
+      "summary": "The New York Times is examining how public health is changing in the state, from the whooping cough outbreak to vaccine policies, and we want to hear from you.",
+      "publishedAtUtc": "2026-08-17T09:02:23Z",
+      "domain": "nytimes.com",
+      "score": 69.0,
+      "healthHits": 4,
+      "educationHits": 0,
+      "reason": "relevance=34, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Strengthening public health across Lebanon with EIB Global",
+      "link": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
+      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and healthcare support to over 50 000 people with chronic diseases like diabetes, cardiovascular issues, and cancer",
+      "publishedAtUtc": "2025-04-01T11:55:48Z",
+      "domain": "who.int",
+      "score": 68.0,
+      "healthHits": 3,
+      "educationHits": 0,
+      "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
+      "link": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems",
+      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO&rsquo;s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his recent remarks to the Philanthropy Asia Summit, held in Singapore on 5&ndash;7 May 2025. In his remarks, he expressed his appreciation to the Temasek Foundation and the Philanthropy Asia Alliance for organizing the Summit while highlighting the importance of philanthropy in strengthening global health, supporting country self-reliance, and partnering with WHO to address health challenges in an increasingly turbulent world. At the Summit, Dr Tedros thanked His Excellency President Tharman and Singapore, for its leadership in global health and its support to WHO. Dr Tedros stated that Singapore and the Temasek Foundation were amongst the first to pledge support to WHO&rsquo;s Investment Round.&ldquo;We look forward to your continued leadership and partnership as we work together to realize WHO&rsquo;s founding vision: the highest attainable standard of health &ndash; not as a luxury for some, but a right for all&rdquo;, said Dr Tedros. During the Investment Round, WHO has sought to expand its donor base, including by engaging strategically with philanthropic organizations. As Dr Tedros noted, partnerships with philanthropies help countries to strengthen essential health services and make sustainable progress towards universal health coverage. Philanthropic actors play a vital role in improving global health outcomes, providing significant resources and expertise needed to build stronger and more accessible health-care systems. Investments made by philanthropic partners often complement and amplify the work of governments, international organizations and other stakeholders in the global health community. Philanthropy can be particularly effective in supporting innovative or high-risk research that may not be funded though more traditional funding sources. Philanthropic actors are effective partners when it comes to raising awareness and advocating for policies to improve global health outcomes, address health disparities and promote health equity. Looking ahead, philanthropic collaboration will remain central to achieving the goals outlined in WHO&rsquo;s Fourteenth General Programme of Work. Developing strong partnerships with philanthropic actors allows WHO to leverage the strengths of a range of global health players to bring better health to people and maximize impact.",
+      "publishedAtUtc": "2025-05-19T11:53:23Z",
+      "domain": "who.int",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
+      "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
+      "summary": "Governments of the world today agreed to continue working on a proposed pandemic agreement, and to further refine the draft, ahead of the Seventy-seventh World Health Assembly that starts 27 May 2024. Governments meeting at the World Health Organization headquarters in Geneva agreed to resume hybrid and in-person discussions over coming weeks to advance work on critical issues, including around a proposed new global system for pathogen access and benefits sharing (i.e. life-saving vaccines, treatments and diagnostics); pandemic prevention and One Health; and the financial coordination needed to scale up countries&rsquo; capacities to prepare for and respond to pandemics. \"During more than two years of intensive negotiations, WHO&rsquo;s Member States have shown unwavering commitment to forging a generational agreement to protect the world from a repeat of the horrors caused by the COVID-19 pandemic,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;I welcome the determination that all countries have shown to continue their work and fulfill the mission on which they embarked.&rdquo; The Member State-led Intergovernmental Negotiating Body (INB) was established over two years ago to take this effort forward. The Bureau of the INB, which is guiding the process, will submit its outcome for consideration at the World Health Assembly. INB Bureau Co-Chair Dr Precious Matsoso, from South Africa, said progress had been made during this latest round of discussions on a wide range of issues contained in the draft agreement. &ldquo;We are witnessing history play out before our eyes during this process, with the coming together of all countries to decide a binding pact to protect all citizens of the world,&rdquo; said Ms Matsoso. &ldquo;This is not a simple exercise. This is the first ever process to develop a proposed agreement on pandemic prevention, preparedness and response. Getting this done means getting it right, and the INB Bureau is committed to help finalize a meaningful, lasting agreement.&rdquo; Fellow INB Bureau Co-Chair, Mr Roland Driece, from the Netherlands, said when countries launched the process two years ago to develop a pandemic agreement, they did so knowing they had set an ambitious timeline to reach an ambitious goal. &ldquo;This unprecedented effort by all WHO Member States was launched in response to an unprecedented global emergency &ndash; the COVID-19 pandemic,&rdquo; said Mr Driece. &ldquo;These sovereign states did so recognizing that great collaboration and coordination were needed in the face of pandemics. While negotiations have been challenging at times, all countries agree that the world must be better prepared for the next pandemic. It is not a matter of if a pandemic will happen again; it is a matter of when. We cannot afford to miss this historic opportunity to make the world safer from the next pandemic threat.&rdquo; In March 2021, heads of state and government from two dozen countries issued a statement of commitment calling for global collaboration to prepare for, prevent and respond to pandemics. In December 2021, WHO Member States decided to launch a global process to draft and negotiate a legally binding convention, agreement or other international instrument to strengthen pandemic prevention, preparedness and response. &nbsp;",
+      "publishedAtUtc": "2024-05-10T19:15:31Z",
+      "domain": "who.int",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Trump EPA is manipulating safety data around a highly toxic flame retardant, advocates allege",
+      "link": "https://www.theguardian.com/environment/2026/aug/30/trump-epa-data-toxic-flame-retardant",
+      "summary": "Widely used chemical TBBPA may present a danger to US public, and especially children, independent research finds The Environmental Protection Agency is manipulating safety data around a highly toxic flame retardant deployed across the US economy, public health advocates allege. The chemical, TBBPA, has been found in dust in US homes and in consumer goods at combined levels that independent research has found may present a danger to the public, and especially small children . Continue reading...",
+      "publishedAtUtc": "2026-08-30T13:00:56Z",
+      "domain": "theguardian.com",
+      "score": 67.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "The Guardian view on GCSE results: much to celebrate, much to reform | Editorial",
+      "link": "https://www.theguardian.com/commentisfree/2026/aug/20/the-guardian-view-on-gcse-results-much-to-celebrate-much-to-reform",
+      "summary": "Another post-pandemic cohort has shown its resilience and talent. But growing inequalities of outcome must be addressed Most pupils who received their GCSE results this week were in the penultimate year of primary school when Covid struck, disrupting their preparation for secondary education. As with other post-pandemic cohorts, their achievements are therefore a testament to their ability, resilience and determination. A strong set of results, particularly in the core subjects of English and maths, should also be seen as a tribute to&nbsp;teachers dealing with ever expanding workloads. Overall the impression is one of a welcome return to stability, as the legacy of the years of cancelled exams and teacher assessments is left behind. The proportion of top grades awarded in England, Wales and Northern Ireland rose compared with last year, but only by a tenth of a percentage point, while the overall pass rate fell by the same margin to 67.3% – the same as in 2019. Nevertheless, the latest results throw up familiar grounds for concern. Continue reading...",
+      "publishedAtUtc": "2026-08-20T17:46:28Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 0,
+      "educationHits": 3,
+      "reason": "relevance=31, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Statins can reduce dementia risk by up to 15%, long-term study suggests",
+      "link": "https://www.theguardian.com/society/2026/aug/30/statins-reduce-dementia-alzheimers-risk-study",
+      "summary": "The cholesterol-busting drugs are more effective the earlier in life they are taken, 15-year research project indicates Statins can lower the risk of dementia by 15%, and the earlier in life they are taken the higher the chances of avoiding the disease, a 15-year study suggests. The number of people living with dementia globally is forecast to nearly triple to 153 million by 2050. But experts believe almost half of dementia cases could be prevented or delayed. Continue reading...",
+      "publishedAtUtc": "2026-08-30T07:00:50Z",
+      "domain": "theguardian.com",
+      "score": 66.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
+      "link": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
+      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
+      "publishedAtUtc": "2025-03-06T12:48:53Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
+      "link": "https://www.who.int/news/item/29-08-2024-the-republic-of-korea-and-who-discuss-joint-priorities--challenges-and-trends-around-global-health",
+      "summary": "The World Health Organization (WHO) and the Republic of Korea have a long-standing partnership spanning over 75 years. As a result of their fruitful collaboration, there has been significant progress in health and development all around the world. The Republic of Korea has gone from being a donor-recipient country to a donor-country and is now a leader in global health and playing a critical role on the world stage. Dr Catharina Boehme, Assistant Director-General for External Relations and Governance (WHO) and Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination (Ministry of Health and Welfare, Republic of Korea), together with counterparts from WHO and the Government of the Republic of Korea. &copy; WHO To further strengthen this partnership and our commitment to working jointly to address global health challenges, WHO and the Republic of Korea convened their second Strategic Dialogue in Seoul from 28 to 29 August 2024. Dr Catharina Boehme, Assistant Directory-General for External Relations and Governance, led the WHO delegation and was accompanied by an in-person team and colleagues participating virtually from the three levels of the Organization (headquarters, regional, and country offices). Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination, Ministry of Health, led the Republic of Korea delegation and was joined by senior officials including Dr Young-Mee Jee, Commissioner, Korea Disease Control and Prevention Agency, as well as senior counterparts from the Ministry of Foreign Affairs, and the Ministry of Food and Drug Safety. In addition, in line with WHO's work to enhance collaboration with parliamentarians, the WHO delegation also met with various Members of the National Assembly that are championing the global health agenda. The recently concluded two-day meeting resulted in an alignment of priorities and paved the way for enhanced collaboration between WHO and the Government of Korea. WHO delegation with Mr Jonghan Park, Director-General, Development Cooperation (Ministry of Foreign Affairs) - holding up the WHO Investment Case report . &copy; WHO &nbsp;",
+      "publishedAtUtc": "2024-09-04T09:19:05Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
+      "link": "https://www.who.int/news/item/27-08-2024-fourteen-african-countries--key-partners-unite-to-provide-critical-resources-for-health-in-who-s-first-ever-investment-round",
+      "summary": "In an unprecedented show of unity in support of the World Health Organization, 14 African countries and many partners pledged over US$ 45 million to the WHO Investment Round, a three-month-old initiative aimed at generating sustainable financing for the organization at the center of the global health architecture. The commitments were made during the World Health Organization (WHO) Regional Committee for Africa, with heads of state and government from across the continent underscoring the importance of investing in global health and ensuring a strong WHO. &ldquo;I thank our African Region Member States for actively supporting WHO&rsquo;s first Investment Round to mobilize predictable and flexible resources needed for our core work over the next four years,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Full, sustainable funding will enable WHO to support countries better in their work to build healthier, more resilient, and more prosperous populations.&rdquo; The countries and partners came together for the historic event aimed at sustainably funding WHO and thus enabling it to more effectively fulfil its mandate and advance key objectives to promote, provide and protect health and well-being for all. The countries included Botswana, Cabo Verde, Chad, Congo, Ethiopia, Gambia, Mauritius, Namibia, Niger, Rwanda, Senegal, Seychelles, South Africa, and the United Republic of Tanzania. Many partners joined Members States in making commitments of support to WHO and committing to providing pledges later in the year, including Helmsley Charitable Trust, World Diabetes Foundation, Roche, Kuwait Fund for Arab Economic Development, the Bill &amp; Melinda Gates Foundation, African Development Bank and the WHO Foundation. &ldquo;A strong, predictable and sustainably financed WHO is essential for our region and the world to meet the multiple health threats we face; and support the prevention of disease based on the vast evidence at our disposal,&rdquo; said Dr Matshidiso Moeti, WHO Regional Director for Africa. &ldquo;Every pledge and every partnership counts. Together, we can achieve a future where health and well-being are accessible to all.&rdquo; The WHO Investment Round will continue in the coming months and feature key pledging moments around the world. Learn more about the WHO Investment Round . Launched at the World Health Assembly in May 2024, the Investment Round aims to generate contributions that are flexible and thereby aligned with WHO&rsquo;s strategy as approved by its Member States; predictably provided at the start of the four-year budget cycle to enable strategic decision-making; and resilient in that they will derive from a larger, more diverse set of donors. &nbsp;",
+      "publishedAtUtc": "2024-08-27T19:45:08Z",
+      "domain": "who.int",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘People should not feel guilty’: weekend lie-in may be good for you, experts say",
+      "link": "https://www.theguardian.com/lifeandstyle/2026/aug/30/sleeping-in-weekend-may-be-good-for-you-study",
+      "summary": "Previous advice stressed risks of sleeping in but about 90 minutes extra could prevent high blood pressure For years, experts have stressed the risks of lie-ins, warning that catching up on missed sleep at the weekend can disrupt the body’s internal clock and trigger adverse health effects. Now analysis has produced a heartening caveat to that advice: if you do not overdo it, weekend lie-ins may be good for you, with an ideal benchmark of 1hr 27min extra in bed to protect against high blood pressure. Continue reading...",
+      "publishedAtUtc": "2026-08-30T17:00:01Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Remaking the biscuit: from Doritos to digestives, why the UK’s snacks are being ‘reformulated’",
+      "link": "https://www.theguardian.com/food/2026/aug/29/food-snacks-britain-re-engineered-government-regulations",
+      "summary": "Healthy eating rules are forcing brands to recook their recipes. Are consumers noticing the difference? Bite into a Ritz cracker today and you’re eating 80% less saturated fat than you would have been just a few years ago. The biscuit looks and snaps the same, and tastes close enough that most buyers have no idea they’re eating a new recipe. One of the biggest changes was swapping palm oil for sunflower oil, but there was much more to it than that. The reformulation took years to perfect in a laboratory, where scientists tested everything from density to how the cracker responds to heat, moisture and packaging. Continue reading...",
+      "publishedAtUtc": "2026-08-29T11:00:25Z",
+      "domain": "theguardian.com",
+      "score": 64.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
+      "link": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health",
+      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
+      "publishedAtUtc": "2026-02-25T18:06:55Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
+      "link": "https://www.who.int/news/item/10-04-2025-worldwide-rally-for-maternal-and-newborn-health-marks-world-health-day-2025",
+      "summary": "On the occasion of the World Health Day 2025 dedicated to the theme of Healthier beginnings, hopeful futures, over 100 global WHO offices have organized wide-ranging public advocacy actions in collaboration with Member States, communities, health workers, partner and donor agencies and civil society organizations.",
+      "publishedAtUtc": "2025-04-10T15:02:54Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
+      "link": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
+      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic directions and Belgium's development cooperation priorities in the context of an evolving global health landscape.",
+      "publishedAtUtc": "2025-03-11T08:49:23Z",
+      "domain": "who.int",
+      "score": 63.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO reports more than 3,200 attacks on Ukraine’s healthcare system since full-scale invasion",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168226",
+      "summary": "Since the beginning of Russia’s full-scale invasion of Ukraine, 3,205 attacks on healthcare facilities have been carried out, World Health Organization (WHO) Representative for Ukraine Jarno Habicht reported on Friday following fresh overnight strikes.",
+      "publishedAtUtc": "2026-08-28T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=23, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Walmart to Pay $50 Million to Settle Opioid Lawsuit, US Says",
+      "link": "https://www.nytimes.com/2026/08/28/us/walmart-opioid-lawsuit-settlement.html",
+      "summary": "The resolution is part of an effort to hold retailers and pharmacists accountable for what the government says were their roles in the opioid epidemic.",
+      "publishedAtUtc": "2026-08-29T01:08:50Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "FAFSA Form for College Aid Will Be Less Stressful This Year, Officials Say",
+      "link": "https://www.nytimes.com/2026/08/28/business/college-aid-fafsa.html",
+      "summary": "The college financial aid form has long been a stressor for high school seniors and their parents. Fixes have made it simpler and faster to complete, officials say.",
+      "publishedAtUtc": "2026-08-28T21:38:47Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "The 10 P.M. Dinner Is a Spanish Tradition. Are People Giving It Up?",
+      "link": "https://www.nytimes.com/2026/08/30/world/europe/spain-late-dinner-time.html",
+      "summary": "There are signs that Spaniards are eating earlier in the evening. Experts say it could make for a healthier country, but not everyone is ready to part with the custom.",
+      "publishedAtUtc": "2026-08-30T11:07:46Z",
+      "domain": "nytimes.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Jason Arday accuser given three-month teaching ban but can continue research",
+      "link": "https://www.theguardian.com/uk-news/2026/aug/30/nathan-cofnas-jason-arday-accuser-teaching-ban-research",
+      "summary": "Nathan Cofnas told by Ghent University to work remotely as US ambassador claims credit for lifting of suspension Prof Jason Arday’s accuser Nathan Cofnas has been barred from teaching on Ghent University campus for three months but has been allowed to continue his research position. Cofnas, an American academic, was suspended from his postdoctoral research position at the Belgian institution earlier this month pending a “preliminary investigation” launched after Arday’s death. Continue reading...",
+      "publishedAtUtc": "2026-08-30T15:35:11Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Exeter University approves deal with Saudi Arabia to train military officers and officials",
+      "link": "https://www.theguardian.com/education/2026/aug/29/exeter-university-approves-deal-with-saudi-arabia-to-train-military-officers-and-officials",
+      "summary": "In move that could generate millions, Exeter academics to deliver MA at National Defense University in Riyadh The University of Exeter has approved plans for a “formal partnership” with Saudi Arabia to train senior military officers and government officials, despite long-held concerns about the Saudi government’s human rights record, the Guardian has learned. In a deal that could generate millions of pounds for the Russell Group university, Exeter academics will deliver an MA in applied security and strategy (also known as an MStrat) to a cohort at the National Defense University (NDU) in Riyadh. Continue reading...",
+      "publishedAtUtc": "2026-08-29T08:00:22Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "So you have diarrhea. Here’s what to do and when to seek care",
+      "link": "https://www.theguardian.com/wellness/2026/aug/30/diarrhea-home-treatment-symptoms",
+      "summary": "The discussion about diarrhea has increased lately, especially with the rise of cyclosporiasis. Although unpleasant, it is manageable and can be treated at home In the US, people are discussing diarrhea more than usual. As of late August, more than 17,000 people across the US have had cyclosporiasis, a parasitic infection often traced to contaminated produce. But tens of millions of diarrhea cases occur in the US every year, caused by lots of other factors. Some causes, such as cyclospora infection, benefit from antibiotic treatment. But most episodes of diarrhea go away by themselves and don’t require treatment apart from staying hydrated, says Benjamin Levy, a gastroenterologist at the University of Chicago. Continue reading...",
+      "publishedAtUtc": "2026-08-30T16:00:01Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "We tried 15 lotions over three weeks. Here’s which our testers loved – and which left them high and dry",
+      "link": "https://www.theguardian.com/thefilter-us/2026/aug/29/best-body-lotion",
+      "summary": "From Jergens and Naturium to CeraVe and Eucerin, there’s a potion on this list that will keep every body soft and moisturized The best facial cleansers in the US for every skin type, recommended by dermatologists Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things Your skin is the largest organ on the body. Taking care of it can feel like a full-time job, especially if you struggle with anything from dryness and sun damage to psoriasis, not to mention allergies and hormone fluctuations over time. Picking the right lotion for your skin is crucial – and it’s much more of a health decision than many people realize. Packaging, brand loyalty, fragrance or recommendations from your favorite influencers might factor into your decision. But when considering a lotion for long-term use, the best options are those that will actually benefit the skin. Continue reading...",
+      "publishedAtUtc": "2026-08-29T14:15:29Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Pharma stocks soar as investors seek AI alternatives",
+      "link": "https://www.ft.com/content/2c65a745-8169-4192-971a-022bdfc0e7ad?syn-25a6b1a6=1",
+      "summary": "Pricing deals with the White House and positive clinical data boost sector",
+      "publishedAtUtc": "2026-08-30T10:00:01Z",
+      "domain": "ft.com",
+      "score": 62.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Salmonella cases in UK likely to rise until source of outbreak is found",
+      "link": "https://www.theguardian.com/food/2026/aug/28/salmonella-cases-in-uk-likely-to-rise-until-source-of-outbreak-is-found",
+      "summary": "Experts say imported eggs served in cafes and restaurants may be behind hundreds of infections and one death Salmonella cases in the UK are expected to rise until the common source is identified, something that is notoriously difficult to establish, experts have warned. There have been 474 confirmed cases and one death linked to the current outbreak, according to the UK Health Security Agency (UKHSA), with the latest investigations suggesting it is associated with eating imported eggs in cafes and restaurants. Continue reading...",
+      "publishedAtUtc": "2026-08-28T16:42:32Z",
+      "domain": "theguardian.com",
+      "score": 61.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "UN chief condemns ‘indifference’ as Ebola cases mount in DR Congo",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168217",
+      "summary": "The Ebola Bundibugyo&nbsp;outbreak in the Democratic Republic of the Congo (DRC) requires “urgent” action and funding to rein in its alarming spread, the UN Secretary-General told reporters at UN Headquarters on Thursday.",
+      "publishedAtUtc": "2026-08-27T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 60.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘Cheap travel is not a defence’: the parents facing court for school absences in England",
+      "link": "https://www.theguardian.com/education/2026/aug/15/inside-court-england-parents-face-fines-school-absence",
+      "summary": "In one court in Kent, most cases relate to term-time holidays, but non-attendance is a complex issue and post-pandemic rates remain high As the long school summer break approached its mid-point recently, Margate beach was crowded with families enjoying the brief reprieve between the year’s fourth and fifth heatwaves. For most, thoughts of the classroom were probably not at the forefront of their minds. But for the seven mothers and two fathers who were summoned at 10am to a stuffy room in the town’s magistrates court, set just behind the beachfront strip of arcades, the subject was unavoidable. They were among hundreds of parents due in courts across England this month for failing to ensure their children had regularly attended school over the course of the last academic year. Continue reading...",
+      "publishedAtUtc": "2026-08-15T12:00:57Z",
+      "domain": "theguardian.com",
+      "score": 59.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "How can we stop destroying the prospects of a generation? Scrapping compulsory GCSE resits will be a start | Polly Toynbee",
+      "link": "https://www.theguardian.com/education/commentisfree/2026/aug/24/stop-destroying-generation-compulsory-gcse-resits-michael-gove",
+      "summary": "Michael Gove calls the axing of his Tory strategy ‘bringing back stupid’. He doesn’t seem to care that it did more harm than good GCSE results day was marked with the usual front pages filled with pictures of beaming students. What you didn’t see was the invisible third of 16-year-olds in England who failed their maths and English GCSEs, the obstacle to their future. That’s 360,000 failed in a system designed by Michael Gove as education minister to mark out winners from losers. It’s a cast of mind shared by many in his party who still yearn for the 11-plus , which consigned a random number of children to failure before they’d hardly begun. A few councils still do it. Polly Toynbee is a Guardian columnist Continue reading...",
+      "publishedAtUtc": "2026-08-24T15:31:56Z",
+      "domain": "theguardian.com",
+      "score": 59.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO launches unique training course to enable parliamentarians in global health security",
+      "link": "https://www.who.int/news/item/12-07-2024-who-launches-unique-training-course-to-enable-parliamentarians-in-global-health-security",
+      "summary": "The World Health Organization has released \"The Role of Parliaments and Parliamentarians in Strengthening Health Security Preparedness\", an online training course. This essential resource aims to equip parliamentarians with the knowledge and tools necessary to enhance global health security efforts.",
+      "publishedAtUtc": "2024-07-12T15:17:48Z",
+      "domain": "who.int",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "More health workers, stronger systems: Africa’s new ambitious goal",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168207",
+      "summary": "Facing a projected shortage of more than six million health professionals by 2035, African countries are stepping up efforts to strengthen their workforce, with a new decade-long plan announced on Wednesday during a meeting of health ministers in Addis Ababa, Ethiopia.",
+      "publishedAtUtc": "2026-08-26T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "F.D.A. Approves the Drug Daraxonrasib That’s Poised to Transform Pancreatic Cancer",
+      "link": "https://www.nytimes.com/2026/08/26/science/pancreatic-cancer-daraxonrasib-approval.html",
+      "summary": "In a key clinical trial, patients who got the pill, daraxonrasib, lived twice as long as those who got chemotherapy.",
+      "publishedAtUtc": "2026-08-27T13:58:43Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘You’re Ruining My Dreams’: C.T.E. Study Adds to Family Tension Over Football",
+      "link": "https://www.nytimes.com/2026/08/26/us/parents-football-cte-decisions.html",
+      "summary": "Many families are engaged in tense debates after a new study found a high percentage of N.F.L. players had developed degenerative brain disease.",
+      "publishedAtUtc": "2026-08-27T13:56:29Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Funding Delays Threaten Rollout of Mamdani’s 2-K Program",
+      "link": "https://www.nytimes.com/2026/08/27/nyregion/nyc-2k-child-care-programs-funding-mamdani.html",
+      "summary": "Many early childhood centers, the backbone of New York City’s universal child care system, have not received money from the city for this school year, some day care operators said.",
+      "publishedAtUtc": "2026-08-28T02:22:58Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "New heart attack definition promises better care for women",
+      "link": "https://www.theguardian.com/society/2026/aug/28/doctors-care-revolution-agree-first-universal-definition-heart-attack",
+      "summary": "Leading cardiovascular health groups reclassify overlooked causes and introduce sex-specific diagnostic thresholds Doctors have agreed the world’s first universal definition of a heart attack, paving the way for millions of women to finally receive better treatment after decades of being “deprioritised”. In one of the biggest procedural shake-ups in a generation, the world’s four leading cardiovascular health groups have signed off on new guidance for healthcare professionals when seeing suspected heart attack patients. Continue reading...",
+      "publishedAtUtc": "2026-08-28T17:00:03Z",
+      "domain": "theguardian.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "How Big Tech Captured American Schools",
+      "link": "https://www.nytimes.com/2026/08/23/business/schools-big-tech-google-microsoft.html",
+      "summary": "Companies like Google and Microsoft have used their money, their might and their massive reach to influence nearly every step of the education supply chain.",
+      "publishedAtUtc": "2026-08-24T15:46:53Z",
+      "domain": "nytimes.com",
+      "score": 57.0,
+      "healthHits": 0,
+      "educationHits": 2,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Kat Chan: eating your way to better health",
+      "link": "https://www.ft.com/content/2ddc3bc9-ea80-41ce-8e3d-2165e7bb3e4b",
+      "summary": "The Full Serving nutritionist and writer on bringing pleasure back into food",
+      "publishedAtUtc": "2026-08-20T10:00:13Z",
+      "domain": "ft.com",
+      "score": 57.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO statement on notification of withdrawal of the United States",
+      "link": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
+      "summary": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
+      "publishedAtUtc": "2026-01-24T20:09:49Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "WHO comments on United States’ announcement of intent to withdraw",
+      "link": "https://www.who.int/news/item/21-01-2025-who-comments-on-united-states--announcement-of-intent-to-withdraw",
+      "summary": "The World Health Organization regrets the announcement that the United States of America intends to withdraw from the organization.",
+      "publishedAtUtc": "2025-01-21T10:04:49Z",
+      "domain": "who.int",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Risks of child recruitment by armed groups rise in post-quake Colombia",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168224",
+      "summary": "The recent earthquake in Colombia could increase the risk of child recruitment by armed groups in Chocó and Valle del Cauca, where thousands of children remain out of school in areas already affected by conflict, the UN warned on Friday.",
+      "publishedAtUtc": "2026-08-28T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "One million children in Afghanistan face deadly malnutrition",
+      "link": "https://news.un.org/feed/view/en/story/2026/08/1168202",
+      "summary": "Some 3.7 million children in Afghanistan are suffering from wasting, one of the most dangerous forms of malnutrition, with around one million currently battling the most severe, life-threatening form of the condition.",
+      "publishedAtUtc": "2026-08-25T12:00:00Z",
+      "domain": "news.un.org",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Americans Encounter Risks at Psychedelic Clinics Abroad",
+      "link": "https://www.nytimes.com/2026/08/26/health/psychedelic-treaments-ibogaine-mexico.html",
+      "summary": "Participants, often in vulnerable states, have little recourse if mistreated or injured.",
+      "publishedAtUtc": "2026-08-26T10:33:54Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "What You Should Know About College Admissions Changes",
+      "link": "https://www.nytimes.com/2026/08/24/us/college-admissions-changes.html",
+      "summary": "After loosening requirements during the Covid era, some schools are shaking up admissions again, facing pressure from the Trump administration, A.I. and even their own professors.",
+      "publishedAtUtc": "2026-08-24T22:47:20Z",
+      "domain": "nytimes.com",
+      "score": 56.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Inside America’s rogue stem cell industry",
+      "link": "https://www.ft.com/content/007e0862-ffe7-4b8f-a540-05a19d1a45dc?syn-25a6b1a6=1",
+      "summary": "An FT investigation has found a thriving market for stem cell therapies in the US promising longer, healthier lives. Experts say such claims are dangerous",
+      "publishedAtUtc": "2026-08-28T10:30:00Z",
+      "domain": "ft.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "London is worst area in England and Wales for heat-related deaths",
+      "link": "https://www.ft.com/content/56750716-10a5-4c43-88bc-ed69f591da28?syn-25a6b1a6=1",
+      "summary": "New data shows relative mortality risk increases by 50% when temperature rises above 24C",
+      "publishedAtUtc": "2026-08-26T13:23:51Z",
+      "domain": "ft.com",
+      "score": 56.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Luxembourg and WHO sign two strategic agreements",
+      "link": "https://www.who.int/news/item/23-12-2024-luxembourg-and-who-sign-two-strategic-agreements",
+      "summary": "A Strategic Partnership Framework (SPF) with the Ministry of Development Cooperation and Humanitarian Affairs and multiyear agreement with the Ministry of Health and Social Safety was signed on 20 December 2024. By signing two new partnership agreements, Luxembourg reaffirmed its continued support for WHO to fulfill a shared mission to promote, provide and protect health.",
+      "publishedAtUtc": "2024-12-23T16:44:44Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "G20 health ministers rally support for WHO’s Investment Round",
+      "link": "https://www.who.int/news/item/01-11-2024-g20-health-ministers-rally-support-for-who-s-investment-round",
+      "summary": "Ministers of Health expressed their support for WHO's Investment Round during a G20 meeting chaired by Brazil held today in Rio de Janeiro.",
+      "publishedAtUtc": "2024-10-31T18:48:12Z",
+      "domain": "who.int",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Trump Nominates Heidi Overton, a Top Domestic Policy Aide, for F.D.A. Commissioner",
+      "link": "https://www.nytimes.com/2026/08/18/health/heidi-overton-fda.html",
+      "summary": "Dr. Overton is a fierce opponent of abortion rights and a supporter of Health Secretary Robert F. Kennedy Jr.’s Make America Healthy Again agenda.",
+      "publishedAtUtc": "2026-08-19T20:45:04Z",
+      "domain": "nytimes.com",
+      "score": 54.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "How Harvard’s Epic Fight With Trump Is Costing the University",
+      "link": "https://www.nytimes.com/2026/08/21/us/harvard-trump-costs.html",
+      "summary": "The federal government has slowed Harvard’s funding, despite the university’s legal victories. The conflict is forcing hard choices on campus.",
+      "publishedAtUtc": "2026-08-21T12:52:29Z",
+      "domain": "nytimes.com",
+      "score": 54.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Academic Who Publicized Plagiarism Allegations Against Jason Arday Is Suspended",
+      "link": "https://www.nytimes.com/2026/08/20/world/europe/arday-cofnas-suspended.html",
+      "summary": "Ghent University in Belgium said it suspended the academic, Nathan Cofnas, pending an investigation.",
+      "publishedAtUtc": "2026-08-20T21:00:27Z",
+      "domain": "nytimes.com",
+      "score": 54.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "How Should ‘Huckleberry Finn’ Be Taught?",
+      "link": "https://www.nytimes.com/2026/08/24/magazine/huckleberry-finn-teachers-students-schools.html",
+      "summary": "I traveled around the country to find out if “Adventures of Huckleberry Finn” still has a place in the classroom.",
+      "publishedAtUtc": "2026-08-24T17:00:47Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Mamdani Sues City Council Over $10,000 Bonuses to Teachers’ Aides",
+      "link": "https://www.nytimes.com/2026/08/19/nyregion/mamdani-ny-city-council-lawsuit-teachers.html",
+      "summary": "New York City says the Council’s legislation violates collective bargaining law. The dispute could set up the first high-profile battle between the mayor and a public sector union.",
+      "publishedAtUtc": "2026-08-19T21:47:52Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "The Guardian University Guide 2026 – the rankings",
+      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
+      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
+      "publishedAtUtc": "2025-09-13T07:01:01Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘I’m going for a few pints now’: nerves and joy as students collect their A-level results",
+      "link": "https://www.theguardian.com/education/2026/aug/13/nerves-and-joy-as-students-collect-their-a-level-results",
+      "summary": "For sixth formers in Halifax, discovering their grades means a chance to celebrate and plan for the future There are few days that teenagers dread more than A-level results day , where students learn how the last two years of their lives will shape their futures, communicated through a few letters in an envelope. The tension of walking into college to learn your fate is enough to keep most people awake the night before. For Hayden Bettson-Day, 18, the best solution was get it over with as early as possible. Continue reading...",
+      "publishedAtUtc": "2026-08-13T13:04:56Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
+      "link": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
+      "summary": "Jason Arday was regarded as an academic superstar, but then questions about his work prompted scrutiny of his backstory and counterclaims of racism When the superstar academic Jason Arday took to the stage at the British Sociological Association’s 75th anniversary conference earlier this year, he delivered a talk called Wanted Dead or Alive: the Playbook. The youngest black professor in Cambridge University’s history told an audience of his peers that the playbook in question had helped bring down some of the biggest names in US academia. Conservative “activists” were trawling through the work of black academics, looking for anything to use against them: inconsistencies, citation errors, passages in their work that were similar to existing papers. Continue reading...",
+      "publishedAtUtc": "2026-08-01T11:45:52Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "‘Standard’ velvet hangers? There’s nothing standard about some of the items on John Lewis’s uni essentials list| Emma Beddington",
+      "link": "https://www.theguardian.com/commentisfree/2026/aug/24/why-is-the-john-lewis-uni-essentials-list-so-strange",
+      "summary": "It used to be that dorm rooms were chaotically messy. Does this new generation really need an £80 spice rack and velvet clothes hangers? Of all the questions this year’s freshers may be nervously asking themselves as they prepare for this next phase – did I pick the right course? Will I make friends? Is uni worth 30 grand when my future job prospects may be limited to dusting a datacentre? – one is particularly pressing: “How many clothes hangers do I need to bring?” Fret no longer, enquiring young minds: John Lewis has the answer on its packing checklist for students . Thirty to 40, it claims, wildly, “consisting mostly of standard velvet or plastic hangers”. “Standard” velvet? I missed this&nbsp;memo. Continue reading...",
+      "publishedAtUtc": "2026-08-24T10:00:31Z",
+      "domain": "theguardian.com",
+      "score": 52.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "The Brains of Wellbeing & Beauty 2026",
+      "link": "https://www.ft.com/content/a99c5f10-75a7-49a2-a449-e9df55ad5c39",
+      "summary": "In the third instalment of the talk series, HTSI speaks to the innovators, entrepreneurs and health practitioners at the forefront of the wellness industry",
+      "publishedAtUtc": "2026-08-20T10:00:13Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
+    },
+    {
+      "title": "Moderna shares nearly triple on skin cancer vaccine success",
+      "link": "https://www.ft.com/content/a98a77e2-5156-4189-b971-974a7e60130f?syn-25a6b1a6=1",
+      "summary": "Drugmaker’s melanoma shot developed with Merck delivers positive outcome in late-stage trial",
+      "publishedAtUtc": "2026-08-19T20:15:33Z",
+      "domain": "ft.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-08-31T20:03:16.951244Z"
     },
     {
       "title": "UK urged to ban imports of Brazilian meat over health concerns",
@@ -363,18 +1083,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "Strengthening public health across Lebanon with EIB Global",
-      "link": "https://www.who.int/news/item/06-03-2025-strengthening-public-health-across-lebanon-with-eib-global",
-      "summary": "Dr Tedros Adhanom Ghebreyesus, Director-General of the World Health Organization (WHO), and Thomas Östros, Vice-President of the European Investment Bank (EIB Global), met at the EIB Group Forum in Luxembourg and signed an agreement for a €10 million grant to strengthen public health across Lebanon. The initiative will re-establish Lebanon's Central Public Health Laboratory and prioritize medication provision and healthcare support to over 50 000 people with chronic diseases like diabetes, cardiovascular issues, and cancer",
-      "publishedAtUtc": "2025-04-01T11:55:48Z",
-      "domain": "who.int",
-      "score": 68.0,
-      "healthHits": 3,
-      "educationHits": 0,
-      "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "Reliability and validity of the Perceived Stress Scale among Colombian university students in the health sciences",
       "link": "https://www.nature.com/articles/s41598-026-59354-5",
       "summary": "",
@@ -384,30 +1092,6 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
-      "link": "https://www.who.int/news/item/19-05-2025-who-s-strategic-engagement-with-philanthropies-advancing-global-health-and-resilient-health-systems",
-      "summary": "Philanthropic support plays a vital role in enabling countries to build stronger health systems and advance towards health equity. From vaccine equity and pandemic preparedness to primary health care, the contributions of philanthropic partners help drive progress across WHO&rsquo;s key priorities. The importance of philanthropic support was underscored by Dr Tedros Adhanom Ghebreyesus, WHO Director-General, in his recent remarks to the Philanthropy Asia Summit, held in Singapore on 5&ndash;7 May 2025. In his remarks, he expressed his appreciation to the Temasek Foundation and the Philanthropy Asia Alliance for organizing the Summit while highlighting the importance of philanthropy in strengthening global health, supporting country self-reliance, and partnering with WHO to address health challenges in an increasingly turbulent world. At the Summit, Dr Tedros thanked His Excellency President Tharman and Singapore, for its leadership in global health and its support to WHO. Dr Tedros stated that Singapore and the Temasek Foundation were amongst the first to pledge support to WHO&rsquo;s Investment Round.&ldquo;We look forward to your continued leadership and partnership as we work together to realize WHO&rsquo;s founding vision: the highest attainable standard of health &ndash; not as a luxury for some, but a right for all&rdquo;, said Dr Tedros. During the Investment Round, WHO has sought to expand its donor base, including by engaging strategically with philanthropic organizations. As Dr Tedros noted, partnerships with philanthropies help countries to strengthen essential health services and make sustainable progress towards universal health coverage. Philanthropic actors play a vital role in improving global health outcomes, providing significant resources and expertise needed to build stronger and more accessible health-care systems. Investments made by philanthropic partners often complement and amplify the work of governments, international organizations and other stakeholders in the global health community. Philanthropy can be particularly effective in supporting innovative or high-risk research that may not be funded though more traditional funding sources. Philanthropic actors are effective partners when it comes to raising awareness and advocating for policies to improve global health outcomes, address health disparities and promote health equity. Looking ahead, philanthropic collaboration will remain central to achieving the goals outlined in WHO&rsquo;s Fourteenth General Programme of Work. Developing strong partnerships with philanthropic actors allows WHO to leverage the strengths of a range of global health players to bring better health to people and maximize impact.",
-      "publishedAtUtc": "2025-05-19T11:53:23Z",
-      "domain": "who.int",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
-      "link": "https://www.who.int/news/item/10-05-2024-governments-agree-to-continue-their-steady-progress-on-proposed-pandemic-agreement-ahead-of-the-world-health-assembly",
-      "summary": "Governments of the world today agreed to continue working on a proposed pandemic agreement, and to further refine the draft, ahead of the Seventy-seventh World Health Assembly that starts 27 May 2024. Governments meeting at the World Health Organization headquarters in Geneva agreed to resume hybrid and in-person discussions over coming weeks to advance work on critical issues, including around a proposed new global system for pathogen access and benefits sharing (i.e. life-saving vaccines, treatments and diagnostics); pandemic prevention and One Health; and the financial coordination needed to scale up countries&rsquo; capacities to prepare for and respond to pandemics. \"During more than two years of intensive negotiations, WHO&rsquo;s Member States have shown unwavering commitment to forging a generational agreement to protect the world from a repeat of the horrors caused by the COVID-19 pandemic,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;I welcome the determination that all countries have shown to continue their work and fulfill the mission on which they embarked.&rdquo; The Member State-led Intergovernmental Negotiating Body (INB) was established over two years ago to take this effort forward. The Bureau of the INB, which is guiding the process, will submit its outcome for consideration at the World Health Assembly. INB Bureau Co-Chair Dr Precious Matsoso, from South Africa, said progress had been made during this latest round of discussions on a wide range of issues contained in the draft agreement. &ldquo;We are witnessing history play out before our eyes during this process, with the coming together of all countries to decide a binding pact to protect all citizens of the world,&rdquo; said Ms Matsoso. &ldquo;This is not a simple exercise. This is the first ever process to develop a proposed agreement on pandemic prevention, preparedness and response. Getting this done means getting it right, and the INB Bureau is committed to help finalize a meaningful, lasting agreement.&rdquo; Fellow INB Bureau Co-Chair, Mr Roland Driece, from the Netherlands, said when countries launched the process two years ago to develop a pandemic agreement, they did so knowing they had set an ambitious timeline to reach an ambitious goal. &ldquo;This unprecedented effort by all WHO Member States was launched in response to an unprecedented global emergency &ndash; the COVID-19 pandemic,&rdquo; said Mr Driece. &ldquo;These sovereign states did so recognizing that great collaboration and coordination were needed in the face of pandemics. While negotiations have been challenging at times, all countries agree that the world must be better prepared for the next pandemic. It is not a matter of if a pandemic will happen again; it is a matter of when. We cannot afford to miss this historic opportunity to make the world safer from the next pandemic threat.&rdquo; In March 2021, heads of state and government from two dozen countries issued a statement of commitment calling for global collaboration to prepare for, prevent and respond to pandemics. In December 2021, WHO Member States decided to launch a global process to draft and negotiate a legally binding convention, agreement or other international instrument to strengthen pandemic prevention, preparedness and response. &nbsp;",
-      "publishedAtUtc": "2024-05-10T19:15:31Z",
-      "domain": "who.int",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
@@ -423,90 +1107,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "Trump EPA is manipulating safety data around a highly toxic flame retardant, advocates allege",
-      "link": "https://www.theguardian.com/environment/2026/aug/30/trump-epa-data-toxic-flame-retardant",
-      "summary": "Widely used chemical TBBPA may present a danger to US public, and especially children, independent research finds The Environmental Protection Agency is manipulating safety data around a highly toxic flame retardant deployed across the US economy, public health advocates allege. The chemical, TBBPA, has been found in dust in US homes and in consumer goods at combined levels that independent research has found may present a danger to the public, and especially small children . Continue reading...",
-      "publishedAtUtc": "2026-08-30T13:00:56Z",
-      "domain": "theguardian.com",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Salmonella cases in UK likely to rise until source of outbreak is found",
-      "link": "https://www.theguardian.com/food/2026/aug/28/salmonella-cases-in-uk-likely-to-rise-until-source-of-outbreak-is-found",
-      "summary": "Experts say imported eggs served in cafes and restaurants may be behind hundreds of infections and one death Salmonella cases in the UK are expected to rise until the common source is identified, something that is notoriously difficult to establish, experts have warned. There have been 474 confirmed cases and one death linked to the current outbreak, according to the UK Health Security Agency (UKHSA), with the latest investigations suggesting it is associated with eating imported eggs in cafes and restaurants. Continue reading...",
-      "publishedAtUtc": "2026-08-28T16:42:32Z",
-      "domain": "theguardian.com",
-      "score": 67.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "The Guardian view on GCSE results: much to celebrate, much to reform | Editorial",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/20/the-guardian-view-on-gcse-results-much-to-celebrate-much-to-reform",
-      "summary": "Another post-pandemic cohort has shown its resilience and talent. But growing inequalities of outcome must be addressed Most pupils who received their GCSE results this week were in the penultimate year of primary school when Covid struck, disrupting their preparation for secondary education. As with other post-pandemic cohorts, their achievements are therefore a testament to their ability, resilience and determination. A strong set of results, particularly in the core subjects of English and maths, should also be seen as a tribute to&nbsp;teachers dealing with ever expanding workloads. Overall the impression is one of a welcome return to stability, as the legacy of the years of cancelled exams and teacher assessments is left behind. The proportion of top grades awarded in England, Wales and Northern Ireland rose compared with last year, but only by a tenth of a percentage point, while the overall pass rate fell by the same margin to 67.3% – the same as in 2019. Nevertheless, the latest results throw up familiar grounds for concern. Continue reading...",
-      "publishedAtUtc": "2026-08-20T17:46:28Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 0,
-      "educationHits": 3,
-      "reason": "relevance=31, credibility=35, freshness=0, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Statins can reduce dementia risk by up to 15%, long-term study suggests",
-      "link": "https://www.theguardian.com/society/2026/aug/30/statins-reduce-dementia-alzheimers-risk-study",
-      "summary": "The cholesterol-busting drugs are more effective the earlier in life they are taken, 15-year research project indicates Statins can lower the risk of dementia by 15%, and the earlier in life they are taken the higher the chances of avoiding the disease, a 15-year study suggests. The number of people living with dementia globally is forecast to nearly triple to 153 million by 2050. But experts believe almost half of dementia cases could be prevented or delayed. Continue reading...",
-      "publishedAtUtc": "2026-08-30T07:00:50Z",
-      "domain": "theguardian.com",
-      "score": 66.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
-      "link": "https://www.who.int/news/item/24-02-2025-who-and-the-kingdom-of-saudi-arabia-sign-agreements-in-support-of-health-priorities",
-      "summary": "The Riyadh International Humanitarian Forum 2025 was a significant event that underscored the continued partnership between WHO and KSrelief, as well as with other international partners to address critical humanitarian health crises. The agreements made during the forum are pivotal in combating diseases like malaria, cholera, and polio, and ensuring better healthcare for displaced populations. The forum also highlighted Saudi Arabia’s ongoing commitment to global humanitarian efforts, reaffirming its leadership role in tackling some of the world’s pressing health crises.",
-      "publishedAtUtc": "2025-03-06T12:48:53Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
-      "link": "https://www.who.int/news/item/29-08-2024-the-republic-of-korea-and-who-discuss-joint-priorities--challenges-and-trends-around-global-health",
-      "summary": "The World Health Organization (WHO) and the Republic of Korea have a long-standing partnership spanning over 75 years. As a result of their fruitful collaboration, there has been significant progress in health and development all around the world. The Republic of Korea has gone from being a donor-recipient country to a donor-country and is now a leader in global health and playing a critical role on the world stage. Dr Catharina Boehme, Assistant Director-General for External Relations and Governance (WHO) and Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination (Ministry of Health and Welfare, Republic of Korea), together with counterparts from WHO and the Government of the Republic of Korea. &copy; WHO To further strengthen this partnership and our commitment to working jointly to address global health challenges, WHO and the Republic of Korea convened their second Strategic Dialogue in Seoul from 28 to 29 August 2024. Dr Catharina Boehme, Assistant Directory-General for External Relations and Governance, led the WHO delegation and was accompanied by an in-person team and colleagues participating virtually from the three levels of the Organization (headquarters, regional, and country offices). Dr Hye-Jin Kim, Deputy Minister for Planning and Coordination, Ministry of Health, led the Republic of Korea delegation and was joined by senior officials including Dr Young-Mee Jee, Commissioner, Korea Disease Control and Prevention Agency, as well as senior counterparts from the Ministry of Foreign Affairs, and the Ministry of Food and Drug Safety. In addition, in line with WHO's work to enhance collaboration with parliamentarians, the WHO delegation also met with various Members of the National Assembly that are championing the global health agenda. The recently concluded two-day meeting resulted in an alignment of priorities and paved the way for enhanced collaboration between WHO and the Government of Korea. WHO delegation with Mr Jonghan Park, Director-General, Development Cooperation (Ministry of Foreign Affairs) - holding up the WHO Investment Case report . &copy; WHO &nbsp;",
-      "publishedAtUtc": "2024-09-04T09:19:05Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
-      "link": "https://www.who.int/news/item/27-08-2024-fourteen-african-countries--key-partners-unite-to-provide-critical-resources-for-health-in-who-s-first-ever-investment-round",
-      "summary": "In an unprecedented show of unity in support of the World Health Organization, 14 African countries and many partners pledged over US$ 45 million to the WHO Investment Round, a three-month-old initiative aimed at generating sustainable financing for the organization at the center of the global health architecture. The commitments were made during the World Health Organization (WHO) Regional Committee for Africa, with heads of state and government from across the continent underscoring the importance of investing in global health and ensuring a strong WHO. &ldquo;I thank our African Region Member States for actively supporting WHO&rsquo;s first Investment Round to mobilize predictable and flexible resources needed for our core work over the next four years,&rdquo; said Dr Tedros Adhanom Ghebreyesus, WHO Director-General. &ldquo;Full, sustainable funding will enable WHO to support countries better in their work to build healthier, more resilient, and more prosperous populations.&rdquo; The countries and partners came together for the historic event aimed at sustainably funding WHO and thus enabling it to more effectively fulfil its mandate and advance key objectives to promote, provide and protect health and well-being for all. The countries included Botswana, Cabo Verde, Chad, Congo, Ethiopia, Gambia, Mauritius, Namibia, Niger, Rwanda, Senegal, Seychelles, South Africa, and the United Republic of Tanzania. Many partners joined Members States in making commitments of support to WHO and committing to providing pledges later in the year, including Helmsley Charitable Trust, World Diabetes Foundation, Roche, Kuwait Fund for Arab Economic Development, the Bill &amp; Melinda Gates Foundation, African Development Bank and the WHO Foundation. &ldquo;A strong, predictable and sustainably financed WHO is essential for our region and the world to meet the multiple health threats we face; and support the prevention of disease based on the vast evidence at our disposal,&rdquo; said Dr Matshidiso Moeti, WHO Regional Director for Africa. &ldquo;Every pledge and every partnership counts. Together, we can achieve a future where health and well-being are accessible to all.&rdquo; The WHO Investment Round will continue in the coming months and feature key pledging moments around the world. Learn more about the WHO Investment Round . Launched at the World Health Assembly in May 2024, the Investment Round aims to generate contributions that are flexible and thereby aligned with WHO&rsquo;s strategy as approved by its Member States; predictably provided at the start of the four-year budget cycle to enable strategic decision-making; and resilient in that they will derive from a larger, more diverse set of donors. &nbsp;",
-      "publishedAtUtc": "2024-08-27T19:45:08Z",
-      "domain": "who.int",
-      "score": 65.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "Judge Rules Trump Unlawfully Targeted Stanford Students Who Criticized Israel",
       "link": "https://www.nytimes.com/2026/08/28/us/politics/trump-stanford-students-deport-constitution.html",
       "summary": "The ruling was a win for Stanford’s student newspaper, The Stanford Daily, and it followed another court victory for students targeted by the Trump administration last year.",
@@ -519,155 +1119,11 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "Remaking the biscuit: from Doritos to digestives, why the UK’s snacks are being ‘reformulated’",
-      "link": "https://www.theguardian.com/food/2026/aug/29/food-snacks-britain-re-engineered-government-regulations",
-      "summary": "Healthy eating rules are forcing brands to recook their recipes. Are consumers noticing the difference? Bite into a Ritz cracker today and you’re eating 80% less saturated fat than you would have been just a few years ago. The biscuit looks and snaps the same, and tastes close enough that most buyers have no idea they’re eating a new recipe. One of the biggest changes was swapping palm oil for sunflower oil, but there was much more to it than that. The reformulation took years to perfect in a laboratory, where scientists tested everything from density to how the cracker responds to heat, moisture and packaging. Continue reading...",
-      "publishedAtUtc": "2026-08-29T11:00:25Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "New heart attack definition promises better care for women",
-      "link": "https://www.theguardian.com/society/2026/aug/28/doctors-care-revolution-agree-first-universal-definition-heart-attack",
-      "summary": "Leading cardiovascular health groups reclassify overlooked causes and introduce sex-specific diagnostic thresholds Doctors have agreed the world’s first universal definition of a heart attack, paving the way for millions of women to finally receive better treatment after decades of being “deprioritised”. In one of the biggest procedural shake-ups in a generation, the world’s four leading cardiovascular health groups have signed off on new guidance for healthcare professionals when seeing suspected heart attack patients. Continue reading...",
-      "publishedAtUtc": "2026-08-28T17:00:03Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
-      "link": "https://www.who.int/news/item/25-02-2026-who-director-general-visits-jordan-to-recognize-strong-collaboration-on-health-system-delivery--emergency-relief-and-advancing-mental-health",
-      "summary": "The Director-General of the World Health Organization, Dr Tedros Adhanom Ghebreyesus, today concluded the first day of his two-day State visit to the Hashemite Kingdom of Jordan, underscoring the strong partnership between WHO and Jordan across the areas of universal health coverage (UHC), mental health and humanitarian health action.",
-      "publishedAtUtc": "2026-02-25T18:06:55Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
-      "link": "https://www.who.int/news/item/10-04-2025-worldwide-rally-for-maternal-and-newborn-health-marks-world-health-day-2025",
-      "summary": "On the occasion of the World Health Day 2025 dedicated to the theme of Healthier beginnings, hopeful futures, over 100 global WHO offices have organized wide-ranging public advocacy actions in collaboration with Member States, communities, health workers, partner and donor agencies and civil society organizations.",
-      "publishedAtUtc": "2025-04-10T15:02:54Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
-      "link": "https://www.who.int/news/item/11-03-2025-frank--in-depth-discussion-as-belgium-and-who-map-ahead-priorities-for-collaboration",
-      "summary": "In a three-day strategic dialogue, Belgium and WHO reviewed progress in their longstanding partnership, and agreed to further boost their collaboration on universal health coverage, health-systems strengthening and equitable access to essential vaccines, medicines and health technologies. The Belgian delegation – headed by H.E. Christophe Payot, Ambassador of Belgium to the United Nations and other international organizations in Geneva – discussed issues of strategic importance, exchanged views on how to smoothly align WHO strategic directions and Belgium's development cooperation priorities in the context of an evolving global health landscape.",
-      "publishedAtUtc": "2025-03-11T08:49:23Z",
-      "domain": "who.int",
-      "score": 63.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "How can we stop destroying the prospects of a generation? Scrapping compulsory GCSE resits will be a start | Polly Toynbee",
-      "link": "https://www.theguardian.com/education/commentisfree/2026/aug/24/stop-destroying-generation-compulsory-gcse-resits-michael-gove",
-      "summary": "Michael Gove calls the axing of his Tory strategy ‘bringing back stupid’. He doesn’t seem to care that it did more harm than good GCSE results day was marked with the usual front pages filled with pictures of beaming students. What you didn’t see was the invisible third of 16-year-olds in England who failed their maths and English GCSEs, the obstacle to their future. That’s 360,000 failed in a system designed by Michael Gove as education minister to mark out winners from losers. It’s a cast of mind shared by many in his party who still yearn for the 11-plus , which consigned a random number of children to failure before they’d hardly begun. A few councils still do it. Polly Toynbee is a Guardian columnist Continue reading...",
-      "publishedAtUtc": "2026-08-24T15:31:56Z",
-      "domain": "theguardian.com",
-      "score": 63.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO reports more than 3,200 attacks on Ukraine’s healthcare system since full-scale invasion",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168226",
-      "summary": "Since the beginning of Russia’s full-scale invasion of Ukraine, 3,205 attacks on healthcare facilities have been carried out, World Health Organization (WHO) Representative for Ukraine Jarno Habicht reported on Friday following fresh overnight strikes.",
-      "publishedAtUtc": "2026-08-28T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "AI models are being used to track zoonotic diseases. Will they prevent the next pandemic?",
       "link": "https://www.nature.com/articles/d41586-026-02684-1",
       "summary": "",
       "publishedAtUtc": "2026-08-30T00:00:00Z",
       "domain": "nature.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Walmart to Pay $50 Million to Settle Opioid Lawsuit, US Says",
-      "link": "https://www.nytimes.com/2026/08/28/us/walmart-opioid-lawsuit-settlement.html",
-      "summary": "The resolution is part of an effort to hold retailers and pharmacists accountable for what the government says were their roles in the opioid epidemic.",
-      "publishedAtUtc": "2026-08-29T01:08:50Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "The 10 P.M. Dinner Is a Spanish Tradition. Are People Giving It Up?",
-      "link": "https://www.nytimes.com/2026/08/30/world/europe/spain-late-dinner-time.html",
-      "summary": "There are signs that Spaniards are eating earlier in the evening. Experts say it could make for a healthier country, but not everyone is ready to part with the custom.",
-      "publishedAtUtc": "2026-08-30T11:07:46Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Exeter University approves deal with Saudi Arabia to train military officers and officials",
-      "link": "https://www.theguardian.com/education/2026/aug/29/exeter-university-approves-deal-with-saudi-arabia-to-train-military-officers-and-officials",
-      "summary": "In move that could generate millions, Exeter academics to deliver MA at National Defense University in Riyadh The University of Exeter has approved plans for a “formal partnership” with Saudi Arabia to train senior military officers and government officials, despite long-held concerns about the Saudi government’s human rights record, the Guardian has learned. In a deal that could generate millions of pounds for the Russell Group university, Exeter academics will deliver an MA in applied security and strategy (also known as an MStrat) to a cohort at the National Defense University (NDU) in Riyadh. Continue reading...",
-      "publishedAtUtc": "2026-08-29T08:00:22Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "We tried 15 lotions over three weeks. Here’s which our testers loved – and which left them high and dry",
-      "link": "https://www.theguardian.com/thefilter-us/2026/aug/29/best-body-lotion",
-      "summary": "From Jergens and Naturium to CeraVe and Eucerin, there’s a potion on this list that will keep every body soft and moisturized The best facial cleansers in the US for every skin type, recommended by dermatologists Sign up for the Filter US newsletter, your weekly guide to buying fewer, better things Your skin is the largest organ on the body. Taking care of it can feel like a full-time job, especially if you struggle with anything from dryness and sun damage to psoriasis, not to mention allergies and hormone fluctuations over time. Picking the right lotion for your skin is crucial – and it’s much more of a health decision than many people realize. Packaging, brand loyalty, fragrance or recommendations from your favorite influencers might factor into your decision. But when considering a lotion for long-term use, the best options are those that will actually benefit the skin. Continue reading...",
-      "publishedAtUtc": "2026-08-29T14:15:29Z",
-      "domain": "theguardian.com",
-      "score": 62.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Pharma stocks soar as investors seek AI alternatives",
-      "link": "https://www.ft.com/content/2c65a745-8169-4192-971a-022bdfc0e7ad?syn-25a6b1a6=1",
-      "summary": "Pricing deals with the White House and positive clinical data boost sector",
-      "publishedAtUtc": "2026-08-30T10:00:01Z",
-      "domain": "ft.com",
       "score": 62.0,
       "healthHits": 1,
       "educationHits": 0,
@@ -687,30 +1143,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "How Big Tech Captured American Schools",
-      "link": "https://www.nytimes.com/2026/08/23/business/schools-big-tech-google-microsoft.html",
-      "summary": "Companies like Google and Microsoft have used their money, their might and their massive reach to influence nearly every step of the education supply chain.",
-      "publishedAtUtc": "2026-08-24T15:46:53Z",
-      "domain": "nytimes.com",
-      "score": 61.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "UN chief condemns ‘indifference’ as Ebola cases mount in DR Congo",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168217",
-      "summary": "The Ebola Bundibugyo&nbsp;outbreak in the Democratic Republic of the Congo (DRC) requires “urgent” action and funding to rein in its alarming spread, the UN Secretary-General told reporters at UN Headquarters on Thursday.",
-      "publishedAtUtc": "2026-08-27T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 60.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "Reply to ‘Closing the policy gap: including children in the global agenda for steatotic liver disease’",
       "link": "https://www.nature.com/articles/s41575-026-01252-2",
       "summary": "",
@@ -723,42 +1155,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "‘Cheap travel is not a defence’: the parents facing court for school absences in England",
-      "link": "https://www.theguardian.com/education/2026/aug/15/inside-court-england-parents-face-fines-school-absence",
-      "summary": "In one court in Kent, most cases relate to term-time holidays, but non-attendance is a complex issue and post-pandemic rates remain high As the long school summer break approached its mid-point recently, Margate beach was crowded with families enjoying the brief reprieve between the year’s fourth and fifth heatwaves. For most, thoughts of the classroom were probably not at the forefront of their minds. But for the seven mothers and two fathers who were summoned at 10am to a stuffy room in the town’s magistrates court, set just behind the beachfront strip of arcades, the subject was unavoidable. They were among hundreds of parents due in courts across England this month for failing to ensure their children had regularly attended school over the course of the last academic year. Continue reading...",
-      "publishedAtUtc": "2026-08-15T12:00:57Z",
-      "domain": "theguardian.com",
-      "score": 59.0,
-      "healthHits": 0,
-      "educationHits": 2,
-      "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO launches unique training course to enable parliamentarians in global health security",
-      "link": "https://www.who.int/news/item/12-07-2024-who-launches-unique-training-course-to-enable-parliamentarians-in-global-health-security",
-      "summary": "The World Health Organization has released \"The Role of Parliaments and Parliamentarians in Strengthening Health Security Preparedness\", an online training course. This essential resource aims to equip parliamentarians with the knowledge and tools necessary to enhance global health security efforts.",
-      "publishedAtUtc": "2024-07-12T15:17:48Z",
-      "domain": "who.int",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "More health workers, stronger systems: Africa’s new ambitious goal",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168207",
-      "summary": "Facing a projected shortage of more than six million health professionals by 2035, African countries are stepping up efforts to strengthen their workforce, with a new decade-long plan announced on Wednesday during a meeting of health ministers in Addis Ababa, Ethiopia.",
-      "publishedAtUtc": "2026-08-26T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "China is changing the shape of global health. The terms are still up for negotiation",
       "link": "https://www.nature.com/articles/d41586-026-02622-1",
       "summary": "",
@@ -768,42 +1164,6 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "F.D.A. Approves the Drug Daraxonrasib That’s Poised to Transform Pancreatic Cancer",
-      "link": "https://www.nytimes.com/2026/08/26/science/pancreatic-cancer-daraxonrasib-approval.html",
-      "summary": "In a key clinical trial, patients who got the pill, daraxonrasib, lived twice as long as those who got chemotherapy.",
-      "publishedAtUtc": "2026-08-27T13:58:43Z",
-      "domain": "nytimes.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "‘You’re Ruining My Dreams’: C.T.E. Study Adds to Family Tension Over Football",
-      "link": "https://www.nytimes.com/2026/08/26/us/parents-football-cte-decisions.html",
-      "summary": "Many families are engaged in tense debates after a new study found a high percentage of N.F.L. players had developed degenerative brain disease.",
-      "publishedAtUtc": "2026-08-27T13:56:29Z",
-      "domain": "nytimes.com",
-      "score": 58.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Funding Delays Threaten Rollout of Mamdani’s 2-K Program",
-      "link": "https://www.nytimes.com/2026/08/27/nyregion/nyc-2k-child-care-programs-funding-mamdani.html",
-      "summary": "Many early childhood centers, the backbone of New York City’s universal child care system, have not received money from the city for this school year, some day care operators said.",
-      "publishedAtUtc": "2026-08-28T02:22:58Z",
-      "domain": "nytimes.com",
-      "score": 58.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
@@ -828,66 +1188,6 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Kat Chan: eating your way to better health",
-      "link": "https://www.ft.com/content/2ddc3bc9-ea80-41ce-8e3d-2165e7bb3e4b",
-      "summary": "The Full Serving nutritionist and writer on bringing pleasure back into food",
-      "publishedAtUtc": "2026-08-20T10:00:13Z",
-      "domain": "ft.com",
-      "score": 57.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO statement on notification of withdrawal of the United States",
-      "link": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
-      "summary": "WHO regrets the United States’ notification of withdrawal from WHO – a decision that makes both the United States and the world less safe. The notification of withdrawal raises issues that will be considered by the WHO Executive Board at its regular meeting starting on 2 February and by the World Health Assembly at its annual meeting in May 2026.",
-      "publishedAtUtc": "2026-01-24T20:09:49Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "WHO comments on United States’ announcement of intent to withdraw",
-      "link": "https://www.who.int/news/item/21-01-2025-who-comments-on-united-states--announcement-of-intent-to-withdraw",
-      "summary": "The World Health Organization regrets the announcement that the United States of America intends to withdraw from the organization.",
-      "publishedAtUtc": "2025-01-21T10:04:49Z",
-      "domain": "who.int",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Risks of child recruitment by armed groups rise in post-quake Colombia",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168224",
-      "summary": "The recent earthquake in Colombia could increase the risk of child recruitment by armed groups in Chocó and Valle del Cauca, where thousands of children remain out of school in areas already affected by conflict, the UN warned on Friday.",
-      "publishedAtUtc": "2026-08-28T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "One million children in Afghanistan face deadly malnutrition",
-      "link": "https://news.un.org/feed/view/en/story/2026/08/1168202",
-      "summary": "Some 3.7 million children in Afghanistan are suffering from wasting, one of the most dangerous forms of malnutrition, with around one million currently battling the most severe, life-threatening form of the condition.",
-      "publishedAtUtc": "2026-08-25T12:00:00Z",
-      "domain": "news.un.org",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
@@ -927,90 +1227,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "Americans Encounter Risks at Psychedelic Clinics Abroad",
-      "link": "https://www.nytimes.com/2026/08/26/health/psychedelic-treaments-ibogaine-mexico.html",
-      "summary": "Participants, often in vulnerable states, have little recourse if mistreated or injured.",
-      "publishedAtUtc": "2026-08-26T10:33:54Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "What You Should Know About College Admissions Changes",
-      "link": "https://www.nytimes.com/2026/08/24/us/college-admissions-changes.html",
-      "summary": "After loosening requirements during the Covid era, some schools are shaking up admissions again, facing pressure from the Trump administration, A.I. and even their own professors.",
-      "publishedAtUtc": "2026-08-24T22:47:20Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "How Should ‘Huckleberry Finn’ Be Taught?",
-      "link": "https://www.nytimes.com/2026/08/24/magazine/huckleberry-finn-teachers-students-schools.html",
-      "summary": "I traveled around the country to find out if “Adventures of Huckleberry Finn” still has a place in the classroom.",
-      "publishedAtUtc": "2026-08-24T17:00:47Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Inside America’s rogue stem cell industry",
-      "link": "https://www.ft.com/content/007e0862-ffe7-4b8f-a540-05a19d1a45dc?syn-25a6b1a6=1",
-      "summary": "An FT investigation has found a thriving market for stem cell therapies in the US promising longer, healthier lives. Experts say such claims are dangerous",
-      "publishedAtUtc": "2026-08-28T10:30:00Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "London is worst area in England and Wales for heat-related deaths",
-      "link": "https://www.ft.com/content/56750716-10a5-4c43-88bc-ed69f591da28?syn-25a6b1a6=1",
-      "summary": "New data shows relative mortality risk increases by 50% when temperature rises above 24C",
-      "publishedAtUtc": "2026-08-26T13:23:51Z",
-      "domain": "ft.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Luxembourg and WHO sign two strategic agreements",
-      "link": "https://www.who.int/news/item/23-12-2024-luxembourg-and-who-sign-two-strategic-agreements",
-      "summary": "A Strategic Partnership Framework (SPF) with the Ministry of Development Cooperation and Humanitarian Affairs and multiyear agreement with the Ministry of Health and Social Safety was signed on 20 December 2024. By signing two new partnership agreements, Luxembourg reaffirmed its continued support for WHO to fulfill a shared mission to promote, provide and protect health.",
-      "publishedAtUtc": "2024-12-23T16:44:44Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "G20 health ministers rally support for WHO’s Investment Round",
-      "link": "https://www.who.int/news/item/01-11-2024-g20-health-ministers-rally-support-for-who-s-investment-round",
-      "summary": "Ministers of Health expressed their support for WHO's Investment Round during a G20 meeting chaired by Brazil held today in Rio de Janeiro.",
-      "publishedAtUtc": "2024-10-31T18:48:12Z",
-      "domain": "who.int",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "Solidarity is essential in a more transactional global health era",
       "link": "https://www.nature.com/articles/s44360-026-00191-1",
       "summary": "",
@@ -1020,42 +1236,6 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Trump Nominates Heidi Overton, a Top Domestic Policy Aide, for F.D.A. Commissioner",
-      "link": "https://www.nytimes.com/2026/08/18/health/heidi-overton-fda.html",
-      "summary": "Dr. Overton is a fierce opponent of abortion rights and a supporter of Health Secretary Robert F. Kennedy Jr.’s Make America Healthy Again agenda.",
-      "publishedAtUtc": "2026-08-19T20:45:04Z",
-      "domain": "nytimes.com",
-      "score": 54.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "How Harvard’s Epic Fight With Trump Is Costing the University",
-      "link": "https://www.nytimes.com/2026/08/21/us/harvard-trump-costs.html",
-      "summary": "The federal government has slowed Harvard’s funding, despite the university’s legal victories. The conflict is forcing hard choices on campus.",
-      "publishedAtUtc": "2026-08-21T12:52:29Z",
-      "domain": "nytimes.com",
-      "score": 54.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Academic Who Publicized Plagiarism Allegations Against Jason Arday Is Suspended",
-      "link": "https://www.nytimes.com/2026/08/20/world/europe/arday-cofnas-suspended.html",
-      "summary": "Ghent University in Belgium said it suspended the academic, Nathan Cofnas, pending an investigation.",
-      "publishedAtUtc": "2026-08-20T21:00:27Z",
-      "domain": "nytimes.com",
-      "score": 54.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
@@ -1107,18 +1287,6 @@
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
-      "title": "Mamdani Sues City Council Over $10,000 Bonuses to Teachers’ Aides",
-      "link": "https://www.nytimes.com/2026/08/19/nyregion/mamdani-ny-city-council-lawsuit-teachers.html",
-      "summary": "New York City says the Council’s legislation violates collective bargaining law. The dispute could set up the first high-profile battle between the mayor and a public sector union.",
-      "publishedAtUtc": "2026-08-19T21:47:52Z",
-      "domain": "nytimes.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
       "title": "Penn State Fraternity Members Are Charged in Cocaine Trafficking Case",
       "link": "https://www.nytimes.com/2026/08/18/us/penn-state-fraternity-cocaine.html",
       "summary": "More than a dozen current and former students from two fraternities were part of an operation that involved packaging drugs at fraternity houses, the authorities said.",
@@ -1128,78 +1296,6 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "The Guardian University Guide 2026 – the rankings",
-      "link": "https://www.theguardian.com/education/ng-interactive/2025/sep/13/the-guardian-university-guide-2026-the-rankings",
-      "summary": "Find a course at one of the top universities in the country. Our league tables rank them all subject by subject, as well as by student satisfaction, staff numbers, spending and career prospects Continue reading...",
-      "publishedAtUtc": "2025-09-13T07:01:01Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "‘I’m going for a few pints now’: nerves and joy as students collect their A-level results",
-      "link": "https://www.theguardian.com/education/2026/aug/13/nerves-and-joy-as-students-collect-their-a-level-results",
-      "summary": "For sixth formers in Halifax, discovering their grades means a chance to celebrate and plan for the future There are few days that teenagers dread more than A-level results day , where students learn how the last two years of their lives will shape their futures, communicated through a few letters in an envelope. The tension of walking into college to learn your fate is enough to keep most people awake the night before. For Hayden Bettson-Day, 18, the best solution was get it over with as early as possible. Continue reading...",
-      "publishedAtUtc": "2026-08-13T13:04:56Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Playbooks, plagiarism and a pig’s head: new claims surrounding a star Cambridge professor",
-      "link": "https://www.theguardian.com/education/ng-interactive/2026/aug/01/playbooks-plagiarism-pigs-head-new-claims-surrounding-cambridge-professor-jason-arday",
-      "summary": "Jason Arday was regarded as an academic superstar, but then questions about his work prompted scrutiny of his backstory and counterclaims of racism When the superstar academic Jason Arday took to the stage at the British Sociological Association’s 75th anniversary conference earlier this year, he delivered a talk called Wanted Dead or Alive: the Playbook. The youngest black professor in Cambridge University’s history told an audience of his peers that the playbook in question had helped bring down some of the biggest names in US academia. Conservative “activists” were trawling through the work of black academics, looking for anything to use against them: inconsistencies, citation errors, passages in their work that were similar to existing papers. Continue reading...",
-      "publishedAtUtc": "2026-08-01T11:45:52Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "‘Standard’ velvet hangers? There’s nothing standard about some of the items on John Lewis’s uni essentials list| Emma Beddington",
-      "link": "https://www.theguardian.com/commentisfree/2026/aug/24/why-is-the-john-lewis-uni-essentials-list-so-strange",
-      "summary": "It used to be that dorm rooms were chaotically messy. Does this new generation really need an £80 spice rack and velvet clothes hangers? Of all the questions this year’s freshers may be nervously asking themselves as they prepare for this next phase – did I pick the right course? Will I make friends? Is uni worth 30 grand when my future job prospects may be limited to dusting a datacentre? – one is particularly pressing: “How many clothes hangers do I need to bring?” Fret no longer, enquiring young minds: John Lewis has the answer on its packing checklist for students . Thirty to 40, it claims, wildly, “consisting mostly of standard velvet or plastic hangers”. “Standard” velvet? I missed this&nbsp;memo. Continue reading...",
-      "publishedAtUtc": "2026-08-24T10:00:31Z",
-      "domain": "theguardian.com",
-      "score": 52.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "The Brains of Wellbeing & Beauty 2026",
-      "link": "https://www.ft.com/content/a99c5f10-75a7-49a2-a449-e9df55ad5c39",
-      "summary": "In the third instalment of the talk series, HTSI speaks to the innovators, entrepreneurs and health practitioners at the forefront of the wellness industry",
-      "publishedAtUtc": "2026-08-20T10:00:13Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
-    },
-    {
-      "title": "Moderna shares nearly triple on skin cancer vaccine success",
-      "link": "https://www.ft.com/content/a98a77e2-5156-4189-b971-974a7e60130f?syn-25a6b1a6=1",
-      "summary": "Drugmaker’s melanoma shot developed with Merck delivers positive outcome in late-stage trial",
-      "publishedAtUtc": "2026-08-19T20:15:33Z",
-      "domain": "ft.com",
-      "score": 52.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-08-31T13:42:28.575306Z"
     },
     {
@@ -1251,18 +1347,6 @@
       "cachedAtUtc": "2026-08-31T05:32:03.573718Z"
     },
     {
-      "title": "Share Your Experiences With the Public Health System in Louisiana",
-      "link": "https://www.nytimes.com/2026/08/17/us/share-your-experiences-with-the-public-health-system-in-louisiana.html",
-      "summary": "The New York Times is examining how public health is changing in the state, from the whooping cough outbreak to vaccine policies, and we want to hear from you.",
-      "publishedAtUtc": "2026-08-17T09:02:23Z",
-      "domain": "nytimes.com",
-      "score": 69.0,
-      "healthHits": 4,
-      "educationHits": 0,
-      "reason": "relevance=34, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T05:32:03.573718Z"
-    },
-    {
       "title": "‘So much fringe science’: RFK Jr’s advisers are pushing an extreme makeover in autism research",
       "link": "https://www.theguardian.com/society/2026/aug/28/rfk-jr-autism-research",
       "summary": "Experts warn the 336-page plan from RFK Jr’s advisers deflects federal dollars into unreliable alternative therapies Autism groups and researchers have reacted with alarm to a federal research roadmap drawn up by advisers handpicked by the US health secretary, Robert F Kennedy Jr, fearing it will promote unproven fringe therapies at the expense of promising genetic research. A slew of scientific bodies and groups within the autism community are warning that the 336-page plan risks deflecting federal dollars away from potentially groundbreaking genetic research in favor of unreliable alternative therapies. Continue reading...",
@@ -1272,18 +1356,6 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-08-31T05:32:03.573718Z"
-    },
-    {
-      "title": "FAFSA Form for College Aid Will Be Less Stressful This Year, Officials Say",
-      "link": "https://www.nytimes.com/2026/08/28/business/college-aid-fafsa.html",
-      "summary": "The college financial aid form has long been a stressor for high school seniors and their parents. Fixes have made it simpler and faster to complete, officials say.",
-      "publishedAtUtc": "2026-08-28T21:38:47Z",
-      "domain": "nytimes.com",
-      "score": 62.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-08-31T05:32:03.573718Z"
     },
     {
@@ -1948,17 +2020,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "6d151aefdbb2628660145a87519e21b10b741370",
-      "sourceTitle": "Trump cuts WHO off from Gavi vaccine alliance funding",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/7/30/trump-cuts-who-off-from-gavi-vaccine-alliance?traffic_source=rss",
-      "sourceDomain": "aljazeera.com",
-      "publishedAtUtc": "2026-07-30T03:25:35.882230Z",
-      "slug": "global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-funding",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-funding",
-      "mainImage": "/images/global-news/2026/2026-07-30-global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-07-30-global-health-and-education-watch-trump-cuts-who-off-from-gavi-vaccine-alliance-.jpg"
-    },
     {
       "contentHash": "9de148a1ca78bcb6551979e2fe9f9a44669561b5",
       "sourceTitle": "Have you done an apprenticeship in recent years in England? We’d like to hear about your experience",
@@ -6347,146 +6408,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-digital-public-mental-health-a-dataset-for-monitoring-mental",
       "mainImage": "/images/global-news/2026/2026-08-31-global-health-and-education-watch-digital-public-mental-health-a-dataset-for-mon.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-digital-public-mental-health-a-dataset-for-mon.jpg"
+    },
+    {
+      "contentHash": "c1b2edade42ef8ecaacfa8b77a6b8ada963a3e4f",
+      "sourceTitle": "Pharma stocks soar as investors seek AI alternatives",
+      "sourceUrl": "https://www.ft.com/content/2c65a745-8169-4192-971a-022bdfc0e7ad?syn-25a6b1a6=1",
+      "sourceDomain": "ft.com",
+      "publishedAtUtc": "2026-08-31T20:03:16.951244Z",
+      "slug": "global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+      "mainImage": "/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-08-13T16:26:58.946897Z",
-      "windowStartUtc": "2026-08-13T05:00:00Z",
-      "publishedInWindowBefore": 6,
-      "hoursLeftInWindow": 1,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com",
-        "who.int"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 2,
-        "news.un.org": 3,
-        "theguardian.com": 4,
-        "nytimes.com": 2,
-        "who.int": 2
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 99,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 99,
-      "candidateCacheCount": 208,
-      "candidatesAfterSourceDedupe": 38,
-      "candidatesAfterDedupe": 38,
-      "duplicateSkips": {
-        "historyHash": 57,
-        "historySource": 4,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Hegseth downplays USS Abraham Lincoln conditions amid reports of food shortages and mental health crises on board – live",
-          "link": "https://www.theguardian.com/us-news/live/2026/aug/13/karoline-leavitt-white-house-primaries-trump-politics-latest-updates",
-          "score": 84,
-          "reason": "relevance=31, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Stop the bites! How to survive another summer of mosquitoes, midges and horseflies",
-          "link": "https://www.theguardian.com/environment/2026/aug/13/stop-the-bites-how-to-survive-another-summer-of-mosquitoes-midges-and-horseflies",
-          "score": 83,
-          "reason": "relevance=30, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=1"
-        },
-        {
-          "title": "California bans paraquat, highly toxic herbicide outlawed in more than 70 countries",
-          "link": "https://www.theguardian.com/us-news/2026/aug/13/california-paraquat-ban-pesticide",
-          "score": 80,
-          "reason": "relevance=27, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Hegseth downplays USS Abraham Lincoln conditions amid reports of food shortages and mental health crises on board – live",
-        "link": "https://www.theguardian.com/us-news/live/2026/aug/13/karoline-leavitt-white-house-primaries-trump-politics-latest-updates",
-        "score": 84,
-        "reason": "relevance=31, credibility=35, freshness=18, health_hits=3, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Hegseth downplays USS Abraham Lincoln conditions amid reports of",
-      "generatedWordCount": 1304,
-      "mainImage": "/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 3214.8421089280187,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 3843.0,
-        "generatedWords": 1304.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/56e122503dac04f5e60a5fc9de36923be558c49b/522_415_2109_1687/master/2109.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=241d40014e11c4013b2cb7122bceee70",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditions-amid-reports-of"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-13-global-health-and-education-watch-hegseth-downplays-uss-abraham-lincoln-conditio.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 7
-    },
     {
       "ranAtUtc": "2026-08-13T19:20:06.865383Z",
       "windowStartUtc": "2026-08-13T19:00:00Z",
@@ -38399,6 +38334,141 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 1
+    },
+    {
+      "ranAtUtc": "2026-08-31T20:03:16.951244Z",
+      "windowStartUtc": "2026-08-31T13:00:00Z",
+      "publishedInWindowBefore": 1,
+      "hoursLeftInWindow": 5,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "nature.com",
+        "nytimes.com",
+        "theguardian.com"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 1,
+        "nytimes.com": 1,
+        "aljazeera.com": 1,
+        "nature.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 88,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 88,
+      "candidateCacheCount": 168,
+      "candidatesAfterSourceDedupe": 41,
+      "candidatesAfterDedupe": 41,
+      "duplicateSkips": {
+        "historyHash": 45,
+        "historySource": 2,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "More and more undergrads are living at home. That’s a crying shame – here’s why | Rohan Sathyamoorthy",
+          "link": "https://www.theguardian.com/commentisfree/2026/aug/31/undergraduates-living-at-home-rental-cost-adult-life",
+          "score": 89,
+          "reason": "relevance=36, credibility=35, freshness=18, health_hits=0, education_hits=4, global_hits=0"
+        },
+        {
+          "title": "Smelling test: children need education in sniffing aromas, scientist says",
+          "link": "https://www.theguardian.com/science/2026/aug/31/children-education-sniffing-aromas-scientist",
+          "score": 77,
+          "reason": "relevance=24, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=1"
+        },
+        {
+          "title": "French high schools rush to put Macron’s phone ban into force",
+          "link": "https://www.theguardian.com/world/2026/aug/31/french-high-schools-phone-ban-macron",
+          "score": 75,
+          "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Pharma stocks soar as investors seek AI alternatives",
+        "link": "https://www.ft.com/content/2c65a745-8169-4192-971a-022bdfc0e7ad?syn-25a6b1a6=1",
+        "score": 62,
+        "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
+      },
+      "selectedFromDiverseDomain": true,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Pharma stocks soar as investors seek AI alternatives",
+      "generatedWordCount": 1173,
+      "mainImage": "/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 4320
+      },
+      "generatedImageSharpness": 203.31170507270429,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "Could not generate image from Gemini models (gemini-2.0-flash-exp-image-generation: JSON request failed: HTTP Error 403: Forbidden | gemini-2.5-flash-image: JSON request failed: HTTP Error 403: Forbidden | gemini-3.1-flash-image-preview: JSON request failed: HTTP Error 403: Forbidden | gemini-3-pro-image-preview: JSON request failed: HTTP Error 403: Forbidden)",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 0.0,
+        "generatedWords": 1173.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "offline-fallback",
+      "sourceImageUrl": "",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-alternatives"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-31-global-health-and-education-watch-pharma-stocks-soar-as-investors-seek-ai-altern.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 2
     }
   ]
 }
