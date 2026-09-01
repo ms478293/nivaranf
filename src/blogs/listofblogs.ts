@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-health-crisis-looming-as-gaza-heads-towards-rainy-season",
+    title: "Global Health and Education Watch: Health crisis looming as Gaza heads towards rainy season",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-01-global-health-and-education-watch-health-crisis-looming-as-gaza-heads-towards-ra.jpg",
+    date: "2026-09-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-c-d-c-director-challenges-pennsylvania-s-report-of-two-measles-deaths",
     title: "Global Health and Education Watch: C.D.C. Director Challenges Pennsylvania’s Report of Two Measles Deaths",
     summary:
