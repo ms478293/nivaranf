@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-albanese-has-everything-to-lose-engaging-in-a-fight-3",
+    title: "Global Health and Education Watch: Albanese has everything to lose engaging in a fight",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-01-global-health-and-education-watch-albanese-has-everything-to-lose-engaging-in-a-.jpg",
+    date: "2026-09-01",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-albanese-has-everything-to-lose-engaging-in-a-fight-2",
     title: "Global Health and Education Watch: Albanese has everything to lose engaging in a fight",
     summary:
