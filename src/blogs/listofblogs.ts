@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-justice-department-sues-kansas-city-schools-over-gender-policy",
+    title: "Global Health and Education Watch: Justice Department Sues Kansas City Schools Over Gender Policy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-02-global-health-and-education-watch-justice-department-sues-kansas-city-schools-ov.jpg",
+    date: "2026-09-02",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-health-crisis-looming-as-gaza-heads-towards-rainy-season",
     title: "Global Health and Education Watch: Health crisis looming as Gaza heads towards rainy season",
     summary:
