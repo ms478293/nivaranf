@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-after-gen-z-india-s-gen-alpha-rises-demanding-education",
+    title: "Global Health and Education Watch: After Gen Z, India’s Gen Alpha rises, demanding education",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-04-global-health-and-education-watch-after-gen-z-india-s-gen-alpha-rises-demanding-.jpg",
+    date: "2026-09-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-higher-education-regulator-apologises-for-imposing-585-000-fine-on",
     title: "Global Health and Education Watch: Higher education regulator apologises for imposing £585,000 fine on",
     summary:
