@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-african-union-and-world-health-organization-renew-strategic-partnership-2",
+    title: "Global Health and Education Watch: African Union and World Health Organization renew strategic partnership",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-04-global-health-and-education-watch-african-union-and-world-health-organization-re.jpg",
+    date: "2026-09-04",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-after-gen-z-india-s-gen-alpha-rises-demanding-education",
     title: "Global Health and Education Watch: After Gen Z, India’s Gen Alpha rises, demanding education",
     summary:
