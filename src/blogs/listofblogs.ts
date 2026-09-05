@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-un-tells-the-world-stop-making-africa-look-small",
+    title: "Global Health and Education Watch: UN tells the world: Stop making Africa look small",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-05-global-health-and-education-watch-un-tells-the-world-stop-making-africa-look-sma.jpg",
+    date: "2026-09-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-the-heart-drug-pelacarsen-fails-shocking-novartis-and-cardiologists",
     title: "Global Health and Education Watch: The Heart Drug Pelacarsen Fails, Shocking Novartis and Cardiologists",
     summary:
