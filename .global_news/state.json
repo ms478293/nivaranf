@@ -1,19 +1,7 @@
 {
   "windowStartUtc": "2026-09-05T09:00:00Z",
-  "publishedInWindow": 3,
+  "publishedInWindow": 4,
   "candidateCache": [
-    {
-      "title": "Alcohol-related cancer deaths in US have more than doubled over three decades",
-      "link": "https://www.theguardian.com/society/2026/sep/04/alcohol-related-cancer-deaths",
-      "summary": "Study finds just one drink per day could raise risk of disease with impacts extending far beyond liver cancer Alcohol-related cancer deaths in the US have more than doubled over three decades, with new research showing that just one drink per day could raise cancer risk and that the impacts extend far beyond liver cancer. Researchers at Sylvester Comprehensive Cancer Center, part of the University of Miami Miller School of Medicine, analyzed more than three decades of Global Burden of Disease data. Their study, published in August in the Lancet Regional Health , found that annual cancer deaths attributed to alcohol climbed from 11,361 in 1990 to 23,126 in 2023. Continue reading...",
-      "publishedAtUtc": "2026-09-04T17:03:59Z",
-      "domain": "theguardian.com",
-      "score": 95.0,
-      "healthHits": 2,
-      "educationHits": 2,
-      "reason": "relevance=42, credibility=35, freshness=18, health_hits=2, education_hits=2, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
-    },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
       "link": "https://www.who.int/news/item/17-05-2024-ireland-and-who-work-together-to-improve-access-to-assistive-technology-globally",
@@ -24,19 +12,19 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
-      "title": "Free cholesterol tests on the NHS are great – but here’s the five-point health MOT I’d really like to see | Devi Sridhar",
-      "link": "https://www.theguardian.com/commentisfree/2026/sep/02/nhs-free-cholesterol-tests-health-symptom",
-      "summary": "You could be walking around symptom-free and not know you’re pre-diabetic, living with hypertension or at a high risk of a heart attack Prof Devi Sridhar is chair of global public health at the University of Edinburgh “An ounce of prevention is worth a pound of cure,” Benjamin Franklin’s adage goes. Yet that simple prescription has been hard to follow in the current NHS. As has been frequently highlighted , one of the biggest challenges for the health system is not just how much we spend per capita, but where and when it is spent. In England, there has been an ongoing shift within the NHS budget towards acute hospital care – treating people in hospitals, often after they are already quite ill – while funding for primary care such as GPs has fallen. The consequence is that the NHS is increasingly paying for serious and expensive disease treatment, rather than investing upstream to prevent disease in the first place. We spend heavily on dealing with heart attacks, strokes and other life-threatening conditions, rather than identifying those who are at higher risk and intervening earlier to reduce their chances of getting ill. Prof Devi Sridhar is chair of global public health at the University of Edinburgh Continue reading...",
-      "publishedAtUtc": "2026-09-02T07:00:25Z",
+      "title": "Alcohol-related cancer deaths in US have more than doubled over three decades",
+      "link": "https://www.theguardian.com/society/2026/sep/04/alcohol-related-cancer-deaths",
+      "summary": "Study finds just one drink per day could raise risk of disease with impacts extending far beyond liver cancer Alcohol-related cancer deaths in the US have more than doubled over three decades, with new research showing that just one drink per day could raise cancer risk and that the impacts extend far beyond liver cancer. Researchers at Sylvester Comprehensive Cancer Center, part of the University of Miami Miller School of Medicine, analyzed more than three decades of Global Burden of Disease data. Their study, published in August in the Lancet Regional Health , found that annual cancer deaths attributed to alcohol climbed from 11,361 in 1990 to 23,126 in 2023. Continue reading...",
+      "publishedAtUtc": "2026-09-04T17:03:59Z",
       "domain": "theguardian.com",
-      "score": 88.0,
-      "healthHits": 4,
-      "educationHits": 1,
-      "reason": "relevance=49, credibility=35, freshness=4, health_hits=4, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "score": 87.0,
+      "healthHits": 2,
+      "educationHits": 2,
+      "reason": "relevance=42, credibility=35, freshness=10, health_hits=2, education_hits=2, global_hits=1",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Schools in England face checks to root out unhealthy lunches",
@@ -48,7 +36,7 @@
       "healthHits": 2,
       "educationHits": 2,
       "reason": "relevance=38, credibility=35, freshness=10, health_hits=2, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -60,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -72,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘Bold, brilliant, thrilling’: leading authors on the novels every school should teach",
@@ -84,7 +72,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "A remarkable documentary made by blind students: ‘We were stunned by the footage’",
@@ -96,7 +84,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Britain’s schools are failing its young people – and 1m Neets are paying the price | Simon Jenkins",
@@ -108,7 +96,7 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=35, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Chat to strangers and let your kids be bored: how to embrace a ‘slow September’ – and enjoy life more",
@@ -120,7 +108,7 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=35, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -132,7 +120,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -144,7 +132,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Mental health groups have ‘failed to acknowledge’ risk of violence, says Mind chief",
@@ -156,7 +144,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Alzheimer’s trial to test drug on people without symptoms to see if it can be prevented",
@@ -168,19 +156,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
-    },
-    {
-      "title": "Nicola Close obituary",
-      "link": "https://www.theguardian.com/politics/2026/sep/04/nicola-close-obituary",
-      "summary": "My friend Nicola Close, who has died aged 75 of cancer, was a public health leader who made a major contribution to the field as chief executive of the Association of Directors of Public Health (ADPH). Starting as its sole employee in 2007, she built an influential organisation currently employing 19 people. This became especially evident during the Covid-19 pandemic, when directors of public health, whose role includes providing local leadership and implementing national guidance, were thrust into the spotlight. To support members to work more effectively, and strengthen communication between central government and local communities, Nicola helped break down barriers to data sharing, and secure regular meetings between directors of public health and UK chief medical officers. In 2025 she was made MBE for services to public health. Continue reading...",
-      "publishedAtUtc": "2026-09-04T16:39:57Z",
-      "domain": "theguardian.com",
-      "score": 77.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=24, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "The Heart Drug Pelacarsen Fails, Shocking Novartis and Cardiologists",
@@ -192,7 +168,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "More and more undergrads are living at home. That’s a crying shame – here’s why | Rohan Sathyamoorthy",
@@ -204,7 +180,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=4, health_hits=0, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "New York City Bans A.I. in Elementary and Middle Schools",
@@ -216,7 +192,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Kenyans Made a Living Writing College Essays. Then A.I. Arrived.",
@@ -228,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -240,7 +216,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Haze From Indonesian Wildfires Blankets Parts of Malaysia and Philippines",
@@ -252,7 +228,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Higher education regulator apologises for imposing £585,000 fine on university",
@@ -264,7 +240,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=27, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "First professional St Nick with Down’s syndrome inducted into International Santa Claus Hall of Fame",
@@ -276,7 +252,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘Our children are less cognitively capable,’ says neuroscientist who wants to cut screen use in schools",
@@ -288,19 +264,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
-    },
-    {
-      "title": "An autism or ADHD diagnosis without access to treatment is a hollow outcome | Letter",
-      "link": "https://www.theguardian.com/society/2026/sep/02/an-autism-or-adhd-diagnosis-without-access-to-treatment-is-a-hollow-outcome",
-      "summary": "Helen Macdonald responds to a report by the parliamentary and health service ombudsman The parliamentary and health service ombudsman’s findings are stark and sadly familiar ( Autism and ADHD care complaints more than triple in five years in England, 26 August ). A more than 200% rise in complaints, years-long waits, patients paying thousands of pounds for private care when the NHS fails them, and a system so complex that people are routinely denied rights they are legally entitled to – these are exactly the issues that the British Association for Behavioural and Cognitive Psychotherapies (BABCP) has been documenting and raising for years. What the ombudsman’s report does not fully address is what happens once people are assessed and diagnosed. Too many people with ADHD and autism receive a diagnosis only to find that there is no evidence-based treatment pathway attached to it. Cognitive behavioural therapy is recommended by the National Institute for Health and Care Excellence for the anxiety and depression that commonly accompany neurodevelopmental conditions, and in specific contexts for adults with ADHD itself. Yet workforce shortages mean that even where the clinical will exists, the capacity often does not. A diagnosis without access to appropriate treatment is a hollow outcome. Continue reading...",
-      "publishedAtUtc": "2026-09-02T17:03:24Z",
-      "domain": "theguardian.com",
-      "score": 71.0,
-      "healthHits": 2,
-      "educationHits": 0,
-      "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -312,19 +276,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
-    },
-    {
-      "title": "Cambridge University asks former chief crown prosecutor to open Arday review",
-      "link": "https://www.theguardian.com/uk-news/2026/sep/04/cambridge-university-nazir-afzal-to-lead-first-part-jason-arday-review",
-      "summary": "Nazir Afzal to focus in review’s first stage on support given to professor in immediate period before his death The University of Cambridge has asked Nazir Afzal, a former chief crown prosecutor for north-west England, to lead the first part of its review into the death of the scholar Jason Arday. Arday died at his home in south London on 14 August, nine days after his resignation as a Cambridge professor amid swirling allegations of plagiarism and inconsistencies in statements about his career. Continue reading...",
-      "publishedAtUtc": "2026-09-04T17:48:21Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Even in safe-haven Massachusetts, trans care is at risk. Young people are fighting to protect it",
@@ -336,7 +288,19 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
+    },
+    {
+      "title": "Six-week-old child in Pennsylvania died from measles, coroner says",
+      "link": "https://www.theguardian.com/us-news/2026/sep/04/pennsylvania-measles-death-infant",
+      "summary": "Officials decline to confirm whether death was one of two announced last week as Lancaster county outbreak grows A six-week-old child in Pennsylvania died from measles, the Lancaster county coroner has determined, following two measles-related deaths in the county last week. The determination comes as Lancaster county faces a growing measles outbreak. Continue reading...",
+      "publishedAtUtc": "2026-09-04T19:26:44Z",
+      "domain": "theguardian.com",
+      "score": 70.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -348,7 +312,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Teenager in Wales given detention sentence for stabbing teacher in head",
@@ -360,7 +324,19 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
+    },
+    {
+      "title": "Nicola Close obituary",
+      "link": "https://www.theguardian.com/politics/2026/sep/04/nicola-close-obituary",
+      "summary": "My friend Nicola Close, who has died aged 75 of cancer, was a public health leader who made a major contribution to the field as chief executive of the Association of Directors of Public Health (ADPH). Starting as its sole employee in 2007, she built an influential organisation currently employing 19 people. This became especially evident during the Covid-19 pandemic, when directors of public health, whose role includes providing local leadership and implementing national guidance, were thrust into the spotlight. To support members to work more effectively, and strengthen communication between central government and local communities, Nicola helped break down barriers to data sharing, and secure regular meetings between directors of public health and UK chief medical officers. In 2025 she was made MBE for services to public health. Continue reading...",
+      "publishedAtUtc": "2026-09-04T16:39:57Z",
+      "domain": "theguardian.com",
+      "score": 69.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Strengthening public health across Lebanon with EIB Global",
@@ -372,7 +348,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "China’s falling emissions amid Iran war spark hope of decarbonisation watershed",
@@ -384,7 +360,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
@@ -396,7 +372,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
@@ -408,7 +384,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Repeated attacks on humanitarian warehouses put vital medical aid at risk in Ukraine: WHO",
@@ -420,7 +396,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "U.S. Sanctions on Iran Cut Off Students From Tests Needed for Study Abroad",
@@ -432,7 +408,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
@@ -444,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
@@ -456,7 +432,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
@@ -468,7 +444,19 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
+    },
+    {
+      "title": "An autism or ADHD diagnosis without access to treatment is a hollow outcome | Letter",
+      "link": "https://www.theguardian.com/society/2026/sep/02/an-autism-or-adhd-diagnosis-without-access-to-treatment-is-a-hollow-outcome",
+      "summary": "Helen Macdonald responds to a report by the parliamentary and health service ombudsman The parliamentary and health service ombudsman’s findings are stark and sadly familiar ( Autism and ADHD care complaints more than triple in five years in England, 26 August ). A more than 200% rise in complaints, years-long waits, patients paying thousands of pounds for private care when the NHS fails them, and a system so complex that people are routinely denied rights they are legally entitled to – these are exactly the issues that the British Association for Behavioural and Cognitive Psychotherapies (BABCP) has been documenting and raising for years. What the ombudsman’s report does not fully address is what happens once people are assessed and diagnosed. Too many people with ADHD and autism receive a diagnosis only to find that there is no evidence-based treatment pathway attached to it. Cognitive behavioural therapy is recommended by the National Institute for Health and Care Excellence for the anxiety and depression that commonly accompany neurodevelopmental conditions, and in specific contexts for adults with ADHD itself. Yet workforce shortages mean that even where the clinical will exists, the capacity often does not. A diagnosis without access to appropriate treatment is a hollow outcome. Continue reading...",
+      "publishedAtUtc": "2026-09-02T17:03:24Z",
+      "domain": "theguardian.com",
+      "score": 65.0,
+      "healthHits": 2,
+      "educationHits": 0,
+      "reason": "relevance=26, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "UN tells the world: Stop making Africa look small",
@@ -480,7 +468,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "General Assembly backs creation of new UN learning institute under UN80 reforms",
@@ -492,7 +480,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Psilocybin May Prevent Nerve Damage Caused by Chemotherapy, Study Finds",
@@ -504,7 +492,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Even high school reporters are facing censorship now",
@@ -516,7 +504,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Genetically modified pig kidney keeps man alive for record nine months",
@@ -528,7 +516,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -540,7 +528,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
@@ -552,7 +540,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
@@ -564,7 +552,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "C.D.C. Director Challenges Pennsylvania’s Report of Two Measles Deaths",
@@ -576,7 +564,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Justice Department Sues Kansas City Schools Over Gender Policy",
@@ -588,7 +576,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘A huge learning curve’: apprentices on the benefits and pitfalls of vocational training",
@@ -600,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "How to Set New Goals This Fall",
@@ -612,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Americans Encounter Risks at Psychedelic Clinics Abroad",
@@ -624,7 +612,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "School Is Starting Late. That’s Good for N.Y.C. Summer Camps.",
@@ -636,7 +624,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
+    },
+    {
+      "title": "Cambridge University asks former chief crown prosecutor to open Arday review",
+      "link": "https://www.theguardian.com/uk-news/2026/sep/04/cambridge-university-nazir-afzal-to-lead-first-part-jason-arday-review",
+      "summary": "Nazir Afzal to focus in review’s first stage on support given to professor in immediate period before his death The University of Cambridge has asked Nazir Afzal, a former chief crown prosecutor for north-west England, to lead the first part of its review into the death of the scholar Jason Arday. Arday died at his home in south London on 14 August, nine days after his resignation as a Cambridge professor amid swirling allegations of plagiarism and inconsistencies in statements about his career. Continue reading...",
+      "publishedAtUtc": "2026-09-04T17:48:21Z",
+      "domain": "theguardian.com",
+      "score": 62.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "For These Children, Getting a Safe Education Means Going Underground",
@@ -648,7 +648,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘Alarm bells were going off’: parents tell of ordeal at Send school closed down after abuse allegations",
@@ -660,7 +660,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "US medical groups urge people to get flu and Covid shots in counter to Trump guidance",
@@ -672,7 +672,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Response must outpace spread of Ebola: UN relief chief",
@@ -684,7 +684,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Food aid cutback in the occupied West Bank as health fears grow in Gaza",
@@ -696,7 +696,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘Cheap travel is not a defence’: the parents facing court for school absences in England",
@@ -708,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO launches unique training course to enable parliamentarians in global health security",
@@ -720,7 +720,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Kat Chan: eating your way to better health",
@@ -732,7 +732,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO statement on notification of withdrawal of the United States",
@@ -744,7 +744,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "WHO comments on United States’ announcement of intent to withdraw",
@@ -756,7 +756,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Employer Health Costs Are Expected to Spike in 2027",
@@ -768,7 +768,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Baby Goats From a Traveling Petting Zoo Test Positive for Rabies",
@@ -780,7 +780,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Malaria, Likely Spread by Mosquito on Plane, Kills 2 Airport Workers in Germany",
@@ -792,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Day Cares Will Get Funds to Open in Time for School, Mamdani Says",
@@ -804,7 +804,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Pharma stocks soar as investors seek AI alternatives",
@@ -816,7 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Luxembourg and WHO sign two strategic agreements",
@@ -828,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "G20 health ministers rally support for WHO’s Investment Round",
@@ -840,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "F.D.A. Approves the Drug Daraxonrasib That’s Poised to Transform Pancreatic Cancer",
@@ -852,7 +852,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "‘You’re Ruining My Dreams’: C.T.E. Study Adds to Family Tension Over Football",
@@ -864,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Funding Delays Threaten Rollout of Mamdani’s 2-K Program",
@@ -876,7 +876,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Walmart to Pay $50 Million to Settle Opioid Lawsuit, US Says",
@@ -888,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "FAFSA Form for College Aid Will Be Less Stressful This Year, Officials Say",
@@ -900,7 +900,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -912,7 +912,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "Inside America’s rogue stem cell industry",
@@ -924,7 +924,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "London is worst area in England and Wales for heat-related deaths",
@@ -936,7 +936,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
     },
     {
       "title": "The Brains of Wellbeing & Beauty 2026",
@@ -948,6 +948,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-05T18:17:03.518626Z"
+    },
+    {
+      "title": "Free cholesterol tests on the NHS are great – but here’s the five-point health MOT I’d really like to see | Devi Sridhar",
+      "link": "https://www.theguardian.com/commentisfree/2026/sep/02/nhs-free-cholesterol-tests-health-symptom",
+      "summary": "You could be walking around symptom-free and not know you’re pre-diabetic, living with hypertension or at a high risk of a heart attack Prof Devi Sridhar is chair of global public health at the University of Edinburgh “An ounce of prevention is worth a pound of cure,” Benjamin Franklin’s adage goes. Yet that simple prescription has been hard to follow in the current NHS. As has been frequently highlighted , one of the biggest challenges for the health system is not just how much we spend per capita, but where and when it is spent. In England, there has been an ongoing shift within the NHS budget towards acute hospital care – treating people in hospitals, often after they are already quite ill – while funding for primary care such as GPs has fallen. The consequence is that the NHS is increasingly paying for serious and expensive disease treatment, rather than investing upstream to prevent disease in the first place. We spend heavily on dealing with heart attacks, strokes and other life-threatening conditions, rather than identifying those who are at higher risk and intervening earlier to reduce their chances of getting ill. Prof Devi Sridhar is chair of global public health at the University of Edinburgh Continue reading...",
+      "publishedAtUtc": "2026-09-02T07:00:25Z",
+      "domain": "theguardian.com",
+      "score": 88.0,
+      "healthHits": 4,
+      "educationHits": 1,
+      "reason": "relevance=49, credibility=35, freshness=4, health_hits=4, education_hits=1, global_hits=1",
       "cachedAtUtc": "2026-09-05T16:04:19.487209Z"
     },
     {
@@ -1069,18 +1081,6 @@
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-09-05T00:03:59.161527Z"
-    },
-    {
-      "title": "Six-week-old child in Pennsylvania dies from measles, coroner says",
-      "link": "https://www.theguardian.com/us-news/2026/sep/04/pennsylvania-measles-death-infant",
-      "summary": "Officials decline to confirm whether death was one of two announced last week as Lancaster county outbreak grows A six-week-old child in Pennsylvania died from measles, the Lancaster County coroner has determined, following two measles-related deaths in the county last week. The determination comes as Lancaster county faces a growing measles outbreak. Continue reading...",
-      "publishedAtUtc": "2026-09-04T19:26:44Z",
-      "domain": "theguardian.com",
-      "score": 70.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-04T21:27:49.562220Z"
     },
     {
       "title": "US adds 162,000 jobs in August, raising Fed rate hike expectations",
@@ -1852,17 +1852,6 @@
     }
   ],
   "history": [
-    {
-      "contentHash": "2e82a022453e25638c99d1fdebce0d862d978329",
-      "sourceTitle": "Spain's Secretary of State for Health discusses health priorities with WHO",
-      "sourceUrl": "https://www.who.int/news/item/25-04-2024-spain-s-secretary-of-state-for-health-discusses-joint-global-health-priorities-with-who",
-      "sourceDomain": "who.int",
-      "publishedAtUtc": "2026-08-02T03:51:54.739111Z",
-      "slug": "global-health-and-education-watch-spain-s-secretary-of-state-for-health-discusses-health-priorities",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-spain-s-secretary-of-state-for-health-discusses-health-priorities",
-      "mainImage": "/images/global-news/2026/2026-08-02-global-health-and-education-watch-spain-s-secretary-of-state-for-health-discusse.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-02-global-health-and-education-watch-spain-s-secretary-of-state-for-health-discusse.jpg"
-    },
     {
       "contentHash": "ba126bf81eb76347712ff0e3abc4c7c5a2ed4c01",
       "sourceTitle": "MPs call for routine lead testing for children near abandoned mines",
@@ -6251,145 +6240,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-un-tells-the-world-stop-making-africa-look-small",
       "mainImage": "/images/global-news/2026/2026-09-05-global-health-and-education-watch-un-tells-the-world-stop-making-africa-look-sma.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-un-tells-the-world-stop-making-africa-look-sma.jpg"
+    },
+    {
+      "contentHash": "bb2e80e5ad07df99af284576c110e3e8faa07126",
+      "sourceTitle": "Timor-Leste certified malaria-free by WHO",
+      "sourceUrl": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
+      "sourceDomain": "who.int",
+      "publishedAtUtc": "2026-09-05T18:17:03.518626Z",
+      "slug": "global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+      "mainImage": "/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-08-15T08:45:52.158127Z",
-      "windowStartUtc": "2026-08-15T08:00:00Z",
-      "publishedInWindowBefore": 0,
-      "hoursLeftInWindow": 12,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "news.un.org",
-        "nytimes.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 5,
-        "nytimes.com": 3,
-        "news.un.org": 4,
-        "nature.com": 1,
-        "theguardian.com": 4
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 64,
-      "primaryCandidatesFetched": 110,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 110,
-      "candidateCacheCount": 235,
-      "candidatesAfterSourceDedupe": 39,
-      "candidatesAfterDedupe": 39,
-      "duplicateSkips": {
-        "historyHash": 67,
-        "historySource": 4,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Iceberg, romaine, kale: which salad greens are healthiest?",
-          "link": "https://www.theguardian.com/wellness/2026/aug/14/iceberg-romaine-kale-healthy-salad-cyclospora",
-          "score": 75,
-          "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "American missionary kidnapped in Niger freed after nine months",
-          "link": "https://www.theguardian.com/world/2026/aug/14/american-missionary-kevin-rideout-niger-released-kidnapping",
-          "score": 74,
-          "reason": "relevance=21, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1"
-        },
-        {
-          "title": "Jason Arday, professor at centre of Cambridge plagiarism row, found dead",
-          "link": "https://www.theguardian.com/uk-news/2026/aug/14/jason-arday-found-dead-after-resigning-from-cambridge-over-plagiarism-claims",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Iceberg, romaine, kale: which salad greens are healthiest?",
-        "link": "https://www.theguardian.com/wellness/2026/aug/14/iceberg-romaine-kale-healthy-salad-cyclospora",
-        "score": 75,
-        "reason": "relevance=22, credibility=35, freshness=18, health_hits=2, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": false,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Iceberg, romaine, kale: which salad greens are healthiest?",
-      "generatedWordCount": 1261,
-      "mainImage": "/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4032
-      },
-      "generatedImageSharpness": 1448.6644998798956,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 1839.0,
-        "generatedWords": 1261.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "source",
-      "sourceImageUrl": "https://i.guim.co.uk/img/media/07857b8e606260e274a4532a4788b2212c9738ed/912_0_4560_3648/master/4560.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=33b88641db53b1d50c23bc85a1091f17",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-healthiest"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-iceberg-romaine-kale-which-salad-greens-are-he.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 1
-    },
     {
       "ranAtUtc": "2026-08-15T09:39:40.286803Z",
       "windowStartUtc": "2026-08-15T08:00:00Z",
@@ -38308,6 +38172,129 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 3
+    },
+    {
+      "ranAtUtc": "2026-09-05T18:17:03.518626Z",
+      "windowStartUtc": "2026-09-05T09:00:00Z",
+      "publishedInWindowBefore": 3,
+      "hoursLeftInWindow": 3,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "news.un.org",
+        "nytimes.com",
+        "theguardian.com",
+        "who.int"
+      ],
+      "recentDomainCounts": {
+        "news.un.org": 2,
+        "nytimes.com": 2,
+        "theguardian.com": 2,
+        "who.int": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 54,
+      "primaryCandidatesFetched": 79,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 79,
+      "candidateCacheCount": 154,
+      "candidatesAfterSourceDedupe": 35,
+      "candidatesAfterDedupe": 35,
+      "duplicateSkips": {
+        "historyHash": 44,
+        "historySource": 0,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Timor-Leste certified malaria-free by WHO",
+          "link": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
+          "score": 77,
+          "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Timor-Leste certified malaria-free by WHO",
+        "link": "https://www.who.int/news/item/24-07-2025-timor-leste-certified-malaria-free-by-who",
+        "score": 77,
+        "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Timor-Leste certified malaria-free by WHO",
+      "generatedWordCount": 1887,
+      "mainImage": "/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5120
+      },
+      "generatedImageSharpness": 465.6214797770443,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 1211.0,
+        "generatedWords": 1887.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://cdn.who.int/media/images/default-source/topics/diseases-and-conditions/malaria/children-under-mosquito-bed-net-in-timor-leste.tmb-1200v.jpg?sfvrsn=8dabb97_6",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-05-global-health-and-education-watch-timor-leste-certified-malaria-free-by-who.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 4
     }
   ]
 }
