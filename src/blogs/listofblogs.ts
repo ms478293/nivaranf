@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-general-assembly-backs-creation-of-new-un-learning-institute",
+    title: "Global Health and Education Watch: General Assembly backs creation of new UN learning institute",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-05-global-health-and-education-watch-general-assembly-backs-creation-of-new-un-lear.jpg",
+    date: "2026-09-05",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-timor-leste-certified-malaria-free-by-who-2",
     title: "Global Health and Education Watch: Timor-Leste certified malaria-free by WHO",
     summary:
