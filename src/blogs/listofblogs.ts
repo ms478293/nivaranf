@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-kenyans-made-a-living-writing-college-essays-then-a-i",
+    title: "Global Health and Education Watch: Kenyans Made a Living Writing College Essays. Then A.I",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-06-global-health-and-education-watch-kenyans-made-a-living-writing-college-essays-t.jpg",
+    date: "2026-09-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-pupils-with-send-plans-in-england-likely-to-double",
     title: "Global Health and Education Watch: Pupils with Send plans in England likely to double",
     summary:
