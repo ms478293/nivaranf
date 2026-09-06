@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-prediction-of-maternal-and-infant-outcomes-from-longitudinal-electronic",
+    title: "Global Health and Education Watch: Prediction of maternal and infant outcomes from longitudinal electronic",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-06-global-health-and-education-watch-prediction-of-maternal-and-infant-outcomes-fro.jpg",
+    date: "2026-09-06",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-nearly-9-000-killed-in-israeli-attacks-on-lebanon-since",
     title: "Global Health and Education Watch: Nearly 9,000 killed in Israeli attacks on Lebanon since",
     summary:
