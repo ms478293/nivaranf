@@ -1,6 +1,6 @@
 {
-  "windowStartUtc": "2026-09-06T10:00:00Z",
-  "publishedInWindow": 5,
+  "windowStartUtc": "2026-09-06T23:00:00Z",
+  "publishedInWindow": 1,
   "candidateCache": [
     {
       "title": "Pupils with Send plans in England likely to double to one in 10 in rush for support",
@@ -12,7 +12,7 @@
       "healthHits": 1,
       "educationHits": 4,
       "reason": "relevance=45, credibility=35, freshness=18, health_hits=1, education_hits=4, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Ireland and WHO work together to improve access to assistive technology globally",
@@ -24,7 +24,7 @@
       "healthHits": 3,
       "educationHits": 2,
       "reason": "relevance=57, credibility=35, freshness=0, health_hits=3, education_hits=2, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Alcohol-related cancer deaths in US have more than doubled over three decades",
@@ -36,7 +36,7 @@
       "healthHits": 2,
       "educationHits": 2,
       "reason": "relevance=42, credibility=35, freshness=10, health_hits=2, education_hits=2, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "African Union and World Health Organization renew strategic partnership to drive impact and strengthen health systems in Africa",
@@ -48,7 +48,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Signing ceremony for contribution agreements between WHO and France",
@@ -60,7 +60,7 @@
       "healthHits": 5,
       "educationHits": 0,
       "reason": "relevance=47, credibility=35, freshness=0, health_hits=5, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "A remarkable documentary made by blind students: ‘We were stunned by the footage’",
@@ -72,7 +72,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=10, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Broken feet, ripped-out hair and now a death sentence: the fate of twin sisters jailed over Iran protests",
@@ -84,7 +84,7 @@
       "healthHits": 1,
       "educationHits": 1,
       "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Britain’s schools are failing its young people – and 1m Neets are paying the price | Simon Jenkins",
@@ -96,7 +96,7 @@
       "healthHits": 1,
       "educationHits": 2,
       "reason": "relevance=35, credibility=35, freshness=10, health_hits=1, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Chat to strangers and let your kids be bored: how to embrace a ‘slow September’ – and enjoy life more",
@@ -108,7 +108,19 @@
       "healthHits": 2,
       "educationHits": 1,
       "reason": "relevance=35, credibility=35, freshness=10, health_hits=2, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "‘Gigantic spaceship’: University of Bristol’s flagship £500m campus opens",
+      "link": "https://www.theguardian.com/uk-news/2026/sep/07/university-of-bristol-flagship-500m-campus-opens",
+      "summary": "Temple Quarter Enterprise Campus near to station will make it easier for students and staff to commute Not so long ago, the first impression for visitors arriving by train to Bristol’s main railway station was a derelict building described by David Cameron as looking like the entrance to a war zone. On Monday, a shiny new University of Bristol campus on the site of that crumbling Royal Mail sorting office next door to Temple Meads is opening its doors to students, teachers and members of the public. Continue reading...",
+      "publishedAtUtc": "2026-09-06T23:01:18Z",
+      "domain": "theguardian.com",
+      "score": 80.0,
+      "healthHits": 0,
+      "educationHits": 3,
+      "reason": "relevance=27, credibility=35, freshness=18, health_hits=0, education_hits=3, global_hits=0",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Timor-Leste certified malaria-free by WHO",
@@ -120,7 +132,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Spain's Secretary of State for Health discusses health priorities with WHO",
@@ -132,19 +144,7 @@
       "healthHits": 4,
       "educationHits": 0,
       "reason": "relevance=42, credibility=35, freshness=0, health_hits=4, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
-    },
-    {
-      "title": "Undercover report on donations ‘looks bad’ for Reform, admits Nigel Farage – as it happened",
-      "link": "https://www.theguardian.com/politics/live/2026/sep/06/nigel-farage-reform-uk-donations-undercover-investigation-latest-news-updates",
-      "summary": "The Reform UK leader is under pressure after senior aides appeared to plot how to bypass electoral laws on foreign donations Sagal Abdi-Wali arrived in Camden as a child refugee from Somalia. She has worked for more than a decade as a volunteer and trustee for local charities and is a governor of two schools in the borough, according to Labour. She was first elected as a councillor in 2022 and became the leader of the council in May, when she said: “Camden has been my home for 35 years. It is the place that gave my family sanctuary, that welcomed us, and that has shaped so much of who I am, what I stand for and what inspired my commitment to public service and to working for the community that welcomed us.” Continue reading...",
-      "publishedAtUtc": "2026-09-06T12:50:58Z",
-      "domain": "theguardian.com",
-      "score": 76.0,
-      "healthHits": 0,
-      "educationHits": 1,
-      "reason": "relevance=23, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "New York City Supports Push to Reopen Columbia Pathway to the Public",
@@ -156,7 +156,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘Powerful example’: minister looks to Essex school for blueprint to transform Send provision",
@@ -168,7 +168,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "The student loan scam looking to dupe already anxious students",
@@ -180,7 +180,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Aged 41, I’m back at my secondary school – but this time they’ve let me in the staffroom | Nell Frizzell",
@@ -192,7 +192,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=18, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘Bold, brilliant, thrilling’: leading authors on the novels every school should teach",
@@ -204,7 +204,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=10, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
@@ -216,7 +216,19 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "Almost 75% of A&E staff in UK face violence or aggression daily or weekly",
+      "link": "https://www.theguardian.com/society/2026/sep/07/nhs-a-and-e-staff-violence-aggression-survey",
+      "summary": "Survey finds long waiting times and overcrowding have made abuse ‘routine’ part of working on hospital frontline Nearly three-quarters of A&amp;E staff experience violence or aggression daily or weekly, according to a survey highlighting the “appalling” abuse of NHS workers. The Royal College of Emergency Medicine (RCEM) said understaffed and overcrowded emergency departments were contributing to increased targeting of medics. Continue reading...",
+      "publishedAtUtc": "2026-09-06T23:01:17Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Volcanic eruption halts flights at Jakarta and seven other Indonesian airports",
@@ -228,7 +240,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "At least five dead after Amazon cargo plane crashes at Miami airport",
+      "link": "https://www.theguardian.com/us-news/2026/sep/06/amazon-cargo-plane-crashes-miami-airport",
+      "summary": "Three people in critical condition and two hospitalized as operations at one of busiest US airports brought to a halt An Amazon cargo plane crashed at Miami international airport in Florida on Sunday afternoon after the flight, which was arriving from Puerto Rico, overshot the runway, striking several vehicles and resulting in at least five deaths. The plane erupted in flames as dark smoke billowed into the sky, bringing operations at one of the busiest airports in the US to a halt. The pilot and copilot were trapped in the cockpit as a result of the crash, said the Miami-Dade rescue fire chief Ray Jadallah. Continue reading...",
+      "publishedAtUtc": "2026-09-06T21:49:27Z",
+      "domain": "theguardian.com",
+      "score": 72.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘Our children are less cognitively capable,’ says neuroscientist who wants to cut screen use in schools",
@@ -240,7 +264,7 @@
       "healthHits": 0,
       "educationHits": 4,
       "reason": "relevance=36, credibility=35, freshness=0, health_hits=0, education_hits=4, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -252,7 +276,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=35, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "My dad’s determination to choose life despite his cruel illness has taught me gratitude | Nomi Kaltmann",
@@ -264,7 +288,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Life on the frontline against Ebola",
@@ -276,7 +300,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "At least five killed in New Delhi building collapse",
@@ -288,7 +312,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Qatar Fund for Development (QFFD) supports the implementation of WHO's extended 13th General Programme of Work with flexible funding",
@@ -300,7 +324,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=34, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Mental health groups have ‘failed to acknowledge’ risk of violence, says Mind chief",
@@ -312,7 +336,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Alzheimer’s trial to test drug on people without symptoms to see if it can be prevented",
@@ -324,7 +348,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Nicola Close obituary",
@@ -336,7 +360,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Strengthening public health across Lebanon with EIB Global",
@@ -348,7 +372,7 @@
       "healthHits": 3,
       "educationHits": 0,
       "reason": "relevance=33, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "New York City Bans A.I. in Elementary and Middle Schools",
@@ -360,7 +384,7 @@
       "healthHits": 0,
       "educationHits": 3,
       "reason": "relevance=29, credibility=35, freshness=4, health_hits=0, education_hits=3, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO’s strategic engagement with philanthropies: advancing global health and resilient health systems",
@@ -372,7 +396,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Governments agree to continue their steady progress on proposed pandemic agreement ahead of the World Health Assembly",
@@ -384,7 +408,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=32, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "The Heart Drug Pelacarsen Fails, Shocking Novartis and Cardiologists",
@@ -396,7 +420,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Repeated attacks on humanitarian warehouses put vital medical aid at risk in Ukraine: WHO",
@@ -408,7 +432,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Kenyans Made a Living Writing College Essays. Then A.I. Arrived.",
@@ -420,7 +444,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO and the Kingdom of Saudi Arabia sign agreements in support of health priorities",
@@ -432,7 +456,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=3",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "The Republic of Korea and WHO discuss joint priorities, challenges and trends around global health",
@@ -444,7 +468,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Fourteen African countries, key partners unite to provide critical resources for health in WHO’s first-ever Investment Round",
@@ -456,7 +480,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=30, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "UN tells the world: Stop making Africa look small",
@@ -468,19 +492,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
-    },
-    {
-      "title": "Psilocybin May Prevent Nerve Damage Caused by Chemotherapy, Study Finds",
-      "link": "https://www.nytimes.com/2026/09/03/health/psilocybin-cancer-nerve-damage.html",
-      "summary": "The preliminary research was conducted in mice, but scientists were optimistic the results would apply to humans. Clinical trials begin this month.",
-      "publishedAtUtc": "2026-09-03T21:46:22Z",
-      "domain": "nytimes.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Haze From Indonesian Wildfires Blankets Parts of Malaysia and Philippines",
@@ -492,7 +504,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Even high school reporters are facing censorship now",
@@ -504,19 +516,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
-    },
-    {
-      "title": "Genetically modified pig kidney keeps man alive for record nine months",
-      "link": "https://www.theguardian.com/science/2026/sep/03/genetically-modified-pig-kidney-keeps-man-alive-record-nine-months",
-      "summary": "Organ kept Tim Andrews off dialysis and acted as a ‘bridge’ while he waited for a human transplant in the US A genetically modified kidney from a pig called Wilma has kept a 66-year-old man with kidney failure alive for a record nine months and successfully acted as a “bridge” to a human transplant in a world first. Tim Andrews was seriously ill with end-stage kidney disease caused by type 2 diabetes and had only a 9% chance of receiving a human kidney within five years, against a more than 40% risk of dying or being removed from the waiting list. Continue reading...",
-      "publishedAtUtc": "2026-09-03T22:30:50Z",
-      "domain": "theguardian.com",
-      "score": 64.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO Director-General visits Jordan to recognize strong collaboration on health system delivery, emergency relief and advancing mental health",
@@ -528,7 +528,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Worldwide rally for maternal and newborn health marks World Health Day 2025",
@@ -540,7 +540,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Frank, in-depth discussion as Belgium and WHO map ahead priorities for collaboration",
@@ -552,7 +552,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=28, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "C.D.C. Director Challenges Pennsylvania’s Report of Two Measles Deaths",
@@ -564,7 +564,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Justice Department Sues Kansas City Schools Over Gender Policy",
@@ -576,7 +576,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘A huge learning curve’: apprentices on the benefits and pitfalls of vocational training",
@@ -588,7 +588,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "How to Set New Goals This Fall",
@@ -600,7 +600,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "School Is Starting Late. That’s Good for N.Y.C. Summer Camps.",
@@ -612,7 +612,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Cambridge University asks former chief crown prosecutor to open Arday review",
@@ -624,7 +624,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Even in safe-haven Massachusetts, trans care is at risk. Young people are fighting to protect it",
@@ -636,7 +636,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Six-week-old child in Pennsylvania died from measles, coroner says",
@@ -648,7 +648,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "For These Children, Getting a Safe Education Means Going Underground",
@@ -660,7 +660,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘Alarm bells were going off’: parents tell of ordeal at Send school closed down after abuse allegations",
@@ -672,7 +672,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=22, credibility=35, freshness=4, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Response must outpace spread of Ebola: UN relief chief",
@@ -684,7 +684,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Food aid cutback in the occupied West Bank as health fears grow in Gaza",
@@ -696,7 +696,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "U.S. Sanctions on Iran Cut Off Students From Tests Needed for Study Abroad",
@@ -708,7 +708,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=21, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘Cheap travel is not a defence’: the parents facing court for school absences in England",
@@ -720,7 +720,7 @@
       "healthHits": 0,
       "educationHits": 2,
       "reason": "relevance=24, credibility=35, freshness=0, health_hits=0, education_hits=2, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO launches unique training course to enable parliamentarians in global health security",
@@ -732,7 +732,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=23, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=2",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "General Assembly backs creation of new UN learning institute under UN80 reforms",
@@ -744,7 +744,31 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "Psilocybin May Prevent Nerve Damage Caused by Chemotherapy, Study Finds",
+      "link": "https://www.nytimes.com/2026/09/03/health/psilocybin-cancer-nerve-damage.html",
+      "summary": "The preliminary research was conducted in mice, but scientists were optimistic the results would apply to humans. Clinical trials begin this month.",
+      "publishedAtUtc": "2026-09-03T21:46:22Z",
+      "domain": "nytimes.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "Genetically modified pig kidney keeps man alive for record nine months",
+      "link": "https://www.theguardian.com/science/2026/sep/03/genetically-modified-pig-kidney-keeps-man-alive-record-nine-months",
+      "summary": "Organ kept Tim Andrews off dialysis and acted as a ‘bridge’ while he waited for a human transplant in the US A genetically modified kidney from a pig called Wilma has kept a 66-year-old man with kidney failure alive for a record nine months and successfully acted as a “bridge” to a human transplant in a world first. Tim Andrews was seriously ill with end-stage kidney disease caused by type 2 diabetes and had only a 9% chance of receiving a human kidney within five years, against a more than 40% risk of dying or being removed from the waiting list. Continue reading...",
+      "publishedAtUtc": "2026-09-03T22:30:50Z",
+      "domain": "theguardian.com",
+      "score": 58.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=19, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=1",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Kat Chan: eating your way to better health",
@@ -756,7 +780,7 @@
       "healthHits": 2,
       "educationHits": 0,
       "reason": "relevance=22, credibility=35, freshness=0, health_hits=2, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO statement on notification of withdrawal of the United States",
@@ -768,7 +792,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "WHO comments on United States’ announcement of intent to withdraw",
@@ -780,7 +804,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=21, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=1",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Employer Health Costs Are Expected to Spike in 2027",
@@ -792,19 +816,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
-    },
-    {
-      "title": "Baby Goats From a Traveling Petting Zoo Test Positive for Rabies",
-      "link": "https://www.nytimes.com/2026/08/29/us/rabies-goats-petting-zoo-north-carolina.html",
-      "summary": "Farm Adventures of Harmony, N.C., owned the goats, state health officials said. It was unclear how many people might have been exposed to them since late July.",
-      "publishedAtUtc": "2026-08-30T23:41:18Z",
-      "domain": "nytimes.com",
-      "score": 56.0,
-      "healthHits": 1,
-      "educationHits": 0,
-      "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Malaria, Likely Spread by Mosquito on Plane, Kills 2 Airport Workers in Germany",
@@ -816,7 +828,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Americans Encounter Risks at Psychedelic Clinics Abroad",
@@ -828,7 +840,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Day Cares Will Get Funds to Open in Time for School, Mamdani Says",
@@ -840,7 +852,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=4, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Luxembourg and WHO sign two strategic agreements",
@@ -852,7 +864,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "G20 health ministers rally support for WHO’s Investment Round",
@@ -864,7 +876,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "F.D.A. Approves the Drug Daraxonrasib That’s Poised to Transform Pancreatic Cancer",
@@ -876,7 +888,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "‘You’re Ruining My Dreams’: C.T.E. Study Adds to Family Tension Over Football",
@@ -888,7 +900,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Funding Delays Threaten Rollout of Mamdani’s 2-K Program",
@@ -900,7 +912,19 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "Baby Goats From a Traveling Petting Zoo Test Positive for Rabies",
+      "link": "https://www.nytimes.com/2026/08/29/us/rabies-goats-petting-zoo-north-carolina.html",
+      "summary": "Farm Adventures of Harmony, N.C., owned the goats, state health officials said. It was unclear how many people might have been exposed to them since late July.",
+      "publishedAtUtc": "2026-08-30T23:41:18Z",
+      "domain": "nytimes.com",
+      "score": 52.0,
+      "healthHits": 1,
+      "educationHits": 0,
+      "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Walmart to Pay $50 Million to Settle Opioid Lawsuit, US Says",
@@ -912,7 +936,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "FAFSA Form for College Aid Will Be Less Stressful This Year, Officials Say",
@@ -924,7 +948,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "The Guardian University Guide 2026 – the rankings",
@@ -936,7 +960,7 @@
       "healthHits": 0,
       "educationHits": 1,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=0, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Pharma stocks soar as investors seek AI alternatives",
@@ -948,7 +972,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "Inside America’s rogue stem cell industry",
@@ -960,7 +984,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "London is worst area in England and Wales for heat-related deaths",
@@ -972,7 +996,7 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
-      "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
     },
     {
       "title": "The Brains of Wellbeing & Beauty 2026",
@@ -984,6 +1008,18 @@
       "healthHits": 1,
       "educationHits": 0,
       "reason": "relevance=17, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
+      "cachedAtUtc": "2026-09-06T23:54:05.786448Z"
+    },
+    {
+      "title": "Undercover report on donations ‘looks bad’ for Reform, admits Nigel Farage – as it happened",
+      "link": "https://www.theguardian.com/politics/live/2026/sep/06/nigel-farage-reform-uk-donations-undercover-investigation-latest-news-updates",
+      "summary": "The Reform UK leader is under pressure after senior aides appeared to plot how to bypass electoral laws on foreign donations Sagal Abdi-Wali arrived in Camden as a child refugee from Somalia. She has worked for more than a decade as a volunteer and trustee for local charities and is a governor of two schools in the borough, according to Labour. She was first elected as a councillor in 2022 and became the leader of the council in May, when she said: “Camden has been my home for 35 years. It is the place that gave my family sanctuary, that welcomed us, and that has shaped so much of who I am, what I stand for and what inspired my commitment to public service and to working for the community that welcomed us.” Continue reading...",
+      "publishedAtUtc": "2026-09-06T12:50:58Z",
+      "domain": "theguardian.com",
+      "score": 76.0,
+      "healthHits": 0,
+      "educationHits": 1,
+      "reason": "relevance=23, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0",
       "cachedAtUtc": "2026-09-06T21:20:45.394771Z"
     },
     {
@@ -1885,32 +1921,9 @@
       "educationHits": 0,
       "reason": "relevance=19, credibility=35, freshness=0, health_hits=1, education_hits=0, global_hits=0",
       "cachedAtUtc": "2026-09-03T00:25:23.497295Z"
-    },
-    {
-      "title": "Over 500 students hospitalised after eating state-supplied meals in Indones",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/2/over-500-students-hospitalised-after-eating-state-supplied-meals-in-indones?traffic_source=rss",
-      "summary": "More than 500 students in Indonesia were hospitalised with food poisoning on Tuesday.",
-      "publishedAtUtc": "2026-09-02T17:37:29Z",
-      "domain": "aljazeera.com",
-      "score": 81.0,
-      "healthHits": 1,
-      "educationHits": 1,
-      "reason": "relevance=28, credibility=35, freshness=18, health_hits=1, education_hits=1, global_hits=0",
-      "cachedAtUtc": "2026-09-02T22:02:32.519981Z"
     }
   ],
   "history": [
-    {
-      "contentHash": "ed349dae16ca3550ec154331d3462307b246904f",
-      "sourceTitle": "Self-Help Influencer Nicole LePera Faces Litigation",
-      "sourceUrl": "https://www.nytimes.com/2026/08/02/style/nicole-lepera-self-help-litigation-holistic-psychologist.html",
-      "sourceDomain": "nytimes.com",
-      "publishedAtUtc": "2026-08-03T07:43:29.249767Z",
-      "slug": "global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litigation-2",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litigation-2",
-      "mainImage": "/images/global-news/2026/2026-08-03-global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litig.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-03-global-health-and-education-watch-self-help-influencer-nicole-lepera-faces-litig.jpg"
-    },
     {
       "contentHash": "ade8bfe2e565ef639b03914592fdc9ca43ef1e17",
       "sourceTitle": "WHO and the Netherlands renew their partnership on climate change and health",
@@ -6299,142 +6312,20 @@
       "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-kenyans-made-a-living-writing-college-essays-then-a-i",
       "mainImage": "/images/global-news/2026/2026-09-06-global-health-and-education-watch-kenyans-made-a-living-writing-college-essays-t.jpg",
       "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-kenyans-made-a-living-writing-college-essays-t.jpg"
+    },
+    {
+      "contentHash": "8ae0bc3f4854fdece1cd214a470ed3523edee9fa",
+      "sourceTitle": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
+      "sourceUrl": "https://www.who.int/news/item/12-04-2024-enhancing-global-health-and-well-being--who-and-the-netherlands-strengthen-their-partnership",
+      "sourceDomain": "who.int",
+      "publishedAtUtc": "2026-09-06T23:54:05.786448Z",
+      "slug": "global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+      "mainImage": "/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg"
     }
   ],
   "runs": [
-    {
-      "ranAtUtc": "2026-08-15T19:36:39.697818Z",
-      "windowStartUtc": "2026-08-15T08:00:00Z",
-      "publishedInWindowBefore": 10,
-      "hoursLeftInWindow": 1,
-      "targetMinIn12Hours": 12,
-      "hardMaxIn12Hours": 16,
-      "forcePublishEveryRun": true,
-      "domainDiversityWindowRuns": 6,
-      "recentHistoryDomains": [
-        "aljazeera.com",
-        "theguardian.com"
-      ],
-      "recentDomainCounts": {
-        "aljazeera.com": 5,
-        "news.un.org": 4,
-        "theguardian.com": 9,
-        "nytimes.com": 2
-      },
-      "maxDomainPublishes24Hours": 2,
-      "domainPublishWindowHours": 24,
-      "allowRepeatSourceIfNeeded": true,
-      "repeatSourceCooldownHours": 6,
-      "enableEmergencyFallback": true,
-      "emergencyFallbackCandidates": 0,
-      "allowOfflineGenerationFallback": true,
-      "feedTimeoutSeconds": 12,
-      "feedRetries": 1,
-      "networkFetchErrors": 4,
-      "thresholdUsed": 54,
-      "primaryCandidatesFetched": 109,
-      "googleFallbackCandidatesFetched": 0,
-      "candidatesFetched": 109,
-      "candidateCacheCount": 228,
-      "candidatesAfterSourceDedupe": 35,
-      "candidatesAfterDedupe": 35,
-      "duplicateSkips": {
-        "historyHash": 71,
-        "historySource": 3,
-        "existingSource": 0,
-        "title": 0
-      },
-      "shortlist": [
-        {
-          "title": "Massive egg recall in US south and south-west due to salmonella outbreak",
-          "link": "https://www.theguardian.com/us-news/2026/aug/15/egg-recall-us-south-and-south-west-salmonella-outbreak",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-        },
-        {
-          "title": "Body found in Romania believed to be missing British hiker George Smyth",
-          "link": "https://www.theguardian.com/world/2026/aug/15/body-found-in-romania-believed-to-be-missing-british-hiker-george-smyth",
-          "score": 72,
-          "reason": "relevance=19, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
-        },
-        {
-          "title": "DRC’s fast-growing Ebola outbreak spreads to sixth province",
-          "link": "https://www.theguardian.com/world/2026/aug/13/ebola-drc-democratic-republic-congo-sixth-province",
-          "score": 71,
-          "reason": "relevance=26, credibility=35, freshness=10, health_hits=2, education_hits=0, global_hits=1"
-        }
-      ],
-      "status": "published",
-      "reason": "",
-      "selectedCandidate": {
-        "title": "Outrage at UnitedHealth and Other Insurers Persists After Brian Thompson Killing",
-        "link": "https://www.nytimes.com/2026/08/14/business/unitedhealthcare-killing-luigi-mangione-affordability.html",
-        "score": 70,
-        "reason": "relevance=17, credibility=35, freshness=18, health_hits=1, education_hits=0, global_hits=0"
-      },
-      "selectedFromDiverseDomain": true,
-      "fallbackUsed": false,
-      "fallbackMinScore": null,
-      "fallbackReason": "",
-      "cacheFallbackCandidates": 0,
-      "generatedTitle": "Global Health and Education Watch: Outrage at UnitedHealth and Other Insurers Persists After Brian",
-      "generatedWordCount": 1178,
-      "mainImage": "/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian",
-      "generatedImageSize": {
-        "width": 7680,
-        "height": 4320
-      },
-      "generatedImageSharpness": 161.4187973444932,
-      "generatedImageCandidates": 4,
-      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
-      "geminiImageModelsTried": [
-        "gemini-2.0-flash-exp-image-generation",
-        "gemini-2.5-flash-image",
-        "gemini-3.1-flash-image-preview",
-        "gemini-3-pro-image-preview"
-      ],
-      "geminiImageModelUsed": "",
-      "articleProviderUsed": "offline-fallback",
-      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
-      "geminiImageError": "Could not generate image from Gemini models (gemini-2.0-flash-exp-image-generation: JSON request failed: HTTP Error 403: Forbidden | gemini-2.5-flash-image: JSON request failed: HTTP Error 403: Forbidden | gemini-3.1-flash-image-preview: JSON request failed: HTTP Error 403: Forbidden | gemini-3-pro-image-preview: JSON request failed: HTTP Error 403: Forbidden)",
-      "articleAttempts": 3,
-      "paraphraseRequired": true,
-      "paraphrasePassed": true,
-      "paraphraseMetrics": {
-        "shingleOverlapRatio": 0.0,
-        "longestExactRunWords": 0.0,
-        "sourceWords": 0.0,
-        "generatedWords": 1178.0
-      },
-      "imageProviderRequested": "source_first",
-      "imageProviderUsed": "offline-fallback",
-      "sourceImageUrl": "",
-      "publishResult": {
-        "status": "published",
-        "slug": "global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian",
-        "mdxPath": "src/blogs/global/global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian.mdx",
-        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian",
-        "blogUrls": [
-          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian",
-          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-persists-after-brian"
-        ],
-        "listFile": "src/blogs/listofblogs.ts",
-        "imageFile": "public/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-        "committed": true,
-        "pushed": true,
-        "queued": false,
-        "mainImage": "/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg",
-        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-08-15-global-health-and-education-watch-outrage-at-unitedhealth-and-other-insurers-per.jpg"
-      },
-      "liveVerified": false,
-      "gitSyncStatus": "main-synced",
-      "gitSyncError": "",
-      "publishedInWindowAfter": 11
-    },
     {
       "ranAtUtc": "2026-08-15T20:39:10.782369Z",
       "windowStartUtc": "2026-08-15T20:00:00Z",
@@ -38348,6 +38239,145 @@
       "gitSyncStatus": "main-synced",
       "gitSyncError": "",
       "publishedInWindowAfter": 5
+    },
+    {
+      "ranAtUtc": "2026-09-06T23:54:05.786448Z",
+      "windowStartUtc": "2026-09-06T23:00:00Z",
+      "publishedInWindowBefore": 0,
+      "hoursLeftInWindow": 12,
+      "targetMinIn12Hours": 12,
+      "hardMaxIn12Hours": 16,
+      "forcePublishEveryRun": true,
+      "domainDiversityWindowRuns": 6,
+      "recentHistoryDomains": [
+        "aljazeera.com",
+        "ft.com",
+        "nature.com",
+        "nytimes.com",
+        "theguardian.com",
+        "who.int"
+      ],
+      "recentDomainCounts": {
+        "theguardian.com": 2,
+        "ft.com": 1,
+        "aljazeera.com": 1,
+        "nature.com": 1,
+        "who.int": 1,
+        "nytimes.com": 1
+      },
+      "maxDomainPublishes24Hours": 2,
+      "domainPublishWindowHours": 24,
+      "allowRepeatSourceIfNeeded": true,
+      "repeatSourceCooldownHours": 6,
+      "enableEmergencyFallback": true,
+      "emergencyFallbackCandidates": 0,
+      "allowOfflineGenerationFallback": true,
+      "feedTimeoutSeconds": 12,
+      "feedRetries": 1,
+      "networkFetchErrors": 4,
+      "thresholdUsed": 64,
+      "primaryCandidatesFetched": 84,
+      "googleFallbackCandidatesFetched": 0,
+      "candidatesFetched": 84,
+      "candidateCacheCount": 160,
+      "candidatesAfterSourceDedupe": 38,
+      "candidatesAfterDedupe": 38,
+      "duplicateSkips": {
+        "historyHash": 45,
+        "historySource": 1,
+        "existingSource": 0,
+        "title": 0
+      },
+      "shortlist": [
+        {
+          "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
+          "link": "https://www.who.int/news/item/12-04-2024-enhancing-global-health-and-well-being--who-and-the-netherlands-strengthen-their-partnership",
+          "score": 72,
+          "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2"
+        },
+        {
+          "title": "At least five killed in New Delhi building collapse",
+          "link": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
+          "score": 70,
+          "reason": "relevance=17, credibility=35, freshness=18, health_hits=0, education_hits=1, global_hits=0"
+        },
+        {
+          "title": "Haze From Indonesian Wildfires Blankets Parts of Malaysia and Philippines",
+          "link": "https://www.nytimes.com/2026/09/04/world/asia/malaysia-philippines-haze-indonesia-singapore-wildfires.html",
+          "score": 64,
+          "reason": "relevance=19, credibility=35, freshness=10, health_hits=1, education_hits=0, global_hits=0"
+        }
+      ],
+      "status": "published",
+      "reason": "",
+      "selectedCandidate": {
+        "title": "Enhancing Global Health and Well-Being: WHO and the Netherlands strengthen their Partnership",
+        "link": "https://www.who.int/news/item/12-04-2024-enhancing-global-health-and-well-being--who-and-the-netherlands-strengthen-their-partnership",
+        "score": 72,
+        "reason": "relevance=37, credibility=35, freshness=0, health_hits=3, education_hits=0, global_hits=2"
+      },
+      "selectedFromDiverseDomain": false,
+      "fallbackUsed": false,
+      "fallbackMinScore": null,
+      "fallbackReason": "",
+      "cacheFallbackCandidates": 0,
+      "generatedTitle": "Global Health and Education Watch: Enhancing Global Health and Well-Being: WHO and the Netherlands",
+      "generatedWordCount": 1981,
+      "mainImage": "/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+      "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+      "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+      "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+      "generatedImageSize": {
+        "width": 7680,
+        "height": 5184
+      },
+      "generatedImageSharpness": 1049.3358662967873,
+      "generatedImageCandidates": 4,
+      "geminiImageModelRequested": "gemini-2.0-flash-exp-image-generation",
+      "geminiImageModelsTried": [
+        "gemini-2.0-flash-exp-image-generation",
+        "gemini-2.5-flash-image",
+        "gemini-3.1-flash-image-preview",
+        "gemini-3-pro-image-preview"
+      ],
+      "geminiImageModelUsed": "",
+      "articleProviderUsed": "offline-fallback",
+      "geminiTextError": "JSON request failed: HTTP Error 403: Forbidden",
+      "geminiImageError": "",
+      "articleAttempts": 3,
+      "paraphraseRequired": true,
+      "paraphrasePassed": true,
+      "paraphraseMetrics": {
+        "shingleOverlapRatio": 0.0,
+        "longestExactRunWords": 0.0,
+        "sourceWords": 1274.0,
+        "generatedWords": 1981.0
+      },
+      "imageProviderRequested": "source_first",
+      "imageProviderUsed": "source",
+      "sourceImageUrl": "https://cdn.who.int/media/images/default-source/funding/nl-strategic-dialogue-10apr24-group-photo.tmb-1200v.jpg?sfvrsn=22e8ac1f_1",
+      "publishResult": {
+        "status": "published",
+        "slug": "global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+        "mdxPath": "src/blogs/global/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2.mdx",
+        "blogUrl": "https://www.nivaranfoundation.org/news/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+        "blogUrls": [
+          "https://www.nivaranfoundation.org/news/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2",
+          "https://global.nivaranfoundation.org/news/global-health-and-education-watch-enhancing-global-health-and-well-being-who-and-the-netherlands-2"
+        ],
+        "listFile": "src/blogs/listofblogs.ts",
+        "imageFile": "public/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+        "committed": true,
+        "pushed": true,
+        "queued": false,
+        "mainImage": "/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+        "mainImageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg",
+        "imageUrl": "https://www.nivaranfoundation.org/images/global-news/2026/2026-09-06-global-health-and-education-watch-enhancing-global-health-and-well-being-who-and.jpg"
+      },
+      "liveVerified": false,
+      "gitSyncStatus": "main-synced",
+      "gitSyncError": "",
+      "publishedInWindowAfter": 1
     }
   ]
 }
