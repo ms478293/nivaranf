@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-inside-pepsico-s-battle-to-remake-gatorade-for-the-kennedy",
+    title: "Global Health and Education Watch: Inside PepsiCo’s battle to remake Gatorade for the Kennedy",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-07-global-health-and-education-watch-inside-pepsico-s-battle-to-remake-gatorade-for.jpg",
+    date: "2026-09-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-a-remarkable-documentary-made-by-blind-students-we-were",
     title: "Global Health and Education Watch: A remarkable documentary made by blind students: ‘We were",
     summary:
