@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-weather-tracker-typhoon-saudel-causes-mass-evacuations-in-south-east",
+    title: "Global Health and Education Watch: Weather tracker: Typhoon Saudel causes mass evacuations in south-east",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-07-global-health-and-education-watch-weather-tracker-typhoon-saudel-causes-mass-eva.jpg",
+    date: "2026-09-07",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-human-rights-chief-turk-renews-call-for-end-to",
     title: "Global Health and Education Watch: Human rights chief Türk renews call for end to",
     summary:
