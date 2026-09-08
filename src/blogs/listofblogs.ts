@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-neighbors-rally-after-a-manhattan-preschool-s-corn-stalks-are",
+    title: "Global Health and Education Watch: Neighbors Rally After a Manhattan Preschool’s Corn Stalks Are",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-08-global-health-and-education-watch-neighbors-rally-after-a-manhattan-preschool-s-.jpg",
+    date: "2026-09-08",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-weather-tracker-typhoon-saudel-causes-mass-evacuations-in-south-east-3",
     title: "Global Health and Education Watch: Weather tracker: Typhoon Saudel causes mass evacuations in south-east",
     summary:
