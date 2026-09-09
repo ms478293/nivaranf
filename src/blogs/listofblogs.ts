@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-mamdani-releases-records-on-toxic-air-in-new-york",
+    title: "Global Health and Education Watch: Mamdani releases records on toxic air in New York",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-09-global-health-and-education-watch-mamdani-releases-records-on-toxic-air-in-new-y.jpg",
+    date: "2026-09-09",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-covid-data-for-shared-learning-cdsl-a-multimodal-publicly",
     title: "Global Health and Education Watch: COVID Data for Shared Learning (CDSL): a multimodal publicly",
     summary:
