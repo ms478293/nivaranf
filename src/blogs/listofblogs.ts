@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-qatar-fund-for-development-qffd-supports-the-implementation-of-2",
+    title: "Global Health and Education Watch: Qatar Fund for Development (QFFD) supports the implementation of",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-10-global-health-and-education-watch-qatar-fund-for-development-qffd-supports-the-i.jpg",
+    date: "2026-09-10",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-back-to-school-now-with-a-i",
     title: "Global Health and Education Watch: Back to School, Now With A.I.",
     summary:
