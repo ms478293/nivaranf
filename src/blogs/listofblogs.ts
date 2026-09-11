@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-the-water-comes-up-to-our-knees-climate-hazards",
+    title: "Global Health and Education Watch: ‘The water comes up to our knees’: Climate hazards",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-11-global-health-and-education-watch-the-water-comes-up-to-our-knees-climate-hazard.jpg",
+    date: "2026-09-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-from-ozempic-breath-to-hair-loss-sorting-the-science",
     title: "Global Health and Education Watch: From ‘Ozempic breath’ to hair loss: sorting the science",
     summary:
