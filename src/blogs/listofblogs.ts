@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-strengthening-public-health-across-lebanon-with-eib-global-2",
+    title: "Global Health and Education Watch: Strengthening public health across Lebanon with EIB Global",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-11-global-health-and-education-watch-strengthening-public-health-across-lebanon-wit.jpg",
+    date: "2026-09-11",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-salmonella-outbreak-that-sickened-22-is-linked-to-broccoli",
     title: "Global Health and Education Watch: Salmonella Outbreak That Sickened 22 Is Linked to Broccoli",
     summary:
