@@ -18,6 +18,17 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "global-health-and-education-watch-mail-on-sunday-ends-up-funding-state-school-scholarship",
+    title: "Global Health and Education Watch: Mail on Sunday ends up funding state school scholarship",
+    summary:
+      "A high-impact global update is reshaping how health and education systems prioritize access, staffing, and continuity. This analysis maps the operational consequences for vulnerable communities.",
+    thumbnailImage: "/images/global-news/2026/2026-09-12-global-health-and-education-watch-mail-on-sunday-ends-up-funding-state-school-sc.jpg",
+    date: "2026-09-12",
+    author: "Nivaran Foundation Global Desk",
+    featured: false,
+    type: "News",
+  },
+  {
     slug: "global-health-and-education-watch-deadly-drc-school-fire-prompts-calls-for-safety-reforms",
     title: "Global Health and Education Watch: Deadly DRC school fire prompts calls for safety reforms",
     summary:
