@@ -21,7 +21,6 @@ export default function UsaLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
       </head>
       <body className="min-h-screen flex flex-col">
         <Providers>

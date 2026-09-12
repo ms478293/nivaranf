@@ -27,7 +27,7 @@ export const CareersList = ({ career }: { career: CareerType }) => {
               <div className="w-[1px] h-4 bg-gray-200"></div>
             </>
           )}
-          <p>Apply before: {deadline.toDateString()}</p>
+          <p>Closed — no longer accepting (deadline was {deadline.toDateString()})</p>
         </div>
       </div>
 

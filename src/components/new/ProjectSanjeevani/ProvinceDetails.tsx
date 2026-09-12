@@ -267,6 +267,11 @@ const AccordionProvince = ({ svgRef, setPopover }: ProvinceDetailsProps) => {
                       className="[&>span:nth-child(2)]:text-xsm"
                     />
                   </div>
+                  <p className="text-[11px] text-gray-500">
+                    Figures from the province plan / as of March 2026. Nationwide
+                    delivery to date is 16 completed camps — planned camp-setup
+                    totals on this map are not delivered counts.
+                  </p>
                   <h4 className="text-gray-800">District included</h4>
                   <ul className="flex gap-x-6 gap-y-5 flex-wrap">
                     {

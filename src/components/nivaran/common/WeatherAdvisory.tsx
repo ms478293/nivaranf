@@ -57,14 +57,14 @@ const ADVISORY = {
     {
       label: "Work continues",
       detail:
-        "Donations are funding monsoon preparation and relief in the communities we serve.",
+        "Donations keep our teams and supplies ready to return the moment the routes are safe.",
     },
   ],
 
   signature: "Nivaran Foundation · Field Operations, Nepal",
 
   primaryAction: { label: "Contact our team", href: "/contact-us" },
-  secondaryAction: { label: "Support monsoon relief", href: "/donate" },
+  secondaryAction: { label: "Support the rescheduled camps", href: "/donate?designation=sanjeevani" },
 
   barText: "Health camps postponed — monsoon road safety.",
   barTextShort: "Health camps postponed",

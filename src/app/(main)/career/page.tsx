@@ -13,7 +13,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Careers in Healthcare & Education | Nivaran Foundation",
   description:
-    "Explore open roles at Nivaran Foundation and help deliver healthcare and education to underserved communities across Nepal.",
+    "Career listings at Nivaran Foundation. Current posted roles are closed and no longer accepting applications.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/career",
   },
@@ -63,7 +63,7 @@ export const dynamicParams = true;
 async function getCareerOpenings(): Promise<CareerType[]> {
   try {
     if (!hasSupabasePublicEnv) {
-      return JOB_OPENINGS.filter((job) => job.status === "active").map((job) => ({
+      return JOB_OPENINGS.map((job) => ({
         id: `static-${job.id}`,
         jobName: job.title,
         jobType: job.type,
@@ -92,9 +92,7 @@ async function getCareerOpenings(): Promise<CareerType[]> {
         ? activeJobs
         : (await supabase.from('jobs').select('*')).data || [];
 
-    const staticOpenings: CareerType[] = JOB_OPENINGS.filter(
-      (job) => job.status === "active"
-    ).map((job) => ({
+    const staticOpenings: CareerType[] = JOB_OPENINGS.map((job) => ({
       id: `static-${job.id}`,
       jobName: job.title,
       jobType: job.type,
@@ -159,7 +157,8 @@ export default async function page() {
         <div className="flex flex-col md:gap-2 md:mt-20 md:mb-10 ">
           <MainTitle suffix="Current" prefix="Opening" />
           <p className="text-sm text-gray-600">
-            Apply now and help us shape better future
+            All listed roles are closed and no longer accepting applications
+            (deadlines expired March–April 2026).
           </p>
         </div>
 

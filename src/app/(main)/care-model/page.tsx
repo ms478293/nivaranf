@@ -203,12 +203,12 @@ export default function CareModelPage() {
               on generic nonprofit language.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-8 text-gray-600">
-              Today, Sanjeevani has {SANJEEVANI_PUBLIC_STATS.campsCompletedText.toLowerCase()} and{" "}
-              {SANJEEVANI_PUBLIC_STATS.patientsServedText.toLowerCase()} across{" "}
-              {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}. The care model is
-              designed to bridge first-contact access gaps while maintaining a
-              disciplined view of what mobile camps can and cannot responsibly
-              do.
+              As of February 2026, Sanjeevani has {SANJEEVANI_PUBLIC_STATS.campsCompletedText} camps,{" "}
+              {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients, and{" "}
+              {SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces. The care
+              model is designed to bridge first-contact access gaps while
+              maintaining a disciplined view of what mobile camps can and cannot
+              responsibly do.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

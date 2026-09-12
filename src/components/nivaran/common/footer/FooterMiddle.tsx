@@ -16,7 +16,7 @@ export const FooterMiddle = () => {
       {/* Organization Details */}
       <p className="leading-relaxed">
         <span className="font-bold text-primary-main">NIVARAN FOUNDATION</span>{" "}
-        is a 501(c)(3) not-for-profit organization.
+        is a not-for-profit organization.
       </p>
 
       {/* Copyright */}

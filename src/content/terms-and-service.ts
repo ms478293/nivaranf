@@ -66,9 +66,9 @@ export const TermsAndService = [
     details: [
       {
         description:
-          "Nivaran Foundation is a 501(c)(3) tax-exempt organization. Donations are generally tax-deductible to the extent permitted by U.S. law.",
+          "Donations are processed as described below. You will receive a donation receipt by email for your records.",
         list: [
-          "Processing: We use third-party payment processors to handle donations. By making a donation, you agree to their terms and conditions.",
+          "Processing: We use GoDaddy Payments to process donations. By making a donation, you agree to GoDaddy Payments' terms and conditions.",
           "Recurring Donations: If you select a recurring donation, you authorize us to charge your payment method at the specified interval until you cancel.",
           "Refunds: Donations are generally non-refundable. Refund requests for errors will be reviewed on a case-by-case basis if submitted within 7 days of the transaction.",
           "Designated Funds: While we honor donor intent to support specific programs, we reserve the right to reallocate funds to other areas of need if a program is fully funded or cannot be carried out, ensuring your gift still supports our charitable mission.",

@@ -118,7 +118,7 @@ export default function MaternalHealthNepalPage() {
         },
         {
           title: "Donate to Healthcare",
-          href: "/donate",
+          href: "/donate?designation=maternal-child-health",
           description:
             "Support donor-funded healthcare delivery for communities that face the highest travel and access barriers.",
         },

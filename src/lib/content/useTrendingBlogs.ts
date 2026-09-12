@@ -1,11 +1,11 @@
 "use client";
 
 import { globalBlogs, type blogListType } from "@/blogs/listofblogs";
-import { filterNepalExclusiveNewest } from "./blogFilters";
+import { filterNepalExclusiveNewest, filterPublicNewsIndex } from "./blogFilters";
 import { useEffect, useState } from "react";
 
 function fallbackBlogs(limit: number) {
-  return filterNepalExclusiveNewest(globalBlogs, limit);
+  return filterNepalExclusiveNewest(filterPublicNewsIndex(globalBlogs), limit);
 }
 
 export function useTrendingBlogs(limit: number) {
@@ -24,7 +24,7 @@ export function useTrendingBlogs(limit: number) {
         const payload = (await response.json()) as { posts?: blogListType[] };
         const posts = Array.isArray(payload.posts) ? payload.posts : [];
         if (active && posts.length > 0) {
-          const normalized = filterNepalExclusiveNewest(posts, limit);
+          const normalized = filterNepalExclusiveNewest(filterPublicNewsIndex(posts), limit);
           if (normalized.length > 0) {
             setBlogs(normalized);
           }

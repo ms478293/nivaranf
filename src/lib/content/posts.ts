@@ -6,7 +6,7 @@ import {
   getRouteSegmentForContentType,
   slugify,
 } from "./automation";
-import { filterNepalExclusiveNewest } from "./blogFilters";
+import { filterNepalExclusiveNewest, filterPublicNewsIndex } from "./blogFilters";
 import {
   type ContentPost,
   type ContentPostInput,
@@ -433,7 +433,7 @@ export async function getTrendingBlogFeed(limit = 4) {
       .map((post) => mapContentPostToBlogListItem(post));
 
     const merged = dedupeBlogItems([...latestDynamic, ...staticTrending], safeLimit * 8);
-    const nepalOnlyNewest = filterNepalExclusiveNewest(merged, safeLimit);
+    const nepalOnlyNewest = filterNepalExclusiveNewest(filterPublicNewsIndex(merged), safeLimit);
 
     if (nepalOnlyNewest.length > 0) {
       return nepalOnlyNewest;

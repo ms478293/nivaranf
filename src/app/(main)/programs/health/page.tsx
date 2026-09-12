@@ -5,6 +5,7 @@ import { Contents } from "@/components/nivaran/programs/Contents";
 import { Events } from "@/components/nivaran/programs/Events";
 import { HealthContent } from "@/content/site-data";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
@@ -57,7 +58,7 @@ export default function Healthcare() {
         title={"Healthcare"}
         imgUrl="/gifs/healthcare.gif"
         description={
-          "At the Nivaran Foundation, we are dedicated to addressing healthcare inequities faced by underserved communities, particularly in rural areas. With a mission to bridge the gap in healthcare access, we prioritize maternal and child health, disease prevention, and the provision of essential medical services. Through our community clinics, medical camps, and education initiatives, we strive to create a robust healthcare network, empowering individuals to lead healthier lives. We allocate 30% of our funds to these efforts, ensuring that vulnerable populations, particularly in remote areas, receive the care they need."
+          "At the Nivaran Foundation, we are dedicated to addressing healthcare inequities faced by underserved communities, particularly in rural areas. With a mission to bridge the gap in healthcare access, we prioritize maternal and child health, disease prevention, and the provision of essential medical services. Through our community clinics, medical camps, and education initiatives, we strive to create a robust healthcare network, empowering individuals to lead healthier lives, so that vulnerable populations, particularly in remote areas, receive the care they need."
         }
         altImage="/altImage/healthCare.jpg"
       ></TitleGifDisplayCard>
@@ -81,7 +82,14 @@ export default function Healthcare() {
             description="Discover the initiatives enhancing health and wellness for communities, detailed in the table below."
             data={[
               {
-                name: "Healthcare Campaign",
+                name: "Project Sanjeevani Phase I (current program)",
+                startDate: "May 2025",
+                endDate: "February 2026",
+                location: "7 provinces, Nepal — 16 camps, 17,355 patients as of Feb 2026",
+                status: "completed",
+              },
+              {
+                name: "Tapro Village campaign (historical)",
                 startDate: "January 2024",
                 endDate: "",
                 location: "Tapro Village, Nepal",
@@ -93,6 +101,14 @@ export default function Healthcare() {
 
         {/* Optional: Add a semi-transparent overlay for better contrast */}
         <div className="absolute inset-0 bg-gray-200/20"></div>
+      </div>
+      <div className="max-w-[1320px] mx-auto px-4 py-8 text-center">
+        <Link
+          href="/donate?designation=sanjeevani"
+          className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-600"
+        >
+          Support our health camps
+        </Link>
       </div>
       <div className="max-w-[1320px] mx-auto px-4">
         <RelatedContent

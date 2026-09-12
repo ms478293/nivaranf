@@ -14,7 +14,8 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  return getMetadataForBlogSlug((await params).slug, { siteVariant: "global" });
+  // noindex — see the note in src/app/(main)/news/[slug]/page.tsx
+  return { ...(await getMetadataForBlogSlug((await params).slug, { siteVariant: "global" })), robots: { index: false, follow: true } };
 }
 
 export default async function GlobalNewsDetailPage({

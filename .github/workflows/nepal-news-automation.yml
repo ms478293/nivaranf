@@ -2,8 +2,12 @@ name: Nepal News Automation
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "20 2,10,18 * * *"
+  # Scheduled runs disabled 2026-09-05: this pipeline republished third-party
+  # headlines (BBC et al) as ~500 near-duplicate pages, which buried our real
+  # programme pages in search and created copyright exposure. Manual
+  # workflow_dispatch is kept. Re-enable only with original, edited content.
+  # schedule:
+  #    - cron: "20 2,10,18 * * *"
 
 permissions:
   contents: write

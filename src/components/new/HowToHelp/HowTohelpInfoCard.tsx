@@ -51,7 +51,7 @@ export const HOW_TO_HELP = [
     id: 4,
     title: "Fundraise for NIVARAN",
     description:
-      "We fosters a culture of collaboration and respect, where teamwork and mutual support are at the core of our work, and every individual is valued for their contributions and perspectives through a fun and impactful way.",
+      "We foster a culture of collaboration and respect, where teamwork and mutual support are at the core of our work, and every individual is valued for their contributions and perspectives through a fun and impactful way.",
     btnLabel: "Contact us",
     icon: <TentIcon className="w-8 h-8 stroke-1 stroke-primary-500" />,
     link: "/contact",

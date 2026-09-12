@@ -17,7 +17,7 @@ export const siteData = {
     { label: "Health Camps Completed", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText },
     { label: "Patients Served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText },
     { label: "Investment Logged", value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText },
-    { label: "Fund Utilization Rate", value: "96%" },
+    { label: "Financial Reporting", value: "In preparation" },
   ],
   buttons: {
     volunteer: "Volunteer",
@@ -97,14 +97,14 @@ export const ProgramData: CardType[] = [
     title: "Healthcare",
     imgSrc: "/images/healthcare.JPG",
     description:
-      `Healthcare is our primary focus, with 70% of our funds dedicated to ensuring underserved communities have access to essential medical services. Through Project Sanjeevani, ${SANJEEVANI_PUBLIC_COPY.summary.toLowerCase()} Services include eye care, dental care, maternal health, and disease prevention.`,
+      `Healthcare is our primary focus, ensuring underserved communities have access to essential medical services. Through Project Sanjeevani, ${SANJEEVANI_PUBLIC_COPY.summary.toLowerCase()} Services include eye care, dental care, maternal health, and disease prevention.`,
     link: "/programs/health",
   },
   {
     title: "Education",
     imgSrc: "/images/education.JPG",
     description:
-      "With 30% of our funds dedicated to education, we empower the next generation by ensuring access to quality learning opportunities. Our focus includes improving teacher training and development, enhancing education standards, and providing scholarships to deserving students in underserved communities.",
+      "Education is a core focus. We empower the next generation by ensuring access to quality learning opportunities. Our focus includes improving teacher training and development, enhancing education standards, and providing scholarships to deserving students in underserved communities.",
     link: "/programs/education",
   },
 ];

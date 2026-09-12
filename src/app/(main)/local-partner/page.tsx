@@ -90,9 +90,9 @@ const benefits = [
 
 const faqItems = [
   {
-    question: "Do we need to be a registered nonprofit or 501(c)(3)?",
+    question: "Do we need to be a registered nonprofit?",
     answer:
-      "No. This program is specifically designed for unregistered local groups — high school clubs, college organizations, community teams, etc. Nivaran Foundation is a registered 501(c)(3) and handles all compliance.",
+      "No. This program is specifically designed for unregistered local groups — high school clubs, college organizations, community teams, etc. Please contact Nivaran to discuss responsibilities and requirements before fundraising.",
   },
   {
     question: "How much money do we need to raise?",

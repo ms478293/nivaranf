@@ -108,7 +108,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://connect.facebook.net https://vercel.live https://*.vercel.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https: wss:; frame-src 'self' https://www.youtube.com https://youtube.com https://square.link https://vercel.live; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://square.link; frame-ancestors 'none'; upgrade-insecure-requests",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://collect.commerce.godaddy.com https://api.sardine.ai https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://scripts.clarity.ms https://connect.facebook.net https://vercel.live https://*.vercel.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https: http:; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https: wss:; frame-src 'self' https://collect.commerce.godaddy.com https://api.sardine.ai https://www.facebook.com https://www.youtube.com https://youtube.com https://vercel.live; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://www.facebook.com; frame-ancestors 'none'; upgrade-insecure-requests",
           },
         ],
       },
@@ -148,6 +148,51 @@ const nextConfig: NextConfig = {
       {
         source: '/docs',
         destination: '/financial-reports',
+        permanent: true,
+      },
+      {
+        source: '/careers',
+        destination: '/career',
+        permanent: true,
+      },
+      {
+        source: '/accountability',
+        destination: '/accountability-and-transparency',
+        permanent: true,
+      },
+      {
+        source: '/fact-sheet',
+        destination: '/impact-fact-sheet',
+        permanent: true,
+      },
+      {
+        source: '/nivaran-fact-sheet',
+        destination: '/impact-fact-sheet',
+        permanent: true,
+      },
+      {
+        source: '/healthcare',
+        destination: '/programs/health',
+        permanent: true,
+      },
+      {
+        source: '/education',
+        destination: '/programs/education',
+        permanent: true,
+      },
+      {
+        source: '/nepal',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/np',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/ne',
+        destination: '/',
         permanent: true,
       },
     ];

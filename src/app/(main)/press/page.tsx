@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 const QUICK_FACTS = [
   { label: "Founded", value: "2024" },
-  { label: "Type", value: "501(c)(3) Nonprofit" },
+  { label: "Type", value: "Nepal-focused foundation" },
   { label: "EIN", value: "41-2656587" },
   { label: "Headquarters", value: "Kathmandu, Nepal" },
   { label: "U.S. Office", value: "1025 Massachusetts Ave, Suite 303, Arlington, MA 02476" },
@@ -51,7 +51,7 @@ const QUICK_FACTS = [
   { label: "Patients Served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText },
   { label: "Health Camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText },
   { label: "Rural Municipalities", value: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText },
-  { label: "Fund Utilization", value: "96% to Programs" },
+  { label: "Fund Utilization", value: "Reporting in preparation" },
   { label: "Founder", value: "Mukesh Thakur" },
 ];
 
@@ -148,33 +148,25 @@ export default function PressPage() {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">About Nivaran Foundation</h2>
           <div className="max-w-3xl space-y-4 text-gray-700 text-sm leading-relaxed">
             <p>
-              Nivaran Foundation is a 501(c)(3) tax-exempt nonprofit organization founded in 2024. Our mission is to transform healthcare and education access for underserved communities in rural Nepal — where the nearest hospital can be a multi-day walk away.
+              Nivaran Foundation is a Nepal-focused foundation founded in 2024. Our mission is to transform healthcare and education access for underserved communities in rural Nepal — where the nearest hospital can be a multi-day walk away.
             </p>
             <p>
               Through <strong>Project Sanjeevani</strong>, our flagship healthcare initiative, we operate mobile health camps that deliver free medical screenings, maternal care, and disease prevention services directly to communities with limited permanent healthcare access. {SANJEEVANI_PUBLIC_COPY.pressSummary}
             </p>
             <p>
-              <strong>96% of all funds raised go directly to program services.</strong> The remaining 4% covers essential administrative and fundraising costs — one of the highest program-to-overhead ratios in the sector.
+              Financial reporting is in preparation. Verified allocation percentages are not yet published here.
             </p>
             <p>
-              Through <strong>Project Vidya</strong>, we deliver education support including digital learning tools, teacher training, and school infrastructure improvements to rural Nepali schools.
+              <strong>Project Vidya</strong>, our planned education programme, is scheduled for 2027 and has not launched. It is designed to provide teacher training, scholarships and school infrastructure support to rural Nepali schools.
             </p>
             <p>
               Additional public verification routes are available through our{" "}
               <Link href="/leadership" className="text-primary-500 underline">
                 leadership &amp; governance
               </Link>{" "}
-              page,{" "}
+              page and{" "}
               <Link href="/financial-reports" className="text-primary-500 underline">
                 financial reports
-              </Link>
-              , and{" "}
-              <Link
-                href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search"
-                target="_blank"
-                className="text-primary-500 underline"
-              >
-                IRS tax-exempt organization search
               </Link>
               .
             </p>

@@ -18,7 +18,7 @@ const en = {
   "about.prefix": "About",
   "about.suffix": "Nivaran",
   "about.description":
-    `Nivaran Foundation is a 501(c)(3) non-profit delivering healthcare to Nepal's most underserved communities. With ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served through Project Sanjeevani, every dollar you give saves lives.`,
+    `Nivaran Foundation is a Nepal-focused foundation delivering healthcare to Nepal's most underserved communities. With ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served through Project Sanjeevani, every dollar you give saves lives.`,
 
   // Stats / Happiness
   "stats.healthCamps": "Health Camps Completed",
@@ -29,10 +29,7 @@ const en = {
   // Donation
   "donate.title": "Be the Change You Want to See",
   "donate.subtitle":
-    "Every dollar you give saves lives. 96% of your donation goes directly to healthcare and education programs in Nepal.",
-  "donate.taxInfo": "501(c)(3) Tax-Exempt Organization | EIN: 41-2656587",
-  "donate.taxDeductible":
-    "Your donation is 100% tax-deductible. You will receive a tax receipt via email.",
+    "Every dollar you give saves lives. Your contribution supports our work in Nepal.",
   "donate.seeImpact": "See the Impact of Your Giving",
   "donate.whyTrust": "Why Donors Trust Nivaran",
 
@@ -59,8 +56,7 @@ const en = {
   "impact.amount": "Amount (USD)",
   "impact.quickSelect": "Quick Select",
   "impact.donateThis": "Donate This Amount",
-  "impact.taxDeductible": "100% tax-deductible",
-  "impact.directToPrograms": "96% goes directly to programs",
+  "impact.directToPrograms": "See financial reporting status",
 
   // Projects
   "projects.prefix": "Our",
@@ -76,7 +72,7 @@ const en = {
   // Footer
   "footer.ourWorks": "Our Works",
   "footer.usefulLinks": "Useful Links",
-  "footer.nonprofit": "501(c)(3) Nonprofit | EIN: 41-2656587",
+  "footer.nonprofit": "Nepal-focused foundation | EIN: 41-2656587",
   "footer.location": "Arlington, MA 02476, USA",
   "footer.copyright": "All rights reserved.",
 

@@ -1,7 +1,7 @@
 'use server'
 
 import { supabaseAdmin } from "@/lib/supabase/server";
-import { Resend } from 'resend';
+import { getMailer } from "@/lib/mailer";
 import { jobApplicationSchemaType, LegalSchemaType } from "@/components/new/CareerForm/jobApplicationSchema";
 import { getJobApplicationTemplate } from "@/lib/email-templates";
 
@@ -10,7 +10,7 @@ type JobApplicationData = Omit<jobApplicationSchemaType, 'resumeFile' | 'coverLe
 } & LegalSchemaType;
 
 export async function submitApplication(data: JobApplicationData) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = getMailer();
   try {
     // 1. Insert into Supabase
     const { error: dbError } = await supabaseAdmin

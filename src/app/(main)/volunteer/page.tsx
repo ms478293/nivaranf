@@ -163,11 +163,11 @@ export default async function Page() {
         ) : (
           <div className="flex flex-col items-center justify-center py-16 gap-4">
             <p className="text-gray-800 text-lg font-medium">
-              No Active Volunteer Programs Right Now
+              No open field slots right now
             </p>
             <p className="text-gray-500 text-sm max-w-md text-center">
-              We&apos;re preparing new volunteer opportunities. Contact us to be
-              notified when new programs launch.
+              There are no scheduled field volunteer slots at this time.
+              Remote support and general inquiries are still welcome.
             </p>
             <div className="flex gap-3 mt-2">
               <Link
@@ -190,7 +190,7 @@ export default async function Page() {
           <RelatedContent
             heading="More Ways to Get Involved"
             links={[
-              { title: "Donate", href: "/donate", description: "Your tax-deductible donation directly funds healthcare and education in Nepal." },
+              { title: "Donate", href: "/donate", description: "Your donation directly funds healthcare and education in Nepal." },
               { title: "Careers at Nivaran", href: "/career", description: "Join our full-time team and build a career in global nonprofit work." },
               { title: "Organize Locally", href: "/organize-locally", description: "Lead a health awareness drive or fundraiser in your community." },
               { title: "Our Healthcare Programs", href: "/programs/health", description: "See the mobile health camps your involvement makes possible." },
@@ -229,7 +229,7 @@ export default async function Page() {
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
               <h3 className="font-semibold text-gray-800 mb-2">Where are volunteer programs located?</h3>
               <p className="text-sm text-gray-600">
-                Our field programs primarily operate in rural districts of Nepal including Kapilvastu, Rupandehi, Nawalparasi, and other underserved areas. New locations are added with each health camp cycle.
+                Field roles are offered only when a camp is scheduled. There are no open field slots right now — please inquire for remote support or future cycles.
               </p>
             </div>
             <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">

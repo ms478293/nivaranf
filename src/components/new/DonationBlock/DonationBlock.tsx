@@ -1,6 +1,5 @@
 "use client";
 import { AppButton } from "@/components/ui/app-button";
-import { useUrlQuery } from "@/hooks/useURLQuery";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,17 +18,16 @@ const DONATION_BLOCK_DATA = [
   {
     id: 2,
     image: "/stories_and_insights-2.png",
-    title: "Become a Monthly Donor",
+    title: "Give Where It's Needed Most",
     description:
       "No one has ever become poor by giving. Your contribution can make a meaningful impact",
-    query: "recurring",
+    query: "one-time",
     buttonLabel: "Spread happiness",
     alt: "Donate to support a cause and make a difference",
   },
 ];
 
 const DonationBlock = ({ className }: { className?: string }) => {
-  const { createQueryString } = useUrlQuery();
   return (
     <section
       className={cn("w-full pb-12 bg-white font-Poppins px-4", className)}
@@ -59,12 +57,7 @@ const DonationBlock = ({ className }: { className?: string }) => {
                 <p className="text-neutral-50 text-sm max-w-[350px]">
                   {image.description}
                 </p>
-                <Link
-                  href={`/donate?${createQueryString(
-                    "donate-query",
-                    image.query
-                  )}`}
-                >
+                <Link href="/donate">
                   <AppButton variant="primary" className="font-light">
                     {image.buttonLabel}
                   </AppButton>

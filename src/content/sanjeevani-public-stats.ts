@@ -26,6 +26,9 @@ export const SANJEEVANI_PUBLIC_STATS = {
   averagePatientsPerCampText: EXECUTIVE_DASHBOARD.avgPatientsPerCamp.toLocaleString("en-US"),
   targetYear: EXECUTIVE_DASHBOARD.targetYear,
   targetYearText: EXECUTIVE_DASHBOARD.targetYear.toString(),
+  asOfLabel: "as of February 2026",
+  asOfWindow:
+    "as of February 2026 (tracking window May 2025–Feb 2026; last updated March 2026)",
 };
 
 export const SANJEEVANI_PUBLIC_COPY = {

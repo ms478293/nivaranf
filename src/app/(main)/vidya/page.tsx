@@ -34,7 +34,7 @@ const project_data: ProjectDataType = {
   tagline: "Transforming Global Education Through Innovation",
   paragraphs: [
     "Project Vidya is an education-focused initiative by the Nivaran Foundation that aims to bridge global education gaps through technology-driven learning, teacher training, and skill development programs.",
-    "Project Vidya will expand educational access to underserved communities and equip learners with the skills necessary for the future workforce. Through AI-powered learning, STEM education, and vocational training, we are shaping a future where quality education is accessible to all.",
+    "Project Vidya is planned for 2027. Figures below (100+ centers, 1,000 teachers, 5 million students) are goals for the phased rollout, not current delivery.",
   ],
   mission:
     "Empower millions of students through tech-driven education, teacher training, and skill development.",

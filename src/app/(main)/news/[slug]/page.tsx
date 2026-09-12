@@ -14,7 +14,10 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  return getMetadataForBlogSlug((await params).slug);
+  // noindex: these items aggregate third-party headlines rather than report
+  // Nivaran's own work. Keeping ~500 of them indexable buried our programme
+  // pages and read as scaled content. The /news index itself stays indexable.
+  return { ...(await getMetadataForBlogSlug((await params).slug)), robots: { index: false, follow: true } };
 }
 
 export default async function NewsDetailPage({

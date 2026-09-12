@@ -5,6 +5,7 @@ import MoveUpRightArrowIcon from "@/assets/icons/MoveUpRightArrowIcon";
 import { blogListType } from "@/blogs/listofblogs";
 import { AppButton } from "@/components/ui/app-button";
 import { getBlogPath } from "@/lib/blog-routes";
+import { displayExcerpt } from "@/lib/content/blogFilters";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -196,8 +197,7 @@ const TitleAndDescription = ({
   return (
     <div className={cn("", className)}>
       <h3 className="font-medium  text-gray-800 line-clamp-2 text-[18px]">
-        {data.title.substring(0, 40)}...
-        {/* {data.title} */}
+        {data.title}
       </h3>
       {alignDateAndAuthor ? (
         <div className="flex w-full items-center justify-between">
@@ -207,9 +207,9 @@ const TitleAndDescription = ({
           <p className="text-sm  flex text-gray-600 my-2">{data.date}</p>
         </div>
       ) : null}
-      {showDescription ? (
+      {showDescription && displayExcerpt(data.summary) ? (
         <p className="text-gray-600 text-sm/[20px] line-clamp-2 ">
-          {data.summary.substring(0, 100)}...
+          {displayExcerpt(data.summary)}
         </p>
       ) : null}
       {children}

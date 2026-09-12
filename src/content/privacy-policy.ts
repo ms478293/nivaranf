@@ -5,7 +5,7 @@ export const privacyPolicySections = [
     details: [
       {
         description:
-          "Nivaran Foundation ('we,' 'us,' or 'our') is a 501(c)(3) not-for-profit organization registered in the United States and operating worldwide. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website https://www.nivaranfoundation.org (the 'Site'), interact with us through other online platforms, or engage with us offline.",
+          "Nivaran Foundation ('we,' 'us,' or 'our') is a Nepal-focused foundation registered in the United States and operating worldwide. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website https://www.nivaranfoundation.org (the 'Site'), interact with us through other online platforms, or engage with us offline.",
       },
       {
         description:
@@ -27,7 +27,7 @@ export const privacyPolicySections = [
         list: [
           "Identity Data: Name, username, or similar identifier.",
           "Contact Data: Billing address, delivery address, email address, and telephone numbers.",
-          "Financial Data: Bank account and payment card details (processed securely by third-party payment processors).",
+          "Financial Data: Bank account and payment card details (donations are processed by GoDaddy Payments and other third-party payment processors; we do not store full card numbers on our servers).",
           "Transaction Data: Details about payments to and from you and other details of donations or services you have purchased from us.",
           "Technical Data: Internet Protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform.",
           "Profile Data: Your username and password, donations or orders made by you, your interests, preferences, feedback, and survey responses.",
@@ -56,7 +56,7 @@ export const privacyPolicySections = [
           "We collect and use your data for the following specific purposes:",
         list: [
           "Service Delivery: To provide you with the information, products, or services that you request from us.",
-          "Donation Processing: To process your charitable donations and provide tax receipts.",
+          "Donation Processing: To process your charitable donations and provide donation acknowledgments.",
           "Communication: To communicate with you about your account, transactions, and program updates.",
           "Fundraising and Marketing: To provide you with information about our mission, impact, and fundraising campaigns (where you have opted in).",
           "Volunteer/Staff Management: To process applications and manage our workforce.",

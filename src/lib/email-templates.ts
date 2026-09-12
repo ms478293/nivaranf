@@ -1,3 +1,5 @@
+import { VARIANCE_NOTE } from "@/content/donation-designations";
+
 const SITE_URL = "https://www.nivaranfoundation.org";
 const LOGO_URL = `${SITE_URL}/logo.png`;
 const PRIMARY = "#EB5934";
@@ -106,7 +108,7 @@ function baseTemplate({
                 <tr>
                   <td style="padding: 20px; text-align: center;">
                     <p style="margin: 0 0 8px; color: ${TEXT_DARK}; font-size: 15px; font-weight: 600;">Support Our Mission</p>
-                    <p style="margin: 0 0 16px; color: ${TEXT_MUTED}; font-size: 13px;">96% of every dollar goes directly to healthcare and education programs in Nepal.</p>
+                    <p style="margin: 0 0 16px; color: ${TEXT_MUTED}; font-size: 13px;">See our financial reports page for spending information.</p>
                     <a href="${SITE_URL}/donate" target="_blank" style="display: inline-block; padding: 10px 24px; background-color: ${PRIMARY}; color: #ffffff; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 6px;">Donate Now</a>
                   </td>
                 </tr>
@@ -128,10 +130,10 @@ function baseTemplate({
                 &copy; ${YEAR} Nivaran Foundation. All rights reserved.
               </p>
               <p style="margin: 0 0 8px; color: ${TEXT_MUTED}; font-size: 12px; line-height: 1.6;">
-                501(c)(3) Nonprofit &bull; EIN: 41-2656587
+                Nepal-focused foundation &bull; EIN: 41-2656587
               </p>
               <p style="margin: 0 0 16px; color: ${TEXT_MUTED}; font-size: 12px; line-height: 1.6;">
-                1025 Massachusetts Ave, Suite 303, Arlington, MA 02476
+                Arlington, MA, USA
               </p>
               <table role="presentation" align="center" cellpadding="0" cellspacing="0">
                 <tr>
@@ -231,45 +233,83 @@ export function getVolunteerApplicationTemplate(userContent: string) {
   });
 }
 
-export function getDonationThankYouTemplate(name: string, amount: string) {
+export type DonationReceiptInput = {
+  firstName: string;
+  name: string;
+  email: string;
+  date: string;
+  /** Amount charged, e.g. "$257.05" */
+  total: string;
+  /** Gift amount, e.g. "$250.00" */
+  base: string;
+  /** Processing costs covered, if any */
+  fee?: string;
+  /** Short label for the hero, e.g. "Project Sanjeevani" */
+  designationName: string;
+  /** Receipt row, e.g. "Project Sanjeevani — mobile health camps" */
+  designationLabel: string;
+  thankYouNote: string;
+  impactLine?: string;
+  exploreLabel: string;
+  /** Site-relative, e.g. "/sanjeevani" */
+  exploreUrl: string;
+  dedication?: { label: string; name: string };
+  paymentMethod: string;
+  transactionId: string;
+};
+
+function receiptRow(label: string, value: string, last = false) {
+  return `<tr>
+    <td style="padding: 10px 0; color: ${TEXT_MUTED}; font-size: 13px; vertical-align: top; ${last ? "" : `border-bottom: 1px solid ${BORDER};`}">${label}</td>
+    <td align="right" style="padding: 10px 0; color: ${TEXT_DARK}; font-size: 14px; font-weight: 600; vertical-align: top; ${last ? "" : `border-bottom: 1px solid ${BORDER};`}">${value}</td>
+  </tr>`;
+}
+
+/** Donor-facing donation receipt, sent after an approved GoDaddy Payments charge. All inputs must be pre-escaped. */
+export function getDonationReceiptTemplate(r: DonationReceiptInput) {
+  const receiptNo = r.transactionId.slice(0, 8).toUpperCase();
   return baseTemplate({
-    preheader: `Thank you for your generous ${amount} donation to Nivaran Foundation.`,
-    heroTitle: "Thank You for Your Generosity!",
-    heroSubtitle: `Your ${amount} donation is making a real difference.`,
+    preheader: `Your ${r.total} gift to Nivaran Foundation has been received. Receipt ${receiptNo}.`,
+    heroTitle: `Thank you, ${r.firstName}`,
+    heroSubtitle: `Your ${r.total} gift to ${r.designationName} has been received.`,
     body: `
-      ${greeting(name)}
-      ${paragraph("Your donation has been received and will go directly to funding healthcare and education programs in Nepal's most underserved communities.")}
-      ${infoBox(`
-        <p style="margin: 0 0 4px; color: ${TEXT_DARK}; font-size: 14px;"><strong>Donation Amount:</strong> ${amount}</p>
-        <p style="margin: 0 0 4px; color: ${TEXT_DARK}; font-size: 14px;"><strong>Tax Receipt:</strong> Available upon request</p>
-        <p style="margin: 0; color: ${TEXT_DARK}; font-size: 14px;"><strong>EIN:</strong> 41-2656587</p>
-      `)}
-      ${paragraph("Here's what your gift supports:")}
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 0 0 20px;">
+      ${greeting(r.firstName)}
+      ${paragraph(r.thankYouNote)}
+      ${r.impactLine ? paragraph(`<span style="color: ${TEXT_MUTED}; font-size: 13px;">${r.impactLine}</span>`) : ""}
+      ${paragraph("This email is your donation receipt. Please keep it for your records.")}
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin: 8px 0 20px; border: 1px solid ${BORDER}; border-radius: 10px; overflow: hidden;">
         <tr>
-          <td style="padding: 8px 0; border-bottom: 1px solid ${BORDER};">
-            <span style="color: ${PRIMARY}; font-weight: 700; font-size: 18px;">70%</span>
-            <span style="color: ${TEXT_MUTED}; font-size: 14px; margin-left: 8px;">Healthcare Programs</span>
+          <td style="background-color: ${BG_LIGHT}; padding: 14px 20px; border-bottom: 1px solid ${BORDER};">
+            <p style="margin: 0; color: ${TEXT_MUTED}; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;">Donation receipt</p>
+            <p style="margin: 4px 0 0; color: ${TEXT_DARK}; font-size: 26px; font-weight: 700;">${r.total}</p>
           </td>
         </tr>
         <tr>
-          <td style="padding: 8px 0; border-bottom: 1px solid ${BORDER};">
-            <span style="color: #FCAC2B; font-weight: 700; font-size: 18px;">15%</span>
-            <span style="color: ${TEXT_MUTED}; font-size: 14px; margin-left: 8px;">Education Programs</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 8px 0;">
-            <span style="color: ${TEXT_MUTED}; font-weight: 700; font-size: 18px;">15%</span>
-            <span style="color: ${TEXT_MUTED}; font-size: 14px; margin-left: 8px;">Operations & Fundraising</span>
+          <td style="padding: 6px 20px 10px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              ${receiptRow("Date received", r.date)}
+              ${receiptRow("Donor", r.name)}
+              ${receiptRow("Email", r.email)}
+              ${receiptRow("Designation", r.designationLabel)}
+              ${r.dedication ? receiptRow(r.dedication.label, r.dedication.name) : ""}
+              ${receiptRow("Gift amount", r.base)}
+              ${r.fee ? receiptRow("Processing costs covered", r.fee) : ""}
+              ${r.fee ? receiptRow("Total charged", r.total) : ""}
+              ${receiptRow("Payment method", r.paymentMethod)}
+              ${receiptRow("Gift type", "One-time donation")}
+              ${receiptRow("Transaction ID", `<span style="font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500;">${r.transactionId}</span>`)}
+              ${receiptRow("Received by", "Nivaran Foundation Inc.<br><span style=\"font-weight: 400; color: ${TEXT_MUTED};\">EIN 41-2656587 &bull; Arlington, MA, USA</span>", true)}
+            </table>
           </td>
         </tr>
       </table>
-      ${paragraph("Your contribution is 100% tax-deductible to the extent allowed by law.")}
+      ${paragraph(`<span style="color: ${TEXT_MUTED}; font-size: 13px;">${VARIANCE_NOTE}</span>`)}
+      ${paragraph("No goods or services were provided in exchange for this contribution.")}
+      ${paragraph(`Questions about your gift? Reply to this email or write to <a href="mailto:donations@nivaranfoundation.org" style="color: ${PRIMARY};">donations@nivaranfoundation.org</a>.`)}
       ${signoff()}
     `,
-    ctaText: "See Your Impact",
-    ctaUrl: `${SITE_URL}/impact-fact-sheet`,
+    ctaText: r.exploreLabel,
+    ctaUrl: `${SITE_URL}${r.exploreUrl}`,
   });
 }
 

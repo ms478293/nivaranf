@@ -43,21 +43,15 @@ export const metadata: Metadata = {
 const IMPACT_STATS = [
   { value: SANJEEVANI_PUBLIC_STATS.patientsServedText, label: "Patients Served", icon: "🏥" },
   { value: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText, label: "Rural Municipalities Reached", icon: "🏘️" },
-  { value: "96%", label: "Funds to Programs", icon: "💰" },
+  { value: "In preparation", label: "Financial Reporting", icon: "💰" },
   { value: SANJEEVANI_PUBLIC_STATS.investmentSoFarCompactText, label: "Tracked Investment", icon: "📊" },
   { value: "4", label: "Program Phases", icon: "🗓️" },
   { value: "2024", label: "Year Founded", icon: "🌱" },
 ];
 
-const FUND_ALLOCATION = [
-  { label: "Healthcare Programs (Sanjeevani)", percentage: 70, color: "bg-emerald-500" },
-  { label: "Education Programs (Vidya)", percentage: 15, color: "bg-blue-500" },
-  { label: "Operations & Administration", percentage: 10, color: "bg-amber-500" },
-  { label: "Fundraising & Outreach", percentage: 5, color: "bg-purple-500" },
-];
 
 const MILESTONES = [
-  { year: "2024", event: "Nivaran Foundation established as a 501(c)(3) nonprofit organization in the United States." },
+  { year: "2024", event: "Nivaran Foundation established as a Nepal-focused foundation in the United States." },
   { year: "2025", event: "Project Sanjeevani Phase I launched with the first tracked rural health camps in Nepal." },
   { year: "2025", event: `Expanded to two field teams and reached all ${SANJEEVANI_PUBLIC_STATS.provincesCoveredText} provinces during the first operating cycle.` },
   { year: "2026", event: `Current live tracking records show ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients served across ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps and ${SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText} rural municipalities.` },
@@ -105,24 +99,9 @@ export default function ImpactPage() {
             Where Your Money Goes
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            96% of every dollar donated goes directly to program services. We maintain one of the highest fund utilization rates among nonprofits serving South Asia.
+            Verified allocation figures are not yet published. Review our financial reporting status and contact us for details.
           </p>
-          <div className="space-y-4 max-w-2xl mx-auto">
-            {FUND_ALLOCATION.map((item) => (
-              <div key={item.label}>
-                <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium text-gray-700">{item.label}</span>
-                  <span className="text-sm font-bold text-gray-800">{item.percentage}%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div
-                    className={`${item.color} h-3 rounded-full`}
-                    style={{ width: `${item.percentage}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-center"><Link href="/financial-reports" className="underline">View reporting status</Link></p>
         </div>
       </section>
 
@@ -159,7 +138,7 @@ export default function ImpactPage() {
             Annual Report &amp; Financial Transparency
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            Nivaran Foundation is committed to full financial transparency. As a registered 501(c)(3) nonprofit (EIN: 41-2656587), we file IRS Form 990 annually. Our complete financials, program reports, and audit documents are available upon request.
+            Nivaran Foundation is committed to full financial transparency. See our financial reports page for published reporting status and document requests.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -191,7 +170,7 @@ export default function ImpactPage() {
             Help Us Reach the Next 100,000 Lives
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            Your tax-deductible donation directly funds mobile health camps and education programs in Nepal. 96% goes to programs.
+            Your donation directly funds mobile health camps and education programs in Nepal. See our financial reporting status.
           </p>
           <Link
             href="/donate"

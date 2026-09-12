@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { AppButton } from "@/components/ui/app-button";
-import { FAQdata } from "@/content/faq";
+import { DONOR_FAQS } from "@/content/donor-information";
 import Link from "next/link";
 import MainTitle from "../MainTitle/MainTitle";
 
@@ -17,7 +17,7 @@ export const DonationFAQ = () => {
         <div className="">
           <MainTitle suffix="Frequently asked" prefix="Questions" />
           <p className="text-gray-800 ">
-            Apply now and help us shape better future.
+            Common questions about donating and how we handle your information.
           </p>
         </div>
         <Link href="/frequently-asked-questions">
@@ -31,7 +31,7 @@ export const DonationFAQ = () => {
       </div>
 
       <Accordion type="single" className="space-y-4 flex-1" collapsible>
-        {FAQdata[13].item.map((faqHead, index) => (
+        {DONOR_FAQS.map((faqHead, index) => (
           <AccordionItem
             value={faqHead.question}
             key={index}
@@ -40,16 +40,13 @@ export const DonationFAQ = () => {
             <AccordionTrigger className="text-gray-950  text-lg font-light  px-3 py-2 no-underline data-[state=open]:no-underline bg-gray-50">
               <p className="flex items-center text-lg gap-3">
                 <span className="font-semibold ">
-                  {index < 10 ? `0${index + 1}` : index}
+                  {index < 9 ? `0${index + 1}` : index + 1}
                 </span>
                 <span className="text-base"> {faqHead.question}</span>{" "}
               </p>
             </AccordionTrigger>
             <AccordionContent className="pl-10 text-gray-600 bg-gray-50">
-              <div
-                dangerouslySetInnerHTML={{ __html: faqHead.answer }}
-                className="[&>a]:text-primary-main "
-              ></div>
+              <p className="leading-7">{faqHead.answer}</p>
             </AccordionContent>
           </AccordionItem>
         ))}

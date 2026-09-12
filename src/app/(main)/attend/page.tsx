@@ -4,6 +4,7 @@ import { initiatives } from "@/content/event-info";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Nivaran Foundation | Attend an Event",
   description:
     "Review Nivaran Foundation events, community initiatives, and planned program activities so supporters can follow upcoming outreach, campaigns, and engagement opportunities.",

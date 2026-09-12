@@ -68,7 +68,7 @@ export default function OurJourneyPage() {
                   </div>
                   <div className="w-1/2 pl-6">
                     <div className="h-32 w-full bg-primary-main rounded-lg flex items-center justify-center text-white text-sm font-medium">
-                      Founded as 501(c)(3)
+                      Foundation established
                     </div>
                   </div>
                 </div>
@@ -123,15 +123,15 @@ export default function OurJourneyPage() {
                     </h3>
                     <p className="text-gray-700 text-lg mt-4">
                       Recognizing that healthy communities learn better and
-                      educated communities stay healthier, we expanded into
-                      education through Project Vidya — providing teacher
-                      training, scholarships, and school infrastructure support
-                      in underserved regions.
+                      educated communities stay healthier, Project Vidya is
+                      planned for 2027 — teacher training, scholarships, and
+                      school infrastructure support in underserved regions.
+                      It has not launched yet.
                     </p>
                   </div>
                   <div className="w-1/2 pl-6">
                     <div className="h-32 w-full bg-secondary-main rounded-lg flex items-center justify-center text-white text-sm font-medium">
-                      Project Vidya Launched
+                      Project Vidya Planned 2027
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function OurJourneyPage() {
         <section className="text-center py-12 bg-primary-main text-white rounded-lg shadow-lg px-10 md:px-20">
           <h2 className="text-3xl font-bold mb-4">The Road Ahead</h2>
           <p className="text-lg mb-6">
-            With 96% of every dollar going directly to programs, we are
+            With support from our community, we are
             committed to scaling our impact beyond the current
             {` ${SANJEEVANI_PUBLIC_STATS.campsCompletedText}`} completed camps,
             {` ${SANJEEVANI_PUBLIC_STATS.patientsServedText}`} patients served, and

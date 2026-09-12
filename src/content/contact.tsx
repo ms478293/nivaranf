@@ -6,8 +6,8 @@ export const CONTACT_DATA = [
   {
     id: 1,
     title: "Phone",
-    label1: "(339) 707-2895",
-    label2: "+977 1-5312555",
+    label1: "+1 857 701 7471",
+    label2: "+977-01-5354693",
     icon: <ContactIcon className="w-6 h-6 stroke-secondary-800 " />,
   },
   {

@@ -10,6 +10,7 @@ import MainTitle from "../MainTitle/MainTitle";
 
 const InsightsAndInspiraton = () => {
   const featuredData = useTrendingBlogs(4);
+  const newestDate = featuredData[0]?.date;
   return (
     <section className="w-full  bg-white font-light font-Poppins">
       <div className="max-w-[1320px] mx-auto flex flex-col py-4 md:py-12 ">
@@ -30,6 +31,12 @@ const InsightsAndInspiraton = () => {
           </Link>
         </div>
         {/* <div className="flex justify-start  flex-wrap  snap-x snap-proximity  gap-4 [scrollbar-width:none] mt-8"> */}
+        {newestDate ? (
+          <p className="px-4 text-xs text-gray-500 mb-2">
+            Nepal desk last filed {newestDate}. Cards below are the newest
+            Nepal-tagged updates we have — not necessarily this week.
+          </p>
+        ) : null}
         <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-x-auto sm:overflow-x-visible snap-x snap-proximity [scrollbar-width:none] px-4 pb-8 pt-4 ">
           <RenderList
             data={featuredData}

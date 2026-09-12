@@ -225,7 +225,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How can I verify Nivaran Foundation's legitimacy as a non-profit organization?",
         answer:
-          "You can verify our 501(c)(3) status through the IRS website or other online resources that provide information about non-profit organizations, such as GuideStar or Charity Navigator. We also publish our annual reports and financial statements on our website.",
+          "Nivaran Foundation Inc. is a registered Nepal-focused foundation based in Arlington, MA, USA (EIN 41-2656587). Please review our financial reports page for available documentation.",
       },
     ],
   },
@@ -496,7 +496,7 @@ export const FAQdata: FAQType[] = [
         question:
           "How does Nivaran Foundation ensure its advocacy efforts are non-partisan?",
         answer:
-          "As a 501(c)(3) organization, we are prohibited from engaging in partisan political activity. Our advocacy efforts focus on policy issues, not on supporting or opposing specific candidates or political parties. We adhere to all applicable laws and regulations regarding non-profit advocacy.",
+          "Our work is nonpartisan. Our advocacy efforts focus on policy issues, not on supporting or opposing specific candidates or political parties. We adhere to all applicable laws and regulations regarding non-profit advocacy.",
       },
     ],
   },

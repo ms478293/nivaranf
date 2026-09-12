@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 const snapshotCards = [
-  { label: "Founded", value: "2024", note: "501(c)(3) nonprofit organization" },
+  { label: "Founded", value: "2024", note: "Nepal-focused foundation" },
   { label: "Patients served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText, note: "current verified cumulative total" },
   { label: "Health camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, note: "completed Project Sanjeevani camps" },
   { label: "Provinces covered", value: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`, note: "current national footprint" },
@@ -156,7 +156,7 @@ export default function ImpactFactSheetPage() {
             </h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-slate-600">
               <p>
-                Nivaran Foundation is a 501(c)(3) nonprofit founded in 2024 and
+                Nivaran Foundation is a Nepal-focused foundation founded in 2024 and
                 focused on healthcare and education delivery for underserved
                 communities in Nepal.
               </p>
@@ -184,7 +184,7 @@ export default function ImpactFactSheetPage() {
               </div>
               <div>
                 <dt className="font-semibold text-slate-900">Tax status</dt>
-                <dd>501(c)(3) nonprofit</dd>
+                <dd>U.S. tax-exempt recognition not yet granted</dd>
               </div>
               <div>
                 <dt className="font-semibold text-slate-900">EIN</dt>

@@ -1,6 +1,6 @@
 'use server'
 
-import { Resend } from "resend";
+import { getMailer } from "@/lib/mailer";
 import { getContactTemplate } from "@/lib/email-templates";
 import { supabaseAdmin } from "@/lib/supabase/server";
 
@@ -142,7 +142,7 @@ export async function submitLocalPartner(data: LocalPartnerData) {
     }
 
     // Send emails
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = getMailer();
 
     const name = escapeHtml(data.contactName);
     const groupName = escapeHtml(data.groupName);

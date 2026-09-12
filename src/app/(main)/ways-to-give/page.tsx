@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Ways to Give | Nivaran Foundation — Donate, Volunteer, Match",
   description:
-    "Explore all the ways to support Nivaran Foundation: one-time gifts, recurring donations, employer matching, stock donations, volunteer time, and corporate partnerships. 501(c)(3) tax-deductible.",
+    "Explore all the ways to support Nivaran Foundation: one-time gifts, recurring donations, employer matching, stock donations, volunteer time, and corporate partnerships.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/ways-to-give",
   },
@@ -40,7 +40,7 @@ const GIVING_METHODS = [
     title: "One-Time Donation",
     icon: "💝",
     description:
-      "Make a single tax-deductible gift of any amount. 96% of every dollar goes directly to healthcare and education programs in Nepal.",
+      "Make a single gift of any amount. See our financial reports page for spending information.",
     cta: "Donate Now",
     href: "/donate",
     highlight: true,
@@ -49,9 +49,9 @@ const GIVING_METHODS = [
     title: "Monthly Recurring Gift",
     icon: "🔄",
     description:
-      "Set up a recurring monthly donation to provide sustained funding for health camps. Monthly donors enable us to plan multi-year projects with confidence.",
-    cta: "Start Monthly Giving",
-    href: "/donate",
+      "Monthly donors provide sustained funding for health camps and let us plan multi-year projects with confidence. Contact us and we will set up your recurring gift with you.",
+    cta: "Set Up Monthly Giving",
+    href: "/contact-us",
     highlight: true,
   },
   {
@@ -83,7 +83,7 @@ const GIVING_METHODS = [
     title: "Stock or Asset Donation",
     icon: "📈",
     description:
-      "Donate appreciated securities, stocks, or other assets for potential tax advantages. Contact us to arrange a stock transfer to Nivaran Foundation.",
+      "Donate appreciated securities, stocks, or other assets. Contact us to arrange a stock transfer to Nivaran Foundation.",
     cta: "Contact Us",
     href: "/contact-us",
   },
@@ -152,19 +152,18 @@ export default function WaysToGivePage() {
       {/* Tax Info */}
       <section className="w-full px-4 py-12">
         <div className="max-w-[1320px] mx-auto">
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6 md:p-8 max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-green-800 mb-3">
-              🧾 Tax Deduction Information
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-slate-800 mb-3">
+              Organization information
             </h2>
-            <p className="text-sm text-green-700 mb-2">
-              Nivaran Foundation is a registered <strong>501(c)(3) tax-exempt nonprofit organization</strong>. Your donation is fully tax-deductible to the extent allowed by law.
-            </p>
-            <p className="text-sm text-green-700 mb-2">
-              <strong>EIN:</strong> 41-2656587
-            </p>
-            <p className="text-sm text-green-700">
-              A tax receipt will be emailed to you automatically after your donation is processed. For donations over $250, we provide a written acknowledgment per IRS requirements.
-            </p>
+            <div className="mt-4 text-sm leading-6 text-gray-600">
+              <p className="mb-2">
+                Nivaran Foundation is a registered <strong>Nepal-focused foundation</strong>. Our U.S. employer identification number (<strong>EIN</strong>) is 41-2656587.
+              </p>
+              <p>
+                Keep your emailed donation receipt for your records. Contact us if you need a copy.
+              </p>
+            </div>
           </div>
         </div>
       </section>

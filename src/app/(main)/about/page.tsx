@@ -18,7 +18,7 @@ import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 export const metadata: Metadata = {
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
   description:
-    "Nivaran Foundation is a 501(c)(3) nonprofit founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
+    "Nivaran Foundation is a Nepal-focused foundation founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
   alternates: {
     canonical: "https://www.nivaranfoundation.org/about",
   },
@@ -82,7 +82,7 @@ export default function page() {
           </div>
 
           <p className="text-gray-800 font-normal text-center">
-            Nivaran Foundation is a 501(c)(3) non-profit organization committed to
+            Nivaran Foundation is a Nepal-focused foundation committed to
             creating a meaningful and lasting impact through healthcare and
             education. Through sustainable solutions and direct medical services,
             we address the most pressing challenges faced by underserved
@@ -189,7 +189,7 @@ export default function page() {
                   Legal status
                 </p>
                 <p className="mt-3 text-lg font-semibold text-gray-900">
-                  U.S. 501(c)(3)
+                  U.S. tax-exempt recognition not yet granted
                 </p>
               </article>
               <article className="rounded-2xl border border-gray-200 bg-white p-5">
@@ -277,9 +277,9 @@ export default function page() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">IRS Registered</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">U.S. tax status</h3>
               <p className="text-sm text-gray-600 mb-2">
-                501(c)(3) Tax-Exempt Organization
+                U.S. tax-exempt recognition not yet granted
               </p>
               <p className="text-sm font-bold text-gray-800">EIN: 41-2656587</p>
               <a
@@ -288,7 +288,7 @@ export default function page() {
                 rel="noopener noreferrer"
                 className="text-xs text-primary-500 underline mt-2 inline-block"
               >
-                Verify on IRS.gov
+                IRS organization search
               </a>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
@@ -299,13 +299,13 @@ export default function page() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Financial Transparency</h3>
               <p className="text-sm text-gray-600 mb-2">
-                <span className="block text-2xl sm:text-3xl font-bold text-primary-500">96%</span>
+                <span className="block text-2xl sm:text-3xl font-bold text-primary-500">Reporting</span>
                 <span className="block mt-3 text-center text-sm sm:text-base text-gray-600 font-medium">
-                  of every dollar goes to programs
+                  status and available documents
                 </span>
               </p>
               <p className="text-xs text-gray-500">
-                Only 2% operations, 2% fundraising
+                See our Financial Reports page
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
@@ -357,7 +357,7 @@ export default function page() {
                   Nivaran Foundation was established by an individual who
                   witnessed firsthand the devastating healthcare gaps in rural
                   Nepal. Driven by the belief that healthcare is a right — not a
-                  privilege — our founder established Nivaran as a 501(c)(3)
+                  privilege — our founder established Nivaran as a Nepal-focused
                   nonprofit to create lasting, measurable change through
                   community health camps and education programs.
                 </p>

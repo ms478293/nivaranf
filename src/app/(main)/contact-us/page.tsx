@@ -43,7 +43,7 @@ const CONTACT_FAQS = [
   {
     question: "How can I donate to Nivaran Foundation?",
     answer:
-      "You can donate online through our Donate page. We accept credit cards, debit cards, and bank transfers. All donations are 501(c)(3) tax-deductible.",
+      "You can donate online through our Donate page. We accept credit cards, debit cards, and bank transfers.",
   },
   {
     question: "How do I volunteer with Nivaran?",
@@ -141,7 +141,7 @@ export default async function ContactUsPage() {
                       <Link href="/donate" className="text-primary-500 underline">
                         Donate page
                       </Link>
-                      . We accept credit cards, debit cards, and bank transfers. All donations are 501(c)(3) tax-deductible.
+                      . We accept credit cards, debit cards, and bank transfers.
                     </>
                   ) : faq.question === "How do I volunteer with Nivaran?" ? (
                     <>

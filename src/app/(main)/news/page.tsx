@@ -1,5 +1,6 @@
 import { globalBlogs } from "@/blogs/listofblogs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
+import { displayExcerpt, filterPublicNewsIndex } from "@/lib/content/blogFilters";
 import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -45,8 +46,8 @@ export default async function NewsPage() {
   staticBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
   dynamicBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
 
-  const blogs = Array.from(mergedBySlug.values()).sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  const blogs = filterPublicNewsIndex(
+    Array.from(mergedBySlug.values())
   );
 
   return (
@@ -67,7 +68,9 @@ export default async function NewsPage() {
                 {blog.type}
               </p>
               <h2 className="text-lg font-medium text-gray-900">{blog.title}</h2>
-              <p className="text-sm text-gray-600 mt-1">{blog.summary}</p>
+              {displayExcerpt(blog.summary) ? (
+              <p className="text-sm text-gray-600 mt-1">{displayExcerpt(blog.summary)}</p>
+              ) : null}
             </Link>
           ))}
         </div>

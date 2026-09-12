@@ -59,7 +59,7 @@ export default function page() {
         <RelatedContent
           heading="Ways to Get Involved"
           links={[
-            { title: "Donate", href: "/donate", description: "Make a tax-deductible donation to fund healthcare and education programs." },
+            { title: "Donate", href: "/donate", description: "Make a donation to fund healthcare and education programs." },
             { title: "Volunteer", href: "/volunteer", description: "Join our field teams and contribute your time and skills." },
             { title: "Careers", href: "/career", description: "Explore open positions and grow your career with Nivaran Foundation." },
             { title: "Organize Locally", href: "/organize-locally", description: "Start a health camp or awareness drive in your own community." },

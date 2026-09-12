@@ -55,7 +55,8 @@ export default function FinancialReportsPage() {
         <p className="text-gray-600 mt-4 leading-7">
           This page is the dedicated route for financial reporting references.
           It centralizes organization details, report status, and request
-          channels for donors, partners, and compliance review.
+          channels for donors, partners, and compliance review. As of August
+          2026, the FY2025 package is not yet posted.
         </p>
 
         <div className="bg-green-50 border border-green-200 rounded-xl p-6 mt-8">
@@ -69,7 +70,7 @@ export default function FinancialReportsPage() {
             </div>
             <div>
               <p className="text-green-700 font-medium">Tax Status</p>
-              <p className="text-green-900">501(c)(3) Tax-Exempt</p>
+              <p className="text-green-900">U.S. tax-exempt recognition not yet granted</p>
             </div>
             <div>
               <p className="text-green-700 font-medium">EIN</p>
@@ -92,7 +93,7 @@ export default function FinancialReportsPage() {
             rel="noopener noreferrer"
             className="inline-block mt-4 text-sm text-primary-500 underline hover:text-primary-600"
           >
-            Verify our tax-exempt status on IRS.gov
+            Read IRS information about tax-exempt organizations
           </a>
         </div>
 

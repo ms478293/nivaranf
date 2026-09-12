@@ -6,7 +6,7 @@ export const HelpFooter = () => {
     <div className="flex  flex-col  justify-center gap-16   text-black px-4 sm:px-36 md:px-64 mx-auto max-w-[1140px] py-16">
       {[
         {
-          title: "Become a Monthly Donor",
+          title: "Make a One-Time Gift",
           description:
             "When you give to NIVARAN, you stand against the barriers that women and girls face every day.",
           cta: "Start donating today",
@@ -22,7 +22,7 @@ export const HelpFooter = () => {
         {
           title: "Give a Gift",
           description:
-            "Support those facing conflict and hunger around the world. Your gift can mean a lot.",
+            "Support healthcare and education for underserved communities in Nepal. Your gift can mean a lot.",
           cta: "Gift Today",
           link: "/donate",
         },

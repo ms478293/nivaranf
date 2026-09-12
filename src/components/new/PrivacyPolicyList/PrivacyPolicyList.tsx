@@ -32,7 +32,7 @@ export const PrivacyPolicyList = () => {
             <div className="flex flex-col gap-2 mt-4">
               <div className="flex flex-col  text-gray-600 mb-4">
                 <h3>Nivaran Foundation Privacy Policy</h3>
-                <p>Last Updated: 01/05/2025</p>
+                <p>Last Updated: 08/15/2026</p>
               </div>
               <div className="flex flex-col gap-2">
                 <RenderList

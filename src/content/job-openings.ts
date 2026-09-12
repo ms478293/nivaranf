@@ -8,7 +8,7 @@ export type JobOpening = {
   department: string;
   apply_before: string;
   positions_open: number;
-  status: 'active' | 'closed';
+  status: 'closed' | 'closed';
   introduction: string;
   responsibilities: string[];
   requirements: string[];
@@ -25,7 +25,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     department: 'Programs',
     apply_before: '2026-03-15',
     positions_open: 2,
-    status: 'active',
+    status: 'closed',
     introduction: 'Nivaran Foundation is seeking an experienced Program Manager to lead our healthcare initiatives across Nepal. This role will oversee Project Sanjeevani and coordinate health camp operations, working directly with local communities to deliver life-changing healthcare services.',
     responsibilities: [
       'Lead the planning, implementation, and evaluation of healthcare programs including health camps and community clinics',
@@ -73,7 +73,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     department: 'Development',
     apply_before: '2026-03-01',
     positions_open: 1,
-    status: 'active',
+    status: 'closed',
     introduction: 'Join our dynamic team as a Fundraising and Development Officer. You will play a crucial role in securing funding to expand our healthcare and education programs in Nepal. This position requires a passionate individual with proven fundraising experience and strong communication skills.',
     responsibilities: [
       'Develop and implement comprehensive fundraising strategies to meet annual revenue goals ($500K+)',
@@ -122,7 +122,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     department: 'Programs',
     apply_before: '2026-03-31',
     positions_open: 1,
-    status: 'active',
+    status: 'closed',
     introduction: 'We are looking for an organized and compassionate Medical Volunteer Coordinator to manage our growing volunteer program. This role involves recruiting, training, and coordinating medical professionals and volunteers for health camps and community programs across Nepal.',
     responsibilities: [
       'Recruit and screen medical professionals and volunteers for health camp participation',
@@ -170,7 +170,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     department: 'Communications',
     apply_before: '2026-04-10',
     positions_open: 1,
-    status: 'active',
+    status: 'closed',
     introduction: 'Nivaran Foundation seeks a creative Communications and Social Media Specialist to tell our story and engage supporters worldwide. You will create compelling content that showcases our impact, builds our brand, and inspires action.',
     responsibilities: [
       'Develop and execute social media strategy across Facebook, Instagram, LinkedIn, and Twitter',
@@ -220,7 +220,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     department: 'Finance & Operations',
     apply_before: '2026-04-25',
     positions_open: 1,
-    status: 'active',
+    status: 'closed',
     introduction: 'We are hiring a detail-oriented Finance and Operations Associate to support our financial management and operational efficiency. This role is critical to ensuring transparency, accountability, and compliance with donor requirements.',
     responsibilities: [
       'Maintain accurate financial records and process accounts payable/receivable',

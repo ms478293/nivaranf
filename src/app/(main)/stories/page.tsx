@@ -1,6 +1,7 @@
 import { globalBlogs } from "@/blogs/listofblogs";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
+import { displayExcerpt, filterPublicNewsIndex } from "@/lib/content/blogFilters";
 import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -46,8 +47,8 @@ export default async function StoriesPage() {
   staticBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
   dynamicBlogs.forEach((blog) => mergedBySlug.set(blog.slug, blog));
 
-  const blogs = Array.from(mergedBySlug.values()).sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  const blogs = filterPublicNewsIndex(
+    Array.from(mergedBySlug.values())
   );
 
   return (
@@ -56,7 +57,7 @@ export default async function StoriesPage() {
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Stories" }]} />
         <h1 className="text-3xl font-semibold text-gray-900">Stories</h1>
         <p className="text-sm text-gray-600">
-          Human-centered stories from communities and field teams.
+          Human-centered stories from communities and field teams. Nepal field stories are being updated — listings here may include other published pieces and are not all Sanjeevani camp reports.
         </p>
         <div className="grid gap-3">
           {blogs.map((blog) => (
@@ -69,7 +70,9 @@ export default async function StoriesPage() {
                 {blog.type}
               </p>
               <h2 className="text-lg font-medium text-gray-900">{blog.title}</h2>
-              <p className="text-sm text-gray-600 mt-1">{blog.summary}</p>
+              {displayExcerpt(blog.summary) ? (
+              <p className="text-sm text-gray-600 mt-1">{displayExcerpt(blog.summary)}</p>
+              ) : null}
             </Link>
           ))}
         </div>

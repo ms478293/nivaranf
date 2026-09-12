@@ -1,11 +1,11 @@
 'use server'
 
 import { supabaseAdmin } from "@/lib/supabase/server";
-import { Resend } from 'resend';
+import { getMailer } from "@/lib/mailer";
 import { getJobApplicationTemplate } from "@/lib/email-templates";
 
 export async function submitApplicationWithFiles(formData: FormData) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = getMailer();
 
   try {
     // Extract form data

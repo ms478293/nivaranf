@@ -118,7 +118,7 @@ export const EnhancedCareerForm = ({ career }: { career?: CareerType }) => {
   }, [career?.jobLocation]);
 
   const jobOptions = useMemo(() => {
-    const baseJobs = JOB_OPENINGS.filter((job) => job.status === "active").map(
+    const baseJobs = JOB_OPENINGS.filter((job) => job.status !== "closed").map(
       (job) => ({
         id: `static-${job.id}`,
         title: job.title,

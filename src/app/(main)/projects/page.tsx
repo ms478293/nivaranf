@@ -65,8 +65,8 @@ const PROJECTS = [
       "Project Vidya bridges global education gaps through technology-driven learning, teacher training, and skill development programs. With AI-powered learning, STEM education, and vocational training, Vidya shapes a future where quality education is accessible to all.",
     image: "/projects/images/projectVidyaHero.jpg",
     stats: [
-      { value: "100+", label: "Digital Learning Centers" },
-      { value: "1,000", label: "Teacher Training Programs" },
+      { value: "100+", label: "Learning Centers (goal)" },
+      { value: "1,000", label: "Teacher Programs (goal)" },
       { value: "5M", label: "Target Enrollment" },
       { value: "3", label: "Phased Rollout" },
     ],

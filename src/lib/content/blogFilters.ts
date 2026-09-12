@@ -118,3 +118,51 @@ export function filterGlobalOnlyNewest(items: blogListType[], limit: number) {
     safeLimit,
   );
 }
+
+
+const STOCK_FALLBACK_EXCERPT =
+  "A high-impact global update is reshaping how health and education systems";
+
+const OFF_MISSION_TERMS = [
+  "ariana grande",
+  "messi",
+  "luigi mangione",
+  "salad greens",
+  "taylor swift",
+  "kardashian",
+  "epstein",
+  "oscar",
+  "grammy",
+  "super bowl",
+  "premier league",
+  "celebrity",
+];
+
+export function isStockFallbackExcerpt(text?: string | null) {
+  return Boolean(text && text.includes(STOCK_FALLBACK_EXCERPT));
+}
+
+export function displayExcerpt(text?: string | null) {
+  if (!text || isStockFallbackExcerpt(text)) return "";
+  return text;
+}
+
+export function isDuplicateIndexSlug(slug: string) {
+  return /-\d+$/.test(slug);
+}
+
+export function isOffMissionNews(blog: BlogCandidate) {
+  return includesAny(toHaystack(blog), OFF_MISSION_TERMS);
+}
+
+export function filterPublicNewsIndex<T extends blogListType>(items: T[]) {
+  const seenBases = new Set<string>();
+  return sortBlogsByDateDesc(items).filter((blog) => {
+    if (isDuplicateIndexSlug(blog.slug)) return false;
+    if (isOffMissionNews(blog)) return false;
+    const base = blog.slug.replace(/-\d+$/, "");
+    if (seenBases.has(base)) return false;
+    seenBases.add(base);
+    return true;
+  });
+}

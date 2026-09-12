@@ -16,6 +16,7 @@ import { SidebarProvider } from "../../ui/sidebar";
 import MegaMenuLayout from "../MegaMenu/MegaMenuLayout";
 import { Search } from "lucide-react";
 import { LanguageToggle } from "../LanguageToggle/LanguageToggle";
+import NivaranLogo from "./NivaranLogo";
 
 const SearchModal = dynamic(() => import("../SearchModal/SearchModal"), { ssr: false });
 const Sidebar = dynamic(() => import("../../nivaran/common/header/SidebarComponent").then(m => ({ default: m.Sidebar })), { ssr: false });
@@ -92,28 +93,25 @@ const NivaranHeader = () => {
         className={activeMegaMenu !== null ? "no-scroll" : ""}
         ref={navRef as never}
       >
-        <header
-          className={`h-[64px] ${
-            isWhite || activeMegaMenu
-              ? "bg-neutral-50  "
-              : "bg-black/30 [backdrop-filter:blur(10px)]"
-          } ${isWhite && !activeMegaMenu ? "shadow-sm" : ""} ${
-            activeMegaMenu ? "border-b border-gray-300" : ""
-          }  py-3   w-full flex items-center font-Poppins fixed top-0 z-[50] px-4`}
-        >
-          <div className="flex w-full items-center justify-between max-w-[1320px] mx-auto">
+        <header className="relative h-[64px] py-3 w-full flex items-center font-Poppins fixed top-0 z-[50] px-4">
+          <div
+            aria-hidden
+            className={`absolute inset-0 ${
+              isWhite || activeMegaMenu
+                ? "bg-neutral-50"
+                : "bg-black/30 [backdrop-filter:blur(10px)]"
+            } ${isWhite && !activeMegaMenu ? "shadow-sm" : ""} ${
+              activeMegaMenu ? "border-b border-gray-300" : ""
+            }`}
+          />
+          <div className="relative z-10 flex w-full items-center justify-between max-w-[1320px] mx-auto">
             <Link
               href={"/"}
               onClick={() => openActiveMegaMenu(null)}
               aria-label="Nivaran Logo- Select to navigate to home page"
+              className="relative z-10"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/NivaranLogo.svg"
-                alt="Nivaran Foundation Logo"
-                width={100}
-                height={40}
-              />
+              <NivaranLogo />
             </Link>
             {screenSize !== "864px" ? (
               <div className="flex min-[864px]:hidden items-center justify-center gap-2 relative z-[200]">

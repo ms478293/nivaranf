@@ -52,9 +52,9 @@ export const DEI_EMPOWERING_VOICES: DEI_EMPOWERING_TYPE[] = [
   {
     id: 1,
     stats: "77",
-    title: "District Hospitals",
+    title: "District Hospitals (goal)",
     description:
-      "Ensuring healthcare access for diverse communities that promotes an inclusive environment where all individuals receive equal and respectful care.",
+      "A long-term goal for healthcare access across districts — not a current hospital count.",
   },
   {
     id: 2,
@@ -66,9 +66,9 @@ export const DEI_EMPOWERING_VOICES: DEI_EMPOWERING_TYPE[] = [
   {
     id: 3,
     stats: "5 Million",
-    title: "Student from Various Age",
+    title: "Students (goal)",
     description:
-      "Enrolling children of diverse age groups in digital learning centers & offering training programs for educators to enhance teaching  across all age.",
+      "A Project Vidya enrollment goal for a future phased rollout — not a current student count.",
   },
   {
     id: 4,

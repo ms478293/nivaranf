@@ -26,15 +26,15 @@ export const SITE_VARIANT_CONFIGS: Record<SiteVariant, SiteVariantConfig> = {
     siteName: "Nivaran Foundation",
     defaultTitle: "Nivaran Foundation | Free Healthcare & Education in Nepal",
     defaultDescription:
-      "Nivaran Foundation is a 501(c)(3) nonprofit delivering mobile health camps, maternal care, and education support to underserved communities in Nepal.",
+      "Nivaran Foundation is a Nepal-focused foundation delivering mobile health camps, maternal care, and education support to underserved communities in Nepal.",
     keywords: [
       "Nivaran Foundation",
       "Nepal healthcare NGO",
       "mobile health camps Nepal",
       "maternal health Nepal",
       "education nonprofit Nepal",
-      "tax-deductible donation",
-      "501(c)(3)",
+      "donate to Nepal",
+      "Nepal foundation",
     ],
     themeColor: "#000000",
     organizationName: "Nivaran Foundation",

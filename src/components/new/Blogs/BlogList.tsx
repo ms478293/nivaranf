@@ -5,6 +5,7 @@ import { blogTypes } from "@/content/blogTypes";
 import {
   filterGlobalOnlyNewest,
   filterNepalExclusiveNewest,
+  filterPublicNewsIndex,
   isGlobalNewsCandidate,
 } from "@/lib/content/blogFilters";
 import { useBlogFeed } from "@/lib/content/useBlogFeed";
@@ -20,7 +21,7 @@ export const BlogList = () => {
   const [activeCategoryTag, setActiveCategoryTag] = useState<
     (typeof blogTypes)[number] | "All"
   >("All");
-  const allBlogs = useBlogFeed(500);
+  const allBlogs = filterPublicNewsIndex(useBlogFeed(500));
   const trendingNepalOnly = filterNepalExclusiveNewest(allBlogs, 4);
   const latestGlobalOnly = filterGlobalOnlyNewest(allBlogs, 20);
 

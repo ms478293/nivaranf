@@ -1,4 +1,3 @@
-import { ImpactRingBadge } from "@/components/new/NivaranFooter/ImpactRingBadge";
 import { SocialLinks } from "@/components/nivaran/common/footer/SocialLinks";
 import { footerData } from "@/content/site-data";
 import Image from "next/image";
@@ -33,18 +32,13 @@ const FooterUsa = () => {
               ></Image>
             </Link>
             <div className="w-80">
-              NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile
+              NIVARAN FOUNDATION is a nonprofit running free mobile
               health camps and education programs across rural Nepal since 2024.
-              Every dollar directly funds healthcare and learning for underserved
-              communities.
             </div>
           </div>
           <div className="flex w-full justify-start px-4">
-            <div className="flex w-full justify-center h-fit relative">
-              <ImpactRingBadge target={96} />
-            </div>
             <div>
-              <span>96% of all our expenses go to program services.</span>
+              <span>See our financial reporting status.</span>
               <div className="flex justify-end">
                 <Link
                   href="/financial-reports"
@@ -107,7 +101,7 @@ const FooterUsa = () => {
             <span className="font-bold text-primary-main">
               NIVARAN FOUNDATION
             </span>{" "}
-            is a 501(c)(3) not-for-profit organization.
+            is a not-for-profit organization.
           </div>
           <div>&copy; 2025 NIVARAN. All rights reserved.</div>
         </div>

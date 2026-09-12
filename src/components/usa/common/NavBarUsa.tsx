@@ -15,7 +15,6 @@ import {
 import { cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 
-import { DialogOpenerUsa } from "./DialogOpenerUsa";
 
 export function NavBarUsa() {
   const pathname = usePathname();
@@ -123,7 +122,6 @@ export function NavBarUsa() {
                 "hover:text-primary-main text-xl overflow-visible w-fit text-nowrap px-2 py-1 rounded-lg"
               )}
             >
-              <DialogOpenerUsa></DialogOpenerUsa>
             </div>
           </div>
         </NavigationMenuItem>

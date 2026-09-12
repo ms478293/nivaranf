@@ -58,7 +58,7 @@ export const LEADERSHIP_DATA = [
     ],
   },
   {
-    title: "Finance and Adminstration",
+    title: "Finance and Administration",
     members: [
       {
         id: 1,

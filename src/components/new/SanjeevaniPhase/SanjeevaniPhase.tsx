@@ -46,7 +46,7 @@ const SanjeevaniPhase = () => {
       <PhaseSection className="bg-secondary-200 flex flex-col gap-4">
         <div>
           <PhaseSectionTitle title="Phase-II" />
-          <PhaseSectionDescription description="Start date: 05 Aug, 2025" />
+          <PhaseSectionDescription description="Planned start was 05 Aug, 2025 — not started / delayed. Targets below are planned, not current delivery." />
         </div>
         <div>
           <PhaseSectionTitle title="Objective" />

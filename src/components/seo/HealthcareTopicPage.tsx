@@ -122,7 +122,7 @@ export function HealthcareTopicPage({
               Explore Project Sanjeevani
             </Link>
             <Link
-              href="/donate"
+              href="/donate?designation=sanjeevani"
               className="inline-flex items-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
             >
               Support Rural Healthcare

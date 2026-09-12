@@ -19,6 +19,8 @@ import Script from "next/script";
 const SITE_URL = "https://www.nivaranfoundation.org";
 const ENABLE_VERCEL_ANALYTICS =
   process.env.NEXT_PUBLIC_ENABLE_VERCEL_ANALYTICS !== "false";
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const META_DOMAIN_VERIFICATION = process.env.NEXT_PUBLIC_META_DOMAIN_VERIFICATION;
 const DEFAULT_TITLE = "Nivaran Foundation";
 const DEFAULT_DESCRIPTION =
   "Nivaran Foundation builds humanitarian, health, education, and public-interest initiatives across multiple contexts.";
@@ -115,7 +117,6 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
         "Education in Nepal",
         "Community Development",
       ],
-      nonprofitStatus: "https://schema.org/Nonprofit501c3",
       medicalSpecialty: [
         "https://schema.org/PrimaryCare",
         "https://schema.org/PublicHealth",
@@ -126,7 +127,7 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
       "@type": "DonateAction",
       name: "Donate to Nivaran Foundation",
       description:
-        "Your tax-deductible donation funds healthcare and education in Nepal. 96% goes directly to programs.",
+        "Your donation funds healthcare and education in Nepal. See financial reporting status.",
       recipient: {
         "@type": "Organization",
         name: "Nivaran Foundation",
@@ -149,6 +150,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(config.siteUrl || SITE_URL),
+    ...(META_DOMAIN_VERIFICATION
+      ? {
+          verification: {
+            other: {
+              "facebook-domain-verification": META_DOMAIN_VERIFICATION,
+            },
+          },
+        }
+      : {}),
     title: {
       default: variant === "main" ? DEFAULT_TITLE : config.siteName,
       template: "%s",
@@ -277,6 +287,23 @@ export default async function RootLayout({
           `}
         </Script>
 
+        {META_PIXEL_ID && (
+          <Script id="meta-pixel" strategy="afterInteractive">
+            {`
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '${META_PIXEL_ID}');
+              fbq('track', 'PageView');
+            `}
+          </Script>
+        )}
+
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -288,6 +315,17 @@ export default async function RootLayout({
         </Script>
       </head>
       <body className={cn("antialiased", poppins.className)} aria-hidden={false}>
+        {META_PIXEL_ID ? (
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: "none" }}
+              src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+              alt=""
+            />
+          </noscript>
+        ) : null}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[9999] focus:rounded-md focus:bg-black focus:px-4 focus:py-2 focus:text-sm focus:text-white"

@@ -1,8 +1,6 @@
 import DonationCard from "@/components/new/DonationCard/DonationCard";
 import { DonationFAQ } from "@/components/new/DonationFAQ/DonationFAQ";
-import DonationProgress from "@/components/new/DonationProgress/DonationProgress";
 import WhereMoneyGoes from "@/components/new/DonorTrust/WhereMoneyGoes";
-import ImpactCalculator from "@/components/new/ImpactCalculator/ImpactCalculator";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { AppButton } from "@/components/ui/app-button";
 import { Metadata } from "next";
@@ -10,37 +8,28 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 
+const TITLE = "Donate to Nivaran Foundation | Healthcare & Education in Nepal";
+const DESCRIPTION =
+  "Make a one-time gift to Nivaran Foundation's healthcare and education work in Nepal. Choose where your gift goes and receive your donation receipt by email. EIN: 41-2656587.";
+
 export const metadata: Metadata = {
-  title:
-    "Donate to Nivaran | Save Lives in Nepal | 501(c)(3)",
-  description:
-    "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities. 96% of funds go directly to programs. EIN: 41-2656587.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/donate",
-  },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "https://www.nivaranfoundation.org/donate" },
   openGraph: {
-    title:
-      "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
-    description:
-      "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: "https://www.nivaranfoundation.org/donate",
     type: "website",
     siteName: "Nivaran Foundation",
     images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Donate to Nivaran Foundation",
-      },
+      { url: "https://www.nivaranfoundation.org/logo.png", width: 1200, height: 665, alt: "Donate to Nivaran Foundation" },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Donate to Nivaran Foundation | Save Lives in Nepal | 501(c)(3) Tax-Deductible",
-    description:
-      "Your tax-deductible donation helps provide healthcare and education to Nepal's most underserved communities.",
+    title: TITLE,
+    description: DESCRIPTION,
     site: "@NivaranOrg",
     creator: "@NivaranOrg",
     images: ["https://www.nivaranfoundation.org/logo.png"],
@@ -53,27 +42,21 @@ const donationFaqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is my donation to Nivaran Foundation tax-deductible?",
+      name: "Can I choose where my donation goes?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Nivaran Foundation is a registered 501(c)(3) nonprofit and eligible donations are tax-deductible in the United States.",
+        text: "Yes. On the donation form you can direct your gift to where it is needed most (the default), Project Sanjeevani mobile health camps, maternal and child health, or education in Nepal. If a program is fully funded or cannot be carried out, Nivaran directs the gift where the need is greatest.",
       },
+    },
+    {
+      "@type": "Question",
+      name: "Is my gift one-time or recurring?",
+      acceptedAnswer: { "@type": "Answer", text: "Every gift made through the donation form is a one-time gift." },
     },
     {
       "@type": "Question",
       name: "What is Nivaran Foundation's EIN?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Nivaran Foundation EIN is 41-2656587.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much of my donation goes to programs?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Nivaran Foundation reports that 96% of donated funds go directly to program services.",
-      },
+      acceptedAnswer: { "@type": "Answer", text: "Nivaran Foundation EIN is 41-2656587." },
     },
   ],
 };
@@ -81,226 +64,46 @@ const donationFaqSchema = {
 export default function DonationPage() {
   return (
     <main className="font-Poppins w-full">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(donationFaqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(donationFaqSchema) }} />
 
       <div className="max-w-[1320px] mx-auto px-4 pt-2">
         <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Donate" }]} />
       </div>
 
       {/* Hero + Donation Card */}
-      <section className="w-full px-4">
+      <section className="w-full px-4 pb-8 md:pb-10">
         <div
           className="max-w-[1320px] mx-auto bg-[url('/nivaran_word.png')] bg-no-repeat flex flex-col md:gap-12"
-          style={{
-            backgroundPosition: "top 10% left 40%",
-          }}
+          style={{ backgroundPosition: "top 10% left 40%" }}
         >
-          <div className="flex flex-col md:flex-row gap-3 justify-between">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 justify-between items-start">
             <div className="mb-4 md:mb-8 flex flex-col gap-4 md:w-1/2">
               <PageTitle prefix="Be the Change" suffix="You Want to See" />
-
-              <p className="text-sm text-gray-600">
-                Every dollar you give saves lives. 96% of your donation goes
-                directly to healthcare and education programs in Nepal.
+              <p className="text-sm leading-relaxed text-gray-600">
+                Sanjeevani health camps are postponed while monsoon rain keeps the mountain roads unsafe. Every
+                postponed camp will be held; your gift is what brings the teams back the moment the routes are clear.
               </p>
-
-              <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-2">
-                <p className="text-xs text-green-800 font-medium">
-                  501(c)(3) Tax-Exempt Organization | EIN: 41-2656587
-                </p>
-                <p className="text-xs text-green-700 mt-1">
-                  Your donation is 100% tax-deductible. You will receive a tax
-                  receipt via email.
-                </p>
-              </div>
-
-              <Link href="/sanjeevani" aria-label="See the Impact">
-                <AppButton
-                  className="font-light bg-neutral-50"
-                  variant="primary-outline"
-                >
-                  See the Impact of Your Giving
+              <p className="text-sm leading-relaxed text-gray-600">
+                Every gift is a one-time gift to Nivaran&rsquo;s healthcare and education work in Nepal. You choose
+                where it goes, and your donation receipt arrives by email.
+              </p>
+              <Link href="/sanjeevani" aria-label="See Project Sanjeevani">
+                <AppButton className="font-light bg-neutral-50" variant="primary-outline">
+                  See Project Sanjeevani
                 </AppButton>
               </Link>
             </div>
-            <Suspense>
-              <DonationCard />
-            </Suspense>
-          </div>
-        </div>
-      </section>
-
-      {/* Donation Progress / Fundraising Goal */}
-      <DonationProgress />
-
-      {/* What Your Gift Does — Impact Breakdown */}
-      <section className="w-full px-4 py-12 bg-white">
-        <div className="max-w-[1320px] mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2 text-center">
-            Your Gift = This Impact
-          </h2>
-          <p className="text-gray-500 text-center mb-8 max-w-xl mx-auto text-sm">
-            Every dollar you give goes directly to work. Here&apos;s exactly what your gift makes possible:
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-emerald-600">$10</p>
-              <p className="text-sm text-gray-700 mt-2">Provides medicine &amp; basic supplies for <strong>1 patient</strong> at a mobile health camp</p>
-            </div>
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-blue-600">$25</p>
-              <p className="text-sm text-gray-700 mt-2">Covers a <strong>full maternal health screening</strong> for one mother in rural Nepal</p>
-            </div>
-            <div className="bg-purple-50 border border-purple-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-purple-600">$50</p>
-              <p className="text-sm text-gray-700 mt-2">Funds <strong>1 complete day</strong> of a mobile health camp including doctor, nurse &amp; medicine</p>
-            </div>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-amber-600">$100</p>
-              <p className="text-sm text-gray-700 mt-2">Delivers healthcare to an <strong>entire family</strong> — consultation, diagnosis &amp; treatment</p>
-            </div>
-            <div className="bg-rose-50 border border-rose-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-rose-600">$250</p>
-              <p className="text-sm text-gray-700 mt-2">Sends a <strong>medical team to a remote village</strong> for a full outreach day</p>
-            </div>
-            <div className="bg-teal-50 border border-teal-200 rounded-xl p-5 text-center">
-              <p className="text-2xl font-bold text-teal-600">$500</p>
-              <p className="text-sm text-gray-700 mt-2">Sponsors <strong>one full health camp event</strong> — serving 50+ patients in a single visit</p>
-            </div>
-            <div className="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center sm:col-span-1 col-span-2">
-              <p className="text-2xl font-bold text-indigo-600">$1,000</p>
-              <p className="text-sm text-gray-700 mt-2">Funds <strong>a month of healthcare</strong> for an entire underserved community</p>
+            <div className="w-full md:w-1/2 order-first md:order-none">
+              <Suspense>
+                <DonationCard />
+              </Suspense>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Employer Matching */}
-      <section className="w-full px-4 py-8 bg-gradient-to-r from-primary-50 to-blue-50">
-        <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12">
-          <div className="flex-1">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-              🏢 Double Your Impact — Employer Matching
-            </h2>
-            <p className="text-sm text-gray-600">
-              Many employers match charitable donations, effectively <strong>doubling your gift</strong> at no extra cost to you. Check if your company participates in a matching gift program.
-            </p>
-          </div>
-          <a
-            href="https://doublethedonation.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors whitespace-nowrap"
-          >
-            Check Employer Match
-          </a>
-        </div>
-      </section>
-
-      {/* Impact Calculator */}
-      <ImpactCalculator />
-
-      {/* Where Money Goes */}
       <WhereMoneyGoes />
 
-      {/* Donor & Beneficiary Testimonials */}
-      <section className="w-full px-4 py-12 bg-gray-50">
-        <div className="max-w-[1320px] mx-auto">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-            Why Donors Trust Nivaran
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Testimonial 1 — US Donor */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;I donated $50 to Nivaran last year and received my tax receipt within minutes. Knowing 96 cents of every dollar goes directly to patients — not overhead — made it an easy decision. I&apos;ve been a monthly donor ever since.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— Priya M., Boston, MA</p>
-            </div>
-
-            {/* Testimonial 2 — Corporate Donor */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;As a company with Nepali roots, partnering with Nivaran Foundation was meaningful. Their transparency — publicly posting their EIN and program efficiency — gave us full confidence in where our contribution was going.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— Raj S., CEO, Tech Startup, San Francisco</p>
-            </div>
-
-            {/* Testimonial 3 — Volunteer */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;I volunteered remotely with Nivaran on grant research for 3 months. What surprised me most was how organized and mission-driven the team is. Every volunteer hour felt like it had a direct line to real impact in Nepal.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— Sarah K., Graduate Student, New York</p>
-            </div>
-
-            {/* Testimonial 4 — Beneficiary */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-emerald-100 bg-emerald-50/30">
-              <div className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-2 py-0.5 rounded mb-3">Beneficiary Story</div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;Before the Nivaran health camp came to our village in Sudurpashchim, the nearest doctor was a 5-hour journey away. The camp gave my mother her first check-up in over 10 years. We are deeply grateful.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— Kamala, Villager, Sudurpashchim Province, Nepal</p>
-            </div>
-
-            {/* Testimonial 5 — Monthly Donor */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;I set up a $25/month recurring gift and honestly forgot about it — until I got the year-end summary showing how many camps were run. That&apos;s the kind of giving I want to do: small, automatic, and genuinely life-changing.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— David L., Software Engineer, Seattle</p>
-            </div>
-
-            {/* Testimonial 6 — Diaspora Donor */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <div className="flex items-center gap-1 mb-3">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="text-gray-600 text-sm italic mb-4">
-                &quot;Growing up in Nepal, I know how much a doctor visit means to rural families. Donating to Nivaran feels personal. They&apos;re doing the work I wish I could do myself.&quot;
-              </p>
-              <p className="text-gray-800 font-medium text-sm">— Anil T., Nepali Diaspora, Toronto, Canada</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
       <section className="w-full px-4 pb-12">
         <div className="max-w-[1320px] mx-auto">
           <DonationFAQ />

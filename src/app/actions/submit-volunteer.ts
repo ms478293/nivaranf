@@ -1,12 +1,12 @@
 'use server'
 
 import { supabaseAdmin } from "@/lib/supabase/server";
-import { Resend } from 'resend';
+import { getMailer } from "@/lib/mailer";
 import { getVolunteerApplicationTemplate } from "@/lib/email-templates";
 import { ALLOWED_FILE_TYPES, MAX_FILE_SIZE } from "@/components/new/CareerForm/jobApplicationSchema";
 
 export async function submitVolunteer(formData: FormData) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = getMailer();
   try {
     const programId = formData.get('programId') as string;
     const programName = formData.get('programName') as string;

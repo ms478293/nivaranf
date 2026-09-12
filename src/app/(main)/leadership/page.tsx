@@ -59,7 +59,7 @@ const governanceFacts = [
   { label: "Board seats listed", value: String(LEADERSHIP_DATA[0]?.members.length || 0) },
   { label: "Leadership roles listed", value: String(totalLeaders) },
   { label: "Legal entity", value: "Nivaran Foundation" },
-  { label: "Tax status", value: "501(c)(3)" },
+  { label: "Tax status", value: "Recognition not yet granted" },
   { label: "EIN", value: "41-2656587" },
   { label: "U.S. office", value: "Arlington, MA" },
 ];
@@ -127,7 +127,7 @@ export default function LeadershipPage() {
                 Governance reference
               </h2>
               <p className="mt-3 text-sm leading-7 text-gray-600">
-                Nivaran Foundation is a U.S.-registered 501(c)(3) nonprofit with
+                Nivaran Foundation is a Nepal-focused foundation with
                 field operations focused on underserved communities in Nepal.
                 Leadership oversight spans board governance, program delivery,
                 finance, fundraising, communications, and operations.

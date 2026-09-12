@@ -26,12 +26,12 @@ const AboutNivaran = ({
               </h2>
               <p className="text-gray-600 text-xs sm:text-sm">
                 {SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health
-                camps across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}
+                camps across all {SANJEEVANI_PUBLIC_STATS.provincesCoveredText}{" "}
                 provinces delivering essential medical services and reaching{" "}
-                {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients so far.
+                {SANJEEVANI_PUBLIC_STATS.patientsServedText} patients{" "}
+                {SANJEEVANI_PUBLIC_STATS.asOfLabel}.
               </p>
-              <p className="text-primary-500 font-bold text-xl sm:text-2xl mt-2 sm:mt-3">70%</p>
-              <p className="text-gray-600 text-xs">of our funds</p>
+              
             </div>
             <div className="absolute right-0 bottom-0 w-[40%] sm:w-[200px] h-full overflow-hidden">
               <Image
@@ -52,12 +52,11 @@ const AboutNivaran = ({
                 Education
               </h2>
               <p className="text-gray-600 text-xs sm:text-sm">
-                Ensuring every child has access to quality learning through
-                teacher training, scholarships, and school infrastructure in
-                underserved communities.
+                A planned programme for 2027: teacher training, scholarships and
+                school infrastructure in underserved communities. Not yet
+                launched.
               </p>
-              <p className="text-[#FCAC2B] font-bold text-xl sm:text-2xl mt-2 sm:mt-3">30%</p>
-              <p className="text-gray-600 text-xs">of our funds</p>
+              
             </div>
             <div className="absolute right-0 bottom-0 w-[40%] sm:w-[200px] h-full overflow-hidden">
               <Image

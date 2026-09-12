@@ -24,9 +24,8 @@ export const LogoAndDescription = ({
         ></Image>
       </Link>
       <div className="  lg:text-justify text-gray-600 pr-3 text-sm md:text-md">
-        NIVARAN FOUNDATION is a 501(c)(3) nonprofit running free mobile health
-        camps and education programs across rural Nepal since 2024. Every dollar
-        directly funds healthcare and learning for underserved communities.
+        NIVARAN FOUNDATION is a nonprofit running free mobile health
+        camps and education programs across rural Nepal since 2024.
       </div>
     </div>
   );
@@ -110,7 +109,7 @@ const FooterMiddle = () => {
       {/* Organization Details */}
       <p className="leading-relaxed">
         <span className="font-bold text-primary-main">NIVARAN FOUNDATION</span>{" "}
-        is a 501(c)(3) not-for-profit organization.
+        is a not-for-profit organization.
       </p>
 
       {/* Copyright */}

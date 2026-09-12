@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import GaupalikaClientWrapper from "@/components/new/gaupalika/GaupalikaClientWrapper";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: false },
   title: "Gaupalika Coverage Map | Nivaran Foundation",
   description:
     "View Nivaran Foundation's local coverage map and program footprint across Nepal municipalities and rural regions.",

@@ -47,4 +47,12 @@ export const STORY_CONTENT = [
     image: "/about-timeline/story-6.png",
     date: "2025 Jan",
   },
+  {
+    id: 7,
+    description:
+      "Phase I of Project Sanjeevani ran mobile health camps across Nepal from 2025 through February 2026, with 16 completed camps and 17,355 patients served in the published tracking window.",
+    title: "Sanjeevani Phase I Camps",
+    image: "/sanjeevani/sanjeevani-1.png",
+    date: "2025–Feb 2026",
+  },
 ];

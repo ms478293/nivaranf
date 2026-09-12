@@ -1,6 +1,6 @@
 'use server'
 
-import { Resend } from "resend";
+import { getMailer } from "@/lib/mailer";
 import { getContactTemplate } from "@/lib/email-templates";
 import { supabaseAdmin } from "@/lib/supabase/server";
 
@@ -101,7 +101,7 @@ export async function submitCSRInquiry(data: CSRInquiryData) {
       return { success: false, error: "Failed to save inquiry." };
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = getMailer();
 
     const company = escapeHtml(data.companyName);
     const name = escapeHtml(data.fullName);
