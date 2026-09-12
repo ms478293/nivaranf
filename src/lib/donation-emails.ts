@@ -2,7 +2,8 @@ import { getMailer } from "@/lib/mailer";
 import { getAdminNotification, getDonationReceiptTemplate } from "@/lib/email-templates";
 import type { Dedication, Designation } from "@/content/donation-designations";
 
-const FROM = "Nivaran Foundation <donations@nivaranfoundation.org>";
+// Sender domain must be verified with the active transport; MAIL_FROM in the runtime env wins.
+const FROM = "Nivaran Foundation <donations@updates.nivaranfoundation.org>";
 const REPLY_TO = "donations@nivaranfoundation.org";
 
 function escapeHtml(s: string) {

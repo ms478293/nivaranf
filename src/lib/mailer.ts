@@ -9,7 +9,8 @@ import { Resend } from "resend";
  *  1. SMTP (Zoho) when SMTP_HOST is set — SMTP_USER/SMTP_PASS (app password),
  *     SMTP_PORT (465), MAIL_FROM forces the From header to a mailbox/alias the
  *     SMTP account owns (Zoho rejects anything else).
- *  2. Resend when only RESEND_API_KEY is set.
+ *  2. Resend when only RESEND_API_KEY is set (MAIL_FROM also overrides the sender here;
+ *     Resend rejects any From outside a verified domain).
  *  3. Otherwise every send returns an error and nothing is thrown.
  */
 export type MailPayload = {
@@ -63,7 +64,12 @@ export function getMailer(): Mailer {
     return {
       emails: {
         send: async (p) => {
-          const { error } = await resend.emails.send({ ...p, to: Array.isArray(p.to) ? p.to : [p.to] });
+          const { error } = await resend.emails.send({
+            ...p,
+            // Resend only accepts senders on a verified domain; MAIL_FROM is the single override.
+            from: process.env.MAIL_FROM || p.from,
+            to: Array.isArray(p.to) ? p.to : [p.to],
+          });
           return { error: error ? { message: error.message } : null };
         },
       },
