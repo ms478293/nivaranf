@@ -27,6 +27,9 @@ export type DonationEmailInput = {
   cardType?: string;
   last4?: string;
   reference: string;
+  frequency?: "once" | "monthly";
+  nextChargeAt?: string;
+  manageUrl?: string;
 };
 
 /**
@@ -71,6 +74,9 @@ export async function sendDonationEmails(input: DonationEmailInput): Promise<voi
         dedication: dedication || undefined,
         paymentMethod: escapeHtml(paymentMethod),
         transactionId: escapeHtml(input.transactionId),
+        frequency: input.frequency,
+        nextChargeDate: input.nextChargeAt ? new Date(input.nextChargeAt).toLocaleDateString("en-US", { dateStyle: "long", timeZone: "UTC" }) : undefined,
+        manageUrl: input.manageUrl,
       }),
     });
     if (receipt.error) console.error("donor receipt failed", { reference: input.reference, error: receipt.error });
@@ -82,6 +88,7 @@ export async function sendDonationEmails(input: DonationEmailInput): Promise<voi
       html: getAdminNotification("New donation received", [
         { label: "Total charged", value: total },
         { label: "Gift amount", value: base },
+        { label: "Gift type", value: input.frequency === "monthly" ? "Monthly" : "One-time" },
         { label: "Processing costs covered", value: fee ?? "No" },
         {
           label: "Designation",

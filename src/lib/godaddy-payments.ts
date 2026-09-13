@@ -66,13 +66,14 @@ export class GoDaddyApiError extends Error {
   }
 }
 
-async function post<T>(path: string, body: unknown): Promise<T> {
+async function post<T>(path: string, body: unknown, requestId: string = randomUUID()): Promise<T> {
   const token = await getAccessToken();
   const res = await fetch(`${API_BASE}${path}`, {
     method: "POST",
-    headers: headers(token, randomUUID()),
+    headers: headers(token, requestId),
     body: JSON.stringify(body),
     cache: "no-store",
+    signal: AbortSignal.timeout(25000),
   });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) throw new GoDaddyApiError(res.status, json);
@@ -80,6 +81,7 @@ async function post<T>(path: string, body: unknown): Promise<T> {
 }
 
 type TokenizeResponse = {
+  cardOnFile?: boolean;
   status?: "ACTIVE" | "INVALID" | string;
   paymentToken?: string;
   card?: { type?: string; numberLast4?: string };
@@ -104,62 +106,48 @@ export type ChargeResult = {
   last4?: string;
 };
 
-export async function chargeNonce(input: {
-  nonce: string;
-  /** Total charged: gift + any covered processing cost. */
+export type PaymentInput = {
   amountCents: number;
   reference: string;
+  requestId: string;
   designation: string;
-  /** "honor:Name" | "memory:Name" */
   dedication?: string;
-  /** Donor email. Poynt's generic receipt is only sent while our own mailer (SMTP_HOST) is not configured. */
   receiptEmail?: string;
-}): Promise<ChargeResult> {
+  merchantInitiated?: boolean;
+};
+
+export async function tokenizeNonce(nonce: string, cardAgreement?: Record<string, unknown>) {
   const businessId = env("GD_BUSINESS_ID");
+  return post<TokenizeResponse>(`/businesses/${businessId}/cards/tokenize`, { nonce, ...(cardAgreement ? { card: { cardAgreement } } : {}) });
+}
 
-  const tokenized = await post<TokenizeResponse>(`/businesses/${businessId}/cards/tokenize`, {
-    nonce: input.nonce,
-  });
-  if (tokenized.status !== "ACTIVE" || !tokenized.paymentToken) {
-    return { approved: false, status: tokenized.status || "INVALID", processorStatus: "TokenizeFailed" };
-  }
-
+/** The same multi-use payment token endpoint documented for recurring payments. */
+export async function chargePaymentToken(input: PaymentInput & { paymentToken: string }): Promise<ChargeResult> {
+  const businessId = env("GD_BUSINESS_ID");
   const references = [
     { type: "CUSTOM", customType: "donation", id: input.reference },
     { type: "CUSTOM", customType: "designation", id: input.designation },
-    ...(input.dedication
-      ? [{ type: "CUSTOM", customType: "dedication", id: input.dedication.slice(0, 100) }]
-      : []),
+    ...(input.dedication ? [{ type: "CUSTOM", customType: "dedication", id: input.dedication.slice(0, 100) }] : []),
   ];
-
   const tx = await post<ChargeResponse>(`/businesses/${businessId}/cards/tokenize/charge`, {
     action: "SALE",
     context: { businessId },
-    amounts: {
-      transactionAmount: input.amountCents,
-      orderAmount: input.amountCents,
-      currency: "USD",
-    },
-    fundingSource: { cardToken: tokenized.paymentToken },
-    entryDetails: { customerPresenceStatus: "ECOMMERCE", entryMode: "KEYED" },
-    // We send the branded, itemized receipt ourselves; Poynt's generic one is only the fallback
-    // while no SMTP transport is configured, so the donor never ends up with nothing.
+    amounts: { transactionAmount: input.amountCents, orderAmount: input.amountCents, currency: "USD" },
+    fundingSource: { cardToken: input.paymentToken },
+    // Documented merchant-initiated saved-card charge; our journal schedules renewals.
+    ...(input.merchantInitiated ? { mit: true, intent: "UNSCHEDULED_COF_TXN" } : {}),
     emailReceipt: Boolean(input.receiptEmail) && !process.env.SMTP_HOST,
     ...(input.receiptEmail && !process.env.SMTP_HOST ? { receiptEmailAddress: input.receiptEmail } : {}),
     references,
-  });
-
-  const approved =
-    (tx.status === "CAPTURED" || tx.status === "AUTHORIZED") &&
-    tx.processorResponse?.status === "Successful";
-
+  }, input.requestId);
   return {
-    approved,
-    transactionId: tx.id,
-    status: tx.status,
-    processorStatus: tx.processorResponse?.status,
-    processorCode: tx.processorResponse?.statusCode,
-    cardType: tokenized.card?.type,
-    last4: tokenized.card?.numberLast4,
+    approved: (tx.status === "CAPTURED" || tx.status === "AUTHORIZED") && tx.processorResponse?.status === "Successful",
+    transactionId: tx.id, status: tx.status, processorStatus: tx.processorResponse?.status, processorCode: tx.processorResponse?.statusCode,
   };
+}
+
+export async function chargeNonce(input: PaymentInput & { nonce: string }): Promise<ChargeResult> {
+  const tokenized = await tokenizeNonce(input.nonce);
+  if (tokenized.status !== "ACTIVE" || !tokenized.paymentToken) return { approved: false, status: tokenized.status || "INVALID", processorStatus: "TokenizeFailed" };
+  return { ...await chargePaymentToken({ ...input, paymentToken: tokenized.paymentToken }), cardType: tokenized.card?.type, last4: tokenized.card?.numberLast4 };
 }

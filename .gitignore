@@ -49,3 +49,4 @@ next-env.d.ts
 .env.automation
 scripts/.push-queue.json
 .env*.local
+/.donation-data/

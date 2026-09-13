@@ -14,6 +14,9 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./DonationPage.module.css";
+import BillingAddressForm from "./BillingAddressForm";
+import CardBrands from "./CardBrands";
+import { EMPTY_BILLING, billingError } from "@/lib/donations/billing";
 import { type DonationCampaign, campaignDonationPath } from "@/content/donation-campaigns";
 
 const MIN_DOLLARS = 5;
@@ -33,6 +36,8 @@ type CollectEvent<T> = { type?: string; data: T };
 type CollectError = { message?: string; type?: string; source?: string };
 type NonceData = {
   nonce: string;
+  cardAgreement?: Record<string, unknown>;
+  cardOnFile?: boolean;
   firstName?: string;
   lastName?: string;
   emailAddress?: string;
@@ -77,19 +82,19 @@ function loadCollectSdk(): Promise<TokenizeJsCtor> {
 const COLLECT_FONT =
   "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
 const COLLECT_CUSTOM_CSS = {
-  container: `font-family: ${COLLECT_FONT}; color: #262626; background: transparent; padding: 0; margin: 0; -webkit-font-smoothing: antialiased;`,
+  container: `display: flex; flex-flow: row wrap; align-content: flex-start; justify-content: normal; font-family: ${COLLECT_FONT}; color: #262626; background: transparent; padding: 0; margin: 0; -webkit-font-smoothing: antialiased;`,
   sectionLabel: "display: none;",
   inputLabel:
-    "display: block; margin: 0 0 6px 0; font-family: inherit; font-size: 14px; font-weight: 500; line-height: 1.3; color: #5d5d5d;",
+    "display: block; margin: 0 0 6px 0; font-family: inherit; font-size: 12px; font-weight: 500; text-transform: none; line-height: 1.3; color: #5d5d5d;",
   requiredMark: "color: #eb5834; margin-left: 2px;",
   inputDefault:
-    "box-sizing: border-box; width: 100%; height: 48px; padding: 0 14px; margin: 0; font-family: inherit; font-size: 15px; line-height: 1.4; font-weight: 400; color: #262626; background: #ffffff; border: 1px solid #d1d1d1; border-radius: 12px; box-shadow: none; outline: none; transition: border-color 150ms ease, box-shadow 150ms ease; &::placeholder { color: #808080; opacity: 1; } &:hover { border-color: #f7a07a; } &:focus { border-color: #eb5834; box-shadow: 0 0 0 3px rgba(235, 88, 52, 0.22); } &[data-error=\"true\"] { border-color: #dc2626; box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15); }",
+    "box-sizing: border-box; width: 100%; height: 48px; padding: 0 14px; margin: 0; font-family: inherit; font-size: 15px; line-height: 1.4; font-weight: 400; color: #262626; background: #ffffff; border: 1px solid #dadfdc; border-radius: 6px; box-shadow: none; outline: none; transition: border-color 150ms ease, box-shadow 150ms ease; &::placeholder { color: #808080; opacity: 1; } &:hover { border-color: #f7a07a; } &:focus { border-color: #eb5834; box-shadow: 0 0 0 3px rgba(235, 88, 52, 0.09); } &[data-error=\"true\"] { border-color: #dc2626; box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15); }",
   inputError: "display: block; margin: 6px 0 0 0; font-family: inherit; font-size: 13px; line-height: 1.4; color: #dc2626;",
   rowCardNumber: "padding: 0; margin: 0 0 14px 0; width: 100%;",
   rowExpiration:
-    "padding: 0 6px 0 0; margin: 0 0 14px 0; box-sizing: border-box; width: 50%; @media (max-width: 420px) { width: 100%; padding: 0; }",
+    "padding: 0 6px 0 0; margin: 0 0 14px 0; box-sizing: border-box; width: 50%;",
   rowCVV:
-    "padding: 0 0 0 6px; margin: 0 0 14px 0; box-sizing: border-box; width: 50%; @media (max-width: 420px) { width: 100%; padding: 0; }",
+    "padding: 0 0 0 6px; margin: 0 0 14px 0; box-sizing: border-box; width: 50%;",
   rowZip: "padding: 0; margin: 0; width: 100%;",
   rowFirstName: "display: none;",
   rowLastName: "display: none;",
@@ -99,7 +104,7 @@ const COLLECT_CUSTOM_CSS = {
 const COLLECT_MOUNT_OPTIONS = {
   displayComponents: {
     labels: true,
-    zipCode: true,
+    zipCode: false,
     firstName: false,
     lastName: false,
     emailAddress: false,
@@ -115,6 +120,9 @@ type DedicationType = Dedication["type"];
 
 type ChargeResult = {
   transactionId?: string;
+  frequency?: "once" | "monthly";
+  nextChargeAt?: string;
+  manageUrl?: string;
   baseAmountCents: number;
   feeCents: number;
   totalCents: number;
@@ -162,7 +170,7 @@ const cls = {
 
 const TrustRow = () => (
   <div className={styles.trust}>
-    <p><Lock size={12} aria-hidden="true" /> Encrypted payment through GoDaddy</p>
+    <p><Lock size={12} aria-hidden="true" /> Secure, encrypted payment</p>
     <span>A donation receipt will be sent to your email.</span>
   </div>
 );
@@ -177,6 +185,13 @@ const Row = ({ k, v }: { k: string; v: string }) => (
 const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   const searchParams = useSearchParams();
 
+  const [frequency, setFrequency] = useState<"once" | "monthly">("once");
+  const [billingAddress, setBillingAddress] = useState({ ...EMPTY_BILLING });
+  const [monthlyConsent, setMonthlyConsent] = useState(false);
+  const [settings, setSettings] = useState({ monthly: false, addressSearch: false });
+  const [paymentPending, setPaymentPending] = useState(false);
+  const attemptRef = useRef("");
+  const submitLock = useRef(false);
   const [step, setStep] = useState<Step>("amount");
   const [selected, setSelected] = useState<number | "other">(campaign.defaultAmount);
   const [customAmount, setCustomAmount] = useState("");
@@ -198,8 +213,11 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   const firstNameRef = useRef<HTMLInputElement>(null);
   const customAmountRef = useRef<HTMLInputElement>(null);
   const prevStep = useRef<Step>("amount");
+  const nonceRequested = useRef(false);
 
   // ── derived ──
+  const amountOptions = frequency === "monthly" ? [10, 20, 30, 50, 100] : campaign.amounts;
+  const suggestedAmount = frequency === "monthly" ? 30 : campaign.defaultAmount;
   const baseDollars = selected === "other" ? Number(customAmount) || 0 : selected;
   const baseCents = Math.round(baseDollars * 100);
   const rawFee = feeCentsFor(baseCents);
@@ -219,9 +237,10 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
     firstName,
     lastName,
     email,
-    submitting,
+    submitting, frequency, billingAddress, monthlyConsent,
   });
   useEffect(() => {
+    if (submitLock.current) return;
     payloadRef.current = {
       baseCents,
       coverFees,
@@ -230,20 +249,31 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       firstName: firstName.trim(),
       lastName: lastName.trim(),
       email: email.trim(),
-      submitting,
+      submitting, frequency, billingAddress, monthlyConsent,
     };
   });
 
+  useEffect(() => {
+    fetch("/api/donate/settings").then((r) => r.json()).then(setSettings).catch(() => {});
+  }, []);
+
+  const changeFrequency = (value: "once" | "monthly") => {
+    setFrequency(value); setSelected(value === "monthly" ? 30 : campaign.defaultAmount);
+    setCustomAmount(""); setMonthlyConsent(false); setError("");
+  };
+
   // Campaign comes from the route. A conflicting query cannot change its fund.
   useEffect(() => {
+    const initialFrequency = searchParams.get("frequency") === "monthly" ? "monthly" : "once";
+    setFrequency(initialFrequency);
     const amountParam = searchParams.get("amount");
     const dollars = Number(amountParam);
     if (!amountParam || !Number.isFinite(dollars) || dollars < MIN_DOLLARS || dollars > MAX_DOLLARS) {
-      setSelected(campaign.defaultAmount);
+      setSelected(initialFrequency === "monthly" ? 30 : campaign.defaultAmount);
       setCustomAmount("");
       return;
     }
-    if (campaign.amounts.includes(dollars)) {
+    if ((initialFrequency === "monthly" ? [10, 20, 30, 50, 100] : campaign.amounts).includes(dollars)) {
       setSelected(dollars);
     } else {
       setSelected("other");
@@ -264,12 +294,16 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
     let cancelled = false;
     let collect: Collect | null = null;
     setFormReady(false);
+    const loadTimeout = setTimeout(() => {
+      if (!cancelled) setError("The secure card form is taking longer to load. Please refresh and try again.");
+    }, 25000);
     const businessId = process.env.NEXT_PUBLIC_GD_BUSINESS_ID;
     const applicationId = process.env.NEXT_PUBLIC_GD_APP_ID;
     if (!businessId || !applicationId) {
       setError(process.env.NODE_ENV === "development"
         ? "Card payments are not connected in this local preview yet."
         : "Online donations are temporarily unavailable. Please try again later.");
+      clearTimeout(loadTimeout);
       return;
     }
 
@@ -278,7 +312,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
         if (cancelled) return;
         collect = new TokenizeJs(businessId, applicationId);
         collect.on("ready", () => {
-          if (!cancelled) setFormReady(true);
+          clearTimeout(loadTimeout);
+          if (!cancelled) { setFormReady(true); setError(""); }
         });
         collect.on("iframe_height_change", (e) => {
           const height = Number((e.data as { height?: number })?.height);
@@ -291,8 +326,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
           const err = raw?.error ?? raw;
           // inlineErrors:true → Poynt emits source:"field" on every keystroke validation; the iframe shows those.
           if (err?.source === "field") return;
-          if (!payloadRef.current.submitting) return;
-          setSubmitting(false);
+          if (!submitLock.current) return;
+          setSubmitting(false); submitLock.current = false; nonceRequested.current = false; attemptRef.current = "";
           if (err?.type === "invalid_details" || err?.type === "missing_fields") {
             setError("Please check the highlighted card details.");
             return;
@@ -300,9 +335,16 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
           setError(err?.message || "Please check your card details and try again.");
         });
         collect.on("nonce", (e) => {
-          if (!cancelled) void charge(e.data as unknown as NonceData);
+          if (!cancelled && nonceRequested.current) { nonceRequested.current = false; void charge(e.data as unknown as NonceData); }
         });
-        collect.mount(CARD_ELEMENT_ID, document, COLLECT_MOUNT_OPTIONS);
+        collect.mount(CARD_ELEMENT_ID, document, {
+          ...COLLECT_MOUNT_OPTIONS,
+          ...(frequency === "monthly" ? {
+            enableCardOnFile: true,
+            forceSaveCardOnFile: true,
+            cardAgreementOptions: { businessName: "Nivaran Foundation Inc.", businessWebsite: "https://www.nivaranfoundation.org", businessPhone: "+1 857 701 7471" },
+          } : {}),
+        });
         collectRef.current = collect;
       })
       .catch((err) => {
@@ -310,7 +352,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       });
 
     return () => {
-      cancelled = true;
+      cancelled = true; clearTimeout(loadTimeout);
       collectRef.current = null;
       try {
         collect?.unmount(CARD_ELEMENT_ID, document);
@@ -319,16 +361,21 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step]);
+  }, [step, frequency]);
 
   const charge = async (data: NonceData) => {
     const p = payloadRef.current;
     try {
+      if (p.frequency === "monthly" && (!data.cardOnFile || data.cardAgreement?.status !== "ACCEPTED")) {
+        attemptRef.current = "";
+        throw new Error("Please accept the saved-card agreement to set up your monthly gift.");
+      }
       const response = await fetch("/api/donate/charge", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           nonce: data.nonce,
+          cardAgreement: p.frequency === "monthly" ? data.cardAgreement : undefined,
           amountCents: p.baseCents,
           coverFees: p.coverFees,
           designation: p.designationId,
@@ -336,10 +383,13 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
           email: p.email,
           firstName: p.firstName,
           lastName: p.lastName,
+          billingAddress: p.billingAddress, frequency: p.frequency, monthlyConsent: p.monthlyConsent, attemptId: attemptRef.current,
         }),
       });
-      const payload = (await response.json().catch(() => ({}))) as ChargeResult & { error?: string };
+      const payload = (await response.json().catch(() => ({}))) as ChargeResult & { error?: string; retryAllowed?: boolean; pending?: boolean };
       if (!response.ok || payload.error) {
+        if (payload.retryAllowed) attemptRef.current = "";
+        if (payload.pending) setPaymentPending(true);
         throw new Error(payload.error || "We couldn't process your donation. Please try again.");
       }
       trackDonation(payload.totalCents / 100);
@@ -348,11 +398,12 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
     } catch (err) {
       setError(err instanceof Error ? err.message : "We couldn't process your donation.");
     } finally {
-      setSubmitting(false);
+      setSubmitting(false); submitLock.current = false;
     }
   };
 
   const continueToCard = () => {
+    if (frequency === "monthly" && !settings.monthly) { setError("Monthly giving is being connected. Please choose a one-time gift for now."); return; }
     if (!amountOk) {
       setError(
         totalCents > MAX_CENTS
@@ -371,7 +422,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   };
 
   const submitCard = () => {
-    if (!collectRef.current || submitting) return;
+    if (!collectRef.current || submitLock.current || paymentPending) return;
     const f = firstName.trim();
     const l = lastName.trim();
     const m = email.trim();
@@ -384,9 +435,13 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       setError("Please enter a valid email address so we can send your receipt.");
       return;
     }
-    setError("");
+    const addressError = billingError(billingAddress);
+    if (addressError) { setError(addressError); document.getElementById("billing-heading")?.scrollIntoView({ behavior: "smooth", block: "center" }); return; }
+    if (frequency === "monthly" && !monthlyConsent) { setError("Please authorize the monthly gift before continuing."); return; }
+    setError(""); submitLock.current = true; nonceRequested.current = true;
+    attemptRef.current ||= crypto.randomUUID();
     setSubmitting(true);
-    collectRef.current.getNonce({ emailAddress: m, firstName: f, lastName: l });
+    collectRef.current.getNonce({ emailAddress: m, firstName: f, lastName: l, line1: billingAddress.line1, line2: billingAddress.line2, city: billingAddress.city, territory: billingAddress.region, countryCode: billingAddress.countryCode, zipCode: billingAddress.postalCode });
   };
 
   const backToAmount = () => {
@@ -397,6 +452,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
   const donateAgain = () => {
     setResult(null);
+    attemptRef.current = ""; setPaymentPending(false); setMonthlyConsent(false);
     setError("");
     setStep("amount");
   };
@@ -427,10 +483,18 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               <p className={cls.sub}>{campaign.formIntro}</p>
             </div>
 
+            <fieldset className={styles.frequencyControl}>
+              <legend className="sr-only">Gift frequency</legend>
+              {(["once", "monthly"] as const).map((f) => <label key={f}>
+                <input type="radio" name="gift-frequency" value={f} checked={frequency === f} onChange={() => changeFrequency(f)} />
+                <span>{f === "once" ? "One-time" : "Monthly"}{f === "monthly" && <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" /></svg>}</span>
+              </label>)}
+            </fieldset>
+            <p className={styles.frequencyNote}>{frequency === "monthly" ? "Care that continues, month after month. Cancel anytime." : "One act of kindness. A lasting difference."}</p>
             <fieldset>
-              <legend className={styles.amountLegend}><span>Your one-time gift</span><span>USD</span></legend>
+              <legend className={styles.amountLegend}><span>{frequency === "monthly" ? "Your monthly gift" : "Choose your gift"}</span><span>USD</span></legend>
               <div className={styles.amountGrid}>
-                {campaign.amounts.map((amount) => (
+                {amountOptions.map((amount) => (
                   <div key={amount}>
                     <input
                       type="radio"
@@ -494,6 +558,10 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               )}
             </fieldset>
 
+            <div className={styles.giftSuggestion}>
+              <svg width="32" height="29" viewBox="0 0 32 29" fill="none" aria-hidden="true"><path d="M30 26C12 27 6 18 5 3M1 9l4-6 6 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <p>Not sure where to start?<br /><strong>{formatCents(suggestedAmount * 100)}{frequency === "monthly" ? " a month" : " is a suggested gift"}.</strong></p>
+            </div>
             <details className={styles.options}>
               <summary>Dedication & gift options <ChevronDown size={16} aria-hidden="true" /></summary>
             <div className="flex flex-col gap-3">
@@ -568,7 +636,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
             )}
 
             <AppButton type="button" className={cls.cta} onClick={continueToCard}>
-              {amountOk ? `Continue with ${formatCents(totalCents)}` : "Continue"}<ArrowRight size={18} aria-hidden="true" />
+              {amountOk ? `Continue with ${formatCents(totalCents)}${frequency === "monthly" ? " / month" : ""}` : "Continue"}<ArrowRight size={18} aria-hidden="true" />
             </AppButton>
             <TrustRow />
             {designation.id !== "general" && <p className={styles.varianceNote}>{VARIANCE_NOTE}</p>}
@@ -577,20 +645,20 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
         {/* ───────────── STEP 2 · details + card ───────────── */}
         {step === "card" && (
-          <div className="flex flex-col gap-6">
+          <fieldset disabled={submitting || paymentPending} className="flex min-w-0 flex-col gap-6 border-0 p-0">
             <div className="flex flex-col gap-1">
 
               <h2 ref={headingRef} tabIndex={-1} className={cls.h2}>
-                Your details
+                Complete your gift
               </h2>
             </div>
 
-            <section className={cls.summary} aria-labelledby="donate-summary-heading">
+            <section className={styles.giftSummary} aria-labelledby="donate-summary-heading">
               <h3 id="donate-summary-heading" className="sr-only">
                 Gift summary
               </h3>
               <div className={cls.summaryRow}>
-                <span className="text-gray-600">Gift</span>
+                <span className="text-gray-600">{frequency === "monthly" ? "Monthly gift" : "One-time gift"}</span>
                 <span className="font-semibold text-gray-950">{formatCents(baseCents)}</span>
               </div>
               {designation.id !== "general" && <div className={cls.summaryRow}>
@@ -614,13 +682,15 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
                 <span className="text-lg font-semibold text-primary-600">{formatCents(totalCents)}</span>
               </div>
               <div className="py-2">
-                <button type="button" onClick={backToAmount} className={cls.linkBtn}>
+                <button type="button" onClick={backToAmount} disabled={submitting || paymentPending || !!attemptRef.current} className={cls.linkBtn}>
                   Edit gift
                 </button>
               </div>
             </section>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <section className={styles.formSection} aria-labelledby="donor-heading">
+            <div className={styles.sectionTitle}><h3 id="donor-heading">Your information</h3></div>
+            <div className={styles.fieldGrid}>
               <div>
                 <label htmlFor="donate-first-name" className={cls.label}>
                   First name
@@ -652,7 +722,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
                   className={cls.input}
                 />
               </div>
-              <div className="sm:col-span-2">
+              <div className={styles.fullField}>
                 <label htmlFor="donate-email" className={cls.label}>
                   Email
                 </label>
@@ -672,9 +742,12 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               </div>
             </div>
 
-            <div>
-              <p className={cls.label}>Card details</p>
-              <div className="relative min-h-[232px]">
+            </section>
+            <BillingAddressForm value={billingAddress} onChange={setBillingAddress} searchEnabled={settings.addressSearch} />
+            <section className={styles.formSection} aria-labelledby="payment-heading">
+              <div className={styles.sectionTitle}><h3 id="payment-heading">Payment details</h3><Lock size={15} aria-hidden="true" /></div>
+              <div className={styles.cardMethod}><span>Credit or debit card</span><CardBrands /></div>
+              <div className="relative min-h-[160px]">
                 <div id={CARD_ELEMENT_ID} />
                 {!formReady && !error && (
                   <div className="absolute inset-0 flex flex-col gap-3.5 bg-white" aria-hidden="true">
@@ -690,26 +763,25 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
                   {formReady ? "Secure card form ready." : error ? "Secure card form unavailable." : "Loading secure card form…"}
                 </p>
               </div>
-            </div>
+            </section>
 
-            {error && (
-              <p role="alert" className={cls.error}>
-                {error}
-              </p>
-            )}
-
-            <AppButton type="button" className={cls.cta} onClick={submitCard} disabled={!formReady || submitting}>
+            {frequency === "monthly" && <label className={styles.monthlyConsent}>
+              <input type="checkbox" checked={monthlyConsent} onChange={(e) => setMonthlyConsent(e.target.checked)} />
+              <span>I authorize Nivaran Foundation to charge <strong>{formatCents(totalCents)} today and every month</strong> until I cancel. I can cancel online using the link in my receipt before the next scheduled payment.</span>
+            </label>}
+            {error && <p role="alert" className={cls.error}>{error}</p>}
+            <AppButton type="button" className={cls.cta} onClick={submitCard} disabled={!formReady || submitting || paymentPending}>
               {submitting ? (
                 "Processing…"
               ) : (
                 <>
                   <Lock className="h-4 w-4" aria-hidden="true" />
-                  {`Give ${formatCents(totalCents)} securely`}
+                  {frequency === "monthly" ? `Give ${formatCents(totalCents)} monthly` : `Give ${formatCents(totalCents)} securely`}
                 </>
               )}
             </AppButton>
             <TrustRow />
-          </div>
+          </fieldset>
         )}
 
         {/* ───────────── STEP 3 · success ───────────── */}
@@ -727,6 +799,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
             {doneDesignation.impactLine && <p className="text-sm text-gray-600">{doneDesignation.impactLine}</p>}
 
             <dl className={cls.doneRows}>
+              <Row k="Gift type" v={result.frequency === "monthly" ? "Monthly donation" : "One-time donation"} />
+              {result.nextChargeAt && <Row k="Next gift" v={new Date(result.nextChargeAt).toLocaleDateString("en-US", { dateStyle: "long", timeZone: "UTC" })} />}
               <Row k="Designation" v={doneDesignation.label} />
               {result.dedication && <Row k={dedicationLabel(result.dedication.type)} v={result.dedication.name} />}
               <Row k="Gift" v={formatCents(result.baseAmountCents)} />
@@ -741,6 +815,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               {result.transactionId && <Row k="Reference" v={result.transactionId.slice(0, 8).toUpperCase()} />}
             </dl>
 
+            {result.manageUrl && <a href={result.manageUrl} className={cls.linkBtn}>Manage or cancel your monthly gift</a>}
             <p className="text-sm text-gray-600">
               Your donation receipt is on its way to{" "}
               <span className="font-medium text-gray-950">{result.email}</span>. Keep it for your records.

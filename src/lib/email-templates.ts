@@ -234,6 +234,9 @@ export function getVolunteerApplicationTemplate(userContent: string) {
 }
 
 export type DonationReceiptInput = {
+  frequency?: "once" | "monthly";
+  nextChargeDate?: string;
+  manageUrl?: string;
   firstName: string;
   name: string;
   email: string;
@@ -296,13 +299,15 @@ export function getDonationReceiptTemplate(r: DonationReceiptInput) {
               ${r.fee ? receiptRow("Processing costs covered", r.fee) : ""}
               ${r.fee ? receiptRow("Total charged", r.total) : ""}
               ${receiptRow("Payment method", r.paymentMethod)}
-              ${receiptRow("Gift type", "One-time donation")}
+              ${receiptRow("Gift type", r.frequency === "monthly" ? "Monthly donation" : "One-time donation")}
+              ${r.nextChargeDate ? receiptRow("Next scheduled gift", r.nextChargeDate) : ""}
               ${receiptRow("Transaction ID", `<span style="font-family: SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500;">${r.transactionId}</span>`)}
               ${receiptRow("Received by", "Nivaran Foundation Inc.<br><span style=\"font-weight: 400; color: ${TEXT_MUTED};\">EIN 41-2656587 &bull; Arlington, MA, USA</span>", true)}
             </table>
           </td>
         </tr>
       </table>
+      ${r.frequency === "monthly" && r.manageUrl ? paragraph(`You authorized ${r.total} every month. <a href="${r.manageUrl}" style="color: ${PRIMARY};">Manage or cancel your monthly gift</a> before the next scheduled payment. Keep this private link for your records.`) : ""}
       ${paragraph(`<span style="color: ${TEXT_MUTED}; font-size: 13px;">${VARIANCE_NOTE}</span>`)}
       ${paragraph("No goods or services were provided in exchange for this contribution.")}
       ${paragraph(`Questions about your gift? Reply to this email or write to <a href="mailto:donations@nivaranfoundation.org" style="color: ${PRIMARY};">donations@nivaranfoundation.org</a>.`)}

@@ -69,7 +69,7 @@ export const TermsAndService = [
           "Donations are processed as described below. You will receive a donation receipt by email for your records.",
         list: [
           "Processing: We use GoDaddy Payments to process donations. By making a donation, you agree to GoDaddy Payments' terms and conditions.",
-          "Recurring Donations: If you select a recurring donation, you authorize us to charge your payment method at the specified interval until you cancel.",
+          "Monthly Donations: When you choose monthly giving and authorize it at checkout, we charge the displayed total today and once each month until you cancel. The total includes any processing contribution you select. Shorter months use the last day when necessary. Use the private link in any monthly donation receipt to cancel before the next scheduled payment, or contact us for assistance. A payment already being processed may still complete.",
           "Refunds: Donations are generally non-refundable. Refund requests for errors will be reviewed on a case-by-case basis if submitted within 7 days of the transaction.",
           "Designated Funds: While we honor donor intent to support specific programs, we reserve the right to reallocate funds to other areas of need if a program is fully funded or cannot be carried out, ensuring your gift still supports our charitable mission.",
         ],

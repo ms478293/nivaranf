@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
-import { randomUUID } from "node:crypto";
-import { chargeNonce, GoDaddyApiError } from "@/lib/godaddy-payments";
+import { tokenizeNonce, chargePaymentToken, GoDaddyApiError } from "@/lib/godaddy-payments";
 import { sendDonationEmails } from "@/lib/donation-emails";
+import { parseBilling } from "@/lib/donations/billing";
+import { sameOrigin, withinLimit } from "@/lib/donations/request-guard";
+import { storeConfigured, claimAttempt, fingerprint, prepareSubscription, finishAttempt, nextMonthlyDate, managementToken } from "@/lib/donations/store.mjs";
 import {
   feeCentsFor,
   getDesignation,
@@ -16,7 +18,7 @@ const MAX_AMOUNT_CENTS = 2_500_000; // $25,000 per card transaction (applies to 
 const OVER_MAX_MESSAGE = "For gifts over $25,000 please contact us so we can arrange a transfer.";
 const DECLINED_MESSAGE = "Your card was declined. Please check the details or try another card.";
 
-const bad = (error: string, status = 400) => NextResponse.json({ error }, { status });
+const bad = (error: string, status = 400, extra = {}) => NextResponse.json({ error, ...extra }, { status, headers: { "Cache-Control": "no-store" } });
 
 function parseAmountCents(value: unknown): number | null {
   const amount = Number(value);
@@ -51,6 +53,8 @@ function parseDedication(value: unknown): Dedication | undefined | null {
 }
 
 export async function POST(req: Request) {
+  if (!sameOrigin(req)) return bad("Please use the donation form on our website.", 403);
+  if (!withinLimit(req, "charge", 8)) return bad("Please wait a minute before trying again.", 429);
   let body: Record<string, unknown>;
   try {
     body = await req.json();
@@ -85,13 +89,42 @@ export async function POST(req: Request) {
   const firstName = parseName(body?.firstName);
   const lastName = parseName(body?.lastName);
   if (!firstName || !lastName) return bad("Please enter your first and last name.");
-
-  const reference = `web-donate-${randomUUID()}`;
+  const billingAddress = parseBilling(body.billingAddress);
+  if (!billingAddress) return bad("Please complete your billing address.");
+  const frequency = body.frequency ?? "once";
+  if (frequency !== "once" && frequency !== "monthly") return bad("Please choose one-time or monthly giving.");
+  if (!storeConfigured()) return bad("Online giving is being configured. Please try again later.", 503);
+  if (frequency === "monthly" && (process.env.DONATION_MONTHLY_ENABLED !== "true" || body.monthlyConsent !== true)) return bad("Please confirm your monthly donation authorization.");
+  const cardAgreement = body.cardAgreement as Record<string, unknown> | undefined;
+  if (frequency === "monthly" && (!cardAgreement || typeof cardAgreement !== "object" || cardAgreement.status !== "ACCEPTED" || cardAgreement.email !== email || JSON.stringify(cardAgreement).length > 5000)) return bad("Please accept the saved-card agreement for your monthly gift.");
+  const attemptId = typeof body.attemptId === "string" ? body.attemptId : "";
+  if (!/^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i.test(attemptId)) return bad("Please refresh the donation form.");
+  const input = { email, firstName, lastName, baseAmountCents, feeCents, totalCents, designationId: designation.id, dedication: dedication ?? null, billingAddress, frequency };
+  const claimed = claimAttempt(attemptId, fingerprint(input));
+  if (!claimed.claimed) {
+    if (claimed.conflict) return bad("Your gift details have changed. Please start a new payment attempt.", 409);
+    if (claimed.state === "approved") return NextResponse.json(claimed.result, { headers: { "Cache-Control": "no-store" } });
+    if (claimed.state === "declined") return bad(DECLINED_MESSAGE, 402, { retryAllowed: true });
+    return bad("We are checking your payment status. Please do not submit another gift; contact us if you need help.", 409, { pending: true });
+  }
+  const reference = `web-donate-${attemptId}`;
+  let subscriptionId: string | null = null;
 
   try {
-    const result = await chargeNonce({
-      nonce,
+    const tokenized = await tokenizeNonce(nonce, frequency === "monthly" ? cardAgreement : undefined);
+    if (tokenized.status !== "ACTIVE" || !tokenized.paymentToken || (frequency === "monthly" && tokenized.cardOnFile !== true)) {
+      finishAttempt(attemptId, "declined", { error: DECLINED_MESSAGE });
+      return bad(DECLINED_MESSAGE, 402, { retryAllowed: true });
+    }
+    const anchor = new Date().toISOString();
+    if (frequency === "monthly") {
+      prepareSubscription(attemptId, { ...input, paymentToken: tokenized.paymentToken, cardType: tokenized.card?.type, last4: tokenized.card?.numberLast4, anchor, consentVersion: "monthly-v1", consentAt: anchor });
+      subscriptionId = attemptId;
+    }
+    const result = await chargePaymentToken({
+      paymentToken: tokenized.paymentToken,
       amountCents: totalCents,
+      requestId: attemptId,
       reference,
       designation: designation.id,
       dedication: dedication ? `${dedication.type}:${dedication.name}` : undefined,
@@ -106,7 +139,8 @@ export async function POST(req: Request) {
         processorStatus: result.processorStatus,
         processorCode: result.processorCode,
       });
-      return bad(DECLINED_MESSAGE, 402);
+      finishAttempt(attemptId, "declined", { error: DECLINED_MESSAGE }, subscriptionId);
+      return bad(DECLINED_MESSAGE, 402, { retryAllowed: true });
     }
 
     console.log("donation approved", {
@@ -121,6 +155,10 @@ export async function POST(req: Request) {
       last4: result.last4,
     });
 
+    const nextChargeAt = frequency === "monthly" ? nextMonthlyDate(anchor) : undefined;
+    const manageUrl = subscriptionId ? `https://www.nivaranfoundation.org/donate/manage#${managementToken(subscriptionId)}` : undefined;
+    const response = { transactionId: result.transactionId, baseAmountCents, feeCents, totalCents, amountCents: totalCents, cardType: tokenized.card?.type, last4: tokenized.card?.numberLast4, email, designation: designation.id, dedication: dedication ?? null, frequency, nextChargeAt, manageUrl };
+    finishAttempt(attemptId, "approved", response, subscriptionId, nextChargeAt);
     await sendDonationEmails({
       email,
       firstName,
@@ -131,30 +169,21 @@ export async function POST(req: Request) {
       designation,
       dedication,
       transactionId: result.transactionId || reference,
-      cardType: result.cardType,
-      last4: result.last4,
+      cardType: tokenized.card?.type,
+      last4: tokenized.card?.numberLast4,
       reference,
+      frequency, nextChargeAt, manageUrl,
     });
 
-    return NextResponse.json({
-      transactionId: result.transactionId,
-      baseAmountCents,
-      feeCents,
-      totalCents,
-      amountCents: totalCents, // legacy field = amount charged
-      cardType: result.cardType,
-      last4: result.last4,
-      email,
-      designation: designation.id,
-      dedication: dedication ?? null,
-    });
+    return NextResponse.json(response, { headers: { "Cache-Control": "no-store" } });
   } catch (err) {
+    // A timeout or processor error can still mean a completed sale. Reconcile first.
+    finishAttempt(attemptId, "review", { error: "Payment requires review" }, subscriptionId);
     if (err instanceof GoDaddyApiError) {
-      console.error("donation charge API error", { reference, status: err.status, body: err.body });
-      if (err.status >= 400 && err.status < 500) return bad(DECLINED_MESSAGE, 402);
+      console.error("donation charge requires review", { reference, status: err.status });
     } else {
-      console.error("donation charge failed", { reference, err });
+      console.error("donation charge requires review", { reference });
     }
-    return bad("We couldn't process your donation right now. Please try again in a moment.", 500);
+    return bad("We could not confirm the payment status. Please do not submit another gift. Contact us and quote " + attemptId.slice(0, 8).toUpperCase() + ".", 409, { pending: true });
   }
 }

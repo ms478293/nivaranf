@@ -15,7 +15,7 @@ export default function PublicSiteLayout({ children }: { children: React.ReactNo
     return <><NivaranHeader /><main id="main-content" className="relative pt-28">{children}</main><WhatsAppButton /><NivaranFooter /></>;
   }
   return (
-    <div className={styles.shell}>
+    <div className={styles.shell} data-manage={pathname === "/donate/manage" ? "true" : undefined}>
       <header className={styles.header}>
         <Link href="/" aria-label="Nivaran Foundation home"><NivaranLogo className={styles.logo} /></Link>
         <span className={styles.secure}><LockKeyhole size={14} aria-hidden="true" /> Secure giving</span>
