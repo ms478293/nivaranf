@@ -18,7 +18,7 @@ let calls = 0, emails = 0, behavior = "approved", lastInput;
 const processor = {
   GoDaddyApiError: class extends Error {},
   tokenizeNonce: async (_nonce, agreement) => ({ status: "ACTIVE", paymentToken: "synthetic-token", cardOnFile: behavior !== "no-cof" && !!agreement, card: { type: "VISA", numberLast4: "4242" } }),
-  chargePaymentToken: async (input) => { calls++; lastInput = input; if (behavior === "timeout") throw new Error("Simulated uncertain result"); return { approved: behavior !== "declined", transactionId: "simulated-transaction" }; },
+  chargePaymentToken: async (input) => { calls++; lastInput = input; if (behavior === "timeout") throw new Error("Simulated uncertain result"); return { approved: behavior === "approved", status: behavior === "declined" ? "DECLINED" : behavior === "approved" ? "CAPTURED" : "PENDING", transactionId: "simulated-transaction" }; },
 };
 const mocks = { "@/lib/godaddy-payments": processor, "@/lib/donation-emails": { sendDonationEmails: async () => { emails++; } }, "@/lib/donations/store.mjs": store };
 const cache = new Map();
@@ -34,9 +34,19 @@ const charge = load("src/app/api/donate/charge/route.ts").POST;
 const renew = load("src/app/api/donate/renew/route.ts").POST;
 const manage = load("src/app/api/donate/manage/route.ts").POST;
 const bill = load("src/lib/donations/billing.ts");
+const client = load("src/lib/donations/payment-client.ts");
 const request = (path, body, ip = randomUUID()) => new Request(`https://www.nivaranfoundation.org/api/donate/${path}`, { method: "POST", headers: { origin: "https://www.nivaranfoundation.org", "content-type": "application/json", "x-forwarded-for": ip }, body: JSON.stringify(body) });
 const base = () => ({ attemptId: randomUUID(), nonce: "synthetic-nonce", amountCents: 3000, designation: "maternal-child-health", frequency: "once", email: "donor@example.invalid", firstName: "Test", lastName: "Donor", billingAddress: { line1: "1 Test Street", line2: "", city: "Toronto", region: "ON", countryCode: "CA", postalCode: "M5V 1A1" } });
 try {
+  const attempt = { attemptId: randomUUID() };
+  const isUncertain = (error) => error instanceof client.DonationPaymentError && error.pending && !error.retryAllowed;
+  await assert.rejects(client.submitDonationPayment(attempt, async () => { throw new Error("Connection lost after sending payment"); }), isUncertain);
+  await assert.rejects(client.submitDonationPayment(attempt, async () => new Response("<html>Gateway timeout</html>", { status: 504 })), isUncertain);
+  await assert.rejects(client.submitDonationPayment(attempt, async () => Response.json({})), isUncertain);
+  await assert.rejects(client.submitDonationPayment(attempt, async () => Response.json({ error: "Checking payment", pending: true }, { status: 409 })), isUncertain);
+  await assert.rejects(client.submitDonationPayment(attempt, async () => Response.json({ error: "Declined", retryAllowed: true }, { status: 402 })), (error) => error.retryAllowed && !error.pending);
+  const success = { totalCents: 3000, baseAmountCents: 3000, feeCents: 0, email: "donor@example.invalid", designation: "general" };
+  assert.deepEqual(await client.submitDonationPayment(attempt, async () => Response.json(success)), success);
   const v = base();
   assert.equal((await charge(request("charge", { ...v, billingAddress: { ...v.billingAddress, countryCode: "ZZ" } }))).status, 400);
   assert.equal((await charge(request("charge", { ...v, designation: "vidya" }))).status, 400);
@@ -63,6 +73,10 @@ try {
   assert.equal((await charge(request("charge", uncertain))).status, 409);
   const n = calls;
   assert.equal((await charge(request("charge", uncertain))).status, 409); assert.equal(calls, n);
+  behavior = "pending"; const pending = base();
+  const pendingResponse = await charge(request("charge", pending));
+  assert.equal(pendingResponse.status, 409); assert.equal((await pendingResponse.json()).pending, true);
+  assert.equal(store.claimAttempt(pending.attemptId, "different").state, "review");
   behavior = "approved";
   const dueId = randomUUID(); store.prepareSubscription(dueId, { ...base(), designationId: "general", baseAmountCents: 3000, feeCents: 0, totalCents: 3000, paymentToken: "synthetic-token", anchor: "2025-01-31T12:00:00.000Z" });
   store.claimAttempt(dueId, "due"); store.finishAttempt(dueId, "approved", {}, dueId, "2025-02-28T12:00:00.000Z");

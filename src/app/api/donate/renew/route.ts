@@ -22,6 +22,7 @@ export async function POST(req: Request) {
       if (getSubscription(due.id)?.state === "cancelled") { finishAttempt(due.attemptId, "cancelled", {}); continue; }
       if (!isSelectableDesignation(p.designationId)) throw new Error("Fund closed; manual review required");
       const result = await chargePaymentToken({ paymentToken: p.paymentToken, amountCents: p.totalCents, requestId: due.attemptId, reference, designation: p.designationId, dedication: p.dedication ? `${p.dedication.type}:${p.dedication.name}` : undefined, receiptEmail: p.email, merchantInitiated: true });
+      if (!result.approved && result.status !== "DECLINED") throw new Error("Payment outcome requires reconciliation");
       const nextAt = result.approved ? nextMonthlyDate(p.anchor) : null;
       finishAttempt(due.attemptId, result.approved ? "approved" : "declined", { transactionId: result.transactionId, totalCents: p.totalCents }, due.id, nextAt);
       if (result.approved) {

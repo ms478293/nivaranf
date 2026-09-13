@@ -17,6 +17,7 @@ import styles from "./DonationPage.module.css";
 import BillingAddressForm from "./BillingAddressForm";
 import CardBrands from "./CardBrands";
 import { EMPTY_BILLING, billingError } from "@/lib/donations/billing";
+import { DonationPaymentError, submitDonationPayment, type ChargeResult } from "@/lib/donations/payment-client";
 import { type DonationCampaign, campaignDonationPath } from "@/content/donation-campaigns";
 
 const MIN_DOLLARS = 5;
@@ -117,21 +118,6 @@ const COLLECT_MOUNT_OPTIONS = {
 };
 
 type DedicationType = Dedication["type"];
-
-type ChargeResult = {
-  transactionId?: string;
-  frequency?: "once" | "monthly";
-  nextChargeAt?: string;
-  manageUrl?: string;
-  baseAmountCents: number;
-  feeCents: number;
-  totalCents: number;
-  cardType?: string;
-  last4?: string;
-  email: string;
-  designation: string;
-  dedication: Dedication | null;
-};
 
 type Step = "amount" | "card" | "done";
 
@@ -326,7 +312,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
           const err = raw?.error ?? raw;
           // inlineErrors:true → Poynt emits source:"field" on every keystroke validation; the iframe shows those.
           if (err?.source === "field") return;
-          if (!submitLock.current) return;
+          if (!submitLock.current || !nonceRequested.current) return;
           setSubmitting(false); submitLock.current = false; nonceRequested.current = false; attemptRef.current = "";
           if (err?.type === "invalid_details" || err?.type === "missing_fields") {
             setError("Please check the highlighted card details.");
@@ -370,32 +356,26 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
         attemptRef.current = "";
         throw new Error("Please accept the saved-card agreement to set up your monthly gift.");
       }
-      const response = await fetch("/api/donate/charge", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          nonce: data.nonce,
-          cardAgreement: p.frequency === "monthly" ? data.cardAgreement : undefined,
-          amountCents: p.baseCents,
-          coverFees: p.coverFees,
-          designation: p.designationId,
-          dedication: p.dedication,
-          email: p.email,
-          firstName: p.firstName,
-          lastName: p.lastName,
-          billingAddress: p.billingAddress, frequency: p.frequency, monthlyConsent: p.monthlyConsent, attemptId: attemptRef.current,
-        }),
+      const payload = await submitDonationPayment({
+        nonce: data.nonce,
+        cardAgreement: p.frequency === "monthly" ? data.cardAgreement : undefined,
+        amountCents: p.baseCents,
+        coverFees: p.coverFees,
+        designation: p.designationId,
+        dedication: p.dedication,
+        email: p.email,
+        firstName: p.firstName,
+        lastName: p.lastName,
+        billingAddress: p.billingAddress, frequency: p.frequency, monthlyConsent: p.monthlyConsent, attemptId: attemptRef.current,
       });
-      const payload = (await response.json().catch(() => ({}))) as ChargeResult & { error?: string; retryAllowed?: boolean; pending?: boolean };
-      if (!response.ok || payload.error) {
-        if (payload.retryAllowed) attemptRef.current = "";
-        if (payload.pending) setPaymentPending(true);
-        throw new Error(payload.error || "We couldn't process your donation. Please try again.");
-      }
       trackDonation(payload.totalCents / 100);
       setResult(payload);
       setStep("done");
     } catch (err) {
+      if (err instanceof DonationPaymentError) {
+        if (err.retryAllowed) attemptRef.current = "";
+        if (err.pending) setPaymentPending(true);
+      }
       setError(err instanceof Error ? err.message : "We couldn't process your donation.");
     } finally {
       setSubmitting(false); submitLock.current = false;

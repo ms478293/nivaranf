@@ -132,6 +132,7 @@ export async function POST(req: Request) {
     });
 
     if (!result.approved) {
+      if (result.status !== "DECLINED") throw new Error("Payment outcome requires reconciliation");
       console.warn("donation declined", {
         reference,
         transactionId: result.transactionId,

@@ -49,9 +49,9 @@ const GIVING_METHODS = [
     title: "Monthly Recurring Gift",
     icon: "🔄",
     description:
-      "Monthly donors provide sustained funding for health camps and let us plan multi-year projects with confidence. Contact us and we will set up your recurring gift with you.",
+      "Monthly donors provide sustained funding for health camps. Choose your monthly amount online and manage or cancel your gift using the private link in your receipt.",
     cta: "Set Up Monthly Giving",
-    href: "/contact-us",
+    href: "/donate?frequency=monthly",
     highlight: true,
   },
   {
