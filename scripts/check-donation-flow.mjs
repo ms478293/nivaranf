@@ -87,7 +87,7 @@ try {
   const once = calls; await renew(renewalRequest()); assert.equal(calls, once);
   assert.equal(bill.billingError({ ...v.billingAddress, countryCode: "HK", postalCode: "" }), null);
   assert.equal(bill.parseBilling({ ...v.billingAddress, city: "<script>" }), null);
-  const address = bill.addressFromGoogle([{ longText: "10", shortText: "10", types: ["street_number"] }, { longText: "Downing Street", shortText: "Downing St", types: ["route"] }, { longText: "London", shortText: "London", types: ["postal_town"] }, { longText: "United Kingdom", shortText: "GB", types: ["country"] }]);
+  const address = bill.addressFromGeoapify({ housenumber: "10", street: "Downing Street", city: "London", country_code: "gb" });
   assert.equal(address.line1, "10 Downing Street"); assert.equal(address.city, "London"); assert.equal(address.countryCode, "GB");
   console.log("Donation route checks passed: validation, monthly consent/COF, replay, conflict, cancellation, uncertain charge, authenticated renewal, address parsing. No real processor or email calls.");
 } finally { rmSync(dir, { recursive: true, force: true }); }

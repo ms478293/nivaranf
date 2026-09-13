@@ -1,22 +1,20 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { MapPin, Search } from "lucide-react";
-import { BILLING_COUNTRIES, type BillingAddress } from "@/lib/donations/billing";
+import { BILLING_COUNTRIES, type BillingAddress, type AddressSuggestion } from "@/lib/donations/billing";
 import styles from "./DonationPage.module.css";
-type Suggestion = { id: string; label: string };
 export default function BillingAddressForm({ value, onChange, searchEnabled }: { value: BillingAddress; onChange: (value: BillingAddress) => void; searchEnabled: boolean }) {
-  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [suggestions, setSuggestions] = useState<AddressSuggestion[]>([]);
   const [searching, setSearching] = useState(false);
   const [typed, setTyped] = useState(false);
   const [active, setActive] = useState(-1);
   const [message, setMessage] = useState("");
-  const session = useRef("");
   const sequence = useRef(0);
   const countryName = BILLING_COUNTRIES.find((country) => country.code === value.countryCode)?.name;
   const update = (key: keyof BillingAddress, text: string) => {
     ++sequence.current;
     setSuggestions([]); setActive(-1); setSearching(false); setMessage("");
-    if (key === "countryCode") { session.current = ""; setTyped(false); }
+    if (key === "countryCode") setTyped(false);
     onChange({ ...value, [key]: text });
   };
   useEffect(() => {
@@ -25,13 +23,12 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
     if (!searchEnabled || !value.countryCode || !typed || value.line1.trim().length < 3) { setSearching(false); return; }
     const abort = new AbortController();
     const timer = setTimeout(async () => {
-      session.current ||= crypto.randomUUID();
       setSearching(true); setMessage("");
       try {
-        const res = await fetch("/api/donate/address", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query: value.line1, countryCode: value.countryCode, session: session.current }), signal: abort.signal });
+        const res = await fetch("/api/donate/address", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query: value.line1, countryCode: value.countryCode }), signal: abort.signal });
         const data = await res.json();
         if (version !== sequence.current) return;
-        if (!res.ok) throw new Error(data.error);
+        if (!res.ok || !Array.isArray(data.suggestions)) throw new Error("Search unavailable");
         setSuggestions(data.suggestions);
         if (!data.suggestions.length) setMessage("No matching address? Complete the fields below.");
       } catch { if (!abort.signal.aborted && version === sequence.current) setMessage("You can enter your address manually below."); }
@@ -40,21 +37,12 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
     return () => { ++sequence.current; clearTimeout(timer); abort.abort(); };
   }, [value.line1, value.countryCode, searchEnabled, typed]);
 
-  async function choose(s: Suggestion) {
-    const version = ++sequence.current;
-    const searchSession = session.current;
-    session.current = "";
-    setSuggestions([]); setActive(-1); setSearching(true);
-    try {
-      const res = await fetch("/api/donate/address", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ placeId: s.id, countryCode: value.countryCode, session: searchSession }) });
-      const data = await res.json();
-      if (version !== sequence.current) return;
-      if (!res.ok || data.address?.countryCode !== value.countryCode) throw new Error();
-      setTyped(false);
-      onChange({ ...data.address, countryCode: value.countryCode, line1: data.address.line1 || value.line1, line2: data.address.line2 || value.line2 });
-      setMessage("Address filled in. Please check the details."); session.current = "";
-    } catch { if (version === sequence.current) setMessage("Please complete your address below."); }
-    finally { if (version === sequence.current) setSearching(false); }
+  function choose(s: AddressSuggestion) {
+    ++sequence.current;
+    setSuggestions([]); setActive(-1); setSearching(false); setTyped(false);
+    if (s.address?.countryCode !== value.countryCode) { setMessage("Please choose an address in your selected country."); return; }
+    onChange({ ...s.address, countryCode: value.countryCode, line1: s.address.line1 || value.line1, line2: value.line2 });
+    setMessage("Address filled in. Please check your street number and the details below.");
   }
   return <section className={styles.formSection} aria-labelledby="billing-heading">
     <div className={styles.sectionTitle}><h3 id="billing-heading">Billing information</h3><MapPin size={16} aria-hidden="true" /></div>
@@ -74,10 +62,10 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
           }} onBlur={(e) => { if (!e.currentTarget.parentElement?.contains(e.relatedTarget as Node)) { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); } }} />
           {!!suggestions.length && <div className={styles.addressDropdown}>
             <ul id="billing-suggestions" role="listbox" aria-label="Address suggestions">{suggestions.map((s, i) => <li id={`billing-suggestion-${i}`} key={s.id} role="option" aria-selected={active === i} onMouseDown={(e) => e.preventDefault()} onClick={() => void choose(s)}><MapPin size={15} aria-hidden="true" /><span>{s.label}</span></li>)}</ul>
-            <p className={styles.addressAttribution}>Google Maps</p>
           </div>}
         </div>
         <p id="billing-address-help" className={styles.fieldHelp} aria-live="polite">{!value.countryCode ? "Select your country above to get started." : searching ? "Finding your address…" : message || (searchEnabled ? `Search for your address in ${countryName}. You can also enter it manually.` : "Your browser can fill a saved address, or you can enter it below.")}</p>
+        {searchEnabled && <p className={styles.addressAttribution}>Powered by <a href="https://www.geoapify.com/" target="_blank" rel="noopener noreferrer">Geoapify</a></p>}
       </div>
       <div className={styles.fullField}><label htmlFor="billing-line2">Apartment, suite, etc. <span>Optional</span></label><input id="billing-line2" autoComplete="billing address-line2" maxLength={150} value={value.line2} onChange={(e) => update("line2", e.target.value)} placeholder="Apartment, suite or unit" /></div>
       <div><label htmlFor="billing-city">City / locality</label><input id="billing-city" autoComplete="billing address-level2" maxLength={150} value={value.city} onChange={(e) => update("city", e.target.value)} /></div>

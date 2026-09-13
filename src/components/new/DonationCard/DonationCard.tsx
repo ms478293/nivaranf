@@ -9,7 +9,7 @@ import {
 } from "@/content/donation-designations";
 import { trackDonateClick, trackDonation } from "@/lib/meta-pixel";
 import { cn } from "@/lib/utils";
-import { Lock, ArrowRight, ChevronDown, Check } from "lucide-react";
+import { Lock, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Fragment, useEffect, useRef, useState } from "react";
@@ -553,8 +553,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               )}
             </fieldset>
 
-            <details className={styles.options}>
-              <summary>Dedication & gift options <ChevronDown size={16} aria-hidden="true" /></summary>
+            <fieldset className={styles.options}>
+              <legend>Dedication & gift options <span>Optional</span></legend>
             <div className="flex flex-col gap-3">
               <label className={cls.checkRow}>
                 <input
@@ -618,7 +618,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               </label>
             </div>
 
-            </details>
+            </fieldset>
 
             {error && (
               <p role="alert" className={cls.error}>

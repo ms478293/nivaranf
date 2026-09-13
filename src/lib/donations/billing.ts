@@ -2,6 +2,7 @@ import countries from "world-countries";
 
 export const BILLING_COUNTRIES = countries.map((c) => ({ code: c.cca2, name: c.name.common })).sort((a, b) => a.name.localeCompare(b.name));
 export type BillingAddress = { line1: string; line2: string; city: string; region: string; postalCode: string; countryCode: string };
+export type AddressSuggestion = { id: string; label: string; address: BillingAddress };
 export const EMPTY_BILLING: BillingAddress = { line1: "", line2: "", city: "", region: "", postalCode: "", countryCode: "" };
 export function billingError(value: BillingAddress): string | null {
   if (!BILLING_COUNTRIES.some((c) => c.code === value.countryCode)) return "Please choose your billing country.";
@@ -21,10 +22,18 @@ export function parseBilling(value: unknown): BillingAddress | null {
   return billingError(result) ? null : result;
 }
 
-export function addressFromGoogle(components: { longText: string; shortText: string; types: string[] }[]): BillingAddress {
-  const part = (type: string, short = false) => {
-    const c = components.find((x) => x.types.includes(type));
-    return (short ? c?.shortText : c?.longText) || "";
+export function addressFromGeoapify(result: Record<string, unknown>): BillingAddress {
+  const text = (key: string) => typeof result[key] === "string" ? result[key].trim().replace(/[\u0000-\u001f<>]/g, "").slice(0, 150) : "";
+  const street = text("street"), number = text("housenumber"), displayLine = text("address_line1");
+  const streetLine = [number, street].filter(Boolean).join(" ");
+  const line1 = street && (!displayLine.includes(street) || (number && !displayLine.includes(number))) ? streetLine : displayLine || streetLine;
+  // address_line2 contains the city/region, not an apartment or suite.
+  return {
+    line1: line1.slice(0, 150),
+    line2: "",
+    city: text("city") || text("town") || text("village") || text("municipality") || text("suburb"),
+    region: text("state_code") || text("state"),
+    postalCode: text("postcode").slice(0, 24),
+    countryCode: text("country_code").toUpperCase(),
   };
-  return { line1: [part("street_number"), part("route")].filter(Boolean).join(" ") || part("premise"), line2: part("subpremise"), city: part("locality") || part("postal_town") || part("sublocality_level_1") || part("administrative_area_level_2"), region: part("administrative_area_level_1", true), postalCode: [part("postal_code"), part("postal_code_suffix")].filter(Boolean).join("-"), countryCode: part("country", true) };
 }

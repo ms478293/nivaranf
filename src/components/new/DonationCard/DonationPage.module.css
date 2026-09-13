@@ -37,10 +37,9 @@
 .amountGrid input:checked + .amountTile { background:#e85e3c; border-color:#e85e3c; color:#fff; box-shadow:0 6px 14px #e85e3c22; }
 .amountGrid input:focus-visible + .amountTile { outline:2px solid #405b39; outline-offset:4px; }
 .options { border-bottom:1px solid #dfe3d7; padding-bottom:1px; font-size:12px; }
-.options summary { list-style:none; display:flex; justify-content:space-between; align-items:center; padding:13px 0 16px; color:#818b77; font-size:11px; cursor:pointer; }
-.options summary::-webkit-details-marker { display:none; }
-.options summary svg { transition:transform .2s; }
-.options[open] summary svg { transform:rotate(180deg); }
+.options > legend { display:flex; width:100%; justify-content:space-between; align-items:center; margin-bottom:15px; color:#52604d; font-size:12px; font-weight:500; }
+.options > legend span { color:#96a08d; font-size:10px; font-weight:400; }
+.options input[type="checkbox"],.options input[type="radio"] { accent-color:var(--campaign-accent); }
 .options > div { padding:5px 0 22px; }
 .continueButton { display:flex; align-items:center; justify-content:space-between; height:58px!important; width:100%; padding:0 23px!important; border-radius:4px!important; background:#263d30!important; color:white!important; font-size:13px!important; font-weight:500!important; box-shadow:0 8px 18px #263d3012; transition:background .2s,transform .2s; }
 .continueButton:hover { background:#38573f!important; transform:translateY(-1px); }
@@ -93,7 +92,8 @@
 .addressDropdown li { display:flex; align-items:center; gap:10px; padding:12px; font-size:12px; line-height:1.5; border-bottom:1px solid #f0f2ed; color:#53624b; cursor:pointer; }
 .addressDropdown li svg { flex-shrink:0; }
 .addressDropdown li:hover,.addressDropdown li[aria-selected="true"] { background:#f1f4ee; }
-.addressAttribution { color:#6e746a; font-size:11px; text-align:right; padding:8px 12px; }
+.addressAttribution { color:#6e746a; font-size:10px; text-align:right; padding-top:5px; }
+.addressAttribution a { text-decoration:underline; text-underline-offset:2px; }
 .cardBrands { display:flex; align-items:center; gap:5px; }
 .cardBrands svg { width:37px; height:24px; }
 .cardMethod { display:flex; align-items:center; justify-content:space-between; gap:10px; font-size:11px; color:#697661; margin-bottom:22px; }
@@ -106,7 +106,7 @@
 @media(min-width:1450px) { .checkout { padding-inline:65px; } .intro { inset-inline:65px; bottom:60px; } .location { left:65px; right:65px; } .story { min-height:820px; } }
 @media(max-width:1000px) and (min-width:761px) { .header { padding-inline:28px; gap:15px; } .secure { display:none; } .checkout { padding-inline:28px; } .intro { inset-inline:28px; } .location { left:28px; right:28px; } .formHeading { font-size:28px; } .amountTile { height:67px; font-size:21px; } }
 @media(max-width:760px) { .header { height:78px; padding:0 23px; } .logo { height:40px!important; } .secure { display:none; } .back { color:#f2f0e8; font-size:9px; } .page { display:block; } .story { position:relative; height:350px; min-height:0; } .storyImage { object-position:var(--story-position,75% 38%); } .photoShade { background:linear-gradient(0deg,#112a21ed,#112a2150 60%); } .location { display:none; } .intro { inset-inline:24px; bottom:27px; } .eyebrow { font-size:7px; margin-bottom:12px; } .intro h1 { font-size:49px; line-height:1.02; } .description { display:none; } .storySignature { margin-top:15px; font-size:8px; } .checkout { padding:35px 26px 40px; } .steps { margin-bottom:28px; } .formHeading { font-size:29px; } .amountTile { height:66px; font-size:22px; } .amountGrid { gap:9px; } .support { margin-top:24px; } .footer { padding:22px 24px; flex-direction:column; text-align:center; gap:12px; } }
-@media(prefers-reduced-motion:reduce) { .storyImage,.intro,.checkoutInner { animation:none; } .amountTile,.continueButton,.options summary svg { transition:none; } }
+@media(prefers-reduced-motion:reduce) { .storyImage,.intro,.checkoutInner { animation:none; } .amountTile,.continueButton { transition:none; } }
 
 .page { --campaign-accent:#e85e3c; --campaign-button:#263d30; --campaign-hover:#38573f; }
 .page[data-tone="rose"] { --campaign-accent:#ad4f64; --campaign-button:#673848; --campaign-hover:#7a4255; background:#fcf8f6; }
