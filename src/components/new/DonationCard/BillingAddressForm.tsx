@@ -51,7 +51,7 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
       <div className={styles.fullField}><label htmlFor="billing-country">Country / region</label><select id="billing-country" name="billing-country" autoComplete="billing country" value={value.countryCode} onChange={(e) => update("countryCode", e.target.value)}><option value="">Select your country</option>{BILLING_COUNTRIES.map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}</select></div>
       <div className={styles.fullField}>
         <label htmlFor="billing-line1">Street address</label>
-        <div className={styles.addressSearch}>
+        <div className={styles.addressSearch} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); } }}>
           {searchEnabled && <Search size={16} aria-hidden="true" />}
           <input id="billing-line1" name="billing-line1" value={value.line1} autoComplete="billing address-line1" maxLength={150} placeholder={!value.countryCode ? "Select your country first" : searchEnabled ? "Start typing your address…" : "House number and street"} aria-describedby="billing-address-help" role={searchEnabled ? "combobox" : undefined} aria-autocomplete={searchEnabled ? "list" : undefined} aria-expanded={searchEnabled ? suggestions.length > 0 : undefined} aria-controls={suggestions.length ? "billing-suggestions" : undefined} aria-activedescendant={active >= 0 ? `billing-suggestion-${active}` : undefined} onChange={(e) => { setTyped(true); update("line1", e.target.value); }} onKeyDown={(e) => {
             if (e.key === "Escape") { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); }
@@ -59,7 +59,7 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
             if (e.key === "ArrowDown") { e.preventDefault(); setActive((a) => (a + 1) % suggestions.length); }
             if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => a <= 0 ? suggestions.length - 1 : a - 1); }
             if (e.key === "Enter" && active >= 0) { e.preventDefault(); void choose(suggestions[active]); }
-          }} onBlur={(e) => { if (!e.currentTarget.parentElement?.contains(e.relatedTarget as Node)) { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); } }} />
+          }} />
           {!!suggestions.length && <div className={styles.addressDropdown}>
             <ul id="billing-suggestions" role="listbox" aria-label="Address suggestions">{suggestions.map((s, i) => <li id={`billing-suggestion-${i}`} key={s.id} role="option" aria-selected={active === i} onMouseDown={(e) => e.preventDefault()} onClick={() => void choose(s)}><MapPin size={15} aria-hidden="true" /><span>{s.label}</span></li>)}</ul>
             <p className={styles.addressAttribution}>Powered by <a href="https://www.geoapify.com/" target="_blank" rel="noopener noreferrer">Geoapify</a></p>
