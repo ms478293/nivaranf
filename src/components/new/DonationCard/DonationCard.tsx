@@ -203,7 +203,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
   // ── derived ──
   const amountOptions = frequency === "monthly" ? [10, 20, 30, 50, 100] : campaign.amounts;
-  const suggestedAmount = frequency === "monthly" ? 30 : campaign.id === "maternal-child-health" ? 150 : campaign.defaultAmount;
+  const suggestedAmount = frequency === "monthly" ? 30 : campaign.defaultAmount;
   const suggestedIndex = amountOptions.indexOf(suggestedAmount);
   const suggestedColumn = suggestedIndex % 3;
   const baseDollars = selected === "other" ? Number(customAmount) || 0 : selected;

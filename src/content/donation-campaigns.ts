@@ -54,7 +54,7 @@ export const DONATION_CAMPAIGNS: readonly DonationCampaign[] = [
     image: "/images/maternalHealth.jpg",
     imageAlt: "A mother holding her newborn in a hospital ward",
     imagePosition: "62% center", tone: "rose",
-    amounts: [25, 50, 75, 150, 300], defaultAmount: 50,
+    amounts: [25, 50, 75, 150, 300], defaultAmount: 150,
   },
   {
     id: "education", category: "Education in Nepal",
