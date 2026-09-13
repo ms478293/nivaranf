@@ -62,10 +62,10 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
           }} onBlur={(e) => { if (!e.currentTarget.parentElement?.contains(e.relatedTarget as Node)) { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); } }} />
           {!!suggestions.length && <div className={styles.addressDropdown}>
             <ul id="billing-suggestions" role="listbox" aria-label="Address suggestions">{suggestions.map((s, i) => <li id={`billing-suggestion-${i}`} key={s.id} role="option" aria-selected={active === i} onMouseDown={(e) => e.preventDefault()} onClick={() => void choose(s)}><MapPin size={15} aria-hidden="true" /><span>{s.label}</span></li>)}</ul>
+            <p className={styles.addressAttribution}>Powered by <a href="https://www.geoapify.com/" target="_blank" rel="noopener noreferrer">Geoapify</a></p>
           </div>}
         </div>
         <p id="billing-address-help" className={styles.fieldHelp} aria-live="polite">{!value.countryCode ? "Select your country above to get started." : searching ? "Finding your address…" : message || (searchEnabled ? `Search for your address in ${countryName}. You can also enter it manually.` : "Your browser can fill a saved address, or you can enter it below.")}</p>
-        {searchEnabled && <p className={styles.addressAttribution}>Powered by <a href="https://www.geoapify.com/" target="_blank" rel="noopener noreferrer">Geoapify</a></p>}
       </div>
       <div className={styles.fullField}><label htmlFor="billing-line2">Apartment, suite, etc. <span>Optional</span></label><input id="billing-line2" autoComplete="billing address-line2" maxLength={150} value={value.line2} onChange={(e) => update("line2", e.target.value)} placeholder="Apartment, suite or unit" /></div>
       <div><label htmlFor="billing-city">City / locality</label><input id="billing-city" autoComplete="billing address-level2" maxLength={150} value={value.city} onChange={(e) => update("city", e.target.value)} /></div>

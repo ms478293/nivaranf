@@ -92,7 +92,7 @@
 .addressDropdown li { display:flex; align-items:center; gap:10px; padding:12px; font-size:12px; line-height:1.5; border-bottom:1px solid #f0f2ed; color:#53624b; cursor:pointer; }
 .addressDropdown li svg { flex-shrink:0; }
 .addressDropdown li:hover,.addressDropdown li[aria-selected="true"] { background:#f1f4ee; }
-.addressAttribution { color:#6e746a; font-size:10px; text-align:right; padding-top:5px; }
+.addressAttribution { color:#6e746a; font-size:10px; text-align:right; padding:8px 12px; }
 .addressAttribution a { text-decoration:underline; text-underline-offset:2px; }
 .cardBrands { display:flex; align-items:center; gap:5px; }
 .cardBrands svg { width:37px; height:24px; }
