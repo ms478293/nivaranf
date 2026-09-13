@@ -6,7 +6,7 @@ The root layout must remain independent of request headers. Main-site metadata i
 
 Main articles, stories, and news prepare at most 12 recent entries per section. Older URLs are generated on first request and cached with one-hour revalidation. Legacy blog redirects are also generated on demand. Existing content publication routes invalidate affected main-site paths. Regional pages with host-dependent links remain rendered per request, with no build-time archive enumeration.
 
-Article file lookup reads only the requested file, retaining global/USA directory priority. Missing articles return 404; existing redirects, canonical links, and news noindex rules must be preserved.
+Article file lookup reads only the requested file, retaining global/USA directory priority. Missing articles retain the not-found UI and noindex marker (Next.js can stream these with HTTP 200); unmatched routes return 404. Existing redirects, canonical links, and news noindex rules must be preserved. Public main-site pages also revalidate hourly, and content publication invalidates the homepage feed. The homepage sits outside the main route group, so it includes the main schema, public appeal, and revalidation setting explicitly.
 
 Donation APIs remain uncached. Administrative, login, and editorial layouts render dynamically. Do not apply broad cache rules to private routes or payment responses.
 

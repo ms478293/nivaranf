@@ -14,6 +14,7 @@ const CONTENT_STATUSES = new Set(["draft", "published"]);
 
 function revalidateContentPaths(pathname?: string) {
   if (pathname) revalidatePath(pathname);
+  revalidatePath("/");
   revalidatePath("/articles");
   revalidatePath("/stories");
   revalidatePath("/news");

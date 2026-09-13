@@ -1,4 +1,6 @@
 import AboutNivaran from "@/components/new/AboutNivaran/AboutNivaran";
+import MainSiteSchemas from "@/components/seo/MainSiteSchemas";
+import WeatherAdvisory from "@/components/nivaran/common/WeatherAdvisory";
 import HeroSection from "@/components/new/HeroSection/HeroSection";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
@@ -11,6 +13,8 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import ogImage from "../../public/logo.png";
+
+export const revalidate = 3600;
 
 // Below-the-fold components: lazy-loaded with height-reserving skeletons to prevent CLS
 const DonationBanner = dynamic(() => import("@/components/new/DonationBanner/DonationBanner"), {
@@ -46,6 +50,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.nivaranfoundation.org"),
   alternates: {
     canonical: "https://www.nivaranfoundation.org",
+    languages: {
+      en: "https://www.nivaranfoundation.org",
+      "x-default": "https://www.nivaranfoundation.org",
+    },
   },
   keywords: [
     "mobile health camps Nepal",
@@ -97,6 +105,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
+      <MainSiteSchemas />
+      <WeatherAdvisory />
       <header role="banner">
         <NivaranHeader />
       </header>

@@ -1,3 +1,4 @@
+import WeatherAdvisory from "@/components/nivaran/common/WeatherAdvisory";
 import { getRootMetadata } from "@/lib/site-metadata";
 import { getSiteVariantConfig } from "@/lib/site-variant";
 import type { Viewport } from "next";
@@ -43,6 +44,7 @@ export default function UsaLayout({ children }: { children: React.ReactNode }) {
             {children}
           </main>
           <FooterUsa />
+          <WeatherAdvisory mainSiteOrigin={getSiteVariantConfig("main").siteUrl} />
         </Providers>
       </body>
     </html>

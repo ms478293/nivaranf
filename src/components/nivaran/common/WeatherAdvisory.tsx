@@ -13,7 +13,7 @@
  *                                  everyone sees the modal again.
  *
  * Local appeal content; the third-party video loads only after a visitor presses play.
- * Mounted from src/app/layout.tsx; private routes are excluded below.
+ * Mounted from the public site layouts; private routes are excluded below.
  * ---------------------------------------------------------------------------
  */
 

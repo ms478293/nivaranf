@@ -2,7 +2,6 @@ import Providers from "@/providers";
 import "./globals.css";
 
 import { CookieConsent } from "@/components/new/CookieConsent/CookieConsent";
-import WeatherAdvisory from "@/components/nivaran/common/WeatherAdvisory";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
@@ -107,7 +106,6 @@ export default function RootLayout({
           <SetUserLocationCookie />
           <Toaster closeButton richColors theme="light" />
           {children}
-          <WeatherAdvisory mainSiteOrigin={getSiteVariantConfig("main").siteUrl} />
           <CookieConsent />
           {ENABLE_VERCEL_ANALYTICS ? <Analytics /> : null}
         </Providers>

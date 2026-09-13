@@ -11,6 +11,7 @@ import { buildCanonicalPath } from "@/lib/content/automation";
 
 function revalidateContentPaths(pathname?: string) {
   if (pathname) revalidatePath(pathname);
+  revalidatePath("/");
   revalidatePath("/articles");
   revalidatePath("/stories");
   revalidatePath("/news");
