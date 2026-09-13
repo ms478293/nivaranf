@@ -336,7 +336,7 @@ export default async function RootLayout({
           <SetUserLocationCookie />
           <Toaster closeButton richColors theme="light" />
           {children}
-          <WeatherAdvisory />
+          <WeatherAdvisory mainSiteOrigin={variant === "main" ? "" : getSiteVariantConfig("main").siteUrl} />
           <CookieConsent />
           {ENABLE_VERCEL_ANALYTICS ? <Analytics /> : null}
         </Providers>

@@ -78,7 +78,7 @@ const page = () => {
             </svg>
           </Link>
           <Link
-            href="/donate?designation=sanjeevani"
+            href="/donate/sanjeevani"
             className="inline-flex items-center gap-2 rounded-full border border-primary-500 px-6 py-3 text-sm font-medium text-primary-600 transition-colors hover:bg-primary-500 hover:text-white"
           >
             Support Project Sanjeevani

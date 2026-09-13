@@ -2,8 +2,6 @@
 
 import { AppButton } from "@/components/ui/app-button";
 import {
-  DESIGNATIONS,
-  STATUS_BADGE,
   VARIANCE_NOTE,
   feeCentsFor,
   getDesignation,
@@ -11,19 +9,18 @@ import {
 } from "@/content/donation-designations";
 import { trackDonateClick, trackDonation } from "@/lib/meta-pixel";
 import { cn } from "@/lib/utils";
-import { Lock } from "lucide-react";
+import { Lock, ArrowRight, ChevronDown, Check } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import styles from "./DonationPage.module.css";
+import { type DonationCampaign, campaignDonationPath } from "@/content/donation-campaigns";
 
-const AMOUNTS = [25, 50, 100, 250, 500] as const;
-const DEFAULT_AMOUNT = 250;
 const MIN_DOLLARS = 5;
 const MAX_DOLLARS = 25_000;
 const MIN_CENTS = MIN_DOLLARS * 100;
 const MAX_CENTS = MAX_DOLLARS * 100;
 const SUPPORT_EMAIL = "donations@nivaranfoundation.org";
-const SHARE_URL = "https://www.nivaranfoundation.org/donate";
 const SHARE_TEXT = "I just supported Nivaran Foundation's healthcare and education work in Nepal.";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -141,24 +138,20 @@ const dedicationLabel = (t: DedicationType) => (t === "honor" ? "In honor of" : 
 
 // ── Tailwind class groups (single source; fontSize keys are the custom scale: xsm 12 / sm 14 / md 16 / lg 20 / xl 24 / 2xl 32) ──
 const cls = {
-  card: "w-full h-fit rounded-3xl border border-gray-200 bg-white p-5 sm:p-6 md:p-8 shadow-sm",
+  card: styles.card,
   eyebrow: "text-xsm font-semibold uppercase tracking-[0.14em] text-primary-600",
-  h2: "text-xl sm:text-2xl font-semibold leading-tight text-gray-950 outline-none",
-  sub: "text-sm leading-snug text-gray-600",
+  h2: styles.formHeading,
+  sub: styles.formIntro,
   label: "block text-sm font-medium text-gray-600 mb-1.5",
   help: "mt-1.5 text-xsm leading-snug text-gray-500",
   input:
     "h-12 w-full rounded-xl border border-gray-200 bg-white px-4 text-md text-gray-950 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500",
   radio: "sr-only peer",
-  amountTile:
-    "flex h-16 sm:h-[4.5rem] cursor-pointer items-center justify-center rounded-xl border border-gray-200 bg-white px-2 text-lg sm:text-xl font-semibold text-gray-800 transition-colors hover:border-primary-300 peer-checked:border-primary-500 peer-checked:bg-primary-500 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary-500 peer-focus-visible:ring-offset-2",
-  designationTile:
-    "flex h-full cursor-pointer flex-col gap-1 rounded-xl border border-gray-200 bg-white p-3.5 text-left transition-colors hover:border-primary-300 peer-checked:border-primary-500 peer-checked:bg-primary-50 peer-focus-visible:ring-2 peer-focus-visible:ring-primary-500 peer-focus-visible:ring-offset-2",
-  badge: "mt-1 w-fit rounded-full bg-gray-100 px-2 py-0.5 text-xsm font-medium text-gray-700",
+  amountTile: styles.amountTile,
   checkRow: "flex cursor-pointer items-start gap-3 text-sm leading-snug text-gray-800",
   checkbox:
     "mt-0.5 h-5 w-5 shrink-0 cursor-pointer rounded border-gray-300 accent-primary-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
-  cta: "h-14 w-full rounded-xl bg-primary-500 text-md font-semibold text-white hover:bg-primary-600 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2",
+  cta: styles.continueButton,
   linkBtn: "text-sm font-medium text-primary-600 underline-offset-4 hover:underline",
   error: "text-sm leading-snug text-red-600",
   summary: "rounded-xl bg-primary-50 px-4 py-2 divide-y divide-primary-100",
@@ -168,17 +161,9 @@ const cls = {
 };
 
 const TrustRow = () => (
-  <div className="flex flex-col items-center gap-1 text-center text-xsm text-gray-500">
-    <p className="flex items-center gap-1.5">
-      <Lock className="h-3.5 w-3.5" aria-hidden="true" />
-      Secured by GoDaddy Payments. Your card details never touch our servers.
-    </p>
-    <p>
-      Nivaran Foundation Inc. · EIN 41-2656587 ·{" "}
-      <a href={`mailto:${SUPPORT_EMAIL}`} className="underline underline-offset-2 hover:text-gray-700">
-        {SUPPORT_EMAIL}
-      </a>
-    </p>
+  <div className={styles.trust}>
+    <p><Lock size={12} aria-hidden="true" /> Encrypted payment through GoDaddy</p>
+    <span>A donation receipt will be sent to your email.</span>
   </div>
 );
 
@@ -189,13 +174,13 @@ const Row = ({ k, v }: { k: string; v: string }) => (
   </div>
 );
 
-const DonationCard = () => {
+const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   const searchParams = useSearchParams();
 
   const [step, setStep] = useState<Step>("amount");
-  const [selected, setSelected] = useState<number | "other">(DEFAULT_AMOUNT);
+  const [selected, setSelected] = useState<number | "other">(campaign.defaultAmount);
   const [customAmount, setCustomAmount] = useState("");
-  const [designationId, setDesignationId] = useState("general");
+  const designationId = campaign.id;
   const [dedicate, setDedicate] = useState(false);
   const [dedicationType, setDedicationType] = useState<DedicationType>("honor");
   const [dedicationName, setDedicationName] = useState("");
@@ -249,21 +234,22 @@ const DonationCard = () => {
     };
   });
 
-  // ── deep links: ?amount=  ?designation= ──
+  // Campaign comes from the route. A conflicting query cannot change its fund.
   useEffect(() => {
-    const d = searchParams.get("designation");
-    if (d) setDesignationId(getDesignation(d).id);
     const amountParam = searchParams.get("amount");
-    if (!amountParam) return;
     const dollars = Number(amountParam);
-    if (!Number.isFinite(dollars) || dollars < MIN_DOLLARS) return;
-    if ((AMOUNTS as readonly number[]).includes(dollars)) {
+    if (!amountParam || !Number.isFinite(dollars) || dollars < MIN_DOLLARS || dollars > MAX_DOLLARS) {
+      setSelected(campaign.defaultAmount);
+      setCustomAmount("");
+      return;
+    }
+    if (campaign.amounts.includes(dollars)) {
       setSelected(dollars);
     } else {
       setSelected("other");
-      setCustomAmount(String(Math.round(dollars)));
+      setCustomAmount(String(Math.round(dollars * 100) / 100));
     }
-  }, [searchParams]);
+  }, [searchParams, campaign]);
 
   // ── focus management: heading on every step change, never on first paint ──
   useEffect(() => {
@@ -278,15 +264,18 @@ const DonationCard = () => {
     let cancelled = false;
     let collect: Collect | null = null;
     setFormReady(false);
+    const businessId = process.env.NEXT_PUBLIC_GD_BUSINESS_ID;
+    const applicationId = process.env.NEXT_PUBLIC_GD_APP_ID;
+    if (!businessId || !applicationId) {
+      setError(process.env.NODE_ENV === "development"
+        ? "Card payments are not connected in this local preview yet."
+        : "Online donations are temporarily unavailable. Please try again later.");
+      return;
+    }
 
     loadCollectSdk()
       .then((TokenizeJs) => {
         if (cancelled) return;
-        const businessId = process.env.NEXT_PUBLIC_GD_BUSINESS_ID;
-        const applicationId = process.env.NEXT_PUBLIC_GD_APP_ID;
-        if (!businessId || !applicationId) {
-          throw new Error("Online donations are temporarily unavailable. Please try again later.");
-        }
         collect = new TokenizeJs(businessId, applicationId);
         collect.on("ready", () => {
           if (!cancelled) setFormReady(true);
@@ -413,6 +402,7 @@ const DonationCard = () => {
   };
 
   const doneDesignation = result ? getDesignation(result.designation) : designation;
+  const SHARE_URL = `https://www.nivaranfoundation.org${campaignDonationPath(campaign.id)}`;
   const shareX = `https://twitter.com/intent/tweet?text=${encodeURIComponent(SHARE_TEXT)}&url=${encodeURIComponent(SHARE_URL)}`;
   const shareFb = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(SHARE_URL)}`;
   const shareMail = `mailto:?subject=${encodeURIComponent("Nivaran Foundation")}&body=${encodeURIComponent(`${SHARE_TEXT} ${SHARE_URL}`)}`;
@@ -420,21 +410,27 @@ const DonationCard = () => {
   return (
     <div id="donate" className={cls.card}>
       <div id="donate-checkout" className="contents">
+        {step !== "done" && (
+          <ol className={styles.steps} aria-label="Donation progress">
+            <li aria-current={step === "amount" ? "step" : undefined}><span>{step === "card" ? <Check size={12} aria-hidden="true" /> : "1"}</span>Your gift</li>
+            <li aria-current={step === "card" ? "step" : undefined}><span>2</span>Details & payment</li>
+          </ol>
+        )}
         {/* ───────────── STEP 1 · amount + designation ───────────── */}
         {step === "amount" && (
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
-              <p className={cls.eyebrow}>Step 1 of 2 · Your gift</p>
+
               <h2 ref={headingRef} tabIndex={-1} className={cls.h2}>
-                Make a one-time gift
+                {campaign.formHeading}
               </h2>
-              <p className={cls.sub}>Choose an amount and where you would like it to go.</p>
+              <p className={cls.sub}>{campaign.formIntro}</p>
             </div>
 
             <fieldset>
-              <legend className={cls.label}>Amount (USD)</legend>
-              <div className="grid grid-cols-3 gap-3">
-                {AMOUNTS.map((amount) => (
+              <legend className={styles.amountLegend}><span>Your one-time gift</span><span>USD</span></legend>
+              <div className={styles.amountGrid}>
+                {campaign.amounts.map((amount) => (
                   <div key={amount}>
                     <input
                       type="radio"
@@ -483,10 +479,10 @@ const DonationCard = () => {
                       ref={customAmountRef}
                       id="donate-custom-amount"
                       type="number"
-                      inputMode="numeric"
+                      inputMode="decimal"
                       min={MIN_DOLLARS}
                       max={MAX_DOLLARS}
-                      step={1}
+                      step="0.01"
                       value={customAmount}
                       onChange={(e) => setCustomAmount(e.target.value)}
                       placeholder="75"
@@ -498,33 +494,8 @@ const DonationCard = () => {
               )}
             </fieldset>
 
-            <fieldset>
-              <legend className={cls.label}>Where should it go?</legend>
-              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                {DESIGNATIONS.filter((d) => d.visible).map((d) => {
-                  const badge = STATUS_BADGE[d.status];
-                  return (
-                    <div key={d.id}>
-                      <input
-                        type="radio"
-                        id={`donate-designation-${d.id}`}
-                        name="donate-designation"
-                        className={cls.radio}
-                        checked={designation.id === d.id}
-                        onChange={() => setDesignationId(d.id)}
-                      />
-                      <label htmlFor={`donate-designation-${d.id}`} className={cls.designationTile}>
-                        <span className="text-sm font-semibold text-gray-950">{d.label}</span>
-                        <span className="text-xsm leading-snug text-gray-600">{d.caption}</span>
-                        {badge && <span className={cls.badge}>{badge}</span>}
-                      </label>
-                    </div>
-                  );
-                })}
-              </div>
-              <p className="mt-3 text-xsm leading-snug text-gray-500">{VARIANCE_NOTE}</p>
-            </fieldset>
-
+            <details className={styles.options}>
+              <summary>Dedication & gift options <ChevronDown size={16} aria-hidden="true" /></summary>
             <div className="flex flex-col gap-3">
               <label className={cls.checkRow}>
                 <input
@@ -588,6 +559,8 @@ const DonationCard = () => {
               </label>
             </div>
 
+            </details>
+
             {error && (
               <p role="alert" className={cls.error}>
                 {error}
@@ -595,9 +568,10 @@ const DonationCard = () => {
             )}
 
             <AppButton type="button" className={cls.cta} onClick={continueToCard}>
-              {amountOk ? `Continue with ${formatCents(totalCents)}` : "Continue"}
+              {amountOk ? `Continue with ${formatCents(totalCents)}` : "Continue"}<ArrowRight size={18} aria-hidden="true" />
             </AppButton>
             <TrustRow />
+            {designation.id !== "general" && <p className={styles.varianceNote}>{VARIANCE_NOTE}</p>}
           </div>
         )}
 
@@ -605,7 +579,7 @@ const DonationCard = () => {
         {step === "card" && (
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
-              <p className={cls.eyebrow}>Step 2 of 2 · Your details</p>
+
               <h2 ref={headingRef} tabIndex={-1} className={cls.h2}>
                 Your details
               </h2>
@@ -619,10 +593,10 @@ const DonationCard = () => {
                 <span className="text-gray-600">Gift</span>
                 <span className="font-semibold text-gray-950">{formatCents(baseCents)}</span>
               </div>
-              <div className={cls.summaryRow}>
-                <span className="text-gray-600">Designation</span>
+              {designation.id !== "general" && <div className={cls.summaryRow}>
+                <span className="text-gray-600">Supporting</span>
                 <span className="text-right font-medium text-gray-950">{designation.label}</span>
-              </div>
+              </div>}
               {dedication && (
                 <div className={cls.summaryRow}>
                   <span className="text-gray-600">{dedicationLabel(dedication.type)}</span>
@@ -713,7 +687,7 @@ const DonationCard = () => {
                   </div>
                 )}
                 <p className="sr-only" aria-live="polite">
-                  {formReady ? "Secure card form ready." : "Loading secure card form…"}
+                  {formReady ? "Secure card form ready." : error ? "Secure card form unavailable." : "Loading secure card form…"}
                 </p>
               </div>
             </div>

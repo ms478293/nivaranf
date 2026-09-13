@@ -3,6 +3,7 @@ import {
   ProjectDisplay,
 } from "@/components/new/projects/ProjectsDisplay";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
@@ -102,7 +103,13 @@ const project_data: ProjectDataType = {
 };
 
 const page = () => {
-  return <ProjectDisplay project_data={project_data} />;
+  return <>
+    <ProjectDisplay project_data={project_data} />
+    <section className="mx-auto mb-16 max-w-4xl border-t border-gray-200 px-6 py-10 text-center">
+      <p className="mb-5 text-sm text-gray-600">Project Vidya is planned for 2027. Dedicated gifts are not yet open.</p>
+      <Link href="/donate/vidya" className="inline-flex rounded bg-primary-500 px-6 py-3 text-sm text-white">View the Project Vidya appeal →</Link>
+    </section>
+  </>;
 };
 
 export default page;

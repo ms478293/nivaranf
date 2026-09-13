@@ -104,7 +104,7 @@ export default function Healthcare() {
       </div>
       <div className="max-w-[1320px] mx-auto px-4 py-8 text-center">
         <Link
-          href="/donate?designation=sanjeevani"
+          href="/donate/sanjeevani"
           className="inline-flex items-center rounded-full bg-primary-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-600"
         >
           Support our health camps

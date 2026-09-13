@@ -4,7 +4,7 @@
 // No percentages, totals, donor counts or per-dollar impact claims. No tax-status wording.
 // This file must stay import-free so scripts/check-donation-fee.mjs can load it directly.
 
-export type DesignationStatus = "active" | "paused" | "planned";
+export type DesignationStatus = "active" | "planned";
 
 export type Designation = {
   id: string;
@@ -17,8 +17,7 @@ export type Designation = {
   /** Where "Explore …" goes on the success screen and the receipt CTA. Site-relative. */
   pageUrl: string;
   exploreLabel: string;
-  /** paused = WeatherAdvisory monsoon notice is live. Flip sanjeevani + maternal-child-health
-   *  back to "active" when ADVISORY.enabled is set false in WeatherAdvisory.tsx. */
+  /** Program status is independent of the site-wide flood appeal popup. */
   status: DesignationStatus;
   /** false = not shown on the form and rejected by the server. */
   visible: boolean;
@@ -46,7 +45,7 @@ export const DESIGNATIONS: readonly Designation[] = [
     status: "active",
     visible: true,
     thankYouNote:
-      "Thank you for trusting us to put your gift where it is needed most. Right now that means keeping Project Sanjeevani ready to return to the field the moment the monsoon roads are safe again, and keeping our education work in Nepal going. We will keep publishing what we do with it.",
+      "Thank you for trusting us to put your gift where it is needed most. Your support helps sustain Project Sanjeevani’s mobile health camps and our education work in Nepal. We will keep publishing what we do with it.",
   },
   {
     id: "sanjeevani",
@@ -55,11 +54,11 @@ export const DESIGNATIONS: readonly Designation[] = [
     receiptLabel: "Project Sanjeevani — mobile health camps",
     pageUrl: "/sanjeevani",
     exploreLabel: "Explore Project Sanjeevani",
-    status: "paused",
+    status: "active",
     visible: true,
     impactLine: "16 camps · 17,355 patients logged · 7 provinces (May 2025 – Feb 2026)",
     thankYouNote:
-      "Thank you for backing Project Sanjeevani. Our camps are paused because monsoon rain has made the mountain roads to our camp sites unsafe, and we will not send doctors, volunteers or patients over them until they are cleared. Every postponed camp will be held, and your gift is what lets us return the moment the routes are safe.",
+      "Thank you for backing Project Sanjeevani. Your gift supports free mobile health camps, consultations, and essential care for communities across rural Nepal. You help bring healthcare closer to the people who need it.",
   },
   {
     id: "maternal-child-health",
@@ -68,10 +67,10 @@ export const DESIGNATIONS: readonly Designation[] = [
     receiptLabel: "Healthcare — maternal & child health",
     pageUrl: "/maternal-health-nepal",
     exploreLabel: "Explore maternal & child health",
-    status: "paused",
+    status: "active",
     visible: true,
     thankYouNote:
-      "Thank you. Your gift goes to the mothers and children our camps reach. In the villages Sanjeevani serves, patients walk for hours to see a doctor, many of them pregnant or carrying a child, which is exactly why our camps carry maternal screening with them. Camps are paused while the monsoon roads are unsafe, and your gift helps us bring that care back the moment they reopen.",
+      "Thank you for supporting mothers and children in Nepal. Your gift helps provide antenatal screening and maternal and child care through our health camps, bringing essential healthcare closer to families in rural communities.",
   },
   {
     id: "education",
@@ -87,7 +86,7 @@ export const DESIGNATIONS: readonly Designation[] = [
   },
   // Hidden until the owner confirms gifts can be tracked and reported separately.
   // To enable the flood appeal: visible:true here AND set NEPAL_RESPONSE.floodFundUrl to
-  // "/donate?designation=nepal-flood-recovery" (internal path — no second processor).
+  // "/donate/nepal-flood-recovery" (internal path — no second processor).
   {
     id: "nepal-flood-recovery",
     label: "Nepal floods 2026 appeal",
@@ -127,7 +126,6 @@ export function isSelectableDesignation(id: unknown): id is string {
 
 export const STATUS_BADGE: Record<DesignationStatus, string | null> = {
   active: null,
-  paused: "Paused for monsoon",
   planned: "Not yet started",
 };
 

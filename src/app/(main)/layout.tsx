@@ -1,18 +1,5 @@
-import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
-import { WhatsAppButton } from "@/components/new/WhatsAppButton/WhatsAppButton";
-import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
+import PublicSiteLayout from "@/components/new/DonationCard/PublicSiteLayout";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <>
-      <NivaranHeader />
-      <main id="main-content" className="relative pt-28">{children}</main>
-      <WhatsAppButton />
-      <NivaranFooter />
-    </>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <PublicSiteLayout>{children}</PublicSiteLayout>;
 }

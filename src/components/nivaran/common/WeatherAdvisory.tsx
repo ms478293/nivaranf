@@ -3,7 +3,7 @@
 /**
  * WeatherAdvisory
  * ---------------------------------------------------------------------------
- * Site-wide monsoon advisory. Opens once as a centered modal on first visit,
+ * Site-wide flood appeal popup. Opens once as a centered modal on first visit,
  * then collapses to a slim bar that keeps the notice reachable afterwards.
  *
  * EDITING THIS NOTICE (no coding required):
@@ -12,15 +12,18 @@
  *   - Publish a NEW advisory ..... bump ADVISORY.storageKey ("..._v1" -> "..._v2");
  *                                  everyone sees the modal again.
  *
- * No database and no network calls: all content lives in the const below.
- * Mounted from src/app/(main)/layout.tsx only, so it never appears on the
- * dashboard/admin routes, which have no fixed public header.
+ * Local appeal content; the third-party video loads only after a visitor presses play.
+ * Mounted from src/app/layout.tsx; private routes are excluded below.
  * ---------------------------------------------------------------------------
  */
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, CloudRain, X } from "lucide-react";
+import { ArrowRight, Play, X, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import styles from "./WeatherAdvisory.module.css";
+import NivaranLogo from "@/components/new/nivaranHeader/NivaranLogo";
+import { isSelectableDesignation } from "@/content/donation-designations";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -28,51 +31,19 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const ADVISORY = {
   enabled: true,
-  storageKey: "nivaran_advisory_v1",
-  openDelayMs: 1000,
-
-  eyebrow: "Operations notice — Monsoon season",
-  heading: "Our health camps and scheduled programs are postponed.",
-  lede: "Sanjeevani free health camps and other scheduled community programs are on hold until the routes to them are safe.",
-
-  paragraphs: [
-    "Weeks of monsoon rain have soaked the rural and mountain roads that lead to our camp sites. Landslides and flash floods are an active risk on those routes.",
-    "Running a camp means putting people on them: our doctors and volunteers, a vehicle carrying medicine and equipment, and the patients who would walk hours to reach us — many of them elderly, pregnant, or carrying a child. We will not ask anyone to make that journey while the way there is unsafe.",
-  ],
-
-  emphasis:
-    "A postponed camp costs a few weeks. A road that gives way costs lives. That is the whole calculation.",
-
-  steps: [
-    {
-      label: "Rescheduling",
-      detail:
-        "Every camp will be held. New dates follow once the access routes are assessed and cleared as safe.",
-    },
-    {
-      label: "If you registered",
-      detail:
-        "Our team will contact you directly with your new date. There is nothing you need to do.",
-    },
-    {
-      label: "Work continues",
-      detail:
-        "Donations keep our teams and supplies ready to return the moment the routes are safe.",
-    },
-  ],
-
-  signature: "Nivaran Foundation · Field Operations, Nepal",
-
-  primaryAction: { label: "Contact our team", href: "/contact-us" },
-  secondaryAction: { label: "Support the rescheduled camps", href: "/donate?designation=sanjeevani" },
-
-  barText: "Health camps postponed — monsoon road safety.",
-  barTextShort: "Health camps postponed",
-  barCta: "Read the notice",
-
-  closeLabel: "Close the advisory notice",
-  openLabel: "Open the full advisory notice",
-  hideBarLabel: "Hide this notice for now",
+  storageKey: "nivaran_flood_appeal_v2",
+  openDelayMs: 700,
+  eyebrow: "Nepal flood emergency · 2026",
+  heading: "Nepal needs us. Recovery starts with care.",
+  lede: "Homes swept away. Communities cut off. Help sustain Nivaran’s healthcare and education work in Nepal through the long road ahead.",
+  primaryAction: { label: "Explore the flood appeal", href: "/donate/nepal-flood-recovery" },
+  secondaryAction: { label: "Support our work", href: "/donate" },
+  barText: "Stand with Nepal’s flood-affected communities.",
+  barTextShort: "Stand with Nepal",
+  barCta: "View appeal",
+  closeLabel: "Close flood appeal",
+  openLabel: "Open flood appeal",
+  hideBarLabel: "Hide flood appeal for now",
 } as const;
 
 /* ────────────────────────────── COMPONENT ────────────────────────────── */
@@ -80,12 +51,13 @@ const ADVISORY = {
 type Mode = "hidden" | "modal" | "bar";
 
 const FOCUSABLE =
-  'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+  'a[href], button:not([disabled]), iframe, [tabindex]:not([tabindex="-1"])';
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 const HEADER_FALLBACK_PX = 64;
 
 /** Internal tooling; the advisory is for visitors, not staff. */
 const PRIVATE_ROUTES = [
+  "/donate",
   "/dashboard",
   "/admin",
   "/auth",
@@ -93,7 +65,10 @@ const PRIVATE_ROUTES = [
   "/blogs/editor",
 ];
 
-export default function WeatherAdvisory() {
+export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigin?: string }) {
+  const floodGivingOpen = isSelectableDesignation("nepal-flood-recovery");
+  const [gift, setGift] = useState(50);
+  const [videoPlaying, setVideoPlaying] = useState(false);
   const [mode, setMode] = useState<Mode>("hidden");
   const [headerHeight, setHeaderHeight] = useState(HEADER_FALLBACK_PX);
   const reduceMotion = useReducedMotion();
@@ -157,6 +132,7 @@ export default function WeatherAdvisory() {
         // Storage blocked: the notice simply returns on the next visit.
       }
     }
+    setVideoPlaying(false);
     setMode("bar");
   }, []);
 
@@ -285,7 +261,7 @@ export default function WeatherAdvisory() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25, ease: EASE }}
-            className="fixed inset-0 z-[9999] flex items-end justify-center bg-black/55 p-0 backdrop-blur-[2px] sm:items-center sm:p-6 print:hidden"
+            className="fixed inset-0 z-[9999] flex items-end justify-center bg-black/65 p-3 backdrop-blur-[4px] items-center sm:p-6 print:hidden"
             onClick={() => closeModal(true)}
             {...motionProps}
           >
@@ -300,114 +276,69 @@ export default function WeatherAdvisory() {
               exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 12 }}
               transition={{ duration: 0.4, ease: EASE }}
               onClick={(event) => event.stopPropagation()}
-              className="flex max-h-[92vh] w-full max-w-[640px] flex-col overflow-hidden rounded-t-2xl bg-white shadow-2xl supports-[height:100dvh]:max-h-[92dvh] sm:rounded-2xl sm:max-h-[88vh] sm:supports-[height:100dvh]:max-h-[88dvh]"
+              className={styles.panel}
             >
-              {/* Masthead */}
-              <div className="relative shrink-0 overflow-hidden bg-primary-600 px-5 py-5 sm:px-8 sm:py-6">
-                {!reduceMotion && (
-                  <div
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 opacity-[0.18] [background-image:repeating-linear-gradient(105deg,transparent_0px,transparent_7px,rgba(255,255,255,0.9)_7px,rgba(255,255,255,0.9)_8px)]"
-                  />
-                )}
-                <div className="relative flex items-start justify-between gap-4">
-                  <div className="flex items-center gap-2.5">
-                    <CloudRain
-                      className="h-[18px] w-[18px] shrink-0 text-white"
-                      aria-hidden="true"
+              <button type="button" data-autofocus onClick={() => closeModal(true)} aria-label={ADVISORY.closeLabel} className={styles.close}>
+                <X size={22} aria-hidden="true" />
+              </button>
+              <div className={styles.visual}>
+                <Image
+                  src="/hero_img/nepal-flood-portrait.webp"
+                  alt="AI-generated campaign illustration: a woman on higher ground overlooking a flooded Nepal river valley."
+                  fill
+                  priority
+                  sizes="(max-width: 700px) 100vw, 520px"
+                  className={styles.image}
+                />
+                <div className={styles.visualShade} />
+                <div className={styles.location}><span />NEPAL / FLOOD EMERGENCY</div>
+                {!videoPlaying ? (
+                  <>
+                    <button type="button" className={styles.play} onClick={() => setVideoPlaying(true)} aria-label="Watch UNICEF’s Nepal flood report">
+                      <span className={styles.playCircle}><Play size={23} fill="currentColor" strokeWidth={1} aria-hidden="true" /></span>
+                      <span>See what’s happening<span className={styles.playCredit}>Watch the UNICEF report</span></span>
+                    </button>
+                    <div className={styles.visualFooter}>
+                      <p>THE WATER RECEDES.<br /><span>THE NEED DOESN’T.</span></p>
+                      <span className={styles.caption}>AI-generated illustration</span>
+                    </div>
+                  </>
+                ) : (
+                  <div className={styles.videoStage}>
+                    <iframe
+                      src="https://www.youtube.com/embed/ORvL7inVgNU?autoplay=1&rel=0&playsinline=1"
+                      title="UNICEF USA: Emergency Supply Delivery Underway After Nepal Floods, August 27, 2026"
+                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
                     />
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/90">
-                      {ADVISORY.eyebrow}
-                    </p>
+                    <div className={styles.videoCredit}>
+                      <span>Video: UNICEF USA · 27 Aug 2026</span>
+                      <a href="https://www.youtube.com/watch?v=ORvL7inVgNU" target="_blank" rel="noopener noreferrer">Watch on YouTube <ExternalLink size={12} /></a>
+                      <button type="button" onClick={() => setVideoPlaying(false)}>Back to image</button>
+                    </div>
                   </div>
-                  <button
-                    type="button"
-                    data-autofocus
-                    onClick={() => closeModal(true)}
-                    aria-label={ADVISORY.closeLabel}
-                    className="-mr-1 -mt-1 shrink-0 rounded-full p-1.5 text-white/80 transition-colors hover:bg-white/15 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                  >
-                    <X className="h-[18px] w-[18px]" aria-hidden="true" />
-                  </button>
-                </div>
-                <h2
-                  id="advisory-heading"
-                  className="relative mt-3 text-[22px] font-semibold leading-[1.22] tracking-[-0.02em] text-white sm:text-[27px]"
-                >
-                  {ADVISORY.heading}
-                </h2>
+                )}
               </div>
-
-              {/* Body */}
-              <div
-                tabIndex={0}
-                role="region"
-                aria-label="Advisory details"
-                className="min-h-0 flex-1 overflow-y-auto px-5 py-5 sm:px-8 sm:py-6"
-              >
-                <p
-                  id="advisory-lede"
-                  className="text-[15px] font-semibold leading-[1.55] text-gray-900 sm:text-[16px]"
-                >
-                  {ADVISORY.lede}
-                </p>
-
-                {ADVISORY.paragraphs.map((text, index) => (
-                  <p
-                    key={index}
-                    className="mt-3.5 text-[14px] leading-[1.65] text-gray-600 sm:text-[15px]"
-                  >
-                    {text}
-                  </p>
-                ))}
-
-                <p className="mt-5 border-l-2 border-primary-main pl-4 text-[14px] font-semibold leading-[1.6] text-gray-900 sm:text-[15px]">
-                  {ADVISORY.emphasis}
-                </p>
-
-                <ul className="mt-6 space-y-3.5 border-t border-gray-100 pt-5">
-                  {ADVISORY.steps.map((step, index) => (
-                    <li key={step.label} className="flex gap-3.5">
-                      <span
-                        aria-hidden="true"
-                        className="mt-[3px] shrink-0 text-[11px] font-semibold tabular-nums tracking-[0.1em] text-primary-400"
-                      >
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <p className="text-[13px] leading-[1.6] text-gray-600 sm:text-[14px]">
-                        <span className="font-semibold text-gray-900">
-                          {step.label}
-                        </span>{" "}
-                        — {step.detail}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="mt-6 text-[12px] leading-[1.5] text-gray-400">
-                  {ADVISORY.signature}
-                </p>
-              </div>
-
-              {/* Actions */}
-              <div className="shrink-0 border-t border-gray-100 bg-gray-50/80 px-5 py-4 sm:px-8">
-                <div className="flex flex-col gap-2.5 sm:flex-row-reverse sm:items-center sm:justify-start">
-                  <Link
-                    href={ADVISORY.primaryAction.href}
-                    onClick={() => closeModal(true)}
-                    className="inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-primary-main px-5 text-[14px] font-semibold text-white transition-colors hover:bg-primary-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-main focus-visible:ring-offset-2"
-                  >
-                    {ADVISORY.primaryAction.label}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                  <Link
-                    href={ADVISORY.secondaryAction.href}
-                    onClick={() => closeModal(true)}
-                    className="inline-flex h-11 items-center justify-center rounded-lg border border-gray-200 bg-white px-5 text-[14px] font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-main focus-visible:ring-offset-2"
-                  >
-                    {ADVISORY.secondaryAction.label}
-                  </Link>
-                </div>
+              <div className={styles.content}>
+                <NivaranLogo className={styles.logo} />
+                <p className={styles.eyebrow}>Nepal flood emergency</p>
+                <h2 id="advisory-heading" className={styles.heading}>Nepal needs us.<br /><span>Recovery starts{" "}<br />with care.</span></h2>
+                <p id="advisory-lede" className={styles.lede}>{ADVISORY.lede}</p>
+                {floodGivingOpen && <fieldset className={styles.giving}>
+                  <legend>Make a one-time gift <span>USD</span></legend>
+                  <div className={styles.amounts}>
+                    {[25, 50, 100].map((amount) => (
+                      <button key={amount} type="button" aria-pressed={gift === amount} onClick={() => setGift(amount)} className={gift === amount ? styles.selectedAmount : styles.amount}>${amount}</button>
+                    ))}
+                  </div>
+                </fieldset>}
+                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery${floodGivingOpen ? `?amount=${gift}` : ""}`} onClick={() => closeModal(true)} className={styles.primary}>
+                  {floodGivingOpen ? `Give $${gift} to the flood appeal` : "Explore the Nepal flood appeal"} <ArrowRight size={18} aria-hidden="true" />
+                </Link>
+                <p className={styles.note}>{floodGivingOpen ? "Your gift supports Nivaran’s Nepal flood appeal." : "Dedicated flood gifts are not yet open. See our plans and current response status."}</p>
+                <Link href={`${mainSiteOrigin}/campaigns/nepal-flood-recovery`} onClick={() => closeModal(true)} className={styles.secondary}>Read the flood briefing & our response status <ArrowRight size={14} aria-hidden="true" /></Link>
+                <button type="button" onClick={() => closeModal(true)} className={styles.later}>Continue to website</button>
               </div>
             </motion.div>
           </motion.div>

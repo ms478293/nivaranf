@@ -99,7 +99,7 @@ export default function Education() {
             { title: "Project Sanjeevani", href: "/sanjeevani", description: "Multi-specialty health camps providing dental, eye, maternal, and general care." },
             { title: "Programs Hub", href: "/programs", description: "Browse the full program index for healthcare, education, and topic-specific resource pages." },
             { title: "About Nivaran Foundation", href: "/about", description: "Learn about our mission, team, and the communities we serve." },
-            { title: "Donate to Education", href: "/donate?designation=education", description: "Your contribution helps build classrooms, train teachers, and keep children in school." },
+            { title: "Donate to Education", href: "/donate/education", description: "Your contribution helps build classrooms, train teachers, and keep children in school." },
             { title: "Volunteer", href: "/volunteer", description: "Share your skills and time with children and educators in Nepal." },
           ]}
         />

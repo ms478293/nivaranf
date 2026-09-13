@@ -177,7 +177,7 @@ export default function FloodRecoveryPage() {
             <>
               {/* This paragraph is only true while the "nepal-flood-recovery" designation is visible:false
                   in src/content/donation-designations.ts. When it is enabled, set floodFundUrl to
-                  "/donate?designation=nepal-flood-recovery" (and make the <a> above a <Link>) so this branch retires. */}
+                  "/donate/nepal-flood-recovery" (and make the <a> above a <Link>) so this branch retires. */}
               <p>
                 The dedicated flood fund is being set up so that flood gifts can be tracked and
                 reported separately. Until it opens, our existing checkout accepts{" "}
@@ -185,8 +185,8 @@ export default function FloodRecoveryPage() {
                 reserve your gift for this flood response, and we will not pretend otherwise.
               </p>
               <div className={styles.actions}>
-                <Link href="/donate" className={styles.action}>
-                  Support Nivaran&rsquo;s Nepal work ↗
+                <Link href="/donate/nepal-flood-recovery" className={styles.action}>
+                  View the dedicated flood appeal ↗
                 </Link>
                 <Link href="/contact-us" className={styles.secondary}>
                   Tell me when the flood fund opens →
