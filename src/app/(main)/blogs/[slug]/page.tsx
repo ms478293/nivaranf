@@ -6,10 +6,11 @@ import { getMetadataForBlogSlug } from "@/components/blogs/BlogDetailPage";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 
-export async function generateStaticParams() {
-  return globalBlogs.map((blog) => ({
-    slug: blog.slug,
-  }));
+export const revalidate = 3600;
+export const dynamicParams = true;
+
+export function generateStaticParams() {
+  return [];
 }
 
 export async function generateMetadata({

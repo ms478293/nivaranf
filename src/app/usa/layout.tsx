@@ -1,1 +1,1 @@
-export { default, metadata } from "../_usa/layout";
+export { default, metadata, viewport } from "../_usa/layout";

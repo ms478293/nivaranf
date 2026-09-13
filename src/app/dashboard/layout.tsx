@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { CONTENT_PORTAL_SESSION_COOKIE } from "@/lib/content/constants";

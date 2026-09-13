@@ -1,7 +1,13 @@
+import { getRootMetadata } from "@/lib/site-metadata";
+import { getSiteVariantConfig } from "@/lib/site-variant";
+import type { Viewport } from "next";
 import GlobalShell from "@/components/global/GlobalShell";
 import type { Metadata } from "next";
 
+export const viewport: Viewport = { themeColor: getSiteVariantConfig("global").themeColor };
+
 export const metadata: Metadata = {
+  ...getRootMetadata("global"),
   title: {
     default: "Nivaran Global | Humanitarian Campaigns, Reporting & Action",
     template: "%s | Nivaran Global",

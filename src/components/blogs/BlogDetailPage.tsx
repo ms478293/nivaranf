@@ -25,16 +25,13 @@ import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import path from "path";
 import { cache } from "react";
+import { recentContentParams } from "@/lib/content/prerender";
+import { readStaticBlogFile, STATIC_BLOG_DIRECTORIES } from "@/lib/content/static-blog-file";
 import ArticleReadingProgress from "./ArticleReadingProgress";
 import ArticleShareButtons from "./ArticleShareButtons";
 import styles from "./article-template.module.css";
 import { mdxComponents } from "./mdxComponents";
 import { isNonNepalCandidate } from "@/lib/content/blogFilters";
-
-const STATIC_BLOG_DIRECTORIES = [
-  path.join(process.cwd(), "src/blogs/global"),
-  path.join(process.cwd(), "src/blogs/usa"),
-];
 
 const playfairDisplay = localFont({
   src: [
@@ -309,17 +306,8 @@ const getAllStaticBlogEntries = cache(async (): Promise<StaticBlogEntry[]> => {
 });
 
 const getBlogFile = cache(async (slug: string) => {
-  const entries = await getAllStaticBlogEntries();
-  const match = entries.find((entry) => entry.slug === slug);
-
-  if (!match) {
-    throw new Error(`Missing static blog file for slug "${slug}"`);
-  }
-
-  return {
-    content: match.content,
-    data: match.data,
-  };
+  const entry = await readStaticBlogFile(slug);
+  return { content: entry.content, data: entry.data as BlogFrontmatter };
 });
 
 function isVisibleOnSiteVariant(
@@ -370,15 +358,12 @@ export async function getStaticParamsForSegment(
           keywords: entry.data.keywords,
         }),
       )
-      .map((entry) => ({ slug: entry.slug }));
+      .map((entry) => ({ slug: entry.slug, date: entry.data.date }));
     const portalParams = (await getPublishedBlogItemsBySegment(segment))
       .filter((blog) => isVisibleOnSiteVariant(siteVariant, blog))
-      .map((blog) => ({ slug: blog.slug }));
+      .map((blog) => ({ slug: blog.slug, date: blog.date }));
 
-    const uniqueSlugs = Array.from(
-      new Set([...staticParams, ...portalParams].map((entry) => entry.slug))
-    );
-    return uniqueSlugs.map((slug) => ({ slug }));
+    return recentContentParams([...staticParams, ...portalParams]);
   } catch (error) {
     console.error("Error in getStaticParamsForSegment:", error);
     return [];

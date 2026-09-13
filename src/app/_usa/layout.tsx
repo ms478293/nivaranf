@@ -1,3 +1,6 @@
+import { getRootMetadata } from "@/lib/site-metadata";
+import { getSiteVariantConfig } from "@/lib/site-variant";
+import type { Viewport } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import FooterUsa from "@/components/usa/common/FooterUsa";
 import HeaderUsa from "@/components/usa/common/HeaderUsa";
@@ -6,7 +9,10 @@ import Providers from "@/providers";
 import { Metadata } from "next";
 import localFont from "next/font/local";
 
+export const viewport: Viewport = { themeColor: getSiteVariantConfig("usa").themeColor };
+
 export const metadata: Metadata = {
+  ...getRootMetadata("usa"),
   title: "Nivaran | United States",
   description: "",
 };

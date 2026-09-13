@@ -1,13 +1,12 @@
 import {
   getMetadataForBlogSlug,
-  getStaticParamsForSegment,
   renderBlogDetailPage,
 } from "@/components/blogs/BlogDetailPage";
 import type { Metadata } from "next";
 
-export async function generateStaticParams() {
-  return getStaticParamsForSegment("articles", { siteVariant: "global" });
-}
+// Regional links depend on the request host. Avoid a build-time archive walk
+// for pages that the regional layout renders on demand.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
