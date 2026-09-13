@@ -21,10 +21,11 @@ const listSource = ts.transpileModule(await readFile("src/blogs/listofblogs.ts",
 const mod = { exports: {} };
 new Function("exports", "module", "require", listSource)(mod.exports, mod, createRequire(import.meta.url));
 const listed = mod.exports.globalBlogs;
-const listedSlugs = new Set(listed.map((post) => post.slug));
 const files = await readdir("src/blogs/global");
-const archiveSlug = files.map((file) => file.replace(/\.mdx$/, "")).find((slug, i) => files[i].endsWith(".mdx") && !listedSlugs.has(slug) && !manifest.routes[`/articles/${slug}`]);
-assert.ok(archiveSlug, "Need an archive URL excluded from this build to test on-demand rendering");
+const fileNames = new Set(files);
+const segmentFor = (post) => post.type === "News" ? "news" : post.type === "Story" ? "stories" : "articles";
+const archivePost = listed.find((post) => fileNames.has(`${post.slug}.mdx`) && !manifest.routes[`/${segmentFor(post)}/${post.slug}`]);
+assert.ok(archivePost, "Need an archive URL excluded from this build to test on-demand rendering");
 
 async function get(path, host = "www.nivaranfoundation.org") {
   const response = await fetch(`${base}${path}`, { headers: { host, "user-agent": "Nivaran release check" }, redirect: "manual", signal: AbortSignal.timeout(30000) });
@@ -36,7 +37,7 @@ for (const path of ["/", "/campaigns", "/donate", "/donate/maternal-child-health
   assert.equal(response.status, 200, path);
   assert.match(body, /Nivaran/, path);
 }
-const archivePath = `/articles/${archiveSlug}`;
+const archivePath = `/${segmentFor(archivePost)}/${archivePost.slug}`;
 const first = await get(archivePath);
 assert.equal(first.response.status, 200, archivePath);
 assert.match(first.body, /application\/ld\+json/);
