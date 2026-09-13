@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import { Lock, ArrowRight, ChevronDown, Check } from "lucide-react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import styles from "./DonationPage.module.css";
 import BillingAddressForm from "./BillingAddressForm";
 import CardBrands from "./CardBrands";
@@ -203,7 +203,9 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
   // ── derived ──
   const amountOptions = frequency === "monthly" ? [10, 20, 30, 50, 100] : campaign.amounts;
-  const suggestedAmount = frequency === "monthly" ? 30 : campaign.defaultAmount;
+  const suggestedAmount = frequency === "monthly" ? 30 : campaign.id === "maternal-child-health" ? 150 : campaign.defaultAmount;
+  const suggestedIndex = amountOptions.indexOf(suggestedAmount);
+  const suggestedColumn = suggestedIndex % 3;
   const baseDollars = selected === "other" ? Number(customAmount) || 0 : selected;
   const baseCents = Math.round(baseDollars * 100);
   const rawFee = feeCentsFor(baseCents);
@@ -474,20 +476,33 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
             <fieldset>
               <legend className={styles.amountLegend}><span>{frequency === "monthly" ? "Your monthly gift" : "Choose your gift"}</span><span>USD</span></legend>
               <div className={styles.amountGrid}>
-                {amountOptions.map((amount) => (
-                  <div key={amount}>
+                {amountOptions.map((amount, index) => (
+                  <Fragment key={amount}>
+                  {index === suggestedIndex - suggestedColumn && (
+                    <div className={styles.giftSuggestion}>
+                      <div className={styles.giftSuggestionAnchor} style={{ gridColumn: suggestedColumn + 1 }}>
+                        <div className={styles.giftSuggestionContent} data-side={suggestedColumn === 0 ? "right" : "left"}>
+                          <svg width="32" height="29" viewBox="0 0 32 29" fill="none" aria-hidden="true"><path d="M30 3C12 2 6 11 5 26M1 20l4 6 6-5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                          <p id="donate-suggestion">{frequency === "monthly" ? "Make it monthly" : "Make a difference"}<br /><strong>{frequency === "monthly" ? `${formatCents(suggestedAmount * 100)} a month` : `with ${formatCents(suggestedAmount * 100)}`}.</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  <div>
                     <input
                       type="radio"
                       id={`donate-amount-${amount}`}
                       name="donate-amount"
                       className={cls.radio}
                       checked={selected === amount}
+                      aria-describedby={amount === suggestedAmount ? "donate-suggestion" : undefined}
                       onChange={() => setSelected(amount)}
                     />
                     <label htmlFor={`donate-amount-${amount}`} className={cls.amountTile}>
                       {formatCents(amount * 100)}
                     </label>
                   </div>
+                  </Fragment>
                 ))}
                 <div>
                   <input
@@ -538,10 +553,6 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
               )}
             </fieldset>
 
-            <div className={styles.giftSuggestion}>
-              <svg width="32" height="29" viewBox="0 0 32 29" fill="none" aria-hidden="true"><path d="M30 26C12 27 6 18 5 3M1 9l4-6 6 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              <p>Not sure where to start?<br /><strong>{formatCents(suggestedAmount * 100)}{frequency === "monthly" ? " a month" : " is a suggested gift"}.</strong></p>
-            </div>
             <details className={styles.options}>
               <summary>Dedication & gift options <ChevronDown size={16} aria-hidden="true" /></summary>
             <div className="flex flex-col gap-3">
