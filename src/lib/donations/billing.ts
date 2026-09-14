@@ -22,18 +22,18 @@ export function parseBilling(value: unknown): BillingAddress | null {
   return billingError(result) ? null : result;
 }
 
-export function addressFromGeoapify(result: Record<string, unknown>): BillingAddress {
+export function addressFromPhoton(result: Record<string, unknown>): BillingAddress {
   const text = (key: string) => typeof result[key] === "string" ? result[key].trim().replace(/[\u0000-\u001f<>]/g, "").slice(0, 150) : "";
-  const street = text("street"), number = text("housenumber"), displayLine = text("address_line1");
+  const street = text("street"), number = text("housenumber"), name = text("name");
   const streetLine = [number, street].filter(Boolean).join(" ");
-  const line1 = street && (!displayLine.includes(street) || (number && !displayLine.includes(number))) ? streetLine : displayLine || streetLine;
-  // address_line2 contains the city/region, not an apartment or suite.
+  // Photon puts the localized street line in `name`; keep housenumber+street when `name` is a place title.
+  const line1 = (street && name.includes(street) ? name : streetLine) || name;
   return {
     line1: line1.slice(0, 150),
     line2: "",
-    city: text("city") || text("town") || text("village") || text("municipality") || text("suburb"),
-    region: text("state_code") || text("state"),
+    city: text("city") || text("town") || text("village") || text("municipality") || text("district") || text("locality"),
+    region: text("state"),
     postalCode: text("postcode").slice(0, 24),
-    countryCode: text("country_code").toUpperCase(),
+    countryCode: text("countrycode").toUpperCase(),
   };
 }
