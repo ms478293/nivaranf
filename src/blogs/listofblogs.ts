@@ -18,6 +18,46 @@ export type blogListType = {
 
 export const globalBlogs: blogListType[] = [
   {
+    slug: "nepal-flood-recovery-september-briefing",
+    title: "Nepal floods: the work of recovery continues",
+    summary: "The latest published assessment of safe water, essential services and family needs — and where Nivaran’s appeal stands.",
+    thumbnailImage: "/hero_img/nepal-flood-river.webp",
+    date: "2026-09-14",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "sanjeevani-bringing-care-closer-to-rural-nepal",
+    title: "Sanjeevani: bringing care closer to rural Nepal",
+    summary: "The purpose behind Nivaran’s mobile health camps, with a clear look at the program’s published progress and reporting dates.",
+    thumbnailImage: "/blogs/images/nepaliVillageInHills.jpg",
+    date: "2026-09-14",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "Story",
+  },
+  {
+    slug: "nepal-flood-health-response-early-warning",
+    title: "After Nepal’s floods, early warning protects health",
+    summary: "A WHO update explains how local reporting and rapid verification help Nepal’s health authorities respond to emerging threats.",
+    thumbnailImage: "/hero_img/nepal-flood-street.webp",
+    date: "2026-09-14",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "News",
+  },
+  {
+    slug: "nepal-children-learning-after-floods",
+    title: "Making room for childhood after Nepal’s floods",
+    summary: "A perspective on safe spaces, play and learning, informed by UNICEF’s recent reporting from Nuwakot.",
+    thumbnailImage: "/hero_img/nepal-flood-family.webp",
+    date: "2026-09-14",
+    author: "Nivaran Foundation Nepal Desk",
+    featured: true,
+    type: "Article",
+  },
+  {
     slug: "global-healthcare-strain-fuels-private-sector-reliance-watchdog-warns-of-two-tier-system",
     title: "Global Healthcare Strain Fuels Private Sector Reliance, Watchdog Warns of Two-Tier System",
     summary:
