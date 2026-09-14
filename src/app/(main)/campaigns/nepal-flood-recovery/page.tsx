@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { NEPAL_RESPONSE } from "@/content/nepal-response";
+import { LATEST_NEPAL_FLOOD_UPDATE, NEPAL_RESPONSE } from "@/content/nepal-response";
 import styles from "./response.module.css";
 
 const url = "https://www.nivaranfoundation.org/campaigns/nepal-flood-recovery";
@@ -23,7 +23,7 @@ export default function FloodRecoveryPage() {
 
   return (
     <div className={`font-Poppins ${styles.page}`}>
-      <section className={styles.hero}>
+      <section id="latest-update" className={styles.hero}>
         <div className={styles.contours} aria-hidden="true">
           <svg viewBox="0 0 700 650" fill="none">
             <path
@@ -39,21 +39,18 @@ export default function FloodRecoveryPage() {
           </Link>
           <p className={styles.eyebrow}>Nivaran Foundation · Emergency appeal</p>
           <h1>
-            A glacier fell on Nepal.
+            Nepal’s flood emergency.
             <br />
-            <span>Whole valleys are still cut off.</span>
+            <span>Communities need a way forward.</span>
           </h1>
           <p className={styles.intro}>
-            On August 26 a collapsing glacier sent the Bhote Koshi river through five districts.
-            More than a thousand people are dead, thousands more are missing, and the roads that
-            reached the survivors no longer exist.
+            {LATEST_NEPAL_FLOOD_UPDATE.summary}
           </p>
           <a href="#help" className={styles.action}>
             See how you can help <span aria-hidden="true">↗</span>
           </a>
           <p className={styles.dateline}>
-            Situation reviewed September 5, 2026 · Nivaran has not yet deployed — we are raising to
-            deploy
+            Official situation update: <time dateTime={LATEST_NEPAL_FLOOD_UPDATE.reportDate}>{LATEST_NEPAL_FLOOD_UPDATE.reportDateLabel}</time> · Nivaran’s dedicated flood appeal is in preparation
           </p>
         </div>
       </section>
@@ -89,10 +86,9 @@ export default function FloodRecoveryPage() {
               ))}
             </dl>
             <p className={styles.note}>
-              Every figure above is attributed to the organisation that reported it and links to
-              that report. Where official counts differ between sources, we show the range rather
-              than pick a number. None of these figures describe Nivaran activity, and none of these
-              organisations are partners of Nivaran.
+              Rescue and recovery figures come from the 11 September government update. Other
+              estimates retain their earlier source dates. Counts may be revised as verification
+              continues. These figures describe the wider emergency, not Nivaran activity or partnerships.
             </p>
           </div>
         </section>
@@ -208,8 +204,8 @@ export default function FloodRecoveryPage() {
           </div>
           <div>
             <p>
-              <time dateTime="2026-09-05">September 5, 2026</time> — Situation briefing published
-              from public reporting by WHO, UNICEF and news agencies. Nivaran has not deployed. No
+              <time dateTime={LATEST_NEPAL_FLOOD_UPDATE.reportDate}>{LATEST_NEPAL_FLOOD_UPDATE.reportDateLabel}</time> — Rescue and recovery figures updated from Nepal’s Ministry of Foreign Affairs.
+              Earlier humanitarian estimates retain their source dates. Nivaran has not deployed. No
               delivery figures, fundraising totals or partnerships are claimed.
             </p>
             <p className={styles.note}>

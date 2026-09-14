@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { DONATION_CAMPAIGNS, campaignDonationPath } from "@/content/donation-campaigns";
 import { DESIGNATIONS } from "@/content/donation-designations";
+import { LATEST_NEPAL_FLOOD_UPDATE } from "@/content/nepal-response";
 import styles from "./Campaigns.module.css";
 
 export const metadata: Metadata = {
@@ -13,8 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function CampaignsPage() {
+  const floodUpdate = LATEST_NEPAL_FLOOD_UPDATE;
   return (
     <div className={styles.page}>
+      <a href="#latest-crisis" className={styles.crisisRibbon}>
+        <span className={styles.crisisTag}>LATEST CRISIS</span>
+        <span>Nepal flood emergency</span>
+        <span className={styles.ribbonAction}>See the update <ArrowDown size={15} aria-hidden="true" /></span>
+      </a>
       <section className={styles.hero} aria-labelledby="campaigns-hero-title">
         <Image
           src="/hero_img/hero_img_2.webp"
@@ -34,6 +41,37 @@ export default function CampaignsPage() {
               <a href="#our-campaigns" className={styles.heroButton}>Explore campaigns <ArrowDown size={18} aria-hidden="true" /></a>
               <Link href="/donate" className={styles.heroLink}>Give where it’s needed most <ArrowUpRight size={17} aria-hidden="true" /></Link>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="latest-crisis" className={styles.crisis} aria-labelledby="latest-crisis-title" tabIndex={-1}>
+        <div className={styles.crisisInner}>
+          <figure className={styles.crisisVisual}>
+            <div className={styles.crisisImage}>
+              <Image
+                src="/hero_img/nepal-flood-2026.webp"
+                alt="AI-generated illustration of floodwater flowing through a Himalayan village"
+                fill
+                sizes="(max-width: 800px) 100vw, 50vw"
+              />
+            </div>
+            <figcaption>AI-generated illustration · not documentary photography</figcaption>
+          </figure>
+          <div className={styles.crisisContent}>
+            <p className={styles.crisisEyebrow}>CURRENT CRISIS <span aria-hidden="true">/</span> NEPAL</p>
+            <h2 id="latest-crisis-title">Nepal’s floods.<br /><em>A long road home.</em></h2>
+            <p className={styles.crisisSummary}>{floodUpdate.summary}</p>
+            <dl className={styles.crisisFacts}>
+              {floodUpdate.figures.map((figure) => (
+                <div key={figure.label}><dt>{figure.label}</dt><dd>{figure.value}</dd></div>
+              ))}
+            </dl>
+            <p className={styles.crisisSource}>
+              Official update: <time dateTime={floodUpdate.reportDate}>{floodUpdate.reportDateLabel}</time>. Figures may be revised.<br />
+              Source: <a href={floodUpdate.sourceUrl} target="_blank" rel="noopener noreferrer">{floodUpdate.sourceLabel} <ArrowUpRight size={12} aria-hidden="true" /></a>
+            </p>
+            <Link href="/campaigns/nepal-flood-recovery#latest-update" className={styles.crisisAction}>Read the flood update <ArrowUpRight size={17} aria-hidden="true" /></Link>
+            <p className={styles.crisisNote}>Nivaran’s dedicated flood appeal is in preparation.</p>
           </div>
         </div>
       </section>
