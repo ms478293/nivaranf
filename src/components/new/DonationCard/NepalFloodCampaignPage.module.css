@@ -9,7 +9,7 @@
 .heroShade { position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,#102a23e8 0%,#102a23c9 30%,#102a2350 66%,#102a2315 100%),linear-gradient(0deg,#102a23a0,transparent 40%,transparent 70%,#102a2366); }
 .heroInner { width:100%; max-width:1380px; margin:auto; padding:148px 64px 130px; animation:entrance .85s .1s both; }
 .heroEyebrow { display:flex; align-items:center; gap:11px; font-size:10px; letter-spacing:.16em; margin-bottom:30px; color:#f3d8c9; }
-.heroEyebrow span,.appealStatus span { width:6px; height:6px; border-radius:50%; background:#e99874; flex-shrink:0; }
+.heroEyebrow span { width:6px; height:6px; border-radius:50%; background:#e99874; flex-shrink:0; }
 .hero h1 { max-width:800px; font-size:clamp(68px,8.7vw,122px); line-height:1; }
 .hero h1 em { color:#ece3c6; font-weight:400; }
 .heroIntro { font-size:14px; line-height:1.9; color:#f0f0e6; max-width:380px; margin:27px 0 30px; }
@@ -67,13 +67,6 @@
 .commitments p { font-size:12px; line-height:1.95; color:#c2ccbc; margin-top:10px; }
 .involvement { display:grid; grid-template-columns:1fr 1fr; gap:90px; background:#eee9dd; align-items:start; }
 .involvementIntro { padding-top:30px; }
-.actionPanel { padding:36px; background:#fbfaf6; border-top:3px solid #b54f31; }
-.appealStatus { display:flex; align-items:center; gap:8px; font-size:9px; letter-spacing:.1em; color:#925435; }
-.appealStatus span { background:#b56539; }
-.actionPanel h3 { font-family:Georgia,serif; font-size:32px; font-weight:400; letter-spacing:-.04em; line-height:1.2; margin-top:24px; }
-.actionPanel > p:not(.appealStatus) { font-size:12px; line-height:1.9; color:#6a7363; margin:17px 0 23px; }
-.actionPanel > .primary { display:flex; width:100%; background:#b74d2e; color:white; }
-.actionPanel > .primary:hover { background:#983e26; }
 .generalGift { border-top:1px solid #d9ddd0; margin-top:30px; padding-top:27px; }
 .generalGift h4 { font-size:13px; font-weight:500; }
 .generalGift p { font-size:11px; line-height:1.9; color:#717866; margin-top:10px; }
@@ -99,7 +92,6 @@
   .sectionLead > div,.priorities,.approach,.involvement,.faq { gap:40px; }
   .storyCopy { padding:55px 35px; }
   .portrait > div { min-height:620px; }
-  .actionPanel { padding:28px; }
 }
 @media(max-width:760px) {
   .hero { min-height:100svh; align-items:flex-end; }
@@ -139,39 +131,27 @@
   .priorityList h3 { font-size:20px; }
   .priorityIntro > p:not(.eyebrow),.approachIntro > p:not(.eyebrow),.involvementIntro > p:not(.eyebrow) { font-size:12px; margin-top:22px; }
   .involvementIntro { padding:0; }
-  .actionPanel { padding:27px 23px; }
-  .actionPanel h3 { font-size:30px; }
-  .actionPanel .primary { font-size:11px; padding-inline:17px; gap:18px; }
   .questions summary { font-size:12px; padding-block:21px; }
   .closing { padding:30px 24px; flex-direction:column; align-items:flex-start; gap:18px; }
 }
 @media(max-width:360px) { .sectionNav { padding-inline:16px; gap:10px; } .sectionNav > div { gap:12px; } .figures dd { font-size:32px; } }
 @media(prefers-reduced-motion:reduce) { .heroImage,.heroInner,.questions details[open] > p { animation:none; } .page a,.page svg { transition:none; } .primary:hover,.primary:hover svg,.textLink:hover svg,.heroFoot a:hover svg,.navAction:hover svg,.closing a:hover svg { transform:none; } }
 
-/* Keep the campaign story and its single shared checkout together at the top. */
-.hero { min-height:100svh; overflow:clip; }
-.heroInner { display:grid; grid-template-columns:minmax(0,1fr) minmax(380px,440px); align-items:start; gap:55px; padding:130px 40px 85px; max-width:1380px; animation:none; }
-.heroCopy { position:sticky; top:100px; padding-top:65px; animation:entrance .85s .1s both; }
-.hero h1 { font-size:clamp(52px,5.8vw,80px); }
-.heroFoot { inset-inline:40px; }
-.givingPanel { --campaign-accent:#bc4a36; --campaign-button:#723c30; --campaign-hover:#8b493c; padding:28px; min-width:0; color:#24392e; background:#fcf9f3; box-shadow:0 20px 60px #081f2430; }
+/* Dedicated giving section; the hero remains a full-width campaign introduction. */
+.involvement { grid-template-columns:minmax(0,1fr) minmax(390px,480px); gap:70px; }
+.involvementIntro { position:sticky; top:110px; }
+.involvementIntro .generalGift { max-width:360px; }
+.givingPanel { --campaign-accent:#bc4a36; --campaign-button:#723c30; --campaign-hover:#8b493c; padding:32px; min-width:0; color:#24392e; background:#fcf9f3; border-top:3px solid #b54f31; }
 .givingLabel { color:#a45137; font-size:9px; letter-spacing:.13em; font-weight:500; margin-bottom:23px; }
 .givingPanel h2 { font-family:inherit; font-size:29px; line-height:1.2; font-weight:600; letter-spacing:-.04em; }
 .givingPanel :global(#donate-checkout) > div { gap:18px; }
 .givingPanel :global(#donate-checkout) > ol { margin-bottom:23px; }
 .formLoading { min-height:620px; font-size:12px; }
-@media(max-width:1100px) and (min-width:761px) { .heroInner { gap:30px; padding-inline:28px; grid-template-columns:minmax(0,1fr) minmax(370px,420px); } .hero h1 { font-size:55px; } .heroIntro { font-size:13px; } .desktopBreak { display:none; } }
+@media(max-width:1000px) { .involvement { gap:40px; grid-template-columns:minmax(0,1fr) minmax(370px,420px); } .givingPanel { padding:28px; } }
 @media(max-width:760px) {
-  .heroInner { display:block; padding:165px 24px 80px; }
-  .heroCopy { position:static; padding-top:0; margin-bottom:35px; }
-  .hero h1 { font-size:clamp(45px,11.5vw,76px); }
-  .heroIntro { margin-block:20px; }
-  .heroImage { height:650px!important; object-position:60% center; }
-  .heroShade { background:linear-gradient(180deg,#102a2370 0px,#102a2350 200px,#102a23 610px); }
-  .heroFoot { inset-inline:24px; bottom:20px; }
-  .heroFoot > a { display:none; }
+  .involvement { grid-template-columns:1fr; gap:32px; }
+  .involvementIntro { position:static; }
   .givingPanel { padding:24px 20px; }
   .givingPanel h2 { font-size:27px; }
   .givingLabel { font-size:8px; }
 }
-@media(prefers-reduced-motion:reduce) { .heroCopy { animation:none; } }

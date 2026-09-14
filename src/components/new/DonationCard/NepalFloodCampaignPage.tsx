@@ -30,19 +30,11 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         <Image src="/hero_img/nepal-flood-2026.webp" alt="AI-generated illustration of floodwater surrounding homes in a Himalayan valley" fill priority sizes="100vw" className={styles.heroImage} />
         <div className={styles.heroShade} aria-hidden="true" />
         <div className={styles.heroInner}>
-          <div className={styles.heroCopy}>
           <p className={styles.heroEyebrow}><span />NEPAL FLOODS · 2026 APPEAL</p>
           <h1 id="flood-campaign-title">Help Nepal find<br />its way <em>home.</em></h1>
           <p className={styles.heroIntro}>Beyond the floodwaters are families, futures,<br className={styles.desktopBreak} /> and a long road to recovery. Stand with them.</p>
           <a href="#flood-giving" className={styles.primary}>Donate to this appeal <ArrowUpRight size={19} aria-hidden="true" /></a>
           <p className={styles.heroStatus}>Help fund a planned flood response.</p>
-          </div>
-          <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
-            <p className={styles.givingLabel}>NEPAL FLOODS · YOUR GIFT</p>
-            <Suspense fallback={<div className={styles.formLoading} role="status">Loading the donation form…</div>}>
-              <DonationCard campaign={campaign} />
-            </Suspense>
-          </section>
         </div>
         <div className={styles.heroFoot}>
           <a href="#the-crisis">Understand the crisis <ArrowDown size={16} aria-hidden="true" /></a>
@@ -114,19 +106,19 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         <div className={styles.involvementIntro}>
           <p className={styles.eyebrow}>04 / STAND WITH NEPAL</p>
           <h2 id="involvement-title">There is a place<br />for your <em>kindness.</em></h2>
-          <p>Have resources, relevant experience, or a partnership in mind? Help us shape the next step.</p>
-        </div>
-        <div className={styles.actionPanel}>
-          <p className={styles.appealStatus}><span />SUPPORT THE FLOOD APPEAL</p>
-          <h3>Give Nepal a way forward.</h3>
-          <p>Choose a one-time or monthly gift to help fund Nivaran’s planned flood response.</p>
-          <a href="#flood-giving" className={styles.primary}>Donate to this appeal <ArrowUpRight size={19} aria-hidden="true" /></a>
+          <p>Choose a one-time or monthly gift to support Nivaran’s planned flood response.</p>
           <div className={styles.generalGift}>
             <h4>Have another way to help?</h4>
             <p>Speak with our team about relevant experience, resources, partnerships, or a larger gift.</p>
             <Link href="/contact-us" className={styles.textLink}>Contact the Nivaran team <ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
+        <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
+          <p className={styles.givingLabel}>NEPAL FLOODS · YOUR GIFT</p>
+          <Suspense fallback={<div className={styles.formLoading} role="status">Loading the donation form…</div>}>
+            <DonationCard campaign={campaign} />
+          </Suspense>
+        </section>
       </section>
 
       <section className={styles.faq} aria-labelledby="faq-title">
