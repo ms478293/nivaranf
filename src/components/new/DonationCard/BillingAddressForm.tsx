@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { MapPin, Search } from "lucide-react";
 import { BILLING_COUNTRIES, type BillingAddress, type AddressSuggestion } from "@/lib/donations/billing";
 import styles from "./DonationPage.module.css";
-export default function BillingAddressForm({ value, onChange, searchEnabled }: { value: BillingAddress; onChange: (value: BillingAddress) => void; searchEnabled: boolean }) {
+export default function BillingAddressForm({ value, onChange, searchEnabled, detected }: { value: BillingAddress; onChange: (value: BillingAddress) => void; searchEnabled: boolean; detected?: boolean }) {
   const [suggestions, setSuggestions] = useState<AddressSuggestion[]>([]);
   const [searching, setSearching] = useState(false);
   const [typed, setTyped] = useState(false);
@@ -65,12 +65,12 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
             <p className={styles.addressAttribution}>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></p>
           </div>}
         </div>
-        <p id="billing-address-help" className={styles.fieldHelp} aria-live="polite">{!value.countryCode ? "Select your country above to get started." : searching ? "Finding your address…" : message || (searchEnabled ? `Search for your address in ${countryName}. You can also enter it manually.` : "Your browser can fill a saved address, or you can enter it below.")}</p>
+        <p id="billing-address-help" className={styles.fieldHelp} aria-live="polite">{!value.countryCode ? "Select your country above to get started." : searching ? "Finding your address…" : message || (detected ? `We detected ${countryName}. Change it if this isn’t your billing country, then search or type your address.` : searchEnabled ? `Search for your address in ${countryName}. You can also enter it manually.` : "Your browser can fill a saved address, or you can enter it below.")}</p>
       </div>
       <div className={styles.fullField}><label htmlFor="billing-line2">Apartment, suite, etc. <span>Optional</span></label><input id="billing-line2" autoComplete="billing address-line2" maxLength={150} value={value.line2} onChange={(e) => update("line2", e.target.value)} placeholder="Apartment, suite or unit" /></div>
       <div><label htmlFor="billing-city">City / locality</label><input id="billing-city" autoComplete="billing address-level2" maxLength={150} value={value.city} onChange={(e) => update("city", e.target.value)} /></div>
       <div><label htmlFor="billing-region">State / province <span>Optional</span></label><input id="billing-region" autoComplete="billing address-level1" maxLength={150} value={value.region} onChange={(e) => update("region", e.target.value)} /></div>
-      <div className={styles.fullField}><label htmlFor="billing-postal">Postal / ZIP code</label><input id="billing-postal" autoComplete="billing postal-code" maxLength={24} value={value.postalCode} onChange={(e) => update("postalCode", e.target.value)} /><p className={styles.fieldHelp}>Leave blank if your country does not use postal codes.</p></div>
+      <div className={styles.fullField}><label htmlFor="billing-postal">Postal / ZIP code</label><input id="billing-postal" autoComplete="billing postal-code" maxLength={24} value={value.postalCode} onChange={(e) => update("postalCode", e.target.value)} placeholder={value.countryCode === "US" ? "ZIP code" : value.countryCode === "GB" ? "Postcode" : value.countryCode ? "Postal code" : ""} /><p className={styles.fieldHelp}>Leave blank if your country does not use postal codes.</p></div>
     </div>
   </section>;
 }

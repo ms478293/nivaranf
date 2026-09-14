@@ -17,6 +17,7 @@ import styles from "./DonationPage.module.css";
 import BillingAddressForm from "./BillingAddressForm";
 import CardBrands from "./CardBrands";
 import { EMPTY_BILLING, billingError } from "@/lib/donations/billing";
+import { BILLING_COUNTRY_STORAGE, normalizeCountryCode, pickDetectedCountry } from "@/lib/donations/detect-country";
 import { DonationPaymentError, submitDonationPayment, type ChargeResult } from "@/lib/donations/payment-client";
 import { type DonationCampaign, campaignDonationPath } from "@/content/donation-campaigns";
 
@@ -173,8 +174,9 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
   const [frequency, setFrequency] = useState<"once" | "monthly">("once");
   const [billingAddress, setBillingAddress] = useState({ ...EMPTY_BILLING });
+  const [countrySource, setCountrySource] = useState<"" | "detected" | "user">("");
   const [monthlyConsent, setMonthlyConsent] = useState(false);
-  const [settings, setSettings] = useState({ monthly: false, addressSearch: false });
+  const [settings, setSettings] = useState({ monthly: false, addressSearch: false, detectedCountry: null as string | null });
   const [paymentPending, setPaymentPending] = useState(false);
   const attemptRef = useRef("");
   const submitLock = useRef(false);
@@ -242,8 +244,33 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   });
 
   useEffect(() => {
-    fetch("/api/donate/settings").then((r) => r.json()).then(setSettings).catch(() => {});
+    fetch("/api/donate/settings").then((r) => r.json()).then((next) => setSettings((prev) => ({ ...prev, ...next }))).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    if (countrySource === "user") return;
+    let stored = "";
+    try { stored = sessionStorage.getItem(BILLING_COUNTRY_STORAGE) || ""; } catch { /* private mode */ }
+    const remembered = normalizeCountryCode(stored);
+    if (remembered) {
+      setBillingAddress((current) => current.countryCode === remembered ? current : { ...current, countryCode: remembered });
+      setCountrySource("user");
+      return;
+    }
+    if (billingAddress.countryCode && !settings.detectedCountry) return;
+    const detected = pickDetectedCountry({
+      ip: settings.detectedCountry,
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      languages: typeof navigator === "undefined" ? [] : [...navigator.languages],
+    });
+    if (!detected) return;
+    setBillingAddress((current) => {
+      if (countrySource === "user" || (current.countryCode && current.countryCode === detected)) return current;
+      if (current.countryCode && !settings.detectedCountry) return current;
+      return { ...current, countryCode: detected };
+    });
+    setCountrySource("detected");
+  }, [settings.detectedCountry, billingAddress.countryCode, countrySource]);
 
   const changeFrequency = (value: "once" | "monthly") => {
     setFrequency(value); setSelected(value === "monthly" ? 30 : campaign.defaultAmount);
@@ -734,7 +761,13 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
             </div>
 
             </section>
-            <BillingAddressForm value={billingAddress} onChange={setBillingAddress} searchEnabled={settings.addressSearch} />
+            <BillingAddressForm value={billingAddress} searchEnabled={settings.addressSearch} detected={countrySource === "detected"} onChange={(next) => {
+              if (next.countryCode !== billingAddress.countryCode) {
+                setCountrySource("user");
+                try { sessionStorage.setItem(BILLING_COUNTRY_STORAGE, next.countryCode); } catch { /* private mode */ }
+              }
+              setBillingAddress(next);
+            }} />
             <section className={styles.formSection} aria-labelledby="payment-heading">
               <div className={styles.sectionTitle}><h3 id="payment-heading">Payment details</h3><Lock size={15} aria-hidden="true" /></div>
               <div className={styles.cardMethod}><span>Credit or debit card</span><CardBrands /></div>
