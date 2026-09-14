@@ -21,7 +21,6 @@
 .heroFoot { position:absolute; bottom:27px; inset-inline:64px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
 .heroFoot a { display:flex; align-items:center; gap:17px; font-size:10px; }
 .heroFoot a:hover svg { transform:translateY(3px); }
-.heroFoot p { font-size:9px; line-height:1.6; color:#e8e5d8; }
 .sectionNav { position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; gap:25px; padding:0 max(32px,calc((100% - 1252px)/2)); min-height:66px; background:#f7f4edf5; backdrop-filter:blur(14px); border-bottom:1px solid #deded1; }
 .sectionNav > div { display:flex; gap:36px; }
 .sectionNav a { display:inline-flex; gap:10px; align-items:center; min-height:66px; font-size:11px; }
@@ -46,11 +45,12 @@
 .storyCopy .eyebrow { color:#e7d1ae; font-size:9px; margin-bottom:20px; }
 .storyCopy h2 { color:#fffdf4; font-size:clamp(39px,4.1vw,60px); }
 .storyCopy h2 em { color:#e7dbb8; }
-.storyCopy > p:not(.eyebrow):not(.storySignature):not(.storyCaption) { font-size:13px; line-height:1.85; color:#e4e9dc; max-width:390px; margin-top:21px; }
+.storyCopy > p:not(.eyebrow):not(.storySignature) { font-size:13px; line-height:1.85; color:#e4e9dc; max-width:390px; margin-top:21px; }
 .storySignature { font-size:10px; color:#ddd3b6; margin-top:27px; }
-.storyCaption { font-size:8px; line-height:1.6; color:#c6d2c4; margin-top:28px; }
 .priorities { display:grid; grid-template-columns:1fr 1.1fr; gap:90px; }
-.priorityIntro { align-self:start; position:sticky; top:115px; }
+.recoveryScene { grid-column:1/-1; position:relative; aspect-ratio:2.15/1; margin-top:-30px; overflow:hidden; background:#d8d7cc; }
+.recoveryImage { object-fit:cover; object-position:50% 0%; }
+.priorityIntro { align-self:start; }
 .priorityIntro > p:not(.eyebrow),.approachIntro > p:not(.eyebrow),.involvementIntro > p:not(.eyebrow) { font-size:13px; line-height:1.95; color:#69705f; max-width:360px; margin-top:28px; }
 .textLink { display:inline-flex; align-items:center; gap:9px; font-size:11px; line-height:1.7; text-decoration:underline; text-underline-offset:5px; margin-top:27px; }
 .priorityList > div { display:flex; align-items:flex-start; gap:24px; padding:33px 0; border-top:1px solid #d4d7c9; }
@@ -97,7 +97,7 @@
 }
 @media(max-width:760px) {
   .hero { min-height:100svh; align-items:flex-end; }
-  .heroImage { height:75%!important; object-position:60% center; }
+  .heroImage { height:75%!important; object-position:25% center; }
   .heroShade { background:linear-gradient(180deg,#102a2370 0%,#102a2330 23%,#102a23d9 53%,#102a23 73%); }
   .heroInner { padding:225px 24px 116px; }
   .heroEyebrow { font-size:8px; margin-bottom:23px; gap:9px; }
@@ -105,7 +105,6 @@
   .heroIntro { font-size:13px; line-height:1.85; margin:24px 0; max-width:340px; }
   .desktopBreak { display:none; }
   .heroFoot { bottom:23px; inset-inline:24px; flex-direction:column; align-items:flex-start; gap:16px; }
-  .heroFoot p { font-size:8px; }
   .heroStatus { font-size:9px; margin-top:14px; }
   .sectionNav { padding:0 23px; gap:15px; min-height:60px; }
   .sectionNav > div { gap:18px; }
@@ -127,11 +126,12 @@
   .portraitImage { height:83%!important; object-position:35% 55%; }
   .storyCopy { padding:310px 24px 27px; }
   .storyCopy h2 { font-size:43px; }
-  .storyCopy > p:not(.eyebrow):not(.storySignature):not(.storyCaption) { font-size:12px; line-height:1.85; margin-top:18px; max-width:370px; }
+  .storyCopy > p:not(.eyebrow):not(.storySignature) { font-size:12px; line-height:1.85; margin-top:18px; max-width:370px; }
   .storyCopy .eyebrow { font-size:8px; }
   .storySignature { margin-top:24px; }
-  .storyCaption { margin-top:22px; }
   .priorityIntro { position:static; }
+  .recoveryScene { aspect-ratio:4/3; margin-top:0; }
+  .recoveryImage { object-position:25% center; }
   .priorityList > div { padding:26px 0; gap:19px; }
   .priorityList h3 { font-size:20px; }
   .priorityIntro > p:not(.eyebrow),.approachIntro > p:not(.eyebrow),.involvementIntro > p:not(.eyebrow) { font-size:12px; margin-top:22px; }
