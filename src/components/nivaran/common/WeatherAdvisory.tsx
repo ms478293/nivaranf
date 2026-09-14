@@ -265,8 +265,8 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
               </button>
               <div className={styles.visual}>
                 <Image
-                  src="/hero_img/nepal-flood-portrait.webp"
-                  alt="AI-generated campaign illustration: a woman on higher ground overlooking a flooded Nepal river valley."
+                  src="/hero_img/nepal-flood-community.webp"
+                  alt="People making their way through debris beside flood-damaged buildings."
                   fill
                   priority
                   sizes="(max-width: 700px) 100vw, 520px"
@@ -282,7 +282,6 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
                     </button>
                     <div className={styles.visualFooter}>
                       <p>THE WATER RECEDES.<br /><span>THE NEED DOESN’T.</span></p>
-                      <span className={styles.caption}>AI-generated illustration</span>
                     </div>
                   </>
                 ) : (

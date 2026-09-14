@@ -2,7 +2,7 @@
 .close { position:absolute; right:15px; top:15px; z-index:5; display:grid; place-items:center; width:36px; height:36px; border-radius:50%; color:#435047; background:#eeece6; transition:background .2s,transform .2s; }
 .close:hover { background:#e1ddd3; transform:rotate(90deg); }
 .visual { position:relative; isolation:isolate; min-height:640px; overflow:hidden; background:#26382e; color:white; }
-.image { object-fit:cover; object-position:50% 50%; z-index:-3; animation:arrive 1.5s ease-out both; }
+.image { object-fit:cover; object-position:62% 50%; z-index:-3; animation:arrive 1.5s ease-out both; }
 .visualShade { position:absolute; inset:0; z-index:-2; background:linear-gradient(0deg,#13251deb 0%,#13251d15 50%,#13251d50); }
 .location { position:absolute; top:34px; left:30px; display:flex; align-items:center; gap:9px; font-size:9px; letter-spacing:.17em; font-weight:600; }
 .location span { width:5px; height:5px; background:#fb7655; }
@@ -13,7 +13,6 @@
 .visualFooter { position:absolute; left:30px; right:30px; bottom:28px; }
 .visualFooter p { font-size:27px; line-height:1.18; letter-spacing:-.025em; font-weight:650; }
 .visualFooter p span { color:#f5e7c9; }
-.caption { display:block; margin-top:20px; font-size:9px; color:#d1d9d0; }
 .content { padding:30px 38px 25px; display:flex; flex-direction:column; align-items:flex-start; }
 .logo { height:43px!important; width:auto; margin-bottom:28px; }
 .eyebrow { text-transform:uppercase; color:#b23d22; font-size:10px; letter-spacing:.16em; font-weight:600; margin-bottom:15px; }
@@ -41,7 +40,7 @@
 .videoCredit a:hover,.videoCredit button:hover { color:white; text-decoration:underline; }
 .videoCredit button { width:100%; text-decoration:underline; text-underline-offset:3px; }
 @keyframes arrive { from { opacity:.5; transform:scale(1.035); } to { opacity:1; transform:scale(1); } }
-@media(max-width:700px) { .panel { grid-template-columns:1fr; max-width:450px; max-height:92dvh; } .close { position:sticky; top:12px; grid-row:1; grid-column:1; justify-self:end; margin:12px 12px -48px 0; color:white; background:#15241bd9; } .visual { grid-row:1; grid-column:1; min-height:225px; height:225px; } .image { object-position:50% 53%; } .location { top:22px; left:23px; font-size:8px; } .visualFooter { bottom:20px; left:22px; right:22px; } .visualFooter p { font-size:18px; } .caption { font-size:8px; margin-top:9px; } .play { top:53%; left:auto; right:20px; width:auto; transform:translateY(-50%); font-size:10px; } .playCircle { width:48px; height:48px; } .playCredit { font-size:8px; } .content { padding:23px 25px 23px; } .logo { height:32px!important; margin-bottom:19px; } .heading { font-size:37px; } .heading br:last-child { display:none; } .lede { font-size:12px; margin-top:13px; } .giving { margin-top:19px; } .eyebrow { font-size:9px; margin-bottom:11px; } .note { margin-bottom:15px; } .videoStage { padding:12px; gap:5px; } .videoStage iframe { max-height:165px; } .videoCredit { font-size:8px; gap:6px; } .videoCredit button { width:auto; } }
+@media(max-width:700px) { .panel { grid-template-columns:1fr; max-width:450px; max-height:92dvh; } .close { position:sticky; top:12px; grid-row:1; grid-column:1; justify-self:end; margin:12px 12px -48px 0; color:white; background:#15241bd9; } .visual { grid-row:1; grid-column:1; min-height:225px; height:225px; } .image { object-position:50% 65%; } .location { top:22px; left:23px; font-size:8px; } .visualFooter { bottom:20px; left:22px; right:22px; } .visualFooter p { font-size:18px; } .play { top:53%; left:auto; right:20px; width:auto; transform:translateY(-50%); font-size:10px; } .playCircle { width:48px; height:48px; } .playCredit { font-size:8px; } .content { padding:23px 25px 23px; } .logo { height:32px!important; margin-bottom:19px; } .heading { font-size:37px; } .heading br:last-child { display:none; } .lede { font-size:12px; margin-top:13px; } .giving { margin-top:19px; } .eyebrow { font-size:9px; margin-bottom:11px; } .note { margin-bottom:15px; } .videoStage { padding:12px; gap:5px; } .videoStage iframe { max-height:165px; } .videoCredit { font-size:8px; gap:6px; } .videoCredit button { width:auto; } }
 @media(prefers-reduced-motion:reduce) { .image { animation:none; } .panel button,.panel a,.playCircle { transition:none; } }
 
-@media(max-width:700px) { .visualFooter p { display:none; } .caption { margin-top:0; } .heading { font-size:35px; } .location { right:60px; line-height:1.5; } }
+@media(max-width:700px) { .visualFooter p { display:none; } .heading { font-size:35px; } .location { right:60px; line-height:1.5; } }
