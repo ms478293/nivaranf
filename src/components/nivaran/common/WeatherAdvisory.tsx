@@ -3,14 +3,13 @@
 /**
  * WeatherAdvisory
  * ---------------------------------------------------------------------------
- * Site-wide flood appeal popup. Opens once as a centered modal on first visit,
- * then collapses to a slim bar that keeps the notice reachable afterwards.
+ * Site-wide flood appeal popup. Opens on each fresh public-site visit, then
+ * collapses to a slim bar while the visitor continues browsing that document.
  *
  * EDITING THIS NOTICE (no coding required):
  *   - Turn it off entirely ....... set ADVISORY.enabled = false
  *   - Change any wording ......... edit the strings below
- *   - Publish a NEW advisory ..... bump ADVISORY.storageKey ("..._v1" -> "..._v2");
- *                                  everyone sees the modal again.
+ *   - Change the arrival delay ... edit ADVISORY.openDelayMs
  *
  * Local appeal content; the third-party video loads only after a visitor presses play.
  * Mounted from the public site layouts; private routes are excluded below.
@@ -31,11 +30,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const ADVISORY = {
   enabled: true,
-  storageKey: "nivaran_flood_appeal_v2",
-  openDelayMs: 700,
+  openDelayMs: 400,
   eyebrow: "Nepal flood emergency · 2026",
   heading: "Nepal needs us. Recovery starts with care.",
-  lede: "Homes swept away. Communities cut off. Help sustain Nivaran’s healthcare and education work in Nepal through the long road ahead.",
+  lede: "Stand with families facing the long road to recovery after Nepal’s floods. Help fund Nivaran’s planned flood response.",
   primaryAction: { label: "Explore the flood appeal", href: "/donate/nepal-flood-recovery" },
   secondaryAction: { label: "Support our work", href: "/donate" },
   barText: "Stand with Nepal’s flood-affected communities.",
@@ -49,6 +47,11 @@ const ADVISORY = {
 /* ────────────────────────────── COMPONENT ────────────────────────────── */
 
 type Mode = "hidden" | "modal" | "bar";
+
+// Keep a dismissal only while navigating this document. A reload, a new tab or
+// a later visit starts fresh; old persistent storage must never suppress it.
+// Assigned only by client interactions, never during server rendering.
+let visitChoice: "bar" | "hidden" | null = null;
 
 const FOCUSABLE =
   'a[href], button:not([disabled]), iframe, [tabindex]:not([tabindex="-1"])';
@@ -80,25 +83,14 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const lastFocusedRef = useRef<HTMLElement | null>(null);
 
-  /* Decide the initial state once, on the client only. */
+  /* Show on arrival, including for visitors who dismissed an earlier appeal. */
   useEffect(() => {
-    if (!ADVISORY.enabled || isPrivateRoute) return;
-
-    let dismissed = false;
-    let hiddenForSession = false;
-    try {
-      dismissed =
-        window.localStorage.getItem(ADVISORY.storageKey) === "dismissed";
-      hiddenForSession =
-        window.sessionStorage.getItem(`${ADVISORY.storageKey}_bar`) ===
-        "hidden";
-    } catch {
-      // Private mode / storage blocked: fall through and show the notice.
+    if (!ADVISORY.enabled || isPrivateRoute) {
+      setMode("hidden");
+      return;
     }
-
-    if (hiddenForSession) return;
-    if (dismissed) {
-      setMode("bar");
+    if (visitChoice !== null) {
+      setMode(visitChoice);
       return;
     }
 
@@ -124,14 +116,8 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
     return () => observer.disconnect();
   }, [mode]);
 
-  const closeModal = useCallback((persist: boolean) => {
-    if (persist) {
-      try {
-        window.localStorage.setItem(ADVISORY.storageKey, "dismissed");
-      } catch {
-        // Storage blocked: the notice simply returns on the next visit.
-      }
-    }
+  const closeModal = useCallback(() => {
+    visitChoice = "bar";
     setVideoPlaying(false);
     setMode("bar");
   }, []);
@@ -142,17 +128,13 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
   }, []);
 
   const hideBar = useCallback(() => {
-    try {
-      window.sessionStorage.setItem(`${ADVISORY.storageKey}_bar`, "hidden");
-    } catch {
-      // Storage blocked: the bar returns on the next navigation.
-    }
+    visitChoice = "hidden";
     setMode("hidden");
   }, []);
 
   /* While the modal is open: lock scroll, trap focus, close on Escape. */
   useEffect(() => {
-    if (mode !== "modal") return;
+    if (mode !== "modal" || isPrivateRoute) return;
 
     const previouslyFocused = document.activeElement as HTMLElement | null;
     if (!lastFocusedRef.current) lastFocusedRef.current = previouslyFocused;
@@ -166,7 +148,7 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
-        closeModal(true);
+        closeModal();
         return;
       }
       if (event.key !== "Tab" || !panel) return;
@@ -196,7 +178,7 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
       lastFocusedRef.current?.focus?.();
       lastFocusedRef.current = null;
     };
-  }, [mode, closeModal]);
+  }, [mode, closeModal, isPrivateRoute]);
 
   if (!ADVISORY.enabled || isPrivateRoute) return null;
 
@@ -262,7 +244,7 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25, ease: EASE }}
             className="fixed inset-0 z-[9999] flex items-end justify-center bg-black/65 p-3 backdrop-blur-[4px] items-center sm:p-6 print:hidden"
-            onClick={() => closeModal(true)}
+            onClick={closeModal}
             {...motionProps}
           >
             <motion.div
@@ -278,7 +260,7 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
               onClick={(event) => event.stopPropagation()}
               className={styles.panel}
             >
-              <button type="button" data-autofocus onClick={() => closeModal(true)} aria-label={ADVISORY.closeLabel} className={styles.close}>
+              <button type="button" data-autofocus onClick={closeModal} aria-label={ADVISORY.closeLabel} className={styles.close}>
                 <X size={22} aria-hidden="true" />
               </button>
               <div className={styles.visual}>
@@ -333,12 +315,12 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
                     ))}
                   </div>
                 </fieldset>}
-                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery${floodGivingOpen ? `?amount=${gift}` : ""}`} onClick={() => closeModal(true)} className={styles.primary}>
+                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery${floodGivingOpen ? `?amount=${gift}#flood-giving` : ""}`} onClick={closeModal} className={styles.primary}>
                   {floodGivingOpen ? `Give $${gift} to the flood appeal` : "Explore the Nepal flood appeal"} <ArrowRight size={18} aria-hidden="true" />
                 </Link>
-                <p className={styles.note}>{floodGivingOpen ? "Your gift supports Nivaran’s Nepal flood appeal." : "Dedicated flood gifts are not yet open. See our plans and current response status."}</p>
-                <Link href={`${mainSiteOrigin}/campaigns/nepal-flood-recovery`} onClick={() => closeModal(true)} className={styles.secondary}>Read the flood briefing & our response status <ArrowRight size={14} aria-hidden="true" /></Link>
-                <button type="button" onClick={() => closeModal(true)} className={styles.later}>Continue to website</button>
+                <p className={styles.note}>{floodGivingOpen ? "Choose a one-time or monthly gift on the next step." : "Dedicated flood gifts are not yet open. See our plans and current response status."}</p>
+                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery`} onClick={closeModal} className={styles.secondary}>Explore the flood campaign <ArrowRight size={14} aria-hidden="true" /></Link>
+                <button type="button" onClick={closeModal} className={styles.later}>Continue to website</button>
               </div>
             </motion.div>
           </motion.div>
