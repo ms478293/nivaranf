@@ -61,19 +61,25 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         </div>
       </section>
 
-      <section className={styles.humanStory} aria-labelledby="human-story-title">
-        <figure className={styles.portrait}>
-          <div><Image src="/hero_img/nepal-flood-portrait.webp" alt="AI-generated illustration of a woman looking toward a flooded Himalayan village" fill sizes="(max-width: 760px) 100vw, 50vw" /></div>
-          <figcaption>AI-generated illustration · not a real beneficiary portrait</figcaption>
-        </figure>
-        <div className={styles.storyCopy}>
-          <p className={styles.eyebrow}>BEHIND EVERY NUMBER, A LIFE.</p>
-          <h2 id="human-story-title">A flood takes more<br />than <em>a home.</em></h2>
-          <p>It can take the road to a clinic. A reliable source of water. The ordinary routines that help a family feel safe.</p>
-          <p>Recovery means rebuilding those connections, too. That is the human need at the centre of this appeal.</p>
-          <span className={styles.storyRule} aria-hidden="true" />
-          <p className={styles.storySignature}>With Nepal. For the road ahead.</p>
+      <section id="flood-story" className={styles.humanStory} aria-labelledby="human-story-title" tabIndex={-1}>
+        <div className={styles.storyPanel}>
+          <Image src="/hero_img/nepal-flood-portrait.webp" alt="AI-generated illustration of a woman looking toward a flooded Himalayan village" fill sizes="(max-width: 760px) 100vw, 50vw" className={styles.portraitImage} />
+          <div className={styles.storyShade} aria-hidden="true" />
+          <div className={styles.storyCopy}>
+            <p className={styles.eyebrow}>BEHIND EVERY NUMBER, A LIFE.</p>
+            <h2 id="human-story-title">A flood takes more<br />than <em>a home.</em></h2>
+            <p>It can take the road to a clinic. A reliable source of water. The ordinary routines that help a family feel safe.</p>
+            <p>Recovery means rebuilding those connections, too. That is the human need at the centre of this appeal.</p>
+            <p className={styles.storySignature}>With Nepal. For the road ahead.</p>
+            <p className={styles.storyCaption}>AI-generated illustration · not a real beneficiary portrait</p>
+          </div>
         </div>
+        <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
+          <p className={styles.givingLabel}>NEPAL FLOODS · YOUR GIFT</p>
+          <Suspense fallback={<div className={styles.formLoading} role="status">Loading the donation form…</div>}>
+            <DonationCard campaign={campaign} />
+          </Suspense>
+        </section>
       </section>
 
       <section id="priorities" className={styles.priorities} aria-labelledby="priorities-title" tabIndex={-1}>
@@ -107,18 +113,15 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
           <p className={styles.eyebrow}>04 / STAND WITH NEPAL</p>
           <h2 id="involvement-title">There is a place<br />for your <em>kindness.</em></h2>
           <p>Choose a one-time or monthly gift to support Nivaran’s planned flood response.</p>
+        </div>
+        <div className={styles.involvementActions}>
+          <a href="#flood-giving" className={styles.primary}>Donate to this appeal <ArrowUpRight size={19} aria-hidden="true" /></a>
           <div className={styles.generalGift}>
             <h4>Have another way to help?</h4>
             <p>Speak with our team about relevant experience, resources, partnerships, or a larger gift.</p>
             <Link href="/contact-us" className={styles.textLink}>Contact the Nivaran team <ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
-        <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
-          <p className={styles.givingLabel}>NEPAL FLOODS · YOUR GIFT</p>
-          <Suspense fallback={<div className={styles.formLoading} role="status">Loading the donation form…</div>}>
-            <DonationCard campaign={campaign} />
-          </Suspense>
-        </section>
       </section>
 
       <section className={styles.faq} aria-labelledby="faq-title">

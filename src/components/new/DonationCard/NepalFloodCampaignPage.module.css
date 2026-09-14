@@ -37,15 +37,18 @@
 .figures dd { order:-1; font-family:Georgia,serif; font-size:clamp(44px,5.2vw,70px); letter-spacing:-.04em; line-height:1; margin:0; }
 .sourceLine { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 30px; font-size:9px; line-height:1.7; color:#6f7568; }
 .sourceLine a { display:inline-flex; align-items:center; gap:5px; text-decoration:underline; text-underline-offset:4px; }
-.humanStory { display:grid; grid-template-columns:1fr 1fr; background:#ebe8db; }
-.portrait { margin:0; position:relative; }
-.portrait > div { position:relative; min-height:700px; height:100%; }
-.portrait img { object-fit:cover; object-position:center 70%; }
-.portrait figcaption { position:absolute; bottom:0; inset-inline:0; padding:30px 24px 18px; background:linear-gradient(transparent,#102a23b3); font-size:9px; line-height:1.6; color:#f3f0e7; }
-.storyCopy { padding:80px clamp(35px,6vw,90px); align-self:center; }
-.storyCopy > p:not(.eyebrow):not(.storySignature) { font-size:14px; line-height:1.95; color:#626c5e; max-width:360px; margin-top:27px; }
-.storyRule { display:block; width:40px; height:1px; background:#818a73; margin:38px 0 20px; }
-.storySignature { font-size:11px; color:#52654e; }
+.humanStory { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:start; background:#fcf9f3; }
+.page section.humanStory,.page section.givingPanel { scroll-margin-top:66px; }
+.storyPanel { position:sticky; top:66px; isolation:isolate; display:flex; align-items:flex-end; min-height:780px; height:calc(100svh - 66px); max-height:960px; overflow:hidden; background:#17392f; color:#fffdf4; }
+.portraitImage { object-fit:cover; object-position:35% 45%; height:83%!important; z-index:-3; }
+.storyShade { position:absolute; inset:0; z-index:-2; background:linear-gradient(180deg,#17392f00 0%,#17392f08 25%,#17392f6b 43%,#17392fe6 64%,#17392f 82%); }
+.storyCopy { width:100%; padding:260px clamp(32px,4.4vw,72px) 30px; }
+.storyCopy .eyebrow { color:#e7d1ae; font-size:9px; margin-bottom:20px; }
+.storyCopy h2 { color:#fffdf4; font-size:clamp(39px,4.1vw,60px); }
+.storyCopy h2 em { color:#e7dbb8; }
+.storyCopy > p:not(.eyebrow):not(.storySignature):not(.storyCaption) { font-size:13px; line-height:1.85; color:#e4e9dc; max-width:390px; margin-top:21px; }
+.storySignature { font-size:10px; color:#ddd3b6; margin-top:27px; }
+.storyCaption { font-size:8px; line-height:1.6; color:#c6d2c4; margin-top:28px; }
 .priorities { display:grid; grid-template-columns:1fr 1.1fr; gap:90px; }
 .priorityIntro { align-self:start; position:sticky; top:115px; }
 .priorityIntro > p:not(.eyebrow),.approachIntro > p:not(.eyebrow),.involvementIntro > p:not(.eyebrow) { font-size:13px; line-height:1.95; color:#69705f; max-width:360px; margin-top:28px; }
@@ -90,8 +93,7 @@
   .heroInner { padding-inline:40px; }
   .heroFoot { inset-inline:40px; }
   .sectionLead > div,.priorities,.approach,.involvement,.faq { gap:40px; }
-  .storyCopy { padding:55px 35px; }
-  .portrait > div { min-height:620px; }
+  .storyCopy { padding-inline:32px; }
 }
 @media(max-width:760px) {
   .hero { min-height:100svh; align-items:flex-end; }
@@ -120,12 +122,15 @@
   .figures dt { font-size:9px; }
   .sourceLine { font-size:8px; }
   .humanStory { grid-template-columns:1fr; }
-  .portrait > div { min-height:0; height:auto; aspect-ratio:1/1.12; }
-  .portrait img { object-position:center 65%; }
-  .portrait figcaption { font-size:8px; }
-  .storyCopy { padding:47px 24px 53px; }
-  .storyCopy > p:not(.eyebrow):not(.storySignature) { font-size:13px; margin-top:23px; }
-  .storyRule { margin-top:28px; }
+  .page section.humanStory,.page section.givingPanel { scroll-margin-top:60px; }
+  .storyPanel { position:relative; top:0; min-height:700px; height:auto; max-height:none; }
+  .portraitImage { height:83%!important; object-position:35% 55%; }
+  .storyCopy { padding:310px 24px 27px; }
+  .storyCopy h2 { font-size:43px; }
+  .storyCopy > p:not(.eyebrow):not(.storySignature):not(.storyCaption) { font-size:12px; line-height:1.85; margin-top:18px; max-width:370px; }
+  .storyCopy .eyebrow { font-size:8px; }
+  .storySignature { margin-top:24px; }
+  .storyCaption { margin-top:22px; }
   .priorityIntro { position:static; }
   .priorityList > div { padding:26px 0; gap:19px; }
   .priorityList h3 { font-size:20px; }
@@ -137,21 +142,20 @@
 @media(max-width:360px) { .sectionNav { padding-inline:16px; gap:10px; } .sectionNav > div { gap:12px; } .figures dd { font-size:32px; } }
 @media(prefers-reduced-motion:reduce) { .heroImage,.heroInner,.questions details[open] > p { animation:none; } .page a,.page svg { transition:none; } .primary:hover,.primary:hover svg,.textLink:hover svg,.heroFoot a:hover svg,.navAction:hover svg,.closing a:hover svg { transform:none; } }
 
-/* Dedicated giving section; the hero remains a full-width campaign introduction. */
-.involvement { grid-template-columns:minmax(0,1fr) minmax(390px,480px); gap:70px; }
-.involvementIntro { position:sticky; top:110px; }
-.involvementIntro .generalGift { max-width:360px; }
-.givingPanel { --campaign-accent:#bc4a36; --campaign-button:#723c30; --campaign-hover:#8b493c; padding:32px; min-width:0; color:#24392e; background:#fcf9f3; border-top:3px solid #b54f31; }
+/* The third section combines the portrait/story with one shared donation form. */
+.involvementActions { align-self:center; }
+.involvementActions > .primary { background:#b74d2e; color:#fff; }
+.involvementActions > .primary:hover { background:#983e26; }
+.givingPanel { --campaign-accent:#bc4a36; --campaign-button:#723c30; --campaign-hover:#8b493c; padding:48px clamp(28px,4.4vw,72px); min-width:0; color:#24392e; background:#fcf9f3; }
+.givingPanel > * { max-width:440px; margin-inline:auto; }
 .givingLabel { color:#a45137; font-size:9px; letter-spacing:.13em; font-weight:500; margin-bottom:23px; }
 .givingPanel h2 { font-family:inherit; font-size:29px; line-height:1.2; font-weight:600; letter-spacing:-.04em; }
 .givingPanel :global(#donate-checkout) > div { gap:18px; }
 .givingPanel :global(#donate-checkout) > ol { margin-bottom:23px; }
 .formLoading { min-height:620px; font-size:12px; }
-@media(max-width:1000px) { .involvement { gap:40px; grid-template-columns:minmax(0,1fr) minmax(370px,420px); } .givingPanel { padding:28px; } }
+@media(max-width:1000px) { .givingPanel { padding:38px 28px; } }
 @media(max-width:760px) {
-  .involvement { grid-template-columns:1fr; gap:32px; }
-  .involvementIntro { position:static; }
-  .givingPanel { padding:24px 20px; }
+  .givingPanel { padding:36px 24px 44px; }
   .givingPanel h2 { font-size:27px; }
   .givingLabel { font-size:8px; }
 }
