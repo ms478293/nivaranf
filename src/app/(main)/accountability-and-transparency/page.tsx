@@ -1,28 +1,13 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/accountability-and-transparency",
   title: "Accountability & Transparency | Nivaran Foundation",
-  description:
-    "How Nivaran Foundation approaches accountability and transparency through governance, reporting, and disclosure commitments.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/accountability-and-transparency",
-  },
-  openGraph: {
-    title: "Accountability & Transparency | Nivaran Foundation",
-    description: "Governance, reporting, and disclosure commitments at Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/accountability-and-transparency",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Accountability & Transparency | Nivaran Foundation",
-    description: "Nivaran Foundation's approach to accountability and transparency.",
-    site: "@NivaranOrg",
-  },
-};
+  description: "How Nivaran Foundation approaches accountability and transparency through governance, reporting, and disclosure commitments.",
+});
 
 const accountabilityCards = [
   {

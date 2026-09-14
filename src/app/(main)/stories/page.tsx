@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { globalBlogs } from "@/blogs/listofblogs";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
@@ -6,36 +7,11 @@ import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/stories",
   title: "Field Stories from Rural Nepal | Nivaran Foundation",
-  description:
-    "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/stories",
-  },
-  keywords: [
-    "rural Nepal stories",
-    "mobile health camp stories",
-    "healthcare access Nepal",
-    "Nivaran Foundation field stories",
-  ],
-  openGraph: {
-    title: "Field Stories from Rural Nepal | Nivaran Foundation",
-    description:
-      "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
-    url: "https://www.nivaranfoundation.org/stories",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Field Stories from Rural Nepal | Nivaran Foundation",
-    description:
-      "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Read real stories from mobile health camps and remote communities in Nepal where distance still decides access to doctors and treatment.",
+});
 
 export default async function StoriesPage() {
   const staticBlogs = globalBlogs

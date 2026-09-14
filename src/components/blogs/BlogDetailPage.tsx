@@ -700,6 +700,7 @@ export async function renderBlogDetailPage({
       : undefined,
     author: getSchemaAuthor(author || siteConfig.organizationName, siteConfig),
     publisher: {
+      ...(siteVariant === "main" ? { "@id": `${siteConfig.siteUrl}/#organization` } : {}),
       "@type": "Organization",
       name: siteConfig.organizationName,
       url: siteConfig.siteUrl,
@@ -790,7 +791,7 @@ export async function renderBlogDetailPage({
                 alt={data.coverImageAlt || title}
                 width={1200}
                 height={675}
-                quality={100}
+                quality={85}
                 sizes="(max-width: 768px) 100vw, 1200px"
                 priority
                 className={styles.coverImage}
@@ -845,7 +846,7 @@ export async function renderBlogDetailPage({
                   : data.authorBio}
               </p>
               <div className={styles.authorLinks}>
-                <Link href="/editorial-standards">Editorial Standards</Link>
+                <Link href="https://www.nivaranfoundation.org/editorial-standards">Editorial Standards</Link>
                 <a
                   href="https://www.instagram.com/nivaran.foundation/"
                   target="_blank"

@@ -1,38 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
 import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/free-health-camp-nepal",
   title: "Free Health Camp Nepal | How Rural Medical Camps Actually Work",
-  description:
-    "Learn how a free health camp in Nepal works in practice, from medical staffing and screenings to medicine distribution, referrals, and rural community coordination.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/free-health-camp-nepal",
-  },
-  keywords: [
-    "free health camp Nepal",
-    "health camp Nepal",
-    "mobile health camp Nepal",
-    "rural health camp Nepal",
-    "Nivaran Foundation",
-  ],
-  openGraph: {
-    title: "Free Health Camp Nepal | How Rural Medical Camps Actually Work",
-    description:
-      "A practical look at how free health camps in Nepal deliver screening, treatment, medicine, and referrals where access is limited.",
-    url: "https://www.nivaranfoundation.org/free-health-camp-nepal",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Health Camp Nepal | How Rural Medical Camps Actually Work",
-    description:
-      "What a real free health camp in Nepal includes beyond a one-day outreach visit.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Learn how a free health camp in Nepal works in practice, from medical staffing and screenings to medicine distribution, referrals, and rural community coordination.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 export default function FreeHealthCampNepalPage() {
   return (

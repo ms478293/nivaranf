@@ -38,7 +38,7 @@ export const footerData = {
     },
     {
       name: "Ways to Give",
-      link: getBlogPathBySlug("how-to-contribute"),
+      link: "/ways-to-give",
     },
     {
       name: "News and Stories",

@@ -474,6 +474,19 @@ export async function getBlogFeed(limit = 200) {
   }
 }
 
+// Sitemap selection happens before any feed limit. Recent excluded news must
+// never push older original articles and stories out of search discovery.
+export async function getIndexableBlogFeed() {
+  const [stories, articles] = await Promise.all([
+    getPublishedBlogItemsBySegment("stories"),
+    getPublishedBlogItemsBySegment("articles"),
+  ]);
+  return filterPublicNewsIndex(dedupeBlogItems(
+    [...stories, ...articles, ...globalBlogs.filter((blog) => blog.type !== "News")],
+    Number.MAX_SAFE_INTEGER,
+  ));
+}
+
 export function getSegmentForContentPost(post: ContentPost): ContentRouteSegment {
   return getRouteSegmentForContentType(post.content_type);
 }

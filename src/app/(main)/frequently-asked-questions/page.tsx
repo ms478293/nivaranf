@@ -1,31 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { FAQ } from "@/components/new/FAQ/FAQ";
 import { FAQdata } from "@/content/faq";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "Nivaran Foundation | FAQ - Frequently Asked Questions about Nivaran Foundation",
-  description:
-    "Find answers to common questions about Nivaran Foundation programs, donations, volunteering, privacy, and how healthcare and education work is delivered in Nepal.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/frequently-asked-questions",
-  },
-  openGraph: {
-    title: "FAQ | Nivaran Foundation",
-    description: "Answers to common questions about donations, programs, volunteering, and operations at Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/frequently-asked-questions",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "FAQ | Nivaran Foundation",
-    description: "Answers to common questions about Nivaran Foundation programs, donations, and operations.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/frequently-asked-questions",
+  "title": "Nivaran Foundation FAQ | Donations, Programs & Volunteering",
+  "description": "Find answers about Nivaran Foundation’s Nepal programs, donations, monthly giving, volunteering and reporting, with links to the information you need."
+});
 
 export default function FAQPage() {
   // Flatten FAQ data to create schema

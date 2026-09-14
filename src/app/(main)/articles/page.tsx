@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { globalBlogs } from "@/blogs/listofblogs";
 import { getBlogPath, getBlogRouteSegmentByType } from "@/lib/blog-routes";
 import { displayExcerpt, filterPublicNewsIndex } from "@/lib/content/blogFilters";
@@ -5,36 +6,11 @@ import { getPublishedBlogItemsBySegment } from "@/lib/content/posts";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/articles",
   title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
-  description:
-    "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/articles",
-  },
-  keywords: [
-    "rural healthcare Nepal articles",
-    "maternal health Nepal",
-    "public health Nepal analysis",
-    "Nivaran Foundation articles",
-  ],
-  openGraph: {
-    title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
-    description:
-      "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
-    url: "https://www.nivaranfoundation.org/articles",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rural Healthcare Articles & Analysis | Nivaran Foundation",
-    description:
-      "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "In-depth articles on rural healthcare in Nepal, maternal and child health, disease prevention, and frontline delivery models.",
+});
 
 export default async function ArticlesPage() {
   const staticBlogs = globalBlogs

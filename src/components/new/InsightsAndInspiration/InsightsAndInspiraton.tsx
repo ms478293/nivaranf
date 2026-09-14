@@ -58,7 +58,7 @@ const InsightsAndInspiraton = () => {
                 key={data.slug}
                 className="max-sm:max-w-[min(345px,calc(100vw-2rem))] max-sm:min-w-[min(345px,calc(100vw-2rem))] max-sm:w-[min(345px,calc(100vw-2rem))]  snap-center "
               >
-                <BlogCard.Image className="h-[220px] sm:h-[280px] lg:h-[340px]" />
+                <BlogCard.Image className="h-[220px] sm:h-[280px] lg:h-[340px]" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw" />
                 <BlogCard.TitleAndDescription className="text-lg/[30px] p-4" />
               </BlogCard>
             )}

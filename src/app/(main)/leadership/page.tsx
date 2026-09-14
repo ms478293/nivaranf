@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { LeadershipList } from "@/components/new/Leadership/LeadershipList";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
@@ -5,30 +6,11 @@ import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { LEADERSHIP_DATA } from "@/content/leadership";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/leadership",
   title: "Leadership & Governance | Nivaran Foundation",
-  description:
-    "Meet the board, program leadership, operations, communications, and fundraising team behind Nivaran Foundation's healthcare and education work in Nepal.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/leadership",
-  },
-  openGraph: {
-    title: "Leadership & Governance | Nivaran Foundation",
-    description:
-      "Board, program, operations, and fundraising leadership at Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/leadership",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Leadership & Governance | Nivaran Foundation",
-    description:
-      "Meet the team responsible for governance, program execution, and organizational accountability at Nivaran Foundation.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Meet the board, program leadership, operations, communications, and fundraising team behind Nivaran Foundation's healthcare and education work in Nepal.",
+});
 
 const totalLeaders = LEADERSHIP_DATA.reduce(
   (sum, group) => sum + group.members.length,
@@ -174,7 +156,7 @@ export default function LeadershipPage() {
               title: "Financial Reports",
               href: "/financial-reports",
               description:
-                "Reporting status, tax-exempt verification path, and due diligence channels.",
+                "Reporting status, organizational details, and due diligence channels.",
             },
             {
               title: "Accountability & Transparency",

@@ -72,17 +72,17 @@ export function HealthcareTopicPage({
       {
         label: "Patients served",
         value: SANJEEVANI_PUBLIC_STATS.patientsServedText,
-        note: "current cumulative field total",
+        note: `published figures ${SANJEEVANI_PUBLIC_STATS.asOfLabel}`,
       },
       {
         label: "Health camps",
         value: SANJEEVANI_PUBLIC_STATS.campsCompletedText,
-        note: "verified completed camps",
+        note: `reported completed camps ${SANJEEVANI_PUBLIC_STATS.asOfLabel}`,
       },
       {
         label: "Provinces covered",
         value: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`,
-        note: "active national footprint",
+        note: `reported coverage ${SANJEEVANI_PUBLIC_STATS.asOfLabel}`,
       },
     ];
 

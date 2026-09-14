@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import DonationBlock from "@/components/new/DonationBlock/DonationBlock";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
@@ -6,28 +7,11 @@ import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
 import { Suspense } from "react";
 
-export const metadata: Metadata = {
-  title: "Nivaran Foundation | Make a Difference with Nivaran Foundation",
-  description:
-    "Support Nivaran Foundation through donations, volunteering, partnerships, fundraising, and advocacy to expand healthcare and education access in Nepal.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/how-to-help",
-  },
-  openGraph: {
-    title: "How to Help | Nivaran Foundation",
-    description: "Support Nivaran Foundation through donations, volunteering, partnerships, and practical ways to help.",
-    url: "https://www.nivaranfoundation.org/how-to-help",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "How to Help | Nivaran Foundation",
-    description: "See how donations, volunteering, partnerships, and advocacy support Nivaran Foundation programs in Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/how-to-help",
+  "title": "Help Communities in Nepal | Nivaran Foundation",
+  "description": "Support communities in Nepal through donations, volunteering, local partnerships or fundraising. Find the way to help that fits your skills and resources."
+});
 
 export default function page() {
   return (

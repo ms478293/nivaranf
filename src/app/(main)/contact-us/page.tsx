@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { ContactCardList } from "@/components/new/ContactCardList/ContactCardList";
 import ContactForm from "@/components/new/ContactForm/ContactForm";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
@@ -6,38 +7,11 @@ import { Metadata } from "next";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Contact Nivaran Foundation | Nepal Healthcare NGO",
-  description:
-    "Contact Nivaran Foundation for partnership, donation, program, or volunteer inquiries. Email partnerships@nivaranfoundation.org or call +977-01-5354693. We respond within 24 hours.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/contact-us",
-  },
-  openGraph: {
-    title: "Contact Nivaran Foundation | Nepal Healthcare NGO",
-    description:
-      "Reach Nivaran Foundation for partnerships, donations, programs, or volunteer inquiries. We respond within 24 hours.",
-    url: "https://www.nivaranfoundation.org/contact-us",
-    type: "website",
-    siteName: "Nivaran Foundation",
-    images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Nivaran Foundation",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Nivaran Foundation | Nepal Healthcare NGO",
-    description:
-      "Reach Nivaran Foundation for partnerships, donations, programs, or volunteer inquiries.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/contact-us",
+  "title": "Contact Nivaran Foundation | Nepal Healthcare NGO",
+  "description": "Contact Nivaran Foundation about healthcare programs, donations, volunteering and partnerships in Nepal. Reach our team in Kathmandu and Arlington, MA."
+});
 
 const CONTACT_FAQS = [
   {

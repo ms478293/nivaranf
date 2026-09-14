@@ -12,8 +12,9 @@ import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { Metadata } from "next";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import ogImage from "../../public/logo.png";
+import { PUBLIC_PAGE_ROBOTS } from "@/lib/page-metadata";
+import ExploreNivaran from "@/components/new/ExploreNivaran";
 
 export const revalidate = 3600;
 
@@ -75,8 +76,8 @@ export const metadata: Metadata = {
       {
         url: ogImage.src,
         alt: "Nivaran Foundation healthcare programs in Nepal",
-        width: 1200,
-        height: 630,
+        width: ogImage.width,
+        height: ogImage.height,
       },
     ],
     description:
@@ -92,7 +93,7 @@ export const metadata: Metadata = {
         url: "https://www.nivaranfoundation.org/logo.png",
         alt: "Nivaran Foundation healthcare programs in Nepal",
         width: 1200,
-        height: 675,
+        height: 665,
       },
     ],
     description:
@@ -100,7 +101,7 @@ export const metadata: Metadata = {
     creator: "@NivaranOrg",
   },
 
-  robots: "index, follow",
+  robots: PUBLIC_PAGE_ROBOTS,
 };
 
 const page = () => {
@@ -139,8 +140,8 @@ const page = () => {
                 healthcare to Nepal&apos;s most underserved communities. With
                 {` ${SANJEEVANI_PUBLIC_STATS.campsCompletedText}`} completed
                 health camps and {` ${SANJEEVANI_PUBLIC_STATS.patientsServedText}`}{" "}
-                patients served through Project Sanjeevani, every dollar you
-                give saves lives.
+                patients reported through Project Sanjeevani {SANJEEVANI_PUBLIC_STATS.asOfLabel},
+                your support helps bring care closer to underserved communities.
               </p>
             </div>
           </AboutNivaran>
@@ -197,31 +198,7 @@ const page = () => {
           <InsightsAndInspiraton />
         </section>
 
-        {/* Beneficiary Story — Real Impact */}
-        <section className="w-full px-4 py-12 bg-gradient-to-br from-primary-50 via-white to-emerald-50">
-          <div className="max-w-[1320px] mx-auto">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-primary-500 text-sm font-semibold uppercase tracking-wider mb-2">Real Stories of Impact</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-                Healthcare Access Changes Everything
-              </h2>
-              <blockquote className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed italic mb-4">
-                  &quot;Before Nivaran&apos;s mobile health camp came to our village, the nearest doctor was a two-day walk. My children had never been screened for basic health conditions. Now, a team of healthcare workers visits regularly — my daughter received her first dental checkup, and our family was screened for diabetes and hypertension, all at no cost. For us, this is not just healthcare — it is hope.&quot;
-                </p>
-                <footer className="text-sm text-gray-500">
-                  — Mother of three, Kapilvastu District, Nepal
-                </footer>
-              </blockquote>
-              <Link
-                href="/stories"
-                className="inline-block mt-6 text-primary-500 font-medium text-sm hover:text-primary-600 underline"
-              >
-                Read More Stories →
-              </Link>
-            </div>
-          </div>
-        </section>
+        <ExploreNivaran />
 
         {/* Newsletter Subscribe */}
         <section aria-labelledby="newsletter-title" className="py-8">

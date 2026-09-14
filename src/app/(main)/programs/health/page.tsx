@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import { TitleGifDisplayCard } from "@/components/nivaran/common/TitleGifDisplayCard";
@@ -7,46 +8,17 @@ import { HealthContent } from "@/content/site-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
-  description:
-    "Explore Nivaran Foundation healthcare programs in Nepal, including mobile health camps, maternal care outreach, child health support, and essential treatment in remote communities.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/programs/health",
-  },
-  keywords: [
-    "free healthcare Nepal",
-    "rural health programs Nepal",
-    "mobile health camps Nepal",
-    "maternal health Nepal",
-    "Nivaran Foundation healthcare",
-  ],
-  openGraph: {
-    title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
-    description:
-      "Nivaran Foundation healthcare programs deliver mobile health camps, maternal care support, and essential treatment in underserved communities across Nepal.",
-    url: "https://www.nivaranfoundation.org/programs/health",
-    type: "website",
-    siteName: "Nivaran Foundation",
-    images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Nivaran Foundation healthcare programs",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Healthcare Programs in Rural Nepal | Nivaran Foundation",
-    description:
-      "Mobile health camps, maternal care support, and essential treatment across underserved communities in Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-    images: ["https://www.nivaranfoundation.org/logo.png"],
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/programs/health",
+  "title": "Free Healthcare in Rural Nepal | Nivaran Foundation",
+  "description": "Explore Nivaran’s free mobile health camps in rural Nepal, including screening, maternal and child health support, medicines and referral pathways.",
+  "image": {
+    "url": "/hero_img/hero_img_2.webp",
+    "alt": "A healthcare worker examining a patient",
+    "width": 1920,
+    "height": 1080
+  }
+});
 
 export default function Healthcare() {
   return (

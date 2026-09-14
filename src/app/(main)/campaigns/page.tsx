@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +8,17 @@ import { DESIGNATIONS } from "@/content/donation-designations";
 import { LATEST_NEPAL_FLOOD_UPDATE } from "@/content/nepal-response";
 import styles from "./Campaigns.module.css";
 
-export const metadata: Metadata = {
-  title: "Choose a Cause | Nivaran Foundation",
-  description: "Explore Nivaran’s healthcare, education and emergency appeals. Find the cause you care about and its dedicated giving page.",
-  alternates: { canonical: "https://www.nivaranfoundation.org/campaigns" },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/campaigns",
+  "title": "Nepal Donation Campaigns & Flood Appeal | Nivaran Foundation",
+  "description": "Explore Nivaran’s Nepal flood appeal, mobile health camps, maternal care and education funds. Choose a cause and review its current giving status.",
+  "image": {
+    "url": "/hero_img/nepal-flood-river.webp",
+    "alt": "Floodwater beside damaged roads and homes in a mountain valley",
+    "width": 1536,
+    "height": 1024
+  }
+});
 
 export default function CampaignsPage() {
   const floodUpdate = LATEST_NEPAL_FLOOD_UPDATE;

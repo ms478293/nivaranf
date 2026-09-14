@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -10,23 +11,11 @@ import {
 } from "lucide-react";
 import { LocalPartnerForm } from "@/components/new/LocalPartner/LocalPartnerForm";
 
-export const metadata: Metadata = {
-  title: "Become a Local Partner | Nivaran Foundation",
-  description:
-    "Partner with Nivaran Foundation to host fundraising events in your community. Perfect for high school clubs, college groups, youth organizations, and community teams. Keep 10-20% for expenses — the rest directly supports healthcare & education programs.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/local-partner",
-  },
-  keywords: [
-    "local fundraising partner",
-    "high school fundraiser",
-    "community fundraising",
-    "youth group partnership",
-    "charity event hosting",
-    "Nivaran Foundation volunteer",
-    "nonprofit community partner",
-  ],
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/local-partner",
+  "title": "Partner with a Nepal NGO | Nivaran Foundation",
+  "description": "Work with Nivaran Foundation on community outreach, health camps and local coordination in Nepal. Learn about partnership roles and contact our team."
+});
 
 const howItWorks = [
   {

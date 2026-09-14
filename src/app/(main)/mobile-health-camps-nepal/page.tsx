@@ -1,37 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
 import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/mobile-health-camps-nepal",
   title: "Mobile Health Camps in Nepal | How Rural Outreach Care Works",
-  description:
-    "Learn how mobile health camps in Nepal expand access to screening, basic treatment, medicine, and referrals for communities far from formal healthcare facilities.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/mobile-health-camps-nepal",
-  },
-  keywords: [
-    "mobile health camps Nepal",
-    "health camps Nepal",
-    "free health camp Nepal",
-    "rural medical outreach Nepal",
-  ],
-  openGraph: {
-    title: "Mobile Health Camps in Nepal | How Rural Outreach Care Works",
-    description:
-      "A practical guide to how mobile health camps bring screening, treatment, medicine, and referral support closer to remote communities in Nepal.",
-    url: "https://www.nivaranfoundation.org/mobile-health-camps-nepal",
-    type: "article",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mobile Health Camps in Nepal | How Rural Outreach Care Works",
-    description:
-      "How mobile health camps reduce distance, delay, and cost barriers for remote families in Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Learn how mobile health camps in Nepal expand access to screening, basic treatment, medicine, and referrals for communities far from formal healthcare facilities.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 export default function MobileHealthCampsNepalPage() {
   return (

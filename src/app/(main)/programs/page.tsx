@@ -1,39 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Healthcare and Education Programs in Nepal | Nivaran Foundation",
-  description:
-    "Explore Nivaran Foundation programs in Nepal, including mobile health camps, maternal health outreach, rural healthcare access, and education support for underserved communities.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/programs",
-  },
-  keywords: [
-    "Nivaran Foundation programs",
-    "healthcare programs Nepal",
-    "education programs Nepal",
-    "mobile health camps Nepal",
-    "rural healthcare Nepal",
-  ],
-  openGraph: {
-    title: "Healthcare and Education Programs in Nepal | Nivaran Foundation",
-    description:
-      "See how Nivaran Foundation delivers mobile healthcare and education support across underserved communities in Nepal.",
-    url: "https://www.nivaranfoundation.org/programs",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Healthcare and Education Programs in Nepal | Nivaran Foundation",
-    description:
-      "Mobile health camps, rural healthcare outreach, and education support programs across Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/programs",
+  "title": "Healthcare & Education in Nepal | Nivaran Foundation",
+  "description": "Explore Nivaran’s mobile health camps, maternal and child health outreach, education support and planned programs for underserved communities in Nepal."
+});
 
 const PROGRAM_CARDS = [
   {
