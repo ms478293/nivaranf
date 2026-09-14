@@ -265,7 +265,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
     });
     if (!detected) return;
     setBillingAddress((current) => {
-      if (countrySource === "user" || (current.countryCode && current.countryCode === detected)) return current;
+      if (current.countryCode === detected) return current;
       if (current.countryCode && !settings.detectedCountry) return current;
       return { ...current, countryCode: detected };
     });
