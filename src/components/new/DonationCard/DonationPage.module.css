@@ -53,6 +53,7 @@
 .designatedGift { border-left:2px solid #df6746; padding-left:12px; font-size:12px; line-height:1.8; }
 .designatedGift a { display:block; text-decoration:underline; }
 .footer { min-height:65px; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:18px 40px; border-top:1px solid #eaede4; color:#9ba38f; font-size:8px; }
+.footer span { font-size:12px; line-height:1.5; }
 .footer div { display:flex; gap:20px; }
 .footer a:hover { color:#263d30; }
 .skeleton { min-height:480px; }

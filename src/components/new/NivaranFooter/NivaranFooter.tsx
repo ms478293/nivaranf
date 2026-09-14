@@ -1,6 +1,7 @@
 import { FooterHollow } from "@/components/nivaran/common/footer/FooterHollow";
 import { SocialLinks } from "@/components/nivaran/common/footer/SocialLinks";
 import { BOTTOM_FOOTER, footerData } from "@/content/site-data";
+import { FOOTER_LEGAL_LINE } from "@/content/footer-legal";
 import { cn } from "@/lib/utils";
 import { MailIcon } from "lucide-react";
 import Link from "next/link";
@@ -72,7 +73,7 @@ const NivaranFooter = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between  gap-4   relative text-xsm sm:text-sm  ">
-            <p>&copy; {new Date().getFullYear()} NIVARAN FOUNDATION, INC. All rights reserved</p>
+            <p>&copy; {new Date().getFullYear()} {FOOTER_LEGAL_LINE}</p>
             <div className="flex items-center  ">
               {BOTTOM_FOOTER.map((list) => (
                 <Link

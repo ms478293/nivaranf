@@ -1,4 +1,5 @@
 import { SocialLinks } from "@/components/nivaran/common/footer/SocialLinks";
+import { FOOTER_LEGAL_LINE } from "@/content/footer-legal";
 import { footerData } from "@/content/site-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,7 +90,7 @@ const FooterUsa = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-[#2c77bb]" />
 
-        <div className="flex flex-col w-1/3 text-wrap gap-1">
+        <div className="flex flex-col w-full md:w-1/3 text-wrap gap-1">
           <div>
             If you need assistance with your donation, please email us at&nbsp;
             <span className="text-primary-main">
@@ -103,7 +104,7 @@ const FooterUsa = () => {
             </span>{" "}
             is a not-for-profit organization.
           </div>
-          <div>&copy; 2025 NIVARAN. All rights reserved.</div>
+          <div>&copy; {new Date().getFullYear()} {FOOTER_LEGAL_LINE}</div>
         </div>
         <div className="w-full flex items-center justify-between">
           <div className="flex gap-4">
