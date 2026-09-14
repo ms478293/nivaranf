@@ -29,7 +29,7 @@ export const privacyPolicySections = [
           "Contact Data: Billing address, delivery address, email address, and telephone numbers.",
           "Financial Data: Bank account and payment card details (donations are processed by GoDaddy Payments and other third-party payment processors; we do not store full card numbers on our servers).",
           "Monthly giving: With your authorization, we store an encrypted payment token and your donor and billing information to process monthly gifts. We do not store your full card number or security code. Cancelling stops future charges and removes the token from our active subscription record.",
-          "Address suggestions: When address search is available, the address text you type is sent to Google Maps to suggest and complete your billing address. You can enter your address manually instead.",
+          "Address suggestions: When address search is available, the address text you type and your selected country are sent to Photon, an address search service operated by Komoot using OpenStreetMap data, to suggest and complete your billing address. You can enter your address manually instead.",
           "Transaction Data: Details about payments to and from you and other details of donations or services you have purchased from us.",
           "Technical Data: Internet Protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform.",
           "Country prefill: To suggest a country in the donation form, we use a country supplied by our hosting service or send your IP address to IPWhois (ipwho.is) for a country lookup. We do not send your name, email, billing address or payment details to this service. Device time zone and language are fallbacks, and you can change the suggested country.",
@@ -45,6 +45,7 @@ export const privacyPolicySections = [
         list: [
           "Direct Interactions: You may give us your Identity, Contact, and Financial Data by filling in forms or by corresponding with us by post, phone, email, or otherwise.",
           "Automated Technologies: As you interact with our website, we may automatically collect Technical Data about your equipment, browsing actions, and patterns using cookies and similar technologies.",
+          "Advertising Measurement: When Google Ads measurement is active, Google tags and advertising cookies record whether a visit from a Google ad led to a completed donation, including the donation amount and a transaction reference but not your name, email address, billing address, or card details, and you can decline these cookies using our cookie banner.",
           "Third Parties: We may receive personal data about you from various third parties, such as analytics providers (e.g., Google), advertising networks, and payment processors.",
         ],
       },

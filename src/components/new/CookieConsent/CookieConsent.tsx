@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-
-const COOKIE_CONSENT_KEY = "nivaran_cookie_consent";
+import { COOKIE_CONSENT_KEY, updateGoogleConsent } from "@/lib/google-ads";
 
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -19,11 +18,13 @@ export function CookieConsent() {
 
   function accept() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
+    updateGoogleConsent(true);
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "declined");
+    updateGoogleConsent(false);
     setVisible(false);
   }
 
@@ -37,8 +38,9 @@ export function CookieConsent() {
     >
       <div className="max-w-3xl mx-auto bg-white border border-gray-200 rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-gray-700 flex-1">
-          We use cookies and analytics to improve your experience and measure
-          site traffic. By continuing, you agree to our{" "}
+          We use cookies for analytics and advertising measurement, to improve
+          your experience and see whether our ads lead to donations. By
+          continuing, you agree to our{" "}
           <Link
             href="/privacy-policy"
             className="underline text-primary-main hover:text-primary-main/80"

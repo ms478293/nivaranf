@@ -8,6 +8,7 @@ import {
   type Dedication,
 } from "@/content/donation-designations";
 import { trackDonateClick, trackDonation } from "@/lib/meta-pixel";
+import { trackGoogleDonation } from "@/lib/google-ads";
 import { cn } from "@/lib/utils";
 import { Lock, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
@@ -413,6 +414,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
         billingAddress: p.billingAddress, frequency: p.frequency, monthlyConsent: p.monthlyConsent, attemptId: attemptRef.current,
       });
       trackDonation(payload.totalCents / 100);
+      trackGoogleDonation(payload.totalCents / 100, payload.transactionId);
       setResult(payload);
       setStep("done");
     } catch (err) {
