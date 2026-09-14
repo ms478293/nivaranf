@@ -12,7 +12,7 @@ import styles from "./DonationPage.module.css";
 export default function PublicSiteLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   if (pathname !== "/donate" && !pathname.startsWith("/donate/")) {
-    return <><NivaranHeader /><main id="main-content" className="relative pt-28">{children}</main><WhatsAppButton /><NivaranFooter /></>;
+    return <><NivaranHeader /><main id="main-content" className={pathname === "/campaigns" ? "relative" : "relative pt-28"}>{children}</main><WhatsAppButton /><NivaranFooter /></>;
   }
   return (
     <div className={styles.shell} data-manage={pathname === "/donate/manage" ? "true" : undefined}>
