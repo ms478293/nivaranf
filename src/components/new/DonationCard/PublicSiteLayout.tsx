@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { DESIGNATIONS } from "@/content/donation-designations";
+import { FOOTER_LEGAL_LINE } from "@/content/footer-legal";
 import Link from "next/link";
 import { ArrowLeft, LockKeyhole } from "lucide-react";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
@@ -25,7 +26,7 @@ export default function PublicSiteLayout({ children }: { children: React.ReactNo
       </header>
       <main id="main-content">{children}</main>
       <footer className={styles.footer}>
-        <span>© {new Date().getFullYear()} Nivaran Foundation Inc. · EIN 41-2656587</span>
+        <span>© {new Date().getFullYear()} {FOOTER_LEGAL_LINE}</span>
         <div><Link href="/privacy-policy">Privacy</Link><Link href="/terms-of-service">Terms</Link><Link href="/contact-us">Contact us</Link></div>
       </footer>
     </div>

@@ -1,3 +1,4 @@
+import { FOOTER_LEGAL_LINE } from "@/content/footer-legal";
 import { GLOBAL_SITE_NAV } from "@/content/global-site";
 import Link from "next/link";
 
@@ -65,7 +66,7 @@ export default function GlobalFooter({ prefix }: { prefix: string }) {
         <div className="h-px w-full bg-gradient-to-r from-primary-200 via-primary-400 to-primary-200" />
 
         <div className="flex flex-col gap-4 text-xs text-gray-600 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} NIVARAN FOUNDATION, INC. All rights reserved</p>
+          <p>&copy; {new Date().getFullYear()} {FOOTER_LEGAL_LINE}</p>
           <div className="flex flex-wrap items-center gap-4">
             <Link href={withPrefix(prefix, "/privacy-policy")} className="hover:text-primary-500">
               Privacy Policy
