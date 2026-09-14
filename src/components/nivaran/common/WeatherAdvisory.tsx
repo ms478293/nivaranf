@@ -315,7 +315,7 @@ export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigi
                     ))}
                   </div>
                 </fieldset>}
-                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery${floodGivingOpen ? `?amount=${gift}#flood-giving` : ""}`} onClick={closeModal} className={styles.primary}>
+                <Link href={`${mainSiteOrigin}/donate/nepal-flood-recovery${floodGivingOpen ? `/checkout?amount=${gift}` : ""}`} onClick={closeModal} className={styles.primary}>
                   {floodGivingOpen ? `Give $${gift} to the flood appeal` : "Explore the Nepal flood appeal"} <ArrowRight size={18} aria-hidden="true" />
                 </Link>
                 <p className={styles.note}>{floodGivingOpen ? "Choose a one-time or monthly gift on the next step." : "Dedicated flood gifts are not yet open. See our plans and current response status."}</p>
