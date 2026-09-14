@@ -12,6 +12,18 @@ export function middleware(req: NextRequest) {
     usa: "/usa",
   };
 
+  // Hosted card fields accept localhost in development, but the numeric loopback
+  // parentOrigin is blocked. Keep the same path/query/port and leave APIs unchanged.
+  if (
+    process.env.NODE_ENV === "development" &&
+    normalizedHost === "127.0.0.1" &&
+    (req.method === "GET" || req.method === "HEAD") &&
+    (pathname === "/donate" || pathname.startsWith("/donate/"))
+  ) {
+    url.hostname = "localhost";
+    return NextResponse.redirect(url, 307);
+  }
+
   // Non-www → www 301 redirect (SEO: consolidate link equity)
   if (
     normalizedHost === "nivaranfoundation.org" &&

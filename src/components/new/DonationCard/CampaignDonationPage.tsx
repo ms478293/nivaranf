@@ -6,6 +6,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { type DonationCampaign, campaignDonationPath } from "@/content/donation-campaigns";
 import { DESIGNATIONS } from "@/content/donation-designations";
 import DonationCard from "./DonationCard";
+import NepalFloodCampaignPage from "./NepalFloodCampaignPage";
 import styles from "./DonationPage.module.css";
 
 export function campaignMetadata(campaign: DonationCampaign): Metadata {
@@ -22,6 +23,7 @@ export function campaignMetadata(campaign: DonationCampaign): Metadata {
 export default function CampaignDonationPage({ campaign }: { campaign: DonationCampaign }) {
   const designation = DESIGNATIONS.find((item) => item.id === campaign.id);
   if (!designation) throw new Error(`Missing donation designation: ${campaign.id}`);
+  if (campaign.id === "nepal-flood-recovery" && designation.visible) return <NepalFloodCampaignPage campaign={campaign} />;
   return (
     <div className={styles.page} data-campaign={campaign.id} data-tone={campaign.tone} style={{ "--story-position": campaign.imagePosition } as CSSProperties}>
       <div className={styles.story}>

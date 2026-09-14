@@ -14,13 +14,13 @@ process.env.DONATION_ENCRYPTION_KEY = randomBytes(32).toString("hex");
 process.env.DONATION_MONTHLY_ENABLED = "true";
 process.env.DONATION_RENEWAL_SECRET = randomBytes(32).toString("hex");
 const store = await import("../src/lib/donations/store.mjs");
-let calls = 0, emails = 0, behavior = "approved", lastInput;
+let calls = 0, emails = 0, behavior = "approved", lastInput, lastEmail;
 const processor = {
   GoDaddyApiError: class extends Error {},
   tokenizeNonce: async (_nonce, agreement) => ({ status: "ACTIVE", paymentToken: "synthetic-token", cardOnFile: behavior !== "no-cof" && !!agreement, card: { type: "VISA", numberLast4: "4242" } }),
   chargePaymentToken: async (input) => { calls++; lastInput = input; if (behavior === "timeout") throw new Error("Simulated uncertain result"); return { approved: behavior === "approved", status: behavior === "declined" ? "DECLINED" : behavior === "approved" ? "CAPTURED" : "PENDING", transactionId: "simulated-transaction" }; },
 };
-const mocks = { "@/lib/godaddy-payments": processor, "@/lib/donation-emails": { sendDonationEmails: async () => { emails++; } }, "@/lib/donations/store.mjs": store };
+const mocks = { "@/lib/godaddy-payments": processor, "@/lib/donation-emails": { sendDonationEmails: async (input) => { emails++; lastEmail = input; } }, "@/lib/donations/store.mjs": store };
 const cache = new Map();
 function load(path) {
   path = resolve(path);
@@ -89,5 +89,18 @@ try {
   assert.equal(bill.parseBilling({ ...v.billingAddress, city: "<script>" }), null);
   const address = bill.addressFromPhoton({ housenumber: "10", street: "Downing Street", city: "London", countrycode: "gb" });
   assert.equal(address.line1, "10 Downing Street"); assert.equal(address.city, "London"); assert.equal(address.countryCode, "GB");
+  // Opening the flood appeal must preserve its identity through both payment paths.
+  for (const frequency of ["once", "monthly"]) {
+    const flood = { ...base(), designation: "nepal-flood-recovery", frequency,
+      ...(frequency === "monthly" ? { monthlyConsent: true, cardAgreement: { email: "donor@example.invalid", status: "ACCEPTED" } } : {}) };
+    const receipt = await charge(request("charge", flood));
+    assert.equal(receipt.status, 200);
+    const body = await receipt.json();
+    assert.equal(body.designation, "nepal-flood-recovery");
+    assert.equal(lastInput.designation, "nepal-flood-recovery", "Processor must receive flood designation");
+    assert.equal(lastEmail.designation.id, "nepal-flood-recovery", "Receipt must name the flood appeal");
+    assert.equal(store.claimAttempt(flood.attemptId, "read-for-test").result.designation, "nepal-flood-recovery");
+    if (frequency === "monthly") assert.equal(store.getSubscription(flood.attemptId).payload.designationId, "nepal-flood-recovery");
+  }
   console.log("Donation route checks passed: validation, monthly consent/COF, replay, conflict, cancellation, uncertain charge, authenticated renewal, address parsing. No real processor or email calls.");
 } finally { rmSync(dir, { recursive: true, force: true }); }

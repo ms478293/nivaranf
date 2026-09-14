@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { DONATION_CAMPAIGNS, campaignDonationPath } from "@/content/donation-campaigns";
 import { DESIGNATIONS } from "@/content/donation-designations";
+import { LATEST_NEPAL_FLOOD_UPDATE } from "@/content/nepal-response";
 import styles from "./Campaigns.module.css";
 
 export const metadata: Metadata = {
@@ -13,13 +14,44 @@ export const metadata: Metadata = {
 };
 
 export default function CampaignsPage() {
+  const floodUpdate = LATEST_NEPAL_FLOOD_UPDATE;
   return (
     <div className={styles.page}>
-      <header className={styles.intro}>
-        <p className={styles.eyebrow}>TOGETHER, WITH NIVARAN</p>
-        <div><h1>Different causes.<br /><em>One shared humanity.</em></h1><p>Start with what matters to you. Explore our work, see where each appeal stands, and find your way to help.</p></div>
-      </header>
-      <section className={styles.grid} aria-label="Nivaran campaigns">
+      <section id="latest-crisis" className={styles.hero} aria-labelledby="campaigns-hero-title" tabIndex={-1}>
+        <Image
+          src="/hero_img/nepal-flood-2026.webp"
+          alt="AI-generated illustration of floodwater flowing through a Himalayan village"
+          fill
+          priority
+          sizes="100vw"
+          className={styles.heroImage}
+        />
+        <div className={styles.heroShade} aria-hidden="true" />
+        <div className={styles.heroInner}>
+          <div className={styles.heroContent}>
+            <p className={styles.heroEyebrow}><span className={styles.crisisLabel}>CURRENT CRISIS</span> NEPAL FLOODS</p>
+            <h1 id="campaigns-hero-title">Nepal’s floods.<br /><em>A long road home.</em></h1>
+            <p className={styles.heroDescription}>Floods have torn through homes and roads in Nepal. Stand with families facing the long road to recovery.</p>
+            <div className={styles.heroActions}>
+              <Link href="/campaigns/nepal-flood-recovery#latest-update" className={styles.heroButton}>Read the flood update <ArrowUpRight size={18} aria-hidden="true" /></Link>
+              <a href="#our-campaigns" className={styles.heroLink}>Explore all campaigns <ArrowDown size={17} aria-hidden="true" /></a>
+            </div>
+            <p className={styles.heroNote}>Help fund Nivaran’s planned flood response.</p>
+            <p className={styles.heroSource}>
+              Official update: <time dateTime={floodUpdate.reportDate}>{floodUpdate.reportDateLabel}</time>
+              <span aria-hidden="true"> · </span>
+              <a href={floodUpdate.sourceUrl} target="_blank" rel="noopener noreferrer">{floodUpdate.sourceLabel} <ArrowUpRight size={11} aria-hidden="true" /></a>
+            </p>
+          </div>
+        </div>
+        <p className={styles.heroCaption}>AI-generated illustration · not documentary photography</p>
+      </section>
+      <section id="our-campaigns" className={styles.campaigns} aria-labelledby="campaigns-list-title" tabIndex={-1}>
+        <header className={styles.intro}>
+          <p className={styles.eyebrow}>FIND YOUR CAUSE</p>
+          <div><h2 id="campaigns-list-title">Where will you<br /><em>make a difference?</em></h2><p>Explore our work, see where each appeal stands, and choose the cause that speaks to you.</p></div>
+        </header>
+        <div className={styles.grid}>
         {DONATION_CAMPAIGNS.map((campaign) => {
           const designation = DESIGNATIONS.find((item) => item.id === campaign.id)!;
           return (
@@ -39,6 +71,7 @@ export default function CampaignsPage() {
             </article>
           );
         })}
+        </div>
       </section>
     </div>
   );

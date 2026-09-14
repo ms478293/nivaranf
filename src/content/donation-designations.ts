@@ -84,9 +84,8 @@ export const DESIGNATIONS: readonly Designation[] = [
     thankYouNote:
       "Thank you for investing in a child's classroom. Education is our long-term pillar in Nepal, and it is still early: our most recent recorded initiative was the Equip School Supplies drive (January–February 2025). Gifts like yours are what let it grow, and we will tell you honestly what your support made possible.",
   },
-  // Hidden until the owner confirms gifts can be tracked and reported separately.
-  // To enable the flood appeal: visible:true here AND set NEPAL_RESPONSE.floodFundUrl to
-  // "/donate/nepal-flood-recovery" (internal path — no second processor).
+  // Owner-requested dedicated giving. Gifts keep this designation in the
+  // processor, encrypted journal, subscription and receipt; deployment is still planned.
   {
     id: "nepal-flood-recovery",
     label: "Nepal floods 2026 appeal",
@@ -95,7 +94,7 @@ export const DESIGNATIONS: readonly Designation[] = [
     pageUrl: "/campaigns/nepal-flood-recovery",
     exploreLabel: "Read the flood briefing",
     status: "planned",
-    visible: false,
+    visible: true,
     thankYouNote:
       "Thank you for standing with the valleys the Bhote Koshi tore through. We want to be plain with you: we have not deployed yet, and we are raising so that we can. If we cannot mount a credible response, your gift stays with our ongoing healthcare work in Nepal and we will say so publicly.",
   },

@@ -175,6 +175,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   const [frequency, setFrequency] = useState<"once" | "monthly">("once");
   const [billingAddress, setBillingAddress] = useState({ ...EMPTY_BILLING });
   const [countrySource, setCountrySource] = useState<"" | "detected" | "user">("");
+  const [networkCountry, setNetworkCountry] = useState<string | null>(null);
+  const billingEdited = useRef(false);
   const [monthlyConsent, setMonthlyConsent] = useState(false);
   const [settings, setSettings] = useState({ monthly: false, addressSearch: false, detectedCountry: null as string | null });
   const [paymentPending, setPaymentPending] = useState(false);
@@ -248,7 +250,19 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   }, []);
 
   useEffect(() => {
-    if (countrySource === "user") return;
+    try {
+      if (normalizeCountryCode(sessionStorage.getItem(BILLING_COUNTRY_STORAGE))) return;
+    } catch { /* Private browsing can disable storage; detection still works. */ }
+    const controller = new AbortController();
+    fetch("/api/donate/country", { cache: "no-store", signal: controller.signal })
+      .then((response) => response.ok ? response.json() : null)
+      .then((result) => { if (!controller.signal.aborted) setNetworkCountry(normalizeCountryCode(result?.country)); })
+      .catch(() => {});
+    return () => controller.abort();
+  }, []);
+
+  useEffect(() => {
+    if (countrySource === "user" || billingEdited.current) return;
     let stored = "";
     try { stored = sessionStorage.getItem(BILLING_COUNTRY_STORAGE) || ""; } catch { /* private mode */ }
     const remembered = normalizeCountryCode(stored);
@@ -257,20 +271,21 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       setCountrySource("user");
       return;
     }
-    if (billingAddress.countryCode && !settings.detectedCountry) return;
+    const ipCountry = networkCountry || settings.detectedCountry;
+    if (billingAddress.countryCode && !ipCountry) return;
     const detected = pickDetectedCountry({
-      ip: settings.detectedCountry,
+      ip: ipCountry,
       timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
       languages: typeof navigator === "undefined" ? [] : [...navigator.languages],
     });
     if (!detected) return;
     setBillingAddress((current) => {
       if (current.countryCode === detected) return current;
-      if (current.countryCode && !settings.detectedCountry) return current;
+      if (billingEdited.current || (current.countryCode && !ipCountry)) return current;
       return { ...current, countryCode: detected };
     });
     setCountrySource("detected");
-  }, [settings.detectedCountry, billingAddress.countryCode, countrySource]);
+  }, [networkCountry, settings.detectedCountry, billingAddress.countryCode, countrySource]);
 
   const changeFrequency = (value: "once" | "monthly") => {
     setFrequency(value); setSelected(value === "monthly" ? 30 : campaign.defaultAmount);
@@ -762,6 +777,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
             </section>
             <BillingAddressForm value={billingAddress} searchEnabled={settings.addressSearch} detected={countrySource === "detected"} onChange={(next) => {
+              billingEdited.current = true;
               if (next.countryCode !== billingAddress.countryCode) {
                 setCountrySource("user");
                 try { sessionStorage.setItem(BILLING_COUNTRY_STORAGE, next.countryCode); } catch { /* private mode */ }

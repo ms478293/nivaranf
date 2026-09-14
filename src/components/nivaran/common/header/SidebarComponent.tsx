@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { SmallAboutUsMegaMenu } from "@/components/new/MegaMenu/SmallAboutUsMegaMenu";
 import { SmallNewsAndStoriesMegaMenu } from "@/components/new/MegaMenu/SmallNewsAndStoriesMegaMenu";
@@ -12,6 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { AppButton } from "@/components/ui/app-button";
+import { SheetClose } from "@/components/ui/sheet";
 import Image from "next/image";
 
 export const NAVBAR_LIST = [
@@ -33,6 +35,7 @@ export const NAVBAR_LIST = [
 ];
 
 export function Sidebar() {
+  const path = usePathname();
   return (
     <div className="w-full  rounded-lg  h-full overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 font-Poppins p-4 flex flex-col justify-between">
       <div className="w-full flex items-center justify-start mb-1 ">
@@ -47,6 +50,17 @@ export function Sidebar() {
         </Link>
       </div>
       <Accordion type="single" className="space-y-4 flex-1 mt-4" collapsible>
+        <SheetClose asChild>
+          <Link
+            href="/campaigns"
+            aria-current={path === "/campaigns" || path.startsWith("/campaigns/") ? "page" : undefined}
+            className={`flex min-h-11 items-center border-b text-base font-medium transition-colors hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ${
+              path === "/campaigns" || path.startsWith("/campaigns/") ? "text-primary-500" : "text-gray-800"
+            }`}
+          >
+            Campaigns
+          </Link>
+        </SheetClose>
         {NAVBAR_LIST.map((navbar, index) => (
           <AccordionItem
             value={navbar.label}
