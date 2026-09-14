@@ -5,6 +5,7 @@ import { CookieConsent } from "@/components/new/CookieConsent/CookieConsent";
 import { SetUserLocationCookie } from "@/components/nivaran/main/utils/setUserLocationCookie";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import { GOOGLE_ADS_ID, GOOGLE_CONSENT_DEFAULTS } from "@/lib/google-ads";
 import { getSiteVariantConfig } from "@/lib/site-variant";
 import { getRootMetadata } from "@/lib/site-metadata";
 import { Analytics } from "@vercel/analytics/next";
@@ -51,8 +52,10 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            ${GOOGLE_ADS_ID ? GOOGLE_CONSENT_DEFAULTS : ""}
             gtag('js', new Date());
             gtag('config', 'G-QF370FRN47');
+            ${GOOGLE_ADS_ID ? `gtag('config', '${GOOGLE_ADS_ID}');` : ""}
           `}
         </Script>
 

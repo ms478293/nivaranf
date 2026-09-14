@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-
-const COOKIE_CONSENT_KEY = "nivaran_cookie_consent";
+import { COOKIE_CONSENT_KEY, updateGoogleConsent } from "@/lib/google-ads";
 
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -19,11 +18,13 @@ export function CookieConsent() {
 
   function accept() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
+    updateGoogleConsent(true);
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "declined");
+    updateGoogleConsent(false);
     setVisible(false);
   }
 
