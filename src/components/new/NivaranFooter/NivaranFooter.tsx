@@ -62,7 +62,7 @@ const NivaranFooter = () => {
         {/* EIN & Address */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-xs text-gray-600">
           <p>EIN: 41-2656587</p>
-          <p>1025 Massachusetts Ave, Suite 303, Arlington, MA 02476, USA</p>
+          <p>Arlington, MA USA &amp; Kathmandu, Nepal</p>
         </div>
 
         <div className="w-full h-0.5 gradient-border "></div>
