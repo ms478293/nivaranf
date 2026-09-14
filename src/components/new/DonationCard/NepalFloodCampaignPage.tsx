@@ -15,8 +15,8 @@ const priorities = [
 ];
 
 const questions = [
-  { question: "Can I donate to this flood appeal now?", answer: `Yes. Use the form on this page for a one-time or monthly gift to the Nepal flood appeal. Your gift supports a planned response; Nivaran has not yet deployed. ${VARIANCE_NOTE}` },
-  { question: "Has Nivaran deployed a flood response?", answer: "Nivaran has not yet deployed a response to this flood emergency. Our ongoing healthcare and education work continues separately. This page describes the crisis and the needs informing our planning, not aid we have already delivered." },
+  { question: "Can I donate to this flood appeal now?", answer: `Yes. Use the form on this page for a one-time or monthly gift to the Nepal flood appeal. Your gift helps fund Nivaran’s planned flood response. ${VARIANCE_NOTE}` },
+  { question: "What will my gift support?", answer: "Your gift helps fund a planned flood response, with clean water, access to healthcare, and the needs of mothers and children informing our planning. Response locations, delivery arrangements and the budget will be published as they are confirmed. Our ongoing healthcare and education work continues separately." },
   { question: "Would a general donation go to this flood appeal?", answer: "A general gift supports Nivaran’s existing healthcare and education work where needed. It is not reserved for this flood appeal. To support the flood appeal, use the dedicated form on this page." },
   { question: "Where do the situation figures come from?", answer: "The figures on this page come from Nepal’s Ministry of Foreign Affairs briefing dated 11 September 2026. The original report is linked beside them. These are figures for the wider emergency, may be revised, and do not represent Nivaran’s activity." },
 ];
@@ -98,7 +98,7 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         <div className={styles.approachIntro}>
           <p className={styles.eyebrow}>03 / A RESPONSE BUILT ON TRUST</p>
           <h2 id="approach-title">Care starts<br />with <em>clarity.</em></h2>
-          <p>Nivaran has not yet deployed a flood response. This appeal raises funds for a planned response while our existing healthcare and education work continues.</p>
+          <p>Your gift helps fund Nivaran’s planned flood response while our existing healthcare and education work continues.</p>
           <Link href="/sanjeevani" className={styles.textLink}>Explore our ongoing healthcare work <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
         <ol className={styles.commitments}>
