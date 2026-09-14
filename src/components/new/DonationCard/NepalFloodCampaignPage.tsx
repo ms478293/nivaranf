@@ -19,7 +19,6 @@ const questions = [
   { question: "Has Nivaran deployed a flood response?", answer: "Nivaran has not yet deployed a response to this flood emergency. Our ongoing healthcare and education work continues separately. This page describes the crisis and the needs informing our planning, not aid we have already delivered." },
   { question: "Would a general donation go to this flood appeal?", answer: "A general gift supports Nivaran’s existing healthcare and education work where needed. It is not reserved for this flood appeal. To support the flood appeal, use the dedicated form on this page." },
   { question: "Where do the situation figures come from?", answer: "The figures on this page come from Nepal’s Ministry of Foreign Affairs briefing dated 11 September 2026. The original report is linked beside them. These are figures for the wider emergency, may be revised, and do not represent Nivaran’s activity." },
-  { question: "Are the flood images documentary photographs?", answer: "The flood scenes on this page are AI-generated illustrations, identified in their captions. They are not documentary photographs of the disaster, real beneficiaries, or Nivaran’s fieldwork." },
 ];
 
 export default function NepalFloodCampaignPage({ campaign }: { campaign: DonationCampaign }) {
@@ -27,7 +26,7 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
   return (
     <article className={styles.page}>
       <section className={styles.hero} aria-labelledby="flood-campaign-title">
-        <Image src="/hero_img/nepal-flood-2026.webp" alt="AI-generated illustration of floodwater surrounding homes in a Himalayan valley" fill priority sizes="100vw" className={styles.heroImage} />
+        <Image src="/hero_img/nepal-flood-river.webp" alt="Floodwater rushing through a mountain valley beside a damaged road and riverside buildings" fill priority sizes="100vw" className={styles.heroImage} />
         <div className={styles.heroShade} aria-hidden="true" />
         <div className={styles.heroInner}>
           <p className={styles.heroEyebrow}><span />NEPAL FLOODS · 2026 APPEAL</p>
@@ -38,7 +37,6 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         </div>
         <div className={styles.heroFoot}>
           <a href="#the-crisis">Understand the crisis <ArrowDown size={16} aria-hidden="true" /></a>
-          <p>AI-generated illustration · not documentary photography</p>
         </div>
       </section>
 
@@ -63,7 +61,7 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
 
       <section id="flood-story" className={styles.humanStory} aria-labelledby="human-story-title" tabIndex={-1}>
         <div className={styles.storyPanel}>
-          <Image src="/hero_img/nepal-flood-portrait.webp" alt="AI-generated illustration of a woman looking toward a flooded Himalayan village" fill sizes="(max-width: 760px) 100vw, 50vw" className={styles.portraitImage} />
+          <Image src="/hero_img/nepal-flood-family.webp" alt="A woman looking through mud-damaged photographs while a man clears furniture from their home" fill sizes="(max-width: 760px) 100vw, 50vw" className={styles.portraitImage} />
           <div className={styles.storyShade} aria-hidden="true" />
           <div className={styles.storyCopy}>
             <p className={styles.eyebrow}>BEHIND EVERY NUMBER, A LIFE.</p>
@@ -71,7 +69,6 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
             <p>It can take the road to a clinic. A reliable source of water. The ordinary routines that help a family feel safe.</p>
             <p>Recovery means rebuilding those connections, too. That is the human need at the centre of this appeal.</p>
             <p className={styles.storySignature}>With Nepal. For the road ahead.</p>
-            <p className={styles.storyCaption}>AI-generated illustration · not a real beneficiary portrait</p>
           </div>
         </div>
         <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
@@ -91,6 +88,9 @@ export default function NepalFloodCampaignPage({ campaign }: { campaign: Donatio
         </div>
         <div className={styles.priorityList}>
           {priorities.map((priority, index) => <div key={priority.title}><span className={styles.number}>0{index + 1}</span><div><h3>{priority.title}</h3><p>{priority.text}</p></div></div>)}
+        </div>
+        <div className={styles.recoveryScene}>
+          <Image src="/hero_img/nepal-flood-street.webp" alt="Residents carrying belongings from their homes along a mud-covered street" fill sizes="(max-width: 760px) calc(100vw - 48px), (max-width: 1280px) calc(100vw - 80px), 1200px" className={styles.recoveryImage} />
         </div>
       </section>
 
