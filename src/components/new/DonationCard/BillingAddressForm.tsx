@@ -33,7 +33,7 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
         if (!data.suggestions.length) setMessage("No matching address? Complete the fields below.");
       } catch { if (!abort.signal.aborted && version === sequence.current) setMessage("You can enter your address manually below."); }
       finally { if (version === sequence.current) setSearching(false); }
-    }, 450);
+    }, 220);
     return () => { ++sequence.current; clearTimeout(timer); abort.abort(); };
   }, [value.line1, value.countryCode, searchEnabled, typed]);
 
@@ -62,7 +62,7 @@ export default function BillingAddressForm({ value, onChange, searchEnabled }: {
           }} />
           {!!suggestions.length && <div className={styles.addressDropdown}>
             <ul id="billing-suggestions" role="listbox" aria-label="Address suggestions">{suggestions.map((s, i) => <li id={`billing-suggestion-${i}`} key={s.id} role="option" aria-selected={active === i} onMouseDown={(e) => e.preventDefault()} onClick={() => void choose(s)}><MapPin size={15} aria-hidden="true" /><span>{s.label}</span></li>)}</ul>
-            <p className={styles.addressAttribution}>Powered by <a href="https://www.geoapify.com/" target="_blank" rel="noopener noreferrer">Geoapify</a></p>
+            <p className={styles.addressAttribution}>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></p>
           </div>}
         </div>
         <p id="billing-address-help" className={styles.fieldHelp} aria-live="polite">{!value.countryCode ? "Select your country above to get started." : searching ? "Finding your address…" : message || (searchEnabled ? `Search for your address in ${countryName}. You can also enter it manually.` : "Your browser can fill a saved address, or you can enter it below.")}</p>
