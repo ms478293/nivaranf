@@ -13,8 +13,8 @@ export default function HomeFloodAppeal() {
     >
       <div className={styles.landscape}>
         <Image
-          src="/hero_img/nepal-flood-2026.webp"
-          alt="AI-generated illustration of floodwater surrounding homes in a Himalayan valley"
+          src="/hero_img/nepal-flood-river.webp"
+          alt="Floodwater rushing through a mountain valley beside damaged roads and homes"
           fill
           sizes="100vw"
           className={styles.image}
@@ -46,7 +46,6 @@ export default function HomeFloodAppeal() {
         </div>
         <div className={styles.footer}>
           <p className={styles.signature}>With Nepal. For the road ahead.</p>
-          <p className={styles.caption}>AI-generated illustration</p>
         </div>
       </div>
     </section>

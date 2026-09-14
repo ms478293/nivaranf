@@ -208,7 +208,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
 
   // ── derived ──
   const amountOptions = frequency === "monthly" ? [10, 20, 30, 50, 100] : campaign.amounts;
-  const suggestedAmount = frequency === "monthly" ? 30 : campaign.defaultAmount;
+  const suggestedAmount = frequency === "monthly" ? (campaign.defaultMonthlyAmount ?? 30) : campaign.defaultAmount;
   const suggestedIndex = amountOptions.indexOf(suggestedAmount);
   const suggestedColumn = suggestedIndex % 3;
   const baseDollars = selected === "other" ? Number(customAmount) || 0 : selected;
@@ -289,7 +289,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
   }, [networkCountry, settings.detectedCountry, billingAddress.countryCode, countrySource]);
 
   const changeFrequency = (value: "once" | "monthly") => {
-    setFrequency(value); setSelected(value === "monthly" ? 30 : campaign.defaultAmount);
+    setFrequency(value); setSelected(value === "monthly" ? (campaign.defaultMonthlyAmount ?? 30) : campaign.defaultAmount);
     setCustomAmount(""); setMonthlyConsent(false); setError("");
   };
 
@@ -300,7 +300,7 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
     const amountParam = searchParams.get("amount");
     const dollars = Number(amountParam);
     if (!amountParam || !Number.isFinite(dollars) || dollars < MIN_DOLLARS || dollars > MAX_DOLLARS) {
-      setSelected(initialFrequency === "monthly" ? 30 : campaign.defaultAmount);
+      setSelected(initialFrequency === "monthly" ? (campaign.defaultMonthlyAmount ?? 30) : campaign.defaultAmount);
       setCustomAmount("");
       return;
     }

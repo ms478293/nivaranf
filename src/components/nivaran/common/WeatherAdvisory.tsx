@@ -23,6 +23,7 @@ import Image from "next/image";
 import styles from "./WeatherAdvisory.module.css";
 import NivaranLogo from "@/components/new/nivaranHeader/NivaranLogo";
 import { isSelectableDesignation } from "@/content/donation-designations";
+import { getDonationCampaign } from "@/content/donation-campaigns";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -70,7 +71,7 @@ const PRIVATE_ROUTES = [
 
 export default function WeatherAdvisory({ mainSiteOrigin = "" }: { mainSiteOrigin?: string }) {
   const floodGivingOpen = isSelectableDesignation("nepal-flood-recovery");
-  const [gift, setGift] = useState(50);
+  const [gift, setGift] = useState(() => getDonationCampaign("nepal-flood-recovery")?.defaultAmount ?? 100);
   const [videoPlaying, setVideoPlaying] = useState(false);
   const [mode, setMode] = useState<Mode>("hidden");
   const [headerHeight, setHeaderHeight] = useState(HEADER_FALLBACK_PX);
