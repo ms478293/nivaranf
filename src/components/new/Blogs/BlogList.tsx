@@ -109,12 +109,12 @@ export const BlogList = () => {
           {activeCategoryTag === "All" ? (
             <>
               <section className="">
-                <MainTitle prefix="Blogs" suffix="Trending" className="mb-6" />
+                <MainTitle prefix="from Nepal" suffix="Latest" className="mb-6" />
                 <FilteredBlogsList blogs={trendingNepalOnly} />
               </section>
 
               <section className="mt-10">
-                <MainTitle prefix="Blogs" suffix="Latest" className="mb-6" />
+                <MainTitle prefix="Perspectives" suffix="Global" className="mb-6" />
                 <LatestBlogs blogs={latestGlobalOnly} />
               </section>
             </>

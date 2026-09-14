@@ -11,13 +11,21 @@ import MainTitle from "../MainTitle/MainTitle";
 const InsightsAndInspiraton = () => {
   const featuredData = useTrendingBlogs(4);
   const newestDate = featuredData[0]?.date;
+  const updatedLabel = newestDate
+    ? new Date(newestDate).toLocaleDateString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        timeZone: "UTC",
+      })
+    : null;
   return (
-    <section className="w-full  bg-white font-light font-Poppins">
+    <section id="latest-updates" aria-label="Latest news and stories" className="w-full bg-white font-light font-Poppins scroll-mt-24">
       <div className="max-w-[1320px] mx-auto flex flex-col py-4 md:py-12 ">
         <div className="flex flex-col md:gap-4 sm:flex-row justify-between items-start sm:items-center sm:mb-8 mb-4 px-4">
           <MainTitle
-            suffix="Stories"
-            prefix="Insights & Inspiration"
+            suffix="Latest"
+            prefix="News & Stories"
             className=""
           />
           <Link href="/blogs">
@@ -25,18 +33,22 @@ const InsightsAndInspiraton = () => {
               variant="ghost"
               className="hover:scale-105 transition-transform duration-100 pl-0"
             >
-              <span>Explore Rural Health Stories</span>
+              <span>View all updates</span>
               <RightArrowIcon className="w-5 h-5 fill-primary-500" />
             </AppButton>
           </Link>
         </div>
-        {/* <div className="flex justify-start  flex-wrap  snap-x snap-proximity  gap-4 [scrollbar-width:none] mt-8"> */}
-        {newestDate ? (
-          <p className="px-4 text-xs text-gray-500 mb-2">
-            Nepal desk last filed {newestDate}. Cards below are the newest
-            Nepal-tagged updates we have — not necessarily this week.
+        <div className="px-4 mb-2 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm text-gray-500">
+            From Nepal: community stories, news and perspectives.
+            {updatedLabel ? <span className="block mt-1 text-xs">Updated {updatedLabel}</span> : null}
           </p>
-        ) : null}
+          <nav aria-label="Browse updates" className="flex gap-5 text-sm text-primary-500">
+            <Link href="/news" className="hover:underline underline-offset-4">News</Link>
+            <Link href="/stories" className="hover:underline underline-offset-4">Stories</Link>
+            <Link href="/articles" className="hover:underline underline-offset-4">Articles</Link>
+          </nav>
+        </div>
         <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 overflow-x-auto sm:overflow-x-visible snap-x snap-proximity [scrollbar-width:none] px-4 pb-8 pt-4 ">
           <RenderList
             data={featuredData}

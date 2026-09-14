@@ -174,6 +174,7 @@ function formatDate(dateValue?: string) {
     month: "long",
     day: "numeric",
     year: "numeric",
+    timeZone: "UTC",
   });
 }
 
