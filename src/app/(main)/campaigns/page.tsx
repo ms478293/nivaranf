@@ -36,7 +36,7 @@ export default function CampaignsPage() {
               <Link href="/campaigns/nepal-flood-recovery#latest-update" className={styles.heroButton}>Read the flood update <ArrowUpRight size={18} aria-hidden="true" /></Link>
               <a href="#our-campaigns" className={styles.heroLink}>Explore all campaigns <ArrowDown size={17} aria-hidden="true" /></a>
             </div>
-            <p className={styles.heroNote}>Nivaran’s dedicated flood appeal is in preparation.</p>
+            <p className={styles.heroNote}>Help fund Nivaran’s planned flood response.</p>
             <p className={styles.heroSource}>
               Official update: <time dateTime={floodUpdate.reportDate}>{floodUpdate.reportDateLabel}</time>
               <span aria-hidden="true"> · </span>

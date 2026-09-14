@@ -50,7 +50,7 @@ export default function FloodRecoveryPage() {
             See how you can help <span aria-hidden="true">↗</span>
           </a>
           <p className={styles.dateline}>
-            Official situation update: <time dateTime={LATEST_NEPAL_FLOOD_UPDATE.reportDate}>{LATEST_NEPAL_FLOOD_UPDATE.reportDateLabel}</time> · Nivaran’s dedicated flood appeal is in preparation
+            Official situation update: <time dateTime={LATEST_NEPAL_FLOOD_UPDATE.reportDate}>{LATEST_NEPAL_FLOOD_UPDATE.reportDateLabel}</time> · Nivaran is raising funds for a planned flood response
           </p>
         </div>
       </section>
@@ -152,18 +152,13 @@ export default function FloodRecoveryPage() {
           {floodFundUrl ? (
             <>
               <p>
-                Gifts to the flood fund are collected separately from general donations so that
-                receipts, spending and any unused balance can be reported against this appeal alone.
+                Gifts through this form are recorded under the Nepal flood appeal, including
+                on your receipt. The gift-use policy is shown with the donation form.
               </p>
               <div className={styles.actions}>
-                <a
-                  href={floodFundUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.action}
-                >
+                <Link href={floodFundUrl} className={styles.action}>
                   Give to Nepal flood relief ↗
-                </a>
+                </Link>
                 <Link href="/donate" className={styles.secondary}>
                   Support Nivaran&rsquo;s general Nepal work →
                 </Link>

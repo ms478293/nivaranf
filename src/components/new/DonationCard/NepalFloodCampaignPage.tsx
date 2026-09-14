@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { Suspense } from "react";
+import type { DonationCampaign } from "@/content/donation-campaigns";
+import { VARIANCE_NOTE } from "@/content/donation-designations";
+import DonationCard from "./DonationCard";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight, Plus } from "lucide-react";
 import { LATEST_NEPAL_FLOOD_UPDATE } from "@/content/nepal-response";
@@ -11,14 +15,14 @@ const priorities = [
 ];
 
 const questions = [
-  { question: "Can I donate to this flood appeal now?", answer: "Dedicated flood donations are not open yet. We are preparing this appeal and will publish its scope, budget and giving details when it opens. You can contact our team about supporting the groundwork." },
+  { question: "Can I donate to this flood appeal now?", answer: `Yes. Use the form on this page for a one-time or monthly gift to the Nepal flood appeal. Your gift supports a planned response; Nivaran has not yet deployed. ${VARIANCE_NOTE}` },
   { question: "Has Nivaran deployed a flood response?", answer: "Nivaran has not yet deployed a response to this flood emergency. Our ongoing healthcare and education work continues separately. This page describes the crisis and the needs informing our planning, not aid we have already delivered." },
-  { question: "Would a general donation go to this flood appeal?", answer: "A general gift supports Nivaran’s existing healthcare and education work where needed. It is not reserved for this flood appeal. A dedicated flood giving option will be clearly identified when it opens." },
+  { question: "Would a general donation go to this flood appeal?", answer: "A general gift supports Nivaran’s existing healthcare and education work where needed. It is not reserved for this flood appeal. To support the flood appeal, use the dedicated form on this page." },
   { question: "Where do the situation figures come from?", answer: "The figures on this page come from Nepal’s Ministry of Foreign Affairs briefing dated 11 September 2026. The original report is linked beside them. These are figures for the wider emergency, may be revised, and do not represent Nivaran’s activity." },
   { question: "Are the flood images documentary photographs?", answer: "The flood scenes on this page are AI-generated illustrations, identified in their captions. They are not documentary photographs of the disaster, real beneficiaries, or Nivaran’s fieldwork." },
 ];
 
-export default function NepalFloodCampaignPage() {
+export default function NepalFloodCampaignPage({ campaign }: { campaign: DonationCampaign }) {
   const update = LATEST_NEPAL_FLOOD_UPDATE;
   return (
     <article className={styles.page}>
@@ -26,11 +30,19 @@ export default function NepalFloodCampaignPage() {
         <Image src="/hero_img/nepal-flood-2026.webp" alt="AI-generated illustration of floodwater surrounding homes in a Himalayan valley" fill priority sizes="100vw" className={styles.heroImage} />
         <div className={styles.heroShade} aria-hidden="true" />
         <div className={styles.heroInner}>
+          <div className={styles.heroCopy}>
           <p className={styles.heroEyebrow}><span />NEPAL FLOODS · 2026 APPEAL</p>
           <h1 id="flood-campaign-title">Help Nepal find<br />its way <em>home.</em></h1>
           <p className={styles.heroIntro}>Beyond the floodwaters are families, futures,<br className={styles.desktopBreak} /> and a long road to recovery. Stand with them.</p>
-          <a href="#get-involved" className={styles.primary}>Stand with Nepal <ArrowUpRight size={19} aria-hidden="true" /></a>
-          <p className={styles.heroStatus}>Dedicated appeal in preparation</p>
+          <a href="#flood-giving" className={styles.primary}>Donate to this appeal <ArrowUpRight size={19} aria-hidden="true" /></a>
+          <p className={styles.heroStatus}>Help fund a planned flood response.</p>
+          </div>
+          <section id="flood-giving" className={styles.givingPanel} aria-label="Donate to Nepal flood recovery" tabIndex={-1}>
+            <p className={styles.givingLabel}>NEPAL FLOODS · YOUR GIFT</p>
+            <Suspense fallback={<div className={styles.formLoading} role="status">Loading the donation form…</div>}>
+              <DonationCard campaign={campaign} />
+            </Suspense>
+          </section>
         </div>
         <div className={styles.heroFoot}>
           <a href="#the-crisis">Understand the crisis <ArrowDown size={16} aria-hidden="true" /></a>
@@ -40,7 +52,7 @@ export default function NepalFloodCampaignPage() {
 
       <nav className={styles.sectionNav} aria-label="Flood campaign sections">
         <div><a href="#the-crisis">The crisis</a><a href="#priorities">Priorities</a><a href="#our-approach">Our approach</a></div>
-        <a href="#get-involved" className={styles.navAction}>Get involved <ArrowUpRight size={15} aria-hidden="true" /></a>
+        <a href="#flood-giving" className={styles.navAction}>Donate now <ArrowUpRight size={15} aria-hidden="true" /></a>
       </nav>
 
       <section id="the-crisis" className={styles.situation} aria-labelledby="situation-title" tabIndex={-1}>
@@ -88,12 +100,12 @@ export default function NepalFloodCampaignPage() {
         <div className={styles.approachIntro}>
           <p className={styles.eyebrow}>03 / A RESPONSE BUILT ON TRUST</p>
           <h2 id="approach-title">Care starts<br />with <em>clarity.</em></h2>
-          <p>Nivaran has not yet deployed a flood response. We are preparing this dedicated appeal while our existing healthcare and education work continues.</p>
+          <p>Nivaran has not yet deployed a flood response. This appeal raises funds for a planned response while our existing healthcare and education work continues.</p>
           <Link href="/sanjeevani" className={styles.textLink}>Explore our ongoing healthcare work <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </div>
         <ol className={styles.commitments}>
-          <li><span>01</span><div><h3>A defined response</h3><p>The appeal will set out what is planned, where, and the budget required before dedicated gifts open.</p></div></li>
-          <li><span>02</span><div><h3>A clear purpose for gifts</h3><p>Dedicated flood giving will be distinguished from general support for Nivaran’s ongoing work.</p></div></li>
+          <li><span>01</span><div><h3>A defined response</h3><p>Response locations, delivery arrangements and the budget will be published as they are confirmed.</p></div></li>
+          <li><span>02</span><div><h3>A clear purpose for gifts</h3><p>Your donation is recorded under the Nepal flood appeal and identified on your receipt. The gift-use policy is shown beside the form.</p></div></li>
           <li><span>03</span><div><h3>Updates you can follow</h3><p>Any deployment updates will identify dates, locations, activities and spending, with progress reported separately for this appeal.</p></div></li>
         </ol>
       </section>
@@ -105,14 +117,14 @@ export default function NepalFloodCampaignPage() {
           <p>Have resources, relevant experience, or a partnership in mind? Help us shape the next step.</p>
         </div>
         <div className={styles.actionPanel}>
-          <p className={styles.appealStatus}><span />APPEAL IN PREPARATION</p>
-          <h3>Let’s start a conversation.</h3>
-          <p>Dedicated flood gifts are not open yet. Contact our team about supporting this appeal and its groundwork.</p>
-          <Link href="/contact-us" className={styles.primary}>Contact the Nivaran team <ArrowUpRight size={19} aria-hidden="true" /></Link>
+          <p className={styles.appealStatus}><span />SUPPORT THE FLOOD APPEAL</p>
+          <h3>Give Nepal a way forward.</h3>
+          <p>Choose a one-time or monthly gift to help fund Nivaran’s planned flood response.</p>
+          <a href="#flood-giving" className={styles.primary}>Donate to this appeal <ArrowUpRight size={19} aria-hidden="true" /></a>
           <div className={styles.generalGift}>
-            <h4>Want to support our work today?</h4>
-            <p>A general gift supports Nivaran’s existing healthcare and education work. It is not reserved for this flood appeal.</p>
-            <Link href="/donate" className={styles.textLink}>Make a general gift <ArrowUpRight size={16} aria-hidden="true" /></Link>
+            <h4>Have another way to help?</h4>
+            <p>Speak with our team about relevant experience, resources, partnerships, or a larger gift.</p>
+            <Link href="/contact-us" className={styles.textLink}>Contact the Nivaran team <ArrowUpRight size={16} aria-hidden="true" /></Link>
           </div>
         </div>
       </section>

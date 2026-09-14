@@ -23,7 +23,7 @@ export function campaignMetadata(campaign: DonationCampaign): Metadata {
 export default function CampaignDonationPage({ campaign }: { campaign: DonationCampaign }) {
   const designation = DESIGNATIONS.find((item) => item.id === campaign.id);
   if (!designation) throw new Error(`Missing donation designation: ${campaign.id}`);
-  if (campaign.id === "nepal-flood-recovery" && !designation.visible) return <NepalFloodCampaignPage />;
+  if (campaign.id === "nepal-flood-recovery" && designation.visible) return <NepalFloodCampaignPage campaign={campaign} />;
   return (
     <div className={styles.page} data-campaign={campaign.id} data-tone={campaign.tone} style={{ "--story-position": campaign.imagePosition } as CSSProperties}>
       <div className={styles.story}>

@@ -12,7 +12,7 @@ import styles from "./DonationPage.module.css";
 
 export default function PublicSiteLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isFloodCampaign = pathname === "/donate/nepal-flood-recovery" && !DESIGNATIONS.find((item) => item.id === "nepal-flood-recovery")?.visible;
+  const isFloodCampaign = pathname === "/donate/nepal-flood-recovery" && DESIGNATIONS.find((item) => item.id === "nepal-flood-recovery")?.visible;
   if (pathname !== "/donate" && !pathname.startsWith("/donate/")) {
     return <><NivaranHeader /><main id="main-content" className={pathname === "/campaigns" ? "relative" : "relative pt-28"}>{children}</main><WhatsAppButton /><NivaranFooter /></>;
   }

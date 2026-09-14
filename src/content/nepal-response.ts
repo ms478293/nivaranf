@@ -26,11 +26,8 @@ export const NEPAL_RESPONSE = {
   eventDate: "2026-08-26",
   title: "Nepal flood recovery",
 
-  // Set this to a dedicated "Nepal Flood Relief 2026" GoDaddy Payments pay link once created.
-  // Do NOT paste a Square or Stripe URL here — both processors are retired; a second
-  // unmonitored processor would bypass the /donate flow's disclosures and receipts.
-  // While empty, the page shows a contact route instead of a dead donate button.
-  floodFundUrl: "",
+  // Uses the existing checkout and campaign designation, not a separate processor.
+  floodFundUrl: "/donate/nepal-flood-recovery#flood-giving",
 
   // Publish a target only when an approved budget exists. Empty = not shown.
   target: "",

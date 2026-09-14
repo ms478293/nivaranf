@@ -147,3 +147,31 @@
 }
 @media(max-width:360px) { .sectionNav { padding-inline:16px; gap:10px; } .sectionNav > div { gap:12px; } .figures dd { font-size:32px; } }
 @media(prefers-reduced-motion:reduce) { .heroImage,.heroInner,.questions details[open] > p { animation:none; } .page a,.page svg { transition:none; } .primary:hover,.primary:hover svg,.textLink:hover svg,.heroFoot a:hover svg,.navAction:hover svg,.closing a:hover svg { transform:none; } }
+
+/* Keep the campaign story and its single shared checkout together at the top. */
+.hero { min-height:100svh; overflow:clip; }
+.heroInner { display:grid; grid-template-columns:minmax(0,1fr) minmax(380px,440px); align-items:start; gap:55px; padding:130px 40px 85px; max-width:1380px; animation:none; }
+.heroCopy { position:sticky; top:100px; padding-top:65px; animation:entrance .85s .1s both; }
+.hero h1 { font-size:clamp(52px,5.8vw,80px); }
+.heroFoot { inset-inline:40px; }
+.givingPanel { --campaign-accent:#bc4a36; --campaign-button:#723c30; --campaign-hover:#8b493c; padding:28px; min-width:0; color:#24392e; background:#fcf9f3; box-shadow:0 20px 60px #081f2430; }
+.givingLabel { color:#a45137; font-size:9px; letter-spacing:.13em; font-weight:500; margin-bottom:23px; }
+.givingPanel h2 { font-family:inherit; font-size:29px; line-height:1.2; font-weight:600; letter-spacing:-.04em; }
+.givingPanel :global(#donate-checkout) > div { gap:18px; }
+.givingPanel :global(#donate-checkout) > ol { margin-bottom:23px; }
+.formLoading { min-height:620px; font-size:12px; }
+@media(max-width:1100px) and (min-width:761px) { .heroInner { gap:30px; padding-inline:28px; grid-template-columns:minmax(0,1fr) minmax(370px,420px); } .hero h1 { font-size:55px; } .heroIntro { font-size:13px; } .desktopBreak { display:none; } }
+@media(max-width:760px) {
+  .heroInner { display:block; padding:165px 24px 80px; }
+  .heroCopy { position:static; padding-top:0; margin-bottom:35px; }
+  .hero h1 { font-size:clamp(45px,11.5vw,76px); }
+  .heroIntro { margin-block:20px; }
+  .heroImage { height:650px!important; object-position:60% center; }
+  .heroShade { background:linear-gradient(180deg,#102a2370 0px,#102a2350 200px,#102a23 610px); }
+  .heroFoot { inset-inline:24px; bottom:20px; }
+  .heroFoot > a { display:none; }
+  .givingPanel { padding:24px 20px; }
+  .givingPanel h2 { font-size:27px; }
+  .givingLabel { font-size:8px; }
+}
+@media(prefers-reduced-motion:reduce) { .heroCopy { animation:none; } }
