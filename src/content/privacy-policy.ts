@@ -32,6 +32,7 @@ export const privacyPolicySections = [
           "Address suggestions: When address search is available, the address text you type is sent to Google Maps to suggest and complete your billing address. You can enter your address manually instead.",
           "Transaction Data: Details about payments to and from you and other details of donations or services you have purchased from us.",
           "Technical Data: Internet Protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform.",
+          "Country prefill: To suggest a country in the donation form, we use a country supplied by our hosting service or send your IP address to IPWhois (ipwho.is) for a country lookup. We do not send your name, email, billing address or payment details to this service. Device time zone and language are fallbacks, and you can change the suggested country.",
           "Profile Data: Your username and password, donations or orders made by you, your interests, preferences, feedback, and survey responses.",
           "Usage Data: Information about how you use our website, products, and services.",
           "Marketing and Communications Data: Your preferences in receiving marketing from us and your communication preferences.",

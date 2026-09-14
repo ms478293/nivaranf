@@ -46,9 +46,9 @@ export default function BillingAddressForm({ value, onChange, searchEnabled, det
   }
   return <section className={styles.formSection} aria-labelledby="billing-heading">
     <div className={styles.sectionTitle}><h3 id="billing-heading">Billing information</h3><MapPin size={16} aria-hidden="true" /></div>
-    <p className={styles.sectionNote}>Choose your country, then enter the address associated with your card.</p>
+    <p className={styles.sectionNote}>Confirm your country, then enter the address associated with your card.</p>
     <div className={styles.fieldGrid}>
-      <div className={styles.fullField}><label htmlFor="billing-country">Country / region</label><select id="billing-country" name="billing-country" autoComplete="billing country" value={value.countryCode} onChange={(e) => update("countryCode", e.target.value)}><option value="">Select your country</option>{BILLING_COUNTRIES.map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}</select></div>
+      <div className={styles.fullField}><label htmlFor="billing-country">Country</label><select id="billing-country" name="billing-country" autoComplete="billing country" value={value.countryCode} onChange={(e) => update("countryCode", e.target.value)}><option value="">Select your country</option>{BILLING_COUNTRIES.map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}</select></div>
       <div className={styles.fullField}>
         <label htmlFor="billing-line1">Street address</label>
         <div className={styles.addressSearch} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) { ++sequence.current; setSuggestions([]); setActive(-1); setSearching(false); setTyped(false); } }}>

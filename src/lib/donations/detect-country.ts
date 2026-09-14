@@ -42,8 +42,7 @@ export function pickDetectedCountry(input: { ip?: string | null; timeZone?: stri
   const ip = normalizeCountryCode(input.ip);
   const timeZone = countryFromTimeZone(input.timeZone);
   const language = countryFromLanguages(input.languages ?? []);
-  if (ip && timeZone && ip === timeZone) return ip;
-  if (ip && language && ip === language) return ip;
-  if (timeZone && language && timeZone === language) return timeZone;
+  // A traveller's device language/timezone can still describe their home country.
+  // Prefer their current network; these device hints are only fallbacks.
   return ip || timeZone || language;
 }
