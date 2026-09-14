@@ -2,6 +2,7 @@ import AboutNivaran from "@/components/new/AboutNivaran/AboutNivaran";
 import MainSiteSchemas from "@/components/seo/MainSiteSchemas";
 import WeatherAdvisory from "@/components/nivaran/common/WeatherAdvisory";
 import HeroSection from "@/components/new/HeroSection/HeroSection";
+import HomeFloodAppeal from "@/components/new/HomeFloodAppeal/HomeFloodAppeal";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
 import NivaranFooter from "@/components/new/NivaranFooter/NivaranFooter";
 import NivaranHeader from "@/components/new/nivaranHeader/NivaranHeader";
@@ -120,7 +121,7 @@ const page = () => {
         </section>
 
 
-        <section className="bg-slate-900 px-5 py-8 text-white" aria-label="Nepal flood update"><div className="mx-auto flex max-w-6xl flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="text-xs uppercase tracking-widest text-orange-200">Emergency appeal · Nepal floods, August 26 2026</p><h2 className="mt-2 text-2xl font-semibold">A glacier collapse cut off five districts.</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">Over 1,300 people are confirmed dead and thousands remain missing across Rasuwa, Nuwakot and Dhading. Read the sourced briefing — including what Nivaran has and has not yet done.</p></div><Link href="/campaigns/nepal-flood-recovery" className="inline-flex min-h-12 shrink-0 items-center bg-white px-5 py-3 font-medium text-slate-900">Read the briefing →</Link></div></section>
+        <HomeFloodAppeal />
         {/* About Nivaran */}
         <section aria-labelledby="about-nivaran-title">
           <AboutNivaran>
