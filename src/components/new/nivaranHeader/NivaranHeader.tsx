@@ -113,8 +113,8 @@ const NivaranHeader = () => {
             >
               <NivaranLogo />
             </Link>
-            {screenSize !== "864px" ? (
-              <div className="flex min-[864px]:hidden items-center justify-center gap-2 relative z-[200]">
+            {screenSize !== "lg" ? (
+              <div className="flex lg:hidden items-center justify-center gap-2 relative z-[200]">
                 <LanguageToggle
                   className={`${
                     isWhite || activeMegaMenu
@@ -150,13 +150,29 @@ const NivaranHeader = () => {
                 </SidebarProvider>
               </div>
             ) : null}
-            {screenSize !== "sm" ? (
+            {screenSize === "lg" ? (
               <nav
-                className="gap-2 items-center hidden min-[864px]:flex"
+                className="gap-2 items-center hidden lg:flex"
                 role="navigation"
                 aria-label="Main"
               >
                 <ul className="px-3 flex items-center gap-4">
+                  <li>
+                    <Link
+                      href="/campaigns"
+                      onClick={() => openActiveMegaMenu(null)}
+                      aria-current={path === "/campaigns" || path.startsWith("/campaigns/") ? "page" : undefined}
+                      className={`inline-flex min-h-10 items-center whitespace-nowrap rounded-sm text-sm transition-colors hover:text-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-4 ${
+                        path === "/campaigns" || path.startsWith("/campaigns/")
+                          ? "text-primary-500"
+                          : isWhite || activeMegaMenu
+                            ? "text-gray-800"
+                            : "text-neutral-50"
+                      }`}
+                    >
+                      Campaigns
+                    </Link>
+                  </li>
                   <RenderList
                     data={NAVBAR_LIST}
                     render={(list) => (
