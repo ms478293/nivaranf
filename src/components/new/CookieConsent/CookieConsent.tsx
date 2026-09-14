@@ -38,8 +38,9 @@ export function CookieConsent() {
     >
       <div className="max-w-3xl mx-auto bg-white border border-gray-200 rounded-xl shadow-lg p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-gray-700 flex-1">
-          We use cookies and analytics to improve your experience and measure
-          site traffic. By continuing, you agree to our{" "}
+          We use cookies for analytics and advertising measurement, to improve
+          your experience and see whether our ads lead to donations. By
+          continuing, you agree to our{" "}
           <Link
             href="/privacy-policy"
             className="underline text-primary-main hover:text-primary-main/80"

@@ -38,9 +38,13 @@ assert.deepEqual(calls, [
 ]);
 calls.length = 0;
 ads.updateGoogleConsent(false);
-assert.deepEqual(calls, [["consent", "update", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "denied" }]]);
+ads.updateGoogleConsent(true);
+assert.deepEqual(calls, [
+  ["consent", "update", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "denied" }],
+  ["consent", "update", { ad_storage: "granted", ad_user_data: "granted", ad_personalization: "denied", analytics_storage: "granted" }],
+]);
 
-// Consent defaults: ads denied everywhere, all denied in EEA/UK/CH, stored choice applied.
+// Consent defaults: ad measurement granted outside EEA/UK/CH, all denied inside, never personalization.
 const script = ads.GOOGLE_CONSENT_DEFAULTS;
 assert.ok(script.indexOf("'default'") < script.indexOf("'update'"));
 for (const code of ["DE", "FR", "GB", "CH", "NO", "IE"]) assert.ok(script.includes(`"${code}"`), code);
@@ -48,9 +52,11 @@ assert.ok(script.includes(ads.COOKIE_CONSENT_KEY));
 const cal = [];
 new Function("gtag", "localStorage", script)((...a) => cal.push(a), { getItem: () => "accepted" });
 assert.equal(cal.length, 3);
-assert.deepEqual(cal[0][2], { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "granted" });
-assert.equal(cal[1][2].analytics_storage, "denied");
+assert.deepEqual(cal[0][2], { ad_storage: "granted", ad_user_data: "granted", ad_personalization: "denied", analytics_storage: "granted" });
+assert.ok(!("region" in cal[0][2]));
+assert.deepEqual(Object.values(cal[1][2]).slice(0, 4), ["denied", "denied", "denied", "denied"]);
 assert.deepEqual(cal[2].slice(0, 2), ["consent", "update"]);
 assert.equal(cal[2][2].ad_storage, "granted");
+assert.equal(cal[2][2].ad_personalization, "denied");
 
 console.log("google-ads OK");

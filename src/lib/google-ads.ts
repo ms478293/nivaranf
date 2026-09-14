@@ -17,14 +17,15 @@ const CONSENT_REGIONS = [
 ];
 
 /**
- * Consent Mode v2 defaults, inlined before any gtag config. Elsewhere, analytics keeps
- * today's behavior (banner: "By continuing, you agree"); advertising waits for Accept
- * because the banner does not mention it. A stored banner choice overrides both.
+ * Consent Mode v2 defaults, inlined before any gtag config. Outside EEA/UK/CH the banner is
+ * implied consent ("By continuing, you agree") and names advertising measurement, so analytics
+ * and ad measurement start granted. ad_personalization stays denied everywhere: no remarketing.
+ * A stored banner choice overrides the defaults.
  */
 export const GOOGLE_CONSENT_DEFAULTS = `
-gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'denied',analytics_storage:'granted'});
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:${JSON.stringify(CONSENT_REGIONS)}});
-try{var c=localStorage.getItem('${COOKIE_CONSENT_KEY}');if(c){var v=c==='accepted'?'granted':'denied';gtag('consent','update',{ad_storage:v,ad_user_data:v,ad_personalization:v,analytics_storage:v});}}catch(e){}
+try{var c=localStorage.getItem('${COOKIE_CONSENT_KEY}');if(c){var v=c==='accepted'?'granted':'denied';gtag('consent','update',{ad_storage:v,ad_user_data:v,ad_personalization:'denied',analytics_storage:v});}}catch(e){}
 `;
 
 function gtag(): Gtag | undefined {
@@ -36,7 +37,7 @@ function gtag(): Gtag | undefined {
 export function updateGoogleConsent(accepted: boolean) {
   if (!GOOGLE_ADS_ID) return;
   const v = accepted ? "granted" : "denied";
-  gtag()?.("consent", "update", { ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v });
+  gtag()?.("consent", "update", { ad_storage: v, ad_user_data: v, ad_personalization: "denied", analytics_storage: v });
 }
 
 const sent = new Set<string>();
