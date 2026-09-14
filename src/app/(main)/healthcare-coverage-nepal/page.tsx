@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import {
@@ -9,37 +10,12 @@ import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/healthcare-coverage-nepal",
   title: "Healthcare Coverage in Nepal | Province-by-Province Sanjeevani Footprint",
-  description:
-    "Explore Nivaran Foundation's current healthcare coverage in Nepal by province, including districts served, patients reached, and verified Project Sanjeevani camp activity.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/healthcare-coverage-nepal",
-  },
-  keywords: [
-    "healthcare coverage Nepal",
-    "Project Sanjeevani provinces",
-    "rural healthcare Nepal districts",
-    "mobile health camps Nepal provinces",
-    "Nivaran Foundation coverage",
-  ],
-  openGraph: {
-    title: "Healthcare Coverage in Nepal | Province-by-Province Sanjeevani Footprint",
-    description:
-      "See where Project Sanjeevani is operating across Nepal and review the current province-by-province healthcare footprint.",
-    url: "https://www.nivaranfoundation.org/healthcare-coverage-nepal",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Healthcare Coverage in Nepal | Province-by-Province Sanjeevani Footprint",
-    description:
-      "A province-by-province overview of Sanjeevani's current healthcare coverage across Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Explore Nivaran Foundation's current healthcare coverage in Nepal by province, including districts served, patients reached, and verified Project Sanjeevani camp activity.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 const provinceCards = SANJEEVANI_PROVINCE_PAGES.map((page) => {
   const data = getProvinceCoverageData(page.slug);

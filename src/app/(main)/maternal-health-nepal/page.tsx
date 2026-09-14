@@ -1,37 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
 import { MATERNAL_HEALTH_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/maternal-health-nepal",
   title: "Maternal Health in Nepal | Outreach Care, Screening, and Referral",
-  description:
-    "Learn why maternal health in Nepal depends on antenatal care access, early risk detection, referral support, and stronger rural outreach for pregnant mothers.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/maternal-health-nepal",
-  },
-  keywords: [
-    "maternal health Nepal",
-    "pregnancy care Nepal",
-    "antenatal care Nepal",
-    "rural maternal health Nepal",
-  ],
-  openGraph: {
-    title: "Maternal Health in Nepal | Outreach Care, Screening, and Referral",
-    description:
-      "Why maternal health outcomes improve when antenatal care, screening, and referral access become easier for rural families.",
-    url: "https://www.nivaranfoundation.org/maternal-health-nepal",
-    type: "article",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Maternal Health in Nepal | Outreach Care, Screening, and Referral",
-    description:
-      "Maternal health improves when early screening and referral become accessible before complications escalate.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Learn why maternal health in Nepal depends on antenatal care access, early risk detection, referral support, and stronger rural outreach for pregnant mothers.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 export default function MaternalHealthNepalPage() {
   return (

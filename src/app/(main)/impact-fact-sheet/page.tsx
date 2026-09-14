@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import {
@@ -7,41 +8,15 @@ import {
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/impact-fact-sheet",
   title: "Nivaran Foundation Fact Sheet | Healthcare NGO in Nepal",
-  description:
-    "A citation-ready fact sheet with Nivaran Foundation's organization profile, current Sanjeevani metrics, healthcare footprint, transparency links, and media or partner contact details.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/impact-fact-sheet",
-  },
-  keywords: [
-    "Nivaran Foundation fact sheet",
-    "health NGO Nepal facts",
-    "Project Sanjeevani facts",
-    "mobile health camps Nepal data",
-    "Nivaran media kit",
-  ],
-  openGraph: {
-    title: "Nivaran Foundation Fact Sheet | Healthcare NGO in Nepal",
-    description:
-      "Use a citation-ready overview of Nivaran Foundation's mission, current healthcare metrics, and transparency resources.",
-    url: "https://www.nivaranfoundation.org/impact-fact-sheet",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Nivaran Foundation Fact Sheet | Healthcare NGO in Nepal",
-    description:
-      "Organization profile, current healthcare metrics, and contact details for journalists, partners, and researchers.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "A citation-ready fact sheet with Nivaran Foundation's organization profile, current Sanjeevani metrics, healthcare footprint, transparency links, and media or partner contact details.",
+});
 
 const snapshotCards = [
   { label: "Founded", value: "2024", note: "Nepal-focused foundation" },
-  { label: "Patients served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText, note: "current verified cumulative total" },
+  { label: "Patients served", value: SANJEEVANI_PUBLIC_STATS.patientsServedText, note: "published figures as of February 2026" },
   { label: "Health camps", value: SANJEEVANI_PUBLIC_STATS.campsCompletedText, note: "completed Project Sanjeevani camps" },
   { label: "Provinces covered", value: `${SANJEEVANI_PUBLIC_STATS.provincesCoveredText}/7`, note: "current national footprint" },
   { label: "Rural municipalities", value: SANJEEVANI_PUBLIC_STATS.municipalitiesCoveredText, note: "current coverage recorded" },
@@ -183,8 +158,8 @@ export default function ImpactFactSheetPage() {
                 <dd>Nivaran Foundation</dd>
               </div>
               <div>
-                <dt className="font-semibold text-slate-900">Tax status</dt>
-                <dd>U.S. tax-exempt recognition not yet granted</dd>
+                <dt className="font-semibold text-slate-900">Program focus</dt>
+                <dd>Programs delivered in Nepal</dd>
               </div>
               <div>
                 <dt className="font-semibold text-slate-900">EIN</dt>

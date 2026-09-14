@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Building2, ChartSpline, Globe, Handshake, ShieldCheck, Sparkles, TrendingUp, Users } from "lucide-react";
@@ -5,23 +6,11 @@ import { CorporateCSRForm } from "@/components/new/CSR/CorporateCSRForm";
 import { ContactCardList } from "@/components/new/ContactCardList/ContactCardList";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 
-export const metadata: Metadata = {
-  title: "Corporate CSR Partnerships | Nivaran Foundation",
-  description:
-    "Build high-impact CSR partnerships with Nivaran Foundation. Learn global and US-facing benefits, implementation models, compliance standards, and submit a corporate CSR inquiry.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/corporate",
-  },
-  keywords: [
-    "CSR partnership",
-    "corporate social responsibility Nepal",
-    "MNC CSR program",
-    "ESG implementation partner",
-    "healthcare CSR",
-    "employee volunteering",
-    "cause marketing partnership",
-  ],
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/corporate",
+  "title": "Corporate Partnerships for Nepal | Nivaran Foundation",
+  "description": "Partner with Nivaran Foundation to support healthcare and education in Nepal through company giving, employee involvement and community partnerships."
+});
 
 const impactPillars = [
   {

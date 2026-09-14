@@ -1,38 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
 import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/health-ngo-nepal",
   title: "Health NGO in Nepal | What Effective Rural Health Delivery Looks Like",
-  description:
-    "Looking for a health NGO in Nepal? Understand what credible rural health delivery requires, how mobile health camps work, and how Nivaran Foundation operates in underserved communities.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/health-ngo-nepal",
-  },
-  keywords: [
-    "health NGO Nepal",
-    "Nepal health NGO",
-    "rural healthcare Nepal",
-    "mobile health camps Nepal",
-    "Nivaran Foundation",
-  ],
-  openGraph: {
-    title: "Health NGO in Nepal | What Effective Rural Health Delivery Looks Like",
-    description:
-      "See what separates a credible health NGO in Nepal from generic awareness campaigns: field delivery, verification, referral systems, and transparent reporting.",
-    url: "https://www.nivaranfoundation.org/health-ngo-nepal",
-    type: "website",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Health NGO in Nepal | What Effective Rural Health Delivery Looks Like",
-    description:
-      "What a credible health NGO in Nepal needs to deliver beyond awareness alone.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Looking for a health NGO in Nepal? Understand what credible rural health delivery requires, how mobile health camps work, and how Nivaran Foundation operates in underserved communities.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 export default function HealthNgoNepalPage() {
   return (

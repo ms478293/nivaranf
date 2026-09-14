@@ -1,37 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { HealthcareTopicPage } from "@/components/seo/HealthcareTopicPage";
 import { GENERAL_HEALTHCARE_EVIDENCE } from "@/content/healthcare-evidence";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/rural-healthcare-nepal",
   title: "Rural Healthcare in Nepal | Access Barriers and Field Delivery",
-  description:
-    "Understand the main rural healthcare challenges in Nepal, including distance, delayed treatment, workforce scarcity, referral gaps, and why outreach models matter.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/rural-healthcare-nepal",
-  },
-  keywords: [
-    "rural healthcare Nepal",
-    "healthcare access Nepal",
-    "rural health Nepal",
-    "Nepal health NGO",
-  ],
-  openGraph: {
-    title: "Rural Healthcare in Nepal | Access Barriers and Field Delivery",
-    description:
-      "A practical overview of how distance, cost, and uneven infrastructure shape healthcare access in rural Nepal.",
-    url: "https://www.nivaranfoundation.org/rural-healthcare-nepal",
-    type: "article",
-    siteName: "Nivaran Foundation",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rural Healthcare in Nepal | Access Barriers and Field Delivery",
-    description:
-      "Why rural healthcare in Nepal depends on outreach, referral discipline, and better continuity of care.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Understand the main rural healthcare challenges in Nepal, including distance, delayed treatment, workforce scarcity, referral gaps, and why outreach models matter.",
+  image: {"url":"/hero_img/hero_img_2.webp","alt":"A healthcare worker examining a patient","width":1920,"height":1080},
+});
 
 export default function RuralHealthcareNepalPage() {
   return (

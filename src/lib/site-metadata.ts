@@ -5,7 +5,7 @@ const SITE_URL = "https://www.nivaranfoundation.org";
 const META_DOMAIN_VERIFICATION = process.env.NEXT_PUBLIC_META_DOMAIN_VERIFICATION;
 const DEFAULT_TITLE = "Nivaran Foundation";
 const DEFAULT_DESCRIPTION =
-  "Nivaran Foundation builds humanitarian, health, education, and public-interest initiatives across multiple contexts.";
+  "Nivaran Foundation brings mobile health camps, maternal and child health outreach, and education support to underserved communities in Nepal.";
 
 export function getRootMetadata(variant: SiteVariant): Metadata {
   const config = getSiteVariantConfig(variant);
@@ -31,10 +31,10 @@ export function getRootMetadata(variant: SiteVariant): Metadata {
       variant === "main"
         ? [
             "Nivaran Foundation",
-            "humanitarian response",
+            "Nepal healthcare",
             "education initiatives",
             "health access",
-            "global campaigns",
+            "Nepal flood appeal",
             "public-interest reporting",
           ]
         : config.keywords,

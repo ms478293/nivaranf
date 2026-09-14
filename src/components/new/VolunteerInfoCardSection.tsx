@@ -22,9 +22,9 @@ export const VOLUNTEER_INFO: InfoCardType[] = [
   {
     id: 3,
     icon: <MiniPlantIcon className="w-10 h-10 stroke-primary-500" />,
-    title: "Volunteer Benefits",
+    title: "Before You Join",
     description:
-      "Earn certificates, recommendation letters for college/university, professional references, skill training, and public recognition.",
+      "Confirm the role, schedule, supervision and practical arrangements with our team before making a commitment.",
   },
 ];
 

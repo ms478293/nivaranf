@@ -1,5 +1,6 @@
 // Read-only staging checks. Never submit a donation or enter donor/card details.
 import assert from "node:assert/strict";
+import { checkSeoRelease } from "./check-seo.mjs";
 import { readFile, readdir } from "node:fs/promises";
 import { createRequire } from "node:module";
 import http from "node:http";
@@ -100,4 +101,5 @@ assert.equal(settings.response.headers.get("x-nextjs-cache"), null);
 const flags = JSON.parse(settings.body);
 assert.equal(typeof flags.monthly, "boolean");
 assert.equal(typeof flags.addressSearch, "boolean");
+await checkSeoRelease(base, { inspectSitemap: true });
 console.log(JSON.stringify({ status: "passed", prerenderedPages: Object.keys(manifest.routes).length, archivePath, firstCache: first.response.headers.get("x-nextjs-cache"), secondCache: second.response.headers.get("x-nextjs-cache"), settings: flags, checks: "home, campaigns, donation/query, archive cache/canonical, 404, legacy redirect, news noindex, regional branding, uncached donation settings" }));

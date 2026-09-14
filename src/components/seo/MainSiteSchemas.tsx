@@ -1,33 +1,23 @@
 import { getSiteVariantConfig } from "@/lib/site-variant";
 
-function getMainSiteSchemas(siteUrl: string, description: string, searchPath: string) {
+function getMainSiteSchemas(siteUrl: string, description: string) {
   return {
     website: {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      publisher: { "@id": `${siteUrl}/#organization` },
       name: "Nivaran Foundation",
       alternateName: "Nivaran",
       url: siteUrl,
       logo: `${siteUrl}/logo_img.jpg`,
       description,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${siteUrl}${searchPath}?q={search_term_string}`,
-        },
-        "query-input": "required name=search_term_string",
-      },
       inLanguage: "en",
     },
     organization: {
       "@context": "https://schema.org",
-      "@type": [
-        "Organization",
-        "NGO",
-        "NonprofitOrganization",
-        "MedicalOrganization",
-      ],
+      "@type": "NGO",
+      "@id": `${siteUrl}/#organization`,
       name: "Nivaran Foundation",
       alternateName: "Nivaran",
       url: siteUrl,
@@ -92,10 +82,6 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
         "Education in Nepal",
         "Community Development",
       ],
-      medicalSpecialty: [
-        "https://schema.org/PrimaryCare",
-        "https://schema.org/PublicHealth",
-      ],
     },
     donateAction: {
       "@context": "https://schema.org",
@@ -104,6 +90,7 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
       description:
         "Your donation funds healthcare and education in Nepal. See financial reporting status.",
       recipient: {
+        "@id": `${siteUrl}/#organization`,
         "@type": "Organization",
         name: "Nivaran Foundation",
         url: siteUrl,
@@ -119,7 +106,7 @@ function getMainSiteSchemas(siteUrl: string, description: string, searchPath: st
 
 export default function MainSiteSchemas() {
   const config = getSiteVariantConfig("main");
-  const schemas = getMainSiteSchemas(config.siteUrl, config.defaultDescription, config.searchPath);
+  const schemas = getMainSiteSchemas(config.siteUrl, config.defaultDescription);
   return <>{Object.entries(schemas).map(([name, value]) => (
     <script key={name} id={`${name === "website" ? "Website" : name === "organization" ? "Organization" : "DonateAction"}-schema`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(value) }} />
   ))}</>;

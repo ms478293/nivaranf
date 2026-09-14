@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import {
   ProjectDataType,
   ProjectDisplay,
@@ -5,29 +6,11 @@ import {
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title:
-    "Nivaran Foundation | Project Vidya - Transforming Global Education Through Innovation",
-  description:
-    "Project Vidya is Nivaran Foundation's education initiative focused on technology-enabled learning, teacher training, and long-term access to quality education for underserved communities.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/vidya",
-  },
-  openGraph: {
-    title: "Project Vidya | Nivaran Foundation",
-    description: "Technology-enabled education, teacher training, and long-term learning access through Project Vidya.",
-    url: "https://www.nivaranfoundation.org/vidya",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Project Vidya | Nivaran Foundation",
-    description: "Project Vidya focuses on education access, teacher support, and technology-enabled learning.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/vidya",
+  "title": "Project Vidya: Education Plans for 2027 | Nivaran Foundation",
+  "description": "Explore Project Vidya, Nivaran’s education initiative planned for 2027. Learn about proposed learning access, teacher support and phased program goals."
+});
 
 const project_data: ProjectDataType = {
   name: "Vidya",

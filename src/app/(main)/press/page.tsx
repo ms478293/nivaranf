@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import {
@@ -9,37 +10,11 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/press",
   title: "Press & Media Kit | Nivaran Foundation",
-  description:
-    "Journalist resources, media contacts, program facts, brand assets, and organizational background for coverage of Nivaran Foundation and Project Sanjeevani.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/press",
-  },
-  openGraph: {
-    title: "Press & Media Kit | Nivaran Foundation",
-    description:
-      "Press resources, media contacts, and program facts for journalists and partners covering Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/press",
-    type: "website",
-    siteName: "Nivaran Foundation",
-    images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Nivaran Foundation Press Kit",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Press & Media Kit | Nivaran Foundation",
-    description: "Media contacts, press resources, and program facts for Nivaran Foundation coverage.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "Journalist resources, media contacts, program facts, brand assets, and organizational background for coverage of Nivaran Foundation and Project Sanjeevani.",
+});
 
 const QUICK_FACTS = [
   { label: "Founded", value: "2024" },

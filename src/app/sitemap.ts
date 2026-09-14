@@ -1,6 +1,8 @@
 import { getAllDistrictCoverageParams } from "@/content/sanjeevani-province-pages";
 import { getBlogPath } from "@/lib/blog-routes";
-import { getBlogFeed } from "@/lib/content/posts";
+import { getIndexableBlogFeed } from "@/lib/content/posts";
+import { DONATION_CAMPAIGNS, campaignDonationPath } from "@/content/donation-campaigns";
+import { DESIGNATIONS } from "@/content/donation-designations";
 import { getGlobalFeedBySegment } from "@/lib/global-feed";
 import {
   detectSiteVariantFromHost,
@@ -31,6 +33,8 @@ const MAIN_STATIC_ROUTES: StaticRoute[] = [
   { path: "/care-model", priority: 0.7, isKeyPage: true },
   { path: "/donate", priority: 1.0, isKeyPage: true },
   { path: "/contact-us", priority: 0.8 },
+  { path: "/press", priority: 0.7 },
+  { path: "/local-partner", priority: 0.7 },
   { path: "/career", priority: 0.7 },
   { path: "/blogs", priority: 0.9, isKeyPage: true },
   { path: "/articles", priority: 0.9, isKeyPage: true },
@@ -52,7 +56,6 @@ const MAIN_STATIC_ROUTES: StaticRoute[] = [
   { path: "/programs", priority: 0.9, isKeyPage: true },
   { path: "/programs/health", priority: 0.8 },
   { path: "/programs/education", priority: 0.8 },
-  { path: "/gaupalika", priority: 0.6 },
   { path: "/corporate", priority: 0.6 },
   { path: "/accountability-and-transparency", priority: 0.6 },
   { path: "/financial-reports", priority: 0.6 },
@@ -93,15 +96,17 @@ function toAbsoluteUrl(siteUrl: string, path: string) {
 function buildStaticEntries(
   siteUrl: string,
   routes: StaticRoute[],
-  now: Date,
-  keyPageLastModified: string,
 ): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: toAbsoluteUrl(siteUrl, route.path),
-    ...(route.path === "/campaigns" || route.path === "/campaigns/nepal-flood-recovery"
-      ? { lastModified: "2026-09-05" } : {}),
     priority: route.priority,
   }));
+}
+
+function sourceDate(value?: string) {
+  const parsed = value ? new Date(value) : null;
+  return parsed && Number.isFinite(parsed.getTime()) && parsed.getTime() <= Date.now()
+    ? { lastModified: parsed } : {};
 }
 
 /**
@@ -111,8 +116,8 @@ function buildStaticEntries(
  * Google's scaled-content-abuse policy.
  *
  * This is enforced here rather than at each call site because there are two
- * builders (Nepal and global) that reach the feed by different routes —
- * buildNepalSitemap via getBlogFeed(), buildGlobalSitemap via
+ * builders (main and global) that reach the feed by different routes —
+ * buildMainSitemap via getIndexableBlogFeed(), buildGlobalSitemap via
  * getGlobalFeedBySegment(). Excluding it in only one of them is exactly the bug
  * this replaced. The /news index page itself stays listed; only items under it
  * are dropped.
@@ -140,14 +145,13 @@ async function getSeoVariant() {
 
 async function buildMainSitemap() {
   const siteUrl = getSiteVariantConfig("main").siteUrl;
-  const now = new Date();
-  const keyPageLastModified = now.toISOString();
   const staticEntries = buildStaticEntries(
     siteUrl,
     MAIN_STATIC_ROUTES,
-    now,
-    keyPageLastModified,
   );
+  const campaignEntries: MetadataRoute.Sitemap = DONATION_CAMPAIGNS
+    .filter((campaign) => DESIGNATIONS.some((fund) => fund.id === campaign.id && fund.visible))
+    .map((campaign) => ({ url: toAbsoluteUrl(siteUrl, campaignDonationPath(campaign.id)), priority: 0.9 }));
 
   const provinceCoverageEntries: MetadataRoute.Sitemap = [
     "karnali",
@@ -159,7 +163,6 @@ async function buildMainSitemap() {
     "koshi",
   ].map((slug) => ({
     url: toAbsoluteUrl(siteUrl, `/healthcare-coverage-nepal/${slug}`),
-    lastModified: keyPageLastModified,
     priority: 0.7,
   }));
 
@@ -172,15 +175,16 @@ async function buildMainSitemap() {
       priority: 0.65,
     }));
 
-  const blogItems = await getBlogFeed(500);
+  const blogItems = await getIndexableBlogFeed();
   const blogEntries: MetadataRoute.Sitemap = blogItems.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
-    lastModified: blog.date ? new Date(blog.date) : now,
+    ...sourceDate(blog.date),
     priority: 0.8,
   }));
 
   return dedupeEntries([
     ...staticEntries,
+    ...campaignEntries,
     ...provinceCoverageEntries,
     ...districtCoverageEntries,
     ...blogEntries,
@@ -189,17 +193,12 @@ async function buildMainSitemap() {
 
 async function buildGlobalSitemap() {
   const siteUrl = getSiteVariantConfig("global").siteUrl;
-  const now = new Date();
-  const keyPageLastModified = now.toISOString();
   const staticEntries = buildStaticEntries(
     siteUrl,
     GLOBAL_STATIC_ROUTES,
-    now,
-    keyPageLastModified,
   );
 
-  const [news, stories, articles] = await Promise.all([
-    getGlobalFeedBySegment("news"),
+  const [stories, articles] = await Promise.all([
     getGlobalFeedBySegment("stories"),
     getGlobalFeedBySegment("articles"),
   ]);
@@ -209,17 +208,16 @@ async function buildGlobalSitemap() {
   // Submitting ~500 of them buried the 60 pages that describe our actual work
   // and exposed the site to Google's scaled-content-abuse policy. The /news
   // index stays listed; the individual items are noindexed at the route.
-  void news;
 
   const storyEntries: MetadataRoute.Sitemap = stories.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
-    lastModified: blog.date ? new Date(blog.date) : now,
+    ...sourceDate(blog.date),
     priority: 0.7,
   }));
 
   const articleEntries: MetadataRoute.Sitemap = articles.map((blog) => ({
     url: toAbsoluteUrl(siteUrl, getBlogPath(blog)),
-    lastModified: blog.date ? new Date(blog.date) : now,
+    ...sourceDate(blog.date),
     priority: 0.7,
   }));
 
@@ -246,18 +244,13 @@ async function getUsaBlogSlugs() {
 
 async function buildUsaSitemap() {
   const siteUrl = getSiteVariantConfig("usa").siteUrl;
-  const now = new Date();
-  const keyPageLastModified = now.toISOString();
   const staticEntries = buildStaticEntries(
     siteUrl,
     USA_STATIC_ROUTES,
-    now,
-    keyPageLastModified,
   );
   const blogSlugs = await getUsaBlogSlugs();
   const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: toAbsoluteUrl(siteUrl, `/blogs/${slug}`),
-    lastModified: keyPageLastModified,
     priority: 0.7,
   }));
 

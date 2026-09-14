@@ -1,28 +1,13 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/financial-reports",
   title: "Financial Reports | Nivaran Foundation",
-  description:
-    "Access annual financial reports, transparency resources, reporting pathways, and accountability documentation for Nivaran Foundation.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/financial-reports",
-  },
-  openGraph: {
-    title: "Financial Reports | Nivaran Foundation",
-    description: "Access annual reporting details, organization information, and transparency documentation from Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/financial-reports",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "Financial Reports | Nivaran Foundation",
-    description: "Annual financial reports, transparency resources, and reporting documentation from Nivaran Foundation.",
-    site: "@NivaranOrg",
-  },
-};
+  description: "Access annual financial reports, transparency resources, reporting pathways, and accountability documentation for Nivaran Foundation.",
+});
 
 const reportTimeline = [
   {
@@ -69,8 +54,8 @@ export default function FinancialReportsPage() {
               <p className="text-green-900">Nivaran Foundation</p>
             </div>
             <div>
-              <p className="text-green-700 font-medium">Tax Status</p>
-              <p className="text-green-900">U.S. tax-exempt recognition not yet granted</p>
+              <p className="text-green-700 font-medium">Program Focus</p>
+              <p className="text-green-900">Programs delivered in Nepal</p>
             </div>
             <div>
               <p className="text-green-700 font-medium">EIN</p>
@@ -88,12 +73,12 @@ export default function FinancialReportsPage() {
             </div>
           </div>
           <a
-            href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search"
+            href="https://www.nivaranfoundation.org/accountability-and-transparency"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 text-sm text-primary-500 underline hover:text-primary-600"
           >
-            Read IRS information about tax-exempt organizations
+            Review accountability and reporting
           </a>
         </div>
 

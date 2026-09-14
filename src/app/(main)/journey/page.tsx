@@ -1,29 +1,13 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Metadata } from "next";
 import Link from "next/link";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 
-export const metadata: Metadata = {
-  title: "Nivaran Foundation | Our Journey",
-  description:
-    `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients. Discover Nivaran Foundation's journey of impact.`,
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/journey",
-  },
-  openGraph: {
-    title: "Our Journey | Nivaran Foundation",
-    description: `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients.`,
-    url: "https://www.nivaranfoundation.org/journey",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Our Journey | Nivaran Foundation",
-    description: `From a personal encounter with healthcare gaps in Nepal to ${SANJEEVANI_PUBLIC_STATS.campsCompletedText} completed health camps serving ${SANJEEVANI_PUBLIC_STATS.patientsServedText} patients.`,
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/journey",
+  "title": "Nivaran Foundation’s Journey | Healthcare Access in Nepal",
+  "description": "Explore Nivaran Foundation’s story, its healthcare mission in rural Nepal and the programs connecting communities with care, education and support."
+});
 
 export default function OurJourneyPage() {
   return (

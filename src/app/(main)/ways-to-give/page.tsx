@@ -1,39 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { PageTitle } from "@/components/new/PageTitle/PageTitle";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Ways to Give | Nivaran Foundation — Donate, Volunteer, Match",
-  description:
-    "Explore all the ways to support Nivaran Foundation: one-time gifts, recurring donations, employer matching, stock donations, volunteer time, and corporate partnerships.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/ways-to-give",
-  },
-  openGraph: {
-    title: "Ways to Give | Nivaran Foundation",
-    description:
-      "Support Nivaran Foundation through donations, employer matching, stock gifts, volunteering, and partnerships.",
-    url: "https://www.nivaranfoundation.org/ways-to-give",
-    type: "website",
-    siteName: "Nivaran Foundation",
-    images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Nivaran Foundation Ways to Give",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Ways to Give | Nivaran Foundation",
-    description: "See all the ways to support Nivaran Foundation through donations, matching gifts, volunteering, and partnerships.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/ways-to-give",
+  "title": "Ways to Give to Nepal | Nivaran Foundation",
+  "description": "Compare ways to support Nivaran’s work in Nepal: campaign donations, monthly giving, volunteering and company partnerships. Find a cause that matters to you."
+});
 
 const GIVING_METHODS = [
   {

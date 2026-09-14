@@ -1,32 +1,14 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/editorial-standards",
   title: "Editorial Standards | Nivaran Foundation",
-  description:
-    "How Nivaran Foundation handles sourcing, corrections, healthcare content boundaries, author attribution, and public-interest reporting standards.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/editorial-standards",
-  },
-  openGraph: {
-    title: "Editorial Standards | Nivaran Foundation",
-    description:
-      "Public standards for sourcing, corrections, bylines, and healthcare content boundaries at Nivaran Foundation.",
-    url: "https://www.nivaranfoundation.org/editorial-standards",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Editorial Standards | Nivaran Foundation",
-    description:
-      "How Nivaran Foundation approaches source quality, corrections, and public-interest reporting.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+  description: "How Nivaran Foundation handles sourcing, corrections, healthcare content boundaries, author attribution, and public-interest reporting standards.",
+});
 
 const standards = [
   {

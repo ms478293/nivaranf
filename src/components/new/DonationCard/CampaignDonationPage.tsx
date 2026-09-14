@@ -8,16 +8,18 @@ import { DESIGNATIONS } from "@/content/donation-designations";
 import DonationCard from "./DonationCard";
 import NepalFloodCampaignPage from "./NepalFloodCampaignPage";
 import styles from "./DonationPage.module.css";
+import { createPageMetadata } from "@/lib/page-metadata";
 
 export function campaignMetadata(campaign: DonationCampaign): Metadata {
-  const title = `${campaign.category} | Give with Nivaran Foundation`;
-  const url = `https://www.nivaranfoundation.org${campaignDonationPath(campaign.id)}`;
-  return {
-    title, description: campaign.description,
-    alternates: { canonical: url },
-    openGraph: { title, description: campaign.description, url, type: "website", siteName: "Nivaran Foundation", images: [{ url: campaign.image, alt: campaign.imageAlt }] },
-    twitter: { card: "summary_large_image", title, description: campaign.description, images: [campaign.image] },
-  };
+  const isFlood = campaign.id === "nepal-flood-recovery";
+  return createPageMetadata({
+    path: campaignDonationPath(campaign.id),
+    title: isFlood ? "Nepal Flood Recovery Appeal | Nivaran Foundation" : `${campaign.category} | Give with Nivaran Foundation`,
+    description: isFlood
+      ? "Support Nivaran’s planned Nepal flood response. Review recovery priorities, dated situation updates and response status, then choose a one-time or monthly gift."
+      : campaign.description,
+    image: { url: campaign.image, alt: campaign.imageAlt },
+  });
 }
 
 export default function CampaignDonationPage({ campaign, checkoutOnly = false }: { campaign: DonationCampaign; checkoutOnly?: boolean }) {

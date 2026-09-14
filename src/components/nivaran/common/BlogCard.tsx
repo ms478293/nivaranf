@@ -121,6 +121,7 @@ const Thumbnail = ({
   overlayStyle,
   showTags = true,
   showDate = true,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
 }: {
   showAuthor?: boolean;
   className?: string;
@@ -128,6 +129,7 @@ const Thumbnail = ({
   overlayStyle?: boolean;
   showTags?: boolean;
   showDate?: boolean;
+  sizes?: string;
 }) => {
   const { data } = useBlogCard();
   return (
@@ -143,7 +145,7 @@ const Thumbnail = ({
         src={data.thumbnailImage || "/images/placeholder-image-for-nivaran.webp"}
         alt={data.title}
         fill
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        sizes={sizes}
       />
 
       <div className="absolute w-full h-full  bg-[linear-gradient(to_bottom,_#000000d0_0%,_transparent_40%,_#000000bf_100%)] left-0 bottom-0"></div>

@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import TargetedResults from "@/components/new/AboutStatCard/TargetedResults";
 import MainTitle from "@/components/new/MainTitle/MainTitle";
@@ -15,35 +16,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Activity, CircleDollarSign, MapPinned, Users } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
-  description:
-    `Project Sanjeevani is Nivaran Foundation's mobile health camp program in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/sanjeevani",
-  },
-  keywords: [
-    "Project Sanjeevani",
-    "mobile health camps Nepal",
-    "rural healthcare Nepal",
-    "free health camp Nepal",
-    "Nepal health NGO",
-  ],
-  openGraph: {
-    title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
-    description: `Mobile health camps and rural healthcare delivery in Nepal. ${SANJEEVANI_PUBLIC_COPY.summaryWithMunicipalities}`,
-    url: "https://www.nivaranfoundation.org/sanjeevani",
-    siteName: "Nivaran Foundation",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Project Sanjeevani | Mobile Health Camps Across Rural Nepal",
-    description: `Mobile health camps and rural healthcare delivery in Nepal. ${SANJEEVANI_PUBLIC_COPY.summary}`,
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-  },
-};
+export const metadata: Metadata = createPageMetadata({
+  "path": "/sanjeevani",
+  "title": "Project Sanjeevani: Nepal Health Camps | Nivaran Foundation",
+  "description": "See how Project Sanjeevani brings mobile health camps to rural Nepal. Explore its care model, published coverage records and ways to support outreach.",
+  "image": {
+    "url": "/hero_img/hero_img_2.webp",
+    "alt": "A healthcare worker examining a patient",
+    "width": 1920,
+    "height": 1080
+  }
+});
 
 const page = () => {
   return (

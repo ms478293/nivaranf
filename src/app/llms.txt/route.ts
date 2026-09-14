@@ -4,7 +4,7 @@ import { detectSiteVariantFromHost } from "@/lib/site-variant";
 
 const MAIN_LLMS_TXT = `# Nivaran Foundation
 
-> Nivaran Foundation is a Nepal-focused foundation delivering free mobile health camps, maternal care, and education support to underserved communities across rural Nepal. Founded in 2024, Nivaran has served 17,000+ patients through 16+ health camps across all 7 provinces of Nepal. EIN: 41-2656587.
+> Nivaran Foundation is a Nepal-focused foundation delivering free mobile health camps, maternal care, and education support to underserved communities across rural Nepal. Founded in 2024, Nivaran’s published program figures report 17,355 patients across 16 completed camps in 7 provinces, as of February 2026. EIN: 41-2656587.
 
 ## About
 - [About Nivaran Foundation](https://www.nivaranfoundation.org/about): Mission, vision, founding story, and organizational overview
@@ -18,7 +18,7 @@ const MAIN_LLMS_TXT = `# Nivaran Foundation
 
 ## Programs
 - [Project Sanjeevani](https://www.nivaranfoundation.org/sanjeevani): Flagship mobile health camp program serving rural Nepal
-- [Sanjeevani Tracking](https://www.nivaranfoundation.org/sanjeevani/tracking): Real-time health camp data with district-level tracking
+- [Sanjeevani Tracking](https://www.nivaranfoundation.org/sanjeevani/tracking): Published health camp records and district-level reporting
 - [Project Vidya](https://www.nivaranfoundation.org/vidya): Planned education initiative for underserved children, scheduled for 2027 — not yet launched
 - [Health Programs](https://www.nivaranfoundation.org/programs/health): Comprehensive healthcare program overview
 - [Education Programs](https://www.nivaranfoundation.org/programs/education): Education access and scholarship programs
@@ -30,9 +30,14 @@ const MAIN_LLMS_TXT = `# Nivaran Foundation
 - [Maternal Health Nepal](https://www.nivaranfoundation.org/maternal-health-nepal): Maternal and child health initiatives
 - [Free Health Camp Nepal](https://www.nivaranfoundation.org/free-health-camp-nepal): Free screening and treatment camp information
 
+## Current Appeals
+- [Nepal Flood Recovery Appeal](https://www.nivaranfoundation.org/donate/nepal-flood-recovery): Fundraising for Nivaran’s planned flood response before deployment
+- [Nepal Flood Briefing](https://www.nivaranfoundation.org/campaigns/nepal-flood-recovery): Dated official sources, reported needs and Nivaran’s response status
+- [Donation Campaigns](https://www.nivaranfoundation.org/campaigns): Healthcare, maternal and child health, education and flood appeals with current giving status
+
 ## Get Involved
 - [Donate](https://www.nivaranfoundation.org/donate): Donations — See financial reporting status
-- [Volunteer](https://www.nivaranfoundation.org/volunteer): Volunteer opportunities in Nepal and the US
+- [Volunteer](https://www.nivaranfoundation.org/volunteer): Field opportunities in Nepal and remote support; confirm availability with the team
 - [Corporate Partnerships](https://www.nivaranfoundation.org/corporate): CSR and corporate partnership programs
 
 ## Content

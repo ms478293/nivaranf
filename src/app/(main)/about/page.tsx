@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/page-metadata";
 import { LightIcon } from "@/assets/icons/LightIcon";
 import { TargetIcon } from "@/assets/icons/TargetIcon";
 import AboutNivaran from "@/components/new/AboutNivaran/AboutNivaran";
@@ -15,39 +16,11 @@ import { Breadcrumbs } from "@/components/new/Breadcrumbs/Breadcrumbs";
 import { SANJEEVANI_PUBLIC_STATS } from "@/content/sanjeevani-public-stats";
 import { RelatedContent } from "@/components/new/RelatedContent/RelatedContent";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
+  path: "/about",
   title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
-  description:
-    "Nivaran Foundation is a Nepal-focused foundation founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
-  alternates: {
-    canonical: "https://www.nivaranfoundation.org/about",
-  },
-  openGraph: {
-    title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
-    description:
-      "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
-    url: "https://www.nivaranfoundation.org/about",
-    type: "website",
-    siteName: "Nivaran Foundation",
-    images: [
-      {
-        url: "https://www.nivaranfoundation.org/logo.png",
-        width: 1200,
-        height: 665,
-        alt: "Nivaran Foundation",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Nivaran Foundation | NGO Serving Nepal Since 2024",
-    description:
-      "Learn about Nivaran Foundation's mission, leadership, and healthcare and education impact in Nepal.",
-    site: "@NivaranOrg",
-    creator: "@NivaranOrg",
-    images: ["https://www.nivaranfoundation.org/logo.png"],
-  },
-};
+  description: "Nivaran Foundation is a Nepal-focused foundation founded in 2024, delivering healthcare and education support to underserved communities across Nepal.",
+});
 
 export default function page() {
   return (
@@ -186,10 +159,10 @@ export default function page() {
               </article>
               <article className="rounded-2xl border border-gray-200 bg-white p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
-                  Legal status
+                  Program focus
                 </p>
                 <p className="mt-3 text-lg font-semibold text-gray-900">
-                  U.S. tax-exempt recognition not yet granted
+                  Programs delivered in Nepal
                 </p>
               </article>
               <article className="rounded-2xl border border-gray-200 bg-white p-5">
@@ -277,18 +250,18 @@ export default function page() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">U.S. tax status</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Program focus</h3>
               <p className="text-sm text-gray-600 mb-2">
-                U.S. tax-exempt recognition not yet granted
+                Programs delivered in Nepal
               </p>
               <p className="text-sm font-bold text-gray-800">EIN: 41-2656587</p>
               <a
-                href="https://www.irs.gov/charities-non-profits/tax-exempt-organization-search"
+                href="https://www.nivaranfoundation.org/accountability-and-transparency"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-primary-500 underline mt-2 inline-block"
               >
-                IRS organization search
+                Our accountability and transparency
               </a>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
