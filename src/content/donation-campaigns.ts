@@ -16,6 +16,7 @@ export type DonationCampaign = {
   tone: "forest" | "rose" | "ochre" | "flood";
   amounts: readonly number[];
   defaultAmount: number;
+  defaultMonthlyAmount?: number;
 };
 
 export const DONATION_CAMPAIGNS: readonly DonationCampaign[] = [
@@ -75,11 +76,11 @@ export const DONATION_CAMPAIGNS: readonly DonationCampaign[] = [
     description: "Stand with communities affected by Nepal’s floods. Help fund Nivaran’s planned flood response.",
     formHeading: "Stand with Nepal.",
     formIntro: "Your gift supports Nivaran’s planned flood response. We are raising funds before deployment.",
-    image: "/hero_img/nepal-flood-portrait.webp",
-    imageAlt: "Illustration of a woman overlooking a flood-affected Himalayan village",
-    imagePosition: "center 38%", tone: "flood",
-    imageCaption: "AI-generated illustration · not documentary photography",
-    amounts: [25, 50, 100, 250, 500], defaultAmount: 50,
+    image: "/hero_img/nepal-flood-family.webp",
+    imageAlt: "A woman looking through mud-damaged photographs inside a home",
+    imagePosition: "35% center", tone: "flood",
+    amounts: [25, 50, 100, 250, 500], defaultAmount: 100,
+    defaultMonthlyAmount: 100,
   },
   {
     id: "vidya", category: "Project Vidya · planned 2027",

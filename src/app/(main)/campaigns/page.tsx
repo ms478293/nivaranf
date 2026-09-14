@@ -19,8 +19,8 @@ export default function CampaignsPage() {
     <div className={styles.page}>
       <section id="latest-crisis" className={styles.hero} aria-labelledby="campaigns-hero-title" tabIndex={-1}>
         <Image
-          src="/hero_img/nepal-flood-2026.webp"
-          alt="AI-generated illustration of floodwater flowing through a Himalayan village"
+          src="/hero_img/nepal-flood-river.webp"
+          alt="Floodwater rushing through a mountain valley beside damaged roads and homes"
           fill
           priority
           sizes="100vw"
@@ -44,7 +44,6 @@ export default function CampaignsPage() {
             </p>
           </div>
         </div>
-        <p className={styles.heroCaption}>AI-generated illustration · not documentary photography</p>
       </section>
       <section id="our-campaigns" className={styles.campaigns} aria-labelledby="campaigns-list-title" tabIndex={-1}>
         <header className={styles.intro}>
