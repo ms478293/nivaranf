@@ -60,6 +60,7 @@
 .frequencyControl label { position:relative; cursor:pointer; }
 .frequencyControl input { position:absolute; opacity:0; width:1px; height:1px; }
 .frequencyControl span { display:flex; gap:8px; justify-content:center; align-items:center; height:45px; font-size:13px; color:#727b6e; border-radius:4px; transition:background .2s,color .2s,box-shadow .2s; }
+.frequencyControl svg { color:#e46b98; fill:currentColor; }
 .frequencyControl input:checked + span { color:var(--campaign-button); background:white; font-weight:600; box-shadow:0 1px 5px #1f34200d; }
 .frequencyControl input:focus-visible + span { outline:2px solid var(--campaign-accent); outline-offset:2px; }
 .frequencyNote { text-align:center; font-size:11px; line-height:1.7; color:#7c8678; margin-top:-15px; }
