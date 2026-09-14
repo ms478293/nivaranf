@@ -17,15 +17,10 @@ export default function CampaignsPage() {
   const floodUpdate = LATEST_NEPAL_FLOOD_UPDATE;
   return (
     <div className={styles.page}>
-      <a href="#latest-crisis" className={styles.crisisRibbon}>
-        <span className={styles.crisisTag}>LATEST CRISIS</span>
-        <span>Nepal flood emergency</span>
-        <span className={styles.ribbonAction}>See the update <ArrowDown size={15} aria-hidden="true" /></span>
-      </a>
-      <section className={styles.hero} aria-labelledby="campaigns-hero-title">
+      <section id="latest-crisis" className={styles.hero} aria-labelledby="campaigns-hero-title" tabIndex={-1}>
         <Image
-          src="/hero_img/hero_img_2.webp"
-          alt="A doctor caring for an older woman in a Himalayan village"
+          src="/hero_img/nepal-flood-2026.webp"
+          alt="AI-generated illustration of floodwater flowing through a Himalayan village"
           fill
           priority
           sizes="100vw"
@@ -34,46 +29,22 @@ export default function CampaignsPage() {
         <div className={styles.heroShade} aria-hidden="true" />
         <div className={styles.heroInner}>
           <div className={styles.heroContent}>
-            <p className={styles.heroEyebrow}>NIVARAN FOUNDATION <span aria-hidden="true">/</span> CAMPAIGNS</p>
-            <h1 id="campaigns-hero-title">Different causes.<br /><em>One shared humanity.</em></h1>
-            <p className={styles.heroDescription}>Care within reach. A chance to learn. A community to stand beside. Find your way to make a difference in Nepal.</p>
+            <p className={styles.heroEyebrow}><span className={styles.crisisLabel}>CURRENT CRISIS</span> NEPAL FLOODS</p>
+            <h1 id="campaigns-hero-title">Nepal’s floods.<br /><em>A long road home.</em></h1>
+            <p className={styles.heroDescription}>Floods have torn through homes and roads in Nepal. Stand with families facing the long road to recovery.</p>
             <div className={styles.heroActions}>
-              <a href="#our-campaigns" className={styles.heroButton}>Explore campaigns <ArrowDown size={18} aria-hidden="true" /></a>
-              <Link href="/donate" className={styles.heroLink}>Give where it’s needed most <ArrowUpRight size={17} aria-hidden="true" /></Link>
+              <Link href="/campaigns/nepal-flood-recovery#latest-update" className={styles.heroButton}>Read the flood update <ArrowUpRight size={18} aria-hidden="true" /></Link>
+              <a href="#our-campaigns" className={styles.heroLink}>Explore all campaigns <ArrowDown size={17} aria-hidden="true" /></a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="latest-crisis" className={styles.crisis} aria-labelledby="latest-crisis-title" tabIndex={-1}>
-        <div className={styles.crisisInner}>
-          <figure className={styles.crisisVisual}>
-            <div className={styles.crisisImage}>
-              <Image
-                src="/hero_img/nepal-flood-2026.webp"
-                alt="AI-generated illustration of floodwater flowing through a Himalayan village"
-                fill
-                sizes="(max-width: 800px) 100vw, 50vw"
-              />
-            </div>
-            <figcaption>AI-generated illustration · not documentary photography</figcaption>
-          </figure>
-          <div className={styles.crisisContent}>
-            <p className={styles.crisisEyebrow}>CURRENT CRISIS <span aria-hidden="true">/</span> NEPAL</p>
-            <h2 id="latest-crisis-title">Nepal’s floods.<br /><em>A long road home.</em></h2>
-            <p className={styles.crisisSummary}>{floodUpdate.summary}</p>
-            <dl className={styles.crisisFacts}>
-              {floodUpdate.figures.map((figure) => (
-                <div key={figure.label}><dt>{figure.label}</dt><dd>{figure.value}</dd></div>
-              ))}
-            </dl>
-            <p className={styles.crisisSource}>
-              Official update: <time dateTime={floodUpdate.reportDate}>{floodUpdate.reportDateLabel}</time>. Figures may be revised.<br />
-              Source: <a href={floodUpdate.sourceUrl} target="_blank" rel="noopener noreferrer">{floodUpdate.sourceLabel} <ArrowUpRight size={12} aria-hidden="true" /></a>
+            <p className={styles.heroNote}>Nivaran’s dedicated flood appeal is in preparation.</p>
+            <p className={styles.heroSource}>
+              Official update: <time dateTime={floodUpdate.reportDate}>{floodUpdate.reportDateLabel}</time>
+              <span aria-hidden="true"> · </span>
+              <a href={floodUpdate.sourceUrl} target="_blank" rel="noopener noreferrer">{floodUpdate.sourceLabel} <ArrowUpRight size={11} aria-hidden="true" /></a>
             </p>
-            <Link href="/campaigns/nepal-flood-recovery#latest-update" className={styles.crisisAction}>Read the flood update <ArrowUpRight size={17} aria-hidden="true" /></Link>
-            <p className={styles.crisisNote}>Nivaran’s dedicated flood appeal is in preparation.</p>
           </div>
         </div>
+        <p className={styles.heroCaption}>AI-generated illustration · not documentary photography</p>
       </section>
       <section id="our-campaigns" className={styles.campaigns} aria-labelledby="campaigns-list-title" tabIndex={-1}>
         <header className={styles.intro}>
