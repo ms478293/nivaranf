@@ -277,6 +277,9 @@ export default async function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-QF370FRN47');
+            // Google Ads conversion tracking (Nivaran Foundation)
+            // TODO: Replace AW-PLACEHOLDER with the actual conversion ID from Google Ads
+            gtag('config', 'AW-PLACEHOLDER');
           `}
         </Script>
 
