@@ -6,7 +6,7 @@ export const useLocation = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const location = Cookies.get("user_location");
+    const location = Cookies.get("nf_country") || Cookies.get("user_location");
 
     if (location) {
       setUserLocation(location);

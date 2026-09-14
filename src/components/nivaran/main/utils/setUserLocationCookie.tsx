@@ -1,39 +1,20 @@
 "use client";
 
 import Cookies from "js-cookie";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { pickDetectedCountry } from "@/lib/donations/detect-country";
 
 export const SetUserLocationCookie = () => {
-  const [userLocation, setUserLocation] = useState<string | null>(
-    Cookies.get("user_location") || null
-  );
-
   useEffect(() => {
-    // Skip if we already have a location cookie
-    if (userLocation) return;
-
-    const getLocationByIP = async () => {
-      try {
-        // Use IP-based geolocation — no browser permission popup required
-        const response = await fetch("https://ipapi.co/json/", {
-          signal: AbortSignal.timeout(3000),
-        });
-        if (!response.ok) return;
-        const data = await response.json();
-        const countryCode = data?.country_code === "NP" ? "NP" : "US";
-
-        Cookies.set("user_location", countryCode, {
-          expires: 7,
-          path: "/",
-        });
-        setUserLocation(countryCode);
-      } catch {
-        // Silently fail — non-critical feature
-      }
-    };
-
-    getLocationByIP();
-  }, [userLocation]);
-
+    if (Cookies.get("nf_country")) return;
+    const detected = pickDetectedCountry({
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      languages: typeof navigator === "undefined" ? [] : [...navigator.languages],
+    });
+    if (!detected) return;
+    const options = { expires: 7, path: "/" as const };
+    Cookies.set("nf_country", detected, options);
+    Cookies.set("user_location", detected, options);
+  }, []);
   return null;
 };

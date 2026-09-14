@@ -42,7 +42,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
-        <link rel="dns-prefetch" href="https://ipapi.co" />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QF370FRN47"
