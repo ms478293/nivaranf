@@ -32,7 +32,7 @@ const HeroTitle = ({
         <h1 id="hero-title" className="text-white md:text-4xl/[58px] text-xl min-[430px]:text-2xl sm:text-3xl max-w-[320px] min-[430px]:max-w-[500px] sm:max-w-[620px] md:max-w-[700px] font-[600] relative font-Poppins leading-8 min-[430px]:leading-[2.8rem] sm:leading-normal  ">
           Building a Healthier Nepal{"  "}
           <span className="font-extralight ">Together by </span>
-          <span className="text-primary-500 [&>span]:block relative sm:absolute md:-right-[20rem] sm:-right-[16rem] sm:left-auto sm:top-16 md:top-16 h-[3rem] sm:h-[4.5rem] w-full overflow-hidden">
+          <span className="block text-primary-500 [&>span]:block relative sm:absolute md:-right-[20rem] sm:-right-[16rem] sm:left-auto sm:top-16 md:top-16 h-[3rem] sm:h-[4.5rem] w-full overflow-hidden">
             <RenderList
               data={WORDS}
               render={(word, index) => (
