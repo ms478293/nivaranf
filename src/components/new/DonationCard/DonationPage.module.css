@@ -131,3 +131,7 @@
 .generalAlternative { border-top:1px solid #dfdfd2; margin-top:10px; padding-top:22px; font-size:11px; line-height:1.8; color:#828477; }
 .generalAlternative a { display:inline-flex; align-items:center; gap:6px; margin-top:12px; color:#4b5e45; text-decoration:underline; text-underline-offset:4px; }
 @media(max-width:760px) { .campaignLabel { font-size:9px; margin-bottom:21px; } .intro h1 { font-size:46px; } .imageCaption { margin-top:12px; font-size:8px; } }
+
+/* The flood appeal has a full-width campaign hero instead of a checkout split. */
+.shell[data-flood-campaign="true"] .back { color:#f5f0e2; }
+.shell[data-flood-campaign="true"] .secure { display:none; }
