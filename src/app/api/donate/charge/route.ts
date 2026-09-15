@@ -109,6 +109,7 @@ export async function POST(req: Request) {
   }
   const reference = `web-donate-${attemptId}`;
   let subscriptionId: string | null = null;
+  let stage = "tokenization";
 
   try {
     const tokenized = await tokenizeNonce(nonce, frequency === "monthly" ? cardAgreement : undefined);
@@ -117,10 +118,12 @@ export async function POST(req: Request) {
       return bad(DECLINED_MESSAGE, 402, { retryAllowed: true });
     }
     const anchor = new Date().toISOString();
+    stage = "subscription-preparation";
     if (frequency === "monthly") {
       prepareSubscription(attemptId, { ...input, paymentToken: tokenized.paymentToken, cardType: tokenized.card?.type, last4: tokenized.card?.numberLast4, anchor, consentVersion: "monthly-v1", consentAt: anchor });
       subscriptionId = attemptId;
     }
+    stage = "charge";
     const result = await chargePaymentToken({
       paymentToken: tokenized.paymentToken,
       amountCents: totalCents,
@@ -156,34 +159,41 @@ export async function POST(req: Request) {
       last4: result.last4,
     });
 
+    stage = "confirmation";
     const nextChargeAt = frequency === "monthly" ? nextMonthlyDate(anchor) : undefined;
     const manageUrl = subscriptionId ? `https://www.nivaranfoundation.org/donate/manage#${managementToken(subscriptionId)}` : undefined;
     const response = { transactionId: result.transactionId, baseAmountCents, feeCents, totalCents, amountCents: totalCents, cardType: tokenized.card?.type, last4: tokenized.card?.numberLast4, email, designation: designation.id, dedication: dedication ?? null, frequency, nextChargeAt, manageUrl };
     finishAttempt(attemptId, "approved", response, subscriptionId, nextChargeAt);
-    await sendDonationEmails({
-      email,
-      firstName,
-      lastName,
-      baseAmountCents,
-      feeCents,
-      totalCents,
-      designation,
-      dedication,
-      transactionId: result.transactionId || reference,
-      cardType: tokenized.card?.type,
-      last4: tokenized.card?.numberLast4,
-      reference,
-      frequency, nextChargeAt, manageUrl,
-    });
+    // Once approval is durable, a receipt failure must not turn it into an
+    // uncertain payment or prevent the browser receiving its success response.
+    try {
+      await sendDonationEmails({
+        email,
+        firstName,
+        lastName,
+        baseAmountCents,
+        feeCents,
+        totalCents,
+        designation,
+        dedication,
+        transactionId: result.transactionId || reference,
+        cardType: tokenized.card?.type,
+        last4: tokenized.card?.numberLast4,
+        reference,
+        frequency, nextChargeAt, manageUrl,
+      });
+    } catch {
+      console.error("donation receipt delivery failed after approval", { reference });
+    }
 
     return NextResponse.json(response, { headers: { "Cache-Control": "no-store" } });
   } catch (err) {
     // A timeout or processor error can still mean a completed sale. Reconcile first.
     finishAttempt(attemptId, "review", { error: "Payment requires review" }, subscriptionId);
     if (err instanceof GoDaddyApiError) {
-      console.error("donation charge requires review", { reference, status: err.status });
+      console.error("donation charge requires review", { reference, stage, status: err.status });
     } else {
-      console.error("donation charge requires review", { reference });
+      console.error("donation charge requires review", { reference, stage });
     }
     return bad("We could not confirm the payment status. Please do not submit another gift. Contact us and quote " + attemptId.slice(0, 8).toUpperCase() + ".", 409, { pending: true });
   }
