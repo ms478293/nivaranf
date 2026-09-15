@@ -14,13 +14,24 @@ process.env.DONATION_ENCRYPTION_KEY = randomBytes(32).toString("hex");
 process.env.DONATION_MONTHLY_ENABLED = "true";
 process.env.DONATION_RENEWAL_SECRET = randomBytes(32).toString("hex");
 const store = await import("../src/lib/donations/store.mjs");
-let calls = 0, emails = 0, behavior = "approved", lastInput, lastEmail;
+let calls = 0, emails = 0, behavior = "approved", lastInput, lastEmail, mailThrows = false;
+let googleThrows = false, metaThrows = false;
+const googleEvents = [], metaEvents = [];
 const processor = {
   GoDaddyApiError: class extends Error {},
   tokenizeNonce: async (_nonce, agreement) => ({ status: "ACTIVE", paymentToken: "synthetic-token", cardOnFile: behavior !== "no-cof" && !!agreement, card: { type: "VISA", numberLast4: "4242" } }),
   chargePaymentToken: async (input) => { calls++; lastInput = input; if (behavior === "timeout") throw new Error("Simulated uncertain result"); return { approved: behavior === "approved", status: behavior === "declined" ? "DECLINED" : behavior === "approved" ? "CAPTURED" : "PENDING", transactionId: "simulated-transaction" }; },
 };
-const mocks = { "@/lib/godaddy-payments": processor, "@/lib/donation-emails": { sendDonationEmails: async (input) => { emails++; lastEmail = input; } }, "@/lib/donations/store.mjs": store };
+const mocks = {
+  "@/lib/godaddy-payments": processor,
+  "@/lib/donation-emails": { sendDonationEmails: async (input) => { emails++; lastEmail = input; if (mailThrows) throw new Error("Simulated mailer failure"); } },
+  "@/lib/donations/store.mjs": store,
+  "@/lib/google-ads": { trackGoogleDonation: (...args) => { googleEvents.push(args); if (googleThrows) throw new Error("Simulated Google failure"); } },
+  "@/lib/meta-pixel": {
+    trackDonation: (...args) => { metaEvents.push(args); if (metaThrows) throw new Error("Simulated Meta failure"); },
+    trackDonateClick: () => { throw new Error("Simulated checkout tracking failure"); },
+  },
+};
 const cache = new Map();
 function load(path) {
   path = resolve(path);
@@ -38,6 +49,28 @@ const client = load("src/lib/donations/payment-client.ts");
 const request = (path, body, ip = randomUUID()) => new Request(`https://www.nivaranfoundation.org/api/donate/${path}`, { method: "POST", headers: { origin: "https://www.nivaranfoundation.org", "content-type": "application/json", "x-forwarded-for": ip }, body: JSON.stringify(body) });
 const base = () => ({ attemptId: randomUUID(), nonce: "synthetic-nonce", amountCents: 3000, designation: "maternal-child-health", frequency: "once", email: "donor@example.invalid", firstName: "Test", lastName: "Donor", billingAddress: { line1: "1 Test Street", line2: "", city: "Toronto", region: "ON", countryCode: "CA", postalCode: "M5V 1A1" } });
 try {
+  const { trackCompletedDonation, trackDonationCheckout } = load("src/lib/donations/analytics.ts");
+  assert.doesNotThrow(() => trackDonationCheckout(100));
+  assert.equal(googleEvents.length, 0, "opening checkout must not count as a donation");
+  for (const failures of [[false, true], [true, false], [true, true], [false, false]]) {
+    [googleThrows, metaThrows] = failures;
+    googleEvents.length = 0; metaEvents.length = 0;
+    assert.doesNotThrow(() => trackCompletedDonation(100, "approved-test-transaction"));
+    assert.deepEqual(googleEvents, [[100, "approved-test-transaction"]]);
+    assert.deepEqual(metaEvents, [[100]]);
+  }
+  mailThrows = true;
+  const mailFailure = base(), callsBeforeMailFailure = calls;
+  const confirmed = await charge(request("charge", mailFailure));
+  assert.equal(confirmed.status, 200, "receipt failure must not conceal an approved payment");
+  const confirmedPayload = await confirmed.json();
+  assert.equal(store.claimAttempt(mailFailure.attemptId, "different").state, "approved");
+  const replay = await charge(request("charge", mailFailure));
+  assert.equal(replay.status, 200);
+  assert.deepEqual(await replay.json(), confirmedPayload);
+  assert.equal(calls, callsBeforeMailFailure + 1, "replay after receipt failure must not charge twice");
+  mailThrows = false;
+  calls = 0; emails = 0;
   const attempt = { attemptId: randomUUID() };
   const isUncertain = (error) => error instanceof client.DonationPaymentError && error.pending && !error.retryAllowed;
   await assert.rejects(client.submitDonationPayment(attempt, async () => { throw new Error("Connection lost after sending payment"); }), isUncertain);

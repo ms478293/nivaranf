@@ -7,8 +7,7 @@ import {
   getDesignation,
   type Dedication,
 } from "@/content/donation-designations";
-import { trackDonateClick, trackDonation } from "@/lib/meta-pixel";
-import { trackGoogleDonation } from "@/lib/google-ads";
+import { trackCompletedDonation, trackDonationCheckout } from "@/lib/donations/analytics";
 import { cn } from "@/lib/utils";
 import { Lock, ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
@@ -413,10 +412,9 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
         lastName: p.lastName,
         billingAddress: p.billingAddress, frequency: p.frequency, monthlyConsent: p.monthlyConsent, attemptId: attemptRef.current,
       });
-      trackDonation(payload.totalCents / 100);
-      trackGoogleDonation(payload.totalCents / 100, payload.transactionId);
       setResult(payload);
       setStep("done");
+      trackCompletedDonation(payload.totalCents / 100, payload.transactionId);
     } catch (err) {
       if (err instanceof DonationPaymentError) {
         if (err.retryAllowed) attemptRef.current = "";
@@ -443,8 +441,8 @@ const DonationCard = ({ campaign }: { campaign: DonationCampaign }) => {
       return;
     }
     setError("");
-    trackDonateClick(baseCents / 100);
     setStep("card");
+    trackDonationCheckout(baseCents / 100);
   };
 
   const submitCard = () => {
