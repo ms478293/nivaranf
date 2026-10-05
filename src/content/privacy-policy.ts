@@ -46,6 +46,7 @@ export const privacyPolicySections = [
           "Direct Interactions: You may give us your Identity, Contact, and Financial Data by filling in forms or by corresponding with us by post, phone, email, or otherwise.",
           "Automated Technologies: As you interact with our website, we may automatically collect Technical Data about your equipment, browsing actions, and patterns using cookies and similar technologies.",
           "Advertising Measurement: When Google Ads measurement is active, Google tags and advertising cookies record whether a visit from a Google ad led to a completed donation, including the donation amount and a transaction reference but not your name, email address, billing address, or card details, and you can decline these cookies using our cookie banner.",
+          "LinkedIn Advertising: When LinkedIn measurement is active, the LinkedIn Insight Tag and LinkedIn cookies record visits to our website and whether a visit from a LinkedIn ad led to a completed donation. LinkedIn may link this activity to your LinkedIn account and use it to show our ads to past visitors. It does not receive your name, email address, billing address, or card details, and you can decline these cookies using our cookie banner.",
           "Third Parties: We may receive personal data about you from various third parties, such as analytics providers (e.g., Google), advertising networks, and payment processors.",
         ],
       },
