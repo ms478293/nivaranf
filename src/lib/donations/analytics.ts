@@ -1,4 +1,5 @@
 import { trackGoogleDonation } from "@/lib/google-ads";
+import { trackLinkedInDonation } from "@/lib/linkedin-insight";
 import { trackDonateClick, trackDonation } from "@/lib/meta-pixel";
 
 export function trackDonationCheckout(value: number): void {
@@ -10,4 +11,5 @@ export function trackCompletedDonation(value: number, transactionId?: string): v
   // Optional trackers must neither change payment success nor block each other.
   try { trackGoogleDonation(value, transactionId); } catch { /* Tracking unavailable. */ }
   try { trackDonation(value); } catch { /* Tracking unavailable. */ }
+  try { trackLinkedInDonation(transactionId); } catch { /* Tracking unavailable. */ }
 }

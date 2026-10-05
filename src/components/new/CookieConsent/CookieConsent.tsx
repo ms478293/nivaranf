@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { COOKIE_CONSENT_KEY, updateGoogleConsent } from "@/lib/google-ads";
+import { loadLinkedInInsight } from "@/lib/linkedin-insight";
 
 export function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    loadLinkedInInsight();
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
       // Small delay so the banner appears after page load, not during
@@ -19,6 +21,7 @@ export function CookieConsent() {
   function accept() {
     localStorage.setItem(COOKIE_CONSENT_KEY, "accepted");
     updateGoogleConsent(true);
+    loadLinkedInInsight();
     setVisible(false);
   }
 
